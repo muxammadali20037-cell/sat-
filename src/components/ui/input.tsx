@@ -56,7 +56,7 @@ export function FormField({
   const errorText = Array.isArray(error) ? error[0] : error
   const describedBy = [description ? `${id}-description` : null, errorText ? `${id}-error` : null].filter(Boolean).join(' ')
   return (
-    <div className={cn('grid gap-1.5', className)}>
+    <div className={cn('grid grid-cols-1 gap-1.5', className)}>
       <Label htmlFor={id}>
         {label}
         {required && (

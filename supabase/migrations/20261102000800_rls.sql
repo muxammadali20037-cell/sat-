@@ -11,7 +11,11 @@ revoke execute on all functions in schema public from public, anon, authenticate
 
 alter default privileges in schema public revoke all on tables from anon, authenticated;
 alter default privileges in schema public revoke all on sequences from anon, authenticated;
-alter default privileges in schema public revoke execute on functions from public, anon, authenticated;
+-- EXECUTE-to-PUBLIC on functions is a GLOBAL default in PostgreSQL; a per-schema
+-- ALTER DEFAULT PRIVILEGES cannot revoke it. Revoke globally for this role, and per schema
+-- for the client roles (Supabase grants those per schema).
+alter default privileges revoke execute on functions from public;
+alter default privileges in schema public revoke execute on functions from anon, authenticated;
 
 -- Service role keeps full access (Supabase grants this by default; restated for clarity and local tests).
 grant usage on schema public to anon, authenticated, service_role;

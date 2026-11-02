@@ -66,7 +66,7 @@ Read `docs/SYSTEM_ARCHITECTURE.md`, `docs/DATABASE_SCHEMA.md` and `docs/DESIGN_S
 | `breadcrumb.tsx` | `Breadcrumb` |
 
 Layout: `PageHeader`, `Section` (`components/layout/page-header`), `Logo`, `LogoMark`, `LocaleSwitcher`, `AppShell` (already wired in `dashboard/(app)/layout.tsx` and `admin/layout.tsx`).
-Learning: `RichText` (safe text + KaTeX), `QuestionCard`, `AnswerOption`, `QuestionNavigator` (`components/learning/*`).
+Learning: `RichText` (safe text + KaTeX), `QuestionCard`, `AnswerOption`, `QuestionNavigator`, `DesmosCalculator` + `CalculatorToggle` (`components/learning/*`). The calculator fills its container, keeps expressions per `stateKey` while the tab is open, and shows a link-out fallback when `NEXT_PUBLIC_DESMOS_API_KEY` is unset.
 Subscription: `UpgradeNotice` (`components/subscription/upgrade-notice`).
 
 New primitives go in **new** files; do not restyle existing ones.

@@ -2,6 +2,9 @@
 
 import { Flag } from 'lucide-react'
 import { cn } from '@/lib/utils'
+import { useDict } from '@/lib/i18n/client'
+import { format } from '@/lib/i18n/dict'
+import { learningDict } from '@/lib/i18n/dictionaries/learning'
 
 export type NavigatorItem = { index: number; answered: boolean; flagged: boolean }
 
@@ -17,19 +20,21 @@ export function QuestionNavigator({
   onJump: (index: number) => void
   className?: string
 }) {
+  const tl = useDict(learningDict)
+  const t = tl.navigator
   const answered = items.filter((i) => i.answered).length
   const flagged = items.filter((i) => i.flagged).length
   return (
     <div className={className}>
       <div className="mb-3 flex flex-wrap gap-x-4 gap-y-1 text-xs text-muted-foreground">
         <span className="flex items-center gap-1.5">
-          <span className="size-3 rounded-[3px] bg-navy-900 dark:bg-primary" aria-hidden /> Answered {answered}
+          <span className="size-3 rounded-[3px] bg-navy-900 dark:bg-primary" aria-hidden /> {t.answered} {answered}
         </span>
         <span className="flex items-center gap-1.5">
-          <span className="size-3 rounded-[3px] border border-dashed border-border-strong" aria-hidden /> Unanswered {items.length - answered}
+          <span className="size-3 rounded-[3px] border border-dashed border-border-strong" aria-hidden /> {t.unanswered} {items.length - answered}
         </span>
         <span className="flex items-center gap-1.5">
-          <Flag className="size-3 fill-warning text-warning" aria-hidden /> For review {flagged}
+          <Flag className="size-3 fill-warning text-warning" aria-hidden /> {t.forReview} {flagged}
         </span>
       </div>
       <ol className="grid grid-cols-[repeat(auto-fill,minmax(2.5rem,1fr))] gap-1.5">
@@ -41,7 +46,7 @@ export function QuestionNavigator({
                 type="button"
                 onClick={() => onJump(item.index)}
                 aria-current={isCurrent ? 'step' : undefined}
-                aria-label={`Question ${item.index + 1}${item.answered ? ', answered' : ', unanswered'}${item.flagged ? ', marked for review' : ''}`}
+                aria-label={`${format(tl.questionN, { n: item.index + 1 })}, ${item.answered ? t.srAnswered : t.srUnanswered}${item.flagged ? `, ${t.srFlagged}` : ''}`}
                 className={cn(
                   'relative flex h-10 w-full items-center justify-center rounded-md text-[13px] font-semibold tabular transition-colors',
                   item.answered

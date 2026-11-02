@@ -57,8 +57,8 @@ const restoreDollars = (s: string) => s.split(DOLLAR_PLACEHOLDER).join('$')
 
 export function parseInline(input: string): InlineNode[] {
   const nodes: InlineNode[] = []
-  // Inline math first (content is opaque to emphasis parsing).
-  const parts = input.split(/\$([^$\n]+?)\$/g)
+  // Inline math first (content is opaque to emphasis parsing). Escaped \$ never opens math.
+  const parts = input.replace(/\\\$/g, DOLLAR_PLACEHOLDER).split(/\$([^$\n]+?)\$/g)
   parts.forEach((part, i) => {
     if (i % 2 === 1) nodes.push({ type: 'math', value: restoreDollars(part) })
     else if (part) nodes.push(...parseEmphasis(part))
@@ -96,4 +96,52 @@ export function richTextToPlain(source: string): string {
     .replace(/(^|[^*])\*([^*]+)\*/g, '$1$2')
     .replace(/\s+\n/g, '\n')
     .trim()
+}
+
+/** Readable plain text for LaTeX snippets (previews, excerpts): \frac{a}{b} → a/b, \sqrt{x} → √(x). */
+export function latexToPlain(tex: string): string {
+  let s = tex
+  for (let i = 0; i < 4; i++) {
+    s = s
+      .replace(/\^\{([^{}]*)\}/g, '^$1')
+      .replace(/_\{([^{}]*)\}/g, '_$1')
+      .replace(/\\[dt]?frac\{([^{}]*)\}\{([^{}]*)\}/g, '($1)/($2)')
+      .replace(/\\sqrt\{([^{}]*)\}/g, '√($1)')
+      .replace(/\\(?:text|mathrm|mathbf|operatorname)\{([^{}]*)\}/g, '$1')
+  }
+  return s
+    .replace(/\((\w+)\)\/\((\w+)\)/g, '$1/$2')
+    .replace(/\\left|\\right/g, '')
+    .replace(/\\cdot/g, '·')
+    .replace(/\\times/g, '×')
+    .replace(/\\div/g, '÷')
+    .replace(/\\le(q)?/g, '≤')
+    .replace(/\\ge(q)?/g, '≥')
+    .replace(/\\neq?/g, '≠')
+    .replace(/\\pi/g, 'π')
+    .replace(/\\theta/g, 'θ')
+    .replace(/\\circ/g, '°')
+    .replace(/\\pm/g, '±')
+    .replace(/\\[,;:! ]/g, ' ')
+    .replace(/\\%/g, '%')
+    .replace(/\^\{([^{}]*)\}/g, '^$1')
+    .replace(/_\{([^{}]*)\}/g, '_$1')
+    .replace(/\\[a-zA-Z]+/g, '')
+    .replace(/[{}]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim()
+}
+
+/** One-line readable excerpt of rich text (math converted, formatting markers removed). */
+export function richTextExcerpt(source: string, max = 120): string {
+  const text = (source ?? '')
+    .replace(/\\\$/g, '\u0000')
+    .replace(/\$\$([\s\S]+?)\$\$|\$([^$]+?)\$/g, (_m, display: string | undefined, inline: string | undefined) => latexToPlain(display ?? inline ?? ''))
+    .replace(/\u0000/g, '$')
+    .replace(/\*\*|__/g, '')
+    .replace(/(^|[^*])\*([^*]+)\*/g, '$1$2')
+    .replace(/^- /gm, '')
+    .replace(/\s+/g, ' ')
+    .trim()
+  return text.length <= max ? text : `${text.slice(0, max - 1).trimEnd()}…`
 }

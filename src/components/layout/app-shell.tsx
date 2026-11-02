@@ -9,7 +9,9 @@ import { Logo } from './logo'
 import { NAV_ICONS } from './nav-icons'
 import { Drawer, DrawerContent, DrawerClose } from '@/components/ui/dialog'
 import { signOutAction } from '@/features/auth/sign-out'
+import { NotificationsMenu } from './notifications-menu'
 import type { NavItem, NavSection } from '@/config/navigation'
+import type { NotificationItem } from '@/features/notifications/server'
 
 export type ShellUser = { name: string; email: string; roleLabel: string; isStaff: boolean; planName?: string }
 
@@ -23,6 +25,7 @@ type Props = {
   user: ShellUser
   logoutLabel: string
   switchLink?: { href: string; label: string }
+  notifications?: { items: NotificationItem[]; unread: number; labels?: { title: string; empty: string; markRead: string } }
   children: React.ReactNode
 }
 
@@ -56,6 +59,11 @@ function SidebarBody({ props, pathname, onNavigate }: { props: Props; pathname: 
         <Logo href={props.variant === 'admin' ? '/admin' : '/dashboard'} onDark />
         {props.variant === 'admin' && (
           <span className="rounded bg-white/10 px-1.5 py-0.5 text-[11px] font-medium text-white/80">Admin</span>
+        )}
+        {props.notifications && !onNavigate && (
+          <div className="ml-auto">
+            <NotificationsMenu tone="dark" {...props.notifications} />
+          </div>
         )}
       </div>
       <nav className="flex-1 space-y-5 overflow-y-auto px-3 pb-4" aria-label="Main">
@@ -124,6 +132,8 @@ export function AppShell(props: Props) {
       {/* Mobile / tablet top bar */}
       <header className="sticky top-0 z-30 flex h-14 items-center justify-between border-b border-border bg-surface/95 px-4 backdrop-blur lg:hidden">
         <Logo href={props.variant === 'admin' ? '/admin' : '/dashboard'} />
+        <div className="flex items-center gap-1">
+        {props.notifications && <NotificationsMenu {...props.notifications} />}
         <Drawer open={open} onOpenChange={setOpen}>
           <button
             type="button"
@@ -140,6 +150,7 @@ export function AppShell(props: Props) {
             <SidebarBody props={props} pathname={pathname} onNavigate={() => setOpen(false)} />
           </DrawerContent>
         </Drawer>
+        </div>
       </header>
 
       <main id="main" className={cn('mx-auto w-full max-w-[1280px] px-4 py-6 sm:px-6 lg:px-8 lg:py-8', props.mobileTabs && 'pb-24 lg:pb-8')}>

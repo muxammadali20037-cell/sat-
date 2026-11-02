@@ -193,3 +193,9 @@
     scroll-behavior: auto !important;
   }
 }
+
+/* Visually hidden text keeps its static vertical position but is pinned to the left of its
+   containing block, so it can never widen the page from inside a wide scrolling table. */
+.sr-only {
+  left: 0;
+}

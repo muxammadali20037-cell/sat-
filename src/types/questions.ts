@@ -30,6 +30,29 @@ export type SafeQuestion = {
   options: SafeOption[] // empty for student-produced response
 }
 
+/**
+ * Question as sent during a timed test (mock exam module): no difficulty, skill, domain or pacing
+ * hints, which could reveal the adaptive module a student was routed to.
+ */
+export type TimedQuestion = Omit<SafeQuestion, 'difficulty' | 'skillId' | 'skillName' | 'domainId' | 'domainName' | 'estimatedSeconds'>
+
+/** Anything QuestionCard can render; metadata badges appear only when present. */
+export type CardQuestion = TimedQuestion & Partial<Pick<SafeQuestion, 'difficulty' | 'skillName'>>
+
+export function toTimedQuestion(q: SafeQuestion): TimedQuestion {
+  return {
+    id: q.id,
+    subjectCode: q.subjectCode,
+    questionType: q.questionType,
+    stimulusType: q.stimulusType,
+    stem: q.stem,
+    passage: q.passage,
+    imageUrl: q.imageUrl,
+    imageAlt: q.imageAlt,
+    options: q.options,
+  }
+}
+
 /** Feedback after an answer, when allowed. */
 export type RevealedAnswer = {
   questionId: string

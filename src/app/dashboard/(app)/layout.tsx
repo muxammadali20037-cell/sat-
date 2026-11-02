@@ -5,12 +5,25 @@ import { AppShell } from '@/components/layout/app-shell'
 import { STUDENT_ACCOUNT_NAV, STUDENT_MOBILE_TABS, STUDENT_NAV } from '@/config/navigation'
 import { ROLE_LABELS, STAFF_ROLES, hasRole } from '@/config/roles'
 import { getEntitlements } from '@/features/entitlements/server'
+import { getMyNotifications } from '@/features/notifications/server'
+import { defineDict } from '@/lib/i18n/dict'
+import { Suspense } from 'react'
+import { FlashToast } from '@/components/layout/flash-toast'
+
+const notificationsDict = defineDict({
+  en: { title: 'Notifications', empty: 'No notifications yet.', markRead: 'Mark all as read' },
+  uz: { title: 'Bildirishnomalar', empty: "Hozircha bildirishnomalar yo'q.", markRead: "Barchasini o'qilgan deb belgilash" },
+})
 
 /** Student app chrome: sidebar (desktop), drawer + bottom tabs (mobile). */
 export default async function StudentAppLayout({ children }: { children: React.ReactNode }) {
   const profile = await requireStudentReady()
   const t = await getDict(commonDict)
-  const entitlements = await getEntitlements(profile.id).catch(() => null)
+  const [entitlements, notifications, notificationLabels] = await Promise.all([
+    getEntitlements(profile.id).catch(() => null),
+    getMyNotifications(),
+    getDict(notificationsDict),
+  ])
   const staff = hasRole(profile.role, STAFF_ROLES)
 
   return (
@@ -29,7 +42,11 @@ export default async function StudentAppLayout({ children }: { children: React.R
       }}
       logoutLabel={t.nav.logout}
       switchLink={staff ? { href: '/admin', label: t.nav.admin } : undefined}
+      notifications={{ ...notifications, labels: notificationLabels }}
     >
+      <Suspense fallback={null}>
+        <FlashToast />
+      </Suspense>
       {children}
     </AppShell>
   )

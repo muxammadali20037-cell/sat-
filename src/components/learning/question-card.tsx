@@ -7,10 +7,13 @@ import { parseSprResponse } from '@/lib/scoring'
 import { Badge } from '@/components/ui/card'
 import { RichText } from './rich-text'
 import { AnswerOption, type AnswerOptionState } from './answer-option'
-import { DIFFICULTY_LABELS, type RevealedAnswer, type SafeQuestion } from '@/types/questions'
+import type { CardQuestion, RevealedAnswer } from '@/types/questions'
+import { useDict } from '@/lib/i18n/client'
+import { format } from '@/lib/i18n/dict'
+import { learningDict } from '@/lib/i18n/dictionaries/learning'
 
 export type QuestionCardProps = {
-  question: SafeQuestion
+  question: CardQuestion
   number?: number
   total?: number
   selectedOptionId?: string | null
@@ -42,15 +45,9 @@ function optionState(optionId: string, props: QuestionCardProps): AnswerOptionSt
   return selectedOptionId === optionId ? 'selected' : 'idle'
 }
 
-const SPR_REASON: Record<string, string> = {
-  too_long: 'Too long: up to 5 characters (6 with a minus sign).',
-  invalid: 'Enter a number, decimal or fraction such as 12, .75 or 3/4.',
-  mixed_number: 'Mixed numbers are not accepted. Enter 3 1/2 as 7/2 or 3.5.',
-  division_by_zero: 'The denominator cannot be zero.',
-}
-
 export function QuestionCard(props: QuestionCardProps) {
   const { question, number, total, reveal, disabled, layout = 'stacked', showMeta = true } = props
+  const t = useDict(learningDict)
   const inputName = `q-${question.id}`
   const hasStimulus = Boolean(question.passage || question.imageUrl)
   const split = layout === 'split' && hasStimulus
@@ -80,8 +77,8 @@ export function QuestionCard(props: QuestionCardProps) {
       </div>
 
       {!spr ? (
-        <fieldset className="mt-5 grid gap-2.5" disabled={locked}>
-          <legend className="sr-only">Answer choices</legend>
+        <fieldset className="mt-5 grid grid-cols-1 gap-2.5" disabled={locked}>
+          <legend className="sr-only">{t.answerChoices}</legend>
           {question.options.map((option) => (
             <AnswerOption
               key={option.id}
@@ -98,7 +95,7 @@ export function QuestionCard(props: QuestionCardProps) {
       ) : (
         <div className="mt-5 max-w-xs">
           <label htmlFor={`${inputName}-spr`} className="text-sm font-medium">
-            Your answer
+            {t.yourAnswer}
           </label>
           <input
             id={`${inputName}-spr`}
@@ -116,18 +113,18 @@ export function QuestionCard(props: QuestionCardProps) {
           />
           <p id={`${inputName}-spr-help`} className="mt-1.5 min-h-5 text-[13px] text-muted-foreground" aria-live="polite">
             {parsed && !parsed.ok && parsed.reason !== 'empty' ? (
-              <span className="text-warning-foreground">{SPR_REASON[parsed.reason]}</span>
+              <span className="text-warning-foreground">{t.spr[parsed.reason as keyof typeof t.spr]}</span>
             ) : parsed?.ok ? (
               <>
-                Answer preview: <RichText as="span" source={`$${parsed.normalized.replace(/^(-?)(\d+)\/(\d+)$/, '$1\\frac{$2}{$3}')}$`} />
+                {t.answerPreview} <RichText as="span" source={`$${parsed.normalized.replace(/^(-?)(\d+)\/(\d+)$/, '$1\\frac{$2}{$3}')}$`} />
               </>
             ) : (
-              'Numbers, decimals or fractions. No units or commas.'
+              t.sprHelp
             )}
           </p>
           {reveal && !reveal.isCorrect && reveal.acceptedAnswers.length > 0 && (
             <p className="mt-1 text-sm">
-              Accepted answer{reveal.acceptedAnswers.length > 1 ? 's' : ''}:{' '}
+              {reveal.acceptedAnswers.length > 1 ? t.acceptedAnswers : t.acceptedAnswer}{' '}
               <span className="font-semibold tabular">{reveal.acceptedAnswers.join(', ')}</span>
             </p>
           )}
@@ -144,11 +141,11 @@ export function QuestionCard(props: QuestionCardProps) {
           <p className="flex items-center gap-2 font-medium">
             {reveal.isCorrect ? (
               <>
-                <CheckCircle2 className="size-4 text-success" aria-hidden /> Correct
+                <CheckCircle2 className="size-4 text-success" aria-hidden /> {t.correct}
               </>
             ) : (
               <>
-                <XCircle className="size-4 text-destructive" aria-hidden /> {reveal.selectedOptionId || reveal.responseText ? 'Not quite' : 'Not answered'}
+                <XCircle className="size-4 text-destructive" aria-hidden /> {reveal.selectedOptionId || reveal.responseText ? t.notQuite : t.notAnswered}
               </>
             )}
           </p>
@@ -160,20 +157,22 @@ export function QuestionCard(props: QuestionCardProps) {
   )
 
   return (
-    <article className={cn('rounded-xl border border-border bg-card', props.className)} aria-label={number ? `Question ${number}` : 'Question'}>
+    <article className={cn('rounded-xl border border-border bg-card', props.className)} aria-label={number ? format(t.questionN, { n: number }) : t.question}>
       <header className="flex flex-wrap items-center gap-2 border-b border-border px-4 py-2.5 sm:px-5">
         {number !== undefined && (
           <span className="flex h-7 min-w-7 items-center justify-center rounded-md bg-navy-900 px-2 text-[13px] font-semibold text-white tabular dark:bg-primary">
             {number}
           </span>
         )}
-        {total !== undefined && <span className="text-[13px] text-muted-foreground tabular">of {total}</span>}
-        {showMeta && (
+        {total !== undefined && <span className="text-[13px] text-muted-foreground tabular">{format(t.ofTotal, { total })}</span>}
+        {showMeta && (question.skillName || question.difficulty) && (
           <div className="flex flex-wrap items-center gap-1.5">
-            <Badge variant="outline">{question.skillName}</Badge>
-            <Badge variant={question.difficulty === 'hard' ? 'warning' : question.difficulty === 'easy' ? 'success' : 'neutral'}>
-              {DIFFICULTY_LABELS[question.difficulty]}
-            </Badge>
+            {question.skillName && <Badge variant="outline">{question.skillName}</Badge>}
+            {question.difficulty && (
+              <Badge variant={question.difficulty === 'hard' ? 'warning' : question.difficulty === 'easy' ? 'success' : 'neutral'}>
+                {t.difficulty[question.difficulty]}
+              </Badge>
+            )}
           </div>
         )}
         <div className="ml-auto flex items-center gap-1">{props.headerActions}</div>

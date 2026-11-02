@@ -24,7 +24,7 @@ export function Checkbox({ className, ...props }: React.ComponentProps<typeof Ch
 }
 
 export function RadioGroup({ className, ...props }: React.ComponentProps<typeof RadioPrimitive.Root>) {
-  return <RadioPrimitive.Root className={cn('grid gap-2', className)} {...props} />
+  return <RadioPrimitive.Root className={cn('grid grid-cols-1 gap-2', className)} {...props} />
 }
 
 export function RadioGroupItem({ className, ...props }: React.ComponentProps<typeof RadioPrimitive.Item>) {

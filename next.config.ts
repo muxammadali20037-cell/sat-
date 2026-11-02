@@ -1,25 +1,31 @@
 import type { NextConfig } from 'next'
 
 const isDev = process.env.NODE_ENV !== 'production'
-const supabaseHost = (() => {
+const supabaseUrl = (() => {
   try {
-    return process.env.NEXT_PUBLIC_SUPABASE_URL ? new URL(process.env.NEXT_PUBLIC_SUPABASE_URL).host : ''
+    return process.env.NEXT_PUBLIC_SUPABASE_URL ? new URL(process.env.NEXT_PUBLIC_SUPABASE_URL) : null
   } catch {
-    return ''
+    return null
   }
 })()
+// Origin keeps the real scheme (https in production, http for a local Supabase stack).
+const supabaseOrigin = supabaseUrl ? supabaseUrl.origin : ''
+const supabaseWs = supabaseUrl ? supabaseOrigin.replace(/^http/, 'ws') : ''
 const videoHost = process.env.BUNNY_STREAM_CDN_HOST ?? ''
+// Desmos graphing calculator script + assets, only when a key is configured.
+const desmos = process.env.NEXT_PUBLIC_DESMOS_API_KEY ? ' https://www.desmos.com' : ''
 
 // Content Security Policy. Next.js hydration requires inline scripts without a nonce pipeline,
 // so script-src keeps 'unsafe-inline'; everything else is locked to known origins.
 const csp = [
   "default-src 'self'",
-  `script-src 'self' 'unsafe-inline'${isDev ? " 'unsafe-eval'" : ''}${process.env.STRIPE_SECRET_KEY ? ' https://js.stripe.com' : ''}`,
+  `script-src 'self' 'unsafe-inline'${isDev ? " 'unsafe-eval'" : ''}${process.env.STRIPE_SECRET_KEY ? ' https://js.stripe.com' : ''}${desmos}`,
   "style-src 'self' 'unsafe-inline'",
-  `img-src 'self' data: blob:${supabaseHost ? ` https://${supabaseHost}` : ''}`,
-  "font-src 'self' data:",
-  `media-src 'self' blob:${supabaseHost ? ` https://${supabaseHost}` : ''}${videoHost ? ` https://${videoHost}` : ''}`,
-  `connect-src 'self'${supabaseHost ? ` https://${supabaseHost} wss://${supabaseHost}` : ''}${videoHost ? ` https://${videoHost}` : ''}`,
+  `img-src 'self' data: blob:${supabaseOrigin ? ` ${supabaseOrigin}` : ''}${desmos}`,
+  `font-src 'self' data:${desmos}`,
+  `media-src 'self' blob:${supabaseOrigin ? ` ${supabaseOrigin}` : ''}${videoHost ? ` https://${videoHost}` : ''}`,
+  `connect-src 'self'${supabaseOrigin ? ` ${supabaseOrigin} ${supabaseWs}` : ''}${videoHost ? ` https://${videoHost}` : ''}${desmos}`,
+  "worker-src 'self' blob:", // hls.js transmuxing worker
   "frame-ancestors 'none'",
   "form-action 'self' https://checkout.paycom.uz https://checkout.test.paycom.uz https://my.click.uz https://checkout.stripe.com",
   "base-uri 'self'",
@@ -48,7 +54,9 @@ const nextConfig: NextConfig = {
     },
   },
   images: {
-    remotePatterns: supabaseHost ? [{ protocol: 'https', hostname: supabaseHost }] : [],
+    remotePatterns: supabaseUrl
+      ? [{ protocol: supabaseUrl.protocol === 'http:' ? 'http' : 'https', hostname: supabaseUrl.hostname }]
+      : [],
   },
   async headers() {
     return [{ source: '/:path*', headers: securityHeaders }]

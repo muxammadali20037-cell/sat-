@@ -82,20 +82,22 @@ Fonts are self-hosted (`geist` and `@fontsource-variable/inter` npm packages) �
 
 ## 6. Layout patterns
 
-**Marketing**
+**Marketing** (revised 2 Nov after the owner's reference screenshots — decision D12)
 ```
 ┌──────────────────────────────────────────────────────────┐
-│ logo        Features  Pricing  FAQ        Log in [Start] │
-├──────────────────────────────┬───────────────────────────┤
-│ Your Smarter Way to          │ ┌ Module 1 · 31:58 ─────┐ │
-│ Master the SAT.              │ │ Q 7  ▢▢▢▢▣▢▢ ⚑        │ │
-│ subtitle (≤ 60ch)            │ │ If 3x + 7 = 22 …      │ │
-│ [Start free diagnostic]      │ │ (A) (B) (C) (D)       │ │
-│  Explore platform            │ │ Hint · Check answer   │ │
-│                              │ └───────────────────────┘ │
-└──────────────────────────────┴───────────────────────────┘
+│ logo        Features  Pricing  FAQ        Log in [Start] │  navy-900 field
+│                                                          │
+│            Your Smarter Way to Master the SAT.           │
+│                  subtitle (≤ 60ch), centred              │
+│        [Start Free Diagnostic Test]  Explore Platform    │
+│     ✓ Free diagnostic  ✓ No card needed  ✓ EN/UZ UI      │
+│   ┌──────────────────────────────┬─────────────────┐     │
+├───│ live sample question         │ navigator panel │─────┤  overlaps into
+│   │ (answer · hint · explanation)│ "Sample data"   │     │  the light section
+│   └──────────────────────────────┴─────────────────┘     │
+└──────────────────────────────────────────────────────────┘
 ```
-Left-aligned text, the live question on the right (stacks below on mobile). Section rhythm alternates full-width light sections with **one** navy band (the mock exam environment).
+Centred hero on the navy field; the product preview (real `QuestionCard` + `QuestionNavigator`, an original question) overlaps the hero's bottom edge and is the page's one memorable moment. Only factual check bullets — no ratings, review counts or student counts. Below the hero, light sections; the mock exam section is a contained navy panel rather than a second full-width band.
 
 **Student app:** navy sidebar (logo, Dashboard, Courses, Practice, Mock exams, AI tutor, Study plan, Analytics, Results, Bookmarks; account items at the bottom) + content column with `PageHeader`. Phones: top bar + bottom tabs (Home, Learn, Practice, Tutor, More).
 

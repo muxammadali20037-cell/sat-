@@ -4,6 +4,9 @@ import { Check, X } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { RichText } from './rich-text'
 import type { SafeOption } from '@/types/questions'
+import { useDict } from '@/lib/i18n/client'
+import { format } from '@/lib/i18n/dict'
+import { learningDict } from '@/lib/i18n/dictionaries/learning'
 
 export type AnswerOptionState = 'idle' | 'selected' | 'correct' | 'incorrect' | 'missed'
 
@@ -28,6 +31,7 @@ export function AnswerOption({
   onSelect?: (optionId: string) => void
   onToggleEliminate?: (optionId: string) => void
 }) {
+  const t = useDict(learningDict)
   const checked = state === 'selected' || state === 'correct' || state === 'incorrect'
   return (
     <div className="flex items-stretch gap-2">
@@ -67,19 +71,19 @@ export function AnswerOption({
           {state === 'correct' ? <Check className="size-4" /> : state === 'incorrect' ? <X className="size-4" /> : option.label}
         </span>
         <span className={cn('min-w-0 flex-1 pt-0.5 leading-relaxed', eliminated && 'line-through decoration-muted-foreground/70')}>
-          <span className="sr-only">Option {option.label}: </span>
+          <span className="sr-only">{format(t.option, { label: option.label })} </span>
           <RichText source={option.content} as="span" />
         </span>
-        {state === 'correct' && <span className="sr-only">Correct answer, your choice</span>}
-        {state === 'incorrect' && <span className="sr-only">Your choice, incorrect</span>}
-        {state === 'missed' && <span className="sr-only">Correct answer</span>}
+        {state === 'correct' && <span className="sr-only">{t.srCorrectChosen}</span>}
+        {state === 'incorrect' && <span className="sr-only">{t.srIncorrectChosen}</span>}
+        {state === 'missed' && <span className="sr-only">{t.srCorrect}</span>}
       </label>
       {onToggleEliminate && !disabled && (
         <button
           type="button"
           onClick={() => onToggleEliminate(option.id)}
           aria-pressed={eliminated}
-          aria-label={eliminated ? `Restore option ${option.label}` : `Eliminate option ${option.label}`}
+          aria-label={format(eliminated ? t.restore : t.eliminate, { label: option.label })}
           className="w-10 shrink-0 rounded-lg text-[13px] font-semibold text-muted-foreground hover:bg-muted"
         >
           <span className={cn(eliminated ? 'no-underline' : 'line-through')}>{option.label}</span>

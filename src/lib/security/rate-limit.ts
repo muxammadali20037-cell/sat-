@@ -58,4 +58,8 @@ export const RATE_LIMITS = {
   start: { bucket: 'start', limit: 30, windowSec: 300 },
   progress: { bucket: 'progress', limit: 30, windowSec: 60 },
   admin: { bucket: 'admin', limit: 120, windowSec: 60 },
+  // Mock exams: own buckets so practice traffic never blocks a timed module (and vice versa).
+  examAction: { bucket: 'exam-action', limit: 30, windowSec: 300 },
+  examAnswer: { bucket: 'exam-answer', limit: 240, windowSec: 60 },
+  examState: { bucket: 'exam-state', limit: 120, windowSec: 60 },
 } as const satisfies Record<string, RateLimitRule>

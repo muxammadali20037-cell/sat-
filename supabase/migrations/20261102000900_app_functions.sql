@@ -411,7 +411,17 @@ begin
 end;
 $$;
 
--- Execute grants for client-callable functions (each checks authorization internally).
+-- Deny by default again (defense in depth for every function defined so far), then grant
+-- exactly the client-callable ones. Each of those checks authorization internally.
+revoke execute on all functions in schema public from public, anon, authenticated;
+grant execute on function public.current_app_role() to anon, authenticated;
+grant execute on function public.has_any_role(text[]) to anon, authenticated;
+grant execute on function public.is_staff() to anon, authenticated;
+grant execute on function public.is_content_manager() to anon, authenticated;
+grant execute on function public.is_admin() to anon, authenticated;
+grant execute on function public.can_view_students() to anon, authenticated;
+grant execute on function public.question_is_complete(uuid) to authenticated;
+grant execute on function public.my_entitlements() to authenticated;
 grant execute on function public.admin_upsert_question(jsonb) to authenticated;
 grant execute on function public.question_set_status(uuid, text) to authenticated;
 grant execute on function public.admin_set_user_role(uuid, text) to authenticated;

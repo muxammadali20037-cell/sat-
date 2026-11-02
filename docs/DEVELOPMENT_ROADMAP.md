@@ -14,6 +14,8 @@ Each phase ends with: what was built, files created, integrations completed, tes
 | **8. QA** | Unit + DB integration tests, typecheck, lint, production build, responsive screenshots | `npm run typecheck`, `npm run lint`, `npm test`, `npm run test:db`, `npm run build` all green |
 | **9. Deployment** | Supabase project setup, migrations, auth URLs, storage, Vercel env vars, provider webhook URLs, monitoring | README deployment guide verified step by step against a real project (requires the owner's accounts) |
 
+**Status (2 Nov 2026):** phases 1–8 complete and verified (typecheck, lint, 435 unit + 55 DB tests, production build, browser E2E on a local Supabase-compatible stack). Phase 9 in progress: Supabase project created; remaining owner steps in [STATUS.md](STATUS.md#launch-checklist-owner-actions).
+
 ## Decisions log
 
 | # | Decision | Rationale |
@@ -28,6 +30,8 @@ Each phase ends with: what was built, files created, integrations completed, tes
 | D8 | Deterministic study planner; AI writes objectives only | Plans stay valid and explainable; AI cannot create impossible schedules |
 | D9 | Transparent, labelled score estimate | No claim of official scoring; formula is published |
 | D10 | Self-hosted fonts | Builds work offline/in CI; no third-party font requests |
+| D11 | Desmos API for the graphing calculator, behind `NEXT_PUBLIC_DESMOS_API_KEY` | Matches the tool students meet on test day; no key → honest link-out fallback; CSP opens www.desmos.com only when configured |
+| D12 | Reference screenshots (Nov 2) adopted as patterns only | Layout ideas kept; ratings, review counts, XP and leaderboards rejected — no backing data and fabricated stats are forbidden |
 
 ## Post-v1 backlog
 
@@ -36,6 +40,8 @@ Each phase ends with: what was built, files created, integrations completed, tes
 3. Russian dictionary and explanation translations.
 4. Teacher classrooms (groups, assignments).
 5. Question calibration (IRT difficulty from response data) to improve module routing.
-6. Embedded graphing calculator (licensed) and reference sheet.
+6. Commercial Desmos API agreement for production; original Math reference sheet.
 7. Playwright E2E suite against a seeded Supabase branch in CI.
 8. Upstash/Redis rate limiter and edge caching for the marketing site.
+9. AI tutor whiteboard (handwritten working on a canvas, tutor feedback on each step).
+10. Leaderboards / XP only once there is real, opt-in cohort data to back them.

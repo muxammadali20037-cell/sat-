@@ -80,7 +80,7 @@ Browser ──► proxy.ts ──► Server Component / Route Handler / Server A
 |---|---|
 | `getCurrentUser()` | Verified Supabase user (`auth.getUser()`), or `null`. |
 | `getCurrentProfile()` | `{ id, email, fullName, role, locale, onboardingCompleted, isSuspended, … }` or `null`. |
-| `requireUser({ next })` | Redirects to `/login?next=…` when anonymous, `/suspended` when suspended. |
+| `requireUser({ next })` | Redirects to `/login?next=…` when anonymous, `/account-suspended` when suspended. |
 | `requireStudentReady()` | `requireUser` + redirects to `/dashboard/onboarding` if onboarding is incomplete. |
 | `requireRole(roles)` | `requireUser` + `notFound()` when the role is not allowed (does not reveal admin routes). |
 | `getApiContext()` | For route handlers: returns `{ user, profile }` or throws `ApiError(401)`. |
@@ -149,7 +149,7 @@ export const POST = route({
 
 - `lessons.video_provider` ∈ `bunny | supabase | none`, `video_asset_id` is never exposed to clients (column privilege revoked).
 - `GET /api/lessons/[id]` checks the `video_lessons` entitlement (or `is_free_preview`) and returns a playback URL valid for 2 hours:
-  - **Bunny Stream:** `https://{BUNNY_STREAM_CDN_HOST}/{videoId}/playlist.m3u8?token=…&expires=…` with token = `SHA256(BUNNY_STREAM_TOKEN_KEY + path + expires)` (token authentication enabled on the pull zone).
+  - **Bunny Stream:** Bunny CDN *Advanced Token Authentication* — `token = "HS256-" + Base64URL(HMAC-SHA256(BUNNY_STREAM_TOKEN_KEY, signature_path + expires + signing_data))`, issued as a **directory token** in the path form `https://{BUNNY_STREAM_CDN_HOST}/bcdn_token=…&expires=…&token_path=%2F{videoId}%2F/{videoId}/playlist.m3u8` so the player's segment requests inherit it (works with Safari's native HLS). No IP locking (students switch networks). Implementation and spec notes: `src/lib/video/bunny.ts`. **Verify once against a real pull zone before launch.**
   - **Supabase Storage:** `createSignedUrl` on the private `lesson-videos` bucket (development / small files).
 - **Completion rule (anti-skip):** the client sends heartbeats every 10 s while playing and on pause/ended. The server credits `min(Δposition, Δwallclock × 1.25 + 2, 30)` seconds only for forward progress, using its own `last_heartbeat_at`. Seeking forward earns nothing. Complete when `watched_seconds ≥ 0.9 × duration_seconds`. Text-only lessons (`video_provider = none`) use the same mechanism against an estimated reading time (`duration_seconds`), followed by an explicit "Mark complete" which the server accepts only once the threshold is met.
 - Activity (study seconds, lessons completed) is accumulated in `user_daily_activity` for streaks and dashboards.
@@ -243,6 +243,7 @@ provider ──webhook──► verify signature/auth ──► insert payment_e
 | `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY` | public | yes | Anon/publishable key |
 | `SUPABASE_SERVICE_ROLE_KEY` | server | yes | Service role (never `NEXT_PUBLIC_`) |
 | `NEXT_PUBLIC_ENABLE_GOOGLE_AUTH` | public | no | Show Google sign-in |
+| `NEXT_PUBLIC_DESMOS_API_KEY`, `NEXT_PUBLIC_DESMOS_API_VERSION` | public | no | Desmos graphing calculator in Math practice and exams (domain-bound browser key; CSP allows www.desmos.com only when set) |
 | `ANTHROPIC_API_KEY` | server | for AI | Claude API |
 | `AI_PROVIDER` | server | no | `anthropic` (default) or `mock` (dev only) |
 | `AI_MODEL_TUTOR`, `AI_MODEL_FAST` | server | no | Model ids |
@@ -251,5 +252,6 @@ provider ──webhook──► verify signature/auth ──► insert payment_e
 | `PAYME_MERCHANT_ID`, `PAYME_KEY`, `PAYME_TEST_KEY`, `PAYME_TEST_MODE` | server | for Payme | Payme Merchant API |
 | `STRIPE_SECRET_KEY`, `STRIPE_WEBHOOK_SECRET` | server | for Stripe | International cards |
 | `PAYMENTS_TEST_MODE`, `PAYMENTS_TEST_WEBHOOK_SECRET` | server | dev only | Simulated provider |
+| `CRON_SECRET` | server | for cron | Bearer secret for `/api/cron/*` (Vercel Cron) |
 
 Missing optional credentials disable the corresponding feature with an honest "not configured" state; they never fall back to fake success.

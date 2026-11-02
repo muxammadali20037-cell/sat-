@@ -36,7 +36,7 @@ export function DataTable<T>({
     return <EmptyState title={empty.title} description={empty.description} action={empty.action} />
   }
   return (
-    <div className={cn('overflow-x-auto rounded-lg border border-border bg-card', className)}>
+    <div className={cn('relative overflow-x-auto rounded-lg border border-border bg-card', className)}>
       <table className="w-full min-w-[560px] border-collapse text-sm">
         {caption && <caption className="sr-only">{caption}</caption>}
         <thead>
@@ -89,11 +89,14 @@ export function Pagination({
   pageSize,
   total,
   hrefForPage,
+  labels = { previous: 'Previous', next: 'Next', range: '{from}–{to} of {total}', label: 'Pagination' },
 }: {
   page: number
   pageSize: number
   total: number
   hrefForPage: (page: number) => string
+  /** Localized labels (student pages pass `learningDict.pagination`); English by default for admin. */
+  labels?: { previous: string; next: string; range: string; label: string }
 }) {
   const pages = Math.max(1, Math.ceil(total / pageSize))
   if (pages <= 1) return null
@@ -101,27 +104,27 @@ export function Pagination({
   const to = Math.min(total, page * pageSize)
   const linkCls = 'inline-flex h-8 items-center gap-1 rounded-md border border-border px-2.5 text-[13px] hover:bg-muted'
   return (
-    <nav aria-label="Pagination" className="mt-3 flex items-center justify-between gap-3 text-[13px] text-muted-foreground">
+    <nav aria-label={labels.label} className="mt-3 flex items-center justify-between gap-3 text-[13px] text-muted-foreground">
       <span className="tabular">
-        {from}–{to} of {total}
+        {labels.range.replace('{from}', String(from)).replace('{to}', String(to)).replace('{total}', String(total))}
       </span>
       <div className="flex gap-2">
         {page > 1 ? (
           <Link className={linkCls} href={hrefForPage(page - 1)}>
-            <ChevronLeft className="size-4" /> Previous
+            <ChevronLeft className="size-4" /> {labels.previous}
           </Link>
         ) : (
           <span className={cn(linkCls, 'pointer-events-none opacity-40')}>
-            <ChevronLeft className="size-4" /> Previous
+            <ChevronLeft className="size-4" /> {labels.previous}
           </span>
         )}
         {page < pages ? (
           <Link className={linkCls} href={hrefForPage(page + 1)}>
-            Next <ChevronRight className="size-4" />
+            {labels.next} <ChevronRight className="size-4" />
           </Link>
         ) : (
           <span className={cn(linkCls, 'pointer-events-none opacity-40')}>
-            Next <ChevronRight className="size-4" />
+            {labels.next} <ChevronRight className="size-4" />
           </span>
         )}
       </div>
