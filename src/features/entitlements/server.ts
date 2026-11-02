@@ -116,6 +116,21 @@ export type AiReservation = { release: () => Promise<void> }
 const UNMETERED: AiReservation = { release: async () => {} }
 
 /**
+ * True when the database does not have a function yet (migration 0015 not applied): PostgREST
+ * reports PGRST202, Postgres 42883. The callers then fall back to the older read-then-act check, so
+ * a deployment keeps working, and log loudly so the missing migration is noticed.
+ */
+function isMissingFunction(error: { code?: string } | null): boolean {
+  return error?.code === 'PGRST202' || error?.code === '42883'
+}
+const warned = new Set<string>()
+function warnMissingMigration(fn: string) {
+  if (warned.has(fn)) return
+  warned.add(fn)
+  console.error(`[quota] database function ${fn} is missing — apply supabase/migrations/20261102001500_atomic_quotas.sql. Falling back to a non-atomic limit check.`)
+}
+
+/**
  * Atomic version of assertWithinLimit for ai_requests_daily. The database function
  * ai_reserve_request serializes each student's requests, counts today's successful requests plus
  * those still in flight, and holds one unit for this request, so parallel requests cannot all slip
@@ -133,6 +148,11 @@ export async function reserveAiRequest(userId: string, timeZone: string): Promis
     p_since: startOfLocalDay(timeZone).toISOString(),
     p_limit: limit,
   })
+  if (isMissingFunction(error)) {
+    warnMissingMigration('ai_reserve_request')
+    await assertWithinLimit(userId, 'ai_requests_daily', timeZone, 1)
+    return UNMETERED
+  }
   if (error) throw error
   const row = data?.[0]
   if (!row?.reservation_id) {
@@ -173,6 +193,17 @@ export async function startMockAttemptWithinLimit(userId: string, mockExamId: st
     p_since: startOfLocalMonth(timeZone).toISOString(),
     ...(limit === null ? {} : { p_limit: limit }),
   })
+  if (isMissingFunction(error)) {
+    warnMissingMigration('mock_exam_start_attempt')
+    await assertWithinLimit(userId, 'mock_exams_monthly', timeZone, 1)
+    const { data: row, error: insErr } = await admin
+      .from('attempts')
+      .insert({ user_id: userId, kind: 'mock_exam', mock_exam_id: mockExamId, status: 'in_progress' })
+      .select('id')
+      .single()
+    if (insErr) throw insErr // 23505 = same exam started twice; the caller resumes the winner
+    return row.id
+  }
   if (error) throw error
   if (!data) {
     throw new ApiError(402, 'PLAN_LIMIT_REACHED', 'You have reached your plan limit for now.', {

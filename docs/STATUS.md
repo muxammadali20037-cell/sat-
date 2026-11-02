@@ -124,6 +124,7 @@ State on 2 Nov 2026, applied through the Supabase connector with the owner's con
 | 0012 search indexes | **Declined by the owner** at the confirmation prompt. Optional (admin search speed only). Apply later from the SQL editor if wanted. |
 | 0013 study-guide tables | Applied |
 | 0014 study-guide content (~480 KB) | Not applied. Use Admin → Study guides → "Import bundled guides" after the first deploy, or `supabase db push`. |
+| 0015 atomic quotas (1 table, 2 functions; no existing data touched) | **Declined by the owner** at the confirmation prompt on 2 Nov. The app still works without it: it falls back to the older check and logs `[quota] database function … is missing` (tested). Until it is applied, simultaneous requests can exceed the AI and mock-exam limits slightly. To apply it, paste `supabase/migrations/20261102001500_atomic_quotas.sql` into the Supabase SQL editor, or run `supabase db push`. |
 
 Verified on the hosted database: 47 tables, all with RLS; the same 14 client-callable functions as locally, each with internal role checks; 3 private storage buckets; 30 skills and 4 plans.
 
@@ -137,7 +138,7 @@ The security advisor reports two kinds of finding, both expected by design:
 supabase link --project-ref ncqqnjnozrymrmblixra
 supabase migration repair --status applied 20261102000100 20261102000200 20261102000300 20261102000400 \
   20261102000500 20261102000600 20261102000700 20261102000800 20261102000900 20261102001000 20261102001100 20261102001300
-supabase db push   # applies 0012 (if still wanted) and 0014
+supabase db push   # applies 0012 (if still wanted), 0014 and 0015
 ```
 
 ## Launch checklist (owner actions)
