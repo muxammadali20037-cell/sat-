@@ -1,26 +1,195 @@
-@import "tailwindcss";
+@import 'tailwindcss';
+@import '@fontsource-variable/inter/index.css';
+@import 'katex/dist/katex.min.css';
 
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ---------------------------------------------------------------------------
+   SAT MASTER design tokens (docs/DESIGN_SYSTEM.md)
+   --------------------------------------------------------------------------- */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --navy-900: #101b35;
+  --navy-800: #172746;
+  --navy-700: #22355c;
+
+  --background: #f5f7fb;
+  --foreground: #172033;
+  --surface: #ffffff;
+  --card: #ffffff;
+  --card-foreground: #172033;
+  --popover: #ffffff;
+  --popover-foreground: #172033;
+
+  --primary: #356ae6;
+  --primary-hover: #2a58c9;
+  --primary-foreground: #ffffff;
+  --primary-soft: #ebf1fd;
+  --accent: #6d9eff;
+  --accent-foreground: #101b35;
+
+  --muted: #eef2f8;
+  --muted-foreground: #68748a;
+  --border: #e5eaf2;
+  --border-strong: #cfd7e4;
+  --input: #d7deea;
+  --ring: #356ae6;
+
+  --success: #16a36a;
+  --success-soft: #e7f6ef;
+  --warning: #e9a23b;
+  --warning-soft: #fdf3e2;
+  --warning-foreground: #8a5a12;
+  --destructive: #dc5353;
+  --destructive-soft: #fcecec;
+  --destructive-foreground: #ffffff;
+
+  --sidebar: #101b35;
+  --sidebar-foreground: #c9d3e6;
+  --sidebar-active: #1d2d52;
+  --sidebar-active-foreground: #ffffff;
+
+  --shadow-overlay: 0 12px 32px -8px rgb(16 27 53 / 0.18), 0 2px 6px -2px rgb(16 27 53 / 0.08);
+}
+
+.dark {
+  --background: #101827;
+  --foreground: #e8ecf5;
+  --surface: #16213a;
+  --card: #16213a;
+  --card-foreground: #e8ecf5;
+  --popover: #1a2742;
+  --popover-foreground: #e8ecf5;
+
+  --primary: #5b87f0;
+  --primary-hover: #7399f3;
+  --primary-foreground: #0b1222;
+  --primary-soft: #1d2c4f;
+  --accent: #6d9eff;
+
+  --muted: #1c2843;
+  --muted-foreground: #93a0b8;
+  --border: #26324d;
+  --border-strong: #34425f;
+  --input: #34425f;
+  --ring: #6d9eff;
+
+  --success: #2fbf84;
+  --success-soft: #133328;
+  --warning: #f0b45a;
+  --warning-soft: #3a2c14;
+  --warning-foreground: #f0b45a;
+  --destructive: #e66b6b;
+  --destructive-soft: #3b1d22;
+
+  --sidebar: #0b1222;
+  --sidebar-active: #1a2742;
+
+  --shadow-overlay: 0 12px 32px -8px rgb(0 0 0 / 0.5);
 }
 
 @theme inline {
+  --color-navy-900: var(--navy-900);
+  --color-navy-800: var(--navy-800);
+  --color-navy-700: var(--navy-700);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-surface: var(--surface);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary-soft: var(--primary-soft);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-success: var(--success);
+  --color-success-soft: var(--success-soft);
+  --color-warning: var(--warning);
+  --color-warning-soft: var(--warning-soft);
+  --color-warning-foreground: var(--warning-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-soft: var(--destructive-soft);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-active: var(--sidebar-active);
+  --color-sidebar-active-foreground: var(--sidebar-active-foreground);
+
+  --font-sans: 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-geist-sans), 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
+
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 10px;
+  --radius-xl: 14px;
+
+  --shadow-overlay: var(--shadow-overlay);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  * {
+    border-color: var(--border);
+  }
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+  }
+  body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans);
+    font-feature-settings: 'cv11', 'ss01';
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3 {
+    font-family: var(--font-display);
+    letter-spacing: -0.015em;
+  }
+  :focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 2px;
+  }
+  ::selection {
+    background: color-mix(in srgb, var(--primary) 22%, transparent);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer utilities {
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+  .reading {
+    font-size: 1rem;
+    line-height: 1.65;
+    max-width: 68ch;
+  }
+}
+
+/* KaTeX: inherit text color and avoid overflow on narrow screens */
+.katex {
+  font-size: 1.05em;
+}
+.katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.25rem 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
