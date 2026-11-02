@@ -1,0 +1,157 @@
+{
+  "slug": "boundaries-punctuation",
+  "kind": "skill",
+  "skill": "boundaries",
+  "position": 27,
+  "readingMinutes": 11,
+  "locales": {
+    "uz": {
+      "title": "Gap chegaralari va tinish belgilari (Boundaries)",
+      "summary": "Mustaqil gaplarni qanday ulash, nuqta, vergul, nuqtali vergul, ikki nuqta va tire qachon kerakligi, qo‘shimcha (nonessential) qismlarni ajratish — Standard English Conventions savollarining tinish belgilariga oid qismi uchun ixcham qoidalar kitobi.",
+      "sections": [
+        {
+          "type": "concept",
+          "heading": "Qoidalar kitobi (1-qism): gaplarni ulash",
+          "body": "Boundaries savollari bitta narsani tekshiradi: gap qismlari tutashgan joyda **qaysi tinish belgisi** kerak (yoki umuman belgi kerak emas). Barcha qoidalar bitta tushunchaga tayanadi:\n\n**Mustaqil gap (independent clause)** — egasi va kesimi bor, yolg‘iz o‘zi to‘liq gap bo‘la oladi: *The museum reopened.* **Ergash gap (dependent clause)** — *because, although, when, which, who* kabi so‘z bilan boshlanadi va yolg‘iz tura olmaydi: *because the roof was repaired.*\n\n**1-qoida. Ikki mustaqil gapni ulashning to‘g‘ri usullari:**\n\n- nuqta: *The rain stopped. The match resumed.*\n- nuqtali vergul: *The rain stopped; the match resumed.*\n- vergul + teng bog‘lovchi (FANBOYS: *for, and, nor, but, or, yet, so*): *The rain stopped, so the match resumed.*\n- ikki nuqta yoki tire — ikkinchi gap birinchisini izohlasa: *The match resumed for one reason: the rain had stopped.*\n\nNoto‘g‘ri: **comma splice** — faqat vergul bilan ulash (*The rain stopped, the match resumed.*) va **run-on** — hech qanday belgisiz ulash (*The rain stopped the match resumed.*).\n\n**2-qoida. However, therefore kabi so‘zlar bog‘lovchi emas.** *However, therefore, moreover, consequently, for example, in fact* ikki mustaqil gap orasida kelsa, ulardan oldin nuqta yoki nuqtali vergul, keyin esa vergul qo‘yiladi: *The rain stopped; however, the field was still wet.* Faqat vergullar bilan (*The rain stopped, however, the field was still wet.*) — bu comma splice.\n\n**3-qoida. Nuqtali vergul — nuqta kuchida.** Uning ikki tomonida ham mustaqil gap bo‘lishi shart: ✗ *Although the rain stopped; the field was wet.* (Yagona istisno: elementlari ichida vergul bor murakkab ro‘yxat.)\n\n**4-qoida. Ikki nuqtadan (colon) oldin to‘liq gap turishi shart**, undan keyin esa izoh, ro‘yxat yoki misol keladi: ✓ *She packed three tools: a compass, a map, and a flashlight.* ✗ *She packed: a compass, a map, and a flashlight.* ✗ *She packed tools such as: a compass and a map.*\n\n**5-qoida. Qo‘shimcha (nonessential) ma’lumot juft belgi bilan ajratiladi:** ikki vergul, ikki tire yoki qavs — lekin aralashtirmasdan. ✓ *The bridge, which opened in 1932, is still in use.* ✓ *The bridge—completed in 1932—is still in use.* ✗ *The bridge, completed in 1932—is still in use.* Tekshiruv: ajratilgan qismni olib tashlang — qolgan gap to‘liq va to‘g‘ri bo‘lishi kerak."
+        },
+        {
+          "type": "recognize",
+          "heading": "Savolni qanday tanib olasiz",
+          "items": [
+            "Savol so‘zi deyarli har doim bir xil: *“Which choice completes the text so that it conforms to the conventions of Standard English?”*",
+            "**Variantlardagi so‘zlar bir xil, faqat tinish belgilari farq qiladi** — masalan, *tank, however,* / *tank; however,* / *tank however*. Bu Boundaries savoli. Agar so‘zning shakli o‘zgarsa (*is / are*, *its / their*), bu Form, Structure, and Sense savoli.",
+            "Bo‘sh joy ko‘pincha gap qismlari **tutashgan joyda** turadi: ikki mustaqil gap orasida, ism yoki unvon yonida, uzun ega bilan kesim orasida yoki *however, therefore* kabi so‘z yonida.",
+            "Bo‘sh joydan oldin vergul yoki tire bilan boshlangan qo‘shimcha qism bo‘lsa — bu juft belgini yopish haqidagi savol bo‘lishi ehtimoli katta."
+          ]
+        },
+        {
+          "type": "method",
+          "heading": "Ishlash usuli: qadamma-qadam",
+          "steps": [
+            "**Butun gapni o‘qing**, faqat bo‘sh joy atrofini emas. Ba’zan kerakli ishora (ochilgan vergul yoki tire) gap boshida bo‘ladi.",
+            "**Bo‘sh joydan chapdagi va o‘ngdagi qismni tekshiring:** har biri yolg‘iz o‘zi to‘liq gap (mustaqil gap) bo‘la oladimi?",
+            "**Ikkalasi ham mustaqil bo‘lsa** — nuqta, nuqtali vergul, vergul + FANBOYS yoki (ikkinchi qism izoh bo‘lsa) ikki nuqta kerak. Faqat vergul qo‘yilgan yoki belgisiz variantlarni darhol o‘chiring.",
+            "**Bittasi mustaqil bo‘lmasa** — nuqtali vergul va nuqta mumkin emas. Vergul kerakmi yoki umuman belgi kerak emasmi — buni 5–11-qoidalar bo‘yicha aniqlang.",
+            "**Juftlikni tekshiring:** gapda qo‘shimcha qism vergul (yoki tire) bilan ochilgan bo‘lsa, u aynan shu belgi bilan yopilishi kerak.",
+            "**Bir xil vazifadagi variantlarni o‘chiring.** Ikki variant grammatik jihatdan bir xil ishlasa (masalan, ikki mustaqil gap orasida nuqta va nuqtali vergul), to‘g‘ri javob faqat bitta bo‘lgani uchun ikkalasi ham javob emas.",
+            "**Tanlagan variantingiz bilan gapni boshidan oxirigacha bir marta o‘qing** — u to‘liq va mantiqli bo‘lishi kerak."
+          ]
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 1: ikki mustaqil gap va however",
+          "example": {
+            "passage": "Marine biologist Lena Ortiz expected the coral fragments in her experiment to grow fastest in the warmest ______ the fragments kept in the coolest tank grew nearly twice as quickly.",
+            "problem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+            "choices": ["tank, however,", "tank however", "tank; however,", "tank, however;"],
+            "solution": [
+              "Bo‘sh joyning ikki tomonini tekshiramiz. Chap tomon: *Marine biologist Lena Ortiz expected the coral fragments… to grow fastest in the warmest tank* — mustaqil gap. O‘ng tomon: *the fragments kept in the coolest tank grew nearly twice as quickly* — bu ham mustaqil gap.",
+              "Demak, ikki mustaqil gapni ulash kerak. *However* bog‘lovchi emas, shuning uchun undan oldin nuqtali vergul, keyin vergul qo‘yiladi: *tank; however, the fragments…* — **C**.",
+              "**A** (*tank, however,*) — ikki mustaqil gap faqat vergullar bilan ulangan: bu comma splice.",
+              "**B** (*tank however*) — hech qanday belgi yo‘q: run-on gap.",
+              "**D** (*tank, however;*) — nuqtali vergul *however* dan keyin kelgani uchun bu so‘z birinchi gapga yopishib qoladi. Lekin zidlik ikkinchi gapda (kutilgan natijaga qarshi natija), shuning uchun *however* ikkinchi gapni boshlashi kerak."
+            ],
+            "answer": "C) tank; however,"
+          }
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 2: qo‘shimcha qismni yopish",
+          "example": {
+            "passage": "Ceramic artist Malika Yusupova, whose blue glazes are made with ash from plants that grow near her ______ sells her bowls at a weekly market in Rishton.",
+            "problem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+            "choices": ["home—", "home;", "home", "home,"],
+            "solution": [
+              "Gapning egasi *Ceramic artist Malika Yusupova*, kesimi *sells*. Ular orasida vergul bilan **ochilgan** qo‘shimcha qism bor: *whose blue glazes are made with ash from plants that grow near her home*.",
+              "Qo‘shimcha qism qaysi belgi bilan ochilgan bo‘lsa, shu belgi bilan yopiladi. Ochilish — vergul, demak yopilish ham vergul: *home, sells* — **D**. Tekshiruv: qo‘shimcha qismni olib tashlasak, *Ceramic artist Malika Yusupova sells her bowls…* — to‘liq gap ✓.",
+              "**A** (*home—*) — vergul bilan ochilib, tire bilan yopilgan: juftlik buzilgan.",
+              "**B** (*home;*) — nuqtali vergul ikki tomonda mustaqil gap talab qiladi, bu yerda esa u ega bilan kesimni ajratib qo‘ygan.",
+              "**C** (*home*) — qo‘shimcha qism yopilmagan; gap go‘yo *her home sells her bowls* (“uyi kosalarini sotadi”) degandek o‘qiladi."
+            ],
+            "answer": "D) home,"
+          }
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 3: uzun ega va kesim",
+          "example": {
+            "passage": "The hundreds of small sensors attached to the bridge's steel ______ data about vibrations to a central computer every second, allowing engineers to spot problems early.",
+            "problem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+            "choices": ["cables send", "cables, send", "cables; send", "cables: send"],
+            "solution": [
+              "Ega — *The hundreds of small sensors attached to the bridge's steel cables* (uzun, lekin bitta ega), kesim — *send*.",
+              "Ega va kesim orasiga hech qanday tinish belgisi qo‘yilmaydi (6-qoida), ega qanchalik uzun bo‘lmasin. To‘g‘ri javob — **A**: *cables send*.",
+              "**B** (*cables, send*) — ega va kesim orasida ortiqcha vergul. O‘qiganda “pauza” sezilsa ham, vergul pauza uchun emas, grammatika uchun qo‘yiladi.",
+              "**C** (*cables; send*) — nuqtali vergul ikki tomonda mustaqil gap talab qiladi; chap tomonda kesim yo‘q.",
+              "**D** (*cables: send*) — ikki nuqtadan oldin to‘liq gap bo‘lishi kerak; bu yerda u ega bilan kesimni ajratib qo‘ygan."
+            ],
+            "answer": "A) cables send"
+          }
+        },
+        {
+          "type": "watch_out",
+          "heading": "Qoidalar kitobi (2-qism): nimaga e’tibor berish kerak",
+          "items": [
+            "**6-qoida. Ega va kesim orasiga belgi qo‘yilmaydi**, ega qanchalik uzun bo‘lmasin: ✗ *The results of the two-year survey, were surprising.* ✓ *The results of the two-year survey were surprising.* Xuddi shunday, kesim va to‘ldiruvchi, predlog va undan keyingi so‘z orasida ham vergul bo‘lmaydi.",
+            "**7-qoida. Zarur (essential) ma’lumot ajratilmaydi.** Qism qaysi narsa haqida gap ketayotganini aniqlab bersa, vergulsiz yoziladi: *The students who finished early left.* (faqat erta tugatganlar ketdi). *That* bilan boshlangan qism hech qachon vergul bilan ajratilmaydi.",
+            "**8-qoida. Kasb yoki unvon + ism — vergulsiz:** *the biologist Rachel Carson*, *the novelist Abdulla Qodiriy*. Lekin ism oldin kelib, izoh qo‘shimcha bo‘lsa — juft vergul: *Abdulla Qodiriy, an Uzbek novelist, wrote…*",
+            "**9-qoida. Kirish qismidan keyin vergul:** gap ergash gap yoki uzun ibora bilan boshlansa, asosiy gapdan oldin vergul qo‘yiladi: *When the rain stopped, the match resumed.* Teskari tartibda odatda vergul kerak emas: *The match resumed when the rain stopped.*",
+            "**10-qoida. Bitta ega, ikki kesim — vergulsiz:** *She measured the samples and recorded the results.* Ikkinchi qismning o‘z egasi bo‘lsa — vergul + *and*: *She measured the samples, and her partner recorded the results.*",
+            "**11-qoida. Ro‘yxat:** elementlar vergul bilan ajratiladi; elementlarning o‘zida vergul bo‘lsa, ular nuqtali vergul bilan ajratiladi: *Tashkent, Uzbekistan; Almaty, Kazakhstan; and Bishkek, Kyrgyzstan.*",
+            "**12-qoida. Bitta tire ikki nuqta kabi, juft tire juft vergul kabi ishlaydi.** Gap oxiridagi izohdan oldin bitta tire: *She had one goal—to finish the race.*",
+            "**13-qoida. Gap oxiri:** savol belgisi faqat to‘g‘ridan-to‘g‘ri savolda qo‘yiladi: *Why did the bridge fail?* Bilvosita savol nuqta bilan tugaydi: *The engineers asked why the bridge had failed.*",
+            "**Apostrof va egalik shakllari** (*its / it's*, *scientist's / scientists'*) “Form, Structure, and Sense” qo‘llanmasida batafsil yoritilgan."
+          ]
+        },
+        {
+          "type": "traps",
+          "heading": "Keng tarqalgan xatolar (tuzoq variantlar)",
+          "items": [
+            "**Comma splice “tabiiy” eshitiladi.** Og‘zaki nutqda ikki gapni ko‘pincha vergul bilan ulaymiz, shuning uchun bu variant to‘g‘ri bo‘lib tuyuladi. Har doim ikki tomonni “mustaqil gapmi?” deb tekshiring.",
+            "**However va therefore faqat vergullar bilan** — eng ko‘p uchraydigan tuzoq. Ular ikki mustaqil gap orasida kelsa, oldidan nuqtali vergul yoki nuqta kerak.",
+            "**Tugallanmagan qism oldida nuqtali vergul:** *Although the samples were small; the results…* — chap tomon ergash gap, nuqtali vergul mumkin emas.",
+            "**To‘liq bo‘lmagan gapdan keyin ikki nuqta:** *such as:*, *including:*, *are:* — ikki nuqtadan oldin to‘liq gap bo‘lishi shart.",
+            "**Aralash juftlik:** vergul bilan ochilib, tire yoki qavs bilan yopilgan qism (Namuna 2 dagi A).",
+            "**“Pauza” vergullari:** ega va kesim, kesim va to‘ldiruvchi orasidagi yoki *that* oldidagi ortiqcha vergul. O‘qiganda pauza bo‘lgani uchun to‘g‘ri tuyuladi, lekin bu xato (Namuna 3 dagi B)."
+          ]
+        },
+        {
+          "type": "time",
+          "heading": "Vaqt bo‘yicha maslahat",
+          "items": [
+            "Reading and Writing bo‘limida har bir savolga o‘rtacha taxminan 71 soniya bor. Boundaries savollari qisqa — **30–45 soniyada** yechishga harakat qiling va tejagan vaqtni uzun matnli savollarga qoldiring.",
+            "Matn odatda bir-ikki gapdan iborat: bo‘sh joy turgan gapni (kerak bo‘lsa, oldingi gapni ham) diqqat bilan o‘qing.",
+            "**Option Eliminator** vositasi bilan aniq noto‘g‘ri variantlarni chizib qo‘ying — to‘rt variantdan ikkitasi odatda 10 soniyada tushib qoladi.",
+            "Ikki variant orasida ikkilansangiz, qoidani nomlang: “ikki mustaqil gap bormi?”, “juft belgi yopildimi?”. Qulog‘ingizga qanday eshitilishiga qarab emas, qoidaga qarab tanlang."
+          ]
+        },
+        {
+          "type": "terms",
+          "heading": "Muhim inglizcha atamalar",
+          "terms": [
+            { "term": "independent clause", "meaning": "mustaqil gap — egasi va kesimi bor, yolg‘iz tura oladi" },
+            { "term": "dependent clause", "meaning": "ergash gap — *because, although, which* kabi so‘z bilan boshlanadi, yolg‘iz tura olmaydi" },
+            { "term": "comma splice", "meaning": "ikki mustaqil gapni faqat vergul bilan ulash xatosi" },
+            { "term": "run-on sentence", "meaning": "ikki mustaqil gapni hech qanday belgisiz ulash xatosi" },
+            { "term": "coordinating conjunction (FANBOYS)", "meaning": "teng bog‘lovchilar: *for, and, nor, but, or, yet, so*" },
+            { "term": "conjunctive adverb", "meaning": "bog‘lovchi vazifasidagi ravish: *however, therefore, moreover* — bog‘lovchi emas, ikki gap orasida nuqtali vergul talab qiladi" },
+            { "term": "nonessential (nonrestrictive) element", "meaning": "qo‘shimcha qism — olib tashlansa ham gapning asosiy ma’nosi saqlanadi; juft belgi bilan ajratiladi" },
+            { "term": "essential (restrictive) element", "meaning": "zarur qism — qaysi narsa ekanini aniqlaydi; vergulsiz yoziladi" },
+            { "term": "semicolon / colon", "meaning": "nuqtali vergul (;) / ikki nuqta (:)" },
+            { "term": "dash", "meaning": "tire (—): bittasi ikki nuqta kabi, jufti juft vergul kabi ishlaydi" }
+          ]
+        },
+        {
+          "type": "checklist",
+          "heading": "Javobni tanlashdan oldin tekshiring",
+          "items": [
+            "Bo‘sh joyning ikki tomonida mustaqil gap bormi — buni tekshirdimmi?",
+            "Ochilgan vergul yoki tire xuddi shu belgi bilan yopildimi?",
+            "Ega va kesim (yoki kesim va to‘ldiruvchi) orasida ortiqcha belgi qolmadimi?",
+            "Tanlagan variantim bilan butun gapni o‘qib chiqdimmi?"
+          ]
+        }
+      ]
+    }
+  }
+}

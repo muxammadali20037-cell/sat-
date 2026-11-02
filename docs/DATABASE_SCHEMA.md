@@ -135,3 +135,14 @@ scripts/db/test-db.sh reset --seed # Supabase shim + all migrations + dev seed
 npm run db:types                   # regenerate src/types/database.ts
 npm run test:db                    # RLS / function integration tests
 ```
+
+
+## Study guides (migration 0013, content 0014)
+
+| Table | Purpose | Access |
+|---|---|---|
+| `guides` | One row per guide: `slug`, `kind` (`skill` \| `strategy`), `skill_id` (one live guide per skill), `subject_id`, `position`, `reading_minutes`, `status` | Students read published; content managers write; publish guard requires content |
+| `guide_contents` | Per-locale `title`, `summary`, `sections` (jsonb, validated by `src/features/guides/schema.ts`) | Students read content of published guides; content managers write |
+| `guide_reads` | `(user_id, guide_id)` read marks | Students read/insert/delete their own, for published guides only |
+
+Both content tables carry the audit trigger. See [GUIDES.md](GUIDES.md).

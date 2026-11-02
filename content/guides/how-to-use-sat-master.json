@@ -1,0 +1,169 @@
+{
+  "slug": "how-to-use-sat-master",
+  "kind": "strategy",
+  "subject": null,
+  "position": 1,
+  "readingMinutes": 14,
+  "locales": {
+    "uz": {
+      "title": "SAT MASTER’dan qanday foydalanish",
+      "summary": "Qayerdan boshlash va platformaning har bir bo‘limi nima uchun kerakligi: bepul diagnostika → natijalar → o‘quv reja → darslar → ko‘nikma bo‘yicha mashq → qo‘llanmalar → AI ustoz → har ikki haftada sinov imtihoni → tahlil. 8 haftalik reja va 30, 60, 90 daqiqalik kunlik tartib bilan.",
+      "sections": [
+        {
+          "type": "concept",
+          "heading": "SAT MASTER qanday ishlaydi",
+          "body": "SAT MASTER — shunchaki video darslar to‘plami emas, balki yopiq o‘quv sikli: **aniqlash → o‘rganish → mashq → o‘lchash → moslashtirish**. Har bir qadam keyingisi uchun ma’lumot beradi:\n\n- **Diagnostika** qaysi ko‘nikmalaringiz zaif ekanini ko‘rsatadi.\n- **O‘quv reja** vaqtingizni aynan shu ko‘nikmalarga taqsimlaydi.\n- **Darslar** va **qo‘llanmalar** mavzuni tushuntiradi, **Mashq** esa uni mustahkamlaydi.\n- **Sinov imtihonlari** umumiy holatingizni o‘lchaydi, **Tahlil** esa nimani o‘zgartirish kerakligini ko‘rsatadi.\n\nSavollar va matnlar haqiqiy testdagidek ingliz tilida, menyular, izohlar va maslahatlar esa o‘zbek tilida.\n\n**Muhim:** platformadagi barcha darajalar va taxminiy ballar SAT MASTER’ning o‘z hisob-kitobidir — College Board’ning rasmiy bali emas. Biz hech qachon ma’lum bir ballni kafolatlamaymiz: natija muntazam mehnatingizga bog‘liq."
+        },
+        {
+          "type": "method",
+          "heading": "Yo‘l xaritasi: qayerdan boshlash va keyin nima qilish",
+          "steps": [
+            "**Profilingizni sozlang.** Ro‘yxatdan o‘tgach, 7 qadamli sozlash ochiladi: ism, interfeys tili, tayyorgarlik darajasi, maqsadli ball (400–1600), imtihon sanasi, kunlik o‘qish vaqti va fanlar. Kunlik vaqtni real belgilang: har kuni 30 daqiqa haftada bir marta 4 soat o‘qishdan samaraliroq. Bu javoblarni keyin **Sozlamalar**da o‘zgartirishingiz mumkin.",
+            "**Bepul diagnostikadan o‘ting** (**Diagnostika** bo‘limi). U barcha tariflarda bepul. Uch variant bor: ikkala bo‘lim bo‘yicha to‘liq diagnostika (taxminan 25 daqiqa), faqat Matematika (taxminan 20 daqiqa) yoki faqat O‘qish va yozish (taxminan 15 daqiqa). Qaysi birini tanlashni bilmasangiz — to‘liq diagnostikani tanlang.",
+            "**Natijalaringizni o‘qing:** har bir bo‘lim bo‘yicha daraja, eng zaif ko‘nikmalar va tavsiya etilgan darslar (quyida batafsil).",
+            "**O‘quv rejani tuzing** — natijalar sahifasidagi **O‘quv rejamni tuzish** tugmasi yoki **O‘quv reja** bo‘limi orqali (Starter, Pro va Premium tariflarida). Shundan keyin har kuni **Bosh sahifa**dagi “Bugungi o‘quv reja”dan boshlaysiz.",
+            "**Darslarni ko‘ring** (**Kurslar**): eng zaif ko‘nikmadan boshlang. Dars konspektini o‘qing va dars oxiridagi “Bu ko‘nikmani mashq qiling” havolasiga o‘ting.",
+            "**Ko‘nikma bo‘yicha mashq qiling** (**Mashq**): bitta ko‘nikma, bitta qiyinlik darajasi, 10–15 ta savol. Har bir javobdan keyin izohni o‘qing.",
+            "**Zaif ko‘nikma bo‘yicha qo‘llanmani o‘qing:** unda savolni qanday tanib olish, qadamma-qadam usul, tuzoqlar va kerakli inglizcha atamalar bor. Mashqda 60% dan past natija bergan ko‘nikmaning qo‘llanmasini qayta o‘qing.",
+            "**Tushunmagan joyingizni AI ustozdan so‘rang:** mashqdagi **AI ustozdan so‘rash** tugmasi savolni ustozga o‘zi olib boradi.",
+            "**Har ikki haftada bitta sinov imtihonini topshiring** (**Sinov imtihonlari**) — to‘liq, vaqtli va bir o‘tirishda. Ertasi kuni natijani tahlil qiling.",
+            "**Haftada bir marta Tahlil bo‘limini ko‘ring** va kerak bo‘lsa, rejani qayta tuzing. Keyin sikl 5-qadamdan yana davom etadi."
+          ]
+        },
+        {
+          "type": "note",
+          "heading": "Diagnostika natijalarini qanday o‘qish",
+          "body": "Natijalar sahifasida har bir bo‘lim (masalan, Algebra yoki Craft and Structure) uchun aniqlik va daraja ko‘rsatiladi:\n\n- **Boshlang‘ich** — 40% dan past\n- **Rivojlanayotgan** — 40–59%\n- **Yaxshi** — 60–79%\n- **Yuqori** — 80% va undan yuqori\n\nUndan keyin “Ustida ishlash kerak bo‘lgan ko‘nikmalar” (eng past aniqlikdagilar) va “Boshlash uchun tavsiya etilgan darslar” keladi. “Savollarni ko‘rib chiqish” qismida har bir savolning to‘g‘ri javobi va izohi bor — xato qilgan savollaringizni albatta o‘qib chiqing.\n\nYodda tuting: diagnostika qisqa (to‘liq variantda har bir bo‘limdan atigi 2 ta savol), shuning uchun u hukm emas, balki boshlang‘ich nuqta. Bitta tasodifiy xato darajani o‘zgartirib yuborishi mumkin. Aniqroq rasm mashq va sinov imtihonlaridan keyin shakllanadi; bir necha haftadan so‘ng diagnostikani qayta topshirib, o‘zgarishni ko‘rishingiz ham mumkin.\n\nDiagnostika ball bermaydi: taxminiy ball oralig‘ini sinov imtihoni ko‘rsatadi. Diagnostika natijasi “SAT MASTER ichki diagnostikasi — rasmiy ball emas” deb belgilangan."
+        },
+        {
+          "type": "note",
+          "heading": "Platformaning har bir bo‘limi nima uchun kerak",
+          "items": [
+            "**Bosh sahifa** — har kungi boshlash nuqtasi: ketma-ket kunlar, aniqlik, o‘qish vaqti, “O‘qishni davom ettirish”, “Bugungi o‘quv reja”, “Tavsiya etilgan mashqlar”, “Zaif ko‘nikmalar” va maqsadli ballingiz.",
+            "**Kurslar** — Matematika va O‘qish va yozish bo‘yicha ko‘nikmalarga ajratilgan qisqa video va matnli darslar. Video dars faqat haqiqatan ko‘rilgan qismi 90% ga yetganda tugallangan hisoblanadi: oldinga o‘tkazib yuborilgan qism hisobga olinmaydi. Matnli darsda konspektni yetarlicha vaqt o‘qish kerak.",
+            "**Mashq** — ko‘nikma, qiyinlik va savollar soni bo‘yicha o‘zingiz tuzadigan mashq, muharrirlar tayyorlagan “Mashqlar to‘plami”, xatolarni qayta ishlash va saqlangan savollar. Har bir javobdan keyin to‘g‘ri javob va izoh darhol ko‘rsatiladi.",
+            "**Diagnostika** — darajangizni aniqlaydigan qisqa vaqtli test. Javoblar va izohlar test yakunlangandan keyin ochiladi.",
+            "**Sinov imtihonlari** — to‘liq, vaqtli Digital SAT simulyatsiyasi: moslashuvchan ikkinchi modullar, bo‘limlar orasida ixtiyoriy 10 daqiqalik tanaffus va taxminiy ball oralig‘i.",
+            "**AI ustoz** — tushunchalar haqida savol berish, darajali maslahatlar va javob bergandan keyin bosqichma-bosqich tushuntirish.",
+            "**O‘quv reja** — natijalaringiz, imtihon sanasi va kunlik vaqtingiz asosida tuzilgan kunma-kun jadval.",
+            "**Tahlil** — bo‘lim va ko‘nikmalar bo‘yicha aniqlik, har bir savolga sarflangan o‘rtacha vaqt va vaqt o‘tishi bilan o‘zgarish.",
+            "**Natijalar** — barcha mashqlar, diagnostikalar va sinov imtihonlari ro‘yxati; har birini ochib, savollarni izohlari bilan qayta ko‘rish mumkin.",
+            "**Saqlanganlar** — keyinroq qaytish uchun saqlagan savol va darslaringiz. Saqlangan savollarni alohida mashq sifatida ishlash mumkin.",
+            "**Obuna** — tarifingiz va limitlaringiz; **Sozlamalar** — imtihon sanasi, kunlik vaqt, maqsadli ball va interfeys tili.",
+            "**O‘zbekcha qo‘llanma** — siz hozir o‘qiyotgan bo‘lim: har bir ko‘nikma bo‘yicha o‘zbekcha qo‘llanmalar va test strategiyasi. Darsda, mashqdagi javobdan keyin va natijalar sahifasida shu mavzuning qo‘llanmasiga havola chiqadi."
+          ]
+        },
+        {
+          "type": "method",
+          "heading": "Mashq bo‘limida samarali ishlash",
+          "steps": [
+            "**Bitta ko‘nikmani tanlang:** Fan → Bo‘lim → Ko‘nikma → Qiyinlik → Savollar soni. Avval siz hali ko‘rmagan savollar, keyin xato qilganlaringiz beriladi.",
+            "**Qiyinlikni bosqichma-bosqich oshiring:** yangi ko‘nikmani **Oson** yoki **O‘rtacha** bilan boshlang; aniqlik 80% dan oshgach **Qiyin**ga o‘ting; imtihonga yaqinlashganda **Aralash**ni tanlang.",
+            "**Har bir izohni o‘qing** — to‘g‘ri javob bergan savollarnikini ham. Taxmin bilan topilgan to‘g‘ri javob — yashirin zaiflik.",
+            "**Qiyin yoki xato savolni saqlang** (**Savolni saqlash**). Izohni tushunmasangiz, **AI ustozdan so‘rash** tugmasini bosing.",
+            "**Mashq oxirida natijalarni ko‘ring:** ko‘nikmalar bo‘yicha aniqlik va har bir savolga sarflangan vaqt.",
+            "**2–3 kundan keyin** “Xatolarni qayta ishlash” orqali xato qilgan savollaringizni qayta yeching — bilimni xotirada mustahkamlashning eng ishonchli yo‘li shu."
+          ]
+        },
+        {
+          "type": "method",
+          "heading": "AI ustozdan to‘g‘ri foydalanish",
+          "steps": [
+            "**Avval o‘zingiz urinib ko‘ring.** O‘zingiz o‘ylab ko‘rmagan savolning tushuntirishi tez unutiladi.",
+            "**Qotib qolsangiz — maslahat so‘rang.** Maslahatlar 1–3-darajali: har bir daraja biroz chuqurroq yordam beradi, lekin javobni aytmaydi. Mashqdagi savol bo‘yicha maslahatni javob berishdan oldin ham olish mumkin.",
+            "**Javob bergandan keyin — to‘liq tushuntirish.** “Bu savolni tushuntiring” tushuncha, xatoingiz, bosqichma-bosqich yechim va javobni beradi. Yakunlangan diagnostika va sinov imtihonlarining natijalar sahifasidan ham so‘rash mumkin.",
+            "**O‘z yechimingizni tekshirtiring:** “Xatoimni toping”ni tanlab, yechimingizni yozing — ustoz xato qayerda ekanini ko‘rsatadi.",
+            "**Tushunmasangiz — boshqacha so‘rang:** “Boshqacha tushuntiring” yoki “Soddaroq”.",
+            "**Mustahkamlang:** “O‘xshash savol yaratish” yangi savol tuzadi. U sizga ko‘rsatilishidan oldin ikkinchi mustaqil yechim bilan tekshiriladi, lekin muharrirlar ko‘rib chiqmagani uchun alohida belgi bilan beriladi.",
+            "**Cheklovlarni biling:** diagnostika yoki sinov imtihoni davomida AI ustoz bu savollar haqida gapirmaydi — avval testni yakunlang. Kunlik so‘rovlar soni tarifga bog‘liq, shuning uchun avval platformadagi izohni o‘qing va ustozdan faqat tushunmagan joyingizni so‘rang."
+          ]
+        },
+        {
+          "type": "note",
+          "heading": "O‘quv reja qanday tuziladi",
+          "body": "O‘quv reja (Starter, Pro va Premium tariflarida) diagnostika va mashqdagi aniqligingiz, imtihon sanasi, kunlik o‘qish vaqti va tanlangan fanlar asosida tuziladi. Asosiy qoidalar:\n\n- Vaqt bo‘limlar orasida **aniqligingiz qanchalik past** va **bo‘limning SATdagi ulushi qanchalik katta** ekaniga qarab taqsimlanadi.\n- Oddiy kunda ko‘pi bilan bitta dars, keyin 15–25 daqiqalik mashq bloklari bo‘ladi.\n- Har yettinchi kun noto‘g‘ri javoblarni takrorlash bilan boshlanadi.\n- Oxirgi olti haftada har ikki haftada bitta to‘liq sinov imtihoni rejalashtiriladi (imtihondan 38, 24 va 10 kun oldin), agar platformada chop etilgan sinov imtihoni bo‘lsa.\n- Imtihondan oldingi oxirgi uch kun — faqat yengil takrorlash.\n- Imtihon sanasi belgilanmagan bo‘lsa, reja 8 haftaga (56 kun) tuziladi.\n\nMashq vazifasi shu ko‘nikma bo‘yicha belgilangan sondagi savolga javob berganingizda, dars vazifasi esa darsni tugatganingizda avtomatik bajariladi. Maqsadli ball, imtihon sanasi yoki kunlik vaqt o‘zgarsa, **Rejani qayta tuzish** tugmasini bosing — yangi reja so‘nggi natijalaringizni hisobga oladi.\n\nBepul tarifda o‘quv reja yo‘q: quyidagi 8 haftalik reja va kunlik tartibga o‘zingiz amal qiling."
+        },
+        {
+          "type": "note",
+          "heading": "Sinov imtihonini topshirish va tahlil qilish",
+          "items": [
+            "**Real sharoit yarating:** imtihonni bir o‘tirishda, telefonsiz, tinch joyda topshiring. To‘liq imtihon tanaffussiz 2 soat 14 daqiqa davom etadi, bo‘limlar orasida esa ixtiyoriy 10 daqiqalik tanaffus bor.",
+            "**Taymer serverda ishlaydi:** sahifani yopsangiz ham modul vaqti to‘xtamaydi, vaqt tugaganda esa modul avtomatik topshiriladi. Javoblar darhol saqlanadi.",
+            "**Vositalardan foydalaning:** ko‘rib chiqish uchun belgilash, variantlarni o‘chirish, savollar navigatori, Matematikada grafik kalkulyator va formulalar ma’lumotnomasi. Batafsil — “Test ilovasidagi vositalar” qo‘llanmasida.",
+            "**Ikkinchi modul moslashadi:** 1-moduldagi natijangizga qarab 2-modul qiyinroq yoki osonroq bo‘ladi. Yo‘naltirish SAT MASTER’ning o‘z chegara qoidasiga asoslanadi va natijalar sahifasida tushuntiriladi.",
+            "**Taxminiy ball oralig‘i** har bir bo‘lim uchun ±40, jami uchun ±80 ball oralig‘ida ko‘rsatiladi. Formula ochiq — natijalar sahifasidagi “Qanday hisoblaymiz” qismida. Bu SAT MASTER bahosi, College Board’ning rasmiy bali emas: uni mashq signali sifatida qabul qiling.",
+            "**Ertasi kuni tahlil qiling:** har bir xatoni uch turdan biriga ajrating — *bilim yetishmadi* (dars va qo‘llanmaga qayting), *e’tiborsizlik* (savolni oxirigacha o‘qish va tekshirish odatini kuchaytiring), *vaqt yetmadi* (“Vaqtni boshqarish va taxmin qilish” qo‘llanmasi). Keyin rejani qayta tuzing.",
+            "**Tarif bo‘yicha limit:** Starter tarifida oyiga 1 ta, Pro’da 4 ta sinov imtihoni bor, Premium’da cheklanmagan, bepul tarifda esa sinov imtihonlari yo‘q. Starter’da imtihonlarni imtihon sanasiga yaqinroq haftalarga saqlang, oraliq haftalarda esa aralash qiyinlikdagi uzunroq mashqni vaqtni kuzatib ishlang."
+          ]
+        },
+        {
+          "type": "note",
+          "heading": "Tahlil bo‘limini qanday o‘qish",
+          "items": [
+            "**Bo‘lim va ko‘nikmalar bo‘yicha aniqlik** — “Avval eng zaiflari” saralashi bilan oching: ro‘yxat boshidagi 2–3 ko‘nikma keyingi haftaning asosiy ishi bo‘ladi.",
+            "**Har bir savolga o‘rtacha vaqt** Digital SAT sur’ati bilan solishtiriladi. Aniqlik yaxshi-yu, vaqt ko‘p bo‘lsa — sur’at ustida ishlang; vaqt kam-u, aniqlik past bo‘lsa — shoshilyapsiz.",
+            "**So‘nggi 30 kun** — kunlik aniqlik va o‘qish vaqti: muntazam shug‘ullanayotganingizni shu yerda ko‘rasiz.",
+            "**Sinov imtihonlari bo‘yicha taxminlar** — bitta imtihondagi o‘zgarishga emas, umumiy yo‘nalishga qarang.",
+            "**Kam ma’lumotdan xulosa chiqarmang:** 3–4 ta javob asosidagi aniqlik tasodifiy bo‘lishi mumkin.",
+            "Bepul tarifda asosiy tahlil ochiq (umumiy aniqlik, javoblar soni, o‘qish vaqti, fanlar bo‘yicha aniqlik); batafsil tahlil pullik tariflarda."
+          ]
+        },
+        {
+          "type": "time",
+          "heading": "8 haftalik reja: hafta-ba-hafta",
+          "items": [
+            "**1-hafta — Boshlash.** Profilni sozlang, to‘liq diagnostikadan o‘ting, o‘quv rejani tuzing. “Digital SAT formati” va “Vaqtni boshqarish va taxmin qilish” qo‘llanmalarini o‘qing. Eng zaif ikki ko‘nikmadan boshlang: Oson va O‘rtacha mashq.",
+            "**2-hafta — Asosni mustahkamlash.** Zaif ko‘nikmalar bo‘yicha darslar va qo‘llanmalar. O‘qish va yozishda “Grammatika qoidalari” qo‘llanmasidan boshlang — bu qoidalar tez o‘rganiladi. Har kuni 8–10 ta yangi inglizcha so‘z.",
+            "**3-hafta — 1-sinov imtihoni.** Hafta davomida mashq, hafta oxirida birinchi to‘liq sinov imtihoni. Ertasi kuni har bir xatoni tahlil qiling va rejani qayta tuzing.",
+            "**4-hafta — Kengaytirish.** Imtihonda eng ko‘p xato qilingan 3 ta bo‘limga e’tibor bering; O‘rtacha va Qiyin savollar. Matematikada “Desmos kalkulyatori” qo‘llanmasidagi usullarni mashq qiling.",
+            "**5-hafta — 2-sinov imtihoni.** Natijani birinchisi bilan bo‘limlar bo‘yicha solishtiring: qayerda o‘sish bor, qayerda yo‘q? Tahlil bo‘limida har bir savolga sarflangan vaqtni tekshiring.",
+            "**6-hafta — Qiyin savollar va sur’at.** Qiyin va Aralash mashqlar, vaqtni kuzatib ishlash. “Xatolarni qayta ishlash” bilan eski xatolarni yoping.",
+            "**7-hafta — 3-sinov imtihoni.** Imtihonni haqiqiy test boshlanadigan soatda topshiring. Tahlildan keyin faqat aniq zaif joylarni tuzating — yangi katta mavzu boshlamang.",
+            "**8-hafta — Yakuniy takrorlash.** Saqlangan savollar, xatolar, formulalar, grammatika qoidalari va javobni o‘zingiz yozadigan savollar (SPR) qoidalari. Oxirgi 3 kun — yengil takrorlash va yaxshi uyqu."
+          ]
+        },
+        {
+          "type": "time",
+          "heading": "Kunlik tartib: 30, 60 yoki 90 daqiqa",
+          "items": [
+            "**30 daqiqa:** 5 daqiqa — kechagi xatolarni takrorlash (Saqlanganlar yoki Natijalar); 20 daqiqa — bitta ko‘nikma bo‘yicha 10–12 ta mashq savoli; 5 daqiqa — izohlar va 5 ta yangi so‘z. Haftada 2–3 marta mashq o‘rniga bitta dars ko‘ring.",
+            "**60 daqiqa:** 5 daqiqa — takrorlash; 15–20 daqiqa — bitta dars yoki ko‘nikma qo‘llanmasi; 25 daqiqa — shu ko‘nikma bo‘yicha mashq; 10 daqiqa — xatolar tahlili (AI ustoz bilan) va yangi so‘zlar.",
+            "**90 daqiqa:** 10 daqiqa — takrorlash; 20 daqiqa — dars; 25 daqiqa — Matematika mashq bloki; 25 daqiqa — O‘qish va yozish mashq bloki; 10 daqiqa — tahlil va yangi so‘zlar.",
+            "**Sinov imtihoni kuni** boshqa ish rejalashtirmang: imtihon tanaffus bilan taxminan ikki yarim soat oladi. Tahlilni ertasiga qoldiring.",
+            "**Bepul tarifda** kuniga 20 ta mashq savoli bor — bu 30 daqiqalik tartibga yetadi. Ko‘proq vaqtingiz bo‘lsa, qolganini qo‘llanmalarga, bepul namuna darslarga va natijalar sahifasidagi izohlarni qayta o‘qishga sarflang.",
+            "**Kun o‘tkazib yuborsangiz,** ertasi kuni ikki barobar ishlashga urinmang — odatdagi tartibni davom ettiring. Muntazamlik bir kunlik hajmdan muhimroq."
+          ]
+        },
+        {
+          "type": "note",
+          "heading": "Tariflar: qaysi imkoniyat qayerda",
+          "body": "Diagnostika barcha tariflarda bepul. Qolgan imkoniyatlar tarifga bog‘liq (quyida joriy shartlar; aniq narx va limitlar **Obuna** sahifasida ko‘rsatiladi):\n\n- **Free (bepul):** diagnostika, bepul namuna darslar, kuniga 20 ta mashq savoli, kuniga 3 ta AI ustoz so‘rovi, asosiy tahlil. O‘quv reja va sinov imtihonlari yo‘q.\n- **Starter:** barcha darslar, kuniga 100 ta mashq savoli, kuniga 15 ta AI so‘rovi, oyiga 1 ta sinov imtihoni, to‘liq tahlil, o‘quv reja.\n- **Pro:** barcha darslar, cheklanmagan mashq, kuniga 50 ta AI so‘rovi, oyiga 4 ta sinov imtihoni, to‘liq tahlil, o‘quv reja.\n- **Premium:** barcha darslar, cheklanmagan mashq va sinov imtihonlari, kuniga 150 ta AI so‘rovi, to‘liq tahlil, o‘quv reja.\n\nObuna bir oyga oldindan to‘lanadi va hisobingizdan avtomatik yechib olinmaydi. Bekor qilsangiz, kirish to‘langan davr oxirigacha saqlanadi."
+        },
+        {
+          "type": "watch_out",
+          "heading": "Nimaga e’tibor berish kerak",
+          "items": [
+            "**Muntazamlik hajmdan muhim:** har kuni 30 daqiqa haftada bir marta uzoq o‘qishdan ko‘ra ko‘proq natija beradi. Bosh sahifadagi ketma-ket kunlar hisoblagichini uzmaslikka harakat qiling.",
+            "**Izohsiz mashq — vaqt isrofi:** savolni ishlab, izohni o‘qimasangiz, xuddi shu xatoni yana qilasiz.",
+            "**Faqat kuchli tomoningizni mashq qilmang:** bilgan mavzuda ishlash yoqimli, lekin ball zaif ko‘nikmalar hisobiga o‘sadi.",
+            "**Imtihon o‘lchaydi, o‘rgatmaydi:** tahlilsiz ketma-ket sinov imtihonlari topshirish natijani o‘zgartirmaydi.",
+            "**AI ustozdan javobni darhol so‘ramang:** avval maslahat, keyin tushuntirish.",
+            "**Taxminiy ballga haddan tashqari tayanmang:** u rasmiy emas va bir imtihondan ikkinchisiga tebranishi mumkin. Umumiy yo‘nalishga qarang.",
+            "**Inglizcha atamalarni inglizcha eslab qoling:** izohlar o‘zbekcha, lekin testda savollarni ingliz tilida o‘qiysiz."
+          ]
+        },
+        {
+          "type": "checklist",
+          "heading": "Kun oxirida o‘zingizni tekshiring",
+          "items": [
+            "Bugungi reja vazifalarini bajardimmi?",
+            "Har bir xatoimning sababini bilamanmi?",
+            "Qiyin savollarni saqladimmi?",
+            "Bugun kamida 5 ta yangi inglizcha so‘z o‘rgandimmi?",
+            "Ertaga nimadan boshlashni bilamanmi?"
+          ]
+        }
+      ]
+    }
+  }
+}

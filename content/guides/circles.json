@@ -1,0 +1,149 @@
+{
+  "slug": "circles",
+  "kind": "skill",
+  "skill": "circles",
+  "position": 19,
+  "readingMinutes": 10,
+  "locales": {
+    "uz": {
+      "title": "Aylana va doira",
+      "summary": "Aylana uzunligi va doira yuzasi, yoy uzunligi va sektor yuzasi, markaziy va ichki chizilgan burchaklar, urinma hamda koordinata tekisligidagi aylana tenglamasi — bu savollarning deyarli barchasida asosiy kalit radius.",
+      "sections": [
+        {
+          "type": "concept",
+          "heading": "Bu ko‘nikma nimani tekshiradi",
+          "body": "Bu ko‘nikma aylana va doira bilan bog‘liq hisoblarni tekshiradi. Deyarli har bir savol **radiusni** topishga borib taqaladi.\n\n- **Asosiy formulalar:** aylana uzunligi $C = 2\\pi r$, doira yuzasi $A = \\pi r^2$.\n- **Burchak o‘lchovi:** to‘liq aylana $360^\\circ$ yoki $2\\pi$ radian; $180^\\circ = \\pi$ radian. Gradusdan radianga o‘tish uchun $\\frac{\\pi}{180}$ ga ko‘paytiring: $60^\\circ = \\frac{\\pi}{3}$.\n\n**Qism va butun proporsiyasi** — yoy va sektor masalalarining kaliti. Markaziy burchak $\\theta$ bo‘lsa:\n$$\\frac{\\theta}{360^\\circ} = \\frac{\\text{arc length}}{2\\pi r} = \\frac{\\text{sector area}}{\\pi r^2}$$\nRadianda bu formulalar soddalashadi: yoy uzunligi $s = r\\theta$, sektor yuzasi $\\frac{1}{2}r^2\\theta$.\n\n- **Markaziy burchak** (uchi markazda) o‘zi tiralgan yoyning gradus o‘lchoviga teng.\n- **Ichki chizilgan burchak** (uchi aylanada) xuddi shu yoyga tiralgan markaziy burchakning **yarmiga** teng. Diametrga tiralgan ichki chizilgan burchak $90^\\circ$.\n- **Urinma** (tangent) urinish nuqtasiga tortilgan radiusga perpendikulyar — demak, to‘g‘ri burchakli uchburchak va Pifagor teoremasi paydo bo‘ladi.\n- **Ikki radius** va vatar (chord) teng yonli uchburchak hosil qiladi.\n\n**Aylana tenglamasi** (xy-tekislikda):\n$$(x - h)^2 + (y - k)^2 = r^2$$\nbu yerda $(h, k)$ — markaz, $r$ — radius. Tenglama $x^2 + y^2 + Dx + Ey + F = 0$ ko‘rinishida berilsa, **to‘la kvadrat ajratish** (completing the square) kerak: $x$ hadlariga $\\left(\\frac{D}{2}\\right)^2$ ni, $y$ hadlariga $\\left(\\frac{E}{2}\\right)^2$ ni qo‘shing va xuddi shu sonlarni tenglikning o‘ng tomoniga ham qo‘shing.\n\nReference sheet’da $C = 2\\pi r$, $A = \\pi r^2$ hamda aylanada $360^\\circ$ va $2\\pi$ radian borligi berilgan. Aylana tenglamasi, yoy uzunligi va sektor yuzasi formulalari esa **yo‘q** — ularni yodlang yoki proporsiyadan chiqaring."
+        },
+        {
+          "type": "recognize",
+          "heading": "Savolni qanday tanib olasiz",
+          "items": [
+            "*“In the xy-plane, the graph of the given equation is a circle. What are the coordinates of the center…”*, *“…what is the radius of the circle?”* — aylana tenglamasi.",
+            "*“Which equation represents a circle with center (3, −2) and radius 5?”* — tenglamani tuzish.",
+            "*“arc”*, *“minor arc”*, *“sector”*, *“central angle”* — yoy va sektor; aylananing qismini proporsiya bilan toping.",
+            "*“…has a measure of 2π/3 radians”* — burchak radianda; $s = r\\theta$ formulasi tez ishlaydi.",
+            "*“Line ℓ is tangent to the circle at point P”* — urinma radiusga perpendikulyar, to‘g‘ri burchakli uchburchak paydo bo‘ladi.",
+            "*“Points A, B, and C lie on the circle”*, *“AC is a diameter”* — ichki chizilgan burchaklar."
+          ]
+        },
+        {
+          "type": "method",
+          "heading": "Ishlash usuli: qadamma-qadam",
+          "steps": [
+            "**Savol turini aniqlang:** (a) yoy yoki sektor — aylananing bir qismi; (b) burchaklar — markaziy, ichki chizilgan yoki urinma; (c) koordinata tekisligidagi tenglama.",
+            "**Radiusni toping.** Diametr berilsa — ikkiga bo‘ling; aylana uzunligi yoki yuza berilsa — formuladan $r$ ni chiqaring ($C = 10\\pi$ bo‘lsa, $r = 5$).",
+            "**Yoy va sektor uchun bitta proporsiya tuzing:** “qism / butun” — burchak bo‘yicha ham, uzunlik bo‘yicha ham, yuza bo‘yicha ham bir xil kasr. Burchak radianda bo‘lsa, butun $2\\pi$, gradusda bo‘lsa — $360^\\circ$.",
+            "**Burchak savollarida radiuslarni chizing.** Markazdan aylanadagi nuqtalarga tortilgan radiuslar teng — teng yonli uchburchak; urinish nuqtasidagi radius urinmaga perpendikulyar — to‘g‘ri burchak; diametrga tiralgan ichki chizilgan burchak $90^\\circ$.",
+            "**Tenglamani standart ko‘rinishga keltiring.** $x$ va $y$ hadlarini guruhlang, har biri uchun to‘la kvadrat ajrating va qo‘shilgan sonlarni o‘ng tomonga ham qo‘shing. $x^2$ va $y^2$ oldida 1 dan boshqa umumiy koeffitsiyent bo‘lsa, avval butun tenglamani unga bo‘ling.",
+            "**Tekshiring:** o‘ng tomondagi son — $r^2$, radius emas; markaz koordinatalarining ishorasi qavsdagi ishoraga **teskari**; javob gradusda yoki radianda — so‘ralganidek."
+          ]
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 1: tenglamadan radiusni topish",
+          "example": {
+            "problem": "In the xy-plane, the graph of the equation $x^2 + y^2 - 8x + 6y = 24$ is a circle. What is the radius of the circle?",
+            "choices": ["$2\\sqrt{6}$", "$5$", "$7$", "$49$"],
+            "solution": [
+              "Hadlarni guruhlaymiz: $(x^2 - 8x) + (y^2 + 6y) = 24$.",
+              "To‘la kvadrat: $x$ uchun $\\left(\\frac{-8}{2}\\right)^2 = 16$, $y$ uchun $\\left(\\frac{6}{2}\\right)^2 = 9$. Ikkala sonni ham **ikkala tomonga** qo‘shamiz: $(x^2 - 8x + 16) + (y^2 + 6y + 9) = 24 + 16 + 9$.",
+              "Standart ko‘rinish: $(x - 4)^2 + (y + 3)^2 = 49$. Markaz $(4, -3)$, $r^2 = 49$, demak $r = 7$.",
+              "Xato variantlar: **D** (49) — bu $r^2$, radius emas. **A** ($2\\sqrt{6} = \\sqrt{24}$) — o‘ng tomonga 16 va 9 qo‘shilmagan. **B** (5) — faqat qo‘shilgan sonlar olingan ($\\sqrt{16 + 9}$), asl 24 esa unutilgan."
+            ],
+            "answer": "C) 7"
+          }
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 2: yoy uzunligi radianda (javobni o‘zingiz yozasiz)",
+          "example": {
+            "problem": "A circle has center $O$ and radius 9. Points $A$ and $B$ lie on the circle, and the measure of central angle $AOB$ is $\\frac{2\\pi}{3}$ radians. The length of minor arc $AB$ is $k\\pi$, where $k$ is a constant. What is the value of $k$?",
+            "solution": [
+              "Burchak radianda berilgan, shuning uchun eng tez formula: $s = r\\theta$.",
+              "$s = 9 \\cdot \\frac{2\\pi}{3} = 6\\pi$.",
+              "Proporsiya bilan tekshiramiz: $\\frac{2\\pi}{3}$ — to‘liq aylananing ($2\\pi$) uchdan biri. Aylana uzunligi $2\\pi \\cdot 9 = 18\\pi$, uning uchdan biri $6\\pi$ ✓.",
+              "Demak $k = 6$. Tuzoqlar: sektor yuzasini hisoblash ($\\frac{1}{2} \\cdot 81 \\cdot \\frac{2\\pi}{3} = 27\\pi$, ya’ni 27) yoki radius o‘rniga diametrni olish (12). Javob katagiga **6** ni yozing."
+            ],
+            "answer": "6"
+          }
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 3: ichki chizilgan va markaziy burchak",
+          "example": {
+            "problem": "Points $A$, $B$, and $C$ lie on a circle with center $O$, and $\\overline{AC}$ is a diameter of the circle. The measure of angle $BAC$ is $28^\\circ$. What is the measure of angle $BOC$?",
+            "choices": ["$28^\\circ$", "$56^\\circ$", "$62^\\circ$", "$124^\\circ$"],
+            "solution": [
+              "$\\angle BAC$ — ichki chizilgan burchak (uchi aylanada), u $BC$ yoyiga tiraladi. $\\angle BOC$ — markaziy burchak, u ham xuddi shu $BC$ yoyiga tiraladi.",
+              "Qoida: markaziy burchak bir xil yoyga tiralgan ichki chizilgan burchakdan **ikki marta** katta. $\\angle BOC = 2 \\cdot 28^\\circ = 56^\\circ$.",
+              "Boshqa yo‘l bilan tekshiramiz: $OA = OB$ (radiuslar), demak $\\triangle AOB$ teng yonli va $\\angle OBA = 28^\\circ$. $O$ nuqta $AC$ diametrda yotgani uchun $\\angle BOC$ — $\\triangle AOB$ ning tashqi burchagi: $28^\\circ + 28^\\circ = 56^\\circ$ ✓.",
+              "Xato variantlar: **A** (28°) — ichki chizilgan burchakni markaziy burchakka teng deb olish. **C** (62°) — bu $\\angle BCA$: diametrga tiralgan $\\angle ABC = 90^\\circ$ bo‘lgani uchun $90^\\circ - 28^\\circ$. **D** (124°) — bu $\\angle AOB$, ya’ni $180^\\circ - 56^\\circ$."
+            ],
+            "answer": "B) $56^\\circ$"
+          }
+        },
+        {
+          "type": "watch_out",
+          "heading": "Nimaga e’tibor berish kerak",
+          "items": [
+            "**Markaz ishorasi:** $(x + 3)^2 + (y - 5)^2 = 16$ tenglamada markaz $(-3, 5)$ — qavs ichidagi ishoraga teskari.",
+            "**O‘ng tomon — r², radius emas:** yuqoridagi tenglamada radius 4, 16 emas. O‘ng tomon to‘la kvadrat bo‘lmasa (masalan, 20), radius $\\sqrt{20} = 2\\sqrt{5}$.",
+            "**To‘la kvadrat ajratganda** qo‘shilgan sonlarni o‘ng tomonga ham qo‘shishni unutmang — bu eng ko‘p uchraydigan xato.",
+            "**Gradus va radian:** $180^\\circ = \\pi$ radian. $s = r\\theta$ va $\\frac{1}{2}r^2\\theta$ formulalari **faqat radianda** ishlaydi; gradusda proporsiyadan foydalaning.",
+            "**Yoy o‘lchovi va yoy uzunligi farqli:** yoy o‘lchovi (arc measure) gradusda o‘lchanadi va markaziy burchakka teng; yoy uzunligi (arc length) esa uzunlik birligida.",
+            "**Kichik va katta yoy:** kichik yoy (minor arc) $180^\\circ$ dan kichik; katta yoy (major arc) uchun $360^\\circ$ dan kichik yoyni ayiring.",
+            "**Nuqta aylananing ichidami, tashqarisidami?** Nuqta koordinatalarini $(x - h)^2 + (y - k)^2$ ga qo‘yib, $r^2$ bilan solishtiring: kichik — ichida, teng — aylanada, katta — tashqarida."
+          ]
+        },
+        {
+          "type": "traps",
+          "heading": "Keng tarqalgan xatolar (tuzoq variantlar)",
+          "items": [
+            "**r² ni radius sifatida berish** (Namuna 1 dagi 49).",
+            "**Markaz koordinatalarida ishora xatosi:** to‘g‘ri javob $(4, -3)$ bo‘lsa, $(-4, 3)$ ham variantlarda turadi.",
+            "**Yoy uzunligi va sektor yuzasini adashtirish** — ikkala natija ham (masalan, $6\\pi$ va $27\\pi$) variantda bo‘lishi mumkin.",
+            "**Ichki chizilgan burchakni ikkiga ko‘paytirmaslik** yoki aksincha, markaziy burchakdan ichki chizilgan burchakka o‘tganda ikkiga bo‘lmaslik.",
+            "**Radius o‘rniga diametr:** aylana uzunligi yoki yuzadan $r$ ni chiqarganda $C = \\pi d$ va $C = 2\\pi r$ ni adashtirish.",
+            "**Qo‘shni burchak:** so‘ralgan burchak o‘rniga uni $180^\\circ$ gacha to‘ldiruvchi burchak (Namuna 3 dagi 124°)."
+          ]
+        },
+        {
+          "type": "time",
+          "heading": "Vaqt, Desmos va reference sheet",
+          "items": [
+            "Odatda **45–90 soniya**. To‘la kvadrat ajratishni yaxshi bilsangiz, tenglama savollari 45 soniyada yechiladi.",
+            "**Desmos aylana savollarida juda kuchli:** tenglamani o‘zgartirmasdan to‘g‘ridan-to‘g‘ri kiriting — Desmos aylanani chizadi va markaz hamda radiusni grafikdan ko‘rasiz. Variantdagi tenglamani ham kiritib, ikki grafik ustma-ust tushishini tekshirishingiz mumkin.",
+            "**Reference sheet** faqat $C = 2\\pi r$, $A = \\pi r^2$ va aylanadagi $360^\\circ$ / $2\\pi$ radianni beradi. Aylana tenglamasi va yoy yoki sektor formulalari u yerda yo‘q.",
+            "Ichki chizilgan burchak va urinma savollarida chizma chizish hisoblashdan ko‘ra ko‘proq vaqt oladi — radiuslarni chizib, teng yonli yoki to‘g‘ri burchakli uchburchaklarni toping. 90 soniyadan oshsa, **Mark for Review** bilan belgilang."
+          ]
+        },
+        {
+          "type": "terms",
+          "heading": "Muhim inglizcha atamalar",
+          "terms": [
+            { "term": "radius / diameter", "meaning": "radius / diametr — markazdan aylanagacha masofa; diametr markazdan o‘tadi: $d = 2r$" },
+            { "term": "circumference", "meaning": "aylana uzunligi: $C = 2\\pi r$" },
+            { "term": "arc / minor arc / major arc", "meaning": "yoy / kichik yoy (180° dan kichik) / katta yoy" },
+            { "term": "central angle", "meaning": "markaziy burchak — uchi markazda; tiralgan yoyning gradus o‘lchoviga teng" },
+            { "term": "inscribed angle", "meaning": "ichki chizilgan burchak — uchi aylanada; markaziy burchakning yarmi" },
+            { "term": "sector", "meaning": "sektor — ikki radius va yoy bilan chegaralangan “pirog bo‘lagi”" },
+            { "term": "chord", "meaning": "vatar — aylananing ikki nuqtasini tutashtiruvchi kesma" },
+            { "term": "tangent", "meaning": "urinma — aylanaga bitta nuqtada tegadi va o‘sha nuqtadagi radiusga perpendikulyar" },
+            { "term": "radian", "meaning": "radian — burchak o‘lchov birligi: $\\pi$ radian $= 180^\\circ$" },
+            { "term": "completing the square", "meaning": "to‘la kvadrat ajratish — tenglamani $(x - h)^2 + (y - k)^2 = r^2$ ko‘rinishiga keltirish usuli" }
+          ]
+        },
+        {
+          "type": "checklist",
+          "heading": "Javobni tanlashdan oldin tekshiring",
+          "items": [
+            "Radiusni (diametr, $r^2$ yoki aylana uzunligini emas) to‘g‘ri topdimmi?",
+            "Burchak birligi — gradus yoki radian — formulaga mosmi?",
+            "Tenglamada markaz ishorasini va o‘ng tomonga qo‘shilgan sonlarni tekshirdimmi?",
+            "So‘ralgan narsa — yoy uzunligi, sektor yuzasi yoki burchak — aynan shumi?"
+          ]
+        }
+      ]
+    }
+  }
+}

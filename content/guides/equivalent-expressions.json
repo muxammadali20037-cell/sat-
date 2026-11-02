@@ -1,0 +1,153 @@
+{
+  "slug": "equivalent-expressions",
+  "kind": "skill",
+  "skill": "equivalent_expressions",
+  "position": 8,
+  "readingMinutes": 10,
+  "locales": {
+    "uz": {
+      "title": "Ekvivalent ifodalar",
+      "summary": "Ifodalarni qavslarni ochish, ko‘paytuvchilarga ajratish, daraja qoidalari va kasrlar yordamida qayta yozish; “for all values of x” savollarida koeffitsiyentlarni tenglashtirish va javobni son qo‘yib tekshirish.",
+      "sections": [
+        {
+          "type": "concept",
+          "heading": "Bu ko‘nikma nimani tekshiradi",
+          "body": "Ikki ifoda **ekvivalent** (aynan teng) deyiladi, agar ular $x$ ning **har qanday** ruxsat etilgan qiymatida bir xil son bersa. Masalan, $2(x + 3)$ va $2x + 6$ ekvivalent. SAT sizdan ifodani boshqa shaklda — odatda javob variantlaridagi ko‘rinishda — qayta yozishni so‘raydi.\n\nAsosiy vositalar:\n\n- **Qavslarni ochish va o‘xshash hadlarni ixchamlash:** $(2x + 3)(x - 4) = 2x^2 - 5x - 12$.\n- **Qisqa ko‘paytirish formulalari:** $(a + b)^2 = a^2 + 2ab + b^2$, $(a - b)^2 = a^2 - 2ab + b^2$, $a^2 - b^2 = (a - b)(a + b)$.\n- **Ko‘paytuvchilarga ajratish:** umumiy ko‘paytuvchini qavsdan tashqariga chiqarish, $x^2 + bx + c$ ni ikki qavsga ajratish.\n- **Daraja qoidalari:** $x^m \\cdot x^n = x^{m + n}$, $\\frac{x^m}{x^n} = x^{m - n}$, $(x^m)^n = x^{mn}$, $x^{-n} = \\frac{1}{x^n}$, $x^{m/n} = \\sqrt[n]{x^m}$.\n- **Kasrli ifodalar:** umumiy maxrajga keltirish; faqat **ko‘paytuvchilarni** qisqartirish mumkin, qo‘shiluvchilarni emas.\n\n**“For all values of x” qoidasi:** ikki ko‘phad $x$ ning barcha qiymatlarida teng bo‘lsa, ularning mos koeffitsiyentlari ham teng. Masalan, $ax^2 + bx + c = 6x^2 - 7x + 2$ bo‘lsa, $a = 6$, $b = -7$, $c = 2$.\n\nFormulani biror harfga nisbatan qayta yozish (*“in terms of”*) ham shu mantiqqa tayanadi: ikkala tomonga bir xil amalni qo‘llab, kerakli harfni yolg‘iz qoldirasiz."
+        },
+        {
+          "type": "recognize",
+          "heading": "Savolni qanday tanib olasiz",
+          "items": [
+            "*“Which of the following is equivalent to …?”* — eng ko‘p uchraydigan shakl; variantlar odatda bir-biriga juda o‘xshaydi.",
+            "*“… for all values of x, where a and b are constants. What is the value of b?”* — koeffitsiyentlarni tenglashtirish.",
+            "*“where x > 0”* yoki *“x ≠ 3”* kabi shart bor — ildizlar, kasr darajalar yoki kasrli ifoda bilan ishlayapsiz.",
+            "Variantlarda kasr daraja yoki ildiz bor — daraja qoidalari savoli.",
+            "*“The expression … can be rewritten as …”* — ifodani berilgan shaklga keltirish.",
+            "*“Which equation correctly expresses r in terms of V and h?”* — formulani kerakli harfga nisbatan qayta yozish."
+          ]
+        },
+        {
+          "type": "method",
+          "heading": "Ishlash usuli: qadamma-qadam",
+          "steps": [
+            "**Avval variantlarga qarang:** ular qaysi shaklda — qavslar ochilganmi, ko‘paytuvchilarga ajratilganmi, daraja ko‘rinishidami? Berilgan ifodani aynan o‘sha shaklga olib boring.",
+            "**Qavslarni ehtiyotkorlik bilan oching:** har bir hadni har biriga ko‘paytiring; qavs oldidagi minus ichidagi **barcha** ishoralarni o‘zgartiradi.",
+            "**Qisqa ko‘paytirish formulalarini taniy oling:** $9x^2 - 25$ — kvadratlar ayirmasi, $x^2 + 10x + 25$ — to‘liq kvadrat.",
+            "**Daraja va ildizlarda** hammasini $x^{\\text{son}}$ ko‘rinishiga o‘tkazing, ko‘rsatkichlarni qo‘shing yoki ayiring, oxirida kerakli shaklga qaytaring.",
+            "**“For all values of x” savolida** ikkala tomonni to‘liq oching va $x^2$, $x$ hamda ozod had koeffitsiyentlarini alohida-alohida tenglashtiring.",
+            "**Son qo‘yib tekshiring:** $x = 2$ yoki $x = 3$ ni (0 va 1 ni emas — ular ko‘p ifodalarni bir xil qilib qo‘yadi) berilgan ifodaga va variantlarga qo‘ying. Faqat ekvivalent variant bir xil natija beradi."
+          ]
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 1: qavslarni ochish",
+          "example": {
+            "problem": "Which expression is equivalent to $(3x - 2)^2 - (x + 4)(x - 4)$?",
+            "choices": ["$8x^2 - 12x + 20$", "$8x^2 + 20$", "$8x^2 - 12x - 12$", "$8x^2 - 6x + 20$"],
+            "solution": [
+              "Birinchi qism — to‘liq kvadrat: $(3x - 2)^2 = 9x^2 - 12x + 4$ (o‘rta had: $2 \\cdot 3x \\cdot 2 = 12x$).",
+              "Ikkinchi qism — kvadratlar ayirmasi: $(x + 4)(x - 4) = x^2 - 16$.",
+              "Ayiramiz; minus qavsning **ikkala** hadiga ta’sir qiladi: $9x^2 - 12x + 4 - x^2 + 16 = 8x^2 - 12x + 20$.",
+              "Son qo‘yib tekshiruv ($x = 2$): berilgan ifoda $4^2 - 6 \\cdot (-2) = 16 + 12 = 28$; **A**: $32 - 24 + 20 = 28$ ✓.",
+              "Tuzoqlar: **B** — $(3x - 2)^2$ ni $9x^2 + 4$ deb, o‘rta hadni unutish ($x = 2$ da 52 chiqadi). **C** — minusni faqat birinchi hadga tarqatish: $-x^2 - 16$ ($x = 2$ da $-4$). **D** — o‘rta haddagi 2 ko‘paytuvchisini unutish: $-6x$ ($x = 2$ da 40)."
+            ],
+            "answer": "A) $8x^2 - 12x + 20$"
+          }
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 2: koeffitsiyentlarni tenglashtirish",
+          "example": {
+            "problem": "$$(ax + 5)(3x - 2) = 12x^2 + bx - 10$$\n\nIn the given equation, $a$ and $b$ are constants, and the equation is true for all values of $x$. What is the value of $b$?",
+            "solution": [
+              "Chap tomonni ochamiz: $3ax^2 - 2ax + 15x - 10 = 3ax^2 + (15 - 2a)x - 10$.",
+              "Mos koeffitsiyentlarni tenglashtiramiz. $x^2$ oldida: $3a = 12$, demak $a = 4$.",
+              "$x$ oldida: $b = 15 - 2a = 15 - 8 = 7$.",
+              "Ozod hadlar: $-10 = -10$ ✓ — shartlar bir-biriga zid emas.",
+              "Tekshiruv: $(4x + 5)(3x - 2) = 12x^2 - 8x + 15x - 10 = 12x^2 + 7x - 10$ ✓.",
+              "Tuzoqlar: $a = 4$ ni javob qilish — savol $b$ ni so‘rayapti. Yoki $-2a$ ni $+2a$ deb olib, $b = 23$ ni hosil qilish. Javob: **7**."
+            ],
+            "answer": "7"
+          }
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 3: daraja va ildizlar",
+          "example": {
+            "problem": "Which of the following is equivalent to $\\dfrac{x^2 \\sqrt[3]{x^2}}{x^{1/3}}$, where $x > 0$?",
+            "choices": ["$x$", "$x^2 \\sqrt[3]{x}$", "$x^{19/6}$", "$x^3$"],
+            "solution": [
+              "Hammasini daraja ko‘rinishiga o‘tkazamiz: $\\sqrt[3]{x^2} = x^{2/3}$ (ildiz ko‘rsatkichi maxrajga tushadi).",
+              "Suratda ko‘paytirish — ko‘rsatkichlar qo‘shiladi: $x^2 \\cdot x^{2/3} = x^{8/3}$.",
+              "Bo‘lish — ko‘rsatkichlar ayiriladi: $x^{8/3 - 1/3} = x^{7/3}$.",
+              "Variantlarda $x^{7/3}$ yo‘q, shuning uchun uni qayta yozamiz: $x^{7/3} = x^{6/3} \\cdot x^{1/3} = x^2 \\sqrt[3]{x}$ — bu **B**.",
+              "Tuzoqlar: **C** ($x^{19/6}$) — ildizni teskari o‘girib, $x^{3/2}$ deb yozish. **D** ($x^3$) — maxrajdagi ko‘rsatkichni ayirish o‘rniga qo‘shish. **A** ($x$) — ko‘paytirishda ko‘rsatkichlarni qo‘shish o‘rniga ko‘paytirish: $2 \\cdot \\frac{2}{3} - \\frac{1}{3} = 1$.",
+              "Son bilan tekshiruv ($x = 8$): berilgan ifoda $\\frac{64 \\cdot 4}{2} = 128$; **B**: $64 \\cdot 2 = 128$ ✓."
+            ],
+            "answer": "B) $x^2 \\sqrt[3]{x}$"
+          }
+        },
+        {
+          "type": "watch_out",
+          "heading": "Nimaga e’tibor berish kerak",
+          "items": [
+            "**Kvadratning o‘rta hadi:** $(a + b)^2 \\ne a^2 + b^2$. O‘rta had $2ab$ — eng ko‘p unutiladigan qism.",
+            "**Qavs oldidagi minus:** $-(x^2 - 16) = -x^2 + 16$. Ayirishdan oldin ayriluvchi ifodani qavsga oling.",
+            "**Faqat ko‘paytuvchilar qisqaradi:** $\\frac{x + 6}{x}$ dagi $x$ larni qisqartirib bo‘lmaydi; $\\frac{x(x + 6)}{x} = x + 6$ esa to‘g‘ri ($x \\ne 0$ bo‘lganda).",
+            "**Manfiy daraja — manfiy son emas:** $x^{-2} = \\frac{1}{x^2}$, $-x^2$ emas.",
+            "**Kasr daraja:** $x^{m/n}$ da maxraj — ildiz ko‘rsatkichi, surat — daraja: $x^{3/4} = \\sqrt[4]{x^3}$.",
+            "**Son qo‘yishda ehtiyot bo‘ling:** $x = 0$ yoki $x = 1$ ko‘pincha bir nechta variantni “to‘g‘ri” qilib ko‘rsatadi. Ikki variant bir xil natija bersa, boshqa son bilan qayta tekshiring.",
+            "**Shartlarga e’tibor:** *“where x > 0”* — ildiz va kasr darajalar ma’noga ega bo‘lishi uchun; *“x ≠ 3”* — maxraj nolga aylanmasligi uchun. Bu shartlar ifodani o‘zgartirmaydi, faqat u aniqlangan bo‘lishini ta’minlaydi."
+          ]
+        },
+        {
+          "type": "traps",
+          "heading": "Keng tarqalgan xatolar (tuzoq variantlar)",
+          "items": [
+            "**O‘rta hadsiz kvadrat:** $(3x - 2)^2 = 9x^2 + 4$ (Namuna 1 dagi B).",
+            "**Minus faqat birinchi hadga:** $-(x^2 - 16)$ ni $-x^2 - 16$ deb yozish (Namuna 1 dagi C).",
+            "**Daraja qoidalari aralashib ketgan:** ko‘paytirishda ko‘rsatkichlarni ko‘paytirish yoki darajani darajaga ko‘tarishda ularni qo‘shish (Namuna 3 dagi A).",
+            "**Ildiz ko‘rsatkichi teskari:** $\\sqrt[3]{x^2} = x^{3/2}$ deb yozish (Namuna 3 dagi C).",
+            "**Boshqa konstanta:** *“What is the value of b?”* savoliga $a$ ning qiymatini kiritish.",
+            "**Qisman to‘g‘ri variant:** ko‘pchilik variantlarda birinchi had to‘g‘ri bo‘ladi — farq odatda o‘rta hadda yoki ozod hadda. Har bir hadni alohida tekshiring."
+          ]
+        },
+        {
+          "type": "time",
+          "heading": "Vaqt bo‘yicha maslahat",
+          "items": [
+            "Qavs ochish va daraja savollari — **40–70 soniya**; *“for all values of x”* savollari — **50–80 soniya**.",
+            "**Desmos — grafiklarning ustma-ust tushishi:** berilgan ifodani $y = (3x - 2)^2 - (x + 4)(x - 4)$ deb kiriting, keyin variantni ham $y = \\ldots$ ko‘rinishida kiriting. Ekvivalent bo‘lsa, ikkinchi grafik birinchisining ustiga to‘liq tushadi.",
+            "**Desmos — son qo‘yish:** $f(x)$ ni berilgan ifoda, $g(x)$ ni variant sifatida kiriting va $f(3) - g(3)$ deb yozing; natija 0 bo‘lsa — bu nomzod. Ishonch uchun yana bir son bilan tekshiring.",
+            "**Koeffitsiyent savollarida** Desmos kamroq yordam beradi — qavslarni qo‘lda ochish odatda 30 soniyada tugaydi."
+          ]
+        },
+        {
+          "type": "terms",
+          "heading": "Muhim inglizcha atamalar",
+          "terms": [
+            { "term": "equivalent", "meaning": "ekvivalent, aynan teng — barcha $x$ larda bir xil qiymat beradi" },
+            { "term": "expression", "meaning": "ifoda (unda tenglik belgisi yo‘q)" },
+            { "term": "for all values of x", "meaning": "$x$ ning barcha qiymatlarida — koeffitsiyentlarni tenglashtiring" },
+            { "term": "constant", "meaning": "o‘zgarmas son ($a$, $b$, $c$, $k$)" },
+            { "term": "coefficient", "meaning": "koeffitsiyent: had oldidagi son, masalan $7x^2$ da 7" },
+            { "term": "factor / factored form", "meaning": "ko‘paytuvchi / ko‘paytuvchilarga ajratilgan shakl" },
+            { "term": "rewritten as / in the form", "meaning": "… ko‘rinishida qayta yozilgan — kerakli shaklni bildiradi" },
+            { "term": "in terms of", "meaning": "… orqali ifodalang: kerakli harfni yolg‘iz qoldiring" },
+            { "term": "where x > 0", "meaning": "bu yerda $x > 0$ — ifoda aniqlangan bo‘lishi uchun qo‘yilgan shart" }
+          ]
+        },
+        {
+          "type": "checklist",
+          "heading": "Javobni tanlashdan oldin tekshiring",
+          "items": [
+            "Qavs oldidagi minus barcha hadlarga tarqaldimi?",
+            "Kvadratni ochganda o‘rta hadni ($2ab$) yozdimmi?",
+            "Daraja qoidalarini to‘g‘ri qo‘lladimmi: ko‘paytirishda ko‘rsatkichlar qo‘shiladi, darajani darajaga ko‘tarishda ko‘paytiriladi?",
+            "Javobimni 0 va 1 dan boshqa son qo‘yib tekshirdimmi?"
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -68,11 +68,16 @@ export function WeakSkillList({
   practiseLabel,
   rowLabel,
   hrefFor,
+  guideHrefFor,
+  guideLabel,
 }: {
   rows: Array<SkillRow & { domainId: string }>
   practiseLabel: string
   rowLabel: string
   hrefFor: (row: SkillRow & { domainId: string }) => string
+  /** Link to the skill's study guide (in Uzbek), when one exists. */
+  guideHrefFor?: (row: SkillRow & { domainId: string }) => string | null
+  guideLabel?: string
 }) {
   return (
     <ul className="divide-y divide-border rounded-lg border border-border bg-card">
@@ -84,9 +89,16 @@ export function WeakSkillList({
               {s.domainName} · {format(rowLabel, { correct: s.correct, total: s.total })} · {formatPercent(s.accuracy)}
             </p>
           </div>
-          <Link href={hrefFor(s)} className="text-sm font-medium text-primary underline-offset-4 hover:underline">
-            {practiseLabel}
-          </Link>
+          <div className="flex shrink-0 flex-wrap gap-x-4 gap-y-1">
+            {guideLabel && guideHrefFor?.(s) && (
+              <Link href={guideHrefFor(s)!} className="text-sm font-medium text-primary underline-offset-4 hover:underline">
+                {guideLabel}
+              </Link>
+            )}
+            <Link href={hrefFor(s)} className="text-sm font-medium text-primary underline-offset-4 hover:underline">
+              {practiseLabel}
+            </Link>
+          </div>
         </li>
       ))}
     </ul>

@@ -1,0 +1,150 @@
+{
+  "slug": "systems-of-linear-equations",
+  "kind": "skill",
+  "skill": "systems_linear_equations",
+  "position": 4,
+  "readingMinutes": 10,
+  "locales": {
+    "uz": {
+      "title": "Chiziqli tenglamalar sistemasi",
+      "summary": "Ikki noma’lumli chiziqli tenglamalar sistemasini o‘rniga qo‘yish va qo‘shish usullari bilan yechish, matnli masaladan sistema tuzish va sistemaning nechta yechimi borligini aniqlash.",
+      "sections": [
+        {
+          "type": "concept",
+          "heading": "Bu ko‘nikma nimani tekshiradi",
+          "body": "Chiziqli tenglamalar sistemasi — bir vaqtda bajarilishi kerak bo‘lgan ikki (ba’zan uch) chiziqli tenglama. Sistemaning yechimi — **ikkala** tenglamani qanoatlantiradigan $(x, y)$ juftlik; grafikda bu ikki chiziqning **kesishish nuqtasi**.\n\nAsosiy yechish usullari:\n\n- **O‘rniga qo‘yish (substitution):** bir tenglamada o‘zgaruvchi allaqachon ifodalangan bo‘lsa ($y = 3x - 2$), uni ikkinchi tenglamaga qo‘ying.\n- **Qo‘shish yoki ayirish (elimination):** tenglamalarni shunday songa ko‘paytiringki, bitta o‘zgaruvchining koeffitsiyentlari teng yoki qarama-qarshi bo‘lsin, keyin tenglamalarni qo‘shing yoki ayiring.\n- **Grafik (Desmos):** ikkala tenglamani kiriting va kesishish nuqtasini o‘qing.\n\n**Yechimlar soni** — SAT’ning eng sevimli savollaridan biri. $ax + by = c$ va $dx + ey = f$ sistemasi uchun:\n\n- Qiyaliklar har xil → **aynan bitta yechim** (chiziqlar kesishadi).\n- Qiyaliklar teng, chiziqlar har xil → **yechim yo‘q** (parallel chiziqlar): $\\frac{a}{d} = \\frac{b}{e} \\ne \\frac{c}{f}$.\n- Ikkala tenglama aslida bitta chiziq → **cheksiz ko‘p yechim**: $\\frac{a}{d} = \\frac{b}{e} = \\frac{c}{f}$.\n\nMatnli masalalarda odatda ikki fakt beriladi: **umumiy soni** (masalan, sotilgan chiptalar soni) va **umumiy qiymati** (tushum, og‘irlik, vaqt). Har bir fakt — sistemaning bitta tenglamasi."
+        },
+        {
+          "type": "recognize",
+          "heading": "Savolni qanday tanib olasiz",
+          "items": [
+            "*“The solution to the given system of equations is (x, y). What is the value of x?”*",
+            "*“What is the value of x + y?”* yoki *“What is the value of 2x − y?”* — ko‘pincha har bir o‘zgaruvchini alohida topish shart emas.",
+            "*“How many solutions does the system have?”*, *“has no solution”*, *“has infinitely many solutions”* — yechimlar soni savoli.",
+            "*“For what value of k …”* — konstanta sistemaning yechimlar sonini belgilaydi.",
+            "Ikki xil narsa, umumiy soni va umumiy summasi: *“A total of 340 tickets were sold … collected a total of …”*.",
+            "*“Which system of equations represents this situation?”* — yechish emas, tuzish so‘ralmoqda.",
+            "*“The graphs of the equations intersect at the point (a, b)”* — bu ham sistema yechimi haqidagi savol."
+          ]
+        },
+        {
+          "type": "method",
+          "heading": "Ishlash usuli: qadamma-qadam",
+          "steps": [
+            "**Nima so‘ralganini aniqlang:** $x$, $y$, ularning kombinatsiyasi ($x + y$, $x - y$), yechimlar soni yoki sistemaning o‘zi.",
+            "**Matnli masalada** ikkala o‘zgaruvchini so‘z bilan belgilang va har bir faktdan bitta tenglama tuzing: “jami soni” → $a + s = 340$, “jami tushum” → $14a + 9s = 4010$.",
+            "**Usulni tanlang:** bir o‘zgaruvchi yolg‘iz turgan bo‘lsa — o‘rniga qo‘yish; koeffitsiyentlar qulay bo‘lsa — qo‘shish yoki ayirish; sonlar noqulay bo‘lsa — Desmos.",
+            "**Kombinatsiya so‘ralsa, avval tenglamalarni qo‘shib yoki ayirib ko‘ring** — ko‘pincha $x + y$ yoki $x - y$ to‘g‘ridan-to‘g‘ri chiqadi.",
+            "**Yechimlar soni savolida** ikkala tenglamani bir xil shaklga keltiring va $x$, $y$ koeffitsiyentlari hamda ozod hadlarni solishtiring.",
+            "**Ikkala tenglamaga qo‘yib tekshiring** va aynan so‘ralgan o‘zgaruvchini javob qilganingizga ishonch hosil qiling."
+          ]
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 1: matnli masala",
+          "example": {
+            "problem": "A museum sold 340 tickets on Saturday. Each adult ticket cost \\$14, and each student ticket cost \\$9. The museum collected a total of \\$4,010 from these ticket sales. How many adult tickets did the museum sell on Saturday?",
+            "choices": ["150", "170", "190", "950"],
+            "solution": [
+              "Belgilaymiz: $a$ — kattalar chiptalari soni, $s$ — talabalar chiptalari soni.",
+              "Ikki fakt — ikki tenglama: $a + s = 340$ va $14a + 9s = 4010$.",
+              "Birinchi tenglamani 9 ga ko‘paytiramiz: $9a + 9s = 3060$. Uni ikkinchi tenglamadan ayiramiz: $5a = 950$, ya’ni $a = 190$.",
+              "Unda $s = 340 - 190 = 150$.",
+              "Tekshiruv: $14 \\cdot 190 + 9 \\cdot 150 = 2660 + 1350 = 4010$ ✓.",
+              "Tuzoqlar: **A (150)** — talabalar chiptalari soni, ya’ni boshqa o‘zgaruvchi. **B (170)** — 340 ning yarmi, hisob-kitobsiz taxmin. **D (950)** — $5a = 950$ dagi oraliq natija: oxirgi bo‘lish qadami bajarilmagan."
+            ],
+            "answer": "C) 190"
+          }
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 2: yig‘indini to‘g‘ridan-to‘g‘ri topish",
+          "example": {
+            "problem": "$$\\begin{aligned} 4x + 3y &= 31 \\\\ 2x + y &= 13 \\end{aligned}$$\n\nThe solution to the given system of equations is $(x, y)$. What is the value of $x + y$?",
+            "solution": [
+              "Avval qisqa yo‘lni qidiramiz: birinchi tenglamadan ikkinchisini ayirsak, $(4x - 2x) + (3y - y) = 31 - 13$, ya’ni $2x + 2y = 18$.",
+              "Ikkiga bo‘lamiz: $x + y = 9$. $x$ va $y$ ni alohida topish shart emas.",
+              "Tekshiruv uchun to‘liq yechim: ikkinchi tenglamadan $y = 13 - 2x$; birinchisiga qo‘ysak $4x + 39 - 6x = 31$, bundan $x = 4$, $y = 5$. $4 + 5 = 9$ ✓.",
+              "Tuzoq: $x = 4$ yoki $y = 5$ ni javob deb kiritish. Savol $x + y$ ni so‘rayapti — **9** deb kiriting."
+            ],
+            "answer": "9"
+          }
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 3: yechimi yo‘q sistema",
+          "example": {
+            "problem": "$$\\begin{aligned} 3x - 5y &= 8 \\\\ kx + 15y &= 20 \\end{aligned}$$\n\nIn the given system of equations, $k$ is a constant. If the system has no solution, what is the value of $k$?",
+            "solution": [
+              "Yechim yo‘q — chiziqlar parallel: $x$ va $y$ koeffitsiyentlari proporsional, ozod hadlar esa shu nisbatda emas.",
+              "$y$ koeffitsiyentlarini solishtiramiz: $-5$ dan $15$ ga o‘tish uchun $-3$ ga ko‘paytirish kerak. Birinchi tenglamani $-3$ ga ko‘paytiramiz: $-9x + 15y = -24$.",
+              "Chap tomonlar bir xil bo‘lishi uchun $k = -9$.",
+              "Ozod hadlarni tekshiramiz: $-24 \\ne 20$, demak chiziqlar parallel va ustma-ust tushmaydi — yechim haqiqatan yo‘q ✓.",
+              "Tuzoq: $k = 9$ (ishora yo‘qolgan). Unda qiyaliklar $\\frac{3}{5}$ va $-\\frac{3}{5}$ bo‘lib, sistema aynan bitta yechimga ega bo‘ladi. Javob: **-9**."
+            ],
+            "answer": "-9"
+          }
+        },
+        {
+          "type": "watch_out",
+          "heading": "Nimaga e’tibor berish kerak",
+          "items": [
+            "**Butun tenglamani ko‘paytiring:** tenglamani songa ko‘paytirganda o‘ng tomon ham ko‘paytiriladi — $9a + 9s = 3060$, $340$ emas.",
+            "**Ayirishda ishoralar:** manfiy hadni ayirsangiz, u qo‘shiladi: $(2x - 3y) - (x - 5y) = x + 2y$.",
+            "**Ikkinchi o‘zgaruvchi:** bittasini topgach to‘xtab qolmang — savol qaysi birini so‘rayotganini qayta o‘qing.",
+            "**Yechim yo‘q va cheksiz ko‘p yechim farqi:** ikkalasida ham qiyaliklar teng. Farqi ozod hadlarda: shu nisbatda bo‘lmasa — yechim yo‘q, shu nisbatda bo‘lsa — cheksiz ko‘p.",
+            "**Bir xil shakl:** solishtirishdan oldin ikkala tenglamani $ax + by = c$ (yoki ikkalasini $y = mx + b$) ko‘rinishiga keltiring.",
+            "**“How many more” savoli:** farq so‘ralsa, ikkala qiymatni topib, ayirmasini hisoblang."
+          ]
+        },
+        {
+          "type": "traps",
+          "heading": "Keng tarqalgan xatolar (tuzoq variantlar)",
+          "items": [
+            "**Boshqa o‘zgaruvchining qiymati** variantlarda albatta bo‘ladi (Namuna 1 dagi 150).",
+            "**Oraliq natija:** $5a = 950$ dagi 950 yoki $9a + 9s = 3060$ dagi 3060.",
+            "**Yarmini olish:** “ikkala turdan teng sotilgan” deb taxmin qilish — jami sonning yarmi ham variant sifatida beriladi.",
+            "**Konstantaning ishorasi:** $k = 9$ va $k = -9$ ikkalasi ham variantlarda turadi.",
+            "**Noto‘g‘ri sistema:** *“Which system represents”* savolida narxlar noto‘g‘ri o‘zgaruvchiga biriktirilgan yoki jami son bilan jami summa almashtirilgan variantlar."
+          ]
+        },
+        {
+          "type": "time",
+          "heading": "Vaqt bo‘yicha maslahat",
+          "items": [
+            "Tayyor sistemani yechish uchun **45–75 soniya**, matnli masaladan sistema tuzib yechish uchun **75–100 soniya** mo‘ljallang.",
+            "**Desmos:** ikkala tenglamani alohida qatorlarga kiriting va kesishish nuqtasiga bosing — koordinatalar chiqadi. Sonlar katta bo‘lsa (masalan, 190 va 150), nuqta ekranda ko‘rinmay qolishi mumkin: grafikni kichraytiring (zoom out).",
+            "**Desmos o‘nli kasr ko‘rsatadi:** javob variantlari kasr ko‘rinishida bo‘lsa, ularni ham kalkulyatorda hisoblab solishtiring.",
+            "**Kombinatsiya so‘ralganda** ($x + y$, $x - y$) Desmos’dan oldin tenglamalarni qo‘shib-ayirib ko‘ring — bu 15–20 soniyalik ish.",
+            "**Konstantali savollar:** Desmos’da $kx + 15y = 20$ ni kiritsangiz, $k$ uchun slayder qo‘shish taklif qilinadi; chiziqlar parallel bo‘lguncha suring. Lekin algebraik usul odatda tezroq."
+          ]
+        },
+        {
+          "type": "terms",
+          "heading": "Muhim inglizcha atamalar",
+          "terms": [
+            { "term": "system of equations", "meaning": "tenglamalar sistemasi" },
+            { "term": "solution (x, y)", "meaning": "yechim: ikkala tenglamani ham qanoatlantiradigan juftlik" },
+            { "term": "intersect / point of intersection", "meaning": "kesishadi / kesishish nuqtasi — sistemaning yechimi" },
+            { "term": "no solution", "meaning": "yechim yo‘q: parallel chiziqlar" },
+            { "term": "infinitely many solutions", "meaning": "cheksiz ko‘p yechim: ikkala tenglama bitta chiziq" },
+            { "term": "exactly one solution", "meaning": "aynan bitta yechim: qiyaliklar har xil" },
+            { "term": "a total of", "meaning": "jami — odatda sistemaning bir tenglamasi" },
+            { "term": "how many more", "meaning": "qanchaga ko‘p — ikki qiymat ayirmasini toping" },
+            { "term": "constant", "meaning": "o‘zgarmas son (masalan, $k$)" }
+          ]
+        },
+        {
+          "type": "checklist",
+          "heading": "Javobni tanlashdan oldin tekshiring",
+          "items": [
+            "Aynan so‘ralgan o‘zgaruvchini (yoki kombinatsiyani) javob qildimmi?",
+            "Yechimni ikkala tenglamaga qo‘yib tekshirdimmi?",
+            "Yechimlar soni savolida ozod hadlarni ham solishtirdimmi?",
+            "Matnli masalada har bir son to‘g‘ri o‘zgaruvchiga biriktirilganmi?"
+          ]
+        }
+      ]
+    }
+  }
+}

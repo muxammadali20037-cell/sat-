@@ -1,0 +1,165 @@
+{
+  "slug": "evaluating-statistical-claims",
+  "kind": "skill",
+  "skill": "evaluating_statistical_claims",
+  "position": 15,
+  "readingMinutes": 9,
+  "locales": {
+    "uz": {
+      "title": "Statistik da’volarni baholash: kuzatuv tadqiqotlari va tajribalar",
+      "summary": "Tadqiqot qanday o‘tkazilganiga qarab qaysi xulosa asosli ekanini aniqlash: natijani kimga umumlashtirish mumkin va sabab-oqibat haqida gapirish mumkinmi. Ikki kalit ibora — randomly selected va randomly assigned.",
+      "sections": [
+        {
+          "type": "concept",
+          "heading": "Bu ko‘nikma nimani tekshiradi",
+          "body": "Bu ko‘nikmada hisob deyarli yo‘q: sizdan tadqiqot tavsifini o‘qib, undan **qaysi xulosa kelib chiqishini** aniqlash so‘raladi. Hammasi ikki savolga borib taqaladi:\n\n- **Ishtirokchilar bosh to‘plamdan tasodifiy tanlanganmi (random selection)?** Ha bo‘lsa — natijani **shu bosh to‘plamga** umumlashtirish mumkin. Yo‘q bo‘lsa (ko‘ngillilar, qo‘l ostidagi qulay guruh) — faqat o‘rganilganlar haqida gapirish mumkin.\n- **Ishtirokchilar guruhlarga tasodifiy taqsimlanganmi (random assignment)?** Ha bo‘lsa — bu **tajriba** (experiment) va **sabab-oqibat** (cause-and-effect) haqida xulosa qilish mumkin. Yo‘q bo‘lsa — bu **kuzatuv tadqiqoti** (observational study) va faqat **bog‘liqlik** (association) haqida gapirish mumkin.\n\nNatijada to‘rt holat bo‘ladi:\n\n- Tasodifiy tanlash + tasodifiy taqsimlash → sabab-oqibat, butun bosh to‘plam uchun.\n- Faqat tasodifiy taqsimlash → sabab-oqibat, lekin faqat ishtirokchilar uchun.\n- Faqat tasodifiy tanlash → bog‘liqlik, butun bosh to‘plam uchun.\n- Hech biri yo‘q → faqat ishtirokchilar orasidagi bog‘liqlik.\n\nKuzatuv tadqiqotida sabab haqida gapirib bo‘lmasligining sababi — **chalkashtiruvchi omillar** (confounding variables). Masalan, ko‘p kitob o‘qiydigan o‘quvchilarning baholari yuqori bo‘lishi mumkin, lekin bunga uydagi qo‘llab-quvvatlash kabi boshqa omil ham sabab bo‘lishi mumkin."
+        },
+        {
+          "type": "recognize",
+          "heading": "Savolni qanday tanib olasiz",
+          "items": [
+            "*“Which of the following conclusions is best supported by the study?”*, *“Which statement is an appropriate conclusion?”* — xulosani baholash savoli.",
+            "Tavsifda *“were selected at random from …”* yoki *“volunteered”*, *“chose to respond to an online poll”* — tanlash usuli: kimga umumlashtirish mumkinligini hal qiladi.",
+            "Tavsifda *“were randomly assigned to …”*, *“treatment group”*, *“control group”* — tajriba belgisi.",
+            "Tavsifda *“researchers surveyed …”*, *“recorded …”*, *“found that people who …”* — ishtirokchilar guruhni o‘zlari tanlagan yoki shunchaki kuzatilgan: bu kuzatuv tadqiqoti.",
+            "Variantlarda *“causes”*, *“leads to”*, *“improves”*, *“lowers”* yoki *“is associated with”*, *“is related to”* — sabab yoki bog‘liqlik da’vosi."
+          ]
+        },
+        {
+          "type": "method",
+          "heading": "Ishlash usuli: qadamma-qadam",
+          "steps": [
+            "**Ishtirokchilar qanday tanlanganini belgilang.** Tasodifiymi? Qaysi guruhdan (bitta universitet, bitta shahar, ko‘ngillilar)? Shu guruh — umumlashtirish chegarasi.",
+            "**Guruhlarga kim ajratganini belgilang.** Tadqiqotchi tasodifiy taqsimlagan bo‘lsa — tajriba. Odamlar o‘zlari tanlagan yoki shunchaki kuzatilgan bo‘lsa — kuzatuv tadqiqoti.",
+            "**Xulosaning kuchini aniqlang:** tajriba → “causes”, “is likely to improve” mumkin; kuzatuv → faqat “is associated with”.",
+            "**Xulosaning qamrovini aniqlang:** tasodifiy tanlangan bo‘lsa — o‘sha bosh to‘plam; aks holda — faqat ishtirokchilar.",
+            "**Har bir variantni kuch va qamrov bo‘yicha sinang.** Variant juda kuchli (sabab, “hamma”, “isbotlaydi”) ham, juda kuchsiz (“hech qanday xulosa qilib bo‘lmaydi”) ham bo‘lishi mumkin — to‘g‘ri javob aynan ma’lumot ruxsat bergan darajada bo‘ladi."
+          ]
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 1: tasodifiy tanlash va tasodifiy taqsimlash",
+          "example": {
+            "problem": "A researcher selected 300 students at random from a large university. The researcher randomly assigned 150 of the students to use a vocabulary flashcard app for 20 minutes each day and the other 150 students not to use the app. After 6 weeks, the students who used the app had a significantly higher mean score on a vocabulary test than the students who did not. Which of the following conclusions is best supported by the study?",
+            "choices": [
+              "Using the app causes higher vocabulary test scores for students at any university.",
+              "Using the app is likely to improve vocabulary test scores for students at this university.",
+              "Using the app is associated with higher vocabulary test scores, but no cause-and-effect conclusion can be drawn.",
+              "Using the app will improve the vocabulary test score of every student at this university."
+            ],
+            "solution": [
+              "Tanlash: 300 talaba **shu universitetdan tasodifiy** tanlangan → natijani shu universitet talabalariga umumlashtirish mumkin.",
+              "Taqsimlash: tadqiqotchi talabalarni ilovadan foydalanadigan va foydalanmaydigan guruhlarga **tasodifiy** ajratgan → bu tajriba, sabab-oqibat haqida gapirish mumkin.",
+              "Demak to‘g‘ri xulosa: ilova **shu universitet** talabalarining natijasini yaxshilashi ehtimoli katta — B variant.",
+              "Nega A xato: qamrov juda keng — boshqa universitetlar talabalari tanlanmada bo‘lmagan.",
+              "Nega C xato: juda kuchsiz — tasodifiy taqsimlash bo‘lgani uchun sabab-oqibat xulosasi qilish mumkin.",
+              "Nega D xato: *“every student”* — statistik natija o‘rtacha haqida, har bir talaba uchun kafolat bermaydi."
+            ],
+            "answer": "B"
+          }
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 2: kuzatuv tadqiqoti",
+          "example": {
+            "problem": "Researchers surveyed a random sample of 1,000 adults in a country. They found that adults who reported drinking at least 3 cups of tea per day had, on average, lower blood pressure than adults who reported drinking fewer than 3 cups of tea per day. Which of the following conclusions is best supported by the study?",
+            "choices": [
+              "Drinking at least 3 cups of tea per day lowers blood pressure for adults in the country.",
+              "For adults in the country, drinking at least 3 cups of tea per day is associated with lower blood pressure.",
+              "Drinking at least 3 cups of tea per day lowers blood pressure for people in every country.",
+              "No conclusion can be drawn about adults in the country, because the participants were not randomly assigned to drink tea."
+            ],
+            "solution": [
+              "Tanlash: mamlakat kattalaridan **tasodifiy** tanlanma → natijani shu mamlakat kattalariga umumlashtirish mumkin.",
+              "Taqsimlash: kim qancha choy ichishini odamlar **o‘zlari** tanlagan, tadqiqotchilar faqat so‘rashgan → kuzatuv tadqiqoti, faqat bog‘liqlik haqida gapirish mumkin.",
+              "Demak: mamlakat kattalari orasida ko‘p choy ichish past qon bosimi bilan **bog‘liq** — B variant.",
+              "Nega A xato: *“lowers”* — sabab da’vosi. Ko‘p choy ichadiganlar, masalan, kamroq kofe ichishi yoki ko‘proq harakat qilishi mumkin — qon bosimiga aynan shu omil ta’sir qilayotgan bo‘lishi mumkin.",
+              "Nega C xato: ham sabab da’vosi, ham qamrov juda keng (boshqa mamlakatlar tanlanmada bo‘lmagan).",
+              "Nega D xato: juda kuchsiz. Tasodifiy taqsimlash bo‘lmagani uchun sabab haqida gapirib bo‘lmaydi, lekin tasodifiy **tanlash** bo‘lgani uchun bog‘liqlikni butun bosh to‘plamga umumlashtirish mumkin."
+            ],
+            "answer": "B"
+          }
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 3: ixtiyoriy javob berilgan so‘rovnoma",
+          "example": {
+            "problem": "A city council wanted to know how city residents feel about a proposed bike lane. The council posted a poll on its social media page, and 2,400 people chose to respond. Of those who responded, 71% said they oppose the bike lane. Which of the following statements is most appropriate?",
+            "choices": [
+              "About 71% of the city's residents oppose the bike lane.",
+              "The results may not represent the opinions of all city residents, because the people who responded chose to participate.",
+              "The results represent all city residents, because the sample size of 2,400 is large.",
+              "The poll shows that the proposed bike lane caused most residents to be unhappy."
+            ],
+            "solution": [
+              "Tanlash: odamlar javob berishni o‘zlari tanlagan (*“chose to respond”*) — bu **ixtiyoriy javob** (voluntary response) tanlanmasi, tasodifiy emas.",
+              "Bunday so‘rovnomaga odatda masala bo‘yicha kuchli fikri bor odamlar ko‘proq javob beradi; bundan tashqari, faqat kengashning sahifasini kuzatuvchilar qatnashgan. Natija noxolis (biased) bo‘lishi mumkin — B variant.",
+              "Nega A xato: tasodifiy bo‘lmagan tanlanmadan butun shahar haqida foiz chiqarib bo‘lmaydi.",
+              "Nega C xato: katta hajm tanlov usulidagi kamchilikni tuzatmaydi — 2400 ta ixtiyoriy javob ham noxolis bo‘lishi mumkin.",
+              "Nega D xato: so‘rovnoma sabab-oqibatni tekshirmaydi; qolaversa, yo‘lak hali qurilmagan (*“proposed”*), u hech narsaga sabab bo‘la olmaydi."
+            ],
+            "answer": "B"
+          }
+        },
+        {
+          "type": "watch_out",
+          "heading": "Nimaga e’tibor berish kerak",
+          "items": [
+            "**“Randomly selected” va “randomly assigned” — har xil narsa.** Birinchisi kimga umumlashtirishni, ikkinchisi sabab haqida gapirish mumkinligini hal qiladi. Matnda ikkalasini alohida qidiring.",
+            "**Katta tanlanma — hali yaxshi tanlanma degani emas.** Tanlov usuli noxolis bo‘lsa, hajm buni tuzatmaydi.",
+            "**Qamrov — tanlanma olingan joy:** bitta maktab, bitta shahar, bitta yosh guruhi… Xulosa undan kengaymasligi kerak.",
+            "**Nazorat guruhi (control group)** bo‘lmasa, o‘zgarishni aynan muolajaga bog‘lash qiyin.",
+            "**Chalkashtiruvchi omil:** kuzatuv tadqiqotida guruhlar boshqa jihatlardan ham farq qilishi mumkin — shuning uchun sabab da’vosi asossiz.",
+            "**Juda kuchsiz variant ham xato bo‘ladi:** tadqiqot tasodifiy taqsimlangan tajriba bo‘lsa, “sabab haqida hech narsa deyib bo‘lmaydi” degan variant noto‘g‘ri."
+          ]
+        },
+        {
+          "type": "traps",
+          "heading": "Keng tarqalgan xatolar (tuzoq variantlar)",
+          "items": [
+            "**Kuzatuvdan sabab xulosasi:** kuzatuv tadqiqotiga oid variantda *“lowers”*, *“causes”*, *“improves”* so‘zlari — tuzoq (namuna 2, A).",
+            "**Ortiqcha umumlashtirish:** “any university”, “every country”, “all teenagers” (namuna 1, A; namuna 2, C).",
+            "**Har bir shaxs uchun kafolat:** *“every student will improve”* (namuna 1, D).",
+            "**Hajm bilan oqlash:** “sample is large, so it represents everyone” (namuna 3, C).",
+            "**Haddan tashqari ehtiyotkorlik:** tajribada “no cause-and-effect conclusion” yoki tasodifiy tanlanmada “no conclusion about the population” (namuna 1, C; namuna 2, D)."
+          ]
+        },
+        {
+          "type": "time",
+          "heading": "Vaqt bo‘yicha maslahat",
+          "items": [
+            "Bu tur odatda tez yechiladi: **30–60 soniya**. Hisob yo‘q, asosiy ish — tavsifni diqqat bilan o‘qish.",
+            "Variantlarni o‘qishdan oldin qoralamaga ikki belgi qo‘ying: “tanlash: random / random emas (kimdan?)” va “taqsimlash: random / yo‘q”. Keyin variantlar yuqoridagi to‘rt holat bo‘yicha tez saralanadi.",
+            "Desmos va kalkulyator bu turda kerak emas — tejalgan vaqtni hisob talab qiladigan savollarga qoldiring.",
+            "Bu ko‘nikma savollarida javob gap ko‘rinishida bo‘lgani uchun ular odatda variantli (multiple-choice) bo‘ladi; shu sababli bu qo‘llanmadagi barcha namunalar variantli."
+          ]
+        },
+        {
+          "type": "terms",
+          "heading": "Muhim inglizcha atamalar",
+          "terms": [
+            { "term": "observational study", "meaning": "kuzatuv tadqiqoti: tadqiqotchi faqat kuzatadi, guruhlarga o‘zi ajratmaydi" },
+            { "term": "experiment", "meaning": "tajriba: kim qaysi muolajani olishini tadqiqotchi belgilaydi" },
+            { "term": "randomly assigned", "meaning": "guruhlarga tasodifiy taqsimlangan → sabab-oqibat haqida gapirish mumkin" },
+            { "term": "selected at random / random sample", "meaning": "tasodifiy tanlangan → bosh to‘plamga umumlashtirish mumkin" },
+            { "term": "treatment group / control group", "meaning": "muolaja (sinov) guruhi / nazorat guruhi" },
+            { "term": "cause-and-effect", "meaning": "sabab-oqibat bog‘liqligi" },
+            { "term": "associated with", "meaning": "bog‘liq — lekin biri ikkinchisiga sabab bo‘lishi shart emas" },
+            { "term": "generalize", "meaning": "umumlashtirish: natijani kengroq guruhga tatbiq etish" },
+            { "term": "volunteer / voluntary response", "meaning": "ko‘ngilli / ixtiyoriy javob — noxolis tanlanma belgisi" },
+            { "term": "bias", "meaning": "noxolislik: natijaning bir tomonga tizimli og‘ishi" }
+          ]
+        },
+        {
+          "type": "checklist",
+          "heading": "Javobni tanlashdan oldin tekshiring",
+          "items": [
+            "Ishtirokchilar tasodifiy tanlanganmi — va qaysi guruhdan?",
+            "Guruhlarga tasodifiy taqsimlanganmi (tajribami yoki kuzatuvmi)?",
+            "Tanlagan variantim ma’lumot ruxsat bergandan kuchliroq ham, kuchsizroq ham emasmi?"
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "slug": "linear-inequalities",
+  "kind": "skill",
+  "skill": "linear_inequalities",
+  "position": 5,
+  "readingMinutes": 10,
+  "locales": {
+    "uz": {
+      "title": "Chiziqli tengsizliklar",
+      "summary": "Matndagi “at least”, “no more than” kabi iboralarni tengsizlikka aylantirish, tengsizlikni to‘g‘ri yechish, javobni vaziyatga qarab yaxlitlash va tengsizliklar sistemasining yechimini topish.",
+      "sections": [
+        {
+          "type": "concept",
+          "heading": "Bu ko‘nikma nimani tekshiradi",
+          "body": "Chiziqli tengsizlik xuddi tenglama kabi yechiladi, faqat bitta muhim farq bor: **ikkala tomonni manfiy songa ko‘paytirsangiz yoki bo‘lsangiz, tengsizlik belgisi teskarisiga o‘zgaradi.**\n\n$$-3x > 12 \\quad \\Rightarrow \\quad x < -4$$\n\nMatndagi iboralar va ularning belgilari:\n\n- *at least*, *no less than*, *a minimum of* → $\\ge$\n- *at most*, *no more than*, *a maximum of*, *cannot exceed* → $\\le$\n- *more than*, *greater than*, *exceeds* → $>$\n- *less than*, *fewer than* → $<$\n\nSAT bu mavzuda uch narsani tekshiradi:\n\n- **Tuzish:** vaziyatdan tengsizlik yozish (masalan, “xarajat 200 dollardan oshmasligi kerak”).\n- **Yechish va talqin qilish:** mumkin bo‘lgan eng katta yoki eng kichik qiymatni topish. Narsalar soni butun son bo‘lgani uchun javobni vaziyatga qarab to‘g‘ri yo‘nalishda yaxlitlash kerak.\n- **Grafik va sistemalar:** $xy$-tekislikda $y > mx + b$ — chiziqdan **yuqoridagi** soha, $y < mx + b$ — **pastdagi** soha. Qat’iy belgi ($<$ yoki $>$) bo‘lsa chegara chiziq **punktir**, $\\le$ yoki $\\ge$ bo‘lsa **uzluksiz** chiziq bo‘ladi. Tengsizliklar sistemasining yechimi — sohalarning **umumiy** qismi."
+        },
+        {
+          "type": "recognize",
+          "heading": "Savolni qanday tanib olasiz",
+          "items": [
+            "Matnda chegara bildiruvchi iboralar bor: *“at least”*, *“at most”*, *“no more than”*, *“cannot exceed”*.",
+            "*“What is the maximum number of …”* yoki *“What is the minimum number of …”* — tengsizlikni yechib, javobni butun songa to‘g‘ri yaxlitlash kerak.",
+            "*“Which inequality represents this situation?”* — tengsizlikni tuzish so‘ralmoqda.",
+            "*“Which point (x, y) is a solution to the system of inequalities?”* — nuqtalarni tekshirish savoli.",
+            "Grafikda chiziq va bo‘yalgan soha: *“The shaded region shown represents the solutions …”*.",
+            "*“What is the greatest possible integer value of x?”* — yechimlar orasidagi eng katta (yoki eng kichik) butun son."
+          ]
+        },
+        {
+          "type": "method",
+          "heading": "Ishlash usuli: qadamma-qadam",
+          "steps": [
+            "**Iboralarni belgiga aylantiring** (yuqoridagi ro‘yxat bo‘yicha). Kim kimdan ko‘p yoki kam ekanini aniq yozing: “kattalar soni bolalar sonidan kamida 2 baravar ko‘p” → $a \\ge 2c$.",
+            "**Tengsizlikni tuzing:** odatda ko‘rinishi — o‘zgarmas qism + (birlik narxi yoki og‘irligi) × soni, chegaradan katta-kichikligi bilan.",
+            "**Tenglama kabi yeching.** Manfiy songa ko‘paytirish yoki bo‘lish kerak bo‘lsa — belgini o‘sha zahoti aylantiring.",
+            "**Vaziyatga qarab yaxlitlang:** “eng ko‘pi bilan nechta” (maximum) savolida pastga, “kamida nechta” (minimum) savolida yuqoriga. Masalan, $n \\le 57.2$ → 57; $n \\ge 12.1$ → 13.",
+            "**Chegarani tekshiring:** topilgan sonni qo‘ying — shart bajariladimi? Bir birlik ortig‘ini (yoki kamini) qo‘ysangiz, shart buzilishi kerak.",
+            "**Nuqta yoki grafik savolida** har bir variantni **barcha** tengsizliklarga qo‘ying; grafikda esa avval tengsizlikni $y$ ga nisbatan yeching, keyin yuqori yoki pastki sohani aniqlang."
+          ]
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 1: eng ko‘p miqdor",
+          "example": {
+            "problem": "A freight elevator can safely carry a maximum load of 1,500 kilograms. A worker who weighs 82 kilograms rides in the elevator with a cart that weighs 46 kilograms. The worker will load identical boxes that each weigh 24 kilograms onto the cart. What is the maximum number of boxes the worker can load so that the total load does not exceed 1,500 kilograms?",
+            "choices": ["57", "58", "59", "62"],
+            "solution": [
+              "$b$ — qutilar soni. Umumiy yuk: ishchi + arava + qutilar, ya’ni $82 + 46 + 24b = 128 + 24b$.",
+              "*“does not exceed”* — $\\le$: $128 + 24b \\le 1500$.",
+              "128 ni ayiramiz: $24b \\le 1372$; 24 ga bo‘lamiz: $b \\le \\frac{1372}{24} \\approx 57.17$.",
+              "Qutilar soni butun son va chegaradan oshmasligi kerak, shuning uchun **pastga** yaxlitlaymiz: 57.",
+              "Tekshiruv: $128 + 24 \\cdot 57 = 128 + 1368 = 1496 \\le 1500$ ✓; $128 + 24 \\cdot 58 = 1520 > 1500$ — 58 ta quti sig‘maydi.",
+              "Tuzoqlar: **B (58)** — yuqoriga yaxlitlangan. **C (59)** — aravaning og‘irligi unutilgan: $\\frac{1500 - 82}{24} \\approx 59.1$. **D (62)** — ishchi ham, arava ham unutilgan: $\\frac{1500}{24} = 62.5$."
+            ],
+            "answer": "A) 57"
+          }
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 2: tengsizliklar sistemasi",
+          "example": {
+            "problem": "$$\\begin{aligned} y &< 2x - 3 \\\\ y &\\ge -x + 4 \\end{aligned}$$\n\nWhich point $(x, y)$ is a solution to the given system of inequalities in the $xy$-plane?",
+            "choices": ["$(1, 3)$", "$(3, 2)$", "$(4, 5)$", "$(2, 0)$"],
+            "solution": [
+              "Har bir nuqtani **ikkala** tengsizlikka qo‘yamiz. Bittasi bajarilmasa — nuqta yechim emas.",
+              "**A** $(1, 3)$: $3 < 2 \\cdot 1 - 3 = -1$ — noto‘g‘ri. Rad etamiz.",
+              "**B** $(3, 2)$: $2 < 2 \\cdot 3 - 3 = 3$ ✓ va $2 \\ge -3 + 4 = 1$ ✓. Ikkala shart bajarildi.",
+              "**C** $(4, 5)$: $5 < 2 \\cdot 4 - 3 = 5$ — noto‘g‘ri, chunki 5 o‘zidan kichik emas. Bu nuqta punktir chegara chiziqda yotadi va qat’iy tengsizlik uni o‘z ichiga olmaydi. Eng xavfli tuzoq aynan shu.",
+              "**D** $(2, 0)$: birinchi shart bajariladi ($0 < 1$), lekin $0 \\ge -2 + 4 = 2$ — noto‘g‘ri.",
+              "Desmos’da tekshiruv: ikkala tengsizlikni kiriting va $(3, 2)$ nuqtani yozing — u ikkala soha ustma-ust tushgan (to‘qroq bo‘yalgan) qismda yotadi."
+            ],
+            "answer": "B) $(3, 2)$"
+          }
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 3: eng katta butun qiymat",
+          "example": {
+            "problem": "What is the greatest integer value of $x$ that satisfies the inequality $-3(x - 4) > 2x - 18$?",
+            "solution": [
+              "Qavsni ochamiz: $-3x + 12 > 2x - 18$.",
+              "$x$ li hadlarni chapga, sonlarni o‘ngga o‘tkazamiz: $-5x > -30$.",
+              "$-5$ ga bo‘lamiz va belgini **aylantiramiz**: $x < 6$.",
+              "$x$ 6 dan qat’iy kichik, demak eng katta butun qiymat — **5**. 6 ni kiritish qat’iy belgini e’tiborsiz qoldirish bo‘ladi.",
+              "Tekshiruv: $x = 5$ da $-3 \\cdot 1 = -3 > 10 - 18 = -8$ ✓. $x = 6$ da $-6 > -6$ — noto‘g‘ri, demak 6 yechim emas ✓.",
+              "Belgini aylantirishni unutgan o‘quvchi $x > 6$ ni oladi va “eng katta butun son” topilmaydi — bu ham xato qilinganini bildiradi."
+            ],
+            "answer": "5"
+          }
+        },
+        {
+          "type": "watch_out",
+          "heading": "Nimaga e’tibor berish kerak",
+          "items": [
+            "**Manfiy songa ko‘paytirish yoki bo‘lish — belgi aylanadi.** Bu qoidani har safar ongli ravishda tekshiring, ayniqsa $-\\frac{x}{3}$ kabi hadlarda.",
+            "**Qat’iy va noqat’iy belgi:** *“more than”* — $>$, *“at least”* — $\\ge$. Chegaraviy qiymat yechimga kiradimi yoki yo‘qmi — shunga bog‘liq.",
+            "**Yaxlitlash yo‘nalishi:** maximum → pastga, minimum → yuqoriga. Odatdagi yaxlitlash qoidasi (0.5 dan boshlab yuqoriga) bu yerda ishlamaydi: natija 12.1 bo‘lsa ham minimum 13.",
+            "**Grafikda yuqori va past:** $2x - 3y > 6$ ni $y$ ga nisbatan yechsangiz, $-3$ ga bo‘lasiz va belgi aylanadi: $y < \\frac{2}{3}x - 2$ — soha chiziqdan **pastda**.",
+            "**“Kim kimdan” tartibi:** “$a$ kamida $c$ ning ikki baravari” → $a \\ge 2c$, $2a \\ge c$ emas.",
+            "**Barcha qismlarni hisobga oling:** o‘zgarmas to‘lov, boshlang‘ich og‘irlik, allaqachon bor miqdor — ularni unutish tuzoq variantlardan biriga olib boradi."
+          ]
+        },
+        {
+          "type": "traps",
+          "heading": "Keng tarqalgan xatolar (tuzoq variantlar)",
+          "items": [
+            "**Noto‘g‘ri yaxlitlash:** 57.17 ni 58 ga yaxlitlash (Namuna 1 dagi B).",
+            "**Bir qism unutilgan:** aravaning yoki boshlang‘ich to‘lovning og‘irligi yoki narxi hisobga olinmagan javob (Namuna 1 dagi C va D).",
+            "**Chegaradagi nuqta:** qat’iy tengsizlikda chiziq ustidagi nuqta yechim emas (Namuna 2 dagi C).",
+            "**Teskari belgi:** *“at most”* uchun $\\ge$ yozilgan variant — qolgan qismi to‘liq to‘g‘ri bo‘lgani uchun aldaydi. Belgiga alohida qarang.",
+            "**Koeffitsiyent noto‘g‘ri tomonda:** $a \\ge 2c$ o‘rniga $2a \\ge c$.",
+            "**Faqat bitta shartni tekshirish:** sistemada nuqtani birinchi tengsizlikka qo‘yib to‘xtab qolish (Namuna 2 dagi D birinchi shartni qanoatlantiradi)."
+          ]
+        },
+        {
+          "type": "time",
+          "heading": "Vaqt bo‘yicha maslahat",
+          "items": [
+            "Tengsizlik tuzish yoki yechish savoliga **45–75 soniya** yetarli; eng ko‘p yoki eng kam miqdor savolida yana 10 soniyani chegarani tekshirishga ajrating.",
+            "**Desmos tengsizliklarni bo‘yab chizadi:** $y < 2x - 3$ va $y \\ge -x + 4$ ni kiriting — umumiy soha to‘qroq rangda ko‘rinadi, qat’iy belgili chegara esa punktir chiziq bo‘ladi. Keyin variantdagi nuqtani, masalan $(3, 2)$ ni, alohida qatorga yozing.",
+            "**Bir o‘zgaruvchili tengsizlik:** $-3(x - 4) > 2x - 18$ ni Desmos’ga kiritsangiz, yechimlar sohasi bo‘yaladi va uning chegarasi $x = 6$ da punktir chiziq bo‘lib ko‘rinadi.",
+            "Nuqta savollarida Desmos’siz ham tez ishlash mumkin: har bir variantni qo‘yish 10–15 soniya oladi; birinchi bajarilmagan shartdan keyin darhol keyingi variantga o‘ting."
+          ]
+        },
+        {
+          "type": "terms",
+          "heading": "Muhim inglizcha atamalar",
+          "terms": [
+            { "term": "at least", "meaning": "kamida: $\\ge$" },
+            { "term": "at most / no more than", "meaning": "ko‘pi bilan, …dan oshmasin: $\\le$" },
+            { "term": "exceed / cannot exceed", "meaning": "oshib ketadi: $>$ / oshib ketmasligi kerak: $\\le$" },
+            { "term": "maximum / minimum number", "meaning": "eng ko‘p / eng kam son — javobni to‘g‘ri yo‘nalishda yaxlitlang" },
+            { "term": "greatest / least possible integer", "meaning": "mumkin bo‘lgan eng katta / eng kichik butun son" },
+            { "term": "satisfies the inequality", "meaning": "tengsizlikni qanoatlantiradi: qiymat qo‘yilganda tengsizlik to‘g‘ri bo‘ladi" },
+            { "term": "solution to the system of inequalities", "meaning": "tengsizliklar sistemasining yechimi: barcha shartlarni bajaradigan nuqta" },
+            { "term": "shaded region", "meaning": "bo‘yalgan soha — yechimlar to‘plami" }
+          ]
+        },
+        {
+          "type": "checklist",
+          "heading": "Javobni tanlashdan oldin tekshiring",
+          "items": [
+            "Manfiy songa ko‘paytirganda yoki bo‘lganda belgini aylantirdimmi?",
+            "Qat’iy ($<$, $>$) yoki noqat’iy ($\\le$, $\\ge$) belgini to‘g‘ri tanladimmi?",
+            "Butun son kerak bo‘lsa — to‘g‘ri yo‘nalishda yaxlitladim va chegarani tekshirdimmi?",
+            "Nuqtani barcha tengsizliklarga qo‘ydimmi?"
+          ]
+        }
+      ]
+    }
+  }
+}

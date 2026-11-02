@@ -1,0 +1,152 @@
+{
+  "slug": "probability-and-conditional-probability",
+  "kind": "skill",
+  "skill": "probability_conditional",
+  "position": 13,
+  "readingMinutes": 10,
+  "locales": {
+    "uz": {
+      "title": "Ehtimollik va shartli ehtimollik",
+      "summary": "Ikki tomonlama jadvallar va matnli tavsiflardan ehtimollikni hisoblash. Eng muhim ko‘nikma — to‘g‘ri maxrajni tanlash: “given that” va “of those who” kabi iboralar tanlov guruhini toraytiradi.",
+      "sections": [
+        {
+          "type": "concept",
+          "heading": "Bu ko‘nikma nimani tekshiradi",
+          "body": "Ehtimollik — biror hodisaning ro‘y berish imkoniyati, 0 dan 1 gacha bo‘lgan son: $$P(A) = \\frac{\\text{number of favorable outcomes}}{\\text{total number of outcomes}}$$ SAT da ehtimollik ko‘pincha **ikki tomonlama jadval** (two-way table) orqali beriladi: odamlar yoki narsalar ikki belgi bo‘yicha guruhlangan (masalan, sinf va afzallik), oxirida esa jami (Total) satr va ustun bo‘ladi.\n\n- **Oddiy ehtimollik:** maxraj — barcha kuzatuvlar soni (umumiy jami, grand total).\n- **Shartli ehtimollik (conditional probability):** *“given that B”*, *“of those who B”*, *“among the B”* — tanlov faqat $B$ guruh ichidan bo‘ladi: $P(A \\mid B) = \\frac{\\text{count}(A \\text{ and } B)}{\\text{count}(B)}$.\n- **Qarama-qarshi hodisa (complement):** $P(\\text{not } A) = 1 - P(A)$.\n- **“Yoki” (or):** $P(A \\text{ or } B) = P(A) + P(B) - P(A \\text{ and } B)$ — ikkala guruhga kiruvchilar ikki marta sanalmasligi uchun.\n- **Kutilgan son (expected count):** $n \\times P$. Masalan, ehtimolligi $0.3$ bo‘lgan hodisa 200 marta takrorlansa, taxminan 60 marta ro‘y beradi.\n\nE’tibor bering: $P(A \\mid B)$ va $P(B \\mid A)$ — umuman boshqa sonlar, chunki ularning maxrajlari boshqa."
+        },
+        {
+          "type": "recognize",
+          "heading": "Savolni qanday tanib olasiz",
+          "items": [
+            "*“If one of the … is selected at random, what is the probability that …?”* — klassik ehtimollik savoli.",
+            "*“… given that …”*, *“If a student who … is selected at random”*, *“of the students who …”* — shartli ehtimollik: maxraj — aynan shu guruh.",
+            "Jadval berilgan: satrlarda bir belgi (masalan, sinf), ustunlarda ikkinchisi (masalan, afzallik) va *“Total”*.",
+            "*“What is the probability that the student is in 10th grade or prefers …?”* — “yoki” savoli: kesishmani ikki marta sanamaslik kerak.",
+            "Variantlar bir-biriga juda o‘xshash kasrlar (bir xil surat, har xil maxraj) — bu maxraj tuzog‘i belgisi."
+          ]
+        },
+        {
+          "type": "method",
+          "heading": "Ishlash usuli: qadamma-qadam",
+          "steps": [
+            "**Tanlov qaysi guruhdan bo‘layotganini toping.** *“selected at random from all …”* — umumiy jami; *“from those who …”*, *“given that …”* — faqat shu guruh. Bu son — **maxraj**. Uni birinchi bo‘lib yozing.",
+            "**Jadvalda kerakli satr va ustunni belgilang.** Kerak bo‘lsa, bo‘sh kataklarni jami (Total) satr yoki ustundan ayirish orqali to‘ldiring.",
+            "**Suratni maxraj guruhining ichidan oling.** Surat doim maxraj guruhining bir qismi bo‘lishi kerak.",
+            "**“Yoki” bo‘lsa, ikkala guruhni qo‘shib, kesishmani bir marta ayiring** — yoki kerakli kataklarni bittadan qo‘shib chiqing.",
+            "**Kasrni soddalashtiring va variantlar formatiga keltiring** (oddiy kasr, o‘nli kasr yoki foiz).",
+            "**Tekshiring:** javob 0 va 1 orasidami? Surat maxrajdan kichikmi? Maxraj savoldagi guruhga mosmi?"
+          ]
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 1: shartli ehtimollik jadvaldan",
+          "example": {
+            "passage": "A survey asked 200 students whether they prefer to study in the morning or at night. The results, by grade level, are summarized below.\n\n- 10th grade: 36 prefer morning, 54 prefer night (90 students in total)\n- 11th grade: 48 prefer morning, 62 prefer night (110 students in total)\n- All students: 84 prefer morning, 116 prefer night (200 students in total)",
+            "problem": "If one of the students who prefer to study at night is selected at random, what is the probability that the student is in 11th grade?",
+            "choices": ["$\\frac{31}{100}$", "$\\frac{27}{58}$", "$\\frac{31}{58}$", "$\\frac{31}{55}$"],
+            "solution": [
+              "Tanlov *“one of the students who prefer to study at night”* guruhidan, demak maxraj — kechasi o‘qishni afzal ko‘ruvchilar: $54 + 62 = 116$.",
+              "Surat — shu guruh ichidagi 11-sinf o‘quvchilari: 62.",
+              "$P = \\frac{62}{116} = \\frac{31}{58}$.",
+              "Nega boshqa variantlar xato: $\\frac{31}{100} = \\frac{62}{200}$ — maxrajga barcha o‘quvchilar olingan; $\\frac{31}{55} = \\frac{62}{110}$ — shart teskari, bu 11-sinf o‘quvchisining kechasi o‘qishni afzal ko‘rish ehtimolligi; $\\frac{27}{58} = \\frac{54}{116}$ — to‘g‘ri maxraj, lekin noto‘g‘ri sinf (10-sinf).",
+              "Tekshiruv: $\\frac{31}{58} \\approx 0.53$ — kechasi o‘qiydiganlarning yarmidan sal ko‘prog‘i 11-sinfda, bu $62 > 54$ ga mos ✓."
+            ],
+            "answer": "C) $\\frac{31}{58}$"
+          }
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 2: jadvalni o‘zingiz tuzasiz (javobni o‘zingiz yozasiz)",
+          "example": {
+            "problem": "A box contains 40 tiles. Each tile is either red or blue, and each tile is either square or circular. There are 16 red tiles, and 12 of the red tiles are square. There are 10 blue tiles that are square. If a square tile is selected at random from the box, what is the probability that the tile is blue?",
+            "solution": [
+              "Ma’lumotni jadvalga aylantiramiz. Qizil: 16 ta, ulardan 12 tasi kvadrat, $16 - 12 = 4$ tasi doira. Ko‘k: $40 - 16 = 24$ ta, ulardan 10 tasi kvadrat, $24 - 10 = 14$ tasi doira.",
+              "Tanlov *“a square tile”* guruhidan, demak maxraj — barcha kvadrat plitkalar: $12 + 10 = 22$.",
+              "Surat — kvadratlar ichidagi ko‘k plitkalar: 10. $P = \\frac{10}{22} = \\frac{5}{11}$.",
+              "Tuzoqlar: $\\frac{10}{40} = \\frac{1}{4}$ — maxrajga barcha plitkalar olingan; $\\frac{10}{24} = \\frac{5}{12}$ — shart teskari, bu ko‘k plitkaning kvadrat bo‘lish ehtimolligi.",
+              "Javobni kiritish: **5/11** deb yozish mumkin. O‘nli kasr ko‘rinishida $0.4545\\ldots$ — “0.4545” 6 belgi bo‘lib, javob maydoniga sig‘maydi, shuning uchun **.4545** yoki **.4546** deb yozing. .45 kabi qisqa yaxlitlash qabul qilinmaydi.",
+              "Tekshiruv: $\\frac{5}{11} \\approx 0.45$ — kvadratlarning yarmidan sal kamrog‘i ko‘k, bu $10 < 12$ ga mos ✓."
+            ],
+            "answer": "5/11 (yoki .4545, .4546)"
+          }
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 3: “yoki” (or) ehtimolligi",
+          "example": {
+            "passage": "A survey asked 200 students whether they prefer to study in the morning or at night. The results, by grade level, are summarized below.\n\n- 10th grade: 36 prefer morning, 54 prefer night (90 students in total)\n- 11th grade: 48 prefer morning, 62 prefer night (110 students in total)\n- All students: 84 prefer morning, 116 prefer night (200 students in total)",
+            "problem": "If one of the 200 students is selected at random, what is the probability that the student is in 10th grade or prefers to study in the morning?",
+            "choices": ["0.18", "0.45", "0.69", "0.87"],
+            "solution": [
+              "Tanlov barcha 200 o‘quvchidan, demak maxraj — 200.",
+              "10-sinf: 90 o‘quvchi. Ertalab o‘qishni afzal ko‘ruvchilar: 84. Lekin 36 o‘quvchi (10-sinf **va** ertalab) ikkala guruhda ham bor.",
+              "Ikki marta sanamaslik uchun: $90 + 84 - 36 = 138$. $P = \\frac{138}{200} = 0.69$.",
+              "Boshqa usul — kerakli kataklarni bittadan qo‘shamiz: butun 10-sinf ($36 + 54$) va 11-sinfdagi ertalabchilar (48): $36 + 54 + 48 = 138$ ✓.",
+              "Nega boshqa variantlar xato: **0.87** — $\\frac{90 + 84}{200}$, ya’ni 36 o‘quvchi ikki marta sanalgan; **0.18** — $\\frac{36}{200}$, bu “va” (and) ehtimolligi; **0.45** — $\\frac{90}{200}$, faqat 10-sinf."
+            ],
+            "answer": "C) 0.69"
+          }
+        },
+        {
+          "type": "watch_out",
+          "heading": "Nimaga e’tibor berish kerak",
+          "items": [
+            "**Maxraj — savolning kaliti.** *“of those who”*, *“given that”*, *“among”* dan keyingi guruh maxrajga boradi.",
+            "**Shart tartibi muhim:** $P(A \\mid B) \\ne P(B \\mid A)$. “Kechasi o‘qiydiganlar ichida 11-sinf” va “11-sinf ichida kechasi o‘qiydiganlar” — maxraji boshqa-boshqa ikki savol.",
+            "**Total satr va ustunini ma’lumot bilan aralashtirmang:** jami sonni yana bir marta qo‘shib yubormang.",
+            "**“And” va “or” farqi:** “and” — ikkala shart bir vaqtda (bitta katak); “or” — kamida bittasi (bir nechta katak).",
+            "**Qaytarmasdan tanlash (without replacement):** birinchi tanlovdan keyin umumiy son ham, kerakli guruh soni ham 1 ga kamayadi.",
+            "**Javob formati:** variantlar foizda bo‘lsa, kasrni 100 ga ko‘paytiring. SPR’da kasr sig‘masa, o‘nli kasrni to‘rtinchi raqamgacha (kesib yoki yaxlitlab) yozing."
+          ]
+        },
+        {
+          "type": "traps",
+          "heading": "Keng tarqalgan xatolar (tuzoq variantlar)",
+          "items": [
+            "**Umumiy jami maxraj sifatida:** shartli savolda 200 ga bo‘lish (namuna 1, A).",
+            "**Teskari shart:** “given B” o‘rniga “given A” (namuna 1, D; namuna 2 dagi 5/12).",
+            "**Ikki marta sanash:** “or” savolida kesishmani ayirmaslik (namuna 3 dagi 0.87).",
+            "**Qo‘shni katak:** maxraj to‘g‘ri, lekin satr yoki ustun noto‘g‘ri (namuna 1, B).",
+            "**Ehtimollik o‘rniga son:** variantlarda 62 kabi son ham bo‘lishi mumkin — savol ehtimollikni so‘rasa, kasr kerak."
+          ]
+        },
+        {
+          "type": "time",
+          "heading": "Vaqt bo‘yicha maslahat",
+          "items": [
+            "Jadvaldan oddiy yoki shartli ehtimollik: **30–60 soniya**; jadvalni to‘ldirish kerak bo‘lsa: **60–90 soniya**.",
+            "Avval maxrajni, keyin suratni yozing — bu tartib eng ko‘p uchraydigan xatoning oldini oladi va vaqtni tejaydi.",
+            "Desmos bu yerda deyarli kerak emas; faqat kasrni o‘nli kasrga aylantirish yoki variantlarni solishtirish uchun ($62 / 116$ ni yozib, natijani variantlar bilan solishtiring).",
+            "Matnli savolda ma’lumotlar sochilib berilgan bo‘lsa, qoralamaga $2 \\times 2$ jadval chizing: 20 soniya sarflab, adashib ketishdan saqlanasiz."
+          ]
+        },
+        {
+          "type": "terms",
+          "heading": "Muhim inglizcha atamalar",
+          "terms": [
+            { "term": "selected at random", "meaning": "tasodifiy tanlangan" },
+            { "term": "probability", "meaning": "ehtimollik: 0 dan 1 gacha son (yoki 0% dan 100% gacha)" },
+            { "term": "given that", "meaning": "… ekanligi ma’lum bo‘lsa — shartli ehtimollik, maxrajni toraytiradi" },
+            { "term": "of those who / among", "meaning": "… lar orasidan — tanlov faqat shu guruhdan" },
+            { "term": "two-way table", "meaning": "ikki tomonlama jadval: ikki belgi bo‘yicha guruhlangan sonlar" },
+            { "term": "total", "meaning": "jami (satr yoki ustun yig‘indisi)" },
+            { "term": "outcome", "meaning": "natija, mumkin bo‘lgan holat" },
+            { "term": "independent events", "meaning": "bog‘liq bo‘lmagan hodisalar: biri ikkinchisining ehtimolligiga ta’sir qilmaydi" },
+            { "term": "without replacement", "meaning": "qaytarmasdan: tanlangan narsa qaytarib qo‘yilmaydi" },
+            { "term": "expected number", "meaning": "kutilgan son: $n \\times P$" }
+          ]
+        },
+        {
+          "type": "checklist",
+          "heading": "Javobni tanlashdan oldin tekshiring",
+          "items": [
+            "Maxraj savoldagi guruhga (given that, of those who) mosmi?",
+            "Surat maxraj guruhining ichidami?",
+            "“And” va “or” farqini hisobga oldimmi, kesishmani ikki marta sanamadimmi?",
+            "Javob formati (kasr, o‘nli kasr, foiz) variantlarga mosmi?"
+          ]
+        }
+      ]
+    }
+  }
+}

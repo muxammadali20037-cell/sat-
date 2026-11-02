@@ -1,0 +1,150 @@
+{
+  "slug": "nonlinear-functions",
+  "kind": "skill",
+  "skill": "nonlinear_functions",
+  "position": 6,
+  "readingMinutes": 11,
+  "locales": {
+    "uz": {
+      "title": "Nochiziqli funksiyalar",
+      "summary": "Kvadratik va ko‘rsatkichli funksiyalarni tanib olish, parabolaning uchi, nollari va eng katta yoki eng kichik qiymatini topish, foizli o‘sish va kamayish modellarini talqin qilish hamda grafik siljishlarini tushunish.",
+      "sections": [
+        {
+          "type": "concept",
+          "heading": "Bu ko‘nikma nimani tekshiradi",
+          "body": "Bu ko‘nikma Advanced Math bo‘limiga kiradi va asosan ikki turdagi funksiya atrofida quriladi.\n\n**Kvadratik funksiya** — grafigi parabola. Uning uch shakli bor va har biri boshqa narsani “ko‘rsatib turadi”:\n\n- **Standart shakl:** $f(x) = ax^2 + bx + c$ — $y$-kesishish $(0, c)$; uchning $x$ koordinatasi $-\\frac{b}{2a}$.\n- **Uch shakli (vertex form):** $f(x) = a(x - h)^2 + k$ — uchi $(h, k)$.\n- **Ko‘paytuvchili shakl (factored form):** $f(x) = a(x - p)(x - q)$ — nollari ($x$-kesishishlar) $p$ va $q$; uchi ularning o‘rtasida: $x = \\frac{p + q}{2}$.\n\n$a > 0$ bo‘lsa parabola yuqoriga ochiladi va uchida **minimum** bo‘ladi; $a < 0$ bo‘lsa pastga ochiladi va uchida **maksimum** bo‘ladi.\n\n**Ko‘rsatkichli funksiya** — o‘zgaruvchi daraja ko‘rsatkichida turadi: $f(t) = a \\cdot b^{t}$.\n\n- $a$ — boshlang‘ich qiymat ($t = 0$ dagi qiymat).\n- $b > 1$ — o‘sish, $0 < b < 1$ — kamayish.\n- Foiz bilan: $r$ ga o‘sish → $b = 1 + r$; $r$ ga kamayish → $b = 1 - r$. Masalan, 6% o‘sish → $1.06$, 6% kamayish → $0.94$.\n- $a \\cdot 2^{t/5}$ — har 5 birlik vaqtda 2 baravar oshadi; $a\\left(\\frac{1}{2}\\right)^{t/9}$ — har 9 birlikda yarmiga kamayadi.\n\nChiziqli va ko‘rsatkichli modelning farqi: chiziqli modelda teng vaqt oralig‘ida bir xil **son qo‘shiladi**, ko‘rsatkichli modelda esa bir xil **songa ko‘paytiriladi** (ya’ni bir xil foizga o‘zgaradi).\n\n**Grafik siljishlari:**\n\n- $f(x) + k$ — $k$ birlik yuqoriga, $f(x) - k$ — $k$ birlik pastga.\n- $f(x - h)$ — $h$ birlik **o‘ngga**, $f(x + h)$ — $h$ birlik **chapga** (qavs ichidagi ishoraga teskari).\n- $-f(x)$ — grafik $x$ o‘qiga nisbatan aks etadi."
+        },
+        {
+          "type": "recognize",
+          "heading": "Savolni qanday tanib olasiz",
+          "items": [
+            "Funksiyada $x^2$ bor yoki grafik parabola: *“What is the minimum value of the function?”*, *“the vertex of the graph”*.",
+            "Nollar haqida: *“the x-intercepts of the graph”*, *“the zeros of the function”*.",
+            "Foiz va vaqt: *“increases by 4% each year”*, *“decreases by half every 9 days”*, *“doubles every 3 hours”* — ko‘rsatkichli model.",
+            "*“What is the best interpretation of 0.94 in this context?”* — ko‘rsatkichli modeldagi sonni talqin qilish.",
+            "*“Which statement best describes how the value changes?”* — chiziqli yoki ko‘rsatkichli, o‘suvchi yoki kamayuvchi ekanini aniqlash.",
+            "*“The graph of y = g(x) is the result of shifting the graph of y = f(x) …”* — siljish savoli."
+          ]
+        },
+        {
+          "type": "method",
+          "heading": "Ishlash usuli: qadamma-qadam",
+          "steps": [
+            "**Funksiya turini aniqlang:** $x^2$ bor — kvadratik; $x$ daraja ko‘rsatkichida — ko‘rsatkichli; boshqa (kasr, ildiz, kub) bo‘lsa — qiymat qo‘yib yoki grafik bilan ishlang.",
+            "**So‘ralgan narsani ko‘rsatadigan shaklni tanlang:** nollar — ko‘paytuvchili shakl; uch, maksimum yoki minimum — uch shakli yoki $-\\frac{b}{2a}$; $y$-kesishish yoki boshlang‘ich qiymat — $f(0)$.",
+            "**Ko‘rsatkichli modelda** uch narsani yozib oling: boshlang‘ich qiymat ($a$), ko‘paytuvchi ($b$) va davr (darajadagi maxraj). Foizni $b = 1 + r$ yoki $b = 1 - r$ orqali tekshiring.",
+            "**Funksiya qiymatini hisoblashda** manfiy sonni qavsga oling: $f(-3)$ da $(-3)^2 = 9$, $-3^2 = -9$ esa boshqa narsa.",
+            "**Siljish savolida** qavs ichidagi o‘zgarish teskari yo‘nalishda ishlashini eslang: $f(x + 4)$ — 4 birlik chapga.",
+            "**Javob shaklini tekshiring:** uchning $x$ koordinatasi so‘ralganmi yoki funksiyaning eng katta (eng kichik) **qiymati**mi? Desmos grafigi bilan natijani tasdiqlang."
+          ]
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 1: ko‘rsatkichli modelni talqin qilish",
+          "example": {
+            "problem": "A lab technician models the mass, in grams, of a radioactive sample $t$ days after a measurement began with the function $M(t) = 640\\left(\\frac{1}{2}\\right)^{t/9}$. Based on the model, which of the following statements is true?",
+            "choices": ["The mass of the sample decreases by 9 grams each day.", "The mass of the sample is halved every 9 days.", "The mass of the sample decreases by 50% each day.", "The initial mass of the sample is 320 grams."],
+            "solution": [
+              "Modelni qismlarga ajratamiz: $640$ — boshlang‘ich massa ($M(0) = 640 \\cdot 1 = 640$), $\\frac{1}{2}$ — ko‘paytuvchi, $\\frac{t}{9}$ — davr 9 kun.",
+              "Daraja $\\frac{t}{9}$ har 9 kunda 1 ga oshadi, demak har 9 kunda massa $\\frac{1}{2}$ ga ko‘paytiriladi — **yarmiga kamayadi**. Bu **B**.",
+              "Tekshiruv: $M(9) = 640 \\cdot \\frac{1}{2} = 320$, $M(18) = 160$, $M(27) = 640 \\cdot \\frac{1}{8} = 80$ — har 9 kunda yarmi qoladi ✓.",
+              "**A** — chiziqli fikrlash: ko‘rsatkichli modelda har kuni bir xil gramm emas, bir xil **ulush** kamayadi. **C** — davr e’tiborsiz qoldirilgan: 50% kamayish har kuni emas, har 9 kunda. **D** — 320 bu 9 kundan keyingi massa, boshlang‘ich emas."
+            ],
+            "answer": "B"
+          }
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 2: kvadratik funksiyaning eng katta qiymati",
+          "example": {
+            "problem": "The function $f$ is defined by $f(x) = -2(x - 3)(x + 7)$. What is the maximum value of $f(x)$?",
+            "solution": [
+              "Ko‘paytuvchili shakldan nollar: $x = 3$ va $x = -7$ (qavs ichidagi ishoraga teskari).",
+              "$a = -2 < 0$ — parabola pastga ochiladi, demak uchida maksimum bor.",
+              "Uchning $x$ koordinatasi nollarning o‘rtasida: $x = \\frac{3 + (-7)}{2} = -2$.",
+              "Maksimal qiymat — uchning $y$ koordinatasi: $f(-2) = -2(-2 - 3)(-2 + 7) = -2 \\cdot (-5) \\cdot 5 = 50$.",
+              "Tekshiruv: qavslarni ochsak $f(x) = -2x^2 - 8x + 42$; $-\\frac{b}{2a} = -\\frac{-8}{2 \\cdot (-2)} = -2$ ✓ va $f(-2) = -8 + 16 + 42 = 50$ ✓.",
+              "Tuzoq: **-2** ni javob qilish — bu uchning $x$ koordinatasi, maksimal qiymat emas. Javob: **50**."
+            ],
+            "answer": "50"
+          }
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 3: grafik siljishi",
+          "example": {
+            "problem": "The function $f$ is defined by $f(x) = x^2$. The function $g$ is defined by $g(x) = f(x + 4) - 1$. What are the coordinates of the vertex of the graph of $y = g(x)$ in the $xy$-plane?",
+            "choices": ["$(4, -1)$", "$(-4, -1)$", "$(-4, 1)$", "$(4, 1)$"],
+            "solution": [
+              "$g(x) = (x + 4)^2 - 1$ — bu uch shakli $a(x - h)^2 + k$: $x + 4 = x - (-4)$, demak $h = -4$, $k = -1$.",
+              "Siljish tilida: $f(x + 4)$ — 4 birlik **chapga**, $-1$ — 1 birlik pastga. $f$ ning uchi $(0, 0)$ nuqtadan $(-4, -1)$ ga ko‘chadi.",
+              "**A** — qavs ichidagi ishora to‘g‘ridan-to‘g‘ri olingan ($+4$ → 4). **C** va **D** — tashqaridagi $-1$ ning ishorasi ham o‘zgartirilgan, holbuki tashqi o‘zgarish o‘z ishorasi bilan ishlaydi.",
+              "Tekshiruv: $g(-4) = 0 - 1 = -1$, boshqa har qanday $x$ da esa $(x + 4)^2 > 0$, ya’ni $g(x) > -1$ — eng past nuqta haqiqatan $(-4, -1)$ ✓."
+            ],
+            "answer": "B) $(-4, -1)$"
+          }
+        },
+        {
+          "type": "watch_out",
+          "heading": "Nimaga e’tibor berish kerak",
+          "items": [
+            "**Foizni ko‘paytuvchiga aylantirish:** 8% o‘sish → $1.08$ ($0.08$ emas); 8% kamayish → $0.92$.",
+            "**Darajadagi davr:** $(1.05)^{2t}$ — yiliga ikki marta 5% dan o‘sish; $(1.05)^{t/2}$ — har 2 yilda bir marta 5% o‘sish. Savolda “har yili” deyilganmi yoki “har 2 yilda” — sinchiklab o‘qing.",
+            "**Uch shaklidagi ishora:** $(x + 7)^2$ da $h = -7$. Qavs ichidagi son har doim teskari ishora bilan olinadi.",
+            "**Maksimal qiymat va uning joyi:** *“the maximum value of f”* — uchning $y$ koordinatasi; *“at what value of x does f reach its maximum”* — $x$ koordinatasi.",
+            "**Manfiy sonni kvadratga ko‘tarish:** $f(-3)$ ni hisoblashda $(-3)^2 = 9$. Kalkulyatorda ham qavsni yozing.",
+            "**Boshlang‘ich qiymat** — har doim $f(0)$: ko‘rsatkichli modelda bu $a$, kvadratik funksiyaning standart shaklida $c$."
+          ]
+        },
+        {
+          "type": "traps",
+          "heading": "Keng tarqalgan xatolar (tuzoq variantlar)",
+          "items": [
+            "**Uchning koordinatalari almashtirilgan:** maksimal qiymat so‘ralganda $x$ koordinatasini javob qilish (Namuna 2 dagi −2).",
+            "**Foiz va ko‘paytuvchi chalkashligi:** “model necha foizga o‘sadi” savolida $1.06$ ni 106% deb o‘qish — to‘g‘risi 6%.",
+            "**Davrni unutish:** $\\left(\\frac{1}{2}\\right)^{t/9}$ ni “har kuni yarmiga” deb talqin qilish (Namuna 1 dagi C).",
+            "**Chiziqli talqin:** ko‘rsatkichli model uchun “har yili bir xil miqdorga oshadi” degan variant doim noto‘g‘ri — ko‘rsatkichli modelda bir xil **foiz** o‘zgaradi.",
+            "**Siljish yo‘nalishi:** $f(x - 3)$ ni chapga siljish deb olish (Namuna 3 dagi A).",
+            "**Boshlang‘ich qiymat o‘rniga birinchi davrdan keyingi qiymat** (Namuna 1 dagi D)."
+          ]
+        },
+        {
+          "type": "time",
+          "heading": "Vaqt bo‘yicha maslahat",
+          "items": [
+            "Talqin savollari (ko‘rsatkichli model, siljish) — **30–60 soniya**; maksimum, minimum va nollar — **60–90 soniya**.",
+            "**Desmos kvadratik funksiyada eng kuchli vosita:** $f(x) = -2(x - 3)(x + 7)$ ni kiriting va grafikka bosing — Desmos uchini (maksimum yoki minimum) va nollarini kulrang nuqtalar bilan belgilaydi. Nuqtaga bosib koordinatasini o‘qing — 15 soniyalik ish.",
+            "**Ko‘rsatkichli modelni tekshirish:** $M(t)$ ni kiriting va keyingi qatorlarga $M(0)$, $M(9)$, $M(18)$ ni yozing — boshlang‘ich qiymat va davr darhol ko‘rinadi.",
+            "**Siljish savollarida** $f$ va $g$ ni bitta ekranda chizing — uch qayerga ko‘chganini ko‘z bilan tekshirasiz.",
+            "Grafik ekranga sig‘masa (qiymatlar yuzlab yoki minglab bo‘lsa), grafikni kichraytiring yoki qiymatlarni to‘g‘ridan-to‘g‘ri $f(\\ldots)$ ko‘rinishida hisoblating."
+          ]
+        },
+        {
+          "type": "terms",
+          "heading": "Muhim inglizcha atamalar",
+          "terms": [
+            { "term": "vertex", "meaning": "parabolaning uchi — eng yuqori yoki eng past nuqtasi" },
+            { "term": "maximum / minimum value", "meaning": "eng katta / eng kichik qiymat — uchning $y$ koordinatasi" },
+            { "term": "zeros / roots / x-intercepts", "meaning": "nollar: $f(x) = 0$ bo‘ladigan $x$ qiymatlari; grafik $x$ o‘qini kesgan joylar" },
+            { "term": "axis of symmetry", "meaning": "simmetriya o‘qi: parabolaning uchidan o‘tuvchi vertikal chiziq $x = h$" },
+            { "term": "exponential growth / decay", "meaning": "ko‘rsatkichli o‘sish / kamayish" },
+            { "term": "initial value", "meaning": "boshlang‘ich qiymat: $t = 0$ dagi qiymat" },
+            { "term": "increases by … percent", "meaning": "… foizga oshadi — ko‘paytuvchi $1 + r$" },
+            { "term": "is halved / doubles every", "meaning": "har … da yarmiga kamayadi / ikki baravar oshadi" },
+            { "term": "shifted / translated", "meaning": "siljitilgan (ko‘chirilgan) grafik" }
+          ]
+        },
+        {
+          "type": "checklist",
+          "heading": "Javobni tanlashdan oldin tekshiring",
+          "items": [
+            "Funksiya turini (kvadratik yoki ko‘rsatkichli) to‘g‘ri aniqladimmi?",
+            "Foizni ko‘paytuvchiga to‘g‘ri aylantirdim va davrni hisobga oldimmi?",
+            "So‘ralgan narsa $x$ koordinatasimi yoki funksiyaning qiymatimi?",
+            "Natijani Desmos grafigi yoki qiymat qo‘yish bilan tasdiqladimmi?"
+          ]
+        }
+      ]
+    }
+  }
+}

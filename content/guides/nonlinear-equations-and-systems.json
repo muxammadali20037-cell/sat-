@@ -1,0 +1,151 @@
+{
+  "slug": "nonlinear-equations-and-systems",
+  "kind": "skill",
+  "skill": "nonlinear_equations_systems",
+  "position": 7,
+  "readingMinutes": 11,
+  "locales": {
+    "uz": {
+      "title": "Nochiziqli tenglamalar va sistemalar",
+      "summary": "Kvadrat, ildizli, kasrli va modulli tenglamalarni yechish, diskriminant yordamida yechimlar sonini aniqlash, begona ildizlarni tashlab yuborish hamda chiziq va parabola sistemasini yechish.",
+      "sections": [
+        {
+          "type": "concept",
+          "heading": "Bu ko‘nikma nimani tekshiradi",
+          "body": "Bu ko‘nikma bir o‘zgaruvchili nochiziqli tenglamalarni va ikki o‘zgaruvchili nochiziqli sistemalarni qamrab oladi.\n\n**Kvadrat tenglama** $ax^2 + bx + c = 0$ uch usulda yechiladi:\n\n- **Ko‘paytuvchilarga ajratish:** $x^2 - 10x + 9 = (x - 1)(x - 9) = 0$ → $x = 1$ yoki $x = 9$.\n- **Kvadrat ildiz chiqarish** ($x$ li had bo‘lmasa): $(x - 2)^2 = 25$ → $x - 2 = \\pm 5$ → $x = 7$ yoki $x = -3$.\n- **Kvadrat tenglama ildizlari formulasi:** $x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$.\n\n**Diskriminant** $D = b^2 - 4ac$ yechimlar sonini ko‘rsatadi: $D > 0$ — ikkita haqiqiy yechim, $D = 0$ — bitta, $D < 0$ — haqiqiy yechim yo‘q.\n\n**Viyet teoremasi:** yechimlar yig‘indisi $-\\frac{b}{a}$, ko‘paytmasi $\\frac{c}{a}$. Bu yechimlarni topmasdan javob olish imkonini beradi.\n\nBoshqa turlar:\n\n- **Ildizli tenglama**, masalan $\\sqrt{2x + 7} = x - 4$: ikkala tomon kvadratga ko‘tariladi, lekin bu **begona ildiz** paydo qilishi mumkin. Har bir javobni dastlabki tenglamaga qo‘yib tekshirish shart.\n- **Kasrli tenglama:** maxrajni nolga aylantiradigan qiymat yechim bo‘la olmaydi.\n- **Modulli tenglama:** $|x - 3| = 5$ → $x - 3 = 5$ yoki $x - 3 = -5$.\n\n**Nochiziqli sistema** (masalan, chiziq va parabola) o‘rniga qo‘yish bilan yechiladi: natijada kvadrat tenglama hosil bo‘ladi. Chiziq parabolani 0, 1 yoki 2 nuqtada kesishi mumkin — buni ham diskriminant aniqlaydi."
+        },
+        {
+          "type": "recognize",
+          "heading": "Savolni qanday tanib olasiz",
+          "items": [
+            "Tenglamada $x^2$, ildiz, modul yoki maxrajda $x$ bor: *“What is the positive solution to the given equation?”*",
+            "*“How many distinct real solutions does the given equation have?”* — diskriminant savoli.",
+            "*“… has exactly one real solution”*, *“… has no real solutions”* — konstantani diskriminant orqali topish.",
+            "*“What is the sum of the solutions to the given equation?”* yoki *“… the product of the solutions”* — Viyet teoremasi.",
+            "Ikki tenglama, biri nochiziqli: *“The given system of equations has two solutions …”*, *“The graphs of the equations intersect at exactly one point …”*.",
+            "*“What is the solution set of the equation?”* va ildizli tenglama — begona ildiz tuzog‘iga tayyor turing."
+          ]
+        },
+        {
+          "type": "method",
+          "heading": "Ishlash usuli: qadamma-qadam",
+          "steps": [
+            "**Nolga tenglang:** barcha hadlarni bir tomonga o‘tkazib, $ax^2 + bx + c = 0$ ko‘rinishiga keltiring. Tenglamani $x$ ga bo‘lmang — $x = 0$ yechimini yo‘qotasiz.",
+            "**Usulni tanlang:** butun sonli ko‘paytuvchilar tez topilsa — ajrating (10–15 soniya); topilmasa — formula yoki Desmos.",
+            "**Yig‘indi yoki ko‘paytma so‘ralsa** — tenglamani yechmang, $-\\frac{b}{a}$ yoki $\\frac{c}{a}$ dan foydalaning (avval standart shaklga keltiring).",
+            "**Yechimlar soni yoki konstanta so‘ralsa** — diskriminantni yozing va kerakli shartni qo‘ying: $D = 0$, $D > 0$ yoki $D < 0$.",
+            "**Ildizli va kasrli tenglamalarda** har bir topilgan qiymatni **dastlabki** tenglamaga qo‘ying: begona ildizlarni va maxrajni nolga aylantiradigan qiymatlarni tashlab yuboring.",
+            "**Sistemada** bir o‘zgaruvchini ifodalab, ikkinchi tenglamaga qo‘ying; kvadrat tenglamani yeching, keyin ikkinchi koordinatani toping.",
+            "**So‘ralgan narsani yozing:** musbat yechimmi, $x$ lar yig‘indisimi yoki $y$ lar yig‘indisimi — savolni oxirgi marta qayta o‘qing."
+          ]
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 1: ildizli tenglama va begona ildiz",
+          "example": {
+            "problem": "What is the solution set of the equation $\\sqrt{2x + 7} = x - 4$?",
+            "choices": ["$\\{1\\}$", "$\\{9\\}$", "$\\{1, 9\\}$", "$\\{-1, -9\\}$"],
+            "solution": [
+              "Ikkala tomonni kvadratga ko‘taramiz: $2x + 7 = (x - 4)^2 = x^2 - 8x + 16$.",
+              "Nolga tenglaymiz: $x^2 - 10x + 9 = 0$, ya’ni $(x - 1)(x - 9) = 0$. Nomzodlar: $x = 1$ va $x = 9$.",
+              "Dastlabki tenglamaga qo‘yamiz. $x = 9$: $\\sqrt{25} = 5$ va $9 - 4 = 5$ ✓.",
+              "$x = 1$: $\\sqrt{9} = 3$, lekin $1 - 4 = -3$, $3 \\ne -3$. Bu **begona ildiz** — u kvadratga ko‘targanda paydo bo‘ldi. Kvadrat ildiz hech qachon manfiy son bermaydi.",
+              "**C** — begona ildizni tekshirmasdan qoldirish (eng keng tarqalgan tuzoq). **A** — aynan begona ildizning o‘zi. **D** — ko‘paytuvchilardan ildizlarni olishda ishora xatosi."
+            ],
+            "answer": "B) $\\{9\\}$"
+          }
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 2: aynan bitta yechim",
+          "example": {
+            "problem": "In the equation $3x^2 - 12x + c = 0$, $c$ is a constant. If the equation has exactly one real solution, what is the value of $c$?",
+            "solution": [
+              "Aynan bitta haqiqiy yechim — diskriminant nolga teng: $D = b^2 - 4ac = 0$.",
+              "Bu yerda $a = 3$, $b = -12$, ozod had esa $c$: $D = (-12)^2 - 4 \\cdot 3 \\cdot c = 144 - 12c$.",
+              "$144 - 12c = 0$, demak $c = 12$.",
+              "Tekshiruv: $3x^2 - 12x + 12 = 3(x^2 - 4x + 4) = 3(x - 2)^2$ — yagona yechim $x = 2$ ✓.",
+              "Tuzoqlar: $(-12)^2$ ni $-144$ deb hisoblash (manfiy sonning kvadrati musbat!) yoki $4ac$ dagi $a = 3$ ni unutib, $c = 36$ ni olish."
+            ],
+            "answer": "12"
+          }
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 3: chiziq va parabola sistemasi",
+          "example": {
+            "problem": "$$\\begin{aligned} y &= x^2 - 4x + 1 \\\\ y &= 2x - 4 \\end{aligned}$$\n\nThe given system of equations has two solutions, $(x_1, y_1)$ and $(x_2, y_2)$. What is the value of $y_1 + y_2$?",
+            "solution": [
+              "Ikkala ifoda $y$ ga teng, demak ularni tenglaymiz: $x^2 - 4x + 1 = 2x - 4$.",
+              "Nolga keltiramiz: $x^2 - 6x + 5 = 0$, ya’ni $(x - 1)(x - 5) = 0$; $x_1 = 1$, $x_2 = 5$.",
+              "$y$ larni **chiziqli** tenglamadan topamiz (osonroq): $y_1 = 2 \\cdot 1 - 4 = -2$, $y_2 = 2 \\cdot 5 - 4 = 6$.",
+              "$y_1 + y_2 = -2 + 6 = 4$.",
+              "Tekshiruv paraboladan: $1 - 4 + 1 = -2$ ✓ va $25 - 20 + 1 = 6$ ✓. Tuzoq: $x$ lar yig‘indisini (6) javob qilish — savol $y$ larni so‘rayapti.",
+              "Qisqa yo‘l: Viyet bo‘yicha $x_1 + x_2 = 6$, keyin $y_1 + y_2 = 2(x_1 + x_2) - 8 = 12 - 8 = 4$."
+            ],
+            "answer": "4"
+          }
+        },
+        {
+          "type": "watch_out",
+          "heading": "Nimaga e’tibor berish kerak",
+          "items": [
+            "**Begona ildizlar:** kvadratga ko‘tarish tenglamaga yangi “yechim” qo‘shib qo‘yishi mumkin. Ildizli tenglamada tekshiruv — majburiy qadam.",
+            "**Ikkala ildiz:** $x^2 = 49$ dan $x = 7$ yoki $x = -7$. Savolda *“positive solution”* deyilgan bo‘lsagina manfiysini tashlang.",
+            "**O‘zgaruvchiga bo‘lmang:** $x^2 = 5x$ ni $x$ ga bo‘lsangiz, $x = 0$ yechimi yo‘qoladi. To‘g‘ri yo‘l: $x^2 - 5x = 0$, $x(x - 5) = 0$.",
+            "**Diskriminantda ishoralar:** $b$ manfiy bo‘lsa ham $b^2$ musbat; $a$ va $c$ ni esa o‘z ishorasi bilan qo‘ying.",
+            "**Viyet teoremasidan oldin** tenglamani $ax^2 + bx + c = 0$ ko‘rinishiga keltiring va $a \\ne 1$ bo‘lsa, $a$ ga bo‘lishni unutmang.",
+            "**Har xil (distinct) yechimlar:** $(x - 2)^2 = 0$ da ildiz ikki marta takrorlansa ham, u bitta yechim hisoblanadi.",
+            "**Sistemada so‘ralgan koordinata:** $x$ lar, $y$ lar yoki ularning kombinatsiyasi — oxirgi qadamda savolni qayta o‘qing."
+          ]
+        },
+        {
+          "type": "traps",
+          "heading": "Keng tarqalgan xatolar (tuzoq variantlar)",
+          "items": [
+            "**Begona ildiz qoldirilgan:** “ikkalasi ham” varianti, masalan $\\{1, 9\\}$ (Namuna 1 dagi C).",
+            "**Faqat musbat ildiz:** $x^2 = 49$ da $-7$ ni yo‘qotib, “nechta yechim bor” savoliga 1 deb javob berish.",
+            "**Viyetda ishora:** yig‘indini $\\frac{b}{a}$ deb olish. $x^2 - 6x + 5 = 0$ da yig‘indi $6$ ga teng, $-6$ ga emas.",
+            "**Noto‘g‘ri koordinata:** $y$ lar yig‘indisi o‘rniga $x$ lar yig‘indisi (Namuna 3 dagi 6).",
+            "**Diskriminant sharti almashgan:** *“no real solutions”* uchun $D > 0$ yoki $D = 0$ ni yozish. To‘g‘risi: $D < 0$."
+          ]
+        },
+        {
+          "type": "time",
+          "heading": "Vaqt bo‘yicha maslahat",
+          "items": [
+            "Oson ajraladigan tenglama — **40–60 soniya**; diskriminant yoki sistema savoli — **60–100 soniya**.",
+            "**Desmos ildizli tenglamada:** chap va o‘ng tomonni alohida kiriting: $y = \\sqrt{2x + 7}$ va $y = x - 4$. Grafiklar faqat $x = 9$ da kesishadi — begona ildiz grafikda umuman ko‘rinmaydi.",
+            "**Desmos sistemada:** ikkala tenglamani kiriting va kesishish nuqtalariga bosing — ikkala koordinata ham chiqadi.",
+            "**Konstantali savollarda slayder:** $y = 3x^2 - 12x + c$ ni kiriting, $c$ uchun slayder qo‘shing va parabola $x$ o‘qiga faqat bitta nuqtada tegadigan holatni qidiring. Algebraik yo‘l (diskriminant) baribir tezroq — Desmos’ni tekshirish uchun ishlating.",
+            "**Irratsional javob:** Desmos o‘nli kasr ko‘rsatadi (masalan, $2.414$). Variantlarda $1 + \\sqrt{2}$ kabi ifoda bo‘lsa, uni ham kalkulyatorda hisoblab solishtiring."
+          ]
+        },
+        {
+          "type": "terms",
+          "heading": "Muhim inglizcha atamalar",
+          "terms": [
+            { "term": "solution set", "meaning": "yechimlar to‘plami — tenglamaning barcha yechimlari" },
+            { "term": "real solution", "meaning": "haqiqiy yechim" },
+            { "term": "distinct", "meaning": "har xil, takrorlanmaydigan" },
+            { "term": "exactly one / no real solutions", "meaning": "aynan bitta / haqiqiy yechim yo‘q — diskriminant savoli" },
+            { "term": "positive solution", "meaning": "musbat yechim" },
+            { "term": "sum / product of the solutions", "meaning": "yechimlar yig‘indisi / ko‘paytmasi" },
+            { "term": "intersect at", "meaning": "… nuqtada kesishadi — sistemaning yechimi" },
+            { "term": "constant", "meaning": "o‘zgarmas son" }
+          ]
+        },
+        {
+          "type": "checklist",
+          "heading": "Javobni tanlashdan oldin tekshiring",
+          "items": [
+            "Tenglamani nolga tenglab, standart shaklga keltirdimmi?",
+            "Ildizli yoki kasrli tenglamada har bir yechimni dastlabki tenglamaga qo‘ydimmi?",
+            "Diskriminant shartini ($>$, $=$ yoki $<$) to‘g‘ri tanladimmi?",
+            "Javobim aynan so‘ralgan narsami — $x$, $y$, yig‘indi yoki musbat yechim?"
+          ]
+        }
+      ]
+    }
+  }
+}

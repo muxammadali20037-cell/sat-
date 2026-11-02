@@ -1,13 +1,15 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
-import { BookOpen, ExternalLink, FileText, Lock, PlayCircle } from 'lucide-react'
+import { BookOpen, ExternalLink, FileText, Languages, Lock, PlayCircle } from 'lucide-react'
 import { requireStudentReady } from '@/lib/auth/session'
 import { createServerSupabase } from '@/lib/supabase/server'
 import { createAdminSupabase } from '@/lib/supabase/admin'
 import { getDict } from '@/lib/i18n/server'
 import { format } from '@/lib/i18n/dict'
 import { coursesDict } from '@/lib/i18n/dictionaries/courses'
+import { guidesDict } from '@/lib/i18n/dictionaries/guides'
+import { guideSlugsBySkill } from '@/features/guides/server'
 import { Breadcrumb } from '@/components/ui/breadcrumb'
 import { Alert, Badge } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
@@ -35,6 +37,8 @@ export default async function LessonPage({ params }: Props) {
   const view = await getLessonView({ db, admin: createAdminSupabase, user: { id: profile.id, role: profile.role }, lessonId: id })
   if (!view) notFound()
 
+  const [tg, guideSlugs] = await Promise.all([getDict(guidesDict), guideSlugsBySkill(db).catch(() => ({}) as Record<string, string>)])
+  const guideSlug = view.skill ? guideSlugs[view.skill.id] : undefined
   const subjectName = t.subjects[view.course.subjectCode]
   const KindIcon = view.kind === 'video' ? PlayCircle : BookOpen
   const notes = view.body ? (
@@ -95,6 +99,21 @@ export default async function LessonPage({ params }: Props) {
               notes={view.kind === 'text' ? notes : undefined}
             />
           </>
+        )}
+
+        {guideSlug && view.skill && (
+          <aside className="flex flex-col gap-3 rounded-lg border border-primary/20 bg-primary-soft/50 p-4 sm:flex-row sm:items-center sm:justify-between sm:p-5">
+            <div className="flex gap-3">
+              <Languages className="mt-0.5 size-5 shrink-0 text-primary" aria-hidden />
+              <div>
+                <p className="font-semibold text-foreground">{tg.guideCardTitle}</p>
+                <p className="mt-0.5 text-sm text-muted-foreground">{format(tg.guideCardBody, { skill: view.skill.name })}</p>
+              </div>
+            </div>
+            <Button asChild size="sm" variant="secondary" className="shrink-0">
+              <Link href={`/dashboard/guides/${guideSlug}`}>{tg.openGuide}</Link>
+            </Button>
+          </aside>
         )}
 
         {view.objectives.length > 0 && (

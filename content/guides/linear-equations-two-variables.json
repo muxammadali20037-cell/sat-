@@ -1,0 +1,135 @@
+{
+  "slug": "linear-equations-two-variables",
+  "kind": "skill",
+  "skill": "linear_equations_two_variables",
+  "position": 3,
+  "readingMinutes": 9,
+  "locales": {
+    "uz": {
+      "title": "Ikki o‘zgaruvchili chiziqli tenglamalar",
+      "summary": "Vaziyatdan ikki o‘zgaruvchili tenglama tuzish, standart va burchak koeffitsiyentli shakllar orasida o‘tish, qiyalik va kesishish nuqtalarini topish hamda parallel va perpendikulyar chiziqlar bilan ishlash.",
+      "sections": [
+        {
+          "type": "concept",
+          "heading": "Bu ko‘nikma nimani tekshiradi",
+          "body": "Ikki o‘zgaruvchili chiziqli tenglama $xy$-tekislikdagi to‘g‘ri chiziqni tasvirlaydi. Tenglamani qanoatlantiradigan har bir $(x, y)$ juftlik — shu chiziqdagi nuqta. SAT’da uchta shakl uchraydi:\n\n- **Burchak koeffitsiyentli shakl (slope-intercept):** $y = mx + b$ — qiyalik $m$, $y$-kesishish $(0, b)$.\n- **Standart shakl:** $ax + by = c$ — qiyalik $-\\frac{a}{b}$, $x$-kesishish $\\left(\\frac{c}{a}, 0\\right)$, $y$-kesishish $\\left(0, \\frac{c}{b}\\right)$.\n- **Nuqta-qiyalik shakli (point-slope):** $y - y_1 = m(x - x_1)$ — qiyalik va bitta nuqta ma’lum bo‘lganda qulay.\n\nIkki chiziq orasidagi munosabat:\n\n- **Parallel** chiziqlarning qiyaliklari teng: $m_1 = m_2$.\n- **Perpendikulyar** chiziqlarning qiyaliklari ko‘paytmasi $-1$ ga teng: $m_2 = -\\frac{1}{m_1}$. Kasr ag‘dariladi **va** ishora o‘zgaradi.\n\nMatnli masalalarda ko‘pincha standart shakl chiqadi: ikki xil narsa, har birining narxi (og‘irligi, vaqti) va umumiy miqdor. Masalan, 6 dollarlik $s$ ta kichik sham va 15 dollarlik $\\ell$ ta katta sham sotilib, jami 540 dollar tushgan bo‘lsa: $6s + 15\\ell = 540$. Tenglama bitta, noma’lum esa ikkita — shuning uchun yechim yagona emas. Savol odatda tenglamani **tuzish**, koeffitsiyentni **talqin qilish** yoki bir o‘zgaruvchi ma’lum bo‘lganda ikkinchisini **topishni** so‘raydi."
+        },
+        {
+          "type": "recognize",
+          "heading": "Savolni qanday tanib olasiz",
+          "items": [
+            "*“Which equation represents the relationship between x and y?”* — vaziyatdan tenglama tuzish kerak.",
+            "Ikki xil mahsulot va umumiy summa, og‘irlik yoki vaqt: *“… sells small candles for \\$6 each and large candles for \\$15 each … earned a total of …”*.",
+            "*“Line k is defined by … Line j is parallel (perpendicular) to line k …”* — qiyaliklar munosabati haqidagi savol.",
+            "*“What is the slope of the line?”*, *“What is the x-intercept of the graph?”* — tenglamani tahlil qilish.",
+            "*“If x increases by 8, by how much does y decrease?”* — qiyalik orqali o‘zgarishni hisoblash.",
+            "*“Which of the following points lies on the line?”* — har bir nuqtani tenglamaga qo‘yib tekshirish."
+          ]
+        },
+        {
+          "type": "method",
+          "heading": "Ishlash usuli: qadamma-qadam",
+          "steps": [
+            "**Vaziyatda o‘zgaruvchilarni so‘z bilan aniqlang:** “$s$ — kichik shamlar soni, $\\ell$ — katta shamlar soni”. Variantlarda harflar ko‘pincha ataylab almashtirilgan bo‘ladi.",
+            "**Tenglamani tuzing:** (birlik narxi × soni) + (birlik narxi × soni) = jami. Har bir koeffitsiyent o‘z o‘zgaruvchisiga tegishli ekanini tekshiring.",
+            "**Kerakli shaklga keltiring:** qiyalik yoki $y$-kesishish so‘ralsa — $y = mx + b$ ga; kesishish nuqtalari so‘ralsa — standart shaklda $x = 0$ va $y = 0$ ni qo‘yib toping.",
+            "**Parallel yoki perpendikulyar chiziq savolida** avval berilgan chiziq qiyaligini toping, keyin yangi qiyalikni yozing (teng yoki teskari va qarama-qarshi ishorali), so‘ng berilgan nuqta orqali $b$ ni hisoblang.",
+            "**O‘zgarish savollarida** qiyalikdan foydalaning: $\\Delta y = m \\cdot \\Delta x$.",
+            "**Tekshiring:** berilgan nuqtani topilgan tenglamaga qo‘ying va qiyalikni yana bir bor solishtiring."
+          ]
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 1: perpendikulyar chiziq",
+          "example": {
+            "problem": "Line $p$ is defined by $4x - 6y = 9$. Line $q$ is perpendicular to line $p$ and passes through the point $(2, 5)$. Which equation defines line $q$?",
+            "choices": ["$y = \\frac{2}{3}x + \\frac{11}{3}$", "$y = -\\frac{3}{2}x + 8$", "$y = \\frac{3}{2}x + 2$", "$y = -\\frac{2}{3}x + \\frac{19}{3}$"],
+            "solution": [
+              "$p$ chiziqni $y = mx + b$ shakliga keltiramiz: $-6y = -4x + 9$, ya’ni $y = \\frac{2}{3}x - \\frac{3}{2}$. Qiyalik $\\frac{2}{3}$.",
+              "Perpendikulyar chiziq qiyaligi — ag‘darilgan va ishorasi o‘zgartirilgan son: $-\\frac{3}{2}$.",
+              "$(2, 5)$ nuqtani qo‘yamiz: $5 = -\\frac{3}{2} \\cdot 2 + b = -3 + b$, demak $b = 8$. Javob: $y = -\\frac{3}{2}x + 8$.",
+              "E’tibor bering: to‘rtta variantning **hammasi** $(2, 5)$ nuqtadan o‘tadi. Shuning uchun faqat nuqtani qo‘yib tekshirish yetmaydi — qiyalikka qarash shart.",
+              "**A** — parallel chiziq (qiyalik o‘zgarmagan). **C** — kasr ag‘darilgan, lekin ishora o‘zgartirilmagan. **D** — ishora o‘zgartirilgan, lekin kasr ag‘darilmagan.",
+              "Tekshiruv: $\\frac{2}{3} \\cdot \\left(-\\frac{3}{2}\\right) = -1$ ✓ va $-\\frac{3}{2} \\cdot 2 + 8 = 5$ ✓."
+            ],
+            "answer": "B) $y = -\\frac{3}{2}x + 8$"
+          }
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 2: vaziyatdagi o‘zgarish",
+          "example": {
+            "problem": "A delivery van is fully loaded when it carries 252 kilograms of boxes. Each large box weighs 7 kilograms, and each small box weighs 4 kilograms. The equation $7x + 4y = 252$ represents the situation in which the van is fully loaded with $x$ large boxes and $y$ small boxes. If the number of large boxes increases by 8, by how many must the number of small boxes decrease so that the total weight of the boxes is still 252 kilograms?",
+            "solution": [
+              "Katta qutilar 8 taga ko‘paysa, yuk $7 \\cdot 8 = 56$ kilogrammga oshadi.",
+              "Umumiy og‘irlik o‘zgarmasligi uchun kichik qutilardan ham 56 kilogramm olib tashlash kerak: $56 \\div 4 = 14$ ta quti.",
+              "Qiyalik orqali ham shu natija: $y = 63 - \\frac{7}{4}x$, qiyalik $-\\frac{7}{4}$, demak $\\Delta y = -\\frac{7}{4} \\cdot 8 = -14$.",
+              "Savol *“by how many must … decrease”* — kamayish **miqdorini** so‘rayapti, shuning uchun javob musbat son: 14 (−14 emas).",
+              "Tekshiruv: $x = 20$, $y = 28$ bo‘lsa $140 + 112 = 252$ ✓; $x = 28$, $y = 14$ bo‘lsa $196 + 56 = 252$ ✓ — $x$ 8 ga oshdi, $y$ 14 ga kamaydi.",
+              "Xato belgisi: agar 8 ni $\\frac{4}{7}$ ga ko‘paytirsangiz (qiyalik ag‘darilgan), butun son chiqmaydi — qutilar soni esa butun bo‘lishi kerak."
+            ],
+            "answer": "14"
+          }
+        },
+        {
+          "type": "watch_out",
+          "heading": "Nimaga e’tibor berish kerak",
+          "items": [
+            "**Standart shakldan qiyalik:** $ax + by = c$ da qiyalik $-\\frac{a}{b}$ — minus belgisini unutmang. Ishonchingiz komil bo‘lmasa, tenglamani $y$ ga nisbatan yeching.",
+            "**Perpendikulyar — ikki o‘zgarish:** kasrni ag‘daring **va** ishorani o‘zgartiring. Faqat bittasini bajarish — eng ko‘p uchraydigan xato.",
+            "**Kesishish nuqtalari:** $x$-kesishishni topish uchun $y = 0$, $y$-kesishish uchun $x = 0$ qo‘yiladi — teskarisi emas.",
+            "**Gorizontal va vertikal chiziqlar:** $y = 3$ ning qiyaligi 0; $x = 3$ ning qiyaligi aniqlanmagan (undefined). Bu ikki chiziq o‘zaro perpendikulyar.",
+            "**Harflar tartibi:** vaziyatda $x$ va $y$ nimani bildirishini qayta o‘qing — variantlarda koeffitsiyentlar ko‘pincha joyi almashtirilgan holda beriladi.",
+            "**Nuqta chiziqda yotadimi:** ikkala koordinatani bir vaqtda qo‘ying va tenglik bajarilishini tekshiring."
+          ]
+        },
+        {
+          "type": "traps",
+          "heading": "Keng tarqalgan xatolar (tuzoq variantlar)",
+          "items": [
+            "**Koeffitsiyentlar almashtirilgan:** $15s + 6\\ell = 540$ — narxlar noto‘g‘ri o‘zgaruvchiga biriktirilgan.",
+            "**Narxlarni qo‘shib yuborish:** $21(s + \\ell) = 540$ — bu har bir sham 21 dollar turadi degani, vaziyatga mos emas.",
+            "**Parallel o‘rniga perpendikulyar (yoki aksincha):** ikkala javob ham variantlarda bo‘ladi va ikkalasi ham berilgan nuqtadan o‘tadi (Namuna 1 dagi A).",
+            "**Ishorasi teskari javob:** *“by how much does y decrease”* savoliga manfiy son kiritish yoki aksincha.",
+            "**Qiyalik o‘rniga kesishish:** $y = mx + b$ dagi $b$ ni yoki standart shakldagi $\\frac{c}{b}$ ni qiyalik deb olish."
+          ]
+        },
+        {
+          "type": "time",
+          "heading": "Vaqt bo‘yicha maslahat",
+          "items": [
+            "Tenglama tuzish yoki qiyalik savoliga **40–70 soniya**, perpendikulyar yoki parallel chiziq tenglamasiga **60–90 soniya** ajrating.",
+            "**Desmos standart shaklni to‘g‘ridan-to‘g‘ri chizadi:** $4x - 6y = 9$ ni o‘zgartirmasdan kiriting va chiziqqa bosing — kulrang nuqtalar $x$- va $y$-kesishishlarni koordinatalari bilan ko‘rsatadi.",
+            "**Variantni Desmos’da tekshirish:** berilgan chiziq va variantdagi chiziqni birga chizing. Variant berilgan nuqtadan o‘tishini va to‘g‘ri burchak hosil qilishini ko‘rasiz. Lekin qiyalikni qo‘lda hisoblash odatda tezroq.",
+            "*“Qanchaga o‘zgaradi”* turidagi matnli savollarda Desmos kerak emas — qiyalikni $\\Delta x$ ga ko‘paytirish 15 soniya oladi."
+          ]
+        },
+        {
+          "type": "terms",
+          "heading": "Muhim inglizcha atamalar",
+          "terms": [
+            { "term": "slope", "meaning": "qiyalik: $y = mx + b$ dagi $m$" },
+            { "term": "x-intercept / y-intercept", "meaning": "chiziq $x$ o‘qini / $y$ o‘qini kesib o‘tgan nuqta" },
+            { "term": "parallel", "meaning": "parallel: qiyaliklar teng, chiziqlar kesishmaydi" },
+            { "term": "perpendicular", "meaning": "perpendikulyar: qiyaliklar ko‘paytmasi $-1$, chiziqlar to‘g‘ri burchak ostida kesishadi" },
+            { "term": "passes through the point", "meaning": "… nuqtadan o‘tadi — nuqta koordinatalari tenglamani qanoatlantiradi" },
+            { "term": "xy-plane", "meaning": "koordinata tekisligi" },
+            { "term": "represents the relationship", "meaning": "bog‘lanishni ifodalaydi — tenglamani tuzing" },
+            { "term": "in terms of", "meaning": "… orqali ifodalang: “$y$ in terms of $x$” — $y$ ni yolg‘iz qoldiring" },
+            { "term": "satisfies", "meaning": "qanoatlantiradi: qiymatlar qo‘yilganda tenglik to‘g‘ri bo‘ladi" }
+          ]
+        },
+        {
+          "type": "checklist",
+          "heading": "Javobni tanlashdan oldin tekshiring",
+          "items": [
+            "Qaysi harf qaysi narsani bildirishini tekshirdimmi?",
+            "Qiyalikni to‘g‘ri ishora bilan topdimmi (standart shaklda $-\\frac{a}{b}$)?",
+            "Perpendikulyar bo‘lsa — kasrni ag‘dardim va ishorani o‘zgartirdimmi?",
+            "Javobim aynan so‘ralgan narsami (qiyalik, kesishish nuqtasi, o‘zgarish miqdori)?"
+          ]
+        }
+      ]
+    }
+  }
+}

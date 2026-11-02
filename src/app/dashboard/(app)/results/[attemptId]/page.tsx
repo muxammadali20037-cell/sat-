@@ -23,6 +23,9 @@ import { ensureDiagnosticScored, finalizeDiagnostic, getGraceSeconds, isPastDead
 import { StartPracticeButton } from '@/components/practice/start-practice-button'
 import { DomainLevels, SkillBreakdown, WeakSkillList } from '@/components/results/breakdowns'
 import { ReviewList, type ReviewEntry } from '@/components/results/review-list'
+import { guideSlugsBySkill } from '@/features/guides/server'
+import { createServerSupabase } from '@/lib/supabase/server'
+import { guidesDict } from '@/lib/i18n/dictionaries/guides'
 
 export const metadata: Metadata = { title: 'Results' }
 
@@ -72,6 +75,10 @@ export default async function AttemptResultsPage({ params }: { params: Promise<{
     isDiagnostic ? loadDiagnosticResults(admin, profile.id, attempt.id) : Promise.resolve([]),
   ])
   const lessons = isDiagnostic ? await lessonsForSkills(admin, report.weakest.map((s) => s.skillId)) : []
+  const [guideSlugs, tg] = await Promise.all([
+    guideSlugsBySkill(await createServerSupabase()).catch(() => ({}) as Record<string, string>),
+    getDict(guidesDict),
+  ])
   const { summary } = report
   const inProgress = attempt.status === 'in_progress'
   const retryable = !inProgress && (summary.incorrect > 0 || summary.unanswered > 0)
@@ -160,7 +167,14 @@ export default async function AttemptResultsPage({ params }: { params: Promise<{
           {report.weakest.length === 0 ? (
             <p className="rounded-lg border border-border bg-card px-4 py-3 text-sm text-muted-foreground">{t.detail.noWeak}</p>
           ) : (
-            <WeakSkillList rows={report.weakest} practiseLabel={t.detail.practiseSkill} rowLabel={t.detail.skillRow} hrefFor={practiceHref} />
+            <WeakSkillList
+              rows={report.weakest}
+              practiseLabel={t.detail.practiseSkill}
+              rowLabel={t.detail.skillRow}
+              hrefFor={practiceHref}
+              guideLabel={tg.guideLink}
+              guideHrefFor={(row) => (guideSlugs[row.skillId] ? `/dashboard/guides/${guideSlugs[row.skillId]}` : null)}
+            />
           )}
         </Section>
       )}

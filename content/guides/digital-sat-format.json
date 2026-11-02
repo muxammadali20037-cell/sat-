@@ -1,0 +1,128 @@
+{
+  "slug": "digital-sat-format",
+  "kind": "strategy",
+  "subject": null,
+  "position": 2,
+  "readingMinutes": 9,
+  "locales": {
+    "uz": {
+      "title": "Digital SAT formati: tuzilishi, vaqti va baholanishi",
+      "summary": "Digital SAT qanday tuzilgan: ikki bo‘lim, to‘rt modul, 98 ta savol va 2 soat 14 daqiqa. Moslashuvchan (adaptive) ikkinchi modul nimani anglatadi, ball qanday hisoblanadi, pretest savollar nima va bularning barchasi strategiyangizga qanday ta’sir qiladi.",
+      "sections": [
+        {
+          "type": "concept",
+          "heading": "Test bir qarashda",
+          "body": "Digital SAT kompyuter yoki planshetda, College Board’ning **Bluebook** ilovasida topshiriladi. Test ikki bo‘limdan iborat: avval **Reading and Writing** (O‘qish va yozish), keyin **Math** (Matematika). Har bir bo‘lim ikkita teng **modul**ga bo‘lingan va har bir modul alohida vaqtlanadi.\n\n- **Reading and Writing:** 54 ta savol, 64 daqiqa — 2 ta modul, har birida 27 ta savol va 32 daqiqa.\n- **Math:** 44 ta savol, 70 daqiqa — 2 ta modul, har birida 22 ta savol va 35 daqiqa.\n- **Tanaffus:** ikki bo‘lim orasida 10 daqiqa.\n- **Jami:** 98 ta savol, 134 daqiqa (2 soat 14 daqiqa), tanaffus bunga kirmaydi."
+        },
+        {
+          "type": "time",
+          "heading": "Har bir savolga qancha vaqt to‘g‘ri keladi",
+          "items": [
+            "**Reading and Writing:** 32 daqiqa ÷ 27 ta savol — har bir savolga o‘rtacha **≈71 soniya**.",
+            "**Math:** 35 daqiqa ÷ 22 ta savol — har bir savolga o‘rtacha **≈95 soniya**.",
+            "Bu — o‘rtacha qiymat. Oson savollarda vaqt tejab, uni qiyin savollarga qoldirasiz. Batafsil — “Vaqtni boshqarish va taxmin qilish” qo‘llanmasida."
+          ]
+        },
+        {
+          "type": "concept",
+          "heading": "Reading and Writing bo‘limida nima bor",
+          "body": "Har bir savol bitta qisqa matn (25–150 so‘z) yoki bir juft matndan iborat, ba’zan jadval yoki grafik bilan. **Har bir matnga faqat bitta savol** beriladi. Barcha savollar — to‘rt variantli test, har birining bitta eng to‘g‘ri javobi bor. Matnlar adabiyot, tarix va ijtimoiy fanlar, gumanitar fanlar va tabiiy fanlardan olinadi.\n\nTo‘rtta yo‘nalish (domain) va ularning taxminiy ulushi:\n\n- **Craft and Structure** — ≈28%, 13–15 ta savol: so‘zning kontekstdagi ma’nosi, matn tuzilishi va maqsadi, ikki matn orasidagi bog‘liqlik.\n- **Information and Ideas** — ≈26%, 12–14 ta savol: asosiy g‘oya va tafsilotlar, matn va jadval/grafikdan dalil, xulosa chiqarish.\n- **Standard English Conventions** — ≈26%, 11–15 ta savol: gap tuzilishi, tinish belgilari, so‘z shakllari.\n- **Expression of Ideas** — ≈20%, 8–12 ta savol: bog‘lovchi so‘zlar (transitions) va eslatmalardan maqsadga mos gap tuzish."
+        },
+        {
+          "type": "concept",
+          "heading": "Math bo‘limida nima bor",
+          "body": "Math savollarining taxminan **75%** i to‘rt variantli test, taxminan **25%** ida esa javobni o‘zingiz yozasiz (*student-produced response*, SPR). Savollarning taxminan 30% i hayotiy vaziyat (kontekst) asosida tuzilgan.\n\nTo‘rtta yo‘nalish (har bir yo‘nalishdagi baholanadigan savollar soni):\n\n- **Algebra** — 13–15 ta savol.\n- **Advanced Math** — 13–15 ta savol.\n- **Problem-Solving and Data Analysis** — 5–7 ta savol.\n- **Geometry and Trigonometry** — 5–7 ta savol.\n\nKalkulyatordan **butun Math bo‘limi davomida** foydalanish mumkin: Bluebook’da Desmos kalkulyatori (grafik va ilmiy rejimlar) o‘rnatilgan, ruxsat etilgan o‘z kalkulyatoringizni ham olib kelish mumkin. Formulalar ma’lumotnomasi (reference sheet) va ko‘rsatmalar test davomida ochiq. Reading and Writing bo‘limida kalkulyator yo‘q."
+        },
+        {
+          "type": "concept",
+          "heading": "Savollar qanday tartibda keladi",
+          "items": [
+            "**Reading and Writing:** har bir modulda to‘rttala yo‘nalish bor va ular shu tartibda keladi: Craft and Structure → Information and Ideas → Standard English Conventions → Expression of Ideas. O‘xshash ko‘nikmani tekshiradigan savollar birga guruhlangan va guruh ichida **osondan qiyinga** joylashgan. Standard English Conventions savollari qaysi qoida tekshirilishidan qat’i nazar osondan qiyinga tartiblangan.",
+            "**Math:** har bir modulda savollar boshidan oxirigacha **osondan qiyinga** joylashgan, mavzular esa aralash keladi.",
+            "**Modul ichida erkin harakatlanasiz:** oldinga o‘tib keyingi savollarni ko‘rishingiz, belgilangan savollarga qaytishingiz mumkin.",
+            "**Modulga qaytib bo‘lmaydi:** modulni topshirganingizdan yoki vaqt tugaganidan keyin unga qaytish imkoni yo‘q. Taymer nolga yetganda ilova sizni avtomatik ravishda keyingi qismga o‘tkazadi."
+          ]
+        },
+        {
+          "type": "concept",
+          "heading": "“Adaptive” (moslashuvchan) test nima",
+          "body": "Digital SAT — **modul darajasida moslashuvchan** test. Har bir bo‘limning 1-modulida oson, o‘rta va qiyin savollar aralash beriladi. 1-moduldagi natijangizga qarab ikkinchi modul o‘rtacha hisobda **qiyinroq** yoki **osonroq** savollar to‘plamidan iborat bo‘ladi.\n\nMoslashuv har bir savoldan keyin emas, faqat modul tugaganda sodir bo‘ladi. Shuning uchun modul ichida savollarni o‘tkazib yuborish, belgilash va qaytish mumkin.\n\nBo‘lim bali **ikkala moduldagi** javoblaringiz asosida hisoblanadi. College Board Item Response Theory (IRT) usulidan foydalanadi: bir xil sondagi to‘g‘ri javob har xil ball berishi mumkin, chunki to‘g‘ri javob berilgan savollarning qiyinligi va boshqa xususiyatlari ham hisobga olinadi."
+        },
+        {
+          "type": "watch_out",
+          "heading": "Moslashuvchanlik strategiyaga qanday ta’sir qiladi",
+          "items": [
+            "**1-modul hal qiluvchi:** u qaysi 2-modulni olishingizni belgilaydi. College Board tushuntirishicha, 1-modulda bir nechta savolda xato qilsangiz, 2-modulni to‘liq to‘g‘ri ishlasangiz ham bo‘lim bo‘yicha 800 olish mumkin bo‘lmaydi. Shuning uchun 1-moduldagi oson savollarda shoshilmang va e’tiborsizlik xatosiga yo‘l qo‘ymang.",
+            "**2-modul qiyin tuyulsa, vahimaga tushmang:** bu 1-modulni yaxshi ishlaganingiz belgisi bo‘lishi mumkin. Qaysi modulni olganingizni taxmin qilishga vaqt sarflamang — har bir savolni o‘z holicha ishlang.",
+            "**Har bir savolga javob bering:** hatto eng qiyin oxirgi savollar ham, chunki noto‘g‘ri javob uchun ball ayirilmaydi.",
+            "**Modulni topshirishdan oldin tekshiring:** keyin qaytib bo‘lmaydi. Belgilangan va javobsiz savollarni savollar menyusida ko‘ring.",
+            "**Ikkala bo‘limga ham kuch qoldiring:** Math bo‘limi uzun o‘qishdan keyin boshlanadi — 10 daqiqalik tanaffusdan dam olish uchun foydalaning."
+          ]
+        },
+        {
+          "type": "concept",
+          "heading": "Ball qanday hisoblanadi",
+          "items": [
+            "**Umumiy ball 400–1600:** ikki bo‘lim ballari yig‘indisi. Har bir bo‘lim 200–800 oralig‘ida, 10 ballik qadam bilan baholanadi.",
+            "**Noto‘g‘ri javob uchun jarima yo‘q:** College Board savolni bo‘sh qoldirgandan ko‘ra taxmin qilish yaxshiroq ekanini ta’kidlaydi, ayniqsa bir-ikki variantni chiqarib tashlay olsangiz.",
+            "**Pretest savollar:** har bir modulda 2 ta pretest (sinov) savol bor — ular ballga ta’sir qilmaydi va College Board ularni yangi savollarni sinash uchun qo‘shadi. Ular boshqa savollardan farqlanmaydi, demak qaysi biri pretest ekanini bilolmaysiz. Shunday qilib, Reading and Writing modulida 25 ta, Math modulida 20 ta savol ballga hisoblanadi.",
+            "**Ball shunchaki to‘g‘ri javoblar soni emas:** IRT tufayli savollarning qiyinligi ham hisobga olinadi. Shu sabab internetdagi “X ta xato = Y ball” jadvallariga to‘liq ishonmang."
+          ]
+        },
+        {
+          "type": "note",
+          "heading": "Bluebook va test qoidalari haqida",
+          "items": [
+            "Vaqtni Bluebook ilovasi har bir o‘quvchi uchun alohida hisoblaydi va rejalashtirilgan tanaffus boshlanganini o‘zi bildiradi.",
+            "Rejadan tashqari tanaffus olish mumkin, lekin bunda test vaqtingizni yo‘qotasiz.",
+            "Testdagi vositalar (taymer, belgilash, variantlarni o‘chirish, kalkulyator va boshqalar) haqida — “Test ilovasidagi vositalar” qo‘llanmasida.",
+            "Ro‘yxatdan o‘tish, test sanalari, narxlar va test markazlari haqidagi ma’lumot o‘zgarib turadi — ularni faqat College Board’ning rasmiy saytidan (satsuite.collegeboard.org) tekshiring."
+          ]
+        },
+        {
+          "type": "note",
+          "heading": "SAT MASTER sinov imtihonlari shu formatni qanday takrorlaydi",
+          "items": [
+            "To‘liq sinov imtihoni xuddi shu tuzilishda: har bir bo‘limda 2 ta modul, moslashuvchan 2-modul va bo‘limlar orasida ixtiyoriy 10 daqiqalik tanaffus.",
+            "2-modulga yo‘naltirish SAT MASTER’ning o‘z chegara qoidasi asosida bo‘ladi va natijalar sahifasida ochiq tushuntiriladi.",
+            "Taxminiy ball oralig‘i SAT MASTER’ning ochiq formulasi bilan hisoblanadi. Rasmiy baholashda bizda mavjud bo‘lmagan statistik modellar qo‘llanadi, shuning uchun bu ball rasmiy emas — uni mashq signali sifatida qabul qiling."
+          ]
+        },
+        {
+          "type": "note",
+          "heading": "SAT MASTER va College Board",
+          "body": "SAT® — College Board’ning ro‘yxatdan o‘tgan savdo belgisi. SAT MASTER — mustaqil platforma: College Board bilan bog‘liq emas va u tomonidan qo‘llab-quvvatlanmaydi. Platformadagi barcha mashq savollari original, ya’ni SAT MASTER muharrirlari tomonidan yozilgan. Bu qo‘llanmadagi format haqidagi ma’lumotlar College Board’ning rasmiy sahifalari asosida tayyorlangan; o‘zgarishlar bo‘lsa, rasmiy manba ustun turadi."
+        },
+        {
+          "type": "terms",
+          "heading": "Muhim inglizcha atamalar",
+          "terms": [
+            { "term": "section", "meaning": "bo‘lim: Reading and Writing yoki Math" },
+            { "term": "module", "meaning": "modul — bo‘limning alohida vaqtlanadigan yarmi" },
+            { "term": "adaptive", "meaning": "moslashuvchan: 2-modul 1-moduldagi natijangizga qarab tanlanadi" },
+            { "term": "operational question", "meaning": "ballga hisoblanadigan savol" },
+            { "term": "pretest question", "meaning": "sinov savoli — ballga ta’sir qilmaydi, lekin boshqalardan farqlanmaydi" },
+            { "term": "section score", "meaning": "bo‘lim bali, 200–800" },
+            { "term": "total score", "meaning": "umumiy ball, 400–1600" },
+            { "term": "multiple-choice", "meaning": "variantli savol (A–D)" },
+            { "term": "student-produced response (SPR)", "meaning": "javobni o‘zingiz yozadigan Math savoli" },
+            { "term": "passage", "meaning": "matn — Reading and Writing savolidagi qisqa parcha" },
+            { "term": "reference sheet", "meaning": "formulalar ma’lumotnomasi (Math bo‘limida)" },
+            { "term": "break", "meaning": "tanaffus — bo‘limlar orasida 10 daqiqa" }
+          ]
+        },
+        {
+          "type": "checklist",
+          "heading": "Formatdan yodda tutish kerak bo‘lgan asosiy faktlar",
+          "items": [
+            "RW: 2 × 27 savol, 2 × 32 daqiqa; Math: 2 × 22 savol, 2 × 35 daqiqa; orada 10 daqiqa tanaffus.",
+            "O‘rtacha: RW’da ≈71 soniya, Math’da ≈95 soniya bir savolga.",
+            "Noto‘g‘ri javob uchun jarima yo‘q — hech bir savolni bo‘sh qoldirmang.",
+            "1-modulda aniqlik — eng muhim narsa.",
+            "Modulni topshirgach, unga qaytib bo‘lmaydi."
+          ]
+        }
+      ]
+    }
+  }
+}

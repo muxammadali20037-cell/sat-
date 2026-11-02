@@ -73,3 +73,23 @@ describe('richTextExcerpt', async () => {
     expect(richTextExcerpt('a'.repeat(50), 10)).toBe('aaaaaaaaa…')
   })
 })
+
+describe('emphasis around inline math', async () => {
+  const { parseInline } = await import('@/lib/rich-text/tokenize')
+  it('parses italic and bold that contain math', () => {
+    expect(parseInline('*What is $x$?*')).toEqual([{ type: 'italic', children: [{ type: 'text', value: 'What is ' }, { type: 'math', value: 'x' }, { type: 'text', value: '?' }] }])
+    expect(parseInline('**$x$ first:** rest')).toEqual([
+      { type: 'bold', children: [{ type: 'math', value: 'x' }, { type: 'text', value: ' first:' }] },
+      { type: 'text', value: ' rest' },
+    ])
+  })
+  it('keeps * and _ inside math opaque', () => {
+    expect(parseInline('$a*b$ and $x_1$ *ok*')).toEqual([
+      { type: 'math', value: 'a*b' },
+      { type: 'text', value: ' and ' },
+      { type: 'math', value: 'x_1' },
+      { type: 'text', value: ' ' },
+      { type: 'italic', children: [{ type: 'text', value: 'ok' }] },
+    ])
+  })
+})

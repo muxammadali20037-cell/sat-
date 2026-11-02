@@ -1,0 +1,135 @@
+{
+  "slug": "test-tools",
+  "kind": "strategy",
+  "subject": null,
+  "position": 4,
+  "readingMinutes": 7,
+  "locales": {
+    "uz": {
+      "title": "Test ilovasidagi vositalar va ulardan foydalanish",
+      "summary": "Digital SAT topshiriladigan Bluebook ilovasida qanday vositalar bor: taymer, ko‘rib chiqish uchun belgilash, variantlarni o‘chirish, belgilash va eslatmalar, savollar menyusi, Desmos kalkulyatori, formulalar ma’lumotnomasi va ko‘rsatmalar — har birini qachon va qanday ishlatish.",
+      "sections": [
+        {
+          "type": "concept",
+          "heading": "Bluebook nima va bu qo‘llanma nima haqida",
+          "body": "Digital SAT College Board’ning **Bluebook** ilovasida topshiriladi. Ilova va undagi vositalar College Board’ga tegishli; SAT MASTER u bilan bog‘liq emas. Quyida vositalar College Board’ning rasmiy tavsiflari asosida tushuntirilgan.\n\nVositalarni bilish — vaqt tejash demak. Test kuni “bu tugma nima qiladi?” deb o‘ylashga vaqt yo‘q: har bir vositadan foydalanish odati testdan oldin shakllangan bo‘lishi kerak. SAT MASTER sinov imtihonlarida asosiy vositalarning o‘xshashlari bor, Bluebook’ning o‘zida esa College Board’ning bepul rasmiy mashq testlari mavjud — haqiqiy interfeysga o‘rganish uchun ularni ham ishlab ko‘ring."
+        },
+        {
+          "type": "note",
+          "heading": "Taymer (Testing Timer)",
+          "items": [
+            "Har bir modulda qancha vaqt qolganini ko‘rsatadi.",
+            "Taymerni **yashirish** mumkin. 5 daqiqa qolganda ilova ogohlantirish beradi.",
+            "Taymer nolga yetganda ilova sizni avtomatik ravishda keyingi qismga o‘tkazadi.",
+            "**Qanday ishlatish:** taymer sizni xavotirga solsa, yashirib qo‘ying va faqat nazorat nuqtalarida oching (masalan, Reading and Writing’da har 9 savoldan keyin). 5 daqiqalik ogohlantirish chiqqanda oxirgi 5 daqiqa rejimiga o‘ting: avval javobsiz savollar, keyin belgilanganlar."
+          ]
+        },
+        {
+          "type": "note",
+          "heading": "Mark for Review (ko‘rib chiqish uchun belgilash)",
+          "items": [
+            "Xatcho‘p (bookmark) belgisi bilan qaytmoqchi bo‘lgan istalgan savolni belgilaysiz.",
+            "Belgilangan savollar savollar menyusida ko‘rinadi — ularga bir bosishda qaytasiz.",
+            "**Belgilash javob emas:** belgilangan savolga ham doim taxminiy javob qo‘ying. Vaqt tugasa, javobsiz belgilangan savol bo‘sh qoladi.",
+            "**Qanday ishlatish:** ikki o‘tishli usulning asosi. Uzun hisob yoki ikki variant orasidagi ikkilanish — belgilab, keyingisiga o‘ting."
+          ]
+        },
+        {
+          "type": "note",
+          "heading": "Option Eliminator (variantlarni o‘chirish)",
+          "items": [
+            "Noto‘g‘ri deb hisoblagan javob variantlaringizni chizib qo‘yasiz. Fikringiz o‘zgarsa, bekor qilish mumkin.",
+            "O‘chirish javobni tanlash emas: javobni alohida belgilashingiz kerak.",
+            "**Qanday ishlatish:** Reading and Writing’da har bir variantni aniq sabab bilan o‘chiring (“matnda yo‘q”, “juda kuchli”, “teskari”). Belgilangan savolga qaytganingizda o‘chirilgan variantlarni qayta o‘qishingiz shart emas — faqat qolganlarini solishtirasiz."
+          ]
+        },
+        {
+          "type": "note",
+          "heading": "Highlights & Notes (belgilash va eslatmalar)",
+          "items": [
+            "Savol matnining bir qismini rang bilan belgilash (highlight) yoki o‘zingizga eslatma qoldirish imkonini beradi.",
+            "**Qanday ishlatish:** Reading and Writing’da 1–2 ta kalit joyni belgilang: muallif da’vosi, *however* yoki *although* kabi burilish so‘zlari, savol so‘ragan aniq qism. Hamma narsani belgilasangiz, hech narsa ajralib turmaydi.",
+            "Eslatmaga qisqa xulosa yozing (masalan, “2-matn 1-matnga qarshi”) — belgilangan savolga qaytganingizda matnni qayta o‘qishga vaqt ketmaydi.",
+            "Math’dagi hisob-kitoblar uchun qoralama qog‘ozdan foydalaning."
+          ]
+        },
+        {
+          "type": "note",
+          "heading": "Question Menu (savollar menyusi)",
+          "items": [
+            "Qaysi savollarni o‘tkazib yuborganingizni (javobsiz) va qaysilarini ko‘rib chiqish uchun belgilaganingizni ko‘rsatadi.",
+            "Undan modul ichidagi istalgan savolga to‘g‘ridan-to‘g‘ri o‘tish mumkin.",
+            "**Qanday ishlatish:** 2-o‘tishni shu menyudan boshlang; oxirgi 5 daqiqada esa avvalo javobsiz savol qolmaganini shu yerda tekshiring."
+          ]
+        },
+        {
+          "type": "note",
+          "heading": "Calculator: Desmos",
+          "items": [
+            "Bluebook’da Desmos kalkulyatori o‘rnatilgan, u ikki rejimga ega: **grafik** va **ilmiy**. Math bo‘limi davomida ular orasida istalgan vaqtda almashish mumkin. Kalkulyator oynasini ekranning istalgan joyiga surish mumkin.",
+            "Kalkulyatordan **butun Math bo‘limi davomida** foydalanish mumkin, Reading and Writing bo‘limida esa yo‘q.",
+            "Ruxsat etilgan o‘z kalkulyatoringizni ham olib kelishingiz mumkin (faqat CAS funksiyasiz modellar; telefon ilovalari va internetga ulanadigan qurilmalar taqiqlangan). College Board testda qaysi kalkulyatordan foydalansangiz, mashqda ham o‘shandan foydalanishni maslahat beradi.",
+            "**Qanday ishlatish:** tenglamalar, sistemalar, kvadrat funksiyalar va jadval ma’lumotlari uchun grafik rejim juda tez. Batafsil usullar — “Desmos kalkulyatori: tezkor strategiyalar” qo‘llanmasida."
+          ]
+        },
+        {
+          "type": "note",
+          "heading": "Reference Sheet (formulalar ma’lumotnomasi)",
+          "body": "Math bo‘limida ko‘p ishlatiladigan formulalar ro‘yxati test davomida ochiq. Unda quyidagilar bor:\n\n- Yuzalar: to‘g‘ri to‘rtburchak $A = \\ell w$, uchburchak $A = \\frac{1}{2}bh$, doira $A = \\pi r^2$; aylana uzunligi $C = 2\\pi r$.\n- Pifagor teoremasi: $c^2 = a^2 + b^2$.\n- Maxsus to‘g‘ri burchakli uchburchaklar: $45^\\circ$–$45^\\circ$–$90^\\circ$ (tomonlar $s$, $s$, $s\\sqrt{2}$) va $30^\\circ$–$60^\\circ$–$90^\\circ$ (tomonlar $x$, $x\\sqrt{3}$, $2x$).\n- Hajmlar: to‘g‘ri burchakli parallelepiped $V = \\ell wh$, silindr $V = \\pi r^2 h$, shar $V = \\frac{4}{3}\\pi r^3$, konus $V = \\frac{1}{3}\\pi r^2 h$, piramida $V = \\frac{1}{3}\\ell wh$.\n- Aylana yoyi $360^\\circ$, ya’ni $2\\pi$ radian; uchburchak burchaklari yig‘indisi $180^\\circ$.\n\n**Qanday ishlatish:** bu formulalarni baribir yod biling — ma’lumotnomani har safar ochish vaqt oladi. Undan faqat kam ishlatiladigan formulani (masalan, konus yoki shar hajmini) tekshirish uchun foydalaning."
+        },
+        {
+          "type": "note",
+          "heading": "Directions (ko‘rsatmalar)",
+          "items": [
+            "Math bo‘limida ko‘rsatmalar ham test davomida ochiq.",
+            "Math ko‘rsatmalaridagi muhim shartlar (boshqacha aytilmagan bo‘lsa): barcha o‘zgaruvchilar va ifodalar haqiqiy sonlarni bildiradi; berilgan chizmalar masshtabda chizilgan; barcha shakllar tekislikda yotadi; $f$ funksiyaning aniqlanish sohasi — $f(x)$ haqiqiy son bo‘ladigan barcha $x$ lar.",
+            "Javobni o‘zingiz yozadigan savollarning kiritish qoidalari ham ko‘rsatmalarda bor — ularni testdan oldin “SPR: kiritish qoidalari” qo‘llanmasidan o‘rganib oling.",
+            "**Qanday ishlatish:** ko‘rsatmalarni testda o‘qishga vaqt sarflamang — ularni oldindan biling va faqat shubha tug‘ilganda oching."
+          ]
+        },
+        {
+          "type": "note",
+          "heading": "Line Reader va Zoom",
+          "items": [
+            "**Line Reader** — o‘qiyotgan qatoringizga diqqatni jamlashga yordam beradi. Uzun yoki zich matnda qator adashib ketsa, foydali.",
+            "**Zoom** — noutbukda klaviatura tugmalari, planshetda esa ikki barmoq bilan savolning istalgan qismini kattalashtirish mumkin. Kichik grafik yoki jadval raqamlarini o‘qishda ishlating."
+          ]
+        },
+        {
+          "type": "method",
+          "heading": "Vositalarni bitta savolda birga ishlatish",
+          "steps": [
+            "**Savolni o‘qing** va Reading and Writing’da kalit joyni belgilang (highlight).",
+            "**Variantlarni ko‘ring** va aniq noto‘g‘rilarini Option Eliminator bilan o‘chiring.",
+            "**Bitta qolsa** — tanlang va davom eting. **Ikkita qolsa** va 30–40 soniyada hal bo‘lmasa — ehtimolligini tanlang va **Mark for Review** bilan belgilang.",
+            "**Math’da** 5 soniyada qaror qiling: qo‘lda yechish tezmi yoki Desmos’dami? Formula esdan chiqsa — ma’lumotnomani oching.",
+            "**Modul oxirida** savollar menyusini oching: avval javobsiz savollar, keyin belgilanganlar."
+          ]
+        },
+        {
+          "type": "note",
+          "heading": "SAT MASTER sinov imtihonlarida nima bor",
+          "items": [
+            "Taymer (yashirish mumkin), 5 va 1 daqiqa qolganda ogohlantirish.",
+            "Ko‘rib chiqish uchun belgilash va variantlarni o‘chirish.",
+            "Savollar navigatori va modul oxiridagi tekshirish sahifasi: javobsiz va belgilangan savollar soni ko‘rinadi.",
+            "Matematikada grafik kalkulyator va formulalar ma’lumotnomasi, har bir bo‘limda ko‘rsatmalar (jumladan, javobni yozish qoidalari).",
+            "Belgilash va eslatmalar (highlight) vositasi bizning sinov imtihonlarimizda hozircha yo‘q — buni Bluebook’dagi rasmiy mashq testlarida mashq qiling.",
+            "SAT MASTER interfeysi Bluebook’ning nusxasi emas, tugmalar joylashuvi farq qilishi mumkin. Maqsad — vositalardan foydalanish **odatini** shakllantirish."
+          ]
+        },
+        {
+          "type": "checklist",
+          "heading": "Testdan oldin o‘zingizni tekshiring",
+          "items": [
+            "Taymerni yashirish va 5 daqiqalik ogohlantirishdan keyin nima qilishni bilamanmi?",
+            "Mark for Review va savollar menyusi bilan ikki o‘tishli usulni mashq qildimmi?",
+            "Option Eliminator’dan har bir savolda foydalanish odatim bormi?",
+            "Desmos’ning grafik va ilmiy rejimlarini sinab ko‘rdimmi?",
+            "Ma’lumotnomadagi formulalarni ochmasdan bilamanmi?"
+          ]
+        }
+      ]
+    }
+  }
+}

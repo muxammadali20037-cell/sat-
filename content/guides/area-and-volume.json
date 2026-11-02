@@ -1,0 +1,153 @@
+{
+  "slug": "area-and-volume",
+  "kind": "skill",
+  "skill": "area_volume",
+  "position": 16,
+  "readingMinutes": 10,
+  "locales": {
+    "uz": {
+      "title": "Yuza va hajm",
+      "summary": "Tekis figuralarning perimetri va yuzasi, jismlarning sirt yuzasi va hajmi, o‘lchamlar o‘zgarganda yuza va hajm qanday o‘zgarishi — formulaga asoslangan, lekin radius, balandlik va birliklar bo‘yicha tuzoqlarga boy mavzu.",
+      "sections": [
+        {
+          "type": "concept",
+          "heading": "Bu ko‘nikma nimani tekshiradi",
+          "body": "Bu ko‘nikma tekis figuralar va fazoviy jismlarning o‘lchamlarini hisoblay olishingizni tekshiradi. Asosiy formulalar:\n\n- **Yuza:** to‘g‘ri to‘rtburchak $A = lw$, uchburchak $A = \\frac{1}{2}bh$, doira $A = \\pi r^2$, trapetsiya $A = \\frac{1}{2}(b_1 + b_2)h$.\n- **Perimetr va aylana uzunligi:** perimetr — barcha tomonlar yig‘indisi; aylana uzunligi $C = 2\\pi r = \\pi d$.\n- **Hajm:** to‘g‘ri burchakli parallelepiped $V = lwh$, silindr $V = \\pi r^2 h$, konus $V = \\frac{1}{3}\\pi r^2 h$, piramida $V = \\frac{1}{3}lwh$, shar $V = \\frac{4}{3}\\pi r^3$.\n- **Sirt yuzasi (surface area):** jismning barcha yoqlari yuzalari yig‘indisi. Parallelepiped uchun $S = 2(lw + lh + wh)$, kub uchun $S = 6s^2$, silindr uchun $S = 2\\pi r^2 + 2\\pi rh$.\n- **O‘xshashlik koeffitsiyenti:** barcha chiziqli o‘lchamlar $k$ marta o‘zgarsa, perimetr $k$ marta, yuza $k^2$ marta, hajm $k^3$ marta o‘zgaradi.\n\nIkki foydali umumiy qoida: prizma va silindr hajmi $V = (\\text{asos yuzasi}) \\cdot h$; konus va piramida hajmi esa xuddi shunday asos va balandlikka ega prizma (silindr) hajmining uchdan biri.\n\nMath bo‘limida reference sheet (formulalar varag‘i) bor: unda doira yuzasi va aylana uzunligi, to‘g‘ri to‘rtburchak va uchburchak yuzasi hamda parallelepiped, silindr, shar, konus va piramida hajmlari berilgan. Trapetsiya yuzasi va sirt yuzasi formulalari esa unda **yo‘q** — ularni yodlang. SAT’da qiyinlik odatda formulaning o‘zida emas, balki **qaysi o‘lcham nima ekanini** (radius yoki diametr, balandlik yoki og‘ma balandlik) to‘g‘ri aniqlashda va **birliklarda** bo‘ladi."
+        },
+        {
+          "type": "recognize",
+          "heading": "Savolni qanday tanib olasiz",
+          "items": [
+            "*“What is the area, in square meters, of…”*, *“What is the volume, in cubic centimeters, of…”* — to‘g‘ridan-to‘g‘ri formula savoli. Savoldagi birlik (square — yuza, cubic — hajm) nima so‘ralayotganini ham aytib turadi.",
+            "Jism nomi formulani tanlaydi: *“a right circular cylinder”*, *“a right circular cone”*, *“a right rectangular prism”*, *“a sphere”*, *“a right square pyramid”*.",
+            "*“The volume of the cone is kπ cubic inches. What is the value of k?”* — javobda π qoladi, siz faqat koeffitsiyentni yozasiz.",
+            "*“Each dimension is multiplied by 3…”*, *“The radius is doubled…”*, *“…is similar to…”* — o‘xshashlik koeffitsiyenti savoli.",
+            "Teskari savol: hajm yoki yuza berilgan, o‘lcham so‘ralgan — *“A cube has a volume of 64 cubic feet. What is the length of one edge?”*",
+            "*“shaded region”*, *“the region inside the square but outside the circle”* — murakkab figura: yuzalarni qo‘shish yoki ayirish kerak.",
+            "*“How many minutes will it take to fill…”*, *“How many boxes can fit…”* — hajmni tezlikka yoki bitta bo‘lak hajmiga bo‘lish masalasi."
+          ]
+        },
+        {
+          "type": "method",
+          "heading": "Ishlash usuli: qadamma-qadam",
+          "steps": [
+            "**Figurani aniqlang va formulani yozing.** Jism yoki figura nomini toping va formulani qoralamaga yozing (eslay olmasangiz — reference sheet’ni oching). Formulani yozib olish keyingi qadamlardagi xatoni kamaytiradi.",
+            "**Berilganlarni belgilang va chizib oling.** Har bir sonning yoniga nima ekanini yozing: radiusmi, diametrmi, balandlikmi yoki og‘ma balandlikmi? Diametr berilgan bo‘lsa, darhol $r = \\frac{d}{2}$ ni hisoblang.",
+            "**Birliklarni tekshiring.** O‘lchamlar har xil birliklarda bo‘lsa (masalan, santimetr va metr), hisoblashdan **oldin** chiziqli o‘lchamlarni bitta birlikka keltiring.",
+            "**Murakkab figura bo‘lsa — bo‘laklarga ajrating.** “Bo‘yalgan soha” odatda katta figura minus kichik figura; qo‘shma jism hajmi esa ikki jism hajmlarining yig‘indisi.",
+            "**Hisoblang va π ni oxirigacha saqlang.** Variantlarda π bo‘lsa, uni 3.14 ga almashtirmang. Taqribiy javob so‘ralganda yaxlitlashni eng oxirida bajaring.",
+            "**Teskari masalada formulaga qo‘yib yeching:** masalan, $\\frac{4}{3}\\pi r^3 = 36\\pi$ bo‘lsa, $r^3 = 27$, ya’ni $r = 3$.",
+            "**So‘ralgan narsani tekshiring:** hajmmi yoki sirt yuzasimi, radiusmi yoki diametrmi, hajmmi yoki uni to‘ldirish vaqtimi? Birlik ham mos bo‘lsin: yuza — kvadrat, hajm — kub birlikda."
+          ]
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 1: silindr va to‘ldirish vaqti",
+          "example": {
+            "problem": "A water tank is shaped like a right circular cylinder with a diameter of 4 meters and a height of 3 meters. The tank is empty, and water is pumped into it at a constant rate of 0.5 cubic meter per minute. To the nearest minute, how long will it take to fill the tank completely?",
+            "choices": ["19 minutes", "24 minutes", "75 minutes", "302 minutes"],
+            "solution": [
+              "Diametr 4 m, demak radius $r = 2$ m. Bu birinchi va eng muhim qadam.",
+              "Silindr hajmi: $V = \\pi r^2 h = \\pi \\cdot 2^2 \\cdot 3 = 12\\pi \\approx 37.70$ kub metr.",
+              "Vaqt = hajm ÷ tezlik: $\\frac{12\\pi}{0.5} = 24\\pi \\approx 75.4$ minut, ya’ni taxminan **75** minut.",
+              "Noto‘g‘ri variantlar qayerdan chiqadi: **302** — diametrni radius deb olish ($\\pi \\cdot 4^2 \\cdot 3 = 48\\pi$, $48\\pi \\div 0.5 \\approx 301.6$); **24** — π ni unutish ($12 \\div 0.5$); **19** — tezlikka bo‘lish o‘rniga ko‘paytirish ($12\\pi \\cdot 0.5 \\approx 18.8$)."
+            ],
+            "answer": "C) 75 minutes"
+          }
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 2: bo‘yalgan soha",
+          "example": {
+            "problem": "A circle is inscribed in a square with side length 10 centimeters, so the circle touches each side of the square at exactly one point. What is the area, in square centimeters, of the region inside the square but outside the circle?",
+            "choices": ["$100 - 100\\pi$", "$100 - 25\\pi$", "$100 - 10\\pi$", "$40 - 10\\pi$"],
+            "solution": [
+              "Ichki chizilgan aylananing diametri kvadrat tomoniga teng: $d = 10$, demak $r = 5$.",
+              "Kvadrat yuzasi: $10^2 = 100$. Doira yuzasi: $\\pi \\cdot 5^2 = 25\\pi$.",
+              "So‘ralgan soha = kvadrat − doira: $100 - 25\\pi$ (taxminan 21.5 kvadrat santimetr).",
+              "Xato variantlar: **A** ($100 - 100\\pi$) — radius o‘rniga diametr olingan; natija hatto manfiy chiqadi, bu ham ogohlantiruvchi belgi. **C** ($100 - 10\\pi$) — doira yuzasi o‘rniga aylana uzunligi ayirilgan. **D** ($40 - 10\\pi$) — perimetrdan aylana uzunligi ayirilgan, ya’ni yuza emas, uzunliklar bilan ishlangan."
+            ],
+            "answer": "B) $100 - 25\\pi$"
+          }
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 3: konus hajmi (javobni o‘zingiz yozasiz)",
+          "example": {
+            "problem": "A right circular cone has a height of 12 inches and a slant height of 13 inches. The volume of the cone is $k\\pi$ cubic inches, where $k$ is a constant. What is the value of $k$?",
+            "solution": [
+              "Og‘ma balandlik (slant height) — konus uchidan asos aylanasigacha yon sirt bo‘ylab o‘lchangan masofa. U balandlik ham, radius ham emas.",
+              "Balandlik, radius va og‘ma balandlik to‘g‘ri burchakli uchburchak hosil qiladi, gipotenuza — og‘ma balandlik: $r^2 + 12^2 = 13^2$, $r^2 = 25$, $r = 5$.",
+              "Hajm: $V = \\frac{1}{3}\\pi r^2 h = \\frac{1}{3}\\pi \\cdot 25 \\cdot 12 = 100\\pi$.",
+              "Demak $k = 100$. Bu student-produced response savoli: javob katagiga π siz faqat **100** ni yozasiz.",
+              "Tuzoqlar: og‘ma balandlikni balandlik o‘rnida ishlatsangiz ($\\frac{1}{3} \\cdot 25 \\cdot 13$), $k \\approx 108.3$ chiqadi; uchdan birni unutsangiz — 300."
+            ],
+            "answer": "100"
+          }
+        },
+        {
+          "type": "watch_out",
+          "heading": "Nimaga e’tibor berish kerak",
+          "items": [
+            "**Radius va diametr:** diametr berilsa, avval 2 ga bo‘ling. Yuza va hajm formulalarida $r$ kvadrat yoki kub darajada turadi, shuning uchun bu xato natijani 4 yoki 8 marta buzadi.",
+            "**Balandlik — har doim perpendikulyar masofa.** Konus va piramidada og‘ma balandlik berilsa, haqiqiy balandlikni Pifagor teoremasi bilan toping. Uchburchakda ham balandlik asosga perpendikulyar bo‘ladi, yon tomon emas.",
+            "**Uchdan bir (1/3) faqat “uchli” jismlarda:** konus va piramida — ha; silindr, prizma va kub — yo‘q.",
+            "**Birliklar kvadrat va kubga oshadi:** $1 \\text{ ft} = 12 \\text{ in}$ bo‘lsa, $1 \\text{ ft}^2 = 144 \\text{ in}^2$ va $1 \\text{ ft}^3 = 1{,}728 \\text{ in}^3$; $1 \\text{ m} = 100 \\text{ cm}$ bo‘lsa, $1 \\text{ m}^3 = 1{,}000{,}000 \\text{ cm}^3$. Eng xavfsiz yo‘l — hisoblashdan oldin uzunliklarni o‘zgartirish.",
+            "**Sirt yuzasimi yoki hajmmi?** Bo‘yash, o‘rash, qoplash (*paint, wrap, cover*) — sirt yuzasi; to‘ldirish, sig‘dirish (*fill, hold, contain*) — hajm. Usti ochiq quti (*open box*) uchun 6 ta emas, 5 ta yoq hisoblanadi.",
+            "**Qisman to‘ldirilgan idish:** silindr yoki prizmada suv hajmi suv balandligiga proporsional (yarim balandlik — yarim hajm). Konusda bu qoida ishlamaydi!",
+            "**SPR javobi:** kπ ko‘rinishidagi savolda faqat $k$ ni kiriting; kasr chiqsa, aralash son emas, $7/2$ yoki $3.5$ shaklida yozing."
+          ]
+        },
+        {
+          "type": "traps",
+          "heading": "Keng tarqalgan xatolar (tuzoq variantlar)",
+          "items": [
+            "**Diametr radius o‘rnida:** to‘g‘ri javobdan 4 marta (doira yuzasi, silindr hajmi) yoki 8 marta (shar hajmi) katta variant deyarli har doim bor.",
+            "**O‘xshashlik koeffitsiyenti:** hajm so‘ralganda $k^3$ o‘rniga $k$ yoki $k^2$ marta oshgan variant. Masalan, silindrning radiusi ham, balandligi ham 2 marta oshsa, hajmi 2 yoki 4 emas, **8** marta oshadi.",
+            "**Uchdan bir xatosi:** konus hajmi o‘rniga silindr hajmi (3 marta katta) yoki aksincha — ikkalasi ham variantlarda turadi.",
+            "**Oraliq natija:** savol vaqt yoki narxni so‘raydi, lekin variantlarda hajmning o‘zi ham bor (masalan, $12\\pi \\approx 37.7$).",
+            "**Uzunlik va yuzani aralashtirish:** yuza o‘rniga perimetr yoki aylana uzunligi bilan hisoblangan variant (Namuna 2 dagi D).",
+            "**Birlik tuzog‘i:** javob kub santimetrda hisoblangan, lekin kub metr so‘ralgan — variantlar 100 yoki 1,000,000 marta farq qiladi."
+          ]
+        },
+        {
+          "type": "time",
+          "heading": "Vaqt, Desmos va reference sheet",
+          "items": [
+            "Oddiy formula savoli — **30–45 soniya**, ko‘p bosqichli savol (birlik o‘zgartirish, bo‘yalgan soha, teskari masala) — **60–90 soniya**. Math’da har bir savolga o‘rtacha taxminan 95 soniya bor.",
+            "**Reference sheet:** konus, shar yoki piramida formulasini eslay olmasangiz, taxmin qilmang — varaqni oching, bu bir necha soniya oladi. Lekin trapetsiya yuzasi va sirt yuzasi formulalari u yerda yo‘q.",
+            "**Desmos:** π li hisob-kitoblarni to‘g‘ridan-to‘g‘ri kiriting. Masalan, $\\frac{1}{3}\\pi \\cdot 5^2 \\cdot 12$ ni yozsangiz, darhol 314.159… chiqadi — buni variantlardagi $100\\pi$ bilan solishtirish oson.",
+            "Teskari masalalarda Desmos’da $y = \\frac{4}{3}\\pi x^3$ va $y = 288\\pi$ grafiklarini chizing: kesishish nuqtasi radiusni beradi ($x = 6$).",
+            "Geometry and Trigonometry domenidan butun Math bo‘limida 5–7 ta savol keladi. Bitta savolga tiqilib qolsangiz, uni **Mark for Review** bilan belgilab, keyinroq qayting."
+          ]
+        },
+        {
+          "type": "terms",
+          "heading": "Muhim inglizcha atamalar",
+          "terms": [
+            { "term": "area", "meaning": "yuza (kvadrat birliklarda: $\\text{cm}^2$, $\\text{ft}^2$)" },
+            { "term": "volume", "meaning": "hajm (kub birliklarda: $\\text{cm}^3$, $\\text{m}^3$)" },
+            { "term": "surface area", "meaning": "sirt yuzasi — jismning barcha yoqlari yuzalari yig‘indisi" },
+            { "term": "circumference", "meaning": "aylana uzunligi: $C = 2\\pi r$" },
+            { "term": "right circular cylinder / cone", "meaning": "to‘g‘ri doiraviy silindr / konus — asosi doira, balandligi asosga perpendikulyar" },
+            { "term": "right rectangular prism", "meaning": "to‘g‘ri burchakli parallelepiped (“quti” shaklidagi jism): $V = lwh$" },
+            { "term": "slant height", "meaning": "og‘ma balandlik (konusda — yasovchi): yon sirt bo‘ylab o‘lchanadi, balandlik $h$ emas" },
+            { "term": "inscribed", "meaning": "ichki chizilgan — figura boshqa figura ichida uning tomonlariga tegib turadi" },
+            { "term": "scale factor", "meaning": "o‘xshashlik koeffitsiyenti — o‘lchamlar necha marta o‘zgargani" },
+            { "term": "in terms of π", "meaning": "π orqali — javobni π ni saqlagan holda yozing (masalan, $25\\pi$)" }
+          ]
+        },
+        {
+          "type": "checklist",
+          "heading": "Javobni tanlashdan oldin tekshiring",
+          "items": [
+            "Radius va diametrni, balandlik va og‘ma balandlikni to‘g‘ri ajratdimmi?",
+            "Barcha o‘lchamlar bitta birlikdami va javob so‘ralgan birlikdami?",
+            "Uchdan bir (1/3) faqat konus va piramidada ishlatildimi?",
+            "Savol aynan nimani so‘rayapti: yuza, hajm, vaqt yoki $k$?"
+          ]
+        }
+      ]
+    }
+  }
+}

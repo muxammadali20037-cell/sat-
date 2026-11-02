@@ -1,0 +1,150 @@
+{
+  "slug": "ratios-rates-proportions-units",
+  "kind": "skill",
+  "skill": "ratios_rates_proportions_units",
+  "position": 9,
+  "readingMinutes": 10,
+  "locales": {
+    "uz": {
+      "title": "Nisbatlar, rate, proporsiyalar va o‘lchov birliklari",
+      "summary": "Nisbat va proporsiya tuzish, “birlik uchun miqdor” (rate) bilan ishlash hamda o‘lchov birliklarini xatosiz almashtirish. Asosiy qurol — birliklarni kasr ko‘rinishida yozib, keraksizlarini qisqartirish: shunda noto‘g‘ri ko‘paytirish yoki bo‘lish deyarli imkonsiz bo‘ladi.",
+      "sections": [
+        {
+          "type": "concept",
+          "heading": "Bu ko‘nikma nimani tekshiradi",
+          "body": "Bu ko‘nikma Problem-Solving and Data Analysis domeniga kiradi (butun Math bo‘limida bu domendan 5–7 ta savol bo‘ladi) va kundalik hayotdagi miqdorlar o‘rtasidagi bog‘liqlikni tekshiradi. To‘rtta asosiy g‘oya bor:\n\n- **Nisbat (ratio):** “$a$ ning $b$ ga nisbati” $a : b$ yoki $\\frac{a}{b}$ deb yoziladi. Nisbat $3 : 5$ bo‘lsa, miqdorlarni $3k$ va $5k$ deb olasiz, jami esa $8k$ bo‘ladi — ya’ni birinchi guruh butunning $\\frac{3}{8}$ qismi.\n- **Proporsiya (proportion):** ikki nisbatning tengligi, $\\frac{a}{b} = \\frac{c}{d}$. U o‘zaro ko‘paytirish (cross-multiplication) bilan yechiladi: $ad = bc$. To‘g‘ri proporsional bog‘liqlik $y = kx$ ko‘rinishida bo‘ladi, bunda $k$ — o‘zgarmas koeffitsiyent.\n- **Rate (birlik uchun miqdor):** bir miqdorning boshqa miqdor birligiga to‘g‘ri keladigan qismi — km/soat, so‘m/kg, sahifa/minut. Asosiy formula: miqdor = rate × vaqt, masalan, masofa = tezlik × vaqt.\n- **Birliklarni almashtirish (unit conversion):** har bir munosabatni qiymati 1 ga teng kasr sifatida yozasiz, masalan $\\frac{60 \\text{ min}}{1 \\text{ h}}$, va keraksiz birlik qisqarib ketadigan qilib ko‘paytirasiz.\n\nShu ko‘nikmaga **zichlik** (density = massa ÷ hajm; aholi zichligi = odamlar soni ÷ maydon) va **masshtab** (xaritada 1 cm = 5 km kabi) savollari ham kiradi."
+        },
+        {
+          "type": "recognize",
+          "heading": "Savolni qanday tanib olasiz",
+          "items": [
+            "*“the ratio of … to …”*, *“for every 3 … there are 5 …”* — nisbat savoli. So‘zlar tartibiga e’tibor bering: “ratio of A to B” — bu $A : B$.",
+            "*“per”*, *“at this rate”*, *“at a constant rate of …”* — rate savoli: birlik uchun miqdor berilgan, jami miqdor yoki vaqt so‘raladi.",
+            "*“is proportional to”*, *“directly proportional”* — $y = kx$ ko‘rinishidagi bog‘liqlik; avval $k$ ni toping.",
+            "Masalada qavs ichida munosabat berilgan: *“(1 mile = 5,280 feet)”*, *“1 kilogram is approximately 2.2 pounds”* — birliklarni almashtirish savoli, berilgan munosabat esa yechimning kaliti.",
+            "*“square feet”*, *“cubic centimeters”*, *“per square mile”* — kvadrat yoki kub birliklar: almashtirish koeffitsiyentini kvadratga yoki kubga ko‘tarishga to‘g‘ri keladi.",
+            "*“On the map, 1 inch represents 20 miles”* — masshtab savoli; aslida bu oddiy proporsiya."
+          ]
+        },
+        {
+          "type": "method",
+          "heading": "Ishlash usuli: qadamma-qadam",
+          "steps": [
+            "**Yakuniy birlikni aniqlang.** Savol oxirida nima so‘ralayotganini o‘qing: soatmi yoki minutmi, metrmi yoki kilometrmi, litrmi yoki kub metrmi. Shu birlikni qoralamada aylana ichiga oling — butun yechim shu tomonga qarab yuradi.",
+            "**Nisbatni qismlar orqali yozing.** $a : b$ nisbatda miqdorlar $ak$ va $bk$ bo‘ladi. Jami berilgan bo‘lsa: $(a + b)k$; farq berilgan bo‘lsa: $(b - a)k$. Avval bitta qismning qiymatini ($k$) toping.",
+            "**Proporsiyani bir xil tartibda tuzing.** Ikkala kasrning suratida bir xil birlik, maxrajida ham bir xil birlik tursin (masalan, ikkalasida ham km/soat). Keyin o‘zaro ko‘paytiring.",
+            "**Birliklarni kasr zanjiri bilan almashtiring.** Berilgan qiymatni yozing va har bir munosabatni keraksiz birlik qisqaradigan tarzda qo‘ying: $$12 \\, \\frac{\\text{L}}{\\text{s}} \\times \\frac{3600 \\text{ s}}{1 \\text{ h}} \\times \\frac{1 \\text{ m}^3}{1000 \\text{ L}}$$ Kvadrat birlikda koeffitsiyentni kvadratga, kub birlikda kubga ko‘taring.",
+            "**Faqat oxirida hisoblang va yaxlitlang.** Zanjirni to‘liq yozib, keyin kalkulyatorda bitta ifoda sifatida hisoblang. Oraliq yaxlitlash javobni qo‘shni variantga “siljitib” yuborishi mumkin.",
+            "**Mantiqiy tekshiruv qiling.** Kattaroq birlikka o‘tsangiz son kichrayadi (minut → soat), kichikroq birlikka o‘tsangiz kattalashadi. Javob shu qoidaga zid bo‘lsa, kasrni teskari qo‘ygansiz."
+          ]
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 1: ikki bosqichli almashtirish",
+          "example": {
+            "problem": "A water pump moves water at a constant rate of 12 liters per second. At this rate, how many cubic meters of water does the pump move in 1 hour? (1 cubic meter = 1,000 liters)",
+            "choices": ["0.72", "43.2", "720", "43,200"],
+            "solution": [
+              "Yakuniy birlik — **kub metr**. Bizda litr/soniya bor: soniyani soatga, litrni kub metrga o‘tkazishimiz kerak.",
+              "1 soatda $60 \\times 60 = 3600$ soniya bor. Kasr zanjiri: $$12 \\, \\frac{\\text{L}}{\\text{s}} \\times \\frac{3600 \\text{ s}}{1 \\text{ h}} \\times \\frac{1 \\text{ m}^3}{1000 \\text{ L}} = \\frac{12 \\times 3600}{1000} \\, \\frac{\\text{m}^3}{\\text{h}}$$ Soniya (s) va litr (L) qisqarib ketadi.",
+              "Hisoblaymiz: $12 \\times 3600 = 43{,}200$ litr, $43{,}200 \\div 1000 = 43.2$ kub metr.",
+              "Nega boshqa variantlar xato: **43,200** — litr kub metrga o‘tkazilmagan; **720** — bu 1 **minutda** haydaladigan litrlar ($12 \\times 60$); **0.72** — 1 minutdagi hajm kub metrda, soatga o‘tilmagan ($720 \\div 1000$).",
+              "Tekshiruv: $43.2 \\text{ m}^3 = 43{,}200 \\text{ L}$ va $43{,}200 \\div 3600 = 12$ litr/soniya ✓."
+            ],
+            "answer": "B) 43.2"
+          }
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 2: nisbat va farq (javobni o‘zingiz yozasiz)",
+          "example": {
+            "problem": "In a school's robotics club, the ratio of juniors to seniors is 4 to 7. There are 12 more seniors than juniors in the club. If the club has only juniors and seniors, how many members does the club have?",
+            "solution": [
+              "Nisbatni qismlar bilan yozamiz: juniors $= 4k$, seniors $= 7k$, bunda $k$ — bitta qismning qiymati.",
+              "Farq berilgan: $7k - 4k = 12$, ya’ni $3k = 12$ va $k = 4$.",
+              "Juniors: $4 \\times 4 = 16$, seniors: $7 \\times 4 = 28$. Jami: $16 + 28 = 44$ (yoki darhol $11k = 44$).",
+              "Tuzoqlar: **11** — bu qismlar soni, a’zolar soni emas; **16** yoki **28** — faqat bitta guruh, savol esa butun klubni so‘rayapti.",
+              "Tekshiruv: $16 : 28 = 4 : 7$ ✓ va $28 - 16 = 12$ ✓. Javob maydoniga **44** deb yozasiz."
+            ],
+            "answer": "44"
+          }
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 3: kvadrat birliklar",
+          "example": {
+            "problem": "A rectangular rug has an area of 54 square feet. What is the area of the rug, in square yards? (1 yard = 3 feet)",
+            "choices": ["6", "18", "162", "486"],
+            "solution": [
+              "Bu **kvadrat birlik**. 1 yard = 3 fut bo‘lsa, 1 kvadrat yard — tomoni 3 fut bo‘lgan kvadrat: $1 \\text{ yd}^2 = 3 \\times 3 = 9 \\text{ ft}^2$.",
+              "Kvadrat futdan kvadrat yardga o‘tish — kattaroq birlikka o‘tish, demak son kichrayadi: $54 \\div 9 = 6$.",
+              "Kasr zanjiri bilan: $54 \\text{ ft}^2 \\times \\left(\\frac{1 \\text{ yd}}{3 \\text{ ft}}\\right)^2 = \\frac{54}{9} = 6 \\text{ yd}^2$.",
+              "Nega boshqa variantlar xato: **18** — koeffitsiyent kvadratga ko‘tarilmagan ($54 \\div 3$), bu eng ko‘p uchraydigan tuzoq; **162** va **486** — bo‘lish o‘rniga ko‘paytirilgan ($54 \\times 3$ va $54 \\times 9$).",
+              "Tekshiruv: gilam, masalan, $9 \\text{ ft} \\times 6 \\text{ ft}$ bo‘lsa, u $3 \\text{ yd} \\times 2 \\text{ yd} = 6 \\text{ yd}^2$ bo‘ladi ✓."
+            ],
+            "answer": "A) 6"
+          }
+        },
+        {
+          "type": "watch_out",
+          "heading": "Nimaga e’tibor berish kerak",
+          "items": [
+            "**Nisbat tartibi:** “the ratio of boys to girls” — bu o‘g‘il bolalar : qizlar. Tartib almashsa, javob teskari kasrga aylanadi — u ham variantlar orasida bo‘ladi.",
+            "**Qism va butun:** $3 : 5$ nisbatda birinchi guruh butunning $\\frac{3}{8}$ qismi, $\\frac{3}{5}$ emas. *“What fraction of all …”* savollarida maxraj — barcha qismlar yig‘indisi.",
+            "**Kvadrat va kub birliklar:** 1 m = 100 cm bo‘lsa, $1 \\text{ m}^2 = 10{,}000 \\text{ cm}^2$ va $1 \\text{ m}^3 = 1{,}000{,}000 \\text{ cm}^3$.",
+            "**O‘rtacha tezlik = umumiy masofa ÷ umumiy vaqt.** Borishda 60 km/soat, qaytishda 40 km/soat bo‘lsa, o‘rtacha tezlik 50 emas, **48** km/soat: yo‘l uzunligi $d$ bo‘lsa, umumiy vaqt $\\frac{d}{60} + \\frac{d}{40} = \\frac{d}{24}$, tezlik esa $2d \\div \\frac{d}{24} = 48$.",
+            "**Berilgan munosabatni ishlating:** masalada “1 kilogram ≈ 2.2 pounds” kabi qiymat berilgan bo‘lsa, aynan shuni qo‘llang — boshqa joydan eslab qolgan aniqroq son variantlarga mos kelmasligi mumkin. Vaqt (1 soat = 60 minut = 3600 soniya) va metrik birliklar (1 km = 1000 m, 1 m = 100 cm) orasidagi oddiy munosabatlarni esa yoddan bilishingiz kerak.",
+            "**Javob formati (SPR):** javob maydoniga birlik, vergul yoki \\$ belgisini yozmang — faqat sonni kiriting: 1,440 emas, **1440**."
+          ]
+        },
+        {
+          "type": "traps",
+          "heading": "Keng tarqalgan xatolar (tuzoq variantlar)",
+          "items": [
+            "**Teskari koeffitsiyent:** bo‘lish o‘rniga ko‘paytirish (yoki aksincha). Natija haddan tashqari katta yoki kichik chiqadi, test tuzuvchilar esa ikkala variantni ham qo‘yadi (namuna 3 dagi 162 va 486).",
+            "**Yarim almashtirish:** ikki birlikdan faqat bittasi almashtirilgan (namuna 1 dagi 43,200 va 0.72).",
+            "**Kvadratga ko‘tarilmagan koeffitsiyent:** maydonni chiziqli koeffitsiyentga bo‘lish (namuna 3 dagi 18).",
+            "**Qismlar soni yoki bitta guruh javob sifatida:** nisbat savolida $k$, $a + b$ yoki faqat bitta guruh soni variantlarda turadi (namuna 2 dagi 11, 16, 28).",
+            "**Tezliklarning oddiy o‘rtachasi:** ikki tezlikni qo‘shib 2 ga bo‘lish — har bir tezlikda sarflangan vaqt teng bo‘lmasa, bu noto‘g‘ri."
+          ]
+        },
+        {
+          "type": "time",
+          "heading": "Vaqt bo‘yicha maslahat",
+          "items": [
+            "Oddiy nisbat yoki bitta almashtirish: **30–60 soniya**. Ikki-uch bosqichli almashtirish: **60–90 soniya**. Math’da har bir savolga o‘rtacha 95 soniya to‘g‘ri keladi, shuning uchun bu yerda tejalgan vaqt qiyinroq savollarga qoladi.",
+            "Kasr zanjirini qoralamaga yozib, hisobni kalkulyatorda **bitta ifoda** sifatida bajaring: masalan, Desmos’ga $12 \\cdot 3600 / 1000$ ni yozing — natija darhol chiqadi va oraliq yaxlitlash bo‘lmaydi.",
+            "Oddiy proporsiyani o‘zaro ko‘paytirish Desmos’dan tezroq. Lekin noma’lum ikki joyda qatnashsa (masalan, $\\frac{x + 4}{x} = \\frac{7}{5}$), tenglamani Desmos’ga yozing — u yechimni $x = 10$ vertikal chizig‘i sifatida ko‘rsatadi.",
+            "Variantlar bir-biridan 10, 100 yoki 1000 marta farq qilsa, bu birlik almashtirish tuzog‘i belgisi: hisoblashdan oldin javob taxminan qancha bo‘lishini baholang."
+          ]
+        },
+        {
+          "type": "terms",
+          "heading": "Muhim inglizcha atamalar",
+          "terms": [
+            { "term": "ratio", "meaning": "nisbat: “ratio of A to B” — $A : B$" },
+            { "term": "for every", "meaning": "har … ga: “for every 3 cats there are 5 dogs” — nisbat $3 : 5$" },
+            { "term": "rate", "meaning": "birlik uchun miqdor (km/soat, litr/minut, so‘m/kg)" },
+            { "term": "per", "meaning": "har bir … uchun; kasr chizig‘i: “miles per hour” — $\\frac{\\text{miles}}{\\text{hour}}$" },
+            { "term": "at this rate / at a constant rate", "meaning": "shu sur’atda / o‘zgarmas sur’atda: rate butun vaqt davomida bir xil" },
+            { "term": "proportional to", "meaning": "proporsional: $y = kx$ — biri necha marta oshsa, ikkinchisi ham shuncha marta oshadi" },
+            { "term": "convert / conversion", "meaning": "bir birlikdan boshqasiga o‘tkazish (almashtirish)" },
+            { "term": "density", "meaning": "zichlik: massa ÷ hajm yoki odamlar soni ÷ maydon (population density)" },
+            { "term": "square feet / cubic meters", "meaning": "kvadrat fut / kub metr — maydon va hajm birliklari" },
+            { "term": "scale", "meaning": "masshtab: xarita yoki chizmadagi o‘lchamning haqiqiy o‘lchamga nisbati" }
+          ]
+        },
+        {
+          "type": "checklist",
+          "heading": "Javobni tanlashdan oldin tekshiring",
+          "items": [
+            "Javob so‘ralgan birlikdami (soat yoki minut, m² yoki m³)?",
+            "Nisbat tartibi to‘g‘rimi va qism bilan butun aralashib ketmadimi?",
+            "Kvadrat yoki kub birlikda koeffitsiyentni darajaga ko‘tardimmi?",
+            "Javobning kattaligi mantiqqa to‘g‘ri keladimi?"
+          ]
+        }
+      ]
+    }
+  }
+}

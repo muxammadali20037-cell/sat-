@@ -1,0 +1,148 @@
+{
+  "slug": "percentages",
+  "kind": "skill",
+  "skill": "percentages",
+  "position": 10,
+  "readingMinutes": 10,
+  "locales": {
+    "uz": {
+      "title": "Foizlar",
+      "summary": "Sonning foizini topish, foiz o‘zgarishi, ketma-ket o‘zgarishlar va dastlabki qiymatni tiklash. Bu savollarning deyarli barchasini bitta g‘oya — ko‘paytuvchi (multiplier) — bilan tez va xatosiz yechish mumkin.",
+      "sections": [
+        {
+          "type": "concept",
+          "heading": "Bu ko‘nikma nimani tekshiradi",
+          "body": "Foiz — yuzdan bir ulush: $p\\% = \\frac{p}{100}$. SAT foizlarni uch xil ko‘rinishda so‘raydi:\n\n- **Sonning foizi:** $x$ ning $p\\%$ i $= \\frac{p}{100} \\cdot x$. Masalan, 240 ning $15\\%$ i $= 0.15 \\times 240 = 36$.\n- **Foiz o‘zgarishi (percent change):** $\\text{percent change} = \\frac{\\text{new} - \\text{original}}{\\text{original}} \\times 100\\%$. Maxrajda doim **dastlabki (eski)** qiymat turadi.\n- **Ikki sonni solishtirish:** “$a$ is what percent of $b$” → $\\frac{a}{b} \\times 100\\%$; “$a$ is $p\\%$ greater than $b$” → $a = \\left(1 + \\frac{p}{100}\\right) b$.\n\nEng kuchli vosita — **ko‘paytuvchi**. $p\\%$ ga oshirish $\\left(1 + \\frac{p}{100}\\right)$ ga, $p\\%$ ga kamaytirish $\\left(1 - \\frac{p}{100}\\right)$ ga ko‘paytirishni anglatadi: $20\\%$ oshish — $\\times 1.2$, $15\\%$ chegirma — $\\times 0.85$.\n\n- Ketma-ket o‘zgarishlarda ko‘paytuvchilar **ko‘paytiriladi**, foizlar qo‘shilmaydi.\n- Dastlabki qiymatni topish uchun yangi qiymat ko‘paytuvchiga **bo‘linadi**."
+        },
+        {
+          "type": "recognize",
+          "heading": "Savolni qanday tanib olasiz",
+          "items": [
+            "*“What is 35% of …?”*, *“… is what percent of …?”* — sonning foizi yoki ikki sonning nisbati.",
+            "*“increased by 20%”*, *“decreased by 15%”*, *“a discount of …”*, *“a sales tax of …”* — foiz o‘zgarishi: ko‘paytuvchi bilan ishlang.",
+            "*“What was the original price?”*, *“before the discount”* — dastlabki qiymatni tiklash: yangi qiymatni ko‘paytuvchiga bo‘ling.",
+            "*“… is 60% greater than …”*, *“… is 25% less than …”* — ikki miqdorni solishtirish: “than” dan keyingi miqdor — asos (100%).",
+            "*“What was the percent increase from 2020 to 2024?”* — jadval yoki grafikdan ikki qiymatni olib foiz o‘zgarishini hisoblash; maxraj — oldingi yil qiymati.",
+            "*“percentage points”* — foiz punktlari: ikki foizning oddiy ayirmasi (pastroqda batafsil)."
+          ]
+        },
+        {
+          "type": "method",
+          "heading": "Ishlash usuli: qadamma-qadam",
+          "steps": [
+            "**Asosni (100% ni) aniqlang.** “of” dan keyingi, “than” dan keyingi yoki “original” deb atalgan miqdor — asos. Foiz o‘zgarishida asos doim eski qiymat.",
+            "**Foizni o‘nli kasrga yoki ko‘paytuvchiga aylantiring:** $35\\% \\to 0.35$; $8\\%$ oshish $\\to 1.08$; $8\\%$ kamayish $\\to 0.92$.",
+            "**Ketma-ket o‘zgarishlarni zanjir qiling.** Har bir o‘zgarish oldingi natijaga qo‘llanadi: $x \\cdot 1.2 \\cdot 0.75$. Foizlarni hech qachon qo‘shmang.",
+            "**Teskari masalada bo‘ling.** “Chegirmadan keyin 323” bo‘lsa: $0.85x = 323$, ya’ni $x = 323 \\div 0.85$. Yangi qiymatga teskari foizni (masalan, $15\\%$ qo‘shishni) qo‘llamang.",
+            "**Foiz o‘zgarishini formula bilan hisoblang:** farqni **eski** qiymatga bo‘ling va 100 ga ko‘paytiring.",
+            "**Mantiqiy tekshiruv va format.** Oshish bo‘lsa javob kattaroq, kamayish bo‘lsa kichikroq bo‘lishi kerak. Savol javobni foiz sonida so‘rasa (*“What is the value of p?”*), javob maydoniga % belgisisiz faqat sonni yozing: **62.5**."
+          ]
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 1: ketma-ket o‘zgarish",
+          "example": {
+            "problem": "The price of a jacket was increased by 20%. Later, the new price was decreased by 25%. The final price of the jacket is what percent of its original price?",
+            "choices": ["10%", "75%", "90%", "95%"],
+            "solution": [
+              "Dastlabki narxni $P$ deb olamiz (qulaylik uchun $P = 100$ deb ham olish mumkin).",
+              "$20\\%$ oshish — $\\times 1.2$, keyin $25\\%$ kamayish — $\\times 0.75$. Yakuniy narx: $P \\cdot 1.2 \\cdot 0.75 = 0.9P$.",
+              "$0.9P$ — bu dastlabki narxning $90\\%$ i.",
+              "$P = 100$ bilan tekshiruv: $100 \\to 120 \\to 120 - 30 = 90$ ✓. E’tibor bering: $25\\%$ kamayish 100 dan emas, **120** dan hisoblanadi.",
+              "Nega boshqa variantlar xato: **95%** — foizlarni qo‘shish ($100 + 20 - 25$); **10%** — narx qanchaga **kamaygani**, savol esa yakuniy narx dastlabkining necha foizi ekanini so‘rayapti; **75%** — faqat oxirgi o‘zgarish hisobga olingan."
+            ],
+            "answer": "C) 90%"
+          }
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 2: dastlabki narxni tiklash (javobni o‘zingiz yozasiz)",
+          "example": {
+            "problem": "During a sale, a store reduced the price of a bicycle by 15%. The sale price of the bicycle was \\$323. What was the original price of the bicycle, in dollars?",
+            "solution": [
+              "Dastlabki narx — $x$. $15\\%$ chegirmadan keyin narxning $85\\%$ i qoladi: $0.85x = 323$.",
+              "Ikkala tomonni 0.85 ga bo‘lamiz: $x = 323 \\div 0.85 = 380$.",
+              "Tuzoq: $323 \\times 1.15 = 371.45$. Bu xato, chunki $15\\%$ chegirma 323 dan emas, **dastlabki** narxdan hisoblangan. Yangi narxga $15\\%$ qo‘shish dastlabki narxni tiklamaydi.",
+              "Tekshiruv: $380 \\times 0.85 = 323$ ✓ (chegirma $380 \\times 0.15 = 57$, $380 - 57 = 323$).",
+              "Javob maydoniga \\$ belgisisiz **380** deb yozasiz."
+            ],
+            "answer": "380"
+          }
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 3: asos almashganda",
+          "example": {
+            "problem": "The positive number $a$ is 60% greater than the positive number $b$. The number $b$ is what percent of $a$?",
+            "choices": ["37.5%", "40%", "60%", "62.5%"],
+            "solution": [
+              "“$a$ is $60\\%$ greater than $b$” — bu yerda asos $b$: $a = 1.6b$.",
+              "Endi asos almashadi — $b$ ni $a$ ga bo‘lamiz: $\\frac{b}{a} = \\frac{b}{1.6b} = \\frac{1}{1.6} = 0.625$, ya’ni $62.5\\%$.",
+              "Son bilan tekshiruv: $b = 100$ bo‘lsa, $a = 160$ va $\\frac{100}{160} = 0.625$ ✓.",
+              "Nega boshqa variantlar xato: **40%** — $100 - 60$ dan chiqadi, asos almashgani hisobga olinmagan; **37.5%** — $b$ soni $a$ dan necha foiz **kichik** ekani ($1 - 0.625$), savol esa $b$ soni $a$ ning necha foizi ekanini so‘rayapti; **60%** — shartdagi sonni qayta yozish."
+            ],
+            "answer": "D) 62.5%"
+          }
+        },
+        {
+          "type": "watch_out",
+          "heading": "Nimaga e’tibor berish kerak",
+          "items": [
+            "**Asos almashsa, foiz ham o‘zgaradi:** $a$ soni $b$ dan $25\\%$ katta bo‘lsa, $b$ soni $a$ dan $25\\%$ emas, $20\\%$ kichik, chunki $\\frac{1}{1.25} = 0.8$.",
+            "**Bir xil foizga oshirib-kamaytirish qiymatni qaytarmaydi:** $+10\\%$ va $-10\\%$ → $1.1 \\times 0.9 = 0.99$, ya’ni natijada $1\\%$ kamayish.",
+            "**Foiz punktlari (percentage points):** ko‘rsatkich $20\\%$ dan $25\\%$ ga o‘tsa, u **5 foiz punktga** oshgan, lekin nisbiy o‘sish $\\frac{25 - 20}{20} = 25\\%$.",
+            "**Foizning foizi:** $40\\%$ ning $30\\%$ i — $0.3 \\times 0.4 = 0.12$, ya’ni $12\\%$ ($70\\%$ ham, $10\\%$ ham emas).",
+            "**Jadval va grafikdagi foizlar:** foiz o‘zgarishi so‘ralsa, ikki qiymatni to‘g‘ri yil yoki ustundan olganingizni tekshiring; “from 2020 to 2024” da 2020 — eski qiymat.",
+            "**Yaxlitlash:** *“to the nearest whole percent”* bo‘lsa, faqat oxirgi natijani yaxlitlang."
+          ]
+        },
+        {
+          "type": "traps",
+          "heading": "Keng tarqalgan xatolar (tuzoq variantlar)",
+          "items": [
+            "**Foizlarni qo‘shish:** $+20\\%$ va $-25\\%$ ni jami $-5\\%$ deb hisoblash (namuna 1 dagi 95%).",
+            "**Teskari foiz:** dastlabki narxni topishda yangi narxga o‘sha foizni qo‘shish yoki ayirish (namuna 2 dagi 371.45).",
+            "**Noto‘g‘ri maxraj:** foiz o‘zgarishida farqni yangi qiymatga bo‘lish. 80 dan 100 ga o‘sish — $25\\%$; farqni 100 ga bo‘lsangiz, $20\\%$ chiqadi va u ham variantlar orasida bo‘ladi.",
+            "**To‘ldiruvchi foiz:** “necha foizi” so‘ralganda “qanchaga kamaygani”ni tanlash yoki aksincha (namuna 1 dagi 10%, namuna 3 dagi 37.5%).",
+            "**Miqdor va foizni adashtirish:** chegirma miqdorini (57) yakuniy narx o‘rniga yoki foizni miqdor o‘rniga belgilash."
+          ]
+        },
+        {
+          "type": "time",
+          "heading": "Vaqt bo‘yicha maslahat",
+          "items": [
+            "Oddiy foiz savoli: **30–60 soniya**; ketma-ket yoki teskari foiz: **60–90 soniya**.",
+            "Ko‘paytuvchi usuli eng tez yo‘l: butun zanjirni kalkulyatorda bitta ifoda sifatida yozing — masalan, $323 / 0.85$ yoki $1.2 \\cdot 0.75$.",
+            "Dastlabki qiymat berilmagan bo‘lsa, uni **100** deb oling — foizlar bevosita ko‘rinadi va algebra kerak bo‘lmaydi.",
+            "Har yili bir xil foizga o‘sish (*“increases by 3% each year”*) savollarida Desmos’da $1.03^{10}$ kabi darajani hisoblang yoki $y = 500 \\cdot 1.03^x$ grafigini chizib, kerakli $x$ dagi qiymatni o‘qing."
+          ]
+        },
+        {
+          "type": "terms",
+          "heading": "Muhim inglizcha atamalar",
+          "terms": [
+            { "term": "percent of", "meaning": "… ning foizi: “30% of 50” $= 0.3 \\times 50 = 15$" },
+            { "term": "percent increase / percent decrease", "meaning": "foizli o‘sish / kamayish: farq ÷ eski qiymat × 100%" },
+            { "term": "percent greater than / percent less than", "meaning": "… dan necha foiz katta / kichik: asos — “than” dan keyingi miqdor" },
+            { "term": "original price / original value", "meaning": "dastlabki narx / qiymat — asos (100%)" },
+            { "term": "discount", "meaning": "chegirma: narx $(1 - r)$ ga ko‘paytiriladi, bunda $r$ — o‘nli kasrdagi foiz" },
+            { "term": "sales tax", "meaning": "savdo solig‘i: narx $(1 + r)$ ga ko‘paytiriladi" },
+            { "term": "markup", "meaning": "ustama: tannarxga qo‘shiladigan foiz" },
+            { "term": "reduced by / marked down", "meaning": "… ga kamaytirilgan / narxi tushirilgan" },
+            { "term": "percentage point", "meaning": "foiz punkti: ikki foizning oddiy ayirmasi ($20\\%$ dan $25\\%$ ga — 5 punkt)" }
+          ]
+        },
+        {
+          "type": "checklist",
+          "heading": "Javobni tanlashdan oldin tekshiring",
+          "items": [
+            "Asos (100%) to‘g‘ri tanlanganmi — “of”, “than” yoki “original” dan keyingi miqdormi?",
+            "Ketma-ket o‘zgarishlarni ko‘paytirdimmi (qo‘shmadimmi)?",
+            "Savol “necha foizi”ni so‘rayaptimi yoki “qanchaga o‘zgargani”nimi?",
+            "SPR: javobni % va \\$ belgilarisiz kiritdimmi?"
+          ]
+        }
+      ]
+    }
+  }
+}

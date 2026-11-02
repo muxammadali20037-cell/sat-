@@ -1,6 +1,6 @@
 import {
   BarChart3, BookMarked, BookOpen, Bot, ClipboardCheck, CreditCard, FileClock, FileQuestion, FileUp, Gauge, GraduationCap,
-  Home, Layers, LayoutDashboard, ListChecks, Network, PenLine, PlayCircle, Receipt, ScrollText, Settings, Sparkles, Target, Timer, Users,
+  Home, Languages, Layers, LayoutDashboard, ListChecks, Network, PenLine, PlayCircle, Receipt, ScrollText, Settings, Sparkles, Target, Timer, Users,
   type LucideIcon,
 } from 'lucide-react'
 import type { NavIconKey } from '@/config/navigation'
@@ -29,6 +29,7 @@ export const NAV_ICONS: Record<NavIconKey, LucideIcon> = {
   ai: Bot,
   audit: ScrollText,
   admin: LayoutDashboard,
+  guides: Languages,
 }
 
 export { Gauge, FileClock }

@@ -1,0 +1,178 @@
+{
+  "slug": "inferences",
+  "kind": "skill",
+  "skill": "inferences",
+  "position": 26,
+  "readingMinutes": 10,
+  "locales": {
+    "uz": {
+      "title": "Inferences: matndan mantiqiy xulosa chiqarish",
+      "summary": "Matn oxiridagi bo‘sh joyni matndagi ma’lumotlardan mantiqan kelib chiqadigan xulosa bilan to‘ldirish. To‘g‘ri javob “bo‘lishi mumkin” emas, “matnga ko‘ra shunday bo‘lishi kerak” bo‘lgan fikr.",
+      "sections": [
+        {
+          "type": "concept",
+          "heading": "Bu ko‘nikma nimani tekshiradi",
+          "body": "Inferences savollari **Information and Ideas** domeniga kiradi va ko‘p o‘quvchilar uchun Reading and Writing’dagi eng qiyin savollardan biri. Matn bir nechta fakt yoki tadqiqot tavsifini beradi, oxirgi jumla esa bo‘sh joy bilan tugaydi. Siz shu bo‘shliqni **mantiqan** to‘ldiradigan variantni tanlaysiz.\n\nBu yerda *inference* — ijodiy taxmin emas. U matematikadagi isbotga o‘xshaydi: matndagi har bir jumla — shart, to‘g‘ri javob esa shu shartlardan **muqarrar ravishda** kelib chiqadigan xulosa. Agar variantni to‘g‘ri deb hisoblash uchun matnda yo‘q qo‘shimcha taxmin kerak bo‘lsa, u noto‘g‘ri.\n\nMatnlar ko‘pincha ilmiy tajribalar (gipoteza → tajriba → natija), tarixiy faktlar yoki ijtimoiy tadqiqotlar haqida bo‘ladi."
+        },
+        {
+          "type": "recognize",
+          "heading": "Savolni qanday tanib olasiz",
+          "items": [
+            "*Which choice most logically completes the text?* — bu savolning standart shakli.",
+            "Matn bo‘sh joy bilan tugaydi, undan oldin ko‘pincha xulosa signali turadi: *This suggests that…*, *Therefore,…*, *…the researchers concluded that…*, *…most likely…*.",
+            "Variantlar — to‘liq gap bo‘laklari (ko‘pincha *that* dan keyingi qism), alohida so‘zlar emas.",
+            "Farqlang: variantlar alohida so‘zlar bo‘lsa — bu Words in Context; variantlar *However, Therefore, In addition* kabi bog‘lovchilar bo‘lsa (*most logical transition*) — bu Expression of Ideas domenidagi transitions savoli."
+          ]
+        },
+        {
+          "type": "method",
+          "heading": "Ishlash usuli: qadamma-qadam",
+          "steps": [
+            "**Savolni o‘qing va bu inference ekanini tasdiqlang** (*most logically completes the text*).",
+            "**Matnni sekin, jumlama-jumla o‘qing.** Har bir jumla — xulosa uchun bitta “g‘isht”. Ayniqsa *only, not, all, some, most, if, unless, although* so‘zlariga e’tibor bering: ular mantiqni butunlay o‘zgartiradi.",
+            "**Mantiqiy zanjirni qisqa tuzing** (xayolan yoki qog‘ozda): “Ikki taxmin bor: A va B. Tajribada A ham, B ham yo‘q. Natija baribir bor.” Zanjirda nima yetishmayapti?",
+            "**Bo‘sh joydan oldingi so‘zlarga qarang:** ular qanday xulosa kutilayotganini aytadi — natija (*therefore*), izoh (*because*), bashorat (*would most likely*) yoki tadqiqotchining xulosasi (*suggests that*).",
+            "**O‘z xulosangizni bashorat qiling,** keyin variantlarni o‘qing.",
+            "**“Albatta” testini qo‘llang:** har bir variant uchun “Matn to‘g‘ri bo‘lsa, bu ham **albatta** to‘g‘rimi?” deb so‘rang. Faqat “bo‘lishi mumkin” darajasidagi variantlarni, matnga zid variantlarni va yangi mavzu qo‘shadigan variantlarni o‘chiring."
+          ]
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 1: ilmiy tajribadan xulosa",
+          "example": {
+            "passage": "Many plants close their flowers at night, and botanists have proposed two explanations for this behavior. One is that closing protects the flowers' pollen from cold night air. The other is that closing keeps out insects that are active only at night and that eat pollen without carrying it to other flowers. In a greenhouse kept at the same warm temperature day and night, with no night-active insects present, a team found that one such species still closed its flowers every night. This result suggests that ______",
+            "problem": "Which choice most logically completes the text?",
+            "choices": [
+              "neither cold air nor night-active insects are needed to trigger the nightly closing of this species' flowers.",
+              "the flowers of this species close at night mainly to protect their pollen from cold air.",
+              "night-active insects are the greatest threat to flowers grown in greenhouses.",
+              "this species would stop closing its flowers if it were moved outdoors."
+            ],
+            "solution": [
+              "**Shartlar:** (1) ikki taxmin bor — gullar sovuqdan yoki tungi hasharotlardan himoyalanish uchun yopiladi. (2) Issiqxonada **sovuq ham, tungi hasharotlar ham yo‘q**. (3) Gullar baribir har kecha yopildi.",
+              "**Mantiq:** sabab deb taxmin qilingan ikkala omil olib tashlandi, lekin natija (yopilish) saqlanib qoldi. Demak, bu turda gullarning yopilishi boshlanishi uchun bu omillar **shart emas**.",
+              "**A** — aynan shu xulosa: yopilishni boshlash uchun sovuq havo ham, hasharotlar ham zarur emas. ✓",
+              "**B** noto‘g‘ri — natijadan kelib chiqmaydi: tajribada sovuq havo umuman bo‘lmagan, gullar esa baribir yopilgan. Bunday natija sovuqning asosiy rolini tasdiqlamaydi, aksincha unga shubha uyg‘otadi.",
+              "**C** noto‘g‘ri: issiqxonada tungi hasharotlar umuman bo‘lmagan, ular haqida hech qanday natija yo‘q. “Eng katta xavf” — matnda yo‘q da’vo.",
+              "**D** noto‘g‘ri: tajriba faqat issiqxonada o‘tkazilgan, ochiq havoda nima bo‘lishi haqida ma’lumot yo‘q. Gullar taxmin qilingan sabablar yo‘q joyda ham yopilgan bo‘lsa, ochiq havoda yopilmasligini kutishga asos yo‘q."
+            ],
+            "answer": "A"
+          }
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 2: tarixiy matndan xulosa",
+          "example": {
+            "passage": "Historians studying a fifteenth-century trading town in Central Asia have found hundreds of business letters written by its merchants. Nearly all of the letters are written in Persian, even though most of the town's residents spoke a Turkic language at home. The letters were sent to partners in cities as distant as Tabriz and Herat, where Persian was widely used in trade and government. Based on this evidence, the historians suggest that the town's merchants most likely ______",
+            "problem": "Which choice most logically completes the text?",
+            "choices": [
+              "did not know how to write in the Turkic language they spoke at home.",
+              "had been born in Tabriz or Herat and later moved to the trading town.",
+              "stopped trading with distant cities when Persian became less common there.",
+              "wrote in Persian because it allowed them to communicate with business partners in distant cities."
+            ],
+            "solution": [
+              "**Shartlar:** (1) xatlarning deyarli hammasi forscha; (2) shahar aholisining ko‘pchiligi uyda turkiy tilda gaplashgan; (3) xatlar Tabriz va Hirot kabi uzoq shaharlardagi sheriklarga yuborilgan; (4) u yerlarda savdo va boshqaruvda fors tili keng qo‘llanilgan.",
+              "**Bashorat:** savdogarlar uyda boshqa tilda gaplashsa ham, xatlarni forscha yozgan, chunki sheriklari bu tilni tushungan. Ya’ni fors tili — savdo aloqalari tili bo‘lgan.",
+              "**A** noto‘g‘ri — **ortiqcha kuchli**: forscha yozish ularning turkiy tilda yoza olmaganini isbotlamaydi. Ular forschani shunchaki sheriklari uchun tanlagan bo‘lishi mumkin.",
+              "**B** noto‘g‘ri: savdogarlarning qayerda tug‘ilgani haqida matnda hech narsa yo‘q. Bu — asossiz taxmin.",
+              "**C** noto‘g‘ri: matnda fors tilining kamayishi yoki savdoning to‘xtashi haqida ma’lumot yo‘q. Variant matn doirasidan butunlay chiqib ketadi.",
+              "**D** — barcha shartlarni bog‘laydi va yangi taxmin talab qilmaydi. ✓"
+            ],
+            "answer": "D"
+          }
+        },
+        {
+          "type": "watch_out",
+          "heading": "Nimaga e’tibor berish kerak",
+          "items": [
+            "**“Could be true” ≠ “must be true”.** Ko‘p noto‘g‘ri variantlar hayotda bo‘lishi mumkin, lekin matndan **kelib chiqmaydi**. Inference savolida faqat matn kafolatlaydigan xulosa to‘g‘ri.",
+            "**Har bir so‘z muhim.** *only, some, most, all, not, never, unless* — bitta so‘z xulosani butunlay o‘zgartiradi. *Some plants* haqidagi matndan *all plants* haqida xulosa chiqarib bo‘lmaydi.",
+            "**Ehtiyotkor xulosa ko‘pincha to‘g‘ri.** Matn ehtiyotkor bo‘lsa (*suggests, may, likely*), to‘g‘ri javob ham odatda cheklangan bo‘ladi (*at least some, in this species*). *Always, proves, all* kabi so‘zli variantlar ko‘pincha haddan tashqari kuchli — lekin bu qat’iy qoida emas, faqat signal.",
+            "**Tajriba matnlarida** tuzilish odatda shunday: gipoteza → tajriba sharoiti → natija → xulosa. Natija gipotezani tasdiqladimi yoki rad etdimi? Qaysi omil olib tashlandi va nima o‘zgarmadi? Javob shu yerda.",
+            "**Tashqi bilim ishlatmang.** Mavzuni yaxshi bilsangiz ham, matnda berilmagan fakt asosida xulosa qilmang.",
+            "**Ingliz tili bo‘yicha maslahat — mantiq so‘zlari:** *if… then* — agar… u holda; *unless* — agar… bo‘lmasa; *only if* — faqat… bo‘lgandagina; *neither… nor* — na… na; *rather than* — …o‘rniga; *even though / although* — garchi… bo‘lsa ham; *whereas* — holbuki. Bo‘sh joydan oldingi jumlani ayniqsa diqqat bilan tarjima qiling: *This suggests that…* — “Bu shuni ko‘rsatadiki…”. Notanish ilmiy atamani (o‘simlik, kasallik, joy nomi) “X” deb qabul qiling — mantiq zanjiri uchun uning aniq ma’nosi odatda kerak emas."
+          ]
+        },
+        {
+          "type": "traps",
+          "heading": "Keng tarqalgan xatolar (tuzoq variantlar)",
+          "items": [
+            "**Bo‘lishi mumkin, lekin asoslanmagan:** mantiqan ishonarli, ammo matndan kelib chiqmaydi (2-namunadagi B).",
+            "**Haddan tashqari kuchli xulosa:** matn kichik bir narsani ko‘rsatadi, variant esa katta da’vo qiladi (2-namunadagi A).",
+            "**Natijaga zid xulosa:** tajriba aynan shu omilni olib tashlagan bo‘lsa ham, uni asosiy sabab deb ko‘rsatish (1-namunadagi B).",
+            "**Mavzudan chiqish:** variant matnda tilga olinmagan yangi sharoit yoki vaqt haqida gapiradi (1-namunadagi D, 2-namunadagi C).",
+            "**Shartni takrorlash:** variant matnda allaqachon aytilgan faktni qayta aytadi — bu xulosa emas va bo‘sh joyning mantiqiy vazifasini bajarmaydi.",
+            "**Sabab va oqibatni almashtirish:** “A B ga olib keladi” degan matndan “B A ga olib keladi” degan xulosa chiqarish."
+          ]
+        },
+        {
+          "type": "time",
+          "heading": "Vaqt bo‘yicha maslahat",
+          "items": [
+            "Reading and Writing’da bir savolga o‘rtacha **71 soniya** bor (har modulda 27 savol, 32 daqiqa). Inference savollari mantiqiy tahlil talab qiladi, shuning uchun ularga **80–100 soniya** ketishi mumkin.",
+            "Modulda o‘xshash savollar birga guruhlangan va osondan qiyinga qarab joylashtirilgan. Qiyinroq inference savollariga vaqt qolishi uchun oddiyroq savollarni tezroq yeching.",
+            "Matnni bir marta sekin va diqqat bilan o‘qish uch marta shoshib o‘qishdan samaraliroq: bu turdagi savolda e’tibordan chetda qolgan bitta so‘z (*only*, *not*) butun javobni o‘zgartiradi.",
+            "Ikki daqiqadan oshib ketsa — bir-ikki variantni chiqarib tashlang, qolganlardan birini tanlang, **Mark for Review** bilan belgilang va keyingi savolga o‘ting. Vaqt qolsa, yangi ko‘z bilan qaytasiz."
+          ]
+        },
+        {
+          "type": "terms",
+          "heading": "Muhim inglizcha atamalar",
+          "terms": [
+            {
+              "term": "most logically completes",
+              "meaning": "eng mantiqiy tarzda to‘ldiradi"
+            },
+            {
+              "term": "infer / inference",
+              "meaning": "xulosa chiqarmoq / mantiqiy xulosa"
+            },
+            {
+              "term": "suggest",
+              "meaning": "ko‘rsatmoq, ishora qilmoq — ehtiyotkor xulosa"
+            },
+            {
+              "term": "imply",
+              "meaning": "bilvosita anglatmoq, nazarda tutmoq"
+            },
+            {
+              "term": "assume / assumption",
+              "meaning": "taxmin qilmoq / taxmin (isbotlanmagan asos)"
+            },
+            {
+              "term": "necessarily",
+              "meaning": "albatta, muqarrar ravishda"
+            },
+            {
+              "term": "rule out",
+              "meaning": "istisno qilmoq — biror imkoniyatni chiqarib tashlamoq"
+            },
+            {
+              "term": "account for",
+              "meaning": "izohlamoq, sababini tushuntirmoq"
+            },
+            {
+              "term": "trigger",
+              "meaning": "qo‘zg‘atmoq, boshlab bermoq"
+            },
+            {
+              "term": "consistent with",
+              "meaning": "…ga mos, …ga zid emas"
+            }
+          ]
+        },
+        {
+          "type": "checklist",
+          "heading": "Javobni tanlashdan oldin tekshiring",
+          "items": [
+            "Tanlagan variantim matndagi **barcha** shartlardan kelib chiqadimi?",
+            "Uni to‘g‘ri deb hisoblash uchun matnda yo‘q taxmin kerak emasmi?",
+            "Variantning kuchi (*all, some, may*) matnning ehtiyotkorlik darajasiga mosmi?",
+            "Variantni bo‘sh joyga qo‘yib o‘qisam, oxirgi jumla mantiqan to‘liq bo‘ladimi?"
+          ]
+        }
+      ]
+    }
+  }
+}

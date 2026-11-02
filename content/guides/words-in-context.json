@@ -1,0 +1,207 @@
+{
+  "slug": "words-in-context",
+  "kind": "skill",
+  "skill": "words_in_context",
+  "position": 20,
+  "readingMinutes": 10,
+  "locales": {
+    "uz": {
+      "title": "Words in Context: so‘zning matndagi ma’nosi",
+      "summary": "Matndagi bo‘sh joyga eng mantiqiy va aniq so‘zni tanlash yoki berilgan so‘zning aynan shu matndagi ma’nosini topish. Bu savollarda lug‘at bilimi muhim, lekin asosiy kalit — so‘z ma’nosini atrofidagi jumlalardan oldindan “bashorat qilish”.",
+      "sections": [
+        {
+          "type": "concept",
+          "heading": "Bu ko‘nikma nimani tekshiradi",
+          "body": "Words in Context savollari Reading and Writing bo‘limidagi to‘rt domendan biri — **Craft and Structure** ga kiradi va ikki ko‘rinishda keladi:\n\n- **Bo‘sh joyni to‘ldirish:** matnda bitta bo‘sh joy bor, siz unga eng mantiqiy va eng aniq so‘z yoki iborani tanlaysiz. Bu eng ko‘p uchraydigan shakl.\n- **So‘zning ma’nosi:** savol matndagi bitta so‘zni keltiradi va u **aynan shu matnda** qaysi ma’noda ishlatilganini so‘raydi.\n\nIkkala holatda ham SAT lug‘atni yodlaganingizni emas, so‘zni **kontekst ichida** tushunishingizni tekshiradi. Ingliz tilida bitta so‘zning bir nechta ma’nosi bo‘lishi mumkin; to‘g‘ri javob — faqat shu matn mantiqiga mos keladigan ma’no. College Board bu savollarda kamdan-kam ishlatiladigan “ekzotik” so‘zlarni emas, akademik matnlarda ko‘p uchraydigan (*high-utility*) so‘z va iboralarni tanlaydi.\n\nMatnlar qisqa (25–150 so‘z) va har bir matnga faqat bitta savol beriladi. Demak, matnni boshidan oxirigacha o‘qishga doim vaqtingiz bor — faqat bo‘sh joyli jumlani o‘qib javob berish eng katta xato."
+        },
+        {
+          "type": "recognize",
+          "heading": "Savolni qanday tanib olasiz",
+          "items": [
+            "*Which choice completes the text with the most logical and precise word or phrase?* — matnda bo‘sh joy bor, variantlarda to‘rtta so‘z yoki ibora. Bu Words in Context’ning asosiy savoli.",
+            "*As used in the text, what does the word “…” most nearly mean?* — matndagi tayyor so‘zning aynan shu kontekstdagi ma’nosi so‘ralmoqda.",
+            "To‘rtala variant odatda **bir xil so‘z turkumida** bo‘ladi (hammasi fe’l yoki hammasi sifat) va grammatik jihatdan jumlaga bir xil mos tushadi. Demak, tanlov grammatikaga emas, **ma’noga** bog‘liq.",
+            "Variantlar ko‘pincha bir-biriga yaqin ma’noli bo‘ladi: farq so‘zning **kuchida** (*slightly* yoki *dramatically*), **ohangida** (ijobiy yoki salbiy) yoki **aniq ma’nosida**.",
+            "Farqlang: agar variantlar bir so‘zning turli shakllari (*is / are*, *its / their*) yoki tinish belgilari bo‘lsa — bu grammatika (Standard English Conventions) savoli. Agar variantlar *However, Therefore, For example* kabi bog‘lovchilar bo‘lsa — bu transitions savoli."
+          ]
+        },
+        {
+          "type": "method",
+          "heading": "Ishlash usuli: qadamma-qadam",
+          "steps": [
+            "**Avval savolni o‘qing.** Bo‘sh joy savolimi yoki *most nearly mean* savolimi — shunga qarab matnning qaysi joyiga ko‘proq e’tibor berishni bilasiz.",
+            "**Matnni to‘liq o‘qing, variantlarga hali qaramang.** Bo‘sh joydan oldingi va keyingi jumlalar ayniqsa muhim: ma’noning kaliti ko‘pincha aynan shu yerda. Variantlarni oldin ko‘rsangiz, ular fikringizni chalg‘itadi.",
+            "**Kalit dalil va signal so‘zlarni toping.** Matn bo‘sh joy haqida nima deydi? Qarama-qarshilik (*however, but, although, yet*), davom (*and, also, similarly*), sabab-natija (*because, therefore, thus*) yoki tushuntirish (ikki nuqta “:” va tire “—” dan keyingi qism) belgilari qaysi yo‘nalishni ko‘rsatyapti?",
+            "**O‘z so‘zingiz bilan bashorat qiling.** Bo‘sh joyga o‘zbekcha yoki oddiy inglizcha so‘z qo‘ying: “shubha ostiga qo‘ydi”, “kichik”, *good / bad*. Bashorat chiroyli bo‘lishi shart emas — **yo‘nalishi** (ijobiy yoki salbiy, ko‘p yoki kam, qo‘llaydi yoki qarshi) to‘g‘ri bo‘lsa yetarli.",
+            "**Variantlarni bashoratingiz bilan solishtirib, chiqarib tashlang.** Avval yo‘nalishi teskari variantlarni, keyin juda kuchli yoki juda kuchsiz variantlarni o‘chiring. Bluebook’dagi **Option Eliminator** bilan ularning ustidan chizib qo‘ying.",
+            "**Qolgan variantni jumlaga qo‘yib, matnni yana bir marta o‘qing.** Jumla tabiiy eshitilishi va matndagi **har bir** tafsilotga mos kelishi kerak. Ikki variant qolsa, qaysi biri matndagi dalilga aniqroq mos kelishini tekshiring — SAT eng aniq (*most precise*) so‘zni so‘raydi."
+          ]
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 1: qarama-qarshilik signali",
+          "example": {
+            "passage": "For decades, many historians assumed that merchants on the Silk Road relied almost entirely on camel caravans to move their goods. A recent study of merchant letters preserved in a desert archive, however, ______ that view: the letters describe donkeys, horses and even river boats carrying silk, paper and spices over long stretches of the journey. The researchers argue that trade routes were far more varied than earlier accounts suggested.",
+            "problem": "Which choice completes the text with the most logical and precise word or phrase?",
+            "choices": [
+              "reinforces",
+              "overlooks",
+              "complicates",
+              "summarizes"
+            ],
+            "solution": [
+              "**Signal so‘z:** *however* (“biroq”). Demak, yangi tadqiqot tarixchilarning eski fikriga **qarshi** yo‘nalishda nimadir qilmoqda.",
+              "**Dalil:** ikki nuqtadan keyingi qism bo‘sh joyni tushuntiradi — xatlarda tuyadan tashqari eshak, ot va daryo qayiqlari ham tilga olingan. Oxirgi jumla ham savdo yo‘llari “ancha xilma-xil” bo‘lganini aytadi.",
+              "**Bashorat:** tadqiqot eski fikrni “shubha ostiga qo‘yadi”, manzara u qadar oddiy emasligini ko‘rsatadi.",
+              "**C) complicates** — “murakkablashtiradi, oddiy emasligini ko‘rsatadi”. Tadqiqot tuyalar ishlatilmagan demayapti, faqat yuk tashish faqat tuyalardan iborat bo‘lmaganini ko‘rsatyapti. Yo‘nalishi ham, kuchi ham aniq mos. ✓",
+              "**A) reinforces** (“mustahkamlaydi”) — teskari ma’no. *However* signalini e’tiborsiz qoldirgan o‘quvchi aynan shuni tanlaydi.",
+              "**B) overlooks** (“e’tiborsiz qoldiradi”) — tadqiqot eski fikrni chetlab o‘tmayapti, aksincha unga bevosita javob bermoqda.",
+              "**D) summarizes** (“qisqacha bayon qiladi”) — xatlar eski fikrni takrorlamaydi, balki unga zid yangi ma’lumot beradi."
+            ],
+            "answer": "C) complicates"
+          }
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 2: ko‘p ma’noli so‘z (most nearly mean)",
+          "example": {
+            "passage": "When the city council received hundreds of complaints about crowded buses, it formed a small committee to address the problem. Instead of simply buying more vehicles, the committee studied ridership data, interviewed drivers and redesigned three bus routes that overlapped with one another. Within a year, average waiting times at bus stops had fallen by nearly a third, and the council decided to use the committee's approach for other city services.",
+            "problem": "As used in the text, what does the word “address” most nearly mean?",
+            "choices": [
+              "speak to",
+              "deal with",
+              "send to",
+              "locate"
+            ],
+            "solution": [
+              "**Savol:** *most nearly mean* — *address* so‘zining **shu matndagi** ma’nosi kerak. Bu so‘zning lug‘atda bir nechta ma’nosi bor: “manzil”, “nutq so‘zlamoq, murojaat qilmoq”, “xatga manzil yozmoq” va “muammo bilan shug‘ullanmoq”.",
+              "**Kontekst:** qo‘mita muammoni *address* qilish uchun tuzilgan, keyin esa ma’lumotlarni o‘rgangan, haydovchilardan so‘ragan va yo‘nalishlarni qayta tuzgan. Bularning hammasi — muammoni **hal qilish** uchun qilingan ishlar.",
+              "**Bashorat:** “hal qilish, muammo ustida ishlash”.",
+              "**B) deal with** — “hal qilmoq, shug‘ullanmoq”. Matndagi barcha harakatlarga mos. ✓",
+              "**A) speak to** — “nutq so‘zlamoq, murojaat qilmoq”. *Address an audience* iborasida shu ma’no bor, lekin qo‘mita muammoga nutq so‘zlamaydi.",
+              "**C) send to** — xat yoki posilkaga manzil yozish ma’nosi; matnda hech narsa jo‘natilmayapti.",
+              "**D) locate** — “joylashuvini topmoq”. *Address* ot sifatida “manzil” degani, lekin matnda muammo qayerdaligini topish haqida gap yo‘q.",
+              "**Xulosa:** *most nearly mean* savollarida so‘zning eng mashhur ma’nosi (bu yerda “manzil” yoki “nutq”) ko‘pincha tuzoq bo‘ladi."
+            ],
+            "answer": "B) deal with"
+          }
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 3: so‘zning kuchi (darajasi)",
+          "example": {
+            "passage": "Engineers tested a new coating designed to keep solar panels free of dust in dry regions, where dirty panels can lose much of their power. After six months, panels with the coating generated about 2 percent more electricity than identical panels without it. The team described the improvement as ______: clearly measurable and worth further study, but too small on its own to justify the coating's high price for most solar farms.",
+            "problem": "Which choice completes the text with the most logical and precise word or phrase?",
+            "choices": [
+              "negligible",
+              "modest",
+              "remarkable",
+              "temporary"
+            ],
+            "solution": [
+              "**Signal:** ikki nuqtadan keyingi qism bo‘sh joyning tayyor ta’rifi: “aniq o‘lchanadigan va o‘rganishga arziydi, **lekin** yolg‘iz o‘zi qimmat narxni oqlash uchun juda kichik”.",
+              "**Bashorat:** “kichik, lekin haqiqiy” — ya’ni na juda katta, na umuman ahamiyatsiz.",
+              "**B) modest** — “uncha katta bo‘lmagan, kamtarona”. Ham “haqiqiy”, ham “kichik” degan ikki shartga mos. ✓",
+              "**A) negligible** — “e’tiborga arzimaydigan darajada kichik”. Yo‘nalishi to‘g‘ri (kichik), lekin **juda kuchli**: matn natijani *clearly measurable and worth further study* deydi, ya’ni u e’tiborga arziydi.",
+              "**C) remarkable** — “ajoyib, diqqatga sazovor”. Teskari yo‘nalish: matn yaxshilanish kichik ekanini ta’kidlaydi.",
+              "**D) temporary** — “vaqtinchalik”. Natija qancha davom etishi haqida matnda ma’lumot yo‘q; bu variant boshqa savolga javob beradi."
+            ],
+            "answer": "B) modest"
+          }
+        },
+        {
+          "type": "watch_out",
+          "heading": "Nimaga e’tibor berish kerak",
+          "items": [
+            "**Oddiy so‘z — kutilmagan ma’no.** *address, sound, check, credit, figure, novel* kabi tanish so‘zlar SAT’da ko‘pincha ikkinchi darajali ma’nosida keladi: *a sound argument* — “asosli dalil”, *a novel method* — “yangi, original usul”. Lug‘atdagi birinchi ma’noga emas, kontekstga ishoning.",
+            "**“Logical” va “precise” — ikki alohida shart.** Mantiqiy so‘z matn yo‘nalishiga mos keladi; aniq so‘z esa darajasi, ohangi va mavzusi bo‘yicha ham mos keladi. Ikki variant “taxminan to‘g‘ri” ko‘rinsa, matndagi dalilga **aniqroq** mos kelganini tanlang.",
+            "**Ikki nuqta (:) va tire (—) — tayyor ta’rif.** Ulardan keyingi qism ko‘pincha bo‘sh joyni tushuntiradi. Shu qismni o‘qimasdan javob bermang.",
+            "**Bilmagan so‘z chiqsa:** uni darhol tashlamang va darhol tanlamang ham. Avval bilgan variantlaringizni tekshiring: agar ularning hammasi aniq noto‘g‘ri bo‘lsa, notanish so‘zni tanlang. So‘z qismlari ham yordam beradi: *un-, dis-, mis-* — inkor yoki xato, *re-* — qayta, *-less* — “-siz”. Matndagi notanish so‘zni esa “X” deb qabul qilib o‘qishda davom eting — ko‘pincha ma’noni tushunish uchun u shart emas.",
+            "**Signal so‘zlarni o‘zbekchaga “tarjima qiling”:** *however, yet, but, although, despite* → “biroq” (yo‘nalish o‘zgaradi); *moreover, also, similarly, likewise* → “shuningdek” (yo‘nalish davom etadi); *therefore, thus, as a result, consequently* → “shuning uchun” (natija).",
+            "**Savolni bir zumda tushuning:** *most logical and precise word or phrase* → “mantiqan to‘g‘ri va eng aniq so‘z”; *as used in the text … most nearly mean* → “shu matnda nimani anglatadi”. Butun matnni so‘zma-so‘z tarjima qilishga urinmang: kim? nima qildi? qaysi yo‘nalishda? — shu uch savolga javob bashorat uchun yetarli.",
+            "**Lug‘atni so‘z birikmasi bilan o‘rganing.** Alohida so‘z emas, ibora yodlang: *undermine a claim* (da’voni zaiflashtirmoq), *bolster support* (qo‘llab-quvvatlashni kuchaytirmoq), *a tentative conclusion* (dastlabki, ehtiyotkor xulosa). SAT so‘zlarni aynan shunday birikmalarda ishlatadi."
+          ]
+        },
+        {
+          "type": "traps",
+          "heading": "Keng tarqalgan xatolar (tuzoq variantlar)",
+          "items": [
+            "**Teskari ma’no:** signal so‘zni (*however*, *although*) e’tiborsiz qoldirsangiz, aynan teskari variantni tanlaysiz (1-namunadagi *reinforces*).",
+            "**Juda kuchli yoki juda kuchsiz:** yo‘nalishi to‘g‘ri, lekin darajasi noto‘g‘ri so‘z (3-namunadagi *negligible*). *Destroy* o‘rniga *weaken*, *always* o‘rniga *often* kerak bo‘lishi mumkin.",
+            "**Mashhur ma’no tuzog‘i:** *most nearly mean* savolida so‘zning eng ko‘p ishlatiladigan ma’nosi deyarli har doim variantlar orasida bo‘ladi va ko‘pincha noto‘g‘ri (2-namunadagi *locate* va *speak to*).",
+            "**Mavzuga mos, lekin mantiqqa mos emas:** variant matn mavzusiga yaqin so‘z (savdo haqidagi matnda *trade*, *exchange* kabi), lekin jumladagi mantiqiy vazifani bajarmaydi.",
+            "**“Aqlli” ko‘rinadigan so‘z:** qiyin va kam uchraydigan so‘z o‘z-o‘zidan to‘g‘ri emas. To‘g‘ri javob ko‘pincha oddiy so‘z bo‘ladi.",
+            "**Faqat bitta jumlaga mos:** variant bo‘sh joyli jumlaga to‘g‘ri tushadi, lekin keyingi jumla bilan ziddiyatga kiradi. Doim butun matnni hisobga oling."
+          ]
+        },
+        {
+          "type": "time",
+          "heading": "Vaqt bo‘yicha maslahat",
+          "items": [
+            "Reading and Writing bo‘limi ikki moduldan iborat: har birida **27 ta savol** va **32 daqiqa** (jami 54 savol, 64 daqiqa). Bu bir savolga o‘rtacha **71 soniya** degani.",
+            "Words in Context matnlari qisqa, shuning uchun bu savollarga **40–60 soniya** sarflashga harakat qiling. Tejangan vaqt uzunroq savollarga (ikki matnli, grafikli, inference) qoladi.",
+            "Modulda o‘xshash savollar birga guruhlangan va osondan qiyinga qarab joylashtirilgan. Guruh oxiridagi savolga ko‘proq vaqt ketishi normal.",
+            "So‘zni bilmasangiz, ikki daqiqa o‘ylash ham uni eslatmaydi. Bilgan variantlaringizni tekshirib chiqarib tashlang, qolganidan birini tanlang va **Mark for Review** bilan belgilab keyingi savolga o‘ting.",
+            "Savolni hech qachon bo‘sh qoldirmang: College Board’ning o‘zi ko‘pchilik o‘quvchilar uchun bo‘sh qoldirgandan ko‘ra taxmin qilish yaxshiroq ekanini, ayniqsa bir-ikki variantni chiqarib tashlay olsangiz, ta’kidlaydi."
+          ]
+        },
+        {
+          "type": "terms",
+          "heading": "Muhim inglizcha atamalar",
+          "terms": [
+            {
+              "term": "most logical and precise",
+              "meaning": "eng mantiqiy va eng aniq: so‘z ham matn yo‘nalishiga, ham uning darajasi va ohangiga mos bo‘lishi kerak"
+            },
+            {
+              "term": "as used in the text",
+              "meaning": "matnda ishlatilgan ma’noda — lug‘atdagi umumiy ma’no emas"
+            },
+            {
+              "term": "most nearly mean",
+              "meaning": "ma’nosi eng yaqin (to‘liq sinonim bo‘lishi shart emas)"
+            },
+            {
+              "term": "context",
+              "meaning": "kontekst: so‘z atrofidagi jumlalar va matnning umumiy mazmuni"
+            },
+            {
+              "term": "connotation",
+              "meaning": "so‘zning qo‘shimcha ohangi: ijobiy (*confident*), salbiy (*arrogant*) yoki neytral"
+            },
+            {
+              "term": "phrase",
+              "meaning": "ibora, so‘z birikmasi (*rule out*, *account for*)"
+            },
+            {
+              "term": "complicate (a view)",
+              "meaning": "(fikrni) murakkablashtirmoq — u to‘liq to‘g‘ri yoki oddiy emasligini ko‘rsatmoq"
+            },
+            {
+              "term": "undermine",
+              "meaning": "zaiflashtirmoq, asosini yemirmoq — SAT matnlarida juda ko‘p uchraydi"
+            },
+            {
+              "term": "underscore",
+              "meaning": "ta’kidlamoq, alohida urg‘u bermoq"
+            },
+            {
+              "term": "novel (adjective)",
+              "meaning": "yangi, original — *novel* faqat “roman” degani emas"
+            }
+          ]
+        },
+        {
+          "type": "checklist",
+          "heading": "Javobni tanlashdan oldin tekshiring",
+          "items": [
+            "Variantlarga qarashdan oldin o‘z bashoratimni qildimmi?",
+            "Tanlagan so‘zim signal so‘zlar (*however*, *because*, ikki nuqta) ko‘rsatgan yo‘nalishga mosmi?",
+            "So‘zning kuchi va ohangi matndagi dalilga mosmi — ortiqcha kuchli yoki kuchsiz emasmi?",
+            "So‘zni bo‘sh joyga qo‘yib, butun matnni qayta o‘qidimmi?"
+          ]
+        }
+      ]
+    }
+  }
+}

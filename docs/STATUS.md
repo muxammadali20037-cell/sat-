@@ -4,7 +4,7 @@ _Last updated: 2 November 2026_
 
 The codebase covers phases 1–8 of [DEVELOPMENT_ROADMAP.md](DEVELOPMENT_ROADMAP.md). Phase 9 (deployment) is partly done: a Supabase project exists, and the steps that need the owner's accounts or credentials are listed under "Launch checklist" below.
 
-Size: 63 pages, 45 API route handlers, 12 SQL migrations, about 50k lines of TypeScript.
+Size: 68 pages, 45 API route handlers, 14 SQL migrations, about 52k lines of TypeScript, and 40 Uzbek study guides (30 skill guides covering every Digital SAT skill, plus 10 strategy guides).
 
 ## What was verified, and how
 
@@ -14,8 +14,8 @@ Everything below was run, not assumed.
 |---|---|---|
 | TypeScript | `npm run typecheck` | 0 errors |
 | Lint | `npm run lint` | 0 problems |
-| Unit tests | `npm test` | 435 passed (29 files): scoring, rich text, entitlements, practice selection, diagnostic composition, exam state machine and routing, planner, AI output post-processing and leak checks, Click/Payme/Stripe signature and protocol handling, import validation, schemas |
-| Database tests | `npm run test:db` | 55 passed against PostgreSQL 16 with all migrations applied: RLS (28), billing functions (11), practice/answer-key security (7), exam RLS (9) |
+| Unit tests | `npm test` | 486 passed (30 files). Covers:<br>• scoring, rich text, entitlements;<br>• practice selection and diagnostic composition;<br>• exam state machine and routing;<br>• study planner;<br>• AI output post-processing and leak checks;<br>• Click/Payme/Stripe signature and protocol handling;<br>• question import validation and schemas;<br>• every study guide file: schema, required sections, KaTeX rendering, and the bundled copy matching the files. |
+| Database tests | `npm run test:db` | 63 passed against PostgreSQL 16, rebuilt from scratch with all 14 migrations and the seed: RLS (28), billing functions (11), practice/answer-key security (7), exam RLS (9), study-guide RLS (8) |
 | Seed integrity | `scripts/db/check-seed.sql` | Passed (64 questions, 16 lessons, 4 practice sets, adaptive demo exam) |
 | Production build | `npm run build` | Succeeded |
 | End-to-end | Playwright against `next dev` + a local Supabase-compatible stack (GoTrue v2.180.0, PostgREST v12.2.3, Postgres 16) | See below |
@@ -30,6 +30,10 @@ The flows ran as a real user against real auth, PostgREST and RLS. AI used the l
 - **AI tutor:** question → structured step-by-step answer.
 - **Billing and planning:** subscription page → test checkout → signed webhook → Pro plan active → study plan generated.
 - **Mock exam:** full adaptive exam, with all four modules, the break, routing to the easier or harder module 2, the results page and the estimate.
+- **Study guides:** the hub and all 40 guides open at 390 px and 1280 px with every solution expanded. No overflow, no KaTeX errors, no stray formatting characters.
+  - Marking a guide as read is saved.
+  - Lessons and practice feedback link to the right guide.
+  - Admin → Study guides → "Import bundled guides" restored 3 deleted guides as published, with audit entries.
 - **Admin:** all 27 admin pages load for a SUPER_ADMIN at 1280 px and 390 px with no errors.
 - **Layout:** public pages at 390/768/1280 px and student pages at 390 px show no horizontal overflow and no console errors.
 
@@ -46,6 +50,24 @@ The flows ran as a real user against real auth, PostgREST and RLS. AI used the l
 - **`.gitignore`:** it excluded `.env.example`.
 - **Localization:** the question card, answer options, navigator, upgrade notice and pagination were English-only for Uzbek users.
 - **Display:** practice titles repeated the difficulty ("Algebra · Mixed · Mixed"), and AI-tutor history showed raw LaTeX.
+
+### Uzbek study guides (added 2 Nov, at the owner's request)
+
+Every Digital SAT skill (30), plus test strategy and platform use (10), is explained in Uzbek. Each skill guide covers:
+- what the question tests and how to recognise it;
+- a step-by-step method;
+- 2–3 original worked examples (problem in English, solution in Uzbek, folded so students try first);
+- what to watch out for and common traps;
+- pacing tips;
+- an English→Uzbek term list and a checklist.
+
+The guides are free on every plan. They are linked from lessons, practice feedback, results and the new-student dashboard, and recommended by weakest skill. Format facts were verified against College Board pages by the writers, and every answer key was recomputed.
+
+**Getting them into an environment:**
+- `supabase db push`, through the generated migration 0014; or
+- Admin → Study guides → "Import bundled guides", one click, no SQL.
+
+Authoring and editing workflow: [GUIDES.md](GUIDES.md).
 
 ## Not verified (needs real accounts or credentials)
 
@@ -72,7 +94,7 @@ The flows ran as a real user against real auth, PostgREST and RLS. AI used the l
 
 ## Launch checklist (owner actions)
 
-1. **Supabase:** apply all migrations in `supabase/migrations` to the production project (the project `sat-master` exists in eu-central-1). Then:
+1. **Supabase:** apply all migrations in `supabase/migrations` to the production project (the project `sat-master` exists in eu-central-1). Migration 0014 (guide content, ~480 KB) can instead be loaded with Admin → Study guides → "Import bundled guides". Then:
    - set the Auth URLs and email templates ([AUTH_SETUP.md](AUTH_SETUP.md));
    - raise the Storage upload limit to 500 MB if MP4 lessons will be uploaded.
 2. **First admin:** sign up in the app, then run `supabase/seed/make_admin.sql` with your email.

@@ -1,0 +1,153 @@
+{
+  "slug": "lines-angles-triangles",
+  "kind": "skill",
+  "skill": "lines_angles_triangles",
+  "position": 17,
+  "readingMinutes": 10,
+  "locales": {
+    "uz": {
+      "title": "Chiziqlar, burchaklar va uchburchaklar",
+      "summary": "Kesishgan va parallel chiziqlar hosil qiladigan burchaklar, uchburchak burchaklari, teng yonli, o‘xshash va teng uchburchaklar — chizma so‘z bilan tasvirlangan bo‘lsa ham uni to‘g‘ri tasavvur qilib, noma’lum burchak yoki tomonni topish.",
+      "sections": [
+        {
+          "type": "concept",
+          "heading": "Bu ko‘nikma nimani tekshiradi",
+          "body": "Bu ko‘nikma burchaklar orasidagi munosabatlarni va uchburchak xossalarini qo‘llay olishingizni tekshiradi. Bilishingiz shart bo‘lgan qoidalar:\n\n- **To‘g‘ri chiziq:** bir chiziqda yonma-yon turgan burchaklar yig‘indisi $180^\\circ$; bir nuqta atrofidagi burchaklar yig‘indisi $360^\\circ$.\n- **Vertikal burchaklar** (ikki chiziq kesishganda qarama-qarshi turgan burchaklar) teng.\n- **Parallel chiziqlar va kesuvchi:** mos burchaklar (corresponding) va ichki almashinuvchi burchaklar (alternate interior) teng; bir tomonli ichki burchaklar yig‘indisi $180^\\circ$. Amaliy qoida: bunday chizmadagi istalgan ikki burchak yo **teng**, yo yig‘indisi **180°**. Ikkalasi ham o‘tkir (yoki ikkalasi ham o‘tmas) bo‘lsa — teng; biri o‘tkir, biri o‘tmas bo‘lsa — yig‘indisi $180^\\circ$.\n- **Uchburchak:** ichki burchaklar yig‘indisi $180^\\circ$; tashqi burchak unga qo‘shni bo‘lmagan ikki ichki burchak yig‘indisiga teng.\n- **Teng yonli uchburchak (isosceles):** teng tomonlar qarshisidagi burchaklar teng (va aksincha). Teng tomonli (equilateral) uchburchakning har bir burchagi $60^\\circ$.\n- **Tomonlar va burchaklar:** katta tomon qarshisida katta burchak yotadi. **Uchburchak tengsizligi:** har bir tomon qolgan ikki tomon yig‘indisidan kichik va ayirmasidan katta.\n- **O‘xshash uchburchaklar (similar):** mos burchaklari teng, mos tomonlari proporsional. Ikki burchagi mos ravishda teng bo‘lsa (AA), uchburchaklar o‘xshash. O‘xshashlik koeffitsiyenti $k$ bo‘lsa, yuzalar nisbati $k^2$.\n- **Teng uchburchaklar (congruent):** barcha mos tomonlari va burchaklari teng (SSS, SAS, ASA, AAS belgilari).\n- **Ko‘pburchak:** $n$ burchakli ko‘pburchak ichki burchaklari yig‘indisi $(n - 2) \\cdot 180^\\circ$.\n\nReference sheet’da uchburchak burchaklari yig‘indisi ($180^\\circ$) va maxsus to‘g‘ri burchakli uchburchaklar berilgan, lekin parallel chiziqlar, vertikal burchaklar va o‘xshashlik qoidalari **yo‘q** — ularni yoddan biling."
+        },
+        {
+          "type": "recognize",
+          "heading": "Savolni qanday tanib olasiz",
+          "items": [
+            "*“In the figure, line ℓ is parallel to line m…”*, *“Lines p and q are intersected by line t”* — parallel chiziqlar va kesuvchi.",
+            "Burchaklar ifoda bilan berilgan: *“…has measure (3x + 15)°. What is the value of x?”*",
+            "*“Triangle ABC is similar to triangle DEF, where A, B, and C correspond to D, E, and F, respectively”* — o‘xshashlik va proporsiya.",
+            "*“Point D lies on side AB and point E lies on side AC such that DE is parallel to BC”* — katta uchburchak ichida kichik o‘xshash uchburchak.",
+            "*“isosceles”*, *“equilateral”*, *“AB = BC”*, *“bisects angle…”* — teng tomonlar yoki teng burchaklar haqidagi ishora.",
+            "*“Which of the following could be the length of the third side?”* — uchburchak tengsizligi.",
+            "*“Note: Figure not drawn to scale.”* — chizmaga ko‘z bilan qarab o‘lchamang, faqat berilgan ma’lumotga tayaning."
+          ]
+        },
+        {
+          "type": "method",
+          "heading": "Ishlash usuli: qadamma-qadam",
+          "steps": [
+            "**Chizmani qoralamaga chizing.** Agar chizma so‘z bilan tasvirlangan bo‘lsa, aynan matndagi tartibda chizing: qaysi nuqta qaysi chiziqda, qaysi burchak qayerda. Berilgan barcha qiymatlarni chizmaga yozing.",
+            "**Munosabatlarni belgilang:** parallel chiziqlarni strelka bilan, teng tomonlarni chiziqcha bilan, to‘g‘ri burchakni kvadratcha bilan belgilang. Matnda aytilgan, lekin chizmada ko‘rinmaydigan har bir fakt — muhim kalit.",
+            "**Qoidani tanlang:** to‘g‘ri chiziq ($180^\\circ$), vertikal burchaklar (teng), parallel chiziqlar (teng yoki $180^\\circ$), uchburchak ($180^\\circ$), tashqi burchak, teng yonli uchburchak yoki o‘xshashlik.",
+            "**Tenglama tuzing va yeching.** Ko‘pincha bitta tenglama yetarli: “bu ikki burchak teng” yoki “bu burchaklar yig‘indisi 180”.",
+            "**O‘xshash uchburchaklarda mos uchlarni juftlang.** $\\triangle ABC \\sim \\triangle DEF$ yozuvida tartib muhim: $A \\leftrightarrow D$, $B \\leftrightarrow E$, $C \\leftrightarrow F$, demak $\\frac{AB}{DE} = \\frac{BC}{EF} = \\frac{AC}{DF}$. Ichma-ich uchburchaklarda **butun** tomonni oling, bo‘lagini emas.",
+            "**Natijani mantiqan tekshiring:** burchak musbatmi, uchburchak burchaklari yig‘indisi $180^\\circ$ mi, katta tomon katta burchak qarshisidami?",
+            "**So‘ralganini bering:** $x$ so‘ralganmi yoki burchak o‘lchovi? Ikkalasi ham variantlarda bo‘lishi mumkin."
+          ]
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 1: parallel chiziqlar",
+          "example": {
+            "problem": "Line $p$ is parallel to line $q$, and line $t$ intersects both lines. At the intersection of lines $t$ and $p$, the angle that lies above line $p$ and to the right of line $t$ has measure $(2x + 40)^\\circ$. At the intersection of lines $t$ and $q$, the angle that lies below line $q$ and to the left of line $t$ has measure $(3x + 10)^\\circ$. What is the value of $x$?",
+            "choices": ["26", "30", "80", "100"],
+            "solution": [
+              "Avval chizamiz: ikki gorizontal parallel chiziq ($p$ va $q$) va ularni kesib o‘tuvchi og‘ma chiziq $t$.",
+              "$p$ dagi “yuqori-o‘ng” burchak $q$ dagi “yuqori-o‘ng” burchakka teng (mos burchaklar). $q$ dagi “yuqori-o‘ng” burchak esa $q$ dagi “pastki-chap” burchakka teng (vertikal burchaklar). Demak, berilgan ikki burchak **teng**.",
+              "Tenglama: $2x + 40 = 3x + 10$, bundan $x = 30$.",
+              "Tekshiruv: $2(30) + 40 = 100$ va $3(30) + 10 = 100$ ✓. Ikkala burchak ham o‘tmas — bu ularning teng bo‘lishi kerakligiga mos.",
+              "Xato variantlar: **A** (26) — burchaklarni yig‘indisi $180^\\circ$ deb olishdan chiqadi ($5x + 50 = 180$); lekin unda burchaklar $92^\\circ$ va $88^\\circ$ bo‘lib qoladi, holbuki ular teng bo‘lishi kerak. **D** (100) — bu $x$ emas, burchak o‘lchovi. **C** (80) — qo‘shni burchak ($180 - 100$)."
+            ],
+            "answer": "B) 30"
+          }
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 2: o‘xshash uchburchaklar (javobni o‘zingiz yozasiz)",
+          "example": {
+            "problem": "In triangle $ABC$, point $D$ lies on side $\\overline{AB}$ and point $E$ lies on side $\\overline{AC}$ such that $\\overline{DE}$ is parallel to $\\overline{BC}$. If $AD = 6$, $DB = 4$, and $DE = 9$, what is the length of $\\overline{BC}$?",
+            "solution": [
+              "$\\overline{DE} \\parallel \\overline{BC}$ bo‘lgani uchun $\\angle ADE = \\angle ABC$ (mos burchaklar), $\\angle A$ esa umumiy. Demak $\\triangle ADE \\sim \\triangle ABC$ (AA belgisi).",
+              "Mos tomonlar: $AD \\leftrightarrow AB$, $DE \\leftrightarrow BC$. Diqqat: $AB$ — butun tomon: $AB = AD + DB = 6 + 4 = 10$.",
+              "Proporsiya: $\\frac{AD}{AB} = \\frac{DE}{BC}$, ya’ni $\\frac{6}{10} = \\frac{9}{BC}$.",
+              "$6 \\cdot BC = 90$, demak $BC = 15$.",
+              "Tipik xato: $\\frac{AD}{DB} = \\frac{DE}{BC}$ deb olish ($\\frac{6}{4} = \\frac{9}{BC}$, $BC = 6$) yoki $\\frac{6}{4} = \\frac{BC}{9}$ deb olish ($BC = 13.5$). Ikkalasi ham bo‘lakni butun tomon bilan adashtirishdan kelib chiqadi. Javob katagiga **15** ni yozing."
+            ],
+            "answer": "15"
+          }
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 3: teng yonli uchburchak va tashqi burchak",
+          "example": {
+            "problem": "In triangle $PQR$, $PQ = PR$ and the measure of angle $P$ is $48^\\circ$. Side $\\overline{QR}$ is extended beyond point $R$ to point $S$. What is the measure of angle $PRS$?",
+            "choices": ["$66^\\circ$", "$84^\\circ$", "$114^\\circ$", "$132^\\circ$"],
+            "solution": [
+              "$PQ = PR$ — teng tomonlar. Ularning qarshisidagi burchaklar teng: $PR$ qarshisida $\\angle Q$, $PQ$ qarshisida $\\angle R$. Demak $\\angle Q = \\angle R$.",
+              "$\\angle Q + \\angle R = 180^\\circ - 48^\\circ = 132^\\circ$, har biri $66^\\circ$.",
+              "$\\angle PRS$ — $R$ uchidagi tashqi burchak: $180^\\circ - 66^\\circ = 114^\\circ$. Tashqi burchak qoidasi bilan tekshiramiz: $\\angle P + \\angle Q = 48^\\circ + 66^\\circ = 114^\\circ$ ✓.",
+              "Xato variantlar: **A** (66°) — ichki burchak, tashqi emas. **D** (132°) — ikki asos burchagining yig‘indisi yoki $\\angle R$ ni $48^\\circ$ deb olib, $180^\\circ - 48^\\circ$ hisoblash. **B** (84°) — teng burchaklarni noto‘g‘ri juftlab, $\\angle Q = \\angle P = 48^\\circ$ deb olsangiz, $\\angle R = 84^\\circ$ chiqadi; bu ham ichki burchak va u ham noto‘g‘ri."
+            ],
+            "answer": "C) $114^\\circ$"
+          }
+        },
+        {
+          "type": "watch_out",
+          "heading": "Nimaga e’tibor berish kerak",
+          "items": [
+            "**“Not drawn to scale” bo‘lsa, chizmaga ishonmang.** To‘g‘ri burchakka o‘xshagan burchak $90^\\circ$ bo‘lmasligi, teng ko‘ringan tomonlar teng bo‘lmasligi mumkin. Faqat matnda yoki belgilarda berilgan narsaga tayaning.",
+            "**O‘xshashlikda uchlar tartibi:** $\\triangle ABC \\sim \\triangle DEF$ — birinchi harf birinchisiga, ikkinchisi ikkinchisiga mos. Tomonlarni chizmadagi joylashuvidan emas, shu tartibdan juftlang.",
+            "**Teng yonli uchburchakda teng burchaklar teng tomonlar qarshisida yotadi** — ular har doim ham “pastda” emas. Avval qaysi tomonlar teng ekanini toping, keyin ularning qarshisidagi uchlarni.",
+            "**Tashqi burchak** unga qo‘shni bo‘lmagan ikki ichki burchak yig‘indisiga teng: burchaklari $40^\\circ$ va $75^\\circ$ bo‘lgan uchburchakda uchinchi uchdagi tashqi burchak $115^\\circ$. Bu $180^\\circ$ ni ikki marta ayirishdan tezroq.",
+            "**Uchburchak tengsizligi qat’iy:** tomonlari 3, 5 va 8 bo‘lgan uchburchak **mavjud emas**, chunki $3 + 5 = 8$ (yig‘indi kattaroq bo‘lishi shart). Uchinchi tomon $c$ uchun: $|a - b| < c < a + b$.",
+            "**Yashirin tenglamalar beradigan so‘zlar:** *bisects* (bissektrisa burchakni teng ikkiga bo‘ladi), *perpendicular* ($90^\\circ$), *midpoint* (o‘rta nuqta kesmani teng ikkiga bo‘ladi).",
+            "**O‘xshash figuralar yuzasi:** tomonlar nisbati $k$ bo‘lsa, yuzalar nisbati $k^2$. Tomonlar 2 marta katta bo‘lsa, yuza 4 marta katta."
+          ]
+        },
+        {
+          "type": "traps",
+          "heading": "Keng tarqalgan xatolar (tuzoq variantlar)",
+          "items": [
+            "**“Teng” va “yig‘indisi 180” ni adashtirish:** test tuzuvchilar ikkala holatdan chiqadigan javobni ham variantlarga qo‘yadi (Namuna 1 dagi 26 va 30).",
+            "**x o‘rniga burchak o‘lchovi (yoki aksincha):** $x = 30$ bo‘lsa, $100^\\circ$ ham variantda turadi.",
+            "**Bo‘lak va butun tomon:** ichma-ich o‘xshash uchburchaklarda $\\frac{AD}{AB}$ o‘rniga $\\frac{AD}{DB}$ ni ishlatish.",
+            "**Noto‘g‘ri juftlangan tomonlar:** proporsiyani uchlar tartibiga qarab tuzmaslik — natijada teskari nisbat chiqadi va u ham variantda bor.",
+            "**Ichki va tashqi burchakni adashtirish:** tashqi burchak so‘ralganda ichki burchak (yoki aksincha) variantlarda tayyor turadi.",
+            "**Uchburchak tengsizligida chegaraviy son:** tomonlar 4 va 9 bo‘lsa, uchinchi tomon 5 yoki 13 bo‘lishi **mumkin emas** — faqat $5 < c < 13$."
+          ]
+        },
+        {
+          "type": "time",
+          "heading": "Vaqt, Desmos va reference sheet",
+          "items": [
+            "Bu turdagi savolga odatda **45–75 soniya** yetarli. Ko‘p vaqt chizmani tushunishga ketadi — shuning uchun avval chizib oling, keyin hisoblang.",
+            "**Reference sheet:** uchburchak burchaklari yig‘indisi va maxsus to‘g‘ri burchakli uchburchaklar bor, ammo parallel chiziqlar qoidalari yo‘q — ularni yoddan biling.",
+            "**Desmos** bu mavzuda asosan tenglamani tekshirish uchun kerak: masalan, $2x + 40 = 3x + 10$ ni kiritsangiz, Desmos $x = 30$ ni ko‘rsatadi. Chizma uchun esa qoralama tezroq.",
+            "Burchaklar ko‘p bo‘lsa va qayerdan boshlashni bilmasangiz, ma’lum burchaklarni chizmaga ketma-ket yozib chiqing: har bir topilgan burchak keyingisini ochadi. 90 soniyadan oshsa, **Mark for Review** bilan belgilab, oldinga o‘ting."
+          ]
+        },
+        {
+          "type": "terms",
+          "heading": "Muhim inglizcha atamalar",
+          "terms": [
+            { "term": "parallel lines", "meaning": "parallel chiziqlar — hech qachon kesishmaydi" },
+            { "term": "transversal", "meaning": "kesuvchi — ikki (yoki undan ko‘p) chiziqni kesib o‘tuvchi chiziq" },
+            { "term": "vertical angles", "meaning": "vertikal burchaklar — kesishgan ikki chiziqning qarama-qarshi burchaklari, ular teng" },
+            { "term": "supplementary angles", "meaning": "yig‘indisi $180^\\circ$ bo‘lgan ikki burchak" },
+            { "term": "corresponding angles", "meaning": "mos burchaklar — parallel chiziqlarda bir xil joylashgan burchaklar, ular teng" },
+            { "term": "alternate interior angles", "meaning": "ichki almashinuvchi burchaklar — kesuvchining turli tomonida, parallel chiziqlar orasida; ular teng" },
+            { "term": "isosceles triangle", "meaning": "teng yonli uchburchak — kamida ikki tomoni teng" },
+            { "term": "similar triangles", "meaning": "o‘xshash uchburchaklar — burchaklari teng, tomonlari proporsional" },
+            { "term": "congruent", "meaning": "teng (kongruent) — shakli ham, o‘lchami ham bir xil" },
+            { "term": "exterior angle", "meaning": "tashqi burchak — tomonni davom ettirganda hosil bo‘ladigan burchak" }
+          ]
+        },
+        {
+          "type": "checklist",
+          "heading": "Javobni tanlashdan oldin tekshiring",
+          "items": [
+            "Chizmani (yoki matndagi tavsifni) qoralamaga to‘g‘ri chizdimmi va barcha berilganlarni yozdimmi?",
+            "Burchaklar teng bo‘lishi kerakmi yoki yig‘indisi 180 — buni qoida asosida tekshirdimmi?",
+            "O‘xshash uchburchaklarda mos tomonlarni uchlar tartibi bo‘yicha va butun tomon bilan juftladimmi?",
+            "So‘ralgan narsani ($x$, burchak yoki tomon) aynan topdimmi?"
+          ]
+        }
+      ]
+    }
+  }
+}

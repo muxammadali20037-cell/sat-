@@ -7,6 +7,7 @@ import { createAdminSupabase } from '@/lib/supabase/admin'
 import { getDict, getLocale } from '@/lib/i18n/server'
 import { format } from '@/lib/i18n/dict'
 import { dashboardDict } from '@/lib/i18n/dictionaries/dashboard'
+import { guidesDict } from '@/lib/i18n/dictionaries/guides'
 import { PageHeader } from '@/components/layout/page-header'
 import { StatCard } from '@/components/ui/progress'
 import { Card } from '@/components/ui/card'
@@ -32,12 +33,16 @@ export default async function DashboardPage() {
   const title = firstName ? format(t.welcome, { name: firstName }) : t.welcomeNoName
 
   if (data.isNewStudent) {
+    // Point first-time students at the "how to use SAT MASTER" guide when it is published.
+    const { data: howTo } = await db.from('guides').select('slug').eq('slug', 'how-to-use-sat-master').eq('status', 'published').maybeSingle()
+    const tg = await getDict(guidesDict)
+    const howToGuide = howTo ? { href: `/dashboard/guides/${howTo.slug}`, label: tg.howToUse } : undefined
     return (
       <>
         <PageHeader title={title} />
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
           <div className="lg:col-span-2">
-            <NewStudentPanel t={t} />
+            <NewStudentPanel t={t} howToGuide={howToGuide} />
           </div>
           <div className="space-y-4">
             <ExamCountdownCard t={t} exam={data.exam} locale={locale} />

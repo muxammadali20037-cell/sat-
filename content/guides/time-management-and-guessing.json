@@ -1,0 +1,109 @@
+{
+  "slug": "time-management-and-guessing",
+  "kind": "strategy",
+  "subject": null,
+  "position": 3,
+  "readingMinutes": 7,
+  "locales": {
+    "uz": {
+      "title": "Vaqtni boshqarish va taxmin qilish",
+      "summary": "Har bir savolga qancha vaqt ajratish, ikki o‘tishli usul, savolni ko‘rib chiqish uchun belgilash, qachon va qanday taxmin qilish hamda modulning oxirgi 5 daqiqasida nima qilish — vaqt yetmay qolmasligi va hech bir savol bo‘sh qolmasligi uchun.",
+      "sections": [
+        {
+          "type": "concept",
+          "heading": "Nega vaqt strategiyasi kerak",
+          "body": "Digital SAT’da har bir modul alohida vaqtlanadi: Reading and Writing modulida 27 ta savolga 32 daqiqa, Math modulida 22 ta savolga 35 daqiqa beriladi. Vaqt tugaganda ilova sizni avtomatik ravishda keyingi qismga o‘tkazadi va bu modulga qaytib bo‘lmaydi.\n\nIkki muhim fakt strategiyani belgilaydi:\n\n- **Noto‘g‘ri javob uchun jarima yo‘q.** Bo‘sh qoldirilgan savol ham, noto‘g‘ri javob ham ball bermaydi, lekin taxmin qilingan javob to‘g‘ri chiqishi mumkin. Demak, **bo‘sh savol qoldirmaslik** kerak.\n- **Savollar osondan qiyinga joylashgan:** Math’da butun modul bo‘ylab, Reading and Writing’da esa har bir savol guruhi ichida. Oson savolni noto‘g‘ri ishlab, qiyin savolga ortiqcha vaqt sarflash — eng qimmat xato.\n\nAsosiy tamoyil: barcha savollarga bir xil vaqt emas, **har bir savolga uni yechish uchun yetarli, lekin ortiqcha bo‘lmagan vaqt**."
+        },
+        {
+          "type": "time",
+          "heading": "O‘rtacha sur’at va nazorat nuqtalari",
+          "items": [
+            "**Reading and Writing:** o‘rtacha ≈71 soniya bir savolga. Nazorat nuqtalari: 9-savolni tugatganda taymerda taxminan **21 daqiqa**, 18-savolni tugatganda taxminan **11 daqiqa** qolgan bo‘lsin.",
+            "**Math:** o‘rtacha ≈95 soniya bir savolga. Savollar oxiriga qarab qiyinlashgani uchun boshida tezroq ishlang: 11-savolga **15 daqiqadan kamroq** vaqtda yeting — shunda oxirgi 11 ta qiyinroq savolga taxminan 20 daqiqa qoladi.",
+            "**Bitta savolga chegara:** Reading and Writing’da taxminan 2 daqiqa, Math’da taxminan 3 daqiqa. Bundan oshsa — javob belgilang, savolni ko‘rib chiqish uchun belgilang va keyingisiga o‘ting.",
+            "Taymerga har bir savoldan keyin emas, nazorat nuqtalarida qarang. Taymer sizni xavotirga solsa, uni yashirib qo‘yish mumkin."
+          ]
+        },
+        {
+          "type": "method",
+          "heading": "Ikki o‘tishli usul (2-pass)",
+          "steps": [
+            "**1-o‘tish: tartib bilan boring.** Har bir savolni o‘qing. Yechimni ko‘rsangiz — ishlang va javobni belgilang.",
+            "**Yo‘l topilmasa — to‘xtamang.** 30–40 soniyada yechim yo‘li ko‘rinmasa yoki hisob juda uzun bo‘lsa, aniq noto‘g‘ri variantlarni o‘chiring, qolganlaridan eng ehtimolligini tanlang, savolni **Mark for Review** bilan belgilang va keyingisiga o‘ting.",
+            "**Javobsiz qoldirmang.** Belgilangan savolda ham doim biror javob tursin — vaqt kutilmaganda tugasa, u bo‘sh qolmaydi.",
+            "**2-o‘tish: belgilanganlarga qayting.** Modul oxirida savollar menyusini (Question Menu) oching va belgilangan savollarga qayting. Eng oson ko‘ringanidan boshlang.",
+            "**Yangi ko‘z bilan qarang.** Ko‘pincha keyinroq qaytganda yechim yo‘li ko‘rinadi. Javobni faqat aniq sabab topilganda o‘zgartiring: hisobda xato, shartni noto‘g‘ri o‘qish, matnda dalil yo‘qligi.",
+            "**Vaqt qolsa — 3-o‘tish.** Javoblaringizni tez ko‘zdan kechiring: savol nimani so‘ragan edi ($x$ mi yoki $2x$ mi, *positive* yoki *integer* kabi shart bormi)?"
+          ]
+        },
+        {
+          "type": "note",
+          "heading": "Mark for Review — qachon belgilash kerak",
+          "items": [
+            "Hisob uzun va 1-o‘tishda vaqtni yeyishi aniq bo‘lsa.",
+            "Ikki variant orasida ikkilanayotgan bo‘lsangiz — birini tanlang va belgilang.",
+            "Savol mavzusi notanish bo‘lsa — taxmin qiling va belgilang.",
+            "**Juda ko‘p belgilamang:** modulda 5–6 tadan ko‘p belgilangan savol bo‘lsa, 1-o‘tishda haddan tashqari ehtiyotkor bo‘lyapsiz va 2-o‘tishga vaqt yetmaydi.",
+            "O‘chirilgan variantlar saqlanib qoladi — 2-o‘tishda faqat qolganlarini solishtirasiz, bu vaqtni tejaydi."
+          ]
+        },
+        {
+          "type": "method",
+          "heading": "Qanday taxmin qilish kerak",
+          "steps": [
+            "**Avval chiqarib tashlang.** Har bir chiqarib tashlangan variant imkoniyatni oshiradi: 4 ta variantdan tasodifiy tanlash — 25%, 3 tadan — 33%, 2 tadan — 50%.",
+            "**Reading and Writing’da:** matnda dalili yo‘q, haddan tashqari kuchli (*always*, *never*, *proves*), matnga teskari yoki savolga javob bermaydigan variantlarni o‘chiring.",
+            "**Math’da:** javobni taxminiy baholang (u taxminan qancha bo‘lishi kerak?), ishorani va birliklarni tekshiring, oddiy variantlarni tenglamaga qo‘yib ko‘ring.",
+            "**Javobni yozadigan savollarda (SPR):** bo‘sh qoldirmang. Masaladagi sonlardan mantiqan mumkin bo‘lgan qiymatni kiriting — bo‘sh javob baribir ball bermaydi.",
+            "**Hech narsani chiqarib tashlay olmasangiz:** bitta harfni tanlang va davom eting. Doim bir xil harfni tanlash imkoniyatni oshirmaydi, lekin qaror qabul qilish vaqtini tejaydi."
+          ]
+        },
+        {
+          "type": "time",
+          "heading": "Modulning oxirgi 5 daqiqasi",
+          "items": [
+            "Bluebook taymerni yashirish imkonini beradi, lekin 5 daqiqa qolganda ogohlantirish chiqaradi. Bu signal — yangi rejimga o‘tish vaqti.",
+            "**1-ish (30 soniya):** savollar menyusini oching va **javobsiz savol** qolmaganini tekshiring. Qolgan bo‘lsa — darhol biror javob qo‘ying.",
+            "**2-ish:** belgilangan savollarga qayting — eng tez hal bo‘ladiganlaridan boshlang.",
+            "**Oxirgi 1 daqiqa:** yangi uzun hisob boshlamang. Barcha savollarda javob borligini yana bir bor tekshiring.",
+            "Vaqt tugaganda ilova sizni avtomatik ravishda keyingi qismga o‘tkazadi va bu modulga qaytib bo‘lmaydi — shuning uchun javoblar oxirgi soniyalarda emas, oldindan to‘ldirilgan bo‘lsin.",
+            "Modulni muddatidan oldin tugatsangiz, topshirishga shoshilmang: modullar alohida vaqtlanadi, ortib qolgan vaqt keyingi modulga o‘tmaydi. Qolgan vaqtni tekshiruvga sarflang."
+          ]
+        },
+        {
+          "type": "watch_out",
+          "heading": "Vaqtni yo‘qotadigan odatlar",
+          "items": [
+            "**Bitta savolga yopishib qolish:** “yana bir daqiqa sarflasam, topaman” degan fikr butun modulga qimmatga tushadi.",
+            "**Reading and Writing’da matnni bir necha marta o‘qish:** avval savolni o‘qing — shunda matnni nimani izlab o‘qishni bilasiz.",
+            "**Oddiy hisob uchun kalkulyator ochish:** $12 \\times 5$ ni boshda hisoblash tezroq. Desmos murakkab tenglama va grafiklar uchun.",
+            "**Oxirgi daqiqada javoblarni “his” bilan o‘zgartirish:** aniq sababsiz o‘zgartirish — tasodifga tayanish. Javobni faqat xatoni topganingizda o‘zgartiring.",
+            "**1-modulda shoshilish:** oson savollardagi e’tiborsizlik xatosi qaysi 2-modulni olishingizga ta’sir qiladi."
+          ]
+        },
+        {
+          "type": "method",
+          "heading": "SAT MASTER’da sur’atni qanday mashq qilish",
+          "steps": [
+            "**Avval aniqlik, keyin tezlik.** Yangi ko‘nikmada vaqtga qaramang. Aniqlik 80% ga yetgach, sur’atni maqsad qiling.",
+            "**Vaqtingizni kuzating.** Mashqda har bir savolga sarflangan vaqt ko‘rsatiladi, Tahlil bo‘limida esa o‘rtacha vaqtingiz Digital SAT sur’ati bilan solishtiriladi.",
+            "**Vaqt chegarali to‘plam ishlang.** **Aralash** qiyinlikdagi 10 ta savolni chegara bilan ishlang: Reading and Writing — 12 daqiqa, Math — 16 daqiqa.",
+            "**Sinov imtihonida 2-pass usulini qo‘llang.** Unda taymer, ko‘rib chiqish uchun belgilash, variantlarni o‘chirish va savollar navigatori bor — bu odatlarni testdan oldin mustahkamlab oling.",
+            "**Natijalarni tahlil qiling.** Sinov imtihonida “Vaqt tugagan” belgisi chiqqan yoki oxirgi savollar javobsiz qolgan bo‘lsa, muammo bilimda emas, sur’atda."
+          ]
+        },
+        {
+          "type": "checklist",
+          "heading": "Har bir modulda o‘zingizni tekshiring",
+          "items": [
+            "Har bir savolda javob bormi?",
+            "Nazorat nuqtalarida vaqtni tekshirdimmi?",
+            "Belgilangan savollarga qaytdimmi?",
+            "1-moduldagi oson savollarda shoshilmadimmi?",
+            "Oxirgi 5 daqiqada javobsiz savollarni tekshirdimmi?"
+          ]
+        }
+      ]
+    }
+  }
+}

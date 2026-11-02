@@ -1,0 +1,153 @@
+{
+  "slug": "cross-text-connections",
+  "kind": "skill",
+  "skill": "cross_text_connections",
+  "position": 22,
+  "readingMinutes": 10,
+  "locales": {
+    "uz": {
+      "title": "Cross-Text Connections: ikki matnni bog‘lash",
+      "summary": "Bir mavzudagi ikkita qisqa matnni o‘qib, mualliflar qayerda rozi va qayerda turlicha fikrda ekanini aniqlash: ikkinchi muallif birinchisiga qanday javob berardi va ikkalasi nimada kelishadi.",
+      "sections": [
+        {
+          "type": "concept",
+          "heading": "Bu ko‘nikma nimani tekshiradi",
+          "body": "Cross-Text Connections savollari **Craft and Structure** domeniga kiradi. Sizga bitta mavzu haqida ikkita qisqa matn beriladi — **Text 1** va **Text 2**. Ular odatda turli olimlar, tanqidchilar yoki tarixchilarning qarashlarini ifodalaydi. Savol mualliflar orasidagi **munosabatni** so‘raydi:\n\n- Text 2 muallifi Text 1 dagi da’vo yoki topilmaga **qanday javob berardi?**\n- Ikkala muallif **qaysi fikrga qo‘shiladi?**\n- Text 1 muallifi Text 2 dagi yondashuvni **qanday baholardi?**\n\nMunosabat deyarli hech qachon oddiy “to‘liq rozi” yoki “to‘liq qarshi” bo‘lmaydi. Ko‘pincha Text 2 birinchi matnni **qisman** qabul qiladi, lekin uni cheklaydi, unga yangi omil qo‘shadi yoki u hamma holatga to‘g‘ri kelmasligini ko‘rsatadi. Bu ko‘nikmaning mohiyati — shu nozik farqni ko‘ra bilish."
+        },
+        {
+          "type": "recognize",
+          "heading": "Savolni qanday tanib olasiz",
+          "items": [
+            "Ekranda **Text 1** va **Text 2** sarlavhali ikkita matn — bu turdagi savolning eng aniq belgisi.",
+            "*Based on the texts, how would the author of Text 2 most likely respond to the claim in Text 1?* — eng ko‘p uchraydigan savol.",
+            "*Based on the texts, how would [Text 2 dagi olim] most likely describe the view presented in Text 1?* — ikkinchi muallifning birinchi qarashga bahosi.",
+            "*Based on the texts, both authors would most likely agree with which statement?* — ikkala matn ham qo‘llab-quvvatlaydigan fikr.",
+            "Javob variantlari ko‘pincha *By arguing that…*, *By agreeing that…*, *By pointing out that…* kabi iboralar bilan boshlanadi — har biri munosabatning bir turini bildiradi."
+          ]
+        },
+        {
+          "type": "method",
+          "heading": "Ishlash usuli: qadamma-qadam",
+          "steps": [
+            "**Savolni birinchi o‘qing va yo‘nalishni belgilang:** kim kimga javob beryapti? *Text 2 → Text 1* va *Text 1 → Text 2* butunlay boshqa javob beradi. Ismlarni ham belgilab oling (Bluebook’dagi **Highlights & Notes** vositasi).",
+            "**Text 1 ni o‘qing va asosiy da’vosini bitta o‘zbekcha jumlada ayting:** “Saidov: planshet tushunishni yaxshilaydi”.",
+            "**Text 2 ni o‘qing va xuddi shunday qisqa xulosa qiling.** Keyin so‘rang: Text 2 aynan Text 1 ning **qaysi qismiga** tegadi?",
+            "**Munosabatni aniqlang:** to‘liq rozi / qisman rozi, lekin cheklaydi / yangi omil qo‘shadi / rad etadi. Text 2 dagi signal so‘zlar (*however, but, only, not enough, also, confirms*) yordam beradi.",
+            "**Javobni o‘zingiz bashorat qiling:** “Text 2 muallifi derdi: …, chunki …”.",
+            "**Variantlarni chiqarib tashlang:** yo‘nalishi teskari, faqat bitta matnga tegishli, haddan tashqari kuchli yoki ikkala matnda ham yo‘q fikrni o‘chiring."
+          ]
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 1: Text 2 muallifi qanday javob berardi?",
+          "example": {
+            "passage": "**Text 1**\n\nMany schools have replaced printed textbooks with tablets, and supporters say the change improves learning. Digital books can be updated instantly, include videos and quizzes, and spare students from carrying heavy bags. According to education consultant Rahim Saidov, these advantages mean that students who read on screens understand material better than students who read on paper.\n\n**Text 2**\n\nPsychologist Lena Ortiz compared how well students understood the same material in print and on a tablet. For short texts, she found no meaningful difference. For longer and more complex texts, however, students who read on paper answered more comprehension questions correctly. Ortiz suggests that tablets may be useful for some tasks but that schools should not assume screens are always the better choice.",
+            "problem": "Based on the texts, how would Ortiz (Text 2) most likely respond to Saidov's claim in Text 1?",
+            "choices": [
+              "By agreeing that tablets improve understanding because they include videos and quizzes",
+              "By arguing that the claim does not hold for all kinds of reading, especially longer and more complex texts",
+              "By insisting that schools should stop using tablets for every classroom task",
+              "By pointing out that printed textbooks are too heavy for many students to carry"
+            ],
+            "solution": [
+              "**Yo‘nalish:** Text 2 (Ortiz) → Text 1 (Saidov). Avval Saidovning da’vosini aniq belgilaymiz.",
+              "**Text 1 xulosasi:** Saidov — ekrandan o‘qigan o‘quvchilar materialni qog‘ozdan o‘qiganlarga qaraganda **yaxshiroq** tushunadi.",
+              "**Text 2 xulosasi:** Ortiz — qisqa matnlarda farq yo‘q, uzun va murakkab matnlarda esa **qog‘oz** yaxshiroq natija beradi. Planshet ba’zi vazifalar uchun foydali bo‘lishi mumkin.",
+              "**Munosabat:** Ortiz Saidovning umumiy da’vosi hamma holatda to‘g‘ri emasligini ko‘rsatadi. U planshetni butunlay rad etmaydi, balki da’voni cheklaydi.",
+              "**B** — da’vo hamma turdagi o‘qishga to‘g‘ri kelmaydi, ayniqsa uzun va murakkab matnlarga. Bu Ortizning topilmasiga aynan mos. ✓",
+              "**A** noto‘g‘ri — teskari: Ortiz ekran tushunishni yaxshilaydi degan fikrga qo‘shilmaydi; videolar va testlar haqida esa faqat Text 1 gapiradi.",
+              "**C** noto‘g‘ri — haddan tashqari kuchli: Ortiz planshetlar *may be useful for some tasks* deydi, ya’ni ulardan butunlay voz kechishni talab qilmaydi.",
+              "**D** noto‘g‘ri: og‘ir sumkalar haqida faqat Text 1 gapiradi va bu planshet foydasiga dalil. Ortiz bu masalaga umuman to‘xtalmaydi."
+            ],
+            "answer": "B"
+          }
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 2: ikkala muallif nimada kelishadi?",
+          "example": {
+            "passage": "**Text 1**\n\nEach spring and fall, millions of migrating birds fly over cities at night. Ornithologist Maya Brooks found that bright lights from tall buildings draw many birds off course, causing them to circle until they are exhausted or to strike windows. Brooks concludes that turning off unnecessary lights during migration seasons is one of the simplest ways for cities to protect birds.\n\n**Text 2**\n\nIn a study of one large city, ecologist Aziz Nurmatov confirmed that dimming building lights during migration reduced the number of injured birds found near those buildings. But he also found that many collisions happen in daylight, when birds see trees and sky reflected in glass and fly toward them. Nurmatov argues that lighting rules alone are not enough: cities should also require glass with patterns that birds can recognize as a solid barrier.",
+            "problem": "Based on the texts, Brooks and Nurmatov would most likely agree with which statement?",
+            "choices": [
+              "Reducing building lights during migration seasons can help protect birds.",
+              "Most collisions between birds and buildings happen during the daytime.",
+              "Patterned glass is the simplest way for cities to protect migrating birds.",
+              "Rules about building lights are enough to prevent most bird collisions."
+            ],
+            "solution": [
+              "**Savol turi:** ikkala muallif ham qo‘shiladigan fikr. To‘g‘ri javob **ikkala** matnda ham asosga ega bo‘lishi shart.",
+              "**Text 1 (Brooks):** yorug‘lik qushlarni yo‘ldan ozdiradi; ortiqcha chiroqlarni o‘chirish — qushlarni himoya qilishning eng oddiy usullaridan biri.",
+              "**Text 2 (Nurmatov):** chiroqlarni xiralashtirish jarohatlangan qushlar sonini kamaytirgani **tasdiqlandi** (*confirmed*), lekin bu yetarli emas — kunduzgi to‘qnashuvlar ham ko‘p, shuning uchun naqshli oyna ham kerak.",
+              "**Umumiy nuqta:** ikkalasi ham chiroqlarni kamaytirish qushlarga yordam berishini qabul qiladi. Farq faqat shundaki, Nurmatov buni yetarli deb hisoblamaydi.",
+              "**A** — ikkala matn ham qo‘llab-quvvatlaydi. ✓",
+              "**B** noto‘g‘ri: kunduzgi to‘qnashuvlar haqida faqat Text 2 gapiradi, u ham “ko‘p” (*many*) deydi, “ko‘pchilik” (*most*) emas. Brooks esa bu haqida hech narsa demaydi.",
+              "**C** noto‘g‘ri: naqshli oyna faqat Text 2 da bor va u “eng oddiy usul” deb atalmagan. Brooks “eng oddiy usullardan biri” deb chiroqlarni o‘chirishni aytadi.",
+              "**D** noto‘g‘ri: Nurmatov aynan buning teskarisini aytadi — *lighting rules alone are not enough*."
+            ],
+            "answer": "A"
+          }
+        },
+        {
+          "type": "watch_out",
+          "heading": "Nimaga e’tibor berish kerak",
+          "items": [
+            "**Yo‘nalishni adashtirmang.** *How would the author of Text 1 respond to Text 2?* savolida javob Text 1 muallifining nuqtai nazaridan bo‘ladi, garchi u ikkinchi matnni “ko‘rmagan” bo‘lsa ham. O‘zingizni o‘sha muallif o‘rniga qo‘ying: uning g‘oyalari bilan qaraganda, ikkinchi matn haqida nima derdi?",
+            "**Eng ko‘p uchraydigan munosabat — “qisman rozi, lekin…”.** Text 2 ko‘pincha Text 1 ni rad etmaydi, balki uni cheklaydi (*the claim is true only for…*), aniqlashtiradi yoki yangi omil qo‘shadi (*another factor also matters*).",
+            "**Ismlarni kuzatib boring.** Ikki matnda 3–4 ta ism bo‘lishi mumkin. Har bir ism qaysi matnda va qaysi fikr bilan bog‘liqligini belgilab qo‘ying.",
+            "**“Both would agree” savolida** variant ikkala matnda ham asosga ega bo‘lishi kerak. Faqat bitta matnda aytilgan fikr — garchi o‘zi to‘g‘ri bo‘lsa ham — noto‘g‘ri javob.",
+            "**Ingliz tili bo‘yicha maslahat:** Text 2 dagi munosabat so‘zlari — kalit. *confirms, supports, is consistent with* → qo‘shiladi; *however, but, overlooks, fails to consider, underestimates* → e’tiroz; *only, not enough, in some cases* → cheklash. Har bir matndan shu so‘zlarni va asosiy da’voni topa olsangiz, notanish so‘zlar bo‘lsa ham javob bera olasiz — ularni “X” deb qabul qilib o‘qishda davom eting.",
+            "**Savol tilini tez tushuning:** *respond to* — javob bermoq, munosabat bildirmoq; *most likely* — matnga asoslanib, ehtimoli eng yuqori; *the view presented in Text 1* — Text 1 da bayon qilingan qarash."
+          ]
+        },
+        {
+          "type": "traps",
+          "heading": "Keng tarqalgan xatolar (tuzoq variantlar)",
+          "items": [
+            "**Yo‘nalish almashinuvi:** variant Text 1 muallifining fikrini Text 2 muallifiga (yoki aksincha) taqib qo‘yadi (1-namunadagi D).",
+            "**Faqat bitta matnga tegishli:** “both agree” savolida faqat bitta matnda bor fikr (2-namunadagi B va C).",
+            "**Haddan tashqari kuchli munosabat:** Text 2 faqat cheklaydi, variant esa “butunlay rad etadi” yoki “hamma joyda to‘xtatish kerak” deydi (1-namunadagi C).",
+            "**Teskari munosabat:** Text 2 rozi emas, variant esa “rozi bo‘ladi” deydi (1-namunadagi A).",
+            "**Mavzuga oid, lekin matnlarda yo‘q:** hayotda to‘g‘ri bo‘lishi mumkin bo‘lgan, ammo hech bir matnda aytilmagan fikr. SAT faqat matnga asoslangan javobni qabul qiladi.",
+            "**So‘zlar mos, ma’no o‘zgargan:** variant matndagi so‘zlarni takrorlaydi, lekin *many* ni *most* ga, *some* ni *all* ga almashtiradi."
+          ]
+        },
+        {
+          "type": "time",
+          "heading": "Vaqt bo‘yicha maslahat",
+          "items": [
+            "Reading and Writing’da bir savolga o‘rtacha **71 soniya** bor (har modulda 27 savol, 32 daqiqa). Ikki matnli savol uzunroq: unga **80–100 soniya** sarflash normal. Bu vaqtni qisqaroq savollarda (masalan, Words in Context) tejaysiz.",
+            "Ikkala matnni o‘qib bo‘lgach, har biri uchun bitta qisqa xulosa qiling — keyin variantlarni tekshirishda matnni qayta o‘qishga hojat qolmaydi.",
+            "“Both agree” savolida tez yo‘l: har bir variantni avval cheklovchi yoki e’tiroz bildiruvchi matn bilan tekshiring — unga zid variantlar darhol tushib qoladi.",
+            "Ikki variant orasida qolsangiz, yaxshiroq ko‘ringanini tanlang, **Mark for Review** bilan belgilang va keyinroq qayting."
+          ]
+        },
+        {
+          "type": "terms",
+          "heading": "Muhim inglizcha atamalar",
+          "terms": [
+            { "term": "Text 1 / Text 2", "meaning": "birinchi va ikkinchi matn" },
+            { "term": "respond to", "meaning": "javob bermoq, munosabat bildirmoq" },
+            { "term": "claim", "meaning": "da’vo, muallif isbotlamoqchi bo‘lgan fikr" },
+            { "term": "finding(s)", "meaning": "topilma, tadqiqot natijasi" },
+            { "term": "view / perspective", "meaning": "qarash, nuqtai nazar" },
+            { "term": "qualify", "meaning": "(da’voni) cheklamoq, aniqlashtirmoq — to‘liq rad etmasdan" },
+            { "term": "concede / acknowledge", "meaning": "(qarshi tomonning biror fikrini) tan olmoq" },
+            { "term": "overlook / fail to consider", "meaning": "e’tibordan chetda qoldirmoq, hisobga olmaslik" },
+            { "term": "be consistent with", "meaning": "…ga mos kelmoq, …ga zid bo‘lmaslik" },
+            { "term": "most likely", "meaning": "ehtimoli eng yuqori — matnga eng ko‘p asoslangan" }
+          ]
+        },
+        {
+          "type": "checklist",
+          "heading": "Javobni tanlashdan oldin tekshiring",
+          "items": [
+            "Kim kimga javob berayotganini (yo‘nalishni) to‘g‘ri aniqladimmi?",
+            "Har ikki matnning asosiy da’vosini bir jumlada ayta olamanmi?",
+            "Tanlagan variantim munosabat kuchini (to‘liq yoki qisman) to‘g‘ri aks ettiryaptimi?",
+            "“Both agree” bo‘lsa — variant ikkala matnda ham bormi?"
+          ]
+        }
+      ]
+    }
+  }
+}

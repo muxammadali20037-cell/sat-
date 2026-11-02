@@ -3,7 +3,7 @@
 import * as React from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
-import { Check, ChevronLeft, Clock, Sparkles, X } from 'lucide-react'
+import { Check, ChevronLeft, Clock, Languages, Sparkles, X } from 'lucide-react'
 import { apiFetch, ApiClientError } from '@/lib/api/client'
 import { useDict } from '@/lib/i18n/client'
 import { format } from '@/lib/i18n/dict'
@@ -48,6 +48,8 @@ export function PracticeRunner({
   initialItems,
   initialIndex,
   initialProgress,
+  guideSlugs = {},
+  guideLabel,
 }: {
   attemptId: string
   title: string
@@ -56,6 +58,9 @@ export function PracticeRunner({
   initialIndex: number
   /** Counters from the attempt row (recomputed server-side from stored answers). */
   initialProgress: Progress
+  /** skillId → study-guide slug, for the "guide in Uzbek" link after answering. */
+  guideSlugs?: Record<string, string>
+  guideLabel?: string
 }) {
   const t = useDict(practiceDict)
   const router = useRouter()
@@ -283,11 +288,20 @@ export function PracticeRunner({
             }
             footer={
               answered ? (
-                <Button asChild variant="secondary" size="sm">
-                  <Link href={`/dashboard/ai-tutor?questionId=${current.id}`}>
-                    <Sparkles aria-hidden /> {t.runner.askAi}
-                  </Link>
-                </Button>
+                <div className="flex flex-wrap gap-2">
+                  <Button asChild variant="secondary" size="sm">
+                    <Link href={`/dashboard/ai-tutor?questionId=${current.id}`}>
+                      <Sparkles aria-hidden /> {t.runner.askAi}
+                    </Link>
+                  </Button>
+                  {guideLabel && guideSlugs[current.skillId] && (
+                    <Button asChild variant="ghost" size="sm">
+                      <Link href={`/dashboard/guides/${guideSlugs[current.skillId]}`}>
+                        <Languages aria-hidden /> {guideLabel}
+                      </Link>
+                    </Button>
+                  )}
+                </div>
               ) : null
             }
           />

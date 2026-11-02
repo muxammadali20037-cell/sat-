@@ -1,0 +1,178 @@
+{
+  "slug": "grammar-rules-cheat-sheet",
+  "kind": "strategy",
+  "subject": "reading_writing",
+  "position": 9,
+  "readingMinutes": 12,
+  "locales": {
+    "uz": {
+      "title": "Grammatika qoidalari: SAT uchun qisqa qo‘llanma",
+      "summary": "Standard English Conventions savollari uchun ixcham qoidalar to‘plami: gap chegaralari (comma splice, nuqtali vergul, ikki nuqta, tire, qo‘shimcha qismlar), ega va kesim moslashuvi, olmoshlar, fe’l zamonlari, aniqlovchi iboralar, egalik va apostrof — har biri qisqa inglizcha misol va “SAT buni qanday tekshiradi” maslahati bilan.",
+      "sections": [
+        {
+          "type": "concept",
+          "heading": "Bu savollar nimani tekshiradi",
+          "body": "Standard English Conventions — Reading and Writing bo‘limining taxminan 26% i (11–15 ta savol). Savol doim bir xil: *Which choice completes the text so that it conforms to the conventions of Standard English?* Ikki ko‘nikma tekshiriladi:\n\n- **Boundaries** (gap chegaralari) — gaplar va ularning qismlari tinish belgilari bilan qanday ajratiladi.\n- **Form, Structure, and Sense** (shakl va moslik) — ega va kesim moslashuvi, olmoshlar, fe’l zamonlari va shakllari, aniqlovchi iboralar, ko‘plik va egalik.\n\nDeyarli hamma qoida bitta tushunchaga tayanadi. **Mustaqil gap** (*independent clause*) — egasi va kesimi bor, yolg‘iz tura oladigan to‘liq fikr: *The lab closed early.* **Tobe gap** (*dependent clause*) *because, although, when, while, which* kabi so‘z bilan boshlanadi va yolg‘iz tura olmaydi: *because the lab closed early*.\n\nBu savollar tez yechiladi (30–50 soniya) va qoidalar cheklangan — ularni o‘rganish ballni oshirishning eng tez yo‘llaridan biri."
+        },
+        {
+          "type": "note",
+          "heading": "1. Ikki mustaqil gapni bog‘lash",
+          "items": [
+            "**To‘g‘ri usullar:** nuqta (.), nuqtali vergul (;), vergul + bog‘lovchi (*for, and, nor, but, or, yet, so* — inglizcha qisqacha FANBOYS) yoki, ikkinchi gap birinchisini tushuntirsa, ikki nuqta (:).",
+            "✗ **Comma splice:** *The lab closed early, the samples were moved.* — ikki mustaqil gap faqat vergul bilan ajratilgan.\n✓ *The lab closed early; the samples were moved.*\n✓ *The lab closed early, so the samples were moved.*",
+            "✗ **Run-on:** *The lab closed early the samples were moved.* — orada hech qanday belgi yo‘q.",
+            "✗ **Fragment:** *Because the lab closed early.* — tobe gap yolg‘iz qolgan. ✓ *Because the lab closed early, the samples were moved.*",
+            "**SAT qanday tekshiradi:** variantlarda so‘zlar bir xil, faqat tinish belgisi farq qiladi. Bo‘sh joyning **chap** va **o‘ng** tomonini alohida o‘qing. Ikkalasi ham mustaqil gap bo‘lsa — nuqta, nuqtali vergul yoki vergul + FANBOYS; bittasi mustaqil bo‘lmasa — vergul yoki hech narsa."
+          ]
+        },
+        {
+          "type": "note",
+          "heading": "2. Nuqtali vergul (;) va o‘tish so‘zlari",
+          "items": [
+            "Nuqtali vergul nuqta kabi ishlaydi: **ikkala tomoni ham mustaqil gap** bo‘lishi shart. ✓ *The bridge opened in 1932; it is still in use.* ✗ *The bridge opened; in 1932.*",
+            "*however, therefore, moreover, nevertheless, for example* kabi o‘tish so‘zlari ikki mustaqil gapni o‘zi **bog‘lay olmaydi** — oldidan nuqtali vergul yoki nuqta kerak. ✓ *The data were limited; however, the trend was clear.* ✗ *The data were limited, however, the trend was clear.*",
+            "O‘tish so‘zi bitta gapning ichida kelsa, ikki tomondan vergul bilan ajratiladi: ✓ *The trend, however, was clear.*",
+            "**SAT qanday tekshiradi:** *however* yoki *therefore* atrofidagi belgilar. Avval aniqlang: o‘tish so‘zi ikki mustaqil gap chegarasidami (→ “;” yoki “.”) yoki bitta gap ichidami (→ ikki vergul)?"
+          ]
+        },
+        {
+          "type": "note",
+          "heading": "3. Ikki nuqta (:)",
+          "items": [
+            "Ikki nuqtadan **oldin to‘liq mustaqil gap** bo‘lishi kerak; undan keyin ro‘yxat, tushuntirish yoki misol keladi.",
+            "✓ *The team needed one thing: more time.* ✗ *The team needed: more time.*",
+            "✗ *The recipe includes: flour, salt, and water.* — fe’ldan keyin to‘g‘ridan-to‘g‘ri ikki nuqta qo‘yilmaydi. ✓ *The recipe includes flour, salt, and water.*",
+            "**SAT qanday tekshiradi:** ikki nuqtaning chap tomonini alohida o‘qing — u yolg‘iz to‘liq gap bo‘la oladimi? Ikki nuqta “ya’ni”, “aynan” ma’nosini beradi."
+          ]
+        },
+        {
+          "type": "note",
+          "heading": "4. Qo‘shimcha qismlar: vergul, tire, qavs",
+          "items": [
+            "Gapdan olib tashlansa ma’no buzilmaydigan **qo‘shimcha** (*nonessential*) qism ikki tomondan **bir xil** belgi bilan ajratiladi: ikki vergul, ikki tire yoki ikki qavs.",
+            "✓ *The mural, painted in 1998, faces the river.*\n✓ *The mural—painted in 1998—faces the river.*\n✗ *The mural, painted in 1998—faces the river.* (belgilar har xil)\n✗ *The mural, painted in 1998 faces the river.* (ikkinchi vergul yo‘q)",
+            "**Muhim** (*essential*) qism ajratilmaydi — u qaysi narsa haqida gap ketayotganini aniqlaydi: ✓ *Students who arrive late must sign in.* (faqat kech kelganlar).",
+            "**Unvon va ism:** unvon yoki kasb ismdan oldin kelsa, orada vergul qo‘yilmaydi: ✓ *The biologist Ana Ruiz spoke first.* ✗ *The biologist, Ana Ruiz spoke first.* Ism oldin, izoh keyin kelsa — ikki vergul: ✓ *Ana Ruiz, a biologist, spoke first.*",
+            "**SAT qanday tekshiradi:** qo‘shimcha qism vergul yoki tire bilan boshlangan bo‘lsa, uning oxirida **xuddi shu** belgini qidiring."
+          ]
+        },
+        {
+          "type": "note",
+          "heading": "5. Keraksiz vergullar",
+          "items": [
+            "Ega va kesim orasida vergul qo‘yilmaydi — ega uzun bo‘lsa ham: ✗ *The results of the long study, were surprising.* ✓ *The results of the long study were surprising.*",
+            "Fe’l va to‘ldiruvchi orasida ham: ✗ *The team discovered, a new species.* ✓ *The team discovered a new species.*",
+            "Bitta egaga tegishli ikki kesim *and* bilan bog‘lansa, vergul kerak emas: ✓ *He opened the box and found a key.*",
+            "Gap boshidagi tobe gap yoki kirish iborasidan keyin esa vergul qo‘yiladi: ✓ *Although it rained, the race continued.*",
+            "**SAT qanday tekshiradi:** variantlar orasida keraksiz vergulli variantlar ko‘p. Har bir vergulning sababini ayta olishingiz kerak — sabab bo‘lmasa, vergul ham bo‘lmasin."
+          ]
+        },
+        {
+          "type": "note",
+          "heading": "6. Ega va kesim moslashuvi (subject–verb agreement)",
+          "items": [
+            "Birlik ega — birlik kesim (*is, was, has, does*, fe’l + *-s*); ko‘plik ega — ko‘plik kesim (*are, were, have, do*).",
+            "**Ega uzoqda bo‘lishi mumkin:** *of, in, with, among* bilan boshlangan iborani xayolan o‘chirib o‘qing. ✓ *The list of names is long.* — ega **list** (birlik), shuning uchun *is*.",
+            "*each, every, either, neither, everyone, everything* — birlik: ✓ *Each of the samples was tested.*",
+            "*and* bilan bog‘langan ega — ko‘plik: ✓ *The map and the compass were missing.*",
+            "Kesim egadan oldin kelsa ham, egaga moslashadi: ✓ *Among the findings were two surprises.* — ega **surprises**.",
+            "Jamlovchi otlar (*team, committee, group, audience*) odatda birlik: ✓ *The committee has decided.*",
+            "**SAT qanday tekshiradi:** variantlar *is/are*, *was/were*, *has/have*. Avval haqiqiy egani toping — bo‘sh joyga eng yaqin ot ko‘pincha tuzoq."
+          ]
+        },
+        {
+          "type": "note",
+          "heading": "7. Olmoshlar",
+          "items": [
+            "Olmosh o‘zi almashtirgan ot bilan sonda moslashadi: ✓ *The companies released their reports.* ✓ *The company released its report.* ✗ *The company released their report.*",
+            "*its* — egalik (“uning”), *it’s* — *it is* qisqartmasi: ✓ *The bird built its nest.*",
+            "*their* — egalik (“ularning”), *they’re* — *they are*, *there* — “u yerda”.",
+            "*who* — odamlar uchun, *which* — narsalar uchun; *whose* — egalik, *who’s* — *who is*.",
+            "**SAT qanday tekshiradi:** olmosh qaysi otga ishora qilayotganini toping va uning sonini tekshiring: birlik bo‘lsa *it/its*, ko‘plik bo‘lsa *they/their*."
+          ]
+        },
+        {
+          "type": "note",
+          "heading": "8. Fe’l zamonlari va shakllari",
+          "items": [
+            "**Zamonni matndan oling:** matndagi boshqa fe’llar o‘tgan zamonda bo‘lsa, odatda o‘tgan zamon kerak. ✓ *In 1910, the inventor tested a prototype and recorded the results.*",
+            "**Present perfect** (*has/have* + fe’lning 3-shakli) — o‘tmishda boshlanib, hozirgacha davom etayotgan: ✓ *Since 2015, the city has planted 4,000 trees.*",
+            "**Past perfect** (*had* + 3-shakl) — o‘tmishdagi boshqa voqeadan oldin bo‘lgan: ✓ *By the time the rescuers arrived, the storm had passed.*",
+            "**Gapda asosiy fe’l bo‘lishi shart:** *-ing* shakli yoki *to* + fe’l yolg‘iz kesim bo‘la olmaydi. ✗ *The researchers analyzing the data.* ✓ *The researchers analyzed the data.*",
+            "**SAT qanday tekshiradi:** variantlar *analyzed / analyzing / to analyze / having analyzed*. Avval gapda boshqa asosiy fe’l bor-yo‘qligini aniqlang: yo‘q bo‘lsa — to‘liq kesim (*analyzed*) kerak; bor bo‘lsa — ko‘pincha *-ing* yoki *to* shakli."
+          ]
+        },
+        {
+          "type": "note",
+          "heading": "9. Aniqlovchi iboralar (modifiers)",
+          "items": [
+            "Gap boshidagi aniqlovchi ibora verguldan keyingi **birinchi** otga tegishli bo‘ladi.",
+            "✗ *Walking to school, the rain started.* — yomg‘ir maktabga yurmaydi. ✓ *Walking to school, Dilnoza noticed the rain.*",
+            "✗ *Built in 1890, visitors still admire the tower.* — tashrif buyuruvchilar 1890-yilda qurilmagan. ✓ *Built in 1890, the tower is still admired by visitors.*",
+            "**SAT qanday tekshiradi:** variantlar verguldan keyingi qism qanday boshlanishi bilan farq qiladi. O‘zingizdan so‘rang: iboradagi ishni **kim** yoki **nima** bajargan? Aynan o‘sha so‘z verguldan keyin darhol kelishi kerak."
+          ]
+        },
+        {
+          "type": "note",
+          "heading": "10. Ko‘plik va egalik (apostrof)",
+          "items": [
+            "**Birlik ot + ’s:** ✓ *the scientist’s notes* (bitta olim).",
+            "**-s bilan tugaydigan ko‘plik + ’:** ✓ *the scientists’ notes* (bir necha olim).",
+            "**-s siz ko‘plik + ’s:** ✓ *the children’s books*, ✓ *the women’s team*.",
+            "**Egalik olmoshlarida apostrof yo‘q:** *its, their, whose, ours, yours*.",
+            "**Oddiy ko‘plikda apostrof yo‘q:** ✓ *several samples*, ✓ *the 1990s*; ✗ *several sample’s*.",
+            "**SAT qanday tekshiradi:** variantlar *scientist’s / scientists’ / scientists / scientist*. Ikki savol bering: 1) bitta mi yoki ko‘p mi? 2) egalik bormi — ya’ni so‘zdan keyin u egalik qiladigan ot keladimi?"
+          ]
+        },
+        {
+          "type": "method",
+          "heading": "Grammatika savolini 4 qadamda yechish",
+          "steps": [
+            "**Variantlarni ko‘ring:** nima farq qiladi — tinish belgisimi (Boundaries) yoki so‘z shakli (Form, Structure, and Sense)?",
+            "**Tinish belgisi bo‘lsa:** bo‘sh joyning chap va o‘ng tomonini aniqlang — mustaqil gapmi, tobe gapmi, qo‘shimcha qismmi? Keyin 1–5-qoidalarni qo‘llang.",
+            "**So‘z shakli bo‘lsa:** egani yoki olmosh almashtirgan otni toping, zamonni esa matndagi boshqa fe’llardan oling (6–10-qoidalar).",
+            "**Tanlangan variantni gapga qo‘yib, butun gapni bir marta o‘qing** va qoidani yana bir bor tekshiring. “Qulog‘imga yaxshi eshitiladi” — dalil emas: SAT tuzoqlari ko‘pincha tabiiy eshitiladi."
+          ]
+        },
+        {
+          "type": "traps",
+          "heading": "SAT’ning eng ko‘p uchraydigan tuzoqlari",
+          "items": [
+            "Uzun ibora egani kesimdan uzoqlashtiradi — eng yaqin ot “yolg‘on ega” bo‘lib chiqadi.",
+            "*however* oldida vergul — ikki mustaqil gap orasida comma splice hosil qiladi.",
+            "Qo‘shimcha qism bir tomondan vergul, ikkinchi tomondan tire bilan ajratilgan.",
+            "Unvon va ism orasida vergul (*The biologist, Ana Ruiz…*).",
+            "Kesim o‘rnida *-ing* shakli — gap fe’lsiz qoladi.",
+            "*its/it’s* va *their/they’re* almashib ketadi."
+          ]
+        },
+        {
+          "type": "terms",
+          "heading": "Grammatik atamalar",
+          "terms": [
+            { "term": "independent clause", "meaning": "mustaqil gap — egasi va kesimi bor, yolg‘iz tura oladi" },
+            { "term": "dependent clause", "meaning": "tobe gap — *because, although, which* kabi so‘z bilan boshlanadi, yolg‘iz tura olmaydi" },
+            { "term": "comma splice", "meaning": "ikki mustaqil gapni faqat vergul bilan ulash xatosi" },
+            { "term": "run-on sentence", "meaning": "ikki mustaqil gapni hech qanday belgisiz ulash xatosi" },
+            { "term": "fragment", "meaning": "to‘liq bo‘lmagan gap: egasi yoki asosiy fe’li yo‘q, yoki tobe gap yolg‘iz qolgan" },
+            { "term": "nonessential element", "meaning": "qo‘shimcha qism — olib tashlansa ham ma’no saqlanadi, ikki tomondan ajratiladi" },
+            { "term": "subject–verb agreement", "meaning": "ega va kesimning sonda moslashuvi" },
+            { "term": "antecedent", "meaning": "olmosh almashtirgan ot" },
+            { "term": "modifier", "meaning": "aniqlovchi ibora — o‘zi tegishli so‘zning yonida turishi kerak" },
+            { "term": "possessive", "meaning": "egalik shakli: *the scientist’s notes*" }
+          ]
+        },
+        {
+          "type": "checklist",
+          "heading": "Javobni tanlashdan oldin",
+          "items": [
+            "Variantlar nimasi bilan farq qiladi — belgi yoki so‘z shakli?",
+            "Bo‘sh joyning ikki tomonidagi qismni aniqladimmi?",
+            "Haqiqiy egani yoki olmosh almashtirgan otni topdimmi?",
+            "Qo‘shimcha qismning ikki tomonida bir xil belgi bormi?"
+          ]
+        }
+      ]
+    }
+  }
+}

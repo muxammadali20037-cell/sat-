@@ -1,0 +1,145 @@
+{
+  "slug": "rhetorical-synthesis",
+  "kind": "skill",
+  "skill": "rhetorical_synthesis",
+  "position": 29,
+  "readingMinutes": 9,
+  "locales": {
+    "uz": {
+      "title": "Rhetorical Synthesis: qaydlardan maqsadga mos gap tanlash",
+      "summary": "Talaba yozib olgan qaydlar (notes) asosida berilgan maqsadni aynan bajaradigan gapni tanlash. Asosiy sir — avval maqsadni o‘qish va to‘g‘ri, lekin maqsaddan chetga chiqqan variantlarni chiqarib tashlash.",
+      "sections": [
+        {
+          "type": "concept",
+          "heading": "Bu ko‘nikma nimani tekshiradi",
+          "body": "Bu savolda sizga talaba biror mavzuni o‘rganayotganda yozib olgan **qaydlar** (notes) ro‘yxati beriladi. Keyin talabaning **maqsadi** aytiladi va sizdan shu maqsadni eng yaxshi bajaradigan gapni tanlash so‘raladi.\n\nEng muhim tushuncha: **odatda barcha variantlar qaydlarga mos va faktik jihatdan to‘g‘ri.** Savol “qaysi gap to‘g‘ri?” emas, balki “qaysi gap **aynan shu maqsadni** bajaradi?” degan savol. Shuning uchun javob kaliti qaydlarda emas, **maqsad jumlasida**.\n\nKo‘p uchraydigan maqsad turlari va ular nimani talab qiladi:\n\n- **O‘xshashlikni ta’kidlash** (*emphasize a similarity*): gapda ikkala obyekt ham bo‘lishi va ularning umumiy jihati aytilishi kerak (*both, similarly, like*).\n- **Farqni ta’kidlash** (*emphasize a difference*): ikkala obyekt va ular orasidagi zidlik (*whereas, while, unlike, but*).\n- **Bilmaydigan auditoriyaga tanishtirish** (*introduce… to an audience unfamiliar with…*): obyekt nima ekanini tushuntiruvchi izoh bo‘lishi shart (masalan, *the saiga, an antelope of Central Asia, …*).\n- **Tanish auditoriya uchun** (*an audience already familiar with…*): uzun izoh shart emas, asosiy e’tibor yangi ma’lumotda.\n- **Tadqiqotni yoki uning natijasini taqdim etish** (*present the study's aim / methodology / findings*): gapda aynan so‘ralgan qism — maqsad, usul yoki natija — bo‘lishi kerak.\n- **Umumlashma qilish yoki aniq misol keltirish** (*make a generalization / provide a specific example*): umumlashma — ko‘p holatga tegishli umumiy xulosa; misol — bitta aniq holat.\n\nTashqi bilimingizni ishlatmang: faqat qaydlardagi ma’lumot va maqsad muhim."
+        },
+        {
+          "type": "recognize",
+          "heading": "Savolni qanday tanib olasiz",
+          "items": [
+            "Matn o‘rnida **nuqtali ro‘yxat** (bullet list) turadi va u shunday boshlanadi: *“While researching a topic, a student has taken the following notes:”*",
+            "Savol maqsadni aytadi: *“The student wants to emphasize a difference between the two…”*, *“…to introduce the novel to an audience unfamiliar with it”*, *“…to present the study's main finding”*.",
+            "Savol oxiri deyarli har doim bir xil: *“Which choice most effectively uses relevant information from the notes to accomplish this goal?”*",
+            "Variantlar — to‘liq gaplar; ko‘pincha uzunligi bir xil va hammasi qaydlardagi faktlarni takrorlaydi."
+          ]
+        },
+        {
+          "type": "method",
+          "heading": "Ishlash usuli: qadamma-qadam",
+          "steps": [
+            "**Avval savolni (maqsadni) o‘qing — qaydlarni emas.** Maqsad jumlasi — sizning javob kalitingiz. Qaydlarni birinchi o‘qisangiz, ular ichidan “eng qiziq” faktni izlab, vaqt yo‘qotasiz.",
+            "**Maqsadni kichik nazorat ro‘yxatiga aylantiring.** Masalan, *difference between A and B* → (1) A bor, (2) B bor, (3) zidlik so‘zi yoki ma’nosi bor. *Unfamiliar audience* → obyekt nima ekani tushuntirilgan.",
+            "**Qaydlarni tez ko‘zdan kechiring** — faqat atamalarni va kim yoki nima haqida gap ketayotganini tushunish uchun. Ularni yodlash shart emas: variantlarni tekshirganda qaydlarga qaytasiz.",
+            "**Har bir variantni nazorat ro‘yxati bo‘yicha tekshiring.** Bitta bandni bajarmagan variantni — u qanchalik to‘g‘ri va chiroyli bo‘lmasin — o‘chiring. Bunda Option Eliminator vositasi qulay.",
+            "**Qolgan variantni qaydlar bilan solishtiring:** ma’lumot buzilmaganmi, munosabat (sabab, zidlik) qaydlardagidek berilganmi?",
+            "**Ikki variant qolsa** — qaysi biri maqsadni **asosiy fikr** sifatida aytadi? Qo‘shimcha ma’lumot zarar qilmaydi, lekin maqsadning bir qismi yetishmasa, variant noto‘g‘ri."
+          ]
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 1: o‘xshashlikni ta’kidlash",
+          "example": {
+            "passage": "While researching a topic, a student has taken the following notes:\n\n- Rammed earth is a building technique in which damp soil is packed tightly between temporary wooden frames.\n- Fired brick is made by baking blocks of shaped clay in a kiln at high temperatures.\n- Producing rammed-earth walls requires almost no fuel.\n- Producing fired brick requires large amounts of fuel to heat the kiln.\n- Walls made of either material absorb heat during the day and release it at night, which helps keep indoor temperatures stable.",
+            "problem": "The student wants to emphasize a similarity between rammed earth and fired brick. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+            "choices": [
+              "Rammed earth is a building technique in which damp soil is packed tightly between temporary wooden frames.",
+              "Unlike fired brick, which requires large amounts of fuel to produce, rammed earth requires almost no fuel.",
+              "Walls of rammed earth and walls of fired brick both help keep indoor temperatures stable by absorbing heat during the day and releasing it at night.",
+              "Fired brick is made by baking blocks of shaped clay in a kiln, a process that requires large amounts of fuel."
+            ],
+            "solution": [
+              "Maqsadni nazorat ro‘yxatiga aylantiramiz: (1) rammed earth bor, (2) fired brick bor, (3) ularning **umumiy** jihati aytilgan.",
+              "Qaydlarda o‘xshashlik faqat oxirgi bandda: ikkala material ham kunduzi issiqlikni yutib, kechasi qaytaradi. Shu ma’lumotni ikkala material bilan birga beradigan yagona variant — **C**; *both* so‘zi ham o‘xshashlikka ishora qiladi.",
+              "**A** — faqat rammed earth haqida; fired brick umuman yo‘q, o‘xshashlik ham yo‘q.",
+              "**B** — ikkala material bor, lekin bu **farq** (*Unlike…*), o‘xshashlik emas. Faktik jihatdan to‘g‘ri, ammo boshqa maqsad uchun yozilgan — eng xavfli tuzoq.",
+              "**D** — faqat fired brick haqida, taqqoslash yo‘q."
+            ],
+            "answer": "C"
+          }
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 2: bilmaydigan auditoriya uchun tushuntirish",
+          "example": {
+            "passage": "While researching a topic, a student has taken the following notes:\n\n- The saiga is an antelope that lives in the dry grasslands of Central Asia.\n- The saiga has a large, flexible nose that hangs over its mouth.\n- In summer, the saiga's nose filters out dust kicked up by the herd.\n- In winter, the nose warms cold air before the air reaches the lungs.\n- Saiga herds can travel long distances between summer and winter pastures.",
+            "problem": "The student wants to explain the function of the saiga's nose to an audience unfamiliar with the saiga. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+            "choices": [
+              "The saiga's large nose filters out dust in summer and warms cold air in winter.",
+              "The saiga, an antelope of Central Asia's dry grasslands, has a large, flexible nose that filters out dust in summer and warms cold air in winter.",
+              "The saiga is an antelope that lives in the dry grasslands of Central Asia and travels long distances between pastures.",
+              "Each year, saiga herds travel long distances between summer and winter pastures in the dry grasslands of Central Asia."
+            ],
+            "solution": [
+              "Maqsadda ikki qism bor: (1) burunning **vazifasini** tushuntirish; (2) sayg‘oqni **bilmaydigan** auditoriya uchun yozish — ya’ni sayg‘oq nima ekanini ham aytish.",
+              "**B** ikkala shartni bajaradi: *an antelope of Central Asia's dry grasslands* — tanishtiruvchi izoh, *filters out dust… warms cold air* — burunning vazifasi.",
+              "**A** — vazifani to‘liq tushuntiradi, lekin sayg‘oq nima ekanini aytmaydi. Sayg‘oqni bilmaydigan o‘quvchi “bu qushmi yoki hayvonmi?” deb o‘ylab qoladi. Maqsadning faqat yarmi bajarilgan — bu ham juda tipik tuzoq.",
+              "**C** — sayg‘oqni tanishtiradi, lekin burun haqida umuman gapirmaydi.",
+              "**D** — mavsumiy ko‘chish haqida; burunning vazifasi ham, tanishtiruv ham yo‘q."
+            ],
+            "answer": "B"
+          }
+        },
+        {
+          "type": "watch_out",
+          "heading": "Nimaga e’tibor berish kerak",
+          "items": [
+            "**Maqsadning har bir so‘zi muhim.** *Similarity* va *difference*, *the study's method* va *the study's finding*, *familiar* va *unfamiliar* — bitta so‘z javobni butunlay o‘zgartiradi.",
+            "**Auditoriya sharti:** *unfamiliar* bo‘lsa, obyekt izohlanishi shart (*X, a … that …,*). *Already familiar* bo‘lsa, uzun izoh shart emas — muhimi so‘ralgan yangi ma’lumot.",
+            "**Taqqoslash maqsadida ikkala obyekt ham bo‘lishi shart.** Bitta obyekt haqidagi gap, qanchalik to‘liq bo‘lmasin, taqqoslay olmaydi.",
+            "**Emphasize — ta’kidlash:** so‘ralgan fikr gapning asosiy qismi bo‘lishi kerak, ikkinchi darajali qismda “yashirinib” qolmasligi kerak.",
+            "**Qaydlardagi munosabatni buzmang:** qaydlarda sabab–oqibat yoki zidlik bo‘lmasa, uni o‘zidan qo‘shgan variant noto‘g‘ri.",
+            "**Tashqi bilim va shaxsiy fikr kerak emas.** “Qaysi fakt qiziqroq?” emas, “qaysi gap maqsadni bajaradi?” deb so‘rang."
+          ]
+        },
+        {
+          "type": "traps",
+          "heading": "Keng tarqalgan xatolar (tuzoq variantlar)",
+          "items": [
+            "**To‘g‘ri, lekin maqsaddan tashqari** — eng ko‘p uchraydigan tuzoq: qaydlarni aniq takrorlaydi, ammo boshqa maqsadga xizmat qiladi (o‘xshashlik so‘ralganda farq — Namuna 1 dagi B).",
+            "**Yarim bajarilgan maqsad:** ikki obyektdan bittasi yo‘q yoki mazmun bor, lekin auditoriya uchun izoh yo‘q (Namuna 2 dagi A).",
+            "**Teskari munosabat:** kerakli kalit so‘zlar bor, lekin farq o‘xshashlik sifatida (yoki aksincha) berilgan.",
+            "**Ko‘p faktli “to‘ldirilgan” variant:** qaydlardagi uch-to‘rt faktni sanab chiqadi, lekin maqsaddagi fikrni aniq aytmaydi. Uzunlik — sifat belgisi emas.",
+            "**Eng “chiroyli” yozilgan variant:** uslubi yaxshi, lekin maqsadga javob bermaydi. Bu savolda uslub emas, maqsadning bajarilishi baholanadi."
+          ]
+        },
+        {
+          "type": "time",
+          "heading": "Vaqt bo‘yicha maslahat",
+          "items": [
+            "Bu savollarga **45–60 soniya** sarflang. Maqsadni birinchi o‘qish vaqtni ancha tejaydi: qaydlarning hammasini batafsil o‘qish shart emas.",
+            "Reading and Writing’da o‘rtacha vaqt savol boshiga taxminan 71 soniya. Qaydlar uzun ko‘rinsa ham, usulni bilsangiz bu savol tez yechiladi — shoshilmang, lekin tiqilib ham qolmang.",
+            "Maqsaddagi kalit so‘zlarni (*similarity, unfamiliar, finding*) **Highlights & Notes** vositasi bilan belgilab qo‘ying va har bir variantni ularga solishtiring.",
+            "**Option Eliminator** bilan maqsadni bajarmagan variantlarni o‘chiring — odatda ikki-uchtasi 20 soniya ichida tushib qoladi."
+          ]
+        },
+        {
+          "type": "terms",
+          "heading": "Muhim inglizcha atamalar",
+          "terms": [
+            { "term": "notes", "meaning": "qaydlar — talaba yozib olgan faktlar ro‘yxati" },
+            { "term": "goal", "meaning": "maqsad — savolda talaba nimani qilmoqchi ekani" },
+            { "term": "emphasize", "meaning": "ta’kidlamoq — fikrni gapning asosiy qismi sifatida ko‘rsatmoq" },
+            { "term": "similarity / difference", "meaning": "o‘xshashlik / farq" },
+            { "term": "audience unfamiliar with…", "meaning": "… ni bilmaydigan auditoriya — obyektni izohlash kerak" },
+            { "term": "introduce", "meaning": "tanishtirmoq — obyekt nima ekanini aytib, uni o‘quvchiga taqdim etmoq" },
+            { "term": "finding(s)", "meaning": "tadqiqot natijasi (natijalari)" },
+            { "term": "aim", "meaning": "maqsad — tadqiqot nimaga erishmoqchi bo‘lgani" },
+            { "term": "generalization", "meaning": "umumlashma — ko‘p holatga tegishli umumiy xulosa" },
+            { "term": "accomplish this goal", "meaning": "shu maqsadni bajarmoq" }
+          ]
+        },
+        {
+          "type": "checklist",
+          "heading": "Javobni tanlashdan oldin tekshiring",
+          "items": [
+            "Maqsad jumlasini birinchi o‘qib, uni nazorat ro‘yxatiga aylantirdimmi?",
+            "Tanlagan variantim maqsadning **har bir** qismini (ikkala obyekt, auditoriya, so‘ralgan ma’lumot) bajaradimi?",
+            "Variant qaydlardagi ma’lumotni buzmaganmi?",
+            "“To‘g‘ri, lekin boshqa maqsad uchun” degan variantga aldanmadimmi?"
+          ]
+        }
+      ]
+    }
+  }
+}

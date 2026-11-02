@@ -1,0 +1,149 @@
+{
+  "slug": "right-triangles-and-trigonometry",
+  "kind": "skill",
+  "skill": "right_triangles_trigonometry",
+  "position": 18,
+  "readingMinutes": 10,
+  "locales": {
+    "uz": {
+      "title": "To‘g‘ri burchakli uchburchaklar va trigonometriya",
+      "summary": "Pifagor teoremasi, maxsus to‘g‘ri burchakli uchburchaklar (45°-45°-90° va 30°-60°-90°), sinus, kosinus va tangens hamda yig‘indisi 90° bo‘lgan burchaklar orasidagi bog‘liqlik — tomon, burchak yoki trigonometrik nisbatni tez va aniq topish.",
+      "sections": [
+        {
+          "type": "concept",
+          "heading": "Bu ko‘nikma nimani tekshiradi",
+          "body": "To‘g‘ri burchakli uchburchakda bitta burchak $90^\\circ$ ga teng. Uning qarshisidagi eng uzun tomon — **gipotenuza** (hypotenuse), qolgan ikki tomon — **katetlar** (legs). Bu ko‘nikma uch narsani tekshiradi: tomonlarni topish, trigonometrik nisbatlarni hisoblash va ular orasidagi bog‘liqlikni tushunish.\n\n- **Pifagor teoremasi:** $a^2 + b^2 = c^2$, bu yerda $c$ — gipotenuza. Ko‘p uchraydigan butun sonli uchliklar: 3-4-5, 5-12-13, 8-15-17, 7-24-25 va ularning karralilari (6-8-10, 9-12-15).\n- **45°-45°-90° uchburchak:** tomonlar $x$, $x$, $x\\sqrt{2}$.\n- **30°-60°-90° uchburchak:** $30^\\circ$ qarshisida $x$, $60^\\circ$ qarshisida $x\\sqrt{3}$, gipotenuza $2x$.\n\n**Trigonometrik nisbatlar (SOH-CAH-TOA)** — o‘tkir burchak $A$ uchun:\n$$\\sin A = \\frac{\\text{opposite}}{\\text{hypotenuse}}, \\quad \\cos A = \\frac{\\text{adjacent}}{\\text{hypotenuse}}, \\quad \\tan A = \\frac{\\text{opposite}}{\\text{adjacent}}$$\nOpposite — $A$ burchak **qarshisidagi** katet, adjacent — $A$ burchakka **yopishgan** katet (gipotenuza emas).\n\n- **To‘ldiruvchi burchaklar:** to‘g‘ri burchakli uchburchakning ikki o‘tkir burchagi yig‘indisi $90^\\circ$, shuning uchun $\\sin x^\\circ = \\cos(90^\\circ - x^\\circ)$. Boshqacha aytganda, bir o‘tkir burchakning sinusi ikkinchisining kosinusiga teng.\n- **Nisbat o‘lchamga bog‘liq emas:** o‘xshash uchburchaklarda mos burchaklarning sinusi, kosinusi va tangensi bir xil.\n- **Foydali ayniyatlar:** $\\tan A = \\frac{\\sin A}{\\cos A}$ va $\\sin^2 A + \\cos^2 A = 1$.\n- **Radian:** burchak radianda ham berilishi mumkin: $\\frac{\\pi}{6} = 30^\\circ$, $\\frac{\\pi}{4} = 45^\\circ$, $\\frac{\\pi}{3} = 60^\\circ$, $\\frac{\\pi}{2} = 90^\\circ$.\n\nReference sheet’da Pifagor teoremasi va ikkala maxsus uchburchak berilgan, lekin SOH-CAH-TOA ta’riflari **yo‘q** — ularni albatta yodlang."
+        },
+        {
+          "type": "recognize",
+          "heading": "Savolni qanday tanib olasiz",
+          "items": [
+            "*“In right triangle ABC, angle C is a right angle…”* yoki *“…the measure of angle B is 90°”* — to‘g‘ri burchak qayerda ekanini darhol belgilang.",
+            "*“What is the value of sin A?”*, *“What is cos R?”*, *“What is tan J?”* — nisbatni hisoblash.",
+            "*“If sin x° = 0.6, what is the value of cos(90° − x°)?”* — to‘ldiruvchi burchaklar munosabati; hisoblash deyarli kerak emas.",
+            "Variantlarda $\\sqrt{2}$ yoki $\\sqrt{3}$ bor, burchaklar 30°, 45° yoki 60° — maxsus uchburchaklar.",
+            "Hayotiy vaziyat: *“a ladder leaning against a wall”*, *“a ramp”*, *“angle of elevation”*, *“the shadow of a tree”* — chizmasiz berilgan to‘g‘ri burchakli uchburchak.",
+            "*“Triangle ABC is similar to triangle DEF…”* va boshqa uchburchakdagi nisbat so‘ralgan — trigonometrik nisbat o‘xshash uchburchaklarda bir xil."
+          ]
+        },
+        {
+          "type": "method",
+          "heading": "Ishlash usuli: qadamma-qadam",
+          "steps": [
+            "**Uchburchakni chizing va to‘g‘ri burchakni belgilang.** Gipotenuza — to‘g‘ri burchak qarshisidagi tomon. Uni birinchi bo‘lib aniqlang.",
+            "**Burchakka nisbatan tomonlarni nomlang.** So‘ralgan burchakdan qarang: qarshidagi katet — opposite, yonidagi katet — adjacent. Boshqa burchak so‘ralsa, nomlar almashadi!",
+            "**Vosita tanlang:** ikki tomon ma’lum — Pifagor; 30°, 45° yoki 60° — maxsus uchburchak; burchak va bitta tomon — SOH-CAH-TOA; sinus va kosinus aralash — to‘ldiruvchi burchaklar qoidasi.",
+            "**Faqat nisbat berilsa, uchburchakni “qurib oling”.** Masalan, $\\sin A = \\frac{5}{13}$ bo‘lsa, qarshidagi katetni 5, gipotenuzani 13 deb oling; Pifagor bo‘yicha qolgan katet 12. Endi istalgan nisbatni hisoblash mumkin.",
+            "**Hisoblang va soddalashtiring.** Ildizlarni soddalashtiring ($\\sqrt{50} = 5\\sqrt{2}$). Variant boshqa ko‘rinishda bo‘lsa, ikkalasini ham Desmos’da o‘nli kasrga aylantirib solishtiring.",
+            "**Mantiqiy tekshiruv:** gipotenuza eng uzun tomonmi? O‘tkir burchakning sinusi va kosinusi 0 va 1 orasida bo‘lishi kerak; 1 dan katta chiqsa — kasr teskari olingan."
+          ]
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 1: tangensni topish",
+          "example": {
+            "problem": "In right triangle $RST$, angle $T$ is a right angle, $RT = 20$, and $RS = 29$. What is the value of $\\tan R$?",
+            "choices": ["$\\frac{20}{29}$", "$\\frac{21}{29}$", "$\\frac{20}{21}$", "$\\frac{21}{20}$"],
+            "solution": [
+              "$T$ — to‘g‘ri burchak, demak gipotenuza uning qarshisidagi $RS = 29$.",
+              "Uchinchi tomon: $ST^2 = 29^2 - 20^2 = 841 - 400 = 441$, $ST = 21$ (bu 20-21-29 uchligi).",
+              "$R$ burchakdan qaraymiz: qarshidagi katet $ST = 21$, yopishgan katet $RT = 20$.",
+              "$\\tan R = \\frac{\\text{opposite}}{\\text{adjacent}} = \\frac{21}{20}$.",
+              "Xato variantlarning har biri boshqa nisbat: **A** ($\\frac{20}{29}$) — bu $\\cos R$; **B** ($\\frac{21}{29}$) — bu $\\sin R$; **C** ($\\frac{20}{21}$) — bu $\\tan S$, ya’ni boshqa burchakning tangensi yoki teskari olingan nisbat."
+            ],
+            "answer": "D) $\\frac{21}{20}$"
+          }
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 2: to‘ldiruvchi burchaklar (javobni o‘zingiz yozasiz)",
+          "example": {
+            "problem": "In triangle $JKL$, angle $K$ is a right angle and $\\cos J = \\frac{15}{17}$. What is the value of $\\cos L$?",
+            "solution": [
+              "$K$ — to‘g‘ri burchak, gipotenuza $JL$. $\\cos J = \\frac{\\text{adjacent}}{\\text{hypotenuse}} = \\frac{JK}{JL} = \\frac{15}{17}$.",
+              "Uchburchakni quramiz: $JK = 15$, $JL = 17$. Pifagor: $KL^2 = 17^2 - 15^2 = 289 - 225 = 64$, $KL = 8$.",
+              "$L$ burchakdan qaraymiz: yopishgan katet $KL = 8$, demak $\\cos L = \\frac{KL}{JL} = \\frac{8}{17}$.",
+              "Qisqa yo‘l: $J$ va $L$ — to‘ldiruvchi burchaklar, shuning uchun $\\cos L = \\sin J = \\frac{KL}{JL} = \\frac{8}{17}$ — xuddi shu javob.",
+              "Tuzoq: $\\cos L = \\cos J = \\frac{15}{17}$ deb yozish. To‘ldiruvchi burchaklarda **sinus va kosinus** o‘rin almashadi, kosinuslar teng bo‘lmaydi. Javob katagiga **8/17** ni kiriting."
+            ],
+            "answer": "8/17"
+          }
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 3: maxsus uchburchak — hayotiy vaziyat",
+          "example": {
+            "problem": "A straight ramp 14 feet long rises from level ground to a loading platform. The ramp makes an angle of $30^\\circ$ with the ground. What is the height, in feet, of the platform above the ground?",
+            "choices": ["$7$", "$7\\sqrt{2}$", "$7\\sqrt{3}$", "$14\\sqrt{3}$"],
+            "solution": [
+              "Rampa, yer va platforma balandligi to‘g‘ri burchakli uchburchak hosil qiladi. Rampa — gipotenuza (14 ft), balandlik — $30^\\circ$ burchak **qarshisidagi** katet.",
+              "30°-60°-90° uchburchakda $30^\\circ$ qarshisidagi katet gipotenuzaning yarmiga teng: $\\frac{14}{2} = 7$.",
+              "Trigonometriya bilan ham xuddi shunday: $\\sin 30^\\circ = \\frac{h}{14}$, $h = 14 \\cdot \\frac{1}{2} = 7$.",
+              "Xato variantlar: **C** ($7\\sqrt{3}$) — bu rampa ostidagi gorizontal masofa, ya’ni $60^\\circ$ qarshisidagi katet. **B** ($7\\sqrt{2}$) — 45°-45°-90° uchburchak qoidasi bilan adashtirish. **D** ($14\\sqrt{3}$) — gipotenuzani katet deb olish."
+            ],
+            "answer": "A) 7"
+          }
+        },
+        {
+          "type": "watch_out",
+          "heading": "Nimaga e’tibor berish kerak",
+          "items": [
+            "**Opposite va adjacent burchakka bog‘liq.** Bir uchburchakda $A$ uchun qarshidagi katet $B$ uchun yopishgan katet bo‘ladi. Har safar “qaysi burchakdan qarayapman?” deb so‘rang.",
+            "**Maxsus uchburchak tomonlarini adashtirmang:** $30^\\circ$ qarshisida eng qisqa tomon ($x$), $60^\\circ$ qarshisida $x\\sqrt{3}$, gipotenuza $2x$. 45°-45°-90° uchburchakda gipotenuza katetdan $\\sqrt{2}$ marta uzun.",
+            "**Sinus va kosinus almashinuvi:** $\\sin x^\\circ = \\cos(90^\\circ - x^\\circ)$. Agar $A + B = 90^\\circ$ bo‘lsa, $\\sin A = \\cos B$ va $\\cos A = \\sin B$. Masalan, $\\sin 20^\\circ = \\cos 70^\\circ$.",
+            "**Desmos’da gradus rejimi:** Desmos odatda radian rejimida ishlaydi. Gradusdagi burchak bilan hisoblashdan oldin sozlamalarda (kalit belgisi) **Degrees** ni tanlang, aks holda $\\sin(30)$ boshqa qiymat beradi.",
+            "**Javob ko‘rinishi:** $\\frac{1}{\\sqrt{2}}$ va $\\frac{\\sqrt{2}}{2}$ — bir xil son. Variantlarda maxrajdagi ildiz yo‘qotilgan shakl berilishi mumkin.",
+            "**Pifagorda gipotenuza alohida:** gipotenuzani topishda kvadratlarni **qo‘shasiz**, katetni topishda gipotenuza kvadratidan **ayirasiz**."
+          ]
+        },
+        {
+          "type": "traps",
+          "heading": "Keng tarqalgan xatolar (tuzoq variantlar)",
+          "items": [
+            "**Sinus va kosinusning o‘rnini almashtirish** — ikkalasi ham deyarli doim variantlarda bor (Namuna 1).",
+            "**Boshqa burchakning nisbati:** $\\tan R$ so‘ralganda $\\tan S$ ni hisoblash. Natija teskari kasr bo‘lib chiqadi va u ham variantda turadi.",
+            "**To‘ldiruvchi burchaklar haqida noto‘g‘ri xulosa:** $\\cos L = \\cos J$ deb olish. Aslida to‘ldiruvchi burchaklarda sinus va kosinus o‘rin almashadi.",
+            "**Maxsus uchburchakda √2 va √3 ni adashtirish** yoki 30° va 60° qarshisidagi tomonlarni almashtirish (Namuna 3 dagi $7\\sqrt{3}$).",
+            "**Gipotenuzani katet deb olish:** $\\sqrt{29^2 + 20^2}$ ni hisoblash — natija gipotenuzadan ham uzun chiqadi, bu mumkin emas."
+          ]
+        },
+        {
+          "type": "time",
+          "heading": "Vaqt, Desmos va reference sheet",
+          "items": [
+            "Oddiy nisbat yoki maxsus uchburchak savoli — **30–60 soniya**; nisbatdan uchburchak qurish kerak bo‘lsa — **60–90 soniya**. Math’da har bir savolga o‘rtacha taxminan 95 soniya bor.",
+            "**Reference sheet** Pifagor teoremasi va ikkala maxsus uchburchakni beradi — 30°-60°-90° tomonlarini eslay olmasangiz, oching. SOH-CAH-TOA esa unda yo‘q.",
+            "**Desmos:** sinus, kosinus va tangens qiymatlarini (gradus rejimida) hisoblash va ildizli ifodalarni o‘nli kasrga aylantirib, variantlarni solishtirish uchun qulay. Masalan, $\\frac{\\sqrt{3}}{2} \\approx 0.866$.",
+            "Ko‘p savollarda, masalan $\\sin x^\\circ = \\cos(90^\\circ - x^\\circ)$ ga oid savolda, hisoblash umuman shart emas — qoidani tanisangiz, 15–20 soniyada javob berasiz. Tejalgan vaqtni qiyinroq savollarga qoldiring."
+          ]
+        },
+        {
+          "type": "terms",
+          "heading": "Muhim inglizcha atamalar",
+          "terms": [
+            { "term": "hypotenuse", "meaning": "gipotenuza — to‘g‘ri burchak qarshisidagi eng uzun tomon" },
+            { "term": "leg", "meaning": "katet — to‘g‘ri burchakni hosil qiluvchi ikki tomondan biri" },
+            { "term": "opposite side", "meaning": "qarshidagi katet — berilgan burchak qarshisida yotgan tomon" },
+            { "term": "adjacent side", "meaning": "yopishgan katet — berilgan burchakka tegib turgan, gipotenuza bo‘lmagan tomon" },
+            { "term": "sine / cosine / tangent", "meaning": "sinus / kosinus / tangens: $\\sin$, $\\cos$, $\\tan$" },
+            { "term": "Pythagorean theorem", "meaning": "Pifagor teoremasi: $a^2 + b^2 = c^2$" },
+            { "term": "special right triangles", "meaning": "maxsus to‘g‘ri burchakli uchburchaklar: 45°-45°-90° va 30°-60°-90°" },
+            { "term": "complementary angles", "meaning": "yig‘indisi $90^\\circ$ bo‘lgan ikki burchak" },
+            { "term": "angle of elevation", "meaning": "ko‘tarilish burchagi — gorizontal chiziqdan yuqoriga qaragandagi burchak" },
+            { "term": "radian", "meaning": "radian — burchak o‘lchov birligi: $\\pi$ radian $= 180^\\circ$" }
+          ]
+        },
+        {
+          "type": "checklist",
+          "heading": "Javobni tanlashdan oldin tekshiring",
+          "items": [
+            "Gipotenuzani (to‘g‘ri burchak qarshisidagi tomonni) to‘g‘ri aniqladimmi?",
+            "Opposite va adjacent tomonlarni **so‘ralgan** burchakka nisbatan oldimmi?",
+            "Sinus, kosinus yoki tangens — aynan so‘ralgan nisbatni hisobladimmi?",
+            "Desmos’dan foydalangan bo‘lsam, gradus rejimi yoqilganmi?"
+          ]
+        }
+      ]
+    }
+  }
+}

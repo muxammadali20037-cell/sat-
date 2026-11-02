@@ -1,0 +1,156 @@
+{
+  "slug": "two-variable-data-scatterplots",
+  "kind": "skill",
+  "skill": "two_variable_data",
+  "position": 12,
+  "readingMinutes": 11,
+  "locales": {
+    "uz": {
+      "title": "Ikki o‘zgaruvchili ma’lumotlar: modellar va scatterplot’lar",
+      "summary": "Scatterplot’ni o‘qish, line of best fit (eng mos to‘g‘ri chiziq) yordamida bashorat qilish, qiyalik va boshlang‘ich qiymatni kontekstda talqin qilish hamda chiziqli va eksponensial modellarni bir-biridan ajratish.",
+      "sections": [
+        {
+          "type": "concept",
+          "heading": "Bu ko‘nikma nimani tekshiradi",
+          "body": "Bu ko‘nikma ikki miqdor o‘rtasidagi bog‘liqlikni ma’lumotlar orqali tahlil qilishni tekshiradi. Asosiy vosita — **scatterplot**: har bir nuqta bitta kuzatuv, $x$ — bir miqdor, $y$ — ikkinchisi.\n\n- **Bog‘liqlik turi:** $x$ oshganda $y$ ham oshsa — musbat (positive), kamaysa — manfiy (negative) bog‘liqlik. Nuqtalar chiziqqa yaqin to‘plangan bo‘lsa — kuchli (strong), sochilib ketgan bo‘lsa — kuchsiz (weak) bog‘liqlik.\n- **Line of best fit:** $y = mx + b$ ko‘rinishidagi model. Qiyalik $m$ — $x$ bir birlikka oshganda $y$ ning **bashorat qilingan** (predicted) o‘zgarishi; $b$ — $x = 0$ bo‘lgandagi bashorat qilingan qiymat.\n- **Bashorat va haqiqiy qiymat:** $x$ ni model tenglamasiga qo‘yib, $y$ ning taxminiy qiymatini topasiz. Haqiqiy (actual) qiymat — nuqtaning o‘zi. Ularning farqi $\\text{actual} - \\text{predicted}$ (residual): nuqta chiziqdan yuqorida bo‘lsa, haqiqiy qiymat bashoratdan katta.\n- **Model turlari:** chiziqli $y = mx + b$ — har teng qadamda **bir xil son qo‘shiladi**; eksponensial $y = a \\cdot b^x$ — har teng qadamda **bir xil songa ko‘paytiriladi** ($b > 1$ — o‘sish, $0 < b < 1$ — kamayish; $b = 1 + r$, bunda $r$ — har qadamdagi foiz o‘zgarish); kvadratik — nuqtalar parabola shaklida joylashadi.\n\nModel faqat taxmin beradi, shuning uchun to‘g‘ri talqinlarda doim *“predicted”*, *“estimated”*, *“approximately”* kabi so‘zlar bo‘ladi."
+        },
+        {
+          "type": "recognize",
+          "heading": "Savolni qanday tanib olasiz",
+          "items": [
+            "*“The scatterplot shows …”*, *“A line of best fit is shown.”* — grafik bilan ishlash: avval o‘qlar va masshtabni o‘qing.",
+            "*“Based on the line of best fit, what is the predicted …?”* — tenglamaga $x$ ni qo‘ying yoki qiymatni chiziqdan o‘qing (nuqtadan emas!).",
+            "*“Which of the following is the best interpretation of the slope in this context?”* — qiyalik yoki boshlang‘ich qiymatni so‘z bilan talqin qilish.",
+            "*“Which equation best models the data?”*, *“Which type of model is most appropriate?”* — chiziqli, eksponensial yoki kvadratik modelni tanlash.",
+            "*“How many data points are above the line of best fit?”*, *“By how much does the actual … exceed the predicted …?”* — haqiqiy va bashorat qiymat farqi."
+          ]
+        },
+        {
+          "type": "method",
+          "heading": "Ishlash usuli: qadamma-qadam",
+          "steps": [
+            "**O‘qlarni o‘qing.** Har bir o‘q qaysi miqdor, qaysi birlikda (*“in thousands”*, *“in millions”*) va bitta katak nechaga teng? O‘q 0 dan boshlanmasligi ham mumkin.",
+            "**Bog‘liqlik shaklini aniqlang:** nuqtalar to‘g‘ri chiziq bo‘ylabmi yoki egri (tobora tezlashib o‘sadigan yoki sekinlashib kamayadigan) chiziq bo‘ylabmi? Yo‘nalish musbatmi yoki manfiy?",
+            "**Variantlarni ishora bo‘yicha saralang.** Manfiy bog‘liqlikda qiyalik manfiy bo‘lishi kerak; chiziq $y$ o‘qini qayerda kesishiga qarab $b$ ni baholang. Ko‘pincha shu ikki tekshiruv ikki-uch variantni yo‘qqa chiqaradi.",
+            "**Qiyalikni ikki nuqtadan hisoblang.** Chiziq ustidagi, kataklar kesishmasiga aniq tushgan ikki nuqtani tanlang (ma’lumot nuqtalarini emas): $m = \\frac{y_2 - y_1}{x_2 - x_1}$.",
+            "**Talqin qolipidan foydalaning:** “$x$ har bir birlikka oshganda, $y$ taxminan $m$ birlikka oshadi (kamayadi)”; boshlang‘ich qiymat uchun: “$x = 0$ bo‘lganda $y$ ning bashorat qilingan qiymati $b$”.",
+            "**Jadval berilgan bo‘lsa, ayirma va nisbatlarni tekshiring:** ketma-ket $y$ lar ayirmasi o‘zgarmas — chiziqli model; nisbati o‘zgarmas — eksponensial model."
+          ]
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 1: qiyalikni talqin qilish",
+          "example": {
+            "problem": "A café manager recorded the number of hours the café was open, $x$, and the number of cups of coffee sold, $y$, on each of 20 days. A scatterplot of the data has a line of best fit with equation $y = 38x + 15$. Which of the following is the best interpretation of 38 in this context?",
+            "choices": [
+              "The café sells about 38 cups of coffee each day.",
+              "For each additional hour the café is open, the predicted number of cups of coffee sold increases by about 38.",
+              "For each additional cup of coffee sold, the café is predicted to be open about 38 more hours.",
+              "The predicted number of cups of coffee sold when the café is open for 0 hours is 38."
+            ],
+            "solution": [
+              "$y = 38x + 15$ da 38 — $x$ oldidagi koeffitsiyent, ya’ni **qiyalik**: $x$ (soat) 1 ga oshganda $y$ (stakanlar) qanchaga o‘zgarishini ko‘rsatadi.",
+              "Birligi — “stakan/soat”: har bir qo‘shimcha soatga taxminan 38 stakan. Bu B variant.",
+              "Nega A xato: 38 — kunlik savdo emas; kunlik bashorat $38x + 15$ bo‘lib, ochiq soatlar soniga bog‘liq.",
+              "Nega C xato: yo‘nalish teskari. Qiyalik $y$ ning $x$ ga nisbatan o‘zgarishini bildiradi, aksincha emas.",
+              "Nega D xato: $x = 0$ dagi bashorat — boshlang‘ich qiymat, ya’ni 15, 38 emas. Bu qiyalik bilan $y$-kesishmani adashtirish tuzog‘i.",
+              "Tekshiruv: $x = 8$ da $y = 319$, $x = 9$ da $y = 357$; farq $357 - 319 = 38$ ✓."
+            ],
+            "answer": "B"
+          }
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 2: haqiqiy va bashorat qiymat (javobni o‘zingiz yozasiz)",
+          "example": {
+            "problem": "A scatterplot shows the age $x$, in years, and the price $y$, in thousands of dollars, of 12 used cars of the same model. The line of best fit for the data is $y = -1.8x + 24.5$. One of the cars in the data set is 5 years old and has a price of 17.2 thousand dollars. By how many thousand dollars does the actual price of this car exceed the price predicted by the line of best fit?",
+            "solution": [
+              "Bashorat qilingan narx — tenglamaga $x = 5$ ni qo‘yamiz: $y = -1.8 \\cdot 5 + 24.5 = -9 + 24.5 = 15.5$ ming dollar.",
+              "Haqiqiy narx — nuqtaning o‘zi: 17.2 ming dollar.",
+              "Farq: $\\text{actual} - \\text{predicted} = 17.2 - 15.5 = 1.7$.",
+              "E’tibor bering: $y$ **ming dollarda** o‘lchanadi va javob ham ming dollarda so‘ralgan, shuning uchun 1700 emas, **1.7** kiritiladi.",
+              "Tekshiruv: farq musbat — demak bu mashinaning nuqtasi chiziqdan **yuqorida** joylashgan, bu “exceed” so‘ziga mos ✓."
+            ],
+            "answer": "1.7"
+          }
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 3: chiziqli yoki eksponensial model",
+          "example": {
+            "problem": "The list shows the number of bacteria, $y$, in a sample $t$ hours after an experiment began.\n\n- $t = 0$: 500\n- $t = 1$: 600\n- $t = 2$: 720\n- $t = 3$: 864\n\nWhich equation best models the data?",
+            "choices": ["$y = 500 + 100t$", "$y = 500(1.2)^t$", "$y = 500(0.2)^t$", "$y = 600(1.2)^t$"],
+            "solution": [
+              "Ayirmalarni tekshiramiz: $600 - 500 = 100$, $720 - 600 = 120$, $864 - 720 = 144$ — o‘zgarmas emas, demak model chiziqli emas. A variant faqat birinchi ayirmaga mos keladi.",
+              "Nisbatlarni tekshiramiz: $\\frac{600}{500} = \\frac{720}{600} = \\frac{864}{720} = 1.2$ — o‘zgarmas. Demak model eksponensial, ko‘paytuvchi $b = 1.2$ (har soatda $20\\%$ o‘sish).",
+              "Boshlang‘ich qiymat — $t = 0$ dagi qiymat: $a = 500$. Model: $y = 500(1.2)^t$.",
+              "Nega C xato: $0.2$ — o‘sish **foizi** ($20\\%$), ko‘paytuvchi esa $1 + 0.2 = 1.2$; asosi $0.2$ bo‘lsa, miqdor keskin kamayardi. Nega D xato: 600 — $t = 1$ dagi qiymat, boshlang‘ich qiymat emas.",
+              "Tekshiruv: $t = 3$ da $500 \\cdot 1.2^3 = 500 \\cdot 1.728 = 864$ ✓."
+            ],
+            "answer": "B) $y = 500(1.2)^t$"
+          }
+        },
+        {
+          "type": "watch_out",
+          "heading": "Nimaga e’tibor berish kerak",
+          "items": [
+            "**Masshtab va birlik:** bitta katak 1 emas, 2, 5 yoki 10 ga teng bo‘lishi mumkin; *“in thousands”* bo‘lsa, javobni ham shu birlikda bering.",
+            "**Bashorat chiziqdan, haqiqiy qiymat nuqtadan olinadi.** *“According to the line of best fit”* — faqat tenglama yoki chiziq.",
+            "**Residual ishorasi:** $\\text{actual} - \\text{predicted}$. Nuqta chiziqdan yuqorida — musbat, pastda — manfiy.",
+            "**Boshlang‘ich qiymat har doim ham ma’noli emas:** $x = 0$ ma’lumotlar oralig‘idan ancha uzoqda bo‘lsa (masalan, 0 yoshli daraxtning balandligi), $b$ ni talqin qilishda ehtiyot bo‘ling.",
+            "**Ma’lumot oralig‘idan tashqaridagi bashorat (extrapolation) ishonchsiz:** 1–10 soatlik ma’lumot 50 soat uchun yaxshi bashorat bermaydi.",
+            "**Bog‘liqlik sabab emas:** kuchli bog‘liqlik $x$ ning $y$ ga sabab bo‘lishini isbotlamaydi."
+          ]
+        },
+        {
+          "type": "traps",
+          "heading": "Keng tarqalgan xatolar (tuzoq variantlar)",
+          "items": [
+            "**Qiyalikni teskari talqin qilish:** “har bir stakan uchun 38 soat” (namuna 1, C).",
+            "**Qiyalik va boshlang‘ich qiymatni almashtirish** (namuna 1, D).",
+            "**Bashorat o‘rniga ma’lumot nuqtasini o‘qish** yoki, aksincha, haqiqiy qiymat so‘ralganda chiziqdan o‘qish.",
+            "**O‘sish foizi va ko‘paytuvchini adashtirish:** $0.2$ va $1.2$ (namuna 3, C); $15\\%$ kamayishda ko‘paytuvchi $0.85$, $0.15$ emas.",
+            "**Faqat birinchi ikki qiymatga qarab model tanlash** (namuna 3, A) — kamida uchta qiymatni tekshiring.",
+            "**Masshtabni noto‘g‘ri o‘qish:** har bir katakni 1 deb hisoblash."
+          ]
+        },
+        {
+          "type": "time",
+          "heading": "Vaqt bo‘yicha maslahat",
+          "items": [
+            "Talqin savoli: **30–50 soniya**; grafikdan qiyalik yoki bashorat topish: **60–90 soniya**.",
+            "Ma’lumotlar jadval ko‘rinishida berilsa, Desmos’da jadval yarating ($x_1$ va $y_1$ ustunlari) va $y_1 \\sim mx_1 + b$ deb yozing — Desmos eng mos to‘g‘ri chiziqning $m$ va $b$ qiymatlarini hisoblab beradi. Eksponensial model uchun: $y_1 \\sim ab^{x_1}$.",
+            "Variantlardagi tenglamalarni Desmos’da nuqtalar ustiga chizing — qaysi chiziq nuqtalarga eng yaxshi tushishini darhol ko‘rasiz.",
+            "Talqin savollarida hisob kerak emas: variantlarni “qaysi son — qiyalik, qaysi — boshlang‘ich qiymat, yo‘nalish to‘g‘rimi” degan uch savol bilan saralang."
+          ]
+        },
+        {
+          "type": "terms",
+          "heading": "Muhim inglizcha atamalar",
+          "terms": [
+            { "term": "scatterplot", "meaning": "nuqtali grafik: har bir nuqta bitta kuzatuvning ($x$, $y$) juftligi" },
+            { "term": "line of best fit", "meaning": "ma’lumotlarga eng mos keluvchi to‘g‘ri chiziq (trend chizig‘i)" },
+            { "term": "predicted / estimated", "meaning": "bashorat qilingan / taxminiy qiymat — modeldan olinadi" },
+            { "term": "actual / observed", "meaning": "haqiqiy / kuzatilgan qiymat — ma’lumot nuqtasi" },
+            { "term": "slope", "meaning": "qiyalik: $x$ 1 ga oshganda $y$ ning o‘zgarishi" },
+            { "term": "y-intercept", "meaning": "$y$ o‘qi bilan kesishish nuqtasi: $x = 0$ dagi qiymat" },
+            { "term": "positive / negative association", "meaning": "musbat / manfiy bog‘liqlik" },
+            { "term": "linear / exponential model", "meaning": "chiziqli (har qadamda bir xil son qo‘shiladi) / eksponensial (har qadamda bir xil songa ko‘paytiriladi) model" },
+            { "term": "growth factor / growth rate", "meaning": "o‘sish ko‘paytuvchisi ($1.2$) / o‘sish sur’ati ($20\\%$)" },
+            { "term": "best models", "meaning": "ma’lumotlarni eng yaxshi ifodalaydi" }
+          ]
+        },
+        {
+          "type": "checklist",
+          "heading": "Javobni tanlashdan oldin tekshiring",
+          "items": [
+            "O‘qlarning masshtabi va birliklarini (thousands, millions) to‘g‘ri o‘qidimmi?",
+            "Bashorat chiziq yoki tenglamadan, haqiqiy qiymat esa nuqtadan olindimi?",
+            "Talqinda $x$ va $y$ ning roli (qaysi biri qaysiga bog‘liq) to‘g‘rimi?",
+            "Model turini (chiziqli yoki eksponensial) kamida uchta qiymat bilan tekshirdimmi?"
+          ]
+        }
+      ]
+    }
+  }
+}

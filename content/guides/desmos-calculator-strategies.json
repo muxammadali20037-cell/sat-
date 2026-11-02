@@ -1,0 +1,169 @@
+{
+  "slug": "desmos-calculator-strategies",
+  "kind": "strategy",
+  "subject": "math",
+  "position": 5,
+  "readingMinutes": 10,
+  "locales": {
+    "uz": {
+      "title": "Desmos kalkulyatori: tezkor strategiyalar",
+      "summary": "Grafik kalkulyator yordamida tenglamalarni ikkala tomonni chizib yechish, sistemalarda kesishish nuqtasini topish, kvadrat funksiyaning uchi va nollarini aniqlash, jadvaldan regressiya, o‘zgarmaslar uchun slayder, ekvivalent ifodalarni tekshirish — va Desmos’ni qachon ishlatmaslik kerakligi.",
+      "sections": [
+        {
+          "type": "concept",
+          "heading": "Nega Desmos’ni o‘rganish kerak",
+          "body": "Bluebook ilovasida Math bo‘limi davomida Desmos kalkulyatori (grafik va ilmiy rejimlar) ochiq. Grafik rejim ko‘plab algebra savollarini 20–40 soniyada **ko‘rib** yechish imkonini beradi: tenglama, sistema, kvadrat funksiya, jadval ma’lumotlari.\n\nLekin Desmos — vosita, fikrlash o‘rnini bosmaydi. U tenglamani siz uchun **tuzib** bermaydi va noto‘g‘ri kiritilgan ifodaga noto‘g‘ri javob beradi. Eng yaxshi natija: algebrani bilish + Desmos’ni qachon ishlatishni bilish.\n\nSAT MASTER’da mashq, diagnostika va sinov imtihonlarining Math savollarida **Kalkulyator** tugmasi bor — bu usullarni har kuni o‘sha yerda mashq qiling."
+        },
+        {
+          "type": "method",
+          "heading": "Asosiy ko‘nikmalar: avval shularni o‘rganing",
+          "steps": [
+            "**Har bir qatorga bitta ifoda.** Funksiyani $y = 3x - 5$ ko‘rinishida yozing — Desmos darhol grafigini chizadi.",
+            "**Maxsus nuqtalarni bosing.** Grafikni bossangiz, kulrang nuqtalar paydo bo‘ladi: o‘qlar bilan kesishish, boshqa grafik bilan kesishish, eng katta yoki eng kichik qiymat. Nuqtani bosib, koordinatasini ko‘rasiz.",
+            "**Masshtabni o‘zgartiring.** Grafik ko‘rinmasa yoki kesishish ekrandan tashqarida bo‘lsa, kattalashtirish/kichiklashtirish tugmalari bilan uzoqlashtiring.",
+            "**Funksiya qiymatini hisoblang.** $f(x) = x^2 - 4x$ deb yozing, keyingi qatorga $f(7)$ — natija darhol chiqadi.",
+            "**O‘zgaruvchilarni moslang.** Grafik o‘qlari $x$ va $y$. Savolda $t$, $n$ yoki $p$ bo‘lsa, uni $x$ bilan almashtiring. Boshqa harflar Desmos uchun noma’lum o‘zgarmas (slayder) hisoblanadi."
+          ]
+        },
+        {
+          "type": "method",
+          "heading": "1-usul: tenglamani ikkala tomonni chizib yechish",
+          "steps": [
+            "Tenglamaning chap tomonini $y = \\ldots$ deb bir qatorga, o‘ng tomonini $y = \\ldots$ deb ikkinchi qatorga yozing.",
+            "Ikki grafikning **kesishish nuqtasi**ni bosing: uning $x$-koordinatasi — tenglamaning yechimi.",
+            "Bir nechta kesishish — bir nechta yechim; umuman kesishmasa — yechim yo‘q.",
+            "Muqobil yo‘l: $y = (\\text{chap tomon}) - (\\text{o‘ng tomon})$ deb bitta grafik chizing va uning $x$-o‘qi bilan kesishishlarini toping.",
+            "Savol $x$ ni emas, boshqa narsani (masalan, $2x + 1$) so‘rasa, topilgan qiymatni qo‘yib hisoblang."
+          ]
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 1: tenglamani grafik bilan yechish",
+          "example": {
+            "problem": "$$\\frac{3x}{2} - 4 = \\frac{x + 6}{4}$$ What value of $x$ is the solution to the given equation?",
+            "solution": [
+              "Desmos’ga ikki qator yozamiz: $y = \\frac{3x}{2} - 4$ va $y = \\frac{x + 6}{4}$.",
+              "Ikki to‘g‘ri chiziq bitta nuqtada kesishadi. Nuqtani bosamiz: $(4.4,\\ 2.6)$.",
+              "Savol $x$ ni so‘rayapti, demak javob $4.4$.",
+              "Algebraik tekshiruv: ikkala tomonni 4 ga ko‘paytiramiz — $6x - 16 = x + 6$, bundan $5x = 22$, $x = 4.4$ ✓.",
+              "Javobni **4.4** yoki **22/5** deb kiritish mumkin."
+            ],
+            "answer": "4.4 (yoki 22/5)"
+          }
+        },
+        {
+          "type": "method",
+          "heading": "2-usul: tenglamalar sistemasi — kesishish nuqtasi",
+          "steps": [
+            "Ikkala tenglamani **qanday berilgan bo‘lsa, shunday** kiriting: $2x + 3y = 12$ ni $y$ ga keltirish shart emas, Desmos uni o‘zi chizadi.",
+            "Kesishish nuqtasini bosing — u sistemaning yechimi $(x, y)$. Masalan, $2x + 3y = 12$ va $x - y = 1$ uchun nuqta $(3, 2)$.",
+            "Savol $x + y$, $xy$ yoki $\\frac{x}{y}$ ni so‘rasa — koordinatalardan hisoblang.",
+            "Chiziqlar **parallel** bo‘lsa — yechim yo‘q (*no solution*); **ustma-ust** tushsa — cheksiz ko‘p yechim (*infinitely many solutions*)."
+          ]
+        },
+        {
+          "type": "method",
+          "heading": "3-usul: kvadrat funksiya — uchi va nollari",
+          "steps": [
+            "Funksiyani yozing, masalan $y = 2x^2 - 8x + 3$.",
+            "Grafikni bosing: **uchi** (*vertex*) — parabolaning eng past yoki eng baland nuqtasi, bu yerda $(2, -5)$.",
+            "**Nollari** (*zeros*, *x-intercepts*, *roots*) — $x$-o‘qi bilan kesishish nuqtalari: bu yerda taxminan $0.419$ va $3.581$.",
+            "$y$-o‘qi bilan kesishish (*y-intercept*) — $(0, 3)$.",
+            "Variantlar ildiz ko‘rinishida bo‘lsa (masalan, $2 + \\frac{\\sqrt{10}}{2}$), ularni Desmos’ning yangi qatoriga yozib o‘nli qiymatini ko‘ring va grafikdagi son bilan solishtiring.",
+            "**Nechta haqiqiy yechim bor?** Grafik $x$-o‘qini necha marta kesishini sanang: 2, 1 (faqat tegib o‘tadi) yoki 0."
+          ]
+        },
+        {
+          "type": "method",
+          "heading": "4-usul: jadvaldan regressiya",
+          "steps": [
+            "**+** tugmasi orqali jadval (*table*) qo‘shing va ma’lumotlarni $x_1$, $y_1$ ustunlariga kiriting.",
+            "Chiziqli model uchun yangi qatorga $y_1 \\sim mx_1 + b$ deb yozing (to‘lqin belgisi $\\sim$ — “taxminan teng”). Desmos $m$, $b$ qiymatlarini va moslik ko‘rsatkichi $r^2$ ni chiqaradi.",
+            "Kvadrat model: $y_1 \\sim ax_1^2 + bx_1 + c$; eksponensial model: $y_1 \\sim a \\cdot b^{x_1}$.",
+            "Topilgan koeffitsiyentlarni variantlar bilan solishtiring. Masalan, $x$: 1, 2, 3, 4 va $y$: 5, 8, 11, 14 uchun $m = 3$, $b = 2$, $r^2 = 1$ — demak, aniq $y = 3x + 2$.",
+            "Ma’lumotlar to‘g‘ri chiziqda yotmasa ham (*line of best fit*), regressiya eng mos tenglamani beradi — variantlardan unga eng yaqinini tanlang."
+          ]
+        },
+        {
+          "type": "method",
+          "heading": "5-usul: slayder bilan noma’lum o‘zgarmasni topish",
+          "steps": [
+            "Savoldagi tenglamani o‘zgarmasi bilan birga yozing, masalan $y = x^2 - 6x + c$. Desmos $c$ uchun slayder qo‘shishni taklif qiladi (*add slider*) — bosing.",
+            "Slayderni suring va grafikni kuzating. Savol “parabola $x$-o‘qiga aynan bir nuqtada tegsin” desa, shu holatni toping: $c = 9$.",
+            "Variantlar berilgan bo‘lsa, ularning qiymatlarini slayder raqamiga birma-bir yozing — taxminiy surishdan ko‘ra aniqroq.",
+            "Slayder ko‘pincha tekshirish uchun eng yaxshi: algebraik shartni (masalan, qiyaliklar tengligi yoki diskriminant nolga tengligi) bilsangiz, avval shuni qo‘llang."
+          ]
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 2: slayder bilan sistemani tekshirish",
+          "example": {
+            "problem": "In the given system of equations, $k$ is a constant.\n$y = kx - 3$\n$y = -\\frac{2}{5}x + 7$\nFor what value of $k$ does the system have no solution?",
+            "choices": ["$-\\frac{5}{2}$", "$-\\frac{2}{5}$", "$\\frac{2}{5}$", "$\\frac{5}{2}$"],
+            "solution": [
+              "Ikkala tenglamani Desmos’ga yozamiz va $k$ uchun slayder qo‘shamiz.",
+              "Yechim yo‘q — demak, chiziqlar kesishmaydi, ya’ni parallel. Variantlardagi qiymatlarni slayder raqamiga yozib ko‘ramiz: faqat $k = -0.4$ da chiziqlar parallel bo‘ladi.",
+              "Algebraik tasdiq: parallel chiziqlarning qiyaliklari teng, ozod hadlari esa har xil. Qiyaliklar: $k = -\\frac{2}{5}$; ozod hadlar $-3 \\neq 7$ ✓.",
+              "Tuzoqlar: **$\\frac{2}{5}$** — ishorani unutish; **$-\\frac{5}{2}$** — kasrni ag‘darib yuborish; **$\\frac{5}{2}$** — perpendikulyar chiziqning qiyaligi (bunda chiziqlar kesishadi, ya’ni yechim bor)."
+            ],
+            "answer": "B) $-\\frac{2}{5}$"
+          }
+        },
+        {
+          "type": "method",
+          "heading": "6-usul: ekvivalent ifodalarni tekshirish",
+          "steps": [
+            "Savoldagi ifodani $y = \\ldots$ deb yozing, masalan $y = (x + 4)^2 - 9$.",
+            "Har bir variantni ham alohida qatorga $y = \\ldots$ deb yozing va ranglariga qarang.",
+            "Grafigi savoldagi grafik bilan **to‘liq ustma-ust** tushgan variant — ekvivalent. Bu misolda $y = (x + 1)(x + 7)$.",
+            "Grafiklar juda yaqin ko‘rinsa, ikki-uch nuqtada qiymatlarni solishtiring (masalan, jadvalda $x = 0$, $x = 2$, $x = 5$) — yaqin, lekin bir xil bo‘lmagan grafiklar ham bo‘ladi."
+          ]
+        },
+        {
+          "type": "note",
+          "heading": "Boshqa foydali buyruqlar",
+          "items": [
+            "**Statistika:** ro‘yxat tuzing, masalan $L = [3, 7, 8, 12, 15]$, so‘ng $\\text{mean}(L)$, $\\text{median}(L)$, $\\text{min}(L)$, $\\text{max}(L)$ — o‘rtacha, mediana, eng kichik va eng katta qiymat.",
+            "**Tengsizliklar:** $y > 2x - 1$ yozsangiz, yechimlar sohasi bo‘yaladi. “Qaysi nuqta yechim?” savolida nuqtani, masalan $(3, 4)$ ni yozing va u bo‘yalgan sohada ekanini tekshiring.",
+            "**Aylana:** $(x - 2)^2 + (y + 1)^2 = 25$ kabi tenglamani yozsangiz, aylanani ko‘rasiz — markaz va radius haqidagi variantlarni tekshirishga yordam beradi.",
+            "**Trigonometriya:** Desmos odatda radianlarda ishlaydi. Burchak gradusda berilsa, sozlamalardan (*Degrees*) gradus rejimini yoqing — aks holda $\\sin(30)$ noto‘g‘ri chiqadi."
+          ]
+        },
+        {
+          "type": "watch_out",
+          "heading": "Desmos’ni qachon ishlatmaslik kerak",
+          "items": [
+            "**Oddiy hisob:** 2–3 qadamli arifmetika yoki $3x + 5 = 20$ kabi tenglamani qo‘lda yechish tezroq.",
+            "**Tushunchaga oid savollar:** “ifodadagi 12 soni nimani anglatadi?”, “qaysi tasdiq doim to‘g‘ri?” — grafik bunga javob bermaydi.",
+            "**Faqat harflardan iborat ifodalar:** variantlarda $a$, $b$, $c$ hammasi harf bo‘lsa, grafik chizish qiyin — son tanlash usuli tezroq.",
+            "**Geometriya:** burchaklar, o‘xshash uchburchaklar, yuzalar — chizma va formulalar bilan ishlang.",
+            "**Matnli masalada tenglama tuzish:** Desmos tenglamani tuzmaydi. Avval tenglamani o‘zingiz tuzing, keyin kerak bo‘lsa Desmos’da yeching.",
+            "**30 soniya qoidasi:** 30 soniyada grafik kerakli javobni bermasa, algebraga qayting."
+          ]
+        },
+        {
+          "type": "traps",
+          "heading": "Desmos bilan keng tarqalgan xatolar",
+          "items": [
+            "**Kasrni noto‘g‘ri kiritish:** “1/2x” deb yozsangiz, Desmos $\\frac{1}{2x}$ hosil qiladi. $\\frac{1}{2}x$ uchun 2 dan keyin o‘ng strelka bilan maxrajdan chiqing.",
+            "**Daraja ko‘rsatkichi:** $2^{x} + 1$ yozish uchun daraja ichidan o‘ng strelka bilan chiqing, aks holda $2^{x+1}$ bo‘lib qoladi.",
+            "**Qavslar:** $-x^2$ va $(-x)^2$ — har xil narsa. Manfiy sonni darajaga ko‘targanda qavsni unutmang.",
+            "**Yaxlitlangan qiymat:** Desmos $0.333$ ko‘rsatadi, aniq javob esa $\\frac{1}{3}$. Javobni yozadigan savollarda kasrni kiriting yoki maydonga sig‘adigan barcha raqamlarni yozing.",
+            "**Noto‘g‘ri koordinata:** kesishish nuqtasining $x$ ini topib, savol $y$ ni so‘raganini unutish.",
+            "**Gradus/radian:** trigonometrik hisobda rejimni tekshirmaslik."
+          ]
+        },
+        {
+          "type": "checklist",
+          "heading": "Desmos’ni ochishdan oldin",
+          "items": [
+            "Bu savolda grafik haqiqatan vaqt tejaydimi?",
+            "O‘zgaruvchilarni $x$ va $y$ ga almashtirdimmi?",
+            "Kasr, daraja va qavslar to‘g‘ri kiritildimi?",
+            "Topgan qiymatim — savol so‘ragan kattalikmi?"
+          ]
+        }
+      ]
+    }
+  }
+}

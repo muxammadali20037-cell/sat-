@@ -4,7 +4,7 @@ import type { Role } from './roles'
 export type NavIconKey =
   | 'home' | 'courses' | 'practice' | 'diagnostic' | 'exams' | 'results' | 'analytics' | 'plan' | 'tutor'
   | 'bookmarks' | 'subscription' | 'settings' | 'students' | 'subjects' | 'domains' | 'skills' | 'lessons'
-  | 'questions' | 'import' | 'payments' | 'ai' | 'audit' | 'admin'
+  | 'questions' | 'import' | 'payments' | 'ai' | 'audit' | 'admin' | 'guides'
 
 export type NavItem = {
   href: string
@@ -23,6 +23,7 @@ export const STUDENT_NAV: NavSection[] = [
     items: [
       { href: '/dashboard', labelKey: 'dashboard', icon: 'home', exact: true },
       { href: '/dashboard/courses', labelKey: 'courses', icon: 'courses' },
+      { href: '/dashboard/guides', labelKey: 'guides', icon: 'guides' },
       { href: '/dashboard/practice', labelKey: 'practice', icon: 'practice' },
       { href: '/dashboard/diagnostic', labelKey: 'diagnostic', icon: 'diagnostic' },
       { href: '/dashboard/mock-exams', labelKey: 'mockExams', icon: 'exams' },
@@ -74,6 +75,7 @@ export const ADMIN_NAV: NavSection[] = [
       { href: '/admin/question-import', labelKey: 'Import questions', icon: 'import', roles: CONTENT },
       { href: '/admin/courses', labelKey: 'Courses', icon: 'courses', roles: STAFF },
       { href: '/admin/lessons', labelKey: 'Lessons', icon: 'lessons', roles: STAFF },
+      { href: '/admin/guides', labelKey: 'Study guides', icon: 'guides', roles: STAFF },
       { href: '/admin/exams', labelKey: 'Mock exams', icon: 'exams', roles: STAFF },
       { href: '/admin/subjects', labelKey: 'Subjects', icon: 'subjects', roles: STAFF },
       { href: '/admin/domains', labelKey: 'Domains', icon: 'domains', roles: STAFF },

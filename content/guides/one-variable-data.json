@@ -1,0 +1,161 @@
+{
+  "slug": "one-variable-data",
+  "kind": "skill",
+  "skill": "one_variable_data",
+  "position": 11,
+  "readingMinutes": 11,
+  "locales": {
+    "uz": {
+      "title": "Bir o‘zgaruvchili ma’lumotlar: markaz va tarqoqlik o‘lchovlari",
+      "summary": "O‘rtacha qiymat (mean), mediana, qamrov (range) va standart chetlanishni ro‘yxat, chastota jadvali, dot plot va gistogrammadan topish hamda ma’lumot o‘zgarganda bu ko‘rsatkichlar qanday o‘zgarishini to‘liq hisoblamasdan aniqlash.",
+      "sections": [
+        {
+          "type": "concept",
+          "heading": "Bu ko‘nikma nimani tekshiradi",
+          "body": "Bu ko‘nikma bitta miqdor bo‘yicha yig‘ilgan ma’lumotlarni (masalan, 30 o‘quvchining test ballari) tahlil qilishni tekshiradi. Ma’lumotlar ro‘yxat, **chastota jadvali** (frequency table), **dot plot** (nuqtali diagramma), **gistogramma** (histogram) yoki **box plot** ko‘rinishida beriladi.\n\n**Markaz o‘lchovlari:**\n\n- **Mean (o‘rtacha qiymat):** $\\text{mean} = \\frac{\\text{sum of values}}{\\text{number of values}}$. Bundan muhim natija kelib chiqadi: yig‘indi = mean × qiymatlar soni.\n- **Median:** qiymatlarni o‘sish tartibida joylashtirgandagi o‘rtadagi qiymat. $n$ toq bo‘lsa — $\\frac{n + 1}{2}$-o‘rindagi qiymat; $n$ juft bo‘lsa — o‘rtadagi ikki qiymatning o‘rtachasi.\n- **Mode:** eng ko‘p takrorlangan qiymat.\n\n**Tarqoqlik (spread) o‘lchovlari:**\n\n- **Range (qamrov):** eng katta qiymat − eng kichik qiymat.\n- **Standard deviation (standart chetlanish, SD):** qiymatlar mean atrofida qanchalik keng tarqalganini ko‘rsatadi. SAT odatda uni hisoblatmaydi, balki qaysi to‘plamda kattaroq ekanini so‘raydi: qiymatlar markazga yaqin to‘plangan bo‘lsa — SD kichik, markazdan uzoqda ko‘p bo‘lsa — katta.\n- **IQR (box plot’da):** $Q_3 - Q_1$ — ma’lumotlarning o‘rtadagi yarmi egallagan oraliq.\n\n**Chetga chiqqan qiymat (outlier)** mean’ni o‘ziga tortadi, median’ga esa deyarli ta’sir qilmaydi: 3, 4, 4, 5, 34 to‘plamida mean $= 10$, median esa $4$."
+        },
+        {
+          "type": "recognize",
+          "heading": "Savolni qanday tanib olasiz",
+          "items": [
+            "*“What is the mean …?”*, *“What is the median …?”* — to‘g‘ridan-to‘g‘ri hisoblash. Ma’lumot chastota jadvali yoki dot plot’da bo‘lsa, har bir qiymat necha marta takrorlanganini hisobga oling.",
+            "*“If the value … is removed (added), which of the following must be true?”* — o‘zgarish savoli: ko‘pincha to‘liq hisoblash shart emas, mean va median xossalari yetarli.",
+            "*“Which data set has the greater standard deviation?”*, *“Which statement best compares the standard deviations …?”* — tarqoqlikni ko‘z bilan solishtirish.",
+            "*“The mean of the first 6 … was 14. After the seventh …, the mean was 15.”* — yo‘qolgan qiymat: yig‘indilar orqali ishlang.",
+            "Ikki to‘plam yonma-yon berilgan va *“Which of the following is true?”* — mean, median, range yoki SD haqidagi gaplardan to‘g‘risini tanlash."
+          ]
+        },
+        {
+          "type": "method",
+          "heading": "Ishlash usuli: qadamma-qadam",
+          "steps": [
+            "**Ma’lumot qanday berilganini aniqlang.** Ro‘yxatmi, chastota jadvalimi, dot plot’mi, gistogrammami? Qaysi o‘qda qiymat, qaysi o‘qda (yoki ustunda) chastota turganini adashtirmang.",
+            "**Qiymatlar sonini toping** ($n$). Chastota jadvali va dot plot’da $n$ — chastotalar yig‘indisi (nuqtalar soni), qatorlar soni emas.",
+            "**Median uchun avval tartiblang**, keyin $\\frac{n + 1}{2}$-o‘rinni toping. Chastota jadvalida chastotalarni ketma-ket qo‘shib boring: qaysi qatorda kerakli o‘rinni “bosib o‘tsangiz”, median — o‘sha qatordagi qiymat.",
+            "**Mean uchun yig‘indi bilan ishlang:** $\\sum (\\text{value} \\times \\text{frequency}) \\div n$. Yo‘qolgan yoki qo‘shilgan qiymat savollarida eski va yangi yig‘indilarni solishtiring.",
+            "**O‘zgarish savollarida xossalardan foydalaning:** eng katta qiymat yanada oshsa, mean oshadi, median o‘zgarmaydi. Barcha qiymatlarga bir xil son qo‘shilsa, mean va median shuncha siljiydi, range va SD o‘zgarmaydi. Barcha qiymatlar musbat $k$ ga ko‘paytirilsa, to‘rttala ko‘rsatkich ham $k$ marta o‘zgaradi.",
+            "**SD ni solishtirishda markazdan masofaga qarang:** qaysi to‘plamda qiymatlar mean’dan uzoqroq va ko‘proq bo‘lsa, o‘sha to‘plamning SD si katta. Range bir xil bo‘lsa ham SD har xil bo‘lishi mumkin."
+          ]
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 1: chastota jadvali va chetki qiymat",
+          "example": {
+            "problem": "The list below summarizes the number of books each of 15 students read last month.\n\n- 0 books: 2 students\n- 1 book: 4 students\n- 2 books: 5 students\n- 3 books: 3 students\n- 8 books: 1 student\n\nIf the data value for the student who read 8 books is removed, which of the following statements is true?",
+            "choices": [
+              "Both the mean and the median decrease.",
+              "The mean decreases, and the median does not change.",
+              "The median decreases, and the mean does not change.",
+              "Neither the mean nor the median changes."
+            ],
+            "solution": [
+              "Avval $n$ ni tekshiramiz: $2 + 4 + 5 + 3 + 1 = 15$ o‘quvchi.",
+              "Dastlabki median — 8-o‘rindagi qiymat, chunki $\\frac{15 + 1}{2} = 8$. Chastotalarni qo‘shib boramiz: 1–2-o‘rinlarda 0, 3–6-o‘rinlarda 1, 7–11-o‘rinlarda 2. Demak median $= 2$.",
+              "8 olib tashlangach $n = 14$ bo‘ladi va median — 7- va 8-o‘rindagi qiymatlarning o‘rtachasi. 7–11-o‘rinlar o‘zgarmagan, ikkalasi ham 2, demak median yana $2$ — **o‘zgarmaydi**.",
+              "Mean: 8 — eng katta qiymat va u mean’dan ancha yuqori, uni olib tashlash mean’ni **kamaytiradi**. Hisob bilan: avval $\\frac{0 + 4 + 10 + 9 + 8}{15} = \\frac{31}{15} \\approx 2.07$, keyin $\\frac{23}{14} \\approx 1.64$.",
+              "Nega A xato: median pozitsiyaga bog‘liq — bitta chetki qiymat olib tashlanganda o‘rtadagi qiymatlar ko‘pincha o‘zgarmaydi. C va D esa mean’ning chetki qiymatga sezgirligini e’tiborsiz qoldiradi.",
+              "Tekshiruv: $1.64 < 2.07$ ✓, median ikkala holatda ham 2 ✓."
+            ],
+            "answer": "B) The mean decreases, and the median does not change."
+          }
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 2: yo‘qolgan qiymat (javobni o‘zingiz yozasiz)",
+          "example": {
+            "problem": "A basketball player scored a mean of 14 points per game in her first 6 games of the season. After her seventh game, her mean for all 7 games was 15 points per game. How many points did she score in the seventh game?",
+            "solution": [
+              "Mean bilan emas, **yig‘indi** bilan ishlaymiz: yig‘indi = mean × o‘yinlar soni.",
+              "6 o‘yindagi jami: $14 \\times 6 = 84$ ochko.",
+              "7 o‘yindagi jami: $15 \\times 7 = 105$ ochko.",
+              "7-o‘yindagi ochko — yig‘indilar farqi: $105 - 84 = 21$.",
+              "Tuzoq: **15** yoki **16** deb javob berish (“o‘rtacha 1 ga oshdi, demak yangi qiymat ham shunga yaqin”). Aslida yangi qiymat yangi mean’ga teng bo‘lishdan tashqari oldingi 6 o‘yinning har birini 1 ochkodan “ko‘tarishi” kerak: $15 + 6 \\times 1 = 21$.",
+              "Tekshiruv: $\\frac{84 + 21}{7} = \\frac{105}{7} = 15$ ✓."
+            ],
+            "answer": "21"
+          }
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 3: standart chetlanishni solishtirish",
+          "example": {
+            "problem": "Data sets A and B each contain 5 values.\n\n- Data set A: 10, 10, 30, 50, 50\n- Data set B: 10, 30, 30, 30, 50\n\nWhich of the following statements is true?",
+            "choices": [
+              "The standard deviation of data set A is greater than the standard deviation of data set B.",
+              "The standard deviation of data set B is greater than the standard deviation of data set A.",
+              "The standard deviations are equal because the ranges are equal.",
+              "The standard deviations are equal because the means are equal."
+            ],
+            "solution": [
+              "Avval markaz: ikkala to‘plamda ham mean $= 30$ va median $= 30$; range ham ikkalasida $50 - 10 = 40$.",
+              "Endi har bir qiymatning mean’dan masofasiga qaraymiz. A: 20, 20, 0, 20, 20 — beshtadan to‘rttasi markazdan uzoqda. B: 20, 0, 0, 0, 20 — faqat ikkitasi uzoqda, uchtasi aynan markazda.",
+              "A da qiymatlar markazdan ko‘proq uzoqlashgan, demak A ning standart chetlanishi katta.",
+              "Nega C va D xato: range faqat ikki chetki qiymatga, mean esa markazga bog‘liq; SD esa **barcha** qiymatlarning markazdan uzoqligini hisobga oladi. Teng range yoki teng mean teng SD degani emas.",
+              "Tekshiruv (ixtiyoriy): Desmos’dagi $\\text{stdev}$ funksiyasi A uchun $20$, B uchun $\\approx 14.1$ beradi ✓."
+            ],
+            "answer": "A) The standard deviation of data set A is greater than the standard deviation of data set B."
+          }
+        },
+        {
+          "type": "watch_out",
+          "heading": "Nimaga e’tibor berish kerak",
+          "items": [
+            "**Tartiblashni unutmang:** median — tartiblangan ro‘yxatning o‘rtasi, berilgan ro‘yxatning o‘rtasi emas.",
+            "**Qiymatlar soni juft bo‘lsa,** median o‘rtadagi ikki qiymatning o‘rtachasi va u ma’lumotda umuman uchramaydigan son bo‘lishi mumkin (masalan, 4 va 7 → 5.5).",
+            "**Gistogrammada aniq qiymatlar yo‘q:** ustunlar oraliqlarni ko‘rsatadi. Mean’ni aniq topib bo‘lmaydi, lekin median **qaysi oraliqda** ekanini chastotalarni qo‘shib aniqlash mumkin.",
+            "**Outlier bo‘lsa qaysi o‘lchov “yaxshiroq”:** keskin chetga chiqqan qiymat bo‘lsa, odatiy qiymatni median yaxshiroq ifodalaydi. O‘ngga cho‘zilgan (right-skewed) taqsimotda odatda mean mediandan katta bo‘ladi.",
+            "**Siljitish va masshtablash:** har bir qiymatga 5 qo‘shilsa, mean va median 5 ga oshadi, range va SD o‘zgarmaydi. Har bir qiymat 2 ga ko‘paytirilsa, to‘rttalasi ham 2 marta oshadi.",
+            "**O‘qlar va kataklar:** dot plot yoki gistogrammada o‘q qaysi miqdorni ko‘rsatishini va bitta katak nechaga tengligini o‘qing."
+          ]
+        },
+        {
+          "type": "traps",
+          "heading": "Keng tarqalgan xatolar (tuzoq variantlar)",
+          "items": [
+            "**Chastotani qiymat deb olish:** chastota ustunining o‘rtachasini hisoblash. Namuna 1 da “o‘quvchilar soni” ustunining o‘rtachasi $15 \\div 5 = 3$ — bu mean emas.",
+            "**Qatorlar sonini qiymatlar soni deb olish:** chastota jadvalida 5 qator bo‘lsa ham, $n = 15$.",
+            "**“Range teng — SD ham teng”** degan xulosa (namuna 3 dagi C).",
+            "**Mean o‘rniga yig‘indi:** yig‘indini topib, $n$ ga bo‘lishni unutish — yig‘indi ham variantlar orasida bo‘ladi.",
+            "**“Must be true” va “could be true”:** *must be true* — har doim to‘g‘ri bo‘lishi shart; bitta qarshi misol variantni yo‘qqa chiqaradi."
+          ]
+        },
+        {
+          "type": "time",
+          "heading": "Vaqt bo‘yicha maslahat",
+          "items": [
+            "Kichik ro‘yxatdan mean yoki median: **30–45 soniya**; chastota jadvali yoki o‘zgarish savoli: **60–90 soniya**.",
+            "Ro‘yxat uzun bo‘lsa, Desmos’da ro‘yxat yarating: $A = [12, 15, 15, 18, 30]$, keyin $\\text{mean}(A)$, $\\text{median}(A)$, $\\text{stdev}(A)$ deb yozing — natijalar darhol chiqadi va qo‘lda tartiblashdan ishonchliroq.",
+            "Chastota jadvali uchun ham Desmos qulay: $V = [0, 1, 2, 3, 8]$ (qiymatlar) va $F = [2, 4, 5, 3, 1]$ (chastotalar) kiriting, so‘ng $\\text{total}(V \\cdot F) / \\text{total}(F)$ — bu mean.",
+            "SD ni solishtirish savollarida hech narsa hisoblamang — ko‘z bilan baholash 15–20 soniyada javob beradi."
+          ]
+        },
+        {
+          "type": "terms",
+          "heading": "Muhim inglizcha atamalar",
+          "terms": [
+            { "term": "mean / average", "meaning": "o‘rtacha qiymat (o‘rta arifmetik)" },
+            { "term": "median", "meaning": "tartiblangan ma’lumotlarning o‘rtasidagi qiymat" },
+            { "term": "mode", "meaning": "eng ko‘p uchraydigan qiymat" },
+            { "term": "range", "meaning": "qamrov: eng katta va eng kichik qiymatlar farqi" },
+            { "term": "standard deviation", "meaning": "standart chetlanish: qiymatlarning mean atrofida qanchalik tarqalganligi" },
+            { "term": "outlier", "meaning": "boshqalardan keskin farq qiladigan, chetga chiqqan qiymat" },
+            { "term": "frequency", "meaning": "chastota: qiymat necha marta uchragani" },
+            { "term": "dot plot / histogram", "meaning": "nuqtali diagramma / gistogramma (ustunlar oraliqlarni ko‘rsatadi)" },
+            { "term": "data set / distribution", "meaning": "ma’lumotlar to‘plami / taqsimot" },
+            { "term": "must be true", "meaning": "har doim to‘g‘ri bo‘lishi shart (“could be true” — to‘g‘ri bo‘lishi mumkin)" }
+          ]
+        },
+        {
+          "type": "checklist",
+          "heading": "Javobni tanlashdan oldin tekshiring",
+          "items": [
+            "$n$ ni to‘g‘ri topdimmi (chastotalar yig‘indisi)?",
+            "Median uchun ma’lumotni tartibladimmi?",
+            "Savol mean’nimi, median’nimi, yig‘indinimi yoki tarqoqlikni so‘rayapti?",
+            "Outlier bormi va u qaysi ko‘rsatkichga ta’sir qiladi?"
+          ]
+        }
+      ]
+    }
+  }
+}

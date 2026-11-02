@@ -1,0 +1,179 @@
+{
+  "slug": "command-of-evidence-quantitative",
+  "kind": "skill",
+  "skill": "command_of_evidence_quantitative",
+  "position": 25,
+  "readingMinutes": 10,
+  "locales": {
+    "uz": {
+      "title": "Command of Evidence (Quantitative): jadval va grafikdan dalil",
+      "summary": "Matndagi da’voni jadval yoki grafikdagi ma’lumot bilan qo‘llab-quvvatlash yoki matnni ma’lumot asosida to‘ldirish. To‘g‘ri javob ikki shartga javob beradi: grafikka ko‘ra aniq va da’voga aloqador.",
+      "sections": [
+        {
+          "type": "concept",
+          "heading": "Bu ko‘nikma nimani tekshiradi",
+          "body": "Command of Evidence: Quantitative savollari **Information and Ideas** domeniga kiradi. Sizga qisqa matn va unga ilova qilingan **jadval, ustunli diagramma (bar graph) yoki chiziqli grafik (line graph)** beriladi. Matnda odatda tadqiqotchining da’vosi yoki xulosasi bor; siz uni grafikdagi ma’lumot bilan qo‘llab-quvvatlaydigan variantni tanlaysiz yoki matn oxiridagi bo‘sh joyni ma’lumotga asoslanib to‘ldirasiz.\n\nBu Math savoli emas: murakkab hisob-kitob deyarli kerak bo‘lmaydi. Ko‘nikmaning mohiyati — ikki filtrni birga qo‘llash:\n\n- **Aloqadorlik:** variant matndagi **aynan shu** da’voni qo‘llab-quvvatlaydimi?\n- **Aniqlik:** variantdagi raqamlar, yillar va taqqoslashlar grafikka mos keladimi?\n\nKo‘p o‘quvchilar faqat aniqlikni tekshiradi va aloqadorlikni unutadi. Grafikka ko‘ra to‘g‘ri, lekin da’voga aloqasiz variant — bu turdagi savolning eng mashhur tuzog‘i."
+        },
+        {
+          "type": "recognize",
+          "heading": "Savolni qanday tanib olasiz",
+          "items": [
+            "Matn yonida jadval yoki grafik bor va savolda *data from the table* yoki *data from the graph* iborasi ishlatiladi.",
+            "*Which choice most effectively uses data from the graph to support the researchers' claim?* — da’voni qo‘llab-quvvatlovchi ma’lumot.",
+            "*Which choice most effectively uses data from the table to complete the statement?* — matn oxiridagi bo‘sh joyni ma’lumot bilan to‘ldirish.",
+            "*Which choice best describes data from the graph that support the hypothesis?* — gipotezaga mos keladigan ma’lumotni tanlash.",
+            "Variantlar odatda aniq raqamlar, yillar yoki guruhlar nomini o‘z ichiga oladi: *In 2019, Town A…*, *…rose from about 1,200 to about 3,100*."
+          ]
+        },
+        {
+          "type": "method",
+          "heading": "Ishlash usuli: qadamma-qadam",
+          "steps": [
+            "**Grafikdan oldin matnni va savolni o‘qing.** Da’voni toping va belgilang: u nimani taqqoslaydi yoki qanday o‘zgarishni aytadi?",
+            "**Da’voni “ma’lumot tiliga” o‘giring:** “dastur suv sarfini hamma shaharda kamaytirdi” → har bir shaharda keyingi qiymat oldingisidan kichik bo‘lishi kerak. “Tiklash loyihasi yordam berdi” → loyiha bo‘lgan joyda o‘sish va loyiha bo‘lmagan joyda o‘sish yo‘qligi.",
+            "**Grafikni o‘qing:** sarlavha, o‘qlar (x va y), **o‘lchov birliklari** (foiz, ming, *in hundreds*), legenda (qaysi rang yoki chiziq qaysi guruh) va vaqt oralig‘i.",
+            "**Har bir variantni ikki bosqichda tekshiring:** (a) da’voga aloqadormi? Aloqasiz variantni raqamlarini tekshirmasdan o‘chiring. (b) grafikka ko‘ra aniqmi? Raqam, yil va guruh nomini grafikdan topib solishtiring.",
+            "**Taqqoslash talab qilinsa,** to‘g‘ri variant odatda **ikkala** guruhni (yoki ikkala davrni) tilga oladi. Faqat bitta guruh haqidagi variant ko‘pincha yetarli emas.",
+            "**Qolgan variantni da’vo bilan yana bir bor solishtiring:** u da’voning barcha qismlarini (masalan, “hammasida kamaydi” va “har xil miqdorda”) qamrab oladimi?"
+          ]
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 1: jadval bilan da’voni qo‘llab-quvvatlash",
+          "example": {
+            "passage": "In 2021, three towns in a dry region launched a program that gave residents free water-saving showerheads and taught them how to repair leaking pipes. Program manager Feruza Alimova claims that the program reduced household water use in every town, although the size of the reduction was not the same everywhere.\n\nAverage daily water use per household (liters):\n\n- Town A: 410 in 2020; 350 in 2022\n- Town B: 380 in 2020; 360 in 2022\n- Town C: 450 in 2020; 330 in 2022",
+            "problem": "Which choice most effectively uses data from the table to support Alimova's claim?",
+            "choices": [
+              "In 2020, households in Town C used more water per day than households in Town A or Town B did.",
+              "Average daily water use per household fell in all three towns from 2020 to 2022, by 20 liters in Town B and by as much as 120 liters in Town C.",
+              "Average daily water use per household fell by the same amount in Town A and Town C from 2020 to 2022.",
+              "In 2022, households in Town A used less water per day than households in Town B did."
+            ],
+            "solution": [
+              "**Da’vo ikki qismdan iborat:** (1) suv sarfi **har bir** shaharda kamaygan; (2) kamayish miqdori **har xil** bo‘lgan.",
+              "**Jadvaldan o‘zgarishlarni hisoblaymiz:** A: $410 \\to 350$, ya’ni 60 litrga kam; B: $380 \\to 360$, 20 litrga kam; C: $450 \\to 330$, 120 litrga kam. Uchala shaharda ham kamaygan va miqdorlar turlicha — da’vo ma’lumotga mos.",
+              "**B** — aniq (uchala shaharda kamaygan; B da 20, C da 120 litr) va da’voning **ikkala qismini** ham qamrab oladi. ✓",
+              "**A** noto‘g‘ri: 2020-yil uchun ma’lumot to‘g‘ri (450 litr 410 va 380 dan ko‘p), lekin u faqat dasturdan **oldingi** holatni ko‘rsatadi va dastur suv sarfini kamaytirgani haqida hech narsa demaydi. Aniq, lekin aloqasiz.",
+              "**C** noto‘g‘ri — **noaniq**: A da kamayish 60 litr, C da 120 litr. Bundan tashqari, bu da’voning ikkinchi qismiga (“har xil miqdorda”) zid.",
+              "**D** noto‘g‘ri: 2022-yilda A (350) haqiqatan B dan (360) kam, ya’ni ma’lumot aniq. Lekin bitta yildagi ikki shaharni solishtirish o‘zgarish haqida hech narsa aytmaydi — yana aniq, lekin aloqasiz."
+            ],
+            "answer": "B"
+          }
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 2: chiziqli grafik va o‘lchov birligi",
+          "example": {
+            "passage": "Ecologists counted nesting pairs of a wading bird at two wetlands, Lake North and Lake South, from 2016 to 2024. In 2019, a restoration project began at Lake North that raised water levels and replanted native reeds; Lake South received no restoration. The ecologists claim that the project helped the bird population at Lake North recover.\n\nLine graph: number of nesting pairs (in hundreds)\n\n- Lake North: 2016 — 14; 2019 — 12; 2022 — 22; 2024 — 31\n- Lake South: 2016 — 15; 2019 — 13; 2022 — 13; 2024 — 12",
+            "problem": "Which choice most effectively uses data from the graph to support the ecologists' claim?",
+            "choices": [
+              "At Lake North, the number of nesting pairs rose from 12 in 2019 to 31 in 2024.",
+              "In 2016, Lake South had more nesting pairs than Lake North did.",
+              "At Lake North, the number of nesting pairs rose from about 1,200 in 2019 to about 3,100 in 2024, while at Lake South it stayed between about 1,200 and 1,300 over the same period.",
+              "The number of nesting pairs at Lake South increased steadily from 2016 to 2024."
+            ],
+            "solution": [
+              "**Da’vo:** tiklash loyihasi (2019-yildan, faqat Lake North’da) qushlar sonining tiklanishiga yordam berdi. Buni eng kuchli qo‘llab-quvvatlaydigan ma’lumot: loyihadan keyin Lake North’da o‘sish **va** loyiha bo‘lmagan Lake South’da o‘sish yo‘qligi.",
+              "**Birlikka e’tibor:** grafik sarlavhasida *in hundreds* — “yuzlarda”. Demak 12 — bu 1,200 juft, 31 — 3,100 juft.",
+              "**A** noto‘g‘ri — **birlik xatosi**: grafikda qiymatlar yuzlarda berilgan, ya’ni 12 emas, 1,200 juft. Yo‘nalish to‘g‘ri bo‘lsa ham, raqamlar noto‘g‘ri.",
+              "**B** noto‘g‘ri: 2016-yil uchun to‘g‘ri (15 > 14), lekin bu loyihadan **oldingi** yil — loyiha natijasi haqida hech narsa demaydi.",
+              "**C** — aniq (12 dan 31 gacha yuz, ya’ni 1,200 dan 3,100 gacha; Lake South’da 12–13 yuz) va da’voga to‘liq aloqador: loyiha bo‘lgan joyni loyiha bo‘lmagan joy bilan taqqoslaydi. ✓",
+              "**D** noto‘g‘ri — noaniq: Lake South’da juftlar soni 15 dan 12 ga **kamaygan**, o‘smagan."
+            ],
+            "answer": "C"
+          }
+        },
+        {
+          "type": "watch_out",
+          "heading": "Nimaga e’tibor berish kerak",
+          "items": [
+            "**Grafikning “pasporti”ni o‘qing:** sarlavha, o‘qlar nomi, o‘lchov birligi va legenda. *In thousands*, *percent of respondents*, *per 1,000 people* kabi izohlar raqamlarning ma’nosini butunlay o‘zgartiradi.",
+            "**Ikki filtr:** har bir variant uchun “da’voga aloqadormi?” va “grafikka ko‘ra to‘g‘rimi?” deb so‘rang. To‘g‘ri javob ikkala savolga ham “ha” deydi.",
+            "**Da’vo nimani talab qilishini aniqlang:** o‘zgarish (yillar bo‘yicha), taqqoslash (guruhlar orasida) yoki bitta qiymat. Da’vo o‘zgarish haqida bo‘lsa, faqat bitta yil haqidagi variant yetarli emas.",
+            "**Foiz va son farqi:** *percent* (foiz) va *number* (son) ni, shuningdek *percentage points* (foiz punkti) va *percent change* (foiz o‘zgarishi) ni adashtirmang. 20% dan 30% ga o‘sish — 10 foiz punktiga o‘sish, lekin foiz o‘zgarishi bo‘yicha 50% ga o‘sish.",
+            "**Grafikdagi ma’lumotdan ortiq xulosa chiqarmang.** Variant grafikda yo‘q sabab yoki kelajak haqida gapirsa (*will continue to rise*, *because of…*), u ma’lumotdan tashqariga chiqqan.",
+            "**Ingliz tili bo‘yicha maslahat — o‘zgarish va taqqoslash so‘zlari:** *increase / rise / grow* — o‘smoq; *decrease / decline / drop / fall* — kamaymoq; *remain stable / stay roughly the same* — deyarli o‘zgarmaslik; *peak* — eng yuqori nuqta; *exceed* — oshib ketmoq; *respectively* — mos ravishda; *whereas / while* — holbuki (taqqoslash). Savoldagi *most effectively uses data … to support* iborasini “qaysi variant ma’lumotdan foydalanib da’voni eng yaxshi isbotlaydi” deb tushuning. Notanish so‘z (masalan, qush yoki o‘simlik nomi) muhim emas — uni “X” deb qabul qiling, raqamlar va da’vo muhimroq."
+          ]
+        },
+        {
+          "type": "traps",
+          "heading": "Keng tarqalgan xatolar (tuzoq variantlar)",
+          "items": [
+            "**Aniq, lekin aloqasiz** (eng ko‘p uchraydi): raqamlar grafikka mos, ammo da’voni qo‘llab-quvvatlamaydi (1-namunadagi A va D, 2-namunadagi B).",
+            "**Aloqador, lekin noaniq:** variant da’voga mos keladigandek tuyuladi, ammo raqamlari noto‘g‘ri (1-namunadagi C).",
+            "**Birlik yoki o‘q xatosi:** *in hundreds* yoki *in thousands* ni e’tiborsiz qoldirish, x va y o‘qlarini almashtirish (2-namunadagi A).",
+            "**Noto‘g‘ri yil yoki guruh:** legendadagi ranglarni adashtirish yoki da’voda aytilgan davrdan boshqa yillarni olish.",
+            "**Teskari tendensiya:** kamayishni o‘sish deb o‘qish (2-namunadagi D).",
+            "**Ortiqcha xulosa:** grafik ko‘rsatmaydigan sabab-natija yoki kelajak haqidagi bashorat."
+          ]
+        },
+        {
+          "type": "time",
+          "heading": "Vaqt bo‘yicha maslahat",
+          "items": [
+            "Reading and Writing’da bir savolga o‘rtacha **71 soniya** bor (har modulda 27 savol, 32 daqiqa). Grafikli savollar biroz ko‘proq vaqt olishi mumkin — **80–100 soniya** normal.",
+            "Eng katta vaqt tejovchi usul: **avval da’voni o‘qing**, keyin grafikka faqat kerakli joylarda qarang. Grafikdagi barcha raqamlarni o‘rganish shart emas.",
+            "Variantlarni tekshirishda **aloqadorlikdan** boshlang: da’voga aloqasi yo‘q variantni raqamlarini solishtirmasdan o‘chirsangiz, vaqt tejaladi.",
+            "Hisob kerak bo‘lsa (ayirma yoki taqqoslash), natijani yozib qo‘ying — bir nechta raqamni xotirada ushlab turish xatoga olib keladi."
+          ]
+        },
+        {
+          "type": "terms",
+          "heading": "Muhim inglizcha atamalar",
+          "terms": [
+            {
+              "term": "data",
+              "meaning": "ma’lumotlar (raqamlar, o‘lchovlar)"
+            },
+            {
+              "term": "table",
+              "meaning": "jadval"
+            },
+            {
+              "term": "bar graph",
+              "meaning": "ustunli diagramma"
+            },
+            {
+              "term": "line graph",
+              "meaning": "chiziqli grafik — vaqt bo‘yicha o‘zgarishni ko‘rsatadi"
+            },
+            {
+              "term": "axis (x-axis, y-axis)",
+              "meaning": "o‘q (gorizontal va vertikal o‘q)"
+            },
+            {
+              "term": "legend / key",
+              "meaning": "legenda: qaysi rang yoki belgi qaysi guruhni bildiradi"
+            },
+            {
+              "term": "trend",
+              "meaning": "tendensiya — umumiy o‘zgarish yo‘nalishi"
+            },
+            {
+              "term": "respectively",
+              "meaning": "mos ravishda — sanalgan tartibda"
+            },
+            {
+              "term": "approximately / about",
+              "meaning": "taxminan"
+            },
+            {
+              "term": "exceed",
+              "meaning": "oshib ketmoq, …dan ko‘p bo‘lmoq"
+            }
+          ]
+        },
+        {
+          "type": "checklist",
+          "heading": "Javobni tanlashdan oldin tekshiring",
+          "items": [
+            "Grafikning sarlavhasi, o‘lchov birligi va legendasini o‘qidimmi?",
+            "Tanlagan variantimdagi har bir raqam, yil va guruh grafikka mosmi?",
+            "Variant matndagi aynan shu da’voni qo‘llab-quvvatlaydimi — shunchaki to‘g‘ri fakt emasmi?",
+            "Da’vo taqqoslash talab qilsa, variant ikkala guruhni ham tilga oladimi?"
+          ]
+        }
+      ]
+    }
+  }
+}

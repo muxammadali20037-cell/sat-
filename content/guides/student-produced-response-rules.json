@@ -1,0 +1,128 @@
+{
+  "slug": "student-produced-response-rules",
+  "kind": "strategy",
+  "subject": "math",
+  "position": 6,
+  "readingMinutes": 7,
+  "locales": {
+    "uz": {
+      "title": "Javobni o‘zingiz yozadigan savollar (SPR): kiritish qoidalari",
+      "summary": "Math bo‘limidagi savollarning taxminan to‘rtdan birida variant yo‘q — javobni o‘zingiz yozasiz. Qancha belgi kiritish mumkin, manfiy son, kasr va o‘nli kasr, aralash son, uzun o‘nli kasrni kesish yoki yaxlitlash, bir nechta to‘g‘ri javob bo‘lganda nima qilish — to‘g‘ri va noto‘g‘ri kiritish namunalari bilan.",
+      "sections": [
+        {
+          "type": "concept",
+          "heading": "SPR savoli nima",
+          "body": "*Student-produced response* (SPR) — javob variantlari berilmagan Math savoli: javobni maydonga o‘zingiz yozasiz. Bunday savollar Math bo‘limining taxminan **25%** ini tashkil qiladi.\n\nSPR’da xato ikki xil bo‘ladi: yechimdagi xato va **kiritishdagi xato**. Ikkinchisi eng alamlisi — masalani to‘g‘ri yechib, javobni qoidaga zid yozsangiz, ball olmaysiz. Quyidagi qoidalar College Board’ning rasmiy test ko‘rsatmalaridan olingan; ularni testgacha yod bilib oling, testda o‘qishga vaqt sarflamang.\n\nNoto‘g‘ri javob uchun jarima yo‘q, shuning uchun SPR savolini ham bo‘sh qoldirmang."
+        },
+        {
+          "type": "note",
+          "heading": "Rasmiy kiritish qoidalari",
+          "items": [
+            "**Bir nechta to‘g‘ri javob bo‘lsa** — faqat **bittasini** kiriting.",
+            "**Musbat javob** — ko‘pi bilan **5 ta belgi**; **manfiy javob** — minus belgisi bilan birga ko‘pi bilan **6 ta belgi**.",
+            "**Kasr maydonga sig‘masa** — uning o‘nli kasr ko‘rinishini kiriting.",
+            "**O‘nli kasr sig‘masa** — uni to‘rtinchi raqamda **kesing** (truncate) yoki **yaxlitlang** (round).",
+            "**Aralash son** (masalan, $3\\frac{1}{2}$) — noto‘g‘ri kasr (**7/2**) yoki o‘nli kasr (**3.5**) ko‘rinishida kiritiladi.",
+            "**Belgilar kiritilmaydi:** foiz (%), vergul (,) yoki dollar (\\$) belgisi yozilmaydi.",
+            "Rasmiy namunalardan ko‘rinadiki, nuqta (.), kasr chizig‘i (/) va minus (-) ham belgi sifatida sanaladi, boshidagi nol esa shart emas: **.6666** ham qabul qilinadi."
+          ]
+        },
+        {
+          "type": "note",
+          "heading": "Rasmiy namunalar: qabul qilinadi va qabul qilinmaydi",
+          "items": [
+            "**Javob 3.5 bo‘lsa.** ✓ To‘g‘ri: **3.5**, **3.50**, **7/2**. ✗ Ball berilmaydi: **31/2**, **3 1/2** (aralash son).",
+            "**Javob $\\frac{2}{3}$ bo‘lsa.** ✓ To‘g‘ri: **2/3**, **.6666**, **.6667**, **0.666**, **0.667**. ✗ Ball berilmaydi: **0.66**, **.66**, **0.67**, **.67** — maydonda joy bor-u, aniqlik yetarli emas.",
+            "**Javob $-\\frac{1}{3}$ bo‘lsa.** ✓ To‘g‘ri: **-1/3**, **-.3333**, **-0.333**. ✗ Ball berilmaydi: **-.33**, **-0.33**.",
+            "**Xulosa:** kasr sig‘sa — kasrni yozing, bu eng xavfsiz yo‘l. O‘nli kasr yozsangiz, maydonga sig‘adigan **barcha** belgilarni to‘ldiring."
+          ]
+        },
+        {
+          "type": "method",
+          "heading": "Javobni kiritish tartibi",
+          "steps": [
+            "**Javobni aniq ko‘rinishda toping** — iloji bo‘lsa, oddiy kasr shaklida, o‘nli yaxlitlashsiz.",
+            "**Butun son bo‘lsa** — shunchaki kiriting: **12**, **-7**, **2500** (minglik vergulsiz).",
+            "**Kasr bo‘lsa va sig‘sa** — kasrni kiriting: $\\frac{7}{12}$ → **7/12** (4 belgi), $\\frac{100}{7}$ → **100/7** (5 belgi). Kasrni oldindan qisqartirib oling.",
+            "**Kasr sig‘masa** — o‘nli kasrga o‘tkazing: $\\frac{250}{11} = 22.7272\\ldots$ → **22.72** (kesish) yoki **22.73** (yaxlitlash), har biri 5 belgi.",
+            "**Manfiy bo‘lsa** — minusdan boshlang, sizda 6 ta belgi bor: $-\\frac{250}{11}$ → **-22.72** yoki **-22.73**.",
+            "**Aralash son bo‘lsa** — noto‘g‘ri kasrga aylantiring: $2\\frac{3}{4}$ → **11/4** yoki **2.75**.",
+            "**Oxirida tekshiring:** birlik, %, \\$ yoki vergul yo‘qmi; savol so‘ragan kattalikni kiritdingizmi; ekrandagi javob ko‘rinishi siz nazarda tutgan son bilan bir xilmi?"
+          ]
+        },
+        {
+          "type": "note",
+          "heading": "Bir nechta to‘g‘ri javob bo‘lsa",
+          "items": [
+            "Savolda *one possible value*, *a solution* kabi iboralar bo‘lsa, bir nechta to‘g‘ri javob bo‘lishi mumkin — **faqat bittasini** kiriting.",
+            "Masalan, $(x - 2)(x + 5) = 0$ uchun **2** ham, **-5** ham to‘g‘ri. “2, -5” deb ikkalasini yozmang — vergul ham, ikki javob ham qabul qilinmaydi.",
+            "Tengsizlik bilan berilgan oraliqda istalgan sonni tanlang. Masalan, $3 < 2x - 1 < 8$ dan $2 < x < 4.5$ chiqadi — **3** kiriting. Chegaraviy qiymatni ($2$ yoki $4.5$) emas, oraliq ichidagi oddiy sonni tanlang.",
+            "Savolda shart bo‘lsa (*positive*, *integer*, *greater than 1*), tanlagan javobingiz shu shartga mos kelishini tekshiring."
+          ]
+        },
+        {
+          "type": "traps",
+          "heading": "O‘zbekistonlik o‘quvchilarning tipik xatolari",
+          "items": [
+            "**O‘nli kasrni vergul bilan yozish:** o‘zbek yozuvida 3,5 deb yozamiz, lekin testda vergul qabul qilinmaydi — faqat **nuqta**: **3.5**.",
+            "**Aralash son:** $3\\frac{1}{2}$ ni **3 1/2** deb yozish — bu **31/2** deb o‘qilishi mumkin va ball berilmaydi.",
+            "**Kam aniqlik:** $\\frac{2}{3}$ ni **0.67** deb yozish — ball berilmaydi, chunki maydonga yana bitta raqam sig‘adi.",
+            "**Birlik va belgilar:** **15 cm**, **\\$40**, **35%** — hammasi noto‘g‘ri. Faqat son: **15**, **40**, **35**.",
+            "**Foiz savollari:** savol *What percent…* yoki *p percent* deb so‘rasa, javob 35% bo‘lganda **35** ni yozing, **0.35** ni emas. Savol ulush yoki nisbatni so‘rasa — **0.35** yoki **7/20**. Savol nimani so‘raganini qayta o‘qing.",
+            "**Savol yaxlitlashni o‘zi ko‘rsatsa** (*to the nearest tenth*, *to the nearest whole number*) — shu talabga amal qiling.",
+            "**$\\pi$ yoki ildiz chiqib qolsa:** javob son bo‘lishi kerak. Savol ko‘pincha koeffitsiyentni so‘raydi — masalan, *the volume is $k\\pi$ cubic inches; what is the value of $k$?* Bunda $\\pi$ siz faqat $k$ ni yozasiz."
+          ]
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 1: kasr sig‘maganda",
+          "example": {
+            "problem": "If $11x + 4 = 240$, what is the value of $x$?",
+            "solution": [
+              "Ikkala tomondan 4 ni ayiramiz: $11x = 236$. 11 ga bo‘lamiz: $x = \\frac{236}{11}$.",
+              "**236/11** — 6 ta belgi, musbat javob uchun maydonga sig‘maydi. Demak, o‘nli kasrga o‘tamiz: $\\frac{236}{11} = 21.4545\\ldots$",
+              "5 ta belgigacha kesamiz: **21.45**. Yaxlitlasak ham **21.45** chiqadi (keyingi raqam 4).",
+              "Noto‘g‘ri kiritishlar: **21.4** yoki **21.5** (aniqlik yetarli emas), **21** (butun qismi xolos), **21,45** (vergul)."
+            ],
+            "answer": "21.45"
+          }
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 2: bir nechta to‘g‘ri javob",
+          "example": {
+            "problem": "$$(2x - 3)(x + 4) = 0$$ What is one possible solution to the given equation?",
+            "solution": [
+              "Ko‘paytma nolga teng bo‘lishi uchun ko‘paytuvchilardan biri nol bo‘lishi kerak: $2x - 3 = 0$ yoki $x + 4 = 0$.",
+              "Yechimlar: $x = \\frac{3}{2}$ va $x = -4$.",
+              "Savol *one possible solution* deyapti — bittasini kiritamiz: **3/2**, **1.5** yoki **-4** — uchalasi ham to‘g‘ri.",
+              "Noto‘g‘ri kiritishlar: **3/2, -4** (ikki javob va vergul), **1 1/2** (aralash son)."
+            ],
+            "answer": "3/2, 1.5 yoki -4 (faqat bittasi)"
+          }
+        },
+        {
+          "type": "note",
+          "heading": "SAT MASTER’da SPR’ni mashq qilish",
+          "items": [
+            "Mashq, diagnostika va sinov imtihonlarida javob maydoni xuddi shu qoidalarni tekshiradi: juda uzun javob, aralash son yoki noto‘g‘ri format kiritilsa, ogohlantirish chiqadi.",
+            "Maydon ostida kiritgan javobingizning ko‘rinishi chiqadi — topshirishdan oldin unga qarang.",
+            "Mashqda noto‘g‘ri javob bersangiz, qabul qilinadigan javob ko‘rinishlari ko‘rsatiladi — ularni o‘zingiz yozgan bilan solishtiring.",
+            "Sinov imtihonidagi ko‘rsatmalarda ham bu qoidalar qisqacha berilgan."
+          ]
+        },
+        {
+          "type": "checklist",
+          "heading": "Javobni kiritishdan oldin",
+          "items": [
+            "Savol so‘ragan kattalikni kiritdimmi ($x$ mi, ifoda mi, foiz mi)?",
+            "Kasr sig‘adimi? Sig‘masa, o‘nli kasrni to‘liq aniqlikda yozdimmi?",
+            "Vergul emas, nuqta ishlatdimmi?",
+            "%, \\$, birlik yoki minglik vergul yo‘qmi?",
+            "Aralash son yozmadimmi?"
+          ]
+        }
+      ]
+    }
+  }
+}

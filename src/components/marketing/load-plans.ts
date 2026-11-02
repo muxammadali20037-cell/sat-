@@ -2,6 +2,7 @@ import 'server-only'
 import { isSupabaseConfigured } from '@/lib/env'
 import { createServerSupabase } from '@/lib/supabase/server'
 import { getPublicPlans, type PublicPlan } from '@/features/plans/server'
+import { unstable_rethrow } from 'next/navigation'
 
 /**
  * Local mirror of supabase/migrations/20261102001000_reference_data.sql (plans + plan_features),
@@ -98,6 +99,8 @@ export async function loadPublicPlans(): Promise<PublicPlan[]> {
     const plans = await getPublicPlans(await createServerSupabase())
     return plans.length > 0 ? plans : FALLBACK_PLANS
   } catch (err) {
+    // Let Next.js control-flow errors (dynamic rendering bail-out, redirects) through untouched.
+    unstable_rethrow(err)
     console.error('[pricing] could not load plans, using the reference prices', err)
     return FALLBACK_PLANS
   }

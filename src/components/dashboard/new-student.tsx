@@ -5,7 +5,7 @@ import type { dashboardDict } from '@/lib/i18n/dictionaries/dashboard'
 type T = (typeof dashboardDict)['en']
 
 /** Guided first-run state: one primary action (the free diagnostic), the learning loop, nothing fake. */
-export function NewStudentPanel({ t }: { t: T }) {
+export function NewStudentPanel({ t, howToGuide }: { t: T; howToGuide?: { href: string; label: string } }) {
   const steps = [t.newStudent.steps.diagnose, t.newStudent.steps.learn, t.newStudent.steps.practice, t.newStudent.steps.measure]
   return (
     <section aria-labelledby="first-steps-title" className="rounded-xl border border-border bg-card p-6 sm:p-8">
@@ -20,6 +20,11 @@ export function NewStudentPanel({ t }: { t: T }) {
         <Link href="/dashboard/courses" className="text-sm font-medium text-primary hover:underline">
           {t.newStudent.browse}
         </Link>
+        {howToGuide && (
+          <Link href={howToGuide.href} className="text-sm font-medium text-primary hover:underline">
+            {howToGuide.label}
+          </Link>
+        )}
       </div>
       <h3 className="mt-8 font-sans text-[13px] font-semibold text-muted-foreground">{t.newStudent.loopTitle}</h3>
       <ol className="mt-3 grid grid-cols-1 gap-px overflow-hidden rounded-lg border border-border bg-border sm:grid-cols-2 lg:grid-cols-4">

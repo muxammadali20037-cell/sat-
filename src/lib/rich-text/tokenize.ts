@@ -55,15 +55,30 @@ export function parseRichText(source: string): BlockNode[] {
 
 const restoreDollars = (s: string) => s.split(DOLLAR_PLACEHOLDER).join('$')
 
+const MATH_TOKEN = /\u0001(\d+)\u0001/g
+
+/**
+ * Inline math is protected first (its content is opaque to emphasis parsing and may contain * or _),
+ * then emphasis is parsed over the whole line — so **bold** and *italic* may contain $math$.
+ */
 export function parseInline(input: string): InlineNode[] {
-  const nodes: InlineNode[] = []
-  // Inline math first (content is opaque to emphasis parsing). Escaped \$ never opens math.
-  const parts = input.replace(/\\\$/g, DOLLAR_PLACEHOLDER).split(/\$([^$\n]+?)\$/g)
-  parts.forEach((part, i) => {
-    if (i % 2 === 1) nodes.push({ type: 'math', value: restoreDollars(part) })
-    else if (part) nodes.push(...parseEmphasis(part))
-  })
-  return nodes
+  const maths: string[] = []
+  const protectedText = input
+    .replace(/\\\$/g, DOLLAR_PLACEHOLDER)
+    .replace(/\$([^$\n]+?)\$/g, (_m, tex: string) => `\u0001${maths.push(restoreDollars(tex)) - 1}\u0001`)
+  return parseEmphasis(protectedText, maths)
+}
+
+function textAndMath(input: string, maths: string[]): InlineNode[] {
+  const out: InlineNode[] = []
+  let last = 0
+  for (const m of input.matchAll(MATH_TOKEN)) {
+    if (m.index! > last) out.push({ type: 'text', value: restoreDollars(input.slice(last, m.index)) })
+    out.push({ type: 'math', value: maths[Number(m[1])] ?? '' })
+    last = m.index! + m[0].length
+  }
+  if (last < input.length) out.push({ type: 'text', value: restoreDollars(input.slice(last)) })
+  return out
 }
 
 const EMPHASIS: Array<{ re: RegExp; type: 'bold' | 'underline' | 'italic' }> = [
@@ -72,20 +87,16 @@ const EMPHASIS: Array<{ re: RegExp; type: 'bold' | 'underline' | 'italic' }> = [
   { re: /\*([^*\s][^*]*?)\*/, type: 'italic' },
 ]
 
-function parseEmphasis(input: string): InlineNode[] {
+function parseEmphasis(input: string, maths: string[]): InlineNode[] {
   let best: { index: number; length: number; inner: string; type: 'bold' | 'underline' | 'italic' } | null = null
   for (const { re, type } of EMPHASIS) {
     const m = re.exec(input)
     if (m && (best === null || m.index < best.index)) best = { index: m.index, length: m[0].length, inner: m[1]!, type }
   }
-  if (!best) return input ? [{ type: 'text', value: restoreDollars(input) }] : []
+  if (!best) return textAndMath(input, maths)
   const before = input.slice(0, best.index)
   const after = input.slice(best.index + best.length)
-  return [
-    ...(before ? [{ type: 'text' as const, value: restoreDollars(before) }] : []),
-    { type: best.type, children: parseEmphasis(best.inner) },
-    ...parseEmphasis(after),
-  ]
+  return [...textAndMath(before, maths), { type: best.type, children: parseEmphasis(best.inner, maths) }, ...parseEmphasis(after, maths)]
 }
 
 /** Plain-text rendering (for search snippets, AI prompts, notifications). */

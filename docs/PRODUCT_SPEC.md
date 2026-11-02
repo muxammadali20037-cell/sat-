@@ -123,3 +123,8 @@ Activation (diagnostic completed within 24h of signup), D7 retention, weekly pra
 
 ## 7. Out of scope for v1 (documented, not faked)
 Automatic recurring card charges in Uzbekistan (needs Payme Subscribe / Click card-token agreements), Stripe Billing auto-renew, native mobile apps, live classes, built-in graphing calculator, Russian translation content, licensed official score conversion.
+
+
+## Addendum (2 Nov 2026): Uzbek study guides
+
+The owner asked for Uzbek-language teaching of the important parts of every topic: methods, what to do where, and what to pay attention to. SAT MASTER therefore includes **study guides** — one per Digital SAT skill (29) plus strategy guides (test format, timing and guessing, test tools, Desmos, SPR rules, Math and RW strategy, grammar rules, English for the SAT, and how to use SAT MASTER). Each skill guide teaches: what the question tests, how to recognise it, a step-by-step method, worked examples (English problem, Uzbek solution), what to watch out for, common traps, pacing and an English→Uzbek vocabulary list. Free on every plan; linked from lessons, practice feedback, results and the dashboard. Details: [GUIDES.md](GUIDES.md).

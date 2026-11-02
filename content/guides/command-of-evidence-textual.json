@@ -1,0 +1,150 @@
+{
+  "slug": "command-of-evidence-textual",
+  "kind": "skill",
+  "skill": "command_of_evidence_textual",
+  "position": 24,
+  "readingMinutes": 10,
+  "locales": {
+    "uz": {
+      "title": "Command of Evidence (Textual): da’voni dalil bilan isbotlash",
+      "summary": "Berilgan da’voni eng yaxshi ko‘rsatadigan iqtibosni yoki gipotezani eng to‘g‘ridan-to‘g‘ri qo‘llab-quvvatlaydigan (yoki zaiflashtiradigan) topilmani tanlash. Kalit — da’voni qismlarga ajratib, har bir qismga mos dalil izlash.",
+      "sections": [
+        {
+          "type": "concept",
+          "heading": "Bu ko‘nikma nimani tekshiradi",
+          "body": "Command of Evidence: Textual savollari **Information and Ideas** domeniga kiradi. Ularda sizga biror **da’vo** (*claim*) yoki **gipoteza** (*hypothesis*) beriladi va uni eng yaxshi isbotlaydigan dalilni topish so‘raladi. Ikki asosiy ko‘rinish bor:\n\n- **Iqtibos tanlash:** matnda badiiy asar (she’r, roman, hikoya) haqida da’vo aytiladi, variantlar esa o‘sha asardan to‘rtta iqtibos. Da’voni eng yaxshi ko‘rsatadigan (*illustrates*) iqtibosni tanlaysiz.\n- **Topilma tanlash (“if true”):** matnda olimning gipotezasi tasvirlanadi, variantlar esa faraziy tadqiqot natijalari. Qaysi natija, **agar to‘g‘ri bo‘lsa**, gipotezani eng to‘g‘ridan-to‘g‘ri qo‘llab-quvvatlashini (ba’zan — zaiflashtirishini) aniqlaysiz.\n\nIkkala holatda ham ish bir xil: avval da’voni aniq tushunasiz, keyin unga **to‘liq va bevosita** mos keladigan dalilni topasiz. Mavzuga oid, lekin da’voning aynan o‘zini isbotlamaydigan variantlar — asosiy tuzoq."
+        },
+        {
+          "type": "recognize",
+          "heading": "Savolni qanday tanib olasiz",
+          "items": [
+            "*Which quotation from the poem most effectively illustrates the claim?* (yoki *from the novel*, *from the story*) — badiiy asardan iqtibos tanlash.",
+            "*Which finding, if true, would most directly support the researcher's hypothesis?* — gipotezani qo‘llab-quvvatlovchi faraziy natija.",
+            "*Which finding, if true, would most directly weaken the researchers' claim?* — teskari savol: da’voni **zaiflashtiradigan** natija kerak. *Undermine* va *challenge* so‘zlari ham shu ma’noda keladi.",
+            "Matnning oxirida da’vo yoki gipoteza odatda aniq bayon qilinadi: *X hypothesizes that…*, *the student claims that…*, *the speaker suggests that…*.",
+            "Farqlang: agar dalil jadval yoki grafikdan olinishi kerak bo‘lsa, bu **Command of Evidence: Quantitative** savoli (alohida qo‘llanmada)."
+          ]
+        },
+        {
+          "type": "method",
+          "heading": "Ishlash usuli: qadamma-qadam",
+          "steps": [
+            "**Savolni o‘qing va yo‘nalishini belgilang:** *support / illustrate* (qo‘llab-quvvatlash) yoki *weaken / undermine* (zaiflashtirish). Bu so‘zni **Highlights & Notes** bilan belgilab qo‘ying — u butun javobni o‘zgartiradi.",
+            "**Da’voni yoki gipotezani topib, qismlarga ajrating.** Masalan: “shovqin (1) qushlarni balandroq sayrashga (2) majbur qiladi” yoki “to‘quvchilik o‘tmishni (1) kelajak bilan (2) bog‘laydi”. To‘g‘ri dalil **har bir qismni** qamrab olishi kerak.",
+            "**Ideal dalilni bashorat qiling:** qanday natija chiqsa, olim “Ko‘rdingizmi, men haq edim!” deya oladi? Iqtibos savolida esa: qaysi satr bu da’voni ochiq ko‘rsatadi?",
+            "**“If true” savollarida** natija haqiqatan shunday yoki yo‘qligini tekshirmang — uni to‘g‘ri deb qabul qiling. Faqat bitta narsani so‘rang: bu natija gipotezadagi **aynan o‘sha sabab va oqibatni** bog‘laydimi?",
+            "**Variantlarni chiqarib tashlang:** mavzuga oid, lekin da’voga bevosita aloqasi yo‘q; da’voning faqat yarmini ko‘rsatadi; teskari yo‘nalishda ishlaydi (qo‘llash o‘rniga zaiflashtiradi yoki aksincha).",
+            "**Tanlangan variantni da’vo bilan yonma-yon o‘qing** va da’voning har bir qismiga mos so‘z yoki g‘oya borligini tekshiring."
+          ]
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 1: gipotezani qo‘llab-quvvatlovchi topilma",
+          "example": {
+            "passage": "In several cities, great tits (small songbirds) that live near busy roads sing at a higher pitch than great tits living in quiet forests. Biologist Anvar Tursunov hypothesizes that this difference is a response to traffic noise: because the low rumble of cars drowns out low notes, birds that sing higher notes can be heard more easily by other birds. Tursunov plans to test his hypothesis by recording great tits at several locations over the course of a year.",
+            "problem": "Which finding, if true, would most directly support Tursunov's hypothesis?",
+            "choices": [
+              "Great tits living near roads sing more often in the early morning than great tits living in forests do.",
+              "When traffic on a road is stopped for several days, great tits near that road begin singing at a lower pitch.",
+              "Great tits in quiet forests defend larger territories than great tits living near roads do.",
+              "Some bird species that live near busy roads rarely sing at all."
+            ],
+            "solution": [
+              "**Yo‘nalish:** *support* — gipotezani qo‘llab-quvvatlovchi natija kerak.",
+              "**Gipotezani qismlarga ajratamiz:** (1) sabab — transport shovqini; (2) oqibat — qushlar balandroq tovushda sayraydi. Eng kuchli dalil **sabab o‘zgarganda oqibat ham o‘zgarishini** ko‘rsatadi.",
+              "**Bashorat:** “Shovqin yo‘qolsa, qushlar pastroq tovushga qaytadi” yoki “shovqin kuchaygan sari tovush balandlashadi”.",
+              "**B** — transport to‘xtaganda (shovqin yo‘qolganda) qushlar pastroq tovushda sayray boshlaydi. Bu shovqin bilan tovush balandligi orasidagi bevosita bog‘lanishni ko‘rsatadi. ✓",
+              "**A** noto‘g‘ri: gap qushlar **qachon va qanchalik tez-tez** sayrashi haqida, tovush **balandligi** haqida emas. Mavzuga oid, lekin gipotezaga aloqasiz.",
+              "**C** noto‘g‘ri: hudud kattaligi shovqin bilan tovush balandligi orasidagi bog‘lanish haqida hech narsa aytmaydi.",
+              "**D** noto‘g‘ri: boshqa qush turlarining kam sayrashi great tit qushlarining tovush balandligini tushuntirmaydi."
+            ],
+            "answer": "B"
+          }
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 2: da’voni ko‘rsatuvchi iqtibos",
+          "example": {
+            "passage": "“The Loom” is a short poem about a grandmother who weaves carpets in a small village near the city of Bukhara. The speaker describes her quick hands, the bright wool and the buyers who come from the market, but the poem's deeper interest lies elsewhere. In the poem, the speaker suggests that the grandmother's weaving connects the family's past to its future.",
+            "problem": "Which quotation from “The Loom” most effectively illustrates the claim?",
+            "choices": [
+              "“Her fingers move faster than the morning light / that slips across the dusty floor.”",
+              "“She ties her mother's knots in every row / and leaves a border for a child not born.”",
+              "“The market buyers praise the colors bright / and count their coins beside the door.”",
+              "“She learned these patterns from her mother's hands / when she was smaller than the loom is tall.”"
+            ],
+            "solution": [
+              "**Da’voni qismlarga ajratamiz:** to‘quvchilik oilaning (1) **o‘tmishini** va (2) **kelajagini** bog‘laydi. To‘g‘ri iqtibosda ikkalasi ham bo‘lishi shart.",
+              "**B** — *her mother's knots* (onasining tugunlari) — o‘tmish; *a border for a child not born* (hali tug‘ilmagan bola uchun qoldirilgan hoshiya) — kelajak. Bitta iqtibosda ikkala qism ham bor. ✓",
+              "**D** — eng xavfli tuzoq: *learned these patterns from her mother's hands* o‘tmish bilan bog‘lanishni ko‘rsatadi, lekin **kelajak** haqida hech narsa yo‘q. Da’voning faqat yarmi.",
+              "**A** noto‘g‘ri: buvining mahorati va tezligini tasvirlaydi. Matnda tilga olingan bo‘lsa ham (*quick hands*), da’voga aloqasi yo‘q.",
+              "**C** noto‘g‘ri: bozor xaridorlari va savdo haqida — avlodlar orasidagi bog‘lanish haqida emas.",
+              "**Xulosa:** matnning o‘zi A va C dagi mavzularni eslatib, she’rning “asosiy qiziqishi boshqa joyda” deydi. SAT ataylab mavzuga oid, lekin da’voga mos kelmaydigan iqtiboslarni beradi."
+            ],
+            "answer": "B"
+          }
+        },
+        {
+          "type": "watch_out",
+          "heading": "Nimaga e’tibor berish kerak",
+          "items": [
+            "**Da’voning har bir qismini tekshiring.** Da’voda ikki yoki uch element bo‘lsa (sabab va oqibat, o‘tmish va kelajak, his-tuyg‘u va uning sababi), to‘g‘ri dalil ularning hammasini qamrab oladi.",
+            "**Support va weaken ni adashtirmang.** *Weaken, undermine, challenge, cast doubt on* — zaiflashtirish; bunday savolda to‘g‘ri javob gipotezaga **zid** natija bo‘ladi. Savolni o‘qiyotganda bu so‘zni albatta belgilang.",
+            "**“If true” — faraz.** Natija sizga g‘alati yoki haqiqatga to‘g‘ri kelmaydigandek tuyulsa ham, uni to‘g‘ri deb qabul qiling. Siz faqat mantiqiy bog‘lanishni baholaysiz.",
+            "**“Most directly” — eng bevosita.** Bir nechta variant gipotezaga qandaydir aloqador bo‘lishi mumkin. To‘g‘risi — gipotezadagi aynan o‘sha o‘zgaruvchilarni (masalan, shovqin va tovush balandligi) bog‘laydigan variant.",
+            "**She’riy yoki eski ingliz tili qiyin bo‘lsa:** iqtibosning har bir so‘zini tushunishingiz shart emas; notanish so‘zni “X” deb qabul qiling. Da’voning kalit tushunchalarini (o‘tmish va kelajak, qayg‘u va quvonch, tabiat va shahar) iqtiboslardagi ot va fe’llardan qidiring: *mother, ancestors, long ago* → o‘tmish; *not yet born, tomorrow, will* → kelajak.",
+            "**Savol so‘zlarini tez tushuning:** *illustrates* — misol bilan ko‘rsatadi; *most directly support* — eng to‘g‘ridan-to‘g‘ri qo‘llab-quvvatlaydi; *finding* — tadqiqot natijasi; *hypothesis* — tekshirilishi kerak bo‘lgan taxmin. Gipoteza matnida *because, so, as a result* kabi sabab-natija so‘zlarini toping — dalil aynan shu bog‘lanishni tasdiqlashi kerak."
+          ]
+        },
+        {
+          "type": "traps",
+          "heading": "Keng tarqalgan xatolar (tuzoq variantlar)",
+          "items": [
+            "**Mavzuga oid, da’voga emas:** variant xuddi shu mavzuda (qushlar, gilam), lekin da’voning o‘zini isbotlamaydi (1-namunadagi A, 2-namunadagi A va C).",
+            "**Yarim dalil:** da’voning faqat bir qismini ko‘rsatadi (2-namunadagi D).",
+            "**Teskari yo‘nalish:** qo‘llab-quvvatlash so‘ralganda zaiflashtiruvchi natija (yoki aksincha). Savoldagi fe’lni diqqat bilan o‘qimagan o‘quvchining eng keng tarqalgan xatosi.",
+            "**So‘z o‘xshashligi tuzog‘i:** iqtibosda da’vodagi so‘z (*past*, *family*) takrorlanadi, lekin boshqa ma’noda ishlatilgan. So‘zlarga emas, ma’noga qarang.",
+            "**Boshqa shaxsning fikri:** matnda ikki olim bo‘lsa, variant boshqasining gipotezasini qo‘llab-quvvatlashi mumkin. Savol kimning da’vosi haqida ekanini tekshiring.",
+            "**Tashqi bilim:** variant hayotda to‘g‘ri bo‘lishi mumkin, lekin gipoteza bilan mantiqiy bog‘lanmagan."
+          ]
+        },
+        {
+          "type": "time",
+          "heading": "Vaqt bo‘yicha maslahat",
+          "items": [
+            "Reading and Writing’da bir savolga o‘rtacha **71 soniya** bor (har modulda 27 savol, 32 daqiqa). Iqtibosli savollarda variantlar uzun, shuning uchun **75–90 soniya** ketishi normal.",
+            "Avval da’voni toping va qismlarga ajrating, keyin iqtiboslarni o‘qing. Da’voni bilmasdan to‘rtta she’riy satrni o‘qish — vaqtni isrof qilish.",
+            "Iqtiboslarni o‘qiyotganda da’voning birinchi qismini qidiring; uni o‘z ichiga olmagan variantni darhol o‘chiring. Ko‘pincha ikkinchi qismni tekshirish uchun faqat ikkita variant qoladi.",
+            "Ikki variant qolib, qaror qila olmasangiz — qaysi biri da’voning **ko‘proq qismini** qamrab olishini tanlang, **Mark for Review** qiling va davom eting."
+          ]
+        },
+        {
+          "type": "terms",
+          "heading": "Muhim inglizcha atamalar",
+          "terms": [
+            { "term": "claim", "meaning": "da’vo — isbotlanishi kerak bo‘lgan fikr" },
+            { "term": "hypothesis", "meaning": "gipoteza — tekshirilishi kerak bo‘lgan ilmiy taxmin" },
+            { "term": "finding", "meaning": "topilma, tadqiqot natijasi" },
+            { "term": "if true", "meaning": "agar to‘g‘ri bo‘lsa — natijani haqiqat deb qabul qiling" },
+            { "term": "support / strengthen", "meaning": "qo‘llab-quvvatlamoq / kuchaytirmoq" },
+            { "term": "weaken / undermine", "meaning": "zaiflashtirmoq / asosini yemirmoq" },
+            { "term": "illustrate", "meaning": "misol bilan ko‘rsatmoq" },
+            { "term": "quotation", "meaning": "iqtibos — asardan aynan keltirilgan parcha" },
+            { "term": "most directly", "meaning": "eng to‘g‘ridan-to‘g‘ri, eng bevosita" },
+            { "term": "the speaker", "meaning": "she’rdagi so‘zlovchi (lirik qahramon) — shoirning o‘zi bo‘lishi shart emas" }
+          ]
+        },
+        {
+          "type": "checklist",
+          "heading": "Javobni tanlashdan oldin tekshiring",
+          "items": [
+            "Savol qo‘llab-quvvatlashni so‘rayaptimi yoki zaiflashtirishni?",
+            "Da’voni qismlarga ajratdimmi va tanlagan dalilim har bir qismni qamrab oladimi?",
+            "Dalil gipotezadagi aynan o‘sha sabab va oqibatni bog‘laydimi?",
+            "Javobim tashqi bilimga emas, matndagi da’voga tayanadimi?"
+          ]
+        }
+      ]
+    }
+  }
+}

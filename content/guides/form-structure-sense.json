@@ -1,0 +1,164 @@
+{
+  "slug": "form-structure-sense",
+  "kind": "skill",
+  "skill": "form_structure_sense",
+  "position": 28,
+  "readingMinutes": 11,
+  "locales": {
+    "uz": {
+      "title": "Shakl, tuzilish va ma’no (Form, Structure, and Sense)",
+      "summary": "Ega va kesim moslashuvi, olmosh va u almashtirgan ot, fe’l zamoni va shakli, ko‘plik va egalik (apostrof) hamda aniqlovchining to‘g‘ri joylashuvi — variantlarda bitta so‘zning turli shakllari berilgan grammatika savollari uchun ixcham qoidalar kitobi.",
+      "sections": [
+        {
+          "type": "concept",
+          "heading": "Qoidalar kitobi (1-qism): asosiy qoidalar",
+          "body": "Bu savollarda variantlar bitta so‘zning turli shakllaridan iborat bo‘ladi: *is / are / were*, *its / their*, *scientist's / scientists'*. Vazifangiz — gapning qolgan qismiga grammatik va mantiqiy jihatdan mos shaklni tanlash. Quyidagi misollarda muhim so‘zlarning tagiga chizilgan.\n\n**1-qoida. Ega va kesim moslashuvi.** Kesim haqiqiy egaga moslashadi, unga eng yaqin turgan otga emas. *of…, with…, in…* kabi predlogli iboralarni va vergul bilan ajratilgan qismlarni xayolan o‘chiring: *The __list__ of supplies __is__ long.* (*supplies are* emas). *The __paintings__ in the old hall __were__ restored.* *And* bilan bog‘langan ega — ko‘plik: *The __map and the compass are__ missing.* *Each, every, one of, either, neither* — birlik: *One of the samples __was__ damaged.*\n\n**2-qoida. Olmosh va u almashtirgan ot (pronoun–antecedent agreement).** Olmosh soni u almashtirgan otga mos bo‘lishi kerak: *The __company__ announced __its__ new policy.* (kompaniya — birlik, *their* emas). *The __researchers__ published __their__ results.* Avval olmosh kimni yoki nimani almashtirayotganini toping.\n\n**3-qoida. Fe’l zamoni va shakli.** Zamon matndagi vaqt ko‘rsatkichlariga mos bo‘lishi kerak: *in 1920* — o‘tgan zamon, *currently* — hozirgi zamon, *since 2015* — *has / have* + III shakl. O‘tmishdagi ikki voqeadan avvalroq sodir bo‘lgani uchun *had* + III shakl ishlatiladi: *By the time the rescuers arrived, the storm __had passed__.* III shakl (past participle) to‘g‘ri bo‘lsin: *had __begun__* (*had began* emas), *has __written__*.\n\n**4-qoida. Gapda asosiy fe’l bo‘lishi shart.** *-ing* yoki *to* + fe’l shakli yolg‘iz o‘zi kesim bo‘la olmaydi: ✗ *The researchers analyzing the data.* ✓ *The researchers __analyzed__ the data.*\n\n**5-qoida. Ko‘plik va egalik (apostrof).** Oddiy ko‘plik — apostrofsiz: *two __scientists__*. Birlikdagi egalik — *'s*: *the __scientist's__ notes* (bitta olim). Ko‘plikdagi egalik — *s'*: *the __scientists'__ notes* (bir necha olim). -s bilan tugamaydigan ko‘plik — *'s*: *the __children's__ books*. Olmoshlarning egalik shaklida apostrof yo‘q: *its, their, whose*; *it's* = *it is*, *they're* = *they are*, *who's* = *who is*.\n\n**6-qoida. Aniqlovchining joylashuvi (modifiers).** Gap boshidagi, vergul bilan tugaydigan ibora verguldan keyingi birinchi otni tasvirlaydi: ✗ *Hiking up the trail, __the view__ was stunning.* (manzara yo‘l yurmaydi) ✓ *Hiking up the trail, __we__ saw a stunning view.*"
+        },
+        {
+          "type": "recognize",
+          "heading": "Savolni qanday tanib olasiz",
+          "items": [
+            "Savol so‘zi Boundaries bilan bir xil: *“Which choice completes the text so that it conforms to the conventions of Standard English?”* Farq variantlarda.",
+            "**Fe’l shakllari:** *is / are / was / have been* yoki *began / had begun / beginning* — moslashuv yoki zamon savoli.",
+            "**Olmoshlar:** *it / they*, *its / their / it's / they're* — olmosh moslashuvi yoki egalik.",
+            "**Bir ot, to‘rt shakl:** *tortoise's / tortoises / tortoises'* — ko‘plik va egalik.",
+            "**Butun gap qismi almashadi:** gap *Having tracked…,* yoki *Known for…,* kabi kirish iborasi bilan boshlanadi va variantlarda harakatni kim bajargani turlicha — aniqlovchining joylashuvi savoli."
+          ]
+        },
+        {
+          "type": "method",
+          "heading": "Ishlash usuli: qadamma-qadam",
+          "steps": [
+            "**Variantlarni solishtiring: nima o‘zgaryapti?** Fe’l, olmosh, apostrof yoki gap tartibi — shu sizga qaysi qoida tekshirilayotganini aytadi.",
+            "**Fe’l bo‘lsa — haqiqiy egani toping.** Predlogli iboralarni (*of the…, in the…*) va qo‘shimcha qismlarni xayolan o‘chiring. “Bu ishni kim yoki nima qiladi?” deb so‘rang, keyin birlik yoki ko‘plikni aniqlang.",
+            "**Zamonni kontekstdan aniqlang.** Oldingi va keyingi gaplardagi fe’llarga hamda *in 1890, today, since, by the time* kabi vaqt ko‘rsatkichlariga qarang.",
+            "**Olmosh bo‘lsa — u almashtirgan otni toping** va sonini (birlik yoki ko‘plik) solishtiring. *Company, team, city, species* — birlik, demak *its*.",
+            "**Apostrof bo‘lsa, ikki savol bering:** (1) birlikmi yoki ko‘plikmi? (2) biror narsaga egalik qilyaptimi? *of* bilan qayta aytib ko‘ring: *the burrows of the tortoises* → *the tortoises' burrows*.",
+            "**Kirish iborasi bo‘lsa** — undagi harakatni kim bajarganini aniqlang va verguldan keyin aynan shu shaxs yoki narsa kelgan variantni tanlang.",
+            "**Gapni tanlangan variant bilan to‘liq o‘qing:** asosiy fe’l bormi, zamon izchilmi?"
+          ]
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 1: ega va kesim moslashuvi",
+          "example": {
+            "passage": "The collection of hand-painted ceramic tiles that once decorated the walls of the old caravanserai ______ now displayed in the regional history museum.",
+            "problem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+            "choices": ["are", "is", "have been", "were"],
+            "solution": [
+              "Variantlar — fe’l shakllari, demak ega va kesim moslashuvini hamda zamonni tekshiramiz.",
+              "Haqiqiy egani topamiz: *of hand-painted ceramic tiles* (predlogli ibora) va *that once decorated the walls of the old caravanserai* (aniqlovchi qism) ni xayolan o‘chirsak, *The collection… now displayed* qoladi. Ega — *collection*, birlikda.",
+              "*now* so‘zi hozirgi zamonni ko‘rsatadi. Birlik + hozirgi zamon = *is* — **B**.",
+              "**A** (*are*) va **D** (*were*) — ko‘plik shakllari: kesim yaqin turgan *tiles* yoki *walls* ga moslashtirilgan. **D** bundan tashqari o‘tgan zamonda, bu *now* ga zid.",
+              "**C** (*have been*) — ko‘plik shakli (birlik uchun *has been* bo‘lardi), shuning uchun egaga mos emas."
+            ],
+            "answer": "B) is"
+          }
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 2: ko‘plik va egalik",
+          "example": {
+            "passage": "Biologist Kamila Usmonova placed small cameras near the burrows of several desert tortoises. The footage showed that the ______ stayed much cooler than the sand surface during the hottest hours of the day.",
+            "problem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+            "choices": ["tortoise's burrows", "tortoises burrow's", "tortoises' burrows", "tortoises' burrow's"],
+            "solution": [
+              "Variantlarda ikki so‘z — *tortoise* va *burrow* — turli ko‘plik va egalik shakllarida. Har bir so‘zni alohida tekshiramiz.",
+              "*Tortoise*: birinchi gapda *several desert tortoises* — bir nechta toshbaqa, ya’ni ko‘plik. Inlar ularga tegishli (*the burrows of the tortoises*), demak ko‘plikdagi egalik kerak: *tortoises'*.",
+              "*Burrow*: inlar hech narsaga egalik qilmaydi — ular gapning egasi va ular bir nechta. Demak oddiy ko‘plik: *burrows*. To‘g‘ri javob — **C**: *tortoises' burrows*.",
+              "**A** (*tortoise's burrows*) — birlikdagi egalik: bitta toshbaqa haqida gapiradi, matnda esa bir nechta toshbaqa bor.",
+              "**B** (*tortoises burrow's*) — egalik belgisi noto‘g‘ri so‘zda: toshbaqalarda apostrof yo‘q, *burrow's* esa inning nimagadir egaligini bildiradi, lekin undan keyin hech qanday ot yo‘q.",
+              "**D** (*tortoises' burrow's*) — birinchi so‘z to‘g‘ri, lekin *burrow's* ortiqcha egalik shakli (va birlikda)."
+            ],
+            "answer": "C) tortoises' burrows"
+          }
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 3: aniqlovchining joylashuvi",
+          "example": {
+            "passage": "Having tracked dozens of steppe eagles with lightweight GPS tags for nearly a decade, ______",
+            "problem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+            "choices": [
+              "the eagles' wintering sites were identified by ornithologist Timur Saidov.",
+              "the eagles' wintering sites, according to ornithologist Timur Saidov, had been identified.",
+              "identifying the eagles' wintering sites was ornithologist Timur Saidov's achievement.",
+              "ornithologist Timur Saidov identified the eagles' wintering sites."
+            ],
+            "solution": [
+              "Gap *Having tracked…* kirish iborasi bilan boshlanadi. Unda harakat (kuzatish) bor, lekin kim kuzatgani aytilmagan. Qoida: verguldan keyingi birinchi ot (shaxs) aynan shu harakatni bajargan bo‘lishi kerak.",
+              "Burgutlarni GPS orqali kim kuzatgan? Ornitolog Timur Saidov. Faqat **D** variantida verguldan keyin darhol *ornithologist Timur Saidov* keladi — to‘g‘ri javob.",
+              "**A** — verguldan keyin *the eagles' wintering sites* turibdi: go‘yo qishlash joylari burgutlarni kuzatgandek bo‘lib qoladi. Passiv shakl (*were identified by…*) ko‘pincha shu tuzoqning belgisi.",
+              "**B** — yana *wintering sites* birinchi turibdi; *according to…* qismi buni tuzatmaydi.",
+              "**C** — birinchi turgan so‘z *identifying* (aniqlash jarayoni); jarayon burgutlarni kuzata olmaydi."
+            ],
+            "answer": "D) ornithologist Timur Saidov identified the eagles' wintering sites."
+          }
+        },
+        {
+          "type": "watch_out",
+          "heading": "Qoidalar kitobi (2-qism): nimaga e’tibor berish kerak",
+          "items": [
+            "**Ega va kesim orasidagi uzun “to‘siq”:** *The __results__ of the survey, which included more than 2,000 participants, __show__…* — ega *results* (ko‘plik). Vergullar orasidagi qismni o‘chirib o‘qing.",
+            "**Teskari tartibli gaplar:** *There __are__ three __reasons__…*, *Among the fossils __were__ two __teeth__.* Bunday gaplarda ega kesimdan **keyin** keladi.",
+            "**Either…or, neither…nor:** kesim yaqinroq turgan egaga moslashadi: *Neither the teacher nor the __students were__ ready.*",
+            "**Jamlovchi otlar** (*team, committee, family, series, species*) odatda birlik sifatida ishlatiladi: *The __committee has__ approved __its__ report.*",
+            "**Olmoshning aniqligi:** gapda ikki ot bo‘lsa va olmosh qaysi biriga tegishli ekani noaniq qolsa, olmosh o‘rniga otning o‘zi ishlatilgan variant to‘g‘ri bo‘lishi mumkin.",
+            "**Ro‘yxatdagi fe’llar bir xil shaklda (parallel structure):** *The volunteers __collected__, __sorted__, and __labeled__ the seeds.* (*collected, sorting, and labeled* emas).",
+            "**Zamon izchilligi:** matndagi boshqa fe’llar va vaqt ko‘rsatkichlariga qarang: *In 1925, the factory __produced__…* — *produces* yoki *will produce* emas.",
+            "**Egalik olmoshlari va qisqartmalar:** *its* (uning) — *it's* (it is); *their* (ularning) — *they're* (they are) — *there* (u yerda); *whose* (kimning) — *who's* (who is). Tekshiruv: qisqartmani to‘liq shaklga ochib o‘qing — ma’no buzilsa, u noto‘g‘ri."
+          ]
+        },
+        {
+          "type": "traps",
+          "heading": "Keng tarqalgan xatolar (tuzoq variantlar)",
+          "items": [
+            "**Yaqin otga moslashtirish:** kesimni ega bilan emas, bo‘sh joyga eng yaqin turgan ko‘plikdagi ot bilan moslashtirish (Namuna 1 dagi *tiles… are*).",
+            "**Birlikdagi otga their olmoshi:** *The organization… their* — og‘zaki nutqda keng tarqalgan, lekin SAT’da birlikdagi tashkilot yoki narsa uchun *its* kerak.",
+            "**Oddiy ko‘plikka apostrof qo‘yish:** *several scientist's* — egalik bo‘lmasa, apostrof kerak emas: *several scientists*.",
+            "**It's va its almashinuvi** — eng mashhur tuzoqlardan biri. *It's* faqat *it is* yoki *it has* ma’nosida.",
+            "**Passiv shakldagi “rasmiy” variant:** aniqlovchi savollarida passiv konstruksiya (*…were identified by…*) jiddiy eshitiladi, lekin ko‘pincha kirish iborasini noto‘g‘ri otga bog‘laydi.",
+            "**Asosiy fe’lsiz variant:** *-ing* shakli (*analyzing, being*) gapni kesimsiz qoldiradi — bu variant ko‘pincha “uzun va ilmiy” ko‘rinadi.",
+            "**Zamon tuzog‘i:** grammatik jihatdan to‘g‘ri, lekin matndagi zamonga zid shakl (masalan, *now* bilan *were*)."
+          ]
+        },
+        {
+          "type": "time",
+          "heading": "Vaqt bo‘yicha maslahat",
+          "items": [
+            "Bu savollar uchun **30–50 soniya** yetarli. Reading and Writing’da o‘rtacha vaqt savol boshiga taxminan 71 soniya — bu yerda kamroq sarflab, vaqtni uzun matnli savollarga qoldiring.",
+            "Avval variantlarga qarab, nima o‘zgarayotganini aniqlang — bu qaysi qoidani qo‘llashni darhol aytadi va matnni maqsadli o‘qishga yordam beradi.",
+            "Ega uzun bo‘lsa, qoralamaga faqat ega va kesimni yozib ko‘ring: *collection… is*. Shunda xato darhol ko‘rinadi.",
+            "Ikki variant orasida qolsangiz, ikkalasini gapga qo‘yib o‘qing va qoidani nomlang (“ega birlikda”, “ko‘plikdagi egalik”) — “qulog‘imga yoqdi” degan sabab yetarli emas."
+          ]
+        },
+        {
+          "type": "terms",
+          "heading": "Muhim inglizcha atamalar",
+          "terms": [
+            { "term": "subject–verb agreement", "meaning": "ega va kesimning sonda moslashuvi" },
+            { "term": "antecedent", "meaning": "olmosh almashtirgan ot: *The city… its* gapida *city*" },
+            { "term": "singular / plural", "meaning": "birlik / ko‘plik" },
+            { "term": "possessive", "meaning": "egalik shakli: *the scientist's* (bitta olimning), *the scientists'* (olimlarning)" },
+            { "term": "verb tense", "meaning": "fe’l zamoni: *past, present, future, present perfect*" },
+            { "term": "past participle", "meaning": "fe’lning III shakli: *begun, written, risen*" },
+            { "term": "finite verb", "meaning": "gapning asosiy (kesim bo‘la oladigan) fe’li; *-ing* va *to* shakllari bunday emas" },
+            { "term": "dangling modifier", "meaning": "“osilib qolgan” aniqlovchi — kirish iborasi noto‘g‘ri otni tasvirlab qoladi" },
+            { "term": "collective noun", "meaning": "jamlovchi ot: *team, committee, species* — odatda birlik" },
+            { "term": "parallel structure", "meaning": "parallel tuzilma — ro‘yxatdagi elementlar bir xil grammatik shaklda bo‘ladi" }
+          ]
+        },
+        {
+          "type": "checklist",
+          "heading": "Javobni tanlashdan oldin tekshiring",
+          "items": [
+            "Variantlarda nima o‘zgarayotganini (fe’l, olmosh, apostrof yoki tartib) aniqladimmi?",
+            "Haqiqiy egani yoki olmosh almashtirgan otni topib, birlik yoki ko‘plikni tekshirdimmi?",
+            "Zamon matndagi vaqt ko‘rsatkichlariga mosmi?",
+            "Kirish iborasidan keyin aynan harakatni bajargan shaxs yoki narsa turibdimi?"
+          ]
+        }
+      ]
+    }
+  }
+}

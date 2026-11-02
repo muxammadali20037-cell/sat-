@@ -9,6 +9,9 @@ import { getTaxonomy } from '@/features/taxonomy/server'
 import { isUuid } from '@/features/practice/schemas'
 import { loadPracticeSession } from '@/features/practice/server'
 import { PracticeRunner } from '@/components/practice/practice-runner'
+import { createServerSupabase } from '@/lib/supabase/server'
+import { guideSlugsBySkill } from '@/features/guides/server'
+import { guidesDict } from '@/lib/i18n/dictionaries/guides'
 
 export const metadata: Metadata = { title: 'Practice session' }
 
@@ -43,6 +46,10 @@ export default async function PracticeSessionPage({ params }: { params: Promise<
   // Set titles may already name the difficulty ("Algebra · Mixed"); don't repeat it.
   const difficultyLabel = rawDifficulty && !title.toLowerCase().includes(rawDifficulty.toLowerCase()) ? rawDifficulty : null
 
+  const [guideSlugs, tg] = await Promise.all([
+    guideSlugsBySkill(await createServerSupabase()).catch(() => ({}) as Record<string, string>),
+    getDict(guidesDict),
+  ])
   const firstOpen = session.items.findIndex((i) => !i.answered)
   return (
     <div className="mx-auto w-full max-w-[1280px] px-4 pb-12 sm:px-6 lg:px-8">
@@ -53,6 +60,8 @@ export default async function PracticeSessionPage({ params }: { params: Promise<
         initialItems={session.items.map((i) => ({ position: i.position, question: i.question, reveal: i.reveal, bookmarked: i.bookmarked }))}
         initialIndex={firstOpen === -1 ? session.items.length - 1 : firstOpen}
         initialProgress={{ answeredCount: attempt.answeredCount, correctCount: attempt.correctCount }}
+        guideSlugs={guideSlugs}
+        guideLabel={tg.guideLink}
       />
     </div>
   )

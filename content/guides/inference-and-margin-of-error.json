@@ -1,0 +1,161 @@
+{
+  "slug": "inference-and-margin-of-error",
+  "kind": "skill",
+  "skill": "inference_margin_of_error",
+  "position": 14,
+  "readingMinutes": 9,
+  "locales": {
+    "uz": {
+      "title": "Tanlanma bo‘yicha xulosa va xatolik chegarasi",
+      "summary": "Tasodifiy tanlanma natijalaridan bosh to‘plam haqida qanday xulosa chiqarish mumkinligi, xatolik chegarasi (margin of error) nimani anglatishi va tanlanma hajmi unga qanday ta’sir qilishi.",
+      "sections": [
+        {
+          "type": "concept",
+          "heading": "Bu ko‘nikma nimani tekshiradi",
+          "body": "Butun guruhni (masalan, shaharning barcha aholisini) so‘rab chiqish qiyin, shuning uchun uning bir qismi o‘rganiladi va natija butun guruhga tatbiq etiladi.\n\n- **Population (bosh to‘plam)** — xulosa chiqarmoqchi bo‘lgan butun guruh.\n- **Sample (tanlanma)** — haqiqatda o‘rganilgan qism. Tanlanma **tasodifiy** (random) tanlangan bo‘lsagina, uning natijasi bosh to‘plamni ifodalaydi deb hisoblash mumkin.\n- **Sample statistic** — tanlanmadagi ulush yoki o‘rtacha (masalan, $58\\%$ yoki 3.2 soat). U bosh to‘plamdagi haqiqiy qiymatning **taxmini** (estimate).\n\n**Margin of error (xatolik chegarasi)** taxmin qanchalik aniq ekanini ko‘rsatadi. Bosh to‘plamdagi haqiqiy qiymat uchun ehtimoliy (plausible) oraliq: $$\\text{estimate} \\pm \\text{margin of error}$$ Masalan, $58\\%$ va 4.5 foiz punkt → $53.5\\%$ dan $62.5\\%$ gacha. Bu oraliqdagi har qanday qiymat ehtimoliy, lekin aniq qiymat noma’lum.\n\n**Xatolik chegarasiga nima ta’sir qiladi:**\n\n- Tanlanma **kattaroq** bo‘lsa (boshqa sharoitlar bir xil), xatolik chegarasi **kichikroq** bo‘ladi.\n- Ma’lumotlar **ko‘proq tarqalgan** bo‘lsa (standart chetlanish katta), xatolik chegarasi **kattaroq** bo‘ladi.\n- Ishonch darajasi (confidence level, masalan $95\\%$) yuqoriroq bo‘lsa, oraliq kengroq bo‘ladi.\n\nBosh to‘plamdagi umumiy sonni baholash uchun tanlanmadagi ulushni bosh to‘plam hajmiga ko‘paytiring: 200 kishidan 30 tasi “ha” desa, 50 000 aholida taxminan $0.15 \\times 50\\,000 = 7500$ kishi “ha” deydi."
+        },
+        {
+          "type": "recognize",
+          "heading": "Savolni qanday tanib olasiz",
+          "items": [
+            "*“A random sample of … was selected from …”*, *“selected at random”* — tanlanma haqidagi savol: avval qaysi bosh to‘plamdan tanlanganini aniqlang.",
+            "*“The margin of error for the estimate is 4.5 percentage points”*, *“with an associated margin of error of …”* — oraliq quring: taxmin ± xatolik.",
+            "*“Which of the following is the most appropriate conclusion?”*, *“Which statement is best supported by the data?”* — xulosa tanlash: qamrov (kim haqida) va qat’iylik darajasi (exactly yoki plausible) tekshiriladi.",
+            "*“Based on the sample, what is the best estimate of the number of …?”* — ulushni bosh to‘plam hajmiga ko‘paytirish.",
+            "*“Which change would most likely decrease the margin of error?”* — javob odatda tanlanma hajmini oshirish."
+          ]
+        },
+        {
+          "type": "method",
+          "heading": "Ishlash usuli: qadamma-qadam",
+          "steps": [
+            "**Bosh to‘plamni aniqlang.** Tanlanma aynan qaysi guruhdan olingan: shahar saylovchilari, bitta maktab o‘quvchilari, kutubxonaga kelganlar? Xulosa faqat shu guruhga tegishli bo‘lishi mumkin.",
+            "**Tanlov usulini tekshiring.** Tasodifiy (random) bo‘lsa — umumlashtirish mumkin. Ixtiyoriy javob berganlar (volunteers) yoki qo‘l ostidagi qulay guruh bo‘lsa — natija bosh to‘plamni ifodalamasligi mumkin.",
+            "**Taxminni hisoblang:** ulush yoki o‘rtachani toping; kerak bo‘lsa, bosh to‘plam hajmiga ko‘paytiring.",
+            "**Oraliq quring:** $\\text{estimate} - \\text{margin of error}$ va $\\text{estimate} + \\text{margin of error}$. Ikkala chegarani qoralamaga yozib qo‘ying.",
+            "**Har bir variantni ikki savol bilan sinang:** (1) kim haqida gapiryapti — to‘g‘ri bosh to‘plam haqidami? (2) qanchalik qat’iy — *exactly*, *all*, *proves* kabi so‘zlar bormi? To‘g‘ri javob odatda *plausible*, *likely*, *between … and …* kabi ehtiyotkor ifodalarda bo‘ladi.",
+            "**Ikki oraliqni solishtirishda** ular ustma-ust tushadimi, qarang: ustma-ust tushsa, bir guruhning qiymati ikkinchisinikidan katta deb ishonch bilan aytib bo‘lmaydi."
+          ]
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 1: eng to‘g‘ri xulosani tanlash",
+          "example": {
+            "problem": "A researcher selected 400 registered voters at random from a city and asked whether they support building a new public library. Of those surveyed, 58% said they support it. The margin of error for this estimate is 4.5 percentage points. Which of the following is the most appropriate conclusion?",
+            "choices": [
+              "Exactly 58% of the city's registered voters support building the new library.",
+              "It is plausible that between 53.5% and 62.5% of the city's registered voters support building the new library.",
+              "It is plausible that between 53.5% and 62.5% of all adults in the country support building the new library.",
+              "Because the margin of error is 4.5 percentage points, 4.5% of the voters surveyed gave inaccurate answers."
+            ],
+            "solution": [
+              "Bosh to‘plam — **shahardagi ro‘yxatga olingan saylovchilar**: tanlanma aynan ulardan tasodifiy olingan.",
+              "Oraliq: $58 - 4.5 = 53.5$ va $58 + 4.5 = 62.5$, ya’ni $53.5\\%$ dan $62.5\\%$ gacha.",
+              "B variant to‘g‘ri bosh to‘plam va to‘g‘ri oraliqni ehtiyotkor *“plausible”* so‘zi bilan ifodalaydi — bu eng to‘g‘ri xulosa.",
+              "Nega A xato: $58\\%$ — faqat taxmin; *“exactly”* so‘zi xatolik chegarasini butunlay e’tiborsiz qoldiradi.",
+              "Nega C xato: oraliq to‘g‘ri, lekin bosh to‘plam noto‘g‘ri — bitta shahar saylovchilari butun mamlakat kattalarini ifodalamaydi.",
+              "Nega D xato: xatolik chegarasi tanlanma tasodifiy olinganidan kelib chiqadigan noaniqlikni bildiradi, javob berganlarning xato qilganini emas."
+            ],
+            "answer": "B"
+          }
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 2: bosh to‘plam uchun taxmin (javobni o‘zingiz yozasiz)",
+          "example": {
+            "problem": "A forest has 12,000 trees. A biologist examined a random sample of 150 trees from the forest and found that 18 of them showed signs of a fungal disease. Based on the sample, what is the best estimate of the number of trees in the forest that show signs of the disease?",
+            "solution": [
+              "Tanlanmadagi ulush: $\\frac{18}{150} = 0.12$, ya’ni $12\\%$.",
+              "Tanlanma tasodifiy, demak bu ulush butun o‘rmon uchun eng yaxshi taxmin: $0.12 \\times 12{,}000 = 1440$.",
+              "Proporsiya bilan ham yechish mumkin: $\\frac{18}{150} = \\frac{x}{12{,}000}$, bundan $x = 1440$.",
+              "Tuzoqlar: **18** — faqat tanlanmadagi son; **12** — foiz. Savol butun o‘rmondagi daraxtlar sonini so‘rayapti.",
+              "Javobni vergulsiz kiriting: **1440**.",
+              "Tekshiruv: $\\frac{1440}{12{,}000} = 0.12 = \\frac{18}{150}$ ✓."
+            ],
+            "answer": "1440"
+          }
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 3: tanlanma hajmi va xatolik chegarasi",
+          "example": {
+            "problem": "Two researchers want to estimate the mean height of the sunflowers in the same large field. Researcher A measures a random sample of 50 sunflowers, and Researcher B measures a random sample of 200 sunflowers. Both researchers use the same method. Which of the following is most likely true?",
+            "choices": [
+              "The margin of error for Researcher A's estimate is smaller than the margin of error for Researcher B's estimate.",
+              "The margin of error for Researcher B's estimate is smaller than the margin of error for Researcher A's estimate.",
+              "The margins of error are equal because both samples come from the same field.",
+              "Researcher B's estimate is exactly equal to the mean height of all the sunflowers in the field."
+            ],
+            "solution": [
+              "Ikkala tanlanma ham bir xil bosh to‘plamdan tasodifiy olingan va bir xil usulda o‘lchangan — ular faqat **hajmi** bilan farq qiladi.",
+              "Tanlanma kattaroq bo‘lsa, taxmin aniqroq, ya’ni xatolik chegarasi kichikroq bo‘ladi. B tadqiqotchining tanlanmasi (200) kattaroq — B variant.",
+              "Nega A xato: munosabat teskari olingan.",
+              "Nega C xato: bir xil maydon bir xil xatolik chegarasini anglatmaydi — u tanlanma hajmiga bog‘liq.",
+              "Nega D xato: katta tanlanma ham faqat taxmin beradi; *“exactly”* hech qachon kafolatlanmaydi."
+            ],
+            "answer": "B"
+          }
+        },
+        {
+          "type": "watch_out",
+          "heading": "Nimaga e’tibor berish kerak",
+          "items": [
+            "**Foiz punktlari:** taxmin foizda bo‘lsa, xatolik chegarasi odatda foiz punktlarda beriladi: $58\\%$ va 4.5 punkt → $53.5\\%$–$62.5\\%$. $58$ ning $4.5\\%$ ini hisoblamang.",
+            "**Qamrov (scope):** xulosa faqat tanlanma olingan bosh to‘plamga tegishli. Sport zaliga keluvchilardan olingan tanlanma butun shahar aholisi haqida xulosa bermaydi.",
+            "**Tasodifiylik hajmdan muhimroq:** 5000 ta ixtiyoriy javob tasodifiy tanlangan 400 kishining javobidan ishonchliroq emas.",
+            "**Ishonch darajasining ma’nosi:** $95\\%$ ishonch “aholining $95\\%$ i shu oraliqda” degani emas; bu oraliq tuzish usuli haqiqiy qiymatni ko‘pchilik hollarda qamrab olishini bildiradi.",
+            "**Oraliq ichidagi qiymatlar teng darajada ehtimoliy:** “haqiqiy qiymat aynan $58\\%$” yoki “$60\\%$ dan katta bo‘lishi shart” degan xulosalar noto‘g‘ri."
+          ]
+        },
+        {
+          "type": "traps",
+          "heading": "Keng tarqalgan xatolar (tuzoq variantlar)",
+          "items": [
+            "**Mutlaq so‘zlar:** *exactly*, *all*, *must*, *proves* — deyarli har doim noto‘g‘ri variant belgisi.",
+            "**Ortiqcha umumlashtirish:** oraliq to‘g‘ri, lekin bosh to‘plam noto‘g‘ri (namuna 1, C).",
+            "**Xatolik chegarasini noto‘g‘ri talqin qilish:** “4.5% respondent xato javob bergan” (namuna 1, D).",
+            "**Hajm va aniqlik munosabatini teskari olish** (namuna 3, A).",
+            "**Tanlanmadagi sonni javob deb berish:** bosh to‘plam uchun taxmin so‘ralganda 18 yoki 12 ni tanlash (namuna 2).",
+            "**Ustma-ust tushuvchi oraliqlardan qat’iy xulosa:** A guruhda $40\\% \\pm 5\\%$, B guruhda $44\\% \\pm 5\\%$ bo‘lsa, “B guruhda ulush kattaroq” deb ishonch bilan aytib bo‘lmaydi."
+          ]
+        },
+        {
+          "type": "time",
+          "heading": "Vaqt bo‘yicha maslahat",
+          "items": [
+            "Bu savollar asosan mantiqqa tayanadi: **45–75 soniya**. Hisob kam — ko‘pi bilan bitta bo‘lish va bitta ko‘paytirish.",
+            "Avval savol matnidagi ikki narsani belgilang: *qaysi bosh to‘plam* va *qanday tanlangan*. Keyin variantlarni o‘qing — shu ikki ma’lumot bilan ko‘p variant 10–15 soniyada yo‘qqa chiqadi.",
+            "Desmos bu turda deyarli kerak emas; oddiy hisob yetarli ($18 / 150 \\cdot 12000$).",
+            "Ikki variant qolsa, ma’lumot ruxsat bergan darajadagi ehtiyotkorroq gapni tanlang: statistik xulosa savollarida to‘g‘ri javob odatda ortiqcha qat’iylikdan xoli bo‘ladi."
+          ]
+        },
+        {
+          "type": "terms",
+          "heading": "Muhim inglizcha atamalar",
+          "terms": [
+            { "term": "population", "meaning": "bosh to‘plam: xulosa chiqariladigan butun guruh" },
+            { "term": "sample", "meaning": "tanlanma: haqiqatda o‘rganilgan qism" },
+            { "term": "random sample / selected at random", "meaning": "tasodifiy tanlanma: har bir a’zoning tanlanish imkoniyati teng" },
+            { "term": "estimate", "meaning": "taxmin — tanlanmadan hisoblangan qiymat" },
+            { "term": "margin of error", "meaning": "xatolik chegarasi: taxminning ± noaniqligi" },
+            { "term": "plausible", "meaning": "ehtimoliy, ishonarli — oraliq ichida bo‘lishi mumkin" },
+            { "term": "sample proportion / sample mean", "meaning": "tanlanmadagi ulush / tanlanmadagi o‘rtacha" },
+            { "term": "confidence level", "meaning": "ishonch darajasi (masalan, 95%)" },
+            { "term": "percentage points", "meaning": "foiz punktlari: foizlar orasidagi oddiy ayirma" },
+            { "term": "representative", "meaning": "vakillik qiluvchi: bosh to‘plamni to‘g‘ri aks ettiruvchi (tanlanma)" }
+          ]
+        },
+        {
+          "type": "checklist",
+          "heading": "Javobni tanlashdan oldin tekshiring",
+          "items": [
+            "Xulosa tanlanma olingan bosh to‘plam haqidami?",
+            "Tanlanma tasodifiy olinganmi?",
+            "Oraliqni to‘g‘ri qurdimmi (taxmin ± xatolik chegarasi)?",
+            "Variantda “exactly”, “all” kabi ortiqcha qat’iy so‘zlar yo‘qmi?"
+          ]
+        }
+      ]
+    }
+  }
+}

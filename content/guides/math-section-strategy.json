@@ -1,0 +1,157 @@
+{
+  "slug": "math-section-strategy",
+  "kind": "strategy",
+  "subject": "math",
+  "position": 7,
+  "readingMinutes": 10,
+  "locales": {
+    "uz": {
+      "title": "Math bo‘limi strategiyasi",
+      "summary": "Math savolini to‘g‘ri o‘qish, “nima so‘ralayotganini” aniqlash, variantlarni qo‘yib tekshirish (backsolving), son tanlash usuli, birliklar, javobni tekshirish, qaysi savollarni avval ishlash va ma’lumotnomada yo‘q, lekin yod bilish kerak bo‘lgan formulalar.",
+      "sections": [
+        {
+          "type": "concept",
+          "heading": "Math bo‘limi qanday tuzilgan",
+          "body": "Math bo‘limida 44 ta savol, 2 ta modul, har birida 22 ta savol va 35 daqiqa — o‘rtacha **≈95 soniya** bir savolga. Har bir modulda savollar **osondan qiyinga** joylashgan.\n\n- **Algebra** — 13–15 ta savol; **Advanced Math** — 13–15 ta; **Problem-Solving and Data Analysis** — 5–7 ta; **Geometry and Trigonometry** — 5–7 ta.\n- Taxminan **75%** savol to‘rt variantli, taxminan **25%** ida javobni o‘zingiz yozasiz (SPR).\n- Savollarning taxminan **30%** i hayotiy vaziyat (kontekst) asosida.\n- Kalkulyator butun bo‘lim davomida ruxsat etilgan; formulalar ma’lumotnomasi ochiq.\n- Ko‘rsatmalarga ko‘ra, boshqacha aytilmagan bo‘lsa, chizmalar **masshtabda** chizilgan va barcha o‘zgaruvchilar haqiqiy sonlar.\n\nDemak, Algebra va Advanced Math — bo‘limning deyarli to‘rtdan uch qismi. Tayyorgarlik vaqtingizning katta qismi shu ikkisiga ketishi kerak."
+        },
+        {
+          "type": "method",
+          "heading": "Har bir savol uchun 5 qadam",
+          "steps": [
+            "**Savolni oxirigacha o‘qing.** Oxirgi gap — haqiqiy savol. Unda nima so‘ralgan: $x$ mi, $2x$ mi, ifoda mi, birlik nima?",
+            "**Berilganlarni yozing.** Qoralama qog‘ozga o‘zgaruvchilarni so‘z bilan belgilang (“$t$ — soatlar soni”), muhim sonlarni ko‘chiring.",
+            "**Usulni 10 soniyada tanlang:** to‘g‘ridan-to‘g‘ri algebra, Desmos, variantlarni qo‘yib tekshirish yoki son tanlash.",
+            "**Yeching** — har bir qadamni yozib boring. Boshda hisoblangan qadam — xatoning eng ko‘p uchraydigan joyi.",
+            "**Tekshiring:** so‘ralgan narsani topdimmi? Javob mantiqiymi (manfiy uzunlik, 300% ehtimollik bo‘lmaydi)? Birliklar to‘g‘rimi? Javobni dastlabki shartga qo‘yib ko‘ring."
+          ]
+        },
+        {
+          "type": "note",
+          "heading": "“Nima so‘ralyapti?” — kalit iboralar",
+          "items": [
+            "*What is the value of $3x$?* — $x$ ni topib to‘xtamang, $3x$ ni hisoblang. Ko‘pincha $3x$ ni $x$ ni topmasdan ham olish mumkin.",
+            "*in terms of $a$* — javob son emas, $a$ qatnashgan ifoda.",
+            "*Which expression is equivalent to…* — ifodani soddalashtiring yoki ochib chiqing; tekshirish uchun $x$ ga son qo‘yib ko‘ring.",
+            "*must be true* — har doim to‘g‘ri; *could be true* — kamida bitta holatda to‘g‘ri.",
+            "*best interpretation of 12 in this context* — 12 vaziyatda nimani anglatadi: boshlang‘ich qiymat, har birlikka o‘zgarish va hokazo.",
+            "*How many more…* / *How much greater…* — ayirma so‘ralgan, qiymatning o‘zi emas.",
+            "*percent increase* — o‘zgarish ÷ boshlang‘ich qiymat; *percent of* — qismi.",
+            "*positive solution*, *integer value*, *$x > 0$* — topilgan yechimlardan shartga mosini tanlang."
+          ]
+        },
+        {
+          "type": "method",
+          "heading": "Backsolving: variantlarni qo‘yib tekshirish",
+          "steps": [
+            "**Qachon ishlatiladi:** variantlar oddiy sonlar, savol “qiymati qancha?” deb so‘raydi, tenglama tuzish esa murakkab yoki uzun.",
+            "**O‘rtadagi variantdan boshlang.** Son variantlar ko‘pincha o‘sish tartibida beriladi — B yoki C dan boshlasangiz, natija katta yoki kichik chiqqaniga qarab qaysi tomonga borishni bilasiz.",
+            "**Variantni masala shartiga qo‘ying** va qadamma-qadam tekshiring.",
+            "**Mos kelsa — to‘xtang.** Qolgan variantlarni tekshirishga vaqt sarflamang.",
+            "**Ehtiyot bo‘ling:** savol oraliq natijani emas, aynan so‘ralgan kattalikni topishni talab qiladi."
+          ]
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 1: backsolving",
+          "example": {
+            "problem": "The price of a jacket was increased by 15%. Later, the new price was decreased by 20%, and the final price of the jacket was \\$46. What was the original price of the jacket, in dollars?",
+            "choices": ["48", "50", "52", "57.5"],
+            "solution": [
+              "O‘rtadagi B variantdan boshlaymiz: $50 \\cdot 1.15 = 57.5$, keyin $57.5 \\cdot 0.80 = 46$ ✓. To‘xtaymiz.",
+              "Algebraik yo‘l: $x \\cdot 1.15 \\cdot 0.80 = 46$, ya’ni $0.92x = 46$, $x = 50$.",
+              "**57.5** — tuzoq: bu narx oshgandan keyingi oraliq qiymat, boshlang‘ich narx emas.",
+              "Yana bir tipik xato: “+15% va −20% = −5%” deb hisoblash. Foizlar har xil asosdan olingani uchun ularni shunchaki qo‘shib bo‘lmaydi."
+            ],
+            "answer": "B) 50"
+          }
+        },
+        {
+          "type": "method",
+          "heading": "Son tanlash (picking numbers)",
+          "steps": [
+            "**Qachon ishlatiladi:** variantlarda o‘zgaruvchilar bor, foiz noma’lum miqdordan olinadi yoki savol “qaysi biri doim to‘g‘ri?” deb so‘raydi.",
+            "**Qulay, lekin “maxsus” bo‘lmagan son tanlang:** 2, 3, 5 yoki foizlar uchun 100. 0 va 1 dan qoching — ular ko‘p variantni bir vaqtda to‘g‘ri qilib qo‘yadi.",
+            "**Savolni shu son bilan hisoblang** — maqsad qiymatni toping.",
+            "**Har bir variantga shu sonni qo‘ying.** Maqsad qiymatni bermaganlarini chiqarib tashlang.",
+            "**Ikki variant mos kelsa** — boshqa son bilan faqat shu ikkitasini qayta tekshiring."
+          ]
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 2: son tanlash",
+          "example": {
+            "problem": "If $p$ is 25% greater than $q$, where $q > 0$, which of the following is equal to $q$?",
+            "choices": ["$0.75p$", "$0.8p$", "$1.25p$", "$p - 0.25$"],
+            "solution": [
+              "Son tanlaymiz: $q = 100$. Unda $p$ undan 25% katta: $p = 125$.",
+              "Maqsad: $p = 125$ bo‘lganda 100 ni beradigan ifoda.",
+              "A: $0.75 \\cdot 125 = 93.75$ ✗. B: $0.8 \\cdot 125 = 100$ ✓. C: $1.25 \\cdot 125 = 156.25$ ✗. D: $125 - 0.25 = 124.75$ ✗.",
+              "**0.75p** — eng ko‘p tanlanadigan tuzoq: “25% katta” teskarisi “25% kichik” emas, chunki foizlar har xil asosdan olinadi. To‘g‘risi: $q = \\frac{p}{1.25} = 0.8p$."
+            ],
+            "answer": "B) $0.8p$"
+          }
+        },
+        {
+          "type": "watch_out",
+          "heading": "Birliklar va o‘lchovlar",
+          "items": [
+            "**Bir xil birlikka keltiring:** daqiqa va soat, santimetr va metr, sent va dollar aralashgan bo‘lsa, hisobdan oldin birini tanlang.",
+            "**Birlik konversiyasi — kasrlar zanjiri:** 72 km/soat ni m/s ga: $72 \\cdot \\frac{1000}{3600} = 20$. Kerakmas birliklar qisqarib ketishi kerak.",
+            "**Yuza va hajm:** $1\\ \\text{m} = 100\\ \\text{cm}$, lekin $1\\ \\text{m}^2 = 10\\,000\\ \\text{cm}^2$ va $1\\ \\text{m}^3 = 1\\,000\\,000\\ \\text{cm}^3$. Konversiya koeffitsiyentini kvadrat yoki kubga oshiring.",
+            "**Grafik va jadvallar:** o‘q nomi va birligini o‘qing — *in thousands*, *in millions* kabi izohlar javobni 1000 marta o‘zgartiradi.",
+            "**Foiz va o‘nli kasr:** $7\\% = 0.07$, $0.5\\% = 0.005$."
+          ]
+        },
+        {
+          "type": "time",
+          "heading": "Qaysi savollarni avval ishlash kerak",
+          "items": [
+            "Modulda savollar osondan qiyinga borgani uchun **tartib bilan** boring, lekin 1-o‘tishda 2–3 daqiqadan uzoq cho‘ziladigan savolni taxminiy javob bilan belgilab, keyinga qoldiring.",
+            "**Tez savollar** — har biri 30–60 soniya: chiziqli tenglama, foiz, funksiya qiymati, oddiy birlik konversiyasi, ma’lumotnomadagi formula bilan geometriya.",
+            "**Uzoq savollar** — keyinga: uzun matnli masalalar, ko‘p qadamli geometriya, $k$ yoki $c$ o‘zgarmasli parametrik savollar, murakkab ifodalar.",
+            "Modulning oxirgi 4–5 savoli odatda eng qiyini. Ularga vaqt qoldiring, lekin ular uchun oson savolni shoshib, xato ishlamang.",
+            "Javobni tekshirish — 10–15 soniya: topilgan qiymatni shartga qo‘yish. Bu qiyin savoldagi bitta urinishdan ko‘ra ko‘proq ball saqlaydi."
+          ]
+        },
+        {
+          "type": "concept",
+          "heading": "Ma’lumotnomada yo‘q, lekin yod bilish kerak bo‘lgan formulalar",
+          "items": [
+            "**To‘g‘ri chiziq:** qiyalik $m = \\frac{y_2 - y_1}{x_2 - x_1}$; tenglama $y = mx + b$; parallel chiziqlar — qiyaliklar teng; perpendikulyar — $m_1 \\cdot m_2 = -1$.",
+            "**Kvadrat tenglama:** $x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$; diskriminant $D = b^2 - 4ac$ ($D > 0$ — 2 ta, $D = 0$ — 1 ta, $D < 0$ — 0 ta haqiqiy yechim); parabola uchi $x = -\\frac{b}{2a}$; ildizlar yig‘indisi $-\\frac{b}{a}$, ko‘paytmasi $\\frac{c}{a}$.",
+            "**Qisqa ko‘paytirish:** $(a + b)^2 = a^2 + 2ab + b^2$, $(a - b)^2 = a^2 - 2ab + b^2$, $a^2 - b^2 = (a - b)(a + b)$.",
+            "**Daraja qoidalari:** $a^m \\cdot a^n = a^{m+n}$, $(a^m)^n = a^{mn}$, $a^{-n} = \\frac{1}{a^n}$, $a^{\\frac{m}{n}} = \\sqrt[n]{a^m}$.",
+            "**Foiz va o‘sish:** foiz o‘zgarishi $= \\frac{\\text{new} - \\text{old}}{\\text{old}} \\cdot 100\\%$; eksponensial o‘sish $y = a(1 + r)^t$, kamayish $y = a(1 - r)^t$.",
+            "**Koordinatalar:** masofa $d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$; o‘rta nuqta $\\left(\\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2}\\right)$.",
+            "**Aylana:** tenglama $(x - h)^2 + (y - k)^2 = r^2$, markaz $(h, k)$; yoy uzunligi $\\frac{\\theta}{360^\\circ} \\cdot 2\\pi r$; sektor yuzasi $\\frac{\\theta}{360^\\circ} \\cdot \\pi r^2$; $180^\\circ = \\pi$ radian.",
+            "**Trigonometriya:** $\\sin = \\frac{\\text{opposite}}{\\text{hypotenuse}}$, $\\cos = \\frac{\\text{adjacent}}{\\text{hypotenuse}}$, $\\tan = \\frac{\\text{opposite}}{\\text{adjacent}}$; $\\sin x^\\circ = \\cos(90^\\circ - x^\\circ)$.",
+            "**O‘xshash shakllar:** tomonlar nisbati $k$ bo‘lsa, yuzalar nisbati $k^2$, hajmlar nisbati $k^3$.",
+            "**Statistika va ehtimollik:** o‘rtacha $=$ yig‘indi ÷ soni; mediana — tartiblangan qatorning o‘rtasi; ehtimollik $=$ qulay holatlar ÷ barcha holatlar."
+          ]
+        },
+        {
+          "type": "traps",
+          "heading": "Keng tarqalgan xatolar",
+          "items": [
+            "**Oraliq natija variantlar orasida:** yarim yo‘lda to‘xtab qolganingizni tekshiring.",
+            "**Kvadrat tenglamaning faqat bitta ildizi:** $x^2 = 16$ ning ikkita yechimi bor — $4$ va $-4$.",
+            "**Tengsizlikni manfiy songa bo‘lish:** ishora teskarisiga o‘zgaradi: $-2x > 6 \\Rightarrow x < -3$.",
+            "**Foizlarni qo‘shish:** ketma-ket foiz o‘zgarishlari ko‘paytiriladi, qo‘shilmaydi.",
+            "**Chizmaga ortiqcha ishonish:** chizma masshtabda bo‘lsa (*not drawn to scale* deyilmagan bo‘lsa), u taxminiy baho uchun yaxshi, lekin aniq hisob o‘rnini bosmaydi.",
+            "**Manfiy sonni qavsga ko‘paytirish:** $-3(x - 4) = -3x + 12$."
+          ]
+        },
+        {
+          "type": "checklist",
+          "heading": "Javobni tanlashdan oldin",
+          "items": [
+            "Savol aynan nimani so‘raganini qayta o‘qidimmi?",
+            "Birliklar bir xilmi?",
+            "Javob mantiqiymi (ishora, kattalik)?",
+            "Topgan qiymatimni shartga qo‘yib tekshirdimmi?"
+          ]
+        }
+      ]
+    }
+  }
+}

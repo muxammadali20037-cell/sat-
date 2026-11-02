@@ -1,0 +1,151 @@
+{
+  "slug": "reading-writing-strategy",
+  "kind": "strategy",
+  "subject": "reading_writing",
+  "position": 8,
+  "readingMinutes": 10,
+  "locales": {
+    "uz": {
+      "title": "Reading and Writing bo‘limi strategiyasi",
+      "summary": "Reading and Writing savollari qanday ko‘rinadi va modulda qanday tartibda keladi, nega avval savolni o‘qish kerak, variantlarga qaramasdan javobni bashorat qilish, noto‘g‘ri variantlarni chiqarib tashlash va ingliz tili ona tilingiz bo‘lmasa, notanish so‘zlar bilan qanday ishlash.",
+      "sections": [
+        {
+          "type": "concept",
+          "heading": "Savollar qanday ko‘rinadi",
+          "body": "Reading and Writing bo‘limida 54 ta savol bor: 2 ta modul, har birida 27 ta savol va 32 daqiqa — o‘rtacha **≈71 soniya** bir savolga.\n\n- Har bir savol **bitta qisqa matn** (25–150 so‘z) yoki **bir juft matn** bilan beriladi, ba’zan jadval yoki grafik bilan.\n- **Har bir matnga faqat bitta savol** — uzun matn o‘qib, unga 10 ta savol ishlash yo‘q.\n- Barcha savollar to‘rt variantli, har birining **bitta eng to‘g‘ri** javobi bor va u matnga asoslanishi kerak.\n- Matnlar adabiyot, tarix va ijtimoiy fanlar, gumanitar fanlar va tabiiy fanlardan olinadi.\n\nBu format ingliz tili ona tili bo‘lmagan o‘quvchi uchun qulay: har bir savolda yangi, qisqa matn — bitta qiyin matn butun bo‘limni buzmaydi."
+        },
+        {
+          "type": "concept",
+          "heading": "Modulda savollar qanday tartibda keladi",
+          "body": "Har bir modulda to‘rttala yo‘nalish bor va ular **doim shu tartibda** keladi:\n\n- **1. Craft and Structure** (≈28%) — so‘zning kontekstdagi ma’nosi (*Words in Context*), matn tuzilishi va maqsadi, ikki matn orasidagi bog‘liqlik.\n- **2. Information and Ideas** (≈26%) — asosiy g‘oya va tafsilotlar, matn va jadval/grafikdan dalil, xulosa chiqarish.\n- **3. Standard English Conventions** (≈26%) — gap chegaralari va tinish belgilari, so‘z shakllari (grammatika).\n- **4. Expression of Ideas** (≈20%) — bog‘lovchi so‘zlar (*transitions*) va eslatmalardan maqsadga mos gap tuzish (*rhetorical synthesis*).\n\nO‘xshash ko‘nikmani tekshiradigan savollar birga guruhlangan va **har bir guruh ichida osondan qiyinga** joylashgan. Grammatika savollari esa qaysi qoida tekshirilishidan qat’i nazar osondan qiyinga tartiblangan.\n\n**Strategik xulosa:** qiyinlik faqat modul oxirida emas, har bir guruh oxirida ko‘tariladi. Bir guruhning qiyin oxirgi savolida qotib qolsangiz — belgilab o‘ting: keyingi guruhning birinchi savollari yana osonroq bo‘ladi."
+        },
+        {
+          "type": "method",
+          "heading": "Asosiy usul: savol → matn → bashorat → variantlar",
+          "steps": [
+            "**Avval savolni o‘qing** (matn ostidagi so‘roq gap). U nimani izlashni aytadi: so‘z ma’nosi, gapning vazifasi, asosiy g‘oya, dalil yoki grammatika.",
+            "**Matnni maqsadli o‘qing.** Matn qisqa — uni to‘liq o‘qing, lekin savol so‘ragan joyga alohida e’tibor bering. Grammatika savollarida bo‘sh joy turgan gap va uning qo‘shnisi ko‘pincha yetarli.",
+            "**Bashorat qiling.** Variantlarga qaramasdan javobni o‘z so‘zlaringiz bilan ayting — o‘zbekcha bo‘lsa ham bo‘ladi: “bu yerda *ataylab* ma’nosidagi so‘z kerak”, “ikkinchi gap birinchisiga zid”.",
+            "**Variantlarni bashoratingiz bilan solishtiring.** Unga eng yaqinini tanlang.",
+            "**Chiqarib tashlang.** Har bir noto‘g‘ri variantning **aniq sababini** toping va Option Eliminator bilan o‘chiring.",
+            "**Dalilni tekshiring.** Tanlagan javobingizni matndagi aniq so‘z yoki gap bilan tasdiqlay olasizmi? Ololmasangiz — qayta qarang."
+          ]
+        },
+        {
+          "type": "note",
+          "heading": "Noto‘g‘ri variantlarning belgilari",
+          "items": [
+            "**Matnda yo‘q:** hayotda to‘g‘ri bo‘lishi mumkin, lekin matnda aytilmagan yoki nazarda tutilmagan. Javob faqat matnga asoslanadi.",
+            "**Haddan tashqari kuchli:** *always*, *never*, *proves*, *completely*, *all* — matn ehtiyotkor (*suggests*, *may*, *some*) bo‘lsa, bunday variant noto‘g‘ri.",
+            "**Yarim to‘g‘ri:** birinchi yarmi matnga mos, ikkinchi yarmi esa yo‘q. Variantni oxirigacha o‘qing.",
+            "**Teskari:** matnning aksini aytadi — ayniqsa *however*, *although*, *despite* dan keyingi fikrni noto‘g‘ri o‘qishdan chiqadi.",
+            "**So‘zlar mos, ma’no emas:** matndagi so‘zlarni takrorlaydi, lekin savolga javob bermaydi.",
+            "**Juda tor yoki juda keng:** asosiy g‘oya savolida bitta tafsilotni yoki matndan ancha keng mavzuni aytadigan variant."
+          ]
+        },
+        {
+          "type": "recognize",
+          "heading": "Savol turini tanib olish va qisqa yo‘l",
+          "items": [
+            "*Which choice completes the text with the most logical and precise word or phrase?* — **Words in Context.** Bo‘sh joyga o‘z so‘zingizni qo‘ying, keyin variantlardan eng yaqinini toping. Zidlik (*although*, *but*) va davom (*and*, ikki nuqta) signallariga qarang.",
+            "*Which choice best states the main purpose of the text?* / *best describes the function of the underlined sentence* / *best describes the overall structure* — **matn tuzilishi va maqsadi.** Har bir gapning vazifasini aniqlang: da’vo, misol, qarshi fikr, xulosa.",
+            "*Based on the texts, how would… most likely respond…?* — **ikki matn.** Avval har bir matnning asosiy fikrini bir gap bilan ayting, keyin ikkinchi muallifning birinchisiga munosabatini: rozi, qisman rozi yoki qarshi.",
+            "*Which choice best states the main idea of the text?* — **asosiy g‘oya.** Butun matnni qamraydigan, lekin undan kengaymaydigan variant.",
+            "*Which finding, if true, would most directly support…?* / *Which quotation… most effectively illustrates the claim?* — **matndan dalil.** Avval da’voni aniq ajrating; variant aynan shu da’voni tasdiqlashi kerak, shunchaki mavzuga yaqin bo‘lishi emas.",
+            "*Which choice most effectively uses data from the graph/table…?* — **raqamli dalil.** Avval matndagi da’voni o‘qing, keyin jadvalni. To‘g‘ri variant ham ma’lumotga, ham da’voga mos bo‘ladi. Jadvalda to‘g‘ri, lekin da’voga aloqasi yo‘q variant — eng ko‘p uchraydigan tuzoq.",
+            "*Which choice most logically completes the text?* — **xulosa chiqarish.** Matndagi mantiqiy zanjirni davom ettiring; eng kam qo‘shimcha taxmin talab qiladigan variantni tanlang.",
+            "*Which choice completes the text so that it conforms to the conventions of Standard English?* — **grammatika.** “Eshitilishi”ga emas, qoidaga tayaning — “Grammatika qoidalari” qo‘llanmasiga qarang.",
+            "*Which choice completes the text with the most logical transition?* — **bog‘lovchi.** Ikki gap orasidagi munosabatni o‘zbekcha ayting: “lekin”, “shuning uchun”, “masalan”, “bundan tashqari” — keyin mos inglizcha so‘zni tanlang.",
+            "*Which choice most effectively uses relevant information from the notes to accomplish this goal?* — **eslatmalar.** Avval faqat **maqsadni** o‘qing (*The student wants to…*). Odatda barcha variantlar eslatmalarga to‘g‘ri keladi — farq faqat maqsadga mosligida."
+          ]
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 1: so‘zning kontekstdagi ma’nosi",
+          "example": {
+            "passage": "Although critics initially dismissed the composer’s early works as overly simple, later listeners came to see that simplicity as ______: each spare melody had been carefully constructed to leave room for the performer’s interpretation.",
+            "problem": "Which choice completes the text with the most logical and precise word or phrase?",
+            "choices": ["accidental", "deliberate", "excessive", "temporary"],
+            "solution": [
+              "Savolni o‘qidik: bo‘sh joyga so‘z kerak. Matnda ikki signal bor: *Although* (tanqidchilarga zid fikr keladi) va ikki nuqta (keyingi qism bo‘sh joyni tushuntiradi).",
+              "Ikki nuqtadan keyin: har bir ohang **ehtiyotkorlik bilan tuzilgan** (*carefully constructed*). Bashorat: “ataylab qilingan”.",
+              "*accidental* (tasodifiy) — bashoratga teskari. *excessive* (haddan tashqari) — tanqidchilarning fikri, keyingi tinglovchilarniki emas. *temporary* (vaqtinchalik) — matnda vaqt haqida gap yo‘q.",
+              "*deliberate* (ataylab qilingan) — bashoratga to‘liq mos."
+            ],
+            "answer": "B) deliberate"
+          }
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 2: bog‘lovchi so‘z",
+          "example": {
+            "passage": "For decades, many city planners assumed that adding lanes to a crowded highway would permanently reduce traffic congestion. ______ studies of several widened highways found that traffic often returned to its earlier levels within a few years, as the extra road space encouraged more people to drive.",
+            "problem": "Which choice completes the text with the most logical transition?",
+            "choices": ["Similarly,", "However,", "For example,", "Therefore,"],
+            "solution": [
+              "1-gap: rejalashtiruvchilar yo‘l kengaytirilsa tirbandlik **doimiy kamayadi** deb hisoblashgan.",
+              "2-gap: tadqiqotlar tirbandlik **qaytib kelganini** ko‘rsatgan. Munosabat — zidlik: “lekin”.",
+              "*Similarly* (o‘xshashlik), *For example* (misol), *Therefore* (natija) — zidlikni bildirmaydi.",
+              "*However* — zidlikni bildiradi."
+            ],
+            "answer": "B) However,"
+          }
+        },
+        {
+          "type": "note",
+          "heading": "Notanish so‘zlar: ingliz tili ona tilingiz bo‘lmasa",
+          "items": [
+            "**Har bir so‘zni bilish shart emas.** Savol odatda butun gapning mantig‘ini tekshiradi. Notanish so‘zni “X” deb qabul qilib, o‘qishda davom eting.",
+            "**Kontekstdan taxmin qiling:** oldingi va keyingi gapga, zidlik so‘zlariga (*however*, *but*, *unlike*), misolga (*for example*) va qo‘shimchaga (*moreover*) qarang. Ko‘pincha so‘zning ijobiy yoki salbiy ekanini bilish yetarli.",
+            "**So‘z tarkibidan foydalaning:** *un-*, *in-*, *dis-*, *mis-* — inkor yoki xato; *re-* — qayta; *pre-* — oldin; *-less* — -siz; *-ful* — -li; *-able* — mumkin bo‘lgan. Masalan, *unprecedented* — “avval misli ko‘rilmagan”.",
+            "**Notanish so‘zli variant:** bilgan uchta variantingiz aniq noto‘g‘ri bo‘lsa, notanish so‘zni tanlang — bu chiqarib tashlash orqali topilgan javob.",
+            "**Har bir gapni to‘liq tarjima qilmang.** Bu vaqt oladi. Asosiy fikrni 3–5 so‘z bilan ayting: “olim A ni da’vo qiladi, lekin B buni rad etadi”.",
+            "**Ilmiy atamalar va nomlar** (hayvon, kimyoviy modda, olim ismi) odatda javobga ta’sir qilmaydi — ularga qotib qolmang.",
+            "**Adabiy matnlar** eskiroq uslubda bo‘lishi mumkin: har bir so‘zdan ko‘ra qahramonning kayfiyati va voqealar rivojiga e’tibor bering."
+          ]
+        },
+        {
+          "type": "note",
+          "heading": "Jadval va grafikli savollar",
+          "items": [
+            "Avval sarlavha, o‘q nomlari, birliklar va izohni (*legend*) o‘qing.",
+            "Keyin matndagi **da’voni** toping — savol aynan nimani ko‘rsatish kerakligini aytadi.",
+            "Variantdagi har bir raqamni jadval bilan solishtiring: kattaroq yoki kichikroq, qaysi yil, qaysi guruh.",
+            "To‘g‘ri variant ikki shartga javob beradi: ma’lumotga mos va da’voni qo‘llab-quvvatlaydi."
+          ]
+        },
+        {
+          "type": "traps",
+          "heading": "Keng tarqalgan xatolar",
+          "items": [
+            "**Tashqi bilimga tayanish:** “men bilaman, bu to‘g‘ri” — lekin matnda yo‘q.",
+            "**Variantlarni matndan oldin o‘qish:** to‘rtta variant fikringizni chalg‘itadi. Avval bashorat qiling.",
+            "**So‘zning eng mashhur ma’nosini tanlash:** *Words in Context* savollarida so‘z ko‘pincha kamroq ma’lum ma’nosida ishlatiladi.",
+            "**Burilish so‘zini o‘tkazib yuborish:** *however* yoki *yet* dan keyingi gap ko‘pincha muallifning asl fikri.",
+            "**Eslatmalar savolida eslatmalarni to‘liq o‘qish:** vaqt ketadi. Maqsadni o‘qing va variantlarni unga solishtiring."
+          ]
+        },
+        {
+          "type": "time",
+          "heading": "Vaqt bo‘yicha maslahat",
+          "items": [
+            "O‘rtacha ≈71 soniya bir savolga. Grammatika va bog‘lovchi savollari ko‘pincha 30–50 soniyada yechiladi — tejalgan vaqt dalil, xulosa va ikki matnli savollarga qoladi.",
+            "Matnni ikki-uch marta o‘qimang: avval savol, keyin bir marta maqsadli o‘qish.",
+            "Bitta savolga 2 daqiqadan ko‘p ketmasin — ikki variant qolsa, birini tanlang, belgilang va o‘ting.",
+            "Eslatmalar (*rhetorical synthesis*) savollari maqsadni avval o‘qisangiz, tez yechiladi — ular uchun alohida vaqt zaxirasi kerak emas."
+          ]
+        },
+        {
+          "type": "checklist",
+          "heading": "Javobni tanlashdan oldin",
+          "items": [
+            "Savol aynan nimani so‘raganini bilamanmi?",
+            "Variantlarga qarashdan oldin bashorat qildimmi?",
+            "Javobimni matndagi aniq so‘z yoki gap bilan tasdiqlay olamanmi?",
+            "Qolgan uchta variantning noto‘g‘riligi sababini ayta olamanmi?"
+          ]
+        }
+      ]
+    }
+  }
+}

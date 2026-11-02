@@ -1,0 +1,182 @@
+{
+  "slug": "text-structure-and-purpose",
+  "kind": "skill",
+  "skill": "text_structure_purpose",
+  "position": 21,
+  "readingMinutes": 10,
+  "locales": {
+    "uz": {
+      "title": "Text Structure and Purpose: matn tuzilishi va maqsadi",
+      "summary": "Muallif matnni nima uchun yozgani, matn qanday tuzilgani va tagiga chizilgan jumla matnda qanday vazifa bajarishini aniqlash. Bu savollarda “matn nima deydi?” emas, “muallif nima qilyapti?” degan savolga javob izlaysiz.",
+      "sections": [
+        {
+          "type": "concept",
+          "heading": "Bu ko‘nikma nimani tekshiradi",
+          "body": "Text Structure and Purpose savollari **Craft and Structure** domeniga kiradi. Ular matnning mazmunini emas, **tuzilishi va maqsadini** tekshiradi. Uch xil savol bor:\n\n- **Asosiy maqsad (main purpose):** muallif bu matnni nima uchun yozgan — biror narsani tasvirlash, tushuntirish, isbotlash yoki tanqid qilish uchunmi?\n- **Jumlaning vazifasi (function):** tagiga chizilgan jumla butun matnda qanday rol o‘ynaydi — misol keltiradimi, oldingi fikrga e’tiroz bildiradimi, natijani tushuntiradimi?\n- **Umumiy tuzilish (overall structure):** matn qanday ketma-ketlikda qurilgan — masalan, “avval keng tarqalgan fikr, keyin unga zid dalil”.\n\nMatnlar ilmiy, tarixiy, ijtimoiy mavzularda yoki badiiy (hikoya, she’r) bo‘lishi mumkin. Har qanday holatda ham o‘zingizga bitta savol berasiz: **“Muallif bu yerda nima qilyapti?”**"
+        },
+        {
+          "type": "recognize",
+          "heading": "Savolni qanday tanib olasiz",
+          "items": [
+            "*Which choice best states the main purpose of the text?* — butun matnning maqsadi.",
+            "*Which choice best describes the function of the underlined sentence in the text as a whole?* — matnda bitta jumla tagiga chizilgan bo‘ladi; uning **vazifasi** so‘ralmoqda.",
+            "*Which choice best describes the overall structure of the text?* — matn qismlarining ketma-ketligi.",
+            "Maqsad savollarida variantlar odatda fe’l bilan boshlanadi: *To explain…, To argue…, To describe…, To criticize…*. Vazifa va tuzilish savollarida esa *It provides an example…, It introduces…, The text presents a claim and then…* kabi tavsiflar bo‘ladi.",
+            "Badiiy matnda ham xuddi shu savollar beriladi; javob esa ko‘pincha qahramon xarakteri, kayfiyat yoki voqeadagi burilish bilan bog‘liq bo‘ladi."
+          ]
+        },
+        {
+          "type": "method",
+          "heading": "Ishlash usuli: qadamma-qadam",
+          "steps": [
+            "**Savolni o‘qing va turini aniqlang:** maqsad, vazifa yoki tuzilish. Vazifa savoli bo‘lsa, tagiga chizilgan jumlani darhol toping.",
+            "**Butun matnni o‘qing va har bir jumlaga qisqa “yorliq” qo‘ying** (o‘zbekcha, xayolan): “fon”, “keng tarqalgan fikr”, “da’vo”, “dalil yoki misol”, “e’tiroz”, “xulosa”. Bu matnning skeletini ko‘rsatadi.",
+            "**Maqsad savolida:** “Muallif bu matnni nima uchun yozdi?” degan savolga bitta fe’l va obyekt bilan javob bering: “olimning yangi topilmasini tushuntirish uchun”. Maqsad ko‘pincha matnning burilish nuqtasida (*however, but*) yoki oxirgi jumlada ko‘rinadi.",
+            "**Vazifa savolida:** jumlaning **o‘zi nima deyishini** emas, **oldingi va keyingi jumlalarga nisbatan nima qilishini** aniqlang. Masalan: “oldingi da’voga misol keltiradi” yoki “birinchi jumladagi fikrga qarshi dalil beradi”.",
+            "**Avval variantlardagi fe’lni tekshiring.** Muallif shunchaki tasvirlayaptimi (*describe*), biror pozitsiyani himoya qilyaptimi (*argue*) yoki tanqid qilyaptimi (*criticize*)? Fe’l noto‘g‘ri bo‘lsa, variantning qolgan qismi to‘g‘ri bo‘lsa ham u noto‘g‘ri.",
+            "**Keyin variantning har bir qismini matn bilan solishtiring.** Bitta so‘z ham matnga zid bo‘lsa yoki matnda bo‘lmasa, variantni o‘chiring. Yarim to‘g‘ri variant — noto‘g‘ri variant."
+          ]
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 1: tagiga chizilgan jumlaning vazifasi",
+          "example": {
+            "passage": "Many people imagine deserts as empty places where very little can survive. Ecologist Dilnoza Karimova set out to test this image during two springs in a section of the Kyzylkum Desert. __In a single square kilometer, her team recorded dozens of species of flowering plants, along with lizards, beetles and nesting birds.__ Most of the plants, Karimova notes, sprout, bloom and release their seeds within a few weeks after the spring rains, so visitors who arrive in summer see only dry ground and conclude that the land is lifeless.",
+            "problem": "Which choice best describes the function of the underlined sentence in the text as a whole?",
+            "choices": [
+              "It explains why most visitors choose to arrive in the desert during the summer.",
+              "It introduces a claim that the rest of the text argues is mistaken.",
+              "It describes the method Karimova used to choose the location of her study.",
+              "It presents evidence that challenges the common view described in the first sentence."
+            ],
+            "solution": [
+              "**Savol turi:** vazifa (function). Jumla nima deyishini emas, matnda **nima qilishini** aniqlaymiz.",
+              "**Jumlalarga yorliq:** 1-jumla — keng tarqalgan fikr (“cho‘l — bo‘m-bo‘sh joy”). 2-jumla — olima shu fikrni tekshirmoqchi. 3-jumla (tagiga chizilgan) — u topgan natija: o‘nlab o‘simlik turlari va hayvonlar. 4-jumla — nega odamlar cho‘lni jonsiz deb o‘ylashini tushuntiradi.",
+              "**Bashorat:** tagiga chizilgan jumla birinchi jumladagi fikrga **qarshi dalil** beradi.",
+              "**A** noto‘g‘ri: yozda keladiganlar haqida oxirgi jumla gapiradi, tagiga chizilgan jumla emas. Bundan tashqari, matn ular **nega** aynan yozda kelishini umuman tushuntirmaydi.",
+              "**B** noto‘g‘ri — teskari munosabat: matnning qolgan qismi bu natijani rad etmaydi, aksincha uni qo‘llab-quvvatlaydi va tushuntiradi.",
+              "**C** noto‘g‘ri: jumla tadqiqot joyi qanday tanlanganini emas, **natijani** — nima topilganini aytadi.",
+              "**D** — “birinchi jumladagi keng tarqalgan fikrni shubha ostiga qo‘yadigan dalil keltiradi”. Bashoratga to‘liq mos. ✓"
+            ],
+            "answer": "D"
+          }
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 2: matnning asosiy maqsadi",
+          "example": {
+            "passage": "In many cities, old factory buildings stand empty for years before they are finally torn down. Architect Tomas Reyes argues that demolition is often the more wasteful choice. Tearing down a sturdy brick building, he points out, throws away the energy and materials already invested in it, and constructing a replacement releases large amounts of carbon. Reyes's firm has turned three abandoned textile mills into apartments and libraries while keeping their original walls and beams. He urges city planners to treat old industrial buildings as resources to be reused rather than as problems to be removed.",
+            "problem": "Which choice best states the main purpose of the text?",
+            "choices": [
+              "To criticize city planners for allowing factory buildings to stand empty for many years",
+              "To present an architect's argument for reusing old industrial buildings instead of demolishing them",
+              "To describe the steps Reyes's firm followed to turn textile mills into apartments and libraries",
+              "To show that new buildings release more carbon than any other kind of construction project"
+            ],
+            "solution": [
+              "**Savol turi:** butun matnning maqsadi. Bitta fe’l va obyekt bilan bashorat qilamiz.",
+              "**Skelet:** 1-jumla — fon (eski zavodlar bo‘sh turadi, keyin buziladi). 2-jumla — Reyesning asosiy da’vosi (buzish ko‘pincha isrofgarchilik). 3-jumla — da’voning sabablari. 4-jumla — misol (uchta to‘qimachilik fabrikasi). 5-jumla — chaqiriq (shahar rejalashtiruvchilariga murojaat).",
+              "**Bashorat:** “arxitektorning eski binolarni buzish o‘rniga qayta ishlatish kerakligi haqidagi fikrini bayon qilish”.",
+              "**B** — bashoratga aynan mos: fe’l (*present an argument*) ham, mazmun ham to‘g‘ri. ✓",
+              "**A** noto‘g‘ri: binolarning bo‘sh turishi faqat fon sifatida tilga olingan. Reyes rejalashtiruvchilarni tanqid qilmaydi, balki ularga taklif beradi; uning asosiy e’tirozi binolarni **buzishga** qarshi.",
+              "**C** noto‘g‘ri — **juda tor** (*too narrow*): fabrikalar faqat bitta misol, matnda esa qayta qurish bosqichlari umuman tasvirlanmagan.",
+              "**D** noto‘g‘ri — **haddan tashqari kuchli** (*extreme*): matn yangi bino qurish ko‘p uglerod chiqarishini aytadi, lekin “boshqa har qanday qurilishdan ko‘proq” degan taqqoslash yo‘q. Bu matnning maqsadi ham emas."
+            ],
+            "answer": "B"
+          }
+        },
+        {
+          "type": "watch_out",
+          "heading": "Nimaga e’tibor berish kerak",
+          "items": [
+            "**Fe’l — eng muhim so‘z.** *Describe* — neytral tasvir, *explain* — nima uchun yoki qanday ekanini tushuntirish, *argue* — pozitsiyani himoya qilish, *criticize* — salbiy baho, *celebrate / praise* — ijobiy baho. Muallifning ohangi neytral bo‘lsa, *criticize* yoki *celebrate* bilan boshlangan variant deyarli har doim noto‘g‘ri.",
+            "**“Nima deydi?” emas, “nima qiladi?”** Vazifa savolida tagiga chizilgan jumlaning mazmunini qayta aytgan variant ko‘pincha tuzoq. To‘g‘ri javob jumlaning **boshqa jumlalarga munosabatini** tasvirlaydi: *provides an example of…*, *offers a reason for…*, *presents a contrast to…*.",
+            "**Burilish nuqtasini toping.** Ko‘p matnlar “ko‘pchilik shunday o‘ylaydi… **however** tadqiqot boshqacha ko‘rsatdi” tuzilishida bo‘ladi. Muallifning asl maqsadi odatda burilishdan keyin keladi.",
+            "**Badiiy matnlarda** maqsad ko‘pincha qahramonni yoki kayfiyatni ko‘rsatish bo‘ladi: *to portray a character's growing doubt*, *to convey the speaker's admiration*. Qahramonning his-tuyg‘usini bildiruvchi so‘zlarga (*hesitated, smiled, frowned*) e’tibor bering.",
+            "**Ingliz tili bo‘yicha maslahat:** har bir jumlaning faqat egasi va kesimini (kim? nima qildi?) toping va unga o‘zbekcha yorliq qo‘ying. Notanish so‘zni “X” deb qabul qilib o‘qishda davom eting — jumlaning **vazifasini** aniqlash uchun ko‘pincha har bir so‘z shart emas. Signal so‘zlar yorliqni tez topishga yordam beradi: *for example, for instance* → misol; *however, yet, in contrast* → burilish yoki e’tiroz; *as a result, therefore* → natija; *some argue, it was long assumed* → keyin rad etilishi mumkin bo‘lgan fikr.",
+            "**Savol so‘zlarini tez “tarjima qiling”:** *purpose* — maqsad (nima uchun yozilgan), *function* — vazifa (matnda qanday rol o‘ynaydi), *structure* — tuzilish (qismlar qanday ketma-ketlikda), *as a whole* — butun matn doirasida."
+          ]
+        },
+        {
+          "type": "traps",
+          "heading": "Keng tarqalgan xatolar (tuzoq variantlar)",
+          "items": [
+            "**Mazmuni to‘g‘ri, fe’li noto‘g‘ri:** muallif faqat tasvirlagan narsani “isbotlash” yoki “tanqid qilish” deb ko‘rsatgan variant (2-namunadagi A).",
+            "**Juda tor (too narrow):** matndagi bitta tafsilot yoki misolni butun matnning maqsadi qilib ko‘rsatish (2-namunadagi C).",
+            "**Juda keng (too broad):** *To discuss modern architecture* kabi umumiy variant — mavzu to‘g‘ri, lekin matn aynan nima qilayotganini aytmaydi.",
+            "**Yarim to‘g‘ri variant:** birinchi yarmi matnga mos, ikkinchi yarmi esa matnda yo‘q yoki unga zid. Variantning **har bir so‘zini** tekshiring.",
+            "**Teskari munosabat:** jumla oldingi fikrni qo‘llab-quvvatlaydi, variant esa “rad etadi” deydi yoki aksincha (1-namunadagi B).",
+            "**Noto‘g‘ri joyga ishora:** variant matnda haqiqatan bor narsani tasvirlaydi, lekin u boshqa jumlaga tegishli (1-namunadagi A).",
+            "**Haddan tashqari kuchli so‘zlar:** *proves, always, any other, completely* — matnda bunday kuchli da’vo bo‘lmasa, variant noto‘g‘ri (2-namunadagi D)."
+          ]
+        },
+        {
+          "type": "time",
+          "heading": "Vaqt bo‘yicha maslahat",
+          "items": [
+            "Reading and Writing’da bir savolga o‘rtacha **71 soniya** bor (har modulda 27 savol, 32 daqiqa).",
+            "Text Structure and Purpose savollariga **60–75 soniya** yetarli. Matnni bir marta diqqat bilan o‘qib, yorliqlarni xayolan qo‘ysangiz, variantlarni tez tekshirasiz; matnni uch marta qayta o‘qish esa vaqtni yeydi.",
+            "Variantlar uzun bo‘lsa, avval faqat **fe’llarni** solishtiring: ko‘pincha bir-ikki variant shu bosqichdayoq tushib qoladi.",
+            "Ikki variant orasida 20 soniyadan ortiq ikkilanib qolsangiz, matndan aynan qaysi so‘z har biriga zid ekanini qidiring. Topa olmasangiz, yaxshiroq ko‘ringanini tanlang, **Mark for Review** bilan belgilang va keyinroq qayting."
+          ]
+        },
+        {
+          "type": "terms",
+          "heading": "Muhim inglizcha atamalar",
+          "terms": [
+            {
+              "term": "main purpose",
+              "meaning": "asosiy maqsad: muallif matnni nima uchun yozgan"
+            },
+            {
+              "term": "function",
+              "meaning": "vazifa: jumla yoki qism matnda qanday rol o‘ynaydi"
+            },
+            {
+              "term": "underlined sentence",
+              "meaning": "tagiga chizilgan jumla"
+            },
+            {
+              "term": "overall structure",
+              "meaning": "umumiy tuzilish: matn qismlarining ketma-ketligi"
+            },
+            {
+              "term": "as a whole",
+              "meaning": "butunligicha, butun matn doirasida"
+            },
+            {
+              "term": "illustrate",
+              "meaning": "misol bilan ko‘rsatmoq"
+            },
+            {
+              "term": "elaborate on",
+              "meaning": "batafsilroq tushuntirmoq, fikrni kengaytirmoq"
+            },
+            {
+              "term": "qualify (a claim)",
+              "meaning": "da’voni cheklamoq — uni rad etmasdan, shart yoki istisno qo‘shmoq"
+            },
+            {
+              "term": "acknowledge",
+              "meaning": "(qarshi fikrni yoki kamchilikni) tan olmoq"
+            },
+            {
+              "term": "challenge / refute",
+              "meaning": "shubha ostiga qo‘ymoq / to‘liq rad etmoq"
+            }
+          ]
+        },
+        {
+          "type": "checklist",
+          "heading": "Javobni tanlashdan oldin tekshiring",
+          "items": [
+            "Savol maqsad, vazifa yoki tuzilish haqidami — aniqladimmi?",
+            "Variantdagi fe’l muallifning haqiqiy ohangiga (neytral, ijobiy, salbiy) mosmi?",
+            "Vazifa savolida jumlaning mazmunini emas, boshqa jumlalarga munosabatini tanladimmi?",
+            "Variantning har bir qismi matnda bormi?"
+          ]
+        }
+      ]
+    }
+  }
+}

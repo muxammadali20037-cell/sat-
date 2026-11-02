@@ -1,0 +1,154 @@
+{
+  "slug": "transitions",
+  "kind": "skill",
+  "skill": "transitions",
+  "position": 30,
+  "readingMinutes": 8,
+  "locales": {
+    "uz": {
+      "title": "O‘tish so‘zlari (Transitions)",
+      "summary": "Ikki gap yoki fikr orasidagi mantiqiy munosabatni aniqlab, uni to‘g‘ri ifodalaydigan o‘tish so‘zini tanlash: zidlik, sabab–oqibat, qo‘shimcha, misol, ketma-ketlik va boshqalar. Asosiy usul — variantlarga qarashdan oldin munosabatni o‘zingiz aytib olish.",
+      "sections": [
+        {
+          "type": "concept",
+          "heading": "Bu ko‘nikma nimani tekshiradi",
+          "body": "Transitions savoli ikki fikr orasidagi **mantiqiy munosabatni** tekshiradi. Bo‘sh joy odatda gap boshida (ba’zan nuqtali verguldan keyin) turadi va siz shu munosabatni to‘g‘ri ifodalaydigan so‘z yoki iborani tanlaysiz. Grammatik jihatdan barcha variantlar to‘g‘ri — farq faqat **ma’noda**.\n\nO‘tish so‘zlari oilalari (o‘zbekcha ma’nosi — inglizcha so‘zlar — qachon ishlatiladi):\n\n- **Zidlik (contrast) — “lekin, biroq”:** *however, nevertheless, nonetheless, by contrast, in contrast, on the other hand, conversely, still, yet, even so*. Ikkinchi fikr birinchisiga qarshi yoki kutilmagan natija.\n- **Almashtirish — “aksincha, uning o‘rniga”:** *instead, rather*. Birinchi gapda inkor (A emas), ikkinchisida uning o‘rnida nima bo‘lgani (B).\n- **Tan olish (concession) — “to‘g‘ri, … (lekin)”:** *admittedly, granted, of course*. Qarshi fikrni qisman tan olish.\n- **Sabab–oqibat (cause and effect) — “shuning uchun, natijada”:** *therefore, thus, consequently, as a result, hence, accordingly, for this reason*. Ikkinchi fikr birinchisining natijasi.\n- **Qo‘shimcha (addition) — “bundan tashqari”:** *moreover, furthermore, in addition, additionally, also, besides*. Xuddi shu yo‘nalishdagi yangi fikr.\n- **O‘xshashlik (similarity) — “xuddi shunday”:** *similarly, likewise, in the same way*. Ikki xil obyektda bir xil holat.\n- **Misol (example) — “masalan”:** *for example, for instance*. Ikkinchi gap birinchi gapdagi umumiy fikrning aniq holati.\n- **Aniqlashtirish va kuchaytirish — “aniqrog‘i, aslida”:** *specifically, in particular, in other words, that is, in fact, indeed*. Ikkinchi gap birinchisini aniqlashtiradi, boshqacha aytadi yoki kuchaytiradi.\n- **Ketma-ketlik va vaqt (sequence) — “keyin, so‘ngra”:** *first, then, next, subsequently, afterward, later, finally, meanwhile, previously*. Voqealarning vaqt bo‘yicha tartibi.\n- **Xulosa (summary) — “qisqasi, umuman olganda”:** *in short, in sum, ultimately, overall*. Oldingi fikrlarni yakunlaydi."
+        },
+        {
+          "type": "recognize",
+          "heading": "Savolni qanday tanib olasiz",
+          "items": [
+            "Savol so‘zi: *“Which choice completes the text with the most logical transition?”*",
+            "To‘rtala variant ham o‘tish so‘zi yoki iborasi: *However, / Therefore, / For example, / Similarly,*",
+            "Bo‘sh joy oxirgi (yoki ikkinchi) gapning boshida turadi; ba’zan esa nuqtali verguldan keyin, gap o‘rtasida.",
+            "Variantlar grammatik jihatdan bir xil ishlaydi (hammasi vergul bilan tugaydi) — demak bu grammatika emas, mantiq savoli."
+          ]
+        },
+        {
+          "type": "method",
+          "heading": "Ishlash usuli: qadamma-qadam",
+          "steps": [
+            "**Variantlarga hali qaramang.** Avval munosabatni o‘zingiz aniqlang, aks holda “ilmiy” eshitiladigan so‘z sizni chalg‘itadi.",
+            "**Bo‘sh joydan oldingi gapni va bo‘sh joy turgan gapni o‘qing.** Matn qisqa bo‘lsa — hammasini. Munosabat ko‘pincha aynan shu ikki gap orasida bo‘ladi, lekin ba’zan birinchi gapdagi umumiy fikr bilan bog‘liq.",
+            "**Munosabatni o‘zbekcha bitta so‘z bilan ayting:** “lekin”, “shuning uchun”, “masalan”, “bundan tashqari”, “keyin”, “xuddi shunday”, “aksincha”. Bu sizning bashoratingiz.",
+            "**Bashoratga mos oilani toping** (yuqoridagi ro‘yxatdan) va variantlar ichidan shu oiladagi so‘zni tanlang.",
+            "**Bir oiladan ikki variant bo‘lsa — nozik farqni tekshiring:** *however* (oddiy zidlik) va *instead* (inkordan keyin almashtirish); *for example* (misol) va *in other words* (boshqacha aytish); *moreover* (yangi qo‘shimcha) va *similarly* (o‘xshash holat).",
+            "**Bir xil ma’noli ikki variant bo‘lsa** (masalan, *therefore* va *thus*), to‘g‘ri javob faqat bitta bo‘lgani uchun ikkalasi ham javob emas.",
+            "**Tanlovingizni joyiga qo‘yib, ikki gapni birga o‘qing:** “A. Shuning uchun, B.” — mantiqan to‘g‘ri eshitiladimi?"
+          ]
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 1: zidlik",
+          "example": {
+            "passage": "Many home gardeners assume that tomato plants need full sun all day to produce a large harvest. ______ in a two-year trial, horticulturist Sevara Aliyeva found that plants shaded during the hottest afternoon hours produced slightly more fruit than plants left in full sun.",
+            "problem": "Which choice completes the text with the most logical transition?",
+            "choices": ["However,", "Similarly,", "For example,", "Therefore,"],
+            "solution": [
+              "Birinchi gap — keng tarqalgan **taxmin**: pomidorga kun bo‘yi to‘liq quyosh kerak. Ikkinchi gap — tajriba natijasi: tushdan keyin soyada qolgan o‘simliklar **ko‘proq** hosil bergan. Natija taxminga zid.",
+              "O‘zbekcha bashorat: “**lekin**”. Zidlik oilasidan — *However* — **A**.",
+              "**B** (*Similarly*) — o‘xshash holatni bildiradi, lekin tajriba natijasi taxminni tasdiqlamaydi, aksincha rad etadi.",
+              "**C** (*For example*) — ikkinchi gap birinchi gapdagi fikrning misoli bo‘lishi kerak edi; tajriba esa bu fikrga misol emas, unga qarshi dalil.",
+              "**D** (*Therefore*) — tajriba natijasi bog‘bonlarning taxminidan **kelib chiqmaydi**; sabab–oqibat munosabati yo‘q."
+            ],
+            "answer": "A) However,"
+          }
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 2: sabab va oqibat",
+          "example": {
+            "passage": "When a honeybee finds a rich patch of flowers, it returns to the hive and performs a movement known as the waggle dance. The angle of the dance shows the direction of the flowers relative to the sun, and the length of the dance shows how far away they are. ______ other bees from the hive can locate the flowers without searching the area at random.",
+            "problem": "Which choice completes the text with the most logical transition?",
+            "choices": ["Nevertheless,", "For instance,", "As a result,", "Previously,"],
+            "solution": [
+              "Oldingi gaplar: raqs gullarning **yo‘nalishi** va **masofasini** ko‘rsatadi. Oxirgi gap: boshqa asalarilar gullarni tasodifiy qidirmasdan topa oladi.",
+              "Oxirgi gap — raqs bergan ma’lumotning **natijasi**. Bashorat: “shuning uchun / natijada”. To‘g‘ri javob — *As a result* — **C**.",
+              "**A** (*Nevertheless*) — “shunga qaramay” degan zidlikni bildiradi, go‘yo raqsdan keyin gullarni topish qiyin bo‘lishi kutilgandek. Bunday zidlik matnda yo‘q.",
+              "**B** (*For instance*) — oxirgi gap oldingi fikrga misol emas, balki undan kelib chiqqan oqibat.",
+              "**D** (*Previously*) — vaqt munosabati (“ilgari”); asalarilar gullarni raqsdan **keyin** topadi, oldin emas."
+            ],
+            "answer": "C) As a result,"
+          }
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 3: umumiy fikr va misol",
+          "example": {
+            "passage": "Some desert plants survive long droughts by storing water in their thick tissues. ______ the pleated stems of certain cactus species can expand like an accordion, allowing the plants to absorb large amounts of water after a rare rainstorm.",
+            "problem": "Which choice completes the text with the most logical transition?",
+            "choices": ["Consequently,", "For instance,", "However,", "Instead,"],
+            "solution": [
+              "Birinchi gap — **umumiy** fikr: ba’zi cho‘l o‘simliklari suvni qalin to‘qimalarida saqlaydi. Ikkinchi gap — **aniq** holat: ba’zi kaktus turlarining poyasi kengayib, ko‘p suv yig‘a oladi.",
+              "Umumiy fikrdan keyin uning aniq namunasi kelyapti — bashorat: “masalan”. To‘g‘ri javob — *For instance* — **B**.",
+              "**A** (*Consequently*) — kaktus poyasining kengayishi birinchi gapdagi fikrning **natijasi** emas, balki uning namunasi; sabab–oqibat yo‘q.",
+              "**C** (*However*) — ikkinchi gap birinchisiga zid emas, aksincha uni tasdiqlaydi.",
+              "**D** (*Instead*) — birinchi gapda inkor qilingan biror narsa yo‘q, shuning uchun “uning o‘rniga” ma’nosi mos kelmaydi."
+            ],
+            "answer": "B) For instance,"
+          }
+        },
+        {
+          "type": "watch_out",
+          "heading": "Nimaga e’tibor berish kerak",
+          "items": [
+            "**Munosabat so‘zlar orasida emas, fikrlar orasida.** Bir xil so‘zning takrorlanishi hali o‘xshashlik degani emas; gaplarning **ma’nosini** solishtiring.",
+            "**However va instead farqi:** *instead* birinchi gapda biror narsa inkor qilinganda yoki rad etilganda ishlatiladi: *The builders did not use concrete. Instead, they used rammed earth.* (beton o‘rniga).",
+            "**Moreover va similarly farqi:** *moreover* — xuddi shu fikrni qo‘llab-quvvatlovchi **yangi** dalil; *similarly* — **boshqa obyektda** kuzatilgan xuddi shunday holat.",
+            "**For example va specifically farqi:** *for example* — umumiy fikrning bitta namunasi; *specifically* — oldingi fikrni aniqroq qilib, tafsilotini beradi.",
+            "**In fact va indeed** oldingi fikrni kuchaytiradi yoki undan ham kuchliroq dalil keltiradi: *The plan was popular. In fact, nearly every resident voted for it.*",
+            "**Meanwhile** — “shu vaqtning o‘zida” (ko‘pincha boshqa joyda yoki boshqa obyekt bilan); oddiy “keyin” ma’nosida emas.",
+            "**Ba’zan munosabat uzoqroq gap bilan bo‘ladi:** matnda uch-to‘rt gap bo‘lsa, bo‘sh joyli gap birinchi gapdagi asosiy fikrga javob berishi mumkin. Qisqa matnni butunlay o‘qing."
+          ]
+        },
+        {
+          "type": "traps",
+          "heading": "Keng tarqalgan xatolar (tuzoq variantlar)",
+          "items": [
+            "**Yo‘nalishni adashtirish:** zidlik kerak bo‘lgan joyda qo‘shimcha (*moreover*) yoki aksincha. Avval “fikr shu yo‘nalishda davom etyaptimi yoki burilyaptimi?” deb so‘rang.",
+            "**Therefore’ni haddan tashqari ishlatish:** ikkinchi gap birinchisidan **keyin** kelgani — hali undan **kelib chiqqani** degani emas.",
+            "**“Akademik” eshitiladigan so‘zlar:** *Furthermore, Consequently, Nevertheless* jiddiy ko‘rinadi, lekin to‘g‘ri javob har doim ham murakkab so‘z emas.",
+            "**Misol va natijani adashtirish:** aniq holat umumiy fikrning **misolimi** yoki **oqibatimi** — Namuna 2 va 3 ni solishtiring.",
+            "**Noto‘g‘ri gap bilan bog‘lash:** bo‘sh joyli gapni faqat oldingi gapning oxirgi so‘zlari bilan solishtirib, butun fikrni e’tiborsiz qoldirish."
+          ]
+        },
+        {
+          "type": "time",
+          "heading": "Vaqt bo‘yicha maslahat",
+          "items": [
+            "Transitions — Reading and Writing’dagi eng tez savollardan biri: **25–45 soniya**. O‘rtacha vaqt savol boshiga taxminan 71 soniya, shuning uchun bu yerda tejalgan vaqtni uzun matnli savollarga qoldiring.",
+            "Variantlarga qarashdan oldin bashorat qilish odati vaqtni tejaydi: bashorat aniq bo‘lsa, javob bir qarashda topiladi.",
+            "Ikki variant orasida qolsangiz, ikkala gapni o‘zbekchaga o‘girib, har bir variant bilan o‘qib ko‘ring: “… Shuning uchun …” yoki “… Masalan …” — qaysi biri mantiqli?",
+            "60 soniyadan oshib ketsa, eng ehtimolli variantni belgilang, savolni **Mark for Review** bilan belgilab qo‘ying va keyinroq qayting."
+          ]
+        },
+        {
+          "type": "terms",
+          "heading": "Muhim inglizcha atamalar",
+          "terms": [
+            { "term": "transition", "meaning": "o‘tish so‘zi — ikki fikrni mantiqan bog‘laydigan so‘z yoki ibora" },
+            { "term": "logical relationship", "meaning": "mantiqiy munosabat — fikrlar bir-biriga qanday bog‘langani" },
+            { "term": "contrast", "meaning": "zidlik: *however, by contrast, nevertheless*" },
+            { "term": "cause and effect", "meaning": "sabab–oqibat: *therefore, as a result, consequently*" },
+            { "term": "addition", "meaning": "qo‘shimcha: *moreover, furthermore, in addition*" },
+            { "term": "example", "meaning": "misol: *for example, for instance*" },
+            { "term": "sequence", "meaning": "ketma-ketlik: *then, subsequently, finally*" },
+            { "term": "concession", "meaning": "tan olish: *admittedly, granted*" },
+            { "term": "similarity", "meaning": "o‘xshashlik: *similarly, likewise*" },
+            { "term": "most logical", "meaning": "eng mantiqiy — grammatika emas, ma’no bo‘yicha tanlang" }
+          ]
+        },
+        {
+          "type": "checklist",
+          "heading": "Javobni tanlashdan oldin tekshiring",
+          "items": [
+            "Variantlarga qarashdan oldin munosabatni o‘zbekcha bitta so‘z bilan aytdimmi?",
+            "Ikkinchi fikr birinchisiga qarshimi, uni davom ettiradimi yoki undan kelib chiqadimi?",
+            "Tanlagan so‘zim shu oiladanmi va nozik farqlar (*instead, similarly, specifically*) mos keladimi?",
+            "Tanlovni joyiga qo‘yib, ikki gapni birga o‘qidimmi?"
+          ]
+        }
+      ]
+    }
+  }
+}

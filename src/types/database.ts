@@ -1007,6 +1007,147 @@ export type Database = {
           },
         ]
       }
+      guide_contents: {
+        Row: {
+          id: string
+          guide_id: string
+          locale: string
+          title: string
+          summary: string
+          sections: Json
+          created_at: string
+          updated_at: string
+        }
+        Insert: {
+          id?: string
+          guide_id: string
+          locale: string
+          title: string
+          summary?: string
+          sections: Json
+          created_at?: string
+          updated_at?: string
+        }
+        Update: {
+          id?: string
+          guide_id?: string
+          locale?: string
+          title?: string
+          summary?: string
+          sections?: Json
+          created_at?: string
+          updated_at?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "guide_contents_guide_id_fkey"
+            columns: ["guide_id"]
+            isOneToOne: false
+            referencedRelation: "guides"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      guide_reads: {
+        Row: {
+          user_id: string
+          guide_id: string
+          read_at: string
+        }
+        Insert: {
+          user_id: string
+          guide_id: string
+          read_at?: string
+        }
+        Update: {
+          user_id?: string
+          guide_id?: string
+          read_at?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "guide_reads_guide_id_fkey"
+            columns: ["guide_id"]
+            isOneToOne: false
+            referencedRelation: "guides"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "guide_reads_user_id_fkey"
+            columns: ["user_id"]
+            isOneToOne: false
+            referencedRelation: "profiles"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      guides: {
+        Row: {
+          id: string
+          slug: string
+          kind: string
+          skill_id: string | null
+          subject_id: string | null
+          position: number
+          reading_minutes: number
+          status: string
+          created_by: string | null
+          published_at: string | null
+          created_at: string
+          updated_at: string
+        }
+        Insert: {
+          id?: string
+          slug: string
+          kind: string
+          skill_id?: string | null
+          subject_id?: string | null
+          position?: number
+          reading_minutes?: number
+          status?: string
+          created_by?: string | null
+          published_at?: string | null
+          created_at?: string
+          updated_at?: string
+        }
+        Update: {
+          id?: string
+          slug?: string
+          kind?: string
+          skill_id?: string | null
+          subject_id?: string | null
+          position?: number
+          reading_minutes?: number
+          status?: string
+          created_by?: string | null
+          published_at?: string | null
+          created_at?: string
+          updated_at?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "guides_created_by_fkey"
+            columns: ["created_by"]
+            isOneToOne: false
+            referencedRelation: "profiles"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "guides_skill_id_fkey"
+            columns: ["skill_id"]
+            isOneToOne: false
+            referencedRelation: "skills"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "guides_subject_id_fkey"
+            columns: ["subject_id"]
+            isOneToOne: false
+            referencedRelation: "subjects"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       lesson_contents: {
         Row: {
           id: string

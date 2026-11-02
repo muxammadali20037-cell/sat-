@@ -1,0 +1,127 @@
+{
+  "slug": "linear-equations-one-variable",
+  "kind": "skill",
+  "skill": "linear_equations_one_variable",
+  "position": 1,
+  "readingMinutes": 9,
+  "locales": {
+    "uz": {
+      "title": "Bir o‘zgaruvchili chiziqli tenglamalar",
+      "summary": "Matnli masalani tenglamaga aylantirish, uni tez va xatosiz yechish hamda tenglamaning nechta yechimi borligini aniqlash — Math bo‘limidagi eng ko‘p uchraydigan savollardan biri.",
+      "sections": [
+        {
+          "type": "concept",
+          "heading": "Bu ko‘nikma nimani tekshiradi",
+          "body": "Chiziqli tenglama — o‘zgaruvchi faqat birinchi darajada qatnashgan tenglama, masalan $3x + 7 = 22$ yoki $\\frac{x}{4} - 2 = 5$. SAT bu mavzuda uch narsani tekshiradi:\n\n- **Yechish:** $x$ ni topish (qavslar, kasrlar, ikkala tomondagi o‘zgaruvchilar bilan).\n- **Tuzish:** matnli vaziyatni tenglamaga aylantirish (narx, masofa, ish haqi, a’zolik to‘lovi).\n- **Talqin qilish:** tenglamadagi son yoki ifoda vaziyatda nimani anglatishini tushunish va tenglamaning **nechta yechimi** borligini aniqlash (bitta, umuman yo‘q yoki cheksiz ko‘p).\n\nBu Algebra bo‘limining asosi: keyingi mavzular (funksiyalar, sistemalar, tengsizliklar) shu ko‘nikmaga tayanadi."
+        },
+        {
+          "type": "recognize",
+          "heading": "Savolni qanday tanib olasiz",
+          "items": [
+            "Savolda bitta noma’lum bor va u kvadrat, ildiz yoki maxrajda emas: *“What is the value of $x$?”*",
+            "Matnda **bir martalik to‘lov + har birlik uchun to‘lov** tuzilmasi bor: *“a one-time fee of … and … per month”*.",
+            "*“Which equation represents…”* — sizdan tenglamani yechish emas, **tuzish** so‘ralmoqda.",
+            "*“How many solutions…”*, *“has no solution”*, *“infinitely many solutions”* — yechimlar soni haqidagi savol.",
+            "Ba’zan $x$ emas, butun ifoda so‘raladi: *“What is the value of $2x + 1$?”* — bu yerda $x$ ni topmasdan ham javob olish mumkin."
+          ]
+        },
+        {
+          "type": "method",
+          "heading": "Ishlash usuli: qadamma-qadam",
+          "steps": [
+            "**Savolni oxirigacha o‘qing va nima so‘ralayotganini belgilang:** $x$ mi, $2x$ mi, yoki tenglamaning o‘zimi. Ko‘p xato aynan shu yerda bo‘ladi.",
+            "**Matnli masala bo‘lsa — o‘zgaruvchini so‘z bilan yozing:** “$m$ — oylar soni”. Keyin har bir jumlani tenglamaning bir qismiga aylantiring: boshlang‘ich qiymat — o‘zgarmas son, “har biri uchun” — koeffitsiyent.",
+            "**Qavslarni oching va kasrlardan qutuling:** butun tenglamani maxrajlarning eng kichik umumiy karralisiga ko‘paytiring.",
+            "**O‘zgaruvchili hadlarni bir tomonga, sonlarni ikkinchi tomonga o‘tkazing.** Tomondan tomonga o‘tganda ishora o‘zgarishini unutmang.",
+            "**Koeffitsiyentga bo‘ling** va natijani dastlabki tenglamaga qo‘yib tekshiring (10 soniya oladi, lekin xatoni ushlaydi).",
+            "**So‘ralgan narsani yozing:** agar $3x - 1$ so‘ralgan bo‘lsa, topilgan $x$ ni ifodaga qo‘ying."
+          ]
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 1: matnli masala",
+          "example": {
+            "problem": "A climbing gym charges a one-time membership fee of \\$45 plus \\$18 for each month of access. Amira paid a total of \\$261. For how many months of access did she pay?",
+            "choices": ["10", "12", "14.5", "16"],
+            "solution": [
+              "O‘zgaruvchini belgilaymiz: $m$ — oylar soni.",
+              "Bir martalik to‘lov o‘zgarmas son, har oylik to‘lov koeffitsiyent bo‘ladi: $45 + 18m = 261$.",
+              "Ikkala tomondan 45 ni ayiramiz: $18m = 216$.",
+              "18 ga bo‘lamiz: $m = 12$.",
+              "Tekshiruv: $45 + 18 \\cdot 12 = 45 + 216 = 261$ ✓. **14.5** varianti 45 ni ayirmasdan $261 \\div 18$ qilgandan chiqadi — bu tipik tuzoq."
+            ],
+            "answer": "B) 12"
+          }
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 2: yechimlar soni",
+          "example": {
+            "problem": "In the equation $6(x - 2) + 3 = ax - 9$, $a$ is a constant. If the equation has infinitely many solutions, what is the value of $a$?",
+            "solution": [
+              "Chap tomondagi qavsni ochamiz: $6x - 12 + 3 = 6x - 9$.",
+              "Demak tenglama: $6x - 9 = ax - 9$.",
+              "Cheksiz ko‘p yechim bo‘lishi uchun ikkala tomon **bir xil** bo‘lishi kerak: $x$ oldidagi koeffitsiyentlar ham, ozod hadlar ham teng.",
+              "Ozod hadlar allaqachon teng ($-9 = -9$), koeffitsiyentlardan $a = 6$.",
+              "Bu savolda javobni o‘zingiz yozasiz (student-produced response): **6** deb kiriting."
+            ],
+            "answer": "6"
+          }
+        },
+        {
+          "type": "watch_out",
+          "heading": "Nimaga e’tibor berish kerak",
+          "items": [
+            "**Manfiy sonni qavsga ko‘paytirish:** $-3(x - 4) = -3x + 12$, $-3x - 12$ emas.",
+            "**Yechimlar soni qoidasi:** qavslarni ochib soddalashtirgandan keyin $x$ lar qisqarib ketsa — tenglik to‘g‘ri bo‘lsa ($5 = 5$) cheksiz ko‘p yechim, noto‘g‘ri bo‘lsa ($5 = 2$) yechim yo‘q. $x$ qolsa — aynan bitta yechim.",
+            "**Birliklar:** minut va soat, sent va dollar aralashgan bo‘lsa, avval bir xil birlikka keltiring.",
+            "**Kasrli koeffitsiyent:** $\\frac{3}{4}x = 9$ bo‘lsa, $\\frac{4}{3}$ ga ko‘paytiring — $\\frac{3}{4}$ ga emas.",
+            "**Javob formati (SPR):** kasr yoki o‘nli kasr shaklida yozish mumkin, lekin aralash son ($3\\frac{1}{2}$) qabul qilinmaydi — $7/2$ yoki $3.5$ deb yozing."
+          ]
+        },
+        {
+          "type": "traps",
+          "heading": "Keng tarqalgan xatolar (tuzoq variantlar)",
+          "items": [
+            "**Oraliq natija variant sifatida berilgan:** masalan $18m = 216$ dagi **216** variantlar orasida turadi. Oxirgi qadamni bajarganingizni tekshiring.",
+            "**Noto‘g‘ri amal tartibi:** umumiy summani darhol koeffitsiyentga bo‘lish (yuqoridagi 14.5 varianti).",
+            "**$x$ o‘rniga ifodani so‘rash:** $x = 4$ topib, “What is $2x + 3$?” savoliga **4** deb javob berish.",
+            "**Ishora xatosi:** hadni boshqa tomonga o‘tkazganda ishorani o‘zgartirmaslik — natijada manfiy javob chiqadi va variantlar orasida u ham bor."
+          ]
+        },
+        {
+          "type": "time",
+          "heading": "Vaqt bo‘yicha maslahat",
+          "items": [
+            "Bu turdagi savolga **45–70 soniya** sarflash yetarli. Math’da har bir savolga o‘rtacha 95 soniya bor — bu yerda tejagan vaqtingiz qiyin savollarga qoladi.",
+            "Variantlar sodda sonlar bo‘lsa, ularni tenglamaga **qo‘yib tekshirish** (backsolving) ham tez usul: o‘rtadagi variantdan boshlang.",
+            "Tenglama murakkab ko‘rinsa, Desmos’da chap va o‘ng tomonni ikki chiziq sifatida chizib, kesishish nuqtasini toping."
+          ]
+        },
+        {
+          "type": "terms",
+          "heading": "Muhim inglizcha atamalar",
+          "terms": [
+            { "term": "solve for x", "meaning": "$x$ ning qiymatini topish" },
+            { "term": "constant", "meaning": "o‘zgarmas son (masalan, tenglamadagi $a$ yoki $c$)" },
+            { "term": "coefficient", "meaning": "o‘zgaruvchi oldidagi son: $7x$ da 7" },
+            { "term": "one-time fee", "meaning": "bir martalik to‘lov — tenglamadagi o‘zgarmas had" },
+            { "term": "per / for each", "meaning": "har biri uchun — o‘zgaruvchi oldidagi koeffitsiyent" },
+            { "term": "no solution", "meaning": "tenglamaning yechimi yo‘q" },
+            { "term": "infinitely many solutions", "meaning": "cheksiz ko‘p yechim — ikkala tomon bir xil ifoda" },
+            { "term": "represents", "meaning": "ifodalaydi — “Which equation represents…” — tenglamani tuzing" }
+          ]
+        },
+        {
+          "type": "checklist",
+          "heading": "Javobni tanlashdan oldin tekshiring",
+          "items": [
+            "So‘ralgan narsani ($x$, ifoda yoki tenglama) topdimmi?",
+            "Topgan qiymatimni dastlabki tenglamaga qo‘yib tekshirdimmi?",
+            "Birliklar va ishoralar to‘g‘rimi?"
+          ]
+        }
+      ]
+    }
+  }
+}

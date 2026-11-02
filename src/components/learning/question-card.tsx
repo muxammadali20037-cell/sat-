@@ -167,7 +167,11 @@ export function QuestionCard(props: QuestionCardProps) {
         {total !== undefined && <span className="text-[13px] text-muted-foreground tabular">{format(t.ofTotal, { total })}</span>}
         {showMeta && (question.skillName || question.difficulty) && (
           <div className="flex flex-wrap items-center gap-1.5">
-            {question.skillName && <Badge variant="outline">{question.skillName}</Badge>}
+            {question.skillName && (
+              <Badge variant="outline" className="h-auto max-w-full whitespace-normal py-0.5 text-left">
+                {question.skillName}
+              </Badge>
+            )}
             {question.difficulty && (
               <Badge variant={question.difficulty === 'hard' ? 'warning' : question.difficulty === 'easy' ? 'success' : 'neutral'}>
                 {t.difficulty[question.difficulty]}

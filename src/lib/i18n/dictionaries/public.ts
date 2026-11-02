@@ -541,7 +541,7 @@ export const publicDict = defineDict({
       title: 'One place for everything you need to prepare',
       description: 'Lessons, practice, tests and feedback are connected, so every session builds on the last one.',
       items: [
-        { title: 'Video lessons', body: 'Short lessons for every skill on the Digital SAT, with notes, worked examples and related practice.' },
+        { title: 'Lessons and Uzbek study guides', body: 'Short lessons for every Digital SAT skill, plus guides in Uzbek: how to recognise each question type, a step-by-step method, the traps to avoid and worked examples.' },
         { title: 'Skill practice', body: 'Choose a subject, domain, skill and difficulty. Get feedback and a full explanation after every answer.' },
         { title: 'Free diagnostic', body: 'A timed test balanced across all domains that shows your level and your weakest skills.' },
         { title: 'Mock exams', body: 'Full-length adaptive exams with section timers, a question navigator and mark for review.' },
@@ -959,7 +959,7 @@ export const publicDict = defineDict({
       title: 'Tayyorgarlik uchun kerakli hamma narsa bir joyda',
       description: "Darslar, mashqlar, testlar va fikr-mulohazalar o'zaro bog'langan, shuning uchun har bir mashg'ulot avvalgisiga tayanadi.",
       items: [
-        { title: 'Video darslar', body: "Digital SAT'dagi har bir ko'nikma uchun qisqa darslar: konspekt, yechilgan misollar va tegishli mashqlar bilan." },
+        { title: "Darslar va o'zbekcha qo'llanma", body: "Digital SAT'ning har bir ko'nikmasi bo'yicha qisqa darslar va o'zbek tilidagi qo'llanmalar: savol turini tanib olish, qadamma-qadam ishlash usuli, tuzoqlar va namunaviy yechimlar." },
         { title: "Ko'nikmalar bo'yicha mashq", body: "Fan, yo'nalish, ko'nikma va qiyinlikni tanlang. Har bir javobdan keyin natija va to'liq tushuntirish oling." },
         { title: 'Bepul diagnostika', body: "Barcha yo'nalishlar bo'yicha muvozanatlangan vaqtli test darajangiz va eng zaif ko'nikmalaringizni ko'rsatadi." },
         { title: 'Sinov imtihonlari', body: "Bo'lim taymerlari, savollar navigatori va ko'rib chiqish belgisi bilan to'liq moslashuvchan imtihonlar." },

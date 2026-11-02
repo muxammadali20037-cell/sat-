@@ -1,0 +1,170 @@
+{
+  "slug": "english-for-the-sat",
+  "kind": "strategy",
+  "subject": "reading_writing",
+  "position": 10,
+  "readingMinutes": 10,
+  "locales": {
+    "uz": {
+      "title": "SAT uchun ingliz tili: savol iboralari va akademik so‘zlar",
+      "summary": "Testda doim takrorlanadigan inglizcha savol iboralari va ular aslida nimani so‘rashi, Math savollaridagi kalit so‘zlar, o‘zbekcha ma’nolari bilan 30 ta ko‘p uchraydigan akademik so‘z, bog‘lovchi so‘zlar va 8 hafta ichida so‘z boyligini oshirish rejasi.",
+      "sections": [
+        {
+          "type": "concept",
+          "heading": "Nega bu muhim",
+          "body": "SAT’dagi barcha savol va matnlar ingliz tilida. Ingliz tili ona tili bo‘lmagan o‘quvchi uchun ikki to‘siq bor:\n\n- **Savol nimani so‘rayotganini tushunish.** Yaxshi xabar: savol iboralari cheklangan va doim takrorlanadi. Ularni bir marta yaxshi o‘rgansangiz, har bir savolda soniyalar tejaysiz va “savolni noto‘g‘ri tushunish” xatosi yo‘qoladi.\n- **Matndagi akademik so‘zlar.** Bu uzoqroq ish: har kuni oz-ozdan, kontekst bilan va takrorlab o‘rganiladi.\n\nBu qo‘llanmadagi inglizcha iboralarni inglizcha ko‘rinishida eslab qoling — testda ularni aynan shunday ko‘rasiz. O‘zbekcha izoh faqat ma’nosini tushunish uchun."
+        },
+        {
+          "type": "terms",
+          "heading": "Reading and Writing savol iboralari",
+          "terms": [
+            { "term": "most logical and precise word or phrase", "meaning": "kontekstga mantiqan va ma’no jihatidan eng aniq mos so‘z — *Words in Context* savoli" },
+            { "term": "most nearly mean", "meaning": "*As used in the text, what does the word … most nearly mean?* — so‘zning **aynan shu matndagi** ma’nosi, lug‘atdagi birinchi ma’nosi emas" },
+            { "term": "best states the main purpose of the text", "meaning": "muallif matnni nima uchun yozgan: tushuntirish, taqqoslash, tanqid qilish, tasvirlash" },
+            { "term": "best describes the function of the underlined sentence", "meaning": "tagiga chizilgan gapning matndagi vazifasi: da’vo, misol, qarshi fikr yoki xulosa" },
+            { "term": "best describes the overall structure of the text", "meaning": "matn qanday tuzilgan: “avval …, keyin …”" },
+            { "term": "best states the main idea of the text", "meaning": "asosiy fikr — butun matnni qamraydigan, lekin undan kengaymaydigan" },
+            { "term": "Based on the texts, how would … most likely respond", "meaning": "ikkinchi matn muallifi birinchi matndagi fikrga qanday munosabat bildirgan bo‘lardi" },
+            { "term": "Which finding, if true, would most directly support", "meaning": "topilmani rost deb qabul qilib, u da’voni **eng to‘g‘ridan-to‘g‘ri** kuchaytiradimi — shuni baholang; *weaken* — zaiflashtiradi" },
+            { "term": "most effectively illustrates the claim", "meaning": "da’voni aynan ko‘rsatib beradigan iqtibos yoki misol" },
+            { "term": "uses data from the table/graph", "meaning": "jadval yoki grafikdagi ma’lumotni matndagi da’vo bilan to‘g‘ri bog‘lash" },
+            { "term": "most logically completes the text", "meaning": "matndagi mantiqiy zanjirni davom ettiradigan xulosa — *Inferences* savoli" },
+            { "term": "conforms to the conventions of Standard English", "meaning": "ingliz tilining grammatika va tinish belgilari qoidalariga mos" },
+            { "term": "most logical transition", "meaning": "ikki gapni mantiqan bog‘laydigan so‘z yoki ibora (*however*, *therefore* va hokazo)" },
+            { "term": "uses relevant information from the notes to accomplish this goal", "meaning": "eslatmalardan **berilgan maqsadga** mos ma’lumotni tanlash — *Rhetorical Synthesis* savoli" },
+            { "term": "The student wants to …", "meaning": "o‘quvchi … qilmoqchi — eslatmalar savolidagi maqsad; avval shuni o‘qing" },
+            { "term": "according to the text", "meaning": "matnda to‘g‘ridan-to‘g‘ri aytilganiga ko‘ra" },
+            { "term": "underlined", "meaning": "tagiga chizilgan (gap yoki qism)" }
+          ]
+        },
+        {
+          "type": "terms",
+          "heading": "Math savollaridagi kalit iboralar",
+          "terms": [
+            { "term": "in terms of", "meaning": "… orqali ifodalang: javob son emas, ifoda" },
+            { "term": "equivalent to", "meaning": "ekvivalent — har qanday $x$ uchun bir xil qiymat beradigan ifoda" },
+            { "term": "must be true / could be true", "meaning": "har doim to‘g‘ri / kamida bitta holatda to‘g‘ri" },
+            { "term": "best interpretation", "meaning": "sonning yoki ifodaning vaziyatdagi ma’nosi" },
+            { "term": "constant", "meaning": "o‘zgarmas son" },
+            { "term": "integer", "meaning": "butun son: …, −2, −1, 0, 1, 2, …" },
+            { "term": "positive / negative / nonnegative", "meaning": "musbat / manfiy / manfiy emas (0 yoki musbat)" },
+            { "term": "at least / at most", "meaning": "kamida ($\\geq$) / ko‘pi bilan ($\\leq$)" },
+            { "term": "no more than / more than", "meaning": "… dan oshmaydi ($\\leq$) / … dan ko‘p ($>$)" },
+            { "term": "rounded to the nearest tenth", "meaning": "o‘ndan birgacha yaxlitlangan (masalan, 4.7)" },
+            { "term": "respectively", "meaning": "mos ravishda — sanalgan tartib bo‘yicha" },
+            { "term": "directly proportional", "meaning": "to‘g‘ri proporsional: $y = kx$" },
+            { "term": "y-intercept / x-intercept", "meaning": "grafikning $y$ / $x$ o‘qi bilan kesishish nuqtasi" },
+            { "term": "percent greater than", "meaning": "… dan necha foiz ko‘p" },
+            { "term": "sum / difference / product / quotient", "meaning": "yig‘indi / ayirma / ko‘paytma / bo‘linma" }
+          ]
+        },
+        {
+          "type": "terms",
+          "heading": "30 ta ko‘p uchraydigan akademik so‘z",
+          "terms": [
+            { "term": "assert", "meaning": "qat’iy ta’kidlamoq, da’vo qilmoq" },
+            { "term": "contend", "meaning": "(bahsda) da’vo qilmoq, fikrni ilgari surmoq" },
+            { "term": "undermine", "meaning": "zaiflashtirmoq, putur yetkazmoq" },
+            { "term": "corroborate", "meaning": "qo‘shimcha dalil bilan tasdiqlamoq" },
+            { "term": "refute", "meaning": "dalil bilan rad etmoq" },
+            { "term": "advocate", "meaning": "himoya qilmoq, tarafdori bo‘lmoq; (ot) himoyachi, tarafdor" },
+            { "term": "acknowledge", "meaning": "tan olmoq" },
+            { "term": "dismiss", "meaning": "e’tiborsiz qoldirmoq, jiddiy qabul qilmaslik" },
+            { "term": "emphasize", "meaning": "ta’kidlamoq, urg‘u bermoq" },
+            { "term": "illustrate", "meaning": "misol bilan ko‘rsatmoq" },
+            { "term": "challenge (verb)", "meaning": "shubha ostiga qo‘ymoq, e’tiroz bildirmoq" },
+            { "term": "speculate", "meaning": "(yetarli dalilsiz) taxmin qilmoq" },
+            { "term": "hypothesis", "meaning": "gipoteza — tekshirilishi kerak bo‘lgan ilmiy taxmin" },
+            { "term": "phenomenon", "meaning": "hodisa (ko‘pligi: *phenomena*)" },
+            { "term": "prevalent", "meaning": "keng tarqalgan" },
+            { "term": "novel (adjective)", "meaning": "yangi, avval ko‘rilmagan — “roman” emas!" },
+            { "term": "ambiguous", "meaning": "ikki ma’noli, noaniq" },
+            { "term": "plausible", "meaning": "ishonarli, haqiqatga yaqin" },
+            { "term": "skeptical", "meaning": "shubha bilan qaraydigan" },
+            { "term": "comprehensive", "meaning": "keng qamrovli, har tomonlama" },
+            { "term": "inadvertently", "meaning": "beixtiyor, bilmagan holda" },
+            { "term": "diminish", "meaning": "kamaytirmoq; kamaymoq" },
+            { "term": "enhance", "meaning": "yaxshilamoq, kuchaytirmoq" },
+            { "term": "constrain", "meaning": "cheklamoq" },
+            { "term": "derive", "meaning": "(biror narsadan) kelib chiqmoq yoki olmoq" },
+            { "term": "attribute (to)", "meaning": "sababini biror narsaga bog‘lamoq" },
+            { "term": "underscore", "meaning": "alohida ta’kidlamoq" },
+            { "term": "reconcile", "meaning": "qarama-qarshi g‘oyalarni bir-biriga moslashtirmoq, murosaga keltirmoq" },
+            { "term": "discrepancy", "meaning": "nomuvofiqlik, tafovut (ikki ma’lumot orasida)" },
+            { "term": "substantiate", "meaning": "dalillar bilan asoslamoq" }
+          ]
+        },
+        {
+          "type": "note",
+          "heading": "Bog‘lovchi so‘zlar: vazifasi bo‘yicha",
+          "items": [
+            "**Zidlik** (“lekin”, “aksincha”): *however, nevertheless, nonetheless, in contrast, conversely, on the other hand, still*.",
+            "**Natija** (“shuning uchun”): *therefore, thus, consequently, as a result, hence, accordingly*.",
+            "**Qo‘shimcha** (“bundan tashqari”): *moreover, furthermore, in addition, additionally*.",
+            "**O‘xshashlik** (“xuddi shunday”): *similarly, likewise*.",
+            "**Misol** (“masalan”): *for example, for instance*; aniqlashtirish: *specifically*.",
+            "**Qayta ifodalash va kuchaytirish** (“boshqacha aytganda”, “haqiqatan ham”): *in other words, that is, indeed*.",
+            "**Vaqt va ketma-ketlik** (“keyin”, “ayni paytda”, “avval”): *subsequently, meanwhile, previously, finally*.",
+            "**Qanday ishlatish:** ikki gap orasidagi munosabatni avval o‘zbekcha ayting, keyin shu guruhdan so‘z tanlang. Bir guruhdagi so‘zlar o‘zaro almashinadi — shuning uchun variantlarda bitta guruhdan ikki so‘z bo‘lsa, ikkalasi ham noto‘g‘ri bo‘lishi ehtimoli katta."
+          ]
+        },
+        {
+          "type": "watch_out",
+          "heading": "Ko‘p ma’noli so‘zlar va “soxta do‘stlar”",
+          "items": [
+            "**SAT so‘zning kamroq ma’lum ma’nosini tekshirishni yaxshi ko‘radi:** *novel* — yangi; *qualify* — (fikrga) cheklov yoki aniqlik kiritmoq; *check* — to‘xtatmoq, jilovlamoq; *sound* — asosli, ishonchli; *appreciate* — to‘liq anglamoq; *address* — (muammoni) ko‘rib chiqmoq, hal qilmoq; *reservations* — shubhalar, e’tirozlar; *conventional* — an’anaviy, odatiy.",
+            "**Soxta do‘stlar** — o‘zbek (yoki rus) tilidagi so‘zga o‘xshaydi, lekin ma’nosi boshqa: *actual* — haqiqiy (“aktual” — dolzarb emas); *sympathetic* — hamdard (“simpatik” emas); *magazine* — jurnal (“magazin” — do‘kon emas); *fabric* — mato (“fabrika” emas); *decade* — o‘n yil (“dekada” — o‘n kun emas); *artist* — rassom, ijodkor (faqat aktyor emas).",
+            "**So‘zni yolg‘iz emas, gap bilan o‘rganing:** bitta so‘zning lug‘atdagi birinchi tarjimasi ko‘pincha testdagi ma’noga mos kelmaydi.",
+            "**Ohangni aniqlang:** so‘z ijobiymi, salbiymi yoki betaraf? Ko‘p savollarda shu ham to‘g‘ri variantga olib boradi."
+          ]
+        },
+        {
+          "type": "method",
+          "heading": "So‘z boyligini oshirish usuli",
+          "steps": [
+            "**Manba — o‘zingiz ishlagan savollar.** Har bir notanish so‘zni u uchragan gap bilan birga yozib oling: so‘z, gap, o‘zbekcha ma’no, bitta sinonim.",
+            "**Kuniga 8–10 ta yangi so‘z** — 8 haftada 400–500 ta. Ko‘proq olsangiz, takrorlashga vaqt qolmaydi.",
+            "**Oraliqli takrorlash:** har bir so‘zni o‘rgangan kuningiz, keyin 1, 3, 7 va 14 kundan so‘ng takrorlang (qog‘oz kartochka yoki kartochka ilovasi bilan).",
+            "**Faol ishlating:** har bir yangi so‘z bilan o‘zingiz bitta gap tuzing — passiv tanishdan faol bilimga o‘tadi.",
+            "**Har kuni 15 daqiqa ingliz tilida o‘qing:** ilmiy-ommabop maqola yoki hikoya. Har bir abzasning asosiy fikrini bitta gap bilan yozing — bu SAT matnlariga eng yaqin mashq.",
+            "**So‘z tarkibini o‘rganing:** har hafta 5 ta prefiks, suffiks yoki o‘zak (masalan, *bene-* — yaxshi, *mal-* — yomon, *-ology* — fan).",
+            "**Hafta oxirida o‘zingizni tekshiring:** haftaning barcha so‘zlari bo‘yicha qisqa test; bilmaganlaringizni keyingi haftaga o‘tkazing."
+          ]
+        },
+        {
+          "type": "time",
+          "heading": "8 haftalik so‘z rejasi",
+          "items": [
+            "**1-hafta:** shu qo‘llanmadagi barcha savol iboralari (Reading and Writing va Math) — ularni to‘liq yodlang.",
+            "**2-hafta:** 30 ta akademik so‘z va bog‘lovchi so‘zlar guruhlari.",
+            "**3-hafta:** muallif fikri va munosabatini bildiruvchi fe’llar: *argue, claim, suggest, imply, propose, concede, question, reject*.",
+            "**4-hafta:** ilmiy matn so‘zlari: *data, sample, findings, evidence, trend, variable, correlation, control group*.",
+            "**5-hafta:** adabiy matnlar uchun ohang va kayfiyat so‘zlari: *nostalgic, ironic, earnest, indifferent, wistful, resentful*.",
+            "**6-hafta:** tarix va ijtimoiy fanlar so‘zlari: *policy, reform, advocate, legislation, sovereignty, labor*.",
+            "**7-hafta:** barcha kartochkalarni takrorlash va mashqlarda xato qilgan savollardagi so‘zlar.",
+            "**8-hafta:** faqat takrorlash — yangi so‘zlar kam; eng qiyin 50 ta so‘zga e’tibor."
+          ]
+        },
+        {
+          "type": "note",
+          "heading": "SAT MASTER’da so‘z ustida ishlash",
+          "items": [
+            "Mashqda notanish so‘zli savolni **saqlang** — **Saqlanganlar** bo‘limi sizning shaxsiy so‘z bazangiz manbaiga aylanadi.",
+            "**AI ustoz**dan so‘zning aynan shu gapdagi ma’nosini va sinonimlarini so‘rang: masalan, “*qualify* bu gapda nimani anglatadi?”",
+            "Har bir Reading and Writing mashqidan keyin izohlarni o‘qing va ulardagi yangi so‘zlarni ham ro‘yxatga qo‘shing."
+          ]
+        },
+        {
+          "type": "checklist",
+          "heading": "Kunlik so‘z odati",
+          "items": [
+            "Bugun 8–10 ta yangi so‘zni gapi bilan yozib oldimmi?",
+            "Rejadagi eski so‘zlarni takrorladimmi?",
+            "15 daqiqa ingliz tilida o‘qidimmi?",
+            "Kamida bitta yangi so‘z bilan o‘zim gap tuzdimmi?"
+          ]
+        }
+      ]
+    }
+  }
+}

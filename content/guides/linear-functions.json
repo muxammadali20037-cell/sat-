@@ -1,0 +1,148 @@
+{
+  "slug": "linear-functions",
+  "kind": "skill",
+  "skill": "linear_functions",
+  "position": 2,
+  "readingMinutes": 10,
+  "locales": {
+    "uz": {
+      "title": "Chiziqli funksiyalar",
+      "summary": "Chiziqli funksiyani tenglama, jadval, grafik va matn ko‘rinishida tanib olish, qiyalik va boshlang‘ich qiymatni topish hamda ularning real vaziyatdagi ma’nosini to‘g‘ri talqin qilish.",
+      "sections": [
+        {
+          "type": "concept",
+          "heading": "Bu ko‘nikma nimani tekshiradi",
+          "body": "Chiziqli funksiya — $x$ har safar bir xil miqdorga oshganda $f(x)$ ham har safar bir xil miqdorga o‘zgaradigan bog‘lanish. Uning umumiy ko‘rinishi:\n\n$$f(x) = mx + b$$\n\n- $m$ — **qiyalik (slope)**, ya’ni o‘zgarish tezligi: $x$ 1 ga oshganda $f(x)$ qanchaga o‘zgaradi. Ikki nuqta bo‘yicha: $m = \\frac{y_2 - y_1}{x_2 - x_1}$.\n- $b$ — **boshlang‘ich qiymat**: $f(0) = b$, grafikda esa chiziq $y$ o‘qini kesib o‘tadigan nuqta $(0, b)$.\n- $m > 0$ bo‘lsa funksiya o‘sadi, $m < 0$ bo‘lsa kamayadi, $m = 0$ bo‘lsa o‘zgarmaydi.\n\nSAT bitta funksiyani to‘rt xil ko‘rinishda berishi mumkin: **tenglama**, **jadval**, **grafik** yoki **matnli vaziyat**. Savollar esa uch turga bo‘linadi:\n\n- **Hisoblash:** $f(5)$ ni topish yoki $f(x) = 20$ bo‘ladigan $x$ ni topish.\n- **Tuzish:** jadval, grafik yoki matndan funksiya formulasini yozish.\n- **Talqin qilish:** $m$ va $b$ vaziyatda nimani anglatishini tushunish (masalan, “har minutda 7 litr kamayadi”, “boshida bakda 240 litr bor edi”).\n\nYodda tuting: qiyalikning birligi har doim “$y$ birligi / $x$ birligi” bo‘ladi — litr/minut, dollar/oy, km/soat. Talqin savollarida aynan shu birlik to‘g‘ri variantni ko‘rsatib beradi."
+        },
+        {
+          "type": "recognize",
+          "heading": "Savolni qanday tanib olasiz",
+          "items": [
+            "Savolda funksiya belgisi bor: *“The function f is defined by …”*, *“What is the value of f(6)?”*",
+            "Jadval berilgan: *“For the linear function f, the table shows selected values of x and f(x).”* — qiyalik va formulani jadvaldan topish kerak.",
+            "Matnda bir tekis o‘zgarish tasvirlangan: *“increases by 3 degrees each hour”*, *“decreases at a constant rate”* — bu chiziqli model belgisi.",
+            "*“What is the best interpretation of 240 in this context?”* yoki *“… of the slope of the graph”* — talqin savoli: son vaziyatda nimani anglatishini so‘rayapti.",
+            "Grafik berilgan va *“the y-intercept of the graph”* yoki *“the graph of y = f(x) passes through …”* kabi iboralar bor."
+          ]
+        },
+        {
+          "type": "method",
+          "heading": "Ishlash usuli: qadamma-qadam",
+          "steps": [
+            "**Ma’lumot qaysi ko‘rinishda berilganini aniqlang:** tenglama, jadval, grafik yoki matn. Formula allaqachon berilgan bo‘lsa, ko‘pincha qiymat qo‘yib hisoblashning o‘zi yetarli.",
+            "**Qiyalikni toping.** Ikkita nuqta oling va $m = \\frac{y_2 - y_1}{x_2 - x_1}$ ni hisoblang. Jadvalda $x$ qadami 1 bo‘lmasa, $y$ ning o‘zgarishini $x$ ning o‘zgarishiga albatta bo‘ling.",
+            "**Boshlang‘ich qiymatni toping.** Jadvalda $x = 0$ bo‘lsa, $b$ tayyor. Bo‘lmasa, istalgan nuqtani $y = mx + b$ ga qo‘yib hisoblang: $b = y - mx$.",
+            "**Funksiyani yozing:** $f(x) = mx + b$. Matnli masalada har bir harf nimani bildirishini so‘z bilan yozib qo‘ying: “$t$ — minutlar soni, $f(t)$ — qolgan suv (litr)”.",
+            "**Savolga aniq javob bering.** $f(4)$ so‘ralsa — $x$ o‘rniga 4 ni qo‘ying; “$f(x) = 4$ bo‘ladigan $x$” so‘ralsa — tenglama tuzib $x$ ni toping. Talqin savolida birlikni (litr, dollar, minut) variantlar bilan solishtiring.",
+            "**Uchinchi nuqta bilan tekshiring:** jadval yoki grafikdagi yana bir nuqta formulangizga mos kelishi kerak."
+          ]
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 1: jadvaldan formula tuzish",
+          "example": {
+            "problem": "The table shows selected values of the linear function $f$, where $f(t)$ is the number of liters of water remaining in a tank $t$ minutes after a drain was opened.\n\n$$\\begin{array}{c|ccc} t & 4 & 10 & 16 \\\\ \\hline f(t) & 212 & 170 & 128 \\end{array}$$\n\nWhich equation defines $f$?",
+            "choices": ["$f(t) = 212 - 7t$", "$f(t) = 240 - 7t$", "$f(t) = 240 - 42t$", "$f(t) = 240 + 7t$"],
+            "solution": [
+              "Qiyalikni ikki nuqta bo‘yicha topamiz: $m = \\frac{170 - 212}{10 - 4} = \\frac{-42}{6} = -7$. Demak, har minutda bakdagi suv 7 litrga kamayadi.",
+              "Keyingi juftlik bilan tekshiramiz: $\\frac{128 - 170}{16 - 10} = \\frac{-42}{6} = -7$ — o‘zgarish tezligi bir xil, funksiya haqiqatan chiziqli.",
+              "Boshlang‘ich qiymat: $b = f(t) - mt = 212 - (-7)(4) = 212 + 28 = 240$. Ya’ni kran ochilgan paytda ($t = 0$) bakda 240 litr suv bo‘lgan.",
+              "Funksiya: $f(t) = 240 - 7t$. Tekshiruv: $f(16) = 240 - 112 = 128$ ✓.",
+              "Nega boshqa variantlar noto‘g‘ri: **A** jadvaldagi birinchi qiymatni (212) boshlang‘ich qiymat deb oladi, lekin u $t = 4$ ga tegishli, $t = 0$ ga emas. **C** dagi $-42$ — bir minutdagi emas, 6 minutdagi o‘zgarish. **D** da ishora xato: suv kamaymoqda, demak qiyalik manfiy."
+            ],
+            "answer": "B) $f(t) = 240 - 7t$"
+          }
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 2: funksiya qiymatini topish",
+          "example": {
+            "problem": "For the linear function $g$, $g(2) = 11$ and $g(8) = 32$. What is the value of $g(-4)$?",
+            "solution": [
+              "$g(2) = 11$ yozuvi grafikdagi $(2, 11)$ nuqtani bildiradi; xuddi shunday $g(8) = 32$ — bu $(8, 32)$ nuqta.",
+              "Qiyalik: $m = \\frac{32 - 11}{8 - 2} = \\frac{21}{6} = 3.5$.",
+              "$b$ ni topamiz: $11 = 3.5 \\cdot 2 + b$, ya’ni $b = 4$. Demak, $g(x) = 3.5x + 4$.",
+              "$g(-4) = 3.5 \\cdot (-4) + 4 = -14 + 4 = -10$.",
+              "Qisqa yo‘l: $x = 2$ dan $x = -4$ gacha $x$ 6 ga kamayadi, shuning uchun $g$ ning qiymati $6 \\cdot 3.5 = 21$ ga kamayadi: $11 - 21 = -10$.",
+              "Tekshiruv: $g(8) = 3.5 \\cdot 8 + 4 = 32$ ✓. Javobni **-10** deb kiriting — manfiy javobda minus belgisi bilan birga 6 tagacha belgi kiritish mumkin."
+            ],
+            "answer": "-10"
+          }
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 3: qiyalikni talqin qilish",
+          "example": {
+            "problem": "A taxi company uses the function $F(m) = 2.15m + 4.50$ to calculate the fare, in dollars, for a trip of $m$ miles. What is the best interpretation of $2.15$ in this context?",
+            "choices": ["The fare increases by \\$2.15 for each additional mile of the trip.", "The fare for a 1-mile trip is \\$2.15.", "The fare charged before any distance is traveled is \\$2.15.", "The fare increases by \\$2.15 for every 4.50 miles of the trip."],
+            "solution": [
+              "$2.15$ — $m$ oldidagi koeffitsiyent, ya’ni qiyalik. Uning birligi: dollar / mil.",
+              "Demak, har bir qo‘shimcha mil uchun yo‘l haqi 2.15 dollarga oshadi — bu **A**.",
+              "**B** noto‘g‘ri: 1 millik safar narxi $F(1) = 2.15 + 4.50 = 6.65$ dollar. **C** boshlang‘ich to‘lovni tasvirlaydi — u $F(0) = 4.50$ dollar. **D** ikki sonni sun’iy bog‘laydi: 4.50 — millar emas, dollar.",
+              "Tekshiruv: $F(11) - F(10) = 28.15 - 26.00 = 2.15$ — har bir qo‘shimcha milda farq aynan 2.15 ✓."
+            ],
+            "answer": "A"
+          }
+        },
+        {
+          "type": "watch_out",
+          "heading": "Nimaga e’tibor berish kerak",
+          "items": [
+            "**Kirish va chiqishni adashtirmang:** $f(3)$ — $x = 3$ bo‘lgandagi qiymat; $f(x) = 3$ esa “qaysi $x$ da natija 3 ga teng?” degan savol.",
+            "**Ayirish tartibi:** $\\frac{y_2 - y_1}{x_2 - x_1}$ da surat va maxrajda nuqtalar bir xil tartibda olinishi shart, aks holda ishora teskari chiqadi.",
+            "**Jadval qadami:** $x$ qiymatlari 4, 10, 16 kabi 6 tadan oshsa, $y$ dagi o‘zgarishni 6 ga bo‘lishni unutmang.",
+            "**Grafik shkalasi:** katakchalar har doim 1 birlik emas — o‘qlardagi sonlarni o‘qing (bir katak 2, 5 yoki 10 birlik bo‘lishi mumkin).",
+            "**Boshlang‘ich qiymat** — bu $x = 0$ dagi qiymat, jadvaldagi birinchi son emas.",
+            "**Talqin savollarida so‘zlarga qarang:** qiyalik “har bir … uchun” (for each, per) ma’nosini beradi, $b$ esa “boshida”, “hali hech narsa bo‘lmaganda” ma’nosini."
+          ]
+        },
+        {
+          "type": "traps",
+          "heading": "Keng tarqalgan xatolar (tuzoq variantlar)",
+          "items": [
+            "**Jadvaldagi birinchi qiymatni boshlang‘ich qiymat deb olish:** $x$ 0 dan boshlanmasa, bu son $b$ emas (Namuna 1 dagi A).",
+            "**Bir qatordagi o‘zgarishni qiyalik deb olish:** $-7$ o‘rniga $-42$ (Namuna 1 dagi C).",
+            "**Teskari kasr:** $\\frac{\\Delta x}{\\Delta y}$ ni hisoblash — variantlarda $\\frac{1}{m}$ ham ko‘pincha turadi.",
+            "**Qiyalik va boshlang‘ich qiymat ma’nolari almashtirilgan:** talqin savolida bir xil son ikki xil ma’noda yozilgan variantlar bo‘ladi. “For each” — qiyalik, “initial” yoki “before any …” — boshlang‘ich qiymat.",
+            "**Kirish o‘rniga chiqish:** $f(x) = 20$ bo‘ladigan $x$ so‘ralganda 20 ning o‘zini yoki $f(20)$ ni javob qilish."
+          ]
+        },
+        {
+          "type": "time",
+          "heading": "Vaqt bo‘yicha maslahat",
+          "items": [
+            "Oddiy hisoblash yoki talqin savoliga **30–60 soniya**, jadval yoki grafikdan formula tuzishga **60–80 soniya** yetarli. Math bo‘limida bir savolga o‘rtacha taxminan 95 soniya to‘g‘ri keladi — bu yerda tejagan vaqtingizni qiyin savollarga qoldiring.",
+            "**Desmos — jadval savollarida:** jadval qo‘shing (+ tugmasi → table), qiymatlarni $x_1$ va $y_1$ ustunlariga kiriting, keyin alohida qatorga $y_1 \\sim mx_1 + b$ deb yozing (klaviaturadagi ~ belgisi). Desmos $m$ va $b$ ni darhol ko‘rsatadi.",
+            "**Desmos — funksiya qiymati:** $g(x) = 3.5x + 4$ ni kiriting, keyingi qatorga $g(-4)$ deb yozing — natija shu zahoti chiqadi.",
+            "Talqin savollarida Desmos kerak emas: sonning tenglamadagi o‘rnini (koeffitsiyentmi yoki ozod hadmi) aniqlash 15–20 soniya oladi."
+          ]
+        },
+        {
+          "type": "terms",
+          "heading": "Muhim inglizcha atamalar",
+          "terms": [
+            { "term": "slope", "meaning": "qiyalik (burchak koeffitsiyenti): $x$ 1 ga oshganda $y$ qanchaga o‘zgaradi" },
+            { "term": "rate of change", "meaning": "o‘zgarish tezligi — chiziqli funksiyada bu qiyalikning o‘zi" },
+            { "term": "y-intercept", "meaning": "grafikning $y$ o‘qini kesgan nuqtasi, $(0, b)$" },
+            { "term": "initial value / starting value", "meaning": "boshlang‘ich qiymat, ya’ni $f(0)$" },
+            { "term": "for each additional", "meaning": "har bir qo‘shimcha … uchun — qiyalik belgisi" },
+            { "term": "at a constant rate", "meaning": "bir xil (o‘zgarmas) tezlikda — model chiziqli ekanini bildiradi" },
+            { "term": "best interpretation", "meaning": "eng to‘g‘ri talqin — son vaziyatda nimani anglatishini so‘raydi" },
+            { "term": "selected values", "meaning": "tanlab olingan qiymatlar — jadvalda funksiyaning bir nechta nuqtasi berilgan" },
+            { "term": "is defined by", "meaning": "… formula bilan berilgan" }
+          ]
+        },
+        {
+          "type": "checklist",
+          "heading": "Javobni tanlashdan oldin tekshiring",
+          "items": [
+            "Qiyalikni hisoblaganda $y$ ning o‘zgarishini $x$ ning o‘zgarishiga bo‘ldimmi (aksincha emas)?",
+            "Boshlang‘ich qiymat haqiqatan $x = 0$ dagi qiymatmi?",
+            "Formulamni jadval yoki grafikdagi yana bir nuqta bilan tekshirdimmi?",
+            "Savol $f(a)$ ni so‘rayaptimi yoki $f(x) = a$ bo‘ladigan $x$ ni?"
+          ]
+        }
+      ]
+    }
+  }
+}

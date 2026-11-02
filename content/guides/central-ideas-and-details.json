@@ -1,0 +1,182 @@
+{
+  "slug": "central-ideas-and-details",
+  "kind": "skill",
+  "skill": "central_ideas_details",
+  "position": 23,
+  "readingMinutes": 9,
+  "locales": {
+    "uz": {
+      "title": "Central Ideas and Details: asosiy g‘oya va tafsilotlar",
+      "summary": "Matnning asosiy g‘oyasini topish va matnda aniq aytilgan tafsilotni to‘g‘ri tushunish. To‘g‘ri javob butun matnni qamrab oladi, lekin matnda yo‘q narsani qo‘shmaydi.",
+      "sections": [
+        {
+          "type": "concept",
+          "heading": "Bu ko‘nikma nimani tekshiradi",
+          "body": "Central Ideas and Details savollari **Information and Ideas** domeniga kiradi va ikki narsani tekshiradi:\n\n- **Asosiy g‘oya (main idea):** matn umuman nima haqida va u shu mavzu haqida **nima demoqchi**. Mavzu (*topic*) va asosiy g‘oya bir narsa emas: “kutubxona” — mavzu, “kechki ish vaqti kutubxonaga ishlaydigan kattalarni olib keldi” — asosiy g‘oya.\n- **Tafsilot (detail):** matnda aniq aytilgan ma’lumot — kim nima qildi, nima sodir bo‘ldi, qahramon nimani his qildi.\n\nMatnlar ilmiy, ijtimoiy, tarixiy yoki badiiy (hikoya, she’r) bo‘lishi mumkin. Har doim bitta qoida ishlaydi: to‘g‘ri javob **matnda yozilgan narsani** boshqa so‘zlar bilan qayta ifodalaydi. Siz o‘zingizdan hech narsa qo‘shmaysiz."
+        },
+        {
+          "type": "recognize",
+          "heading": "Savolni qanday tanib olasiz",
+          "items": [
+            "*Which choice best states the main idea of the text?* — asosiy g‘oya savoli; ilmiy matnlarda ham, badiiy matnlarda ham uchraydi.",
+            "*According to the text, what is true about…?* — tafsilot savoli: javob matnda aniq yozilgan.",
+            "*Based on the text, what is true about…?* yoki *What does the text indicate about…?* — matndagi ma’lumotni to‘g‘ri tushunganingiz tekshiriladi.",
+            "Variantlar to‘liq jumlalar bo‘ladi va ko‘pincha matndagi so‘zlarni takrorlaydi. Ehtiyot bo‘ling: so‘zlar mos kelishi ma’no mos kelishini anglatmaydi.",
+            "Farqlang: **Text Structure and Purpose** savollarida “muallif nima **qilyapti**?” so‘raladi, bu yerda esa “matn nima **deyapti**?”"
+          ]
+        },
+        {
+          "type": "method",
+          "heading": "Ishlash usuli: qadamma-qadam",
+          "steps": [
+            "**Savolni o‘qing:** asosiy g‘oya so‘ralyaptimi yoki aniq tafsilot? Tafsilot bo‘lsa, savoldagi kalit so‘zni (ism, raqam, hodisa) belgilab oling — matnda aynan shuni qidirasiz.",
+            "**Matnni o‘qib, mavzuni toping:** matn kim yoki nima haqida?",
+            "**Mavzu haqida nima deyilganini toping.** Ilmiy matnlarda asosiy g‘oya ko‘pincha *however, but, in fact* dan keyin yoki *found, argues, concludes, suggests* fe’llari bilan keladi. Birinchi jumla ko‘pincha faqat fon yoki keyin rad etiladigan eski fikr bo‘ladi.",
+            "**Badiiy matnda** qahramonning holati qanday o‘zgarganini kuzating: boshida nima his qildi, oxirida-chi? Asosiy g‘oya ko‘pincha shu o‘zgarishda.",
+            "**Bashoratni bitta o‘zbekcha jumlada ayting:** “Matn shuni ko‘rsatadi: …”. Keyin variantlarni o‘qing.",
+            "**Har bir variantni uch savol bilan tekshiring:** butun matnni qamrab oladimi (juda tor emasmi)? Matndan tashqariga chiqmaydimi (juda keng yoki ortiqcha kuchli emasmi)? Matnga zid emasmi? Uchala testdan o‘tgan variant — javob."
+          ]
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 1: ijtimoiy matnning asosiy g‘oyasi",
+          "example": {
+            "passage": "When the public library in the town of Greenhill began staying open until nine o'clock in the evening, librarians expected more students to use its study rooms. What they did not expect was a steady rise in adult visitors. Records showed that after the change, many residents who worked during the day began borrowing books, attending free language classes and using the library's computers to apply for jobs. Head librarian Marta Kowal concluded that the library's earlier schedule had quietly excluded a large part of the community it was meant to serve.",
+            "problem": "Which choice best states the main idea of the text?",
+            "choices": [
+              "Extending the library's hours revealed that its earlier schedule had kept many working adults from using it.",
+              "Students in Greenhill prefer to study in the library in the evening rather than during the day.",
+              "The library's free language classes became more popular than its public computers.",
+              "Libraries should stay open all night so that every resident can use their services."
+            ],
+            "solution": [
+              "**Mavzu:** Greenhill kutubxonasining kechki ish vaqti.",
+              "**Burilish:** kutubxonachilar ko‘proq talaba kutgan edi, lekin kutilmagan natija bo‘ldi — kattalar soni oshdi (*What they did not expect…*). Oxirgi jumlada xulosa: eski jadval jamiyatning katta qismini “sezdirmay chetda qoldirgan”.",
+              "**Bashorat:** “Kechgacha ochiq turish ko‘rsatdiki, avvalgi jadval ishlaydigan kattalarga kutubxonadan foydalanish imkonini bermagan.”",
+              "**A** — bashorat bilan bir xil va matnning boshi (o‘zgarish), o‘rtasi (kattalar ko‘paydi) va oxirini (Kowal xulosasi) qamrab oladi. ✓",
+              "**B** noto‘g‘ri: talabalar haqida faqat kutubxonachilarning **kutgani** aytilgan; ular kechqurun o‘qishni afzal ko‘rishi haqida ma’lumot yo‘q. So‘zlar matndan olingan, lekin fikr matnda yo‘q.",
+              "**C** noto‘g‘ri: til kurslari va kompyuterlar faqat ro‘yxatda sanab o‘tilgan; qaysi biri ommaboproq ekani solishtirilmagan. Bundan tashqari, bu juda tor tafsilot.",
+              "**D** noto‘g‘ri — **juda keng va ortiqcha kuchli:** matn bitta kutubxona haqida va “tun bo‘yi” ochiq turish haqida hech narsa demaydi. Bu umumiy tavsiya matndan tashqariga chiqadi."
+            ],
+            "answer": "A"
+          }
+        },
+        {
+          "type": "example",
+          "heading": "Namuna 2: badiiy matnning asosiy g‘oyasi",
+          "example": {
+            "passage": "Nodira had practiced the piano piece for months, but when she sat down on the stage, the keys looked strangely unfamiliar. She glanced at the audience and found her grandfather in the third row. He was not smiling or waving; he simply nodded once, the same small nod he gave every evening when she finished practicing at home. Nodira placed her hands on the keys. The first notes came out softly, then more firmly, and soon she forgot that anyone was listening at all.",
+            "problem": "Which choice best states the main idea of the text?",
+            "choices": [
+              "Nodira's grandfather is disappointed that she feels nervous before her performance.",
+              "Nodira prefers practicing at home to performing in front of an audience.",
+              "A familiar gesture from her grandfather helps Nodira overcome her nervousness and play with confidence.",
+              "Nodira's grandfather was the person who first taught her to play the piano."
+            ],
+            "solution": [
+              "**Qahramon holatining o‘zgarishi:** boshida Nodira hayajonda — klavishlar unga “begona” ko‘rinadi. Oxirida u ishonch bilan chaladi va tinglovchilarni unutadi.",
+              "**O‘zgarishning sababi:** bobosining tanish ishorasi — har kuni kechqurun mashqdan keyin qiladigan o‘sha kichik bosh irg‘ashi.",
+              "**Bashorat:** “Bobosining tanish ishorasi Nodiraga hayajonni yengib, ishonch bilan chalishga yordam beradi.”",
+              "**A** noto‘g‘ri: bobo jilmaymaydi, lekin uning ishorasi tanish va dalda beruvchi. Matnda u xafa ekani haqida hech qanday belgi yo‘q — bu tafsilotni noto‘g‘ri talqin qilish.",
+              "**B** noto‘g‘ri: matn uyda mashq qilishni tilga oladi, lekin Nodira uni sahnadan afzal ko‘rishini aytmaydi. Aksincha, oxirida u sahnada erkin chaladi.",
+              "**C** — bashoratga to‘liq mos: ishora, hayajonni yengish va ishonch — uchalasi ham bor. ✓",
+              "**D** noto‘g‘ri: pianinoni kim o‘rgatgani haqida matnda ma’lumot yo‘q. Bu — tashqi taxmin, matnga asoslanmagan."
+            ],
+            "answer": "C"
+          }
+        },
+        {
+          "type": "watch_out",
+          "heading": "Nimaga e’tibor berish kerak",
+          "items": [
+            "**Mavzu ≠ asosiy g‘oya.** “Bu matn kutubxona haqida” — mavzu. To‘g‘ri variant mavzu haqida aniq bir fikr aytadi.",
+            "**Birinchi jumlaga ishonib qolmang.** SAT matnlari ko‘pincha keng tarqalgan fikr yoki fon bilan boshlanadi, keyin *however, but, yet* bilan haqiqiy g‘oyaga o‘tadi. Asosiy g‘oya ko‘pincha burilishdan keyin yoki oxirgi jumlada.",
+            "**Butun matnni qamrab olish testi:** variant matnning boshi, o‘rtasi va oxiriga mos keladimi? Faqat bitta jumlaga mos variant — juda tor.",
+            "**Tafsilot savollarida** javobni xotiradan emas, matndan toping: savoldagi kalit so‘zni matndan qidiring va o‘sha jumlani qayta o‘qing. To‘g‘ri javob o‘sha jumlaning boshqa so‘zlar bilan ifodasi bo‘ladi.",
+            "**O‘z bilimingizni chetga qo‘ying.** Mavzuni yaxshi bilsangiz ham, faqat matnda aytilgan narsaga tayaning. Hayotda to‘g‘ri, lekin matnda yo‘q fikr — noto‘g‘ri javob.",
+            "**Ingliz tili bo‘yicha maslahat:** har bir so‘zni tarjima qilishga urinmang; notanish so‘zni “X” deb qabul qilib davom eting. Asosiy g‘oyani beradigan fe’llarni qidiring: *found* (aniqladi), *argues* (ta’kidlaydi), *concluded* (xulosa qildi), *suggests* (ko‘rsatadi, taxmin qiladi), *revealed* (oshkor qildi). Ulardan keyingi qism ko‘pincha matnning yuragi. Burilish so‘zlari — *however, but, yet, in fact* — asosiy fikr qayerda ekanini ko‘rsatadi.",
+            "**Badiiy matnlarda** qahramonning his-tuyg‘usini bildiruvchi so‘zlar va harakatlar (*hesitated, glanced, trembled, smiled, forgot*) asosiy g‘oyaga yo‘l ko‘rsatadi."
+          ]
+        },
+        {
+          "type": "traps",
+          "heading": "Keng tarqalgan xatolar (tuzoq variantlar)",
+          "items": [
+            "**Juda tor (too narrow):** matndagi bitta tafsilotni asosiy g‘oya qilib ko‘rsatadi (1-namunadagi C).",
+            "**Juda keng yoki umumlashtirilgan (too broad):** bitta holatdan hamma uchun qoida chiqaradi — *all libraries*, *every student* (1-namunadagi D).",
+            "**Matnda yo‘q, lekin ishonarli:** mantiqan bo‘lishi mumkin, ammo matnda aytilmagan (2-namunadagi D).",
+            "**Noto‘g‘ri talqin:** matndagi tafsilotni teskari tushunish — bobo jilmaymagani uchun uni “xafa” deb o‘ylash (2-namunadagi A).",
+            "**So‘z mos, munosabat noto‘g‘ri:** variant matndagi so‘zlarni ishlatadi (*students, evening*), lekin ular orasidagi bog‘lanishni buzadi (1-namunadagi B).",
+            "**Ortiqcha kuchli so‘zlar:** *always, never, only, proves, all* — matn ehtiyotkor bo‘lsa (*suggests, may*), bunday variant odatda noto‘g‘ri."
+          ]
+        },
+        {
+          "type": "time",
+          "heading": "Vaqt bo‘yicha maslahat",
+          "items": [
+            "Reading and Writing’da bir savolga o‘rtacha **71 soniya** bor (har modulda 27 savol, 32 daqiqa).",
+            "Asosiy g‘oya savollariga **60–75 soniya** yetarli: matnni bir marta diqqat bilan o‘qing, bashorat qiling va variantlarni tekshiring.",
+            "Tafsilot savolida savolni matndan **oldin** o‘qish vaqtni tejaydi: nimani qidirayotganingizni bilib o‘qiysiz.",
+            "Ikki variant orasida qolsangiz, har biri uchun matndan dalil qidiring. Dalili topilmagan variantni o‘chiring; ikkalasi ham shubhali bo‘lsa, birini tanlang, **Mark for Review** qiling va davom eting."
+          ]
+        },
+        {
+          "type": "terms",
+          "heading": "Muhim inglizcha atamalar",
+          "terms": [
+            {
+              "term": "main idea",
+              "meaning": "asosiy g‘oya: matn mavzu haqida nima demoqchi"
+            },
+            {
+              "term": "central claim",
+              "meaning": "markaziy da’vo — muallif isbotlamoqchi bo‘lgan asosiy fikr"
+            },
+            {
+              "term": "topic",
+              "meaning": "mavzu: matn nima haqida"
+            },
+            {
+              "term": "supporting detail",
+              "meaning": "asosiy g‘oyani qo‘llab-quvvatlovchi tafsilot (misol, raqam, fakt)"
+            },
+            {
+              "term": "according to the text",
+              "meaning": "matnga ko‘ra — javob matnda aniq yozilgan"
+            },
+            {
+              "term": "based on the text",
+              "meaning": "matnga asoslanib — faqat matndagi ma’lumotdan foydalaning"
+            },
+            {
+              "term": "primarily / mainly",
+              "meaning": "asosan, birinchi navbatda"
+            },
+            {
+              "term": "conclude / conclusion",
+              "meaning": "xulosa qilmoq / xulosa"
+            },
+            {
+              "term": "suggest",
+              "meaning": "ko‘rsatmoq, ishora qilmoq — ehtiyotkor da’vo"
+            },
+            {
+              "term": "indicate",
+              "meaning": "bildirmoq, ko‘rsatmoq"
+            }
+          ]
+        },
+        {
+          "type": "checklist",
+          "heading": "Javobni tanlashdan oldin tekshiring",
+          "items": [
+            "Tanlagan variantim mavzuni emas, mavzu haqidagi **fikrni** ifodalaydimi?",
+            "U matnning boshi, o‘rtasi va oxiriga mos keladimi?",
+            "Variantdagi har bir da’vo matnda bormi — o‘zimdan hech narsa qo‘shmadimmi?",
+            "Variantdagi so‘zlar (*all, always, only*) matndagi ehtiyotkorlik darajasiga mosmi?"
+          ]
+        }
+      ]
+    }
+  }
+}
