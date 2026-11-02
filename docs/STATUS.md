@@ -92,9 +92,35 @@ Authoring and editing workflow: [GUIDES.md](GUIDES.md).
 - **Legal pages:** Terms and Privacy are drafted in English and Uzbek and need legal review, especially for Uzbekistan's personal-data localization law.
 - **Sample content only:** the 64 questions and 16 lessons in `supabase/seed` are original samples for development. Real content comes from the content team through the admin editor or CSV/JSON import.
 
+## Hosted Supabase project `sat-master` (eu-central-1)
+
+State on 2 Nov 2026, applied through the Supabase connector with the owner's confirmation:
+
+| Migration | Status |
+|---|---|
+| 0001–0011 (schema, RLS, functions, reference data, storage buckets) | Applied |
+| 0012 search indexes | **Declined by the owner** at the confirmation prompt. Optional (admin search speed only). Apply later from the SQL editor if wanted. |
+| 0013 study-guide tables | Applied |
+| 0014 study-guide content (~480 KB) | Not applied. Use Admin → Study guides → "Import bundled guides" after the first deploy, or `supabase db push`. |
+
+Verified on the hosted database: 47 tables, all with RLS; the same 14 client-callable functions as locally, each with internal role checks; 3 private storage buckets; 30 skills and 4 plans.
+
+The security advisor reports two kinds of finding, both expected by design:
+- **WARN, role-helper functions callable by `anon`/`authenticated`:** the RLS policies need them, and they only describe the caller's own role.
+- **INFO, `rate_limits` has no policies:** this is intentional; only the server touches it.
+
+**Migration history note.** The connector recorded these migrations under its own timestamps (for example `20261102071356_foundation`), not the repository's file versions. Before using the Supabase CLI against this project, mark the repository versions as applied, then push the rest:
+
+```bash
+supabase link --project-ref ncqqnjnozrymrmblixra
+supabase migration repair --status applied 20261102000100 20261102000200 20261102000300 20261102000400 \
+  20261102000500 20261102000600 20261102000700 20261102000800 20261102000900 20261102001000 20261102001100 20261102001300
+supabase db push   # applies 0012 (if still wanted) and 0014
+```
+
 ## Launch checklist (owner actions)
 
-1. **Supabase:** apply all migrations in `supabase/migrations` to the production project (the project `sat-master` exists in eu-central-1). Migration 0014 (guide content, ~480 KB) can instead be loaded with Admin → Study guides → "Import bundled guides". Then:
+1. **Supabase:** the schema is applied (see the section above). Load the guide content with "Import bundled guides" after deploying. Then:
    - set the Auth URLs and email templates ([AUTH_SETUP.md](AUTH_SETUP.md));
    - raise the Storage upload limit to 500 MB if MP4 lessons will be uploaded.
 2. **First admin:** sign up in the app, then run `supabase/seed/make_admin.sql` with your email.
