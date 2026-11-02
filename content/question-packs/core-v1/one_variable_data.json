@@ -1,0 +1,143 @@
+[
+  {
+    "skill_code": "one_variable_data",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "The list shows the number of minutes each of 6 students spent on homework last night.\n\n35, 42, 28, 50, 40, 45\n\nWhat is the mean number of minutes these students spent on homework?",
+    "option_a": "$22$",
+    "option_b": "$40$",
+    "option_c": "$41$",
+    "option_d": "$48$",
+    "correct": "B",
+    "explanation_en": "The mean is the sum of the values divided by the number of values: $35 + 42 + 28 + 50 + 40 + 45 = 240$, and $240 \\div 6 = 40$ minutes. Choice C, 41, is the median (the average of the two middle values, 40 and 42, after the list is ordered). Choice D divides the sum by 5 instead of 6, and choice A is the range, $50 - 28 = 22$.",
+    "explanation_uz": "O‘rta qiymat (mean) — qiymatlar yig‘indisi ularning soniga bo‘linadi: $35 + 42 + 28 + 50 + 40 + 45 = 240$, $240 \\div 6 = 40$ daqiqa. C javob (41) — mediana (ro‘yxat tartiblangandan keyin o‘rtadagi 40 va 42 ning o‘rtachasi). D javob yig‘indini 6 emas, 5 ga bo‘lgan, A javob esa qiymatlar oralig‘i (range): $50 - 28 = 22$.",
+    "estimated_seconds": 65,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "one_variable_data",
+    "difficulty": "easy",
+    "question_type": "spr",
+    "stem": "What is the mean number of goals the team scored per match in these 20 matches?",
+    "passage": "A football team played 20 matches in a season. The table shows how many matches the team played with each number of goals scored.\n\n| Goals scored | Number of matches |\n| ---: | ---: |\n| 0 | 1 |\n| 1 | 3 |\n| 2 | 5 |\n| 3 | 7 |\n| 4 | 4 |",
+    "spr_answers": [
+      "2.5",
+      "5/2"
+    ],
+    "explanation_en": "Multiply each number of goals by the number of matches with that score, then add: $0(1) + 1(3) + 2(5) + 3(7) + 4(4) = 0 + 3 + 10 + 21 + 16 = 50$ goals. Divide by the 20 matches: $50 \\div 20 = 2.5$. A common error is to average only the listed goal values, $\\frac{0 + 1 + 2 + 3 + 4}{5} = 2$, which ignores how many matches had each score. Enter 2.5 or 5/2.",
+    "explanation_uz": "Har bir gollar sonini shuncha gol urilgan o‘yinlar soniga ko‘paytirib, natijalarni qo‘shamiz: $0(1) + 1(3) + 2(5) + 3(7) + 4(4) = 0 + 3 + 10 + 21 + 16 = 50$ gol. Uni 20 o‘yinga bo‘lamiz: $50 \\div 20 = 2.5$. Ko‘p uchraydigan xato — faqat jadvaldagi gol qiymatlarini o‘rtachalash: $\\frac{0 + 1 + 2 + 3 + 4}{5} = 2$; bunda har bir natija nechta o‘yinda qayd etilgani hisobga olinmaydi. Javob maydoniga 2.5 yoki 5/2 deb yozing.",
+    "estimated_seconds": 75,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "one_variable_data",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "The heights, in centimeters, of 5 seedlings in a greenhouse are 12, 15, 15, 18, and 40. Which of the following statements about the mean and the median of these heights is true?",
+    "option_a": "The mean and the median are equal.",
+    "option_b": "The median is 5 centimeters greater than the mean.",
+    "option_c": "The mean is 10 centimeters greater than the median.",
+    "option_d": "The mean is 5 centimeters greater than the median.",
+    "correct": "D",
+    "explanation_en": "The values are already in order, so the median is the middle (3rd) value, 15. The mean is $\\frac{12 + 15 + 15 + 18 + 40}{5} = \\frac{100}{5} = 20$. So the mean is $20 - 15 = 5$ centimeters greater than the median: the unusually large value 40 pulls the mean up but does not affect the median. Choice B reverses the relationship, and choice C divides the sum by 4 instead of 5.",
+    "explanation_uz": "Qiymatlar allaqachon tartiblangan, shuning uchun mediana — o‘rtadagi (3-) qiymat, ya’ni 15. O‘rta qiymat: $\\frac{12 + 15 + 15 + 18 + 40}{5} = \\frac{100}{5} = 20$. Demak o‘rta qiymat medianadan $20 - 15 = 5$ santimetr katta: chetga chiqqan katta qiymat (40) o‘rta qiymatni yuqoriga tortadi, medianaga esa ta’sir qilmaydi. B javob munosabatni teskari olgan, C javob esa yig‘indini 5 emas, 4 ga bo‘lgan.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "one_variable_data",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "A teacher gave a test to 28 students. After grading the test, the teacher added 5 points to every student's score. Which of the following correctly describes how adding the 5 points changed the mean and the standard deviation of the scores?",
+    "option_a": "The mean increased by 5, and the standard deviation did not change.",
+    "option_b": "The mean increased by 5, and the standard deviation increased by 5.",
+    "option_c": "The mean did not change, and the standard deviation increased by 5.",
+    "option_d": "Neither the mean nor the standard deviation changed.",
+    "correct": "A",
+    "explanation_en": "Adding 5 to every score adds $28 \\times 5 = 140$ points to the total, so the mean increases by $140 \\div 28 = 5$. The standard deviation measures how spread out the scores are around the mean. Every score and the mean move up together by 5, so each score's distance from the mean stays the same, and the standard deviation does not change. Choice B is the most tempting, but shifting all values by the same amount does not change their spread (the range, for example, also stays the same).",
+    "explanation_uz": "Har bir ballga 5 qo‘shilsa, umumiy yig‘indi $28 \\times 5 = 140$ ballga oshadi, o‘rta qiymat esa $140 \\div 28 = 5$ ga oshadi. Standart chetlanish ballarning o‘rta qiymat atrofida qanchalik tarqoqligini o‘lchaydi. Barcha ballar ham, o‘rta qiymat ham birgalikda 5 ga siljiydi, shuning uchun har bir ballning o‘rta qiymatdan uzoqligi o‘zgarmaydi — standart chetlanish ham o‘zgarmaydi. Eng jozibali xato — B javob: barcha qiymatlarni bir xil songa siljitish ularning tarqoqligini o‘zgartirmaydi (masalan, range ham o‘zgarmay qoladi).",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "one_variable_data",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "In one class, 20 students took a quiz, and their mean score was 78. In a second class, 30 students took the same quiz, and their mean score was 83. What is the mean quiz score of all 50 students?",
+    "spr_answers": [
+      "81"
+    ],
+    "explanation_en": "Find each class's total: $20 \\times 78 = 1{,}560$ and $30 \\times 83 = 2{,}490$. The combined total is $4{,}050$, so the combined mean is $4{,}050 \\div 50 = 81$. Averaging the two means, $\\frac{78 + 83}{2} = 80.5$, is wrong because the classes have different sizes; the larger class pulls the combined mean closer to 83.",
+    "explanation_uz": "Har bir sinfning umumiy ballini topamiz: $20 \\times 78 = 1{,}560$ va $30 \\times 83 = 2{,}490$. Jami $4{,}050$, demak umumiy o‘rta qiymat $4{,}050 \\div 50 = 81$. Ikki o‘rta qiymatni o‘rtachalash ($\\frac{78 + 83}{2} = 80.5$) xato, chunki sinflardagi o‘quvchilar soni har xil: kattaroq sinf umumiy o‘rta qiymatni 83 ga yaqinroq tortadi.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "one_variable_data",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "Which interval contains the median commute time of these 40 employees?",
+    "passage": "The table summarizes the commute times, in minutes, of 40 employees at a company.\n\n| Commute time (minutes) | Number of employees |\n| --- | ---: |\n| 0 to 9 | 4 |\n| 10 to 19 | 13 |\n| 20 to 29 | 8 |\n| 30 to 39 | 7 |\n| 40 to 49 | 5 |\n| 50 to 59 | 3 |",
+    "option_a": "0 to 9 minutes",
+    "option_b": "10 to 19 minutes",
+    "option_c": "20 to 29 minutes",
+    "option_d": "30 to 39 minutes",
+    "correct": "C",
+    "explanation_en": "With 40 values, the median is the average of the 20th and 21st values when the times are listed in order. Count through the intervals: the first holds values 1 through 4, the second holds values 5 through 17, and the third holds values 18 through 25. Both the 20th and 21st values are in the 20 to 29 minute interval, so the median is in that interval. Choice B is the interval with the most employees (the mode), but the median depends on where the middle values fall, not on which interval is largest.",
+    "explanation_uz": "40 ta qiymat bo‘lgani uchun mediana — vaqtlar tartib bilan yozilganda 20- va 21-qiymatlarning o‘rtachasi. Oraliqlar bo‘yicha sanab chiqamiz: birinchisida 1–4-qiymatlar, ikkinchisida 5–17-qiymatlar, uchinchisida 18–25-qiymatlar. 20- va 21-qiymatlar ikkalasi ham 20–29 daqiqa oralig‘ida, demak mediana shu oraliqda. B javob — eng ko‘p xodim tushgan oraliq (moda), lekin mediana eng katta guruhga emas, o‘rtadagi qiymatlar qayerga tushishiga bog‘liq.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "one_variable_data",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "A data set consists of 9 values. The mean of the data set is 52, and the median is 50. The greatest value in the data set was recorded as 95, but the correct value is 59. When this error is corrected, what are the mean and the median of the data set?",
+    "option_a": "Mean: 48; median: 50",
+    "option_b": "Mean: 48; median: 46",
+    "option_c": "Mean: 16; median: 50",
+    "option_d": "Mean: 52; median: 50",
+    "correct": "A",
+    "explanation_en": "The original sum is $9 \\times 52 = 468$. Replacing 95 with 59 lowers the sum by $95 - 59 = 36$, so the new sum is 432 and the new mean is $432 \\div 9 = 48$ (a decrease of $36 \\div 9 = 4$). The median is the 5th value in order. The recorded value 95 and the corrected value 59 are both greater than 50, so the corrected value still lies above the middle, and the 5th value is still 50. Choice B assumes the median also drops by 4, and choice C subtracts the full 36 from the mean instead of spreading the change over 9 values.",
+    "explanation_uz": "Dastlabki yig‘indi $9 \\times 52 = 468$. 95 ni 59 ga almashtirish yig‘indini $95 - 59 = 36$ ga kamaytiradi: yangi yig‘indi 432, yangi o‘rta qiymat $432 \\div 9 = 48$ (ya’ni $36 \\div 9 = 4$ ga kamaydi). Mediana — tartiblangan ro‘yxatdagi 5-qiymat. Xato yozilgan 95 ham, to‘g‘ri qiymat 59 ham 50 dan katta, shuning uchun tuzatilgan qiymat ham o‘rtadan yuqorida qoladi va 5-qiymat yana 50 bo‘ladi. B javob mediana ham 4 ga kamayadi deb hisoblagan, C javob esa 36 ni 9 ta qiymatga taqsimlamasdan, o‘rta qiymatdan to‘liq ayirgan.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "one_variable_data",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "A data set of $n$ values has a mean of 15. When the value 39 is added to the data set, the mean of the $n + 1$ values is 17. What is the value of $n$?",
+    "spr_answers": [
+      "11"
+    ],
+    "explanation_en": "The sum of the original values is $15n$. After 39 is added, the sum is $15n + 39$ and there are $n + 1$ values, so $\\frac{15n + 39}{n + 1} = 17$. Then $15n + 39 = 17n + 17$, so $22 = 2n$ and $n = 11$. Check: the original sum is 165, and $\\frac{165 + 39}{12} = \\frac{204}{12} = 17$. A common error is to write $15n + 39 = 17n$, which gives 19.5; this forgets that the number of values also increases by 1.",
+    "explanation_uz": "Dastlabki qiymatlar yig‘indisi $15n$. 39 qo‘shilgach, yig‘indi $15n + 39$, qiymatlar soni esa $n + 1$ bo‘ladi: $\\frac{15n + 39}{n + 1} = 17$. Bundan $15n + 39 = 17n + 17$, $22 = 2n$ va $n = 11$. Tekshiruv: dastlabki yig‘indi 165, $\\frac{165 + 39}{12} = \\frac{204}{12} = 17$ ✓. Ko‘p uchraydigan xato — $15n + 39 = 17n$ deb yozish (bundan 19.5 chiqadi): qiymatlar soni ham 1 taga oshganini unutmang.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  }
+]

@@ -1,0 +1,142 @@
+[
+  {
+    "skill_code": "nonlinear_functions",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "The function $f$ is defined by $f(x) = 2x^2 - 3x + 1$. What is the value of $f(-2)$?",
+    "option_a": "$-1$",
+    "option_b": "$3$",
+    "option_c": "$15$",
+    "option_d": "$23$",
+    "correct": "C",
+    "explanation_en": "Substitute $-2$ for $x$, keeping it in parentheses: $f(-2) = 2(-2)^2 - 3(-2) + 1 = 2(4) + 6 + 1 = 15$.\n\nChoice A comes from evaluating $-2^2$ as $-4$ instead of $(-2)^2 = 4$, which gives $-8 + 6 + 1 = -1$.",
+    "explanation_uz": "$x$ o‘rniga $-2$ ni qavs ichida qo‘yamiz: $f(-2) = 2(-2)^2 - 3(-2) + 1 = 2(4) + 6 + 1 = 15$.\n\nA variant — $(-2)^2 = 4$ o‘rniga $-2^2 = -4$ deb hisoblash natijasi: $-8 + 6 + 1 = -1$.",
+    "estimated_seconds": 65,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "nonlinear_functions",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "The function $P(t) = 84{,}000(1.03)^t$ models the population of a city $t$ years after 2020. What is the best interpretation of $1.03$ in this context?",
+    "option_a": "The population increases by 3% each year.",
+    "option_b": "The population increases by 103% each year.",
+    "option_c": "The population increases by 1.03% each year.",
+    "option_d": "The population increases by 2,520 people each year.",
+    "correct": "A",
+    "explanation_en": "In an exponential model of the form $a(1 + r)^t$, the base $1 + r$ is the growth factor and $r$ is the growth rate per time period.\n\nHere $1.03 = 1 + 0.03$, so each year the population is multiplied by $1.03$; that is, it increases by 3% of the previous year's population.\n\nChoice D describes a constant increase of $0.03 \\cdot 84{,}000 = 2{,}520$ people per year, which would be linear growth; in this model, the yearly increase gets larger as the population grows.",
+    "explanation_uz": "$a(1 + r)^t$ ko‘rinishidagi ko‘rsatkichli modelda asos $1 + r$ — o‘sish ko‘paytuvchisi, $r$ esa har bir davrdagi o‘sish sur’ati.\n\nBu yerda $1.03 = 1 + 0.03$, ya’ni har yili aholi soni $1.03$ ga ko‘paytiriladi: u har yili oldingi yilga nisbatan 3 foizga oshadi.\n\nD variant har yili bir xil $0.03 \\cdot 84{,}000 = 2{,}520$ kishiga oshishni tasvirlaydi — bu chiziqli o‘sish bo‘lardi; bu modelda esa aholi ko‘paygani sari yillik o‘sish ham kattalashadi.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "nonlinear_functions",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "The function $h$ is defined by $h(x) = 5(2)^x - 7$. What is the value of $h(3)$?",
+    "option_a": "$23$",
+    "option_b": "$33$",
+    "option_c": "$38$",
+    "option_d": "$993$",
+    "correct": "B",
+    "explanation_en": "Evaluate the power first: $h(3) = 5(2)^3 - 7 = 5(8) - 7 = 40 - 7 = 33$.\n\nChoice D multiplies before applying the exponent, $(5 \\cdot 2)^3 - 7 = 1{,}000 - 7$, but the exponent applies only to the base $2$.",
+    "explanation_uz": "Avval darajani hisoblaymiz: $h(3) = 5(2)^3 - 7 = 5(8) - 7 = 40 - 7 = 33$.\n\nD variantda darajaga ko‘tarishdan oldin ko‘paytirilgan: $(5 \\cdot 2)^3 - 7 = 1{,}000 - 7$. Lekin daraja faqat $2$ asosiga tegishli.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "nonlinear_functions",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "The function $f$ is defined by $f(x) = (x - 3)(x + 7)$. For what value of $x$ does $f(x)$ reach its minimum value?",
+    "option_a": "$-25$",
+    "option_b": "$-2$",
+    "option_c": "$2$",
+    "option_d": "$5$",
+    "correct": "B",
+    "explanation_en": "The zeros of $f$ are $x = 3$ and $x = -7$. Expanding gives $x^2 + 4x - 21$, so the graph is a parabola that opens upward and has a minimum at its vertex.\n\nThe vertex lies midway between the zeros: $x = \\frac{3 + (-7)}{2} = -2$. (The minimum value itself is $f(-2) = (-5)(5) = -25$.)\n\nChoice A ($-25$) is the minimum value of $f(x)$, not the value of $x$ at which the minimum occurs.",
+    "explanation_uz": "$f$ ning nollari: $x = 3$ va $x = -7$. Qavslarni ochsak, $x^2 + 4x - 21$; demak grafik — yuqoriga ochilgan parabola va uning uchida minimum bor.\n\nParabola uchi nollarning o‘rtasida joylashgan: $x = \\frac{3 + (-7)}{2} = -2$. (Minimal qiymatning o‘zi $f(-2) = (-5)(5) = -25$.)\n\nA variant ($-25$) — bu $f(x)$ ning minimal qiymati, savol esa minimum qaysi $x$ da erishilishini so‘rayapti.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "nonlinear_functions",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "The amount of a medication, in milligrams, remaining in a patient's bloodstream $t$ hours after a $400$-milligram dose is modeled by the function $A(t) = 400(0.85)^t$. According to the model, which of the following is closest to the amount of the medication, in milligrams, remaining in the bloodstream $3$ hours after the dose?",
+    "option_a": "$154$",
+    "option_b": "$220$",
+    "option_c": "$246$",
+    "option_d": "$340$",
+    "correct": "C",
+    "explanation_en": "Evaluate the function at $t = 3$: $A(3) = 400(0.85)^3 = 400(0.614125) = 245.65$, which is closest to $246$ milligrams.\n\nChoice B assumes the amount drops by the same $60$ milligrams ($15\\%$ of $400$) every hour, but in an exponential model each hour removes $15\\%$ of the amount remaining at that time.",
+    "explanation_uz": "Funksiyani $t = 3$ da hisoblaymiz: $A(3) = 400(0.85)^3 = 400(0.614125) = 245.65$, bu $246$ milligrammga eng yaqin.\n\nB variant har soatda miqdor bir xil $60$ milligrammga ($400$ ning 15 foizi) kamayadi deb hisoblaydi. Lekin ko‘rsatkichli modelda har soatda o‘sha paytda qolgan miqdorning 15 foizi kamayadi.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "nonlinear_functions",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "The function $f$ is defined by $f(x) = x^2 - 6x + c$, where $c$ is a constant. In the $xy$-plane, the vertex of the graph of $y = f(x)$ is $(3, -5)$. What is the value of $c$?",
+    "spr_answers": [
+      "4"
+    ],
+    "explanation_en": "The vertex is a point on the graph, so $f(3) = -5$: $3^2 - 6(3) + c = -5$, which gives $9 - 18 + c = -5$ and $c = 4$.\n\nAlternatively, in vertex form, $f(x) = (x - 3)^2 - 5 = x^2 - 6x + 9 - 5 = x^2 - 6x + 4$.\n\nA common error is entering $-5$, the $y$-coordinate of the vertex; $c$ is the $y$-intercept $f(0)$, not the height of the vertex.",
+    "explanation_uz": "Parabola uchi grafikda yotadi, demak $f(3) = -5$: $3^2 - 6(3) + c = -5$, ya’ni $9 - 18 + c = -5$ va $c = 4$.\n\nBoshqa usul — uch shakli: $f(x) = (x - 3)^2 - 5 = x^2 - 6x + 9 - 5 = x^2 - 6x + 4$.\n\nKo‘p uchraydigan xato — uchning $y$ koordinatasi $-5$ ni kiritish; $c$ esa uchning balandligi emas, $f(0)$, ya’ni $y$ o‘qini kesish nuqtasi.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "nonlinear_functions",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "The value $V$, in dollars, of an investment $t$ years after it was made is modeled by $V(t) = 2{,}500(1.21)^t$. Which of the following functions models the value $V$, in dollars, of the investment $m$ half-years after it was made?",
+    "option_a": "$V = 2{,}500(1.105)^m$",
+    "option_b": "$V = 2{,}500(1.21)^{2m}$",
+    "option_c": "$V = 2{,}500(1.4641)^m$",
+    "option_d": "$V = 2{,}500(1.1)^m$",
+    "correct": "D",
+    "explanation_en": "Since $m$ half-years equal $t = \\frac{m}{2}$ years, substitute: $V = 2{,}500(1.21)^{m/2} = 2{,}500\\left((1.21)^{1/2}\\right)^m = 2{,}500(1.1)^m$, because $\\sqrt{1.21} = 1.1$.\n\nCheck: after $m = 2$ half-years (1 year), $2{,}500(1.1)^2 = 2{,}500(1.21)$, which matches $V(1)$.\n\nChoice A halves the growth rate (21% becomes 10.5%), but growing by 10.5% twice gives a factor of $1.105^2 \\approx 1.221$, not $1.21$; choice B substitutes $t = 2m$ instead of $t = \\frac{m}{2}$.",
+    "explanation_uz": "$m$ ta yarim yil $t = \\frac{m}{2}$ yilga teng, shuning uchun o‘rniga qo‘yamiz: $V = 2{,}500(1.21)^{m/2} = 2{,}500\\left((1.21)^{1/2}\\right)^m = 2{,}500(1.1)^m$, chunki $\\sqrt{1.21} = 1.1$.\n\nTekshiruv: $m = 2$ yarim yildan (1 yildan) keyin $2{,}500(1.1)^2 = 2{,}500(1.21)$, bu $V(1)$ ga mos keladi.\n\nA variant o‘sish sur’atini ikkiga bo‘ladi (21% o‘rniga 10.5%), lekin ikki marta 10.5% ga o‘sish $1.105^2 \\approx 1.221$ ko‘paytuvchini beradi, $1.21$ ni emas; B variantda esa $t = \\frac{m}{2}$ o‘rniga $t = 2m$ qo‘yilgan.",
+    "estimated_seconds": 125,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "nonlinear_functions",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "The function $f$ is defined by $f(x) = ax^2 + bx + c$, where $a$, $b$, and $c$ are constants. In the $xy$-plane, the graph of $y = f(x)$ is symmetric about the line $x = 3$ and passes through the points $(1, 0)$ and $(0, -10)$. What is the value of $f(4)$?",
+    "spr_answers": [
+      "6"
+    ],
+    "explanation_en": "The graph is symmetric about $x = 3$, and $(1, 0)$ is $2$ units to the left of that line, so $(5, 0)$ is also on the graph. The zeros are $1$ and $5$, so $f(x) = a(x - 1)(x - 5)$.\n\nUse $(0, -10)$: $a(0 - 1)(0 - 5) = 5a = -10$, so $a = -2$.\n\nThen $f(4) = -2(4 - 1)(4 - 5) = -2(3)(-1) = 6$. (By symmetry, $f(4) = f(2)$, and indeed $f(2) = -2(1)(-3) = 6$.)\n\nDropping the negative sign when solving $5a = -10$ gives $a = 2$ and the wrong answer $-6$.",
+    "explanation_uz": "Grafik $x = 3$ chiziqqa nisbatan simmetrik, $(1, 0)$ nuqta esa bu chiziqdan $2$ birlik chapda, demak $(5, 0)$ ham grafikda yotadi. Nollar $1$ va $5$, shuning uchun $f(x) = a(x - 1)(x - 5)$.\n\n$(0, -10)$ nuqtadan foydalanamiz: $a(0 - 1)(0 - 5) = 5a = -10$, demak $a = -2$.\n\nU holda $f(4) = -2(4 - 1)(4 - 5) = -2(3)(-1) = 6$. (Simmetriya bo‘yicha $f(4) = f(2)$, va haqiqatan $f(2) = -2(1)(-3) = 6$.)\n\n$5a = -10$ ni yechishda manfiy ishorani yo‘qotsangiz, $a = 2$ va noto‘g‘ri javob $-6$ chiqadi.",
+    "estimated_seconds": 130,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  }
+]

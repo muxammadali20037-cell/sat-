@@ -1,0 +1,142 @@
+[
+  {
+    "skill_code": "systems_linear_equations",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "$$\\begin{aligned} y &= 2x + 1 \\\\ 3x + y &= 21 \\end{aligned}$$\n\nWhat is the solution $(x, y)$ to the given system of equations?",
+    "option_a": "$(9, 4)$",
+    "option_b": "$\\left(\\frac{22}{5}, \\frac{49}{5}\\right)$",
+    "option_c": "$(5, 11)$",
+    "option_d": "$(4, 9)$",
+    "correct": "D",
+    "explanation_en": "Substitute $y = 2x + 1$ into the second equation: $3x + (2x + 1) = 21$, so $5x + 1 = 21$, $5x = 20$, and $x = 4$.\n\nThen $y = 2(4) + 1 = 9$. Check: $3(4) + 9 = 21$.\n\nChoice A has the correct numbers in the wrong order; in an ordered pair, the $x$-value comes first.",
+    "explanation_uz": "$y = 2x + 1$ ni ikkinchi tenglamaga qo‘yamiz: $3x + (2x + 1) = 21$, ya’ni $5x + 1 = 21$, $5x = 20$ va $x = 4$.\n\nU holda $y = 2(4) + 1 = 9$. Tekshiruv: $3(4) + 9 = 21$.\n\nA variantda sonlar to‘g‘ri, lekin tartibi teskari; tartiblangan juftlikda birinchi $x$ ning qiymati yoziladi.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "systems_linear_equations",
+    "difficulty": "easy",
+    "question_type": "spr",
+    "stem": "$$\\begin{aligned} 2x + y &= 17 \\\\ x - y &= 4 \\end{aligned}$$\n\nIf $(x, y)$ is the solution to the given system of equations, what is the value of $y$?",
+    "spr_answers": [
+      "3"
+    ],
+    "explanation_en": "Add the two equations to eliminate $y$: $3x = 21$, so $x = 7$.\n\nSubstitute into the second equation: $7 - y = 4$, so $y = 3$. Check: $2(7) + 3 = 17$.\n\nBe careful to enter the value of $y$; entering $x = 7$ is a common error.",
+    "explanation_uz": "$y$ ni yo‘qotish uchun tenglamalarni qo‘shamiz: $3x = 21$, demak $x = 7$.\n\nIkkinchi tenglamaga qo‘yamiz: $7 - y = 4$, demak $y = 3$. Tekshiruv: $2(7) + 3 = 17$.\n\nE’tibor bering: savol $y$ ni so‘rayapti; $x = 7$ ni kiritish — ko‘p uchraydigan xato.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "systems_linear_equations",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "The sum of two numbers is $50$. The larger number, $y$, is $8$ less than $3$ times the smaller number, $x$. Which system of equations represents this situation?",
+    "option_a": "$x + y = 50$ and $y = 8 - 3x$",
+    "option_b": "$x + y = 50$ and $y = 3(x - 8)$",
+    "option_c": "$x + y = 50$ and $y = 3x - 8$",
+    "option_d": "$x - y = 50$ and $y = 3x - 8$",
+    "correct": "C",
+    "explanation_en": "“The sum of two numbers is $50$” gives $x + y = 50$.\n\n“$8$ less than $3$ times the smaller number” means start with $3x$ and subtract $8$: $y = 3x - 8$.\n\nChoice A reverses the subtraction: “$8$ less than $3x$” is $3x - 8$, not $8 - 3x$.",
+    "explanation_uz": "«Ikki sonning yig‘indisi $50$ ga teng» — bu $x + y = 50$.\n\n«Kichik sonning $3$ baravaridan $8$ ta kam» — avval $3x$ ni olib, undan $8$ ni ayiramiz: $y = 3x - 8$.\n\nA variantda ayirish tartibi teskari: «$3x$ dan $8$ ta kam» — bu $3x - 8$, $8 - 3x$ emas.",
+    "estimated_seconds": 65,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "systems_linear_equations",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "A florist sold $38$ bouquets on Saturday. Each bouquet was either a small bouquet that sold for \\$15 or a large bouquet that sold for \\$40. The florist's total revenue from these bouquets was \\$895. How many more small bouquets than large bouquets did the florist sell on Saturday?",
+    "option_a": "$12$",
+    "option_b": "$13$",
+    "option_c": "$25$",
+    "option_d": "$38$",
+    "correct": "A",
+    "explanation_en": "Let $s$ be the number of small bouquets and $\\ell$ the number of large bouquets. Then $s + \\ell = 38$ and $15s + 40\\ell = 895$.\n\nSubstitute $s = 38 - \\ell$: $15(38 - \\ell) + 40\\ell = 895$, so $570 + 25\\ell = 895$, $25\\ell = 325$, and $\\ell = 13$. Then $s = 38 - 13 = 25$.\n\nCheck: $15(25) + 40(13) = 375 + 520 = 895$. The difference is $25 - 13 = 12$.\n\nChoice C ($25$) is the number of small bouquets, a correct intermediate result that does not answer the question about the difference.",
+    "explanation_uz": "$s$ — kichik guldastalar soni, $\\ell$ — katta guldastalar soni bo‘lsin. Unda $s + \\ell = 38$ va $15s + 40\\ell = 895$.\n\n$s = 38 - \\ell$ ni qo‘yamiz: $15(38 - \\ell) + 40\\ell = 895$, ya’ni $570 + 25\\ell = 895$, $25\\ell = 325$ va $\\ell = 13$. U holda $s = 38 - 13 = 25$.\n\nTekshiruv: $15(25) + 40(13) = 375 + 520 = 895$. Farq: $25 - 13 = 12$.\n\nC variant ($25$) — kichik guldastalar soni; bu to‘g‘ri oraliq natija, lekin savol ular orasidagi farqni so‘rayapti.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "systems_linear_equations",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "$$\\begin{aligned} 5x + 3y &= 29 \\\\ 3x + 5y &= 19 \\end{aligned}$$\n\nIf $(x, y)$ is the solution to the given system of equations, what is the value of $x - y$?",
+    "option_a": "$-5$",
+    "option_b": "$5$",
+    "option_c": "$6$",
+    "option_d": "$10$",
+    "correct": "B",
+    "explanation_en": "Subtract the second equation from the first: $(5x - 3x) + (3y - 5y) = 29 - 19$, so $2x - 2y = 10$. Divide by $2$: $x - y = 5$.\n\n(Solving completely gives $x = 5.5$ and $y = 0.5$, and $5.5 - 0.5 = 5$.)\n\nChoice C ($6$) is the value of $x + y$, which comes from adding the equations ($8x + 8y = 48$) instead of subtracting them.",
+    "explanation_uz": "Birinchi tenglamadan ikkinchisini ayiramiz: $(5x - 3x) + (3y - 5y) = 29 - 19$, ya’ni $2x - 2y = 10$. $2$ ga bo‘lamiz: $x - y = 5$.\n\n(To‘liq yechsak, $x = 5.5$ va $y = 0.5$, hamda $5.5 - 0.5 = 5$.)\n\nC variant ($6$) — bu $x + y$ ning qiymati: tenglamalarni ayirish o‘rniga qo‘shganda ($8x + 8y = 48$) hosil bo‘ladi.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "systems_linear_equations",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "$$\\begin{aligned} 6x - 4y &= 10 \\\\ y &= 1.5x - 2.5 \\end{aligned}$$\n\nHow many solutions does the given system of equations have?",
+    "option_a": "Zero",
+    "option_b": "Exactly one",
+    "option_c": "Exactly two",
+    "option_d": "Infinitely many",
+    "correct": "D",
+    "explanation_en": "Rewrite the second equation in the same form as the first: $y = 1.5x - 2.5$ becomes $1.5x - y = 2.5$. Multiplying both sides by $4$ gives $6x - 4y = 10$.\n\nThis is exactly the first equation, so both equations describe the same line, and every point on that line is a solution. The system has infinitely many solutions.\n\nChoice A is tempting because the equations look different, but parallel lines would need different constants after matching the left sides; here the constants match too.",
+    "explanation_uz": "Ikkinchi tenglamani birinchisi ko‘rinishiga keltiramiz: $y = 1.5x - 2.5$ dan $1.5x - y = 2.5$. Ikkala tomonni $4$ ga ko‘paytirsak, $6x - 4y = 10$ hosil bo‘ladi.\n\nBu aynan birinchi tenglama, ya’ni ikkala tenglama bitta chiziqni ifodalaydi va shu chiziqdagi har bir nuqta yechim bo‘ladi. Sistema cheksiz ko‘p yechimga ega.\n\nA variant — tuzoq: tenglamalar tashqi ko‘rinishdan farq qiladi, lekin chap tomonlarni tenglashtirganda ozod hadlar ham bir xil chiqadi, shuning uchun chiziqlar parallel emas, ustma-ust tushadi.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "systems_linear_equations",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "$$\\begin{aligned} kx + 8y &= 12 \\\\ 2x + ky &= 6 \\end{aligned}$$\n\nIn the given system of equations, $k$ is a constant. For which value of $k$ does the system have no solution?",
+    "option_a": "$-4$",
+    "option_b": "$2$",
+    "option_c": "$4$",
+    "option_d": "$16$",
+    "correct": "A",
+    "explanation_en": "A system of two linear equations has no solution when the lines are parallel and distinct: the coefficients of $x$ and $y$ are proportional, but the constants are not in the same ratio.\n\nProportional coefficients: $\\frac{k}{2} = \\frac{8}{k}$, so $k^2 = 16$ and $k = 4$ or $k = -4$.\n\nIf $k = 4$, the equations are $4x + 8y = 12$ and $2x + 4y = 6$. The first is exactly $2$ times the second, so they describe the same line (infinitely many solutions).\n\nIf $k = -4$, the equations are $-4x + 8y = 12$ and $2x - 4y = 6$. Multiplying the second by $-2$ gives $-4x + 8y = -12$: the same left side as the first equation but a different constant, so the lines are parallel and the system has no solution.\n\nChoice C ($4$) also makes the coefficients proportional, but it makes the constants proportional too, so that system has infinitely many solutions, not zero.",
+    "explanation_uz": "Ikki chiziqli tenglamadan iborat sistema yechimga ega bo‘lmasligi uchun chiziqlar parallel va ustma-ust tushmaydigan bo‘lishi kerak: $x$ va $y$ koeffitsiyentlari proporsional, ozod hadlar esa shu nisbatda emas.\n\nKoeffitsiyentlar proporsional: $\\frac{k}{2} = \\frac{8}{k}$, demak $k^2 = 16$, ya’ni $k = 4$ yoki $k = -4$.\n\n$k = 4$ bo‘lsa, tenglamalar $4x + 8y = 12$ va $2x + 4y = 6$. Birinchisi aynan ikkinchisining $2$ baravari, ya’ni ular bitta chiziq (cheksiz ko‘p yechim).\n\n$k = -4$ bo‘lsa, tenglamalar $-4x + 8y = 12$ va $2x - 4y = 6$. Ikkinchisini $-2$ ga ko‘paytirsak, $-4x + 8y = -12$: chap tomoni birinchi tenglama bilan bir xil, ozod hadi esa boshqa. Demak chiziqlar parallel va sistemaning yechimi yo‘q.\n\nC variant ($4$) ham koeffitsiyentlarni proporsional qiladi, lekin ozod hadlarni ham proporsional qiladi — bunda sistema yechimsiz emas, cheksiz ko‘p yechimga ega.",
+    "estimated_seconds": 130,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "systems_linear_equations",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "A chemist mixes a $12\\%$ saline solution with a $30\\%$ saline solution to make $45$ liters of a $20\\%$ saline solution. How many liters of the $30\\%$ solution does the chemist use?",
+    "spr_answers": [
+      "20"
+    ],
+    "explanation_en": "Let $a$ be the number of liters of the $12\\%$ solution and $b$ the number of liters of the $30\\%$ solution.\n\nTotal volume: $a + b = 45$. Amount of salt: $0.12a + 0.30b = 0.20(45) = 9$.\n\nSubstitute $a = 45 - b$: $0.12(45 - b) + 0.30b = 9$, so $5.4 + 0.18b = 9$, $0.18b = 3.6$, and $b = 20$.\n\nCheck: $a = 25$, and $0.12(25) + 0.30(20) = 3 + 6 = 9$. A common mistake is entering $25$, which is the amount of the $12\\%$ solution.",
+    "explanation_uz": "$a$ — $12\\%$ li eritma miqdori (litr), $b$ — $30\\%$ li eritma miqdori (litr) bo‘lsin.\n\nUmumiy hajm: $a + b = 45$. Tuz miqdori: $0.12a + 0.30b = 0.20(45) = 9$.\n\n$a = 45 - b$ ni qo‘yamiz: $0.12(45 - b) + 0.30b = 9$, ya’ni $5.4 + 0.18b = 9$, $0.18b = 3.6$ va $b = 20$.\n\nTekshiruv: $a = 25$, va $0.12(25) + 0.30(20) = 3 + 6 = 9$. Ko‘p uchraydigan xato — $12\\%$ li eritma miqdori $25$ ni javob sifatida kiritish.",
+    "estimated_seconds": 125,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  }
+]

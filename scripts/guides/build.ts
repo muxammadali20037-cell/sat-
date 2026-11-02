@@ -16,7 +16,7 @@ import { readdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { basename, resolve } from 'node:path'
 import katex from 'katex'
 import { guideFileSchema, skillGuideGaps, type GuideFile } from '../../src/features/guides/schema'
-import { parseRichText, type BlockNode, type InlineNode } from '../../src/lib/rich-text/tokenize'
+import { collectMath, parseRichText } from '../../src/lib/rich-text/tokenize'
 
 const ROOT = resolve(__dirname, '../..')
 const CONTENT_DIR = resolve(ROOT, 'content/guides')
@@ -35,21 +35,6 @@ function knownSkillCodes(): Set<string> {
   return codes
 }
 
-function collectMath(blocks: BlockNode[]): string[] {
-  const out: string[] = []
-  const walk = (nodes: InlineNode[]) => {
-    for (const n of nodes) {
-      if (n.type === 'math') out.push(n.value)
-      else if (n.type === 'bold' || n.type === 'italic' || n.type === 'underline') walk(n.children)
-    }
-  }
-  for (const b of blocks) {
-    if (b.type === 'display_math') out.push(b.value)
-    else if (b.type === 'paragraph') walk(b.children)
-    else for (const item of b.items) walk(item)
-  }
-  return out
-}
 
 function richTextStrings(guide: GuideFile): string[] {
   const out: string[] = []

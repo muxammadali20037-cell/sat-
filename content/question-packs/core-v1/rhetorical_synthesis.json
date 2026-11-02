@@ -1,0 +1,162 @@
+[
+  {
+    "skill_code": "rhetorical_synthesis",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- Tardigrades are tiny animals that are usually less than 1 millimeter long.\n- They live in many environments, including mosses, soil, and ocean sediments.\n- When their surroundings dry out, tardigrades can enter a state called a tun.\n- In the tun state, a tardigrade pulls in its head and legs and loses most of the water in its body.\n- A tardigrade can remain in the tun state for years and become active again when water returns.",
+    "stem": "The student wants to describe what happens to a tardigrade's body when it enters the tun state. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "option_a": "Tardigrades, which are usually less than 1 millimeter long, live in mosses, soil, and ocean sediments.",
+    "option_b": "When a tardigrade enters the tun state, it pulls in its head and legs and loses most of the water in its body.",
+    "option_c": "Tardigrades can enter a state called a tun when their surroundings dry out.",
+    "option_d": "A tardigrade can stay in the tun state for years before becoming active again.",
+    "correct": "B",
+    "explanation_en": "The goal is to describe what happens to a tardigrade's body in the tun state. Choice B does exactly that, using the note that the animal pulls in its head and legs and loses most of its body water.\n\nChoice A describes the animal's size and habitats, not the tun state. Choice C says when a tardigrade enters the tun state but not what happens to its body. Choice D tells how long the state can last, which is also not a description of the body's changes.",
+    "explanation_uz": "Maqsad — tardigrada tun holatiga o‘tganda uning tanasida nima sodir bo‘lishini tasvirlash. B aynan shuni qiladi: hayvon boshi va oyoqlarini ichkariga tortishi hamda tanasidagi suvning katta qismini yo‘qotishi haqidagi eslatmadan foydalanadi.\n\nA — tun holati haqida emas, hayvonning kattaligi va yashash joylari haqida. C — tardigrada qachon tun holatiga o‘tishini aytadi, lekin tanasida nima bo‘lishini aytmaydi. D — bu holat qancha davom etishini aytadi; bu ham tanadagi o‘zgarishlarning tavsifi emas.",
+    "estimated_seconds": 55,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "rhetorical_synthesis",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- Ulugh Beg (1394–1449) was a ruler of Samarkand, a city in present-day Uzbekistan.\n- He was also a mathematician and astronomer.\n- In the 1420s, he built a large observatory in Samarkand.\n- The observatory's main instrument was a huge arc, built partly underground, that was used to measure the positions of the Sun and stars.\n- Astronomers working at the observatory produced a catalog of about 1,000 stars.",
+    "stem": "The student wants to introduce Ulugh Beg to an audience unfamiliar with him. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "option_a": "In the 1420s, an observatory was built in Samarkand, a city in present-day Uzbekistan.",
+    "option_b": "The observatory's main instrument, a huge arc built partly underground, measured the positions of the Sun and stars.",
+    "option_c": "Ulugh Beg (1394–1449), a ruler of Samarkand who was also an astronomer, built an observatory in the city in the 1420s.",
+    "option_d": "Astronomers at Ulugh Beg's observatory produced a catalog of about 1,000 stars.",
+    "correct": "C",
+    "explanation_en": "To introduce a person to readers who do not know him, a sentence should say who he was. Choice C names Ulugh Beg, gives his dates, identifies him as a ruler and an astronomer, and adds his best-known achievement, the observatory.\n\nChoices A and B describe the observatory without mentioning Ulugh Beg at all. Choice D mentions him only in passing (“Ulugh Beg's observatory”) and assumes the reader already knows who he was.",
+    "explanation_uz": "Shaxsni uni tanimaydigan o‘quvchilarga tanishtirish uchun gap u kim bo‘lganini aytishi kerak. C Ulug‘bekning ismini, yashagan yillarini aytadi, uni hukmdor va astronom sifatida tanishtiradi hamda eng mashhur ishi — rasadxonani qo‘shadi.\n\nA va B — rasadxonani tasvirlaydi, lekin Ulug‘bekni umuman tilga olmaydi. D — uni faqat o‘tib ketishda eslaydi (“Ulugh Beg’s observatory”) va o‘quvchi uni allaqachon taniydi deb hisoblaydi.",
+    "estimated_seconds": 55,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "rhetorical_synthesis",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- Mars has two small moons, Phobos and Deimos.\n- Both moons are irregularly shaped rather than round.\n- Phobos is about 22 kilometers across, and Deimos is about 12 kilometers across.\n- Phobos completes one orbit around Mars about every 7.7 hours.\n- Deimos completes one orbit around Mars about every 30.3 hours.",
+    "stem": "The student wants to emphasize a difference between the times that Phobos and Deimos take to orbit Mars. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "option_a": "Phobos and Deimos, Mars's two moons, are both irregularly shaped.",
+    "option_b": "Phobos, which is about 22 kilometers across, is larger than Deimos, which is about 12 kilometers across.",
+    "option_c": "Mars has two small moons, one of which, Phobos, orbits the planet about once every 7.7 hours.",
+    "option_d": "While Phobos orbits Mars in about 7.7 hours, Deimos takes about 30.3 hours to complete one orbit.",
+    "correct": "D",
+    "explanation_en": "The goal is to emphasize a difference in the two moons' orbital times. Choice D gives both times (about 7.7 hours and about 30.3 hours) and uses “While” to set them against each other.\n\nChoice A presents a similarity, not a difference. Choice B emphasizes a difference, but in size rather than in orbital time. Choice C gives the orbital time of Phobos only, so there is nothing to compare it with.",
+    "explanation_uz": "Maqsad — ikki yo‘ldoshning orbita bo‘ylab aylanish vaqtidagi farqni ta’kidlash. D ikkala vaqtni ham beradi (taxminan 7.7 soat va taxminan 30.3 soat) va “While” so‘zi bilan ularni bir-biriga qarama-qarshi qo‘yadi.\n\nA — farqni emas, o‘xshashlikni ko‘rsatadi. B — farqni ta’kidlaydi, lekin aylanish vaqtidagi emas, kattalikdagi farqni. C — faqat Fobosning aylanish vaqtini beradi, uni solishtiradigan narsa yo‘q.",
+    "estimated_seconds": 55,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "rhetorical_synthesis",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- Cities are often warmer than nearby rural areas, partly because dark roofs and pavement absorb sunlight.\n- Engineer Laylo Rashidova led a research team that coated the roofs of 40 buildings with a white, reflective paint.\n- The team compared the temperatures of those roofs with the temperatures of 40 similar uncoated roofs over one summer.\n- On the hottest afternoons, the coated roofs were on average 12°C cooler than the uncoated roofs.",
+    "stem": "The student wants to present the results of the research team's study. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "option_a": "In a study led by Laylo Rashidova, roofs coated with white reflective paint were on average 12°C cooler on the hottest afternoons than similar uncoated roofs.",
+    "option_b": "Dark roofs and pavement absorb sunlight, which is one reason that cities are often warmer than nearby rural areas.",
+    "option_c": "Rashidova's team coated 40 roofs with white reflective paint and compared them with 40 similar uncoated roofs over one summer.",
+    "option_d": "Laylo Rashidova, an engineer, led a research team that studied the temperatures of rooftops.",
+    "correct": "A",
+    "explanation_en": "Results are what a study found. Choice A presents the study's key finding: on the hottest afternoons, the coated roofs were on average 12°C cooler than similar uncoated roofs.\n\nChoice B gives background information about why cities are warm, not the results of the study. Choice C describes the study's method (what the team did) but not what the team found. Choice D only introduces the researcher and the general topic.",
+    "explanation_uz": "Natijalar — tadqiqot nimani aniqlaganidir. A tadqiqotning asosiy natijasini keltiradi: eng issiq kunduzgi soatlarda bo‘yalgan tomlar xuddi shunday bo‘yalmagan tomlardan o‘rtacha 12°C salqinroq bo‘lgan.\n\nB — shaharlar nima uchun issiq bo‘lishi haqidagi umumiy ma’lumot, tadqiqot natijasi emas. C — tadqiqot usulini (jamoa nima qilganini) tasvirlaydi, lekin nimani aniqlaganini aytmaydi. D — faqat tadqiqotchini va umumiy mavzuni tanishtiradi.",
+    "estimated_seconds": 65,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "rhetorical_synthesis",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- The dromedary camel has one hump and lives mainly in the hot deserts of North Africa and the Middle East.\n- The Bactrian camel has two humps and lives mainly in the cold deserts and steppes of Central Asia.\n- A camel's hump stores fat, not water.\n- Both species can go many days without drinking water.\n- Bactrian camels grow a thick coat in winter and shed it in spring.",
+    "stem": "The student wants to emphasize a similarity between dromedary camels and Bactrian camels. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "option_a": "The dromedary camel has one hump, while the Bactrian camel has two.",
+    "option_b": "Both the dromedary camel and the Bactrian camel can go many days without drinking water.",
+    "option_c": "Bactrian camels, which live mainly in Central Asia, grow a thick coat every winter.",
+    "option_d": "Dromedaries live mainly in hot deserts, but Bactrian camels live mainly in cold deserts and steppes.",
+    "correct": "B",
+    "explanation_en": "Choice B emphasizes a similarity: it uses “Both” to show that the two species share an ability, going many days without drinking water.\n\nChoices A and D emphasize differences (the number of humps and the climates where the camels live). Choice C gives a fact about Bactrian camels only, so it does not compare the two species at all.",
+    "explanation_uz": "B o‘xshashlikni ta’kidlaydi: “Both” so‘zi orqali ikkala tur ham bir xil qobiliyatga — ko‘p kun suv ichmasdan yashay olishga — ega ekanini ko‘rsatadi.\n\nA va D — farqlarni (o‘rkachlar soni va tuyalar yashaydigan iqlim) ta’kidlaydi. C — faqat Baqtriya tuyasi haqidagi fakt, unda ikki tur umuman solishtirilmaydi.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "rhetorical_synthesis",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- A karez (also called a qanat) is a system of underground channels that carries water from an aquifer at the foot of the mountains to farmland at lower elevations.\n- The channel slopes gently downhill, so the water flows through it by gravity, without pumps.\n- Vertical shafts dug from the surface allow workers to enter the channel to clean and repair it.\n- Because the water travels underground, much less of it evaporates than would evaporate from an open canal in a hot, dry climate.\n- Karez systems have been used for centuries in parts of Iran, Central Asia, and western China.",
+    "stem": "The student wants to explain how a karez reduces the loss of water in a hot, dry climate. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "option_a": "Because the water in a karez travels underground, much less of it evaporates than would evaporate from an open canal in a hot, dry climate.",
+    "option_b": "Karez systems have been used for centuries in parts of Iran, Central Asia, and western China.",
+    "option_c": "Workers can enter a karez through vertical shafts in order to clean and repair the channel.",
+    "option_d": "A karez carries water from an aquifer at the foot of the mountains to farmland at lower elevations.",
+    "correct": "A",
+    "explanation_en": "The goal is to explain how a karez keeps water from being lost in a hot, dry climate. Choice A gives that explanation: because the water travels underground, much less of it evaporates than would evaporate from an open canal.\n\nChoice B tells where and how long karez systems have been used. Choice C explains how the channels are maintained. Choice D tells where a karez carries water. All three are accurate, but none explains how water loss is reduced.",
+    "explanation_uz": "Maqsad — korizning issiq va quruq iqlimda suv yo‘qotilishini qanday kamaytirishini tushuntirish. A aynan shuni tushuntiradi: suv yer ostidan oqqani uchun ochiq kanaldagiga qaraganda ancha kam bug‘lanadi.\n\nB — koriz tizimlari qayerda va qancha vaqtdan beri ishlatilishini aytadi. C — kanallar qanday ta’mirlanishini tushuntiradi. D — koriz suvni qayerdan qayerga olib borishini aytadi. Uchalasi ham to‘g‘ri ma’lumot, lekin hech biri suv yo‘qotilishi qanday kamayishini tushuntirmaydi.",
+    "estimated_seconds": 65,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "rhetorical_synthesis",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- Linguist Shahnoza Ergasheva studies children who speak both Uzbek and Russian.\n- She recorded the conversations of 30 bilingual children, ages 6 to 9, during free play at a school in Tashkent over one school year.\n- Earlier researchers had proposed that bilingual children switch languages mainly when they do not know a word in the language they are speaking.\n- Ergasheva found that the children often switched languages even when they knew the word in both languages.\n- She concluded that the children switched languages mainly to signal a change in topic or to include a particular friend in the conversation.",
+    "stem": "The student wants to contrast Ergasheva's conclusion with the earlier researchers' proposal. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "option_a": "Ergasheva recorded the conversations of 30 bilingual children, ages 6 to 9, during free play at a school in Tashkent over one school year.",
+    "option_b": "Earlier researchers had proposed that bilingual children switch languages mainly when they do not know a word, but Ergasheva concluded that the children she studied switched mainly to signal a change in topic or to include a particular friend.",
+    "option_c": "Ergasheva found that the bilingual children she recorded often switched between Uzbek and Russian even when they knew a word in both languages.",
+    "option_d": "According to earlier researchers, bilingual children switch languages mainly when they do not know a word in the language they are speaking.",
+    "correct": "B",
+    "explanation_en": "The goal has two parts: Ergasheva's conclusion and the earlier proposal, set against each other. Choice B includes both—the earlier idea that children switch when they lack a word, and Ergasheva's conclusion that they switch to signal a topic change or include a friend—and links them with “but” to show the contrast.\n\nChoice A describes only her method. Choice C reports a finding that challenges the earlier view, but it neither states her conclusion nor mentions the earlier proposal. Choice D states only the earlier proposal.",
+    "explanation_uz": "Maqsad ikki qismdan iborat: Ergashevaning xulosasi va avvalgi taxminni bir-biriga qarama-qarshi qo‘yish. B ikkalasini ham o‘z ichiga oladi — bolalar so‘zni bilmaganda tilni almashtiradi degan avvalgi fikrni ham, ular mavzu o‘zgarganini bildirish yoki do‘stini suhbatga qo‘shish uchun almashtiradi degan Ergasheva xulosasini ham — va ularni “but” bilan bog‘lab, qarama-qarshilikni ko‘rsatadi.\n\nA — faqat tadqiqot usulini tasvirlaydi. C — avvalgi fikrga zid bo‘lgan natijani keltiradi, lekin na Ergashevaning xulosasini, na avvalgi taxminni aytadi. D — faqat avvalgi taxminni bayon qiladi.",
+    "estimated_seconds": 80,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "rhetorical_synthesis",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- A refracting telescope uses a lens to gather and focus light.\n- A reflecting telescope uses a curved mirror to gather and focus light.\n- Because light must pass through a lens, a lens can be supported only around its edges; a very large lens sags under its own weight and distorts images.\n- Because light bounces off the front of a mirror, a mirror can be supported across its entire back surface.\n- The largest lens used in a research telescope is about 1 meter wide, while some reflecting telescopes have mirrors about 10 meters wide.",
+    "stem": "The student wants to explain why reflecting telescopes can be built much larger than refracting telescopes. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "option_a": "The largest lens used in a research telescope is about 1 meter wide, whereas some reflecting telescopes have mirrors about 10 meters wide.",
+    "option_b": "A refracting telescope gathers and focuses light with a lens, while a reflecting telescope uses a curved mirror.",
+    "option_c": "A very large lens sags under its own weight, which distorts the images it produces.",
+    "option_d": "Because a mirror can be supported across its entire back surface while a lens can be supported only around its edges, reflecting telescopes can use far larger light-gathering surfaces without sagging.",
+    "correct": "D",
+    "explanation_en": "The goal is to explain *why* reflecting telescopes can be so much larger. Choice D gives the reason from the notes: a mirror can be supported across its whole back, but a lens can be held only at its edges, so mirrors can be made much larger without sagging.\n\nChoice A is tempting because it shows the size difference, but it only states that difference and does not explain it. Choice B describes how the two kinds of telescopes work without addressing size. Choice C gives only half of the reason—the problem with large lenses—and never connects it to mirrors or reflecting telescopes.",
+    "explanation_uz": "Maqsad — aks ettiruvchi teleskoplarni *nima uchun* ancha katta qilib qurish mumkinligini tushuntirish. D eslatmalardagi sababni keltiradi: ko‘zguni butun orqa yuzasi bo‘ylab tayantirib qo‘yish mumkin, linzani esa faqat chetlaridan ushlab turish mumkin, shuning uchun ko‘zgular egilib qolmasdan ancha katta qilib yasaladi.\n\nA jozibali, chunki o‘lchamdagi farqni ko‘rsatadi, lekin faqat farqni aytadi, uni tushuntirmaydi. B — ikki turdagi teleskop qanday ishlashini tasvirlaydi, o‘lcham haqida gapirmaydi. C — sababning faqat yarmini (katta linzalar muammosini) aytadi va uni ko‘zgular yoki aks ettiruvchi teleskoplar bilan bog‘lamaydi.",
+    "estimated_seconds": 80,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  }
+]

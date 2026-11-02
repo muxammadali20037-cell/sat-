@@ -158,6 +158,32 @@ export type Database = {
           },
         ]
       }
+      ai_quota_reservations: {
+        Row: {
+          id: string
+          user_id: string
+          created_at: string
+        }
+        Insert: {
+          id?: string
+          user_id: string
+          created_at?: string
+        }
+        Update: {
+          id?: string
+          user_id?: string
+          created_at?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "ai_quota_reservations_user_id_fkey"
+            columns: ["user_id"]
+            isOneToOne: false
+            referencedRelation: "profiles"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       ai_sessions: {
         Row: {
           id: string
@@ -2629,6 +2655,7 @@ export type Database = {
       admin_set_user_role: { Args: { p_user_id: string; p_role: string }; Returns: undefined }
       admin_set_user_suspended: { Args: { p_user_id: string; p_suspended: boolean }; Returns: undefined }
       admin_upsert_question: { Args: { p_payload: Json }; Returns: string }
+      ai_reserve_request: { Args: { p_user_id: string; p_since: string; p_limit: number }; Returns: { reservation_id: string; used: number }[] }
       billing_apply_successful_payment: { Args: { p_payment_id: string; p_provider_transaction_id?: string }; Returns: string }
       billing_cancel_pending_payment: { Args: { p_payment_id: string; p_reason: string }; Returns: undefined }
       billing_grace_days: { Args: Record<PropertyKey, never>; Returns: number }
@@ -2641,6 +2668,7 @@ export type Database = {
       is_admin: { Args: Record<PropertyKey, never>; Returns: boolean }
       is_content_manager: { Args: Record<PropertyKey, never>; Returns: boolean }
       is_staff: { Args: Record<PropertyKey, never>; Returns: boolean }
+      mock_exam_start_attempt: { Args: { p_user_id: string; p_mock_exam_id: string; p_since: string; p_limit?: number }; Returns: string }
       my_entitlements: { Args: Record<PropertyKey, never>; Returns: { plan_code: string; plan_name: string; subscription_status: string; period_end: string; feature_key: string; is_enabled: boolean; limit_value: number }[] }
       my_skill_performance: { Args: Record<PropertyKey, never>; Returns: { subject_id: string; domain_id: string; skill_id: string; answered: number; correct: number; last_answered_at: string }[] }
       question_is_complete: { Args: { p_question_id: string }; Returns: boolean }

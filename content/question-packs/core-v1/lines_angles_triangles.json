@@ -1,0 +1,140 @@
+[
+  {
+    "skill_code": "lines_angles_triangles",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "Two lines intersect at a point, forming four angles. One of the angles measures $3x^\\circ$, and the angle vertical to it measures $(x + 50)^\\circ$. What is the value of $x$?",
+    "option_a": "25",
+    "option_b": "32.5",
+    "option_c": "75",
+    "option_d": "105",
+    "correct": "A",
+    "explanation_en": "Vertical angles are congruent, so $3x = x + 50$. Then $2x = 50$ and $x = 25$, which is choice A. Each of these two angles measures $75^\\circ$.\n\nChoice B comes from treating the angles as supplementary: $3x + (x + 50) = 180$ gives $x = 32.5$. Choice C (75) is the measure of the angle, not the value of $x$. Choice D (105) is the measure of each of the other two angles, $180 - 75$.",
+    "explanation_uz": "Vertikal burchaklar o‘zaro teng, shuning uchun $3x = x + 50$. Bundan $2x = 50$ va $x = 25$, ya’ni to‘g‘ri javob A. Bu ikki burchakning har biri $75^\\circ$ ga teng.\n\nB — burchaklar qo‘shni (yig‘indisi $180^\\circ$) deb olingan: $3x + (x + 50) = 180$ dan $x = 32.5$ chiqadi. C (75) — bu $x$ emas, burchakning o‘lchovi. D (105) — qolgan ikki burchakning har biri, $180 - 75$.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "lines_angles_triangles",
+    "difficulty": "easy",
+    "question_type": "spr",
+    "stem": "The measures of the three angles of a triangle are in the ratio $2 : 3 : 7$. What is the measure, in degrees, of the largest angle of the triangle?",
+    "spr_answers": [
+      "105"
+    ],
+    "explanation_en": "Write the angles as $2k$, $3k$, and $7k$. The angles of a triangle add up to $180^\\circ$, so $12k = 180$ and $k = 15$. The largest angle is $7k = 105$ degrees. Check: the angles are $30^\\circ$, $45^\\circ$, and $105^\\circ$, and $30 + 45 + 105 = 180$.",
+    "explanation_uz": "Burchaklarni $2k$, $3k$ va $7k$ deb belgilaymiz. Uchburchak burchaklarining yig‘indisi $180^\\circ$, demak $12k = 180$ va $k = 15$. Eng katta burchak $7k = 105$ gradus. Tekshiramiz: burchaklar $30^\\circ$, $45^\\circ$ va $105^\\circ$, ularning yig‘indisi $30 + 45 + 105 = 180$.",
+    "estimated_seconds": 65,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "lines_angles_triangles",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "Lines $\\ell$ and $m$ are parallel, and line $t$ intersects both of them. Angle 1 is formed where $t$ meets $\\ell$, and angle 2 is formed where $t$ meets $m$. Both angles lie between lines $\\ell$ and $m$, on the same side of line $t$. If the measure of angle 1 is $118^\\circ$, what is the measure of angle 2?",
+    "option_a": "$28^\\circ$",
+    "option_b": "$62^\\circ$",
+    "option_c": "$118^\\circ$",
+    "option_d": "$242^\\circ$",
+    "correct": "B",
+    "explanation_en": "Angles 1 and 2 are same-side interior angles. When parallel lines are cut by a transversal, same-side interior angles are supplementary, so angle 2 measures $180^\\circ - 118^\\circ = 62^\\circ$. Choice B is correct.\n\nChoice C ($118^\\circ$) would be correct for alternate interior or corresponding angles, which are congruent, but angles 1 and 2 are on the same side of $t$. Choice A ($28^\\circ$) subtracts from $90^\\circ$ instead of $180^\\circ$, and choice D ($242^\\circ$) subtracts from $360^\\circ$.",
+    "explanation_uz": "1- va 2-burchaklar kesuvchining bir tomonida, parallel to‘g‘ri chiziqlar orasida yotadi — bular bir tomonli ichki burchaklar. Parallel to‘g‘ri chiziqlarni kesuvchi kesib o‘tganda, bir tomonli ichki burchaklarning yig‘indisi $180^\\circ$ bo‘ladi. Demak, 2-burchak $180^\\circ - 118^\\circ = 62^\\circ$. To‘g‘ri javob B.\n\nC ($118^\\circ$) ichki almashinuvchi yoki mos burchaklar uchun to‘g‘ri bo‘lardi (ular teng), lekin bu burchaklar $t$ ning bir tomonida joylashgan. A ($28^\\circ$) — $180^\\circ$ o‘rniga $90^\\circ$ dan ayirilgan, D ($242^\\circ$) esa $360^\\circ$ dan ayirilgan.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "lines_angles_triangles",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "In triangle $ABC$, the measure of angle $A$ is $40^\\circ$. Side $\\overline{BC}$ is extended beyond point $C$ to point $D$, and the measure of angle $ACD$ is $115^\\circ$. What is the measure of angle $B$?",
+    "option_a": "$75^\\circ$",
+    "option_b": "$115^\\circ$",
+    "option_c": "$140^\\circ$",
+    "option_d": "$155^\\circ$",
+    "correct": "A",
+    "explanation_en": "Angle $ACD$ is an exterior angle of triangle $ABC$, and an exterior angle equals the sum of the two remote interior angles: $m\\angle ACD = m\\angle A + m\\angle B$. So $115 = 40 + m\\angle B$, and $m\\angle B = 75^\\circ$. Check: angle $ACB$ measures $180 - 115 = 65^\\circ$, and $40 + 75 + 65 = 180$. Choice A is correct.\n\nChoice B ($115^\\circ$) assumes angle $B$ equals the exterior angle. Choice C ($140^\\circ$) is $180 - 40$, the sum of angles $B$ and $ACB$, not angle $B$ alone. Choice D ($155^\\circ$) adds 115 and 40.",
+    "explanation_uz": "$ACD$ burchak $ABC$ uchburchakning tashqi burchagi. Tashqi burchak o‘ziga qo‘shni bo‘lmagan ikki ichki burchak yig‘indisiga teng: $m\\angle ACD = m\\angle A + m\\angle B$. Demak, $115 = 40 + m\\angle B$ va $m\\angle B = 75^\\circ$. Tekshiramiz: $ACB$ burchak $180 - 115 = 65^\\circ$, va $40 + 75 + 65 = 180$. To‘g‘ri javob A.\n\nB ($115^\\circ$) — $B$ burchak tashqi burchakka teng deb olingan. C ($140^\\circ$) — bu $180 - 40$, ya’ni $B$ va $ACB$ burchaklarning yig‘indisi, yolg‘iz $B$ emas. D ($155^\\circ$) — 115 va 40 qo‘shib yuborilgan.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "lines_angles_triangles",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "At the same time of day, a person who is 1.8 meters tall casts a shadow 2.4 meters long, and a nearby vertical flagpole casts a shadow 16 meters long. The ground is level. What is the height, in meters, of the flagpole?",
+    "spr_answers": [
+      "12"
+    ],
+    "explanation_en": "The sun's rays meet the level ground at the same angle for both objects, and both objects are vertical. So the right triangle formed by the person and the person's shadow is similar to the right triangle formed by the flagpole and its shadow. Corresponding sides are proportional: $\\frac{h}{16} = \\frac{1.8}{2.4}$, so $h = 16 \\cdot 0.75 = 12$ meters.",
+    "explanation_uz": "Quyosh nurlari ikkala jism uchun ham tekis yerga bir xil burchak ostida tushadi, ikkala jism ham vertikal. Shuning uchun odam va uning soyasi hosil qilgan to‘g‘ri burchakli uchburchak bayroq ustuni va uning soyasi hosil qilgan uchburchakka o‘xshash. Mos tomonlar proporsional: $\\frac{h}{16} = \\frac{1.8}{2.4}$, demak $h = 16 \\cdot 0.75 = 12$ metr.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "lines_angles_triangles",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "Triangle $DEF$ is similar to triangle $JKL$, where vertices $D$, $E$, and $F$ correspond to vertices $J$, $K$, and $L$, respectively. In triangle $DEF$, $DE = 8$, $EF = 12$, and $DF = 10$. If $JK = 20$, what is the perimeter of triangle $JKL$?",
+    "option_a": "30",
+    "option_b": "50",
+    "option_c": "66",
+    "option_d": "75",
+    "correct": "D",
+    "explanation_en": "Side $DE$ corresponds to side $JK$, so the scale factor from triangle $DEF$ to triangle $JKL$ is $\\frac{20}{8} = 2.5$. The perimeters of similar triangles have the same ratio as their corresponding sides. The perimeter of $DEF$ is $8 + 12 + 10 = 30$, so the perimeter of $JKL$ is $2.5 \\cdot 30 = 75$. Choice D is correct.\n\nChoice A (30) is the perimeter of $DEF$. Choice B (50) matches $JK$ with $EF$ instead of $DE$, giving a factor of $\\frac{20}{12}$. Choice C (66) adds $20 - 8 = 12$ to every side instead of multiplying by the scale factor.",
+    "explanation_uz": "$DE$ tomon $JK$ tomonga mos keladi, shuning uchun $DEF$ dan $JKL$ ga o‘tish koeffitsiyenti $\\frac{20}{8} = 2.5$. O‘xshash uchburchaklarning perimetrlari ham mos tomonlar kabi shu nisbatda bo‘ladi. $DEF$ ning perimetri $8 + 12 + 10 = 30$, demak $JKL$ ning perimetri $2.5 \\cdot 30 = 75$. To‘g‘ri javob D.\n\nA (30) — bu $DEF$ ning perimetri. B (50) — $JK$ tomon $DE$ ga emas, $EF$ ga moslangan, koeffitsiyent $\\frac{20}{12}$ bo‘lib qolgan. C (66) — har bir tomonga ko‘paytirish o‘rniga $20 - 8 = 12$ qo‘shilgan.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "lines_angles_triangles",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "In triangle $ABC$, $AB = AC$. Point $D$ lies on $\\overline{AB}$ and point $E$ lies on $\\overline{AC}$ so that $\\overline{DE}$ is parallel to $\\overline{BC}$. The measure of angle $A$ is $(x + 20)^\\circ$, and the measure of angle $ADE$ is $(2x + 10)^\\circ$. What is the measure of angle $DEC$?",
+    "option_a": "$28^\\circ$",
+    "option_b": "$48^\\circ$",
+    "option_c": "$66^\\circ$",
+    "option_d": "$114^\\circ$",
+    "correct": "D",
+    "explanation_en": "Because $\\overline{DE} \\parallel \\overline{BC}$, angles $ADE$ and $ABC$ are corresponding angles, so $m\\angle B = (2x + 10)^\\circ$. Since $AB = AC$, angle $C$ has the same measure as angle $B$. The angles of triangle $ABC$ add up to $180^\\circ$: $(x + 20) + 2(2x + 10) = 180$, so $5x + 40 = 180$ and $x = 28$. Then $m\\angle AED = m\\angle ACB = 2(28) + 10 = 66^\\circ$. Angles $AED$ and $DEC$ form a linear pair along $\\overline{AC}$, so $m\\angle DEC = 180 - 66 = 114^\\circ$. Choice D is correct.\n\nChoice A (28) is the value of $x$, not an angle measure. Choice B ($48^\\circ$) is angle $A$. Choice C ($66^\\circ$) is angle $AED$, the angle on the other side of point $E$.",
+    "explanation_uz": "$\\overline{DE} \\parallel \\overline{BC}$ bo‘lgani uchun $ADE$ va $ABC$ mos burchaklar, demak $m\\angle B = (2x + 10)^\\circ$. $AB = AC$ bo‘lgani uchun $C$ burchak $B$ burchakka teng. $ABC$ uchburchak burchaklarining yig‘indisi $180^\\circ$: $(x + 20) + 2(2x + 10) = 180$, bundan $5x + 40 = 180$ va $x = 28$. U holda $m\\angle AED = m\\angle ACB = 2(28) + 10 = 66^\\circ$. $AED$ va $DEC$ burchaklar $\\overline{AC}$ bo‘ylab qo‘shni burchaklar, shuning uchun $m\\angle DEC = 180 - 66 = 114^\\circ$. To‘g‘ri javob D.\n\nA (28) — bu $x$ ning qiymati, burchak emas. B ($48^\\circ$) — $A$ burchak. C ($66^\\circ$) — $AED$ burchak, ya’ni $E$ nuqtaning boshqa tomonidagi burchak.",
+    "estimated_seconds": 130,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "lines_angles_triangles",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "Segments $\\overline{AE}$ and $\\overline{BD}$ intersect at point $C$, and $\\overline{AB}$ is parallel to $\\overline{DE}$. If $AC = x$, $CE = 8$, $BC = 3$, and $CD = x - 2$, what is the length of $\\overline{AE}$?",
+    "spr_answers": [
+      "14"
+    ],
+    "explanation_en": "Because $\\overline{AB} \\parallel \\overline{DE}$, alternate interior angles are congruent ($\\angle BAC \\cong \\angle DEC$ and $\\angle ABC \\cong \\angle EDC$), so triangle $ABC$ is similar to triangle $EDC$. Corresponding sides are proportional: $\\frac{AC}{EC} = \\frac{BC}{DC}$, so $\\frac{x}{8} = \\frac{3}{x - 2}$. Cross-multiplying gives $x^2 - 2x = 24$, or $(x - 6)(x + 4) = 0$. A length must be positive, so $x = 6$ (then $CD = 4$). Therefore $AE = AC + CE = 6 + 8 = 14$.\n\nA common slip is to stop at $x = 6$, which is only the length of $\\overline{AC}$.",
+    "explanation_uz": "$\\overline{AB} \\parallel \\overline{DE}$ bo‘lgani uchun ichki almashinuvchi burchaklar teng ($\\angle BAC \\cong \\angle DEC$ va $\\angle ABC \\cong \\angle EDC$), demak $ABC$ uchburchak $EDC$ uchburchakka o‘xshash. Mos tomonlar proporsional: $\\frac{AC}{EC} = \\frac{BC}{DC}$, ya’ni $\\frac{x}{8} = \\frac{3}{x - 2}$. Ko‘paytirsak, $x^2 - 2x = 24$, yoki $(x - 6)(x + 4) = 0$. Uzunlik musbat bo‘lishi kerak, shuning uchun $x = 6$ (u holda $CD = 4$). Demak $AE = AC + CE = 6 + 8 = 14$.\n\nKo‘p uchraydigan xato — $x = 6$ da to‘xtab qolish; bu faqat $\\overline{AC}$ ning uzunligi.",
+    "estimated_seconds": 135,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  }
+]

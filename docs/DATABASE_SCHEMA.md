@@ -70,6 +70,7 @@ erDiagram
 | | `payment_events` | Raw verified/unverified callbacks; unique `(provider, provider_event_id)` = idempotency; delete blocked |
 | AI & plans | `study_plans`, `study_plan_tasks` | One active plan per user |
 | | `ai_sessions`, `ai_messages`, `ai_usage`, `ai_generated_questions` | Usage with tokens, USD micro-cost, status, latency |
+| | `ai_quota_reservations` (0015) | AI requests in flight; counted with today's usage so parallel requests cannot exceed the daily limit. Server only, no client privileges |
 | Platform | `bookmarks` | Exactly one of question/lesson |
 | | `notifications`, `audit_logs` (append-only), `platform_settings`, `rate_limits`, `contact_requests` | |
 
@@ -90,6 +91,8 @@ erDiagram
 | `skill_performance(user)`, `my_skill_performance()` | server / student | Per-skill accuracy from scored answers |
 | `activity_streak(user, today)`, `record_daily_activity(...)` | server | Streaks and daily rollups |
 | `rate_limit_hit(key, limit, window)` | server | Fixed-window limiter |
+| `ai_reserve_request(user, since, limit)` | service role | Atomic daily AI limit: per-student advisory lock, counts successful requests since `since` plus reservations in flight, inserts a reservation if below the limit. Reservations older than 10 minutes are purged |
+| `mock_exam_start_attempt(user, exam, since, limit)` | service role | Atomic monthly mock-exam limit: per-student lock, count and insert in one step; `limit` NULL = unlimited |
 | `write_audit_log(...)`, `audit_row_change()` | internal | Audit (row trigger on 18 staff-managed tables) |
 
 ## 4. Access matrix (RLS + grants)
@@ -125,6 +128,7 @@ Writes to attempts, progress, subscriptions, payments, AI tables, study plans an
 - Financial rows (`payments`, `payment_events`, `subscriptions`) cannot be deleted, even by the service role (trigger). Corrections are state changes with an audit row.
 - `audit_logs` is append-only (update and delete triggers).
 - A published question always has an English explanation and a valid key; a published lesson always has playable media or notes.
+- Plan limits that are checked and then consumed (daily AI requests, monthly mock exams) are enforced inside one SQL function under a per-student lock, so simultaneous requests cannot all pass the check (0015, with a parallel-connection test).
 - Payment application is idempotent at three levels: unique provider event ids, unique provider transaction ids, and the `status = 'succeeded'` early return under a row lock.
 
 ## 6. Testing the schema locally

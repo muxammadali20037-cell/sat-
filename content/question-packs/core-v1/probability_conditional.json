@@ -1,0 +1,146 @@
+[
+  {
+    "skill_code": "probability_conditional",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "A jar contains 6 strawberry candies, 9 lemon candies, and 5 mint candies. If one candy is selected at random from the jar, what is the probability that it is **not** a lemon candy?",
+    "option_a": "$\\frac{1}{4}$",
+    "option_b": "$\\frac{9}{20}$",
+    "option_c": "$\\frac{11}{20}$",
+    "option_d": "$\\frac{9}{11}$",
+    "correct": "C",
+    "explanation_en": "There are $6 + 9 + 5 = 20$ candies, and $6 + 5 = 11$ of them are not lemon, so the probability is $\\frac{11}{20}$. (Equivalently, $1 - \\frac{9}{20} = \\frac{11}{20}$.) Choice B is the probability that the candy **is** lemon. Choice D compares the lemon candies with the other candies instead of dividing by the total, and choice A counts only the mint candies.",
+    "explanation_uz": "Jami $6 + 9 + 5 = 20$ ta konfet bor, ulardan $6 + 5 = 11$ tasi limonli emas, demak ehtimollik $\\frac{11}{20}$. (Yoki: $1 - \\frac{9}{20} = \\frac{11}{20}$.) B javob — konfetning limonli **bo‘lish** ehtimolligi. D javob limonli konfetlarni qolganlari bilan solishtirgan, jami songa bo‘lmagan, A javob esa faqat yalpizli konfetlarni hisoblagan.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "probability_conditional",
+    "difficulty": "easy",
+    "question_type": "spr",
+    "stem": "A fair spinner is divided into 8 equal sections numbered 1 through 8. If the spinner is spun once, what is the probability that it lands on a number greater than 5?",
+    "spr_answers": [
+      "3/8",
+      ".375",
+      "0.375"
+    ],
+    "explanation_en": "The numbers greater than 5 are 6, 7 and 8: 3 of the 8 equally likely outcomes. The probability is $\\frac{3}{8} = 0.375$. Including 5 itself would give $\\frac{4}{8}$, but “greater than 5” does not include 5. Enter 3/8 or .375.",
+    "explanation_uz": "5 dan katta sonlar — 6, 7 va 8: teng imkoniyatli 8 ta natijadan 3 tasi. Ehtimollik $\\frac{3}{8} = 0.375$. 5 ning o‘zini ham sanash $\\frac{4}{8}$ ni beradi, lekin “5 dan katta” shartiga 5 kirmaydi. Javob maydoniga 3/8 yoki .375 deb yozing.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "probability_conditional",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "At a factory, the probability that a randomly selected light bulb is defective is 0.02. Based on this probability, how many defective bulbs would be expected in a shipment of 1,500 bulbs?",
+    "option_a": "$3$",
+    "option_b": "$30$",
+    "option_c": "$300$",
+    "option_d": "$1{,}470$",
+    "correct": "B",
+    "explanation_en": "The expected number is the probability times the number of bulbs: $0.02 \\times 1{,}500 = 30$. Choice C uses 0.2 instead of 0.02, choice A uses 0.002, and choice D is the expected number of bulbs that are **not** defective.",
+    "explanation_uz": "Kutilgan son — ehtimollik ko‘paytirilgan lampalar soni: $0.02 \\times 1{,}500 = 30$. C javob 0.02 o‘rniga 0.2 ni, A javob esa 0.002 ni ishlatgan. D javob — nuqsonsiz lampalarning kutilgan soni.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "probability_conditional",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "If one of the residents who usually travel to work by metro is selected at random, what is the probability that the resident is under 30 years old?",
+    "passage": "A city surveyed 250 residents about how they usually travel to work. The results, by age group, are shown in the table.\n\n| Age group | Bus | Metro | Car | Total |\n| --- | ---: | ---: | ---: | ---: |\n| Under 30 years old | 40 | 65 | 15 | 120 |\n| 30 years old or older | 35 | 45 | 50 | 130 |\n| Total | 75 | 110 | 65 | 250 |",
+    "option_a": "$\\frac{13}{50}$",
+    "option_b": "$\\frac{11}{25}$",
+    "option_c": "$\\frac{13}{24}$",
+    "option_d": "$\\frac{13}{22}$",
+    "correct": "D",
+    "explanation_en": "The selection is made only from the residents who travel by metro, so the denominator is $65 + 45 = 110$. Of these, 65 are under 30, so the probability is $\\frac{65}{110} = \\frac{13}{22}$. Choice C reverses the condition: $\\frac{65}{120}$ is the probability that a resident under 30 travels by metro. Choice A divides by all 250 residents, and choice B is the fraction of all residents surveyed who travel by metro.",
+    "explanation_uz": "Tanlov faqat metroda qatnaydigan aholi orasidan amalga oshiriladi, shuning uchun maxraj $65 + 45 = 110$. Ulardan 65 nafari 30 yoshdan kichik, demak ehtimollik $\\frac{65}{110} = \\frac{13}{22}$. C javobda shart teskari olingan: $\\frac{65}{120}$ — 30 yoshdan kichik odamning metroda qatnash ehtimolligi. A javob barcha 250 kishiga bo‘lgan, B javob esa metroda qatnaydiganlarning barcha so‘ralganlar ichidagi ulushi.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "probability_conditional",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "A sports club has 180 members: 75 are in grade 10, and the rest are in grade 11. All members took a swimming test. Of the grade 10 members, 48 passed the test, and of the grade 11 members, 63 passed the test. If one of the members who did **not** pass the test is selected at random, what is the probability that the member is in grade 11?",
+    "spr_answers": [
+      "14/23",
+      "42/69",
+      ".6086",
+      ".6087"
+    ],
+    "explanation_en": "Grade 11 has $180 - 75 = 105$ members. The members who did not pass are $75 - 48 = 27$ in grade 10 and $105 - 63 = 42$ in grade 11, for a total of 69. The selection is made from these 69 members, so the probability is $\\frac{42}{69} = \\frac{14}{23} \\approx 0.6087$. A common error is to divide by 105, the number of grade 11 members: $\\frac{42}{105}$ is the probability that a grade 11 member did not pass, which reverses the condition. Enter 14/23, .6086 or .6087.",
+    "explanation_uz": "11-sinfda $180 - 75 = 105$ a’zo bor. Testdan o‘tmaganlar: 10-sinfda $75 - 48 = 27$ nafar, 11-sinfda $105 - 63 = 42$ nafar, jami 69 nafar. Tanlov shu 69 kishi orasidan, demak ehtimollik $\\frac{42}{69} = \\frac{14}{23} \\approx 0.6087$. Ko‘p uchraydigan xato — 105 ga, ya’ni 11-sinf a’zolari soniga bo‘lish: $\\frac{42}{105}$ — 11-sinf a’zosining testdan o‘tmaslik ehtimolligi, bunda shart teskari olingan. Javob maydoniga 14/23, .6086 yoki .6087 deb yozing.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "probability_conditional",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "Of the 60 students in a science program, 28 take chemistry, 22 take physics, and 10 take both chemistry and physics. If one student in the program is selected at random, what is the probability that the student takes chemistry or physics (or both)?",
+    "option_a": "$\\frac{1}{6}$",
+    "option_b": "$\\frac{1}{3}$",
+    "option_c": "$\\frac{2}{3}$",
+    "option_d": "$\\frac{5}{6}$",
+    "correct": "C",
+    "explanation_en": "Adding $28 + 22 = 50$ counts the 10 students who take both subjects twice. The number of students who take at least one of the subjects is $28 + 22 - 10 = 40$, so the probability is $\\frac{40}{60} = \\frac{2}{3}$. Choice D, $\\frac{50}{60}$, is the double-counting error. Choice B, $\\frac{20}{60}$, is the probability that the student takes neither subject, and choice A is the probability that the student takes both.",
+    "explanation_uz": "$28 + 22 = 50$ deb qo‘shsak, ikkala fanni o‘qiydigan 10 o‘quvchi ikki marta sanaladi. Kamida bitta fanni o‘qiydiganlar soni: $28 + 22 - 10 = 40$, demak ehtimollik $\\frac{40}{60} = \\frac{2}{3}$. D javob ($\\frac{50}{60}$) — ikki marta sanash xatosi. B javob ($\\frac{20}{60}$) — hech bir fanni o‘qimaslik ehtimolligi, A javob esa ikkala fanni o‘qish ehtimolligi.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "probability_conditional",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "At a company, 40% of the employees work remotely, and the rest work on-site. Of the employees who work remotely, 30% are engineers. Of the employees who work on-site, 45% are engineers. If one of the company's engineers is selected at random, what is the probability that the engineer works remotely?",
+    "option_a": "$\\frac{3}{10}$",
+    "option_b": "$\\frac{4}{13}$",
+    "option_c": "$\\frac{39}{100}$",
+    "option_d": "$\\frac{2}{5}$",
+    "correct": "B",
+    "explanation_en": "Imagine the company has 1,000 employees. Then 400 work remotely, and $0.30 \\times 400 = 120$ of them are engineers; 600 work on-site, and $0.45 \\times 600 = 270$ of them are engineers. There are $120 + 270 = 390$ engineers, and the selection is made from them, so the probability is $\\frac{120}{390} = \\frac{4}{13}$. Choice A, $\\frac{3}{10}$, is the probability that a **remote** employee is an engineer, which reverses the condition. Choice C is the fraction of all employees who are engineers, and choice D is the fraction of all employees who work remotely.",
+    "explanation_uz": "Kompaniyada 1,000 xodim bor deb tasavvur qiling. Unda 400 kishi masofadan ishlaydi va ulardan $0.30 \\times 400 = 120$ nafari muhandis; 600 kishi ofisda ishlaydi va ulardan $0.45 \\times 600 = 270$ nafari muhandis. Jami $120 + 270 = 390$ muhandis bor va tanlov shular orasidan, demak ehtimollik $\\frac{120}{390} = \\frac{4}{13}$. A javob ($\\frac{3}{10}$) — **masofadan ishlovchi** xodimning muhandis bo‘lish ehtimolligi, ya’ni shart teskari olingan. C javob — barcha xodimlar ichida muhandislar ulushi, D javob esa barcha xodimlar ichida masofadan ishlovchilar ulushi.",
+    "estimated_seconds": 130,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "probability_conditional",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "A box contains only red pens and blue pens, and $\\frac{2}{5}$ of the pens are red. After 9 blue pens are removed from the box, the probability of selecting a red pen at random from the box is $\\frac{1}{2}$. How many pens were in the box before any pens were removed?",
+    "spr_answers": [
+      "45"
+    ],
+    "explanation_en": "Let $n$ be the original number of pens. Then there are $\\frac{2}{5}n$ red pens and $\\frac{3}{5}n$ blue pens. After 9 blue pens are removed, a probability of $\\frac{1}{2}$ means the numbers of red and blue pens are equal: $\\frac{2}{5}n = \\frac{3}{5}n - 9$. So $\\frac{1}{5}n = 9$ and $n = 45$. Check: there are 18 red pens and 27 blue pens; after 9 blue pens are removed, there are 18 of each. Entering 36 gives the number of pens **after** the removal, not before.",
+    "explanation_uz": "Dastlabki ruchkalar soni $n$ bo‘lsin. Unda qizil ruchkalar $\\frac{2}{5}n$ ta, ko‘klari $\\frac{3}{5}n$ ta. 9 ta ko‘k ruchka olingach, qizil ruchkani tanlash ehtimolligi $\\frac{1}{2}$ ga teng bo‘lishi qizil va ko‘k ruchkalar soni tengligini bildiradi: $\\frac{2}{5}n = \\frac{3}{5}n - 9$. Bundan $\\frac{1}{5}n = 9$ va $n = 45$. Tekshiruv: 18 ta qizil va 27 ta ko‘k ruchka; 9 ta ko‘k ruchka olingach, har biridan 18 tadan qoladi ✓. 36 deb yozish — bu olib tashlangandan **keyingi** ruchkalar soni, savol esa dastlabki sonni so‘rayapti.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  }
+]

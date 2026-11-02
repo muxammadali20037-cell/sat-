@@ -4,7 +4,7 @@ _Last updated: 2 November 2026_
 
 The codebase covers phases 1–8 of [DEVELOPMENT_ROADMAP.md](DEVELOPMENT_ROADMAP.md). Phase 9 (deployment) is partly done: a Supabase project exists, and the steps that need the owner's accounts or credentials are listed under "Launch checklist" below.
 
-Size: 68 pages, 45 API route handlers, 14 SQL migrations, about 52k lines of TypeScript, and 40 Uzbek study guides (30 skill guides covering every Digital SAT skill, plus 10 strategy guides).
+Size: 68 pages, 45 API route handlers, 15 SQL migrations, about 53k lines of TypeScript, 40 Uzbek study guides (30 skill guides covering every Digital SAT skill, plus 10 strategy guides), and a starter pack of 240 original practice questions.
 
 ## What was verified, and how
 
@@ -14,10 +14,12 @@ Everything below was run, not assumed.
 |---|---|---|
 | TypeScript | `npm run typecheck` | 0 errors |
 | Lint | `npm run lint` | 0 problems |
-| Unit tests | `npm test` | 486 passed (30 files). Covers:<br>• scoring, rich text, entitlements;<br>• practice selection and diagnostic composition;<br>• exam state machine and routing;<br>• study planner;<br>• AI output post-processing and leak checks;<br>• Click/Payme/Stripe signature and protocol handling;<br>• question import validation and schemas;<br>• every study guide file: schema, required sections, KaTeX rendering, and the bundled copy matching the files. |
-| Database tests | `npm run test:db` | 63 passed against PostgreSQL 16, rebuilt from scratch with all 14 migrations and the seed: RLS (28), billing functions (11), practice/answer-key security (7), exam RLS (9), study-guide RLS (8) |
+| Unit tests | `npm test` | 492 passed (31 files). Covers:<br>• scoring, rich text, entitlements;<br>• practice selection and diagnostic composition;<br>• exam state machine and routing;<br>• study planner;<br>• AI output post-processing and leak checks;<br>• Click/Payme/Stripe signature and protocol handling;<br>• question import validation and schemas;<br>• every study guide file: schema, required sections, KaTeX rendering, and the bundled copy matching the files;<br>• rich-text tables (alignment, pipes inside math, excerpts);<br>• the bundled question pack matching its files. |
+| Database tests | `npm run test:db` | 72 passed against PostgreSQL 16, rebuilt from scratch with all 15 migrations and the seed: RLS (28), billing functions (11), practice/answer-key security (7), exam RLS (9), study-guide RLS (8), atomic quotas (9, including real parallel connections) |
+| Content checks | `scripts/guides/build.ts --check`, `scripts/question-packs/check.ts core-v1` | 40 guides and 240 pack questions valid (import rules, difficulty mix, KaTeX, duplicates) |
+| Continuous integration | `.github/workflows/ci.yml` | Every push: typecheck, lint, unit tests, content checks, a fresh Postgres with all migrations, DB tests, production build |
 | Seed integrity | `scripts/db/check-seed.sql` | Passed (64 questions, 16 lessons, 4 practice sets, adaptive demo exam) |
-| Production build | `npm run build` | Succeeded |
+| Production build | `npm run build` | Succeeded. The bundled question pack (it contains answer keys) appears only in server output, never in browser JavaScript (checked by search). |
 | End-to-end | Playwright against `next dev` + a local Supabase-compatible stack (GoTrue v2.180.0, PostgREST v12.2.3, Postgres 16) | See below |
 
 ### End-to-end flows exercised in a real browser
@@ -35,6 +37,12 @@ The flows ran as a real user against real auth, PostgREST and RLS. AI used the l
   - Lessons and practice feedback link to the right guide.
   - Admin → Study guides → "Import bundled guides" restored 3 deleted guides as published, with audit entries.
 - **Admin:** all 27 admin pages load for a SUPER_ADMIN at 1280 px and 390 px with no errors.
+- **Question pack and bulk review (2 Nov):**
+  - Import → "Import 240 questions as drafts" created 240 drafts, with audit entries.
+  - "Review imported drafts" opens the review queue filtered to the pack.
+  - Ticking rows, then "Mark reviewed" and "Publish reviewed", published them; the database still requires reviewed before published.
+  - Pressing import again created nothing. After one question was deleted, the importer restored exactly that one.
+- **AI limit under load:** 6 tutor requests fired at the same moment by a Free-plan student (limit 3 per day) gave exactly 3 answers and 3 "limit reached" responses, and no reservation was left behind.
 - **Layout:** public pages at 390/768/1280 px and student pages at 390 px show no horizontal overflow and no console errors.
 
 ### Bugs found and fixed during integration
@@ -50,6 +58,20 @@ The flows ran as a real user against real auth, PostgREST and RLS. AI used the l
 - **`.gitignore`:** it excluded `.env.example`.
 - **Localization:** the question card, answer options, navigator, upgrade notice and pagination were English-only for Uzbek users.
 - **Display:** practice titles repeated the difficulty ("Algebra · Mixed · Mixed"), and AI-tutor history showed raw LaTeX.
+- **Concurrency (fixed 2 Nov):**
+  - Simultaneous AI requests could all pass the daily-limit check.
+  - Two different mock exams started at the same moment could both pass the monthly limit.
+  - Both checks now run inside SQL functions under a per-student lock (migration 0015). Parallel-connection tests fail without the lock and pass with it.
+- **Admin lists:** question excerpts showed raw LaTeX (`\dfrac{…}`) and escaped prices as `\12`. They now use the same plain-text rendering as student pages.
+- **Pack import (caught before release):** the first version recognised already-imported questions by stem alone. Many Reading and Writing questions share a stem, so a retry after a partial import could have skipped real questions. It now matches passage and stem.
+
+### Starter question pack (added 2 Nov)
+
+There are 240 original questions, 8 for each of the 30 skills (3 easy, 3 medium, 2 hard). Every question has English and Uzbek explanations, and Math includes student-produced responses. Data questions use real tables, which the renderer now supports.
+
+- **Answer keys:** every Math key was recomputed in Python by its writer.
+- **Blind check:** all 240 questions were exported without keys and solved by four separate solvers who had not seen the keys or the generator scripts. **All 240 answers matched the keys**, and the solvers reported no ambiguous items.
+- **Review still required:** the questions import as drafts and go through normal review before students see them. The writers' notes for reviewers, such as which real-world facts to confirm, are in [QUESTION_PACKS.md](QUESTION_PACKS.md).
 
 ### Uzbek study guides (added 2 Nov, at the owner's request)
 
@@ -86,11 +108,11 @@ Authoring and editing workflow: [GUIDES.md](GUIDES.md).
 - **Stripe refunds:** only one refund per payment is recorded.
 - **Admin aggregation in the app:** analytics and AI-usage pages aggregate in the app with visible 50k-row caps; SQL summary functions are in the backlog.
 - **Non-atomic multi-step writes:** creating a practice session, a mock exam (admin) or a lesson (admin) takes two steps with compensating cleanup, not a single SQL transaction.
-- **AI quota race:** two simultaneous AI requests can both pass the daily-limit check.
 - **Free-chat loophole:** the free chat cannot stop a student from pasting the text of a running test's question; the tutor has no answer key for it.
 - **English-only database text:** the "Payment received" notification written by the billing SQL function is English only, and plan descriptions edited in admin show in English.
 - **Legal pages:** Terms and Privacy are drafted in English and Uzbek and need legal review, especially for Uzbekistan's personal-data localization law.
-- **Sample content only:** the 64 questions and 16 lessons in `supabase/seed` are original samples for development. Real content comes from the content team through the admin editor or CSV/JSON import.
+- **Content volume:** the starter pack (240 questions) is enough to try every feature, not to prepare a student fully. The 64 questions and 16 lessons in `supabase/seed` are development samples only. Video lessons and more questions come from the content team through the admin editor or CSV/JSON import.
+- **Concurrency:** the per-exam unique index plus migration 0015 cover the plan limits. The daily practice-question limit is still checked per answer and could be exceeded by one or two answers when several are submitted at the same instant. This is low impact and tracked in the backlog.
 
 ## Hosted Supabase project `sat-master` (eu-central-1)
 
@@ -127,5 +149,10 @@ supabase db push   # applies 0012 (if still wanted) and 0014
 3. **Vercel:** import the GitHub repository, set every variable from `.env.example` (Production), and set `CRON_SECRET`. Leave `PAYMENTS_TEST_MODE` unset.
 4. **Payments:** sign merchant agreements with Click and Payme, enter the keys, and set the callback URLs from [PAYMENTS.md](PAYMENTS.md). Stripe needs an eligible (non-Uzbek) legal entity.
 5. **API keys:** Anthropic key; optional Desmos and Bunny keys.
-6. **Content team:** add questions and lessons, review, and publish. Only published, reviewed questions reach students.
+6. **Content team:**
+   - Admin → Question bank → Import → "Import 240 questions as drafts".
+   - Review them in the review queue, using the bulk "Mark reviewed" and "Publish reviewed" buttons.
+   - Then add lessons and more questions.
+
+   Only reviewed, published questions reach students.
 7. **Legal:** lawyer review of Terms, Privacy and the public offer; support email in Admin → Settings.

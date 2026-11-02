@@ -1,0 +1,141 @@
+[
+  {
+    "skill_code": "ratios_rates_proportions_units",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "A printer prints 18 pages every 45 seconds. At this rate, how many pages does the printer print in 3 minutes?",
+    "option_a": "$54$",
+    "option_b": "$72$",
+    "option_c": "$135$",
+    "option_d": "$450$",
+    "correct": "B",
+    "explanation_en": "Convert 3 minutes to seconds: $3 \\times 60 = 180$ seconds. The printer's rate is $\\frac{18}{45} = 0.4$ page per second, so in 180 seconds it prints $0.4 \\times 180 = 72$ pages. (Equivalently, 180 seconds contains $180 \\div 45 = 4$ intervals of 45 seconds, and $4 \\times 18 = 72$.) Choice A, 54, treats the rate as 18 pages per minute ($18 \\times 3$), but the 18 pages take 45 seconds, not 60. Choice D uses the inverted rate (seconds per page), and choice C multiplies the wrong quantity, 45, by 3.",
+    "explanation_uz": "3 daqiqani soniyaga aylantiramiz: $3 \\times 60 = 180$ soniya. Printerning tezligi $\\frac{18}{45} = 0.4$ sahifa/soniya, demak 180 soniyada $0.4 \\times 180 = 72$ sahifa chop etadi. (Yoki: 180 soniyada $180 \\div 45 = 4$ ta 45 soniyalik oraliq bor, $4 \\times 18 = 72$.) A javob (54) tezlikni daqiqasiga 18 sahifa deb olgan ($18 \\times 3$), vaholanki 18 sahifa 60 emas, 45 soniyada chiqadi. D javobda tezlik teskari olingan (bir sahifaga ketadigan soniyalar), C javob esa noto‘g‘ri miqdorni, ya’ni 45 ni 3 ga ko‘paytirgan.",
+    "estimated_seconds": 65,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "ratios_rates_proportions_units",
+    "difficulty": "easy",
+    "question_type": "spr",
+    "stem": "In a school choir, the ratio of sopranos to altos is $5 : 3$. If the choir has 40 sopranos, how many altos does it have?",
+    "spr_answers": [
+      "24"
+    ],
+    "explanation_en": "Write the ratio with a common multiplier: sopranos $= 5k$ and altos $= 3k$. Since $5k = 40$, $k = 8$, so there are $3 \\times 8 = 24$ altos. A common mistake is to scale the wrong way, $40 \\times \\frac{5}{3} \\approx 66.7$, which would make the altos outnumber the sopranos and contradict the ratio $5 : 3$. Another is to enter 64, which is the total number of singers ($8k$).",
+    "explanation_uz": "Nisbatni umumiy ko‘paytuvchi bilan yozamiz: sopranolar $= 5k$, altlar $= 3k$. $5k = 40$ bo‘lgani uchun $k = 8$, demak altlar soni $3 \\times 8 = 24$. Ko‘p uchraydigan xato — teskari ko‘paytirish: $40 \\times \\frac{5}{3} \\approx 66.7$; bunda altlar sopranolardan ko‘p bo‘lib qoladi, bu esa $5 : 3$ nisbatiga zid. Yana bir xato — 64 deb yozish: bu xordagi barcha qo‘shiqchilar soni ($8k$).",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "ratios_rates_proportions_units",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "A car uses 6 liters of fuel for every 100 kilometers it travels. The car's fuel tank holds 48 liters. How many kilometers can the car travel on a full tank of fuel?",
+    "option_a": "$8$",
+    "option_b": "$288$",
+    "option_c": "$800$",
+    "option_d": "$4{,}800$",
+    "correct": "C",
+    "explanation_en": "Every 6 liters of fuel carries the car 100 kilometers. A full tank holds $48 \\div 6 = 8$ such amounts, so the car can travel $8 \\times 100 = 800$ kilometers. Choice A, 8, stops after finding the number of 6-liter portions. Choice B, $48 \\times 6 = 288$, multiplies the two quantities instead of dividing. Choice D, $48 \\times 100$, treats the rate as 1 liter per 100 kilometers.",
+    "explanation_uz": "Har 6 litr yoqilg‘i mashinani 100 kilometrga olib boradi. To‘la bakda shunday $48 \\div 6 = 8$ ulush bor, demak mashina $8 \\times 100 = 800$ kilometr yura oladi. A javob (8) faqat 6 litrlik ulushlar sonini topib, to‘xtab qolgan. B javob ($48 \\times 6 = 288$) bo‘lish o‘rniga ikki miqdorni ko‘paytirgan. D javob ($48 \\times 100$) sarfni 100 kilometrga 1 litr deb olgan.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "ratios_rates_proportions_units",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "A rectangular park is 0.6 kilometer long and 0.4 kilometer wide. At noon on a certain day, 1,920 people were in the park. What was the number of people per square kilometer in the park at that time?",
+    "option_a": "$460.8$",
+    "option_b": "$960$",
+    "option_c": "$1{,}920$",
+    "option_d": "$8{,}000$",
+    "correct": "D",
+    "explanation_en": "Density is the number of people divided by the area. The area of the park is $0.6 \\times 0.4 = 0.24$ square kilometer, so the density is $\\frac{1{,}920}{0.24} = 8{,}000$ people per square kilometer. The answer should be greater than 1,920: the park is smaller than 1 square kilometer, so a full square kilometer at the same crowding would hold more people. Choice A multiplies by the area instead of dividing. Choice B divides by the perimeter, $2(0.6 + 0.4) = 2$ kilometers, which is a length, not an area, and choice C divides by the sum of the two side lengths.",
+    "explanation_uz": "Zichlik — odamlar soni yuzaga bo‘linadi. Bog‘ning yuzasi $0.6 \\times 0.4 = 0.24$ kvadrat kilometr, shuning uchun zichlik $\\frac{1{,}920}{0.24} = 8{,}000$ kishi/kvadrat kilometr. Javob 1,920 dan katta bo‘lishi tabiiy: bog‘ 1 kvadrat kilometrdan kichik, demak xuddi shunday gavjumlikda butun bir kvadrat kilometrga ko‘proq odam sig‘adi. A javob yuzaga bo‘lish o‘rniga ko‘paytirgan. B javob perimetrga, $2(0.6 + 0.4) = 2$ kilometrga bo‘lgan — bu yuza emas, uzunlik. C javob esa ikki tomon uzunliklari yig‘indisiga bo‘lgan.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "ratios_rates_proportions_units",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "A garden hose fills a 150-gallon tank in 25 minutes. At this rate, how many **hours** will it take the hose to fill a pool that holds 2,700 gallons?",
+    "spr_answers": [
+      "7.5",
+      "15/2"
+    ],
+    "explanation_en": "The hose's rate is $\\frac{150}{25} = 6$ gallons per minute. Filling 2,700 gallons takes $\\frac{2{,}700}{6} = 450$ minutes, and $450 \\div 60 = 7.5$ hours. The most common error is to enter 450, which is the time in minutes; the question asks for hours. Enter 7.5 or 15/2.",
+    "explanation_uz": "Shlangning tezligi $\\frac{150}{25} = 6$ gallon/daqiqa. 2,700 gallonni to‘ldirish uchun $\\frac{2{,}700}{6} = 450$ daqiqa kerak, bu esa $450 \\div 60 = 7.5$ soat. Eng ko‘p uchraydigan xato — 450 deb yozish: bu daqiqalardagi vaqt, savol esa soatni so‘rayapti. Javob maydoniga 7.5 yoki 15/2 deb yozing.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "ratios_rates_proportions_units",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "A paint color is made by mixing blue paint and yellow paint in the ratio $2 : 5$ by volume. A painter needs 21 liters of this paint color. How many liters of blue paint are needed?",
+    "option_a": "$6$",
+    "option_b": "$8.4$",
+    "option_c": "$10.5$",
+    "option_d": "$15$",
+    "correct": "A",
+    "explanation_en": "The mixture has $2 + 5 = 7$ equal parts, and 2 of them are blue. So blue paint is $\\frac{2}{7}$ of the mixture: $\\frac{2}{7} \\times 21 = 6$ liters (the other 15 liters are yellow). Choice B, 8.4, uses $\\frac{2}{5}$, treating the ratio of blue to yellow as if it were the ratio of blue to the whole mixture. Choice C splits the mixture in half, and choice D is the amount of yellow paint.",
+    "explanation_uz": "Aralashmada $2 + 5 = 7$ ta teng qism bor, ulardan 2 tasi ko‘k. Demak ko‘k bo‘yoq aralashmaning $\\frac{2}{7}$ qismi: $\\frac{2}{7} \\times 21 = 6$ litr (qolgan 15 litr — sariq). B javob (8.4) $\\frac{2}{5}$ ni ishlatgan, ya’ni ko‘kning sariqqa nisbatini ko‘kning butun aralashmaga nisbati deb olgan. C javob aralashmani teng ikkiga bo‘lgan, D javob esa sariq bo‘yoq miqdori.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "ratios_rates_proportions_units",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "A bag contains only red marbles and green marbles, and the ratio of red marbles to green marbles is $3 : 5$. After 12 red marbles are added to the bag, the ratio of red marbles to green marbles is $9 : 10$. How many green marbles are in the bag?",
+    "spr_answers": [
+      "40"
+    ],
+    "explanation_en": "Let the original numbers be $3k$ red marbles and $5k$ green marbles. After 12 red marbles are added, $\\frac{3k + 12}{5k} = \\frac{9}{10}$. Cross-multiplying gives $10(3k + 12) = 9(5k)$, so $30k + 120 = 45k$, $15k = 120$ and $k = 8$. The number of green marbles does not change: $5k = 40$. Check: there are $24 + 12 = 36$ red marbles and 40 green marbles, and $36 : 40 = 9 : 10$. Entering 8 (the value of $k$) or 24 (the original number of red marbles) stops one step too early.",
+    "explanation_uz": "Dastlab qizil sharchalar $3k$ ta, yashillari $5k$ ta bo‘lsin. 12 ta qizil sharcha qo‘shilgach: $\\frac{3k + 12}{5k} = \\frac{9}{10}$. Ko‘paytirib chiqamiz: $10(3k + 12) = 9(5k)$, ya’ni $30k + 120 = 45k$, $15k = 120$ va $k = 8$. Yashil sharchalar soni o‘zgarmaydi: $5k = 40$. Tekshiruv: $24 + 12 = 36$ ta qizil va 40 ta yashil sharcha, $36 : 40 = 9 : 10$ ✓. 8 ($k$ ning qiymati) yoki 24 (dastlabki qizil sharchalar) deb yozish — bir qadam oldin to‘xtab qolish demakdir.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "ratios_rates_proportions_units",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "A rectangular room is 6 yards long and 4 yards wide. Carpet for the room costs \\$2.75 per square foot. What is the cost of carpet to cover the entire floor of the room? (1 yard = 3 feet)",
+    "option_a": "\\$66",
+    "option_b": "\\$198",
+    "option_c": "\\$594",
+    "option_d": "\\$1,782",
+    "correct": "C",
+    "explanation_en": "Convert the dimensions to feet first: $6 \\times 3 = 18$ feet and $4 \\times 3 = 12$ feet, so the area is $18 \\times 12 = 216$ square feet. (Equivalently, the area is 24 square yards, and 1 square yard is $3 \\times 3 = 9$ square feet, so $24 \\times 9 = 216$.) The cost is $216 \\times 2.75 = 594$ dollars. Choice B multiplies the area in square yards by 3, but a square yard is 9 square feet, not 3. Choice A skips the conversion entirely, and choice D multiplies by 27, the conversion factor for cubic yards.",
+    "explanation_uz": "Avval o‘lchamlarni futga o‘tkazamiz: $6 \\times 3 = 18$ fut va $4 \\times 3 = 12$ fut, demak yuza $18 \\times 12 = 216$ kvadrat fut. (Yoki: yuza 24 kvadrat yard, 1 kvadrat yard esa $3 \\times 3 = 9$ kvadrat fut, shuning uchun $24 \\times 9 = 216$.) Narx: $216 \\times 2.75 = 594$ dollar. B javob kvadrat yarddagi yuzani 3 ga ko‘paytirgan, lekin 1 kvadrat yard 3 emas, 9 kvadrat futga teng. A javob birliklarni umuman almashtirmagan, D javob esa kub yard uchun ko‘paytuvchi bo‘lgan 27 ga ko‘paytirgan.",
+    "estimated_seconds": 125,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  }
+]

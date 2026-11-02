@@ -7,6 +7,7 @@ export function RichTextHelp({ className }: { className?: string }) {
     ['*italic*', 'italic'],
     ['__underline__', 'underline (e.g. the tested word)'],
     ['- item', 'bullet list (each line starts with "- ")'],
+    ['| A | B |\n| --- | ---: |\n| 1 | 2 |', 'table: header, separator, rows (---: aligns right)'],
     ['blank line', 'new paragraph'],
     ['\\$5', 'a literal dollar sign'],
   ]
@@ -19,7 +20,7 @@ export function RichTextHelp({ className }: { className?: string }) {
           {rows.map(([code, meaning]) => (
             <tr key={code} className="border-t border-border">
               <td className="py-1 pr-3">
-                <code className="rounded bg-muted px-1 py-0.5">{code}</code>
+                <code className="whitespace-pre rounded bg-muted px-1 py-0.5">{code}</code>
               </td>
               <td className="py-1 text-muted-foreground">{meaning}</td>
             </tr>

@@ -1,0 +1,162 @@
+[
+  {
+    "skill_code": "central_ideas_details",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "For years, the small fishing town of Port Ellery struggled as catches declined and young people moved away to find work. In 2015, a group of residents turned an empty fish cannery into a workshop where local fishers teach visitors to mend nets, smoke fish and build wooden boats. The workshop now draws thousands of visitors each summer, and several young people who had left the town have returned to work there as instructors.",
+    "stem": "Which choice best states the main idea of the text?",
+    "option_a": "A project built on Port Ellery's fishing traditions has helped revive the town.",
+    "option_b": "Fish catches near Port Ellery increased after the workshop opened.",
+    "option_c": "Most visitors to Port Ellery hope to become professional fishers.",
+    "option_d": "Young people left Port Ellery mainly because the cannery closed.",
+    "correct": "A",
+    "explanation_en": "The text describes a struggling town, a workshop that teaches traditional fishing skills, and the results: thousands of visitors and young people returning. Choice A sums up this whole story. Choice B is unsupported: the text never says that catches increased. Choice C is unsupported: the text says visitors learn fishing skills, not that they want to become fishers. Choice D is wrong because the text says young people left to find work as catches declined; it does not say the cannery's closing was the main reason.",
+    "explanation_uz": "Matnda qiyin ahvoldagi shaharcha, an’anaviy baliqchilik ko‘nikmalarini o‘rgatadigan ustaxona va natijalar — minglab mehmonlar hamda qaytib kelgan yoshlar tasvirlanadi. A javob butun voqeani umumlashtiradi. B asossiz: matnda baliq ovi ko‘paygani aytilmagan. C asossiz: matnda mehmonlar baliqchilik ko‘nikmalarini o‘rganishi aytiladi, ular professional baliqchi bo‘lishni xohlashi emas. D noto‘g‘ri: matnga ko‘ra yoshlar baliq ovi kamaygach ish qidirib ketgan; konserva zavodining yopilishi asosiy sabab ekani aytilmagan.",
+    "estimated_seconds": 55,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "central_ideas_details",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Ceramicist Odina Rask makes her bowls from clay she digs herself from the riverbank behind her studio. Unlike commercial clay, which is cleaned and mixed so that it behaves the same way every time, her river clay changes from batch to batch: some loads crack in the kiln, while others turn unexpected shades of red or gray. Rask says that this unpredictability is exactly why she uses the river clay, since it keeps her from repeating the same designs.",
+    "stem": "According to the text, why does Rask use clay from the riverbank behind her studio?",
+    "option_a": "It costs less than commercial clay.",
+    "option_b": "It never cracks when it is fired in the kiln.",
+    "option_c": "Its unpredictable qualities keep her from repeating her designs.",
+    "option_d": "It is cleaner and more uniform than commercial clay.",
+    "correct": "C",
+    "explanation_en": "The last sentence states Rask's reason directly: the clay's “unpredictability is exactly why she uses” it, “since it keeps her from repeating the same designs.” That matches choice C. Choice A is never mentioned. Choice B contradicts the text, which says that “some loads crack in the kiln.” Choice D reverses the contrast: it is commercial clay that is cleaned and uniform, not her river clay.",
+    "explanation_uz": "Oxirgi jumlada Raskning sababi to‘g‘ridan-to‘g‘ri aytilgan: loyning oldindan bilib bo‘lmasligi (“unpredictability”) aynan u bu loyni ishlatishining sababi, chunki bu uni bir xil naqshlarni takrorlashdan saqlaydi. Bu C javobga mos. A haqida matnda hech narsa aytilmagan. B matnga zid: “some loads crack in the kiln” — ba’zi partiyalar xumdonda yorilib ketadi. D qarama-qarshilikni teskari qiladi: tozalangan va bir xil bo‘lgani — sotuvdagi loy, daryo loyi emas.",
+    "estimated_seconds": 55,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "central_ideas_details",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "The following text is adapted from a short story.\n\nBekzod had assumed that gardening meant simply putting seeds in the ground and waiting. But his grandmother tested the soil with her fingers before every watering, moved the tomato pots twice a day to follow the sun, and spoke about each plant as if it had moods of its own. By the end of the summer, Bekzod understood that her harvest, which the neighbors called luck, was really the result of countless small decisions.",
+    "stem": "Which choice best states the main idea of the text?",
+    "option_a": "Bekzod's grandmother is frustrated that her neighbors do not appreciate her garden.",
+    "option_b": "Bekzod decides that he wants to become a professional gardener.",
+    "option_c": "The grandmother's garden produces more tomatoes than any other garden nearby.",
+    "option_d": "Bekzod comes to realize that his grandmother's success as a gardener results from careful, constant attention.",
+    "correct": "D",
+    "explanation_en": "Bekzod begins with a simple idea of gardening, observes his grandmother's many careful habits, and finally understands that her harvest comes from “countless small decisions,” not luck. Choice D states this realization. Choice A is unsupported: the grandmother's feelings about her neighbors are never described. Choice B goes beyond the text, which says nothing about Bekzod's career plans. Choice C makes a comparison that the text never makes.",
+    "explanation_uz": "Bekzod avval bog‘dorchilikni oddiy ish deb o‘ylaydi, keyin buvisining ko‘plab puxta odatlarini kuzatadi va oxirida uning hosili omad emas, “son-sanoqsiz kichik qarorlar” natijasi ekanini tushunadi. D javob aynan shu anglashni ifodalaydi. A asossiz: buvining qo‘shnilarga munosabati tasvirlanmagan. B matn doirasidan chiqib ketadi: Bekzodning kasb tanlashi haqida gap yo‘q. C esa matnda yo‘q taqqoslashni qiladi.",
+    "estimated_seconds": 55,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "central_ideas_details",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Large volcanic eruptions can release sulfur gases that form tiny droplets high in the atmosphere. These droplets reflect some sunlight back into space and can cool the planet for a year or two. Climate scientist Mehmet Arslan examined tree rings from high-mountain forests and found that unusually narrow rings, a sign of cold, short growing seasons, often appear in the years just after large eruptions recorded in polar ice. Arslan argues that tree rings can therefore help scientists estimate the climate effects of eruptions that happened before written records were kept.",
+    "stem": "Which choice best states the main idea of the text?",
+    "option_a": "Volcanic eruptions are the main cause of long-term changes in Earth's climate.",
+    "option_b": "Because tree rings record cold years after eruptions, they may help scientists study the climate effects of eruptions that occurred long ago.",
+    "option_c": "Polar ice provides more reliable evidence of past eruptions than tree rings do.",
+    "option_d": "Trees in high-mountain forests grow more slowly than trees at lower elevations.",
+    "correct": "B",
+    "explanation_en": "The text explains how eruptions can cool the planet, describes Arslan's finding that narrow tree rings often follow large eruptions, and ends with his argument that tree rings can help estimate the climate effects of eruptions from before written records. Choice B captures this. Choice A is too extreme: the text says eruptions can cool the planet “for a year or two,” not that they drive long-term change. Choice C makes a comparison the text does not make; the ice records are used together with tree rings. Choice D is unsupported: the text does not compare trees at different elevations.",
+    "explanation_uz": "Matn vulqon otilishlari sayyorani qanday sovitishi mumkinligini tushuntiradi, so‘ng Arslanning topilmasini — yirik otilishlardan keyin daraxtlarda ko‘pincha ingichka yillik halqalar paydo bo‘lishini — tasvirlaydi va yozma manbalar paydo bo‘lishidan oldingi otilishlarning iqlimga ta’sirini daraxt halqalari yordamida baholash mumkin degan fikri bilan yakunlanadi. B javob shuni ifodalaydi. A haddan tashqari kuchli: matnda otilishlar sayyorani “bir-ikki yil” sovitishi mumkinligi aytilgan, iqlimning uzoq muddatli o‘zgarishlariga asosiy sabab ekani emas. C matnda yo‘q taqqoslash: muz ma’lumotlari daraxt halqalari bilan birga ishlatiladi. D asossiz: matnda turli balandlikdagi daraxtlar solishtirilmaydi.",
+    "estimated_seconds": 75,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "central_ideas_details",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "In the early 1900s, the city of Varnholt built a network of public bathhouses. City officials presented them as a way to improve public health, since few apartments had running water. Historian Clara Ostrova, however, has found that the bathhouses quickly became much more than places to wash: residents used them to exchange news, hold meetings of workers' unions and celebrate weddings. Ostrova argues that the bathhouses became some of the city's most important gathering places.",
+    "stem": "According to the text, what has Ostrova found about the bathhouses in Varnholt?",
+    "option_a": "Residents used them for a range of social activities beyond bathing.",
+    "option_b": "They were built mainly to provide meeting places for workers' unions.",
+    "option_c": "They did little to improve public health in the city.",
+    "option_d": "They were rarely used because most apartments had running water.",
+    "correct": "A",
+    "explanation_en": "Ostrova found that residents used the bathhouses “to exchange news, hold meetings of workers' unions and celebrate weddings,” which choice A summarizes. Choice B confuses one of these uses with the reason the bathhouses were built; officials presented them as a way to improve public health. Choice C is unsupported: Ostrova's findings concern social uses, not health results. Choice D contradicts the text, which says that “few apartments had running water.”",
+    "explanation_uz": "Ostrova aholining hammomlarda “yangiliklar almashgani, ishchilar kasaba uyushmalari yig‘ilishlarini o‘tkazgani va to‘ylar nishonlagani”ni aniqlagan — A javob shuni umumlashtiradi. B hammomlardan foydalanish usullaridan birini ularning qurilish sababi bilan aralashtiradi; rasmiylar ularni aholi salomatligini yaxshilash vositasi sifatida taqdim etgan. C asossiz: Ostrovaning topilmalari salomatlik natijalari haqida emas, ijtimoiy foydalanish haqida. D matnga zid: matnda “few apartments had running water” — oqar suvli xonadonlar kam bo‘lgani aytilgan.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "central_ideas_details",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "The following text is from a poem. The speaker is addressing an old map.\n\nYou promised roads where only rivers ran,\nAnd drew a city where the marsh still spreads;\nYour mountains lean a little to the west,\nYour coastlines wander. Still, I keep you near,\nNot for the way you show me where things are,\nBut for the way you show what someone hoped.",
+    "stem": "Which choice best states the main idea of the text?",
+    "option_a": "The speaker intends to correct the errors on the old map.",
+    "option_b": "The speaker is upset that the map caused travelers to become lost.",
+    "option_c": "The speaker prefers modern maps because they are more accurate.",
+    "option_d": "Although the map is inaccurate, the speaker values it as a record of its maker's hopes.",
+    "correct": "D",
+    "explanation_en": "The first lines list the map's errors (roads where there are only rivers, a city where there is marsh, misplaced mountains), but the speaker then says, “Still, I keep you near,” valuing the map not for its accuracy but for showing “what someone hoped.” Choice D captures this. Choice A is unsupported: the speaker never mentions correcting the map. Choice B is unsupported: no lost travelers are mentioned, and the speaker's tone is affectionate. Choice C is wrong because modern maps are never mentioned.",
+    "explanation_uz": "She’rning birinchi satrlarida xaritaning xatolari sanab o‘tiladi (faqat daryolar oqadigan joyda yo‘llar, botqoq o‘rnida shahar, joyidan siljigan tog‘lar), lekin so‘ng so‘zlovchi “Still, I keep you near” deydi: u xaritani aniqligi uchun emas, “kimningdir umidlarini” ko‘rsatgani uchun qadrlaydi. D javob shuni ifodalaydi. A asossiz: so‘zlovchi xaritani tuzatish haqida gapirmaydi. B asossiz: adashgan sayohatchilar tilga olinmagan, so‘zlovchining ohangi esa iliq. C noto‘g‘ri: zamonaviy xaritalar haqida gap yo‘q.",
+    "estimated_seconds": 75,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "central_ideas_details",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "City planners often assume that building a park in a neighborhood without green space will lead residents to exercise more. Public health researcher Hye-jin Seo tested this assumption by surveying residents of twelve neighborhoods before new parks opened in them and again two years later. Across the twelve neighborhoods, residents reported only small increases in exercise. In the three neighborhoods where the city also organized free fitness classes and walking groups in the new parks, however, exercise rose substantially.",
+    "stem": "Which choice best states the main idea of the text?",
+    "option_a": "Building new parks has no effect on how much residents exercise.",
+    "option_b": "Free fitness classes improve residents' health more than parks do.",
+    "option_c": "A new park may do little to increase residents' exercise unless it is paired with programs that encourage people to use it.",
+    "option_d": "Residents of neighborhoods without green space exercise less than residents of other neighborhoods.",
+    "correct": "C",
+    "explanation_en": "The text describes an assumption (new parks lead to more exercise), a test of it, a weak overall result, and a much stronger result where the parks came with organized programs. Together these points suggest that a park alone may do little unless it is paired with programs, as choice C says. Choice A is too extreme: residents did report “small increases.” Choice B makes a comparison the study did not test, since the classes were held in the new parks rather than offered without them, and the study measured exercise, not overall health. Choice D is not stated; the study measured changes in exercise, not differences between neighborhoods with and without green space.",
+    "explanation_uz": "Matnda taxmin (park qurilsa, odamlar ko‘proq jismoniy mashq qiladi), uning sinovi, umumiy natijaning kuchsizligi va parklar tashkil etilgan dasturlar bilan birga bo‘lgan joylardagi ancha kuchli natija tasvirlanadi. Bu fikrlar birgalikda park o‘zi yolg‘iz, dasturlarsiz kam natija berishi mumkinligini ko‘rsatadi — to‘g‘ri javob C. A haddan tashqari kuchli: aholi “kichik o‘sish” haqida xabar bergan. B tadqiqotda sinalmagan taqqoslashni qiladi: mashg‘ulotlar parklardan alohida emas, aynan yangi parklarda o‘tkazilgan, tadqiqot esa umumiy salomatlikni emas, jismoniy faollikni o‘lchagan. D matnda aytilmagan: tadqiqot yashil maydonli va yashil maydonsiz mahallalarni solishtirmagan, balki jismoniy faollikdagi o‘zgarishni o‘lchagan.",
+    "estimated_seconds": 85,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "central_ideas_details",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "The following text is adapted from a novel. Mira has returned to her hometown after ten years away.\n\nThe bakery on the corner had a new sign, and the bench outside the post office had been painted green. Mira noted each change with a small, unreasonable resentment, as though the town had been obliged to wait for her. Yet when she pushed open the bakery door and smelled the same cardamom bread her mother used to buy on Fridays, she was not comforted but unsettled: it was harder, somehow, to be met by what had stayed the same.",
+    "stem": "Which choice best states the main idea of the text?",
+    "option_a": "Mira is pleased to discover how much her hometown has improved while she was away.",
+    "option_b": "Mira's return stirs complicated feelings, since both the changes in her hometown and the things that have stayed the same disturb her.",
+    "option_c": "Mira regrets having left her hometown and decides to stay there permanently.",
+    "option_d": "Mira is disappointed that the bakery no longer sells the bread her mother used to buy.",
+    "correct": "B",
+    "explanation_en": "Mira feels “resentment” at the town's changes, yet the unchanged cardamom bread leaves her “not comforted but unsettled.” Both the new and the familiar trouble her, as choice B says. Choice A contradicts her resentment toward the changes. Choice C is unsupported: the text never mentions regret or a decision to stay. Choice D contradicts the text, which says the bakery still has “the same cardamom bread.”",
+    "explanation_uz": "Mira shahardagi o‘zgarishlardan ranjiydi (“resentment”), ammo o‘zgarmagan kardamonli non hidi ham unga taskin bermaydi, aksincha, uni bezovta qiladi (“not comforted but unsettled”). Demak, uni ham yangi, ham tanish narsalar bezovta qiladi — to‘g‘ri javob B. A uning o‘zgarishlardan ranjishiga zid. C asossiz: matnda afsus yoki shaharda qolish qarori haqida gap yo‘q. D matnga zid: matnga ko‘ra novvoyxonada hali ham “the same cardamom bread” — o‘sha kardamonli non bor.",
+    "estimated_seconds": 85,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  }
+]

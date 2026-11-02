@@ -5,7 +5,7 @@ import { ApiError, notFoundError } from '@/lib/api/errors'
 import { scoreAnswer } from '@/lib/scoring'
 import { loadAnswerKeys, loadSafeQuestions } from '@/features/questions/server'
 import { toTimedQuestion } from '@/types/questions'
-import { assertWithinLimit } from '@/features/entitlements/server'
+import { startMockAttemptWithinLimit } from '@/features/entitlements/server'
 import { recordActivity } from '@/features/activity/server'
 import {
   DEFAULT_ANSWER_GRACE_SECONDS,
@@ -417,20 +417,18 @@ export async function startExam(ctx: Ctx & { mockExamId: string }): Promise<Star
   }
   if (exam.status !== 'published') throw notFoundError('Mock exam')
 
-  await assertWithinLimit(userId, 'mock_exams_monthly', ctx.timeZone, 1)
-
-  const { data: created, error: insErr } = await admin
-    .from('attempts')
-    .insert({ user_id: userId, kind: 'mock_exam', mock_exam_id: mockExamId, status: 'in_progress' })
-    .select('id, user_id, status, mock_exam_id')
-    .single()
-  if (insErr) {
-    if (isUniqueViolation(insErr)) {
+  let createdId: string
+  try {
+    createdId = await startMockAttemptWithinLimit(userId, mockExamId, ctx.timeZone)
+  } catch (err) {
+    if (isUniqueViolation(err as { code?: string })) {
       const raced = await findActiveAttempt(admin, userId, mockExamId)
       if (raced) return { attemptId: raced.id, resumed: true }
     }
-    throw insErr
+    throw err
   }
+  const { data: created, error: loadErr } = await admin.from('attempts').select('id, user_id, status, mock_exam_id').eq('id', createdId).single()
+  if (loadErr) throw loadErr
   await settle(ctx, created, exam)
   return { attemptId: created.id, resumed: false }
 }

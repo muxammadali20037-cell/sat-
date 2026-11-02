@@ -111,3 +111,76 @@ export async function assertWithinLimit(
   }
   return { used, limit }
 }
+
+export type AiReservation = { release: () => Promise<void> }
+const UNMETERED: AiReservation = { release: async () => {} }
+
+/**
+ * Atomic version of assertWithinLimit for ai_requests_daily. The database function
+ * ai_reserve_request serializes each student's requests, counts today's successful requests plus
+ * those still in flight, and holds one unit for this request, so parallel requests cannot all slip
+ * past the limit. Call release() in a finally block when the request ends (success or failure):
+ * by then a successful call has written its ai_usage row, which keeps counting.
+ * Throws 402 PLAN_REQUIRED (feature off) or 402 PLAN_LIMIT_REACHED.
+ */
+export async function reserveAiRequest(userId: string, timeZone: string): Promise<AiReservation> {
+  const ent = await requireFeature(userId, 'ai_requests_daily')
+  const limit = ent.features.ai_requests_daily.limit
+  if (limit === null) return UNMETERED
+  const admin = createAdminSupabase()
+  const { data, error } = await admin.rpc('ai_reserve_request', {
+    p_user_id: userId,
+    p_since: startOfLocalDay(timeZone).toISOString(),
+    p_limit: limit,
+  })
+  if (error) throw error
+  const row = data?.[0]
+  if (!row?.reservation_id) {
+    throw new ApiError(402, 'PLAN_LIMIT_REACHED', 'You have reached your plan limit for now.', {
+      feature: 'ai_requests_daily',
+      used: row?.used ?? limit,
+      limit,
+      plan: ent.planCode,
+    })
+  }
+  const id = row.reservation_id
+  let released = false
+  return {
+    async release() {
+      if (released) return
+      released = true
+      const { error: delError } = await admin.from('ai_quota_reservations').delete().eq('id', id)
+      // Not fatal: an unreleased reservation expires after 10 minutes.
+      if (delError) console.error('[ai] could not release quota reservation', { id, error: delError })
+    },
+  }
+}
+
+/**
+ * Starts a mock-exam attempt only if the monthly limit allows it. Count and insert run under one
+ * per-student lock in mock_exam_start_attempt, so two exams started at the same moment cannot both
+ * pass. Returns the new attempt id. A concurrent start of the SAME exam surfaces as the database's
+ * unique violation (23505); the caller resumes the attempt that won.
+ * Throws 402 PLAN_REQUIRED (feature off) or 402 PLAN_LIMIT_REACHED.
+ */
+export async function startMockAttemptWithinLimit(userId: string, mockExamId: string, timeZone: string): Promise<string> {
+  const ent = await requireFeature(userId, 'mock_exams_monthly')
+  const limit = ent.features.mock_exams_monthly.limit
+  const admin = createAdminSupabase()
+  const { data, error } = await admin.rpc('mock_exam_start_attempt', {
+    p_user_id: userId,
+    p_mock_exam_id: mockExamId,
+    p_since: startOfLocalMonth(timeZone).toISOString(),
+    ...(limit === null ? {} : { p_limit: limit }),
+  })
+  if (error) throw error
+  if (!data) {
+    throw new ApiError(402, 'PLAN_LIMIT_REACHED', 'You have reached your plan limit for now.', {
+      feature: 'mock_exams_monthly',
+      used: limit,
+      limit,
+      plan: ent.planCode,
+    })
+  }
+  return data
+}

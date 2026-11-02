@@ -32,6 +32,8 @@ Each phase ends with: what was built, files created, integrations completed, tes
 | D10 | Self-hosted fonts | Builds work offline/in CI; no third-party font requests |
 | D11 | Desmos API for the graphing calculator, behind `NEXT_PUBLIC_DESMOS_API_KEY` | Matches the tool students meet on test day; no key → honest link-out fallback; CSP opens www.desmos.com only when configured |
 | D12 | Reference screenshots (Nov 2) adopted as patterns only | Layout ideas kept; ratings, review counts, XP and leaderboards rejected — no backing data and fabricated stats are forbidden |
+| D13 | Starter question pack (`core-v1`, 240 original questions) ships in the repo, imported as drafts | A new environment is usable on day one without bypassing review; blind-verified keys; nothing reaches students unreviewed |
+| D14 | Quota checks that consume a unit run in SQL under a per-student advisory lock | Read-then-act checks let parallel requests exceed plan limits; a lock per student keeps students independent |
 
 ## Post-v1 backlog
 
@@ -41,7 +43,9 @@ Each phase ends with: what was built, files created, integrations completed, tes
 4. Teacher classrooms (groups, assignments).
 5. Question calibration (IRT difficulty from response data) to improve module routing.
 6. Commercial Desmos API agreement for production; original Math reference sheet.
-7. Playwright E2E suite against a seeded Supabase branch in CI.
+7. Playwright E2E suite against a seeded Supabase branch in CI (unit, DB and build checks already run in GitHub Actions).
 8. Upstash/Redis rate limiter and edge caching for the marketing site.
 9. AI tutor whiteboard (handwritten working on a canvas, tutor feedback on each step).
 10. Leaderboards / XP only once there is real, opt-in cohort data to back them.
+11. Atomic daily practice-question limit (same per-student-lock pattern as migration 0015); today simultaneous answers can exceed it by one or two.
+12. More question packs (target: several thousand reviewed questions) and full-length mock exams built from them.

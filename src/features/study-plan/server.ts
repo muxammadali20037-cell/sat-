@@ -4,7 +4,7 @@ import type { CurrentProfile } from '@/lib/auth/session'
 import { ApiError, notFoundError } from '@/lib/api/errors'
 import { localDate } from '@/lib/time'
 import { getTaxonomy } from '@/features/taxonomy/server'
-import { getEntitlements, getUsage, requireFeature } from '@/features/entitlements/server'
+import { requireFeature, reserveAiRequest } from '@/features/entitlements/server'
 import { aiAvailability, aiModels, getAiProvider } from '@/lib/ai/provider'
 import { createUsageSink, loadPricing } from '@/lib/ai/usage'
 import { runStructured } from '@/lib/ai/run'
@@ -139,10 +139,12 @@ export async function generateStudyPlan(ctx: { profile: CurrentProfile; admin: D
   if (aiAvailability() === 'none') {
     aiNote = 'not_configured'
   } else {
-    const ent = await getEntitlements(profile.id)
-    const feature = ent.features.ai_requests_daily
-    const used = feature.enabled ? await getUsage(profile.id, 'ai_requests_daily', profile.timezone) : 0
-    if (!feature.enabled || (feature.limit !== null && used >= feature.limit)) {
+    // The narrative is optional: when the daily AI limit is used up (or not in the plan), save rules only.
+    const reservation = await reserveAiRequest(profile.id, profile.timezone).catch((err) => {
+      if (err instanceof ApiError && err.status === 402) return null
+      throw err
+    })
+    if (!reservation) {
       aiNote = 'limit_reached'
     } else {
       try {
@@ -170,6 +172,8 @@ export async function generateStudyPlan(ctx: { profile: CurrentProfile; admin: D
         // The plan never depends on the model: fall back to rules-only.
         console.warn('[study-plan] AI narrative unavailable, saving rules-only plan', err instanceof Error ? err.message : err)
         aiNote = 'failed'
+      } finally {
+        await reservation.release()
       }
     }
   }

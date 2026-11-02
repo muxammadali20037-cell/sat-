@@ -1,0 +1,141 @@
+[
+  {
+    "skill_code": "area_volume",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "A trapezoid has parallel sides of lengths 10 centimeters and 16 centimeters, and the perpendicular distance between those two sides is 6 centimeters. What is the area, in square centimeters, of the trapezoid?",
+    "option_a": "60",
+    "option_b": "78",
+    "option_c": "96",
+    "option_d": "156",
+    "correct": "B",
+    "explanation_en": "The area of a trapezoid is $A = \\frac{1}{2}(b_1 + b_2)h$. Here $A = \\frac{1}{2}(10 + 16)(6) = \\frac{1}{2}(26)(6) = 78$ square centimeters, so choice B is correct.\n\nChoice A (60) uses only the shorter base: $10 \\cdot 6$. Choice C (96) uses only the longer base: $16 \\cdot 6$. Choice D (156) is $(10 + 16)(6)$; it forgets to multiply by $\\frac{1}{2}$.",
+    "explanation_uz": "Trapetsiyaning yuzasi $A = \\frac{1}{2}(b_1 + b_2)h$ formula bilan topiladi. Bu yerda $A = \\frac{1}{2}(10 + 16)(6) = \\frac{1}{2}(26)(6) = 78$ kvadrat santimetr, demak to‘g‘ri javob B.\n\nA (60) — faqat qisqa asos olingan: $10 \\cdot 6$. C (96) — faqat uzun asos olingan: $16 \\cdot 6$. D (156) — bu $(10 + 16)(6)$, ya’ni $\\frac{1}{2}$ ga ko‘paytirish unutilgan.",
+    "estimated_seconds": 65,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "area_volume",
+    "difficulty": "easy",
+    "question_type": "spr",
+    "stem": "A wooden cube has an edge length of 7 inches. What is the total surface area, in square inches, of the cube?",
+    "spr_answers": [
+      "294"
+    ],
+    "explanation_en": "A cube has 6 congruent square faces. Each face has area $7^2 = 49$ square inches, so the total surface area is $6 \\cdot 49 = 294$ square inches.\n\nCommon mistakes: $7^3 = 343$ is the volume, not the surface area, and $4 \\cdot 49 = 196$ counts only 4 of the 6 faces.",
+    "explanation_uz": "Kubning 6 ta bir xil kvadrat yog‘i bor. Har bir yoqning yuzasi $7^2 = 49$ kvadrat dyuym, shuning uchun to‘liq sirt yuzasi $6 \\cdot 49 = 294$ kvadrat dyuym.\n\nKo‘p uchraydigan xatolar: $7^3 = 343$ — bu sirt yuzasi emas, hajm; $4 \\cdot 49 = 196$ esa 6 ta yoqdan faqat 4 tasini hisobga oladi.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "area_volume",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "A right circular cylinder has a radius of 4 meters and a height of 10 meters. What is the volume, in cubic meters, of the cylinder?",
+    "option_a": "$40\\pi$",
+    "option_b": "$\\frac{160}{3}\\pi$",
+    "option_c": "$80\\pi$",
+    "option_d": "$160\\pi$",
+    "correct": "D",
+    "explanation_en": "The volume of a cylinder is $V = \\pi r^2 h = \\pi (4)^2 (10) = 160\\pi$ cubic meters, so choice D is correct.\n\nChoice A ($40\\pi$) is $\\pi r h$; the radius is not squared. Choice B ($\\frac{160}{3}\\pi$) uses the cone formula $\\frac{1}{3}\\pi r^2 h$, but this solid is a cylinder. Choice C ($80\\pi$) is $2\\pi r h$, the lateral (side) surface area, not the volume.",
+    "explanation_uz": "Silindrning hajmi $V = \\pi r^2 h = \\pi (4)^2 (10) = 160\\pi$ kub metr, demak to‘g‘ri javob D.\n\nA ($40\\pi$) — bu $\\pi r h$, radius kvadratga oshirilmagan. B ($\\frac{160}{3}\\pi$) — konus formulasi $\\frac{1}{3}\\pi r^2 h$ ishlatilgan, lekin bu jism silindr. C ($80\\pi$) — bu $2\\pi r h$, ya’ni yon sirt yuzasi, hajm emas.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "area_volume",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "A rectangular swimming pool is 25 meters long and 10 meters wide. A concrete walkway of uniform width 2 meters surrounds the pool on all four sides. What is the area, in square meters, of the walkway alone?",
+    "option_a": "74",
+    "option_b": "140",
+    "option_c": "156",
+    "option_d": "406",
+    "correct": "C",
+    "explanation_en": "The pool and the walkway together form a rectangle that is $25 + 2 + 2 = 29$ meters long and $10 + 2 + 2 = 14$ meters wide, with area $29 \\cdot 14 = 406$ square meters. Subtracting the pool's area, $25 \\cdot 10 = 250$, leaves $406 - 250 = 156$ square meters for the walkway. Choice C is correct.\n\nChoice A (74) adds the walkway width on only one side in each direction: $27 \\cdot 12 - 250$. Choice B (140) multiplies the pool's perimeter, 70, by the width 2 and misses the four corner squares ($4 \\cdot 2^2 = 16$). Choice D (406) is the area of the pool and the walkway together.",
+    "explanation_uz": "Hovuz va yo‘lak birgalikda uzunligi $25 + 2 + 2 = 29$ metr, eni $10 + 2 + 2 = 14$ metr bo‘lgan to‘g‘ri to‘rtburchak hosil qiladi; uning yuzasi $29 \\cdot 14 = 406$ kvadrat metr. Hovuz yuzasini ($25 \\cdot 10 = 250$) ayirsak, yo‘lak uchun $406 - 250 = 156$ kvadrat metr qoladi. To‘g‘ri javob C.\n\nA (74) — yo‘lak kengligi har bir yo‘nalishda faqat bir tomonga qo‘shilgan: $27 \\cdot 12 - 250$. B (140) — hovuz perimetri (70) yo‘lak kengligiga (2) ko‘paytirilgan, ammo burchaklardagi to‘rtta kvadrat ($4 \\cdot 2^2 = 16$) tushib qolgan. D (406) — hovuz va yo‘lakning umumiy yuzasi.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "area_volume",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "A sphere has a volume of $288\\pi$ cubic centimeters. What is the diameter, in centimeters, of the sphere?",
+    "spr_answers": [
+      "12"
+    ],
+    "explanation_en": "Use $V = \\frac{4}{3}\\pi r^3$: $\\frac{4}{3}\\pi r^3 = 288\\pi$, so $r^3 = 288 \\cdot \\frac{3}{4} = 216$ and $r = 6$. The diameter is $2r = 12$ centimeters.\n\nWatch out: 6 is the radius, not the diameter, and 216 is the value of $r^3$.",
+    "explanation_uz": "$V = \\frac{4}{3}\\pi r^3$ formulasidan foydalanamiz: $\\frac{4}{3}\\pi r^3 = 288\\pi$, demak $r^3 = 288 \\cdot \\frac{3}{4} = 216$ va $r = 6$. Diametr $2r = 12$ santimetr.\n\nE’tibor bering: 6 — bu radius, diametr emas; 216 esa $r^3$ ning qiymati.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "area_volume",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "Rectangular prism $Q$ is a scaled copy of rectangular prism $P$: each edge of prism $Q$ is 3 times as long as the corresponding edge of prism $P$. The volume of prism $Q$ is 1,080 cubic centimeters. What is the volume, in cubic centimeters, of prism $P$?",
+    "option_a": "40",
+    "option_b": "120",
+    "option_c": "360",
+    "option_d": "3,240",
+    "correct": "A",
+    "explanation_en": "When every length of a solid is multiplied by $k$, its volume is multiplied by $k^3$. Going from $P$ to $Q$, $k = 3$, so the volume of $Q$ is $3^3 = 27$ times the volume of $P$. The volume of $P$ is $\\frac{1{,}080}{27} = 40$ cubic centimeters, so choice A is correct.\n\nChoice B (120) divides by $3^2 = 9$, the factor for areas, not volumes. Choice C (360) divides by 3, the factor for lengths. Choice D (3,240) multiplies by 3 instead of dividing, but $P$ is the smaller prism.",
+    "explanation_uz": "Jismning barcha uzunliklari $k$ marta oshirilsa, hajmi $k^3$ marta oshadi. $P$ dan $Q$ ga o‘tishda $k = 3$, demak $Q$ ning hajmi $P$ nikidan $3^3 = 27$ marta katta. $P$ ning hajmi $\\frac{1{,}080}{27} = 40$ kub santimetr, to‘g‘ri javob A.\n\nB (120) — $3^2 = 9$ ga bo‘lingan, bu hajm emas, yuza uchun koeffitsiyent. C (360) — 3 ga bo‘lingan, bu uzunliklar uchun koeffitsiyent. D (3,240) — bo‘lish o‘rniga 3 ga ko‘paytirilgan, holbuki $P$ kichikroq prizma.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "area_volume",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "A closed right circular cylinder has a height that is twice its radius. The volume of the cylinder is $128\\pi$ cubic centimeters. What is the total surface area, in square centimeters, of the cylinder?",
+    "option_a": "$32\\pi$",
+    "option_b": "$64\\pi$",
+    "option_c": "$80\\pi$",
+    "option_d": "$96\\pi$",
+    "correct": "D",
+    "explanation_en": "Let the radius be $r$, so the height is $2r$. Then $V = \\pi r^2 (2r) = 2\\pi r^3 = 128\\pi$, so $r^3 = 64$ and $r = 4$; the height is 8. A closed cylinder has two circular bases and a lateral surface: $SA = 2\\pi r^2 + 2\\pi r h = 2\\pi(16) + 2\\pi(4)(8) = 32\\pi + 64\\pi = 96\\pi$. Choice D is correct.\n\nChoice A ($32\\pi$) counts only the two bases. Choice B ($64\\pi$) is only the lateral area. Choice C ($80\\pi$) includes just one base, as for an open cylinder, but this cylinder is closed.",
+    "explanation_uz": "Radiusni $r$ deb olamiz, u holda balandlik $2r$. $V = \\pi r^2 (2r) = 2\\pi r^3 = 128\\pi$, demak $r^3 = 64$ va $r = 4$; balandlik 8 ga teng. Yopiq silindrning ikkita doira asosi va yon sirti bor: $SA = 2\\pi r^2 + 2\\pi r h = 2\\pi(16) + 2\\pi(4)(8) = 32\\pi + 64\\pi = 96\\pi$. To‘g‘ri javob D.\n\nA ($32\\pi$) — faqat ikki asos hisoblangan. B ($64\\pi$) — faqat yon sirt yuzasi. C ($80\\pi$) — ochiq silindrdagidek bitta asos olingan, lekin silindr yopiq.",
+    "estimated_seconds": 125,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "area_volume",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "A right circular cone with a radius of 6 centimeters and a height of 10 centimeters is completely filled with water. All of the water is poured into an empty right circular cylinder with a radius of 4 centimeters, and none spills. What is the height, in centimeters, of the water in the cylinder?",
+    "spr_answers": [
+      "7.5",
+      "15/2"
+    ],
+    "explanation_en": "The cone holds $\\frac{1}{3}\\pi r^2 h = \\frac{1}{3}\\pi (6)^2 (10) = 120\\pi$ cubic centimeters of water. In the cylinder, the water forms a cylinder with radius 4 and unknown height $h$, so its volume is $\\pi (4)^2 h = 16\\pi h$. Setting $16\\pi h = 120\\pi$ gives $h = 7.5$ centimeters. Either 7.5 or 15/2 is accepted.\n\nIf you forget the $\\frac{1}{3}$ in the cone formula, you get $\\frac{360\\pi}{16\\pi} = 22.5$, which is incorrect.",
+    "explanation_uz": "Konusdagi suv hajmi $\\frac{1}{3}\\pi r^2 h = \\frac{1}{3}\\pi (6)^2 (10) = 120\\pi$ kub santimetr. Silindrda suv radiusi 4 va balandligi $h$ bo‘lgan silindr shaklini oladi, uning hajmi $\\pi (4)^2 h = 16\\pi h$. $16\\pi h = 120\\pi$ tenglamasidan $h = 7.5$ santimetr chiqadi. 7.5 yoki 15/2 javoblari qabul qilinadi.\n\nKonus formulasidagi $\\frac{1}{3}$ unutilsa, $\\frac{360\\pi}{16\\pi} = 22.5$ chiqadi — bu xato javob.",
+    "estimated_seconds": 130,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  }
+]

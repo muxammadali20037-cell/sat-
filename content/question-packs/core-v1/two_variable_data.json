@@ -1,0 +1,142 @@
+[
+  {
+    "skill_code": "two_variable_data",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "A biologist recorded the number of hours of direct sunlight per day, $x$, that each of 15 tomato plants received and the amount each plant grew, $y$, in centimeters, during one month. The line of best fit for the data is $y = 1.8x + 3.4$. According to the line of best fit, what is the predicted growth, in centimeters, of a plant that receives 6 hours of direct sunlight per day?",
+    "option_a": "$10.8$",
+    "option_b": "$14.2$",
+    "option_c": "$22.2$",
+    "option_d": "$31.2$",
+    "correct": "B",
+    "explanation_en": "Substitute $x = 6$ into the equation: $y = 1.8(6) + 3.4 = 10.8 + 3.4 = 14.2$ centimeters. Choice A forgets to add 3.4, choice C swaps the roles of 1.8 and 3.4 ($3.4 \\times 6 + 1.8$), and choice D multiplies both numbers by 6.",
+    "explanation_uz": "Tenglamaga $x = 6$ ni qo‘yamiz: $y = 1.8(6) + 3.4 = 10.8 + 3.4 = 14.2$ santimetr. A javobda 3.4 qo‘shilmagan, C javobda 1.8 va 3.4 ning o‘rni almashtirilgan ($3.4 \\times 6 + 1.8$), D javobda esa ikkala son ham 6 ga ko‘paytirilgan.",
+    "estimated_seconds": 65,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "two_variable_data",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "For 25 apartments in a city, a scatterplot shows each apartment's distance from the city center, $x$, in kilometers, and its monthly rent, $y$, in dollars. The line of best fit for the data is $y = -45x + 980$. Which of the following is the best interpretation of 980 in this context?",
+    "option_a": "For each additional kilometer from the city center, the predicted monthly rent decreases by \\$980.",
+    "option_b": "The greatest monthly rent among the 25 apartments is \\$980.",
+    "option_c": "Every apartment located at the city center has a monthly rent of exactly \\$980.",
+    "option_d": "The predicted monthly rent of an apartment located at the city center is \\$980.",
+    "correct": "D",
+    "explanation_en": "In $y = -45x + 980$, the constant 980 is the value of $y$ when $x = 0$. Here $x = 0$ means a distance of 0 kilometers from the city center, so 980 is the predicted monthly rent, in dollars, of an apartment at the city center. Choice A describes the slope, but the slope is $-45$, not 980. Choice C is too strong: a line of best fit gives **predicted** values, and actual rents vary around the line. Nothing in the equation identifies the greatest rent in the data (choice B).",
+    "explanation_uz": "$y = -45x + 980$ tenglamada 980 — $x = 0$ bo‘lgandagi $y$ qiymati. $x = 0$ — shahar markazidan 0 kilometr masofa, demak 980 — shahar markazidagi kvartiraning bashorat qilingan oylik ijara haqi (dollarda). A javob qiyalikni ta’riflaydi, lekin qiyalik 980 emas, $-45$. C javob haddan tashqari qat’iy: eng mos chiziq **bashorat qilingan** qiymatlarni beradi, haqiqiy ijara haqlari esa chiziq atrofida tarqoq bo‘ladi. Tenglama ma’lumotlardagi eng katta ijara haqini ko‘rsatmaydi (B javob).",
+    "estimated_seconds": 75,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "two_variable_data",
+    "difficulty": "easy",
+    "question_type": "spr",
+    "stem": "A sports club recorded its number of members each year since 2010. The line of best fit for the data is $y = 12x + 40$, where $y$ is the predicted number of members and $x$ is the number of years since 2010. According to the line of best fit, what is the predicted number of members in 2025?",
+    "spr_answers": [
+      "220"
+    ],
+    "explanation_en": "The year 2025 is $2025 - 2010 = 15$ years after 2010, so substitute $x = 15$: $y = 12(15) + 40 = 180 + 40 = 220$. Substituting $x = 2025$ is the trap: $x$ counts the years **since** 2010, not the calendar year.",
+    "explanation_uz": "2025 yil — 2010 yildan $2025 - 2010 = 15$ yil keyin, shuning uchun $x = 15$ ni qo‘yamiz: $y = 12(15) + 40 = 180 + 40 = 220$. Tuzoq — $x = 2025$ ni qo‘yish: $x$ kalendar yilni emas, 2010 yildan **beri** o‘tgan yillar sonini bildiradi.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "two_variable_data",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "Which of the following equations best models the data?",
+    "passage": "A biologist counted the bacteria in a sample at the start of an experiment and then once every hour. The results are shown in the table, where $t$ is the number of hours since the start of the experiment and $B$ is the number of bacteria.\n\n| $t$ (hours) | $B$ (bacteria) |\n| ---: | ---: |\n| 0 | 500 |\n| 1 | 600 |\n| 2 | 720 |\n| 3 | 864 |",
+    "option_a": "$B = 500 + 100t$",
+    "option_b": "$B = 500(0.2)^t$",
+    "option_c": "$B = 600(1.2)^t$",
+    "option_d": "$B = 500(1.2)^t$",
+    "correct": "D",
+    "explanation_en": "The differences between consecutive counts are 100, 120 and 144, so the data are not linear. The ratios are equal: $\\frac{600}{500} = \\frac{720}{600} = \\frac{864}{720} = 1.2$, so the count is multiplied by 1.2 each hour. This is an exponential model, $B = 500(1.2)^t$, where 500 is the count at $t = 0$. Choice A fits only the first hour (it predicts 700, not 720, at $t = 2$). Choice B uses the growth rate 0.2 as the base, which would make the count shrink. Choice C uses the count at $t = 1$ as the initial value, so it predicts 600 at $t = 0$.",
+    "explanation_uz": "Ketma-ket sonlar orasidagi farqlar 100, 120 va 144 — bir xil emas, demak ma’lumotlar chiziqli emas. Nisbatlar esa teng: $\\frac{600}{500} = \\frac{720}{600} = \\frac{864}{720} = 1.2$, ya’ni bakteriyalar soni har soatda 1.2 ga ko‘payadi. Bu eksponensial model: $B = 500(1.2)^t$, bunda 500 — $t = 0$ dagi son. A javob faqat birinchi soatga mos keladi ($t = 2$ da 720 emas, 700 ni beradi). B javob o‘sish sur’ati 0.2 ni asos qilib olgan — bunda son kamayib borardi. C javob boshlang‘ich qiymat sifatida $t = 1$ dagi sonni olgan, shuning uchun $t = 0$ da 600 ni beradi.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "two_variable_data",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "A scatterplot shows the age $x$, in weeks, and the height $y$, in centimeters, of 20 sunflower plants. The line of best fit for the data passes through the points $(4, 13.5)$ and $(12, 31.5)$. According to the line of best fit, by how many centimeters does the predicted height of a sunflower plant increase each week?",
+    "spr_answers": [
+      "2.25",
+      "9/4"
+    ],
+    "explanation_en": "The predicted increase per week is the slope of the line: $\\frac{31.5 - 13.5}{12 - 4} = \\frac{18}{8} = 2.25$ centimeters per week. A common error is to divide in the wrong order, $\\frac{8}{18} \\approx 0.44$, which would be weeks per centimeter. Enter 2.25 or 9/4.",
+    "explanation_uz": "Haftalik bashorat qilingan o‘sish — chiziqning qiyaligi: $\\frac{31.5 - 13.5}{12 - 4} = \\frac{18}{8} = 2.25$ santimetr/hafta. Ko‘p uchraydigan xato — teskari bo‘lish: $\\frac{8}{18} \\approx 0.44$; bu bir santimetrga to‘g‘ri keladigan haftalar soni bo‘lardi. Javob maydoniga 2.25 yoki 9/4 deb yozing.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "two_variable_data",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "On each of 30 days, a city's bike-share program recorded the high temperature $x$, in degrees Celsius, and the number of bike rentals $y$. The line of best fit for the data is $y = 42x + 150$. According to the line of best fit, at what high temperature, in degrees Celsius, would the predicted number of rentals be 1,200?",
+    "option_a": "$25$",
+    "option_b": "$28.6$",
+    "option_c": "$32.1$",
+    "option_d": "$50{,}550$",
+    "correct": "A",
+    "explanation_en": "Set $y = 1{,}200$ and solve for $x$: $42x + 150 = 1{,}200$, so $42x = 1{,}050$ and $x = 25$. Choice B ignores the 150 and divides 1,200 by 42. Choice C adds 150 instead of subtracting it. Choice D substitutes 1,200 for $x$, but 1,200 is a number of rentals ($y$), not a temperature.",
+    "explanation_uz": "$y = 1{,}200$ deb olib, $x$ ni topamiz: $42x + 150 = 1{,}200$, $42x = 1{,}050$ va $x = 25$. B javob 150 ni hisobga olmay, 1,200 ni 42 ga bo‘lgan. C javob 150 ni ayirish o‘rniga qo‘shgan. D javob 1,200 ni $x$ o‘rniga qo‘ygan, lekin 1,200 — harorat emas, ijaralar soni ($y$).",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "two_variable_data",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "A new social media account was tracked for 20 weeks. A scatterplot of the data shows $t$, the number of weeks since the account was created, and $f$, the number of followers. An exponential curve of best fit for the data is $f = 240(1.15)^t$. Which of the following is the best interpretation of 1.15 in this context?",
+    "option_a": "The predicted number of followers increases by 1.15 each week.",
+    "option_b": "The predicted number of followers increases by 115% each week.",
+    "option_c": "The predicted number of followers increases by 15% each week.",
+    "option_d": "The predicted number of followers increases by 15 each week.",
+    "correct": "C",
+    "explanation_en": "In an exponential model $f = a(b)^t$, each 1-unit increase in $t$ multiplies the predicted value by $b$. Multiplying by $1.15 = 1 + 0.15$ means the predicted number of followers grows by 15% of its current value each week. Choice B is tempting, but an increase of 115% would multiply the number of followers by 2.15, not 1.15. Choices A and D describe adding the same amount each week, which is linear growth, not exponential growth.",
+    "explanation_uz": "$f = a(b)^t$ ko‘rinishidagi eksponensial modelda $t$ ning har 1 birlikka oshishi bashorat qilingan qiymatni $b$ ga ko‘paytiradi. $1.15 = 1 + 0.15$ ga ko‘paytirish — kuzatuvchilar soni har hafta joriy qiymatning 15% iga oshishini bildiradi. B javob jozibali, lekin 115% ga oshish sonni 1.15 ga emas, 2.15 ga ko‘paytirishni anglatadi. A va D javoblar har hafta bir xil son qo‘shilishini ta’riflaydi — bu eksponensial emas, chiziqli o‘sish.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "two_variable_data",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "Two stores opened on the same day. For store A, the line of best fit for monthly sales is $y = 3.2x + 40$, and for store B, it is $y = 2.4x + 64$, where $y$ is the predicted monthly sales, in thousands of dollars, $x$ months after the stores opened. According to these lines of best fit, how many months after opening will the two stores have equal predicted monthly sales?",
+    "spr_answers": [
+      "30"
+    ],
+    "explanation_en": "Set the two predictions equal: $3.2x + 40 = 2.4x + 64$. Subtracting gives $0.8x = 24$, so $x = 30$. Check: $3.2(30) + 40 = 136$ and $2.4(30) + 64 = 136$ thousand dollars. A common mistake is to enter 136, which is the predicted monthly sales at that time (in thousands of dollars), not the number of months.",
+    "explanation_uz": "Ikki bashoratni tenglaymiz: $3.2x + 40 = 2.4x + 64$. Bundan $0.8x = 24$ va $x = 30$. Tekshiruv: $3.2(30) + 40 = 136$ va $2.4(30) + 64 = 136$ ming dollar ✓. Ko‘p uchraydigan xato — 136 deb yozish: bu oylar soni emas, o‘sha paytdagi bashorat qilingan oylik savdo (ming dollarda).",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  }
+]

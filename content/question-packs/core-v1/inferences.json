@@ -1,0 +1,162 @@
+[
+  {
+    "skill_code": "inferences",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "In 2023, the only bridge over the Kass River in the town of Rellim was closed for six months of repairs. During that time, residents of the town's east side had to take a detour that added about twenty minutes to each trip to the west side. Shop owners on the west side reported that many of their regular customers from the east side stopped coming during the closure. This suggests that ______",
+    "stem": "Which choice most logically completes the text?",
+    "option_a": "many shops on the west side closed permanently in 2023.",
+    "option_b": "the longer trip discouraged some east-side residents from shopping on the west side.",
+    "option_c": "the bridge repairs were finished earlier than planned.",
+    "option_d": "east-side residents generally prefer west-side shops to the shops on their own side of town.",
+    "correct": "B",
+    "explanation_en": "The text links the bridge closure to a twenty-minute detour and reports that many east-side customers stopped visiting west-side shops during that time. The most logical conclusion is that the longer trip discouraged them, as choice B says. Choice A goes too far: the text reports lost customers, not shop closures. Choice C is unsupported: nothing is said about when the repairs ended. Choice D is unsupported: the text does not say how east-side residents compare the shops on the two sides of town, and such a preference would not explain why they stopped coming.",
+    "explanation_uz": "Matn ko‘prik yopilishini yigirma daqiqalik aylanma yo‘l bilan bog‘laydi va shu davrda sharqiy qismdagi ko‘plab doimiy xaridorlar g‘arbiy qismdagi do‘konlarga kelmay qo‘yganini aytadi. Eng mantiqiy xulosa — uzoqroq yo‘l ularni bundan qaytargan. To‘g‘ri javob — B. A haddan oshib ketadi: matnda do‘konlar yopilgani emas, xaridorlar kamaygani aytilgan. C asossiz: ta’mirlash qachon tugagani haqida gap yo‘q. D ham asossiz: matnda sharqiy qism aholisi shaharning ikki tomonidagi do‘konlarni qanday solishtirishi aytilmagan, bunday afzal ko‘rish esa ularning nega kelmay qo‘yganini tushuntirmaydi.",
+    "estimated_seconds": 55,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "inferences",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Biologist Marta Sousa hung two identical bird feeders, filled with the same seed, in a city park where hawks often hunt small birds. One feeder hung over an open lawn; the other hung beside dense bushes where small birds can quickly hide. Over one month, small birds made three times as many visits to the feeder beside the bushes as to the feeder over the lawn. These results suggest that small birds ______",
+    "stem": "Which choice most logically completes the text?",
+    "option_a": "may prefer to feed in places where they can quickly escape from predators.",
+    "option_b": "are unable to find food on open lawns.",
+    "option_c": "are rarely hunted by hawks in city parks.",
+    "option_d": "prefer the type of seed in the feeder beside the bushes.",
+    "correct": "A",
+    "explanation_en": "The two feeders were identical and held the same seed; the only difference was that one hung near bushes where birds can hide, in a park where hawks hunt. That birds visited this feeder three times as often suggests they prefer feeding where they can escape predators, as choice A says. Choice B is too extreme: birds still visited the feeder over the lawn. Choice C contradicts the text, which says that hawks often hunt small birds in the park. Choice D is ruled out because both feeders held the same seed.",
+    "explanation_uz": "Ikkala oziqlantirgich bir xil bo‘lgan va ularda bir xil don bo‘lgan; yagona farq — ulardan biri qushlar tez yashirina oladigan butalar yonida osilgan, park esa qirg‘iylar ov qiladigan joy. Qushlarning shu oziqlantirgichga uch baravar ko‘p kelgani ular yirtqichdan tez qochish mumkin bo‘lgan joyda ovqatlanishni afzal ko‘rishini ko‘rsatadi — to‘g‘ri javob A. B haddan tashqari kuchli: qushlar maysazor ustidagi oziqlantirgichga ham kelgan. C matnga zid: matnda qirg‘iylar parkda kichik qushlarni tez-tez ovlashi aytilgan. D istisno qilinadi, chunki ikkala oziqlantirgichda ham bir xil don bo‘lgan.",
+    "estimated_seconds": 55,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "inferences",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Historians studying the travel diary of Edith Marr noticed that her entries about the city of Dorran describe the cathedral bells, the crowded fish market and the smell of the tanneries but never mention the city's famous stone bridge, which today appears in nearly every description of Dorran. The bridge was completed in 1871, and Marr's entries about Dorran are dated 1866. This suggests that Marr ______",
+    "stem": "Which choice most logically completes the text?",
+    "option_a": "did not consider the bridge worth describing.",
+    "option_b": "wrote her entries about Dorran after 1871.",
+    "option_c": "did not mention the bridge because it had not yet been completed when she visited.",
+    "option_d": "never visited Dorran's fish market.",
+    "correct": "C",
+    "explanation_en": "Marr wrote about Dorran in 1866, but the bridge was not completed until 1871, so the most logical explanation for her silence is that the finished bridge did not yet exist when she visited, as choice C says. Choice A assumes she saw the completed bridge, which the dates make unlikely. Choice B contradicts the 1866 date of the entries. Choice D contradicts the text, which says her entries describe the crowded fish market.",
+    "explanation_uz": "Marr Dorran haqida 1866-yilda yozgan, ko‘prik esa faqat 1871-yilda qurib bitkazilgan. Demak, uning ko‘prikni tilga olmaganining eng mantiqiy izohi — u shaharga borganida ko‘prik hali qurib bitkazilmagan edi. To‘g‘ri javob — C. A Marr tayyor ko‘prikni ko‘rgan deb faraz qiladi, sanalar esa buni ehtimoldan uzoq qiladi. B yozuvlarning 1866-yilga oid ekaniga zid. D matnga zid: uning yozuvlarida gavjum baliq bozori tasvirlangan.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "inferences",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Each spring, caterpillars of the winter moth feed on the new leaves of the Tarvan oak. The caterpillars hatch at roughly the same time every year, and they feed best on young, tender leaves; as oak leaves mature, they quickly become tougher and harder to digest. Ecologist Simone Albrecht found that in years when the oaks' leaves opened unusually early, caterpillar damage to the trees was low. This finding suggests that when oak leaves open early, ______",
+    "stem": "Which choice most logically completes the text?",
+    "option_a": "the caterpillars hatch earlier than they do in other years.",
+    "option_b": "the leaves remain young and tender for a longer period than usual.",
+    "option_c": "the oaks produce fewer leaves than they do in other years.",
+    "option_d": "many of the leaves have already become tough by the time the caterpillars hatch.",
+    "correct": "D",
+    "explanation_en": "The caterpillars hatch at about the same time each year and feed best on young leaves, which toughen as they mature. If the leaves open early, they have extra time to mature before the caterpillars appear, so many will already be tough, which explains the low damage, as choice D says. Choice A contradicts the statement that the caterpillars hatch at roughly the same time every year. Choice B would make the leaves easier to eat and should increase damage, not reduce it. Choice C is unsupported: the text says nothing about the number of leaves.",
+    "explanation_uz": "Qurtlar har yili taxminan bir vaqtda tuxumdan chiqadi va yosh, yumshoq barglar bilan yaxshi oziqlanadi; barglar yetilgan sari qattiqlashadi. Agar barglar erta ochilsa, qurtlar chiqquncha ular yetilishga ko‘proq vaqt topadi va ko‘plari allaqachon qattiq bo‘lib qoladi — bu zarar kamligini tushuntiradi. To‘g‘ri javob — D. A qurtlar har yili taxminan bir vaqtda chiqadi degan gapga zid. B barglarni yeyishni osonlashtirar edi, ya’ni zararni kamaytirmas, balki oshirar edi. C asossiz: matnda barglar soni haqida hech narsa aytilmagan.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "inferences",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Scholars have long debated whether the anonymous medieval poem *The Ferrier's Lament* was composed in the northern or the southern part of the kingdom of Aldren. The poem's only surviving manuscript was copied by a scribe in the south. However, several of the poem's rhymes work only in the northern dialect of the period: when the lines are read with southern pronunciation, those rhyming words no longer sound alike. This evidence suggests that ______",
+    "stem": "Which choice most logically completes the text?",
+    "option_a": "the poem was probably composed in the north, even though the surviving copy was made in the south.",
+    "option_b": "the southern scribe deliberately changed the poem's rhymes to match northern pronunciation.",
+    "option_c": "readers in the south did not enjoy poems that used rhyme.",
+    "option_d": "the poem was composed much later than scholars had assumed.",
+    "correct": "A",
+    "explanation_en": "The rhymes work only in the northern dialect, which suggests that the poet composed the poem using northern pronunciation. The manuscript's southern origin is easily explained by a southern scribe copying a northern poem. Choice A is therefore the most logical conclusion. Choice B is unsupported: nothing suggests the scribe altered the rhymes, and a southern scribe would have no clear reason to make them fit a different dialect. Choice C is unsupported: the text says nothing about southern readers' tastes. Choice D is unsupported: the evidence concerns where the poem was composed, not when.",
+    "explanation_uz": "Qofiyalar faqat shimoliy shevada mos tushadi — bu shoir she’rni shimoliy talaffuzga tayanib yozganini ko‘rsatadi. Qo‘lyozmaning janubda ko‘chirilganini esa janublik kotib shimoliy she’rni ko‘chirib yozgani bilan osongina izohlash mumkin. Demak, eng mantiqiy xulosa — A. B asossiz: kotib qofiyalarni o‘zgartirganiga hech qanday ishora yo‘q, janublik kotibning ularni boshqa shevaga moslashtirishi uchun aniq sabab ham yo‘q. C asossiz: matnda janubiy o‘quvchilarning didi haqida gap yo‘q. D ham asossiz: dalil she’r qachon emas, qayerda yozilgani haqida.",
+    "estimated_seconds": 75,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "inferences",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Economist Javier Molina studied a city that replaced its coin-operated parking meters with a smartphone app. With the app, drivers can pay for parking and add more time from wherever they are, instead of having to return to the meter. After the app was introduced, the city's income from parking fees rose, while its income from fines for overstaying paid parking time fell sharply. The number of drivers parking in the city each day did not change. These findings suggest that ______",
+    "stem": "Which choice most logically completes the text?",
+    "option_a": "drivers parked for shorter periods after the app was introduced.",
+    "option_b": "many drivers who previously would have overstayed their paid time were instead using the app to pay for extra time.",
+    "option_c": "most drivers stopped parking in the city after the app was introduced.",
+    "option_d": "the app made it more difficult for drivers to pay for parking.",
+    "correct": "B",
+    "explanation_en": "With the same number of drivers, income from fees rose and income from fines fell. Because the app lets drivers add time remotely, the most logical explanation is that drivers who once would have run out of time and been fined now paid for extra time instead, as choice B says; this accounts for both changes. Choice A would tend to lower fee income, not raise it. Choice C contradicts the statement that the number of drivers did not change. Choice D conflicts with the rise in fee income and is not supported by anything in the text.",
+    "explanation_uz": "Haydovchilar soni o‘zgarmagan holda to‘lovlardan tushum oshgan, jarimalardan tushum esa keskin kamaygan. Ilova haydovchilarga masofadan turib vaqt qo‘shish imkonini bergani uchun eng mantiqiy izoh shunday: avval vaqti tugab jarimaga tortiladigan haydovchilar endi qo‘shimcha vaqt uchun to‘lay boshlagan — to‘g‘ri javob B. Bu ikkala o‘zgarishni ham tushuntiradi. A to‘lovlardan tushumni oshirmas, aksincha kamaytirar edi. C haydovchilar soni o‘zgarmagani haqidagi gapga zid. D to‘lovlardan tushum oshganiga zid va matnda unga hech qanday asos yo‘q.",
+    "estimated_seconds": 75,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "inferences",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Lake Varn sits in a mountain basin and is fed almost entirely by melting snow from the surrounding peaks. Each year a thin layer of sediment settles on the lake floor; in years with heavy snowfall, the larger volume of meltwater carries more sediment into the lake, producing thicker layers. Geologist Hanna Berg found that layers deposited between about 1450 and 1600 are, on average, much thicker than those from the centuries before and after. Records from a nearby monastery describe frequent crop failures during the same period caused by long, cold winters. Taken together, these findings suggest that ______",
+    "stem": "Which choice most logically completes the text?",
+    "option_a": "the crop failures near the monastery were caused by flooding from Lake Varn rather than by cold weather.",
+    "option_b": "snowfall in the region was lighter between 1450 and 1600 than in the centuries before and after.",
+    "option_c": "the region likely experienced unusually heavy snowfall and cold winters between about 1450 and 1600.",
+    "option_d": "the sediment layers in Lake Varn grew steadily thicker every year from 1450 to 1600.",
+    "correct": "C",
+    "explanation_en": "Thicker layers come from heavy snowfall, and the layers from about 1450 to 1600 are unusually thick, which points to heavy snowfall during that period. The monastery's records of long, cold winters in the same period agree with this. Together, the two lines of evidence suggest unusually snowy, cold conditions, as choice C says. Choice A contradicts the records, which blame cold winters for the crop failures. Choice B reverses the meaning of the thick layers. Choice D is too specific: Berg's finding concerns the average thickness of layers over the period, not a steady increase every year.",
+    "explanation_uz": "Qalinroq qatlamlar kuchli qor yoqqan yillarda hosil bo‘ladi, 1450–1600-yillar oralig‘idagi qatlamlar esa odatdagidan ancha qalin — bu o‘sha davrda qor ko‘p yoqqanini ko‘rsatadi. Monastir yozuvlarida xuddi shu davrda uzoq va sovuq qishlar bo‘lgani qayd etilgan, bu ham shunga mos keladi. Ikkala dalil birgalikda o‘sha davrda odatdan tashqari qorli va sovuq sharoit bo‘lganini ko‘rsatadi — to‘g‘ri javob C. A yozuvlarga zid: ularda hosil nobud bo‘lishiga sovuq qishlar sabab deyilgan. B qalin qatlamlarning ma’nosini teskari tushunadi. D haddan tashqari aniq: Berg topilmasi davr bo‘yicha qatlamlarning o‘rtacha qalinligi haqida, har yili muntazam qalinlashish haqida emas.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "inferences",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "In the archives of a nineteenth-century shipping company, historian Sun-mi Kwon found two versions of the logbook from an 1852 voyage: the captain's original handwritten log and a clean copy that was submitted to the company's owners. The two versions agree on nearly every detail, but the copy leaves out three days on which the original log records that the ship sailed well off its planned route so that the captain could trade privately at a port the company had not scheduled. At the time, company rules forbade captains from trading for their own profit. Kwon's findings suggest that ______",
+    "stem": "Which choice most logically completes the text?",
+    "option_a": "the original log was written after the copy was submitted to the owners.",
+    "option_b": "the company's owners had approved the captain's private trading in advance.",
+    "option_c": "the captain was unaware of the company's rules about trading for profit.",
+    "option_d": "the copy may have been edited to hide activities that broke company rules.",
+    "correct": "D",
+    "explanation_en": "The copy given to the owners matches the original except for the three days of private trading, which company rules forbade. The most logical explanation is that those days were deliberately left out to conceal the rule-breaking, as choice D says. Choice A is unsupported: nothing suggests the original was written later, and as the captain's handwritten log it was presumably kept during the voyage. Choice B is unlikely: if the owners had approved the trading, there would be little reason to remove it from their copy. Choice C is undercut by the selective omission, which suggests that whoever prepared the copy knew the trading was forbidden.",
+    "explanation_uz": "Egalarga topshirilgan nusxa asl jurnal bilan deyarli bir xil, faqat kompaniya qoidalari taqiqlagan xususiy savdo qilingan uch kun tushirib qoldirilgan. Eng mantiqiy izoh — qoidabuzarlikni yashirish uchun bu kunlar ataylab olib tashlangan. To‘g‘ri javob — D. A asossiz: asl jurnal keyinroq yozilganiga hech qanday ishora yo‘q, u kapitanning qo‘lda yozilgan jurnali bo‘lgani uchun, ehtimol, safar davomida yuritilgan. B ehtimoldan uzoq: agar egalar savdoga oldindan ruxsat bergan bo‘lsa, uni ularning nusxasidan olib tashlashga sabab bo‘lmas edi. C ni aynan tanlab tushirib qoldirish rad etadi: bu nusxani tayyorlagan kishi savdo taqiqlanganini bilganini ko‘rsatadi.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  }
+]

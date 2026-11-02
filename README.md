@@ -15,6 +15,7 @@
 | Auth setup | [docs/AUTH_SETUP.md](docs/AUTH_SETUP.md) |
 | Payments setup | [docs/PAYMENTS.md](docs/PAYMENTS.md) |
 | Uzbek study guides | [docs/GUIDES.md](docs/GUIDES.md) |
+| Question packs (240 original questions) | [docs/QUESTION_PACKS.md](docs/QUESTION_PACKS.md) |
 
 > **Current status, test evidence and launch checklist:** [docs/STATUS.md](docs/STATUS.md)
 

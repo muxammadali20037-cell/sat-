@@ -1,0 +1,162 @@
+[
+  {
+    "skill_code": "transitions",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Deserts are often pictured as places of constant, scorching heat. ______ in the Gobi Desert, which stretches across parts of Mongolia and China, winter temperatures can drop below −40°C, and snow sometimes dusts the dunes.",
+    "stem": "Which choice completes the text with the most logical transition?",
+    "option_a": "Therefore,",
+    "option_b": "However,",
+    "option_c": "For example,",
+    "option_d": "Similarly,",
+    "correct": "B",
+    "explanation_en": "The first sentence states a common image of deserts: places of constant heat. The second sentence describes a desert where winter temperatures fall below −40°C, which goes against that image. “However” signals this contrast, so choice B is correct.\n\n“Therefore” wrongly presents the cold winters as a result of the common image. “For example” would require the Gobi to illustrate constant heat, which it does not. “Similarly” signals a matching idea, but the two sentences conflict.",
+    "explanation_uz": "Birinchi gap cho‘llar haqidagi keng tarqalgan tasavvurni beradi: doimiy issiq joylar. Ikkinchi gap esa qishda harorat −40°C dan ham pastga tushadigan cho‘lni tasvirlaydi — bu o‘sha tasavvurga zid. “However” aynan shu zidlikni bildiradi, shuning uchun to‘g‘ri javob B.\n\n“Therefore” sovuq qishni keng tarqalgan tasavvurning natijasi qilib ko‘rsatadi — bu mantiqsiz. “For example” Gobi doimiy issiqlikka misol bo‘lishini talab qiladi, lekin unday emas. “Similarly” o‘xshash fikrni bildiradi, ikki gap esa bir-biriga zid.",
+    "estimated_seconds": 50,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "transitions",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Uzbekistan is one of only two doubly landlocked countries in the world: it does not border an ocean, and none of its neighbors does either. ______ goods shipped to Uzbekistan by sea must cross at least two international borders over land before they arrive.",
+    "stem": "Which choice completes the text with the most logical transition?",
+    "option_a": "As a result,",
+    "option_b": "In contrast,",
+    "option_c": "For instance,",
+    "option_d": "Nevertheless,",
+    "correct": "A",
+    "explanation_en": "The first sentence explains that Uzbekistan is doubly landlocked: neither it nor any of its neighbors borders an ocean. The second sentence describes a consequence of that fact: goods arriving by sea must cross at least two borders by land. “As a result” signals cause and effect, so choice A is correct.\n\n“In contrast” and “Nevertheless” signal a conflict, but the second sentence follows directly from the first. “For instance” would present the second sentence as an example of being landlocked, but it actually describes an effect of it.",
+    "explanation_uz": "Birinchi gap O‘zbekiston ikki karra dengizga chiqishi yo‘q davlat ekanini tushuntiradi: na o‘zi, na qo‘shnilari okeanga chegaradosh. Ikkinchi gap shu holatning oqibatini tasvirlaydi: dengiz orqali keladigan yuklar quruqlikda kamida ikki chegarani kesib o‘tishi kerak. “As a result” sabab-natija bog‘lanishini bildiradi, shuning uchun to‘g‘ri javob A.\n\n“In contrast” va “Nevertheless” zidlikni bildiradi, lekin ikkinchi gap birinchisidan bevosita kelib chiqadi. “For instance” ikkinchi gapni misol sifatida taqdim etadi, holbuki u misol emas, oqibat.",
+    "estimated_seconds": 55,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "transitions",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "English has borrowed many words from other languages, often through long chains of contact between cultures. ______ the word “kiosk” entered English from French, which had borrowed it from Turkish, and the word “shampoo” comes from Hindi.",
+    "stem": "Which choice completes the text with the most logical transition?",
+    "option_a": "Instead,",
+    "option_b": "However,",
+    "option_c": "For example,",
+    "option_d": "Consequently,",
+    "correct": "C",
+    "explanation_en": "The first sentence makes a general claim: English has borrowed many words from other languages, often through chains of contact. The second sentence gives specific cases of this—“kiosk” (from Turkish through French) and “shampoo” (from Hindi). “For example” introduces such illustrations, so choice C is correct.\n\n“Instead” and “However” signal a contrast or a replacement, but the second sentence supports the first. “Consequently” would make the borrowed words a result of the general claim, rather than examples of it.",
+    "explanation_uz": "Birinchi gap umumiy fikrni bildiradi: ingliz tili boshqa tillardan ko‘plab so‘zlarni, ko‘pincha madaniyatlar orasidagi uzun aloqalar zanjiri orqali o‘zlashtirgan. Ikkinchi gap buning aniq misollarini keltiradi — “kiosk” (turk tilidan fransuz tili orqali) va “shampoo” (hind tilidan). “For example” aynan misol keltirishni bildiradi, shuning uchun to‘g‘ri javob C.\n\n“Instead” va “However” zidlik yoki almashtirishni bildiradi, ikkinchi gap esa birinchisini qo‘llab-quvvatlaydi. “Consequently” o‘zlashma so‘zlarni umumiy fikrning misoli emas, natijasi qilib ko‘rsatadi.",
+    "estimated_seconds": 50,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "transitions",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Builders looking for sustainable materials are increasingly turning to bamboo. The plant grows so quickly that a harvested grove can regrow in just a few years, unlike a forest of slow-growing hardwood trees. ______ bamboo is remarkably strong for its weight, so it can be used for scaffolding, floors, and even the frames of small houses.",
+    "stem": "Which choice completes the text with the most logical transition?",
+    "option_a": "Instead,",
+    "option_b": "Nevertheless,",
+    "option_c": "Thus,",
+    "option_d": "Additionally,",
+    "correct": "D",
+    "explanation_en": "The text explains why builders are turning to bamboo. The second sentence gives one reason (it regrows quickly), and the third sentence gives a second, separate reason (it is strong for its weight). “Additionally” signals that another supporting point is being added, so choice D is correct.\n\n“Instead” suggests that the strength replaces the fast growth as a reason, which is not what the text says. “Nevertheless” signals a contrast, but both sentences favor bamboo. “Thus” presents the strength as a result of the fast growth, but the text does not claim that one causes the other.",
+    "explanation_uz": "Matn quruvchilar nima uchun bambukka murojaat qilayotganini tushuntiradi. Ikkinchi gap bitta sababni (u tez qayta o‘sadi), uchinchi gap esa ikkinchi, alohida sababni (og‘irligiga nisbatan juda mustahkam) keltiradi. “Additionally” yana bir dalil qo‘shilayotganini bildiradi, shuning uchun to‘g‘ri javob D.\n\n“Instead” mustahkamlik tez o‘sish o‘rnini egallaydigan sabab degan ma’noni beradi — matnda bunday deyilmagan. “Nevertheless” zidlikni bildiradi, lekin ikkala gap ham bambuk foydasiga. “Thus” mustahkamlikni tez o‘sishning natijasi qilib ko‘rsatadi, matn esa birini ikkinchisining sababi deb da’vo qilmaydi.",
+    "estimated_seconds": 65,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "transitions",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "When the city's new public library was unveiled, several architecture critics dismissed its façade of irregular, patterned brickwork as distracting and out of place. ______ the building quickly became one of the most photographed landmarks in the city, and residents now print its image on postcards and souvenirs.",
+    "stem": "Which choice completes the text with the most logical transition?",
+    "option_a": "For example,",
+    "option_b": "Accordingly,",
+    "option_c": "Even so,",
+    "option_d": "Similarly,",
+    "correct": "C",
+    "explanation_en": "The first sentence reports a negative reaction: critics called the library's façade distracting and out of place. The second sentence describes a positive outcome that happened despite that criticism: the building became a beloved landmark. “Even so” signals that something is true in spite of what was just said, so choice C is correct.\n\n“For example” would make the building's popularity an example of the criticism. “Accordingly” would make the popularity a logical result of the criticism. “Similarly” signals that the second idea matches the first, but the two ideas point in opposite directions.",
+    "explanation_uz": "Birinchi gap salbiy munosabatni bayon qiladi: tanqidchilar kutubxona fasadini chalg‘ituvchi va o‘rinsiz deb atashgan. Ikkinchi gap esa shu tanqidga qaramay yuz bergan ijobiy natijani tasvirlaydi: bino sevimli diqqatga sazovor joyga aylangan. “Even so” aytilgan narsaga qaramay boshqa bir narsa to‘g‘ri ekanini bildiradi, shuning uchun to‘g‘ri javob C.\n\n“For example” binoning mashhurligini tanqidning misoli qilib qo‘yadi. “Accordingly” mashhurlikni tanqidning mantiqiy natijasi qilib ko‘rsatadi. “Similarly” ikkinchi fikr birinchisiga o‘xshash ekanini bildiradi, lekin bu ikki fikr qarama-qarshi yo‘nalishda.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "transitions",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Producing silk thread by hand is a careful, step-by-step process. Workers first soak silkworm cocoons in hot water to soften the sticky protein that holds the fine fibers together. ______ they unwind the long filaments from several cocoons at once and twist them together into a single, stronger thread.",
+    "stem": "Which choice completes the text with the most logical transition?",
+    "option_a": "In contrast,",
+    "option_b": "For instance,",
+    "option_c": "Nonetheless,",
+    "option_d": "Next,",
+    "correct": "D",
+    "explanation_en": "The text describes a process in order. The second sentence gives the first step (“Workers first soak silkworm cocoons in hot water…”), and the third sentence gives the step that follows it (unwinding and twisting the filaments). “Next” signals the following step in a sequence, so choice D is correct.\n\n“In contrast” and “Nonetheless” signal a conflict between the two steps, but there is none. “For instance” would present unwinding the filaments as an example of soaking the cocoons, which it is not.",
+    "explanation_uz": "Matn jarayonni ketma-ket tasvirlaydi. Ikkinchi gap birinchi bosqichni beradi (“Workers first soak silkworm cocoons in hot water…”), uchinchi gap esa undan keyingi bosqichni (iplarni yechib, eshish). “Next” ketma-ketlikdagi navbatdagi bosqichni bildiradi, shuning uchun to‘g‘ri javob D.\n\n“In contrast” va “Nonetheless” ikki bosqich orasida zidlik borligini bildiradi, lekin zidlik yo‘q. “For instance” iplarni yechishni pillani ivitishning misoli qilib ko‘rsatadi — bu noto‘g‘ri.",
+    "estimated_seconds": 55,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "transitions",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Astronomer Kamola Yusupova's computer models suggest that a distant planet's thick atmosphere traps enough heat to keep water on its surface in liquid form. ______ the models rely on estimates of the atmosphere's composition that have not yet been confirmed by direct observation, so Yusupova describes her conclusion as tentative.",
+    "stem": "Which choice completes the text with the most logical transition?",
+    "option_a": "Thus,",
+    "option_b": "Moreover,",
+    "option_c": "That said,",
+    "option_d": "For instance,",
+    "correct": "C",
+    "explanation_en": "The first sentence presents a conclusion suggested by Yusupova's models. The second sentence points out a limitation of those models—they depend on unconfirmed estimates—which is why she calls the conclusion tentative. “That said” introduces a qualification or caution about a preceding claim, so choice C is correct.\n\n“Thus” wrongly presents the models' limitation as a result of their conclusion. “Moreover” signals added support, but the second sentence weakens the claim rather than strengthening it. “For instance” signals an example, but the limitation is not an example of the planet trapping heat.",
+    "explanation_uz": "Birinchi gap Yusupova modellari ko‘rsatgan xulosani keltiradi. Ikkinchi gap esa shu modellarning kamchiligini — ular tasdiqlanmagan taxminlarga tayanishini — ko‘rsatadi; shuning uchun olima xulosani dastlabki deb ataydi. “That said” oldingi fikrga cheklov yoki ehtiyot izohini kiritadi, shuning uchun to‘g‘ri javob C.\n\n“Thus” modellarning kamchiligini ularning xulosasi natijasi qilib ko‘rsatadi — bu mantiqsiz. “Moreover” qo‘shimcha dalil qo‘shilayotganini bildiradi, ikkinchi gap esa fikrni kuchaytirmaydi, balki zaiflashtiradi. “For instance” misol keltirishni bildiradi, lekin bu kamchilik sayyora issiqlikni ushlab qolishiga misol emas.",
+    "estimated_seconds": 75,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "transitions",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Researchers who monitored a river fed by mountain snowmelt found that its water quality changed sharply over the course of a single year. ______ the concentration of dissolved salts in late summer was nearly three times higher than it was in spring, when large amounts of fresh meltwater diluted the river.",
+    "stem": "Which choice completes the text with the most logical transition?",
+    "option_a": "In contrast,",
+    "option_b": "Specifically,",
+    "option_c": "Regardless,",
+    "option_d": "Similarly,",
+    "correct": "B",
+    "explanation_en": "The first sentence makes a general claim: the river's water quality changed sharply over the year. The second sentence gives the precise details of that change—salt levels in late summer were nearly three times higher than in spring. “Specifically” introduces a more exact statement of a preceding general claim, so choice B is correct.\n\n“In contrast” is tempting because the second sentence compares late summer with spring, but that comparison is the very change described in the first sentence, not something that contrasts with it. “Regardless” suggests that the second sentence holds true despite the first. “Similarly” suggests a separate but parallel observation rather than a detailed explanation of the same one.",
+    "explanation_uz": "Birinchi gap umumiy fikrni bildiradi: daryo suvining sifati yil davomida keskin o‘zgargan. Ikkinchi gap shu o‘zgarishning aniq tafsilotlarini beradi — yozning oxirida tuz miqdori bahordagidan qariyb uch baravar yuqori bo‘lgan. “Specifically” oldingi umumiy fikrni aniqroq ifodalashni bildiradi, shuning uchun to‘g‘ri javob B.\n\n“In contrast” jozibali, chunki ikkinchi gap yoz oxirini bahor bilan solishtiradi, lekin bu solishtirish birinchi gapda aytilgan o‘zgarishning o‘zi, unga zid narsa emas. “Regardless” ikkinchi gap birinchisiga qaramay to‘g‘ri ekanini bildiradi. “Similarly” esa bir xil kuzatuvning batafsil izohini emas, alohida, o‘xshash kuzatuvni bildiradi.",
+    "estimated_seconds": 75,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  }
+]

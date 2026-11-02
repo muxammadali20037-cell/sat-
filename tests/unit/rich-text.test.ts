@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { parseInline, parseRichText, richTextToPlain } from '@/lib/rich-text/tokenize'
+import { collectMath, parseInline, parseRichText, richTextExcerpt, richTextToPlain } from '@/lib/rich-text/tokenize'
 
 describe('parseRichText', () => {
   it('treats HTML as literal text (never markup)', () => {
@@ -92,4 +92,38 @@ describe('emphasis around inline math', async () => {
       { type: 'italic', children: [{ type: 'text', value: 'ok' }] },
     ])
   })
+
+  describe('tables', () => {
+    const src = ['**Wheat yield (t/ha)**', '', '| Variety | Dry year | Wet year |', '| --- | ---: | :---: |', '| K-7 | 3.4 | $4.6$ |', '| L-2 | 2.0 |'].join('\n')
+
+    it('parses header, alignment, rows and pads short rows', () => {
+      const blocks = parseRichText(src)
+      expect(blocks[0]!.type).toBe('paragraph')
+      const t = blocks[1]!
+      expect(t.type).toBe('table')
+      if (t.type !== 'table') return
+      expect(t.align).toEqual([null, 'right', 'center'])
+      expect(t.header).toEqual([[{ type: 'text', value: 'Variety' }], [{ type: 'text', value: 'Dry year' }], [{ type: 'text', value: 'Wet year' }]])
+      expect(t.rows[0]![2]).toEqual([{ type: 'math', value: '4.6' }])
+      expect(t.rows[1]).toHaveLength(3)
+      expect(t.rows[1]![2]).toEqual([])
+    })
+
+    it('keeps pipes inside math and escaped pipes inside one cell', () => {
+      const t = parseRichText('| x | value |\n| --- | --- |\n| $|x - 2|$ | a \\| b |')[0]!
+      if (t.type !== 'table') throw new Error('expected a table')
+      expect(t.rows[0]![0]).toEqual([{ type: 'math', value: '|x - 2|' }])
+      expect(t.rows[0]![1]).toEqual([{ type: 'text', value: 'a | b' }])
+    })
+
+    it('needs a separator row; otherwise the lines stay a paragraph', () => {
+      expect(parseRichText('| a | b |\n| c | d |')[0]!.type).toBe('paragraph')
+    })
+
+    it('collects math from table cells and makes readable excerpts', () => {
+      expect(collectMath(parseRichText(src))).toEqual(['4.6'])
+      expect(richTextExcerpt('| Year | Otters |\n| --- | ---: |\n| 2014 | 0 |')).toBe('Year, Otters. 2014, 0.')
+    })
+  })
 })
+

@@ -300,6 +300,9 @@ describe('admin formatting', () => {
 
   it('makes plain excerpts of rich text', () => {
     expect(excerpt('If **$3x + 7 = 22$**, what is *x*?')).toBe('If 3x + 7 = 22, what is x?')
+    expect(excerpt('Solve $\\dfrac{2x - 1}{3} = 5$.')).toBe('Solve (2x - 1)/3 = 5.')
+    expect(excerpt('The supplier charges \\$12 per shirt and $5x$ in total.')).toBe('The supplier charges $12 per shirt and 5x in total.')
+    expect(excerpt('A sphere of volume $288\\pi$ cm³')).toBe('A sphere of volume 288π cm³')
     expect(excerpt('word '.repeat(50), 20)).toHaveLength(20)
   })
 })

@@ -1,0 +1,162 @@
+[
+  {
+    "skill_code": "text_structure_purpose",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "When people think of pollinators, they usually picture bees. Yet many crops depend on other animals. In a three-year study of cacao farms, entomologist Priya Nandan found that cacao flowers, which are tiny and grow directly on the tree's trunk, are pollinated almost entirely by small flies called midges. Because these midges breed in rotting leaves and fruit husks, Nandan suggests that farmers leave some of this plant material on the ground rather than clearing it away.",
+    "stem": "Which choice best states the main purpose of the text?",
+    "option_a": "To explain why bee populations have declined on cacao farms",
+    "option_b": "To compare several methods of clearing plant material from farms",
+    "option_c": "To present a finding about which insects pollinate a crop and describe a practical recommendation based on that finding",
+    "option_d": "To argue that flies are more important pollinators than bees for most crops",
+    "correct": "C",
+    "explanation_en": "The text notes that people usually think of bees as pollinators, reports Nandan's finding that midges pollinate cacao flowers, and ends with her suggestion that farmers leave the rotting plant material in which midges breed. Choice C captures both the finding and the recommendation. Choice A is wrong because the text never discusses a decline in bees. Choice B is wrong because the text does not compare clearing methods; it suggests not clearing some material at all. Choice D is too broad: the text discusses only cacao and says only that “many crops” depend on animals other than bees.",
+    "explanation_uz": "Matn avval odamlar changlatuvchi deganda odatda asalarini tasavvur qilishini aytadi, so‘ng Nandanning kakao gullarini midge deb ataladigan mayda pashshalar changlatishi haqidagi topilmasini keltiradi va oxirida fermerlarga shu pashshalar ko‘payadigan chirigan o‘simlik qoldiqlarini yerda qoldirishni tavsiya qiladi. C javob topilmani ham, tavsiyani ham qamrab oladi. A noto‘g‘ri: matnda asalarilar kamayib ketgani haqida gap yo‘q. B noto‘g‘ri: matnda tozalash usullari solishtirilmaydi, aksincha, qoldiqlarning bir qismini umuman tozalamaslik taklif qilinadi. D juda keng: matn faqat kakao haqida, boshqa ekinlar haqida esa faqat “many crops” asalarilardan boshqa hayvonlarga ham bog‘liqligi aytiladi.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "text_structure_purpose",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "The following text is adapted from a short story.\n\nGrandfather's workshop smelled of sawdust and lamp oil. His tools hung on the walls in neat rows, and each one was outlined in white chalk so that it could be returned to its exact place. __Even the smallest chisel had its own outline, no wider than a finger.__ In all his visits, Akmal had never once seen his grandfather search for anything; whatever the old man needed was always exactly where he reached for it.",
+    "stem": "Which choice best describes the function of the underlined sentence in the text as a whole?",
+    "option_a": "It provides a specific detail that emphasizes how carefully the grandfather has organized his workshop.",
+    "option_b": "It suggests that the grandfather's tools are too small to be useful.",
+    "option_c": "It introduces a contrast between the grandfather's habits and Akmal's habits.",
+    "option_d": "It explains why Akmal rarely visits the workshop.",
+    "correct": "A",
+    "explanation_en": "The sentences around the underlined one describe tools hanging in neat rows, each outlined in chalk, and a grandfather who never has to search for anything. The underlined sentence adds a precise detail (even the smallest chisel has its own outline) that reinforces this picture of careful organization, as choice A says. Choice B is unsupported: the chisel's size shows how thorough the system is, not that the tools are useless. Choice C is wrong because Akmal's own habits are never described. Choice D is wrong because the text refers to Akmal's many visits.",
+    "explanation_uz": "Tagiga chizilgan jumla atrofidagi gaplar asboblar qator-qator osilgani, har birining bo‘r bilan chizilgan joyi borligi va bobo hech qachon hech narsa qidirmasligini tasvirlaydi. Tagiga chizilgan jumla bu manzarani kuchaytiruvchi aniq tafsilot qo‘shadi: hatto eng kichik iskananing ham o‘z chizig‘i bor. Demak, to‘g‘ri javob — A. B asossiz: iskananing kichikligi tizim qanchalik puxta ekanini ko‘rsatadi, asboblar yaroqsizligini emas. C noto‘g‘ri, chunki Akmalning o‘z odatlari matnda tasvirlanmagan. D noto‘g‘ri: matnda Akmalning ko‘p marta kelgani aytiladi (“In all his visits”).",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "text_structure_purpose",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Many people assume that foxes cannot survive in busy, noisy cities. Yet red foxes have settled in a number of large cities. __Researchers in the city of Halbrecht estimated that more than 5,000 foxes live within the city limits, many of them in parks, along railway lines and in private gardens.__ Biologists think foxes do well in cities partly because they eat almost anything, from insects and fruit to food scraps left by people.",
+    "stem": "Which choice best describes the function of the underlined sentence in the text as a whole?",
+    "option_a": "It explains why foxes prefer cities to forests.",
+    "option_b": "It introduces a claim that the rest of the text argues against.",
+    "option_c": "It describes the method researchers used to count foxes.",
+    "option_d": "It provides an example supporting the statement that red foxes have settled in large cities.",
+    "correct": "D",
+    "explanation_en": "The sentence before the underlined one states that red foxes “have settled in a number of large cities,” and the underlined sentence gives a specific case (thousands of foxes living in Halbrecht) that supports that statement, as choice D says. Choice A is wrong because the text never compares cities with forests or says that foxes prefer cities. Choice B is wrong because nothing in the text argues against the estimate; the next sentence explains why foxes succeed in cities. Choice C is wrong because the sentence reports an estimate without explaining how it was made.",
+    "explanation_uz": "Tagiga chizilgan jumladan oldingi gapda tulkilar “bir qator yirik shaharlarga joylashgani” aytiladi. Tagiga chizilgan jumla esa shu fikrni qo‘llab-quvvatlovchi aniq misol keltiradi: Halbrecht shahrida minglab tulki yashaydi. Shuning uchun to‘g‘ri javob — D. A noto‘g‘ri: matnda shahar va o‘rmon solishtirilmaydi, tulkilar shaharni afzal ko‘rishi ham aytilmagan. B noto‘g‘ri: matnda bu hisob-kitobga qarshi fikr yo‘q, keyingi gap tulkilarning shaharda nega yaxshi yashashini tushuntiradi. C noto‘g‘ri: jumlada hisob natijasi beriladi, lekin u qanday usulda olingani tushuntirilmaydi.",
+    "estimated_seconds": 55,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "text_structure_purpose",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "For much of the twentieth century, art historians described the painter Ines Valdor (1889–1954) as a minor follower of better-known artists. That view rested largely on the small number of her paintings held in museums. In 2019, however, researchers cataloging a private family archive found more than two hundred of her works, including large landscapes built up with layering techniques that the artists she supposedly imitated never attempted. Many scholars now regard Valdor as an innovator in her own right.",
+    "stem": "Which choice best describes the overall structure of the text?",
+    "option_a": "It describes a painter's techniques and then explains why museums refused to display her work.",
+    "option_b": "It presents a long-held view of a painter and then describes a discovery that has led scholars to revise that view.",
+    "option_c": "It compares the work of two painters and then argues that one influenced the other.",
+    "option_d": "It summarizes a disagreement among scholars and then explains why that disagreement cannot be resolved.",
+    "correct": "B",
+    "explanation_en": "The text opens with the twentieth-century view of Valdor as a “minor follower,” explains what that view rested on, describes the 2019 discovery of more than two hundred of her works, and ends by noting that many scholars now see her as an innovator. Choice B matches this sequence. Choice A is wrong because the text never says museums refused to display her work; it says only that few of her paintings were held in museums. Choice C is wrong because no second painter is discussed. Choice D is wrong because the text presents a shift in scholarly opinion, not an unresolved disagreement.",
+    "explanation_uz": "Matn XX asrdagi Valdorni “ikkinchi darajali izdosh” deb hisoblagan qarash bilan boshlanadi, bu qarash nimaga asoslanganini tushuntiradi, 2019-yilda uning ikki yuzdan ortiq asari topilganini tasvirlaydi va ko‘plab olimlar endi uni novator deb bilishini aytib tugaydi. B javob aynan shu ketma-ketlikni ifodalaydi. A noto‘g‘ri: matnda muzeylar uning asarlarini ko‘rsatishdan bosh tortgani aytilmagan, faqat muzeylarda uning rasmlari kam bo‘lgani aytilgan. C noto‘g‘ri: matnda ikkinchi rassom muhokama qilinmaydi. D noto‘g‘ri: matnda hal qilinmagan bahs emas, olimlar fikrining o‘zgarishi tasvirlangan.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "text_structure_purpose",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Chemist Yusuf Karaev studies the bright turquoise glazes on pottery made in a twelfth-century workshop in Central Asia. Earlier researchers assumed that the color required a rare copper ore that had to be imported from distant mines. __Karaev's analysis of the glazes, however, revealed a copper compound that could have been produced from scrap metal sold in local markets.__ He suggests that the workshop's potters may have melted down worn-out copper pots and jugs to make their glazes.",
+    "stem": "Which choice best describes the function of the underlined sentence in the text as a whole?",
+    "option_a": "It presents an assumption that the rest of the text supports.",
+    "option_b": "It describes the method Karaev used to determine the age of the pottery.",
+    "option_c": "It presents a finding that challenges an earlier assumption and that leads to Karaev's suggestion.",
+    "option_d": "It explains why imported copper ore was difficult for potters to obtain.",
+    "correct": "C",
+    "explanation_en": "Before the underlined sentence, the text describes the earlier assumption that the glazes required imported ore. The underlined sentence, signaled by “however,” reports Karaev's finding that the copper could have come from local scrap metal, and the final sentence builds on this finding with his suggestion about recycled pots and jugs. Choice C describes both roles. Choice A is wrong because the sentence reports a finding rather than an assumption, and that finding undercuts the earlier view. Choice B is wrong because the analysis concerns the glazes' ingredients, not the pottery's age. Choice D is wrong because the sentence says nothing about difficulties in obtaining imported ore.",
+    "explanation_uz": "Tagiga chizilgan jumladan oldin matnda avvalgi taxmin — sir (glazur) uchun chetdan keltirilgan noyob mis rudasi kerak bo‘lgani — tasvirlanadi. Tagiga chizilgan jumla “however” so‘zi bilan Karaevning topilmasini beradi: mis mahalliy bozorlardagi metall parchalaridan olingan bo‘lishi mumkin. Oxirgi jumla esa shu topilmaga tayanib, eski mis idishlar qayta eritilgan bo‘lishi mumkin degan taxminni ilgari suradi. C javob ikkala vazifani ham to‘g‘ri tasvirlaydi. A noto‘g‘ri: jumla taxmin emas, topilma, va u avvalgi qarashga zid. B noto‘g‘ri: tahlil kulolchilik buyumlarining yoshi haqida emas, sirning tarkibi haqida. D noto‘g‘ri: jumlada rudani olib kelish qiyinligi haqida hech narsa aytilmagan.",
+    "estimated_seconds": 75,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "text_structure_purpose",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "The following text is from a poem. The speaker describes her father, who worked as a lighthouse keeper.\n\nMy father kept the light for forty years,\nAnd never once, he said, did he grow tired\nOf climbing all those stairs at dusk. The sea\nWas all the company he seemed to need.\nWhen ships passed far out, beyond the reach of voices,\nHe raised his hand to them as if to friends.",
+    "stem": "Which choice best states the main purpose of the text?",
+    "option_a": "To describe the dangers that ships faced near the lighthouse",
+    "option_b": "To explain how a lighthouse keeper operated the light each evening",
+    "option_c": "To criticize the father for isolating himself from other people",
+    "option_d": "To portray the father's devotion to his work and the sense of connection he felt with distant ships",
+    "correct": "D",
+    "explanation_en": "The poem stresses that the father kept the light “for forty years” and never tired of climbing the stairs, which shows his devotion, and it ends with him raising his hand to passing ships “as if to friends,” which shows his sense of connection to them. Choice D captures both ideas. Choice A is wrong because no dangers to ships are described. Choice B is wrong because the poem mentions climbing the stairs but does not explain how the light was operated. Choice C is wrong because the speaker describes her father's solitude without criticizing it; her tone is admiring, not disapproving.",
+    "explanation_uz": "She’rda ota mayoqni “qirq yil” davomida boshqargani va zinapoyadan chiqishdan hech qachon charchamagani ta’kidlanadi — bu uning ishiga sadoqatini ko‘rsatadi. She’r oxirida u uzoqdan o‘tayotgan kemalarga “do‘stlarga qilgandek” qo‘l ko‘taradi — bu uning kemalar bilan o‘zini yaqin his qilganini bildiradi. D javob ikkala fikrni ham qamrab oladi. A noto‘g‘ri: kemalarga tahdid soladigan xavflar tasvirlanmagan. B noto‘g‘ri: she’rda zinadan chiqish eslatiladi, lekin chiroq qanday yoqilgani tushuntirilmaydi. C noto‘g‘ri: so‘zlovchi otasining yolg‘izligini tanqid qilmaydi; uning ohangi tanqidiy emas, hurmat va hayratga to‘la.",
+    "estimated_seconds": 75,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "text_structure_purpose",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Economists have long observed that when a city adds lanes to a crowded highway, traffic often returns to its earlier level within a few years, because the extra space encourages more people to drive. Urban planner Mirela Costa argues that a similar pattern can work in public transit's favor. __When the city of Dunmere began running buses every ten minutes on a route that had once carried few passengers, ridership on that route tripled within two years, far exceeding planners' forecasts.__ Costa contends that forecasts based on current ridership may therefore consistently underestimate the demand that improved service can create.",
+    "stem": "Which choice best describes the function of the underlined sentence in the text as a whole?",
+    "option_a": "It offers an example that supports Costa's view that improving transit service can attract many new riders.",
+    "option_b": "It presents evidence that challenges the economists' observation about highway traffic.",
+    "option_c": "It explains why planners' forecasts of highway traffic have often been inaccurate.",
+    "option_d": "It describes a weakness in Costa's argument that the final sentence attempts to address.",
+    "correct": "A",
+    "explanation_en": "Costa argues that the pattern seen with highways (added capacity drawing more users) can also benefit transit. The underlined sentence describes a case in which more frequent buses led to tripled ridership, beyond what planners predicted, and the final sentence draws a conclusion from that case. The sentence is therefore an example supporting Costa's view, as choice A says. Choice B is wrong because the Dunmere example parallels the highway pattern rather than challenging it. Choice C is wrong because the forecasts mentioned concern bus ridership, not highway traffic. Choice D is wrong because the example strengthens Costa's argument rather than revealing a weakness in it.",
+    "explanation_uz": "Costaning fikricha, avtomagistrallarda kuzatiladigan qonuniyat — imkoniyat kengaytirilsa, foydalanuvchilar ko‘payadi — jamoat transportiga ham foyda keltirishi mumkin. Tagiga chizilgan jumlada avtobuslar tez-tez qatnay boshlagach, yo‘nalishdagi yo‘lovchilar soni rejalashtiruvchilar kutganidan ham ko‘proq, uch baravar oshgani tasvirlanadi. Oxirgi jumla esa shu misoldan xulosa chiqaradi. Demak, bu jumla Costaning fikrini qo‘llab-quvvatlovchi misol — to‘g‘ri javob A. B noto‘g‘ri: Dunmere misoli avtomagistral haqidagi kuzatuvga zid emas, aksincha, unga o‘xshash. C noto‘g‘ri: tilga olingan prognozlar avtomagistral harakati haqida emas, avtobus yo‘lovchilari haqida. D noto‘g‘ri: misol Costaning dalilini zaiflashtirmaydi, aksincha, kuchaytiradi.",
+    "estimated_seconds": 85,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "text_structure_purpose",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "The following text is from a short story.\n\nMrs. Halloran had lived on Beech Street for thirty years, and in that time she had formed opinions about every house on it. The Pruitts' hedge was too tall; the Lanes left their porch light burning all night, which was wasteful. When a new family moved into number fourteen, she watched from her window for a full week before deciding that they were, on the whole, acceptable, though she reserved judgment on the dog. __It did not occur to her that the street might have been forming opinions of its own.__",
+    "stem": "Which choice best describes the function of the underlined sentence in the text as a whole?",
+    "option_a": "It reveals that Mrs. Halloran's neighbors strongly dislike her.",
+    "option_b": "It adds a gently ironic perspective on Mrs. Halloran's habit of judging her neighbors.",
+    "option_c": "It explains why Mrs. Halloran took a week to form an opinion of the new family.",
+    "option_d": "It suggests that Mrs. Halloran has begun to regret her opinions about the street.",
+    "correct": "B",
+    "explanation_en": "Most of the text shows Mrs. Halloran confidently judging her neighbors. The underlined sentence turns this around by pointing out something she never considers: her neighbors may be judging her in the same way. This creates mild irony at her expense, as choice B says. Choice A is too extreme: the sentence says only that the street might have opinions of its own, not that the neighbors dislike her. Choice C is wrong because the sentence does not explain her week of watching. Choice D is wrong because the sentence says the idea “did not occur to her,” so she cannot be regretting anything.",
+    "explanation_uz": "Matnning katta qismi Halloran xonimning qo‘shnilari haqida ishonch bilan hukm chiqarishini ko‘rsatadi. Tagiga chizilgan jumla vaziyatga teskari tomondan qaraydi: u hech o‘ylab ko‘rmagan narsa — qo‘shnilar ham u haqida xuddi shunday fikr yuritayotgan bo‘lishi mumkin. Bu uning ustidan yengil kinoya (ironiya) yaratadi — to‘g‘ri javob B. A haddan tashqari kuchli: jumlada ko‘cha ahlining ham o‘z fikri bo‘lishi mumkinligi aytiladi, qo‘shnilar uni yomon ko‘rishi emas. C noto‘g‘ri: jumla uning bir hafta kuzatganini tushuntirmaydi. D noto‘g‘ri: jumlada bu fikr uning “xayoliga ham kelmagani” aytiladi, demak u hech narsadan afsuslanmayapti.",
+    "estimated_seconds": 85,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  }
+]

@@ -1,0 +1,143 @@
+[
+  {
+    "skill_code": "evaluating_statistical_claims",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "A school wants to know how its students feel about a new lunch menu. On one Monday, a staff member surveys 100 students who are buying lunch in the school cafeteria. Which of the following is the best reason the results might not represent the opinions of all students at the school?",
+    "option_a": "A sample of 100 students is too large to analyze accurately.",
+    "option_b": "The survey was given on a Monday instead of on a Friday.",
+    "option_c": "The staff member should have surveyed teachers instead of students.",
+    "option_d": "Students who buy lunch at school may feel differently about the menu than students who do not buy lunch at school.",
+    "correct": "D",
+    "explanation_en": "The sample includes only students who chose to buy the school lunch that day. Students who bring lunch from home, possibly because they dislike the menu, had no chance to be surveyed, so the sample may be biased toward students who like the menu. A random sample of all students would avoid this problem. Choice A is wrong because a larger sample is not a problem. Choice B names a difference that, by itself, gives no reason to expect biased opinions, and choice C changes the question: the school wants to know what students think, not teachers.",
+    "explanation_uz": "Tanlanmaga faqat o‘sha kuni maktab tushligini sotib olgan o‘quvchilar kirgan. Tushlikni uydan olib keladigan o‘quvchilar (balki aynan menyuni yoqtirmagani uchun) so‘rovga tushish imkoniga ega bo‘lmagan, shuning uchun tanlanma menyuni yoqtiradiganlar tomonga og‘ishi mumkin. Barcha o‘quvchilar orasidan tasodifiy tanlanma olish bu muammoni bartaraf etardi. A javob noto‘g‘ri, chunki tanlanmaning kattaligi muammo emas. B javobdagi kun farqining o‘zi fikrlar noxolis bo‘lishiga asos bermaydi, C javob esa savolni o‘zgartirib yuboradi: maktab o‘qituvchilarning emas, o‘quvchilarning fikrini bilmoqchi.",
+    "estimated_seconds": 65,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "evaluating_statistical_claims",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "Researchers surveyed a random sample of 500 adults in a city. The adults who reported walking at least 30 minutes a day reported lower stress levels, on average, than the adults who reported walking less. Which of the following is the best reason the researchers cannot conclude that walking at least 30 minutes a day reduces stress for adults in the city?",
+    "option_a": "The adults were not randomly assigned to walk at least 30 minutes a day or to walk less.",
+    "option_b": "The sample was not selected at random.",
+    "option_c": "A sample of 500 adults is too small to support any conclusion.",
+    "option_d": "The study included only adults and no children.",
+    "correct": "A",
+    "explanation_en": "To conclude that walking **causes** lower stress, the researchers would need an experiment in which participants are randomly assigned to walk or not. Here the adults chose their own walking habits, so other differences between the groups (such as free time, health or type of job) could explain the lower stress. Choice B is false: the sample was random, which allows the association to be generalized to adults in the city, but random sampling alone does not establish cause and effect. Choice C is wrong because 500 randomly selected adults are enough to support conclusions about an association, and choice D is irrelevant to a claim about adults.",
+    "explanation_uz": "Yurish stressni **kamaytiradi** degan xulosa uchun ishtirokchilar yurish yoki yurmaslikka tasodifiy taqsimlangan tajriba kerak. Bu yerda kattalar yurish odatini o‘zlari tanlagan, shuning uchun guruhlar orasidagi boshqa farqlar (bo‘sh vaqt, sog‘liq, ish turi va hokazo) stress darajasining pastligini tushuntirishi mumkin. B javob noto‘g‘ri: tanlanma tasodifiy bo‘lgan — bu bog‘liqlikni shahardagi kattalarga umumlashtirishga imkon beradi, lekin tasodifiy tanlashning o‘zi sabab-oqibat munosabatini isbotlamaydi. C javob ham xato, chunki tasodifiy tanlangan 500 kishi bog‘liqlik haqida xulosa chiqarish uchun yetarli; D javob esa kattalar haqidagi da’voga aloqador emas.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "evaluating_statistical_claims",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "A health researcher selected a random sample of 150 nurses from all nurses working at hospitals in one city. The nurses in the sample worked an average of 41 hours per week. To which of the following groups can the results of this study most appropriately be generalized?",
+    "option_a": "Only the 150 nurses in the sample",
+    "option_b": "All hospital employees in the city",
+    "option_c": "All nurses working at hospitals in the country",
+    "option_d": "All nurses working at hospitals in the city",
+    "correct": "D",
+    "explanation_en": "Because the sample was selected at random from the nurses working at hospitals in this city, the results can be generalized to that population: all nurses working at hospitals in the city. Choice C goes too far, since nurses in other cities had no chance of being selected. Choice B includes other hospital employees who were not sampled. Choice A is too cautious: random sampling is exactly what allows a generalization beyond the sample.",
+    "explanation_uz": "Tanlanma shu shahardagi kasalxonalarda ishlaydigan hamshiralar orasidan tasodifiy olingan, shuning uchun natijalarni aynan shu bosh to‘plamga — shahardagi kasalxonalarda ishlaydigan barcha hamshiralarga umumlashtirish mumkin. C javob haddan oshadi: boshqa shaharlardagi hamshiralar tanlanmaga tushish imkoniga ega bo‘lmagan. B javob tanlanmaga kirmagan boshqa kasalxona xodimlarini ham qo‘shib yuboradi. A javob esa ortiqcha ehtiyotkor: aynan tasodifiy tanlash natijani tanlanmadan tashqariga umumlashtirishga imkon beradi.",
+    "estimated_seconds": 65,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "evaluating_statistical_claims",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "A council member collected data from 40 districts in a country and found that districts with more public libraries per 10,000 residents tend to have higher average household incomes. The council member claims that building more libraries in a district will raise household incomes in that district. Which of the following is the best evaluation of this claim?",
+    "option_a": "The claim is not supported, because the data show only an association; for example, districts with higher incomes may be able to pay for more libraries.",
+    "option_b": "The claim is supported, because the data show a positive association between the number of libraries and household income.",
+    "option_c": "The claim is not supported, because data from 40 districts are too few to show any association.",
+    "option_d": "The claim is supported for the 40 districts in the study but not for any other districts.",
+    "correct": "A",
+    "explanation_en": "The data come from an observational study: no one randomly assigned numbers of libraries to districts. A positive association does not show that libraries cause higher incomes. The relationship could run the other way (districts with higher incomes can afford more libraries), or a third factor could affect both. Choice B is the trap: an association alone does not support a cause-and-effect claim. Choice C is wrong because the problem is the type of study, not the number of districts, and choice D still accepts the causal claim.",
+    "explanation_uz": "Ma’lumotlar kuzatuv tadqiqotidan olingan: hech kim tumanlardagi kutubxonalar sonini tasodifiy belgilamagan. Musbat bog‘liqlik kutubxonalar daromadni oshirishini ko‘rsatmaydi. Munosabat teskari yo‘nalishda bo‘lishi ham mumkin (daromadi yuqori tumanlar ko‘proq kutubxona qura oladi) yoki ikkalasiga ham uchinchi omil ta’sir qilishi mumkin. B javob — tuzoq: bog‘liqlikning o‘zi sabab-oqibat haqidagi da’voni tasdiqlamaydi. C javob noto‘g‘ri, chunki muammo tumanlar sonida emas, tadqiqot turida; D javob esa baribir sabab-oqibat da’vosini qabul qiladi.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "evaluating_statistical_claims",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "Using the survey that gives the more reliable estimate for all of the city's residents, it is estimated that $p\\%$ of the city's residents support the plan. What is the value of $p$?",
+    "passage": "A city government wanted to estimate the percentage of its residents who support a plan to extend a tram line. It collected data in two ways.\n\n- Survey 1: A poll was posted on the city's website, and 1,250 visitors chose to respond. Of these, 900 said they support the plan.\n- Survey 2: A random sample of 400 residents was selected from a list of all city residents and contacted by phone. Of these, 136 said they support the plan.",
+    "spr_answers": [
+      "34"
+    ],
+    "explanation_en": "Survey 1 is a voluntary-response sample: people decided for themselves whether to respond, so people with strong opinions (and people who visit the city's website) may be overrepresented. Its large size does not fix that bias. Survey 2 used a random sample of residents, so it gives the more reliable estimate: $\\frac{136}{400} = 0.34$, so $p = 34$. Entering 72, from $\\frac{900}{1{,}250}$, uses the biased online poll.",
+    "explanation_uz": "1-so‘rovnoma — ixtiyoriy javob berilgan so‘rovnoma: odamlar javob berish-bermaslikni o‘zlari hal qilgan, shuning uchun kuchli fikrga ega bo‘lganlar (va shahar saytiga kiradiganlar) ortiqcha ulushda bo‘lishi mumkin. Katta hajm bu noxolislikni tuzatmaydi. 2-so‘rovnomada aholi orasidan tasodifiy tanlanma olingan, shuning uchun u ishonchliroq baho beradi: $\\frac{136}{400} = 0.34$, demak $p = 34$. 72 ($\\frac{900}{1{,}250}$) deb yozish noxolis onlayn so‘rovnomadan foydalanishni bildiradi.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "evaluating_statistical_claims",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "A researcher wants to determine whether taking a certain supplement improves sleep quality for adults in a town. Which of the following study designs would best allow the researcher to reach a cause-and-effect conclusion that applies to all adults in the town?",
+    "option_a": "Ask adults in the town who already take the supplement to rate their sleep quality, and compare their ratings with those of adults in the town who do not take it.",
+    "option_b": "Recruit adult volunteers from a sleep clinic in the town, and randomly assign half of them to take the supplement and the other half to take a placebo.",
+    "option_c": "Select a random sample of adults from the town, and let each selected adult choose whether to take the supplement.",
+    "option_d": "Select a random sample of adults from the town, and randomly assign half of them to take the supplement and the other half to take a placebo.",
+    "correct": "D",
+    "explanation_en": "Two features are needed. Random **assignment** to the supplement or a placebo makes the groups alike except for the supplement, which allows a cause-and-effect conclusion. Random **selection** from all adults in the town allows that conclusion to be generalized to the town. Only choice D has both. Choice B has random assignment, but sleep-clinic volunteers may differ from typical adults in the town, so the conclusion would apply only to people like them. In choices A and C, people choose their own treatment, so no cause-and-effect conclusion is possible.",
+    "explanation_uz": "Ikki xususiyat kerak. Qo‘shimcha yoki platseboga tasodifiy **taqsimlash** guruhlarni qo‘shimchadan boshqa barcha jihatdan o‘xshash qiladi — bu sabab-oqibat xulosasiga imkon beradi. Shaharchadagi barcha kattalar orasidan tasodifiy **tanlash** esa bu xulosani butun shaharchaga umumlashtirishga imkon beradi. Ikkalasi faqat D javobda bor. B javobda tasodifiy taqsimlash bor, lekin uyqu klinikasiga kelgan ko‘ngillilar shaharchaning odatiy kattalaridan farq qilishi mumkin, shuning uchun xulosa faqat ularga o‘xshash odamlarga taalluqli bo‘ladi. A va C javoblarda odamlar qo‘shimchani o‘zlari tanlaydi, shuning uchun sabab-oqibat xulosasini chiqarib bo‘lmaydi.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "evaluating_statistical_claims",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "An online store selected 400 of its customers at random. Each selected customer could choose whether to use a new one-click checkout feature for one month. At the end of the month, the customers who chose to use the feature had spent more, on average, than the customers who did not. Which of the following conclusions is best supported by this study?",
+    "option_a": "Using the feature causes the store's customers to spend more.",
+    "option_b": "Among the store's customers, using the feature is associated with spending more, but the study does not show that the feature causes customers to spend more.",
+    "option_c": "Using the feature causes customers of all online stores to spend more.",
+    "option_d": "No conclusion can be drawn about the store's customers, because only 400 customers were studied.",
+    "correct": "B",
+    "explanation_en": "The customers were randomly **selected** from all of the store's customers, so the association can be generalized to the store's customers. But they were not randomly **assigned** to use the feature; they chose for themselves. Customers who already spend a lot might be the ones most likely to try a faster checkout, so the study cannot show cause and effect. Choice A is the trap: it claims causation from a study without random assignment. Choice C makes the same error and also overgeneralizes to other stores. Choice D is wrong because a random sample of 400 is enough to support conclusions about the population it was drawn from.",
+    "explanation_uz": "Mijozlar do‘konning barcha mijozlari orasidan tasodifiy **tanlangan**, shuning uchun bog‘liqlikni do‘kon mijozlariga umumlashtirish mumkin. Lekin ular yangi funksiyadan foydalanishga tasodifiy **taqsimlanmagan** — buni o‘zlari tanlashgan. Ko‘p xarid qiladigan mijozlar tezroq to‘lov usulini sinab ko‘rishga ko‘proq moyil bo‘lishi mumkin, shuning uchun tadqiqot sabab-oqibatni ko‘rsata olmaydi. A javob — tuzoq: u tasodifiy taqsimlanmagan tadqiqotdan sabab-oqibat xulosasini chiqaradi. C javob xuddi shu xatoga yo‘l qo‘yadi va natijani boshqa do‘konlarga ham yoyadi. D javob noto‘g‘ri, chunki 400 kishilik tasodifiy tanlanma u olingan bosh to‘plam haqida xulosa chiqarish uchun yetarli.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "evaluating_statistical_claims",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "A city has three districts: North District has 12,000 adults, Central District has 20,000 adults, and South District has 8,000 adults. A researcher wants to survey a sample of the city's adults in which each district is represented in proportion to its number of adults. The researcher has already selected 90 adults at random from North District. To keep the sample proportional, how many adults in total should the complete sample from all three districts contain?",
+    "spr_answers": [
+      "300"
+    ],
+    "explanation_en": "The numbers of adults are in the ratio $12{,}000 : 20{,}000 : 8{,}000 = 3 : 5 : 2$, so the sample must be split in the same ratio. North District's 90 adults correspond to 3 parts, so 1 part is 30 adults. Central District needs $5 \\times 30 = 150$ adults and South District needs $2 \\times 30 = 60$, so the complete sample has $90 + 150 + 60 = 300$ adults. Check: North District has $\\frac{12{,}000}{40{,}000} = 30\\%$ of the city's adults, and $\\frac{90}{300} = 30\\%$. Entering 150 or 60 gives only one district, and 270 (90 adults from each district) would overrepresent South District and underrepresent Central District.",
+    "explanation_uz": "Kattalar soni $12{,}000 : 20{,}000 : 8{,}000 = 3 : 5 : 2$ nisbatda, demak tanlanma ham shu nisbatda bo‘linishi kerak. North District’dan olingan 90 kishi 3 qismga to‘g‘ri keladi, ya’ni 1 qism — 30 kishi. Central District’dan $5 \\times 30 = 150$, South District’dan $2 \\times 30 = 60$ kishi kerak, butun tanlanma esa $90 + 150 + 60 = 300$ kishi. Tekshiruv: North District shahar kattalarining $\\frac{12{,}000}{40{,}000} = 30\\%$ ini tashkil etadi va $\\frac{90}{300} = 30\\%$ ✓. 150 yoki 60 — faqat bitta tuman uchun son; 270 (har tumandan 90 kishidan) esa South District’ni ortiqcha, Central District’ni esa yetarlicha ifodalamaydi.",
+    "estimated_seconds": 125,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  }
+]

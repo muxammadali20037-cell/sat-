@@ -10,6 +10,7 @@ import { DataTable, Pagination } from '@/components/ui/data-table'
 import { Badge } from '@/components/ui/card'
 import { FilterBar, FilterSearch, FilterSelect } from '@/components/admin/filter-bar'
 import { QuestionStatusBadge } from '@/components/admin/status-badge'
+import { BULK_FORM_ID, BulkQuestionActions, SelectAllRows } from '@/components/admin/bulk-question-actions'
 import { SegmentedLinks } from '@/components/admin/metric-card'
 import {
   DIFFICULTIES,
@@ -47,8 +48,9 @@ export default async function QuestionsPage({ searchParams }: { searchParams: Pr
     type: f.type,
     status: review ? '' : f.status,
     source: f.source,
+    tag: f.tag,
   }
-  const filtered = Boolean(f.q || f.subject || f.domain || f.skill || f.difficulty || f.type || f.source || (!review && f.status))
+  const filtered = Boolean(f.q || f.subject || f.domain || f.skill || f.difficulty || f.type || f.source || f.tag || (!review && f.status))
   const domains = taxonomy.domains.filter((d) => !f.subject || d.subjectId === f.subject)
   const skills = taxonomy.skills.filter((s) => (f.domain ? s.domainId === f.domain : domains.some((d) => d.id === s.domainId)))
 
@@ -87,6 +89,7 @@ export default async function QuestionsPage({ searchParams }: { searchParams: Pr
       </div>
       <FilterBar action="/admin/questions" resetHref={review ? '/admin/questions?view=review' : '/admin/questions'}>
         {review && <input type="hidden" name="view" value="review" />}
+        {f.tag && <input type="hidden" name="tag" value={f.tag} />}
         <FilterSearch defaultValue={f.q} placeholder="Search stem or passage" />
         <FilterSelect name="subject" label="Subject" defaultValue={f.subject} options={[{ value: '', label: 'All' }, ...taxonomy.subjects.map((s) => ({ value: s.id, label: s.name }))]} />
         <FilterSelect name="domain" label="Domain" defaultValue={f.domain} options={[{ value: '', label: 'All' }, ...domains.map((d) => ({ value: d.id, label: d.name }))]} />
@@ -98,7 +101,20 @@ export default async function QuestionsPage({ searchParams }: { searchParams: Pr
         )}
         <FilterSelect name="source" label="Source" defaultValue={f.source} options={[{ value: '', label: 'All' }, ...QUESTION_SOURCES.map((s) => ({ value: s, label: QUESTION_SOURCE_LABELS[s] }))]} />
       </FilterBar>
+      {f.tag && (
+        <p className="mb-3 text-sm text-muted-foreground">
+          Showing questions tagged <span className="font-medium text-foreground">{f.tag}</span>.{' '}
+          <Link href={buildHref('/admin/questions', { ...base, tag: '' })} className="font-medium text-primary hover:underline">
+            Show all tags
+          </Link>
+        </p>
+      )}
 
+      {rows.length > 0 && (
+        <div className="mb-3">
+          <BulkQuestionActions canPublish={canEdit} />
+        </div>
+      )}
       <DataTable
         caption={review ? 'Review queue' : 'Questions'}
         rows={rows}
@@ -119,6 +135,21 @@ export default async function QuestionsPage({ searchParams }: { searchParams: Pr
                 }
         }
         columns={[
+          {
+            key: 'select',
+            header: <SelectAllRows />,
+            className: 'w-10',
+            cell: (r) => (
+              <input
+                type="checkbox"
+                name="ids"
+                value={r.id}
+                form={BULK_FORM_ID}
+                aria-label={`Select: ${excerpt(r.stem, 60)}`}
+                className="size-4 accent-primary"
+              />
+            ),
+          },
           {
             key: 'stem',
             header: 'Question',

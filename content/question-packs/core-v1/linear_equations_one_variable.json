@@ -1,0 +1,144 @@
+[
+  {
+    "skill_code": "linear_equations_one_variable",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "What value of $x$ is the solution to the equation $7x - 15 = 2x + 20$?",
+    "option_a": "$1$",
+    "option_b": "$\\frac{35}{9}$",
+    "option_c": "$7$",
+    "option_d": "$35$",
+    "correct": "C",
+    "explanation_en": "Subtract $2x$ from both sides: $5x - 15 = 20$. Add $15$ to both sides: $5x = 35$. Divide both sides by $5$: $x = 7$.\n\nCheck: $7(7) - 15 = 34$ and $2(7) + 20 = 34$, so both sides are equal.\n\nChoice A is tempting if $-15$ is moved to the right side without changing its sign, which gives $5x = 20 - 15$ and $x = 1$.",
+    "explanation_uz": "Ikkala tomondan $2x$ ni ayiramiz: $5x - 15 = 20$. Ikkala tomonga $15$ ni qo‘shamiz: $5x = 35$. Ikkala tomonni $5$ ga bo‘lamiz: $x = 7$.\n\nTekshiruv: $7(7) - 15 = 34$ va $2(7) + 20 = 34$ — ikkala tomon teng.\n\nA variant — tuzoq: $-15$ ni o‘ng tomonga ishorasini o‘zgartirmasdan o‘tkazsangiz, $5x = 20 - 15$ va $x = 1$ hosil bo‘ladi.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "linear_equations_one_variable",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "A school club is ordering T-shirts for its members. The supplier charges \\$12 per T-shirt plus a one-time shipping fee of \\$36. The club's total bill was \\$396. How many T-shirts did the club order?",
+    "option_a": "$30$",
+    "option_b": "$33$",
+    "option_c": "$36$",
+    "option_d": "$360$",
+    "correct": "A",
+    "explanation_en": "Let $n$ be the number of T-shirts. The total cost is $12n + 36 = 396$.\n\nSubtract $36$ from both sides: $12n = 360$. Divide by $12$: $n = 30$.\n\nChoice B ($33$) divides the whole bill by $12$, ignoring the shipping fee that is paid only once.",
+    "explanation_uz": "$n$ — futbolkalar soni bo‘lsin. Umumiy narx: $12n + 36 = 396$.\n\nIkkala tomondan $36$ ni ayiramiz: $12n = 360$. $12$ ga bo‘lamiz: $n = 30$.\n\nB variant ($33$) — butun summani $12$ ga bo‘lish natijasi; bunda faqat bir marta to‘lanadigan yetkazib berish haqi hisobga olinmagan.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "linear_equations_one_variable",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "If $5x + 3 = 23$, what is the value of $10x - 4$?",
+    "option_a": "$4$",
+    "option_b": "$36$",
+    "option_c": "$42$",
+    "option_d": "$46$",
+    "correct": "B",
+    "explanation_en": "Subtract $3$ from both sides: $5x = 20$, so $x = 4$. Then $10x - 4 = 10(4) - 4 = 36$.\n\nFaster: $10x = 2(5x) = 2(20) = 40$, so $10x - 4 = 36$.\n\nChoice A ($4$) is the value of $x$, not the value of the expression $10x - 4$ that the question asks for.",
+    "explanation_uz": "Ikkala tomondan $3$ ni ayiramiz: $5x = 20$, demak $x = 4$. U holda $10x - 4 = 10(4) - 4 = 36$.\n\nQisqa yo‘l: $10x = 2(5x) = 2(20) = 40$, demak $10x - 4 = 36$.\n\nA variant ($4$) — bu $x$ ning qiymati, savol esa $10x - 4$ ifodaning qiymatini so‘rayapti.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "linear_equations_one_variable",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "What is the solution to the equation $\\dfrac{2x - 1}{3} = \\dfrac{x + 4}{2}$?",
+    "option_a": "$\\frac{11}{4}$",
+    "option_b": "$5$",
+    "option_c": "$6$",
+    "option_d": "$14$",
+    "correct": "D",
+    "explanation_en": "Multiply both sides by $6$, the least common denominator: $2(2x - 1) = 3(x + 4)$.\n\nDistribute: $4x - 2 = 3x + 12$. Subtract $3x$ from both sides and add $2$: $x = 14$.\n\nCheck: $\\frac{2(14) - 1}{3} = \\frac{27}{3} = 9$ and $\\frac{14 + 4}{2} = \\frac{18}{2} = 9$.\n\nChoice C ($6$) comes from multiplying only $x$ by $3$ on the right side and forgetting the $4$: $4x - 2 = 3x + 4$.",
+    "explanation_uz": "Ikkala tomonni umumiy maxraj $6$ ga ko‘paytiramiz: $2(2x - 1) = 3(x + 4)$.\n\nQavslarni ochamiz: $4x - 2 = 3x + 12$. Ikkala tomondan $3x$ ni ayirib, $2$ ni qo‘shamiz: $x = 14$.\n\nTekshiruv: $\\frac{2(14) - 1}{3} = \\frac{27}{3} = 9$ va $\\frac{14 + 4}{2} = \\frac{18}{2} = 9$.\n\nC variant ($6$) — o‘ng tomonda faqat $x$ ni $3$ ga ko‘paytirib, $4$ ni unutish natijasi: $4x - 2 = 3x + 4$.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "linear_equations_one_variable",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "A plumber charges a fixed fee of \\$60 for a house call plus \\$40 per hour of work. An electrician charges a fixed fee of \\$15 for a house call plus \\$55 per hour of work. For how many hours of work would the plumber and the electrician charge the same total amount?",
+    "option_a": "$3$",
+    "option_b": "$5$",
+    "option_c": "$45$",
+    "option_d": "$180$",
+    "correct": "A",
+    "explanation_en": "For $h$ hours of work, the plumber charges $60 + 40h$ dollars and the electrician charges $15 + 55h$ dollars.\n\nSet the totals equal: $60 + 40h = 15 + 55h$. Subtract $40h$ and $15$ from both sides: $45 = 15h$, so $h = 3$.\n\nCheck: for 3 hours, both charge $60 + 120 = 15 + 165 = 180$ dollars.\n\nChoice D ($180$) is the equal total charge in dollars, not the number of hours the question asks for.",
+    "explanation_uz": "$h$ soatlik ish uchun santexnik $60 + 40h$ dollar, elektrik esa $15 + 55h$ dollar oladi.\n\nUlarni tenglashtiramiz: $60 + 40h = 15 + 55h$. Ikkala tomondan $40h$ va $15$ ni ayiramiz: $45 = 15h$, demak $h = 3$.\n\nTekshiruv: 3 soat uchun ikkalasi ham $60 + 120 = 15 + 165 = 180$ dollar oladi.\n\nD variant ($180$) — bu soatlar soni emas, balki teng bo‘lgan umumiy to‘lov (dollarda).",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "linear_equations_one_variable",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "$$\\frac{2}{3}(x + 5) = \\frac{1}{4}x + 3$$\n\nWhat is the solution to the given equation?",
+    "spr_answers": [
+      "-4/5",
+      "-.8",
+      "-0.8"
+    ],
+    "explanation_en": "Multiply both sides by $12$ to clear the fractions: $8(x + 5) = 3x + 36$.\n\nDistribute: $8x + 40 = 3x + 36$. Subtract $3x$ and $40$ from both sides: $5x = -4$, so $x = -\\frac{4}{5}$. Enter -4/5 or -.8.\n\nA common mistake is multiplying only $\\frac{1}{4}x$ by $12$ and not the constant $3$, which gives $8x + 40 = 3x + 3$ and the wrong value $x = -\\frac{37}{5}$.",
+    "explanation_uz": "Kasrlardan qutulish uchun ikkala tomonni $12$ ga ko‘paytiramiz: $8(x + 5) = 3x + 36$.\n\nQavsni ochamiz: $8x + 40 = 3x + 36$. Ikkala tomondan $3x$ va $40$ ni ayiramiz: $5x = -4$, demak $x = -\\frac{4}{5}$. Javobni -4/5 yoki -.8 shaklida kiriting.\n\nKo‘p uchraydigan xato: $12$ ga faqat $\\frac{1}{4}x$ ni ko‘paytirib, ozod had $3$ ni unutish. Unda $8x + 40 = 3x + 3$ va noto‘g‘ri javob $x = -\\frac{37}{5}$ chiqadi.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "linear_equations_one_variable",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "$$a(3x - 2) + 5x = 17x - b$$\n\nIn the given equation, $a$ and $b$ are constants. If the equation has infinitely many solutions, what is the value of $a + b$?",
+    "spr_answers": [
+      "12"
+    ],
+    "explanation_en": "Expand the left side: $3ax - 2a + 5x = (3a + 5)x - 2a$.\n\nAn equation has infinitely many solutions only when both sides are identical, so the coefficients of $x$ and the constant terms must match: $3a + 5 = 17$ and $-2a = -b$.\n\nFrom $3a + 5 = 17$, $a = 4$. Then $b = 2a = 8$, so $a + b = 4 + 8 = 12$.\n\nA tempting slip is writing $b = -2a = -8$ (losing a negative sign), which gives the wrong sum $-4$.",
+    "explanation_uz": "Chap tomondagi qavsni ochamiz: $3ax - 2a + 5x = (3a + 5)x - 2a$.\n\nTenglama cheksiz ko‘p yechimga ega bo‘lishi uchun ikkala tomon aynan bir xil bo‘lishi kerak: $x$ oldidagi koeffitsiyentlar ham, ozod hadlar ham teng: $3a + 5 = 17$ va $-2a = -b$.\n\n$3a + 5 = 17$ dan $a = 4$. U holda $b = 2a = 8$, demak $a + b = 4 + 8 = 12$.\n\nTuzoq: manfiy ishorani yo‘qotib $b = -2a = -8$ deb yozsangiz, noto‘g‘ri yig‘indi $-4$ chiqadi.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "linear_equations_one_variable",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "$$\\frac{1}{2}(ax + 6) - 4 = 3x - b$$\n\nIn the given equation, $a$ and $b$ are constants. If the equation has no solution, which of the following must be true?",
+    "option_a": "$a = 3$ and $b \\ne 1$",
+    "option_b": "$a = 6$ and $b = 1$",
+    "option_c": "$a = 6$ and $b \\ne -2$",
+    "option_d": "$a = 6$ and $b \\ne 1$",
+    "correct": "D",
+    "explanation_en": "Simplify the left side: $\\frac{1}{2}(ax + 6) - 4 = \\frac{a}{2}x + 3 - 4 = \\frac{a}{2}x - 1$. The equation becomes $\\frac{a}{2}x - 1 = 3x - b$.\n\nA linear equation has no solution when the coefficients of $x$ are equal but the constant terms are different.\n\nEqual coefficients: $\\frac{a}{2} = 3$, so $a = 6$. Different constants: $-1 \\ne -b$, so $b \\ne 1$. (If $b = 1$, both sides would be identical and the equation would have infinitely many solutions, which rules out choice B.)\n\nChoice C comes from multiplying only $ax$ by $\\frac{1}{2}$ and not the $6$, which gives the constant $6 - 4 = 2$ and the incorrect condition $b \\ne -2$.",
+    "explanation_uz": "Chap tomonni soddalashtiramiz: $\\frac{1}{2}(ax + 6) - 4 = \\frac{a}{2}x + 3 - 4 = \\frac{a}{2}x - 1$. Tenglama $\\frac{a}{2}x - 1 = 3x - b$ ko‘rinishiga keladi.\n\nChiziqli tenglamaning yechimi yo‘q bo‘lishi uchun $x$ oldidagi koeffitsiyentlar teng, ozod hadlar esa har xil bo‘lishi kerak.\n\nKoeffitsiyentlar teng: $\\frac{a}{2} = 3$, demak $a = 6$. Ozod hadlar har xil: $-1 \\ne -b$, demak $b \\ne 1$. ($b = 1$ bo‘lsa, ikkala tomon bir xil bo‘lib, tenglama cheksiz ko‘p yechimga ega bo‘ladi — shuning uchun B variant ham noto‘g‘ri.)\n\nC variant — $\\frac{1}{2}$ ni faqat $ax$ ga ko‘paytirib, $6$ ga ko‘paytirmaslik natijasi: unda ozod had $6 - 4 = 2$ bo‘lib, noto‘g‘ri shart $b \\ne -2$ chiqadi.",
+    "estimated_seconds": 130,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  }
+]

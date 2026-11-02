@@ -1,0 +1,140 @@
+[
+  {
+    "skill_code": "percentages",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "Of the 260 students in a school's tenth grade, 35% take a foreign-language elective. How many tenth-grade students take a foreign-language elective?",
+    "option_a": "$91$",
+    "option_b": "$169$",
+    "option_c": "$225$",
+    "option_d": "$351$",
+    "correct": "A",
+    "explanation_en": "35% of 260 is $0.35 \\times 260 = 91$. Choice B, 169, is the number of students who do **not** take the elective (65% of 260). Choice C subtracts 35 from 260, treating the percent as a number of students. Choice D increases 260 by 35% ($1.35 \\times 260$) instead of finding 35% of 260.",
+    "explanation_uz": "260 ning 35% i: $0.35 \\times 260 = 91$. B javob (169) — tanlov fanini **o‘qimaydigan** o‘quvchilar soni (260 ning 65% i). C javob foizni o‘quvchilar soni deb olib, 260 dan 35 ni ayirgan. D javob esa 260 ning 35% ini topish o‘rniga 260 ni 35% ga oshirgan ($1.35 \\times 260$).",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "percentages",
+    "difficulty": "easy",
+    "question_type": "spr",
+    "stem": "A phone plan costs \\$32 per month. Next year, the monthly price will increase by 12.5%. What will the new monthly price be, in dollars?",
+    "spr_answers": [
+      "36"
+    ],
+    "explanation_en": "A 12.5% increase multiplies the price by $1 + 0.125 = 1.125$: $32 \\times 1.125 = 36$. (The increase itself is $0.125 \\times 32 = 4$ dollars.) Entering 4 gives only the amount of the increase, not the new price. Enter 36 without a dollar sign.",
+    "explanation_uz": "12.5% ga oshish narxni $1 + 0.125 = 1.125$ ga ko‘paytiradi: $32 \\times 1.125 = 36$. (Oshishning o‘zi $0.125 \\times 32 = 4$ dollar.) 4 deb yozsangiz, bu yangi narx emas, faqat oshish miqdori bo‘ladi. Javob maydoniga dollar belgisisiz 36 deb yozing.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "percentages",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "In a parking lot, 18 of the 72 cars are white. What percent of the cars in the parking lot are white?",
+    "option_a": "4%",
+    "option_b": "18%",
+    "option_c": "25%",
+    "option_d": "75%",
+    "correct": "C",
+    "explanation_en": "Divide the part by the whole: $\\frac{18}{72} = 0.25$, which is 25%. Choice D, 75%, is the percent of cars that are **not** white. Choice B treats the number of white cars as a percent, and choice A divides the whole by the part ($72 \\div 18 = 4$).",
+    "explanation_uz": "Qismni butunga bo‘lamiz: $\\frac{18}{72} = 0.25$, ya’ni 25%. D javob (75%) — oq **bo‘lmagan** mashinalar ulushi. B javob oq mashinalar sonini foiz deb olgan, A javob esa butunni qismga bo‘lgan ($72 \\div 18 = 4$).",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "percentages",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "A city's buses carried 40,000 riders in March and 50,000 riders in April. The number of riders in April was what percent greater than the number of riders in March?",
+    "option_a": "10%",
+    "option_b": "20%",
+    "option_c": "25%",
+    "option_d": "125%",
+    "correct": "C",
+    "explanation_en": "Percent increase $= \\frac{\\text{new} - \\text{original}}{\\text{original}} \\times 100\\%$, and the original value is March's: $\\frac{50{,}000 - 40{,}000}{40{,}000} = \\frac{10{,}000}{40{,}000} = 0.25$, or 25%. Choice B divides the increase by April's value ($\\frac{10{,}000}{50{,}000} = 20\\%$); that answers the different question “March was what percent less than April?” Choice D, 125%, is April's ridership as a percent **of** March's, not the percent greater. Choice A treats the increase of 10 thousand riders as 10%.",
+    "explanation_uz": "Foiz o‘zgarishi $= \\frac{\\text{new} - \\text{original}}{\\text{original}} \\times 100\\%$, bunda asos (eski qiymat) — mart oyi: $\\frac{50{,}000 - 40{,}000}{40{,}000} = \\frac{10{,}000}{40{,}000} = 0.25$, ya’ni 25%. B javob farqni aprel qiymatiga bo‘lgan ($\\frac{10{,}000}{50{,}000} = 20\\%$) — bu “mart apreldan necha foiz kam?” degan boshqa savolning javobi. D javob (125%) — aprel yo‘lovchilari martdagilarning necha foizini **tashkil etishi**, necha foiz ko‘pligi emas. A javob 10 ming yo‘lovchilik farqni 10% deb olgan.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "percentages",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "The population of a town increased by 8% from 2020 to 2025. The population in 2025 was 16,200. What was the population of the town in 2020?",
+    "spr_answers": [
+      "15000"
+    ],
+    "explanation_en": "Let $x$ be the 2020 population. An 8% increase multiplies it by 1.08, so $1.08x = 16{,}200$ and $x = \\frac{16{,}200}{1.08} = 15{,}000$. A tempting shortcut is to decrease 16,200 by 8%: $0.92 \\times 16{,}200 = 14{,}904$. That is wrong because the 8% was calculated from the 2020 population, not from the 2025 population. Check: $15{,}000 \\times 1.08 = 16{,}200$. Enter 15000 (without a comma).",
+    "explanation_uz": "2020 yilgi aholini $x$ deb olamiz. 8% ga oshish uni 1.08 ga ko‘paytiradi: $1.08x = 16{,}200$, demak $x = \\frac{16{,}200}{1.08} = 15{,}000$. 16,200 ni 8% ga kamaytirish ($0.92 \\times 16{,}200 = 14{,}904$) — tuzoq: 8% 2025 yilgi emas, 2020 yilgi aholidan hisoblangan. Tekshiruv: $15{,}000 \\times 1.08 = 16{,}200$ ✓. Javob maydoniga vergulsiz 15000 deb yozing.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "percentages",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "A store reduced the price of a laptop by 30%. Later, the store reduced the new price by an additional 20%. The final price is what percent less than the original price?",
+    "option_a": "10%",
+    "option_b": "44%",
+    "option_c": "50%",
+    "option_d": "56%",
+    "correct": "B",
+    "explanation_en": "Apply the reductions one after the other. A 30% reduction multiplies the price by 0.70, and a further 20% reduction multiplies the new price by 0.80, so the final price is $0.70 \\times 0.80 \\times P = 0.56P$. The final price is 56% of the original price, so it is $100\\% - 56\\% = 44\\%$ less than the original. Choice C, 50%, adds the two percents, but the second 20% is taken from the already reduced price, so it removes less than 20% of the original price. Choice D, 56%, is the final price as a percent **of** the original, not the percent decrease, and choice A subtracts the percents.",
+    "explanation_uz": "Chegirmalarni ketma-ket qo‘llaymiz. 30% chegirma narxni 0.70 ga, keyingi 20% chegirma esa yangi narxni 0.80 ga ko‘paytiradi: oxirgi narx $0.70 \\times 0.80 \\times P = 0.56P$. Oxirgi narx dastlabki narxning 56% i, demak u dastlabki narxdan $100\\% - 56\\% = 44\\%$ kam. C javob (50%) ikki foizni qo‘shgan, lekin ikkinchi 20% allaqachon kamaygan narxdan olinadi, shuning uchun u dastlabki narxning 20% idan kamroq qismini olib tashlaydi. D javob (56%) — oxirgi narx dastlabki narxning **necha foizi** ekani, kamayish foizi emas. A javob esa foizlarni ayirgan.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "percentages",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "The positive number $k$ is 60% greater than the positive number $m$, and $m$ is 25% less than the positive number $n$. The value of $k$ is what percent of the value of $n$?",
+    "option_a": "120%",
+    "option_b": "128%",
+    "option_c": "135%",
+    "option_d": "160%",
+    "correct": "A",
+    "explanation_en": "Translate each statement into a multiplier. “60% greater than $m$” means $k = 1.6m$, and “25% less than $n$” means $m = 0.75n$. Substituting, $k = 1.6(0.75n) = 1.2n$, so $k$ is 120% of $n$. Choice C adds and subtracts the percents ($100\\% + 60\\% - 25\\%$), which ignores that the 60% is a percent of $m$, not of $n$. Choice B comes from writing $n = 1.25m$ instead of $m = 0.75n$; in “25% less than $n$,” the base is $n$. Choice D compares $k$ with $m$ only.",
+    "explanation_uz": "Har bir jumlani ko‘paytuvchiga aylantiramiz. “$m$ dan 60% katta” — $k = 1.6m$; “$n$ dan 25% kichik” — $m = 0.75n$. O‘rniga qo‘ysak: $k = 1.6(0.75n) = 1.2n$, ya’ni $k$ son $n$ ning 120% i. C javob foizlarni qo‘shib-ayirgan ($100\\% + 60\\% - 25\\%$), lekin 60% $n$ dan emas, $m$ dan olinadi. B javob $m = 0.75n$ o‘rniga $n = 1.25m$ deb yozishdan kelib chiqadi; “$n$ dan 25% kichik” jumlasida asos — $n$. D javob esa $k$ ni faqat $m$ bilan solishtirgan.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "percentages",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "The price of a backpack was increased by $p\\%$, where $p > 0$. Later, the new price was decreased by $p\\%$. The final price was 96% of the original price. What is the value of $p$?",
+    "spr_answers": [
+      "20"
+    ],
+    "explanation_en": "Let the original price be $P$. After the increase and the decrease, the price is $P\\left(1 + \\frac{p}{100}\\right)\\left(1 - \\frac{p}{100}\\right) = P\\left(1 - \\frac{p^2}{10{,}000}\\right)$. Setting this equal to $0.96P$ gives $\\frac{p^2}{10{,}000} = 0.04$, so $p^2 = 400$ and $p = 20$ (since $p > 0$). Check: $1.20 \\times 0.80 = 0.96$. A common mistake is to assume that equal percent increases and decreases cancel, or to split the 4% loss and enter 2. They never cancel: the decrease is applied to a larger amount, so the final price is always $\\frac{p^2}{100}$ percent below the original.",
+    "explanation_uz": "Dastlabki narx $P$ bo‘lsin. Oshirish va kamaytirishdan keyin narx $P\\left(1 + \\frac{p}{100}\\right)\\left(1 - \\frac{p}{100}\\right) = P\\left(1 - \\frac{p^2}{10{,}000}\\right)$ bo‘ladi. Buni $0.96P$ ga tenglaymiz: $\\frac{p^2}{10{,}000} = 0.04$, ya’ni $p^2 = 400$ va $p = 20$ (shartga ko‘ra $p > 0$). Tekshiruv: $1.20 \\times 0.80 = 0.96$ ✓. Ko‘p uchraydigan xato — bir xil foizga oshirish va kamaytirish bir-birini yo‘qqa chiqaradi deb o‘ylash yoki 4% yo‘qotishni ikkiga bo‘lib, 2 deb yozish. Ular hech qachon teng kuchli emas: kamaytirish kattaroq narxga qo‘llanadi, shuning uchun oxirgi narx har doim dastlabkisidan $\\frac{p^2}{100}$ foiz past bo‘ladi.",
+    "estimated_seconds": 130,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  }
+]

@@ -1,0 +1,140 @@
+[
+  {
+    "skill_code": "right_triangles_trigonometry",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "In right triangle $XYZ$, angle $Z$ is the right angle, $XZ = 8$, and $YZ = 15$. What is the value of $\\sin X$?",
+    "option_a": "$\\frac{8}{17}$",
+    "option_b": "$\\frac{8}{15}$",
+    "option_c": "$\\frac{15}{17}$",
+    "option_d": "$\\frac{15}{8}$",
+    "correct": "C",
+    "explanation_en": "First find the hypotenuse: $XY = \\sqrt{8^2 + 15^2} = \\sqrt{289} = 17$. The side opposite angle $X$ is $YZ = 15$, so $\\sin X = \\frac{\\text{opposite}}{\\text{hypotenuse}} = \\frac{15}{17}$. Choice C is correct.\n\nChoice A ($\\frac{8}{17}$) is $\\cos X$, adjacent over hypotenuse. Choice B ($\\frac{8}{15}$) is $\\tan Y$, adjacent over opposite from angle $X$'s point of view. Choice D ($\\frac{15}{8}$) is $\\tan X$, opposite over adjacent.",
+    "explanation_uz": "Avval gipotenuzani topamiz: $XY = \\sqrt{8^2 + 15^2} = \\sqrt{289} = 17$. $X$ burchakka qarama-qarshi katet $YZ = 15$, demak $\\sin X = \\frac{\\text{qarama-qarshi katet}}{\\text{gipotenuza}} = \\frac{15}{17}$. To‘g‘ri javob C.\n\nA ($\\frac{8}{17}$) — bu $\\cos X$ (yopishgan katet / gipotenuza). B ($\\frac{8}{15}$) — bu $\\tan Y$, ya’ni $X$ burchak uchun yopishgan katetning qarama-qarshi katetga nisbati. D ($\\frac{15}{8}$) — bu $\\tan X$ (qarama-qarshi katet / yopishgan katet).",
+    "estimated_seconds": 65,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "right_triangles_trigonometry",
+    "difficulty": "easy",
+    "question_type": "spr",
+    "stem": "A rectangular park is 40 meters wide and 96 meters long. A straight path runs across the park from one corner to the opposite corner. What is the length, in meters, of the path?",
+    "spr_answers": [
+      "104"
+    ],
+    "explanation_en": "The path is the hypotenuse of a right triangle whose legs are two sides of the park. By the Pythagorean theorem, its length is $\\sqrt{40^2 + 96^2} = \\sqrt{1{,}600 + 9{,}216} = \\sqrt{10{,}816} = 104$ meters. Shortcut: 40, 96, 104 is 8 times the Pythagorean triple 5, 12, 13.",
+    "explanation_uz": "Yo‘lak katetlari parkning ikki tomoni bo‘lgan to‘g‘ri burchakli uchburchakning gipotenuzasi. Pifagor teoremasiga ko‘ra uning uzunligi $\\sqrt{40^2 + 96^2} = \\sqrt{1{,}600 + 9{,}216} = \\sqrt{10{,}816} = 104$ metr. Qisqa yo‘l: 40, 96, 104 — bu 5, 12, 13 Pifagor uchligining 8 barobari.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "right_triangles_trigonometry",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "For an acute angle that measures $x^\\circ$, $\\sin(x^\\circ) = \\cos(26^\\circ)$. What is the value of $x$?",
+    "option_a": "26",
+    "option_b": "64",
+    "option_c": "116",
+    "option_d": "154",
+    "correct": "B",
+    "explanation_en": "The sine of an acute angle equals the cosine of its complement: $\\sin(x^\\circ) = \\cos((90 - x)^\\circ)$. So $90 - x = 26$, and $x = 64$. Choice B is correct. (Check: $\\sin 64^\\circ \\approx 0.899$ and $\\cos 26^\\circ \\approx 0.899$.)\n\nChoice A assumes that the sine and cosine of the same angle are equal, which is true only for $45^\\circ$. Choices C ($90 + 26$) and D ($180 - 26$) are not acute angles.",
+    "explanation_uz": "O‘tkir burchakning sinusi uni $90^\\circ$ gacha to‘ldiruvchi burchakning kosinusiga teng: $\\sin(x^\\circ) = \\cos((90 - x)^\\circ)$. Demak $90 - x = 26$ va $x = 64$. To‘g‘ri javob B. (Tekshiruv: $\\sin 64^\\circ \\approx 0.899$ va $\\cos 26^\\circ \\approx 0.899$.)\n\nA — bir xil burchakning sinusi va kosinusi teng deb olingan; bu faqat $45^\\circ$ uchun to‘g‘ri. C ($90 + 26$) va D ($180 - 26$) o‘tkir burchak emas.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "right_triangles_trigonometry",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "In triangle $PQR$, angle $R$ is a right angle, the measure of angle $P$ is $30^\\circ$, and $PQ = 18$. What is the length of $\\overline{PR}$?",
+    "option_a": "9",
+    "option_b": "$6\\sqrt{3}$",
+    "option_c": "$9\\sqrt{2}$",
+    "option_d": "$9\\sqrt{3}$",
+    "correct": "D",
+    "explanation_en": "Triangle $PQR$ is a $30^\\circ$-$60^\\circ$-$90^\\circ$ triangle, so its side lengths are in the ratio $1 : \\sqrt{3} : 2$. The hypotenuse is $PQ = 18$, so the shorter leg, $QR$ (opposite the $30^\\circ$ angle at $P$), is 9, and the longer leg, $PR$ (opposite the $60^\\circ$ angle at $Q$), is $9\\sqrt{3}$. Equivalently, $PR = 18 \\cos 30^\\circ = 18 \\cdot \\frac{\\sqrt{3}}{2} = 9\\sqrt{3}$. Choice D is correct.\n\nChoice A (9) is $QR$, the side opposite the $30^\\circ$ angle. Choice B ($6\\sqrt{3}$) divides the hypotenuse by $\\sqrt{3}$. Choice C ($9\\sqrt{2}$) uses the side ratio of a $45^\\circ$-$45^\\circ$-$90^\\circ$ triangle.",
+    "explanation_uz": "$PQR$ — $30^\\circ$-$60^\\circ$-$90^\\circ$ uchburchak, uning tomonlari $1 : \\sqrt{3} : 2$ nisbatda bo‘ladi. Gipotenuza $PQ = 18$, demak qisqa katet $QR$ ($P$ dagi $30^\\circ$ burchakka qarama-qarshi) 9 ga, uzun katet $PR$ ($Q$ dagi $60^\\circ$ burchakka qarama-qarshi) esa $9\\sqrt{3}$ ga teng. Boshqacha hisoblasak: $PR = 18 \\cos 30^\\circ = 18 \\cdot \\frac{\\sqrt{3}}{2} = 9\\sqrt{3}$. To‘g‘ri javob D.\n\nA (9) — bu $QR$, ya’ni $30^\\circ$ burchakka qarama-qarshi tomon. B ($6\\sqrt{3}$) — gipotenuza $\\sqrt{3}$ ga bo‘lingan. C ($9\\sqrt{2}$) — $45^\\circ$-$45^\\circ$-$90^\\circ$ uchburchakning nisbati ishlatilgan.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "right_triangles_trigonometry",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "The diagonal of a square has length 12. What is the area of the square?",
+    "spr_answers": [
+      "72"
+    ],
+    "explanation_en": "A diagonal divides the square into two $45^\\circ$-$45^\\circ$-$90^\\circ$ triangles, so the diagonal is $\\sqrt{2}$ times the side length $s$: $s\\sqrt{2} = 12$, which gives $s = \\frac{12}{\\sqrt{2}} = 6\\sqrt{2}$. The area is $s^2 = (6\\sqrt{2})^2 = 72$. Shortcut: by the Pythagorean theorem, $s^2 + s^2 = 12^2$, so $2s^2 = 144$ and the area $s^2$ is 72.\n\nA common error is answering 144, which is the square of the diagonal, not the area.",
+    "explanation_uz": "Diagonal kvadratni ikkita $45^\\circ$-$45^\\circ$-$90^\\circ$ uchburchakka ajratadi, shuning uchun diagonal tomondan $\\sqrt{2}$ marta uzun: $s\\sqrt{2} = 12$, bundan $s = \\frac{12}{\\sqrt{2}} = 6\\sqrt{2}$. Yuza $s^2 = (6\\sqrt{2})^2 = 72$. Qisqa yo‘l: Pifagor teoremasiga ko‘ra $s^2 + s^2 = 12^2$, ya’ni $2s^2 = 144$ va yuza $s^2 = 72$.\n\nKo‘p uchraydigan xato — 144 deb javob berish; bu yuza emas, diagonalning kvadrati.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "right_triangles_trigonometry",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "In right triangle $ABC$, angle $C$ is the right angle, $\\tan A = \\frac{7}{24}$, and $AB = 50$. What is the length of $\\overline{BC}$?",
+    "option_a": "7",
+    "option_b": "14",
+    "option_c": "25",
+    "option_d": "48",
+    "correct": "B",
+    "explanation_en": "$\\tan A = \\frac{\\text{opposite}}{\\text{adjacent}} = \\frac{BC}{AC} = \\frac{7}{24}$, so $BC = 7k$ and $AC = 24k$ for some positive number $k$. Then $AB = \\sqrt{(7k)^2 + (24k)^2} = \\sqrt{625k^2} = 25k$. Since $AB = 50$, $k = 2$, so $BC = 14$ (and $AC = 48$). Choice B is correct.\n\nChoice A (7) treats the numerator of the ratio as the actual length. Choice C (25) is the hypotenuse of a 7-24-25 triangle, not of this triangle. Choice D (48) is $AC$, the side adjacent to angle $A$.",
+    "explanation_uz": "$\\tan A = \\frac{\\text{qarama-qarshi katet}}{\\text{yopishgan katet}} = \\frac{BC}{AC} = \\frac{7}{24}$, demak qandaydir musbat $k$ uchun $BC = 7k$ va $AC = 24k$. U holda $AB = \\sqrt{(7k)^2 + (24k)^2} = \\sqrt{625k^2} = 25k$. $AB = 50$ bo‘lgani uchun $k = 2$, demak $BC = 14$ (va $AC = 48$). To‘g‘ri javob B.\n\nA (7) — nisbatning suratini haqiqiy uzunlik deb olish. C (25) — 7-24-25 uchburchakning gipotenuzasi, bu uchburchakniki emas. D (48) — bu $AC$, ya’ni $A$ burchakka yopishgan katet.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "right_triangles_trigonometry",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "In triangle $ABC$, the altitude from vertex $B$ meets side $\\overline{AC}$ at point $D$, and $BD = 6$. The measure of angle $A$ is $45^\\circ$, and the measure of angle $C$ is $30^\\circ$. What is the length of $\\overline{AC}$?",
+    "option_a": "$6 + 2\\sqrt{3}$",
+    "option_b": "12",
+    "option_c": "$6 + 6\\sqrt{3}$",
+    "option_d": "$12 + 6\\sqrt{2}$",
+    "correct": "C",
+    "explanation_en": "The altitude $\\overline{BD}$ divides triangle $ABC$ into two right triangles. In triangle $ABD$, angle $A$ is $45^\\circ$, so it is a $45^\\circ$-$45^\\circ$-$90^\\circ$ triangle and $AD = BD = 6$. In triangle $CBD$, angle $C$ is $30^\\circ$, so $\\tan 30^\\circ = \\frac{BD}{DC}$, which gives $DC = \\frac{6}{\\tan 30^\\circ} = 6\\sqrt{3}$ (the longer leg of a $30^\\circ$-$60^\\circ$-$90^\\circ$ triangle is $\\sqrt{3}$ times the shorter leg). So $AC = AD + DC = 6 + 6\\sqrt{3}$. Choice C is correct.\n\nChoice A uses $DC = \\frac{6}{\\sqrt{3}} = 2\\sqrt{3}$, which puts $\\sqrt{3}$ on the wrong leg. Choice B treats both right triangles as $45^\\circ$-$45^\\circ$-$90^\\circ$ triangles. Choice D adds the hypotenuses $AB = 6\\sqrt{2}$ and $BC = 12$ instead of the two parts of $\\overline{AC}$.",
+    "explanation_uz": "$\\overline{BD}$ balandlik $ABC$ uchburchakni ikkita to‘g‘ri burchakli uchburchakka ajratadi. $ABD$ uchburchakda $A$ burchak $45^\\circ$, demak u $45^\\circ$-$45^\\circ$-$90^\\circ$ uchburchak va $AD = BD = 6$. $CBD$ uchburchakda $C$ burchak $30^\\circ$, shuning uchun $\\tan 30^\\circ = \\frac{BD}{DC}$, bundan $DC = \\frac{6}{\\tan 30^\\circ} = 6\\sqrt{3}$ ($30^\\circ$-$60^\\circ$-$90^\\circ$ uchburchakda uzun katet qisqa katetdan $\\sqrt{3}$ marta uzun). Demak $AC = AD + DC = 6 + 6\\sqrt{3}$. To‘g‘ri javob C.\n\nA — $DC = \\frac{6}{\\sqrt{3}} = 2\\sqrt{3}$ deb olingan, ya’ni $\\sqrt{3}$ noto‘g‘ri katetga qo‘yilgan. B — ikkala uchburchak ham $45^\\circ$-$45^\\circ$-$90^\\circ$ deb hisoblangan. D — $\\overline{AC}$ ning ikki bo‘lagi o‘rniga gipotenuzalar $AB = 6\\sqrt{2}$ va $BC = 12$ qo‘shilgan.",
+    "estimated_seconds": 130,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "right_triangles_trigonometry",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "In the equation $\\sin((4x - 8)^\\circ) = \\cos((2x + 14)^\\circ)$, both $(4x - 8)^\\circ$ and $(2x + 14)^\\circ$ are measures of acute angles. What is the value of $x$?",
+    "spr_answers": [
+      "14"
+    ],
+    "explanation_en": "For acute angles, $\\sin(a^\\circ) = \\cos(b^\\circ)$ exactly when the angles are complementary, that is, when $a + b = 90$. So $(4x - 8) + (2x + 14) = 90$, which gives $6x + 6 = 90$ and $x = 14$. Check: the angles are $48^\\circ$ and $42^\\circ$, both acute, and $48 + 42 = 90$.\n\nSetting the two angles equal ($4x - 8 = 2x + 14$) gives $x = 11$, which is incorrect: it would require $\\sin 36^\\circ = \\cos 36^\\circ$, and that is false.",
+    "explanation_uz": "O‘tkir burchaklar uchun $\\sin(a^\\circ) = \\cos(b^\\circ)$ tenglik faqat burchaklar bir-birini $90^\\circ$ gacha to‘ldirganda, ya’ni $a + b = 90$ bo‘lganda bajariladi. Demak $(4x - 8) + (2x + 14) = 90$, bundan $6x + 6 = 90$ va $x = 14$. Tekshiramiz: burchaklar $48^\\circ$ va $42^\\circ$, ikkalasi ham o‘tkir va $48 + 42 = 90$.\n\nBurchaklarni tenglashtirish ($4x - 8 = 2x + 14$) $x = 11$ ni beradi, lekin bu xato: u holda $\\sin 36^\\circ = \\cos 36^\\circ$ bo‘lishi kerak edi, bu esa noto‘g‘ri.",
+    "estimated_seconds": 115,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  }
+]

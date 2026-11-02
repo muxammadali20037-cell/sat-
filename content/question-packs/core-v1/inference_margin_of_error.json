@@ -1,0 +1,140 @@
+[
+  {
+    "skill_code": "inference_margin_of_error",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "A school has 1,200 students. In a random sample of 80 students from the school, 24 students said they walk to school. Based on this sample, which of the following is the best estimate of the number of students at the school who walk to school?",
+    "option_a": "$24$",
+    "option_b": "$288$",
+    "option_c": "$360$",
+    "option_d": "$840$",
+    "correct": "C",
+    "explanation_en": "In the sample, $\\frac{24}{80} = 0.30$, or 30%, of the students walk to school. Because the sample was selected at random, this proportion is a reasonable estimate for the whole school: $0.30 \\times 1{,}200 = 360$ students. Choice B treats 24 as a percent ($0.24 \\times 1{,}200$), but 24 is a count out of 80 students, not out of 100. Choice D estimates the students who do **not** walk, and choice A is only the count in the sample.",
+    "explanation_uz": "Tanlanmada o‘quvchilarning $\\frac{24}{80} = 0.30$ qismi, ya’ni 30% i maktabga piyoda keladi. Tanlanma tasodifiy olingani uchun bu ulush butun maktab uchun ham asosli baho bo‘ladi: $0.30 \\times 1{,}200 = 360$ o‘quvchi. B javob 24 ni foiz deb olgan ($0.24 \\times 1{,}200$), vaholanki 24 — 100 emas, 80 o‘quvchi ichidagi son. D javob piyoda **kelmaydigan** o‘quvchilar bahosi, A javob esa faqat tanlanmadagi son.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "inference_margin_of_error",
+    "difficulty": "easy",
+    "question_type": "spr",
+    "stem": "A polling organization surveyed a random sample of registered voters in a region. Based on the sample, it estimated that 46% of all registered voters in the region support a proposed law, with a margin of error of 3 percentage points. Based on this estimate and margin of error, the greatest plausible percentage of the region's registered voters who support the law is $p\\%$. What is the value of $p$?",
+    "spr_answers": [
+      "49"
+    ],
+    "explanation_en": "A margin of error gives a range of plausible values for the population percentage: $46\\% \\pm 3\\%$, or from 43% to 49%. The greatest plausible value is $46 + 3 = 49$, so $p = 49$. Entering 43 gives the least plausible value, not the greatest.",
+    "explanation_uz": "Xatolik chegarasi bosh to‘plamdagi foiz uchun ehtimoliy qiymatlar oralig‘ini beradi: $46\\% \\pm 3\\%$, ya’ni 43% dan 49% gacha. Eng katta ehtimoliy qiymat $46 + 3 = 49$, demak $p = 49$. 43 deb yozish — eng kichik ehtimoliy qiymatni berish, eng kattasini emas.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "inference_margin_of_error",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "Each member in a random sample of 150 members of a city's public library was asked how many books they read each month. The sample mean was 4.2 books, with an associated margin of error of 0.6 book. Which of the following is a plausible value for the mean number of books read each month by all members of the library?",
+    "option_a": "$3.4$",
+    "option_b": "$3.7$",
+    "option_c": "$4.9$",
+    "option_d": "$5.2$",
+    "correct": "B",
+    "explanation_en": "Plausible values for the population mean lie within one margin of error of the sample mean: from $4.2 - 0.6 = 3.6$ to $4.2 + 0.6 = 4.8$ books. Of the choices, only 3.7 is in this interval. Choice C, 4.9, is close to 4.8 but lies outside the interval; 3.4 and 5.2 are farther outside.",
+    "explanation_uz": "Bosh to‘plam o‘rta qiymatining ehtimoliy qiymatlari tanlanma o‘rta qiymatidan bitta xatolik chegarasi masofasida yotadi: $4.2 - 0.6 = 3.6$ dan $4.2 + 0.6 = 4.8$ gacha. Variantlar ichida faqat 3.7 shu oraliqda. C javob (4.9) 4.8 ga yaqin, lekin oraliqdan tashqarida; 3.4 va 5.2 esa undan ham uzoqroq.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "inference_margin_of_error",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "Researchers selected a random sample of 150 commuters in a city and estimated the mean commute time of all commuters in the city, with a margin of error of 4.1 minutes. A second team will select a random sample of 600 commuters from the same city and use the same method and the same confidence level. Which of the following is most likely true about the margin of error of the second team's estimate?",
+    "option_a": "It will be less than 4.1 minutes.",
+    "option_b": "It will be equal to 4.1 minutes.",
+    "option_c": "It will be greater than 4.1 minutes.",
+    "option_d": "It will be about 16.4 minutes, because the sample is 4 times as large.",
+    "correct": "A",
+    "explanation_en": "With the same population, method and confidence level, a larger random sample gives a more precise estimate, so its margin of error is most likely smaller. A sample of 600 is 4 times as large as a sample of 150, so the margin of error would most likely be less than 4.1 minutes (theory suggests roughly half as large). Choices C and D get the relationship backward: collecting more data reduces uncertainty; it does not increase it.",
+    "explanation_uz": "Bosh to‘plam, usul va ishonch darajasi bir xil bo‘lsa, kattaroq tasodifiy tanlanma aniqroq baho beradi, shuning uchun uning xatolik chegarasi kichikroq bo‘lishi ehtimoli katta. 600 — 150 dan 4 marta katta, demak xatolik chegarasi 4.1 daqiqadan kichik bo‘ladi (nazariyaga ko‘ra, taxminan ikki baravar kichik). C va D javoblar munosabatni teskari tushungan: ko‘proq ma’lumot noaniqlikni oshirmaydi, balki kamaytiradi.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "inference_margin_of_error",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "A town has 18,000 households. In a random sample of 250 households in the town, 35 have no internet connection. Based on the sample, it is estimated that 14% of all households in the town have no internet connection, with a margin of error of 4 percentage points. Based on this estimate and margin of error, what is the greatest plausible number of households in the town that have no internet connection?",
+    "spr_answers": [
+      "3240"
+    ],
+    "explanation_en": "The plausible percentages are $14\\% \\pm 4\\%$, or from 10% to 18%. The greatest plausible number of households is 18% of all 18,000 households: $0.18 \\times 18{,}000 = 3{,}240$. Entering 2,520 ($0.14 \\times 18{,}000$) gives the point estimate, not the greatest plausible value. Applying 18% to the 250 sampled households instead of the whole town gives 45, which describes the sample rather than the population. Enter 3240 (without a comma).",
+    "explanation_uz": "Ehtimoliy foizlar $14\\% \\pm 4\\%$, ya’ni 10% dan 18% gacha. Eng katta ehtimoliy son — barcha 18,000 xonadonning 18% i: $0.18 \\times 18{,}000 = 3{,}240$. 2,520 ($0.14 \\times 18{,}000$) — bu nuqtaviy baho, eng katta ehtimoliy qiymat emas. 18% ni butun shaharcha o‘rniga 250 talik tanlanmaga qo‘llash 45 ni beradi — bu bosh to‘plamni emas, tanlanmani ta’riflaydi. Javob maydoniga vergulsiz 3240 deb yozing.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "inference_margin_of_error",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "A researcher selected a random sample of 500 adults in a region and recorded how many hours each adult slept on a particular night. Based on the sample, the researcher reported that plausible values for the mean number of hours of sleep that night for all adults in the region are between 6.6 hours and 7.0 hours. Which of the following conclusions is best supported by this information?",
+    "option_a": "Every adult in the sample slept between 6.6 hours and 7.0 hours that night.",
+    "option_b": "Most adults in the region slept between 6.6 hours and 7.0 hours that night.",
+    "option_c": "The mean number of hours of sleep that night for all adults in the country is likely between 6.6 hours and 7.0 hours.",
+    "option_d": "The mean number of hours of sleep that night for all adults in the region is likely between 6.6 hours and 7.0 hours.",
+    "correct": "D",
+    "explanation_en": "The interval estimates a population **mean**, and the population is the group that was randomly sampled: adults in the region. So it is plausible that the mean for all adults in the region is between 6.6 and 7.0 hours. Choice B is a common misreading: the interval describes the mean, not individual adults, and many adults could have slept much more or much less than 6.6 to 7.0 hours. Choice A makes the same mistake about the sample. Choice C extends the result to the whole country, which was not sampled.",
+    "explanation_uz": "Oraliq bosh to‘plamning **o‘rta qiymatini** baholaydi, bosh to‘plam esa tasodifiy tanlab olingan guruh — mintaqadagi kattalar. Demak mintaqadagi barcha kattalarning o‘rtacha uyqu vaqti 6.6 va 7.0 soat orasida bo‘lishi ehtimoliy. B javob — keng tarqalgan noto‘g‘ri talqin: oraliq alohida odamlarni emas, o‘rta qiymatni ta’riflaydi; ko‘p kattalar 6.6–7.0 soatdan ancha ko‘p yoki ancha kam uxlagan bo‘lishi mumkin. A javob xuddi shu xatoni tanlanma uchun qiladi. C javob natijani tanlanma olinmagan butun mamlakatga yoyadi.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "inference_margin_of_error",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "Two towns each surveyed a random sample of their adult residents about a proposed sports center. In Town A, 42% of the sample supported the sports center, with a margin of error of 4 percentage points. In Town B, 49% of the sample supported the sports center, with a margin of error of 5 percentage points. Which of the following statements is best supported by these results?",
+    "option_a": "The percentage of adults who support the sports center is greater in Town B than in Town A, because 49% is greater than 42%.",
+    "option_b": "It is plausible that the percentage of adults who support the sports center is the same in both towns.",
+    "option_c": "The percentage of adults who support the sports center is exactly 7 percentage points greater in Town B than in Town A.",
+    "option_d": "Because Town B's margin of error is greater, Town B's survey must have included more residents than Town A's survey.",
+    "correct": "B",
+    "explanation_en": "The plausible values are $42\\% \\pm 4\\%$, or 38% to 46%, for Town A and $49\\% \\pm 5\\%$, or 44% to 54%, for Town B. The intervals overlap from 44% to 46%, so a value such as 45% is plausible for both towns, and the results do not establish that the two percentages differ. Choice A treats the sample percentages as exact population values, and choice C does the same with their difference. Choice D reverses the relationship between sample size and margin of error: other things being equal, a greater margin of error points to a smaller sample, not a larger one.",
+    "explanation_uz": "Ehtimoliy qiymatlar: A shaharcha uchun $42\\% \\pm 4\\%$, ya’ni 38% dan 46% gacha; B shaharcha uchun $49\\% \\pm 5\\%$, ya’ni 44% dan 54% gacha. Oraliqlar 44% dan 46% gacha ustma-ust tushadi, shuning uchun, masalan, 45% ikkala shaharcha uchun ham ehtimoliy — natijalar ikki foiz har xil ekanini isbotlamaydi. A javob tanlanmadagi foizlarni bosh to‘plamning aniq qiymatlari deb oladi, C javob esa ularning farqi bilan xuddi shunday qiladi. D javob tanlanma hajmi va xatolik chegarasi orasidagi munosabatni teskari tushungan: boshqa shartlar teng bo‘lsa, kattaroq xatolik chegarasi kattaroq emas, kichikroq tanlanmaga ishora qiladi.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "inference_margin_of_error",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "A factory produced 9,600 phone chargers in one week. A random sample of 400 of these chargers was tested, and the percentage of defective chargers in the sample was used to estimate the number of defective chargers among all 9,600. The estimate, plus or minus its margin of error, gives plausible numbers of defective chargers from 1,104 to 1,488. How many of the 400 sampled chargers were defective?",
+    "spr_answers": [
+      "54"
+    ],
+    "explanation_en": "The estimate is the center of the range: $\\frac{1{,}104 + 1{,}488}{2} = 1{,}296$ chargers (the margin of error is $1{,}488 - 1{,}296 = 192$ chargers). This estimate came from applying the sample percentage to all 9,600 chargers, so the sample percentage is $\\frac{1{,}296}{9{,}600} = 0.135$, or 13.5%. In the sample, $0.135 \\times 400 = 54$ chargers were defective. Answers such as 46 or 62 come from using an endpoint of the range instead of its center ($\\frac{1{,}104}{9{,}600} \\times 400 = 46$ and $\\frac{1{,}488}{9{,}600} \\times 400 = 62$).",
+    "explanation_uz": "Baho — oraliqning markazi: $\\frac{1{,}104 + 1{,}488}{2} = 1{,}296$ ta quvvatlagich (xatolik chegarasi $1{,}488 - 1{,}296 = 192$ ta). Bu baho tanlanmadagi foizni barcha 9,600 ta quvvatlagichga qo‘llash orqali olingan, demak tanlanmadagi ulush $\\frac{1{,}296}{9{,}600} = 0.135$, ya’ni 13.5%. Tanlanmada $0.135 \\times 400 = 54$ ta quvvatlagich nuqsonli bo‘lgan. 46 yoki 62 kabi javoblar oraliq markazi o‘rniga uning chegaralaridan foydalanishdan kelib chiqadi ($\\frac{1{,}104}{9{,}600} \\times 400 = 46$ va $\\frac{1{,}488}{9{,}600} \\times 400 = 62$).",
+    "estimated_seconds": 130,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  }
+]

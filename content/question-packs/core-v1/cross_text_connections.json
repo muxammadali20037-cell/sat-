@@ -1,0 +1,162 @@
+[
+  {
+    "skill_code": "cross_text_connections",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "**Text 1**\n\nMany nutrition guides advise people to eat breakfast every day, warning that skipping it leads to weight gain. Dietitian Sara Holm argues that a morning meal reduces hunger later in the day and so helps people avoid overeating.\n\n**Text 2**\n\nResearcher Kenji Watanabe assigned adults either to eat breakfast every day or to skip it for sixteen weeks. At the end of the study, weight changes in the two groups were nearly identical. Watanabe concludes that, for weight control, the total amount people eat each day matters more than when they eat it.",
+    "stem": "Based on the texts, how would Watanabe (Text 2) most likely respond to the warning described in Text 1?",
+    "option_a": "He would agree with it, since the people in his study who skipped breakfast gained more weight.",
+    "option_b": "He would question it, since his study found that skipping breakfast did not lead to more weight gain than eating breakfast did.",
+    "option_c": "He would argue that it applies only to people who eat very large breakfasts.",
+    "option_d": "He would claim that skipping breakfast causes people to eat less over the course of a day.",
+    "correct": "B",
+    "explanation_en": "Text 1 describes the warning that skipping breakfast leads to weight gain. In Watanabe's study, people who skipped breakfast and people who ate it had “nearly identical” weight changes, so he would question the warning, as choice B says. Choice A contradicts his results. Choice C is unsupported: Text 2 says nothing about the size of breakfasts. Choice D goes beyond Text 2, which concludes only that total daily intake matters more than meal timing; it does not say that skipping breakfast reduces how much people eat.",
+    "explanation_uz": "Text 1 da nonushtani o‘tkazib yuborish vazn ortishiga olib keladi degan ogohlantirish keltiriladi. Watanabe tadqiqotida esa nonushta qilganlar va qilmaganlarning vazni deyarli bir xil (“nearly identical”) o‘zgargan. Demak, u bu ogohlantirishga shubha bildirardi — to‘g‘ri javob B. A uning natijalariga zid. C asossiz: Text 2 da nonushtaning hajmi haqida gap yo‘q. D Text 2 doirasidan chiqib ketadi: unda faqat kunlik umumiy ovqat miqdori ovqatlanish vaqtidan muhimroq ekani aytilgan, nonushtani o‘tkazib yuborish kamroq ovqatlanishga olib kelishi aytilmagan.",
+    "estimated_seconds": 65,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "cross_text_connections",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "**Text 1**\n\nHistorian Lucia Ferro argues that the printing press transformed European science mainly by making books cheaper. Once scholars could afford their own copies of important works, she writes, they could study those works closely at home instead of traveling to distant libraries.\n\n**Text 2**\n\nHistorian Tomasz Wieland agrees that printing was crucial to the growth of European science but stresses a different effect. Copying by hand introduced errors into diagrams and tables, so no two manuscripts were exactly alike. Printing gave scholars in different cities identical copies, making it easier for them to compare and correct one another's work.",
+    "stem": "Based on the texts, Ferro (Text 1) and Wieland (Text 2) would most likely agree with which statement?",
+    "option_a": "Printed books remained too expensive for most scholars to own.",
+    "option_b": "The most important effect of printing was that it made libraries unnecessary.",
+    "option_c": "Hand-copied manuscripts were generally as accurate as printed books.",
+    "option_d": "The printing press played an important role in the development of European science.",
+    "correct": "D",
+    "explanation_en": "Ferro says printing “transformed European science,” and Wieland “agrees that printing was crucial to the growth of European science,” though the two emphasize different reasons. Both would therefore accept choice D. Choice A contradicts Ferro, who argues that printing made books affordable. Choice B is wrong because neither author says libraries became unnecessary; Ferro says only that scholars no longer had to travel to them. Choice C contradicts Wieland, who says hand copying introduced errors.",
+    "explanation_uz": "Ferro kitob bosish Yevropa ilmini “tubdan o‘zgartirgan”ini aytadi, Wieland esa kitob bosish ilm rivoji uchun “juda muhim” bo‘lganiga qo‘shiladi, garchi ular turli sabablarni ta’kidlasa ham. Demak, ikkalasi ham D fikriga rozi bo‘ladi. A Ferroning fikriga zid: u kitob bosish kitoblarni arzonlashtirganini ta’kidlaydi. B noto‘g‘ri: hech bir muallif kutubxonalar keraksiz bo‘lib qolganini aytmagan; Ferro faqat olimlar endi ularga uzoq yo‘l bosishi shart bo‘lmay qolganini aytadi. C Wielandning fikriga zid: uning so‘zlariga ko‘ra, qo‘lda ko‘chirish xatolarga olib kelgan.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "cross_text_connections",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "**Text 1**\n\nMany educators believe that people learn a second language best when they start as young children. Linguist Hamid Rahimov notes that children who move to a new country usually develop a more native-like accent than adults who make the same move.\n\n**Text 2**\n\nPsychologist Ruth Okafor compared adults and children taking the same twelve-week language course. The adults learned new vocabulary and grammar rules faster than the children did, likely because adults can use study strategies such as taking notes. Okafor argues that an early start is not the only path to success in a new language.",
+    "stem": "Based on the texts, how would Okafor (Text 2) most likely respond to the educators' belief described in Text 1?",
+    "option_a": "She would argue that the belief overlooks evidence that adults can learn some parts of a language faster than children can.",
+    "option_b": "She would agree that children learn vocabulary and grammar faster than adults do.",
+    "option_c": "She would argue that accent is the most important part of learning a language.",
+    "option_d": "She would reject the idea that children ever develop more native-like accents than adults do.",
+    "correct": "A",
+    "explanation_en": "The educators in Text 1 believe that young children learn languages best. Okafor found that adults in her course learned vocabulary and grammar faster than children, and she argues that starting early is “not the only path to success.” She would therefore say the belief overlooks adults' advantages in some areas, as choice A says. Choice B contradicts her findings. Choice C is unsupported: Okafor does not discuss accent at all. Choice D is too extreme: Text 2 never addresses accents, so there is no reason to think Okafor would reject Rahimov's observation.",
+    "explanation_uz": "Text 1 dagi pedagoglar tilni eng yaxshi yosh bolalar o‘rganadi deb hisoblaydi. Okafor esa o‘z kursida kattalar so‘z va grammatikani bolalardan tezroq o‘rganganini aniqlagan va erta boshlash muvaffaqiyatning “yagona yo‘li emas”ligini ta’kidlaydi. Demak, u bu qarash kattalarning ayrim sohalardagi ustunligini e’tiborga olmaydi, deb aytardi — to‘g‘ri javob A. B uning natijalariga zid. C asossiz: Okafor talaffuz haqida umuman gapirmaydi. D haddan tashqari kuchli: Text 2 da talaffuz muhokama qilinmaydi, shuning uchun Okafor Rahimovning kuzatuvini rad etadi deyishga asos yo‘q.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "cross_text_connections",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "**Text 1**\n\nAt the ancient settlement of Tel Varo, archaeologists found hundreds of small bone pieces carved into cones, disks and spheres. Archaeologist Nadia Brenner argues that the pieces were used in a board game, noting that dozens of them were found beside a stone slab carved with rows of shallow hollows.\n\n**Text 2**\n\nArchaeologist Idris Kamal points out that most of the Tel Varo pieces were found not near the stone slab but in storerooms, and that the number of pieces of each shape in a room closely matches the number of jars of a particular good, such as oil or grain, stored there. Kamal argues that the pieces were most likely used to keep records of stored goods.",
+    "stem": "Based on the texts, how would Kamal (Text 2) most likely respond to Brenner's argument in Text 1?",
+    "option_a": "He would agree that the stone slab proves the pieces were used in a game.",
+    "option_b": "He would argue that the pieces were made much later than Brenner assumes.",
+    "option_c": "He would argue that Brenner's evidence does not account for the pattern found in the storerooms, which points to a different use for the pieces.",
+    "option_d": "He would claim that the pieces were brought to Tel Varo from another settlement.",
+    "correct": "C",
+    "explanation_en": "Brenner bases her game theory on pieces found beside a carved slab. Kamal notes that most pieces were actually found in storerooms, where their numbers match the stored jars, and concludes that they were used for record keeping. He would therefore say that Brenner's evidence ignores the storeroom pattern, as choice C says. Choice A contradicts Kamal's conclusion. Choices B and D are unsupported: neither text discusses when the pieces were made or where they came from.",
+    "explanation_uz": "Brenner o‘yin haqidagi nazariyasini o‘yilgan tosh plita yonidan topilgan buyumlarga asoslaydi. Kamal esa buyumlarning ko‘pchiligi aslida omborxonalardan topilganini va ularning soni u yerdagi ko‘zalar soniga mos kelishini ta’kidlab, ular hisob yuritish uchun ishlatilgan degan xulosaga keladi. Demak, u Brennerning dalili omborxonalardagi qonuniyatni hisobga olmaydi, deb aytardi — to‘g‘ri javob C. A Kamalning xulosasiga zid. B va D asossiz: hech bir matnda buyumlar qachon yasalgani yoki qayerdan keltirilgani muhokama qilinmaydi.",
+    "estimated_seconds": 75,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "cross_text_connections",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "**Text 1**\n\nAfter lynx were reintroduced to the Merrow Highlands in 2005, the number of hares there fell sharply, and young birch trees, which hares eat, began to grow back. Ecologist Ana Vidal argues that the lynx caused this recovery: by hunting hares, they reduced the pressure on young trees.\n\n**Text 2**\n\nEcologist Pavel Orlov agrees that hare numbers fell after 2005 but notes that the region also had several unusually snowy winters during those years. Deep snow makes it hard for hares to reach food and can greatly increase their death rate. Orlov argues that until the effects of the lynx and the winters are separated, the cause of the birch recovery remains uncertain.",
+    "stem": "Based on the texts, how would Orlov (Text 2) most likely respond to Vidal's argument in Text 1?",
+    "option_a": "He would reject her claim that the number of hares declined after 2005.",
+    "option_b": "He would argue that the birch trees recovered because lynx protect them from other animals.",
+    "option_c": "He would agree that the lynx were clearly the only cause of the birch recovery.",
+    "option_d": "He would caution that her conclusion may be premature because another factor could also explain the decline in hares.",
+    "correct": "D",
+    "explanation_en": "Vidal credits the lynx with reducing the hare population and thus allowing birches to recover. Orlov accepts that hares declined but points to snowy winters as another possible cause and says the cause of the recovery “remains uncertain.” He would therefore see her conclusion as premature, as choice D says. Choice A is wrong because Orlov “agrees that hare numbers fell.” Choice B is unsupported: neither text says that lynx protect trees from other animals. Choice C contradicts Orlov's view that the cause is uncertain.",
+    "explanation_uz": "Vidal quyonlar kamayishi va qayinlar qayta o‘sishini silovsinlarga bog‘laydi. Orlov quyonlar kamayganiga qo‘shiladi, lekin boshqa mumkin bo‘lgan sabab — qor ko‘p yoqqan qishlarni ko‘rsatadi va qayinlar tiklanishining sababi “hali noaniq” deydi. Demak, u Vidalning xulosasini shoshilinch deb hisoblaydi — to‘g‘ri javob D. A noto‘g‘ri: Orlov quyonlar soni kamayganiga “qo‘shiladi”. B asossiz: hech bir matnda silovsinlar daraxtlarni boshqa hayvonlardan himoya qilishi aytilmagan. C Orlovning sabab noaniq degan fikriga zid.",
+    "estimated_seconds": 75,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "cross_text_connections",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "**Text 1**\n\nCritics often praise the novels of Elena Morvay for their detailed descriptions of village life. According to critic Jonas Petric, Morvay's careful attention to farming, cooking and local customs is valuable mainly as a historical record of a way of life that has since disappeared.\n\n**Text 2**\n\nCritic Amara Diallo argues that reading Morvay's novels as historical records misses their real achievement. The detailed descriptions, Diallo contends, are not there for their own sake: Morvay uses them to reveal her characters' inner lives, as when the way a woman kneads bread betrays her grief more clearly than any dialogue could.",
+    "stem": "Based on the texts, how would Diallo (Text 2) most likely respond to Petric's view in Text 1?",
+    "option_a": "She would argue that Petric undervalues the role that Morvay's descriptions play in revealing her characters' feelings.",
+    "option_b": "She would agree that the descriptions are valuable mainly as a record of village life.",
+    "option_c": "She would claim that Morvay's descriptions of village life are historically inaccurate.",
+    "option_d": "She would argue that Morvay's novels should include more dialogue.",
+    "correct": "A",
+    "explanation_en": "Petric values Morvay's descriptions “mainly as a historical record.” Diallo says that reading the novels this way “misses their real achievement,” because the descriptions reveal the characters' inner lives. She would therefore say that Petric overlooks this role, as choice A says. Choice B contradicts Diallo's position. Choice C is unsupported: Diallo never questions the descriptions' accuracy. Choice D misreads her example: she says a description can reveal grief more clearly than dialogue could, which praises the descriptions rather than calling for more dialogue.",
+    "explanation_uz": "Petric Morvayning tasvirlarini “asosan tarixiy hujjat sifatida” qadrlaydi. Diallo esa romanlarni bunday o‘qish ularning “asl yutug‘ini e’tibordan chetda qoldiradi”, chunki tasvirlar qahramonlarning ichki dunyosini ochib beradi, deydi. Demak, u Petric tasvirlarning bu vazifasini yetarlicha baholamaydi, deb aytardi — to‘g‘ri javob A. B Diallo pozitsiyasiga zid. C asossiz: Diallo tasvirlarning aniqligiga shubha bildirmaydi. D uning misolini noto‘g‘ri tushunadi: u tasvir qayg‘uni har qanday dialogdan aniqroq ko‘rsata olishini aytadi — bu tasvirlarga maqtov, ko‘proq dialog kerak degan talab emas.",
+    "estimated_seconds": 75,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "cross_text_connections",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "**Text 1**\n\nCities facing hotter summers are planting trees along streets to cool neighborhoods. In a study led by climate scientist Iris Lindqvist, streets with dense tree canopies were on average 3°C cooler at midday than nearby streets without trees. Lindqvist recommends that cities plant dense rows of street trees in their hottest districts.\n\n**Text 2**\n\nResearcher Bakhtiyor Ergashev agrees that street trees cool cities during the day. But in narrow streets lined with tall buildings, his measurements showed that dense canopies can trap heat near the ground at night, keeping those streets warmer after sunset than similar streets without trees. Because nighttime heat is especially harmful to health, he argues that trees in such streets should be spaced to leave gaps through which heat can escape.",
+    "stem": "Based on the texts, how would Ergashev (Text 2) most likely respond to Lindqvist's recommendation in Text 1?",
+    "option_a": "He would reject it, since his measurements show that street trees do not lower daytime temperatures.",
+    "option_b": "He would accept it without reservation, since dense canopies keep streets cooler both during the day and at night.",
+    "option_c": "He would support planting street trees but caution that, in some streets, dense rows of trees could make nights hotter.",
+    "option_d": "He would argue that cities should stop planting street trees and focus only on reducing nighttime heat.",
+    "correct": "C",
+    "explanation_en": "Lindqvist recommends planting “dense rows” of street trees. Ergashev agrees that trees cool streets during the day, but he found that dense canopies in narrow streets lined with tall buildings can trap heat at night, so he wants trees in such streets spaced with gaps. He would therefore support tree planting while warning that dense planting may raise nighttime temperatures in some streets, as choice C says. Choice A contradicts his agreement that trees cool cities during the day. Choice B contradicts his finding about nighttime heat. Choice D is too extreme: he recommends spacing trees differently, not ending tree planting.",
+    "explanation_uz": "Lindqvist ko‘chalarga “zich qatorlarda” daraxt ekishni tavsiya qiladi. Ergashev daraxtlar kunduzi ko‘chalarni salqinlatishiga qo‘shiladi, lekin baland binolar bilan o‘ralgan tor ko‘chalarda zich daraxt soyaboni kechasi issiqni ushlab qolishini aniqlagan; shuning uchun u bunday ko‘chalarda daraxtlarni oraliq qoldirib ekishni taklif qiladi. Demak, u daraxt ekishni qo‘llab-quvvatlaydi, ammo ba’zi ko‘chalarda zich ekish tunlarni issiqroq qilishi mumkinligidan ogohlantiradi — to‘g‘ri javob C. A uning daraxtlar kunduzi salqinlatadi degan fikriga zid. B uning tungi issiqlik haqidagi topilmasiga zid. D haddan tashqari kuchli: u daraxt ekishni to‘xtatishni emas, daraxtlarni boshqacha joylashtirishni taklif qiladi.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "cross_text_connections",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "**Text 1**\n\nMany accounts portray the astronomer Leonor Castell (1803–1871) as a solitary genius who made her discoveries working alone at her private observatory. This portrayal relies largely on Castell's published papers, each of which lists her as the only author.\n\n**Text 2**\n\nHistorian Farhod Yusupov studied the letters Castell exchanged with more than forty correspondents, including amateur astronomers, instrument makers and members of her household staff. The letters show that many of her observations were checked, and some were first made, by these helpers. Yusupov notes that in the 1800s, the list of authors on a scientific paper often left out the people whose work the paper depended on.",
+    "stem": "Based on the texts, how would Yusupov (Text 2) most likely respond to the portrayal of Castell described in Text 1?",
+    "option_a": "He would agree with it, since Castell's published papers name her as their only author.",
+    "option_b": "He would argue that it relies on a kind of evidence that can hide the contributions others made to Castell's work.",
+    "option_c": "He would claim that Castell's discoveries were in fact made entirely by her household staff.",
+    "option_d": "He would argue that it accurately describes Castell's early work but not her later work.",
+    "correct": "B",
+    "explanation_en": "Text 1 says the “solitary genius” portrayal rests mainly on Castell's papers listing her as the only author. Yusupov's letters show that others checked and sometimes made her observations, and he notes that author lists of that era often left out contributors. He would therefore argue that the portrayal depends on a type of evidence (author lists) that can conceal others' contributions, as choice B says. Choice A is wrong because Yusupov's point is precisely that such author lists can mislead. Choice C is too extreme: the letters show that some observations were first made by helpers, not that all of her discoveries were. Choice D is unsupported: neither text distinguishes between earlier and later periods of Castell's career.",
+    "explanation_uz": "Text 1 ga ko‘ra, Castellni “yolg‘iz daho” sifatida ko‘rsatish asosan uning maqolalarida yagona muallif sifatida ko‘rsatilganiga tayanadi. Yusupov o‘rgangan maktublar esa uning kuzatuvlarini boshqalar tekshirganini, ba’zilarini esa birinchi bo‘lib boshqalar qilganini ko‘rsatadi; u o‘sha davrda mualliflar ro‘yxati ko‘pincha hissa qo‘shgan odamlarni tushirib qoldirganini ham ta’kidlaydi. Demak, u bu tasvir boshqalarning hissasini yashirishi mumkin bo‘lgan dalil turiga — mualliflar ro‘yxatiga — tayanadi, deb aytardi. To‘g‘ri javob — B. A noto‘g‘ri: Yusupovning asosiy fikri aynan shunday mualliflar ro‘yxati chalg‘itishi mumkinligi. C haddan tashqari kuchli: maktublar ba’zi kuzatuvlarni yordamchilar birinchi qilganini ko‘rsatadi, barcha kashfiyotlarni emas. D asossiz: hech bir matnda Castell faoliyatining erta va keyingi davrlari ajratilmaydi.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  }
+]

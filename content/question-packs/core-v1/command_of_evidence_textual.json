@@ -1,0 +1,162 @@
+[
+  {
+    "skill_code": "command_of_evidence_textual",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Each autumn, gray squirrels in Ardley Forest bury acorns in the ground and dig many of them up during the winter. Ecologist Samir Haddad hypothesizes that the squirrels adjust this behavior to the size of the acorn crop, burying more acorns in years when acorns are plentiful.",
+    "stem": "Which finding, if true, would most directly support Haddad's hypothesis?",
+    "option_a": "Squirrels in Ardley Forest eat pine seeds as well as acorns.",
+    "option_b": "The size of the acorn crop in Ardley Forest varies greatly from year to year.",
+    "option_c": "Squirrels in a nearby forest bury acorns in the same spots each year.",
+    "option_d": "Squirrels in Ardley Forest buried far more acorns in years with large acorn crops than in years with small ones.",
+    "correct": "D",
+    "explanation_en": "Haddad's hypothesis links two things: the size of the acorn crop and the number of acorns the squirrels bury. Choice D shows exactly that link, with far more acorns buried in years with larger crops. Choice A concerns the squirrels' diet, not their burying. Choice B shows that crop size varies but says nothing about how the squirrels respond. Choice C concerns a different forest and where squirrels bury acorns, not how many they bury.",
+    "explanation_uz": "Haddad gipotezasi ikki narsani bog‘laydi: eman yong‘og‘i (acorn) hosilining hajmi va olmaxonlar ko‘madigan yong‘oqlar soni. D javob aynan shu bog‘liqlikni ko‘rsatadi: hosil katta bo‘lgan yillarda ancha ko‘p yong‘oq ko‘milgan. A olmaxonlarning ozuqasi haqida, ko‘mish haqida emas. B hosil hajmi o‘zgarib turishini ko‘rsatadi, lekin olmaxonlar bunga qanday javob berishini aytmaydi. C boshqa o‘rmon va yong‘oqlar qayerga ko‘milishi haqida, nechta ko‘milishi haqida emas.",
+    "estimated_seconds": 55,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "command_of_evidence_textual",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "*The Ferryman's Son* is a 1958 novel by Arlo Penhallow. In the novel, the narrator recalls that his father rarely spoke about his feelings but showed his love through quiet acts of care.",
+    "stem": "Which quotation from *The Ferryman's Son* most effectively illustrates the claim?",
+    "option_a": "“My father knew every current in the river and could read the coming weather in the color of the water.”",
+    "option_b": "“He never once told me he was proud of me, but every winter morning he rose before dawn to warm my boots by the stove.”",
+    "option_c": "“The ferry carried farmers, merchants and, one summer, an entire traveling circus across the river.”",
+    "option_d": "“When I was twelve, I made up my mind that I would never become a ferryman.”",
+    "correct": "B",
+    "explanation_en": "The claim has two parts: the father rarely spoke about his feelings, and he showed love through quiet acts of care. Choice B illustrates both: he “never once told” his son that he was proud of him, yet he rose before dawn to warm his son's boots. Choice A shows the father's skill, not his affection. Choice C describes the ferry's passengers. Choice D describes the narrator's own decision, not his father's behavior.",
+    "explanation_uz": "Da’vo ikki qismdan iborat: ota o‘z his-tuyg‘ulari haqida kam gapirgan va mehrini sokin g‘amxo‘rlik orqali ko‘rsatgan. B javob ikkalasini ham ko‘rsatadi: u o‘g‘liga u bilan faxrlanishini “hech qachon aytmagan”, lekin har qish tongida uning etigini isitish uchun saharda turgan. A otaning mahoratini ko‘rsatadi, mehrini emas. C parom yo‘lovchilarini tasvirlaydi. D otaning xatti-harakatini emas, hikoyachining o‘z qarorini tasvirlaydi.",
+    "estimated_seconds": 55,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "command_of_evidence_textual",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Many students listen to music while they study. Psychologist Leila Moradi hypothesizes that songs with lyrics make it harder to memorize written information than instrumental music does, because the words in the songs compete for the same mental resources that reading requires.",
+    "stem": "Which finding, if true, would most directly support Moradi's hypothesis?",
+    "option_a": "Students who studied a list of words while hearing songs with lyrics later recalled fewer words than students who studied while hearing instrumental versions of the same songs.",
+    "option_b": "Students reported that they enjoyed songs with lyrics more than instrumental music.",
+    "option_c": "Students who studied in silence recalled about as many words as students who heard instrumental music.",
+    "option_d": "Students who heard songs with lyrics spent more time studying than students who heard instrumental music.",
+    "correct": "A",
+    "explanation_en": "Moradi's hypothesis compares songs with lyrics and instrumental music in terms of how well people memorize written information. Choice A makes exactly that comparison, using the same songs with and without lyrics, and shows worse recall with lyrics. Choice B concerns enjoyment, not memory. Choice C compares silence with instrumental music and leaves out songs with lyrics. Choice D concerns study time, not how much students remembered.",
+    "explanation_uz": "Moradi gipotezasi yozma ma’lumotni yodlashda so‘zli qo‘shiqlarni cholg‘u musiqasi bilan solishtiradi. A javob aynan shu taqqoslashni — bir xil qo‘shiqlarning so‘zli va so‘zsiz variantlarini — qiladi va so‘zli qo‘shiq tinglaganlar kamroq so‘z eslab qolganini ko‘rsatadi. B yodlash haqida emas, yoqtirish haqida. C jimjitlikni cholg‘u musiqasi bilan solishtiradi, so‘zli qo‘shiqlar esa chetda qoladi. D qancha eslab qolish haqida emas, o‘qishga sarflangan vaqt haqida.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "command_of_evidence_textual",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Many ancient sites in the Tarsen Valley contain large piles of seashells, even though the valley lies more than 100 kilometers from the coast. Archaeologist Petra Lund hypothesizes that valley residents obtained the shells by trading with coastal communities rather than by traveling to the coast to collect the shells themselves.",
+    "stem": "Which finding, if true, would most directly weaken Lund's hypothesis?",
+    "option_a": "The shells in the valley belong to species found along the stretch of coast nearest to the valley.",
+    "option_b": "Coastal sites from the same period contain stone tools made from a type of rock found only in the Tarsen Valley.",
+    "option_c": "Chemical analysis of the teeth of people buried in the valley shows that many of them spent part of each year living on the coast.",
+    "option_d": "Some of the shells found in the valley had been carved into beads and other ornaments.",
+    "correct": "C",
+    "explanation_en": "Lund claims that valley residents obtained shells through trade rather than by traveling to the coast. Choice C weakens this claim by showing that many valley residents themselves spent time living on the coast, which makes it more likely that they collected the shells. Choice A fits both explanations, since traders or travelers could have brought shells from the nearest coast. Choice B actually supports Lund, since valley rock reaching the coast suggests trade between the two areas. Choice D describes what the shells were used for, not how they were obtained.",
+    "explanation_uz": "Lundning fikricha, vodiy aholisi chig‘anoqlarni sohilga borib emas, savdo orqali olgan. C javob bu gipotezani zaiflashtiradi: vodiy aholisining ko‘pchiligi har yili bir muddat sohilda yashagan bo‘lsa, ular chig‘anoqlarni o‘zlari terib kelgan bo‘lishi ehtimoli oshadi. A ikkala izohga ham mos: chig‘anoqlarni eng yaqin sohildan savdogarlar ham, sayohatchilar ham olib kelishi mumkin. B aslida Lundni qo‘llab-quvvatlaydi: faqat vodiyda uchraydigan toshning sohilga yetib borishi ikki hudud o‘rtasida savdo bo‘lganini ko‘rsatadi. D chig‘anoqlar nima uchun ishlatilganini ko‘rsatadi, qanday olinganini emas.",
+    "estimated_seconds": 75,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "command_of_evidence_textual",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "“Night Train” is a 1934 poem by Wendell Ames. In the poem, the speaker, who is traveling alone by train at night, portrays the towns the train passes as places of warmth and family life that the speaker can observe but never share.",
+    "stem": "Which quotation from “Night Train” most effectively illustrates the claim?",
+    "option_a": "“The engine hums a low, unending note / that settles in the floorboards and the seats.”",
+    "option_b": "“By dawn we'll reach the city by the bay, / where gulls wheel low above the fishing boats.”",
+    "option_c": "“The conductor nods and punches every ticket / with the same small click he's made for twenty years.”",
+    "option_d": "“Each lighted window in each passing town / holds out a supper I will never sit down to.”",
+    "correct": "D",
+    "explanation_en": "The claim is that the speaker sees the passing towns as places of warmth and family life that he or she can observe but not share. Choice D fits: the “lighted window” in each town suggests a warm home, and “a supper I will never sit down to” shows that the speaker can only look on from outside. Choice A describes the sound of the train. Choice B describes the journey's destination, not the towns the train passes along the way. Choice C describes the conductor's routine.",
+    "explanation_uz": "Da’voga ko‘ra, so‘zlovchi o‘tib ketayotgan shaharchalarni o‘zi kuzatishi mumkin, lekin hech qachon qatnasha olmaydigan iliq oilaviy hayot maskanlari sifatida tasvirlaydi. D javob bunga mos: har bir shaharchadagi “lighted window” (yoritilgan deraza) iliq xonadonni bildiradi, “a supper I will never sit down to” (hech qachon dasturxoniga o‘tirmaydigan kechki ovqat) esa so‘zlovchi faqat chetdan qarab turishini ko‘rsatadi. A poyezd ovozini tasvirlaydi. B yo‘l davomidagi shaharchalarni emas, safarning manzilini tasvirlaydi. C konduktorning odatiy ishini tasvirlaydi.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "command_of_evidence_textual",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Sociologist Daniel Achebe hypothesizes that people who live in apartment buildings with shared courtyards get to know more of their neighbors than people who live in buildings without such spaces do, because courtyards create frequent chances for casual encounters.",
+    "stem": "Which finding, if true, would most directly support Achebe's hypothesis?",
+    "option_a": "Residents of buildings with courtyards are, on average, older than residents of buildings without courtyards.",
+    "option_b": "Residents of buildings with courtyards could name about twice as many neighbors as residents of similar buildings without courtyards could, and they most often said they had met those neighbors in the courtyard.",
+    "option_c": "Most residents of buildings without courtyards said they would prefer to live in a building with one.",
+    "option_d": "Buildings with courtyards cost more to maintain than buildings without courtyards do.",
+    "correct": "B",
+    "explanation_en": "Achebe's hypothesis has two parts: residents of buildings with courtyards know more of their neighbors, and casual encounters in the courtyards are the reason. Choice B supports both parts: these residents could name about twice as many neighbors, and they usually met those neighbors in the courtyard. Choice A points to an age difference, which does not show that residents know more neighbors and could even suggest a different explanation. Choice C concerns residents' preferences, not how many neighbors they know. Choice D concerns maintenance costs, which are irrelevant to the hypothesis.",
+    "explanation_uz": "Achebe gipotezasi ikki qismdan iborat: hovlili binolar aholisi ko‘proq qo‘shnini taniydi va buning sababi — hovlidagi tasodifiy uchrashuvlar. B javob ikkala qismni ham qo‘llab-quvvatlaydi: bunday binolar aholisi taxminan ikki baravar ko‘p qo‘shnining ismini ayta olgan va ular bilan asosan hovlida tanishgan. A yosh farqini ko‘rsatadi — bu aholining ko‘proq qo‘shnini tanishini isbotlamaydi va hatto boshqa izohga ishora qilishi mumkin. C aholining xohishi haqida, nechta qo‘shnini tanishi haqida emas. D binoni saqlash xarajatlari haqida, bu gipotezaga aloqasiz.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "command_of_evidence_textual",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "*The Glass Orchard* is a 1962 novel by Theodora Quill. In the novel, Edwin Marsh, a wealthy landowner, considers himself generous toward the workers on his estate, but the narrator suggests that Edwin's generosity is really a way of reminding the workers how much they depend on him.",
+    "stem": "Which quotation from *The Glass Orchard* most effectively illustrates the narrator's suggestion?",
+    "option_a": "“Each winter Edwin handed out the new coats himself, and he would not move on to the next worker until the last had thanked him and remarked, as was expected, how fortunate they all were to have such a master.”",
+    "option_b": "“Edwin paid his workers more than any other landowner in the county, a fact he regarded as nothing more than sensible business.”",
+    "option_c": "“The workers spoke of Edwin with genuine fondness, and more than one family had named a son after him.”",
+    "option_d": "“Edwin had inherited the estate at twenty-three and had doubled its size within a decade.”",
+    "correct": "A",
+    "explanation_en": "The narrator suggests that Edwin's generosity serves to remind the workers of their dependence on him. In choice A, Edwin gives out coats but insists on being thanked and on hearing each worker say how “fortunate” they are to have “such a master,” turning his gift into a reminder of their dependence. Choice B shows generosity, but Edwin regards it as “sensible business,” not as a way to make the workers feel dependent. Choice C shows the workers' affection for Edwin, which does not illustrate the narrator's suggestion. Choice D concerns Edwin's wealth, not his generosity.",
+    "explanation_uz": "Hikoyachining fikricha, Edwinning saxovati ishchilarga ular unga qanchalik qaram ekanini eslatish vositasi. A javobda Edwin paltolarni o‘zi tarqatadi, lekin har bir ishchi unga rahmat aytishini va “shunday xo‘jayinga ega bo‘lganidan baxtli” (“fortunate”) ekanini aytishini kutadi — sovg‘a qaramlikni eslatishga aylanadi. B saxovatni ko‘rsatadi, ammo Edwin buni ishchilarni qaram his qildirish usuli emas, oddiy “sensible business” (oqilona ish yuritish) deb biladi. C ishchilarning Edwinga bo‘lgan mehrini ko‘rsatadi, bu hikoyachining fikrini tasvirlamaydi. D Edwinning boyligi haqida, saxovati haqida emas.",
+    "estimated_seconds": 85,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "command_of_evidence_textual",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Fossils of *Velocia minor*, a small feathered dinosaur, show long feathers on its forelimbs. Some paleontologists think these feathers helped the animal glide between trees. Paleontologist Rhea Castillo disagrees, hypothesizing that the forelimb feathers evolved mainly for display, helping individuals attract mates.",
+    "stem": "Which finding, if true, would most directly support Castillo's hypothesis?",
+    "option_a": "The forelimb feathers of *V. minor* were longer than the feathers on its tail.",
+    "option_b": "Several dinosaurs closely related to *V. minor* also had feathered forelimbs.",
+    "option_c": "The long forelimb feathers appear in fossils of adult *V. minor* but not in fossils of young individuals, and their shape would have produced too little lift for gliding.",
+    "option_d": "Fossils of *V. minor* have been found only in rock layers that formed in dense forests with tall trees.",
+    "correct": "C",
+    "explanation_en": "Castillo argues that the feathers evolved for attracting mates rather than for gliding. Choice C supports this in two ways: feathers that appear only in adults fit a role in mating, since young animals do not mate, and feathers that could not produce enough lift argue against the gliding explanation. Choice A compares feather lengths without connecting them to either display or gliding. Choice B shows that related species had similar feathers but not what the feathers were for. Choice D, if anything, supports the competing gliding explanation, since gliding between trees requires tall trees.",
+    "explanation_uz": "Castilloning fikricha, patlar havoda sirpanib uchish uchun emas, juft jalb qilish uchun paydo bo‘lgan. C javob buni ikki jihatdan qo‘llab-quvvatlaydi: patlarning faqat voyaga yetgan hayvonlarda uchrashi ularning juftlashishdagi roliga mos keladi, chunki yosh hayvonlar juftlashmaydi; patlarning yetarli ko‘tarish kuchi bermasligi esa sirpanib uchish haqidagi izohga qarshi dalil. A patlar uzunligini solishtiradi, lekin buni na ko‘z-ko‘z qilish (display), na sirpanib uchish bilan bog‘laydi. B qarindosh turlarda ham shunday patlar bo‘lganini ko‘rsatadi, ammo ular nima uchun kerak bo‘lganini emas. D aksincha, raqib izoh — sirpanib uchishni qo‘llab-quvvatlaydi, chunki daraxtlar orasida sirpanish uchun baland daraxtlar kerak.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  }
+]

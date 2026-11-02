@@ -1,0 +1,142 @@
+[
+  {
+    "skill_code": "equivalent_expressions",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "Which expression is equivalent to $3(2x - 5) - 4(x - 1)$?",
+    "option_a": "$2x - 19$",
+    "option_b": "$2x - 11$",
+    "option_c": "$2x - 1$",
+    "option_d": "$10x - 11$",
+    "correct": "B",
+    "explanation_en": "Distribute each factor: $3(2x - 5) = 6x - 15$ and $-4(x - 1) = -4x + 4$.\n\nCombine like terms: $6x - 15 - 4x + 4 = 2x - 11$.\n\nChoice A multiplies $-4$ by $-1$ and gets $-4$ instead of $+4$, giving $6x - 15 - 4x - 4 = 2x - 19$.",
+    "explanation_uz": "Har bir qavsni ochamiz: $3(2x - 5) = 6x - 15$ va $-4(x - 1) = -4x + 4$.\n\nO‘xshash hadlarni ixchamlaymiz: $6x - 15 - 4x + 4 = 2x - 11$.\n\nA variant — $-4$ ni $-1$ ga ko‘paytirib, $+4$ o‘rniga $-4$ olish natijasi: $6x - 15 - 4x - 4 = 2x - 19$.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "equivalent_expressions",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "Which expression is equivalent to $(3x - 4)(x + 2)$?",
+    "option_a": "$3x^2 - 8$",
+    "option_b": "$3x^2 - 2x - 8$",
+    "option_c": "$3x^2 + 2x - 8$",
+    "option_d": "$3x^2 + 10x - 8$",
+    "correct": "C",
+    "explanation_en": "Multiply each term of the first binomial by each term of the second: $3x \\cdot x + 3x \\cdot 2 - 4 \\cdot x - 4 \\cdot 2 = 3x^2 + 6x - 4x - 8$.\n\nCombine the middle terms: $3x^2 + 2x - 8$.\n\nChoice A multiplies only the first terms and the last terms, leaving out the middle terms $6x$ and $-4x$.",
+    "explanation_uz": "Birinchi ikkihadning har bir hadini ikkinchisining har bir hadiga ko‘paytiramiz: $3x \\cdot x + 3x \\cdot 2 - 4 \\cdot x - 4 \\cdot 2 = 3x^2 + 6x - 4x - 8$.\n\nO‘rta hadlarni birlashtiramiz: $3x^2 + 2x - 8$.\n\nA variantda faqat birinchi hadlar va oxirgi hadlar ko‘paytirilgan, o‘rta hadlar $6x$ va $-4x$ tushib qolgan.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "equivalent_expressions",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "If $\\dfrac{x^a \\cdot x^5}{x^2} = x^{10}$ for all positive values of $x$, what is the value of $a$?",
+    "option_a": "$\\frac{12}{5}$",
+    "option_b": "$3$",
+    "option_c": "$4$",
+    "option_d": "$7$",
+    "correct": "D",
+    "explanation_en": "When multiplying powers with the same base, add the exponents; when dividing, subtract them: $\\frac{x^a \\cdot x^5}{x^2} = x^{a + 5 - 2} = x^{a + 3}$.\n\nSo $a + 3 = 10$, and $a = 7$.\n\nChoice B adds the exponent of the denominator instead of subtracting it: $a + 5 + 2 = 10$ gives $a = 3$.",
+    "explanation_uz": "Asoslari bir xil darajalarni ko‘paytirganda ko‘rsatkichlar qo‘shiladi, bo‘lganda esa ayiriladi: $\\frac{x^a \\cdot x^5}{x^2} = x^{a + 5 - 2} = x^{a + 3}$.\n\nDemak $a + 3 = 10$ va $a = 7$.\n\nB variant maxrajdagi ko‘rsatkichni ayirish o‘rniga qo‘shadi: $a + 5 + 2 = 10$, bundan $a = 3$.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "equivalent_expressions",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "Which of the following is a factor of $6x^2 + x - 15$?",
+    "option_a": "$2x - 3$",
+    "option_b": "$2x + 3$",
+    "option_c": "$3x - 5$",
+    "option_d": "$6x - 5$",
+    "correct": "A",
+    "explanation_en": "Factor by grouping. Find two numbers whose product is $6(-15) = -90$ and whose sum is $1$: they are $10$ and $-9$.\n\nSo $6x^2 + x - 15 = 6x^2 + 10x - 9x - 15 = 2x(3x + 5) - 3(3x + 5) = (2x - 3)(3x + 5)$. Therefore $2x - 3$ is a factor.\n\nCheck: $(2x - 3)(3x + 5) = 6x^2 + 10x - 9x - 15 = 6x^2 + x - 15$.\n\nChoices B and C are the factors of $6x^2 - x - 15 = (2x + 3)(3x - 5)$; they come from mixing up the signs, which flips the sign of the middle term.",
+    "explanation_uz": "Guruhlash usulidan foydalanamiz. Ko‘paytmasi $6(-15) = -90$, yig‘indisi $1$ bo‘lgan ikki son: $10$ va $-9$.\n\nDemak $6x^2 + x - 15 = 6x^2 + 10x - 9x - 15 = 2x(3x + 5) - 3(3x + 5) = (2x - 3)(3x + 5)$. Shunday qilib, $2x - 3$ — ko‘paytuvchi.\n\nTekshiruv: $(2x - 3)(3x + 5) = 6x^2 + 10x - 9x - 15 = 6x^2 + x - 15$.\n\nB va C variantlar $6x^2 - x - 15 = (2x + 3)(3x - 5)$ ifodaning ko‘paytuvchilari: ishoralar almashib ketganda o‘rta hadning ishorasi ham o‘zgaradi.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "equivalent_expressions",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "For $x \\ne -5$, the expression $\\dfrac{x^2 - 2x - 35}{x + 5}$ is equivalent to $x + k$, where $k$ is a constant. What is the value of $k$?",
+    "spr_answers": [
+      "-7"
+    ],
+    "explanation_en": "Factor the numerator. Two numbers whose product is $-35$ and whose sum is $-2$ are $-7$ and $5$, so $x^2 - 2x - 35 = (x - 7)(x + 5)$.\n\nThen $\\frac{(x - 7)(x + 5)}{x + 5} = x - 7$ for $x \\ne -5$. Matching $x - 7$ with $x + k$ gives $k = -7$.\n\nEntering $7$ is a common sign error: the expression is $x - 7$, so $k$ is negative.",
+    "explanation_uz": "Suratni ko‘paytuvchilarga ajratamiz. Ko‘paytmasi $-35$, yig‘indisi $-2$ bo‘lgan ikki son: $-7$ va $5$. Demak $x^2 - 2x - 35 = (x - 7)(x + 5)$.\n\nU holda $x \\ne -5$ da $\\frac{(x - 7)(x + 5)}{x + 5} = x - 7$. $x - 7$ ni $x + k$ bilan solishtirib, $k = -7$ ni olamiz.\n\n$7$ ni kiritish — ko‘p uchraydigan ishora xatosi: ifoda $x - 7$, demak $k$ manfiy.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "equivalent_expressions",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "Which of the following is equivalent to $\\dfrac{3}{x + 2} + \\dfrac{x}{x - 1}$ for $x > 1$?",
+    "option_a": "$\\dfrac{x + 3}{2x + 1}$",
+    "option_b": "$\\dfrac{x^2 + 2x + 3}{(x + 2)(x - 1)}$",
+    "option_c": "$\\dfrac{x^2 + 5x - 3}{(x + 2)(x - 1)}$",
+    "option_d": "$\\dfrac{x^2 + 5x + 3}{(x + 2)(x - 1)}$",
+    "correct": "C",
+    "explanation_en": "Use the common denominator $(x + 2)(x - 1)$: $\\frac{3(x - 1)}{(x + 2)(x - 1)} + \\frac{x(x + 2)}{(x + 2)(x - 1)}$.\n\nAdd the numerators: $3x - 3 + x^2 + 2x = x^2 + 5x - 3$. So the sum is $\\frac{x^2 + 5x - 3}{(x + 2)(x - 1)}$.\n\nChoice B forgets to multiply the numerator $3$ by $(x - 1)$ when rewriting the first fraction; choice A adds the numerators and the denominators directly, which is never valid.",
+    "explanation_uz": "Umumiy maxraj $(x + 2)(x - 1)$ ni olamiz: $\\frac{3(x - 1)}{(x + 2)(x - 1)} + \\frac{x(x + 2)}{(x + 2)(x - 1)}$.\n\nSuratlarni qo‘shamiz: $3x - 3 + x^2 + 2x = x^2 + 5x - 3$. Demak yig‘indi $\\frac{x^2 + 5x - 3}{(x + 2)(x - 1)}$.\n\nB variantda birinchi kasrni qayta yozishda surat $3$ ni $(x - 1)$ ga ko‘paytirish unutilgan; A variantda esa suratlar va maxrajlar to‘g‘ridan-to‘g‘ri qo‘shilgan — bu hech qachon to‘g‘ri emas.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "equivalent_expressions",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "Which of the following is equivalent to $\\dfrac{6x^2 + 7x - 1}{2x + 3}$ for $x \\ne -\\frac{3}{2}$?",
+    "option_a": "$3x - 1 - \\dfrac{4}{2x + 3}$",
+    "option_b": "$3x - 1$",
+    "option_c": "$3x - 1 + \\dfrac{2}{2x + 3}$",
+    "option_d": "$3x + 8 - \\dfrac{25}{2x + 3}$",
+    "correct": "C",
+    "explanation_en": "Rewrite the numerator using multiples of the denominator: $(2x + 3)(3x - 1) = 6x^2 - 2x + 9x - 3 = 6x^2 + 7x - 3$.\n\nSo $6x^2 + 7x - 1 = (2x + 3)(3x - 1) + 2$, and dividing by $2x + 3$ gives $3x - 1 + \\frac{2}{2x + 3}$.\n\nCheck with $x = 1$: the original expression is $\\frac{6 + 7 - 1}{5} = \\frac{12}{5}$, and $3(1) - 1 + \\frac{2}{5} = \\frac{12}{5}$.\n\nChoice A comes from a sign error in the last subtraction of the long division: $-1 - (-3) = 2$, not $-4$; choice B ignores the remainder, so it is not equivalent (at $x = 1$ it gives $2$, not $\\frac{12}{5}$).",
+    "explanation_uz": "Suratni maxrajning karralilari orqali yozamiz: $(2x + 3)(3x - 1) = 6x^2 - 2x + 9x - 3 = 6x^2 + 7x - 3$.\n\nDemak $6x^2 + 7x - 1 = (2x + 3)(3x - 1) + 2$, va $2x + 3$ ga bo‘lsak, $3x - 1 + \\frac{2}{2x + 3}$ hosil bo‘ladi.\n\nTekshiruv, $x = 1$: dastlabki ifoda $\\frac{6 + 7 - 1}{5} = \\frac{12}{5}$, va $3(1) - 1 + \\frac{2}{5} = \\frac{12}{5}$.\n\nA variant — burchakli bo‘lishning oxirgi ayirish bosqichidagi ishora xatosi: $-1 - (-3) = 2$, $-4$ emas; B variant esa qoldiqni hisobga olmaydi, shuning uchun ekvivalent emas ($x = 1$ da $\\frac{12}{5}$ emas, $2$ chiqadi).",
+    "estimated_seconds": 130,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "equivalent_expressions",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "$$\\begin{aligned} 2x - 3y &= 5 \\\\ 4x^2 - 9y^2 &= 35 \\end{aligned}$$\n\nIf $(x, y)$ satisfies both of the given equations, what is the value of $x$?",
+    "spr_answers": [
+      "3"
+    ],
+    "explanation_en": "Recognize a difference of squares: $4x^2 - 9y^2 = (2x - 3y)(2x + 3y)$.\n\nSubstitute $2x - 3y = 5$: $5(2x + 3y) = 35$, so $2x + 3y = 7$.\n\nNow add $2x - 3y = 5$ and $2x + 3y = 7$: $4x = 12$, so $x = 3$. (Then $y = \\frac{1}{3}$; check: $4(9) - 9\\left(\\frac{1}{9}\\right) = 36 - 1 = 35$.)\n\nA common error is entering $7$, which is the value of $2x + 3y$, not of $x$.",
+    "explanation_uz": "Kvadratlar ayirmasini ko‘ramiz: $4x^2 - 9y^2 = (2x - 3y)(2x + 3y)$.\n\n$2x - 3y = 5$ ni qo‘yamiz: $5(2x + 3y) = 35$, demak $2x + 3y = 7$.\n\nEndi $2x - 3y = 5$ va $2x + 3y = 7$ ni qo‘shamiz: $4x = 12$, demak $x = 3$. (U holda $y = \\frac{1}{3}$; tekshiruv: $4(9) - 9\\left(\\frac{1}{9}\\right) = 36 - 1 = 35$.)\n\nKo‘p uchraydigan xato — $7$ ni kiritish: bu $x$ ning emas, $2x + 3y$ ning qiymati.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  }
+]

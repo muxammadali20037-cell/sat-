@@ -16,6 +16,8 @@ export type QuestionFilters = {
   type: string
   status: string
   source: string
+  /** Exact tag, e.g. a bundled pack id. */
+  tag: string
   page: number
 }
 
@@ -31,6 +33,7 @@ export function parseQuestionFilters(sp: Record<string, string | string[] | unde
     type: oneOf(sp.type, QUESTION_TYPES),
     status: view === 'review' ? 'draft' : oneOf(sp.status, QUESTION_STATUSES),
     source: oneOf(sp.source, QUESTION_SOURCES),
+    tag: /^[a-z0-9][a-z0-9-]{0,39}$/.test(param(sp.tag)) ? param(sp.tag) : '',
     page: pageFromParam(sp.page),
   }
 }
@@ -47,6 +50,7 @@ export async function listQuestions(db: Db, f: QuestionFilters) {
   if (f.type) q = q.eq('question_type', f.type)
   if (f.status) q = q.eq('status', f.status)
   if (f.source) q = q.eq('source', f.source)
+  if (f.tag) q = q.contains('tags', [f.tag])
   // Search stem and passage. ilike fallback: the GIN index is on an expression PostgREST cannot target.
   if (f.q) q = q.or(`stem.ilike.*${f.q}*,passage.ilike.*${f.q}*`)
   q = f.view === 'review' ? q.order('created_at', { ascending: true }) : q.order('updated_at', { ascending: false })

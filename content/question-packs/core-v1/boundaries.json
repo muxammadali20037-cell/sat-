@@ -1,0 +1,162 @@
+[
+  {
+    "skill_code": "boundaries",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "In 1960 the Aral Sea covered more than 60,000 square ______ the early 2000s, its surface area had shrunk to a fraction of that size, leaving behind a vast plain of salty sand where fishing boats once sailed.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "option_a": "kilometers, by",
+    "option_b": "kilometers by",
+    "option_c": "kilometers; by",
+    "option_d": "kilometers by,",
+    "correct": "C",
+    "explanation_en": "The text contains two independent clauses: “In 1960 the Aral Sea covered more than 60,000 square kilometers” and “by the early 2000s, its surface area had shrunk to a fraction of that size….” A semicolon can join two independent clauses, so choice C is correct.\n\nChoice A joins the two clauses with only a comma, which creates a comma splice. Choice B uses no punctuation at all, which creates a run-on sentence. Choice D puts the comma after “by,” which splits the phrase “by the early 2000s” and still leaves the two clauses fused together.",
+    "explanation_uz": "Matnda ikkita mustaqil gap (independent clause) bor: “In 1960 the Aral Sea covered more than 60,000 square kilometers” va “by the early 2000s, its surface area had shrunk to a fraction of that size…”. Ikki mustaqil gapni nuqtali vergul (;) bilan bog‘lash mumkin, shuning uchun to‘g‘ri javob C.\n\nA — ikki gap faqat vergul bilan ulangan, bu comma splice xatosi. B — hech qanday tinish belgisi yo‘q, gaplar bir-biriga qo‘shilib ketgan (run-on). D — vergul “by” so‘zidan keyin qo‘yilgan: u “by the early 2000s” iborasini bo‘lib yuboradi, ikki gap esa baribir ajratilmay qoladi.",
+    "estimated_seconds": 50,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "boundaries",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "The Registan, a public square in the center of ______ is framed by three grand madrasas that were built between the fifteenth and seventeenth centuries and decorated with glazed tiles in shades of blue, green, and gold.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "option_a": "Samarkand,",
+    "option_b": "Samarkand",
+    "option_c": "Samarkand;",
+    "option_d": "Samarkand—",
+    "correct": "A",
+    "explanation_en": "The phrase “a public square in the center of Samarkand” is a nonessential appositive: it describes the Registan but could be removed without breaking the sentence. It opens with a comma after “Registan,” so it must close with a matching comma before the verb “is.” Choice A is correct.\n\nChoice B leaves the appositive unclosed, so the sentence seems to say that “Samarkand is framed” by the madrasas. Choice C uses a semicolon, which cannot separate a subject from its verb. Choice D closes with a dash, but an element that opens with a comma must close with a comma.",
+    "explanation_uz": "“a public square in the center of Samarkand” — bu qo‘shimcha izoh (nonessential appositive): u Registonni tasvirlaydi, lekin olib tashlansa ham gap buzilmaydi. Izoh “Registan” so‘zidan keyingi vergul bilan boshlangan, shuning uchun “is” kesimidan oldin xuddi shunday vergul bilan yopilishi kerak. To‘g‘ri javob A.\n\nB — izoh yopilmagan, natijada gap “Samarkand is framed” degan ma’noni beradi. C — nuqtali vergul ega (subject) va kesimni (verb) ajrata olmaydi. D — izoh tire bilan yopilgan, lekin vergul bilan boshlangan izoh vergul bilan yopilishi shart.",
+    "estimated_seconds": 50,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "boundaries",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "The glazed tiles that cover the domes and minarets of many historic buildings in ______ their brilliant blue and turquoise colors from cobalt and copper compounds that artisans mix into the glaze before the tiles are fired in a kiln.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "option_a": "Bukhara: get",
+    "option_b": "Bukhara get",
+    "option_c": "Bukhara, get",
+    "option_d": "Bukhara; get",
+    "correct": "B",
+    "explanation_en": "The subject of this sentence is the long noun phrase “The glazed tiles that cover the domes and minarets of many historic buildings in Bukhara,” and its main verb is “get.” No punctuation should separate a subject from its verb, so choice B is correct.\n\nChoices A, C, and D each insert a punctuation mark (a colon, a comma, or a semicolon) between the subject and its verb, which incorrectly breaks up the main clause. The length of the subject does not change this rule.",
+    "explanation_uz": "Bu gapning egasi — uzun ot birikmasi: “The glazed tiles that cover the domes and minarets of many historic buildings in Bukhara”, kesimi esa “get”. Ega va kesim orasiga hech qanday tinish belgisi qo‘yilmaydi, shuning uchun to‘g‘ri javob B.\n\nA, C va D variantlarda ega bilan kesim orasiga tinish belgisi (ikki nuqta, vergul yoki nuqtali vergul) qo‘yilgan, bu esa bosh gapni noto‘g‘ri bo‘lib yuboradi. Ega qanchalik uzun bo‘lmasin, bu qoida o‘zgarmaydi.",
+    "estimated_seconds": 55,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "boundaries",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "To qualify for the final round of the regional robotics contest, each team's machine had to complete two ______ climbing a steep wooden ramp and lifting a small box onto a shelf without dropping it.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "option_a": "tasks;",
+    "option_b": "tasks.",
+    "option_c": "tasks",
+    "option_d": "tasks:",
+    "correct": "D",
+    "explanation_en": "The words before the blank, “each team's machine had to complete two tasks,” form a complete independent clause, and the words after it name those two tasks. A colon is used after an independent clause to introduce a list or an explanation, so choice D is correct.\n\nChoice A uses a semicolon, but a semicolon must be followed by another independent clause, and “climbing a steep wooden ramp and lifting a small box onto a shelf” is not one. Choice B leaves that same phrase as a sentence fragment. Choice C runs “tasks” directly into the list with no punctuation.",
+    "explanation_uz": "Bo‘sh joydan oldingi qism — “each team’s machine had to complete two tasks” — to‘liq mustaqil gap, undan keyingi so‘zlar esa o‘sha ikki vazifani sanab beradi. Mustaqil gapdan keyin ro‘yxat yoki izohni kiritish uchun ikki nuqta (:) ishlatiladi, shuning uchun to‘g‘ri javob D.\n\nA — nuqtali verguldan keyin yana mustaqil gap kelishi kerak, “climbing a steep wooden ramp and lifting a small box onto a shelf” esa mustaqil gap emas. B — nuqta qo‘yilsa, o‘sha ibora to‘liq bo‘lmagan gap (fragment) bo‘lib qoladi. C — “tasks” so‘zi hech qanday belgisiz ro‘yxatga qo‘shilib ketgan.",
+    "estimated_seconds": 65,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "boundaries",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Engineers expected the new rooftop solar panels to lose much of their efficiency during the city's dusty summer ______ the panels' special coating shed most of the dust, and their power output stayed nearly constant from June through August.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "option_a": "months; however,",
+    "option_b": "months, however,",
+    "option_c": "months; however",
+    "option_d": "months however,",
+    "correct": "A",
+    "explanation_en": "The text contains two independent clauses, and “however” is a conjunctive adverb that begins the second one. The first clause must end with a semicolon (or a period), and “however” must be followed by a comma. Choice A is correct.\n\nChoice B joins the two independent clauses with only a comma, which creates a comma splice. Choice C omits the comma after “however.” Choice D has no punctuation before “however,” so the two clauses are fused.",
+    "explanation_uz": "Matnda ikkita mustaqil gap bor, “however” esa ikkinchi gapni boshlovchi bog‘lovchi ravish (conjunctive adverb). Birinchi gap nuqtali vergul (yoki nuqta) bilan tugashi, “however” dan keyin esa vergul qo‘yilishi kerak. To‘g‘ri javob A.\n\nB — ikki mustaqil gap faqat vergul bilan ulangan (comma splice). C — “however” dan keyingi vergul tushib qolgan. D — “however” dan oldin hech qanday belgi yo‘q, natijada ikki gap qo‘shilib ketgan.",
+    "estimated_seconds": 65,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "boundaries",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Because the meltwater flowing into the mountain lake carries tiny particles of finely ground ______ the water often looks like an opaque, milky turquoise rather than the clear blue that visitors expect.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "option_a": "rock;",
+    "option_b": "rock.",
+    "option_c": "rock,",
+    "option_d": "rock:",
+    "correct": "C",
+    "explanation_en": "“Because the meltwater flowing into the mountain lake carries tiny particles of finely ground rock” is a dependent clause: it begins with the subordinating conjunction “because” and cannot stand alone. When a dependent clause comes before the main clause, a comma separates the two, so choice C is correct.\n\nChoices A (semicolon) and B (period) belong between independent clauses; here they would leave the “because” clause as a fragment. Choice D is also incorrect, because a colon must follow an independent clause, and the “because” clause is not one.",
+    "explanation_uz": "“Because the meltwater flowing into the mountain lake carries tiny particles of finely ground rock” — bu ergash gap (dependent clause): u “because” bog‘lovchisi bilan boshlanadi va mustaqil gap bo‘la olmaydi. Ergash gap bosh gapdan oldin kelsa, ular vergul bilan ajratiladi, shuning uchun to‘g‘ri javob C.\n\nA (nuqtali vergul) va B (nuqta) mustaqil gaplar orasida ishlatiladi; bu yerda ular “because” bilan boshlangan qismni to‘liq bo‘lmagan gapga (fragment) aylantiradi. D ham xato, chunki ikki nuqtadan oldin mustaqil gap turishi kerak, “because” bilan boshlangan qism esa mustaqil gap emas.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "boundaries",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "The carpet—knotted by hand from wool that had been colored with natural dyes made from pomegranate rind, walnut husks, and ______ took a family of weavers in the Fergana Valley nearly two years to finish.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "option_a": "madder root,",
+    "option_b": "madder root—",
+    "option_c": "madder root;",
+    "option_d": "madder root",
+    "correct": "B",
+    "explanation_en": "The words between “The carpet” and “took” form a nonessential element that describes the carpet. This element opens with a dash after “The carpet,” so it must close with a matching dash, which choice B provides. The main clause then reads smoothly without the interruption: “The carpet … took a family of weavers in the Fergana Valley nearly two years to finish.”\n\nChoice A closes the element with a comma; the commas inside the list make this tempting, but an element that opens with a dash must close with a dash. Choice C's semicolon would separate the subject “The carpet” from its verb “took.” Choice D leaves the element unclosed, so the list runs straight into the main verb.",
+    "explanation_uz": "“The carpet” va “took” orasidagi so‘zlar gilamni tasvirlovchi qo‘shimcha izoh (nonessential element). Bu izoh “The carpet” dan keyingi tire bilan boshlangan, demak u xuddi shunday tire bilan yopilishi kerak — buni B varianti beradi. Shunda bosh gap uzilmasdan o‘qiladi: “The carpet … took a family of weavers in the Fergana Valley nearly two years to finish.”\n\nA — izoh vergul bilan yopilgan; ro‘yxat ichidagi vergullar bu variantni jozibali qiladi, lekin tire bilan boshlangan izoh tire bilan yopilishi shart. C — nuqtali vergul “The carpet” egasini “took” kesimidan ajratib qo‘yadi. D — izoh yopilmagan, ro‘yxat to‘g‘ridan-to‘g‘ri kesimga qo‘shilib ketadi.",
+    "estimated_seconds": 75,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "boundaries",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "The field team that spent the summer studying glaciers in the Pamir Mountains included Dilnoza Karimova, a glaciologist from Tashkent; Javier Ruiz, a geochemist from ______ and Mei Lin, a photographer from Taipei.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "option_a": "Seville,",
+    "option_b": "Seville:",
+    "option_c": "Seville",
+    "option_d": "Seville;",
+    "correct": "D",
+    "explanation_en": "This sentence lists three people, and each item already contains a comma (for example, “Dilnoza Karimova, a glaciologist from Tashkent”). When the items in a list contain internal commas, semicolons separate the items so that readers can tell where each one ends. The first two items are already separated by a semicolon, so a semicolon must also follow “Seville.” Choice D is correct.\n\nChoice A uses a comma, which makes the list inconsistent and makes it unclear whether “Mei Lin” is a separate person or a description of Javier Ruiz. Choice B's colon would wrongly signal that what follows explains the previous item. Choice C omits the separator entirely.",
+    "explanation_uz": "Bu gapda uch kishi sanab o‘tilgan va har bir bandning ichida allaqachon vergul bor (masalan, “Dilnoza Karimova, a glaciologist from Tashkent”). Ro‘yxat bandlari ichida vergul bo‘lsa, bandlar bir-biridan nuqtali vergul bilan ajratiladi — shunda o‘quvchi har bir band qayerda tugashini tushunadi. Birinchi ikki band nuqtali vergul bilan ajratilgan, demak “Seville” dan keyin ham nuqtali vergul kerak. To‘g‘ri javob D.\n\nA — vergul ro‘yxatni nomuvofiq qiladi va “Mei Lin” alohida shaxsmi yoki Javier Ruizning tavsifimi, tushunarsiz bo‘lib qoladi. B — ikki nuqta keyingi qism oldingi bandni izohlaydi degan noto‘g‘ri ishora beradi. C — ajratuvchi belgi umuman yo‘q.",
+    "estimated_seconds": 80,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  }
+]

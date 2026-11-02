@@ -1,0 +1,143 @@
+[
+  {
+    "skill_code": "linear_functions",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "The function $f$ is defined by $f(x) = 4x - 9$. What is the value of $f(-3)$?",
+    "option_a": "$-21$",
+    "option_b": "$-3$",
+    "option_c": "$3$",
+    "option_d": "$21$",
+    "correct": "A",
+    "explanation_en": "Substitute $-3$ for $x$: $f(-3) = 4(-3) - 9 = -12 - 9 = -21$.\n\nChoice B ($-3$) comes from adding $9$ instead of subtracting it: $-12 + 9 = -3$.",
+    "explanation_uz": "$x$ o‘rniga $-3$ ni qo‘yamiz: $f(-3) = 4(-3) - 9 = -12 - 9 = -21$.\n\nB variant ($-3$) — $9$ ni ayirish o‘rniga qo‘shish natijasi: $-12 + 9 = -3$.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "linear_functions",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "A candle burns at a constant rate after it is lit. The function $h(t) = 30 - 2.5t$ gives the height $h$, in centimeters, of the candle $t$ hours after it is lit. What is the best interpretation of $2.5$ in this context?",
+    "option_a": "The candle is $2.5$ centimeters tall when it is first lit.",
+    "option_b": "The candle burns out $2.5$ hours after it is lit.",
+    "option_c": "The candle is $2.5$ centimeters tall $1$ hour after it is lit.",
+    "option_d": "The height of the candle decreases by $2.5$ centimeters each hour.",
+    "correct": "D",
+    "explanation_en": "In $h(t) = 30 - 2.5t$, the coefficient of $t$ is the rate of change. Each time $t$ increases by $1$ hour, $h$ changes by $-2.5$, so the candle becomes $2.5$ centimeters shorter every hour.\n\nThe constant $30$ is the height when $t = 0$, and the candle burns out when $h(t) = 0$, which happens at $t = 12$ hours.\n\nChoice A describes the initial height, but the initial height is given by the constant term $30$, not by $2.5$.",
+    "explanation_uz": "$h(t) = 30 - 2.5t$ da $t$ oldidagi koeffitsiyent — o‘zgarish tezligi. $t$ har safar $1$ soatga oshganda $h$ $2.5$ ga kamayadi, ya’ni sham har soatda $2.5$ santimetrga qisqaradi.\n\nOzod had $30$ — $t = 0$ dagi balandlik; sham esa $h(t) = 0$ bo‘lganda, ya’ni $t = 12$ soatda yonib tugaydi.\n\nA variant boshlang‘ich balandlikni tasvirlaydi, lekin boshlang‘ich balandlik $2.5$ emas, ozod had $30$ ga teng.",
+    "estimated_seconds": 65,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "linear_functions",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "The function $p$ is defined by $p(x) = \\frac{2}{3}x + 8$. For what value of $x$ is $p(x) = 20$?",
+    "option_a": "$8$",
+    "option_b": "$12$",
+    "option_c": "$18$",
+    "option_d": "$42$",
+    "correct": "C",
+    "explanation_en": "Set $\\frac{2}{3}x + 8 = 20$. Subtract $8$ from both sides: $\\frac{2}{3}x = 12$. Multiply both sides by $\\frac{3}{2}$: $x = 18$.\n\nCheck: $p(18) = \\frac{2}{3}(18) + 8 = 12 + 8 = 20$.\n\nChoice B ($12$) is the value of $\\frac{2}{3}x$, which is one step before the value of $x$.",
+    "explanation_uz": "$\\frac{2}{3}x + 8 = 20$ tenglamani tuzamiz. Ikkala tomondan $8$ ni ayiramiz: $\\frac{2}{3}x = 12$. Ikkala tomonni $\\frac{3}{2}$ ga ko‘paytiramiz: $x = 18$.\n\nTekshiruv: $p(18) = \\frac{2}{3}(18) + 8 = 12 + 8 = 20$.\n\nB variant ($12$) — bu $\\frac{2}{3}x$ ning qiymati, ya’ni $x$ ni topishdan bir qadam oldingi natija.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "linear_functions",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "For the linear function $f$, $f(3) = 14$ and $f(7) = 26$. What is the value of $f(12)$?",
+    "spr_answers": [
+      "41"
+    ],
+    "explanation_en": "The slope is $\\frac{26 - 14}{7 - 3} = \\frac{12}{4} = 3$, so $f(x)$ increases by $3$ each time $x$ increases by $1$.\n\nFrom $x = 7$ to $x = 12$, $x$ increases by $5$, so $f(12) = 26 + 5(3) = 41$. (Equivalently, $f(x) = 3x + 5$, and $f(12) = 36 + 5 = 41$.)\n\nA common mistake is to compute the slope upside down, $\\frac{7 - 3}{26 - 14} = \\frac{1}{3}$, which gives $f(12) = 26 + 5 \\cdot \\frac{1}{3} \\approx 27.67$ instead of $41$.",
+    "explanation_uz": "Qiyalik: $\\frac{26 - 14}{7 - 3} = \\frac{12}{4} = 3$, ya’ni $x$ har safar $1$ ga oshganda $f(x)$ $3$ ga oshadi.\n\n$x = 7$ dan $x = 12$ gacha $x$ $5$ ga oshadi, demak $f(12) = 26 + 5(3) = 41$. (Boshqacha: $f(x) = 3x + 5$ va $f(12) = 36 + 5 = 41$.)\n\nKo‘p uchraydigan xato — qiyalikni teskari hisoblash: $\\frac{7 - 3}{26 - 14} = \\frac{1}{3}$. Unda $f(12) = 26 + 5 \\cdot \\frac{1}{3} \\approx 27.67$ chiqadi, $41$ emas.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "linear_functions",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "The daily cost $C$, in dollars, to rent a moving truck is a linear function of the number of miles $m$ the truck is driven. Renting the truck for a day and driving it $40$ miles costs \\$68, and renting it for a day and driving it $120$ miles costs \\$88. Which equation gives $C$ in terms of $m$?",
+    "option_a": "$C = 0.25m + 58$",
+    "option_b": "$C = 0.25m + 68$",
+    "option_c": "$C = 4m + 58$",
+    "option_d": "$C = 58m + 0.25$",
+    "correct": "A",
+    "explanation_en": "The slope is $\\frac{88 - 68}{120 - 40} = \\frac{20}{80} = 0.25$ dollar per mile.\n\nUse the point $(40, 68)$ to find the constant: $68 = 0.25(40) + b = 10 + b$, so $b = 58$. Therefore $C = 0.25m + 58$. Check: $0.25(120) + 58 = 30 + 58 = 88$.\n\nChoice B uses \\$68 as the starting value, but \\$68 is the cost after $40$ miles, not the cost for $0$ miles.",
+    "explanation_uz": "Qiyalik: $\\frac{88 - 68}{120 - 40} = \\frac{20}{80} = 0.25$ dollar/mil.\n\nOzod hadni $(40, 68)$ nuqta yordamida topamiz: $68 = 0.25(40) + b = 10 + b$, demak $b = 58$. Shunday qilib, $C = 0.25m + 58$. Tekshiruv: $0.25(120) + 58 = 30 + 58 = 88$.\n\nB variant \\$68 ni boshlang‘ich qiymat deb oladi, lekin \\$68 — $0$ mil emas, $40$ mil yurilgandagi narx.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "linear_functions",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "The cost $C$, in dollars, to print $n$ copies of a brochure is given by $C(n) = 0.25n + 30$. A school increased the size of its brochure order, and as a result, the cost of the order increased by \\$12. By how many copies did the order increase?",
+    "option_a": "$3$",
+    "option_b": "$48$",
+    "option_c": "$120$",
+    "option_d": "$168$",
+    "correct": "B",
+    "explanation_en": "Each additional copy adds $0.25$ dollar to the cost; the fixed $30$ dollars does not change. If the order increases by $k$ copies, the cost increases by $0.25k$ dollars.\n\nSo $0.25k = 12$, which gives $k = \\frac{12}{0.25} = 48$ copies.\n\nChoice A ($3$) multiplies $12$ by $0.25$ instead of dividing $12$ by $0.25$.",
+    "explanation_uz": "Har bir qo‘shimcha nusxa narxga $0.25$ dollar qo‘shadi; doimiy $30$ dollar o‘zgarmaydi. Buyurtma $k$ nusxaga oshsa, narx $0.25k$ dollarga oshadi.\n\nDemak $0.25k = 12$, bundan $k = \\frac{12}{0.25} = 48$ nusxa.\n\nA variant ($3$) — $12$ ni $0.25$ ga bo‘lish o‘rniga ko‘paytirish natijasi.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "linear_functions",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "For the linear function $k$, $k(5) - k(1) = 18$ and $k(3) = 2$. What is the value of $k(-1)$?",
+    "option_a": "$-70$",
+    "option_b": "$-16$",
+    "option_c": "$-\\frac{23}{2}$",
+    "option_d": "$20$",
+    "correct": "B",
+    "explanation_en": "From $x = 1$ to $x = 5$, $x$ increases by $4$ and $k(x)$ increases by $18$, so the slope is $\\frac{18}{4} = 4.5$.\n\nFrom $x = 3$ to $x = -1$, $x$ decreases by $4$, so $k(x)$ decreases by $4(4.5) = 18$. Therefore $k(-1) = 2 - 18 = -16$.\n\nChoice A treats $18$ as the slope (the change for a $1$-unit step), which gives $2 - 4(18) = -70$; choice C is $k(0)$, not $k(-1)$.",
+    "explanation_uz": "$x = 1$ dan $x = 5$ gacha $x$ $4$ ga oshadi, $k(x)$ esa $18$ ga oshadi, demak qiyalik $\\frac{18}{4} = 4.5$.\n\n$x = 3$ dan $x = -1$ gacha $x$ $4$ ga kamayadi, shuning uchun $k(x)$ $4(4.5) = 18$ ga kamayadi. Demak $k(-1) = 2 - 18 = -16$.\n\nA variant $18$ ni qiyalik (ya’ni $1$ birlik qadamdagi o‘zgarish) deb oladi va $2 - 4(18) = -70$ hosil qiladi; C variant esa $k(-1)$ emas, $k(0)$ ning qiymati.",
+    "estimated_seconds": 115,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "linear_functions",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "For the linear function $f$, $f(2) = 3 \\cdot f(0)$ and $f(4) = 21$. What is the value of $f(0)$?",
+    "spr_answers": [
+      "21/5",
+      "4.2"
+    ],
+    "explanation_en": "Write $f(x) = mx + b$, so $f(0) = b$.\n\nThe condition $f(2) = 3 \\cdot f(0)$ gives $2m + b = 3b$, so $2m = 2b$ and $m = b$.\n\nThen $f(4) = 4m + b = 4b + b = 5b = 21$, so $b = \\frac{21}{5} = 4.2$. Enter 21/5 or 4.2.\n\nA common error is to read $f(2) = 3 \\cdot f(0)$ as “the slope is $3$,” which leads to $f(x) = 3x + 9$ and the wrong answer $9$.",
+    "explanation_uz": "$f(x) = mx + b$ deb yozamiz, unda $f(0) = b$.\n\n$f(2) = 3 \\cdot f(0)$ shartidan $2m + b = 3b$, ya’ni $2m = 2b$ va $m = b$.\n\nU holda $f(4) = 4m + b = 4b + b = 5b = 21$, demak $b = \\frac{21}{5} = 4.2$. Javobni 21/5 yoki 4.2 shaklida kiriting.\n\nKo‘p uchraydigan xato — $f(2) = 3 \\cdot f(0)$ shartini «qiyalik $3$ ga teng» deb tushunish. Unda $f(x) = 3x + 9$ va noto‘g‘ri javob $9$ chiqadi.",
+    "estimated_seconds": 130,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  }
+]

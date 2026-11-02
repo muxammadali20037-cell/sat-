@@ -60,6 +60,38 @@ function Block({ node }: { node: BlockNode }) {
   if (node.type === 'display_math') {
     return <div className="my-2" dangerouslySetInnerHTML={{ __html: renderMath(node.value, true) }} />
   }
+  if (node.type === 'table') {
+    // Numbers (right/center-aligned columns) stay on one line; the label column gets room to read.
+    const alignClass = (i: number) =>
+      node.align[i] === 'right' ? 'text-right whitespace-nowrap' : node.align[i] === 'center' ? 'text-center whitespace-nowrap' : i === 0 ? 'text-left min-w-[8.5rem]' : 'text-left'
+    return (
+      // relative + overflow: wide tables scroll inside the passage instead of widening the page.
+      <div className="relative my-3 max-w-full overflow-x-auto">
+        <table className="w-full border-collapse bg-card text-[0.95em] tabular-nums">
+          <thead>
+            <tr>
+              {node.header.map((cell, i) => (
+                <th key={i} scope="col" className={cn('border border-border-strong bg-muted px-3 py-1.5 align-bottom font-semibold', alignClass(i), 'whitespace-normal')}>
+                  <Inline nodes={cell} />
+                </th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {node.rows.map((row, r) => (
+              <tr key={r}>
+                {row.map((cell, i) => (
+                  <td key={i} className={cn('border border-border-strong px-3 py-1.5 align-top', alignClass(i))}>
+                    <Inline nodes={cell} />
+                  </td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    )
+  }
   if (node.type === 'list') {
     return (
       <ul className="my-2 list-disc space-y-1 pl-5">

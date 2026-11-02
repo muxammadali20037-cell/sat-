@@ -1,0 +1,142 @@
+[
+  {
+    "skill_code": "linear_inequalities",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "Which of the following values of $x$ satisfies the inequality $-7 \\le 3x + 2 < 11$?",
+    "option_a": "$-4$",
+    "option_b": "$-3$",
+    "option_c": "$3$",
+    "option_d": "$4$",
+    "correct": "B",
+    "explanation_en": "Subtract $2$ from all three parts: $-9 \\le 3x < 9$. Divide all three parts by $3$: $-3 \\le x < 3$.\n\nOnly $-3$ is in this interval. It is included because the left inequality uses $\\le$: $3(-3) + 2 = -7$, and $-7 \\le -7$ is true.\n\nChoice C ($3$) is excluded because the right inequality is strict: $3(3) + 2 = 11$, and $11 < 11$ is false.",
+    "explanation_uz": "Uchala qismdan $2$ ni ayiramiz: $-9 \\le 3x < 9$. Uchala qismni $3$ ga bo‘lamiz: $-3 \\le x < 3$.\n\nVariantlardan faqat $-3$ shu oraliqda. U kiradi, chunki chap tomonda $\\le$ belgisi bor: $3(-3) + 2 = -7$ va $-7 \\le -7$ to‘g‘ri.\n\nC variant ($3$) kirmaydi, chunki o‘ng tomondagi tengsizlik qat’iy: $3(3) + 2 = 11$, $11 < 11$ esa noto‘g‘ri.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "linear_inequalities",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "To qualify for free shipping, an online order must total at least \\$75. Aziz has already placed items worth \\$41.50 in his cart. He wants to add bottles of shampoo that cost \\$6.70 each. Which inequality represents the numbers of bottles of shampoo, $b$, that Aziz can add so that his order qualifies for free shipping?",
+    "option_a": "$41.50 + 6.70b \\le 75$",
+    "option_b": "$6.70b \\ge 75$",
+    "option_c": "$6.70 + 41.50b \\ge 75$",
+    "option_d": "$41.50 + 6.70b \\ge 75$",
+    "correct": "D",
+    "explanation_en": "The order total is the amount already in the cart plus the cost of the shampoo: $41.50 + 6.70b$ dollars.\n\n“At least \\$75” means greater than or equal to $75$, so $41.50 + 6.70b \\ge 75$.\n\nChoice A uses $\\le$, which would mean the total is at most \\$75, the opposite of “at least.”",
+    "explanation_uz": "Buyurtma summasi — savatdagi mahsulotlar narxi va shampunlar narxining yig‘indisi: $41.50 + 6.70b$ dollar.\n\n«Kamida \\$75» — $75$ dan katta yoki teng degani, shuning uchun $41.50 + 6.70b \\ge 75$.\n\nA variantda $\\le$ belgisi ishlatilgan; bu «ko‘pi bilan \\$75» degan ma’noni beradi, ya’ni «kamida» ning aksi.",
+    "estimated_seconds": 65,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "linear_inequalities",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "What is the greatest integer $x$ that satisfies the inequality $4x - 9 \\le 2x + 8$?",
+    "option_a": "$-1$",
+    "option_b": "$2$",
+    "option_c": "$8$",
+    "option_d": "$9$",
+    "correct": "C",
+    "explanation_en": "Subtract $2x$ from both sides: $2x - 9 \\le 8$. Add $9$: $2x \\le 17$. Divide by $2$: $x \\le 8.5$.\n\nThe greatest integer that is less than or equal to $8.5$ is $8$.\n\nChoice D ($9$) rounds $8.5$ up, but $9$ does not satisfy the inequality: $4(9) - 9 = 27$, which is greater than $2(9) + 8 = 26$.",
+    "explanation_uz": "Ikkala tomondan $2x$ ni ayiramiz: $2x - 9 \\le 8$. $9$ ni qo‘shamiz: $2x \\le 17$. $2$ ga bo‘lamiz: $x \\le 8.5$.\n\n$8.5$ dan katta bo‘lmagan eng katta butun son — $8$.\n\nD variant ($9$) — $8.5$ ni yuqoriga yaxlitlash natijasi, lekin $9$ tengsizlikni qanoatlantirmaydi: $4(9) - 9 = 27$, bu esa $2(9) + 8 = 26$ dan katta.",
+    "estimated_seconds": 75,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "linear_inequalities",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "$$\\begin{aligned} y &\\ge 3x - 4 \\\\ x + 2y &< 10 \\end{aligned}$$\n\nWhich point $(x, y)$ is a solution to the given system of inequalities?",
+    "option_a": "$(1, 3)$",
+    "option_b": "$(2, 4)$",
+    "option_c": "$(3, 2)$",
+    "option_d": "$(4, 9)$",
+    "correct": "A",
+    "explanation_en": "Test each point in both inequalities.\n\n$(1, 3)$: $3 \\ge 3(1) - 4 = -1$ is true, and $1 + 2(3) = 7 < 10$ is true, so $(1, 3)$ is a solution.\n\n$(2, 4)$: $4 \\ge 2$ is true, but $2 + 2(4) = 10$, and $10 < 10$ is false. $(3, 2)$: $2 \\ge 5$ is false. $(4, 9)$: $9 \\ge 8$ is true, but $4 + 18 = 22 < 10$ is false.\n\nChoice B is tempting because it lies on the boundary line $x + 2y = 10$, but that line is not included in the solution region because the inequality is strict.",
+    "explanation_uz": "Har bir nuqtani ikkala tengsizlikka qo‘yib tekshiramiz.\n\n$(1, 3)$: $3 \\ge 3(1) - 4 = -1$ to‘g‘ri va $1 + 2(3) = 7 < 10$ to‘g‘ri, demak $(1, 3)$ — yechim.\n\n$(2, 4)$: $4 \\ge 2$ to‘g‘ri, lekin $2 + 2(4) = 10$ va $10 < 10$ noto‘g‘ri. $(3, 2)$: $2 \\ge 5$ noto‘g‘ri. $(4, 9)$: $9 \\ge 8$ to‘g‘ri, lekin $4 + 18 = 22 < 10$ noto‘g‘ri.\n\nB variant — tuzoq: u $x + 2y = 10$ chegara chizig‘ida yotadi, lekin tengsizlik qat’iy bo‘lgani uchun chegara chizig‘i yechimlar sohasiga kirmaydi.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "linear_inequalities",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "A charity concert costs \\$2,350 to organize. Tickets sell for \\$18 each, and a local business donates \\$400 to the concert. What is the minimum number of tickets that must be sold so that the ticket sales plus the donation are at least the cost of organizing the concert?",
+    "spr_answers": [
+      "109"
+    ],
+    "explanation_en": "If $t$ tickets are sold, the money collected is $18t + 400$ dollars. It must be at least the cost: $18t + 400 \\ge 2{,}350$.\n\nSubtract $400$: $18t \\ge 1{,}950$. Divide by $18$: $t \\ge 108.33\\ldots$\n\nThe number of tickets must be a whole number, so the minimum is $109$. Check: $18(108) + 400 = 2{,}344$ is less than $2{,}350$, but $18(109) + 400 = 2{,}362$ is enough.\n\nEntering $108$ (rounding down) is a common error: $108$ tickets leave the concert \\$6 short.",
+    "explanation_uz": "$t$ ta chipta sotilsa, yig‘ilgan pul $18t + 400$ dollar bo‘ladi. U xarajatdan kam bo‘lmasligi kerak: $18t + 400 \\ge 2{,}350$.\n\n$400$ ni ayiramiz: $18t \\ge 1{,}950$. $18$ ga bo‘lamiz: $t \\ge 108.33\\ldots$\n\nChiptalar soni butun son bo‘lishi kerak, shuning uchun eng kichik qiymat $109$. Tekshiruv: $18(108) + 400 = 2{,}344$ — bu $2{,}350$ dan kam, $18(109) + 400 = 2{,}362$ esa yetarli.\n\nKo‘p uchraydigan xato — pastga yaxlitlab $108$ ni kiritish: $108$ ta chipta bilan \\$6 yetmay qoladi.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "linear_inequalities",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "Which of the following inequalities is equivalent to $-\\frac{2}{3}(x - 6) \\ge x + 9$?",
+    "option_a": "$x \\ge 3$",
+    "option_b": "$x \\ge -3$",
+    "option_c": "$x \\le -9$",
+    "option_d": "$x \\le -3$",
+    "correct": "D",
+    "explanation_en": "Distribute: $-\\frac{2}{3}x + 4 \\ge x + 9$. Subtract $x$ and $4$ from both sides: $-\\frac{5}{3}x \\ge 5$.\n\nMultiply both sides by $-\\frac{3}{5}$. Multiplying by a negative number reverses the inequality sign: $x \\le -3$.\n\nCheck with $x = -6$: $-\\frac{2}{3}(-12) = 8$ and $-6 + 9 = 3$, and $8 \\ge 3$ is true.\n\nChoice B is the result of forgetting to reverse the inequality sign when multiplying by a negative number.",
+    "explanation_uz": "Qavsni ochamiz: $-\\frac{2}{3}x + 4 \\ge x + 9$. Ikkala tomondan $x$ va $4$ ni ayiramiz: $-\\frac{5}{3}x \\ge 5$.\n\nIkkala tomonni $-\\frac{3}{5}$ ga ko‘paytiramiz. Manfiy songa ko‘paytirganda tengsizlik belgisi teskarisiga o‘zgaradi: $x \\le -3$.\n\nTekshiruv, $x = -6$: $-\\frac{2}{3}(-12) = 8$ va $-6 + 9 = 3$; $8 \\ge 3$ to‘g‘ri.\n\nB variant — manfiy songa ko‘paytirganda tengsizlik belgisini aylantirishni unutish natijasi.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "linear_inequalities",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "A bakery has $50$ kilograms of flour for today's baking. Each loaf of bread uses $0.4$ kilogram of flour, and each cake uses $0.75$ kilogram of flour. The bakery must bake at least $30$ loaves of bread today. What is the maximum number of cakes the bakery can bake today without using more than $50$ kilograms of flour?",
+    "option_a": "$26$",
+    "option_b": "$50$",
+    "option_c": "$51$",
+    "option_d": "$66$",
+    "correct": "B",
+    "explanation_en": "If the bakery bakes $\\ell$ loaves and $c$ cakes, then $0.4\\ell + 0.75c \\le 50$ and $\\ell \\ge 30$.\n\nTo bake as many cakes as possible, bake the fewest loaves allowed, $\\ell = 30$, which uses $0.4(30) = 12$ kilograms of flour. Then $0.75c \\le 38$, so $c \\le 50.66\\ldots$\n\nThe number of cakes is a whole number, so the maximum is $50$. Check: $12 + 0.75(50) = 49.5 \\le 50$, but $12 + 0.75(51) = 50.25 > 50$.\n\nChoice C ($51$) rounds $50.66\\ldots$ up, but $51$ cakes would require more than $50$ kilograms of flour.",
+    "explanation_uz": "Novvoyxona $\\ell$ ta non va $c$ ta tort pishirsa, $0.4\\ell + 0.75c \\le 50$ va $\\ell \\ge 30$.\n\nIloji boricha ko‘p tort pishirish uchun eng kam ruxsat etilgan miqdorda non pishiramiz: $\\ell = 30$, bunga $0.4(30) = 12$ kilogramm un ketadi. U holda $0.75c \\le 38$, ya’ni $c \\le 50.66\\ldots$\n\nTortlar soni butun son, shuning uchun eng ko‘pi $50$. Tekshiruv: $12 + 0.75(50) = 49.5 \\le 50$, lekin $12 + 0.75(51) = 50.25 > 50$.\n\nC variant ($51$) — $50.66\\ldots$ ni yuqoriga yaxlitlash natijasi, lekin $51$ ta tort uchun $50$ kilogrammdan ko‘p un kerak bo‘ladi.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "linear_inequalities",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "How many integers $x$ satisfy both $3x - 5 < 2x + 4$ and $-2x \\le 3x + 20$?",
+    "spr_answers": [
+      "13"
+    ],
+    "explanation_en": "First inequality: subtract $2x$ and add $5$ to both sides: $x < 9$.\n\nSecond inequality: subtract $3x$ from both sides: $-5x \\le 20$. Divide by $-5$ and reverse the sign: $x \\ge -4$.\n\nSo $-4 \\le x < 9$. The integers are $-4, -3, -2, \\ldots, 8$, and there are $8 - (-4) + 1 = 13$ of them.\n\nCommon errors are forgetting to reverse the sign in the second inequality, or counting only $8 - (-4) = 12$ and leaving out one endpoint.",
+    "explanation_uz": "Birinchi tengsizlik: ikkala tomondan $2x$ ni ayirib, $5$ ni qo‘shamiz: $x < 9$.\n\nIkkinchi tengsizlik: ikkala tomondan $3x$ ni ayiramiz: $-5x \\le 20$. $-5$ ga bo‘lamiz va belgini aylantiramiz: $x \\ge -4$.\n\nDemak $-4 \\le x < 9$. Butun sonlar: $-4, -3, -2, \\ldots, 8$, ularning soni $8 - (-4) + 1 = 13$ ta.\n\nKo‘p uchraydigan xatolar: ikkinchi tengsizlikda belgini aylantirishni unutish yoki faqat $8 - (-4) = 12$ ni hisoblab, chetki sonlardan birini tushirib qoldirish.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  }
+]

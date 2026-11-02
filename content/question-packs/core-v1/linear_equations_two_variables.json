@@ -1,0 +1,144 @@
+[
+  {
+    "skill_code": "linear_equations_two_variables",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "Which point $(x, y)$ lies on the graph of $3x - 2y = 12$ in the $xy$-plane?",
+    "option_a": "$(2, -3)$",
+    "option_b": "$(2, 3)$",
+    "option_c": "$(0, 6)$",
+    "option_d": "$(-4, 0)$",
+    "correct": "A",
+    "explanation_en": "Substitute each point into $3x - 2y$. For $(2, -3)$: $3(2) - 2(-3) = 6 + 6 = 12$, so this point is on the graph.\n\nThe others fail: $(2, 3)$ gives $6 - 6 = 0$; $(0, 6)$ gives $0 - 12 = -12$; $(-4, 0)$ gives $-12 - 0 = -12$.\n\nChoice C is tempting if the $y$-intercept is found with a sign error: setting $x = 0$ gives $-2y = 12$, so $y = -6$, not $6$.",
+    "explanation_uz": "Har bir nuqtani $3x - 2y$ ifodaga qo‘yamiz. $(2, -3)$ uchun: $3(2) - 2(-3) = 6 + 6 = 12$, demak bu nuqta grafikda yotadi.\n\nQolganlari mos kelmaydi: $(2, 3)$ uchun $6 - 6 = 0$; $(0, 6)$ uchun $0 - 12 = -12$; $(-4, 0)$ uchun $-12 - 0 = -12$.\n\nC variant — tuzoq: $x = 0$ bo‘lganda $-2y = 12$, ya’ni $y = -6$ bo‘ladi, $6$ emas. Ishorani yo‘qotsangiz, shu variantni tanlab qo‘yasiz.",
+    "estimated_seconds": 65,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "linear_equations_two_variables",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "A bakery sells muffins for \\$3 each and loaves of bread for \\$5 each. On Monday, the bakery's sales of muffins and loaves of bread totaled \\$420. If $m$ is the number of muffins sold and $b$ is the number of loaves of bread sold on Monday, which equation represents this situation?",
+    "option_a": "$3m + 5b = 420$",
+    "option_b": "$5m + 3b = 420$",
+    "option_c": "$m + b = 420$",
+    "option_d": "$\\frac{m}{3} + \\frac{b}{5} = 420$",
+    "correct": "A",
+    "explanation_en": "The muffins bring in $3m$ dollars and the loaves of bread bring in $5b$ dollars. Together they total $420$ dollars: $3m + 5b = 420$.\n\nChoice B attaches each price to the wrong item: muffins cost \\$3 each, so the muffin term must be $3m$.",
+    "explanation_uz": "Keksdan $3m$ dollar, nondan esa $5b$ dollar tushum bo‘ladi. Ularning yig‘indisi $420$ dollar: $3m + 5b = 420$.\n\nB variantda narxlar almashib qolgan: keks \\$3 turadi, shuning uchun keks hadi $3m$ bo‘lishi kerak.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "linear_equations_two_variables",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "In the $xy$-plane, the graph of $y = -\\frac{2}{5}x + 6$ crosses the $x$-axis at the point $(a, 0)$. What is the value of $a$?",
+    "option_a": "$-15$",
+    "option_b": "$\\frac{12}{5}$",
+    "option_c": "$6$",
+    "option_d": "$15$",
+    "correct": "D",
+    "explanation_en": "On the $x$-axis, $y = 0$. So $0 = -\\frac{2}{5}a + 6$, which gives $\\frac{2}{5}a = 6$ and $a = 6 \\cdot \\frac{5}{2} = 15$.\n\nChoice C ($6$) is the $y$-intercept, where the line crosses the $y$-axis, not the $x$-axis.",
+    "explanation_uz": "$x$ o‘qida $y = 0$ bo‘ladi. Demak $0 = -\\frac{2}{5}a + 6$, bundan $\\frac{2}{5}a = 6$ va $a = 6 \\cdot \\frac{5}{2} = 15$.\n\nC variant ($6$) — chiziq $x$ o‘qini emas, $y$ o‘qini kesib o‘tadigan nuqtaning ordinatasi.",
+    "estimated_seconds": 75,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "linear_equations_two_variables",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "What is the slope of the line with equation $4x + 7y = 21$ in the $xy$-plane?",
+    "option_a": "$-\\frac{7}{4}$",
+    "option_b": "$-\\frac{4}{7}$",
+    "option_c": "$\\frac{4}{7}$",
+    "option_d": "$3$",
+    "correct": "B",
+    "explanation_en": "Solve for $y$: $7y = -4x + 21$, so $y = -\\frac{4}{7}x + 3$. The slope is the coefficient of $x$: $-\\frac{4}{7}$.\n\nChoice C forgets that $4x$ becomes $-4x$ when it is moved to the other side; choice D ($3$) is the $y$-intercept, not the slope.",
+    "explanation_uz": "Tenglamani $y$ ga nisbatan yechamiz: $7y = -4x + 21$, demak $y = -\\frac{4}{7}x + 3$. Qiyalik — $x$ oldidagi koeffitsiyent: $-\\frac{4}{7}$.\n\nC variantda $4x$ ni boshqa tomonga o‘tkazganda ishora o‘zgarishi unutilgan; D variant ($3$) esa qiyalik emas, $y$ o‘qini kesish nuqtasi.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "linear_equations_two_variables",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "A line in the $xy$-plane passes through the points $(-3, 8)$ and $(5, -4)$. What is the $y$-coordinate of the $y$-intercept of the line?",
+    "spr_answers": [
+      "7/2",
+      "3.5"
+    ],
+    "explanation_en": "The slope is $\\frac{-4 - 8}{5 - (-3)} = \\frac{-12}{8} = -\\frac{3}{2}$.\n\nMoving from $x = -3$ to $x = 0$ increases $x$ by $3$, so $y$ changes by $3 \\cdot \\left(-\\frac{3}{2}\\right) = -\\frac{9}{2}$. The $y$-intercept is $8 - \\frac{9}{2} = \\frac{7}{2}$. Enter 7/2 or 3.5.\n\nCheck with the other point: $-\\frac{3}{2}(5) + \\frac{7}{2} = -\\frac{15}{2} + \\frac{7}{2} = -4$.\n\nA common mistake is writing $5 - 3 = 2$ in the denominator instead of $5 - (-3) = 8$, which gives a slope of $-6$ and the wrong intercept $-10$.",
+    "explanation_uz": "Qiyalik: $\\frac{-4 - 8}{5 - (-3)} = \\frac{-12}{8} = -\\frac{3}{2}$.\n\n$x = -3$ dan $x = 0$ ga o‘tganda $x$ $3$ ga oshadi, demak $y$ $3 \\cdot \\left(-\\frac{3}{2}\\right) = -\\frac{9}{2}$ ga o‘zgaradi. $y$ o‘qini kesish nuqtasi: $8 - \\frac{9}{2} = \\frac{7}{2}$. Javobni 7/2 yoki 3.5 shaklida kiriting.\n\nIkkinchi nuqta bilan tekshiramiz: $-\\frac{3}{2}(5) + \\frac{7}{2} = -\\frac{15}{2} + \\frac{7}{2} = -4$.\n\nKo‘p uchraydigan xato — maxrajda $5 - (-3) = 8$ o‘rniga $5 - 3 = 2$ yozish. Unda qiyalik $-6$ va noto‘g‘ri javob $-10$ chiqadi.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "linear_equations_two_variables",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "Line $k$ is perpendicular to the line $2x - 5y = 10$ in the $xy$-plane and passes through the point $(4, 1)$. Which equation defines line $k$?",
+    "option_a": "$y = \\frac{2}{5}x - \\frac{3}{5}$",
+    "option_b": "$y = -\\frac{2}{5}x + \\frac{13}{5}$",
+    "option_c": "$y = \\frac{5}{2}x - 9$",
+    "option_d": "$y = -\\frac{5}{2}x + 11$",
+    "correct": "D",
+    "explanation_en": "Rewrite the given line in slope-intercept form: $-5y = -2x + 10$, so $y = \\frac{2}{5}x - 2$. Its slope is $\\frac{2}{5}$.\n\nA perpendicular line has the negative reciprocal slope, $-\\frac{5}{2}$. Through $(4, 1)$: $y - 1 = -\\frac{5}{2}(x - 4)$, so $y = -\\frac{5}{2}x + 10 + 1 = -\\frac{5}{2}x + 11$.\n\nChoice C takes the reciprocal $\\frac{5}{2}$ but forgets to change the sign; choice A is the line through $(4, 1)$ that is parallel, not perpendicular, to the given line.",
+    "explanation_uz": "Berilgan chiziqni $y = mx + b$ ko‘rinishiga keltiramiz: $-5y = -2x + 10$, demak $y = \\frac{2}{5}x - 2$. Uning qiyaligi $\\frac{2}{5}$.\n\nPerpendikulyar chiziqning qiyaligi — teskari va qarama-qarshi ishorali son: $-\\frac{5}{2}$. $(4, 1)$ nuqtadan o‘tadi: $y - 1 = -\\frac{5}{2}(x - 4)$, demak $y = -\\frac{5}{2}x + 10 + 1 = -\\frac{5}{2}x + 11$.\n\nC variantda teskari son $\\frac{5}{2}$ olingan, lekin ishora o‘zgartirilmagan; A variant esa $(4, 1)$ dan o‘tuvchi parallel chiziq, perpendikulyar emas.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "linear_equations_two_variables",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "A café spends exactly \\$540 each week on milk and coffee beans. Milk costs \\$1.20 per liter and coffee beans cost \\$18 per kilogram, so $1.2m + 18c = 540$, where $m$ is the number of liters of milk and $c$ is the number of kilograms of coffee beans the café buys in a week. Next week, the café will buy $3$ more kilograms of coffee beans than it bought this week and will still spend exactly \\$540. How many fewer liters of milk will the café buy next week than this week?",
+    "option_a": "$0.2$",
+    "option_b": "$3.6$",
+    "option_c": "$45$",
+    "option_d": "$54$",
+    "correct": "C",
+    "explanation_en": "Buying $3$ more kilograms of coffee beans costs an extra $18 \\cdot 3 = 54$ dollars.\n\nSince the total stays at $540$ dollars, spending on milk must decrease by $54$ dollars, which is $\\frac{54}{1.2} = 45$ liters.\n\nAlgebraically: if the milk decreases by $d$ liters, then $1.2(m - d) + 18(c + 3) = 540$. Subtracting $1.2m + 18c = 540$ gives $-1.2d + 54 = 0$, so $d = 45$.\n\nChoice D ($54$) is the change in spending in dollars, not the change in the number of liters of milk.",
+    "explanation_uz": "$3$ kilogramm qo‘shimcha kofe donasi $18 \\cdot 3 = 54$ dollar qo‘shimcha xarajat demakdir.\n\nUmumiy xarajat $540$ dollarligicha qolgani uchun sutga sarflanadigan pul $54$ dollarga kamayishi kerak, bu $\\frac{54}{1.2} = 45$ litr.\n\nAlgebraik usul: sut $d$ litrga kamaysa, $1.2(m - d) + 18(c + 3) = 540$. Bundan $1.2m + 18c = 540$ ni ayirsak, $-1.2d + 54 = 0$, demak $d = 45$.\n\nD variant ($54$) — sut litrlaridagi emas, dollardagi o‘zgarish.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "linear_equations_two_variables",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "In the $xy$-plane, a line with slope $-2$ passes through the points $(1, 5)$ and $(k, 2k)$, where $k$ is a constant. What is the value of $k$?",
+    "spr_answers": [
+      "7/4",
+      "1.75"
+    ],
+    "explanation_en": "Use the slope formula: $\\frac{2k - 5}{k - 1} = -2$.\n\nMultiply both sides by $k - 1$: $2k - 5 = -2k + 2$. Then $4k = 7$, so $k = \\frac{7}{4}$. Enter 7/4 or 1.75.\n\nCheck: the second point is $\\left(\\frac{7}{4}, \\frac{7}{2}\\right)$, and $\\frac{\\frac{7}{2} - 5}{\\frac{7}{4} - 1} = \\frac{-\\frac{3}{2}}{\\frac{3}{4}} = -2$.\n\nA common slip is distributing $-2(k - 1)$ as $-2k - 2$, which gives $4k = 3$ and the wrong value $\\frac{3}{4}$.",
+    "explanation_uz": "Qiyalik formulasidan foydalanamiz: $\\frac{2k - 5}{k - 1} = -2$.\n\nIkkala tomonni $k - 1$ ga ko‘paytiramiz: $2k - 5 = -2k + 2$. Bundan $4k = 7$, demak $k = \\frac{7}{4}$. Javobni 7/4 yoki 1.75 shaklida kiriting.\n\nTekshiruv: ikkinchi nuqta $\\left(\\frac{7}{4}, \\frac{7}{2}\\right)$, va $\\frac{\\frac{7}{2} - 5}{\\frac{7}{4} - 1} = \\frac{-\\frac{3}{2}}{\\frac{3}{4}} = -2$.\n\nKo‘p uchraydigan xato — $-2(k - 1)$ ni $-2k - 2$ deb ochish. Unda $4k = 3$ va noto‘g‘ri javob $\\frac{3}{4}$ chiqadi.",
+    "estimated_seconds": 125,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  }
+]

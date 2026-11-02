@@ -1,0 +1,140 @@
+[
+  {
+    "skill_code": "circles",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "A circle has an area of $49\\pi$ square inches. What is the circumference, in inches, of the circle?",
+    "option_a": "$14\\pi$",
+    "option_b": "$28\\pi$",
+    "option_c": "$49\\pi$",
+    "option_d": "$98\\pi$",
+    "correct": "A",
+    "explanation_en": "The area is $\\pi r^2 = 49\\pi$, so $r^2 = 49$ and $r = 7$ inches. The circumference is $2\\pi r = 2\\pi(7) = 14\\pi$ inches. Choice A is correct.\n\nChoice B ($28\\pi$) uses the diameter, 14, in place of the radius. Choice C ($49\\pi$) assumes the circumference equals the area. Choice D ($98\\pi$) is $2\\pi r^2$, a mix of the area and circumference formulas.",
+    "explanation_uz": "Doira yuzasi $\\pi r^2 = 49\\pi$, demak $r^2 = 49$ va $r = 7$ dyuym. Aylana uzunligi $2\\pi r = 2\\pi(7) = 14\\pi$ dyuym. To‘g‘ri javob A.\n\nB ($28\\pi$) — radius o‘rniga diametr (14) olingan. C ($49\\pi$) — aylana uzunligi yuzaga teng deb olingan. D ($98\\pi$) — bu $2\\pi r^2$, yuza va aylana uzunligi formulalari aralashtirib yuborilgan.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "circles",
+    "difficulty": "easy",
+    "question_type": "spr",
+    "stem": "A circle has a radius of 10 centimeters. A central angle of the circle measures $72^\\circ$. The length of the arc intercepted by this central angle is $k\\pi$ centimeters. What is the value of $k$?",
+    "spr_answers": [
+      "4"
+    ],
+    "explanation_en": "The arc is $\\frac{72}{360} = \\frac{1}{5}$ of the whole circle. The circumference is $2\\pi(10) = 20\\pi$ centimeters, so the arc length is $\\frac{1}{5} \\cdot 20\\pi = 4\\pi$ centimeters, and $k = 4$.\n\nIf you got 20, you found the area of the sector ($\\frac{1}{5} \\cdot 100\\pi = 20\\pi$) instead of the arc length.",
+    "explanation_uz": "Yoy butun aylananing $\\frac{72}{360} = \\frac{1}{5}$ qismini tashkil qiladi. Aylana uzunligi $2\\pi(10) = 20\\pi$ santimetr, demak yoy uzunligi $\\frac{1}{5} \\cdot 20\\pi = 4\\pi$ santimetr va $k = 4$.\n\nAgar 20 chiqqan bo‘lsa, siz yoy uzunligi o‘rniga sektor yuzasini ($\\frac{1}{5} \\cdot 100\\pi = 20\\pi$) topgansiz.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "circles",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "An angle measures $\\frac{5\\pi}{6}$ radians. What is the measure of the angle in degrees?",
+    "option_a": "$30^\\circ$",
+    "option_b": "$75^\\circ$",
+    "option_c": "$150^\\circ$",
+    "option_d": "$300^\\circ$",
+    "correct": "C",
+    "explanation_en": "Because $\\pi$ radians equals $180^\\circ$, multiply by $\\frac{180^\\circ}{\\pi}$: $\\frac{5\\pi}{6} \\cdot \\frac{180^\\circ}{\\pi} = 5 \\cdot 30^\\circ = 150^\\circ$. Choice C is correct.\n\nChoice A ($30^\\circ$) converts only $\\frac{\\pi}{6}$ and drops the factor 5. Choice B ($75^\\circ$) uses $\\pi = 90^\\circ$. Choice D ($300^\\circ$) uses $\\pi = 360^\\circ$; a full turn of $360^\\circ$ is $2\\pi$ radians, not $\\pi$.",
+    "explanation_uz": "$\\pi$ radian $180^\\circ$ ga teng, shuning uchun $\\frac{180^\\circ}{\\pi}$ ga ko‘paytiramiz: $\\frac{5\\pi}{6} \\cdot \\frac{180^\\circ}{\\pi} = 5 \\cdot 30^\\circ = 150^\\circ$. To‘g‘ri javob C.\n\nA ($30^\\circ$) — faqat $\\frac{\\pi}{6}$ o‘girilgan, 5 ko‘paytuvchi tushib qolgan. B ($75^\\circ$) — $\\pi = 90^\\circ$ deb olingan. D ($300^\\circ$) — $\\pi = 360^\\circ$ deb olingan; aslida to‘liq aylanish $360^\\circ$ — bu $\\pi$ emas, $2\\pi$ radian.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "circles",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "The equation $x^2 + y^2 + 10x - 4y = -13$ defines a circle in the $xy$-plane. What are the coordinates of the center of the circle and the length of its radius?",
+    "option_a": "Center $(-5, 2)$, radius 4",
+    "option_b": "Center $(5, -2)$, radius 4",
+    "option_c": "Center $(-5, 2)$, radius 16",
+    "option_d": "Center $(-10, 4)$, radius 4",
+    "correct": "A",
+    "explanation_en": "Complete the square in each variable. For $x^2 + 10x$, add $\\left(\\frac{10}{2}\\right)^2 = 25$; for $y^2 - 4y$, add $\\left(\\frac{-4}{2}\\right)^2 = 4$. Adding 25 and 4 to both sides gives $(x + 5)^2 + (y - 2)^2 = -13 + 25 + 4 = 16$. This matches $(x - h)^2 + (y - k)^2 = r^2$ with $h = -5$, $k = 2$, and $r = \\sqrt{16} = 4$. Choice A is correct.\n\nChoice B reverses the signs of the center's coordinates. Choice C gives $r^2 = 16$ as the radius. Choice D uses the coefficients 10 and $-4$ themselves instead of half of each.",
+    "explanation_uz": "Har bir o‘zgaruvchi uchun to‘la kvadrat ajratamiz. $x^2 + 10x$ ga $\\left(\\frac{10}{2}\\right)^2 = 25$, $y^2 - 4y$ ga esa $\\left(\\frac{-4}{2}\\right)^2 = 4$ qo‘shiladi. 25 va 4 ni tenglamaning ikkala tomoniga qo‘shsak: $(x + 5)^2 + (y - 2)^2 = -13 + 25 + 4 = 16$. Bu $(x - h)^2 + (y - k)^2 = r^2$ ko‘rinishiga mos: $h = -5$, $k = 2$, $r = \\sqrt{16} = 4$. To‘g‘ri javob A.\n\nB — markaz koordinatalarining ishoralari teskari olingan. C — $r^2 = 16$ radius deb olingan. D — koeffitsiyentlarning yarmi o‘rniga 10 va $-4$ ning o‘zi ishlatilgan.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "circles",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "In a circle with center $O$ and radius 12, the length of minor arc $AB$ is $5\\pi$. What is the measure, in degrees, of central angle $AOB$?",
+    "spr_answers": [
+      "75"
+    ],
+    "explanation_en": "The circumference is $2\\pi(12) = 24\\pi$. The arc is $\\frac{5\\pi}{24\\pi} = \\frac{5}{24}$ of the circle, so the central angle is $\\frac{5}{24} \\cdot 360^\\circ = 75^\\circ$. In radians, $\\theta = \\frac{s}{r} = \\frac{5\\pi}{12}$, which also equals $75^\\circ$. Enter 75.",
+    "explanation_uz": "Aylana uzunligi $2\\pi(12) = 24\\pi$. Yoy aylananing $\\frac{5\\pi}{24\\pi} = \\frac{5}{24}$ qismi, demak markaziy burchak $\\frac{5}{24} \\cdot 360^\\circ = 75^\\circ$. Radianda: $\\theta = \\frac{s}{r} = \\frac{5\\pi}{12}$, bu ham $75^\\circ$ ga teng. Javob katagiga 75 ni yozing.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "circles",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "Line $\\ell$ is tangent at point $P$ to a circle with center $O$ and radius 9. Point $Q$ lies on line $\\ell$, and $PQ = 12$. What is the length of $\\overline{OQ}$?",
+    "option_a": "3",
+    "option_b": "$\\sqrt{21}$",
+    "option_c": "$3\\sqrt{7}$",
+    "option_d": "15",
+    "correct": "D",
+    "explanation_en": "A tangent line is perpendicular to the radius drawn to the point of tangency, so angle $OPQ$ is a right angle. In right triangle $OPQ$, $\\overline{OQ}$ is the hypotenuse: $OQ = \\sqrt{9^2 + 12^2} = \\sqrt{225} = 15$. Choice D is correct.\n\nChoice A (3) simply subtracts $12 - 9$. Choice B ($\\sqrt{21}$) adds 9 and 12 without squaring them. Choice C ($3\\sqrt{7} = \\sqrt{144 - 81}$) treats $\\overline{PQ}$ as the hypotenuse, but the hypotenuse is the side opposite the right angle at $P$.",
+    "explanation_uz": "Urinma urinish nuqtasiga o‘tkazilgan radiusga perpendikulyar, shuning uchun $OPQ$ burchak to‘g‘ri burchak. $OPQ$ to‘g‘ri burchakli uchburchakda $\\overline{OQ}$ — gipotenuza: $OQ = \\sqrt{9^2 + 12^2} = \\sqrt{225} = 15$. To‘g‘ri javob D.\n\nA (3) — shunchaki $12 - 9$ ayirilgan. B ($\\sqrt{21}$) — 9 va 12 kvadratga oshirilmasdan qo‘shilgan. C ($3\\sqrt{7} = \\sqrt{144 - 81}$) — $\\overline{PQ}$ gipotenuza deb olingan, holbuki gipotenuza $P$ dagi to‘g‘ri burchak qarshisidagi tomon.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "circles",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "In the $xy$-plane, the graph of the equation $x^2 - 12x + y^2 + 2y + c = 0$ is a circle with radius 7, where $c$ is a constant. What is the value of $c$?",
+    "option_a": "$-12$",
+    "option_b": "12",
+    "option_c": "30",
+    "option_d": "86",
+    "correct": "A",
+    "explanation_en": "Complete the square: $(x^2 - 12x + 36) + (y^2 + 2y + 1) = -c + 36 + 1$, so $(x - 6)^2 + (y + 1)^2 = 37 - c$. The right side must equal $r^2 = 7^2 = 49$. Solving $37 - c = 49$ gives $c = -12$. Choice A is correct.\n\nChoice B (12) has the wrong sign; it computes $49 - 37$. Choice C (30) sets $37 - c$ equal to 7 instead of $7^2$. Choice D (86) adds 37 and 49 instead of solving $37 - c = 49$.",
+    "explanation_uz": "To‘la kvadrat ajratamiz: $(x^2 - 12x + 36) + (y^2 + 2y + 1) = -c + 36 + 1$, ya’ni $(x - 6)^2 + (y + 1)^2 = 37 - c$. O‘ng tomon $r^2 = 7^2 = 49$ ga teng bo‘lishi kerak. $37 - c = 49$ tenglamadan $c = -12$. To‘g‘ri javob A.\n\nB (12) — ishora xato: $49 - 37$ hisoblangan. C (30) — $37 - c$ ifoda $7^2$ ga emas, 7 ga tenglashtirilgan. D (86) — $37 - c = 49$ ni yechish o‘rniga 37 va 49 qo‘shilgan.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "circles",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "Points $A$, $B$, and $C$ lie on a circle with center $O$ and radius 20. The measure of inscribed angle $ACB$ is $\\frac{\\pi}{5}$ radians. The length of minor arc $AB$ is $k\\pi$, where $k$ is a constant. What is the value of $k$?",
+    "spr_answers": [
+      "8"
+    ],
+    "explanation_en": "An inscribed angle measures half of the central angle that intercepts the same arc. Because $\\frac{\\pi}{5}$ is less than $\\frac{\\pi}{2}$, angle $ACB$ intercepts minor arc $AB$, and central angle $AOB$ measures $2 \\cdot \\frac{\\pi}{5} = \\frac{2\\pi}{5}$ radians. With the angle in radians, arc length is $s = r\\theta = 20 \\cdot \\frac{2\\pi}{5} = 8\\pi$, so $k = 8$.\n\nUsing the inscribed angle as if it were the central angle gives $20 \\cdot \\frac{\\pi}{5} = 4\\pi$, so 4 is a trap.",
+    "explanation_uz": "Ichki chizilgan burchak xuddi shu yoyga tiralgan markaziy burchakning yarmiga teng. $\\frac{\\pi}{5}$ burchak $\\frac{\\pi}{2}$ dan kichik, shuning uchun $ACB$ burchak kichik $AB$ yoyga tiraladi va markaziy $AOB$ burchak $2 \\cdot \\frac{\\pi}{5} = \\frac{2\\pi}{5}$ radianga teng. Burchak radianda bo‘lganda yoy uzunligi $s = r\\theta = 20 \\cdot \\frac{2\\pi}{5} = 8\\pi$, demak $k = 8$.\n\nIchki chizilgan burchakni markaziy burchak deb olsak, $20 \\cdot \\frac{\\pi}{5} = 4\\pi$ chiqadi — 4 javobi tuzoq.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  }
+]

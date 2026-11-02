@@ -1,0 +1,162 @@
+[
+  {
+    "skill_code": "form_structure_sense",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "The list of volunteers who signed up to help clean the riverbank last weekend ______ much longer than the organizers had expected, so the group was divided into four teams, each assigned to a different section of the shore.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "option_a": "were",
+    "option_b": "have been",
+    "option_c": "are",
+    "option_d": "was",
+    "correct": "D",
+    "explanation_en": "The subject of the sentence is the singular noun “list,” not “volunteers”; “volunteers” is part of the prepositional phrase “of volunteers who signed up….” A singular subject needs a singular verb, so choice D, “was,” is correct. It is also in the past tense, which matches “had expected.”\n\nChoices A (“were”), B (“have been”), and C (“are”) are plural verbs that agree with “volunteers” instead of the actual subject, “list.”",
+    "explanation_uz": "Gapning egasi — birlikdagi “list” so‘zi, “volunteers” emas; “volunteers” “of volunteers who signed up…” predlogli birikmasining bir qismi. Birlikdagi egaga birlikdagi kesim kerak, shuning uchun to‘g‘ri javob D — “was”. U o‘tgan zamonda ham bo‘lib, “had expected” bilan mos keladi.\n\nA (“were”), B (“have been”) va C (“are”) — ko‘plikdagi fe’llar; ular haqiqiy ega “list” bilan emas, “volunteers” bilan moslashtirilgan.",
+    "estimated_seconds": 50,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "form_structure_sense",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Light slowly fades the ink on the museum's two oldest manuscripts. To protect these delicate pages, curators display ______ for only one week each year, during the city's annual book festival.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "option_a": "it",
+    "option_b": "them",
+    "option_c": "itself",
+    "option_d": "themselves",
+    "correct": "B",
+    "explanation_en": "The pronoun refers to “these delicate pages,” that is, the museum's two oldest manuscripts. That antecedent is plural, and the pronoun is the object of the verb “display,” so the plural object pronoun “them” is correct (choice B).\n\nChoice A, “it,” is singular and does not agree with the plural antecedent. Choices C and D are reflexive pronouns, which are used only when the object is the same as the subject; here the curators display the manuscripts, not themselves.",
+    "explanation_uz": "Olmosh “these delicate pages”, ya’ni muzeydagi eng qadimgi ikki qo‘lyozmaga ishora qiladi. Bu ot ko‘plikda, olmosh esa “display” fe’lining to‘ldiruvchisi, shuning uchun ko‘plikdagi obyekt olmoshi “them” to‘g‘ri (B).\n\nA — “it” birlikda, ko‘plikdagi otga mos kelmaydi. C va D — o‘zlik olmoshlari (reflexive); ular to‘ldiruvchi ega bilan bir xil bo‘lgandagina ishlatiladi. Bu yerda esa kuratorlar o‘zlarini emas, qo‘lyozmalarni namoyish qiladi.",
+    "estimated_seconds": 50,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "form_structure_sense",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Every spring, hundreds of cliff swallows return to the steep clay bank above the river. The ______ nests, which are built from small pellets of mud, cling to the bank in tight clusters that look like rows of tiny clay jars.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "option_a": "swallow's",
+    "option_b": "swallows",
+    "option_c": "swallows'",
+    "option_d": "swallows's",
+    "correct": "C",
+    "explanation_en": "The nests belong to many birds—the “hundreds of cliff swallows” mentioned in the first sentence. To form the possessive of a plural noun that ends in -s, add only an apostrophe: “swallows'.” Choice C is correct.\n\nChoice A, “swallow's,” is the possessive of a single swallow. Choice B, “swallows,” is a plain plural and shows no possession. Choice D, “swallows's,” is not a standard possessive form.",
+    "explanation_uz": "Uyalar ko‘plab qushlarga — birinchi gapdagi “hundreds of cliff swallows” ga tegishli. -s bilan tugaydigan ko‘plikdagi otning egalik shaklini yasash uchun faqat apostrof qo‘shiladi: “swallows’”. To‘g‘ri javob C.\n\nA — “swallow’s” bitta qaldirg‘ochga egalikni bildiradi. B — “swallows” oddiy ko‘plik shakli, egalikni bildirmaydi. D — “swallows’s” standart egalik shakli emas.",
+    "estimated_seconds": 50,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "form_structure_sense",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "By the time the new bridge across the river opened to traffic in 2019, engineers ______ more than a decade studying how the river's seasonal floods move sand and gravel along its bed.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "option_a": "had spent",
+    "option_b": "spend",
+    "option_c": "will have spent",
+    "option_d": "are spending",
+    "correct": "A",
+    "explanation_en": "The phrase “By the time the new bridge … opened to traffic in 2019” sets a point in the past, and the engineers' study took place before that point. The past perfect tense (“had” plus a past participle) describes an action completed before another past event, so choice A, “had spent,” is correct.\n\nChoice B (simple present), choice C (future perfect), and choice D (present progressive) do not fit an action that was finished before a past event in 2019.",
+    "explanation_uz": "“By the time the new bridge … opened to traffic in 2019” iborasi o‘tmishdagi bir nuqtani belgilaydi, muhandislarning tadqiqoti esa shu nuqtadan oldin bo‘lib o‘tgan. O‘tmishdagi boshqa voqeadan oldin tugagan harakat past perfect zamonida (“had” + past participle) ifodalanadi, shuning uchun to‘g‘ri javob A — “had spent”.\n\nB (oddiy hozirgi zamon), C (future perfect) va D (present progressive) 2019-yildagi voqeadan oldin tugagan harakatga mos kelmaydi.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "form_structure_sense",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Visitors to the gallery often remark on how orderly the paintings in the new exhibition look. Trained as an architect before she turned to painting, ______",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "option_a": "the canvases of Zulfiya Ahmedova are filled with precise geometric patterns and carefully measured lines.",
+    "option_b": "precise geometric patterns and carefully measured lines fill the canvases of Zulfiya Ahmedova.",
+    "option_c": "Zulfiya Ahmedova fills her canvases with precise geometric patterns and carefully measured lines.",
+    "option_d": "Zulfiya Ahmedova's canvases are filled with precise geometric patterns and carefully measured lines.",
+    "correct": "C",
+    "explanation_en": "The introductory phrase “Trained as an architect before she turned to painting” must describe the person who was trained, the painter. In Standard English, a modifying phrase like this one applies to the noun that comes right after the comma, so that noun must be “Zulfiya Ahmedova,” as in choice C.\n\nChoices A and D place “canvases” right after the phrase, so they say that the canvases were trained as an architect. Choice B says that the patterns and lines were trained as an architect. All three contain a dangling modifier.",
+    "explanation_uz": "Kirish iborasi “Trained as an architect before she turned to painting” me’mor sifatida tahsil olgan shaxsni, ya’ni rassomni tasvirlashi kerak. Ingliz tilida bunday aniqlovchi ibora verguldan keyin darhol keladigan otga tegishli bo‘ladi, shuning uchun u ot “Zulfiya Ahmedova” bo‘lishi shart — C variantidagidek.\n\nA va D variantlarda iboradan keyin “canvases” keladi, ya’ni go‘yo kartinalar me’morlikni o‘rgangan bo‘lib chiqadi. B esa naqsh va chiziqlar me’morlikni o‘rgangan degan ma’noni beradi. Uchala variantda ham aniqlovchi noto‘g‘ri joylashgan (dangling modifier).",
+    "estimated_seconds": 65,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "form_structure_sense",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Neither the lead researcher nor her two assistants ______ able to explain why the seedlings in the third greenhouse grew so much taller than the seedlings in the other two greenhouses during the eight-week trial.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "option_a": "was",
+    "option_b": "were",
+    "option_c": "has been",
+    "option_d": "is",
+    "correct": "B",
+    "explanation_en": "When two subjects are joined by “neither … nor,” the verb agrees with the subject that is closer to it. Here the closer subject is “her two assistants,” which is plural, so the plural verb “were” (choice B) is correct. It is also in the past tense, which fits the rest of the sentence (“grew”).\n\nChoices A (“was”), C (“has been”), and D (“is”) are singular verbs. They would agree with “the lead researcher,” but that is the farther subject.",
+    "explanation_uz": "Ikki ega “neither … nor” bilan bog‘langanda, kesim o‘ziga yaqinroq turgan ega bilan moslashadi. Bu yerda yaqinroq ega — ko‘plikdagi “her two assistants”, shuning uchun ko‘plikdagi “were” (B) to‘g‘ri. U o‘tgan zamonda bo‘lib, gapning qolgan qismiga (“grew”) ham mos keladi.\n\nA (“was”), C (“has been”) va D (“is”) birlikdagi fe’llar. Ular “the lead researcher” bilan moslashardi, lekin bu ega kesimdan uzoqroqda turibdi.",
+    "estimated_seconds": 65,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "form_structure_sense",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Archaeologists working at the site of an ancient trading settlement were surprised by what they found in a sealed storeroom. Among the objects recovered from the room ______ a set of polished bronze mirrors and a small ivory comb decorated with carved dancers.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "option_a": "were",
+    "option_b": "was",
+    "option_c": "is",
+    "option_d": "has been",
+    "correct": "A",
+    "explanation_en": "The second sentence is inverted: the prepositional phrase “Among the objects recovered from the room” comes first, and the subject follows the verb. The subject is “a set of polished bronze mirrors and a small ivory comb”—two things joined by “and”—so it takes a plural verb. Choice A, “were,” is plural and matches the past-tense narrative (“were surprised”).\n\nChoices B (“was”), C (“is”), and D (“has been”) are singular verbs. They may seem to fit because the noun just before the blank, “room,” and the first noun of the subject, “set,” are singular, but the full subject is a compound joined by “and.”",
+    "explanation_uz": "Ikkinchi gapda so‘z tartibi teskari: avval “Among the objects recovered from the room” predlogli birikmasi keladi, ega esa kesimdan keyin turadi. Ega — “a set of polished bronze mirrors and a small ivory comb”, ya’ni “and” bilan bog‘langan ikki narsa, shuning uchun kesim ko‘plikda bo‘lishi kerak. A — “were” ko‘plikda va hikoyadagi o‘tgan zamonga (“were surprised”) mos keladi.\n\nB (“was”), C (“is”) va D (“has been”) birlikdagi fe’llar. Bo‘sh joydan oldingi “room” va eganing birinchi oti “set” birlikda bo‘lgani uchun ular to‘g‘ridek ko‘rinishi mumkin, lekin to‘liq ega “and” bilan bog‘langan uyushiq egadir.",
+    "estimated_seconds": 75,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "form_structure_sense",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "The eleventh-century scholar al-Biruni, who estimated the radius of Earth by measuring how far the horizon appeared to dip below level when viewed from the top of a mountain, ______ a value remarkably close to the one accepted by modern scientists.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "option_a": "obtaining",
+    "option_b": "having obtained",
+    "option_c": "obtained",
+    "option_d": "to obtain",
+    "correct": "C",
+    "explanation_en": "The subject of the sentence is “The eleventh-century scholar al-Biruni,” and the long clause “who estimated the radius of Earth … from the top of a mountain” describes him. After this interrupting clause, the sentence still needs a main verb for its subject. Only choice C, “obtained,” is a finite past-tense verb that can serve as that main verb.\n\nChoices A (“obtaining”), B (“having obtained”), and D (“to obtain”) are nonfinite verb forms. With any of them, the sentence has no main verb and is therefore a fragment. The long clause between the subject and the blank makes this easy to miss.",
+    "explanation_uz": "Gapning egasi — “The eleventh-century scholar al-Biruni”, “who estimated the radius of Earth … from the top of a mountain” degan uzun ergash gap esa uni tasvirlaydi. Bu oraliq gapdan keyin ham ega uchun asosiy kesim kerak. Faqat C — “obtained” — o‘tgan zamondagi shaxsli fe’l bo‘lib, kesim vazifasini bajara oladi.\n\nA (“obtaining”), B (“having obtained”) va D (“to obtain”) — shaxssiz fe’l shakllari. Ularning birortasi qo‘yilsa, gapda asosiy kesim bo‘lmaydi va u to‘liq bo‘lmagan gapga (fragment) aylanadi. Ega bilan bo‘sh joy orasidagi uzun gap bu xatoni sezishni qiyinlashtiradi.",
+    "estimated_seconds": 75,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  }
+]

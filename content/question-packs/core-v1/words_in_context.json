@@ -1,0 +1,162 @@
+[
+  {
+    "skill_code": "words_in_context",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "For generations, the village of Sorvon drew all of its water from a single stone well. So when engineer Kamila Usmonova proposed piping water down from a mountain spring, many residents were ______. They worried that the pipes would freeze in winter and leave the village with no water at all. Only after Usmonova showed them a buried pipeline that had worked through three cold winters in a neighboring valley did they agree to the plan.",
+    "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+    "option_a": "enthusiastic",
+    "option_b": "skeptical",
+    "option_c": "indifferent",
+    "option_d": "grateful",
+    "correct": "B",
+    "explanation_en": "The residents “worried” that the pipes would fail and agreed to the plan only after seeing proof that a similar pipeline worked, so they doubted the plan: they were “skeptical.” “Enthusiastic” and “grateful” describe positive reactions, which contradict the residents' worries. “Indifferent” means not caring, but people who fear losing their water clearly care about the plan.",
+    "explanation_uz": "Matnga ko‘ra, aholi quvurlar qishda muzlab qolishidan “xavotirlangan” va qo‘shni vodiydagi shunday quvur ishlashini ko‘rgandan keyingina rejaga rozi bo‘lgan. Demak, ular rejaga shubha bilan qaragan — bu “skeptical” so‘zining ma’nosi. “Enthusiastic” (ishtiyoqli) va “grateful” (minnatdor) ijobiy munosabatni bildiradi va aholining xavotiriga zid. “Indifferent” (befarq) ham to‘g‘ri kelmaydi: suvsiz qolishdan qo‘rqqan odamlar bu rejaga befarq emas.",
+    "estimated_seconds": 55,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "words_in_context",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Before the bridge over the Zarin River was reopened, inspectors spent two weeks examining its steel beams, concrete supports and cables. They found only minor rust on a few railings and concluded that the structure was sound. The bridge reopened to traffic the following Monday.",
+    "stem": "As used in the text, what does the word “sound” most nearly mean?",
+    "option_a": "noisy",
+    "option_b": "reasonable",
+    "option_c": "deep",
+    "option_d": "sturdy",
+    "correct": "D",
+    "explanation_en": "The inspectors examined the bridge's beams, supports and cables, found only minor problems and then reopened it, so “sound” describes a structure that is strong and in good condition: “sturdy.” “Noisy” relates to the noun “sound” (something heard), which does not fit an inspection of steel and concrete. “Reasonable” fits phrases such as “sound advice,” not a bridge. “Deep” fits “sound sleep,” not the condition of a structure.",
+    "explanation_uz": "Inspektorlar ko‘prikning to‘sinlari, tayanchlari va troslarini tekshirib, faqat kichik kamchiliklar topgan, so‘ng ko‘prik qayta ochilgan. Demak, bu yerda “sound” — mustahkam, yaxshi holatdagi degani, ya’ni “sturdy”. “Noisy” (shovqinli) “sound” otining (tovush) ma’nosiga bog‘liq va inshoot holatiga mos emas. “Reasonable” (oqilona) “sound advice” kabi birikmalarda ishlatiladi, ko‘prik haqida emas. “Deep” (chuqur) “sound sleep” (qattiq uyqu) iborasiga mos, inshootga emas.",
+    "estimated_seconds": 55,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "words_in_context",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Some ponds in dry regions hold water only during the rainy season. Biologist Farida Nasr studies a species of tiny shrimp that lives in these ponds. Its eggs can remain ______ in the dried mud for several years, showing no signs of development until rain refills the pond and triggers them to hatch.",
+    "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+    "option_a": "dormant",
+    "option_b": "visible",
+    "option_c": "fragile",
+    "option_d": "abundant",
+    "correct": "A",
+    "explanation_en": "The eggs survive for years while “showing no signs of development” and hatch only when water returns, so they are alive but inactive: “dormant.” Nothing in the text says the eggs can be easily seen, so “visible” is unsupported. “Fragile” suggests the eggs are easily damaged, which contradicts their surviving for years in dry mud. “Abundant” describes quantity, but the sentence is about the eggs' inactive state, not how many there are.",
+    "explanation_uz": "Tuxumlar yillar davomida “rivojlanish belgisini ko‘rsatmay” saqlanadi va faqat hovuz yana suvga to‘lganda yorilib chiqadi. Demak, ular tirik, lekin faol emas — bu “dormant” (nofaol, “uyqu” holatidagi) so‘zining ma’nosi. Matnda tuxumlarni ko‘rish oson ekani aytilmagan, shuning uchun “visible” (ko‘rinadigan) asossiz. “Fragile” (mo‘rt) tuxumlar oson shikastlanishini bildiradi, bu esa ularning quruq loyda yillab saqlanishiga zid. “Abundant” (mo‘l) miqdorni bildiradi, gap esa tuxumlarning soni haqida emas, holati haqida.",
+    "estimated_seconds": 55,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "words_in_context",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "In his review of *The Salt Road*, a new opera by composer Hana Mirzo, critic Lionel Varga offered a qualified endorsement. He praised Mirzo's bold blending of folk melodies with orchestral music, calling several scenes unforgettable, but he questioned whether the opera's three-hour running time truly served its story and suggested that a shorter version might be more powerful.",
+    "stem": "As used in the text, what does the word “qualified” most nearly mean?",
+    "option_a": "certified",
+    "option_b": "skilled",
+    "option_c": "limited",
+    "option_d": "eligible",
+    "correct": "C",
+    "explanation_en": "Varga praises parts of the opera but also doubts that its length serves the story, so his endorsement is not complete; it comes with reservations. In this context, “qualified” means “limited.” “Certified,” “skilled” and “eligible” reflect a different meaning of “qualified” (having the training or the right to do something), which describes people, as in “a qualified teacher,” not a critic's mixed opinion.",
+    "explanation_uz": "Varga operaning ba’zi jihatlarini maqtaydi, lekin uning davomiyligi syujetga xizmat qilishiga shubha bildiradi. Demak, uning ma’qullashi to‘liq emas, shartli — bu kontekstda “qualified” “limited” (cheklangan) degan ma’noni beradi. “Certified” (sertifikatlangan), “skilled” (malakali) va “eligible” (huquqi bor) “qualified” so‘zining boshqa ma’nosiga — biror ishga tayyorgarligi yoki huquqi borligiga bog‘liq. Bu ma’no odamlarga nisbatan ishlatiladi (masalan, “a qualified teacher”), tanqidchining aralash fikriga emas.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "words_in_context",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Earlier studies of the wild apple trees of the Tian Shan mountains relied on a few dozen trees sampled from easily reached valleys. Botanist Leyla Sharipova's survey was far more ______: over four summers, her team collected leaf samples from more than 1,200 trees across eleven mountain ranges, including slopes that could be reached only on foot.",
+    "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+    "option_a": "hasty",
+    "option_b": "speculative",
+    "option_c": "exhaustive",
+    "option_d": "narrow",
+    "correct": "C",
+    "explanation_en": "The text contrasts earlier studies, which used “a few dozen trees” from easy-to-reach valleys, with Sharipova's survey of more than 1,200 trees across eleven ranges over four summers. This contrast shows that her survey was far more thorough and complete: “exhaustive.” “Hasty” is contradicted by four summers of work. “Speculative” means based on guesses, but her survey rested on extensive sampling. “Narrow” is the opposite of what the text describes.",
+    "explanation_uz": "Matnda avvalgi tadqiqotlar (oson boriladigan vodiylardan olingan bir necha o‘nta daraxt) Sharipovaning to‘rt yoz davomida o‘n bitta tog‘ tizmasidagi 1,200 dan ortiq daraxtni qamragan tadqiqoti bilan solishtiriladi. Bu qarama-qarshilik uning tadqiqoti ancha puxta va to‘liq bo‘lganini ko‘rsatadi — “exhaustive” (har tomonlama, to‘liq). “Hasty” (shoshma-shosharlik bilan qilingan) to‘rt yillik mehnatga zid. “Speculative” (taxminga asoslangan) ham to‘g‘ri emas: tadqiqot keng ko‘lamli namunalarga tayangan. “Narrow” (tor) esa matndagi tavsifning aksi.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "words_in_context",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "When novelist Aurelia Banks published her first book, several reviewers dismissed it as ______, complaining that its plot simply borrowed familiar scenes from older adventure stories. Later critics, however, noticed that Banks rearranges those familiar scenes in deliberately surprising ways, turning readers' expectations against them.",
+    "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+    "option_a": "derivative",
+    "option_b": "ambitious",
+    "option_c": "obscure",
+    "option_d": "sentimental",
+    "correct": "A",
+    "explanation_en": "The reviewers complained that the plot “simply borrowed familiar scenes from older adventure stories,” so they saw the book as unoriginal, copied from earlier works: “derivative.” “Ambitious” would be praise, not a reason to dismiss a book for borrowing. “Obscure” means hard to understand or little known, which conflicts with the scenes being “familiar.” “Sentimental” refers to excessive emotion, which the reviewers' complaint does not mention.",
+    "explanation_uz": "Taqrizchilar syujet eski sarguzasht hikoyalaridan “tanish sahnalarni shunchaki olgan”idan shikoyat qilgan. Demak, ular kitobni o‘ziga xos emas, avvalgi asarlardan ko‘chirilgan deb hisoblagan — bu “derivative” (taqlidiy, o‘zgalardan olingan). “Ambitious” (katta maqsadli) maqtov bo‘lardi, kitobni rad etish sababi emas. “Obscure” (tushunarsiz yoki kam ma’lum) sahnalarning “tanish” ekaniga zid. “Sentimental” (haddan tashqari hissiy) haqida esa taqrizchilarning shikoyatida hech narsa aytilmagan.",
+    "estimated_seconds": 75,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "words_in_context",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Economist Dariga Seitova acknowledges that a new irrigation subsidy has raised wheat yields across the province. But she argues that enthusiasm for the program should be tempered by evidence that it has also encouraged farmers to plant water-hungry crops in districts where rivers are already shrinking. A policy that boosts harvests today, she warns, may leave those districts with less water for farming in the future.",
+    "stem": "As used in the text, what does the word “tempered” most nearly mean?",
+    "option_a": "hardened",
+    "option_b": "moderated",
+    "option_c": "concealed",
+    "option_d": "replaced",
+    "correct": "B",
+    "explanation_en": "Seitova accepts that the subsidy has real benefits but points to a serious drawback, so she believes enthusiasm for the program should be reduced or balanced, not abandoned: “moderated.” “Hardened” reflects the sense of tempering metal, which makes it tougher; Seitova wants enthusiasm toned down, not strengthened. “Concealed” suggests hiding enthusiasm, which is not her point. “Replaced” is too extreme: she acknowledges the higher yields and does not call for enthusiasm to be swapped for something else entirely.",
+    "explanation_uz": "Seitova subsidiyaning haqiqiy foydasini tan oladi, lekin jiddiy kamchilikni ham ko‘rsatadi. Demak, uning fikricha, dasturga bo‘lgan ishtiyoqdan voz kechish emas, uni jilovlash, muvozanatga keltirish kerak — “moderated” (yumshatilgan, me’yorga keltirilgan). “Hardened” (toblangan, qattiqlashtirilgan) metallni toblash ma’nosiga bog‘liq — bu metallni mustahkamroq qiladi; Seitova esa ishtiyoqni kuchaytirishni emas, pasaytirishni istaydi. “Concealed” (yashirilgan) ham uning fikri emas. “Replaced” (almashtirilgan) esa haddan tashqari kuchli: u hosildorlik oshganini tan oladi va ishtiyoqni butunlay boshqa narsa bilan almashtirishni talab qilmaydi.",
+    "estimated_seconds": 85,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "words_in_context",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Linguist Omar Petrosyan once believed that the whistled speech used by shepherds in the Vardan highlands was a simple code that could express only a few fixed messages, such as warnings and calls to gather the flocks. After recording hundreds of whistled conversations, however, he concluded that his earlier view had ______ the system: the shepherds use it to discuss prices, arrange visits and even tell jokes, expressing almost anything they could say in their spoken language.",
+    "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+    "option_a": "romanticized",
+    "option_b": "corroborated",
+    "option_c": "foreshadowed",
+    "option_d": "underestimated",
+    "correct": "D",
+    "explanation_en": "Petrosyan first thought the whistled speech could express “only a few fixed messages,” but his recordings showed that it can express “almost anything.” His earlier view therefore judged the system to be far less capable than it is: it “underestimated” the system. “Romanticized” means presenting something in an idealized way, but his earlier view made the system seem simpler, not more appealing. “Corroborated” (confirmed) is the opposite of what happened, since the new evidence contradicted his view. “Foreshadowed” means hinted at something to come, which does not describe a mistaken belief.",
+    "explanation_uz": "Petrosyan avval hushtak tilida “faqat bir nechta tayyor xabar”ni ifodalash mumkin deb o‘ylagan, lekin yozuvlar unda “deyarli hamma narsani” aytish mumkinligini ko‘rsatgan. Demak, uning avvalgi qarashi bu tizimni haqiqatdagidan ancha zaif deb baholagan — ya’ni uni “underestimated” (yetarlicha baholamagan, kamsitib baholagan). “Romanticized” (ideallashtirilgan) to‘g‘ri emas: avvalgi qarash tizimni jozibali emas, oddiyroq qilib ko‘rsatgan. “Corroborated” (tasdiqlangan) yuz bergan voqeaning aksi, chunki yangi dalillar uning qarashini rad etgan. “Foreshadowed” (oldindan ishora qilgan) esa noto‘g‘ri fikrni tasvirlamaydi.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  }
+]

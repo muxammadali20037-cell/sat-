@@ -4,26 +4,12 @@ import katex from 'katex'
 import { describe, expect, it } from 'vitest'
 import { guideFileSchema, localeContentSchema, sectionSchema, skillGuideGaps } from '@/features/guides/schema'
 import { localeOrder, parseSections, pickLocale } from '@/features/guides/locale'
-import { parseRichText, type BlockNode, type InlineNode } from '@/lib/rich-text/tokenize'
+import { collectMath, parseRichText } from '@/lib/rich-text/tokenize'
 
 const DIR = resolve(__dirname, '../../content/guides')
 const files = readdirSync(DIR).filter((f) => f.endsWith('.json'))
 
-function maths(blocks: BlockNode[]): string[] {
-  const out: string[] = []
-  const walk = (nodes: InlineNode[]) => {
-    for (const n of nodes) {
-      if (n.type === 'math') out.push(n.value)
-      else if ('children' in n) walk(n.children)
-    }
-  }
-  for (const b of blocks) {
-    if (b.type === 'display_math') out.push(b.value)
-    else if (b.type === 'paragraph') walk(b.children)
-    else b.items.forEach(walk)
-  }
-  return out
-}
+const maths = collectMath
 
 describe('study guide content files', () => {
   it('has content', () => expect(files.length).toBeGreaterThan(0))

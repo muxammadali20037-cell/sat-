@@ -1,5 +1,6 @@
 import { formatMoney } from '@/lib/utils'
 import { BUSINESS_TZ } from './series'
+import { richTextExcerpt } from '@/lib/rich-text/tokenize'
 
 /** Admin display formatting (pure). Dates render in the business time zone. */
 
@@ -46,10 +47,6 @@ export function money(amountMinor: number, currency: string): string {
 
 /** Plain-text excerpt of authored rich text (drops $…$ delimiters and emphasis markers). */
 export function excerpt(source: string, max = 120): string {
-  const plain = source
-    .replace(/\$\$?([^$]+)\$\$?/g, '$1')
-    .replace(/(\*\*|__|\*)/g, '')
-    .replace(/\s+/g, ' ')
-    .trim()
-  return plain.length > max ? `${plain.slice(0, max - 1)}…` : plain
+  // Same plain-text rendering students see in lists: math as readable text, escaped \$ as $.
+  return richTextExcerpt(source ?? '', max)
 }

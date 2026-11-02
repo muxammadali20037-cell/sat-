@@ -1,0 +1,162 @@
+[
+  {
+    "skill_code": "command_of_evidence_quantitative",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Members of a school science club grew sunflowers in four types of soil and measured the plants' heights after eight weeks. Club president Aziza Karimova reported that the type of soil made a large difference: the tallest sunflowers, which were grown in ______, were more than twice as tall as the shortest ones.\n\n**Average sunflower height after eight weeks**\n\n| Soil type | Average height (cm) |\n| --- | ---: |\n| Sandy | 48 |\n| Clay | 61 |\n| Compost-rich | 112 |\n| Rocky | 39 |",
+    "stem": "Which choice most effectively uses data from the table to complete the statement?",
+    "option_a": "sandy soil, averaging 48 cm",
+    "option_b": "clay soil, averaging 61 cm",
+    "option_c": "compost-rich soil, averaging 112 cm",
+    "option_d": "rocky soil, averaging 39 cm",
+    "correct": "C",
+    "explanation_en": "The statement describes the tallest sunflowers. According to the table, the plants grown in compost-rich soil had the greatest average height, 112 cm, which is more than twice the shortest average of 39 cm (rocky soil), so choice C is correct. Choices A and B name soils whose sunflowers were neither the tallest nor more than twice as tall as 39 cm (2 × 39 = 78). Choice D names the soil with the shortest sunflowers, not the tallest.",
+    "explanation_uz": "Gapda eng baland kungaboqarlar haqida so‘z boradi. Jadvalga ko‘ra, eng katta o‘rtacha balandlik — 112 sm — kompostga boy tuproqda o‘stirilgan o‘simliklarda; bu eng past o‘rtacha balandlikdan (toshloq tuproq, 39 sm) ikki baravardan ko‘proq. Demak, to‘g‘ri javob — C. A va B dagi tuproqlarda o‘sgan kungaboqarlar eng baland ham emas, 39 sm dan ikki baravar baland ham emas (2 × 39 = 78). D esa eng baland emas, eng past kungaboqarlar o‘sgan tuproqni ko‘rsatadi.",
+    "estimated_seconds": 55,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "command_of_evidence_quantitative",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Transportation planner Gulnora Sobirova surveyed residents of the city of Marlow about how they usually traveled to work in 2014 and in 2024. She claims that the share of residents who cycle to work grew substantially over that decade.\n\n**Usual way of traveling to work (percentage of Marlow residents)**\n\n| Way of traveling | 2014 | 2024 |\n| --- | ---: | ---: |\n| Car | 58% | 49% |\n| Public transit | 27% | 28% |\n| Bicycle | 4% | 13% |\n| Walking | 11% | 10% |",
+    "stem": "Which choice most effectively uses data from the table to support Sobirova's claim?",
+    "option_a": "The percentage of residents who usually cycled to work rose from 4% in 2014 to 13% in 2024.",
+    "option_b": "The percentage of residents who usually drove to work fell from 58% in 2014 to 49% in 2024.",
+    "option_c": "In both 2014 and 2024, a greater percentage of residents usually took public transit to work than usually cycled.",
+    "option_d": "In 2014, 11% of residents usually walked to work.",
+    "correct": "A",
+    "explanation_en": "Sobirova's claim is about growth in cycling. Choice A shows that the share of residents who usually cycled to work more than tripled, from 4% to 13%. Choice B is accurate but describes driving, not cycling. Choice C is accurate but compares transit with cycling instead of showing that cycling grew. Choice D gives a single walking figure that is irrelevant to the claim.",
+    "explanation_uz": "Sobirovaning da’vosi velosipedda ishga boruvchilar ulushining o‘sishi haqida. A javob bu ulush 4% dan 13% gacha — uch baravardan ko‘proq oshganini ko‘rsatadi. B jadvalga mos, lekin velosiped haqida emas, avtomobil haqida. C ham jadvalga mos, ammo u velosipedning o‘sishini ko‘rsatmaydi, faqat jamoat transporti bilan taqqoslaydi. D da’voga aloqasi bo‘lmagan, piyoda yurish bo‘yicha bitta raqamni beradi.",
+    "estimated_seconds": 55,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "command_of_evidence_quantitative",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Ornithologist Teodor Vance counted the visits that four bird species made to a feeding station during one week in winter. Vance noted that chickadees visited the station more often than any other species did, with ______\n\n**Visits to the feeding station in one week**\n\n| Bird species | Visits |\n| --- | ---: |\n| Chickadee | 214 |\n| Nuthatch | 87 |\n| Blue jay | 142 |\n| Cardinal | 63 |",
+    "stem": "Which choice most effectively uses data from the table to complete the statement?",
+    "option_a": "87 visits, compared with 214 visits by nuthatches.",
+    "option_b": "142 visits, compared with 63 visits by cardinals.",
+    "option_c": "214 visits, compared with 63 visits by blue jays.",
+    "option_d": "214 visits, compared with 142 visits by blue jays, the species with the next-highest total.",
+    "correct": "D",
+    "explanation_en": "The table shows 214 visits by chickadees, the highest total, and 142 by blue jays, the next-highest total. Choice D reports both figures correctly. Choice A reverses the chickadee and nuthatch figures. Choice B gives the blue jay total as the chickadee total. Choice C gives the correct chickadee total but pairs the cardinal figure (63) with blue jays, which actually made 142 visits.",
+    "explanation_uz": "Jadvalga ko‘ra, chickadee qushlari 214 marta kelgan — bu eng yuqori ko‘rsatkich; ikkinchi o‘rinda 142 ta tashrif bilan blue jay turadi. D javob ikkala raqamni ham to‘g‘ri beradi. A chickadee va nuthatch raqamlarini almashtirib yuboradi. B chickadee uchun blue jay raqamini beradi. C chickadee raqamini to‘g‘ri beradi, lekin blue jay uchun cardinal raqamini (63) ko‘rsatadi, holbuki blue jay 142 marta kelgan.",
+    "estimated_seconds": 55,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "command_of_evidence_quantitative",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Agronomist Dilshod Rahimov compared three new wheat varieties with a standard variety at a test farm, once in a dry year and once in a wet year. He argues that variety K-7 is the best choice for farmers whose rainfall is unpredictable, because it produced far more than the standard variety in the dry year while yielding nearly as much as the standard variety in the wet year.\n\n**Wheat yield (tonnes per hectare)**\n\n| Variety | Dry year | Wet year |\n| --- | ---: | ---: |\n| Standard | 2.1 | 4.8 |\n| K-7 | 3.4 | 4.6 |\n| K-9 | 3.6 | 3.2 |\n| L-2 | 2.0 | 5.1 |",
+    "stem": "Which choice most effectively uses data from the table to support Rahimov's argument?",
+    "option_a": "In the dry year, K-9 yielded 3.6 tonnes per hectare, more than any other variety.",
+    "option_b": "K-7 yielded 3.4 tonnes per hectare in the dry year, compared with 2.1 for the standard variety, and 4.6 tonnes per hectare in the wet year, compared with 4.8 for the standard variety.",
+    "option_c": "In the wet year, L-2 yielded 5.1 tonnes per hectare, more than the standard variety's 4.8 tonnes per hectare.",
+    "option_d": "K-7 yielded more in the wet year (4.6 tonnes per hectare) than in the dry year (3.4 tonnes per hectare).",
+    "correct": "B",
+    "explanation_en": "Rahimov's argument makes two comparisons between K-7 and the standard variety: K-7 produced far more in the dry year and nearly as much in the wet year. Choice B gives both comparisons: 3.4 versus 2.1 tonnes per hectare in the dry year and 4.6 versus 4.8 in the wet year. Choice A is accurate but concerns K-9, not K-7. Choice C is accurate but concerns L-2. Choice D is accurate but compares K-7 with itself across the two years instead of with the standard variety, so it does not address the argument.",
+    "explanation_uz": "Rahimovning dalili K-7 ni standart nav bilan ikki jihatdan solishtiradi: qurg‘oqchil yilda K-7 ancha ko‘p hosil bergan, nam yilda esa deyarli standart nav darajasida hosil bergan. B javob ikkala taqqoslashni ham beradi: qurg‘oqchil yilda gektariga 3.4 tonnaga qarshi 2.1 tonna, nam yilda 4.6 tonnaga qarshi 4.8 tonna. A jadvalga mos, lekin K-7 haqida emas, K-9 haqida. C ham to‘g‘ri, lekin L-2 haqida. D ham jadvalga mos, ammo K-7 ni standart nav bilan emas, o‘zi bilan turli yillarda solishtiradi, shuning uchun dalilni qo‘llab-quvvatlamaydi.",
+    "estimated_seconds": 75,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "command_of_evidence_quantitative",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Sea otters eat sea urchins, and sea urchins graze on kelp, a large seaweed. Ecologist Lana Petrovic predicted that after sea otters returned to Corran Bay in 2016, kelp forests there would expand. Her survey data are consistent with this prediction: from 2016 to 2020, ______\n\n**Corran Bay survey results**\n\n| Year | Sea otters | Urchins per square meter | Seafloor covered by kelp |\n| --- | ---: | ---: | ---: |\n| 2014 | 0 | 41 | 12% |\n| 2016 | 15 | 38 | 14% |\n| 2018 | 60 | 19 | 27% |\n| 2020 | 110 | 8 | 46% |",
+    "stem": "Which choice most effectively uses data from the table to complete the statement?",
+    "option_a": "as the number of otters rose from 15 to 110, urchin density fell from 38 to 8 per square meter and kelp cover increased from 14% to 46% of the seafloor.",
+    "option_b": "the number of otters rose from 0 to 15, while kelp cover increased from 12% to 14% of the seafloor.",
+    "option_c": "urchin density fell from 41 to 8 per square meter, while kelp cover remained nearly unchanged.",
+    "option_d": "kelp cover increased from 14% to 46% of the seafloor, while the number of otters remained about the same.",
+    "correct": "A",
+    "explanation_en": "The statement concerns the period from 2016 to 2020. During that time, otters increased from 15 to 110, urchins decreased from 38 to 8 per square meter, and kelp cover grew from 14% to 46%, which is exactly the pattern Petrovic predicted, as choice A says. Choice B uses figures from 2014 to 2016, not from 2016 to 2020. Choice C uses the 2014 urchin figure (41) and wrongly says that kelp cover barely changed. Choice D wrongly says that the number of otters stayed about the same.",
+    "explanation_uz": "Gap 2016–2020-yillar haqida. Bu davrda dengiz qunduzlari (otters) soni 15 tadan 110 taga oshgan, dengiz tipratikanlari (urchins) zichligi kvadrat metrga 38 tadan 8 taga kamaygan, kelp suvo‘tlari qoplami esa 14% dan 46% gacha kengaygan — bu Petrovic bashorat qilgan manzaraning aynan o‘zi. To‘g‘ri javob — A. B 2016–2020 emas, 2014–2016-yillar raqamlarini beradi. C 2014-yilgi tipratikanlar raqamini (41) ishlatadi va kelp qoplami deyarli o‘zgarmagan deb noto‘g‘ri aytadi. D qunduzlar soni deyarli o‘zgarmagan deb noto‘g‘ri aytadi.",
+    "estimated_seconds": 75,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "command_of_evidence_quantitative",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Librarians in the city of Brenna compared how often different types of books were borrowed in 2018 and in 2023. Researcher Ilhom Nazarov claims that changes in borrowing were uneven across categories: loans of one type of book nearly doubled, while loans of another type fell.\n\n**Library loans (thousands)**\n\n| Category | 2018 | 2023 |\n| --- | ---: | ---: |\n| Graphic novels | 22 | 43 |\n| Cookbooks | 15 | 17 |\n| Travel guides | 19 | 11 |\n| Biographies | 26 | 29 |",
+    "stem": "Which choice most effectively uses data from the table to support Nazarov's claim?",
+    "option_a": "Biographies had more loans than any other category in 2018, with 26 thousand.",
+    "option_b": "Loans of cookbooks rose from 15 thousand to 17 thousand, and loans of biographies rose from 26 thousand to 29 thousand.",
+    "option_c": "Loans of graphic novels rose from 22 thousand in 2018 to 43 thousand in 2023, while loans of travel guides fell from 19 thousand to 11 thousand.",
+    "option_d": "Loans of travel guides fell from 19 thousand in 2018 to 11 thousand in 2023.",
+    "correct": "C",
+    "explanation_en": "Nazarov's claim has two parts: loans of one category nearly doubled, and loans of another fell. Choice C supports both: graphic novel loans went from 22 to 43 thousand (nearly double), while travel guide loans dropped from 19 to 11 thousand. Choice A gives a single 2018 figure and shows no change at all. Choice B describes two modest increases, neither of which is close to doubling or is a decline. Choice D is accurate but supports only the second part of the claim.",
+    "explanation_uz": "Nazarovning da’vosi ikki qismdan iborat: bir turdagi kitoblarni olish deyarli ikki baravar oshgan, boshqa turdagisini olish esa kamaygan. C javob ikkalasini ham qo‘llab-quvvatlaydi: graphic novels (komikslar) 22 mingdan 43 mingga — deyarli ikki baravar oshgan, sayohat qo‘llanmalari esa 19 mingdan 11 mingga kamaygan. A faqat 2018-yilga oid bitta raqamni beradi va hech qanday o‘zgarishni ko‘rsatmaydi. B ikkita kichik o‘sishni tasvirlaydi — ular na ikki baravar o‘sish, na kamayish. D jadvalga mos, lekin da’voning faqat ikkinchi qismini qo‘llab-quvvatlaydi.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "command_of_evidence_quantitative",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "The cities of Aldmoor and Bexley both launched curbside food-waste collection programs in 2021. A local newspaper declared Aldmoor's program the more successful one because it collected more food waste in 2023. Analyst Saida Tursunova calls this comparison misleading: Aldmoor collected more in total only because more of its households took part, and each participating household in Bexley actually contributed more food waste than each participating household in Aldmoor did.\n\n**Food-waste collection programs, 2023**\n\n| City | Households | Participating households | Food waste collected (tonnes) |\n| --- | ---: | ---: | ---: |\n| Aldmoor | 120,000 | 30,000 | 4,500 |\n| Bexley | 40,000 | 20,000 | 3,600 |",
+    "stem": "Which choice most effectively uses data from the table to support Tursunova's argument?",
+    "option_a": "Aldmoor collected 4,500 tonnes of food waste in 2023, while Bexley collected 3,600 tonnes.",
+    "option_b": "Aldmoor had 30,000 participating households, while Bexley had 20,000.",
+    "option_c": "Half of Bexley's 40,000 households took part in its program, while only one-quarter of Aldmoor's 120,000 households took part in Aldmoor's program.",
+    "option_d": "Aldmoor's 30,000 participating households outnumbered Bexley's 20,000, but each participating household in Bexley contributed an average of 180 kilograms of food waste, compared with 150 kilograms in Aldmoor.",
+    "correct": "D",
+    "explanation_en": "Tursunova makes two points: Aldmoor's larger total came from having more participating households, and Bexley's participating households each contributed more. Choice D supports both: Aldmoor had 30,000 participating households to Bexley's 20,000, but Bexley averaged 180 kilograms per participating household (3,600 tonnes ÷ 20,000) compared with Aldmoor's 150 kilograms (4,500 tonnes ÷ 30,000). Choice A gives the totals the newspaper relied on, which support the newspaper's view rather than Tursunova's. Choice B supports only her first point. Choice C compares participation rates, which show what share of households joined, not how much each participating household contributed.",
+    "explanation_uz": "Tursunova ikki fikr bildiradi: Aldmoorning umumiy ko‘rsatkichi katta bo‘lishiga sabab — ishtirokchi xonadonlar ko‘pligi, Bexleyda esa har bir ishtirokchi xonadon ko‘proq chiqindi topshirgan. D javob ikkalasini ham qo‘llab-quvvatlaydi: Aldmoorda 30,000, Bexleyda 20,000 ishtirokchi xonadon bo‘lgan, lekin Bexleyda bir ishtirokchi xonadonga o‘rtacha 180 kilogramm (3,600 tonna ÷ 20,000) to‘g‘ri kelgan, Aldmoorda esa 150 kilogramm (4,500 tonna ÷ 30,000). A gazeta tayangan umumiy raqamlarni beradi — ular Tursunovani emas, gazetaning fikrini qo‘llab-quvvatlaydi. B faqat birinchi fikrni qo‘llab-quvvatlaydi. C ishtirok ulushini solishtiradi: bu xonadonlarning qancha qismi qatnashganini ko‘rsatadi, har bir ishtirokchi xonadon qancha chiqindi topshirganini emas.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  },
+  {
+    "skill_code": "command_of_evidence_quantitative",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "In 2022, four museums in the city of Orvel began offering free admission on Sundays. Critics predicted that free Sundays would simply shift visits from other days to Sunday, leaving total attendance unchanged. Museum researcher Lina Haddad found, however, that at some museums free Sundays seem to have attracted visitors who would not otherwise have come: ______\n\n**Average weekly visitors**\n\n| Museum | Other days, 2021 | Other days, 2023 | Sundays, 2021 | Sundays, 2023 |\n| --- | ---: | ---: | ---: | ---: |\n| Museum of Textiles | 3,200 | 3,150 | 600 | 1,900 |\n| City History Museum | 2,800 | 2,750 | 500 | 1,400 |\n| Natural History Museum | 5,100 | 4,000 | 900 | 2,000 |\n| Glass Museum | 1,500 | 1,480 | 300 | 1,100 |",
+    "stem": "Which choice most effectively uses data from the table to complete the statement?",
+    "option_a": "at the Natural History Museum, attendance on other days fell from 5,100 to 4,000 while Sunday attendance rose from 900 to 2,000.",
+    "option_b": "at the Museum of Textiles, Sunday attendance rose from 600 to 1,900 while attendance on other days stayed nearly the same, falling only from 3,200 to 3,150.",
+    "option_c": "at the City History Museum, Sunday attendance in 2023 was 1,400, nearly three times its 2021 level.",
+    "option_d": "at all four museums, attendance on days other than Sunday was lower in 2023 than in 2021.",
+    "correct": "B",
+    "explanation_en": "To show that free Sundays attracted new visitors rather than shifting existing ones, the data must show that Sunday attendance rose without a matching drop on other days. Choice B does this: at the Museum of Textiles, Sundays gained 1,300 visitors while other days lost only 50. Choice A shows the opposite pattern: the Natural History Museum's Sunday gain of 1,100 was matched by a loss of 1,100 on other days, just as the critics predicted. Choice C reports a Sunday increase but says nothing about other days, so it cannot rule out a shift in visits. Choice D describes declines on other days, which, if anything, supports the critics' view.",
+    "explanation_uz": "Bepul yakshanbalar mavjud tashrif buyuruvchilarni boshqa kunlardan shunchaki ko‘chirmasdan, yangi mehmonlarni jalb qilganini ko‘rsatish uchun ma’lumotlar yakshanbadagi o‘sish boshqa kunlardagi shunga teng kamayish bilan qoplanmaganini ko‘rsatishi kerak. B javob aynan shunday: to‘qimachilik muzeyida (Museum of Textiles) yakshanba kunlari 1,300 ta mehmon qo‘shilgan, boshqa kunlarda esa atigi 50 taga kamaygan. A teskari manzarani ko‘rsatadi: tabiat tarixi muzeyida (Natural History Museum) yakshanbadagi 1,100 talik o‘sish boshqa kunlardagi 1,100 talik kamayish bilan teng — tanqidchilar aynan shuni bashorat qilgan. C yakshanbadagi o‘sishni ko‘rsatadi, ammo boshqa kunlar haqida hech narsa aytmaydi, shuning uchun tashriflar shunchaki ko‘chgan bo‘lishi ehtimolini istisno qila olmaydi. D boshqa kunlardagi kamayishni tasvirlaydi — bu, aksincha, tanqidchilar fikrini qo‘llab-quvvatlaydi.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v1"
+    ]
+  }
+]
