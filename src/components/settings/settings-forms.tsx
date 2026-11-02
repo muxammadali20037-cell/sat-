@@ -221,7 +221,7 @@ export function LanguageSettingsForm() {
 
 // Security -----------------------------------------------------------------------------------------
 
-export function ChangePasswordForm({ hasPassword }: { hasPassword: boolean }) {
+export function ChangePasswordForm({ hasPassword, noPasswordNote }: { hasPassword: boolean; noPasswordNote?: string }) {
   const t = useDict(settingsDict)
   const a = useDict(authDict)
   const authErrors = a.errors as Record<string, string>
@@ -240,7 +240,7 @@ export function ChangePasswordForm({ hasPassword }: { hasPassword: boolean }) {
     defaultValues: { currentPassword: '', newPassword: '', confirmPassword: '' },
   })
 
-  if (!hasPassword) return <p className="text-sm text-muted-foreground">{t.security.googleNote}</p>
+  if (!hasPassword) return <p className="text-sm text-muted-foreground">{noPasswordNote ?? t.security.googleNote}</p>
 
   const onSubmit = handleSubmit((values) => {
     setFormError(null)

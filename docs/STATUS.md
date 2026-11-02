@@ -1,10 +1,10 @@
 # SAT MASTER — Build status and phase report
 
-_Last updated: 2 November 2026_
+_Last updated: 3 November 2026_
 
 The codebase covers phases 1–8 of [DEVELOPMENT_ROADMAP.md](DEVELOPMENT_ROADMAP.md). Phase 9 (deployment) is partly done: a Supabase project exists, and the steps that need the owner's accounts or credentials are listed under "Launch checklist" below.
 
-Size: 68 pages, 45 API route handlers, 15 SQL migrations, about 53k lines of TypeScript, 40 Uzbek study guides (30 skill guides covering every Digital SAT skill, plus 10 strategy guides), and a starter pack of 240 original practice questions.
+Size: 71 pages, 48 API route handlers, 16 SQL migrations, about 55k lines of TypeScript, a Telegram Mini App, 40 Uzbek study guides (30 skill guides covering every Digital SAT skill, plus 10 strategy guides), and a starter pack of 240 original practice questions.
 
 ## What was verified, and how
 
@@ -14,8 +14,8 @@ Everything below was run, not assumed.
 |---|---|---|
 | TypeScript | `npm run typecheck` | 0 errors |
 | Lint | `npm run lint` | 0 problems |
-| Unit tests | `npm test` | 492 passed (31 files). Covers:<br>• scoring, rich text, entitlements;<br>• practice selection and diagnostic composition;<br>• exam state machine and routing;<br>• study planner;<br>• AI output post-processing and leak checks;<br>• Click/Payme/Stripe signature and protocol handling;<br>• question import validation and schemas;<br>• every study guide file: schema, required sections, KaTeX rendering, and the bundled copy matching the files;<br>• rich-text tables (alignment, pipes inside math, excerpts);<br>• the bundled question pack matching its files. |
-| Database tests | `npm run test:db` | 72 passed against PostgreSQL 16, rebuilt from scratch with all 15 migrations and the seed: RLS (28), billing functions (11), practice/answer-key security (7), exam RLS (9), study-guide RLS (8), atomic quotas (9, including real parallel connections) |
+| Unit tests | `npm test` | 499 passed (32 files). Covers:<br>• scoring, rich text, entitlements;<br>• practice selection and diagnostic composition;<br>• exam state machine and routing;<br>• study planner;<br>• AI output post-processing and leak checks;<br>• Click/Payme/Stripe signature and protocol handling;<br>• question import validation and schemas;<br>• every study guide file: schema, required sections, KaTeX rendering, and the bundled copy matching the files;<br>• rich-text tables (alignment, pipes inside math, excerpts);<br>• the bundled question pack matching its files;<br>• Telegram launch-data (initData) validation against an independently computed vector. |
+| Database tests | `npm run test:db` | 77 passed against PostgreSQL 16, rebuilt from scratch with all 16 migrations and the seed: RLS (28), billing functions (11), practice/answer-key security (7), exam RLS (9), study-guide RLS (8), atomic quotas (9, including real parallel connections), Telegram accounts (5) |
 | Content checks | `scripts/guides/build.ts --check`, `scripts/question-packs/check.ts core-v1` | 40 guides and 240 pack questions valid (import rules, difficulty mix, KaTeX, duplicates) |
 | Continuous integration | `.github/workflows/ci.yml` | Every push: typecheck, lint, unit tests, content checks, a fresh Postgres with all migrations, DB tests, production build |
 | Seed integrity | `scripts/db/check-seed.sql` | Passed (64 questions, 16 lessons, 4 practice sets, adaptive demo exam) |
@@ -42,6 +42,17 @@ The flows ran as a real user against real auth, PostgREST and RLS. AI used the l
   - "Review imported drafts" opens the review queue filtered to the pack.
   - Ticking rows, then "Mark reviewed" and "Publish reviewed", published them; the database still requires reviewed before published.
   - Pressing import again created nothing. After one question was deleted, the importer restored exactly that one.
+- **Telegram Mini App (3 Nov):** 29 checks at phone size (390×844), using a recording stand-in for Telegram's script. Details are in [TELEGRAM.md](TELEGRAM.md#verification-3-nov-2026). The checks cover:
+  - full screen on iOS but not on desktop;
+  - safe areas (header and content 93 px down, tab bar clearing the home indicator);
+  - account creation in Uzbek; reopening without duplicates; `start_param` routing;
+  - Telegram's back button;
+  - connecting an existing account, and refusing a Telegram account already connected elsewhere;
+  - forged data rejected;
+  - no purchase UI, and checkout returning 403 inside Telegram;
+  - the webhook secret.
+
+  Not tested with a real Telegram client: the sandbox cannot reach telegram.org.
 - **AI limit under load:** 6 tutor requests fired at the same moment by a Free-plan student (limit 3 per day) gave exactly 3 answers and 3 "limit reached" responses, and no reservation was left behind.
 - **Layout:** public pages at 390/768/1280 px and student pages at 390 px show no horizontal overflow and no console errors.
 
@@ -124,6 +135,7 @@ State on 2 Nov 2026, applied through the Supabase connector with the owner's con
 | 0012 search indexes | **Declined by the owner** at the confirmation prompt. Optional (admin search speed only). Apply later from the SQL editor if wanted. |
 | 0013 study-guide tables | Applied |
 | 0014 study-guide content (~480 KB) | Not applied. Use Admin → Study guides → "Import bundled guides" after the first deploy, or `supabase db push`. |
+| 0016 Telegram accounts (1 table) | Not applied. Needed only for the Telegram Mini App; the website works without it. Paste `supabase/migrations/20261102001600_telegram.sql` into the SQL editor, or run `supabase db push`. |
 | 0015 atomic quotas (1 table, 2 functions; no existing data touched) | **Declined by the owner** at the confirmation prompt on 2 Nov. The app still works without it: it falls back to the older check and logs `[quota] database function … is missing` (tested). Until it is applied, simultaneous requests can exceed the AI and mock-exam limits slightly. To apply it, paste `supabase/migrations/20261102001500_atomic_quotas.sql` into the Supabase SQL editor, or run `supabase db push`. |
 
 Verified on the hosted database: 47 tables, all with RLS; the same 14 client-callable functions as locally, each with internal role checks; 3 private storage buckets; 30 skills and 4 plans.
@@ -138,7 +150,7 @@ The security advisor reports two kinds of finding, both expected by design:
 supabase link --project-ref ncqqnjnozrymrmblixra
 supabase migration repair --status applied 20261102000100 20261102000200 20261102000300 20261102000400 \
   20261102000500 20261102000600 20261102000700 20261102000800 20261102000900 20261102001000 20261102001100 20261102001300
-supabase db push   # applies 0012 (if still wanted), 0014 and 0015
+supabase db push   # applies 0012 (if still wanted), 0014, 0015 and 0016
 ```
 
 ## Launch checklist (owner actions)
@@ -150,6 +162,7 @@ supabase db push   # applies 0012 (if still wanted), 0014 and 0015
 3. **Vercel:** import the GitHub repository, set every variable from `.env.example` (Production), and set `CRON_SECRET`. Leave `PAYMENTS_TEST_MODE` unset.
 4. **Payments:** sign merchant agreements with Click and Payme, enter the keys, and set the callback URLs from [PAYMENTS.md](PAYMENTS.md). Stripe needs an eligible (non-Uzbek) legal entity.
 5. **API keys:** Anthropic key; optional Desmos and Bunny keys.
+5b. **Telegram Mini App (optional):** create the bot, set the two `TELEGRAM_*` variables, apply 0016, enable the Mini App in BotFather, then Admin → Telegram → "Configure bot" ([TELEGRAM.md](TELEGRAM.md)).
 6. **Content team:**
    - Admin → Question bank → Import → "Import 240 questions as drafts".
    - Review them in the review queue, using the bulk "Mark reviewed" and "Publish reviewed" buttons.

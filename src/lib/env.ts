@@ -56,6 +56,10 @@ const serverSchema = z.object({
   PAYMENTS_TEST_WEBHOOK_SECRET: optional,
   /** Shared secret for scheduled jobs (Vercel Cron sends it as `Authorization: Bearer …`). */
   CRON_SECRET: optional,
+  /** Telegram bot (BotFather token). Enables the Mini App sign-in and the bot webhook. */
+  TELEGRAM_BOT_TOKEN: z.string().regex(/^\d+:[\w-]{30,}$/, 'Expected a BotFather token like 123456:ABC…').optional(),
+  /** Secret Telegram sends back in X-Telegram-Bot-Api-Secret-Token on every webhook call (1–256 chars of A–Z a–z 0–9 _ -). */
+  TELEGRAM_WEBHOOK_SECRET: z.string().regex(/^[A-Za-z0-9_-]{16,256}$/, 'Use 16–256 characters: letters, digits, _ and -').optional(),
 })
 
 export type ServerEnv = z.infer<typeof serverSchema>

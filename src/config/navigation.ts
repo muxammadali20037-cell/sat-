@@ -4,7 +4,7 @@ import type { Role } from './roles'
 export type NavIconKey =
   | 'home' | 'courses' | 'practice' | 'diagnostic' | 'exams' | 'results' | 'analytics' | 'plan' | 'tutor'
   | 'bookmarks' | 'subscription' | 'settings' | 'students' | 'subjects' | 'domains' | 'skills' | 'lessons'
-  | 'questions' | 'import' | 'payments' | 'ai' | 'audit' | 'admin' | 'guides'
+  | 'questions' | 'import' | 'payments' | 'ai' | 'audit' | 'admin' | 'guides' | 'telegram'
 
 export type NavItem = {
   href: string
@@ -93,6 +93,7 @@ export const ADMIN_NAV: NavSection[] = [
     title: 'System',
     items: [
       { href: '/admin/settings', labelKey: 'Settings', icon: 'settings', roles: ADMINS },
+      { href: '/admin/telegram', labelKey: 'Telegram', icon: 'telegram', roles: ADMINS },
       { href: '/admin/audit-logs', labelKey: 'Audit log', icon: 'audit', roles: ADMINS },
     ],
   },

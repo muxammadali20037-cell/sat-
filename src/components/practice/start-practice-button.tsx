@@ -9,6 +9,7 @@ import { practiceDict } from '@/lib/i18n/dictionaries/practice'
 import { Button, type ButtonProps } from '@/components/ui/button'
 import { toast } from '@/components/ui/toast'
 import { errorDetails, isPlanLimit, practiceErrorMessage } from './error-message'
+import { isMiniApp } from '@/lib/telegram/client'
 
 export type StartRequest = { mode: 'set'; practiceSetId: string } | { mode: 'retry'; sourceAttemptId: string } | { mode: 'bookmarks' }
 
@@ -33,7 +34,8 @@ export function StartPracticeButton({
         const d = errorDetails<{ limit: number }>(err)
         toast.error(t.usage.limitTitle, {
           description: d.limit !== undefined ? format(t.usage.limitBody, { limit: d.limit }) : t.usage.disabledBody,
-          action: { label: t.usage.seePlans, onClick: () => router.push('/dashboard/subscription') },
+          // No route to purchasing inside the Telegram Mini App.
+          action: isMiniApp() ? undefined : { label: t.usage.seePlans, onClick: () => router.push('/dashboard/subscription') },
         })
       } else {
         toast.error(practiceErrorMessage(err, t.errors))

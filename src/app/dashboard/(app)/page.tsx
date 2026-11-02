@@ -108,7 +108,7 @@ export default async function DashboardPage() {
           value={ent.planName}
           hint={
             ent.status === 'none' ? (
-              <Link href="/dashboard/subscription" className="text-primary hover:underline">
+              <Link href="/dashboard/subscription" data-purchase-cta="" className="text-primary hover:underline">
                 {planHint}
               </Link>
             ) : (

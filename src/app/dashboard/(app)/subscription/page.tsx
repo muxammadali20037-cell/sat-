@@ -17,6 +17,7 @@ import { DataTable } from '@/components/ui/data-table'
 import { CheckoutButtons } from '@/components/subscription/checkout-buttons'
 import { ScheduleDowngradeButton, SubscriptionActions } from '@/components/subscription/subscription-actions'
 import { cn, formatMoney } from '@/lib/utils'
+import { isMiniAppRequest } from '@/features/telegram/server'
 
 export const metadata: Metadata = { title: 'Subscription' }
 
@@ -34,6 +35,8 @@ export default async function SubscriptionPage() {
   const [t, locale, db] = await Promise.all([getDict(subscriptionDict), getLocale(), createServerSupabase()])
   const [overview, plans, payments] = await Promise.all([getSubscriptionOverview(profile), getPublicPlans(db), getMyPayments(db, profile.id)])
   const providers = configuredProviders()
+  // Inside the Telegram Mini App nothing is sold (Telegram requires Stars for digital goods there).
+  const inTelegram = await isMiniAppRequest()
   const sub = overview.subscription
   const tz = profile.timezone
   const date = (iso: string) => formatDate(iso, locale, tz)
@@ -71,7 +74,7 @@ export default async function SubscriptionPage() {
                 )}
               </p>
             ) : (
-              <p className="mt-1.5 max-w-xl text-sm text-muted-foreground">{t.current.freeBody}</p>
+              !inTelegram && <p className="mt-1.5 max-w-xl text-sm text-muted-foreground">{t.current.freeBody}</p>
             )}
           </div>
           {sub && (
@@ -127,6 +130,11 @@ export default async function SubscriptionPage() {
       </Card>
 
       {/* Plans */}
+      {inTelegram ? (
+        <Alert variant="neutral" title={t.miniApp.heading}>
+          {t.miniApp.body}
+        </Alert>
+      ) : (
       <Section title={t.plans.heading} description={t.plans.description}>
         {providers.length === 0 && <Alert variant="warning">{t.plans.noProviders}</Alert>}
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4">
@@ -202,6 +210,7 @@ export default async function SubscriptionPage() {
           {t.plans.noAutoCharge}
         </p>
       </Section>
+      )}
 
       {/* Payment history */}
       <Section title={t.history.heading}>

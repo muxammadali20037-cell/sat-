@@ -59,7 +59,7 @@ export function CalculatorSidePanel({ state, labels, stateKey }: { state: Calcul
     <aside
       aria-label={labels.title}
       hidden={!visible}
-      className={cn('sticky top-20 flex h-[calc(100dvh-7rem)] min-h-[28rem] flex-col overflow-hidden rounded-xl border border-border bg-card', !visible && 'hidden')}
+      className={cn('sticky top-[calc(5rem+var(--app-inset-top))] flex h-[calc(100dvh-7rem-var(--app-inset-top))] min-h-[28rem] flex-col overflow-hidden rounded-xl border border-border bg-card', !visible && 'hidden')}
     >
       <div className="flex h-11 shrink-0 items-center justify-between border-b border-border px-3">
         <p className="text-sm font-medium">{labels.title}</p>
@@ -78,7 +78,7 @@ export function CalculatorSheet({ state, labels, stateKey }: { state: Calculator
       <DialogContent
         hideClose
         aria-describedby={undefined}
-        className="left-0 top-0 flex h-dvh max-h-none w-screen max-w-none translate-x-0 translate-y-0 flex-col gap-0 overflow-hidden rounded-none border-0 p-0"
+        className="left-0 top-[var(--app-inset-top)] flex h-dvh max-h-none w-screen max-w-none translate-x-0 translate-y-0 flex-col gap-0 overflow-hidden rounded-none border-0 p-0"
       >
         <div className="flex h-14 shrink-0 items-center justify-between border-b border-border px-4">
           <DialogTitle className="text-base">{labels.title}</DialogTitle>

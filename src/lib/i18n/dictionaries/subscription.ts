@@ -5,6 +5,10 @@ export const subscriptionDict = defineDict({
   en: {
     title: 'Subscription',
     description: 'Your plan, what it includes, and your payments.',
+    miniApp: {
+      heading: 'Plans are not sold in the Telegram app',
+      body: 'Your account and plan are the same everywhere. Purchases are not available inside Telegram.',
+    },
     current: {
       heading: 'Current plan',
       free: 'Free plan',
@@ -148,6 +152,10 @@ export const subscriptionDict = defineDict({
   uz: {
     title: 'Obuna',
     description: "Tarifingiz, unga nimalar kirishi va to'lovlaringiz.",
+    miniApp: {
+      heading: 'Telegram ilovasida tarif sotilmaydi',
+      body: 'Akkauntingiz va tarifingiz hamma joyda bir xil. Telegram ichida xarid qilib bo‘lmaydi.',
+    },
     current: {
       heading: 'Joriy tarif',
       free: 'Bepul tarif',

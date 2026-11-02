@@ -19,14 +19,16 @@ const desmos = process.env.NEXT_PUBLIC_DESMOS_API_KEY ? ' https://www.desmos.com
 // so script-src keeps 'unsafe-inline'; everything else is locked to known origins.
 const csp = [
   "default-src 'self'",
-  `script-src 'self' 'unsafe-inline'${isDev ? " 'unsafe-eval'" : ''}${process.env.STRIPE_SECRET_KEY ? ' https://js.stripe.com' : ''}${desmos}`,
+  // telegram.org: the Telegram Mini App script, loaded only when the site runs inside Telegram.
+  `script-src 'self' 'unsafe-inline' https://telegram.org${isDev ? " 'unsafe-eval'" : ''}${process.env.STRIPE_SECRET_KEY ? ' https://js.stripe.com' : ''}${desmos}`,
   "style-src 'self' 'unsafe-inline'",
   `img-src 'self' data: blob:${supabaseOrigin ? ` ${supabaseOrigin}` : ''}${desmos}`,
   `font-src 'self' data:${desmos}`,
   `media-src 'self' blob:${supabaseOrigin ? ` ${supabaseOrigin}` : ''}${videoHost ? ` https://${videoHost}` : ''}`,
   `connect-src 'self'${supabaseOrigin ? ` ${supabaseOrigin} ${supabaseWs}` : ''}${videoHost ? ` https://${videoHost}` : ''}${desmos}`,
   "worker-src 'self' blob:", // hls.js transmuxing worker
-  "frame-ancestors 'none'",
+  // Telegram Web shows Mini Apps in a frame; no other site may frame these pages.
+  "frame-ancestors 'self' https://web.telegram.org",
   "form-action 'self' https://checkout.paycom.uz https://checkout.test.paycom.uz https://my.click.uz https://checkout.stripe.com",
   "base-uri 'self'",
   "object-src 'none'",
@@ -36,7 +38,7 @@ const securityHeaders = [
   { key: 'Content-Security-Policy', value: csp },
   { key: 'X-Content-Type-Options', value: 'nosniff' },
   { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
-  { key: 'X-Frame-Options', value: 'DENY' },
+  // No X-Frame-Options: it cannot allow a single origin; CSP frame-ancestors above is the control.
   { key: 'Permissions-Policy', value: 'camera=(), microphone=(), geolocation=(), payment=()' },
   ...(isDev ? [] : [{ key: 'Strict-Transport-Security', value: 'max-age=63072000; includeSubDomains; preload' }]),
 ]

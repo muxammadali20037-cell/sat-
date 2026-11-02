@@ -51,6 +51,7 @@ export const RATE_LIMITS = {
   authLogin: { bucket: 'auth-login', limit: 10, windowSec: 300 },
   authRegister: { bucket: 'auth-register', limit: 5, windowSec: 3600 },
   authRecover: { bucket: 'auth-recover', limit: 5, windowSec: 3600 },
+  telegramAuth: { bucket: 'telegram-auth', limit: 20, windowSec: 300 },
   contact: { bucket: 'contact', limit: 5, windowSec: 3600 },
   ai: { bucket: 'ai', limit: 10, windowSec: 60 },
   checkout: { bucket: 'checkout', limit: 10, windowSec: 600 },

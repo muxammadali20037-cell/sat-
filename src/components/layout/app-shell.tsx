@@ -130,7 +130,7 @@ export function AppShell(props: Props) {
       </aside>
 
       {/* Mobile / tablet top bar */}
-      <header className="sticky top-0 z-30 flex h-14 items-center justify-between border-b border-border bg-surface/95 px-4 backdrop-blur lg:hidden">
+      <header className="sticky top-[var(--app-inset-top)] z-30 flex h-14 items-center justify-between border-b border-border bg-surface/95 px-4 backdrop-blur lg:hidden">
         <Logo href={props.variant === 'admin' ? '/admin' : '/dashboard'} />
         <div className="flex items-center gap-1">
         {props.notifications && <NotificationsMenu {...props.notifications} />}
@@ -153,7 +153,7 @@ export function AppShell(props: Props) {
         </div>
       </header>
 
-      <main id="main" className={cn('mx-auto w-full max-w-[1280px] px-4 py-6 sm:px-6 lg:px-8 lg:py-8', props.mobileTabs && 'pb-24 lg:pb-8')}>
+      <main id="main" className={cn('mx-auto w-full max-w-[1280px] px-4 py-6 sm:px-6 lg:px-8 lg:py-8', props.mobileTabs && 'pb-[calc(6rem+var(--app-inset-bottom))] lg:pb-8')}>
         {props.children}
       </main>
 
@@ -161,7 +161,7 @@ export function AppShell(props: Props) {
       {props.mobileTabs && (
         <nav
           aria-label="Primary"
-          className="fixed inset-x-0 bottom-0 z-30 grid grid-cols-5 border-t border-border bg-surface/95 pb-[env(safe-area-inset-bottom)] backdrop-blur sm:hidden"
+          className="fixed inset-x-0 bottom-0 z-30 grid grid-cols-5 border-t border-border bg-surface/95 pb-[var(--app-inset-bottom)] backdrop-blur sm:hidden"
         >
           {props.mobileTabs.map((item) => {
             const Icon = NAV_ICONS[item.icon]

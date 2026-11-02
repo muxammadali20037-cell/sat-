@@ -448,7 +448,7 @@ export function ExamRunner({ overview }: { overview: ExamOverview }) {
   )
 
   return (
-    <div className="flex h-dvh flex-col bg-surface">
+    <div className="flex h-dvh flex-col bg-surface pb-[var(--app-inset-bottom)]">
       {/* Top bar: section/module + directions · timer · tools */}
       <header className="grid h-16 shrink-0 grid-cols-[1fr_auto_1fr] items-center gap-2 border-b border-border px-3 sm:px-5">
         <div className="min-w-0">

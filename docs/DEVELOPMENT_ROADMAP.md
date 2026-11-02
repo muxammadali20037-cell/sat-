@@ -34,6 +34,7 @@ Each phase ends with: what was built, files created, integrations completed, tes
 | D12 | Reference screenshots (Nov 2) adopted as patterns only | Layout ideas kept; ratings, review counts, XP and leaderboards rejected — no backing data and fabricated stats are forbidden |
 | D13 | Starter question pack (`core-v1`, 240 original questions) ships in the repo, imported as drafts | A new environment is usable on day one without bypassing review; blind-verified keys; nothing reaches students unreviewed |
 | D14 | Quota checks that consume a unit run in SQL under a per-student advisory lock | Read-then-act checks let parallel requests exceed plan limits; a lock per student keeps students independent |
+| D15 | Telegram Mini App with Telegram sign-in; no purchases inside Telegram (owner's choice, 3 Nov) | Telegram requires Stars for digital goods and has suspended bots that took other payments; plans are bought on the website and work everywhere |
 
 ## Post-v1 backlog
 

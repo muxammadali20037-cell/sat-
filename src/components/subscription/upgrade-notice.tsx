@@ -36,7 +36,7 @@ export function UpgradeNotice({
       className={className}
       action={
         <Button asChild size="sm">
-          <Link href="/dashboard/subscription">{actionLabel ?? t.action}</Link>
+          <Link href="/dashboard/subscription" data-purchase-cta="">{actionLabel ?? t.action}</Link>
         </Button>
       }
     >

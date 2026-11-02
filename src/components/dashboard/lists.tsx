@@ -110,7 +110,7 @@ export function TodaySchedule({ t, plan }: { t: T; plan: { hasPlan: boolean; inc
         <div className="rounded-lg border border-dashed border-border-strong p-5 text-sm">
           <p className="font-medium text-foreground">{t.today.noPlan}</p>
           <p className="mt-0.5 text-muted-foreground">{plan.included ? t.today.noPlanBody : t.today.noPlanLocked}</p>
-          <Link href={plan.included ? '/dashboard/study-plan' : '/dashboard/subscription'} className="mt-3 inline-block text-[13px] font-medium text-primary hover:underline">
+          <Link href={plan.included ? '/dashboard/study-plan' : '/dashboard/subscription'} data-purchase-cta={plan.included ? undefined : ''} className="mt-3 inline-block text-[13px] font-medium text-primary hover:underline">
             {plan.included ? t.today.createPlan : t.mock.seePlans}
           </Link>
         </div>

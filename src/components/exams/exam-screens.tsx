@@ -127,7 +127,7 @@ export function InstructionsScreen({
           action={
             error.upgrade ? (
               <Button asChild size="sm">
-                <Link href="/dashboard/subscription">{t.list.seePlans}</Link>
+                <Link href="/dashboard/subscription" data-purchase-cta="">{t.list.seePlans}</Link>
               </Button>
             ) : undefined
           }

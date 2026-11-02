@@ -199,3 +199,49 @@
 .sr-only {
   left: 0;
 }
+
+/* ---------------------------------------------------------------------------
+ * Telegram Mini App (html[data-tg-app], set before paint by the root layout).
+ * Full screen puts Telegram's close/menu buttons over the page: everything starts below
+ * safe area + content safe area (CSS variables set by Telegram's script). Outside Telegram the
+ * insets are 0, so nothing changes on the website.
+ * ------------------------------------------------------------------------- */
+:root {
+  --app-inset-top: 0px;
+  --app-inset-bottom: env(safe-area-inset-bottom, 0px);
+}
+html[data-tg-app] {
+  --app-inset-top: calc(var(--tg-safe-area-inset-top, 0px) + var(--tg-content-safe-area-inset-top, 0px));
+  --app-inset-bottom: max(env(safe-area-inset-bottom, 0px), var(--tg-safe-area-inset-bottom, 0px));
+  overscroll-behavior: none;
+  -webkit-tap-highlight-color: transparent;
+}
+html[data-tg-app] body {
+  padding-top: var(--app-inset-top);
+  overscroll-behavior: none;
+}
+/* Opaque strip under Telegram's floating buttons, so content never scrolls behind them. */
+html[data-tg-app] body::before {
+  content: '';
+  position: fixed;
+  inset: 0 0 auto 0;
+  height: var(--app-inset-top);
+  background: var(--surface);
+  z-index: 45;
+  pointer-events: none;
+}
+html[data-tg-app] .min-h-dvh {
+  min-height: calc(100dvh - var(--app-inset-top));
+}
+html[data-tg-app] .h-dvh {
+  height: calc(100dvh - var(--app-inset-top));
+}
+html[data-tg-app] .fixed.inset-0,
+html[data-tg-app] .fixed.inset-y-0 {
+  top: var(--app-inset-top);
+}
+/* Purchases are never offered inside Telegram (Stars-only rule for digital goods). */
+html[data-tg-app] [data-purchase-cta] {
+  display: none !important;
+}
+

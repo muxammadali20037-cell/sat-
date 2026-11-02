@@ -215,7 +215,7 @@ export function PracticeRunner({
   return (
     <div>
       {/* Focused top bar */}
-      <div className="sticky top-0 z-20 -mx-4 mb-5 border-b border-border bg-background/95 px-4 py-2 backdrop-blur sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
+      <div className="sticky top-[var(--app-inset-top)] z-20 -mx-4 mb-5 border-b border-border bg-background/95 px-4 py-2 backdrop-blur sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
         <div className="grid grid-cols-[auto_minmax(0,1fr)_auto] items-center gap-3">
           <Button asChild variant="secondary" size="sm">
             <Link href="/dashboard/practice">

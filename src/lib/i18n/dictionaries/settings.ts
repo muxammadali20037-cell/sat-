@@ -12,6 +12,7 @@ export const settingsDict = defineDict({
       goals: 'Learning goals',
       language: 'Language',
       appearance: 'Appearance',
+      telegram: 'Telegram',
       security: 'Security',
     },
     profile: {
@@ -48,6 +49,15 @@ export const settingsDict = defineDict({
       systemHint: 'Follows your device setting.',
       deviceNote: 'Saved in this browser only.',
     },
+    telegram: {
+      title: 'Telegram',
+      description: 'Open SAT MASTER as an app inside Telegram.',
+      connected: 'Connected to Telegram{username}.',
+      notConnected: 'Not connected. Open SAT MASTER in Telegram and choose “I already have a SAT MASTER account” to connect this account.',
+      telegramOnly: 'This account was created in Telegram, so it opens from Telegram and has no password.',
+      disconnect: 'Disconnect Telegram',
+      disconnected: 'Telegram disconnected',
+    },
     security: {
       title: 'Security',
       description: 'Change your password or sign out of this device.',
@@ -80,6 +90,7 @@ export const settingsDict = defineDict({
       goals: "O'quv maqsadlari",
       language: 'Til',
       appearance: "Ko'rinish",
+      telegram: 'Telegram',
       security: 'Xavfsizlik',
     },
     profile: {
@@ -115,6 +126,15 @@ export const settingsDict = defineDict({
       system: 'Tizim',
       systemHint: "Qurilmangiz sozlamasiga moslashadi.",
       deviceNote: 'Faqat shu brauzerda saqlanadi.',
+    },
+    telegram: {
+      title: 'Telegram',
+      description: 'SAT MASTER’ni Telegram ichida ilova sifatida oching.',
+      connected: 'Telegram’ga ulangan{username}.',
+      notConnected: 'Ulanmagan. SAT MASTER’ni Telegram’da oching va «Menda SAT MASTER akkaunti bor» tugmasini bosing — shu akkaunt ulanadi.',
+      telegramOnly: 'Bu akkaunt Telegram’da yaratilgan: u Telegram orqali ochiladi va paroli yo‘q.',
+      disconnect: 'Telegram’ni uzish',
+      disconnected: 'Telegram uzildi',
     },
     security: {
       title: 'Xavfsizlik',

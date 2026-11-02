@@ -335,7 +335,7 @@ export function MockExamCard({ t, mock, className }: { t: T; mock: MockCard; cla
                 <Lock className="size-3.5" aria-hidden />
                 {t.mock.notIncluded}
               </span>
-              <Link href="/dashboard/subscription" className="font-medium text-primary hover:underline">
+              <Link href="/dashboard/subscription" data-purchase-cta="" className="font-medium text-primary hover:underline">
                 {t.mock.seePlans}
               </Link>
             </div>

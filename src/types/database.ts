@@ -2603,6 +2603,50 @@ export type Database = {
           },
         ]
       }
+      telegram_accounts: {
+        Row: {
+          user_id: string
+          telegram_user_id: number
+          username: string | null
+          first_name: string | null
+          last_name: string | null
+          language_code: string | null
+          created_via: string
+          linked_at: string
+          last_seen_at: string
+        }
+        Insert: {
+          user_id: string
+          telegram_user_id: number
+          username?: string | null
+          first_name?: string | null
+          last_name?: string | null
+          language_code?: string | null
+          created_via: string
+          linked_at?: string
+          last_seen_at?: string
+        }
+        Update: {
+          user_id?: string
+          telegram_user_id?: number
+          username?: string | null
+          first_name?: string | null
+          last_name?: string | null
+          language_code?: string | null
+          created_via?: string
+          linked_at?: string
+          last_seen_at?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "telegram_accounts_user_id_fkey"
+            columns: ["user_id"]
+            isOneToOne: true
+            referencedRelation: "profiles"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       user_daily_activity: {
         Row: {
           id: string

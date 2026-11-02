@@ -15,6 +15,11 @@ import { settingsDict } from '@/lib/i18n/dictionaries/settings'
 import { localDate } from '@/lib/time'
 import { signOutAction } from '@/features/auth/sign-out'
 import { SUBJECTS, type Subject } from '@/features/onboarding/schemas'
+import { createServerSupabase } from '@/lib/supabase/server'
+import { myTelegramAccount } from '@/features/telegram/server'
+import { isTelegramOnlyEmail } from '@/features/telegram/shared'
+import { DisconnectTelegramButton } from '@/components/telegram/disconnect-telegram-button'
+import { format } from '@/lib/i18n/dict'
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getDict(settingsDict)
@@ -38,9 +43,12 @@ function SettingsSection({ id, title, description, children }: { id: string; tit
 export default async function SettingsPage() {
   // The (app) layout already requires a ready student; this page re-checks per the DAL rule.
   const profile = await requireUser({ next: '/dashboard/settings' })
-  const [t, user] = await Promise.all([getDict(settingsDict), getCurrentUser()])
+  const [t, user, db] = await Promise.all([getDict(settingsDict), getCurrentUser(), createServerSupabase()])
+  const telegram = await myTelegramAccount(db, profile.id)
+  // Accounts created in Telegram have a placeholder address and no password.
+  const telegramOnly = isTelegramOnlyEmail(profile.email)
   const providers = (user?.app_metadata?.providers as string[] | undefined) ?? [user?.app_metadata?.provider as string | undefined]
-  const hasPassword = providers.includes('email') || Boolean(user?.identities?.some((i) => i.provider === 'email'))
+  const hasPassword = !telegramOnly && (providers.includes('email') || Boolean(user?.identities?.some((i) => i.provider === 'email')))
   const today = localDate(profile.timezone)
   const subjects = profile.preferredSubjects.filter((s): s is Subject => (SUBJECTS as readonly string[]).includes(s))
 
@@ -49,6 +57,7 @@ export default async function SettingsPage() {
     { id: 'goals', label: t.nav.goals },
     { id: 'language', label: t.nav.language },
     { id: 'appearance', label: t.nav.appearance },
+    { id: 'telegram', label: t.nav.telegram },
     { id: 'security', label: t.nav.security },
   ]
 
@@ -68,7 +77,11 @@ export default async function SettingsPage() {
       </nav>
 
       <SettingsSection id="profile" title={t.profile.title} description={t.profile.description}>
-        <ProfileSettingsForm fullName={profile.fullName} email={profile.email} timezone={profile.timezone} />
+        <ProfileSettingsForm
+          fullName={profile.fullName}
+          email={telegramOnly ? `Telegram${telegram?.username ? ` (@${telegram.username})` : ''}` : profile.email}
+          timezone={profile.timezone}
+        />
       </SettingsSection>
 
       <SettingsSection id="goals" title={t.goals.title} description={t.goals.description}>
@@ -91,11 +104,22 @@ export default async function SettingsPage() {
         <AppearanceForm />
       </SettingsSection>
 
+      <SettingsSection id="telegram" title={t.telegram.title} description={t.telegram.description}>
+        <p className="text-sm">
+          {telegram ? format(t.telegram.connected, { username: telegram.username ? ` (@${telegram.username})` : '' }) : t.telegram.notConnected}
+        </p>
+        {telegramOnly ? (
+          <p className="mt-2 text-sm text-muted-foreground">{t.telegram.telegramOnly}</p>
+        ) : (
+          telegram && <DisconnectTelegramButton label={t.telegram.disconnect} doneLabel={t.telegram.disconnected} />
+        )}
+      </SettingsSection>
+
       <SettingsSection id="security" title={t.security.title} description={t.security.description}>
         <div className="grid grid-cols-1 gap-8">
           <div>
             <h3 className="mb-4 text-base font-semibold">{t.security.passwordTitle}</h3>
-            <ChangePasswordForm hasPassword={hasPassword} />
+            <ChangePasswordForm hasPassword={hasPassword} noPasswordNote={telegramOnly ? t.telegram.telegramOnly : undefined} />
           </div>
           <div className="border-t border-border pt-6">
             <h3 className="text-base font-semibold">{t.security.signOutTitle}</h3>
