@@ -127,7 +127,7 @@ The flows ran as a real user against real auth, PostgREST and RLS. AI used the l
   - countries where Stripe cannot take payments → no checkout;
   - checkout also checks this on the server;
   - new profiles in Tashkent or Samarkand time default to UZ.
-- **Migration 0018** (`20261103001800_learning_extras.sql`) adds the `mistakes` mode, `flashcard_reviews` and `profiles.country_code`. It is **not yet applied to the hosted project**, and this code must not be deployed before it is.
+- **Migration 0018** (`20261103001800_learning_extras.sql`) adds the `mistakes` mode, `flashcard_reviews` and `profiles.country_code`. It was applied to the hosted project on 3 Nov with the owner's approval, before this code was deployed.
 - **Verified:**
   - 542 unit tests (18 new);
   - 84 DB tests (5 new: SELECT, INSERT, UPDATE and DELETE on `flashcard_reviews` separately, country self-update, practice mode);
@@ -215,6 +215,7 @@ State on 2 Nov 2026, applied through the Supabase connector with the owner's con
 | 0012 search indexes | **Declined by the owner** at the confirmation prompt. Optional (admin search speed only). Apply later from the SQL editor if wanted. |
 | 0013 study-guide tables | Applied |
 | 0014 study-guide content (~480 KB) | Not applied. Use Admin → Study guides → "Import bundled guides" after the first deploy, or `supabase db push`. |
+| 0018 learning extras (1 table, 1 column, wider practice-mode check; no existing data touched) | Applied on 3 Nov with the owner's approval. Checked afterwards: RLS on; `authenticated` can only SELECT `flashcard_reviews` (own rows), cannot insert, update or delete; may update `country_code` but still not `role`; `anon` has no access. |
 | 0017 website Telegram sign-in (1 table, 2 columns; no DELETE or DROP) | Applied on 3 Nov with the owner's approval. Checked afterwards: no `anon` or `authenticated` privileges on `telegram_login_requests`. |
 | 0016 Telegram accounts (1 table) | Applied on 3 Nov with the owner's approval. Checked afterwards: `anon` has no privileges; `authenticated` has SELECT only, limited to the student's own row by RLS. |
 | 0015 atomic quotas (1 table, 2 functions; no existing data touched) | Applied on 3 Nov with the owner's approval. Checked afterwards: RLS on; `anon` and `authenticated` have no privileges on the table or the functions; `service_role` can execute. The fallback path is no longer used. |
@@ -231,7 +232,7 @@ The security advisor reports two kinds of finding, both expected by design:
 supabase link --project-ref ncqqnjnozrymrmblixra
 supabase migration repair --status applied 20261102000100 20261102000200 20261102000300 20261102000400 \
   20261102000500 20261102000600 20261102000700 20261102000800 20261102000900 20261102001000 20261102001100 20261102001300 \
-  20261102001500 20261102001600 20261102001700
+  20261102001500 20261102001600 20261102001700 20261103001800
 supabase db push   # applies 0012 (if still wanted) and 0014
 ```
 
