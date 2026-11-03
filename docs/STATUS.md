@@ -84,6 +84,10 @@ The flows ran as a real user against real auth, PostgREST and RLS. AI used the l
 - **`.gitignore`:** it excluded `.env.example`.
 - **Localization:** the question card, answer options, navigator, upgrade notice and pagination were English-only for Uzbek users.
 - **Display:** practice titles repeated the difficulty ("Algebra · Mixed · Mixed"), and AI-tutor history showed raw LaTeX.
+- **Production incident (3 Nov, about 15:47–20:00 Tashkent):**
+  - **What happened:** a `TELEGRAM_WEBHOOK_SECRET` value that failed validation made every server-side settings read throw. Login, register, the dashboard and the rate limiter all broke.
+  - **Code fix:** invalid settings are now ignored, logged by name only (never the value), and listed for admins on the overview and Telegram pages. A regression test covers this.
+  - **Setting fix:** the secret was replaced in Vercel with a valid random value, with the owner's approval, and the site was redeployed.
 - **Concurrency (fixed 2 Nov):**
   - Simultaneous AI requests could all pass the daily-limit check.
   - Two different mock exams started at the same moment could both pass the monthly limit.
