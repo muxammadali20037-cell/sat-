@@ -227,8 +227,8 @@ To'liq model: [SECURITY_MODEL.md](SECURITY_MODEL.md).
 | # | Xavf | Daraja | Izoh |
 |---|---|---|---|
 | S1 | **Global `TEACHER` roli barcha o'quvchilarni ko'radi** | Yuqori (2.0 uchun) | `can_view_students()` `TEACHER` ga hamma o'quvchining quyidagi ma'lumotlarini o'qishga ruxsat beradi: profil, urinishlar, javoblar, faollik, o'quv reja, AI suhbatlari, Telegram telefon raqami. Bitta akademiya uchun normal. Lekin mustaqil ustozlarga bu rolni berish bir ustozga boshqasining o'quvchilarini ko'rsatadi. **2.0 da ustozlarga global rol berilmaydi.** Ruxsatlar `workspace_members` orqali bo'ladi |
-| S2 | Atomik limitlar (0015) production'da qo'llanmagan | O'rta | Bir vaqtda kelgan so'rovlar AI va imtihon limitini biroz oshirishi mumkin. Kod xavfsiz fallback qiladi |
-| S3 | Rate limiter xatoda "fail open" | Past–O'rta | Limiter bazaga ulana olmasa, so'rov o'tkaziladi. Hodisa vaqtida login va register cheklovsiz qoldi |
+| S2 | Atomik limitlar (0015) | Yopildi | 3-noyabr egasi tasdig'i bilan production'ga qo'llandi va huquqlari tekshirildi |
+| S3 | Rate limiter xatoda "fail open" | Yopildi | PHASE 1 da: baza ishlamasa, xotiradagi zaxira limiter qo'llanadi |
 | S4 | `question-images` SVG qabul qiladi | Past | Bucket private, rasm `<img>` orqali ko'rsatiladi (skript ishlamaydi). Lekin signed URL to'g'ridan-to'g'ri ochilsa, SVG Supabase domenida bajariladi. 2.0 da ustozlar fayl yuklaydi, shuning uchun SVG ni sanitizatsiya qilish yoki taqiqlash kerak |
 | S5 | Auth email'lari standart SMTP orqali | Past | Limit va spam xavfi. Custom SMTP kerak |
 | S6 | Kunlik mashq limiti atomik emas | Past | Bir vaqtda 1–2 javob ortiqcha o'tishi mumkin |
