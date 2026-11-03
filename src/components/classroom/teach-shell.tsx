@@ -41,6 +41,7 @@ export async function TeachShell({ profile, membership, children }: { profile: C
       }}
       logoutLabel={t.nav.logout}
       notifications={{ ...notifications }}
+      disclaimer={t.footer.disclaimer}
     >
       {children}
     </AppShell>

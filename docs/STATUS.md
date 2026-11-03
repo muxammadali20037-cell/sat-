@@ -1,6 +1,6 @@
 # SAT MASTER — Build status and phase report
 
-_Last updated: 3 November 2026 (SAT MASTER 2.0, PHASE 3: teacher workspaces)_
+_Last updated: 3 November 2026 (SAT MASTER 2.0-A: Learning Intelligence and personal assignments)_
 
 The codebase covers phases 1–8 of [DEVELOPMENT_ROADMAP.md](DEVELOPMENT_ROADMAP.md). Phase 9 (deployment) is partly done: a Supabase project exists, and the steps that need the owner's accounts or credentials are listed under "Launch checklist" below.
 
@@ -94,6 +94,31 @@ The flows ran as a real user against real auth, PostgREST and RLS. AI used the l
   - Both checks now run inside SQL functions under a per-student lock (migration 0015). Parallel-connection tests fail without the lock and pass with it.
 - **Admin lists:** question excerpts showed raw LaTeX (`\dfrac{…}`) and escaped prices as `\12`. They now use the same plain-text rendering as student pages.
 - **Pack import (caught before release):** the first version recognised already-imported questions by stem alone. Many Reading and Writing questions share a stem, so a retry after a partial import could have skipped real questions. It now matches passage and stem.
+
+### SAT MASTER 2.0-A (3 Nov): Learning Intelligence, personal assignments
+
+Follows the "Unique value proposition" directive. Integration terms were checked first; see
+[COMPETITIVE_STRATEGY.md](COMPETITIVE_STRATEGY.md) (Uzbek) for sources and decisions.
+
+- **External integrations (checked, nothing activated):**
+  - Wolfram|Alpha: commercial use needs a commercial agreement, attribution ("Computed by Wolfram|Alpha" + link) and no caching → `NOT_CONFIGURED`.
+  - Khan Academy: public API decommissioned; content is CC BY-NC-SA, so not usable inside a paid product → plain links only, no progress sync claimed.
+  - Desmos: partner key needed → `NOT_CONFIGURED` (link only).
+  - College Board: trademark notice must appear on every page that names SAT® → now also shown at the bottom of every student and teacher app page.
+- **Learning Intelligence v1** (`src/features/intelligence/engine.ts`, pure and unit-tested):
+  - reads only the student's own scored answers (last 180 days; questions of a running timed test excluded), activity, latest estimate, mocks and flashcards;
+  - rules: repeated mistakes in a skill (≥3 wrong in 14 days, <60%), hard questions before the basics are solid, pace vs the Digital SAT (median of measured answers, 95 s Math / 71 s RW, idle time capped), rushing, week-over-week change, weakest domain (≥10 answers, <60%), target vs latest estimate, mock readiness, flashcards due, study consistency;
+  - every insight carries its evidence numbers; below 10 answers no answer-based insight is shown and the card says what is needed;
+  - dashboard card "Next best step" (uz/en/ru) with one action and up to four more insights; practice links can preset `difficulty` and `timed=1`.
+- **Classroom ↔ learning link:**
+  - **migration 0020** (`assignments.assignee_id`): a personal assignment for one student of a group (composite FK to `group_members`); the read policy shows it only to that student and the group's staff;
+  - the teacher's student page has "Give personal practice", preset to the weakest domain from practice the student chose to share (same thresholds as the student's own insights);
+  - only that student is notified; the group page marks it and counts 0/1;
+  - open class work (personal first, then nearest due) is the first item of the student's daily mission, in plan and rules modes.
+- **Verified:**
+  - 569 unit tests (17 new); 104 DB tests (5 new: visibility per student, staff and other workspace; leaving the group; FK; client writes denied);
+  - lint, typecheck, production build;
+  - 24 Playwright checks (`e2e-intel`): insights in Russian with evidence and no placeholders, practice presets, teacher suggestion = weakest shared domain by SQL, notification and audit only for the assignee, mission and "for you" badge, classmate cannot see it or open it by URL (404), group work still reaches everyone, assignment practice linked to its attempt, College Board notice in the app, 390 px layouts; earlier suites re-run: dashboard 37/37, PHASE 2 30/30, classroom 32/32.
 
 ### SAT MASTER 2.0, PHASE 3 (3 Nov): teacher workspaces
 
@@ -258,6 +283,7 @@ State on 2 Nov 2026, applied through the Supabase connector with the owner's con
 | 0012 search indexes | **Declined by the owner** at the confirmation prompt. Optional (admin search speed only). Apply later from the SQL editor if wanted. |
 | 0013 study-guide tables | Applied |
 | 0014 study-guide content (~480 KB) | Not applied. Use Admin → Study guides → "Import bundled guides" after the first deploy, or `supabase db push`. |
+| 0020 personal assignments (1 column, 1 FK, 1 index, one policy changed; no existing data touched) | Pending the owner's approval. |
 | 0019 classroom (8 tables, 2 columns, 7 functions; one policy narrowed; no existing data touched) | Applied on 3 Nov with the owner's approval. Checked afterwards: 59 tables, all with RLS; `authenticated` cannot insert, update or delete any classroom table and `anon` cannot read them; `workspace_create` and `workspace_join` are callable by the server only; the Telegram policy now allows only the owner and admins. |
 | 0018 learning extras (1 table, 1 column, wider practice-mode check; no existing data touched) | Applied on 3 Nov with the owner's approval. Checked afterwards: RLS on; `authenticated` can only SELECT `flashcard_reviews` (own rows), cannot insert, update or delete; may update `country_code` but still not `role`; `anon` has no access. |
 | 0017 website Telegram sign-in (1 table, 2 columns; no DELETE or DROP) | Applied on 3 Nov with the owner's approval. Checked afterwards: no `anon` or `authenticated` privileges on `telegram_login_requests`. |

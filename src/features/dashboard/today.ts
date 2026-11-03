@@ -33,6 +33,8 @@ export type MissionItem =
   | { kind: 'practice'; skillName: string; href: string; progress: MissionProgress; done: boolean }
   | { kind: 'lesson'; lessonTitle: string; resume: boolean; href: string; done: boolean }
   | { kind: 'mistakes'; count: number; href: string; done: boolean }
+  /** Teacher-set work that is not submitted yet (nearest due first); `more` = the rest. */
+  | { kind: 'class_work'; title: string; personal: boolean; more: number; href: string; done: boolean }
   | { kind: 'minutes'; progress: MissionProgress; done: boolean }
 
 export type TodayActivity = { studySeconds: number; questionsAnswered: number; lessonsCompleted: number }
@@ -54,6 +56,8 @@ export type MissionInput = {
   lesson: { title: string; resume: boolean; href: string } | null
   mistakes: { count: number; href: string } | null
   retryCompletedToday: boolean
+  /** Open class assignments, already ordered (personal and nearest due first). */
+  classWork?: Array<{ id: string; title: string; personal: boolean }>
   today: TodayActivity
   dailyStudyMinutes: number | null
 }
@@ -71,8 +75,15 @@ export function buildMission(input: MissionInput): Mission {
     return { kind: 'minutes', progress: { value, target: input.dailyStudyMinutes }, done: value >= input.dailyStudyMinutes }
   }
 
+  const work = input.classWork ?? []
+  const classItem: MissionItem | null = work[0]
+    ? { kind: 'class_work', title: work[0].title, personal: work[0].personal, more: work.length - 1, href: `/dashboard/classes/${work[0].id}`, done: false }
+    : null
+
   const plan = input.planTasks.filter((t) => t.status !== 'skipped')
   if (plan.length > 0) {
+    // Work a teacher set comes first: it has a deadline the plan does not know about.
+    if (classItem) items.push(classItem)
     for (const t of plan) {
       items.push({ kind: 'plan_task', id: t.id, taskType: t.type, title: t.title, minutes: t.minutes, href: t.href, done: t.status === 'completed' })
     }
@@ -81,6 +92,7 @@ export function buildMission(input: MissionInput): Mission {
     return summarize('plan', items)
   }
 
+  if (classItem) items.push(classItem)
   if (!input.hasCompletedDiagnostic || input.diagnosticToday) {
     if (input.questionsAvailable) items.push({ kind: 'diagnostic', href: '/dashboard/diagnostic', done: input.diagnosticToday })
   }

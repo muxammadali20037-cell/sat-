@@ -49,6 +49,7 @@ export default async function StudentAppLayout({ children }: { children: React.R
       logoutLabel={t.nav.logout}
       switchLink={staff ? { href: '/admin', label: t.nav.admin } : teaches ? { href: '/teach', label: t.nav.teach } : undefined}
       notifications={{ ...notifications, labels: notificationLabels }}
+      disclaimer={t.footer.disclaimer}
     >
       <Suspense fallback={null}>
         <FlashToast />

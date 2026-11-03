@@ -47,6 +47,8 @@ export const CreateAssignmentSchema = z
     mockExamId: id.nullable().default(null),
     dueAt: z.iso.datetime({ offset: true }).nullable().default(null),
     points: z.number().int().min(1).max(1000).nullable().default(null),
+    /** Personal assignment: one student of the group (null = the whole group). */
+    assigneeId: id.nullable().default(null),
   })
   .refine((v) => v.kind !== 'practice' || v.practice !== null, { path: ['practice'], message: 'required' })
   .refine((v) => v.kind !== 'mock_exam' || v.mockExamId !== null, { path: ['mockExamId'], message: 'required' })

@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Award, BookOpen, CalendarDays, Check, ChevronRight, CircleAlert, Clock3, Compass, Flame, ListChecks, PenLine, RotateCcw, Target } from 'lucide-react'
+import { Users, Award, BookOpen, CalendarDays, Check, ChevronRight, CircleAlert, Clock3, Compass, Flame, ListChecks, PenLine, RotateCcw, Target } from 'lucide-react'
 import { Card } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { ProgressBar } from '@/components/ui/progress'
@@ -41,6 +41,7 @@ const taskIcon: Record<string, React.ReactNode> = {
   review: <RotateCcw />,
   mock_exam: <ListChecks />,
   mistakes: <RotateCcw />,
+  class_work: <Users />,
   minutes: <Clock3 />,
 }
 
@@ -57,6 +58,15 @@ function missionText(item: MissionItem, t: T): { title: string; hint: string | n
       return { title: item.resume ? m.lessonResume : m.lessonStart, hint: item.lessonTitle, icon: taskIcon.lesson, href: item.href }
     case 'mistakes':
       return { title: m.mistakes, hint: plural(item.count, m.mistakesHint), icon: taskIcon.mistakes, href: item.href }
+    case 'class_work': {
+      const who = item.personal ? m.classPersonal : m.classGroup
+      return {
+        title: format(m.classWork, { title: item.title }),
+        hint: item.more > 0 ? `${who} · ${plural(item.more, m.classMore)}` : who,
+        icon: taskIcon.class_work,
+        href: item.href,
+      }
+    }
     case 'minutes':
       return { title: format(m.minutes, { n: item.progress.target }), hint: m.minutesHint, icon: taskIcon.minutes, href: null }
   }

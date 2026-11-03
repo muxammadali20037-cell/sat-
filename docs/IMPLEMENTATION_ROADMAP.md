@@ -234,9 +234,10 @@ Migratsiya: **0025+**.
 |---|---|
 | 0018 | **Yozilgan (PHASE 2):** `mistakes` mashq rejimi, `flashcard_reviews`, `profiles.country_code` |
 | 0019 | **Yozilgan (PHASE 3):** workspaces, members, invitations, groups, group_members, progress_sharing, assignments, submissions, `attempts.assignment_id`, `audit_logs.workspace_id`, S1 |
-| 0020 | `live_sessions`, recurrences, guests, participants, `attendance`, `live_events`, `chat_messages`, polls, `recordings`, consents, `webhook_events`, `usage_counters`, `materials` + `workspace-files` bucket |
-| 0021 | `whiteboards`, snapshots, assets |
-| 0022 | Workspace plans, prices, subscriptions; `payments.purpose` kengaytmasi; guruh leaderboard'i |
+| 0020 | **Yozilgan (2.0-A):** `assignments.assignee_id` — bitta o'quvchiga shaxsiy topshiriq |
+| 0021 | `live_sessions`, recurrences, guests, participants, `attendance`, `live_events`, `chat_messages`, polls, `recordings`, consents, `webhook_events`, `usage_counters`, `materials` + `workspace-files` bucket |
+| 0022 | `whiteboards`, snapshots, assets |
+| 0023 | Workspace plans, prices, subscriptions; `payments.purpose` kengaytmasi; guruh leaderboard'i |
 | 0025+ | Marketplace |
 
 Mavjud migratsiya: **0015** (qo'llanmagan).

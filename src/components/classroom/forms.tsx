@@ -296,17 +296,42 @@ export type AssignmentFormOptions = {
   mockExams: Array<{ id: string; title: string }>
 }
 
-export function CreateAssignmentForm({ workspaceId, groupId, options }: { workspaceId: string; groupId: string; options: AssignmentFormOptions }) {
+export type AssignmentPreset = {
+  title: string
+  instructions: string
+  subjectCode: 'math' | 'reading_writing'
+  domainId: string
+  difficulty: 'easy' | 'medium' | 'hard' | 'mixed'
+}
+
+export function CreateAssignmentForm({
+  workspaceId,
+  groupId: defaultGroupId,
+  options,
+  assigneeId = null,
+  groups,
+  preset,
+}: {
+  workspaceId: string
+  groupId: string
+  options: AssignmentFormOptions
+  /** Personal assignment for one student (the server checks they are in the chosen group). */
+  assigneeId?: string | null
+  /** When the student is in several groups this teacher teaches, the teacher picks one. */
+  groups?: Array<{ id: string; name: string }>
+  preset?: AssignmentPreset
+}) {
   const c = useDict(classroomDict)
   const p = useDict(practiceDict)
   const t = c.teach.assignment
   const { pending, run } = useAction()
-  const [title, setTitle] = React.useState('')
-  const [instructions, setInstructions] = React.useState('')
+  const [groupId, setGroupId] = React.useState(defaultGroupId)
+  const [title, setTitle] = React.useState(preset?.title ?? '')
+  const [instructions, setInstructions] = React.useState(preset?.instructions ?? '')
   const [kind, setKind] = React.useState<'practice' | 'mock_exam' | 'text'>('practice')
-  const [subjectCode, setSubject] = React.useState<'math' | 'reading_writing'>('math')
-  const [domainId, setDomain] = React.useState('')
-  const [difficulty, setDifficulty] = React.useState<'easy' | 'medium' | 'hard' | 'mixed'>('mixed')
+  const [subjectCode, setSubject] = React.useState<'math' | 'reading_writing'>(preset?.subjectCode ?? 'math')
+  const [domainId, setDomain] = React.useState(preset?.domainId ?? '')
+  const [difficulty, setDifficulty] = React.useState<'easy' | 'medium' | 'hard' | 'mixed'>(preset?.difficulty ?? 'mixed')
   const [count, setCount] = React.useState(10)
   const [timed, setTimed] = React.useState(false)
   const [mockExamId, setMock] = React.useState(options.mockExams[0]?.id ?? '')
@@ -337,11 +362,24 @@ export function CreateAssignmentForm({ workspaceId, groupId, options }: { worksp
               mockExamId: kind === 'mock_exam' ? mockExamId || null : null,
               dueAt: due ? new Date(due).toISOString() : null,
               points: kind !== 'mock_exam' && points ? Number(points) : null,
+              assigneeId,
             }),
           reset,
         )
       }}
     >
+      {groups && groups.length > 1 && (
+        <div className={field}>
+          <Label htmlFor="asg-group">{c.teach.student.group}</Label>
+          <NativeSelect id="asg-group" value={groupId} onChange={(e) => setGroupId(e.target.value)}>
+            {groups.map((g) => (
+              <option key={g.id} value={g.id}>
+                {g.name}
+              </option>
+            ))}
+          </NativeSelect>
+        </div>
+      )}
       <div className="grid grid-cols-1 gap-3 sm:grid-cols-[2fr_1fr]">
         <div className={field}>
           <Label htmlFor="asg-title">{t.name}</Label>

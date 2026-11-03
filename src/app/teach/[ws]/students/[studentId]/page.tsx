@@ -10,6 +10,10 @@ import { Badge, Card } from '@/components/ui/card'
 import { ProgressBar } from '@/components/ui/progress'
 import { loadStudentForTeacher, requireStaffMembership } from '@/features/classroom/server'
 import { formatDate, percent } from '@/features/dashboard/format'
+import { getTaxonomy } from '@/features/taxonomy/server'
+import { can } from '@/features/classroom/permissions'
+import { CreateAssignmentForm, type AssignmentPreset } from '@/components/classroom/forms'
+import { WEAK_DOMAIN_MAX_ACCURACY, WEAK_DOMAIN_MIN_ANSWERS } from '@/features/intelligence/engine'
 
 export async function generateMetadata(): Promise<Metadata> {
   return { title: (await getDict(classroomDict)).teach.metaTitle }
@@ -22,7 +26,27 @@ export default async function StudentPage({ params }: { params: Promise<{ ws: st
   const m = await requireStaffMembership(admin, profile.id, ws)
   const [c, locale] = await Promise.all([getDict(classroomDict), getLocale()])
   const t = c.teach.student
-  const data = await loadStudentForTeacher(admin, m, profile.id, studentId)
+  const [data, taxonomy, mocks] = await Promise.all([
+    loadStudentForTeacher(admin, m, profile.id, studentId),
+    getTaxonomy(admin),
+    admin.from('mock_exams').select('id, title').eq('status', 'published').order('created_at'),
+  ])
+  // data.groups holds only groups this staff member teaches, so assigning there is allowed.
+  const canAssign = data.groups.length > 0 && can(m.role, 'assignment.create', { teachesGroup: true })
+  // Suggest the weakest domain only from practice the student chose to share (same thresholds as
+  // the student's own Learning Intelligence).
+  const weakest = data.learning?.domains
+    .filter((d) => d.answered >= WEAK_DOMAIN_MIN_ANSWERS && d.accuracy !== null && d.accuracy < WEAK_DOMAIN_MAX_ACCURACY)
+    .sort((a, b) => (a.accuracy ?? 0) - (b.accuracy ?? 0) || b.answered - a.answered)[0]
+  const preset: AssignmentPreset | undefined = weakest
+    ? {
+        title: format(c.teach.student.suggestTitle, { domain: weakest.name }).slice(0, 120),
+        instructions: format(c.teach.student.suggestInstructions, { domain: weakest.name }),
+        subjectCode: weakest.subjectCode === 'reading_writing' ? 'reading_writing' : 'math',
+        domainId: weakest.id,
+        difficulty: 'mixed',
+      }
+    : undefined
   const tz = profile.timezone || m.workspace.timezone
   const date = (iso: string) => formatDate(iso, locale, tz, { dateStyle: 'medium' })
 
@@ -40,7 +64,14 @@ export default async function StudentPage({ params }: { params: Promise<{ ws: st
                   <li key={w.id}>
                     <Link href={`/teach/${ws}/assignments/${w.id}`} className="flex flex-wrap items-center justify-between gap-3 px-5 py-3 hover:bg-muted/40">
                       <div className="min-w-0">
-                        <p className="truncate text-sm font-medium text-foreground">{w.title}</p>
+                        <p className="truncate text-sm font-medium text-foreground">
+                          {w.title}
+                          {w.personal && (
+                            <Badge variant="neutral" className="ml-2 align-middle">
+                              {format(c.teach.assignment.forStudent, { name: data.student.name })}
+                            </Badge>
+                          )}
+                        </p>
                         <p className="text-xs text-muted-foreground">
                           {c.kinds[w.kind as keyof typeof c.kinds]} · {w.dueAt ? format(c.due, { date: date(w.dueAt) }) : c.noDue}
                         </p>
@@ -60,6 +91,31 @@ export default async function StudentPage({ params }: { params: Promise<{ ws: st
             </Card>
           )}
         </Section>
+
+        {canAssign && (
+          <Section title={t.personalTitle} description={t.personalBody}>
+            <Card className="p-5" data-testid="personal-assignment">
+              {data.learning && (
+                <p className="mb-4 rounded-md bg-muted/50 px-3 py-2 text-[13px] text-foreground">
+                  {weakest
+                    ? format(t.suggestion, { domain: weakest.name, accuracy: percent(weakest.accuracy), n: weakest.answered })
+                    : format(t.noSuggestion, { n: WEAK_DOMAIN_MIN_ANSWERS, accuracy: percent(WEAK_DOMAIN_MAX_ACCURACY) })}
+                </p>
+              )}
+              <CreateAssignmentForm
+                workspaceId={ws}
+                groupId={data.groups[0]!.id}
+                groups={data.groups}
+                assigneeId={data.student.id}
+                preset={preset}
+                options={{
+                  domains: taxonomy.domains.map((d) => ({ id: d.id, name: d.name, subjectCode: (taxonomy.subjectById.get(d.subjectId)?.code ?? 'math') as 'math' | 'reading_writing' })),
+                  mockExams: mocks.data ?? [],
+                }}
+              />
+            </Card>
+          </Section>
+        )}
 
         <Section title={t.learningTitle}>
           {!data.learning ? (

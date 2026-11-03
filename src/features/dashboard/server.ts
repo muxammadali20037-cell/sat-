@@ -26,6 +26,7 @@ import {
   currentWeek,
   estimatePoints,
   examCountdown,
+  isActiveDay,
   latestEstimate,
   resultHref,
   taskHref,
@@ -46,6 +47,10 @@ import {
   type WeekSummary,
 } from './today'
 import { achievements, ADVANCED_DOMAIN_MIN_ANSWERS, longestStreak, type Achievement } from './achievements'
+import { analyze, type IntelligenceResult, type SubjectCode as IntelSubject } from '@/features/intelligence/engine'
+import { countFlashcardsDue, loadAnswerSignals } from '@/features/intelligence/server'
+import { loadMyClasses } from '@/features/classroom/server'
+import { addDays } from '@/lib/time'
 
 export type ContinueLesson = {
   state: 'resume' | 'next'
@@ -120,6 +125,7 @@ export type DashboardData = {
   mistakes: RecentMistake[]
   achievements: Achievement[]
   questionsAvailable: boolean
+  intelligence: IntelligenceResult
   isNewStudent: boolean
   streak: number
   week: WeekDay[]
@@ -228,7 +234,7 @@ export async function loadDashboard(db: Db, admin: () => Db, profile: CurrentPro
         .limit(1)
         .maybeSingle(),
       db.from('mock_exams').select('id, title, is_full_length').eq('status', 'published').order('created_at'),
-      db.from('attempts').select('mock_exam_id').eq('user_id', userId).eq('kind', 'mock_exam').eq('status', 'completed'),
+      db.from('attempts').select('mock_exam_id, completed_at').eq('user_id', userId).eq('kind', 'mock_exam').eq('status', 'completed'),
       // Whether practice and the diagnostic can start at all (a count only; no question data).
       admin().from('questions').select('id', { count: 'exact', head: true }).eq('status', 'published'),
       db
@@ -496,6 +502,47 @@ export async function loadDashboard(db: Db, admin: () => Db, profile: CurrentPro
     })),
   )
 
+  // Learning Intelligence: rules over the student's own answers (see features/intelligence) ---------
+  const subjectCodeById = new Map<string, IntelSubject>(taxonomy.subjects.map((s) => [s.id, s.code]))
+  const [signals, flashcardsDue, classes] = await Promise.all([
+    loadAnswerSignals(admin(), userId, subjectCodeById, locked),
+    countFlashcardsDue(db, userId),
+    loadMyClasses(admin(), userId),
+  ])
+  // Class work still to do: personal assignments first, then nearest due date.
+  const classWork = classes.workspaces
+    .flatMap((w) => w.assignments)
+    .filter((a) => a.status === 'not_started' || a.status === 'started')
+    .sort((a, b) => Number(b.personal) - Number(a.personal) || (a.dueAt ?? '9999').localeCompare(b.dueAt ?? '9999'))
+    .map((a) => ({ id: a.id, title: a.title, personal: a.personal }))
+  const lessonBySkill = new Map<string, { id: string; title: string; minutes: number }>()
+  // Catalog order (course, then lesson position).
+  for (const l of publishedLessons) {
+    if (!l.skillId || lessonBySkill.has(l.skillId) || catalog.progress.get(l.id)?.completed) continue
+    lessonBySkill.set(l.skillId, { id: l.id, title: l.title, minutes: Math.max(1, Math.round(l.durationSeconds / 60)) })
+  }
+  const fourteenDaysAgo = addDays(today, -13)
+  const lastMock = completedMocks.map((m) => m.completed_at).filter((d): d is string => Boolean(d)).sort().at(-1) ?? null
+  const intelligence = analyze({
+    now: new Date(),
+    answers: signals,
+    activeDaysLast14: activity.filter((r) => r.activity_date >= fourteenDaysAgo && r.activity_date <= today && isActiveDay(r)).length,
+    hasHistory: activity.some(isActiveDay) || signals.length > 0,
+    skills: new Map(taxonomy.skills.map((s) => [s.id, { name: s.name, domainId: s.domainId }])),
+    domains: new Map(
+      taxonomy.domains.flatMap((d) => {
+        const code = taxonomy.subjectById.get(d.subjectId)?.code
+        return code ? [[d.id, { name: d.name, subjectCode: code }] as const] : []
+      }),
+    ),
+    estimate: latest.total ? { low: latest.total.low, high: latest.total.high, at: latest.total.at } : null,
+    targetScore: profile.targetScore,
+    mocks: { completed: completedMocks.length, lastCompletedAt: lastMock, available: mockExams.length > 0 },
+    flashcardsDue,
+    questionsAvailable,
+    lessonBySkill,
+  })
+
   // Daily mission --------------------------------------------------------------------------------
   const focus = recommended[0]
   const latestMistakeAttempt = allMistakes[0]
@@ -510,6 +557,7 @@ export async function loadDashboard(db: Db, admin: () => Db, profile: CurrentPro
         ? { title: continueLearning.lesson.title, resume: continueLearning.state === 'resume', href: `/dashboard/lesson/${continueLearning.lesson.id}` }
         : null,
     mistakes: latestMistakeAttempt ? { count: allMistakes.length, href: '/dashboard/mistakes' } : null,
+    classWork,
     retryCompletedToday: todayAttempts.some((a) => a.kind === 'practice' && (a.practice_mode === 'retry' || a.practice_mode === 'mistakes')),
     today: todayActivity(today, activity),
     dailyStudyMinutes: profile.dailyStudyMinutes,
@@ -538,6 +586,7 @@ export async function loadDashboard(db: Db, admin: () => Db, profile: CurrentPro
       advancedDomains: mastery.filter((d) => d.level === 'advanced' && d.scored.answered >= ADVANCED_DOMAIN_MIN_ANSWERS).length,
     }),
     questionsAvailable,
+    intelligence,
     isNewStudent,
     streak,
     week: currentWeek(today, activity),

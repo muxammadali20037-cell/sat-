@@ -88,6 +88,12 @@ describe('classroom input schemas', () => {
     expect(CreateAssignmentSchema.safeParse({ ...base, kind: 'text', points: 20 }).success).toBe(true)
     expect(CreateAssignmentSchema.safeParse({ ...base, kind: 'text', title: 'x' }).success).toBe(false)
   })
+  it('a personal assignment names one student by id; anything else is rejected', () => {
+    const p = { ...base, kind: 'practice', practice: { subjectCode: 'math', count: 10 } }
+    expect(CreateAssignmentSchema.parse(p).assigneeId).toBeNull()
+    expect(CreateAssignmentSchema.safeParse({ ...p, assigneeId: '33333333-3333-4333-8333-333333333333' }).success).toBe(true)
+    expect(CreateAssignmentSchema.safeParse({ ...p, assigneeId: 'everyone' }).success).toBe(false)
+  })
   it('invitations: bounded validity and use limits, no owner role', () => {
     const inv = { workspaceId: base.workspaceId, groupId: null, role: 'teacher', days: 7, maxUses: null }
     expect(CreateInvitationSchema.safeParse(inv).success).toBe(true)

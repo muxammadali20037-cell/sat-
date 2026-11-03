@@ -26,6 +26,8 @@ type Props = {
   logoutLabel: string
   switchLink?: { href: string; label: string }
   notifications?: { items: NotificationItem[]; unread: number; labels?: { title: string; empty: string; markRead: string } }
+  /** Trademark notice shown under every page (College Board guidelines require it on each page that names SAT®). */
+  disclaimer?: string
   children: React.ReactNode
 }
 
@@ -155,6 +157,7 @@ export function AppShell(props: Props) {
 
       <main id="main" className={cn('mx-auto w-full max-w-[1280px] px-4 py-6 sm:px-6 lg:px-8 lg:py-8', props.mobileTabs && 'pb-[calc(6rem+var(--app-inset-bottom))] lg:pb-8')}>
         {props.children}
+        {props.disclaimer && <p className="mt-12 border-t border-border pt-4 text-xs leading-relaxed text-muted-foreground">{props.disclaimer}</p>}
       </main>
 
       {/* Phone bottom tabs */}

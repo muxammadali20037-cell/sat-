@@ -39,16 +39,16 @@ export function PracticeBuilder({
   lengths: number[]
   /** null = unlimited */
   remainingToday: number | null
-  initial: { subject: SubjectCode; domainId: string; skillId: string }
+  initial: { subject: SubjectCode; domainId: string; skillId: string; difficulty?: Difficulty; timed?: boolean }
 }) {
   const t = useDict(practiceDict)
   const router = useRouter()
   const [subject, setSubject] = React.useState<SubjectCode>(initial.subject)
   const [domainId, setDomainId] = React.useState(initial.domainId)
   const [skillId, setSkillId] = React.useState(initial.skillId)
-  const [difficulty, setDifficulty] = React.useState<Difficulty>('mixed')
+  const [difficulty, setDifficulty] = React.useState<Difficulty>(initial.difficulty ?? 'mixed')
   const [count, setCount] = React.useState(() => lengths.find((n) => n === 10) ?? lengths[0] ?? 10)
-  const [timed, setTimed] = React.useState(false)
+  const [timed, setTimed] = React.useState(initial.timed ?? false)
   const [pending, setPending] = React.useState(false)
   const [error, setError] = React.useState<string | null>(null)
   const [limit, setLimit] = React.useState<{ used: number; limit: number } | null>(null)

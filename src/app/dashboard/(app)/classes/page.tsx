@@ -61,7 +61,14 @@ export default async function ClassesPage() {
                         <li key={a.id}>
                           <Link href={`/dashboard/classes/${a.id}`} className="group flex flex-wrap items-center justify-between gap-3 px-5 py-3 hover:bg-muted/40">
                             <div className="min-w-0">
-                              <p className="truncate text-sm font-medium text-foreground group-hover:text-primary">{a.title}</p>
+                              <p className="truncate text-sm font-medium text-foreground group-hover:text-primary">
+                                {a.title}
+                                {a.personal && (
+                                  <Badge variant="primary" className="ml-2 align-middle">
+                                    {c.classes.personal}
+                                  </Badge>
+                                )}
+                              </p>
                               <p className="text-xs text-muted-foreground">
                                 {c.kinds[a.kind]} · {a.groupName} · {a.dueAt ? format(c.due, { date: formatDate(a.dueAt, locale, tz, { dateStyle: 'medium', timeStyle: 'short' }) }) : c.noDue}
                               </p>

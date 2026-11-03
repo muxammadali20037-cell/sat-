@@ -28,6 +28,19 @@ const base: MissionInput = {
 }
 
 describe('buildMission', () => {
+  it('puts open class work first, in rules and plan modes, and counts the rest', () => {
+    const classWork = [
+      { id: 'a1', title: 'Algebra drill', personal: true },
+      { id: 'a2', title: 'Essay', personal: false },
+    ]
+    const rules = buildMission({ ...base, classWork })
+    expect(rules.items[0]).toEqual({ kind: 'class_work', title: 'Algebra drill', personal: true, more: 1, href: '/dashboard/classes/a1', done: false })
+    const plan = buildMission({ ...base, classWork, planTasks: [{ id: 'p', type: 'lesson', title: 'L', minutes: 10, status: 'pending', href: '/l' }] })
+    expect(plan.source).toBe('plan')
+    expect(plan.items[0].kind).toBe('class_work')
+    expect(buildMission({ ...base, classWork: [] }).items.some((i) => i.kind === 'class_work')).toBe(false)
+  })
+
   it('uses today’s study-plan tasks when there are any (skipped ones dropped) plus the minutes goal', () => {
     const m = buildMission({
       ...base,

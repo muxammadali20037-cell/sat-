@@ -137,6 +137,8 @@ export type AssignmentRow = {
   dueAt: string | null
   points: number | null
   submitted: number
+  /** Personal assignment: the one student it was given to. */
+  assignee: { id: string; name: string } | null
 }
 
 export async function loadGroup(admin: Db, m: Membership, userId: string, groupId: string) {
@@ -154,7 +156,7 @@ export async function loadGroup(admin: Db, m: Membership, userId: string, groupI
       .is('revoked_at', null)
       .gt('expires_at', now)
       .order('created_at', { ascending: false }),
-    admin.from('assignments').select('id, title, kind, status, due_at, points').eq('group_id', groupId).order('created_at', { ascending: false }),
+    admin.from('assignments').select('id, title, kind, status, due_at, points, assignee_id').eq('group_id', groupId).order('created_at', { ascending: false }),
     admin.from('progress_sharing').select('student_id').eq('workspace_id', m.workspace.id).is('revoked_at', null),
   ])
   for (const r of [group, members, invitations, assignments, sharing]) if (r.error) throw r.error
@@ -165,7 +167,8 @@ export async function loadGroup(admin: Db, m: Membership, userId: string, groupI
   if (subs.error) throw subs.error
   const students = (members.data ?? []).filter((x) => x.role === 'student')
   const staff = (members.data ?? []).filter((x) => x.role !== 'student')
-  const names = await profileNames(admin, (members.data ?? []).map((x) => x.user_id))
+  const assigneeIds = (assignments.data ?? []).flatMap((a) => (a.assignee_id ? [a.assignee_id] : []))
+  const names = await profileNames(admin, [...new Set([...(members.data ?? []).map((x) => x.user_id), ...assigneeIds])])
   const sharingSet = new Set((sharing.data ?? []).map((s) => s.student_id))
   return {
     group: group.data!,
@@ -189,6 +192,7 @@ export async function loadGroup(admin: Db, m: Membership, userId: string, groupI
       dueAt: a.due_at,
       points: a.points,
       submitted: (subs.data ?? []).filter((x) => x.assignment_id === a.id).length,
+      assignee: a.assignee_id ? { id: a.assignee_id, name: names.get(a.assignee_id)?.name ?? '—' } : null,
     })),
   }
 }
@@ -224,13 +228,14 @@ type AssignmentFull = {
   points: number | null
   status: 'draft' | 'published' | 'closed'
   published_at: string | null
+  assignee_id: string | null
 }
 
 async function assignmentById(admin: Db, assignmentId: string): Promise<AssignmentFull | null> {
   if (!isId(assignmentId)) return null
   const { data, error } = await admin
     .from('assignments')
-    .select('id, workspace_id, group_id, title, instructions, kind, practice_config, mock_exam_id, due_at, points, status, published_at')
+    .select('id, workspace_id, group_id, title, instructions, kind, practice_config, mock_exam_id, due_at, points, status, published_at, assignee_id')
     .eq('id', assignmentId)
     .maybeSingle()
   if (error) throw error
@@ -273,7 +278,8 @@ export async function loadAssignmentForTeacher(admin: Db, m: Membership, userId:
     admin.from('groups').select('id, name').eq('id', a.group_id).single(),
   ])
   for (const r of [members, subs, group]) if (r.error) throw r.error
-  const studentIds = [...new Set([...(members.data ?? []).map((x) => x.user_id), ...(subs.data ?? []).map((s) => s.student_id)])]
+  const audience = a.assignee_id ? [a.assignee_id] : (members.data ?? []).map((x) => x.user_id)
+  const studentIds = [...new Set([...audience, ...(subs.data ?? []).map((s) => s.student_id)])]
   const [names, mocks] = await Promise.all([profileNames(admin, studentIds), mockResults(admin, a, studentIds)])
   const subBy = new Map((subs.data ?? []).map((s) => [s.student_id, s]))
   const rows: SubmissionView[] = studentIds.map((id) => {
@@ -320,7 +326,13 @@ export async function loadStudentForTeacher(admin: Db, m: Membership, userId: st
   const [names, sharing, assignments] = await Promise.all([
     profileNames(admin, [studentId]),
     admin.from('progress_sharing').select('granted_at').eq('workspace_id', m.workspace.id).eq('student_id', studentId).is('revoked_at', null).maybeSingle(),
-    admin.from('assignments').select('id, title, kind, due_at, points, group_id').in('group_id', groups.map((g) => g.id)).neq('status', 'draft').order('created_at', { ascending: false }),
+    admin
+      .from('assignments')
+      .select('id, title, kind, due_at, points, group_id, assignee_id')
+      .in('group_id', groups.map((g) => g.id))
+      .neq('status', 'draft')
+      .or(`assignee_id.is.null,assignee_id.eq.${studentId}`)
+      .order('created_at', { ascending: false }),
   ])
   if (sharing.error) throw sharing.error
   if (assignments.error) throw assignments.error
@@ -376,7 +388,7 @@ export async function loadStudentForTeacher(admin: Db, m: Membership, userId: st
     sharing: !!sharing.data,
     work: (assignments.data ?? []).map((a) => {
       const s = subBy.get(a.id)
-      return { id: a.id, title: a.title, kind: a.kind, dueAt: a.due_at, points: a.points, status: s?.status ?? 'not_started', score: s?.score === null || s?.score === undefined ? null : Number(s.score), submittedAt: s?.submitted_at ?? null }
+      return { id: a.id, title: a.title, kind: a.kind, personal: a.assignee_id !== null, dueAt: a.due_at, points: a.points, status: s?.status ?? 'not_started', score: s?.score === null || s?.score === undefined ? null : Number(s.score), submittedAt: s?.submitted_at ?? null }
     }),
     learning,
   }
@@ -425,6 +437,8 @@ export type StudentAssignment = {
   score: number | null
   points: number | null
   groupName: string
+  /** Given to this student only (by a teacher, usually for a specific weakness). */
+  personal: boolean
 }
 
 export async function loadMyClasses(admin: Db, userId: string) {
@@ -439,8 +453,15 @@ export async function loadMyClasses(admin: Db, userId: string) {
   for (const r of [gm, staff, sharing]) if (r.error) throw r.error
   const groupIds = (gm.data ?? []).map((g) => g.group_id)
   const asg = groupIds.length
-    ? await admin.from('assignments').select('id, title, kind, due_at, points, status, group_id, workspace_id, mock_exam_id, published_at').in('group_id', groupIds).neq('status', 'draft').order('due_at', { ascending: true, nullsFirst: false })
-    : { data: [] as Array<{ id: string; title: string; kind: string; due_at: string | null; points: number | null; status: string; group_id: string; workspace_id: string; mock_exam_id: string | null; published_at: string | null }>, error: null }
+    ? await admin
+        .from('assignments')
+        .select('id, title, kind, due_at, points, status, group_id, workspace_id, mock_exam_id, published_at, assignee_id')
+        .in('group_id', groupIds)
+        .neq('status', 'draft')
+        // Group-wide work, or work given to this student only — never another student's.
+        .or(`assignee_id.is.null,assignee_id.eq.${userId}`)
+        .order('due_at', { ascending: true, nullsFirst: false })
+    : { data: [] as Array<{ id: string; title: string; kind: string; due_at: string | null; points: number | null; status: string; group_id: string; workspace_id: string; mock_exam_id: string | null; published_at: string | null; assignee_id: string | null }>, error: null }
   if (asg.error) throw asg.error
   const asgIds = (asg.data ?? []).map((a) => a.id)
   const subs = asgIds.length
@@ -477,7 +498,7 @@ export async function loadMyClasses(admin: Db, userId: string) {
               : a.status === 'closed'
                 ? 'closed'
                 : 'not_started'
-          return { id: a.id, title: a.title, kind: a.kind as StudentAssignment['kind'], dueAt: a.due_at, status, score: s?.score === null || s?.score === undefined ? null : Number(s.score), points: a.points, groupName: groupName.get(a.group_id) ?? '' }
+          return { id: a.id, title: a.title, kind: a.kind as StudentAssignment['kind'], dueAt: a.due_at, status, score: s?.score === null || s?.score === undefined ? null : Number(s.score), points: a.points, groupName: groupName.get(a.group_id) ?? '', personal: a.assignee_id !== null }
         }),
     })),
   }
@@ -487,6 +508,7 @@ export async function loadMyClasses(admin: Db, userId: string) {
 export async function loadMyAssignment(admin: Db, userId: string, assignmentId: string) {
   const a = await assignmentById(admin, assignmentId)
   if (!a || a.status === 'draft') notFound()
+  if (a.assignee_id && a.assignee_id !== userId) notFound()
   const [{ data: member, error }, ws] = await Promise.all([
     admin.from('group_members').select('group_id').eq('group_id', a.group_id).eq('user_id', userId).eq('role', 'student').is('left_at', null).maybeSingle(),
     getMembership(admin, userId, a.workspace_id),

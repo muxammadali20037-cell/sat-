@@ -108,6 +108,7 @@ export const classroomDict = defineDict({
       assignment: {
         title: 'Assignments',
         empty: 'No assignments yet.',
+        forStudent: 'For {name}',
         newTitle: 'New assignment',
         name: 'Title',
         instructions: 'Instructions (optional)',
@@ -160,6 +161,13 @@ export const classroomDict = defineDict({
         noEstimate: 'No score estimate yet.',
         domainsTitle: 'Accuracy by domain',
         answers: { one: '{n} answer', other: '{n} answers' },
+        personalTitle: 'Give personal practice',
+        personalBody: 'Only this student sees it. It appears in their classes and in today’s mission on their dashboard.',
+        suggestion: 'Suggested from shared practice: {domain}, {accuracy} correct over {n} questions.',
+        noSuggestion: 'Shared practice shows no clearly weak area yet (at least {n} answers below {accuracy} correct). Choose the topic yourself.',
+        suggestTitle: 'Practice: {domain}',
+        suggestInstructions: 'Focused practice on {domain}. Read each explanation after you answer.',
+        group: 'Group',
       },
       team: {
         title: 'Team',
@@ -175,6 +183,7 @@ export const classroomDict = defineDict({
       },
     },
     classes: {
+    personal: 'For you',
       metaTitle: 'My classes',
       title: 'My classes',
       description: 'Groups you joined with a teacher’s invitation, and the work they set for you.',
@@ -336,6 +345,7 @@ export const classroomDict = defineDict({
       assignment: {
         title: 'Topshiriqlar',
         empty: "Hali topshiriq yo'q.",
+        forStudent: '{name} uchun',
         newTitle: 'Yangi topshiriq',
         name: 'Sarlavha',
         instructions: "Ko'rsatma (ixtiyoriy)",
@@ -388,6 +398,13 @@ export const classroomDict = defineDict({
         noEstimate: "Hali taxminiy ball yo'q.",
         domainsTitle: "Yo'nalishlar bo'yicha aniqlik",
         answers: { one: '{n} ta javob', other: '{n} ta javob' },
+        personalTitle: 'Shaxsiy mashq berish',
+        personalBody: "Buni faqat shu o'quvchi ko'radi. U uning sinflar sahifasida va dashboard'dagi bugungi missiyada chiqadi.",
+        suggestion: "Ulashilgan mashq asosida tavsiya: {domain}, {n} ta savolda {accuracy} to'g'ri.",
+        noSuggestion: "Ulashilgan mashqda hali aniq zaif yo'nalish yo'q (kamida {n} ta javob va {accuracy} dan past). Mavzuni o'zingiz tanlang.",
+        suggestTitle: 'Mashq: {domain}',
+        suggestInstructions: "{domain} bo'yicha maqsadli mashq. Har javobdan keyin tushuntirishni o'qing.",
+        group: 'Guruh',
       },
       team: {
         title: 'Jamoa',
@@ -403,6 +420,7 @@ export const classroomDict = defineDict({
       },
     },
     classes: {
+    personal: 'Siz uchun',
       metaTitle: 'Sinflarim',
       title: 'Sinflarim',
       description: "Ustoz taklifi bilan qo'shilgan guruhlaringiz va ular bergan topshiriqlar.",
@@ -564,6 +582,7 @@ export const classroomDict = defineDict({
       assignment: {
         title: 'Задания',
         empty: 'Заданий пока нет.',
+        forStudent: 'Для: {name}',
         newTitle: 'Новое задание',
         name: 'Название',
         instructions: 'Инструкция (необязательно)',
@@ -616,6 +635,13 @@ export const classroomDict = defineDict({
         noEstimate: 'Оценки балла пока нет.',
         domainsTitle: 'Точность по разделам',
         answers: { one: '{n} ответ', few: '{n} ответа', many: '{n} ответов', other: '{n} ответа' },
+        personalTitle: 'Дать личную тренировку',
+        personalBody: 'Это видит только этот ученик. Задание появится в его классах и в сегодняшней миссии на главной.',
+        suggestion: 'Рекомендация по открытой практике: {domain}, верно {accuracy}, вопросов: {n}.',
+        noSuggestion: 'В открытой практике пока нет явно слабой области (минимум {n} ответов и ниже {accuracy} верных). Выберите тему сами.',
+        suggestTitle: 'Тренировка: {domain}',
+        suggestInstructions: 'Целевая тренировка по теме «{domain}». После каждого ответа читайте объяснение.',
+        group: 'Группа',
       },
       team: {
         title: 'Команда',
@@ -636,6 +662,7 @@ export const classroomDict = defineDict({
       },
     },
     classes: {
+    personal: 'Лично вам',
       metaTitle: 'Мои классы',
       title: 'Мои классы',
       description: 'Группы, в которые вы вошли по приглашению преподавателя, и задания от них.',

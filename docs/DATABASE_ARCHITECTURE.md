@@ -55,7 +55,7 @@ create function public.can_teach_group(p_group uuid) returns boolean ...       -
 
 Xatolar daftari va yutuqlar uchun jadval kerak bo'lmadi: ular mavjud javoblardan hisoblanadi.
 
-**PHASE 3 da 3.1, 3.2 (`ws_courses` va `materials` dan tashqari) va 3.5 bitta migratsiyaga birlashtirildi: `20261103001900_classroom.sql` (0019).** Keyingilari: jonli dars 0020, doska 0021, ustoz billing'i 0022.
+**PHASE 3 da 3.1, 3.2 (`ws_courses` va `materials` dan tashqari) va 3.5 bitta migratsiyaga birlashtirildi: `20261103001900_classroom.sql` (0019).** 2.0-A da **0020** shaxsiy topshiriq uchun ishlatildi (`assignments.assignee_id`, [COMPETITIVE_STRATEGY.md](COMPETITIVE_STRATEGY.md) 5-bo'lim). Keyingilari: jonli dars 0021, doska 0022, ustoz billing'i 0023.
 
 0019 ning amaldagi farqlari:
 - taklif uchun token-hash o'rniga 8 belgili kod (`code`, faqat xodimlar o'qiydi), havola va QR shu kod bilan;

@@ -93,13 +93,20 @@ export default async function GroupPage({ params }: { params: Promise<{ ws: stri
                     <li key={a.id}>
                       <Link href={`/teach/${ws}/assignments/${a.id}`} className="group flex flex-wrap items-center justify-between gap-3 px-5 py-3 hover:bg-muted/40">
                         <div className="min-w-0">
-                          <p className="truncate text-sm font-medium text-foreground group-hover:text-primary">{a.title}</p>
+                          <p className="truncate text-sm font-medium text-foreground group-hover:text-primary">
+                            {a.title}
+                            {a.assignee && (
+                              <Badge variant="neutral" className="ml-2 align-middle">
+                                {format(t.assignment.forStudent, { name: a.assignee.name })}
+                              </Badge>
+                            )}
+                          </p>
                           <p className="text-xs text-muted-foreground">
                             {kindLabel(a.kind)} · {a.dueAt ? format(c.due, { date: date(a.dueAt) }) : c.noDue}
                           </p>
                         </div>
                         <span className="flex items-center gap-2 text-xs text-muted-foreground tabular">
-                          {a.submitted}/{data.students.length}
+                          {a.submitted}/{a.assignee ? 1 : data.students.length}
                           <Badge variant={a.status === 'closed' ? 'neutral' : 'primary'}>{c.statuses[a.status]}</Badge>
                         </span>
                       </Link>

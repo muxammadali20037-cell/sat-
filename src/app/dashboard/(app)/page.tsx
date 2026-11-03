@@ -15,6 +15,8 @@ import { ExamCountdownCard, MockExamCard, TargetScoreCard } from '@/components/d
 import { ContinueLearningPanel, RecentResults, RecommendedPractice, SkillExtremes } from '@/components/dashboard/lists'
 import { AchievementsCard, MasteryMap, MissionCard, RecentMistakes, WeekCard } from '@/components/dashboard/today'
 import { DashboardTools } from '@/components/dashboard/tools'
+import { InsightsCard } from '@/components/dashboard/insights'
+import { intelligenceDict } from '@/lib/i18n/dictionaries/intelligence'
 import { NewStudentPanel } from '@/components/dashboard/new-student'
 import { ScoreTrendChart } from '@/components/analytics/score-trend-chart'
 import { loadDashboard } from '@/features/dashboard/server'
@@ -27,7 +29,7 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default async function DashboardPage() {
   const profile = await requireStudentReady()
-  const [t, locale, db] = await Promise.all([getDict(dashboardDict), getLocale(), createServerSupabase()])
+  const [t, ti, locale, db] = await Promise.all([getDict(dashboardDict), getDict(intelligenceDict), getLocale(), createServerSupabase()])
   const data = await loadDashboard(db, createAdminSupabase, profile)
   const tz = profile.timezone || 'Asia/Tashkent'
   const firstName = profile.fullName.trim().split(/\s+/)[0] ?? ''
@@ -78,6 +80,10 @@ export default async function DashboardPage() {
       <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
         <MissionCard t={t} mission={data.mission} className="lg:col-span-2" />
         <WeekCard t={t} week={data.weekSummary} streak={data.streak} locale={locale} />
+      </div>
+
+      <div className="mt-4">
+        <InsightsCard t={ti} data={data.intelligence} />
       </div>
 
       <div className="mt-4">

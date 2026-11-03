@@ -59,7 +59,10 @@ export default async function PracticePage({ searchParams }: { searchParams: Sea
   const preferred = profile.preferredSubjects[0]
   const subject: SubjectCode =
     subjectFromDomain ?? (qsSubject === 'math' || qsSubject === 'reading_writing' ? qsSubject : (preferred ?? 'math'))
-  const initial = { subject, domainId: domain?.id ?? '', skillId: skill?.id ?? '' }
+  // Optional presets used by recommendations: ?difficulty=easy|medium|hard and ?timed=1.
+  const qsDifficulty = first(sp.difficulty)
+  const difficulty = qsDifficulty === 'easy' || qsDifficulty === 'medium' || qsDifficulty === 'hard' ? qsDifficulty : 'mixed'
+  const initial = { subject, domainId: domain?.id ?? '', skillId: skill?.id ?? '', difficulty, timed: first(sp.timed) === '1' } as const
 
   const remaining = usage.enabled ? (usage.limit === null ? null : Math.max(0, usage.limit - usage.used)) : 0
   const exhausted = remaining === 0

@@ -345,6 +345,7 @@ export type Database = {
           id: string
           workspace_id: string
           group_id: string
+          assignee_id: string | null
           title: string
           instructions: string
           kind: string
@@ -362,6 +363,7 @@ export type Database = {
           id?: string
           workspace_id: string
           group_id: string
+          assignee_id?: string | null
           title: string
           instructions?: string
           kind: string
@@ -379,6 +381,7 @@ export type Database = {
           id?: string
           workspace_id?: string
           group_id?: string
+          assignee_id?: string | null
           title?: string
           instructions?: string
           kind?: string
@@ -393,6 +396,13 @@ export type Database = {
           published_at?: string | null
         }
         Relationships: [
+          {
+            foreignKeyName: "assignments_assignee_fk"
+            columns: ["group_id", "assignee_id"]
+            isOneToOne: false
+            referencedRelation: "group_members"
+            referencedColumns: ["group_id", "user_id"]
+          },
           {
             foreignKeyName: "assignments_created_by_fkey"
             columns: ["created_by"]

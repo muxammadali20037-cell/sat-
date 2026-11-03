@@ -275,6 +275,13 @@ export async function createAssignmentAction(input: unknown): Promise<ActionResu
       if (!exam) throw new Denied('checkFields')
     }
     if (d.dueAt && new Date(d.dueAt).getTime() < Date.now()) throw new Denied('checkFields')
+    if (d.assigneeId) {
+      // A personal assignment goes only to an active student of this same group.
+      const target = must(
+        await ctx.admin.from('group_members').select('user_id').eq('group_id', d.groupId).eq('user_id', d.assigneeId).eq('role', 'student').is('left_at', null).maybeSingle(),
+      )
+      if (!target) throw new Denied('notFound')
+    }
     const now = new Date().toISOString()
     const created = row(
       await ctx.admin
@@ -292,26 +299,28 @@ export async function createAssignmentAction(input: unknown): Promise<ActionResu
           status: 'published',
           published_at: now,
           created_by: ctx.profile.id,
+          assignee_id: d.assigneeId,
         })
         .select('id')
         .single(),
     )
-    await audit(ctx, d.workspaceId, 'assignment.create', 'assignment', created.id, { kind: d.kind, group_id: d.groupId, title: d.title })
-    await notifyStudents(ctx.admin, d.groupId, created.id, d.title, m.workspace.name)
+    await audit(ctx, d.workspaceId, 'assignment.create', 'assignment', created.id, { kind: d.kind, group_id: d.groupId, title: d.title, assignee_id: d.assigneeId })
+    await notifyStudents(ctx.admin, d.groupId, created.id, d.title, m.workspace.name, d.assigneeId)
     refresh(d.workspaceId)
     return { ok: true, data: { id: created.id }, message: ctx.t.teach.assignment.created }
   })
 }
 
 /** In-app notification for each student of the group, in the student's own language. */
-async function notifyStudents(admin: Db, groupId: string, assignmentId: string, title: string, workspaceName: string) {
+async function notifyStudents(admin: Db, groupId: string, assignmentId: string, title: string, workspaceName: string, assigneeId: string | null = null) {
   try {
     const [members, { data: group }] = await Promise.all([
       admin.from('group_members').select('user_id').eq('group_id', groupId).eq('role', 'student').is('left_at', null),
       admin.from('groups').select('name').eq('id', groupId).single(),
     ])
     if (members.error) throw members.error
-    const ids = (members.data ?? []).map((mm) => mm.user_id)
+    // A personal assignment notifies only its student.
+    const ids = (members.data ?? []).map((mm) => mm.user_id).filter((id) => !assigneeId || id === assigneeId)
     if (ids.length === 0) return
     // group_members references workspace_members, not profiles, so the languages are a second read.
     const { data: profiles, error } = await admin.from('profiles').select('id, locale').in('id', ids)
@@ -448,6 +457,7 @@ export async function setProgressSharingAction(input: unknown): Promise<ActionRe
 async function studentAssignment(ctx: Ctx, assignmentId: string) {
   const a = await assignmentById(ctx.admin, assignmentId)
   if (!a || a.status === 'draft') throw new Denied('notFound')
+  if (a.assignee_id && a.assignee_id !== ctx.profile.id) throw new Denied('notFound')
   const [member, ws] = await Promise.all([
     ctx.admin.from('group_members').select('user_id').eq('group_id', a.group_id).eq('user_id', ctx.profile.id).eq('role', 'student').is('left_at', null).maybeSingle(),
     getMembership(ctx.admin, ctx.profile.id, a.workspace_id),
