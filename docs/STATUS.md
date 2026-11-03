@@ -135,8 +135,8 @@ State on 2 Nov 2026, applied through the Supabase connector with the owner's con
 | 0012 search indexes | **Declined by the owner** at the confirmation prompt. Optional (admin search speed only). Apply later from the SQL editor if wanted. |
 | 0013 study-guide tables | Applied |
 | 0014 study-guide content (~480 KB) | Not applied. Use Admin → Study guides → "Import bundled guides" after the first deploy, or `supabase db push`. |
-| 0016 Telegram accounts (1 table) | Not applied. Needed only for the Telegram Mini App; the website works without it. Paste `supabase/migrations/20261102001600_telegram.sql` into the SQL editor, or run `supabase db push`. |
-| 0015 atomic quotas (1 table, 2 functions; no existing data touched) | **Declined by the owner** at the confirmation prompt on 2 Nov. The app still works without it: it falls back to the older check and logs `[quota] database function … is missing` (tested). Until it is applied, simultaneous requests can exceed the AI and mock-exam limits slightly. To apply it, paste `supabase/migrations/20261102001500_atomic_quotas.sql` into the Supabase SQL editor, or run `supabase db push`. |
+| 0016 Telegram accounts (1 table) | Applied on 3 Nov with the owner's approval. Checked afterwards: `anon` has no privileges; `authenticated` has SELECT only, limited to the student's own row by RLS. |
+| 0015 atomic quotas (1 table, 2 functions; no existing data touched) | **Not applied** (the owner declined it on 2 Nov and chose to apply only 0016 on 3 Nov). The confirmation prompt's "destructive" warning comes from the word DELETE in the function body, which only clears that new table's stale reservations. The app still works without it: it falls back to the older check and logs `[quota] database function … is missing` (tested). Until it is applied, simultaneous requests can exceed the AI and mock-exam limits slightly. To apply it, paste `supabase/migrations/20261102001500_atomic_quotas.sql` into the Supabase SQL editor, or run `supabase db push`. |
 
 Verified on the hosted database: 47 tables, all with RLS; the same 14 client-callable functions as locally, each with internal role checks; 3 private storage buckets; 30 skills and 4 plans.
 
@@ -158,7 +158,7 @@ supabase db push   # applies 0012 (if still wanted), 0014, 0015 and 0016
 1. **Supabase:** the schema is applied (see the section above). Load the guide content with "Import bundled guides" after deploying. Then:
    - set the Auth URLs and email templates ([AUTH_SETUP.md](AUTH_SETUP.md));
    - raise the Storage upload limit to 500 MB if MP4 lessons will be uploaded.
-2. **First admin:** sign up in the app, then run `supabase/seed/make_admin.sql` with your email.
+2. **First admin:** done on 3 Nov (the owner's account is SUPER_ADMIN). Further roles are managed in Admin → Students.
 3. **Vercel:** import the GitHub repository, set every variable from `.env.example` (Production), and set `CRON_SECRET`. Leave `PAYMENTS_TEST_MODE` unset.
 4. **Payments:** sign merchant agreements with Click and Payme, enter the keys, and set the callback URLs from [PAYMENTS.md](PAYMENTS.md). Stripe needs an eligible (non-Uzbek) legal entity.
 5. **API keys:** Anthropic key; optional Desmos and Bunny keys.
