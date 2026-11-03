@@ -121,7 +121,7 @@ The flows ran as a real user against real auth, PostgREST and RLS. AI used the l
   - joining and creating are atomic SQL functions that only the server can call;
   - pages answer "not found" for anything outside the user's access.
   - **S1 is closed for phone numbers:** Telegram links are now readable only by their owner and admins.
-- **Migration 0019** (`20261103001900_classroom.sql`) is **not yet applied to the hosted project**, and this code must not be deployed before it is.
+- **Migration 0019** (`20261103001900_classroom.sql`) was applied to the hosted project on 3 Nov with the owner's approval, before this code was deployed.
 - **Not in this phase:** file materials (PDF/slides), the lesson schedule and attendance (PHASE 4, with the live classroom), and workspace billing (PHASE 5).
 - **Verified:**
   - 552 unit tests (21 new);
@@ -258,6 +258,7 @@ State on 2 Nov 2026, applied through the Supabase connector with the owner's con
 | 0012 search indexes | **Declined by the owner** at the confirmation prompt. Optional (admin search speed only). Apply later from the SQL editor if wanted. |
 | 0013 study-guide tables | Applied |
 | 0014 study-guide content (~480 KB) | Not applied. Use Admin → Study guides → "Import bundled guides" after the first deploy, or `supabase db push`. |
+| 0019 classroom (8 tables, 2 columns, 7 functions; one policy narrowed; no existing data touched) | Applied on 3 Nov with the owner's approval. Checked afterwards: 59 tables, all with RLS; `authenticated` cannot insert, update or delete any classroom table and `anon` cannot read them; `workspace_create` and `workspace_join` are callable by the server only; the Telegram policy now allows only the owner and admins. |
 | 0018 learning extras (1 table, 1 column, wider practice-mode check; no existing data touched) | Applied on 3 Nov with the owner's approval. Checked afterwards: RLS on; `authenticated` can only SELECT `flashcard_reviews` (own rows), cannot insert, update or delete; may update `country_code` but still not `role`; `anon` has no access. |
 | 0017 website Telegram sign-in (1 table, 2 columns; no DELETE or DROP) | Applied on 3 Nov with the owner's approval. Checked afterwards: no `anon` or `authenticated` privileges on `telegram_login_requests`. |
 | 0016 Telegram accounts (1 table) | Applied on 3 Nov with the owner's approval. Checked afterwards: `anon` has no privileges; `authenticated` has SELECT only, limited to the student's own row by RLS. |
@@ -275,7 +276,7 @@ The security advisor reports two kinds of finding, both expected by design:
 supabase link --project-ref ncqqnjnozrymrmblixra
 supabase migration repair --status applied 20261102000100 20261102000200 20261102000300 20261102000400 \
   20261102000500 20261102000600 20261102000700 20261102000800 20261102000900 20261102001000 20261102001100 20261102001300 \
-  20261102001500 20261102001600 20261102001700 20261103001800
+  20261102001500 20261102001600 20261102001700 20261103001800 20261103001900
 supabase db push   # applies 0012 (if still wanted) and 0014
 ```
 
