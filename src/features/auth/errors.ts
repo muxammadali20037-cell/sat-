@@ -63,10 +63,14 @@ export function postAuthRedirect(next: string | null | undefined, fallback = '/d
   return next
 }
 
-/** Onboarding may continue to a student page only (e.g. the diagnostic from the homepage CTA). */
+/**
+ * Onboarding may continue to a student page (e.g. the diagnostic from the homepage CTA) or to a
+ * class invitation (/join/CODE), so a new student who registered from a teacher's link lands back on it.
+ */
 export function onboardingNext(next: string | null | undefined): string {
   const target = postAuthRedirect(next, '/dashboard')
   const path = target.split(/[?#]/)[0]!
+  if (/^\/join\/[A-Za-z0-9-]{8,12}$/.test(path)) return target
   if (path === '/dashboard/onboarding' || !(path === '/dashboard' || path.startsWith('/dashboard/'))) return '/dashboard'
   return target
 }

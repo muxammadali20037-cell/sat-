@@ -16,7 +16,7 @@ import type { NotificationItem } from '@/features/notifications/server'
 export type ShellUser = { name: string; email: string; roleLabel: string; isStaff: boolean; planName?: string }
 
 type Props = {
-  variant: 'student' | 'admin'
+  variant: 'student' | 'admin' | 'teach'
   sections: NavSection[]
   accountItems?: NavItem[]
   mobileTabs?: NavItem[]
@@ -56,7 +56,7 @@ function SidebarBody({ props, pathname, onNavigate }: { props: Props; pathname: 
   return (
     <div className="flex h-full flex-col">
       <div className="flex h-16 items-center gap-2 px-5">
-        <Logo href={props.variant === 'admin' ? '/admin' : '/dashboard'} onDark />
+        <Logo href={props.variant === 'admin' ? '/admin' : props.variant === 'teach' ? '/teach' : '/dashboard'} onDark />
         {props.variant === 'admin' && (
           <span className="rounded bg-white/10 px-1.5 py-0.5 text-[11px] font-medium text-white/80">Admin</span>
         )}
@@ -131,7 +131,7 @@ export function AppShell(props: Props) {
 
       {/* Mobile / tablet top bar */}
       <header className="sticky top-[var(--app-inset-top)] z-30 flex h-14 items-center justify-between border-b border-border bg-surface/95 px-4 backdrop-blur lg:hidden">
-        <Logo href={props.variant === 'admin' ? '/admin' : '/dashboard'} />
+        <Logo href={props.variant === 'admin' ? '/admin' : props.variant === 'teach' ? '/teach' : '/dashboard'} />
         <div className="flex items-center gap-1">
         {props.notifications && <NotificationsMenu {...props.notifications} />}
         <Drawer open={open} onOpenChange={setOpen}>

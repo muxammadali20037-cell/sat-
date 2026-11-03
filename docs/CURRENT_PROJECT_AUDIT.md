@@ -202,9 +202,11 @@ Statuslar:
 
 | Funksiya | Status | Izoh |
 |---|---|---|
-| Ustoz workspace'lari (multi-tenant) | NOT_IMPLEMENTED | `workspaces`, `workspace_members`, `workspace_invitations` yo'q. Hozirgi `TEACHER` roli global (6.4) |
-| Kurs va guruhlar, taklif havolasi, QR, kod | NOT_IMPLEMENTED | Hozirgi `courses` platformaning umumiy katalogi, ustozga tegishli emas |
-| Dars jadvali, davomat, uy vazifasi, topshiriqlarni tekshirish | NOT_IMPLEMENTED | — |
+| Ustoz workspace'lari (multi-tenant) | WORKING (PHASE 3) | `/teach`: workspace, rollar (owner, admin, teacher, assistant, student), jamoa. Izolyatsiya DB testlari va E2E bilan tekshirilgan |
+| Guruhlar, taklif havolasi, QR, kod | WORKING (PHASE 3) | Kod `XXXX-XXXX`, havola `/join/CODE`, QR; muddat, chegara, bekor qilish; kod taxmin qilishga qarshi rate limit. Workspace kurslari (`ws_courses`) keyinga qoldirildi: guruh hozircha kurs vazifasini bajaradi |
+| Uy vazifasi va tekshirish | WORKING (PHASE 3) | Mashq (avtomatik baho, o'quvchi tarifiga hisoblanmaydi), sinov imtihoni, yozma topshiriq (ustoz baholaydi, izoh); bildirishnomalar o'quvchi tilida |
+| Dars jadvali, davomat | NOT_IMPLEMENTED | Jonli dars bilan birga (PHASE 4) |
+| Materiallar (PDF, slayd yuklash) | NOT_IMPLEMENTED | Fayl yuklash lokal muhitda sinab bo'lmaydi (Storage yo'q); doska bilan birga PHASE 4 da |
 | Jonli video/audio dars (LiveKit) | NOT_IMPLEMENTED | — |
 | Ekran ulashish, qo'l ko'tarish, chat, so'rovnoma, breakout | NOT_IMPLEMENTED | — |
 | Sinxron online doska (tldraw), formulalar, grafiklar, PDF annotatsiya | NOT_IMPLEMENTED | — |
@@ -227,7 +229,7 @@ To'liq model: [SECURITY_MODEL.md](SECURITY_MODEL.md).
 
 | # | Xavf | Daraja | Izoh |
 |---|---|---|---|
-| S1 | **Global `TEACHER` roli barcha o'quvchilarni ko'radi** | Yuqori (2.0 uchun) | `can_view_students()` `TEACHER` ga hamma o'quvchining quyidagi ma'lumotlarini o'qishga ruxsat beradi: profil, urinishlar, javoblar, faollik, o'quv reja, AI suhbatlari, Telegram telefon raqami. Bitta akademiya uchun normal. Lekin mustaqil ustozlarga bu rolni berish bir ustozga boshqasining o'quvchilarini ko'rsatadi. **2.0 da ustozlarga global rol berilmaydi.** Ruxsatlar `workspace_members` orqali bo'ladi |
+| S1 | **Global `TEACHER` roli barcha o'quvchilarni ko'radi** | Qisman yopildi (0019): Telegram telefon raqamlarini endi faqat admin ko'radi; mustaqil ustozlar global rol emas, workspace roli oladi | `can_view_students()` `TEACHER` ga hamma o'quvchining quyidagi ma'lumotlarini o'qishga ruxsat beradi: profil, urinishlar, javoblar, faollik, o'quv reja, AI suhbatlari, Telegram telefon raqami. Bitta akademiya uchun normal. Lekin mustaqil ustozlarga bu rolni berish bir ustozga boshqasining o'quvchilarini ko'rsatadi. **2.0 da ustozlarga global rol berilmaydi.** Ruxsatlar `workspace_members` orqali bo'ladi |
 | S2 | Atomik limitlar (0015) | Yopildi | 3-noyabr egasi tasdig'i bilan production'ga qo'llandi va huquqlari tekshirildi |
 | S3 | Rate limiter xatoda "fail open" | Yopildi | PHASE 1 da: baza ishlamasa, xotiradagi zaxira limiter qo'llanadi |
 | S4 | `question-images` SVG qabul qiladi | Past | Bucket private, rasm `<img>` orqali ko'rsatiladi (skript ishlamaydi). Lekin signed URL to'g'ridan-to'g'ri ochilsa, SVG Supabase domenida bajariladi. 2.0 da ustozlar fayl yuklaydi, shuning uchun SVG ni sanitizatsiya qilish yoki taqiqlash kerak |

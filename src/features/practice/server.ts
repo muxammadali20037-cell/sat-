@@ -23,6 +23,7 @@ import {
 } from './schemas'
 import { loadScoredAnswers } from '@/features/mistakes/server'
 import { mistakePracticeOrder, splitMistakes } from '@/features/mistakes/notebook'
+import { completeAssignmentPractice } from '@/features/classroom/submissions'
 
 type Attempt = Tables<'attempts'>
 
@@ -269,8 +270,15 @@ async function planMistakes(admin: Db, profile: CurrentProfile, input: Extract<S
   }
 }
 
-export async function startPractice(admin: Db, profile: CurrentProfile, input: StartPracticeInput): Promise<{ attemptId: string; totalQuestions: number }> {
-  const remaining = await remainingQuota(profile)
+export async function startPractice(
+  admin: Db,
+  profile: CurrentProfile,
+  input: StartPracticeInput,
+  opts: { assignmentId?: string } = {},
+): Promise<{ attemptId: string; totalQuestions: number }> {
+  // Teacher-assigned practice (classroom) is not limited by the student's own plan; the caller
+  // has already checked the student belongs to the assignment's group.
+  const remaining = opts.assignmentId ? Number.POSITIVE_INFINITY : await remainingQuota(profile)
   const max = await getMaxQuestionsPerSession(admin)
 
   let plan: Plan
@@ -303,6 +311,7 @@ export async function startPractice(admin: Db, profile: CurrentProfile, input: S
       kind: 'practice',
       status: 'in_progress',
       practice_mode: input.mode,
+      assignment_id: opts.assignmentId ?? null,
       total_questions: plan.questionIds.length,
       ...plan.fields,
     })
@@ -528,7 +537,9 @@ export async function answerPractice(admin: Db, profile: CurrentProfile, input: 
     responseText = (input.responseText ?? '').trim()
   }
 
-  const { used, limit } = await assertWithinLimit(profile.id, 'practice_questions_daily', profile.timezone, 1)
+  const { used, limit } = attempt.assignment_id
+    ? { used: 0, limit: null }
+    : await assertWithinLimit(profile.id, 'practice_questions_daily', profile.timezone, 1)
 
   const keys = await loadAnswerKeys(admin, [aq.question_id])
   const key = keys.get(aq.question_id)
@@ -605,5 +616,6 @@ export async function finishPractice(admin: Db, profile: CurrentProfile, attempt
     .eq('user_id', profile.id)
     .eq('status', 'in_progress')
   if (error) throw error
+  if (attempt.assignment_id) await completeAssignmentPractice(admin, profile.id, attempt.assignment_id, attempt.id, counters)
   return { attemptId: attempt.id, status: 'completed' }
 }

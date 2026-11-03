@@ -379,16 +379,22 @@ describe('function privileges (regression: EXECUTE is granted to PUBLIC globally
       'admin_set_user_role',
       'admin_set_user_suspended',
       'admin_upsert_question',
+      'can_teach_group',
       'can_view_students',
       'current_app_role',
       'has_any_role',
       'is_admin',
       'is_content_manager',
+      'is_group_student',
       'is_staff',
+      'is_workspace_manager',
+      'is_workspace_staff',
       'my_entitlements',
       'my_skill_performance',
       'question_is_complete',
       'question_set_status',
+      // Classroom role helpers (0019): each describes only the caller's own access.
+      'workspace_role',
     ])
   })
 

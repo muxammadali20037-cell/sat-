@@ -63,9 +63,11 @@ export async function getUsage(userId: string, key: 'practice_questions_daily' |
   if (key === 'practice_questions_daily') {
     const { count, error } = await admin
       .from('attempt_answers')
-      .select('id, attempts!inner(kind)', { count: 'exact', head: true })
+      .select('id, attempts!inner(kind, assignment_id)', { count: 'exact', head: true })
       .eq('user_id', userId)
       .eq('attempts.kind', 'practice')
+      // Teacher-assigned practice is not limited by the student's own plan (classroom, 0019).
+      .is('attempts.assignment_id', null)
       .gte('answered_at', startOfLocalDay(timeZone).toISOString())
     if (error) throw error
     return count ?? 0

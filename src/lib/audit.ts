@@ -17,6 +17,8 @@ export async function writeAudit(entry: {
   summary?: string
   before?: Json
   after?: Json
+  /** Classroom actions: the workspace they belong to (0019). */
+  workspaceId?: string | null
 }): Promise<void> {
   try {
     let ip: string | null = null
@@ -40,6 +42,7 @@ export async function writeAudit(entry: {
       after_data: entry.after ?? null,
       ip_address: ip,
       user_agent: userAgent,
+      ...(entry.workspaceId ? { workspace_id: entry.workspaceId } : {}),
     })
     if (error) throw error
   } catch (err) {

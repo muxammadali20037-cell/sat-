@@ -1,6 +1,6 @@
 # SAT MASTER — Build status and phase report
 
-_Last updated: 3 November 2026 (SAT MASTER 2.0, PHASE 2: learning extras and Russian)_
+_Last updated: 3 November 2026 (SAT MASTER 2.0, PHASE 3: teacher workspaces)_
 
 The codebase covers phases 1–8 of [DEVELOPMENT_ROADMAP.md](DEVELOPMENT_ROADMAP.md). Phase 9 (deployment) is partly done: a Supabase project exists, and the steps that need the owner's accounts or credentials are listed under "Launch checklist" below.
 
@@ -94,6 +94,49 @@ The flows ran as a real user against real auth, PostgREST and RLS. AI used the l
   - Both checks now run inside SQL functions under a per-student lock (migration 0015). Parallel-connection tests fail without the lock and pass with it.
 - **Admin lists:** question excerpts showed raw LaTeX (`\dfrac{…}`) and escaped prices as `\12`. They now use the same plain-text rendering as student pages.
 - **Pack import (caught before release):** the first version recognised already-imported questions by stem alone. Many Reading and Writing questions share a stem, so a retry after a partial import could have skipped real questions. It now matches passage and stem.
+
+### SAT MASTER 2.0, PHASE 3 (3 Nov): teacher workspaces
+
+- **Teacher app** (`/teach`, uz/en/ru):
+  - any user can create a workspace (an independent teacher or an education centre; at most 5 active ones);
+  - **groups**;
+  - **invitations**: an 8-character code shown as `XXXX-XXXX`, a link `/join/CODE` and a QR code, with a validity period, a use limit and revoke;
+  - a **team** page: owners and admins invite admins, teachers and assistants; staff can be removed, but never the owner;
+  - **assignments**:
+    - practice: subject, domain, difficulty, count, optionally timed; scored automatically;
+    - a mock exam: counted when the student finishes it after it was set;
+    - a written task, which the teacher grades with points and feedback;
+  - a per-student page.
+- **Roles:** owner, admin, teacher, assistant, student, checked by `can()` (unit-tested) before every write. Teachers and assistants see only the groups they are assigned to; assistants cannot create or archive groups.
+- **Student side** (`/dashboard/classes`):
+  - joining by code or link (also right after signing up from the link);
+  - assignments with status, a grade and feedback;
+  - in-app notifications in the student's own language;
+  - an **opt-in switch** that lets a workspace's teachers see the student's own practice (accuracy by domain, score estimate). AI tutor chats are never shared.
+- **Teacher-assigned practice does not count against the student's plan limit** (`attempts.assignment_id`).
+- **Isolation:**
+  - every classroom table carries `workspace_id`;
+  - composite foreign keys stop rows from pointing across workspaces;
+  - clients may only SELECT, scoped by membership (RLS); all writes go through the server;
+  - joining and creating are atomic SQL functions that only the server can call;
+  - pages answer "not found" for anything outside the user's access.
+  - **S1 is closed for phone numbers:** Telegram links are now readable only by their owner and admins.
+- **Migration 0019** (`20261103001900_classroom.sql`) is **not yet applied to the hosted project**, and this code must not be deployed before it is.
+- **Not in this phase:** file materials (PDF/slides), the lesson schedule and attendance (PHASE 4, with the live classroom), and workspace billing (PHASE 5).
+- **Verified:**
+  - 552 unit tests (21 new);
+  - 99 DB tests (15 new): two teachers sharing one student, SELECT isolation per role, INSERT/UPDATE/DELETE denied separately, composite foreign keys, code expiry/revoke/use limits, never downgrading a role, function privileges, S1;
+  - lint, typecheck and production build; no known vulnerabilities in production dependencies;
+  - 32 Playwright checks:
+    - a teacher in Uzbek and a student in Russian;
+    - workspace → group → invitation with QR → three kinds of assignment;
+    - the student joins by link, does assigned practice (scored, outside the plan limit) and written work;
+    - the teacher grades; a score above the points is refused by the server;
+    - notifications in the student's language;
+    - another teacher, a student and an outsider get "not found" for the first workspace's pages;
+    - a revoked code is refused; a removed student loses access while their work is kept;
+    - every action is in the workspace audit log;
+    - six pages at 390 px with no overflow.
 
 ### SAT MASTER 2.0, PHASE 2 (3 Nov)
 

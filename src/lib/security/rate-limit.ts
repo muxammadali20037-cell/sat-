@@ -71,6 +71,8 @@ export const RATE_LIMITS = {
   start: { bucket: 'start', limit: 30, windowSec: 300 },
   progress: { bucket: 'progress', limit: 30, windowSec: 60 },
   flashcards: { bucket: 'flashcards', limit: 120, windowSec: 60 },
+  // Joining a class with an invitation code (guessing protection).
+  classroomJoin: { bucket: 'classroom-join', limit: 10, windowSec: 600 },
   admin: { bucket: 'admin', limit: 120, windowSec: 60 },
   // Mock exams: own buckets so practice traffic never blocks a timed module (and vice versa).
   examAction: { bucket: 'exam-action', limit: 30, windowSec: 300 },

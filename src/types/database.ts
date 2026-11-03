@@ -340,6 +340,82 @@ export type Database = {
           },
         ]
       }
+      assignments: {
+        Row: {
+          id: string
+          workspace_id: string
+          group_id: string
+          title: string
+          instructions: string
+          kind: string
+          practice_config: Json | null
+          mock_exam_id: string | null
+          due_at: string | null
+          points: number | null
+          status: string
+          created_by: string | null
+          created_at: string
+          updated_at: string
+          published_at: string | null
+        }
+        Insert: {
+          id?: string
+          workspace_id: string
+          group_id: string
+          title: string
+          instructions?: string
+          kind: string
+          practice_config?: Json | null
+          mock_exam_id?: string | null
+          due_at?: string | null
+          points?: number | null
+          status?: string
+          created_by?: string | null
+          created_at?: string
+          updated_at?: string
+          published_at?: string | null
+        }
+        Update: {
+          id?: string
+          workspace_id?: string
+          group_id?: string
+          title?: string
+          instructions?: string
+          kind?: string
+          practice_config?: Json | null
+          mock_exam_id?: string | null
+          due_at?: string | null
+          points?: number | null
+          status?: string
+          created_by?: string | null
+          created_at?: string
+          updated_at?: string
+          published_at?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "assignments_created_by_fkey"
+            columns: ["created_by"]
+            isOneToOne: false
+            referencedRelation: "profiles"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "assignments_mock_exam_id_fkey"
+            columns: ["mock_exam_id"]
+            isOneToOne: false
+            referencedRelation: "mock_exams"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "assignments_workspace_id_group_id_fkey"
+            columns: ["workspace_id", "group_id"]
+            isOneToOne: false
+            referencedRelation: "groups"
+            referencedColumns: ["workspace_id", "id"]
+          },
+        ]
+      }
       attempt_answers: {
         Row: {
           id: string
@@ -573,6 +649,7 @@ export type Database = {
           math_estimate_high: number | null
           created_at: string
           updated_at: string
+          assignment_id: string | null
         }
         Insert: {
           id?: string
@@ -601,6 +678,7 @@ export type Database = {
           math_estimate_high?: number | null
           created_at?: string
           updated_at?: string
+          assignment_id?: string | null
         }
         Update: {
           id?: string
@@ -629,8 +707,16 @@ export type Database = {
           math_estimate_high?: number | null
           created_at?: string
           updated_at?: string
+          assignment_id?: string | null
         }
         Relationships: [
+          {
+            foreignKeyName: "attempts_assignment_id_fkey"
+            columns: ["assignment_id"]
+            isOneToOne: false
+            referencedRelation: "assignments"
+            referencedColumns: ["id"]
+          },
           {
             foreignKeyName: "attempts_diagnostic_test_id_fkey"
             columns: ["diagnostic_test_id"]
@@ -703,6 +789,7 @@ export type Database = {
           ip_address: string | null
           user_agent: string | null
           created_at: string
+          workspace_id: string | null
         }
         Insert: {
           id?: string
@@ -717,6 +804,7 @@ export type Database = {
           ip_address?: string | null
           user_agent?: string | null
           created_at?: string
+          workspace_id?: string | null
         }
         Update: {
           id?: string
@@ -731,6 +819,7 @@ export type Database = {
           ip_address?: string | null
           user_agent?: string | null
           created_at?: string
+          workspace_id?: string | null
         }
         Relationships: [
           {
@@ -738,6 +827,13 @@ export type Database = {
             columns: ["actor_id"]
             isOneToOne: false
             referencedRelation: "profiles"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "audit_logs_workspace_id_fkey"
+            columns: ["workspace_id"]
+            isOneToOne: false
+            referencedRelation: "workspaces"
             referencedColumns: ["id"]
           },
         ]
@@ -1079,6 +1175,102 @@ export type Database = {
             columns: ["user_id"]
             isOneToOne: false
             referencedRelation: "profiles"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      group_members: {
+        Row: {
+          workspace_id: string
+          group_id: string
+          user_id: string
+          role: string
+          joined_at: string
+          left_at: string | null
+        }
+        Insert: {
+          workspace_id: string
+          group_id: string
+          user_id: string
+          role: string
+          joined_at?: string
+          left_at?: string | null
+        }
+        Update: {
+          workspace_id?: string
+          group_id?: string
+          user_id?: string
+          role?: string
+          joined_at?: string
+          left_at?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "group_members_workspace_id_group_id_fkey"
+            columns: ["workspace_id", "group_id"]
+            isOneToOne: false
+            referencedRelation: "groups"
+            referencedColumns: ["workspace_id", "id"]
+          },
+          {
+            foreignKeyName: "group_members_workspace_id_user_id_fkey"
+            columns: ["workspace_id", "user_id"]
+            isOneToOne: false
+            referencedRelation: "workspace_members"
+            referencedColumns: ["workspace_id", "user_id"]
+          },
+        ]
+      }
+      groups: {
+        Row: {
+          id: string
+          workspace_id: string
+          name: string
+          description: string
+          subject: string
+          status: string
+          created_by: string | null
+          created_at: string
+          updated_at: string
+          archived_at: string | null
+        }
+        Insert: {
+          id?: string
+          workspace_id: string
+          name: string
+          description?: string
+          subject?: string
+          status?: string
+          created_by?: string | null
+          created_at?: string
+          updated_at?: string
+          archived_at?: string | null
+        }
+        Update: {
+          id?: string
+          workspace_id?: string
+          name?: string
+          description?: string
+          subject?: string
+          status?: string
+          created_by?: string | null
+          created_at?: string
+          updated_at?: string
+          archived_at?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "groups_created_by_fkey"
+            columns: ["created_by"]
+            isOneToOne: false
+            referencedRelation: "profiles"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "groups_workspace_id_fkey"
+            columns: ["workspace_id"]
+            isOneToOne: false
+            referencedRelation: "workspaces"
             referencedColumns: ["id"]
           },
         ]
@@ -2110,6 +2302,35 @@ export type Database = {
           },
         ]
       }
+      progress_sharing: {
+        Row: {
+          workspace_id: string
+          student_id: string
+          granted_at: string
+          revoked_at: string | null
+        }
+        Insert: {
+          workspace_id: string
+          student_id: string
+          granted_at?: string
+          revoked_at?: string | null
+        }
+        Update: {
+          workspace_id?: string
+          student_id?: string
+          granted_at?: string
+          revoked_at?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "progress_sharing_workspace_id_student_id_fkey"
+            columns: ["workspace_id", "student_id"]
+            isOneToOne: true
+            referencedRelation: "workspace_members"
+            referencedColumns: ["workspace_id", "user_id"]
+          },
+        ]
+      }
       question_explanations: {
         Row: {
           id: string
@@ -2589,6 +2810,86 @@ export type Database = {
         }
         Relationships: []
       }
+      submissions: {
+        Row: {
+          id: string
+          workspace_id: string
+          assignment_id: string
+          student_id: string
+          attempt_id: string | null
+          status: string
+          text_answer: string | null
+          submitted_at: string | null
+          score: number | null
+          feedback: string | null
+          graded_by: string | null
+          graded_at: string | null
+          created_at: string
+          updated_at: string
+        }
+        Insert: {
+          id?: string
+          workspace_id: string
+          assignment_id: string
+          student_id: string
+          attempt_id?: string | null
+          status?: string
+          text_answer?: string | null
+          submitted_at?: string | null
+          score?: number | null
+          feedback?: string | null
+          graded_by?: string | null
+          graded_at?: string | null
+          created_at?: string
+          updated_at?: string
+        }
+        Update: {
+          id?: string
+          workspace_id?: string
+          assignment_id?: string
+          student_id?: string
+          attempt_id?: string | null
+          status?: string
+          text_answer?: string | null
+          submitted_at?: string | null
+          score?: number | null
+          feedback?: string | null
+          graded_by?: string | null
+          graded_at?: string | null
+          created_at?: string
+          updated_at?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "submissions_attempt_id_fkey"
+            columns: ["attempt_id"]
+            isOneToOne: false
+            referencedRelation: "attempts"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "submissions_graded_by_fkey"
+            columns: ["graded_by"]
+            isOneToOne: false
+            referencedRelation: "profiles"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "submissions_student_id_fkey"
+            columns: ["student_id"]
+            isOneToOne: false
+            referencedRelation: "profiles"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "submissions_workspace_id_assignment_id_fkey"
+            columns: ["workspace_id", "assignment_id"]
+            isOneToOne: false
+            referencedRelation: "assignments"
+            referencedColumns: ["workspace_id", "id"]
+          },
+        ]
+      }
       subscriptions: {
         Row: {
           id: string
@@ -2818,6 +3119,169 @@ export type Database = {
           },
         ]
       }
+      workspace_invitations: {
+        Row: {
+          id: string
+          workspace_id: string
+          group_id: string | null
+          role: string
+          code: string
+          max_uses: number | null
+          uses: number
+          expires_at: string
+          revoked_at: string | null
+          created_by: string | null
+          created_at: string
+        }
+        Insert: {
+          id?: string
+          workspace_id: string
+          group_id?: string | null
+          role: string
+          code: string
+          max_uses?: number | null
+          uses?: number
+          expires_at: string
+          revoked_at?: string | null
+          created_by?: string | null
+          created_at?: string
+        }
+        Update: {
+          id?: string
+          workspace_id?: string
+          group_id?: string | null
+          role?: string
+          code?: string
+          max_uses?: number | null
+          uses?: number
+          expires_at?: string
+          revoked_at?: string | null
+          created_by?: string | null
+          created_at?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "workspace_invitations_created_by_fkey"
+            columns: ["created_by"]
+            isOneToOne: false
+            referencedRelation: "profiles"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "workspace_invitations_workspace_id_fkey"
+            columns: ["workspace_id"]
+            isOneToOne: false
+            referencedRelation: "workspaces"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "workspace_invitations_workspace_id_group_id_fkey"
+            columns: ["workspace_id", "group_id"]
+            isOneToOne: false
+            referencedRelation: "groups"
+            referencedColumns: ["workspace_id", "id"]
+          },
+        ]
+      }
+      workspace_members: {
+        Row: {
+          workspace_id: string
+          user_id: string
+          role: string
+          status: string
+          joined_at: string
+          removed_at: string | null
+          invited_by: string | null
+        }
+        Insert: {
+          workspace_id: string
+          user_id: string
+          role: string
+          status?: string
+          joined_at?: string
+          removed_at?: string | null
+          invited_by?: string | null
+        }
+        Update: {
+          workspace_id?: string
+          user_id?: string
+          role?: string
+          status?: string
+          joined_at?: string
+          removed_at?: string | null
+          invited_by?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "workspace_members_invited_by_fkey"
+            columns: ["invited_by"]
+            isOneToOne: false
+            referencedRelation: "profiles"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "workspace_members_user_id_fkey"
+            columns: ["user_id"]
+            isOneToOne: false
+            referencedRelation: "profiles"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "workspace_members_workspace_id_fkey"
+            columns: ["workspace_id"]
+            isOneToOne: false
+            referencedRelation: "workspaces"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      workspaces: {
+        Row: {
+          id: string
+          name: string
+          kind: string
+          owner_id: string
+          country_code: string | null
+          timezone: string
+          status: string
+          created_at: string
+          updated_at: string
+          archived_at: string | null
+        }
+        Insert: {
+          id?: string
+          name: string
+          kind?: string
+          owner_id: string
+          country_code?: string | null
+          timezone?: string
+          status?: string
+          created_at?: string
+          updated_at?: string
+          archived_at?: string | null
+        }
+        Update: {
+          id?: string
+          name?: string
+          kind?: string
+          owner_id?: string
+          country_code?: string | null
+          timezone?: string
+          status?: string
+          created_at?: string
+          updated_at?: string
+          archived_at?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "workspaces_owner_id_fkey"
+            columns: ["owner_id"]
+            isOneToOne: false
+            referencedRelation: "profiles"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
     }
     Views: { [_ in never]: never }
     Functions: {
@@ -2832,13 +3296,17 @@ export type Database = {
       billing_grace_days: { Args: Record<PropertyKey, never>; Returns: number }
       billing_mark_payment_failed: { Args: { p_payment_id: string; p_reason: string }; Returns: undefined }
       billing_refund_payment: { Args: { p_payment_id: string; p_amount_minor: number; p_reason: string; p_revoke_access: boolean; p_actor?: string }; Returns: undefined }
+      can_teach_group: { Args: { p_group: string }; Returns: boolean }
       can_view_students: { Args: Record<PropertyKey, never>; Returns: boolean }
       current_app_role: { Args: Record<PropertyKey, never>; Returns: string }
       get_entitlements: { Args: { p_user_id: string }; Returns: { plan_code: string; plan_name: string; subscription_status: string; period_end: string; feature_key: string; is_enabled: boolean; limit_value: number }[] }
       has_any_role: { Args: { p_roles: string[] }; Returns: boolean }
       is_admin: { Args: Record<PropertyKey, never>; Returns: boolean }
       is_content_manager: { Args: Record<PropertyKey, never>; Returns: boolean }
+      is_group_student: { Args: { p_group: string }; Returns: boolean }
       is_staff: { Args: Record<PropertyKey, never>; Returns: boolean }
+      is_workspace_manager: { Args: { p_workspace: string }; Returns: boolean }
+      is_workspace_staff: { Args: { p_workspace: string }; Returns: boolean }
       mock_exam_start_attempt: { Args: { p_user_id: string; p_mock_exam_id: string; p_since: string; p_limit?: number }; Returns: string }
       my_entitlements: { Args: Record<PropertyKey, never>; Returns: { plan_code: string; plan_name: string; subscription_status: string; period_end: string; feature_key: string; is_enabled: boolean; limit_value: number }[] }
       my_skill_performance: { Args: Record<PropertyKey, never>; Returns: { subject_id: string; domain_id: string; skill_id: string; answered: number; correct: number; last_answered_at: string }[] }
@@ -2848,6 +3316,9 @@ export type Database = {
       record_daily_activity: { Args: { p_user_id: string; p_date: string; p_study_seconds?: number; p_questions?: number; p_correct?: number; p_lessons?: number }; Returns: undefined }
       skill_performance: { Args: { p_user_id: string }; Returns: { subject_id: string; domain_id: string; skill_id: string; answered: number; correct: number; last_answered_at: string }[] }
       subscription_effective_status: { Args: { p_status: string; p_period_end: string }; Returns: string }
+      workspace_create: { Args: { p_owner: string; p_name: string; p_kind: string; p_country: string; p_timezone: string }; Returns: string }
+      workspace_join: { Args: { p_user: string; p_code: string }; Returns: { workspace_id: string; group_id: string; role: string; joined: boolean }[] }
+      workspace_role: { Args: { p_workspace: string }; Returns: string }
       write_audit_log: { Args: { p_action: string; p_entity_type: string; p_entity_id: string; p_summary: string; p_before?: Json; p_after?: Json; p_actor?: string }; Returns: undefined }
     }
     Enums: { [_ in never]: never }

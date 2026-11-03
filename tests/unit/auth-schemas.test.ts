@@ -134,4 +134,11 @@ describe('redirect targets', () => {
     expect(onboardingNext('/admin')).toBe('/dashboard')
     expect(onboardingNext('/dashboardx')).toBe('/dashboard')
   })
+  it('onboardingNext also returns to a class invitation link, and nothing else outside the app', () => {
+    expect(onboardingNext('/join/ABCD-EF23')).toBe('/join/ABCD-EF23')
+    expect(onboardingNext('/join/ABCDEF23')).toBe('/join/ABCDEF23')
+    expect(onboardingNext('/join/ABCDEF23/../../admin')).toBe('/dashboard')
+    expect(onboardingNext('/join/')).toBe('/dashboard')
+    expect(onboardingNext('/teach')).toBe('/dashboard')
+  })
 })

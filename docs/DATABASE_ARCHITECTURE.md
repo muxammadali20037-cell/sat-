@@ -55,7 +55,15 @@ create function public.can_teach_group(p_group uuid) returns boolean ...       -
 
 Xatolar daftari va yutuqlar uchun jadval kerak bo'lmadi: ular mavjud javoblardan hisoblanadi.
 
-Quyidagi raqamlar bittaga suriladi: workspaces 0019, classroom 0020, jonli dars 0021, doska 0022, vazifalar 0023, ustoz billing'i 0024.
+**PHASE 3 da 3.1, 3.2 (`ws_courses` va `materials` dan tashqari) va 3.5 bitta migratsiyaga birlashtirildi: `20261103001900_classroom.sql` (0019).** Keyingilari: jonli dars 0020, doska 0021, ustoz billing'i 0022.
+
+0019 ning amaldagi farqlari:
+- taklif uchun token-hash o'rniga 8 belgili kod (`code`, faqat xodimlar o'qiydi), havola va QR shu kod bilan;
+- `assignments.kind`: `practice`, `mock_exam`, `text`; `attempts.assignment_id` (vazifa mashqi o'quvchi tarifiga hisoblanmaydi);
+- barcha yozish server orqali (service role, `can()` tekshiruvidan keyin); mijozlarga faqat a'zolikka qarab SELECT;
+- atomik amallar faqat service role chaqiradigan funksiyalarda: `workspace_create` (egasiga 5 tagacha), `workspace_join` (`max_uses` qulf bilan, rolni hech qachon pasaytirmaydi);
+- `audit_logs.workspace_id` (`on delete restrict`: tarixi bor workspace o'chirilmaydi, arxivlanadi);
+- S1: `telegram_accounts` ni endi faqat egasi va admin o'qiydi.
 
 ### 3.1 Workspace va a'zolik: migratsiya 0019
 

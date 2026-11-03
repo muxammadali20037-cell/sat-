@@ -61,9 +61,9 @@ describe('telegram_accounts', () => {
     })
   })
 
-  it('staff who can view students read every link; anonymous visitors read nothing', async () => {
+  it('platform admins read every link (0019 narrowed this from all staff); anonymous visitors read nothing', async () => {
     await tx(async (cl) => {
-      const teacher = await createUser(cl, { role: 'TEACHER' })
+      const teacher = await createUser(cl, { role: 'ADMIN' })
       const s1 = await createUser(cl)
       const s2 = await createUser(cl)
       await link(cl, s1, 9201)
