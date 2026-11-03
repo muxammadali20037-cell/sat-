@@ -6,6 +6,26 @@ Students can open SAT MASTER inside Telegram. On phones it goes full screen and 
 - **Navigation:** the bottom tab bar and Telegram's own back button work as they do in other apps.
 - **Appearance:** the app follows Telegram's light or dark theme.
 
+## Signing in on the website with Telegram
+
+The flow needs no password and no Telegram widget.
+
+1. **Start on the website.** /login and /register show "Continue with Telegram". The website shows a 4-digit code and an "Open Telegram" button.
+2. **Confirm in Telegram.** The button opens the bot. The bot repeats the code, names the device (for example "Chrome · Windows") and asks to **Confirm** or **Cancel**.
+3. **Signed in.** The website, still waiting in the same browser, signs in. A Telegram user without an account gets a new one.
+4. **Phone number.** New accounts are offered one-tap phone sharing. Telegram attaches the number to the user's own account, and only the student's own contact is accepted.
+
+**The same flow in Settings.** "Connect Telegram" adds Telegram to an email account.
+
+**Security.**
+- **Short-lived:** requests live 10 minutes and are single use.
+- **Hashed:** only hashes of the link token and of a browser cookie are stored.
+- **Bound to one browser:** only the browser that started the request can complete it.
+- **Bound to one Telegram user:** only the Telegram user who opened the link can confirm.
+- **Phishing:** the confirmation message tells students not to confirm a request they did not start, because someone could send them their own link.
+
+**After deploying this version**, press Admin → Telegram → **Configure bot** again. The webhook must now also receive button presses (`callback_query`); the status page shows "Outdated" until you do.
+
 ## How it works
 
 | Piece | Where |

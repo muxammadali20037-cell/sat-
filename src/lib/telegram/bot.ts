@@ -25,7 +25,7 @@ export async function callBot<T = unknown>(method: string, params: Record<string
   if (!token) throw new TelegramApiError(method, null, 'TELEGRAM_BOT_TOKEN is not set')
   let res: Response
   try {
-    res = await fetch(`https://api.telegram.org/bot${token}/${method}`, {
+    res = await fetch(`${serverEnv().TELEGRAM_API_BASE}/bot${token}/${method}`, {
       method: 'POST',
       headers: { 'content-type': 'application/json' },
       body: JSON.stringify(params),

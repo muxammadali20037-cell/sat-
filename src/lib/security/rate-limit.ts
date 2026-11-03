@@ -51,7 +51,11 @@ export const RATE_LIMITS = {
   authLogin: { bucket: 'auth-login', limit: 10, windowSec: 300 },
   authRegister: { bucket: 'auth-register', limit: 5, windowSec: 3600 },
   authRecover: { bucket: 'auth-recover', limit: 5, windowSec: 3600 },
+  // SMS codes cost money: per phone number and per IP.
+  authPhone: { bucket: 'auth-phone', limit: 5, windowSec: 3600 },
   telegramAuth: { bucket: 'telegram-auth', limit: 20, windowSec: 300 },
+  // The website polls a Telegram sign-in request every 2 s for up to 10 minutes.
+  telegramPoll: { bucket: 'telegram-poll', limit: 90, windowSec: 60 },
   contact: { bucket: 'contact', limit: 5, windowSec: 3600 },
   ai: { bucket: 'ai', limit: 10, windowSec: 60 },
   checkout: { bucket: 'checkout', limit: 10, windowSec: 600 },

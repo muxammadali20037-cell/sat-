@@ -70,7 +70,8 @@ erDiagram
 | | `payment_events` | Raw verified/unverified callbacks; unique `(provider, provider_event_id)` = idempotency; delete blocked |
 | AI & plans | `study_plans`, `study_plan_tasks` | One active plan per user |
 | | `ai_sessions`, `ai_messages`, `ai_usage`, `ai_generated_questions` | Usage with tokens, USD micro-cost, status, latency |
-| Platform | `telegram_accounts` (0016) | One Telegram user ↔ one account; written only by the server after HMAC-validating Telegram launch data; students read their own row |
+| Platform | `telegram_login_requests` (0017) | Website sign-in with Telegram: hashed link token and browser cookie, 4-digit code, status, 10-minute expiry; server only |
+| | `telegram_accounts` (0016) | One Telegram user ↔ one account; written only by the server after HMAC-validating Telegram launch data; students read their own row |
 | | `ai_quota_reservations` (0015) | AI requests in flight; counted with today's usage so parallel requests cannot exceed the daily limit. Server only, no client privileges |
 | Platform | `bookmarks` | Exactly one of question/lesson |
 | | `notifications`, `audit_logs` (append-only), `platform_settings`, `rate_limits`, `contact_requests` | |

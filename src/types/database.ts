@@ -2614,6 +2614,8 @@ export type Database = {
           created_via: string
           linked_at: string
           last_seen_at: string
+          phone_number: string | null
+          phone_shared_at: string | null
         }
         Insert: {
           user_id: string
@@ -2625,6 +2627,8 @@ export type Database = {
           created_via: string
           linked_at?: string
           last_seen_at?: string
+          phone_number?: string | null
+          phone_shared_at?: string | null
         }
         Update: {
           user_id?: string
@@ -2636,12 +2640,82 @@ export type Database = {
           created_via?: string
           linked_at?: string
           last_seen_at?: string
+          phone_number?: string | null
+          phone_shared_at?: string | null
         }
         Relationships: [
           {
             foreignKeyName: "telegram_accounts_user_id_fkey"
             columns: ["user_id"]
             isOneToOne: true
+            referencedRelation: "profiles"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      telegram_login_requests: {
+        Row: {
+          id: string
+          token_hash: string
+          browser_hash: string
+          intent: string
+          link_user_id: string | null
+          code: string
+          client_hint: string
+          next_path: string | null
+          status: string
+          telegram_user_id: number | null
+          telegram_profile: Json | null
+          chat_id: number | null
+          bot_message_id: number | null
+          created_at: string
+          expires_at: string
+          approved_at: string | null
+          consumed_at: string | null
+        }
+        Insert: {
+          id?: string
+          token_hash: string
+          browser_hash: string
+          intent: string
+          link_user_id?: string | null
+          code: string
+          client_hint?: string
+          next_path?: string | null
+          status?: string
+          telegram_user_id?: number | null
+          telegram_profile?: Json | null
+          chat_id?: number | null
+          bot_message_id?: number | null
+          created_at?: string
+          expires_at?: string
+          approved_at?: string | null
+          consumed_at?: string | null
+        }
+        Update: {
+          id?: string
+          token_hash?: string
+          browser_hash?: string
+          intent?: string
+          link_user_id?: string | null
+          code?: string
+          client_hint?: string
+          next_path?: string | null
+          status?: string
+          telegram_user_id?: number | null
+          telegram_profile?: Json | null
+          chat_id?: number | null
+          bot_message_id?: number | null
+          created_at?: string
+          expires_at?: string
+          approved_at?: string | null
+          consumed_at?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "telegram_login_requests_link_user_id_fkey"
+            columns: ["link_user_id"]
+            isOneToOne: false
             referencedRelation: "profiles"
             referencedColumns: ["id"]
           },

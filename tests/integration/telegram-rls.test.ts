@@ -103,4 +103,35 @@ describe('telegram_accounts', () => {
       expect(rows[0].n).toBe(0)
     })
   })
+
+  it('website sign-in requests are invisible to students and visitors', async () => {
+    await tx(async (cl) => {
+      const a = await createUser(cl)
+      await cl.query(
+        `insert into public.telegram_login_requests (token_hash, browser_hash, intent, code) values (repeat('a', 64), repeat('b', 64), 'sign_in', '1234')`,
+      )
+      await become(cl, a)
+      expect(await expectError(cl, 'select * from public.telegram_login_requests')).toMatch(/permission denied/)
+      expect(await expectError(cl, `update public.telegram_login_requests set status = 'approved'`)).toMatch(/permission denied/)
+    })
+    await asAnon(c, async (cl) => {
+      expect(await expectError(cl, 'select * from public.telegram_login_requests')).toMatch(/permission denied/)
+    })
+  })
+
+  it('validates requests and shared phone numbers', async () => {
+    await tx(async (cl) => {
+      const a = await createUser(cl)
+      expect(
+        await expectError(cl, `insert into public.telegram_login_requests (token_hash, browser_hash, intent, code) values (repeat('c', 64), repeat('d', 64), 'link', '1234')`),
+      ).toMatch(/check constraint/)
+      expect(
+        await expectError(cl, `insert into public.telegram_login_requests (token_hash, browser_hash, intent, code) values (repeat('e', 64), repeat('f', 64), 'sign_in', '12a4')`),
+      ).toMatch(/check constraint/)
+      await link(cl, a, 9501)
+      await cl.query(`update public.telegram_accounts set phone_number = '+998901234567' where user_id = $1`, [a])
+      expect(await expectError(cl, `update public.telegram_accounts set phone_number = '998901234567' where user_id = $1`, [a])).toMatch(/check constraint/)
+    })
+  })
 })
+

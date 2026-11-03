@@ -13,7 +13,7 @@ import { formatDateTime } from '@/features/admin/format'
 export const metadata: Metadata = { title: 'Telegram' }
 
 type Me = { username: string; first_name: string }
-type WebhookInfo = { url: string; pending_update_count: number; last_error_date?: number; last_error_message?: string }
+type WebhookInfo = { url: string; pending_update_count: number; last_error_date?: number; last_error_message?: string; allowed_updates?: string[] }
 type MenuButton = { type: string; text?: string; web_app?: { url: string } }
 
 async function botStatus() {
@@ -53,7 +53,8 @@ export default async function TelegramAdminPage() {
   const db = await createServerSupabase()
   const { count: linked } = await db.from('telegram_accounts').select('user_id', { count: 'exact', head: true })
 
-  const webhookOk = status?.ok && status.webhook.url === webhookUrl
+  // Website sign-in needs the Confirm button updates (callback_query); older setups only had messages.
+  const webhookOk = status?.ok && status.webhook.url === webhookUrl && (status.webhook.allowed_updates ?? []).includes('callback_query')
   const menuOk = status?.ok && status.menu.type === 'web_app' && status.menu.web_app?.url === miniAppUrl
   const username = status?.ok ? status.me.username : null
 
@@ -87,7 +88,7 @@ export default async function TelegramAdminPage() {
             {publicEnv.NEXT_PUBLIC_SITE_URL} {!https && <Ok yes={false}>Telegram needs https</Ok>}
           </Row>
           <Row label="Webhook">
-            <Ok yes={Boolean(webhookOk)}>{webhookOk ? 'Set' : 'Not set'}</Ok>
+            <Ok yes={Boolean(webhookOk)}>{webhookOk ? 'Set' : status?.ok && status.webhook.url === webhookUrl ? 'Outdated — press Configure bot' : 'Not set'}</Ok>
             {status?.ok && status.webhook.last_error_message && (
               <p className="mt-1 text-destructive">
                 Last error{status.webhook.last_error_date ? ` (${formatDateTime(new Date(status.webhook.last_error_date * 1000).toISOString())})` : ''}:{' '}

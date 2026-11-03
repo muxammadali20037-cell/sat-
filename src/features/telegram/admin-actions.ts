@@ -32,7 +32,8 @@ export async function configureTelegramBotAction(): Promise<ActionResult<{ steps
       await run('Webhook', 'setWebhook', {
         url: siteUrl('/api/webhooks/telegram'),
         secret_token: env.TELEGRAM_WEBHOOK_SECRET,
-        allowed_updates: ['message'],
+        // callback_query: the Confirm/Cancel buttons of website sign-in.
+        allowed_updates: ['message', 'callback_query'],
         drop_pending_updates: true,
       })
       await run('Menu button', 'setChatMenuButton', {

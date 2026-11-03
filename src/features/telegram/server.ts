@@ -78,6 +78,45 @@ export type TelegramSessionResult =
   | { status: 'signed_in'; isNew: boolean; next: string }
   | { status: 'unlinked'; firstName: string }
 
+/** The account connected to a Telegram user, or a new one created from the Telegram profile. */
+export async function resolveTelegramAccount(
+  admin: Db,
+  tg: TelegramUser,
+  create: boolean,
+  source: 'Mini App' | 'website',
+): Promise<{ userId: string; isNew: boolean } | null> {
+  const { data: link, error } = await admin.from('telegram_accounts').select('user_id').eq('telegram_user_id', tg.id).maybeSingle()
+  if (error) throw error
+  if (link) return { userId: link.user_id, isNew: false }
+  if (!create) return null
+  const userId = await createTelegramAccount(admin, tg)
+  // created_via 'mini_app' = the account was created from Telegram (Mini App or website Telegram sign-in).
+  const { error: insertError } = await admin
+    .from('telegram_accounts')
+    .upsert({ user_id: userId, telegram_user_id: tg.id, created_via: 'mini_app', ...profileFields(tg) }, { onConflict: 'user_id', ignoreDuplicates: true })
+  if (insertError) throw insertError
+  await writeAudit({
+    actorId: userId,
+    action: 'telegram.account_created',
+    entityType: 'profile',
+    entityId: userId,
+    summary: `Account created with Telegram (${source})`,
+    after: { telegram_user_id: tg.id },
+  })
+  return { userId, isNew: true }
+}
+
+/** Signs this browser in as the account (checks it is usable; keeps a live session for the same account). */
+export async function openSessionFor(admin: Db, userId: string, tg: TelegramUser): Promise<void> {
+  const { data: profile, error: profileError } = await admin.from('profiles').select('email, is_suspended, deleted_at').eq('id', userId).single()
+  if (profileError) throw profileError
+  if (profile.deleted_at) throw new ApiError(403, 'FORBIDDEN', 'This account has been deleted.')
+  if (profile.is_suspended) throw new ApiError(403, 'FORBIDDEN', 'This account is suspended.')
+  await admin.from('telegram_accounts').update({ ...profileFields(tg), last_seen_at: new Date().toISOString() }).eq('user_id', userId)
+  const current = await getCurrentUser()
+  if (current?.id !== userId) await establishSession(admin, profile.email)
+}
+
 /**
  * Opens the Mini App session. A Telegram user already connected to an account is signed into it.
  * Otherwise the caller decides: `create` makes a new account from the Telegram profile; without it
@@ -87,52 +126,18 @@ export async function signInWithTelegram(initData: string, create: boolean): Pro
   const launch = verifyLaunch(initData)
   const admin = createAdminSupabase()
   const tg = launch.user
-
-  const { data: link, error } = await admin.from('telegram_accounts').select('user_id').eq('telegram_user_id', tg.id).maybeSingle()
-  if (error) throw error
-  let userId = link?.user_id ?? null
-  let isNew = false
-
-  if (!userId) {
-    if (!create) {
-      await rememberMiniApp()
-      return { status: 'unlinked', firstName: tg.first_name.slice(0, 64) }
-    }
-    userId = await createTelegramAccount(admin, tg)
-    const { error: insertError } = await admin
-      .from('telegram_accounts')
-      .upsert({ user_id: userId, telegram_user_id: tg.id, created_via: 'mini_app', ...profileFields(tg) }, { onConflict: 'user_id', ignoreDuplicates: true })
-    if (insertError) throw insertError
-    isNew = true
-    await writeAudit({
-      actorId: userId,
-      action: 'telegram.account_created',
-      entityType: 'profile',
-      entityId: userId,
-      summary: 'Account created from the Telegram Mini App',
-      after: { telegram_user_id: tg.id },
-    })
+  const account = await resolveTelegramAccount(admin, tg, create, 'Mini App')
+  if (!account) {
+    await rememberMiniApp()
+    return { status: 'unlinked', firstName: tg.first_name.slice(0, 64) }
   }
-
-  const { data: profile, error: profileError } = await admin.from('profiles').select('email, is_suspended, deleted_at').eq('id', userId).single()
-  if (profileError) throw profileError
-  if (profile.deleted_at) throw new ApiError(403, 'FORBIDDEN', 'This account has been deleted.')
-  if (profile.is_suspended) throw new ApiError(403, 'FORBIDDEN', 'This account is suspended.')
-
-  await admin.from('telegram_accounts').update({ ...profileFields(tg), last_seen_at: new Date().toISOString() }).eq('user_id', userId)
-  // Reopening the app with a live session for the same account: keep it instead of minting a new one.
-  const current = await getCurrentUser()
-  if (current?.id !== userId) await establishSession(admin, profile.email)
+  await openSessionFor(admin, account.userId, tg)
   await rememberMiniApp()
-  return { status: 'signed_in', isNew, next: startParamRoute(launch.startParam) }
+  return { status: 'signed_in', isNew: account.isNew, next: startParamRoute(launch.startParam) }
 }
 
-/** Connects the signed-in account to the Telegram user who opened the Mini App. */
-export async function linkTelegram(userId: string, initData: string): Promise<{ linked: true; next: string }> {
-  const launch = verifyLaunch(initData)
-  const admin = createAdminSupabase()
-  const tg = launch.user
-
+/** Connects an account to a verified Telegram user (one Telegram ↔ one account). */
+export async function connectTelegramUser(admin: Db, userId: string, tg: TelegramUser): Promise<void> {
   const [{ data: byTelegram }, { data: byUser }] = await Promise.all([
     admin.from('telegram_accounts').select('user_id').eq('telegram_user_id', tg.id).maybeSingle(),
     admin.from('telegram_accounts').select('telegram_user_id').eq('user_id', userId).maybeSingle(),
@@ -145,21 +150,26 @@ export async function linkTelegram(userId: string, initData: string): Promise<{ 
       reason: 'account_has_other_telegram',
     })
   }
-  if (!byTelegram) {
-    const { error } = await admin.from('telegram_accounts').insert({ user_id: userId, telegram_user_id: tg.id, created_via: 'link', ...profileFields(tg) })
-    if (error) {
-      if (error.code === '23505') throw new ApiError(409, 'CONFLICT', 'This Telegram account was just connected elsewhere.', { reason: 'telegram_in_use' })
-      throw error
-    }
-    await writeAudit({
-      actorId: userId,
-      action: 'telegram.link',
-      entityType: 'profile',
-      entityId: userId,
-      summary: 'Connected a Telegram account',
-      after: { telegram_user_id: tg.id },
-    })
+  if (byTelegram) return
+  const { error } = await admin.from('telegram_accounts').insert({ user_id: userId, telegram_user_id: tg.id, created_via: 'link', ...profileFields(tg) })
+  if (error) {
+    if (error.code === '23505') throw new ApiError(409, 'CONFLICT', 'This Telegram account was just connected elsewhere.', { reason: 'telegram_in_use' })
+    throw error
   }
+  await writeAudit({
+    actorId: userId,
+    action: 'telegram.link',
+    entityType: 'profile',
+    entityId: userId,
+    summary: 'Connected a Telegram account',
+    after: { telegram_user_id: tg.id },
+  })
+}
+
+/** Connects the signed-in account to the Telegram user who opened the Mini App. */
+export async function linkTelegram(userId: string, initData: string): Promise<{ linked: true; next: string }> {
+  const launch = verifyLaunch(initData)
+  await connectTelegramUser(createAdminSupabase(), userId, launch.user)
   await rememberMiniApp()
   return { linked: true, next: startParamRoute(launch.startParam) }
 }
@@ -189,7 +199,7 @@ export async function unlinkTelegram(userId: string, email: string): Promise<{ u
 
 /** The signed-in student's Telegram connection, for Settings. */
 export async function myTelegramAccount(db: Db, userId: string) {
-  const { data } = await db.from('telegram_accounts').select('username, first_name, created_via, linked_at').eq('user_id', userId).maybeSingle()
+  const { data } = await db.from('telegram_accounts').select('username, first_name, created_via, linked_at, phone_number').eq('user_id', userId).maybeSingle()
   return data
 }
 

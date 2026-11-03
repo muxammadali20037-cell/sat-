@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Mail } from 'lucide-react'
+import { Button } from '@/components/ui/button'
 import { z } from 'zod'
 import { AuthCard, NotConfiguredAlert } from '@/components/auth/auth-card'
 import { ResendConfirmation } from '@/components/auth/recovery-forms'
@@ -44,6 +45,13 @@ export default async function VerifyEmailPage({ searchParams }: { searchParams: 
           </li>
         ))}
       </ul>
+      <div className="mt-7 rounded-lg border border-border bg-muted/40 p-4">
+        <p className="text-sm font-medium">{t.verify.alreadyTitle}</p>
+        <p className="mt-1 text-sm text-muted-foreground">{t.verify.alreadyBody}</p>
+        <Button asChild size="sm" className="mt-3">
+          <Link href="/login">{t.verify.logIn}</Link>
+        </Button>
+      </div>
       <div className="mt-7 border-t border-border pt-6">
         <ResendConfirmation initialEmail={email} disabled={!isSupabaseConfigured} />
       </div>

@@ -13,6 +13,8 @@ const publicSchema = z.object({
   /** Desmos API key (desmos.com/my-api). Public by design — Desmos keys are domain-bound browser keys. */
   NEXT_PUBLIC_DESMOS_API_KEY: z.string().min(8).optional(),
   NEXT_PUBLIC_DESMOS_API_VERSION: z.string().regex(/^v\d+\.\d+$/).default('v1.13'),
+  /** Shows "sign in with phone (SMS code)" once Supabase phone auth + the SMS hook are set up. */
+  NEXT_PUBLIC_ENABLE_PHONE_AUTH: z.enum(['true', 'false']).default('false'),
 })
 
 export const publicEnv = publicSchema.parse({
@@ -23,6 +25,7 @@ export const publicEnv = publicSchema.parse({
   NEXT_PUBLIC_ENABLE_GOOGLE_AUTH: process.env.NEXT_PUBLIC_ENABLE_GOOGLE_AUTH || undefined,
   NEXT_PUBLIC_DESMOS_API_KEY: process.env.NEXT_PUBLIC_DESMOS_API_KEY || undefined,
   NEXT_PUBLIC_DESMOS_API_VERSION: process.env.NEXT_PUBLIC_DESMOS_API_VERSION || undefined,
+  NEXT_PUBLIC_ENABLE_PHONE_AUTH: process.env.NEXT_PUBLIC_ENABLE_PHONE_AUTH || undefined,
 })
 
 export const isSupabaseConfigured = Boolean(
@@ -30,6 +33,7 @@ export const isSupabaseConfigured = Boolean(
 )
 export const isGoogleAuthEnabled = publicEnv.NEXT_PUBLIC_ENABLE_GOOGLE_AUTH === 'true'
 export const isDesmosConfigured = Boolean(publicEnv.NEXT_PUBLIC_DESMOS_API_KEY)
+export const isPhoneAuthEnabled = publicEnv.NEXT_PUBLIC_ENABLE_PHONE_AUTH === 'true'
 
 const optional = z.string().min(1).optional()
 
@@ -60,6 +64,14 @@ const serverSchema = z.object({
   TELEGRAM_BOT_TOKEN: z.string().regex(/^\d+:[\w-]{30,}$/, 'Expected a BotFather token like 123456:ABC…').optional(),
   /** Secret Telegram sends back in X-Telegram-Bot-Api-Secret-Token on every webhook call (1–256 chars of A–Z a–z 0–9 _ -). */
   TELEGRAM_WEBHOOK_SECRET: z.string().regex(/^[A-Za-z0-9_-]{16,256}$/, 'Use 16–256 characters: letters, digits, _ and -').optional(),
+  /** Telegram Bot API base (tests point it at a local mock; production leaves it unset). */
+  TELEGRAM_API_BASE: z.url().default('https://api.telegram.org'),
+  /** SMS codes for phone sign-in: Eskiz.uz account and the Supabase "Send SMS" hook secret (v1,whsec_…). */
+  ESKIZ_EMAIL: optional,
+  ESKIZ_PASSWORD: optional,
+  ESKIZ_FROM: z.string().min(1).default('4546'),
+  ESKIZ_API_BASE: z.url().default('https://notify.eskiz.uz/api'),
+  SEND_SMS_HOOK_SECRET: z.string().regex(/^(v1,)?whsec_[A-Za-z0-9+/=]+$/, 'Copy the secret from Supabase: v1,whsec_…').optional(),
 })
 
 export type ServerEnv = z.infer<typeof serverSchema>

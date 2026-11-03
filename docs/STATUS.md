@@ -1,10 +1,10 @@
 # SAT MASTER — Build status and phase report
 
-_Last updated: 3 November 2026_
+_Last updated: 3 November 2026 (sign-in methods)_
 
 The codebase covers phases 1–8 of [DEVELOPMENT_ROADMAP.md](DEVELOPMENT_ROADMAP.md). Phase 9 (deployment) is partly done: a Supabase project exists, and the steps that need the owner's accounts or credentials are listed under "Launch checklist" below.
 
-Size: 71 pages, 48 API route handlers, 16 SQL migrations, about 55k lines of TypeScript, a Telegram Mini App, 40 Uzbek study guides (30 skill guides covering every Digital SAT skill, plus 10 strategy guides), and a starter pack of 240 original practice questions.
+Size: 71 pages, 51 API route handlers, 17 SQL migrations, about 55k lines of TypeScript, a Telegram Mini App, 40 Uzbek study guides (30 skill guides covering every Digital SAT skill, plus 10 strategy guides), and a starter pack of 240 original practice questions.
 
 ## What was verified, and how
 
@@ -14,8 +14,8 @@ Everything below was run, not assumed.
 |---|---|---|
 | TypeScript | `npm run typecheck` | 0 errors |
 | Lint | `npm run lint` | 0 problems |
-| Unit tests | `npm test` | 499 passed (32 files). Covers:<br>• scoring, rich text, entitlements;<br>• practice selection and diagnostic composition;<br>• exam state machine and routing;<br>• study planner;<br>• AI output post-processing and leak checks;<br>• Click/Payme/Stripe signature and protocol handling;<br>• question import validation and schemas;<br>• every study guide file: schema, required sections, KaTeX rendering, and the bundled copy matching the files;<br>• rich-text tables (alignment, pipes inside math, excerpts);<br>• the bundled question pack matching its files;<br>• Telegram launch-data (initData) validation against an independently computed vector. |
-| Database tests | `npm run test:db` | 77 passed against PostgreSQL 16, rebuilt from scratch with all 16 migrations and the seed: RLS (28), billing functions (11), practice/answer-key security (7), exam RLS (9), study-guide RLS (8), atomic quotas (9, including real parallel connections), Telegram accounts (5) |
+| Unit tests | `npm test` | 505 passed (33 files). Covers:<br>• scoring, rich text, entitlements;<br>• practice selection and diagnostic composition;<br>• exam state machine and routing;<br>• study planner;<br>• AI output post-processing and leak checks;<br>• Click/Payme/Stripe signature and protocol handling;<br>• question import validation and schemas;<br>• every study guide file: schema, required sections, KaTeX rendering, and the bundled copy matching the files;<br>• rich-text tables (alignment, pipes inside math, excerpts);<br>• the bundled question pack matching its files;<br>• Telegram launch-data (initData) validation against an independently computed vector;<br>• the SMS hook signature (Standard Webhooks) against an independently computed vector;<br>• phone-number parsing. |
+| Database tests | `npm run test:db` | 79 passed against PostgreSQL 16, rebuilt from scratch with all 17 migrations and the seed: RLS (28), billing functions (11), practice/answer-key security (7), exam RLS (9), study-guide RLS (8), atomic quotas (9, including real parallel connections), Telegram accounts and sign-in requests (7) |
 | Content checks | `scripts/guides/build.ts --check`, `scripts/question-packs/check.ts core-v1` | 40 guides and 240 pack questions valid (import rules, difficulty mix, KaTeX, duplicates) |
 | Continuous integration | `.github/workflows/ci.yml` | Every push: typecheck, lint, unit tests, content checks, a fresh Postgres with all migrations, DB tests, production build |
 | Seed integrity | `scripts/db/check-seed.sql` | Passed (64 questions, 16 lessons, 4 practice sets, adaptive demo exam) |
@@ -53,6 +53,21 @@ The flows ran as a real user against real auth, PostgREST and RLS. AI used the l
   - the webhook secret.
 
   Not tested with a real Telegram client: the sandbox cannot reach telegram.org.
+- **Sign-in methods (3 Nov):** 29 checks against the local auth server (GoTrue with phone sign-in and the Send SMS hook), with recording stand-ins for the Telegram Bot API and Eskiz.
+  - **Telegram on the website:**
+    - code shown on the site and repeated by the bot, with the device named;
+    - only the user who opened the link can confirm; cancel works;
+    - a new account is created; returning users get the same account;
+    - the shared phone is saved, but only the user's own;
+    - another browser cannot use the request; expired links are explained.
+  - **Connect Telegram from Settings** works for an email account.
+  - **SMS:**
+    - the code arrives through the hook and Eskiz;
+    - a wrong code is refused, the right code signs in and creates a phone account;
+    - Settings show the number and no password form;
+    - the hook refuses unsigned calls.
+  - **Email links:** a link opened in another browser gets a clear message; "check your inbox" offers log-in for existing accounts.
+  - **Not live-tested:** real Telegram, real Eskiz and real Google. They need the owner's accounts.
 - **AI limit under load:** 6 tutor requests fired at the same moment by a Free-plan student (limit 3 per day) gave exactly 3 answers and 3 "limit reached" responses, and no reservation was left behind.
 - **Layout:** public pages at 390/768/1280 px and student pages at 390 px show no horizontal overflow and no console errors.
 
@@ -115,6 +130,10 @@ Authoring and editing workflow: [GUIDES.md](GUIDES.md).
 
 ## Known limitations (honest list)
 
+- **Auth emails:**
+  - Confirmation and reset emails come from Supabase's built-in sender, which is rate limited, until custom SMTP is configured.
+  - The Supabase **Site URL** must be the real site. While it was `localhost`, the first two sign-ups' confirmation links pointed there.
+  - See [AUTH_SETUP.md](AUTH_SETUP.md) §2–4.
 - **Payme fiscal receipts:** `detail` is not yet sent in `CheckPerformTransaction`. It is needed if the cashbox has fiscalization enabled.
 - **Stripe refunds:** only one refund per payment is recorded.
 - **Admin aggregation in the app:** analytics and AI-usage pages aggregate in the app with visible 50k-row caps; SQL summary functions are in the backlog.
@@ -135,6 +154,7 @@ State on 2 Nov 2026, applied through the Supabase connector with the owner's con
 | 0012 search indexes | **Declined by the owner** at the confirmation prompt. Optional (admin search speed only). Apply later from the SQL editor if wanted. |
 | 0013 study-guide tables | Applied |
 | 0014 study-guide content (~480 KB) | Not applied. Use Admin → Study guides → "Import bundled guides" after the first deploy, or `supabase db push`. |
+| 0017 website Telegram sign-in (1 table, 2 columns; no DELETE or DROP) | Not applied yet. Needed for "Continue with Telegram" on the website; without it that button reports Telegram sign-in as unavailable, and everything else works. |
 | 0016 Telegram accounts (1 table) | Applied on 3 Nov with the owner's approval. Checked afterwards: `anon` has no privileges; `authenticated` has SELECT only, limited to the student's own row by RLS. |
 | 0015 atomic quotas (1 table, 2 functions; no existing data touched) | **Not applied** (the owner declined it on 2 Nov and chose to apply only 0016 on 3 Nov). The confirmation prompt's "destructive" warning comes from the word DELETE in the function body, which only clears that new table's stale reservations. The app still works without it: it falls back to the older check and logs `[quota] database function … is missing` (tested). Until it is applied, simultaneous requests can exceed the AI and mock-exam limits slightly. To apply it, paste `supabase/migrations/20261102001500_atomic_quotas.sql` into the Supabase SQL editor, or run `supabase db push`. |
 
@@ -150,7 +170,7 @@ The security advisor reports two kinds of finding, both expected by design:
 supabase link --project-ref ncqqnjnozrymrmblixra
 supabase migration repair --status applied 20261102000100 20261102000200 20261102000300 20261102000400 \
   20261102000500 20261102000600 20261102000700 20261102000800 20261102000900 20261102001000 20261102001100 20261102001300
-supabase db push   # applies 0012 (if still wanted), 0014, 0015 and 0016
+supabase db push   # applies 0012 (if still wanted), 0014, 0015 and 0017
 ```
 
 ## Launch checklist (owner actions)
