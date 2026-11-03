@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { BookOpen, CalendarDays, Check, ChevronRight, CircleAlert, Clock3, Compass, Flame, ListChecks, PenLine, RotateCcw, Target } from 'lucide-react'
+import { Award, BookOpen, CalendarDays, Check, ChevronRight, CircleAlert, Clock3, Compass, Flame, ListChecks, PenLine, RotateCcw, Target } from 'lucide-react'
 import { Card } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { ProgressBar } from '@/components/ui/progress'
@@ -9,6 +9,7 @@ import type { dashboardDict } from '@/lib/i18n/dictionaries/dashboard'
 import { formatDate, intlLocale, percent } from '@/features/dashboard/format'
 import { MASTERY_MIN_ANSWERS, type MasteryDomain, type MasteryLevel, type Mission, type MissionItem, type WeekSummary } from '@/features/dashboard/today'
 import type { RecentMistake } from '@/features/dashboard/server'
+import type { Achievement } from '@/features/dashboard/achievements'
 
 type T = (typeof dashboardDict)['en']
 
@@ -286,7 +287,18 @@ export function RecentMistakes({ t, items, locale, timeZone }: { t: T; items: Re
   const m = t.mistakes
   return (
     <Card className="p-5">
-      <SectionTitle icon={<CircleAlert />} title={m.title} description={items.length > 0 ? m.description : undefined} />
+      <SectionTitle
+        icon={<CircleAlert />}
+        title={m.title}
+        description={items.length > 0 ? m.description : undefined}
+        action={
+          items.length > 0 ? (
+            <Link href="/dashboard/mistakes" className="shrink-0 text-[13px] font-medium text-primary hover:underline">
+              {m.all}
+            </Link>
+          ) : null
+        }
+      />
       {items.length === 0 ? (
         <p className="mt-3 text-[13px] text-muted-foreground">{m.empty}</p>
       ) : (
@@ -309,6 +321,72 @@ export function RecentMistakes({ t, items, locale, timeZone }: { t: T; items: Re
           ))}
         </ul>
       )}
+    </Card>
+  )
+}
+
+// ---------------------------------------------------------------------------
+// Achievements (computed from real activity)
+// ---------------------------------------------------------------------------
+
+const achievementIcon: Record<Achievement['id'], React.ReactNode> = {
+  first_diagnostic: <Compass />,
+  questions_100: <PenLine />,
+  questions_500: <PenLine />,
+  questions_1000: <PenLine />,
+  streak_7: <Flame />,
+  streak_30: <Flame />,
+  first_mock: <ListChecks />,
+  mocks_4: <ListChecks />,
+  lessons_10: <BookOpen />,
+  domain_advanced: <Award />,
+}
+
+export function AchievementsCard({ t, items }: { t: T; items: Achievement[] }) {
+  const a = t.achievements
+  const earned = items.filter((i) => i.earned).length
+  // Earned first, then the closest to earning.
+  const ordered = [...items].sort((x, y) => Number(y.earned) - Number(x.earned) || y.value / y.target - x.value / x.target)
+  return (
+    <Card className="p-5">
+      <SectionTitle
+        icon={<Award />}
+        title={a.title}
+        action={<span className="shrink-0 text-xs text-muted-foreground tabular">{format(a.earned, { n: earned, total: items.length })}</span>}
+      />
+      <ul className="mt-4 grid grid-cols-1 gap-2">
+        {ordered.map((it) => {
+          const copy = a.items[it.id]
+          return (
+            <li key={it.id} className={cn('flex items-center gap-3 rounded-md px-2 py-1.5', it.earned ? 'bg-success/10' : '')}>
+              <span
+                aria-hidden
+                className={cn(
+                  'flex size-8 shrink-0 items-center justify-center rounded-full [&_svg]:size-4',
+                  it.earned ? 'bg-success text-white' : 'bg-muted text-muted-foreground',
+                )}
+              >
+                {achievementIcon[it.id]}
+              </span>
+              <div className="min-w-0 flex-1">
+                <p className={cn('truncate text-sm font-medium', it.earned ? 'text-foreground' : 'text-muted-foreground')}>
+                  {copy.title}
+                  {it.earned && <span className="sr-only"> ({a.done})</span>}
+                </p>
+                {!it.earned && (
+                  <div className="mt-1 flex items-center gap-2">
+                    <ProgressBar value={it.value} max={it.target} label={copy.body} size="sm" />
+                    <span className="shrink-0 text-[11px] text-muted-foreground tabular">
+                      {it.value}/{it.target}
+                    </span>
+                  </div>
+                )}
+                {it.earned && <p className="truncate text-xs text-muted-foreground">{copy.body}</p>}
+              </div>
+            </li>
+          )
+        })}
+      </ul>
     </Card>
   )
 }

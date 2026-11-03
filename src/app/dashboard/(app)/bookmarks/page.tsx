@@ -12,6 +12,7 @@ import { EmptyState } from '@/components/ui/states'
 import { listBookmarks } from '@/features/bookmarks/server'
 import { StartPracticeButton } from '@/components/practice/start-practice-button'
 import { LessonBookmarkList, QuestionBookmarkList } from '@/components/practice/bookmark-lists'
+import { intlLocale } from '@/features/dashboard/format'
 
 export const metadata: Metadata = { title: 'Bookmarks' }
 
@@ -19,7 +20,7 @@ export default async function BookmarksPage() {
   const profile = await requireStudentReady({ next: '/dashboard/bookmarks' })
   const [t, locale] = await Promise.all([getDict(bookmarksDict), getLocale()])
   const { questions, lessons } = await listBookmarks(createAdminSupabase(), profile.id)
-  const dateFormat = new Intl.DateTimeFormat(locale === 'uz' ? 'uz-UZ' : 'en-US', { dateStyle: 'medium' })
+  const dateFormat = new Intl.DateTimeFormat(intlLocale(locale), { dateStyle: 'medium' })
   const dateLabels = Object.fromEntries(questions.map((q) => [q.id, dateFormat.format(new Date(q.createdAt))]))
   const practisable = questions.filter((q) => q.published).length
 

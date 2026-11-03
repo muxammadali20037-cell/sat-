@@ -6,7 +6,8 @@ import { apiFetch } from '@/lib/api/client'
 import { useDict } from '@/lib/i18n/client'
 import { format } from '@/lib/i18n/dict'
 import { practiceDict } from '@/lib/i18n/dictionaries/practice'
-import { cn } from '@/lib/utils'
+import { cn, formatClock } from '@/lib/utils'
+import { drillSeconds } from '@/features/practice/schemas'
 import { Button } from '@/components/ui/button'
 import { NativeSelect, Label } from '@/components/ui/input'
 import { Alert } from '@/components/ui/card'
@@ -47,6 +48,7 @@ export function PracticeBuilder({
   const [skillId, setSkillId] = React.useState(initial.skillId)
   const [difficulty, setDifficulty] = React.useState<Difficulty>('mixed')
   const [count, setCount] = React.useState(() => lengths.find((n) => n === 10) ?? lengths[0] ?? 10)
+  const [timed, setTimed] = React.useState(false)
   const [pending, setPending] = React.useState(false)
   const [error, setError] = React.useState<string | null>(null)
   const [limit, setLimit] = React.useState<{ used: number; limit: number } | null>(null)
@@ -74,6 +76,7 @@ export function PracticeBuilder({
           ...(skillId ? { skillId } : {}),
           difficulty,
           count,
+          timed,
         },
       })
       router.push(`/dashboard/practice/${res.attemptId}`)
@@ -200,6 +203,16 @@ export function PracticeBuilder({
         </div>
       </fieldset>
 
+      <label className="flex cursor-pointer items-start gap-3 rounded-md border border-border p-3 has-[:checked]:border-primary has-[:checked]:bg-primary-soft has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-ring sm:max-w-xl">
+        <input type="checkbox" checked={timed} onChange={(e) => setTimed(e.target.checked)} className="mt-0.5 size-4 accent-[var(--primary)]" />
+        <span className="min-w-0">
+          <span className="block text-sm font-medium">{t.builder.timed}</span>
+          <span className="block text-[13px] text-muted-foreground">
+            {format(t.builder.timedHint, { time: formatClock(drillSeconds(subject, Math.max(1, effective > 0 ? effective : count))) })}
+          </span>
+        </span>
+      </label>
+
       <div className="space-y-1 text-[13px] text-muted-foreground" aria-live="polite">
         {available === 0 ? (
           <p className="text-warning-foreground">{t.builder.noneAvailable}</p>
@@ -223,7 +236,7 @@ export function PracticeBuilder({
       )}
 
       <Button type="submit" size="lg" loading={pending} disabled={available === 0 || effective <= 0 || remainingToday === 0} className="w-full sm:w-auto">
-        {t.builder.start}
+        {timed ? t.builder.startTimed : t.builder.start}
       </Button>
     </form>
   )

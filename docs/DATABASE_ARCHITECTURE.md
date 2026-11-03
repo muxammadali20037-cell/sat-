@@ -46,7 +46,18 @@ create function public.can_teach_group(p_group uuid) returns boolean ...       -
 
 ## 3. Yangi jadvallar (taklif)
 
-### 3.1 Workspace va a'zolik: migratsiya 0018
+### 3.0 Learning qo'shimchalari: migratsiya 0018 (yozilgan, PHASE 2)
+
+`supabase/migrations/20261103001800_learning_extras.sql`:
+- `attempts.practice_mode` ga `mistakes` qo'shildi (xatolar daftaridan mashq);
+- `flashcard_reviews` (o'quvchi, `card_key`, ease, interval, reps, lapses, `due_at`): faqat server yozadi, o'quvchi faqat o'zinikini o'qiydi; kartochkalarning o'zi repozitoriyda (`content/flashcards`);
+- `profiles.country_code` (o'quvchi faqat o'zinikini o'zgartiradi).
+
+Xatolar daftari va yutuqlar uchun jadval kerak bo'lmadi: ular mavjud javoblardan hisoblanadi.
+
+Quyidagi raqamlar bittaga suriladi: workspaces 0019, classroom 0020, jonli dars 0021, doska 0022, vazifalar 0023, ustoz billing'i 0024.
+
+### 3.1 Workspace va a'zolik: migratsiya 0019
 
 | Jadval | Asosiy ustunlar | Izoh |
 |---|---|---|
@@ -56,7 +67,7 @@ create function public.can_teach_group(p_group uuid) returns boolean ...       -
 | `country_configs` | `country_code` PK, `default_locale`, `currency`, `default_timezone`, `payment_providers text[]`, `is_active` | Mamlakat sozlamasi (reference data) |
 | `profiles` (+ustun) | `country_code` null | Onboarding'da to'ldiriladi |
 
-### 3.2 Classroom: migratsiya 0019
+### 3.2 Classroom: migratsiya 0020
 
 | Jadval | Asosiy ustunlar |
 |---|---|
@@ -68,7 +79,7 @@ create function public.can_teach_group(p_group uuid) returns boolean ...       -
 
 `progress_sharing` o'quvchining shaxsiy Learning natijalarini (diagnostika, mashq, imtihon) ustoz ko'rishiga **aniq rozilik** beradi. Rozilik bo'lmasa, ustoz faqat o'z workspace'idagi vazifa natijalarini ko'radi.
 
-### 3.3 Jadval, jonli dars, davomat: migratsiya 0020
+### 3.3 Jadval, jonli dars, davomat: migratsiya 0021
 
 | Jadval | Asosiy ustunlar |
 |---|---|
@@ -85,7 +96,7 @@ create function public.can_teach_group(p_group uuid) returns boolean ...       -
 | `webhook_events` | `provider` (`livekit`), `event_id` unique, `received_at`, `payload_hash`; idempotency uchun |
 | `usage_counters` | `workspace_id`, `period` (oy), `live_minutes`, `recording_minutes`, `storage_bytes`; webhook'dan yangilanadi |
 
-### 3.4 Doska: migratsiya 0021
+### 3.4 Doska: migratsiya 0022
 
 | Jadval | Asosiy ustunlar |
 |---|---|
@@ -95,7 +106,7 @@ create function public.can_teach_group(p_group uuid) returns boolean ...       -
 
 Jonli holat sync serverda (SQLite) turadi. Postgres arxiv va ruxsatlar manbai bo'ladi.
 
-### 3.5 Vazifalar: migratsiya 0022
+### 3.5 Vazifalar: migratsiya 0023
 
 | Jadval | Asosiy ustunlar |
 |---|---|
@@ -107,7 +118,7 @@ Jonli holat sync serverda (SQLite) turadi. Postgres arxiv va ruxsatlar manbai bo
 
 Platforma savollari vazifaga berilganda ham javob kaliti qoidasi o'zgarmaydi. Baholash mavjud `attempts` mexanizmi orqali serverda bo'ladi.
 
-### 3.6 Learning qo'shimchalari: migratsiya 0023
+### 3.6 Keyingi Learning qo'shimchalari (keyin)
 
 | Jadval | Asosiy ustunlar |
 |---|---|

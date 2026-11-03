@@ -10,6 +10,7 @@ import { getSubscriptionOverview } from '@/features/subscriptions/server'
 import { featureLines, formatDate, planAction, providersForPlan } from '@/features/subscriptions/plan-view'
 import { getMyPayments } from '@/features/payments/server'
 import { configuredProviders } from '@/lib/payments/registry'
+import { countryRules, providersForCountry } from '@/config/countries'
 import { PageHeader, Section } from '@/components/layout/page-header'
 import { Alert, Badge, Card } from '@/components/ui/card'
 import { ProgressBar } from '@/components/ui/progress'
@@ -34,7 +35,9 @@ export default async function SubscriptionPage() {
   const profile = await requireStudentReady({ next: '/dashboard/subscription' })
   const [t, locale, db] = await Promise.all([getDict(subscriptionDict), getLocale(), createServerSupabase()])
   const [overview, plans, payments] = await Promise.all([getSubscriptionOverview(profile), getPublicPlans(db), getMyPayments(db, profile.id)])
-  const providers = configuredProviders()
+  // Payment methods and the shown currency follow the country in Settings (all methods when unset).
+  const providers = providersForCountry(profile.countryCode, configuredProviders())
+  const usdFirst = countryRules(profile.countryCode)?.currency === 'USD'
   // Inside the Telegram Mini App nothing is sold (Telegram requires Stars for digital goods there).
   const inTelegram = await isMiniAppRequest()
   const sub = overview.subscription
@@ -155,10 +158,10 @@ export default async function SubscriptionPage() {
                     ) : null}
                   </div>
                   <p className="mt-3 text-[26px] font-semibold leading-none tabular">
-                    {formatMoney(plan.priceMinor, plan.currency, locale)}
+                    {usdFirst && usd && plan.priceMinor > 0 ? formatMoney(usd.amountMinor, 'USD', locale) : formatMoney(plan.priceMinor, plan.currency, locale)}
                     {plan.priceMinor > 0 && <span className="ml-1 text-sm font-normal text-muted-foreground">{t.plans.perMonth}</span>}
                   </p>
-                  {usd && plan.priceMinor > 0 && (
+                  {usd && plan.priceMinor > 0 && !usdFirst && (
                     <p className="mt-1.5 text-[13px] text-muted-foreground tabular">
                       {format(t.plans.orUsd, { price: formatMoney(usd.amountMinor, 'USD', locale) })}
                     </p>

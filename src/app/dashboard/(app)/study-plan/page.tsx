@@ -20,6 +20,7 @@ import { EmptyState } from '@/components/ui/states'
 import { UpgradeNotice } from '@/components/subscription/upgrade-notice'
 import { PlanGenerateButton, TaskItem, type TaskView } from '@/components/study-plan/plan-actions'
 import type { SubjectCode } from '@/types/questions'
+import { intlLocale } from '@/features/dashboard/format'
 
 export const metadata: Metadata = { title: 'Study plan' }
 
@@ -27,7 +28,7 @@ type T = typeof studyPlanDict.en
 
 function formatDay(date: string, locale: string, opts: Intl.DateTimeFormatOptions = { weekday: 'short', day: 'numeric', month: 'short' }) {
   try {
-    return new Intl.DateTimeFormat(locale === 'uz' ? 'uz-Latn-UZ' : 'en-US', { ...opts, timeZone: 'UTC' }).format(new Date(`${date}T00:00:00Z`))
+    return new Intl.DateTimeFormat(intlLocale(locale), { ...opts, timeZone: 'UTC' }).format(new Date(`${date}T00:00:00Z`))
   } catch {
     return date
   }

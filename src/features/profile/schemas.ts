@@ -8,6 +8,7 @@ import {
   targetScoreSchema,
 } from '@/features/onboarding/schemas'
 import type { TablesUpdate } from '@/types/database'
+import { COUNTRY_CODES } from '@/config/countries'
 
 /** Time zones offered in Settings (students are mostly in Central Asia; UTC as a neutral option). */
 export const TIME_ZONES = [
@@ -41,6 +42,7 @@ export const profileUpdateSchema = z
     fullName: fullNameSchema.optional(),
     locale: uiLocaleSchema.optional(),
     timezone: z.enum(TIME_ZONES, 'timezoneInvalid').optional(),
+    countryCode: z.enum(COUNTRY_CODES, 'countryInvalid').nullable().optional(),
     satLevel: satLevelSchema.optional(),
     targetScore: targetScoreSchema.optional(),
     examDate: isoDateSchema.nullable().optional(),
@@ -55,6 +57,7 @@ export type ProfileUpdate = z.output<typeof profileUpdateSchema>
 export const profileSectionSchema = z.object({
   fullName: fullNameSchema,
   timezone: z.enum(TIME_ZONES, 'timezoneInvalid'),
+  countryCode: z.enum(COUNTRY_CODES, 'countryInvalid'),
 })
 export type ProfileSectionInput = z.input<typeof profileSectionSchema>
 
@@ -78,6 +81,7 @@ export function toProfileColumns(update: ProfileUpdate): TablesUpdate<'profiles'
   if (update.fullName !== undefined) out.full_name = update.fullName
   if (update.locale !== undefined) out.locale = update.locale
   if (update.timezone !== undefined) out.timezone = update.timezone
+  if (update.countryCode !== undefined) out.country_code = update.countryCode
   if (update.satLevel !== undefined) out.sat_level = update.satLevel
   if (update.targetScore !== undefined) out.target_score = update.targetScore
   if (update.examDate !== undefined) out.exam_date = update.examDate

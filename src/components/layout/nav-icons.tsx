@@ -1,5 +1,5 @@
 import {
-  BarChart3, BookMarked, BookOpen, Bot, ClipboardCheck, CreditCard, FileClock, FileQuestion, FileUp, Gauge, GraduationCap,
+  BarChart3, BookMarked, BookOpen, Bot, CircleAlert, Layers3, ClipboardCheck, CreditCard, FileClock, FileQuestion, FileUp, Gauge, GraduationCap,
   Home, Languages, Layers, LayoutDashboard, ListChecks, Network, PenLine, PlayCircle, Receipt, ScrollText, Send, Settings, Sparkles, Target, Timer, Users,
   type LucideIcon,
 } from 'lucide-react'
@@ -31,6 +31,8 @@ export const NAV_ICONS: Record<NavIconKey, LucideIcon> = {
   admin: LayoutDashboard,
   guides: Languages,
   telegram: Send,
+  mistakes: CircleAlert,
+  flashcards: Layers3,
 }
 
 export { Gauge, FileClock }

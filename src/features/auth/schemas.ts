@@ -26,7 +26,7 @@ export const passwordSchema = z
 
 export const fullNameSchema = z.string().trim().min(2, 'nameTooShort').max(120, 'nameTooLong')
 
-export const uiLocaleSchema = z.enum(['en', 'uz'])
+export const uiLocaleSchema = z.enum(['en', 'uz', 'ru'])
 
 export const signUpSchema = z.object({
   fullName: fullNameSchema,

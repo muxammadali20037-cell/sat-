@@ -47,7 +47,7 @@ _Taklif, 3-noyabr 2026. Mavjud himoyalar saqlanadi, multi-tenant Classroom uchun
 
 | # | Xavf | Chora | Qachon |
 |---|---|---|---|
-| S1 | Global `TEACHER` hamma o'quvchini ko'radi (`can_view_students()`), jumladan Telegram telefon raqamini | Mustaqil ustozlarga global rol **berilmaydi**. Ularning huquqlari faqat `workspace_members` orqali. Global `TEACHER` ichki xodimlar uchun qoladi. `telegram_accounts.phone_number` ni ko'rishni `ADMIN` gacha toraytirish taklif qilinadi | PHASE 3 (0018) |
+| S1 | Global `TEACHER` hamma o'quvchini ko'radi (`can_view_students()`), jumladan Telegram telefon raqamini | Mustaqil ustozlarga global rol **berilmaydi**. Ularning huquqlari faqat `workspace_members` orqali. Global `TEACHER` ichki xodimlar uchun qoladi. `telegram_accounts.phone_number` ni ko'rishni `ADMIN` gacha toraytirish taklif qilinadi | PHASE 3 (0019) |
 | S2 | 0015 qo'llanmagan: limitlar bir vaqtdagi so'rovlarda oshishi mumkin | Egasi tasdiqlagach 0015 ni qo'llash | PHASE 1 |
 | S3 | Rate limiter bazaga ulana olmasa "fail open" | Auth endpoint'lari uchun xotiradagi zaxira limiter (instansiya bo'yicha) va ogohlantirish. Yoki login va register uchun "fail closed" | PHASE 1 |
 | S4 | SVG yuklash | Ustoz fayllari uchun SVG taqiqlanadi yoki sanitizatsiya qilinadi. Signed URL'lar `Content-Disposition: attachment` bilan | PHASE 3 |

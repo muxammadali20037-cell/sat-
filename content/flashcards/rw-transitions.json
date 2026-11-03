@@ -1,0 +1,256 @@
+{
+  "id": "rw-transitions",
+  "subject": "reading_writing",
+  "title": {
+    "en": "Transition Words",
+    "uz": "Bog'lovchi so'zlar (transitions)",
+    "ru": "Слова-связки (transitions)"
+  },
+  "description": {
+    "en": "Learn the logical job of each transition so you can pick the one that fits the relationship between two ideas.",
+    "uz": "Har bir transition qanday mantiqiy vazifa bajarishini o'rganing, shunda ikki fikr orasidagi bog'liqlikka mosini tanlay olasiz.",
+    "ru": "Выучите логическую функцию каждого перехода, чтобы выбирать тот, который подходит к связи между двумя мыслями."
+  },
+  "cards": [
+    {
+      "id": "however",
+      "front": { "en": "however", "uz": "however", "ru": "however" },
+      "back": {
+        "en": "Contrast: introduces an idea that goes against or limits the previous one.",
+        "uz": "Zidlik (contrast): oldingi fikrga qarshi yoki uni cheklovchi fikrni kiritadi. Tarjimasi: biroq, ammo.",
+        "ru": "Противопоставление (contrast): вводит мысль, которая противоречит предыдущей или ограничивает её. Перевод: однако."
+      },
+      "example": "The new bridge shortened the commute; however, it also brought heavier traffic to the old town."
+    },
+    {
+      "id": "therefore",
+      "front": { "en": "therefore", "uz": "therefore", "ru": "therefore" },
+      "back": {
+        "en": "Cause/effect: the next idea is a logical result or conclusion of the previous one.",
+        "uz": "Sabab-oqibat (cause/effect): keyingi fikr oldingisining mantiqiy natijasi. Tarjimasi: shuning uchun, demak.",
+        "ru": "Причина и следствие (cause/effect): следующая мысль — логический вывод из предыдущей. Перевод: поэтому, следовательно."
+      },
+      "example": "The seeds need cold weather to sprout; therefore, farmers plant them in late autumn."
+    },
+    {
+      "id": "moreover",
+      "front": { "en": "moreover", "uz": "moreover", "ru": "moreover" },
+      "back": {
+        "en": "Addition: adds a further point that supports the same argument, often a stronger one.",
+        "uz": "Qo'shimcha (addition): xuddi shu fikrni qo'llab-quvvatlovchi yana bir, ko'pincha kuchliroq dalilni qo'shadi. Tarjimasi: bundan tashqari, qolaversa.",
+        "ru": "Добавление (addition): добавляет ещё один, часто более сильный довод в пользу той же мысли. Перевод: более того."
+      },
+      "example": "Solar lamps are cheap to run; moreover, they keep working during power cuts."
+    },
+    {
+      "id": "for-example",
+      "front": { "en": "for example", "uz": "for example", "ru": "for example" },
+      "back": {
+        "en": "Example: introduces a specific case that illustrates the general claim before it.",
+        "uz": "Misol (example): oldingi umumiy fikrni aniq holat bilan ko'rsatadi. Tarjimasi: masalan.",
+        "ru": "Пример (example): вводит конкретный случай, иллюстрирующий общее утверждение. Перевод: например."
+      },
+      "example": "Some birds use tools; for example, certain crows bend twigs into hooks to catch insects."
+    },
+    {
+      "id": "similarly",
+      "front": { "en": "similarly", "uz": "similarly", "ru": "similarly" },
+      "back": {
+        "en": "Similarity: shows that the next idea is like the previous one in an important way.",
+        "uz": "O'xshashlik (similarity): keyingi fikr oldingisiga muhim jihatdan o'xshashligini ko'rsatadi. Tarjimasi: xuddi shunday, shunga o'xshab.",
+        "ru": "Сходство (similarity): показывает, что следующая мысль похожа на предыдущую в важном отношении. Перевод: аналогично, подобным образом."
+      },
+      "example": "Bees communicate through dance; similarly, some ants share information through touch."
+    },
+    {
+      "id": "in-contrast",
+      "front": { "en": "in contrast", "uz": "in contrast", "ru": "in contrast" },
+      "back": {
+        "en": "Contrast: points out a clear difference between two things being compared.",
+        "uz": "Zidlik (contrast): solishtirilayotgan ikki narsa orasidagi aniq farqni ko'rsatadi. Tarjimasi: bundan farqli o'laroq, aksincha.",
+        "ru": "Противопоставление (contrast): подчёркивает явное различие между двумя сравниваемыми вещами. Перевод: напротив, в отличие от этого."
+      },
+      "example": "The northern valley receives heavy rain each spring; in contrast, the southern plain stays dry all year."
+    },
+    {
+      "id": "nevertheless",
+      "front": { "en": "nevertheless", "uz": "nevertheless", "ru": "nevertheless" },
+      "back": {
+        "en": "Concession: admits the previous point but says the next idea is still true despite it.",
+        "uz": "Yon berish (concession): oldingi fikrni tan oladi, lekin keyingi fikr baribir to'g'ri ekanini aytadi. Tarjimasi: shunga qaramay.",
+        "ru": "Уступка (concession): признаёт предыдущий факт, но утверждает, что следующая мысль всё равно верна. Перевод: тем не менее, несмотря на это."
+      },
+      "example": "The experiment had a small sample; nevertheless, its results inspired several larger studies."
+    },
+    {
+      "id": "consequently",
+      "front": { "en": "consequently", "uz": "consequently", "ru": "consequently" },
+      "back": {
+        "en": "Cause/effect: the next event happens because of the previous one.",
+        "uz": "Sabab-oqibat (cause/effect): keyingi voqea oldingisi tufayli sodir bo'ladi. Tarjimasi: natijada, oqibatda.",
+        "ru": "Причина и следствие (cause/effect): следующее событие происходит из-за предыдущего. Перевод: следовательно, вследствие этого."
+      },
+      "example": "The river froze earlier than usual; consequently, the ferry stopped running in November."
+    },
+    {
+      "id": "furthermore",
+      "front": { "en": "furthermore", "uz": "furthermore", "ru": "furthermore" },
+      "back": {
+        "en": "Addition: adds another point in the same direction as the previous one.",
+        "uz": "Qo'shimcha (addition): oldingi fikr yo'nalishida yana bir dalil qo'shadi. Tarjimasi: bundan tashqari, yana.",
+        "ru": "Добавление (addition): добавляет ещё один довод в том же направлении. Перевод: кроме того, к тому же."
+      },
+      "example": "The museum offers free entry on Fridays; furthermore, its guided tours are available in three languages."
+    },
+    {
+      "id": "instead",
+      "front": { "en": "instead", "uz": "instead", "ru": "instead" },
+      "back": {
+        "en": "Contrast (replacement): shows that one thing happens in place of what was expected or rejected.",
+        "uz": "Zidlik, almashtirish (contrast): kutilgan yoki rad etilgan narsa o'rniga boshqasi bo'lganini bildiradi. Tarjimasi: buning o'rniga.",
+        "ru": "Противопоставление, замена (contrast): одно происходит вместо ожидаемого или отвергнутого. Перевод: вместо этого."
+      },
+      "example": "The author did not describe the city directly; instead, she let readers see it through a child's letters."
+    },
+    {
+      "id": "meanwhile",
+      "front": { "en": "meanwhile", "uz": "meanwhile", "ru": "meanwhile" },
+      "back": {
+        "en": "Sequence (time): shows that two events happen at the same time; it can also mark a contrast between them.",
+        "uz": "Ketma-ketlik, vaqt (sequence): ikki voqea bir vaqtda sodir bo'lishini bildiradi; ular orasidagi farqni ham ko'rsatishi mumkin. Tarjimasi: shu orada, ayni paytda.",
+        "ru": "Последовательность, время (sequence): два события происходят одновременно; может также подчёркивать контраст. Перевод: тем временем, между тем."
+      },
+      "example": "The engineers tested the engine in the lab; meanwhile, the design team sketched a lighter frame."
+    },
+    {
+      "id": "finally",
+      "front": { "en": "finally", "uz": "finally", "ru": "finally" },
+      "back": {
+        "en": "Sequence: marks the last step or item in a series, or the end of a long process.",
+        "uz": "Ketma-ketlik (sequence): qatordagi oxirgi bosqich yoki uzoq jarayonning yakunini bildiradi. Tarjimasi: nihoyat, va nihoyat.",
+        "ru": "Последовательность (sequence): отмечает последний шаг в ряду или конец долгого процесса. Перевод: наконец."
+      },
+      "example": "The clay is shaped, dried for a week, and finally fired in a hot kiln."
+    },
+    {
+      "id": "indeed",
+      "front": { "en": "indeed", "uz": "indeed", "ru": "indeed" },
+      "back": {
+        "en": "Emphasis: confirms and strengthens the previous statement, often with a sharper detail.",
+        "uz": "Kuchaytirish (emphasis): oldingi fikrni tasdiqlaydi va aniqroq tafsilot bilan kuchaytiradi. Tarjimasi: haqiqatan ham, darhaqiqat.",
+        "ru": "Усиление (emphasis): подтверждает и усиливает предыдущее утверждение, часто более ярким фактом. Перевод: действительно, и правда."
+      },
+      "example": "The desert plant survives on very little water; indeed, it can go a full year without rain."
+    },
+    {
+      "id": "thus",
+      "front": { "en": "thus", "uz": "thus", "ru": "thus" },
+      "back": {
+        "en": "Cause/effect or conclusion: states the result or logical outcome of what was just said.",
+        "uz": "Sabab-oqibat yoki xulosa (cause/effect, conclusion): aytilgan fikrning natijasini bildiradi. Tarjimasi: shu tariqa, demak.",
+        "ru": "Следствие или вывод (cause/effect, conclusion): называет результат сказанного. Перевод: таким образом, итак."
+      },
+      "example": "The new filter removes most of the dust; thus, the air in the classroom is much cleaner."
+    },
+    {
+      "id": "likewise",
+      "front": { "en": "likewise", "uz": "likewise", "ru": "likewise" },
+      "back": {
+        "en": "Similarity: shows that the next case follows the same pattern as the previous one.",
+        "uz": "O'xshashlik (similarity): keyingi holat oldingisi bilan bir xil qonuniyatga ega ekanini ko'rsatadi. Tarjimasi: xuddi shunday, shuningdek.",
+        "ru": "Сходство (similarity): следующий случай подчиняется тому же правилу, что и предыдущий. Перевод: точно так же, подобным образом."
+      },
+      "example": "Cotton absorbs moisture from the skin; likewise, linen keeps the body cool in summer."
+    },
+    {
+      "id": "specifically",
+      "front": { "en": "specifically", "uz": "specifically", "ru": "specifically" },
+      "back": {
+        "en": "Example/clarification: narrows a general statement to a precise detail.",
+        "uz": "Misol, aniqlashtirish (example): umumiy fikrni aniq tafsilotgacha toraytiradi. Tarjimasi: aniqrog'i, xususan.",
+        "ru": "Пример, уточнение (example): сужает общее утверждение до точной детали. Перевод: а именно, в частности."
+      },
+      "example": "The study focused on young readers; specifically, it tracked children between the ages of eight and ten."
+    },
+    {
+      "id": "nonetheless",
+      "front": { "en": "nonetheless", "uz": "nonetheless", "ru": "nonetheless" },
+      "back": {
+        "en": "Concession: the next idea holds true in spite of the problem just mentioned.",
+        "uz": "Yon berish (concession): aytilgan muammoga qaramay keyingi fikr to'g'ri bo'lib qoladi. Tarjimasi: shunday bo'lsa-da, baribir.",
+        "ru": "Уступка (concession): следующая мысль верна, несмотря на только что названную проблему. Перевод: тем не менее, всё же."
+      },
+      "example": "The trail was steep and muddy; nonetheless, the whole group reached the summit before noon."
+    },
+    {
+      "id": "in-addition",
+      "front": { "en": "in addition", "uz": "in addition", "ru": "in addition" },
+      "back": {
+        "en": "Addition: adds another related fact or reason to the list.",
+        "uz": "Qo'shimcha (addition): ro'yxatga yana bir bog'liq fakt yoki sabab qo'shadi. Tarjimasi: bunga qo'shimcha ravishda, shuningdek.",
+        "ru": "Добавление (addition): добавляет ещё один связанный факт или причину. Перевод: кроме того, вдобавок."
+      },
+      "example": "The program teaches coding; in addition, it helps students practice public speaking."
+    },
+    {
+      "id": "as-a-result",
+      "front": { "en": "as a result", "uz": "as a result", "ru": "as a result" },
+      "back": {
+        "en": "Cause/effect: introduces the effect produced by the cause just described.",
+        "uz": "Sabab-oqibat (cause/effect): yuqorida aytilgan sabab keltirib chiqargan natijani kiritadi. Tarjimasi: natijada.",
+        "ru": "Причина и следствие (cause/effect): вводит результат только что описанной причины. Перевод: в результате."
+      },
+      "example": "The town planted thousands of trees along its streets; as a result, summer temperatures dropped slightly."
+    },
+    {
+      "id": "by-contrast",
+      "front": { "en": "by contrast", "uz": "by contrast", "ru": "by contrast" },
+      "back": {
+        "en": "Contrast: compares two things and highlights how they differ; same job as \"in contrast.\"",
+        "uz": "Zidlik (contrast): ikki narsani solishtirib, farqini ta'kidlaydi; \"in contrast\" bilan bir xil vazifa. Tarjimasi: aksincha, bundan farqli ravishda.",
+        "ru": "Противопоставление (contrast): сравнивает две вещи и подчёркивает различие; то же, что \"in contrast\". Перевод: напротив, для сравнения."
+      },
+      "example": "The first novel moves slowly through a single summer; by contrast, the sequel races across twenty years."
+    },
+    {
+      "id": "that-is",
+      "front": { "en": "that is", "uz": "that is", "ru": "that is" },
+      "back": {
+        "en": "Clarification (restatement): explains the previous idea again in clearer or simpler words.",
+        "uz": "Aniqlashtirish (clarification): oldingi fikrni aniqroq yoki soddaroq so'zlar bilan qayta aytadi. Tarjimasi: ya'ni.",
+        "ru": "Уточнение (clarification): пересказывает предыдущую мысль яснее или проще. Перевод: то есть."
+      },
+      "example": "The species is nocturnal; that is, it is active mainly at night."
+    },
+    {
+      "id": "still",
+      "front": { "en": "still", "uz": "still", "ru": "still" },
+      "back": {
+        "en": "Concession: even after accepting the previous point, the next idea remains true.",
+        "uz": "Yon berish (concession): oldingi fikr qabul qilingandan keyin ham keyingi fikr o'z kuchida qoladi. Tarjimasi: baribir, shunday bo'lsa ham.",
+        "ru": "Уступка (concession): даже если принять предыдущее, следующая мысль остаётся верной. Перевод: всё же, всё равно."
+      },
+      "example": "The old map contains several errors. Still, historians value it as a record of early trade routes."
+    },
+    {
+      "id": "accordingly",
+      "front": { "en": "accordingly", "uz": "accordingly", "ru": "accordingly" },
+      "back": {
+        "en": "Cause/effect: shows an action taken in response to the situation just described.",
+        "uz": "Sabab-oqibat (cause/effect): tasvirlangan vaziyatga javoban qilingan harakatni bildiradi. Tarjimasi: shunga ko'ra, shunga muvofiq.",
+        "ru": "Причина и следствие (cause/effect): показывает действие в ответ на описанную ситуацию. Перевод: соответственно, поэтому."
+      },
+      "example": "Visitors complained that the signs were hard to read; accordingly, the park replaced them with larger ones."
+    },
+    {
+      "id": "subsequently",
+      "front": { "en": "subsequently", "uz": "subsequently", "ru": "subsequently" },
+      "back": {
+        "en": "Sequence: shows that an event happened later, after the one just described.",
+        "uz": "Ketma-ketlik (sequence): voqea aytilganidan keyinroq sodir bo'lganini bildiradi. Tarjimasi: keyinchalik, so'ngra.",
+        "ru": "Последовательность (sequence): событие произошло позже описанного. Перевод: впоследствии, затем."
+      },
+      "example": "The inventor first built the device for her own kitchen; subsequently, she sold the design to a manufacturer."
+    }
+  ]
+}

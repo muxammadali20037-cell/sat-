@@ -19,6 +19,7 @@ import { diagnosticQuestionCount } from '@/features/diagnostic/compose'
 import { secondsUntil } from '@/features/diagnostic/clock'
 import { domainsInScope, finalizeExpiredDiagnostics, loadDiagnosticResults, publishedCountsByDomain } from '@/features/diagnostic/server'
 import { StartDiagnosticButton } from '@/components/diagnostic/start-diagnostic-button'
+import { intlLocale } from '@/features/dashboard/format'
 
 export const metadata: Metadata = { title: 'Diagnostic' }
 
@@ -67,7 +68,7 @@ export default async function DiagnosticPage() {
   const latest = previous.items[0]
   const latestLevels = latest ? await loadDiagnosticResults(admin, profile.id, latest.id) : []
   const enabled = ent.features.diagnostic.enabled
-  const dateFormat = new Intl.DateTimeFormat(locale === 'uz' ? 'uz-UZ' : 'en-US', { dateStyle: 'medium' })
+  const dateFormat = new Intl.DateTimeFormat(intlLocale(locale), { dateStyle: 'medium' })
 
   return (
     <div className="space-y-8">

@@ -1,5 +1,6 @@
 'use client'
 
+import { isUiLocale } from '@/lib/i18n/config'
 import * as React from 'react'
 import { ArrowLeft } from 'lucide-react'
 import { cn } from '@/lib/utils'
@@ -28,7 +29,7 @@ export function OnboardingWizard({ initial, today, next }: { initial: Initial; t
   const { t, message } = useGoalMessages()
   const locale = useLocale()
   const [step, setStep] = React.useState(0)
-  const [draft, setDraft] = React.useState<OnboardingDraft>({ ...initial, locale: locale === 'uz' ? 'uz' : 'en' })
+  const [draft, setDraft] = React.useState<OnboardingDraft>({ ...initial, locale: (isUiLocale(locale) ? locale : 'en') })
   const [examText, setExamText] = React.useState(initial.examDate ?? '')
   const [undecided, setUndecided] = React.useState(false)
   const [errors, setErrors] = React.useState<Record<string, string>>({})
@@ -105,7 +106,7 @@ export function OnboardingWizard({ initial, today, next }: { initial: Initial; t
     })
   }
 
-  const chooseLocale = (value: 'en' | 'uz') => {
+  const chooseLocale = (value: 'en' | 'uz' | 'ru') => {
     update('locale', value)
     // Apply immediately: the whole wizard re-renders in the chosen language, keeping its state.
     startLocaleTransition(() => setLocaleAction(value))
@@ -169,15 +170,16 @@ export function OnboardingWizard({ initial, today, next }: { initial: Initial; t
           )}
 
           {step === 1 && (
-            <ChoiceCards<'en' | 'uz'>
+            <ChoiceCards<'en' | 'uz' | 'ru'>
               name="onb-locale"
               legend={steps.language.title}
               value={draft.locale}
-              columns={2}
+              columns={3}
               onChange={chooseLocale}
               options={[
                 { value: 'en', title: LOCALE_NAMES.en, body: 'Interface in English' },
                 { value: 'uz', title: LOCALE_NAMES.uz, body: "Interfeys o'zbek tilida" },
+                { value: 'ru', title: LOCALE_NAMES.ru, body: 'Интерфейс на русском' },
               ]}
             />
           )}

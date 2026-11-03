@@ -82,7 +82,9 @@ Fayllar:
 - `src/features/payments/*`, `src/features/plans/*`;
 - `src/config/navigation.ts`.
 
-Migratsiya: **0023** (learning extras) va **0018** ning `country_configs` qismi.
+Migratsiya: **0018** (`20261103001800_learning_extras.sql`: `mistakes` mashq rejimi, `flashcard_reviews`, `profiles.country_code`). Mamlakat qoidalari kodda (`src/config/countries.ts`), alohida jadval kerak bo'lmadi.
+
+**Holat (3-noyabr):** bajarildi. Admin panel tarjimasi alohida qadam sifatida qoldi (hali faqat inglizcha).
 
 ### PHASE 3: Ustoz workspace'lari, Classroom asosi (taxminan 2–3 hafta)
 
@@ -116,7 +118,7 @@ Fayllar:
 - `src/lib/auth/session.ts` (workspace konteksti);
 - `src/lib/audit.ts`.
 
-Migratsiya: **0018** (workspaces, a'zolar, takliflar, `profiles.country_code`), **0019** (classroom), **0022** (assignments), `audit_logs.workspace_id`.
+Migratsiya: **0019** (workspaces, a'zolar, takliflar), **0020** (classroom), **0023** (assignments), `audit_logs.workspace_id`.
 
 Testlar:
 - har bir jadval uchun 4 operatsiya;
@@ -168,7 +170,7 @@ Fayllar:
 - `next.config.ts` (CSP: LiveKit `wss://`, sync server `wss://`);
 - `src/lib/env.ts` (LiveKit va sync server sozlamalari, server-only).
 
-Migratsiya: **0020** (jadval, sessiyalar, davomat, chat, so'rovnoma, yozuv), **0021** (doska).
+Migratsiya: **0021** (jadval, sessiyalar, davomat, chat, so'rovnoma, yozuv), **0022** (doska).
 
 Yangi bog'liqliklar:
 - `livekit-server-sdk`, `livekit-client`, `@livekit/components-react`;
@@ -186,7 +188,7 @@ Yangi bog'liqliklar:
   - shaxsiy AI tavsiyalari.
 - Bildirishnomalar: dars eslatmasi (ilova ichida va Telegram bot orqali, foydalanuvchi rozi bo'lsa).
 
-Migratsiya: **0024** (workspace billing) va `0023` ning leaderboard qismi.
+Migratsiya: **0024** (workspace billing) va guruh leaderboard'i.
 
 ### PHASE 6: Dizayn tizimi va sifat
 
@@ -228,13 +230,13 @@ Migratsiya: **0025+**.
 
 | # | Mazmun |
 |---|---|
-| 0018 | Workspaces, members, invitations, `country_configs`, `profiles.country_code`, `audit_logs.workspace_id` |
-| 0019 | `ws_courses`, `groups`, `group_members`, `materials`, `progress_sharing`, `workspace-files` bucket |
-| 0020 | `live_sessions`, recurrences, guests, participants, `attendance`, `live_events`, `chat_messages`, polls, `recordings`, consents, `webhook_events`, `usage_counters` |
-| 0021 | `whiteboards`, snapshots, assets |
-| 0022 | `assignments`, `assignment_questions`, `submissions`, `submission_files` |
-| 0023 | Flashcards, `mistake_entries`, `daily_missions`, `weekly_goals`, achievements, leaderboard snapshots |
-| 0024 | Workspace plans, prices, subscriptions; `payments.purpose` kengaytmasi |
+| 0018 | **Yozilgan (PHASE 2):** `mistakes` mashq rejimi, `flashcard_reviews`, `profiles.country_code` |
+| 0019 | Workspaces, members, invitations, `audit_logs.workspace_id` |
+| 0020 | `ws_courses`, `groups`, `group_members`, `materials`, `progress_sharing`, `workspace-files` bucket |
+| 0021 | `live_sessions`, recurrences, guests, participants, `attendance`, `live_events`, `chat_messages`, polls, `recordings`, consents, `webhook_events`, `usage_counters` |
+| 0022 | `whiteboards`, snapshots, assets |
+| 0023 | `assignments`, `assignment_questions`, `submissions`, `submission_files` |
+| 0024 | Workspace plans, prices, subscriptions; `payments.purpose` kengaytmasi; guruh leaderboard'i |
 | 0025+ | Marketplace |
 
 Mavjud migratsiya: **0015** (qo'llanmagan).

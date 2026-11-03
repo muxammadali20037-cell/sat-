@@ -13,6 +13,7 @@ import { defineDict } from '@/lib/i18n/dict'
 const dict = defineDict({
   en: { password_updated: 'Your password has been updated.' },
   uz: { password_updated: 'Parolingiz yangilandi.' },
+  ru: { password_updated: 'Ваш пароль обновлён.' },
 })
 
 export function FlashToast() {

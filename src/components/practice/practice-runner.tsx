@@ -50,6 +50,7 @@ export function PracticeRunner({
   initialProgress,
   guideSlugs = {},
   guideLabel,
+  remainingSeconds = null,
 }: {
   attemptId: string
   title: string
@@ -61,6 +62,8 @@ export function PracticeRunner({
   /** skillId → study-guide slug, for the "guide in Uzbek" link after answering. */
   guideSlugs?: Record<string, string>
   guideLabel?: string
+  /** Timed drills: seconds left when the page was rendered (from the server deadline). */
+  remainingSeconds?: number | null
 }) {
   const t = useDict(practiceDict)
   const router = useRouter()
@@ -97,6 +100,30 @@ export function PracticeRunner({
     return () => window.clearInterval(id)
   }, [])
   const elapsedSeconds = current ? (elapsed[current.id] ?? 0) : 0
+
+  // Timed drill: count down from the server's remaining time; the server enforces the deadline.
+  const [deadline] = React.useState(() => (remainingSeconds === null ? null : Date.now() + remainingSeconds * 1000))
+  const [timeLeft, setTimeLeft] = React.useState<number | null>(remainingSeconds)
+  const timeUpHandled = React.useRef(false)
+  const onTimeUp = React.useEffectEvent(() => {
+    if (timeUpHandled.current) return
+    timeUpHandled.current = true
+    toast.info(t.runner.timeUp)
+    void apiFetch('/api/practice/finish', { method: 'POST', body: { attemptId } })
+      .catch(() => undefined)
+      .finally(() => router.replace(`/dashboard/results/${attemptId}`))
+  })
+  React.useEffect(() => {
+    if (deadline === null) return
+    const tick = () => {
+      const left = Math.max(0, Math.ceil((deadline - Date.now()) / 1000))
+      setTimeLeft(left)
+      if (left === 0) onTimeUp()
+    }
+    tick()
+    const id = window.setInterval(tick, 1000)
+    return () => window.clearInterval(id)
+  }, [deadline])
 
   const draft: Draft = (current && drafts[current.id]) || { selectedOptionId: null, responseText: '' }
   const setDraft = (patch: Partial<Draft>) => {
@@ -150,6 +177,10 @@ export function PracticeRunner({
         const details = errorDetails<{ used: number; limit: number }>(err)
         if ((err as ApiClientError).code === 'PLAN_REQUIRED') setPlanRequired(true)
         else setLimit({ used: details.used ?? 0, limit: details.limit ?? 0 })
+      } else if (err instanceof ApiClientError && err.code === 'TIME_EXPIRED') {
+        timeUpHandled.current = true
+        toast.info(t.runner.timeUp)
+        router.replace(`/dashboard/results/${attemptId}`)
       } else if (err instanceof ApiClientError && err.code === 'CONFLICT' && (err.details as { reason?: string } | undefined)?.reason === 'session_finished') {
         router.replace(`/dashboard/results/${attemptId}`)
       } else {
@@ -227,9 +258,20 @@ export function PracticeRunner({
               {title}
               {difficultyLabel && <span className="text-muted-foreground"> · {difficultyLabel}</span>}
             </p>
-            <p className="truncate text-xs text-muted-foreground tabular">
-              {format(t.runner.questionsCount, { n: total })} · {format(t.runner.answeredCount, { n: progress.answeredCount })}
-            </p>
+            {timeLeft !== null ? (
+              <p
+                role="timer"
+                aria-label={t.runner.timeLeft}
+                className={cn('flex items-center justify-center gap-1 text-sm font-semibold tabular', timeLeft <= 60 ? 'text-destructive' : 'text-foreground')}
+              >
+                <Clock className="size-3.5" aria-hidden />
+                {formatClock(timeLeft)}
+              </p>
+            ) : (
+              <p className="truncate text-xs text-muted-foreground tabular">
+                {format(t.runner.questionsCount, { n: total })} · {format(t.runner.answeredCount, { n: progress.answeredCount })}
+              </p>
+            )}
           </div>
           <div className="flex items-center justify-end gap-1">
             {sessionHasMath && <CalculatorToggleButton state={calculator} />}

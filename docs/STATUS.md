@@ -1,6 +1,6 @@
 # SAT MASTER — Build status and phase report
 
-_Last updated: 3 November 2026 (SAT MASTER 2.0, PHASE 1: dashboard and limiter)_
+_Last updated: 3 November 2026 (SAT MASTER 2.0, PHASE 2: learning extras and Russian)_
 
 The codebase covers phases 1–8 of [DEVELOPMENT_ROADMAP.md](DEVELOPMENT_ROADMAP.md). Phase 9 (deployment) is partly done: a Supabase project exists, and the steps that need the owner's accounts or credentials are listed under "Launch checklist" below.
 
@@ -94,6 +94,45 @@ The flows ran as a real user against real auth, PostgREST and RLS. AI used the l
   - Both checks now run inside SQL functions under a per-student lock (migration 0015). Parallel-connection tests fail without the lock and pass with it.
 - **Admin lists:** question excerpts showed raw LaTeX (`\dfrac{…}`) and escaped prices as `\12`. They now use the same plain-text rendering as student pages.
 - **Pack import (caught before release):** the first version recognised already-imported questions by stem alone. Many Reading and Writing questions share a stem, so a retry after a partial import could have skipped real questions. It now matches passage and stem.
+
+### SAT MASTER 2.0, PHASE 2 (3 Nov)
+
+- **Mistake notebook** (`/dashboard/mistakes`):
+  - every question whose latest scored answer is wrong, grouped by skill and filterable by subject;
+  - a question leaves the list by itself once it is answered correctly;
+  - a new practice mode, `mistakes`, practises the most-missed first;
+  - questions of a running timed test stay hidden.
+- **Timed drills:**
+  - an option in the practice builder;
+  - the server sets a deadline at Digital SAT pace (Math 95 s and Reading and Writing 71 s per question);
+  - the runner shows a countdown;
+  - an answer after the deadline (+5 s grace) is refused and the drill is submitted.
+- **Flashcards** (`/dashboard/flashcards`):
+  - four original decks with 119 cards in en/uz/ru: Math formulas (33), transitions (24), grammar rules (22), academic vocabulary (40);
+  - spaced repetition (simplified SM-2), scheduled by the server;
+  - 20 new cards a day; flashcard time counts as study time;
+  - the cards live in `content/flashcards/*.json`; students' review state lives in `flashcard_reviews`.
+  - The Math formulas and grammar rules were checked by hand.
+- **Achievements:** 10 badges on the dashboard, all computed from real records on each load.
+- **Russian:**
+  - every student page, public page and email-free flow, plus the Telegram bot and Mini App;
+  - `ru` is now required by the dictionary type, so an untranslated key fails the build;
+  - plurals use CLDR one/few/many;
+  - a dictionary-merge bug that would have turned translated lists into objects was fixed before release;
+  - question explanations fall back to English, and the 40 study guides stay Uzbek-only.
+  - Still English-only: the admin panel.
+- **Country** (Settings → Profile):
+  - UZ → UZS with Click and Payme;
+  - other countries → USD with Stripe;
+  - countries where Stripe cannot take payments → no checkout;
+  - checkout also checks this on the server;
+  - new profiles in Tashkent or Samarkand time default to UZ.
+- **Migration 0018** (`20261103001800_learning_extras.sql`) adds the `mistakes` mode, `flashcard_reviews` and `profiles.country_code`. It is **not yet applied to the hosted project**, and this code must not be deployed before it is.
+- **Verified:**
+  - 542 unit tests (18 new);
+  - 84 DB tests (5 new: SELECT, INSERT, UPDATE and DELETE on `flashcard_reviews` separately, country self-update, practice mode);
+  - lint, typecheck and production build;
+  - 30 Playwright checks in Russian: the notebook and practice from mistakes (every question really is an open mistake); a drill expired on the server refusing a late answer; flashcard reviews saved with the right interval; country saved and USD prices shown; 5 student pages at 390 px; 9 public pages in Russian with no overflow; no page errors.
 
 ### SAT MASTER 2.0, PHASE 1 (3 Nov)
 

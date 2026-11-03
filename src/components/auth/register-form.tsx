@@ -1,5 +1,6 @@
 'use client'
 
+import { isUiLocale } from '@/lib/i18n/config'
 import * as React from 'react'
 import Link from 'next/link'
 import { Controller, useForm, useWatch } from 'react-hook-form'
@@ -27,14 +28,14 @@ export function RegisterForm({ next, disabled }: { next?: string; disabled?: boo
     formState: { errors },
   } = useForm<SignUpInput>({
     resolver: zodResolver(signUpSchema),
-    defaultValues: { fullName: '', email: '', password: '', acceptTerms: false, locale: locale === 'uz' ? 'uz' : 'en', next },
+    defaultValues: { fullName: '', email: '', password: '', acceptTerms: false, locale: (isUiLocale(locale) ? locale : 'en'), next },
   })
   const password = useWatch({ control, name: 'password' }) ?? ''
 
   const onSubmit = handleSubmit((values) => {
     setFormError(null)
     startTransition(async () => {
-      const result = await signUpAction({ ...values, locale: locale === 'uz' ? 'uz' : 'en', next })
+      const result = await signUpAction({ ...values, locale: (isUiLocale(locale) ? locale : 'en'), next })
       if (!result.ok) {
         applyFieldErrors(setError, result.fieldErrors, ['fullName', 'email', 'password', 'acceptTerms'])
         setFormError(result.error)

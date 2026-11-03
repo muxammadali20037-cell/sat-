@@ -9,6 +9,8 @@ const REASON_TO_KEY: Record<string, keyof PracticeErrors> = {
   set_empty: 'setEmpty',
   nothing_to_retry: 'nothingToRetry',
   no_bookmarks: 'noBookmarks',
+  no_mistakes: 'noMistakes',
+  time_expired: 'timeExpired',
   source_in_progress: 'sourceInProgress',
   session_finished: 'sessionFinished',
   locked_by_test: 'lockedByTest',

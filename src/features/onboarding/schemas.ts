@@ -79,7 +79,7 @@ export const ONBOARDING_STEP_FIELDS = [
 
 export type OnboardingDraft = {
   fullName: string
-  locale: 'en' | 'uz'
+  locale: 'en' | 'uz' | 'ru'
   satLevel: SatLevel | null
   targetScore: number
   examDate: string | null

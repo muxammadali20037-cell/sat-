@@ -1,5 +1,6 @@
 'use client'
 
+import { isUiLocale } from '@/lib/i18n/config'
 import * as React from 'react'
 import Link from 'next/link'
 import { useForm } from 'react-hook-form'
@@ -44,7 +45,19 @@ function FormMessage({ message }: { message: string | null }) {
 
 // Profile ------------------------------------------------------------------------------------------
 
-export function ProfileSettingsForm({ fullName, email, timezone }: { fullName: string; email: string; timezone: string }) {
+export function ProfileSettingsForm({
+  fullName,
+  email,
+  timezone,
+  countryCode,
+  countries,
+}: {
+  fullName: string
+  email: string
+  timezone: string
+  countryCode: string | null
+  countries: Array<{ code: string; name: string }>
+}) {
   const t = useDict(settingsDict)
   const { message } = useGoalMessages()
   const [pending, startTransition] = React.useTransition()
@@ -58,7 +71,11 @@ export function ProfileSettingsForm({ fullName, email, timezone }: { fullName: s
     formState: { errors, isDirty },
   } = useForm<ProfileSectionInput>({
     resolver: zodResolver(profileSectionSchema),
-    defaultValues: { fullName, timezone: (knownZone ? timezone : 'Asia/Tashkent') as ProfileSectionInput['timezone'] },
+    defaultValues: {
+      fullName,
+      timezone: (knownZone ? timezone : 'Asia/Tashkent') as ProfileSectionInput['timezone'],
+      countryCode: (countryCode ?? '') as ProfileSectionInput['countryCode'],
+    },
   })
 
   const onSubmit = handleSubmit((values) => {
@@ -70,7 +87,7 @@ export function ProfileSettingsForm({ fullName, email, timezone }: { fullName: s
         reset(values)
       } else {
         for (const [field, msg] of Object.entries(firstErrors(result))) {
-          if (field === 'fullName' || field === 'timezone') setError(field, { message: msg })
+          if (field === 'fullName' || field === 'timezone' || field === 'countryCode') setError(field, { message: msg })
         }
         setFormError(result.error)
       }
@@ -102,8 +119,22 @@ export function ProfileSettingsForm({ fullName, email, timezone }: { fullName: s
           </NativeSelect>
         )}
       </FormField>
+      <FormField id="settings-country" label={t.profile.country} description={t.profile.countryHint} error={message(errors.countryCode?.message)}>
+        {(aria) => (
+          <NativeSelect {...aria} {...register('countryCode')}>
+            <option value="" disabled>
+              {t.profile.countryChoose}
+            </option>
+            {countries.map((c) => (
+              <option key={c.code} value={c.code}>
+                {c.name}
+              </option>
+            ))}
+          </NativeSelect>
+        )}
+      </FormField>
       <div>
-        <Button type="submit" loading={pending} disabled={!isDirty && knownZone}>
+        <Button type="submit" loading={pending} disabled={!isDirty && knownZone && !!countryCode}>
           {t.profile.save}
         </Button>
       </div>
@@ -199,11 +230,11 @@ export function LanguageSettingsForm() {
   const [pending, startTransition] = React.useTransition()
   return (
     <div aria-busy={pending || undefined}>
-      <ChoiceCards<'en' | 'uz'>
+      <ChoiceCards<'en' | 'uz' | 'ru'>
         name="settings-locale"
         legend={t.language.title}
-        value={locale === 'uz' ? 'uz' : 'en'}
-        columns={2}
+        value={isUiLocale(locale) ? locale : 'en'}
+        columns={3}
         onChange={(value) =>
           startTransition(async () => {
             await setLocaleAction(value)
@@ -213,6 +244,7 @@ export function LanguageSettingsForm() {
         options={[
           { value: 'en', title: LOCALE_NAMES.en, body: 'English interface and explanations' },
           { value: 'uz', title: LOCALE_NAMES.uz, body: "O'zbekcha interfeys va tushuntirishlar" },
+          { value: 'ru', title: LOCALE_NAMES.ru, body: 'Интерфейс на русском; разборы на английском' },
         ]}
       />
     </div>

@@ -13,6 +13,7 @@ import { localDate } from '@/lib/time'
 import { fieldErrorKeys, localizeFieldErrors } from '@/features/auth/schemas'
 import { onboardingNext } from '@/features/auth/errors'
 import { onboardingSchema, type OnboardingInput } from './schemas'
+import { guessCountry } from '@/config/countries'
 
 /**
  * Completes onboarding: validates every answer, updates the student's own profile through the
@@ -24,10 +25,12 @@ export async function saveOnboardingAction(input: OnboardingInput & { next?: str
 
   let userId: string
   let timezone: string
+  let ctxCountry: string | null
   try {
     const ctx = await getApiContext()
     userId = ctx.user.id
     timezone = ctx.profile.timezone
+    ctxCountry = ctx.profile.countryCode
   } catch (err) {
     return { ok: false, error: err instanceof ApiError ? err.message : t.generic }
   }
@@ -50,6 +53,8 @@ export async function saveOnboardingAction(input: OnboardingInput & { next?: str
       daily_study_minutes: v.dailyStudyMinutes,
       preferred_subjects: v.preferredSubjects,
       onboarding_completed_at: new Date().toISOString(),
+      // A first guess from the time zone (Uzbekistan); the student can change it in Settings.
+      ...(ctxCountry === null && guessCountry(timezone) ? { country_code: guessCountry(timezone) } : {}),
     })
     .eq('id', userId)
   if (error) {

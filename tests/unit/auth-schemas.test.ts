@@ -65,8 +65,9 @@ describe('signUpSchema', () => {
     expect(fieldErrorKeys(signUpSchema.safeParse({ ...valid, fullName: ' A ' }).error!).fullName).toEqual(['nameTooShort'])
     expect(fieldErrorKeys(signUpSchema.safeParse({ ...valid, fullName: 'x'.repeat(121) }).error!).fullName).toEqual(['nameTooLong'])
   })
-  it('only accepts UI locales', () => {
-    expect(signUpSchema.safeParse({ ...valid, locale: 'ru' }).success).toBe(false)
+  it('only accepts UI locales (en, uz, ru)', () => {
+    expect(signUpSchema.safeParse({ ...valid, locale: 'ru' }).success).toBe(true)
+    expect(signUpSchema.safeParse({ ...valid, locale: 'de' }).success).toBe(false)
   })
 })
 

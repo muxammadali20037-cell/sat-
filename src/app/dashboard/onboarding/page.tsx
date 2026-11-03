@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { isUiLocale } from '@/lib/i18n/config'
 import { redirect } from 'next/navigation'
 import { LogOut } from 'lucide-react'
 import { Logo } from '@/components/layout/logo'
@@ -48,7 +49,7 @@ export default async function OnboardingPage({ searchParams }: { searchParams: P
           next={next}
           initial={{
             fullName: profile.fullName,
-            locale: profile.locale === 'uz' ? 'uz' : 'en',
+            locale: isUiLocale(profile.locale) ? profile.locale : 'en',
             satLevel: profile.satLevel,
             targetScore: profile.targetScore ?? 1200,
             examDate: profile.examDate && profile.examDate > today ? profile.examDate : null,

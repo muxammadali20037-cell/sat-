@@ -83,4 +83,27 @@ export const LOGIN_COPY = {
     phoneNotOwn: 'Please send only your own number, with the “Share my number” button.',
     phoneNoAccount: 'Sign in to SAT MASTER with Telegram first, then you can share your number.',
   },
+  ru: {
+    loginPrompt:
+      '🔐 Вход на сайт SAT MASTER\n\nКод: {code}\nУстройство: {device}\n\nЕсли код совпадает с кодом на сайте, нажмите «Подтвердить».\nЕсли вы этого не запрашивали, нажмите «Отмена» — возможно, кто-то пытается войти от вашего имени.',
+    linkPrompt:
+      '🔗 Подключить этот Telegram к аккаунту SAT MASTER\n\nКод: {code}\nУстройство: {device}\n\nЕсли код совпадает с кодом на сайте, нажмите «Подтвердить».',
+    unknownDevice: 'неизвестный браузер',
+    confirm: '✅ Подтвердить',
+    cancel: 'Отмена',
+    approved: '✅ Подтверждено. Вернитесь на сайт — страница откроется сама.',
+    approvedShort: 'Подтверждено',
+    denied: 'Отменено. Никто не вошёл.',
+    deniedShort: 'Отменено',
+    expired: 'Ссылка устарела или уже использована. Нажмите «Войти через Telegram» на сайте ещё раз.',
+    expiredShort: 'Ссылка устарела',
+    notYours: 'Этот запрос не ваш',
+    phoneAsk: '📱 Хотите также указать номер телефона? Это необязательно — только чтобы мы могли связаться с вами при необходимости.',
+    phoneShare: '📱 Отправить номер',
+    phoneSkip: 'Не нужно',
+    phoneSkipped: 'Хорошо. Вы можете указать его позже.',
+    phoneSaved: 'Спасибо! Номер сохранён.',
+    phoneNotOwn: 'Пожалуйста, отправьте только свой номер кнопкой «Отправить номер».',
+    phoneNoAccount: 'Сначала войдите в SAT MASTER через Telegram, затем можно указать номер.',
+  },
 } as const

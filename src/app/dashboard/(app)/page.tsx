@@ -13,7 +13,7 @@ import { StatCard } from '@/components/ui/progress'
 import { Card } from '@/components/ui/card'
 import { ExamCountdownCard, MockExamCard, TargetScoreCard } from '@/components/dashboard/cards'
 import { ContinueLearningPanel, RecentResults, RecommendedPractice, SkillExtremes } from '@/components/dashboard/lists'
-import { MasteryMap, MissionCard, RecentMistakes, WeekCard } from '@/components/dashboard/today'
+import { AchievementsCard, MasteryMap, MissionCard, RecentMistakes, WeekCard } from '@/components/dashboard/today'
 import { DashboardTools } from '@/components/dashboard/tools'
 import { NewStudentPanel } from '@/components/dashboard/new-student'
 import { ScoreTrendChart } from '@/components/analytics/score-trend-chart'
@@ -171,6 +171,7 @@ export default async function DashboardPage() {
         <div className="min-w-0 space-y-8">
           <RecommendedPractice t={t} items={data.recommended} />
           <SkillExtremes t={t} strongest={data.strongest} weakest={data.weakest} />
+          <AchievementsCard t={t} items={data.achievements} />
         </div>
       </div>
     </>

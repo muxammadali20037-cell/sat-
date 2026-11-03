@@ -54,6 +54,15 @@ const dict = defineDict({
     show: 'Kalkulyatorni ko‘rsatish',
     hide: 'Kalkulyatorni yashirish',
   },
+  ru: {
+    title: 'Графический калькулятор',
+    loading: 'Загружаем калькулятор…',
+    notConfigured: 'Встроенный калькулятор на этом сайте ещё не настроен.',
+    failed: 'Калькулятор не загрузился. Проверьте подключение и попробуйте снова.',
+    openDesmos: 'Открыть Desmos в новой вкладке',
+    show: 'Показать калькулятор',
+    hide: 'Скрыть калькулятор',
+  },
 })
 
 let scriptPromise: Promise<DesmosApi> | null = null

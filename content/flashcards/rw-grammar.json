@@ -1,0 +1,302 @@
+{
+  "id": "rw-grammar",
+  "subject": "reading_writing",
+  "title": {
+    "en": "Grammar and Punctuation Rules",
+    "uz": "Grammatika va tinish belgilari qoidalari",
+    "ru": "Правила грамматики и пунктуации"
+  },
+  "description": {
+    "en": "The Standard English conventions rules tested in the Reading and Writing section, each with a short correct example.",
+    "uz": "Reading and Writing bo'limida tekshiriladigan Standard English qoidalari, har biri qisqa to'g'ri misol bilan.",
+    "ru": "Правила Standard English, которые проверяются в разделе Reading and Writing, с короткими правильными примерами."
+  },
+  "cards": [
+    {
+      "id": "semicolon-independent-clauses",
+      "front": {
+        "en": "When can a semicolon join two parts of a sentence?",
+        "uz": "Nuqtali vergul (semicolon) gapning ikki qismini qachon bog'lay oladi?",
+        "ru": "Когда точка с запятой (semicolon) может соединить две части предложения?"
+      },
+      "back": {
+        "en": "Only when both sides are independent clauses (each could stand alone as a sentence). Example: \"The lab closed early; the power had failed.\"",
+        "uz": "Faqat ikkala tomon ham mustaqil gap (independent clause) bo'lsa, ya'ni har biri alohida gap bo'la olsa. Misol: \"The lab closed early; the power had failed.\"",
+        "ru": "Только если обе части — независимые предложения (independent clauses), то есть каждая может стоять отдельно. Пример: \"The lab closed early; the power had failed.\""
+      }
+    },
+    {
+      "id": "colon-explanation-list",
+      "front": {
+        "en": "What does a colon introduce?",
+        "uz": "Ikki nuqta (colon) nimani kiritadi?",
+        "ru": "Что вводит двоеточие (colon)?"
+      },
+      "back": {
+        "en": "An explanation, example, or list that expands on the clause before it. Example: \"She had one goal: to finish the race.\"",
+        "uz": "Oldingi gapni kengaytiruvchi izoh, misol yoki ro'yxatni. Misol: \"She had one goal: to finish the race.\"",
+        "ru": "Пояснение, пример или список, раскрывающий предыдущую часть. Пример: \"She had one goal: to finish the race.\""
+      }
+    },
+    {
+      "id": "colon-after-complete-clause",
+      "front": {
+        "en": "What must come before a colon?",
+        "uz": "Ikki nuqtadan (colon) oldin nima bo'lishi shart?",
+        "ru": "Что обязательно должно стоять перед двоеточием (colon)?"
+      },
+      "back": {
+        "en": "A complete independent clause. Wrong: \"The kit includes: a map and a torch.\" Right: \"The kit includes two items: a map and a torch.\"",
+        "uz": "To'liq mustaqil gap. Noto'g'ri: \"The kit includes: a map and a torch.\" To'g'ri: \"The kit includes two items: a map and a torch.\"",
+        "ru": "Полное независимое предложение. Неверно: \"The kit includes: a map and a torch.\" Верно: \"The kit includes two items: a map and a torch.\""
+      }
+    },
+    {
+      "id": "em-dash-pairs",
+      "front": {
+        "en": "How do em dashes work around extra information?",
+        "uz": "Qo'shimcha ma'lumot atrofida uzun tire (em dash) qanday ishlatiladi?",
+        "ru": "Как ставятся длинные тире (em dash) вокруг дополнительной информации?"
+      },
+      "back": {
+        "en": "Use a matching pair: dash...dash (not dash...comma). The sentence must still work without the part inside. Example: \"The lake—once the region's largest—has shrunk.\"",
+        "uz": "Juft bo'lishi kerak: tire...tire (tire...vergul emas). Ichidagi qism olib tashlansa ham gap to'g'ri qolishi kerak. Misol: \"The lake—once the region's largest—has shrunk.\"",
+        "ru": "Нужна пара: тире...тире (не тире...запятая). Без вставки предложение должно оставаться верным. Пример: \"The lake—once the region's largest—has shrunk.\""
+      }
+    },
+    {
+      "id": "comma-splice",
+      "front": {
+        "en": "What is a comma splice, and how do you fix it?",
+        "uz": "Comma splice nima va uni qanday tuzatish mumkin?",
+        "ru": "Что такое comma splice и как его исправить?"
+      },
+      "back": {
+        "en": "Two independent clauses joined by only a comma. Fix with a period, a semicolon, or comma + FANBOYS. Example: \"It rained, so the game was delayed.\"",
+        "uz": "Ikki mustaqil gapni faqat vergul bilan bog'lash xatosi. Nuqta, nuqtali vergul yoki vergul + FANBOYS bilan tuzating. Misol: \"It rained, so the game was delayed.\"",
+        "ru": "Два независимых предложения, соединённые только запятой. Исправьте точкой, точкой с запятой или запятой + FANBOYS. Пример: \"It rained, so the game was delayed.\""
+      }
+    },
+    {
+      "id": "run-on-sentence",
+      "front": {
+        "en": "What is a run-on (fused) sentence?",
+        "uz": "Run-on (qo'shilib ketgan) gap nima?",
+        "ru": "Что такое run-on (слитное) предложение?"
+      },
+      "back": {
+        "en": "Two independent clauses with no punctuation or conjunction between them. Wrong: \"The rain stopped the match continued.\" Right: \"The rain stopped, and the match continued.\"",
+        "uz": "Ikki mustaqil gap orasida hech qanday tinish belgisi yoki bog'lovchi yo'q. Noto'g'ri: \"The rain stopped the match continued.\" To'g'ri: \"The rain stopped, and the match continued.\"",
+        "ru": "Два независимых предложения без знака препинания или союза между ними. Неверно: \"The rain stopped the match continued.\" Верно: \"The rain stopped, and the match continued.\""
+      }
+    },
+    {
+      "id": "comma-fanboys",
+      "front": {
+        "en": "How do you join two independent clauses with a comma correctly?",
+        "uz": "Ikki mustaqil gapni vergul bilan qanday to'g'ri bog'lash mumkin?",
+        "ru": "Как правильно соединить два независимых предложения запятой?"
+      },
+      "back": {
+        "en": "Comma + a FANBOYS conjunction: for, and, nor, but, or, yet, so. Example: \"The path was long, but the view was worth it.\"",
+        "uz": "Vergul + FANBOYS bog'lovchisi: for, and, nor, but, or, yet, so. Misol: \"The path was long, but the view was worth it.\"",
+        "ru": "Запятая + союз FANBOYS: for, and, nor, but, or, yet, so. Пример: \"The path was long, but the view was worth it.\""
+      }
+    },
+    {
+      "id": "nonessential-clause-commas",
+      "front": {
+        "en": "How do you punctuate a nonessential clause?",
+        "uz": "Muhim bo'lmagan (nonessential) qo'shimcha gap qanday ajratiladi?",
+        "ru": "Как выделяется необязательное (nonessential) придаточное?"
+      },
+      "back": {
+        "en": "Set it off with commas on BOTH sides; the sentence must make sense without it. Example: \"My aunt, who lives in Samarkand, bakes bread.\"",
+        "uz": "IKKALA tomondan vergul bilan ajrating; usiz ham gap ma'noli bo'lishi kerak. Misol: \"My aunt, who lives in Samarkand, bakes bread.\"",
+        "ru": "Выделите запятыми с ОБЕИХ сторон; без него предложение должно сохранять смысл. Пример: \"My aunt, who lives in Samarkand, bakes bread.\""
+      }
+    },
+    {
+      "id": "which-vs-that",
+      "front": {
+        "en": "\"Which\" or \"that\": how do you choose?",
+        "uz": "\"Which\" yoki \"that\": qanday tanlanadi?",
+        "ru": "\"Which\" или \"that\": как выбрать?"
+      },
+      "back": {
+        "en": "\"That\" starts an essential clause, with no commas. \"Which\" starts a nonessential clause, set off by commas. Example: \"The car that I fixed runs well. My car, which is red, is old.\"",
+        "uz": "\"That\" zarur (essential) qismni boshlaydi, vergulsiz. \"Which\" qo'shimcha (nonessential) qismni boshlaydi, vergul bilan. Misol: \"The car that I fixed runs well. My car, which is red, is old.\"",
+        "ru": "\"That\" вводит необходимую (essential) часть, без запятых. \"Which\" вводит необязательную часть, с запятыми. Пример: \"The car that I fixed runs well. My car, which is red, is old.\""
+      }
+    },
+    {
+      "id": "agreement-intervening-phrases",
+      "front": {
+        "en": "How do you check subject-verb agreement when a phrase separates them?",
+        "uz": "Ega va kesim orasida ibora bo'lsa, ularning moslashuvini qanday tekshirasiz?",
+        "ru": "Как проверить согласование подлежащего и сказуемого, если между ними стоит фраза?"
+      },
+      "back": {
+        "en": "Cross out the phrase between them and match the verb to the real subject. Example: \"The box of old letters is on the shelf.\" (box is)",
+        "uz": "Oradagi iborani o'chirib, fe'lni haqiqiy egaga moslang. Misol: \"The box of old letters is on the shelf.\" (box is)",
+        "ru": "Мысленно уберите фразу между ними и согласуйте глагол с настоящим подлежащим. Пример: \"The box of old letters is on the shelf.\" (box is)"
+      }
+    },
+    {
+      "id": "collective-nouns",
+      "front": {
+        "en": "Is a collective noun like \"team\" or \"committee\" singular or plural?",
+        "uz": "\"Team\" yoki \"committee\" kabi jamlovchi ot birlikmi yoki ko'plik?",
+        "ru": "Собирательное существительное (\"team\", \"committee\") — единственное или множественное число?"
+      },
+      "back": {
+        "en": "On the SAT, treat it as singular: use a singular verb and \"it/its.\" Example: \"The jury has reached its decision.\"",
+        "uz": "SAT da birlik deb hisoblang: birlikdagi fe'l va \"it/its\" ishlating. Misol: \"The jury has reached its decision.\"",
+        "ru": "На SAT считайте его единственным числом: глагол в ед. числе и \"it/its\". Пример: \"The jury has reached its decision.\""
+      }
+    },
+    {
+      "id": "pronoun-antecedent-agreement",
+      "front": {
+        "en": "What is pronoun-antecedent agreement?",
+        "uz": "Olmosh va u almashtirgan so'z (antecedent) moslashuvi nima?",
+        "ru": "Что такое согласование местоимения с антецедентом?"
+      },
+      "back": {
+        "en": "A pronoun must match the noun it refers to in number and must point to it clearly. Example: \"The museums changed their hours; the library kept its schedule.\"",
+        "uz": "Olmosh o'zi bildirgan otga son jihatidan mos bo'lishi va unga aniq ishora qilishi kerak. Misol: \"The museums changed their hours; the library kept its schedule.\"",
+        "ru": "Местоимение должно совпадать по числу с существительным, которое оно заменяет, и ясно указывать на него. Пример: \"The museums changed their hours; the library kept its schedule.\""
+      }
+    },
+    {
+      "id": "its-vs-it-s",
+      "front": {
+        "en": "\"Its\" or \"it's\"?",
+        "uz": "\"Its\" yoki \"it's\"?",
+        "ru": "\"Its\" или \"it's\"?"
+      },
+      "back": {
+        "en": "\"It's\" = it is / it has. \"Its\" = belonging to it (no apostrophe). Example: \"It's clear that the bird hurt its wing.\"",
+        "uz": "\"It's\" = it is / it has. \"Its\" = unga tegishli (apostrofsiz). Misol: \"It's clear that the bird hurt its wing.\"",
+        "ru": "\"It's\" = it is / it has. \"Its\" = его/её (принадлежность, без апострофа). Пример: \"It's clear that the bird hurt its wing.\""
+      }
+    },
+    {
+      "id": "possessive-apostrophes",
+      "front": {
+        "en": "Where does the apostrophe go in singular and plural possessives?",
+        "uz": "Birlik va ko'plikdagi qaratqich shaklida apostrof qayerga qo'yiladi?",
+        "ru": "Где ставится апостроф в притяжательной форме единственного и множественного числа?"
+      },
+      "back": {
+        "en": "Singular: add 's (the student's desk). Plural ending in s: add only ' (the students' desks). Plural not ending in s: add 's (the children's toys).",
+        "uz": "Birlik: 's qo'shing (the student's desk). s bilan tugaydigan ko'plik: faqat ' (the students' desks). s siz ko'plik: 's (the children's toys).",
+        "ru": "Ед. число: добавьте 's (the student's desk). Мн. число на s: только ' (the students' desks). Мн. число не на s: 's (the children's toys)."
+      }
+    },
+    {
+      "id": "verb-tense-consistency",
+      "front": {
+        "en": "When should the verb tense stay the same?",
+        "uz": "Fe'l zamoni qachon bir xil qolishi kerak?",
+        "ru": "Когда время глагола должно оставаться одинаковым?"
+      },
+      "back": {
+        "en": "Keep the tense that the passage uses unless the time of the action actually changes. Example: \"In 1998, the team built a robot and tested it.\"",
+        "uz": "Matndagi zamonni saqlang, faqat harakat vaqti haqiqatan o'zgarsa, zamonni o'zgartiring. Misol: \"In 1998, the team built a robot and tested it.\"",
+        "ru": "Сохраняйте время, которое использует текст, если только время действия действительно не меняется. Пример: \"In 1998, the team built a robot and tested it.\""
+      }
+    },
+    {
+      "id": "dangling-modifier",
+      "front": {
+        "en": "What is a dangling modifier?",
+        "uz": "Dangling modifier (osilib qolgan aniqlovchi) nima?",
+        "ru": "Что такое dangling modifier (оторванный оборот)?"
+      },
+      "back": {
+        "en": "An opening phrase must describe the noun right after the comma. Wrong: \"Walking home, the rain started.\" Right: \"Walking home, I felt the rain start.\"",
+        "uz": "Boshidagi ibora verguldan keyingi otni tasvirlashi kerak. Noto'g'ri: \"Walking home, the rain started.\" To'g'ri: \"Walking home, I felt the rain start.\"",
+        "ru": "Вводный оборот должен относиться к существительному сразу после запятой. Неверно: \"Walking home, the rain started.\" Верно: \"Walking home, I felt the rain start.\""
+      }
+    },
+    {
+      "id": "no-comma-subject-verb",
+      "front": {
+        "en": "Can a comma separate a subject from its verb?",
+        "uz": "Vergul ega va kesimni ajrata oladimi?",
+        "ru": "Можно ли ставить запятую между подлежащим и сказуемым?"
+      },
+      "back": {
+        "en": "No, not even when the subject is long. Example: \"The students in the back row asked a question.\" (no comma after \"row\")",
+        "uz": "Yo'q, ega uzun bo'lsa ham. Misol: \"The students in the back row asked a question.\" (\"row\" dan keyin vergul yo'q)",
+        "ru": "Нет, даже если подлежащее длинное. Пример: \"The students in the back row asked a question.\" (после \"row\" запятой нет)"
+      }
+    },
+    {
+      "id": "no-comma-verb-object",
+      "front": {
+        "en": "Can a comma separate a verb from its object?",
+        "uz": "Vergul fe'l va uning to'ldiruvchisini ajrata oladimi?",
+        "ru": "Можно ли ставить запятую между глаголом и его дополнением?"
+      },
+      "back": {
+        "en": "No. Nothing should split a verb from what follows it, including a \"that\" clause. Example: \"The report showed that sales rose.\"",
+        "uz": "Yo'q. Fe'lni undan keyingi qismdan, jumladan \"that\" bilan boshlangan gapdan ajratmang. Misol: \"The report showed that sales rose.\"",
+        "ru": "Нет. Глагол нельзя отделять от того, что за ним следует, в том числе от придаточного с \"that\". Пример: \"The report showed that sales rose.\""
+      }
+    },
+    {
+      "id": "appositive-commas",
+      "front": {
+        "en": "How do you punctuate an appositive (a noun phrase that renames a noun)?",
+        "uz": "Appositive (otni boshqacha nomlovchi ibora) qanday ajratiladi?",
+        "ru": "Как выделяется приложение (appositive) — фраза, по-другому называющая существительное?"
+      },
+      "back": {
+        "en": "If it adds extra information, put commas on both sides. Example: \"Zarina, a skilled pianist, performed first.\"",
+        "uz": "Agar u qo'shimcha ma'lumot bersa, ikki tomondan vergul qo'ying. Misol: \"Zarina, a skilled pianist, performed first.\"",
+        "ru": "Если оно добавляет лишь дополнительную информацию, поставьте запятые с обеих сторон. Пример: \"Zarina, a skilled pianist, performed first.\""
+      }
+    },
+    {
+      "id": "restrictive-titles-names",
+      "front": {
+        "en": "When does a name after a title or description take no commas?",
+        "uz": "Unvon yoki tavsifdan keyingi ism qachon vergulsiz yoziladi?",
+        "ru": "Когда имя после должности или описания пишется без запятых?"
+      },
+      "back": {
+        "en": "When the name is essential to identify who is meant. No commas: \"The chemist Marie Curie won two Nobel Prizes.\" Commas: \"My only brother, Aziz, studies law.\"",
+        "uz": "Ism kim nazarda tutilganini aniqlash uchun zarur bo'lsa. Vergulsiz: \"The chemist Marie Curie won two Nobel Prizes.\" Vergul bilan: \"My only brother, Aziz, studies law.\"",
+        "ru": "Когда имя нужно, чтобы понять, о ком речь. Без запятых: \"The chemist Marie Curie won two Nobel Prizes.\" С запятыми: \"My only brother, Aziz, studies law.\""
+      }
+    },
+    {
+      "id": "who-vs-whom",
+      "front": {
+        "en": "\"Who\" or \"whom\"?",
+        "uz": "\"Who\" yoki \"whom\"?",
+        "ru": "\"Who\" или \"whom\"?"
+      },
+      "back": {
+        "en": "\"Who\" is a subject (like he/she); \"whom\" is an object (like him/her), often after a preposition. Example: \"The coach, whom we admire, is the one who trained us.\"",
+        "uz": "\"Who\" — ega (he/she kabi); \"whom\" — to'ldiruvchi (him/her kabi), ko'pincha predlogdan keyin. Misol: \"The coach, whom we admire, is the one who trained us.\"",
+        "ru": "\"Who\" — подлежащее (как he/she); \"whom\" — дополнение (как him/her), часто после предлога. Пример: \"The coach, whom we admire, is the one who trained us.\""
+      }
+    },
+    {
+      "id": "parallel-structure",
+      "front": {
+        "en": "What is parallel structure?",
+        "uz": "Parallel tuzilma (parallel structure) nima?",
+        "ru": "Что такое параллельная структура (parallel structure)?"
+      },
+      "back": {
+        "en": "Items in a list or comparison must have the same grammatical form. Example: \"She enjoys hiking, swimming, and reading.\" (not \"to read\")",
+        "uz": "Ro'yxat yoki taqqoslashdagi qismlar bir xil grammatik shaklda bo'lishi kerak. Misol: \"She enjoys hiking, swimming, and reading.\" (\"to read\" emas)",
+        "ru": "Элементы списка или сравнения должны иметь одинаковую грамматическую форму. Пример: \"She enjoys hiking, swimming, and reading.\" (не \"to read\")"
+      }
+    }
+  ]
+}

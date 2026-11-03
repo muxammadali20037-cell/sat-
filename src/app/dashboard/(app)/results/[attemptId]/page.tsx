@@ -26,6 +26,7 @@ import { ReviewList, type ReviewEntry } from '@/components/results/review-list'
 import { guideSlugsBySkill } from '@/features/guides/server'
 import { createServerSupabase } from '@/lib/supabase/server'
 import { guidesDict } from '@/lib/i18n/dictionaries/guides'
+import { intlLocale } from '@/features/dashboard/format'
 
 export const metadata: Metadata = { title: 'Results' }
 
@@ -49,7 +50,7 @@ export default async function AttemptResultsPage({ params }: { params: Promise<{
 
   const title = isDiagnostic ? t.detail.diagnosticTitle : t.detail.practiceTitle
   const breadcrumb = <Breadcrumb items={[{ label: t.title, href: '/dashboard/results' }, { label: title }]} />
-  const dateFormat = new Intl.DateTimeFormat(locale === 'uz' ? 'uz-UZ' : 'en-US', { dateStyle: 'medium', timeStyle: 'short' })
+  const dateFormat = new Intl.DateTimeFormat(intlLocale(locale), { dateStyle: 'medium', timeStyle: 'short' })
 
   // A running diagnostic reveals nothing until it is finished.
   if (isDiagnostic && attempt.status === 'in_progress') {

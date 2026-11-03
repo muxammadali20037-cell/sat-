@@ -13,12 +13,13 @@ import { EmptyState } from '@/components/ui/states'
 import { UpgradeNotice } from '@/components/subscription/upgrade-notice'
 import { getEntitlements, getUsage } from '@/features/entitlements/server'
 import { listExamsForStudent, type StudentExamListItem } from '@/features/exams/queries'
+import { intlLocale } from '@/features/dashboard/format'
 
 export const metadata: Metadata = { title: 'Mock exams' }
 
 function dateFormatter(locale: string, timeZone: string) {
   try {
-    return new Intl.DateTimeFormat(locale === 'uz' ? 'uz-Latn-UZ' : 'en-US', { dateStyle: 'medium', timeZone })
+    return new Intl.DateTimeFormat(intlLocale(locale), { dateStyle: 'medium', timeZone })
   } catch {
     return new Intl.DateTimeFormat('en-US', { dateStyle: 'medium' })
   }

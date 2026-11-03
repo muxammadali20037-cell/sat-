@@ -26,6 +26,8 @@ export type CurrentProfile = {
   role: Role
   locale: Locale
   timezone: string
+  /** ISO country (pricing and payment methods); null until the student picks one. */
+  countryCode: string | null
   satLevel: 'new' | 'some_prep' | 'experienced' | null
   targetScore: number | null
   examDate: string | null
@@ -44,6 +46,7 @@ export function mapProfile(row: Tables<'profiles'>): CurrentProfile {
     role: isRole(row.role) ? row.role : 'STUDENT',
     locale: isLocale(row.locale) ? row.locale : 'en',
     timezone: row.timezone,
+    countryCode: row.country_code ?? null,
     satLevel: (row.sat_level as CurrentProfile['satLevel']) ?? null,
     targetScore: row.target_score,
     examDate: row.exam_date,

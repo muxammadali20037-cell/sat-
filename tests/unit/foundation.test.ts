@@ -69,10 +69,15 @@ describe('time zones', () => {
 })
 
 describe('i18n dictionaries', () => {
-  const dict = defineDict({ en: { hello: 'Hello, {name}', nested: { a: 'A' } }, uz: { hello: 'Salom, {name}', nested: { a: 'A-uz' } } })
-  it('resolves locales with English fallback for ru', () => {
+  const dict = defineDict({
+    en: { hello: 'Hello, {name}', nested: { a: 'A' } },
+    uz: { hello: 'Salom, {name}', nested: { a: 'A-uz' } },
+    ru: { hello: 'Здравствуйте, {name}', nested: { a: 'A-ru' } },
+  })
+  it('resolves every locale', () => {
     expect(resolveDict(dict, 'uz').hello).toBe('Salom, {name}')
-    expect(resolveDict(dict, 'ru').nested.a).toBe('A')
+    expect(resolveDict(dict, 'ru').nested.a).toBe('A-ru')
+    expect(resolveDict(dict, 'en').hello).toBe('Hello, {name}')
   })
   it('interpolates and pluralizes', () => {
     expect(format('Hello, {name}', { name: 'Aziza' })).toBe('Hello, Aziza')

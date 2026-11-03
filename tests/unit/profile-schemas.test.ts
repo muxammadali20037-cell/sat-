@@ -29,7 +29,11 @@ describe('profileUpdateSchema (PATCH /api/student/profile whitelist)', () => {
     expect(profileUpdateSchema.safeParse({ targetScore: 1605 }).success).toBe(false)
     expect(profileUpdateSchema.safeParse({ dailyStudyMinutes: 700 }).success).toBe(false)
     expect(profileUpdateSchema.safeParse({ timezone: 'Mars/Olympus' }).success).toBe(false)
-    expect(profileUpdateSchema.safeParse({ locale: 'ru' }).success).toBe(false)
+    expect(profileUpdateSchema.safeParse({ locale: 'ru' }).success).toBe(true)
+    expect(profileUpdateSchema.safeParse({ locale: 'de' }).success).toBe(false)
+    expect(profileUpdateSchema.safeParse({ countryCode: 'UZ' }).success).toBe(true)
+    expect(profileUpdateSchema.safeParse({ countryCode: 'uz' }).success).toBe(false)
+    expect(profileUpdateSchema.safeParse({ countryCode: 'XX' }).success).toBe(false)
     expect(profileUpdateSchema.safeParse({ examDate: null }).success).toBe(true)
   })
 })
@@ -64,9 +68,10 @@ describe('toProfileColumns', () => {
 })
 
 describe('settings sections', () => {
-  it('profile section requires a name and a listed time zone', () => {
-    expect(profileSectionSchema.safeParse({ fullName: 'Aziz', timezone: 'Asia/Tashkent' }).success).toBe(true)
-    expect(profileSectionSchema.safeParse({ fullName: 'A', timezone: 'Asia/Tashkent' }).success).toBe(false)
+  it('profile section requires a name, a listed time zone and a listed country', () => {
+    expect(profileSectionSchema.safeParse({ fullName: 'Aziz', timezone: 'Asia/Tashkent', countryCode: 'UZ' }).success).toBe(true)
+    expect(profileSectionSchema.safeParse({ fullName: 'A', timezone: 'Asia/Tashkent', countryCode: 'UZ' }).success).toBe(false)
+    expect(profileSectionSchema.safeParse({ fullName: 'Aziz', timezone: 'Asia/Tashkent' }).success).toBe(false)
   })
   it('goals section validates every field', () => {
     expect(goalsSectionSchema.safeParse({ targetScore: 1200, examDate: null, dailyStudyMinutes: 30, preferredSubjects: ['reading_writing'] }).success).toBe(true)

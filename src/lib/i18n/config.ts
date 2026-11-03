@@ -1,4 +1,4 @@
-export const LOCALES = ['en', 'uz'] as const
+export const LOCALES = ['en', 'uz', 'ru'] as const
 /** Accepted by the database and types; dictionaries are optional until translated. */
 export const ALL_LOCALES = ['en', 'uz', 'ru'] as const
 export type Locale = (typeof ALL_LOCALES)[number]

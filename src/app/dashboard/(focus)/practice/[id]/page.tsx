@@ -15,6 +15,12 @@ import { guidesDict } from '@/lib/i18n/dictionaries/guides'
 
 export const metadata: Metadata = { title: 'Practice session' }
 
+/** Seconds left on a timed drill (null when untimed). Rendered per request, so the clock is read here. */
+function secondsUntil(deadlineAt: string | null): number | null {
+  if (!deadlineAt) return null
+  return Math.max(0, Math.floor((new Date(deadlineAt).getTime() - Date.now()) / 1000))
+}
+
 export default async function PracticeSessionPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params
   if (!isUuid(id)) notFound()
@@ -51,6 +57,7 @@ export default async function PracticeSessionPage({ params }: { params: Promise<
     getDict(guidesDict),
   ])
   const firstOpen = session.items.findIndex((i) => !i.answered)
+  const remainingSeconds = secondsUntil(attempt.deadlineAt)
   return (
     <div className="mx-auto w-full max-w-[1280px] px-4 pb-12 sm:px-6 lg:px-8">
       <PracticeRunner
@@ -62,6 +69,7 @@ export default async function PracticeSessionPage({ params }: { params: Promise<
         initialProgress={{ answeredCount: attempt.answeredCount, correctCount: attempt.correctCount }}
         guideSlugs={guideSlugs}
         guideLabel={tg.guideLink}
+        remainingSeconds={remainingSeconds}
       />
     </div>
   )

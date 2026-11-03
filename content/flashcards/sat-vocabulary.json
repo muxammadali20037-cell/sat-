@@ -1,0 +1,416 @@
+{
+  "id": "sat-vocabulary",
+  "subject": "reading_writing",
+  "title": {
+    "en": "Academic Vocabulary",
+    "uz": "Akademik so'z boyligi",
+    "ru": "Академическая лексика"
+  },
+  "description": {
+    "en": "High-utility academic words that often appear in SAT-style passages and Words in Context questions.",
+    "uz": "SAT uslubidagi matnlarda va Words in Context savollarida tez-tez uchraydigan foydali akademik so'zlar.",
+    "ru": "Полезные академические слова, которые часто встречаются в текстах в стиле SAT и в вопросах Words in Context."
+  },
+  "cards": [
+    {
+      "id": "mitigate",
+      "front": { "en": "mitigate (verb)", "uz": "mitigate (verb)", "ru": "mitigate (verb)" },
+      "back": {
+        "en": "To make something bad less severe or harmful.",
+        "uz": "To make something bad less severe or harmful. Tarjimasi: yumshatmoq, kamaytirmoq.",
+        "ru": "To make something bad less severe or harmful. Перевод: смягчать, ослаблять."
+      },
+      "example": "Planting grass on the slopes helped mitigate the damage from spring floods."
+    },
+    {
+      "id": "undermine",
+      "front": { "en": "undermine (verb)", "uz": "undermine (verb)", "ru": "undermine (verb)" },
+      "back": {
+        "en": "To weaken something gradually, often an argument, effort or authority.",
+        "uz": "To weaken something gradually, often an argument, effort or authority. Tarjimasi: zaiflashtirmoq, putur yetkazmoq.",
+        "ru": "To weaken something gradually, often an argument, effort or authority. Перевод: подрывать, ослаблять."
+      },
+      "example": "A single error in the data could undermine the entire conclusion of the report."
+    },
+    {
+      "id": "corroborate",
+      "front": { "en": "corroborate (verb)", "uz": "corroborate (verb)", "ru": "corroborate (verb)" },
+      "back": {
+        "en": "To confirm a claim by providing additional evidence.",
+        "uz": "To confirm a claim by providing additional evidence. Tarjimasi: (qo'shimcha dalil bilan) tasdiqlamoq.",
+        "ru": "To confirm a claim by providing additional evidence. Перевод: подтверждать (дополнительными данными)."
+      },
+      "example": "Satellite images corroborated the villagers' account of the shrinking glacier."
+    },
+    {
+      "id": "ambiguous",
+      "front": { "en": "ambiguous (adjective)", "uz": "ambiguous (adjective)", "ru": "ambiguous (adjective)" },
+      "back": {
+        "en": "Open to more than one interpretation; not clear.",
+        "uz": "Open to more than one interpretation; not clear. Tarjimasi: noaniq, ikki ma'noli.",
+        "ru": "Open to more than one interpretation; not clear. Перевод: двусмысленный, неоднозначный."
+      },
+      "example": "The ending of the story is ambiguous, so readers still debate whether the hero returned home."
+    },
+    {
+      "id": "substantiate",
+      "front": { "en": "substantiate (verb)", "uz": "substantiate (verb)", "ru": "substantiate (verb)" },
+      "back": {
+        "en": "To support a claim with proof or evidence.",
+        "uz": "To support a claim with proof or evidence. Tarjimasi: asoslamoq, dalillar bilan isbotlamoq.",
+        "ru": "To support a claim with proof or evidence. Перевод: обосновывать, подкреплять доказательствами."
+      },
+      "example": "The historian could not substantiate the legend because no written records survived."
+    },
+    {
+      "id": "plausible",
+      "front": { "en": "plausible (adjective)", "uz": "plausible (adjective)", "ru": "plausible (adjective)" },
+      "back": {
+        "en": "Seeming reasonable or likely to be true.",
+        "uz": "Seeming reasonable or likely to be true. Tarjimasi: ishonarli, haqiqatga yaqin.",
+        "ru": "Seeming reasonable or likely to be true. Перевод: правдоподобный, вероятный."
+      },
+      "example": "A change in water temperature is a plausible reason for the fish leaving the bay."
+    },
+    {
+      "id": "novel",
+      "front": { "en": "novel (adjective)", "uz": "novel (adjective)", "ru": "novel (adjective)" },
+      "back": {
+        "en": "New and original, unlike anything before. (Not the noun meaning \"a long book.\")",
+        "uz": "New and original, unlike anything before. Tarjimasi: yangi, original (\"roman\" degan ot emas).",
+        "ru": "New and original, unlike anything before. Перевод: новый, оригинальный (не существительное \"роман\")."
+      },
+      "example": "The students proposed a novel way to collect rainwater using recycled bottles."
+    },
+    {
+      "id": "arbitrary",
+      "front": { "en": "arbitrary (adjective)", "uz": "arbitrary (adjective)", "ru": "arbitrary (adjective)" },
+      "back": {
+        "en": "Based on chance or personal choice rather than on a reason or system.",
+        "uz": "Based on chance or personal choice rather than on a reason or system. Tarjimasi: o'zboshimcha, asossiz, tasodifiy.",
+        "ru": "Based on chance or personal choice rather than on a reason or system. Перевод: произвольный, необоснованный."
+      },
+      "example": "The rule seemed arbitrary until the manager explained the safety risk behind it."
+    },
+    {
+      "id": "pragmatic",
+      "front": { "en": "pragmatic (adjective)", "uz": "pragmatic (adjective)", "ru": "pragmatic (adjective)" },
+      "back": {
+        "en": "Focused on practical results rather than on theory or ideals.",
+        "uz": "Focused on practical results rather than on theory or ideals. Tarjimasi: amaliy, pragmatik.",
+        "ru": "Focused on practical results rather than on theory or ideals. Перевод: прагматичный, практичный."
+      },
+      "example": "Instead of waiting for a perfect plan, the council took a pragmatic first step and repaired the main road."
+    },
+    {
+      "id": "scrutinize",
+      "front": { "en": "scrutinize (verb)", "uz": "scrutinize (verb)", "ru": "scrutinize (verb)" },
+      "back": {
+        "en": "To examine something very closely and carefully.",
+        "uz": "To examine something very closely and carefully. Tarjimasi: sinchiklab tekshirmoq.",
+        "ru": "To examine something very closely and carefully. Перевод: тщательно изучать, внимательно проверять."
+      },
+      "example": "The editor scrutinized every date in the article before it went to print."
+    },
+    {
+      "id": "advocate",
+      "front": { "en": "advocate (verb)", "uz": "advocate (verb)", "ru": "advocate (verb)" },
+      "back": {
+        "en": "To publicly support or argue for a cause, idea or policy.",
+        "uz": "To publicly support or argue for a cause, idea or policy. Tarjimasi: qo'llab-quvvatlamoq, yoqlab chiqmoq.",
+        "ru": "To publicly support or argue for a cause, idea or policy. Перевод: выступать за, отстаивать."
+      },
+      "example": "Several doctors advocate later school start times so that teenagers can sleep more."
+    },
+    {
+      "id": "discern",
+      "front": { "en": "discern (verb)", "uz": "discern (verb)", "ru": "discern (verb)" },
+      "back": {
+        "en": "To notice or recognize something that is not obvious; to tell things apart.",
+        "uz": "To notice or recognize something that is not obvious; to tell things apart. Tarjimasi: farqlamoq, ilg'ab olmoq.",
+        "ru": "To notice or recognize something that is not obvious; to tell things apart. Перевод: различать, распознавать."
+      },
+      "example": "In the fog, the sailors could barely discern the outline of the lighthouse."
+    },
+    {
+      "id": "constrain",
+      "front": { "en": "constrain (verb)", "uz": "constrain (verb)", "ru": "constrain (verb)" },
+      "back": {
+        "en": "To limit or restrict what someone or something can do.",
+        "uz": "To limit or restrict what someone or something can do. Tarjimasi: cheklamoq.",
+        "ru": "To limit or restrict what someone or something can do. Перевод: ограничивать, сдерживать."
+      },
+      "example": "A small budget constrained the filmmakers, so they shot every scene in one village."
+    },
+    {
+      "id": "empirical",
+      "front": { "en": "empirical (adjective)", "uz": "empirical (adjective)", "ru": "empirical (adjective)" },
+      "back": {
+        "en": "Based on observation or experiment rather than on theory alone.",
+        "uz": "Based on observation or experiment rather than on theory alone. Tarjimasi: empirik, tajribaga asoslangan.",
+        "ru": "Based on observation or experiment rather than on theory alone. Перевод: эмпирический, основанный на опыте."
+      },
+      "example": "The team gathered empirical data by measuring soil moisture every morning for a year."
+    },
+    {
+      "id": "inherent",
+      "front": { "en": "inherent (adjective)", "uz": "inherent (adjective)", "ru": "inherent (adjective)" },
+      "back": {
+        "en": "Existing as a natural, permanent part of something.",
+        "uz": "Existing as a natural, permanent part of something. Tarjimasi: tabiatan xos, ajralmas.",
+        "ru": "Existing as a natural, permanent part of something. Перевод: присущий, неотъемлемый."
+      },
+      "example": "Some risk is inherent in any journey across the mountains in winter."
+    },
+    {
+      "id": "comprehensive",
+      "front": { "en": "comprehensive (adjective)", "uz": "comprehensive (adjective)", "ru": "comprehensive (adjective)" },
+      "back": {
+        "en": "Complete; including all or nearly all parts of something.",
+        "uz": "Complete; including all or nearly all parts of something. Tarjimasi: keng qamrovli, har tomonlama.",
+        "ru": "Complete; including all or nearly all parts of something. Перевод: всесторонний, исчерпывающий."
+      },
+      "example": "The guidebook offers a comprehensive list of the city's markets, parks and museums."
+    },
+    {
+      "id": "contend",
+      "front": { "en": "contend (verb)", "uz": "contend (verb)", "ru": "contend (verb)" },
+      "back": {
+        "en": "To argue or claim that something is true.",
+        "uz": "To argue or claim that something is true. Tarjimasi: da'vo qilmoq, ta'kidlamoq.",
+        "ru": "To argue or claim that something is true. Перевод: утверждать, доказывать."
+      },
+      "example": "Some researchers contend that the ancient wall was built for trade, not defense."
+    },
+    {
+      "id": "deplete",
+      "front": { "en": "deplete (verb)", "uz": "deplete (verb)", "ru": "deplete (verb)" },
+      "back": {
+        "en": "To use up a supply so that little or none is left.",
+        "uz": "To use up a supply so that little or none is left. Tarjimasi: tugatmoq, sarflab bitirmoq.",
+        "ru": "To use up a supply so that little or none is left. Перевод: истощать, исчерпывать."
+      },
+      "example": "Growing the same crop every year can deplete the nutrients in the soil."
+    },
+    {
+      "id": "convey",
+      "front": { "en": "convey (verb)", "uz": "convey (verb)", "ru": "convey (verb)" },
+      "back": {
+        "en": "To communicate an idea, feeling or message; to carry from one place to another.",
+        "uz": "To communicate an idea, feeling or message; to carry from one place to another. Tarjimasi: yetkazmoq, ifodalamoq.",
+        "ru": "To communicate an idea, feeling or message; to carry from one place to another. Перевод: передавать, выражать."
+      },
+      "example": "The poet uses short, sharp lines to convey the speaker's growing anger."
+    },
+    {
+      "id": "diminish",
+      "front": { "en": "diminish (verb)", "uz": "diminish (verb)", "ru": "diminish (verb)" },
+      "back": {
+        "en": "To become or make smaller, weaker or less important.",
+        "uz": "To become or make smaller, weaker or less important. Tarjimasi: kamaymoq, kamaytirmoq, susaymoq.",
+        "ru": "To become or make smaller, weaker or less important. Перевод: уменьшать(ся), ослабевать."
+      },
+      "example": "The noise from the highway diminished as we walked deeper into the forest."
+    },
+    {
+      "id": "foster",
+      "front": { "en": "foster (verb)", "uz": "foster (verb)", "ru": "foster (verb)" },
+      "back": {
+        "en": "To encourage the growth or development of something.",
+        "uz": "To encourage the growth or development of something. Tarjimasi: rivojlantirmoq, rag'batlantirmoq.",
+        "ru": "To encourage the growth or development of something. Перевод: развивать, способствовать, поощрять."
+      },
+      "example": "The school garden fosters teamwork among students from different grades."
+    },
+    {
+      "id": "hinder",
+      "front": { "en": "hinder (verb)", "uz": "hinder (verb)", "ru": "hinder (verb)" },
+      "back": {
+        "en": "To make something slower or more difficult; to get in the way.",
+        "uz": "To make something slower or more difficult; to get in the way. Tarjimasi: to'sqinlik qilmoq, xalal bermoq.",
+        "ru": "To make something slower or more difficult; to get in the way. Перевод: мешать, препятствовать."
+      },
+      "example": "Heavy snow hindered the rescue team's progress up the valley."
+    },
+    {
+      "id": "imply",
+      "front": { "en": "imply (verb)", "uz": "imply (verb)", "ru": "imply (verb)" },
+      "back": {
+        "en": "To suggest something without saying it directly. (The speaker implies; the listener infers.)",
+        "uz": "To suggest something without saying it directly. Tarjimasi: nazarda tutmoq, ishora qilmoq. (Gapiruvchi imply qiladi, tinglovchi infer qiladi.)",
+        "ru": "To suggest something without saying it directly. Перевод: подразумевать, намекать. (Говорящий implies, слушающий infers.)"
+      },
+      "example": "By checking her watch twice, the guide implied that the tour was running late."
+    },
+    {
+      "id": "infer",
+      "front": { "en": "infer (verb)", "uz": "infer (verb)", "ru": "infer (verb)" },
+      "back": {
+        "en": "To reach a conclusion from evidence or clues rather than from direct statements.",
+        "uz": "To reach a conclusion from evidence or clues rather than from direct statements. Tarjimasi: xulosa chiqarmoq.",
+        "ru": "To reach a conclusion from evidence or clues rather than from direct statements. Перевод: делать вывод, заключать."
+      },
+      "example": "From the muddy boots by the door, we inferred that someone had just come in from the field."
+    },
+    {
+      "id": "prevalent",
+      "front": { "en": "prevalent (adjective)", "uz": "prevalent (adjective)", "ru": "prevalent (adjective)" },
+      "back": {
+        "en": "Widespread; common in a particular place or time.",
+        "uz": "Widespread; common in a particular place or time. Tarjimasi: keng tarqalgan.",
+        "ru": "Widespread; common in a particular place or time. Перевод: распространённый, преобладающий."
+      },
+      "example": "Hand-painted tiles were prevalent in the region's buildings during the fifteenth century."
+    },
+    {
+      "id": "refute",
+      "front": { "en": "refute (verb)", "uz": "refute (verb)", "ru": "refute (verb)" },
+      "back": {
+        "en": "To prove that a statement or argument is wrong.",
+        "uz": "To prove that a statement or argument is wrong. Tarjimasi: rad etmoq, (dalil bilan) inkor qilmoq.",
+        "ru": "To prove that a statement or argument is wrong. Перевод: опровергать."
+      },
+      "example": "New measurements refuted the old belief that the lake had no underground source."
+    },
+    {
+      "id": "reconcile",
+      "front": { "en": "reconcile (verb)", "uz": "reconcile (verb)", "ru": "reconcile (verb)" },
+      "back": {
+        "en": "To make two different ideas or facts fit together; to restore friendly relations.",
+        "uz": "To make two different ideas or facts fit together; to restore friendly relations. Tarjimasi: muvofiqlashtirmoq, yarashtirmoq.",
+        "ru": "To make two different ideas or facts fit together; to restore friendly relations. Перевод: согласовывать, примирять."
+      },
+      "example": "The scientist tried to reconcile the lab results with what she had observed in the wild."
+    },
+    {
+      "id": "robust",
+      "front": { "en": "robust (adjective)", "uz": "robust (adjective)", "ru": "robust (adjective)" },
+      "back": {
+        "en": "Strong and reliable; able to hold up under pressure or testing.",
+        "uz": "Strong and reliable; able to hold up under pressure or testing. Tarjimasi: mustahkam, ishonchli.",
+        "ru": "Strong and reliable; able to hold up under pressure or testing. Перевод: надёжный, устойчивый, крепкий."
+      },
+      "example": "The finding proved robust: it appeared again in three separate studies."
+    },
+    {
+      "id": "skeptical",
+      "front": { "en": "skeptical (adjective)", "uz": "skeptical (adjective)", "ru": "skeptical (adjective)" },
+      "back": {
+        "en": "Doubtful; not easily convinced that something is true.",
+        "uz": "Doubtful; not easily convinced that something is true. Tarjimasi: shubha bilan qaraydigan, skeptik.",
+        "ru": "Doubtful; not easily convinced that something is true. Перевод: скептический, сомневающийся."
+      },
+      "example": "Many readers were skeptical of the diary until experts confirmed its age."
+    },
+    {
+      "id": "speculate",
+      "front": { "en": "speculate (verb)", "uz": "speculate (verb)", "ru": "speculate (verb)" },
+      "back": {
+        "en": "To form ideas or guesses without firm evidence.",
+        "uz": "To form ideas or guesses without firm evidence. Tarjimasi: taxmin qilmoq, faraz qilmoq.",
+        "ru": "To form ideas or guesses without firm evidence. Перевод: строить догадки, предполагать."
+      },
+      "example": "Without more fossils, scientists can only speculate about the animal's diet."
+    },
+    {
+      "id": "subtle",
+      "front": { "en": "subtle (adjective)", "uz": "subtle (adjective)", "ru": "subtle (adjective)" },
+      "back": {
+        "en": "Not obvious; small or delicate and therefore hard to notice.",
+        "uz": "Not obvious; small or delicate and therefore hard to notice. Tarjimasi: nozik, deyarli sezilmaydigan.",
+        "ru": "Not obvious; small or delicate and therefore hard to notice. Перевод: тонкий, едва заметный."
+      },
+      "example": "The painter used subtle changes in color to show the passing of the afternoon."
+    },
+    {
+      "id": "tentative",
+      "front": { "en": "tentative (adjective)", "uz": "tentative (adjective)", "ru": "tentative (adjective)" },
+      "back": {
+        "en": "Not certain or final; done with hesitation.",
+        "uz": "Not certain or final; done with hesitation. Tarjimasi: taxminiy, dastlabki, ikkilanib qilingan.",
+        "ru": "Not certain or final; done with hesitation. Перевод: предварительный, неуверенный."
+      },
+      "example": "The committee reached a tentative agreement but planned to vote again next month."
+    },
+    {
+      "id": "viable",
+      "front": { "en": "viable (adjective)", "uz": "viable (adjective)", "ru": "viable (adjective)" },
+      "back": {
+        "en": "Capable of working successfully; practical and realistic.",
+        "uz": "Capable of working successfully; practical and realistic. Tarjimasi: amalga oshirsa bo'ladigan, hayotiy.",
+        "ru": "Capable of working successfully; practical and realistic. Перевод: жизнеспособный, осуществимый."
+      },
+      "example": "Wind power became a viable option for the island once cheaper turbines were available."
+    },
+    {
+      "id": "yield",
+      "front": { "en": "yield (verb)", "uz": "yield (verb)", "ru": "yield (verb)" },
+      "back": {
+        "en": "To produce or provide a result; also, to give way to pressure or to others.",
+        "uz": "To produce or provide a result; also, to give way to pressure or to others. Tarjimasi: natija bermoq, hosil bermoq; yon bermoq.",
+        "ru": "To produce or provide a result; also, to give way to pressure or to others. Перевод: давать (результат, урожай); уступать."
+      },
+      "example": "The second round of interviews yielded far more useful information than the first."
+    },
+    {
+      "id": "anomaly",
+      "front": { "en": "anomaly (noun)", "uz": "anomaly (noun)", "ru": "anomaly (noun)" },
+      "back": {
+        "en": "Something that differs from what is normal or expected.",
+        "uz": "Something that differs from what is normal or expected. Tarjimasi: anomaliya, odatdagidan chetga chiqish.",
+        "ru": "Something that differs from what is normal or expected. Перевод: аномалия, отклонение от нормы."
+      },
+      "example": "One unusually warm week in January was an anomaly in an otherwise cold winter."
+    },
+    {
+      "id": "assert",
+      "front": { "en": "assert (verb)", "uz": "assert (verb)", "ru": "assert (verb)" },
+      "back": {
+        "en": "To state something firmly and confidently.",
+        "uz": "To state something firmly and confidently. Tarjimasi: qat'iy ta'kidlamoq.",
+        "ru": "To state something firmly and confidently. Перевод: утверждать, заявлять."
+      },
+      "example": "In her speech, the author asserted that every child deserves access to books."
+    },
+    {
+      "id": "coherent",
+      "front": { "en": "coherent (adjective)", "uz": "coherent (adjective)", "ru": "coherent (adjective)" },
+      "back": {
+        "en": "Logical and consistent; with parts that fit together clearly.",
+        "uz": "Logical and consistent; with parts that fit together clearly. Tarjimasi: izchil, mantiqiy bog'langan.",
+        "ru": "Logical and consistent; with parts that fit together clearly. Перевод: связный, последовательный."
+      },
+      "example": "After several drafts, the essay finally presented a coherent argument."
+    },
+    {
+      "id": "concede",
+      "front": { "en": "concede (verb)", "uz": "concede (verb)", "ru": "concede (verb)" },
+      "back": {
+        "en": "To admit, often reluctantly, that something is true.",
+        "uz": "To admit, often reluctantly, that something is true. Tarjimasi: (istamay) tan olmoq, yon bermoq.",
+        "ru": "To admit, often reluctantly, that something is true. Перевод: (неохотно) признавать, уступать."
+      },
+      "example": "The critic conceded that the film was beautifully shot, even though he disliked its plot."
+    },
+    {
+      "id": "disparate",
+      "front": { "en": "disparate (adjective)", "uz": "disparate (adjective)", "ru": "disparate (adjective)" },
+      "back": {
+        "en": "Very different from each other; hard to compare.",
+        "uz": "Very different from each other; hard to compare. Tarjimasi: bir-biridan tubdan farq qiladigan.",
+        "ru": "Very different from each other; hard to compare. Перевод: совершенно разный, несопоставимый."
+      },
+      "example": "The festival brought together disparate groups, from farmers to software engineers."
+    },
+    {
+      "id": "elucidate",
+      "front": { "en": "elucidate (verb)", "uz": "elucidate (verb)", "ru": "elucidate (verb)" },
+      "back": {
+        "en": "To make something clear by explaining it.",
+        "uz": "To make something clear by explaining it. Tarjimasi: tushuntirib bermoq, oydinlashtirmoq.",
+        "ru": "To make something clear by explaining it. Перевод: разъяснять, проливать свет."
+      },
+      "example": "The teacher drew a simple diagram to elucidate how the heart pumps blood."
+    }
+  ]
+}

@@ -1,0 +1,445 @@
+{
+  "id": "math-formulas",
+  "subject": "math",
+  "title": {
+    "en": "Key Math Formulas",
+    "uz": "Asosiy matematik formulalar",
+    "ru": "Главные формулы по математике"
+  },
+  "description": {
+    "en": "The formulas and facts the Digital SAT Math section uses most: algebra, quadratics, exponents, data, geometry and trigonometry.",
+    "uz": "Digital SAT matematika bo'limida eng ko'p ishlatiladigan formulalar va faktlar: algebra, kvadrat tenglamalar, darajalar, statistika, geometriya va trigonometriya.",
+    "ru": "Формулы и факты, которые чаще всего нужны в разделе Math на Digital SAT: алгебра, квадратные уравнения, степени, статистика, геометрия и тригонометрия."
+  },
+  "cards": [
+    {
+      "id": "slope",
+      "front": {
+        "en": "Slope of the line through $(x_1, y_1)$ and $(x_2, y_2)$",
+        "uz": "$(x_1, y_1)$ va $(x_2, y_2)$ nuqtalardan o'tuvchi to'g'ri chiziq qiyaligi (slope)",
+        "ru": "Угловой коэффициент (slope) прямой через $(x_1, y_1)$ и $(x_2, y_2)$"
+      },
+      "back": {
+        "en": "$m = \\dfrac{y_2 - y_1}{x_2 - x_1}$. Change in y divided by change in x (\"rise over run\").",
+        "uz": "$m = \\dfrac{y_2 - y_1}{x_2 - x_1}$. y ning o'zgarishi x ning o'zgarishiga bo'linadi.",
+        "ru": "$m = \\dfrac{y_2 - y_1}{x_2 - x_1}$. Изменение y, делённое на изменение x."
+      }
+    },
+    {
+      "id": "slope-intercept-form",
+      "front": {
+        "en": "Slope-intercept form of a line",
+        "uz": "To'g'ri chiziqning slope-intercept ko'rinishi",
+        "ru": "Уравнение прямой в виде slope-intercept"
+      },
+      "back": {
+        "en": "$y = mx + b$: $m$ is the slope, $b$ is the y-intercept (the value of y when $x = 0$).",
+        "uz": "$y = mx + b$: $m$ — qiyalik, $b$ — y o'qini kesish nuqtasi ($x = 0$ bo'lgandagi y qiymati).",
+        "ru": "$y = mx + b$: $m$ — угловой коэффициент, $b$ — точка пересечения с осью y (значение y при $x = 0$)."
+      }
+    },
+    {
+      "id": "point-slope-form",
+      "front": {
+        "en": "Point-slope form of a line",
+        "uz": "To'g'ri chiziqning point-slope ko'rinishi",
+        "ru": "Уравнение прямой в виде point-slope"
+      },
+      "back": {
+        "en": "$y - y_1 = m(x - x_1)$. Use it when you know the slope $m$ and one point $(x_1, y_1)$.",
+        "uz": "$y - y_1 = m(x - x_1)$. Qiyalik $m$ va bitta nuqta $(x_1, y_1)$ ma'lum bo'lganda qo'llang.",
+        "ru": "$y - y_1 = m(x - x_1)$. Используйте, когда известны угловой коэффициент $m$ и одна точка $(x_1, y_1)$."
+      }
+    },
+    {
+      "id": "parallel-perpendicular-slopes",
+      "front": {
+        "en": "Slopes of parallel and perpendicular lines",
+        "uz": "Parallel va perpendikulyar chiziqlar qiyaliklari",
+        "ru": "Угловые коэффициенты параллельных и перпендикулярных прямых"
+      },
+      "back": {
+        "en": "Parallel: equal slopes, $m_1 = m_2$. Perpendicular: negative reciprocals, $m_1 \\cdot m_2 = -1$ (e.g. $2$ and $-\\frac{1}{2}$).",
+        "uz": "Parallel: qiyaliklar teng, $m_1 = m_2$. Perpendikulyar: $m_1 \\cdot m_2 = -1$ (masalan, $2$ va $-\\frac{1}{2}$).",
+        "ru": "Параллельные: коэффициенты равны, $m_1 = m_2$. Перпендикулярные: $m_1 \\cdot m_2 = -1$ (например, $2$ и $-\\frac{1}{2}$)."
+      }
+    },
+    {
+      "id": "linear-system-solutions",
+      "front": {
+        "en": "How many solutions does a system of two linear equations have?",
+        "uz": "Ikki chiziqli tenglama sistemasi nechta yechimga ega bo'ladi?",
+        "ru": "Сколько решений у системы двух линейных уравнений?"
+      },
+      "back": {
+        "en": "Different slopes: exactly one. Same slope, different intercepts: none (parallel). Same slope and intercept: infinitely many (same line).",
+        "uz": "Qiyaliklar har xil: bitta yechim. Qiyalik bir xil, kesishish nuqtasi har xil: yechim yo'q (parallel). Ikkalasi ham bir xil: cheksiz ko'p (bir chiziq).",
+        "ru": "Разные коэффициенты: одно решение. Одинаковый наклон, разные свободные члены: нет решений (параллельны). Всё совпадает: бесконечно много (одна прямая)."
+      }
+    },
+    {
+      "id": "quadratic-formula",
+      "front": {
+        "en": "Quadratic formula for $ax^2 + bx + c = 0$",
+        "uz": "$ax^2 + bx + c = 0$ uchun kvadrat tenglama formulasi",
+        "ru": "Формула корней уравнения $ax^2 + bx + c = 0$"
+      },
+      "back": {
+        "en": "$x = \\dfrac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$. Works for every quadratic, even when it does not factor.",
+        "uz": "$x = \\dfrac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$. Ko'paytuvchilarga ajralmaydigan tenglamalar uchun ham ishlaydi.",
+        "ru": "$x = \\dfrac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$. Работает для любого квадратного уравнения, даже если оно не раскладывается на множители."
+      }
+    },
+    {
+      "id": "discriminant",
+      "front": {
+        "en": "What does the discriminant tell you?",
+        "uz": "Diskriminant nimani ko'rsatadi?",
+        "ru": "Что показывает дискриминант?"
+      },
+      "back": {
+        "en": "$D = b^2 - 4ac$. $D > 0$: two real solutions; $D = 0$: exactly one; $D < 0$: no real solutions (the parabola misses the x-axis).",
+        "uz": "$D = b^2 - 4ac$. $D > 0$: ikkita haqiqiy yechim; $D = 0$: bitta; $D < 0$: haqiqiy yechim yo'q (parabola x o'qini kesmaydi).",
+        "ru": "$D = b^2 - 4ac$. $D > 0$: два действительных корня; $D = 0$: один; $D < 0$: действительных корней нет (парабола не пересекает ось x)."
+      }
+    },
+    {
+      "id": "vertex-form",
+      "front": {
+        "en": "Vertex form of a parabola and how to find the vertex",
+        "uz": "Parabolaning uchi (vertex) ko'rinishi va uchini topish",
+        "ru": "Вершинная форма параболы и как найти вершину"
+      },
+      "back": {
+        "en": "$y = a(x - h)^2 + k$ has vertex $(h, k)$. From $y = ax^2 + bx + c$: $x = -\\dfrac{b}{2a}$. If $a > 0$ it opens up (minimum); if $a < 0$, down (maximum).",
+        "uz": "$y = a(x - h)^2 + k$ uchi $(h, k)$. $y = ax^2 + bx + c$ dan: $x = -\\dfrac{b}{2a}$. $a > 0$ bo'lsa yuqoriga ochiladi (minimum), $a < 0$ bo'lsa pastga (maksimum).",
+        "ru": "У $y = a(x - h)^2 + k$ вершина $(h, k)$. Из $y = ax^2 + bx + c$: $x = -\\dfrac{b}{2a}$. При $a > 0$ ветви вверх (минимум), при $a < 0$ вниз (максимум)."
+      }
+    },
+    {
+      "id": "sum-product-of-roots",
+      "front": {
+        "en": "Sum and product of the roots of $ax^2 + bx + c = 0$",
+        "uz": "$ax^2 + bx + c = 0$ ildizlarining yig'indisi va ko'paytmasi",
+        "ru": "Сумма и произведение корней $ax^2 + bx + c = 0$"
+      },
+      "back": {
+        "en": "Sum $= -\\dfrac{b}{a}$, product $= \\dfrac{c}{a}$. A fast shortcut when you do not need the roots themselves.",
+        "uz": "Yig'indi $= -\\dfrac{b}{a}$, ko'paytma $= \\dfrac{c}{a}$. Ildizlarning o'zi kerak bo'lmaganda tez yo'l.",
+        "ru": "Сумма $= -\\dfrac{b}{a}$, произведение $= \\dfrac{c}{a}$ (теорема Виета). Быстрый способ, если сами корни не нужны."
+      }
+    },
+    {
+      "id": "difference-of-squares",
+      "front": {
+        "en": "Factor a difference of squares: $a^2 - b^2$",
+        "uz": "Kvadratlar ayirmasini ko'paytuvchilarga ajrating: $a^2 - b^2$",
+        "ru": "Разложите разность квадратов: $a^2 - b^2$"
+      },
+      "back": {
+        "en": "$a^2 - b^2 = (a - b)(a + b)$. Example: $x^2 - 49 = (x - 7)(x + 7)$. A sum of squares $a^2 + b^2$ does not factor this way.",
+        "uz": "$a^2 - b^2 = (a - b)(a + b)$. Misol: $x^2 - 49 = (x - 7)(x + 7)$. Kvadratlar yig'indisi $a^2 + b^2$ bunday ajralmaydi.",
+        "ru": "$a^2 - b^2 = (a - b)(a + b)$. Пример: $x^2 - 49 = (x - 7)(x + 7)$. Сумма квадратов $a^2 + b^2$ так не раскладывается."
+      }
+    },
+    {
+      "id": "exponent-rules-basic",
+      "front": {
+        "en": "Exponent rules: product, quotient, power of a power",
+        "uz": "Daraja qoidalari: ko'paytma, bo'linma, darajaning darajasi",
+        "ru": "Свойства степеней: произведение, частное, степень степени"
+      },
+      "back": {
+        "en": "$x^a \\cdot x^b = x^{a+b}$, $\\dfrac{x^a}{x^b} = x^{a-b}$, $(x^a)^b = x^{ab}$, $(xy)^a = x^a y^a$.",
+        "uz": "$x^a \\cdot x^b = x^{a+b}$, $\\dfrac{x^a}{x^b} = x^{a-b}$, $(x^a)^b = x^{ab}$, $(xy)^a = x^a y^a$.",
+        "ru": "$x^a \\cdot x^b = x^{a+b}$, $\\dfrac{x^a}{x^b} = x^{a-b}$, $(x^a)^b = x^{ab}$, $(xy)^a = x^a y^a$."
+      }
+    },
+    {
+      "id": "exponent-rules-zero-negative-fraction",
+      "front": {
+        "en": "Zero, negative and fractional exponents",
+        "uz": "Nol, manfiy va kasr darajalar",
+        "ru": "Нулевая, отрицательная и дробная степени"
+      },
+      "back": {
+        "en": "$x^0 = 1$ and $x^{-n} = \\dfrac{1}{x^n}$ (for $x \\ne 0$); $x^{\\frac{m}{n}} = \\sqrt[n]{x^m}$. Example: $8^{\\frac{2}{3}} = 4$.",
+        "uz": "$x^0 = 1$ va $x^{-n} = \\dfrac{1}{x^n}$ ($x \\ne 0$ da); $x^{\\frac{m}{n}} = \\sqrt[n]{x^m}$. Misol: $8^{\\frac{2}{3}} = 4$.",
+        "ru": "$x^0 = 1$ и $x^{-n} = \\dfrac{1}{x^n}$ (при $x \\ne 0$); $x^{\\frac{m}{n}} = \\sqrt[n]{x^m}$. Пример: $8^{\\frac{2}{3}} = 4$."
+      }
+    },
+    {
+      "id": "exponential-growth-decay",
+      "front": {
+        "en": "Exponential growth and decay model",
+        "uz": "Eksponensial o'sish va kamayish modeli",
+        "ru": "Модель экспоненциального роста и убывания"
+      },
+      "back": {
+        "en": "$y = a(1 \\pm r)^t$: $a$ = starting amount, $r$ = rate as a decimal, $t$ = time. Use $+$ for growth, $-$ for decay. Example: 5% decay gives $0.95^t$.",
+        "uz": "$y = a(1 \\pm r)^t$: $a$ — boshlang'ich miqdor, $r$ — o'nli kasrdagi foiz, $t$ — vaqt. O'sishda $+$, kamayishda $-$. Misol: 5% kamayish $0.95^t$ beradi.",
+        "ru": "$y = a(1 \\pm r)^t$: $a$ — начальное значение, $r$ — ставка в виде десятичной дроби, $t$ — время. Рост: $+$, убывание: $-$. Пример: убывание на 5% даёт $0.95^t$."
+      }
+    },
+    {
+      "id": "percent-change",
+      "front": {
+        "en": "Percent change formula",
+        "uz": "Foiz o'zgarishi formulasi",
+        "ru": "Формула процентного изменения"
+      },
+      "back": {
+        "en": "$\\dfrac{\\text{new} - \\text{old}}{\\text{old}} \\times 100\\%$. Always divide by the ORIGINAL value. Positive = increase, negative = decrease.",
+        "uz": "$\\dfrac{\\text{new} - \\text{old}}{\\text{old}} \\times 100\\%$ (new — yangi, old — eski qiymat). Doim BOSHLANG'ICH qiymatga bo'ling. Musbat — o'sish, manfiy — kamayish.",
+        "ru": "$\\dfrac{\\text{new} - \\text{old}}{\\text{old}} \\times 100\\%$ (new — новое, old — старое значение). Делите всегда на ИСХОДНОЕ значение. Плюс — рост, минус — снижение."
+      }
+    },
+    {
+      "id": "compound-interest",
+      "front": {
+        "en": "Compound interest formula",
+        "uz": "Murakkab foiz (compound interest) formulasi",
+        "ru": "Формула сложных процентов (compound interest)"
+      },
+      "back": {
+        "en": "$A = P\\left(1 + \\dfrac{r}{n}\\right)^{nt}$: $P$ = principal, $r$ = annual rate (decimal), $n$ = times compounded per year, $t$ = years.",
+        "uz": "$A = P\\left(1 + \\dfrac{r}{n}\\right)^{nt}$: $P$ — boshlang'ich summa, $r$ — yillik foiz (o'nli kasr), $n$ — yiliga necha marta hisoblanadi, $t$ — yillar.",
+        "ru": "$A = P\\left(1 + \\dfrac{r}{n}\\right)^{nt}$: $P$ — начальная сумма, $r$ — годовая ставка (дробь), $n$ — число начислений в год, $t$ — годы."
+      }
+    },
+    {
+      "id": "mean-median",
+      "front": {
+        "en": "Mean vs. median",
+        "uz": "O'rtacha qiymat (mean) va mediana (median)",
+        "ru": "Среднее (mean) и медиана (median)"
+      },
+      "back": {
+        "en": "Mean = sum of values ÷ number of values. Median = middle value of the sorted list (average the two middle values if the count is even). Outliers move the mean more than the median.",
+        "uz": "Mean = qiymatlar yig'indisi ÷ ularning soni. Median = tartiblangan ro'yxatning o'rtadagi qiymati (soni juft bo'lsa, ikki o'rtadagisining o'rtachasi). Keskin qiymatlar mean ga ko'proq ta'sir qiladi.",
+        "ru": "Mean = сумма значений ÷ их количество. Median = середина упорядоченного списка (при чётном количестве — среднее двух средних). Выбросы сильнее влияют на mean, чем на median."
+      }
+    },
+    {
+      "id": "probability",
+      "front": {
+        "en": "Basic probability",
+        "uz": "Oddiy ehtimollik",
+        "ru": "Базовая вероятность"
+      },
+      "back": {
+        "en": "$P(A) = \\dfrac{\\text{favorable outcomes}}{\\text{total outcomes}}$, so $0 \\le P(A) \\le 1$. Complement: $P(\\text{not } A) = 1 - P(A)$.",
+        "uz": "$P(A) = \\dfrac{\\text{favorable outcomes}}{\\text{total outcomes}}$ (qulay natijalar / barcha natijalar), demak $0 \\le P(A) \\le 1$. Teskari hodisa: $1 - P(A)$.",
+        "ru": "$P(A) = \\dfrac{\\text{favorable outcomes}}{\\text{total outcomes}}$ (благоприятные / все исходы), поэтому $0 \\le P(A) \\le 1$. Противоположное событие: $1 - P(A)$."
+      }
+    },
+    {
+      "id": "conditional-probability",
+      "front": {
+        "en": "Conditional probability: \"given that\" questions",
+        "uz": "Shartli ehtimollik: \"given that\" savollari",
+        "ru": "Условная вероятность: вопросы с \"given that\""
+      },
+      "back": {
+        "en": "$P(A \\mid B) = \\dfrac{P(A \\text{ and } B)}{P(B)}$. In a two-way table, divide by the total of the given row or column, not by the grand total.",
+        "uz": "$P(A \\mid B) = \\dfrac{P(A \\text{ and } B)}{P(B)}$. Ikki tomonlama jadvalda umumiy jamiga emas, berilgan qator yoki ustun jamiga bo'ling.",
+        "ru": "$P(A \\mid B) = \\dfrac{P(A \\text{ and } B)}{P(B)}$. В таблице сопряжённости делите на итог данной строки или столбца, а не на общий итог."
+      }
+    },
+    {
+      "id": "distance-formula",
+      "front": {
+        "en": "Distance between $(x_1, y_1)$ and $(x_2, y_2)$",
+        "uz": "$(x_1, y_1)$ va $(x_2, y_2)$ orasidagi masofa",
+        "ru": "Расстояние между $(x_1, y_1)$ и $(x_2, y_2)$"
+      },
+      "back": {
+        "en": "$d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$. It is the Pythagorean theorem on the coordinate plane.",
+        "uz": "$d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$. Bu koordinata tekisligidagi Pifagor teoremasi.",
+        "ru": "$d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$. Это теорема Пифагора на координатной плоскости."
+      }
+    },
+    {
+      "id": "midpoint-formula",
+      "front": {
+        "en": "Midpoint of the segment from $(x_1, y_1)$ to $(x_2, y_2)$",
+        "uz": "$(x_1, y_1)$ dan $(x_2, y_2)$ gacha kesmaning o'rtasi",
+        "ru": "Середина отрезка от $(x_1, y_1)$ до $(x_2, y_2)$"
+      },
+      "back": {
+        "en": "$M = \\left(\\dfrac{x_1 + x_2}{2}, \\dfrac{y_1 + y_2}{2}\\right)$. Average the x-values and average the y-values.",
+        "uz": "$M = \\left(\\dfrac{x_1 + x_2}{2}, \\dfrac{y_1 + y_2}{2}\\right)$. x larning va y larning o'rtachasini oling.",
+        "ru": "$M = \\left(\\dfrac{x_1 + x_2}{2}, \\dfrac{y_1 + y_2}{2}\\right)$. Возьмите среднее x и среднее y."
+      }
+    },
+    {
+      "id": "circle-equation",
+      "front": {
+        "en": "Equation of a circle with center $(h, k)$ and radius $r$",
+        "uz": "Markazi $(h, k)$ va radiusi $r$ bo'lgan aylana tenglamasi",
+        "ru": "Уравнение окружности с центром $(h, k)$ и радиусом $r$"
+      },
+      "back": {
+        "en": "$(x - h)^2 + (y - k)^2 = r^2$. Watch the signs: $(x + 2)^2$ means $h = -2$. The right side is $r^2$, not $r$.",
+        "uz": "$(x - h)^2 + (y - k)^2 = r^2$. Ishoraga e'tibor bering: $(x + 2)^2$ da $h = -2$. O'ng tomonda $r$ emas, $r^2$.",
+        "ru": "$(x - h)^2 + (y - k)^2 = r^2$. Следите за знаками: $(x + 2)^2$ значит $h = -2$. Справа стоит $r^2$, а не $r$."
+      }
+    },
+    {
+      "id": "circle-completing-square",
+      "front": {
+        "en": "Find the center and radius of $x^2 + 6x + y^2 - 4y = 12$",
+        "uz": "$x^2 + 6x + y^2 - 4y = 12$ aylananing markazi va radiusini toping",
+        "ru": "Найдите центр и радиус: $x^2 + 6x + y^2 - 4y = 12$"
+      },
+      "back": {
+        "en": "Complete the square: add $(\\frac{b}{2})^2$ for x and for y to both sides. $(x + 3)^2 + (y - 2)^2 = 25$, so center $(-3, 2)$, $r = 5$.",
+        "uz": "To'liq kvadratga keltiring: x va y uchun $(\\frac{b}{2})^2$ ni ikkala tomonga qo'shing. $(x + 3)^2 + (y - 2)^2 = 25$, markaz $(-3, 2)$, $r = 5$.",
+        "ru": "Выделите полный квадрат: прибавьте $(\\frac{b}{2})^2$ для x и для y к обеим частям. $(x + 3)^2 + (y - 2)^2 = 25$, центр $(-3, 2)$, $r = 5$."
+      }
+    },
+    {
+      "id": "arc-length-sector-area",
+      "front": {
+        "en": "Arc length and sector area for a central angle $\\theta$",
+        "uz": "Markaziy burchak $\\theta$ uchun yoy uzunligi va sektor yuzi",
+        "ru": "Длина дуги и площадь сектора с центральным углом $\\theta$"
+      },
+      "back": {
+        "en": "Degrees: arc $= \\dfrac{\\theta}{360} \\cdot 2\\pi r$, sector $= \\dfrac{\\theta}{360} \\cdot \\pi r^2$. Radians: arc $= r\\theta$, sector $= \\frac{1}{2}r^2\\theta$.",
+        "uz": "Gradusda: yoy $= \\dfrac{\\theta}{360} \\cdot 2\\pi r$, sektor $= \\dfrac{\\theta}{360} \\cdot \\pi r^2$. Radianda: yoy $= r\\theta$, sektor $= \\frac{1}{2}r^2\\theta$.",
+        "ru": "В градусах: дуга $= \\dfrac{\\theta}{360} \\cdot 2\\pi r$, сектор $= \\dfrac{\\theta}{360} \\cdot \\pi r^2$. В радианах: дуга $= r\\theta$, сектор $= \\frac{1}{2}r^2\\theta$."
+      }
+    },
+    {
+      "id": "triangle-angle-sum",
+      "front": {
+        "en": "Angle sums in triangles and polygons",
+        "uz": "Uchburchak va ko'pburchak burchaklari yig'indisi",
+        "ru": "Сумма углов треугольника и многоугольника"
+      },
+      "back": {
+        "en": "Triangle: $180^\\circ$. An exterior angle equals the sum of the two remote interior angles. Polygon with $n$ sides: $(n - 2) \\cdot 180^\\circ$.",
+        "uz": "Uchburchak: $180^\\circ$. Tashqi burchak unga qo'shni bo'lmagan ikki ichki burchak yig'indisiga teng. $n$ tomonli ko'pburchak: $(n - 2) \\cdot 180^\\circ$.",
+        "ru": "Треугольник: $180^\\circ$. Внешний угол равен сумме двух внутренних, не смежных с ним. Многоугольник с $n$ сторонами: $(n - 2) \\cdot 180^\\circ$."
+      }
+    },
+    {
+      "id": "similar-triangles",
+      "front": {
+        "en": "Similar triangles: what is proportional?",
+        "uz": "O'xshash uchburchaklar: nimalar proporsional?",
+        "ru": "Подобные треугольники: что пропорционально?"
+      },
+      "back": {
+        "en": "Corresponding angles are equal and corresponding sides share one ratio $k$. Areas scale by $k^2$; volumes of similar solids by $k^3$.",
+        "uz": "Mos burchaklar teng, mos tomonlar nisbati bir xil $k$. Yuzlar $k^2$ marta, o'xshash jismlar hajmi $k^3$ marta o'zgaradi.",
+        "ru": "Соответственные углы равны, стороны относятся с одним коэффициентом $k$. Площади меняются в $k^2$ раз, объёмы подобных тел — в $k^3$ раз."
+      }
+    },
+    {
+      "id": "pythagorean-theorem",
+      "front": {
+        "en": "Pythagorean theorem",
+        "uz": "Pifagor teoremasi",
+        "ru": "Теорема Пифагора"
+      },
+      "back": {
+        "en": "$a^2 + b^2 = c^2$, where $c$ is the hypotenuse (opposite the right angle). Common triples: 3-4-5, 5-12-13, 8-15-17.",
+        "uz": "$a^2 + b^2 = c^2$, bunda $c$ — gipotenuza (to'g'ri burchak qarshisida). Ko'p uchraydigan uchliklar: 3-4-5, 5-12-13, 8-15-17.",
+        "ru": "$a^2 + b^2 = c^2$, где $c$ — гипотенуза (напротив прямого угла). Частые тройки: 3-4-5, 5-12-13, 8-15-17."
+      }
+    },
+    {
+      "id": "triangle-30-60-90",
+      "front": {
+        "en": "Side ratios of a 30-60-90 triangle",
+        "uz": "30-60-90 uchburchak tomonlari nisbati",
+        "ru": "Соотношение сторон треугольника 30-60-90"
+      },
+      "back": {
+        "en": "$x : x\\sqrt{3} : 2x$. The short leg $x$ is opposite $30^\\circ$, $x\\sqrt{3}$ is opposite $60^\\circ$, and the hypotenuse is $2x$.",
+        "uz": "$x : x\\sqrt{3} : 2x$. Qisqa katet $x$ — $30^\\circ$ qarshisida, $x\\sqrt{3}$ — $60^\\circ$ qarshisida, gipotenuza — $2x$.",
+        "ru": "$x : x\\sqrt{3} : 2x$. Короткий катет $x$ лежит напротив $30^\\circ$, $x\\sqrt{3}$ — напротив $60^\\circ$, гипотенуза — $2x$."
+      }
+    },
+    {
+      "id": "triangle-45-45-90",
+      "front": {
+        "en": "Side ratios of a 45-45-90 triangle",
+        "uz": "45-45-90 uchburchak tomonlari nisbati",
+        "ru": "Соотношение сторон треугольника 45-45-90"
+      },
+      "back": {
+        "en": "$x : x : x\\sqrt{2}$. The two legs are equal; the hypotenuse is a leg times $\\sqrt{2}$. A square's diagonal is $s\\sqrt{2}$.",
+        "uz": "$x : x : x\\sqrt{2}$. Ikki katet teng; gipotenuza = katet $\\times \\sqrt{2}$. Kvadrat diagonali $s\\sqrt{2}$.",
+        "ru": "$x : x : x\\sqrt{2}$. Катеты равны; гипотенуза = катет $\\times \\sqrt{2}$. Диагональ квадрата равна $s\\sqrt{2}$."
+      }
+    },
+    {
+      "id": "area-formulas",
+      "front": {
+        "en": "Area formulas: rectangle, triangle, trapezoid, circle",
+        "uz": "Yuz formulalari: to'rtburchak, uchburchak, trapetsiya, doira",
+        "ru": "Формулы площади: прямоугольник, треугольник, трапеция, круг"
+      },
+      "back": {
+        "en": "Rectangle $A = lw$; triangle $A = \\frac{1}{2}bh$; trapezoid $A = \\frac{1}{2}(b_1 + b_2)h$; circle $A = \\pi r^2$, circumference $C = 2\\pi r$.",
+        "uz": "To'g'ri to'rtburchak $A = lw$; uchburchak $A = \\frac{1}{2}bh$; trapetsiya $A = \\frac{1}{2}(b_1 + b_2)h$; doira $A = \\pi r^2$, aylana uzunligi $C = 2\\pi r$.",
+        "ru": "Прямоугольник $A = lw$; треугольник $A = \\frac{1}{2}bh$; трапеция $A = \\frac{1}{2}(b_1 + b_2)h$; круг $A = \\pi r^2$, длина окружности $C = 2\\pi r$."
+      }
+    },
+    {
+      "id": "volume-formulas",
+      "front": {
+        "en": "Volume formulas: box, cylinder, cone, sphere, pyramid",
+        "uz": "Hajm formulalari: parallelepiped, silindr, konus, shar, piramida",
+        "ru": "Формулы объёма: параллелепипед, цилиндр, конус, шар, пирамида"
+      },
+      "back": {
+        "en": "Box $V = lwh$; cylinder $V = \\pi r^2 h$; cone $V = \\frac{1}{3}\\pi r^2 h$; sphere $V = \\frac{4}{3}\\pi r^3$; pyramid $V = \\frac{1}{3}lwh$.",
+        "uz": "Parallelepiped $V = lwh$; silindr $V = \\pi r^2 h$; konus $V = \\frac{1}{3}\\pi r^2 h$; shar $V = \\frac{4}{3}\\pi r^3$; piramida $V = \\frac{1}{3}lwh$.",
+        "ru": "Параллелепипед $V = lwh$; цилиндр $V = \\pi r^2 h$; конус $V = \\frac{1}{3}\\pi r^2 h$; шар $V = \\frac{4}{3}\\pi r^3$; пирамида $V = \\frac{1}{3}lwh$."
+      }
+    },
+    {
+      "id": "soh-cah-toa",
+      "front": {
+        "en": "SOH-CAH-TOA: sine, cosine and tangent in a right triangle",
+        "uz": "SOH-CAH-TOA: to'g'ri burchakli uchburchakda sinus, kosinus, tangens",
+        "ru": "SOH-CAH-TOA: синус, косинус и тангенс в прямоугольном треугольнике"
+      },
+      "back": {
+        "en": "$\\sin\\theta = \\dfrac{\\text{opp}}{\\text{hyp}}$, $\\cos\\theta = \\dfrac{\\text{adj}}{\\text{hyp}}$, $\\tan\\theta = \\dfrac{\\text{opp}}{\\text{adj}}$ (opposite, adjacent, hypotenuse).",
+        "uz": "$\\sin\\theta = \\dfrac{\\text{opp}}{\\text{hyp}}$, $\\cos\\theta = \\dfrac{\\text{adj}}{\\text{hyp}}$, $\\tan\\theta = \\dfrac{\\text{opp}}{\\text{adj}}$ (opp — qarshi katet, adj — yopishgan katet, hyp — gipotenuza).",
+        "ru": "$\\sin\\theta = \\dfrac{\\text{opp}}{\\text{hyp}}$, $\\cos\\theta = \\dfrac{\\text{adj}}{\\text{hyp}}$, $\\tan\\theta = \\dfrac{\\text{opp}}{\\text{adj}}$ (opp — противолежащий катет, adj — прилежащий, hyp — гипотенуза)."
+      }
+    },
+    {
+      "id": "sine-cosine-complement",
+      "front": {
+        "en": "How are the sine and cosine of complementary angles related?",
+        "uz": "To'ldiruvchi burchaklarning sinusi va kosinusi qanday bog'langan?",
+        "ru": "Как связаны синус и косинус дополнительных углов?"
+      },
+      "back": {
+        "en": "$\\sin x^\\circ = \\cos(90^\\circ - x^\\circ)$. If two angles add to $90^\\circ$, the sine of one equals the cosine of the other.",
+        "uz": "$\\sin x^\\circ = \\cos(90^\\circ - x^\\circ)$. Ikki burchak yig'indisi $90^\\circ$ bo'lsa, birining sinusi ikkinchisining kosinusiga teng.",
+        "ru": "$\\sin x^\\circ = \\cos(90^\\circ - x^\\circ)$. Если сумма двух углов $90^\\circ$, синус одного равен косинусу другого."
+      }
+    },
+    {
+      "id": "degrees-radians",
+      "front": {
+        "en": "Convert between degrees and radians",
+        "uz": "Gradus va radian orasida o'tkazish",
+        "ru": "Перевод градусов в радианы и обратно"
+      },
+      "back": {
+        "en": "$180^\\circ = \\pi$ radians. Radians = degrees $\\times \\dfrac{\\pi}{180}$; degrees = radians $\\times \\dfrac{180}{\\pi}$. Example: $60^\\circ = \\dfrac{\\pi}{3}$.",
+        "uz": "$180^\\circ = \\pi$ radian. Radian = gradus $\\times \\dfrac{\\pi}{180}$; gradus = radian $\\times \\dfrac{180}{\\pi}$. Misol: $60^\\circ = \\dfrac{\\pi}{3}$.",
+        "ru": "$180^\\circ = \\pi$ радиан. Радианы = градусы $\\times \\dfrac{\\pi}{180}$; градусы = радианы $\\times \\dfrac{180}{\\pi}$. Пример: $60^\\circ = \\dfrac{\\pi}{3}$."
+      }
+    }
+  ]
+}

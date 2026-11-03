@@ -1,5 +1,5 @@
 /**
- * Mini App entry texts. The language comes from the Telegram client (Uzbek unless it is English),
+ * Mini App entry texts. The language comes from the Telegram client (Uzbek unless it is English or Russian),
  * because a first-time visitor has no SAT MASTER profile yet.
  */
 export const TG_COPY = {
@@ -89,8 +89,56 @@ export const TG_COPY = {
     linkOutside: 'Open SAT MASTER inside Telegram to connect your account.',
     toHome: 'Go to home',
   },
+  ru: {
+    loading: 'Открываем SAT MASTER…',
+    creating: 'Готовим ваш аккаунт…',
+    hello: 'Здравствуйте, {name}!',
+    lead: 'Подготовка к Digital SAT в одном месте.',
+    points: [
+      'Диагностический тест покажет ваши сильные и слабые стороны',
+      'Практика по каждому навыку с разборами на английском и узбекском',
+      'Учебные пособия и ИИ-репетитор — спросите, что непонятно',
+    ],
+    start: 'Начать',
+    haveAccount: 'У меня уже есть аккаунт SAT MASTER',
+    termsBefore: 'Продолжая, вы соглашаетесь с ',
+    terms: 'Условиями использования',
+    and: ' и ',
+    privacy: 'Политикой конфиденциальности',
+    termsAfter: '.',
+    signedOutTitle: 'Вы вышли из аккаунта',
+    signedOutBody: 'Войдите снова через Telegram или подключите другой аккаунт SAT MASTER.',
+    continueTelegram: 'Войти через Telegram',
+    otherAccount: 'Войти в другой аккаунт',
+    outsideTitle: 'Эта страница открывается внутри Telegram',
+    outsideBody: 'Откройте бота SAT MASTER в Telegram или воспользуйтесь сайтом.',
+    toSite: 'Перейти на сайт',
+    webTitle: 'В Telegram Web войти нельзя',
+    webBody: 'Настройки конфиденциальности браузера не позволяют войти внутри Telegram Web. Откройте бота в приложении Telegram на телефоне или компьютере либо откройте сайт в отдельной вкладке.',
+    openSite: 'Открыть сайт',
+    errorTitle: 'Не удалось открыть приложение',
+    retry: 'Попробовать снова',
+    errors: {
+      invalid: 'Telegram не смог подтвердить вашу личность. Закройте приложение и откройте его снова из бота.',
+      notConfigured: 'Приложение в Telegram ещё не настроено. Попробуйте позже.',
+      suspended: 'Этот аккаунт заблокирован. Свяжитесь с нами для помощи.',
+      network: 'Проверьте подключение к интернету и попробуйте снова.',
+      generic: 'Что-то пошло не так. Попробуйте снова.',
+      telegramInUse: 'Этот аккаунт Telegram уже подключён к другому аккаунту SAT MASTER.',
+      otherTelegram: 'Ваш аккаунт подключён к другому аккаунту Telegram. Сначала отключите его в настройках.',
+    },
+    linking: 'Подключаем Telegram…',
+    linkFailedTitle: 'Telegram не подключён',
+    linkOutside: 'Чтобы подключить аккаунт, откройте SAT MASTER внутри Telegram.',
+    toHome: 'На главную',
+  },
 } as const
 
 export type TgCopy = (typeof TG_COPY)[keyof typeof TG_COPY]
 
-export const tgCopyFor = (languageCode: string | undefined) => (languageCode?.toLowerCase().startsWith('en') ? TG_COPY.en : TG_COPY.uz)
+export const tgCopyFor = (languageCode: string | undefined): TgCopy => {
+  const code = languageCode?.toLowerCase() ?? ''
+  if (code.startsWith('en')) return TG_COPY.en
+  if (code.startsWith('ru')) return TG_COPY.ru
+  return TG_COPY.uz
+}

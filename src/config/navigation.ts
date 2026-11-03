@@ -3,7 +3,7 @@ import type { Role } from './roles'
 /** Icon keys map to lucide icons inside components/layout/nav-icons.tsx (keeps config serializable). */
 export type NavIconKey =
   | 'home' | 'courses' | 'practice' | 'diagnostic' | 'exams' | 'results' | 'analytics' | 'plan' | 'tutor'
-  | 'bookmarks' | 'subscription' | 'settings' | 'students' | 'subjects' | 'domains' | 'skills' | 'lessons'
+  | 'bookmarks' | 'subscription' | 'settings' | 'students' | 'subjects' | 'domains' | 'skills' | 'lessons' | 'mistakes' | 'flashcards'
   | 'questions' | 'import' | 'payments' | 'ai' | 'audit' | 'admin' | 'guides' | 'telegram'
 
 export type NavItem = {
@@ -25,6 +25,8 @@ export const STUDENT_NAV: NavSection[] = [
       { href: '/dashboard/courses', labelKey: 'courses', icon: 'courses' },
       { href: '/dashboard/guides', labelKey: 'guides', icon: 'guides' },
       { href: '/dashboard/practice', labelKey: 'practice', icon: 'practice' },
+      { href: '/dashboard/mistakes', labelKey: 'mistakes', icon: 'mistakes' },
+      { href: '/dashboard/flashcards', labelKey: 'flashcards', icon: 'flashcards' },
       { href: '/dashboard/diagnostic', labelKey: 'diagnostic', icon: 'diagnostic' },
       { href: '/dashboard/mock-exams', labelKey: 'mockExams', icon: 'exams' },
       { href: '/dashboard/ai-tutor', labelKey: 'aiTutor', icon: 'tutor' },

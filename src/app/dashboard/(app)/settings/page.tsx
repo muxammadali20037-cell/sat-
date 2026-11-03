@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { COUNTRY_CODES, countryName, guessCountry } from '@/config/countries'
 import { LogOut } from 'lucide-react'
 import { PageHeader } from '@/components/layout/page-header'
 import { Button } from '@/components/ui/button'
@@ -10,7 +11,7 @@ import {
   ProfileSettingsForm,
 } from '@/components/settings/settings-forms'
 import { getCurrentUser, requireUser } from '@/lib/auth/session'
-import { getDict } from '@/lib/i18n/server'
+import { getDict, getLocale } from '@/lib/i18n/server'
 import { settingsDict } from '@/lib/i18n/dictionaries/settings'
 import { localDate } from '@/lib/time'
 import { signOutAction } from '@/features/auth/sign-out'
@@ -47,7 +48,7 @@ function SettingsSection({ id, title, description, children }: { id: string; tit
 export default async function SettingsPage() {
   // The (app) layout already requires a ready student; this page re-checks per the DAL rule.
   const profile = await requireUser({ next: '/dashboard/settings' })
-  const [t, user, db, a] = await Promise.all([getDict(settingsDict), getCurrentUser(), createServerSupabase(), getDict(authDict)])
+  const [t, user, db, a, locale] = await Promise.all([getDict(settingsDict), getCurrentUser(), createServerSupabase(), getDict(authDict), getLocale()])
   const telegram = await myTelegramAccount(db, profile.id)
   // Accounts created in Telegram have a placeholder address and no password.
   const telegramOnly = isTelegramOnlyEmail(profile.email)
@@ -89,6 +90,8 @@ export default async function SettingsPage() {
             telegramOnly ? `Telegram${telegram?.username ? ` (@${telegram.username})` : ''}` : phoneOnly ? formatUzPhone(`+${user!.phone!.replace(/^\+/, '')}`) : profile.email
           }
           timezone={profile.timezone}
+          countryCode={profile.countryCode ?? guessCountry(profile.timezone)}
+          countries={COUNTRY_CODES.map((code) => ({ code, name: countryName(code, locale) }))}
         />
       </SettingsSection>
 

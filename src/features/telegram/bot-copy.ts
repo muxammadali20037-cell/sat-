@@ -1,4 +1,4 @@
-/** Texts the bot shows in Telegram (Uzbek first, English for English-language Telegram clients). */
+/** Texts the bot shows in Telegram: Uzbek by default, English or Russian for clients in those languages. */
 
 export const BOT_COPY = {
   uz: {
@@ -21,6 +21,23 @@ export const BOT_COPY = {
     description:
       'SAT MASTER is a Digital SAT preparation app: a diagnostic test, skill practice, adaptive mock exams, study guides in Uzbek and an AI tutor.\n\nSAT® is a trademark registered by the College Board, which is not affiliated with, and does not endorse, SAT MASTER.',
   },
+  ru: {
+    welcome:
+      'Добро пожаловать в SAT MASTER — подготовку к Digital SAT.\n\nНажмите кнопку ниже, чтобы открыть приложение: диагностика, практика, учебные пособия и ИИ-репетитор.',
+    openButton: 'Открыть SAT MASTER',
+    menuButton: 'Открыть',
+    commandStart: 'Открыть SAT MASTER',
+    shortDescription: 'Подготовка к Digital SAT: диагностика, практика, учебные пособия и ИИ-репетитор.',
+    description:
+      'SAT MASTER — приложение для подготовки к Digital SAT: диагностический тест, тренировка навыков, адаптивные пробные экзамены, пособия на узбекском и ИИ-репетитор.\n\nSAT® — зарегистрированный товарный знак College Board. College Board не связан с SAT MASTER и не поддерживает его.',
+  },
 } as const
 
-export const botLocale = (languageCode: string | undefined | null) => (languageCode?.toLowerCase().startsWith('en') ? 'en' : 'uz')
+export type BotLocale = keyof typeof BOT_COPY
+
+export const botLocale = (languageCode: string | undefined | null): BotLocale => {
+  const code = languageCode?.toLowerCase() ?? ''
+  if (code.startsWith('en')) return 'en'
+  if (code.startsWith('ru')) return 'ru'
+  return 'uz'
+}

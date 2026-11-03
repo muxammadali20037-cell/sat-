@@ -160,26 +160,27 @@ Statuslar:
 | Kurslar va matnli darslar | WORKING | E2E | Bo'sh (0 dars) | — |
 | Video darslar | NOT_CONFIGURED | Kod, Test | Yo'q | Bunny kalitlari yo'q. Supabase Storage'ga MP4 yuklash hosted'da sinalmagan. Marketing sahifasi "Video lessons" deydi: mazmun paydo bo'lmaguncha nomuvofiqlik |
 | Ko'nikma bo'yicha mashq (server baholaydi) | WORKING | E2E, DB test | Bo'sh | To'g'ri javob javobdan oldin brauzerga yuborilmaydi (testlangan) |
-| Muddatli mashqlar (timed drills) | PARTIALLY_WORKING | E2E | Bo'sh | Diagnostika va imtihon server vaqti bilan ishlaydi. Alohida "timed drill" rejimi yo'q |
+| Muddatli mashqlar (timed drills) | WORKING (PHASE 2) | E2E, Test | Bo'sh | Digital SAT tezligida server muddati (Math 95 s, RW 71 s / savol); muddatdan keyingi javob rad etiladi |
 | Adaptiv to'liq sinov imtihoni (4 modul, tanaffus, routing) | WORKING | E2E, DB test | 0 imtihon | Admin imtihon tuzishi kerak |
 | Savol ko'rib chiqish va tushuntirishlar | WORKING | E2E | Bo'sh | EN va UZ tushuntirish |
-| Xatolar daftari (mistake notebook) | PARTIALLY_WORKING | Kod | — | Har urinish uchun "Retry incorrect" bor. Mashq tanlovi avval xato qilinganlarni ustun qo'yadi. Hamma xatolarni yig'adigan alohida sahifa yo'q |
+| Xatolar daftari (mistake notebook) | WORKING (PHASE 2) | E2E, Test | Bo'sh | `/dashboard/mistakes`: ochiq va tuzatilgan xatolar, fan va ko'nikma bo'yicha, "xatolarni mashq qilish" rejimi (`mistakes`) |
 | Saqlanganlar (bookmarks) | WORKING | E2E, RLS test | Bo'sh | — |
-| Flashcards | NOT_IMPLEMENTED | — | — | — |
+| Flashcards | WORKING (PHASE 2) | E2E, Test, DB test | Migratsiya 0018 kerak | 4 ta original to'plam (119 kartochka, en/uz/ru), SM-2 takrorlash jadvali serverda |
 | O'quv reja | WORKING (qoidalar) / NOT_CONFIGURED (AI izoh) | E2E | AI izohsiz ishlaydi | Reja qoidalar asosida tuziladi. AI faqat haftalik maqsad va izoh qo'shadi |
 | Tahlil va natijalar | WORKING | E2E | Bo'sh | — |
 | AI ustoz (chat, hint, explain, generate-practice) | NOT_CONFIGURED | E2E (dev mock), Test | 503 "not configured" | `ANTHROPIC_API_KEY` yo'q. Mock production'da hech qachon yoqilmaydi. Limitlar atomik (0015 qo'llansa) |
 | Desmos grafik kalkulyator | NOT_CONFIGURED | E2E (fallback) | Havola chiqadi | Kalit va Desmos bilan hamkorlik kerak (8-bo'lim) |
 | Uzbekcha qo'llanmalar (40 ta) | WORKING | E2E, Test | 0 chop etilgan | "Import bundled guides" bosilishi kerak |
 | Streak (ketma-ket kunlar) | WORKING | E2E | 0 | `activity_streak` funksiyasi |
-| Kunlik missiya, haftalik maqsad, yutuqlar, leaderboard, sinf challenge'lari | NOT_IMPLEMENTED | — | — | Bugungi o'quv reja vazifalari kunlik missiyaga eng yaqin narsa |
+| Kunlik missiya, haftalik maqsad, yutuqlar | WORKING (PHASE 1–2) | E2E, Test | — | Hammasi real faollikdan hisoblanadi |
+| Leaderboard, sinf challenge'lari | NOT_IMPLEMENTED | — | — | Classroom (PHASE 3–5) bilan birga |
 | Bildirishnomalar (ilova ichida) | WORKING | Kod, E2E | — | Faqat ilova ichida. Email yoki push yo'q, Telegram bot xabarlari login uchun |
 | Obuna va to'lov (Click, Payme, Stripe) | NOT_CONFIGURED | Test, DB test, E2E (test provayder) | Sotib olib bo'lmaydi | Merchant shartnomalari va kalitlar kerak. Imzo va idempotency testlangan |
 | Obuna hayot sikli (cancel, resume, downgrade, grace) | WORKING (test provayder bilan) | E2E, DB test | 0 obuna | — |
 | Uzaytirish eslatmasi (cron) | PARTIALLY_WORKING | Kod | `CRON_SECRET` bor | Production'da ishlagani tekshirilmagan |
 | Aloqa formasi | WORKING | Kod | — | `contact_requests` jadvaliga yoziladi |
 | Til: o'zbek / ingliz | WORKING | E2E | — | O'quvchi qismi `src/lib/i18n/dictionaries` dagi 18 ta lug'at va 3 ta komponent ichidagi lug'at orqali. Bir nechta komponentda hali `locale === 'uz' ? … : …` ko'rinishidagi inline matn bor |
-| Til: rus | NOT_IMPLEMENTED | — | — | Baza va lug'at turi `ru` ni qabul qiladi, lekin 0 tarjima va UI'da tanlanmaydi |
+| Til: rus | WORKING (PHASE 2) | E2E, Test | Yangi deploy bilan | Barcha o'quvchi va ochiq sahifalar, Telegram bot va Mini App. `ru` endi tur darajasida majburiy (tarjimasiz kalit build'ni to'xtatadi). Qo'llanmalar faqat o'zbekcha, tushuntirishlar en/uz (rus tilida inglizchaga qaytadi) |
 | Admin panel tili | PARTIALLY_WORKING | — | — | 30 sahifaning hammasi faqat inglizcha |
 | Hujjatlar: Terms, Privacy | PARTIALLY_WORKING | — | — | EN va UZ qoralama. Yurist ko'rigi kerak (shaxsiy ma'lumotlarni lokalizatsiya qilish qonuni) |
 
@@ -211,7 +212,7 @@ Statuslar:
 | Mehmon ustoz va moderator | NOT_IMPLEMENTED | — |
 | Ustoz obunasi va billing | NOT_IMPLEMENTED | Hozirgi billing faqat o'quvchi tariflari uchun |
 | Marketplace (ustoz profillari, katalog, kurs sotish) | NOT_IMPLEMENTED | Arxitektura tayyorlanadi, keyin quriladi |
-| Mamlakatga qarab narx, valyuta va to'lov provayderi | PARTIALLY_WORKING | `plan_prices` UZS, USD va EUR ni qo'llaydi, provayderlar ro'yxati bor. `profiles` da mamlakat maydoni yo'q, provayder tanlash mamlakatga bog'lanmagan |
+| Mamlakatga qarab narx, valyuta va to'lov provayderi | WORKING (PHASE 2) | `profiles.country_code` (Sozlamalar), UZ → UZS + Click/Payme, boshqalar → USD + Stripe, qo'llab-quvvatlanmaydigan davlatlar → to'lov yo'q. Checkout server tomonida ham tekshiradi |
 | Boshqa fanlar (IELTS va boshqalar) | PARTIALLY_WORKING | `subjects → domains → skills` umumiy. Scoring, imtihon tuzilishi va kontent SAT'ga xos |
 
 ### 6.4 UI_ONLY va BROKEN

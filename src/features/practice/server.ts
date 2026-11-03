@@ -12,8 +12,17 @@ import { recordActivity } from '@/features/activity/server'
 import { countersFromAnswers } from '@/features/results/aggregate'
 import { fetchAllPages, getNumberSetting, isUniqueViolation, loadAnswerHistory, lockedQuestionIds } from './queries'
 import { retryQuestionIds, selectPracticeQuestions, type Candidate, type Difficulty } from './select'
-import { clampTimeSpent, secondsBetween } from './timing'
-import { DEFAULT_MAX_QUESTIONS_PER_SESSION, PRACTICE_HARD_MAX_QUESTIONS, PRACTICE_MIN_QUESTIONS, type PracticeAnswerInput, type StartPracticeInput } from './schemas'
+import { clampTimeSpent, isPastDeadline, secondsBetween } from './timing'
+import {
+  DEFAULT_MAX_QUESTIONS_PER_SESSION,
+  drillSeconds,
+  PRACTICE_HARD_MAX_QUESTIONS,
+  PRACTICE_MIN_QUESTIONS,
+  type PracticeAnswerInput,
+  type StartPracticeInput,
+} from './schemas'
+import { loadScoredAnswers } from '@/features/mistakes/server'
+import { mistakePracticeOrder, splitMistakes } from '@/features/mistakes/notebook'
 
 type Attempt = Tables<'attempts'>
 
@@ -50,7 +59,7 @@ export async function loadOwnedAttempt(admin: Db, userId: string, attemptId: str
 
 type Plan = {
   questionIds: string[]
-  fields: Partial<Pick<Attempt, 'practice_set_id' | 'source_attempt_id' | 'subject_id' | 'domain_id' | 'skill_id' | 'difficulty'>>
+  fields: Partial<Pick<Attempt, 'practice_set_id' | 'source_attempt_id' | 'subject_id' | 'domain_id' | 'skill_id' | 'difficulty' | 'deadline_at'>>
 }
 
 async function remainingQuota(profile: CurrentProfile): Promise<number> {
@@ -118,7 +127,14 @@ async function planCustom(admin: Db, profile: CurrentProfile, input: Extract<Sta
   }
   return {
     questionIds,
-    fields: { subject_id: subject.id, domain_id: domainId, skill_id: skillId, difficulty: input.difficulty },
+    fields: {
+      subject_id: subject.id,
+      domain_id: domainId,
+      skill_id: skillId,
+      difficulty: input.difficulty,
+      // The deadline is set by the server from the actual number of questions; the browser only shows it.
+      deadline_at: input.timed ? new Date(Date.now() + drillSeconds(input.subjectCode, questionIds.length) * 1000).toISOString() : null,
+    },
   }
 }
 
@@ -218,6 +234,41 @@ async function planBookmarks(admin: Db, profile: CurrentProfile, cap: number): P
   return { questionIds, fields: {} }
 }
 
+async function planMistakes(admin: Db, profile: CurrentProfile, input: Extract<StartPracticeInput, { mode: 'mistakes' }>, cap: number): Promise<Plan> {
+  const taxonomy = await getTaxonomy(admin)
+  const subject = input.subjectCode ? taxonomy.subjectByCode.get(input.subjectCode as SubjectCode) : undefined
+  if (input.skillId && !taxonomy.skillById.has(input.skillId)) {
+    throw new ApiError(400, 'VALIDATION_FAILED', 'Unknown skill.', { reason: 'invalid_taxonomy' })
+  }
+  const [answers, locked] = await Promise.all([loadScoredAnswers(admin, profile.id), lockedQuestionIds(admin, profile.id)])
+  const ordered = mistakePracticeOrder(splitMistakes(answers, locked).open)
+
+  // Only published questions in the requested subject/skill can be practised again.
+  const ok = new Map<string, { subject_id: string; skill_id: string }>()
+  for (let i = 0; i < ordered.length; i += 150) {
+    const { data, error } = await admin.from('questions').select('id, subject_id, skill_id').in('id', ordered.slice(i, i + 150)).eq('status', 'published')
+    if (error) throw error
+    for (const q of data ?? []) ok.set(q.id, q)
+  }
+  const questionIds = ordered
+    .filter((id) => {
+      const q = ok.get(id)
+      if (!q) return false
+      if (subject && q.subject_id !== subject.id) return false
+      if (input.skillId && q.skill_id !== input.skillId) return false
+      return true
+    })
+    .slice(0, cap)
+  if (questionIds.length === 0) {
+    throw new ApiError(409, 'CONFLICT', 'You have no open mistakes to practise here.', { reason: 'no_mistakes' })
+  }
+  const skill = input.skillId ? taxonomy.skillById.get(input.skillId) : undefined
+  return {
+    questionIds,
+    fields: { subject_id: subject?.id ?? null, domain_id: skill?.domainId ?? null, skill_id: input.skillId ?? null },
+  }
+}
+
 export async function startPractice(admin: Db, profile: CurrentProfile, input: StartPracticeInput): Promise<{ attemptId: string; totalQuestions: number }> {
   const remaining = await remainingQuota(profile)
   const max = await getMaxQuestionsPerSession(admin)
@@ -239,6 +290,9 @@ export async function startPractice(admin: Db, profile: CurrentProfile, input: S
       break
     case 'bookmarks':
       plan = await planBookmarks(admin, profile, remaining)
+      break
+    case 'mistakes':
+      plan = await planMistakes(admin, profile, input, Math.min(remaining, max))
       break
   }
 
@@ -295,6 +349,8 @@ export type PracticeSession = {
     timeSpentSeconds: number
     startedAt: string
     completedAt: string | null
+    /** Timed drills only: when the server stops accepting answers. */
+    deadlineAt: string | null
   }
   items: PracticeSessionItem[]
 }
@@ -362,6 +418,7 @@ export async function loadPracticeSession(admin: Db, profile: CurrentProfile, at
       timeSpentSeconds: attempt.time_spent_seconds,
       startedAt: attempt.started_at,
       completedAt: attempt.completed_at,
+      deadlineAt: attempt.deadline_at,
     },
     items,
   }
@@ -439,6 +496,10 @@ export async function answerPractice(admin: Db, profile: CurrentProfile, input: 
 
   if (attempt.status !== 'in_progress') {
     throw new ApiError(409, 'CONFLICT', 'This practice session is finished.', { reason: 'session_finished' })
+  }
+  if (isPastDeadline(attempt)) {
+    await finishPractice(admin, profile, attempt.id)
+    throw new ApiError(409, 'TIME_EXPIRED', 'Time is up. Your drill has been submitted.', { reason: 'time_expired', attemptId: attempt.id })
   }
 
   // A question that is part of a running diagnostic or mock exam must not be revealed here.
@@ -523,6 +584,7 @@ export async function answerPractice(admin: Db, profile: CurrentProfile, input: 
 // ---------------------------------------------------------------------------
 // Finish
 // ---------------------------------------------------------------------------
+
 
 export async function finishPractice(admin: Db, profile: CurrentProfile, attemptId: string): Promise<{ attemptId: string; status: string }> {
   const attempt = await loadOwnedAttempt(admin, profile.id, attemptId, 'practice')

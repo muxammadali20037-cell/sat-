@@ -33,7 +33,10 @@ const profileFields = (user: TelegramUser) => ({
 })
 
 /** Interface language for a new account: Uzbek unless Telegram says English. */
-const localeFor = (user: TelegramUser) => (user.language_code?.toLowerCase().startsWith('en') ? 'en' : 'uz')
+const localeFor = (user: TelegramUser) => {
+  const code = user.language_code?.toLowerCase() ?? ''
+  return code.startsWith('en') ? 'en' : code.startsWith('ru') ? 'ru' : 'uz'
+}
 
 async function rememberMiniApp() {
   const store = await cookies()

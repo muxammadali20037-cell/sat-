@@ -45,6 +45,7 @@ import {
   type MistakeRow,
   type WeekSummary,
 } from './today'
+import { achievements, ADVANCED_DOMAIN_MIN_ANSWERS, longestStreak, type Achievement } from './achievements'
 
 export type ContinueLesson = {
   state: 'resume' | 'next'
@@ -79,7 +80,7 @@ export type TodayTask = {
 export type RecentResult = {
   id: string
   kind: 'practice' | 'diagnostic' | 'mock_exam'
-  practiceMode: 'custom' | 'set' | 'retry' | 'bookmarks' | null
+  practiceMode: 'custom' | 'set' | 'retry' | 'bookmarks' | 'mistakes' | null
   title: string | null
   contextName: string | null
   completedAt: string
@@ -117,6 +118,7 @@ export type DashboardData = {
   mastery: MasteryDomain[]
   weekSummary: WeekSummary
   mistakes: RecentMistake[]
+  achievements: Achievement[]
   questionsAvailable: boolean
   isNewStudent: boolean
   streak: number
@@ -507,8 +509,8 @@ export async function loadDashboard(db: Db, admin: () => Db, profile: CurrentPro
       continueLearning.state === 'resume' || continueLearning.state === 'next'
         ? { title: continueLearning.lesson.title, resume: continueLearning.state === 'resume', href: `/dashboard/lesson/${continueLearning.lesson.id}` }
         : null,
-    mistakes: latestMistakeAttempt ? { count: allMistakes.length, href: resultHref(latestMistakeAttempt.kind, latestMistakeAttempt.attempt_id) } : null,
-    retryCompletedToday: todayAttempts.some((a) => a.kind === 'practice' && a.practice_mode === 'retry'),
+    mistakes: latestMistakeAttempt ? { count: allMistakes.length, href: '/dashboard/mistakes' } : null,
+    retryCompletedToday: todayAttempts.some((a) => a.kind === 'practice' && (a.practice_mode === 'retry' || a.practice_mode === 'mistakes')),
     today: todayActivity(today, activity),
     dailyStudyMinutes: profile.dailyStudyMinutes,
   })
@@ -527,6 +529,14 @@ export async function loadDashboard(db: Db, admin: () => Db, profile: CurrentPro
     mastery,
     weekSummary: weekSummary(today, activity, profile.dailyStudyMinutes),
     mistakes,
+    achievements: achievements({
+      diagnosticsCompleted: diagCountRes.count ?? 0,
+      scoredAnswers: scored.answered,
+      longestStreak: Math.max(streak, longestStreak(activity)),
+      mocksCompleted: completedMocks.length,
+      lessonsCompleted: completedLessons,
+      advancedDomains: mastery.filter((d) => d.level === 'advanced' && d.scored.answered >= ADVANCED_DOMAIN_MIN_ANSWERS).length,
+    }),
     questionsAvailable,
     isNewStudent,
     streak,

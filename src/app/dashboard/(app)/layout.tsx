@@ -13,6 +13,7 @@ import { FlashToast } from '@/components/layout/flash-toast'
 const notificationsDict = defineDict({
   en: { title: 'Notifications', empty: 'No notifications yet.', markRead: 'Mark all as read' },
   uz: { title: 'Bildirishnomalar', empty: "Hozircha bildirishnomalar yo'q.", markRead: "Barchasini o'qilgan deb belgilash" },
+  ru: { title: 'Уведомления', empty: 'Уведомлений пока нет.', markRead: 'Отметить все как прочитанные' },
 })
 
 /** Student app chrome: sidebar (desktop), drawer + bottom tabs (mobile). */

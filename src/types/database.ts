@@ -1033,6 +1033,56 @@ export type Database = {
           },
         ]
       }
+      flashcard_reviews: {
+        Row: {
+          user_id: string
+          card_key: string
+          ease: number
+          interval_days: number
+          reps: number
+          lapses: number
+          due_at: string
+          last_reviewed_at: string
+          last_grade: string
+          created_at: string
+          updated_at: string
+        }
+        Insert: {
+          user_id: string
+          card_key: string
+          ease?: number
+          interval_days?: number
+          reps?: number
+          lapses?: number
+          due_at: string
+          last_reviewed_at: string
+          last_grade: string
+          created_at?: string
+          updated_at?: string
+        }
+        Update: {
+          user_id?: string
+          card_key?: string
+          ease?: number
+          interval_days?: number
+          reps?: number
+          lapses?: number
+          due_at?: string
+          last_reviewed_at?: string
+          last_grade?: string
+          created_at?: string
+          updated_at?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "flashcard_reviews_user_id_fkey"
+            columns: ["user_id"]
+            isOneToOne: false
+            referencedRelation: "profiles"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       guide_contents: {
         Row: {
           id: string
@@ -2001,6 +2051,7 @@ export type Database = {
           created_at: string
           updated_at: string
           deleted_at: string | null
+          country_code: string | null
         }
         Insert: {
           id: string
@@ -2020,6 +2071,7 @@ export type Database = {
           created_at?: string
           updated_at?: string
           deleted_at?: string | null
+          country_code?: string | null
         }
         Update: {
           id?: string
@@ -2039,6 +2091,7 @@ export type Database = {
           created_at?: string
           updated_at?: string
           deleted_at?: string | null
+          country_code?: string | null
         }
         Relationships: [
           {

@@ -14,6 +14,7 @@ import { EmptyState } from '@/components/ui/states'
 import { Pagination } from '@/components/ui/data-table'
 import { listAttempts, type AttemptListItem } from '@/features/results/server'
 import { finalizeExpiredDiagnostics } from '@/features/diagnostic/server'
+import { intlLocale } from '@/features/dashboard/format'
 
 export const metadata: Metadata = { title: 'Results' }
 
@@ -42,7 +43,7 @@ export default async function ResultsPage({ searchParams }: { searchParams: Prom
   const admin = createAdminSupabase()
   await finalizeExpiredDiagnostics(admin, profile)
   const { items, total } = await listAttempts(admin, profile.id, { kind, limit: PAGE_SIZE, offset: (page - 1) * PAGE_SIZE })
-  const dateFormat = new Intl.DateTimeFormat(locale === 'uz' ? 'uz-UZ' : 'en-US', { dateStyle: 'medium', timeStyle: 'short' })
+  const dateFormat = new Intl.DateTimeFormat(intlLocale(locale), { dateStyle: 'medium', timeStyle: 'short' })
   const qs = (k: Kind | undefined, p = 1) => {
     const params = new URLSearchParams()
     if (k) params.set('kind', k)

@@ -11,7 +11,11 @@ import { toast } from '@/components/ui/toast'
 import { errorDetails, isPlanLimit, practiceErrorMessage } from './error-message'
 import { isMiniApp } from '@/lib/telegram/client'
 
-export type StartRequest = { mode: 'set'; practiceSetId: string } | { mode: 'retry'; sourceAttemptId: string } | { mode: 'bookmarks' }
+export type StartRequest =
+  | { mode: 'set'; practiceSetId: string }
+  | { mode: 'retry'; sourceAttemptId: string }
+  | { mode: 'bookmarks' }
+  | { mode: 'mistakes'; subjectCode?: 'math' | 'reading_writing'; skillId?: string }
 
 /** Starts a server-composed practice session and opens the runner. */
 export function StartPracticeButton({

@@ -16,6 +16,7 @@ import { ProgressBar } from '@/components/ui/progress'
 import { ResultsReview } from '@/components/exams/results-review'
 import { getExamResults } from '@/features/exams/queries'
 import { SECTIONS, sectionNumber, type ExamSection } from '@/features/exams/machine'
+import { intlLocale } from '@/features/dashboard/format'
 
 export const metadata: Metadata = { title: 'Mock exam results' }
 
@@ -50,7 +51,7 @@ export default async function MockExamResultsPage({ params }: { params: Promise<
 
   let completedDate = res.completedAt
   try {
-    completedDate = new Intl.DateTimeFormat(locale === 'uz' ? 'uz-Latn-UZ' : 'en-US', { dateStyle: 'long', timeZone: profile.timezone }).format(
+    completedDate = new Intl.DateTimeFormat(intlLocale(locale), { dateStyle: 'long', timeZone: profile.timezone }).format(
       new Date(res.completedAt),
     )
   } catch {

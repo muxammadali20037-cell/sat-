@@ -16,7 +16,7 @@ export type MaintenanceResult = { reminders: number; expired: number; stalePayme
 export const reminderLink = (periodEnd: string) => `/dashboard/subscription?reminder=${Math.floor(new Date(periodEnd).getTime() / 1000)}`
 
 function formatDate(iso: string, locale: string, timeZone: string): string {
-  const intl = locale === 'uz' ? 'uz-UZ' : 'en-GB'
+  const intl = locale === 'uz' ? 'uz-UZ' : locale === 'ru' ? 'ru-RU' : 'en-GB'
   try {
     return new Intl.DateTimeFormat(intl, { day: 'numeric', month: 'long', year: 'numeric', timeZone }).format(new Date(iso))
   } catch {
