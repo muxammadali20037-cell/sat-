@@ -92,6 +92,6 @@ Tavsiyalar saqlanmaydi — har safar haqiqiy yozuvlardan qayta hisoblanadi (soxt
    - Shaxsiy topshiriq (0020), o'qituvchi o'quvchi sahifasidan "zaif domen bo'yicha mashq berish".
    - Kutilayotgan sinf topshiriqlari dashboard missiyasida.
 2. **2.0-B (bajarildi):** AI Tutor: noto'g'ri variantlar tahlili, muqobil usul, tushunmovchilik, o'quvchi darajasiga moslash; hisob-kitoblarni SAT MASTER'ning o'z kalkulyatori tekshiradi; "tekshirilgan / AI yozgan" yorlig'i.
-3. **2.0-C:** Resource Hub (`resources` jadvali: source, license, attribution, approved_by).
+3. **2.0-C (yozildi, 0021):** Resource Hub — `learning_resources` (manba, foydalanish shartlari, atribut, havola tekshiruvi); faqat havola, nusxa yoki embed yo'q.
 4. **PHASE 4:** jonli dars (LiveKit + tldraw) — egasi qarori bilan.
 5. **PHASE 5:** o'qituvchi obunasi va to'lovlar — provayder tasdig'i bilan.

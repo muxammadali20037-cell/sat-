@@ -426,6 +426,81 @@ export type Database = {
           },
         ]
       }
+      learning_resources: {
+        Row: {
+          id: string
+          provider: string
+          provider_name: string
+          kind: string
+          title: string
+          description: string
+          url: string
+          language: string
+          subject_id: string | null
+          domain_id: string | null
+          skill_id: string | null
+          usage_terms: string
+          attribution: string
+          status: string
+          link_status: number | null
+          link_checked_at: string | null
+          position: number
+          created_by: string | null
+          updated_by: string | null
+          published_at: string | null
+          created_at: string
+          updated_at: string
+        }
+        Insert: {
+          id?: string
+          provider: string
+          provider_name: string
+          kind: string
+          title: string
+          description?: string
+          url: string
+          language?: string
+          subject_id?: string | null
+          domain_id?: string | null
+          skill_id?: string | null
+          usage_terms: string
+          attribution: string
+          status?: string
+          link_status?: number | null
+          link_checked_at?: string | null
+          position?: number
+          created_by?: string | null
+          updated_by?: string | null
+          published_at?: string | null
+          created_at?: string
+          updated_at?: string
+        }
+        Update: {
+          id?: string
+          provider?: string
+          provider_name?: string
+          kind?: string
+          title?: string
+          description?: string
+          url?: string
+          language?: string
+          subject_id?: string | null
+          domain_id?: string | null
+          skill_id?: string | null
+          usage_terms?: string
+          attribution?: string
+          status?: string
+          link_status?: number | null
+          link_checked_at?: string | null
+          position?: number
+          created_by?: string | null
+          updated_by?: string | null
+          published_at?: string | null
+          created_at?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
       attempt_answers: {
         Row: {
           id: string

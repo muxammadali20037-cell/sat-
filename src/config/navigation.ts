@@ -4,7 +4,7 @@ import type { Role } from './roles'
 export type NavIconKey =
   | 'home' | 'courses' | 'practice' | 'diagnostic' | 'exams' | 'results' | 'analytics' | 'plan' | 'tutor'
   | 'bookmarks' | 'subscription' | 'settings' | 'students' | 'subjects' | 'domains' | 'skills' | 'lessons' | 'mistakes' | 'flashcards' | 'classes' | 'groups' | 'team' | 'teach'
-  | 'questions' | 'import' | 'payments' | 'ai' | 'audit' | 'admin' | 'guides' | 'telegram'
+  | 'questions' | 'import' | 'payments' | 'ai' | 'audit' | 'admin' | 'guides' | 'telegram' | 'resources'
 
 export type NavItem = {
   href: string
@@ -24,6 +24,7 @@ export const STUDENT_NAV: NavSection[] = [
       { href: '/dashboard', labelKey: 'dashboard', icon: 'home', exact: true },
       { href: '/dashboard/courses', labelKey: 'courses', icon: 'courses' },
       { href: '/dashboard/guides', labelKey: 'guides', icon: 'guides' },
+      { href: '/dashboard/resources', labelKey: 'resources', icon: 'resources' },
       { href: '/dashboard/practice', labelKey: 'practice', icon: 'practice' },
       { href: '/dashboard/mistakes', labelKey: 'mistakes', icon: 'mistakes' },
       { href: '/dashboard/flashcards', labelKey: 'flashcards', icon: 'flashcards' },
@@ -79,6 +80,7 @@ export const ADMIN_NAV: NavSection[] = [
       { href: '/admin/courses', labelKey: 'Courses', icon: 'courses', roles: STAFF },
       { href: '/admin/lessons', labelKey: 'Lessons', icon: 'lessons', roles: STAFF },
       { href: '/admin/guides', labelKey: 'Study guides', icon: 'guides', roles: STAFF },
+      { href: '/admin/resources', labelKey: 'Resource Hub', icon: 'resources', roles: STAFF },
       { href: '/admin/exams', labelKey: 'Mock exams', icon: 'exams', roles: STAFF },
       { href: '/admin/subjects', labelKey: 'Subjects', icon: 'subjects', roles: STAFF },
       { href: '/admin/domains', labelKey: 'Domains', icon: 'domains', roles: STAFF },

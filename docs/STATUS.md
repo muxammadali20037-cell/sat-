@@ -1,6 +1,6 @@
 # SAT MASTER — Build status and phase report
 
-_Last updated: 3 November 2026 (SAT MASTER 2.0-B: AI tutor explanations and calculation checks)_
+_Last updated: 4 November 2026 (SAT MASTER 2.0-C: Resource Hub)_
 
 The codebase covers phases 1–8 of [DEVELOPMENT_ROADMAP.md](DEVELOPMENT_ROADMAP.md). Phase 9 (deployment) is partly done: a Supabase project exists, and the steps that need the owner's accounts or credentials are listed under "Launch checklist" below.
 
@@ -94,6 +94,13 @@ The flows ran as a real user against real auth, PostgREST and RLS. AI used the l
   - Both checks now run inside SQL functions under a per-student lock (migration 0015). Parallel-connection tests fail without the lock and pass with it.
 - **Admin lists:** question excerpts showed raw LaTeX (`\dfrac{…}`) and escaped prices as `\12`. They now use the same plain-text rendering as student pages.
 - **Pack import (caught before release):** the first version recognised already-imported questions by stem alone. Many Reading and Writing questions share a stem, so a retry after a partial import could have skipped real questions. It now matches passage and stem.
+
+### SAT MASTER 2.0-C (4 Nov): Resource Hub
+
+- **Migration 0021** (`learning_resources`): one table with provider, type, language, subject/domain/skill, **usage terms** and **attribution** (both required), link-check result and status. Students (authenticated) read published rows only; anon nothing; no client writes at all, even for staff; a row can only be `published` with a passing link check (2xx/3xx) recorded; only `https://` URLs are stored.
+- **Admin → Resource Hub** (`/admin/resources`, content managers): add/edit, publish, unpublish, archive. The server checks that the link is on the chosen provider's domain (look-alikes such as `collegeboard.org.evil.com` are refused) and then requests it with an SSRF guard (https only, every resolved address must be public, redirects re-checked, 6 s timeout, body not read). Publishing re-checks the link; a link that stops answering on save drops back to draft. Every change is audited with the acting user. Defaults for usage terms and credit lines follow each provider's published terms (Khan Academy's required line, College Board not-affiliated wording).
+- **Student page** `/dashboard/resources` (uz/en/ru, in the nav): links grouped by SAT domain, each with provider, type, language, destination host, attribution and terms; a notice that the sites are not affiliated and that work there is not tracked; links open in a new tab with `noopener`. Empty until staff publish links: no links were invented or seeded.
+- **Verified:** 7 unit tests (URL rules, SSRF address classes), 3 DB tests (visibility per role, no client writes, publish/https constraints); all 693 tests pass; 14 Playwright checks (`e2e-resources`); lint and build. The local sandbox has no internet, so the real link check was seen failing honestly (draft, publish refused) — on Vercel it can reach the sites.
 
 ### SAT MASTER 2.0-B (3 Nov): AI tutor
 
@@ -298,6 +305,7 @@ State on 2 Nov 2026, applied through the Supabase connector with the owner's con
 | 0012 search indexes | **Declined by the owner** at the confirmation prompt. Optional (admin search speed only). Apply later from the SQL editor if wanted. |
 | 0013 study-guide tables | Applied |
 | 0014 study-guide content (~480 KB) | Not applied. Use Admin → Study guides → "Import bundled guides" after the first deploy, or `supabase db push`. |
+| 0021 Resource Hub (1 table; no existing data touched) | Pending the owner's approval. |
 | 0020 personal assignments (1 column, 1 FK, 1 index, one policy changed; no existing data touched) | Applied on 3 Nov with the owner's approval. Checked afterwards: column, FK and new read policy present; clients still have SELECT only on `assignments`; 59 tables, all with RLS. |
 | 0019 classroom (8 tables, 2 columns, 7 functions; one policy narrowed; no existing data touched) | Applied on 3 Nov with the owner's approval. Checked afterwards: 59 tables, all with RLS; `authenticated` cannot insert, update or delete any classroom table and `anon` cannot read them; `workspace_create` and `workspace_join` are callable by the server only; the Telegram policy now allows only the owner and admins. |
 | 0018 learning extras (1 table, 1 column, wider practice-mode check; no existing data touched) | Applied on 3 Nov with the owner's approval. Checked afterwards: RLS on; `authenticated` can only SELECT `flashcard_reviews` (own rows), cannot insert, update or delete; may update `country_code` but still not `role`; `anon` has no access. |
