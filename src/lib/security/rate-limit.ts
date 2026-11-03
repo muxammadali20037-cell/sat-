@@ -2,21 +2,26 @@ import 'server-only'
 import { headers } from 'next/headers'
 import { createAdminSupabase } from '@/lib/supabase/admin'
 import { ApiError } from '@/lib/api/errors'
+import { MemoryLimiter } from './memory-limiter'
 
 export type RateLimitRule = { bucket: string; limit: number; windowSec: number }
 
 export type RateLimitResult = { allowed: boolean; remaining: number; resetAt: string | null }
 
+const fallback = new MemoryLimiter()
+
 /**
  * Fixed-window rate limit backed by Postgres (public.rate_limit_hit), shared by every
- * serverless instance. If the limiter itself fails (DB outage) we fail OPEN and log, so a
- * limiter problem never locks every student out; the DB outage is surfaced elsewhere.
+ * serverless instance. If the shared limiter fails (database outage, bad settings), the same
+ * rule is applied by an in-memory counter on this instance instead of letting every request
+ * through: looser (per instance), but login, registration and SMS never become unlimited.
  */
 export async function checkRateLimit(rule: RateLimitRule, identity: string): Promise<RateLimitResult> {
+  const key = `${rule.bucket}:${identity}`
   try {
     const admin = createAdminSupabase()
     const { data, error } = await admin.rpc('rate_limit_hit', {
-      p_key: `${rule.bucket}:${identity}`,
+      p_key: key,
       p_limit: rule.limit,
       p_window_seconds: rule.windowSec,
     })
@@ -24,8 +29,11 @@ export async function checkRateLimit(rule: RateLimitRule, identity: string): Pro
     const row = data?.[0]
     return { allowed: row?.allowed ?? true, remaining: row?.remaining ?? rule.limit, resetAt: row?.reset_at ?? null }
   } catch (err) {
-    console.error('[rate-limit] limiter unavailable, failing open', { bucket: rule.bucket, err })
-    return { allowed: true, remaining: rule.limit, resetAt: null }
+    console.error('[rate-limit] shared limiter unavailable, using the in-memory fallback', {
+      bucket: rule.bucket,
+      err: err instanceof Error ? err.message : String(err),
+    })
+    return fallback.hit(key, rule.limit, rule.windowSec)
   }
 }
 

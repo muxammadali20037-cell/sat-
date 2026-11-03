@@ -682,7 +682,7 @@ export const publicDict = defineDict({
       } as Record<string, string>,
       featureLabels: {
         diagnostic: 'Diagnostic test',
-        video_lessons: 'Video lessons',
+        video_lessons: 'Lessons',
         practice_questions_daily: 'Practice questions',
         ai_requests_daily: 'AI tutor requests',
         mock_exams_monthly: 'Mock exams',
@@ -757,11 +757,11 @@ export const publicDict = defineDict({
           ],
         },
         {
-          title: 'Video lessons',
-          body: 'Courses for Math and for Reading and Writing, organised by domain and skill.',
+          title: 'Lessons',
+          body: 'Text and video lessons for Math and for Reading and Writing, organised by domain and skill.',
           points: [
             'Short lessons with objectives, notes and worked examples with math rendering',
-            'Resume where you stopped; completion counts only when you have watched the lesson',
+            'Resume where you stopped; a lesson counts as complete only when you have actually read or watched it',
             'Related practice linked from every lesson',
             'Preview lessons are available on the Free plan',
           ],
@@ -1100,7 +1100,7 @@ export const publicDict = defineDict({
       },
       featureLabels: {
         diagnostic: 'Diagnostika testi',
-        video_lessons: 'Video darslar',
+        video_lessons: 'Darslar',
         practice_questions_daily: 'Mashq savollari',
         ai_requests_daily: "AI ustoz so'rovlari",
         mock_exams_monthly: 'Sinov imtihonlari',
@@ -1175,11 +1175,11 @@ export const publicDict = defineDict({
           ],
         },
         {
-          title: 'Video darslar',
-          body: "Yo'nalish va ko'nikmalar bo'yicha tartiblangan Matematika hamda O'qish va yozish kurslari.",
+          title: 'Darslar',
+          body: "Yo'nalish va ko'nikmalar bo'yicha tartiblangan Matematika hamda O'qish va yozish bo'yicha matnli va video darslar.",
           points: [
             "Maqsadlar, konspekt va formulalar bilan yechilgan misollardan iborat qisqa darslar",
-            "To'xtagan joydan davom etish; dars faqat haqiqatan ko'rilganda tugallangan hisoblanadi",
+            "To'xtagan joydan davom etish; dars faqat haqiqatan o'qilgan yoki ko'rilganda tugallangan hisoblanadi",
             "Har bir darsdan tegishli mashqlarga havola",
             'Bepul tarifda tanishuv darslari mavjud',
           ],

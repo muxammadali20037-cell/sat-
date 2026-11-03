@@ -1,6 +1,6 @@
 # SAT MASTER — Build status and phase report
 
-_Last updated: 3 November 2026 (sign-in methods)_
+_Last updated: 3 November 2026 (SAT MASTER 2.0, PHASE 1: dashboard and limiter)_
 
 The codebase covers phases 1–8 of [DEVELOPMENT_ROADMAP.md](DEVELOPMENT_ROADMAP.md). Phase 9 (deployment) is partly done: a Supabase project exists, and the steps that need the owner's accounts or credentials are listed under "Launch checklist" below.
 
@@ -94,6 +94,24 @@ The flows ran as a real user against real auth, PostgREST and RLS. AI used the l
   - Both checks now run inside SQL functions under a per-student lock (migration 0015). Parallel-connection tests fail without the lock and pass with it.
 - **Admin lists:** question excerpts showed raw LaTeX (`\dfrac{…}`) and escaped prices as `\12`. They now use the same plain-text rendering as student pages.
 - **Pack import (caught before release):** the first version recognised already-imported questions by stem alone. Many Reading and Writing questions share a stem, so a retry after a partial import could have skipped real questions. It now matches passage and stem.
+
+### SAT MASTER 2.0, PHASE 1 (3 Nov)
+
+The audit and plan are in [CURRENT_PROJECT_AUDIT.md](CURRENT_PROJECT_AUDIT.md) and [IMPLEMENTATION_ROADMAP.md](IMPLEMENTATION_ROADMAP.md).
+
+- **Student dashboard 2.0.** Every new section is built from the student's own records:
+  - **Today's mission:** today's study-plan tasks, or rules: diagnostic, mistakes to retry, 10 questions in the weakest skill, the lesson in progress, and the daily-minutes goal. Each item ticks off from real activity. Items without real input are left out.
+  - **This week:** streak, minutes per day (or questions when no minutes were logged), and a weekly goal from the daily goal in Settings.
+  - **Skill mastery:** all eight Digital SAT domains with level bands. A level appears only after 5 answers in a domain.
+  - **Recent mistakes:** the latest wrong answer per question, never from a running timed test, with a link to the explanation.
+  - **Header tools:** the Desmos calculator in a dialog (full screen on phones; the honest fallback without a key), the AI tutor and the guides.
+- **Rate limiter:** when the shared Postgres limiter fails, the same rules now apply through a per-instance in-memory counter instead of failing open.
+- **Marketing copy:** "Video lessons" became "Lessons (text and video)", so the site no longer promises only video.
+- **Verified:**
+  - 524 unit tests, including 13 new ones for the mission, mastery, week, mistakes and fallback limiter;
+  - 79 DB tests;
+  - lint, typecheck and production build;
+  - 37 Playwright checks: an active and a new student, Uzbek and English, at 1280 and 390 px. All sections render, there is no overflow and no console errors, and the calculator dialog opens.
 
 ### Starter question pack (added 2 Nov)
 

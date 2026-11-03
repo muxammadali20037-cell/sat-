@@ -155,7 +155,7 @@ Statuslar:
 | Telefon (SMS, Eskiz) bilan kirish | NOT_CONFIGURED | E2E (stand-in), Test | Yashirin (flag o'chiq) | `ESKIZ_*`, `SEND_SMS_HOOK_SECRET`, Supabase phone provider kerak |
 | Telegram Mini App (to'liq ekran) | PARTIALLY_WORKING | E2E (stand-in, 29 tekshiruv) | Tekshirilmagan | BotFather'da Mini App URL va "Configure bot" kerak. Mini App ichida to'lov yo'q (ataylab) |
 | Onboarding (7 qadam) | WORKING | E2E | 0 kishi tugatgan | — |
-| O'quvchi paneli | WORKING | E2E | Bo'sh holat | Barcha raqamlar real ma'lumotdan. Yangi o'quvchiga "boshlash" paneli ko'rsatiladi. 2.0 talablaridan yo'qlari: kunlik missiya, yutuqlar, jonli darslar, 8 domen bo'yicha mastery xaritasi bitta joyda |
+| O'quvchi paneli | WORKING | E2E | Bo'sh holat | Barcha raqamlar real ma'lumotdan. PHASE 1 da (3-noyabr) qo'shildi: kunlik missiya, haftalik faollik va maqsad, 8 domen mastery xaritasi, so'nggi xatolar va kalkulyator tugmasi. Hali yo'q: yutuqlar, jonli darslar (PHASE 2 va 4) |
 | Diagnostika (domenlar bo'yicha natija) | WORKING | E2E, Test | Boshlanmaydi | Chop etilgan savol yo'q |
 | Kurslar va matnli darslar | WORKING | E2E | Bo'sh (0 dars) | — |
 | Video darslar | NOT_CONFIGURED | Kod, Test | Yo'q | Bunny kalitlari yo'q. Supabase Storage'ga MP4 yuklash hosted'da sinalmagan. Marketing sahifasi "Video lessons" deydi: mazmun paydo bo'lmaguncha nomuvofiqlik |

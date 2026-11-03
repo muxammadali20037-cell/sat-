@@ -11,9 +11,10 @@ import { guidesDict } from '@/lib/i18n/dictionaries/guides'
 import { PageHeader } from '@/components/layout/page-header'
 import { StatCard } from '@/components/ui/progress'
 import { Card } from '@/components/ui/card'
-import { ExamCountdownCard, MockExamCard, StreakCard, TargetScoreCard } from '@/components/dashboard/cards'
-import { ContinueLearningPanel, RecentResults, RecommendedPractice, SkillExtremes, TodaySchedule } from '@/components/dashboard/lists'
-import { SectionTabs } from '@/components/dashboard/section-tabs'
+import { ExamCountdownCard, MockExamCard, TargetScoreCard } from '@/components/dashboard/cards'
+import { ContinueLearningPanel, RecentResults, RecommendedPractice, SkillExtremes } from '@/components/dashboard/lists'
+import { MasteryMap, MissionCard, RecentMistakes, WeekCard } from '@/components/dashboard/today'
+import { DashboardTools } from '@/components/dashboard/tools'
 import { NewStudentPanel } from '@/components/dashboard/new-student'
 import { ScoreTrendChart } from '@/components/analytics/score-trend-chart'
 import { loadDashboard } from '@/features/dashboard/server'
@@ -31,6 +32,7 @@ export default async function DashboardPage() {
   const tz = profile.timezone || 'Asia/Tashkent'
   const firstName = profile.fullName.trim().split(/\s+/)[0] ?? ''
   const title = firstName ? format(t.welcome, { name: firstName }) : t.welcomeNoName
+  const tools = <DashboardTools labels={t.tools} />
 
   if (data.isNewStudent) {
     // Point first-time students at the "how to use SAT MASTER" guide when it is published.
@@ -39,21 +41,20 @@ export default async function DashboardPage() {
     const howToGuide = howTo ? { href: `/dashboard/guides/${howTo.slug}`, label: tg.howToUse } : undefined
     return (
       <>
-        <PageHeader title={title} />
+        <PageHeader title={title} actions={tools} />
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
-          <div className="lg:col-span-2">
+          <div className="min-w-0 space-y-4 lg:col-span-2">
+            <MissionCard t={t} mission={data.mission} />
             <NewStudentPanel t={t} howToGuide={howToGuide} />
           </div>
-          <div className="space-y-4">
+          <div className="min-w-0 space-y-4">
             <ExamCountdownCard t={t} exam={data.exam} locale={locale} />
             <TargetScoreCard t={t} target={data.targetScore} latest={data.latest} hasCompletedDiagnostic={false} showCta={false} />
           </div>
         </div>
-        {data.plan.tasks.length > 0 && (
-          <div className="mt-8">
-            <TodaySchedule t={t} plan={data.plan} />
-          </div>
-        )}
+        <div className="mt-8">
+          <MasteryMap t={t} domains={data.mastery} />
+        </div>
       </>
     )
   }
@@ -69,13 +70,19 @@ export default async function DashboardPage() {
   const trendPoints = data.estimates
     .filter((p) => p.total)
     .map((p) => ({ key: p.attemptId, label: formatDate(p.completedAt, locale, tz, { month: 'short', day: 'numeric' }), ...p.total! }))
-  const defaultSection = profile.preferredSubjects[0] ?? 'reading_writing'
 
   return (
     <>
-      <PageHeader title={title} description={t.subtitle} />
+      <PageHeader title={title} description={t.subtitle} actions={tools} />
 
-      <ContinueLearningPanel t={t} data={data.continueLearning} />
+      <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
+        <MissionCard t={t} mission={data.mission} className="lg:col-span-2" />
+        <WeekCard t={t} week={data.weekSummary} streak={data.streak} locale={locale} />
+      </div>
+
+      <div className="mt-4">
+        <ContinueLearningPanel t={t} data={data.continueLearning} />
+      </div>
 
       <div className="mt-4 grid grid-cols-2 gap-3 lg:grid-cols-5">
         <StatCard
@@ -120,15 +127,18 @@ export default async function DashboardPage() {
       </div>
 
       <div className="mt-6 grid grid-cols-1 gap-4 lg:grid-cols-3">
-        <StreakCard t={t} streak={data.streak} week={data.week} locale={locale} />
         <TargetScoreCard t={t} target={data.targetScore} latest={data.latest} hasCompletedDiagnostic={data.hasCompletedDiagnostic} />
         <ExamCountdownCard t={t} exam={data.exam} locale={locale} />
+        <MockExamCard t={t} mock={data.mock} />
+      </div>
+
+      <div className="mt-8">
+        <MasteryMap t={t} domains={data.mastery} />
       </div>
 
       <div className="mt-8 grid grid-cols-1 gap-8 lg:grid-cols-3 lg:gap-6">
         <div className="min-w-0 space-y-8 lg:col-span-2">
-          <SectionTabs sections={data.sections} defaultSection={defaultSection} />
-          <TodaySchedule t={t} plan={data.plan} />
+          <RecentMistakes t={t} items={data.mistakes} locale={locale} timeZone={tz} />
           {trendPoints.length >= 2 && (
             <Card className="p-5">
               <h2 className="font-sans text-[15px] font-semibold text-foreground">{t.trend.title}</h2>
@@ -161,7 +171,6 @@ export default async function DashboardPage() {
         <div className="min-w-0 space-y-8">
           <RecommendedPractice t={t} items={data.recommended} />
           <SkillExtremes t={t} strongest={data.strongest} weakest={data.weakest} />
-          <MockExamCard t={t} mock={data.mock} />
         </div>
       </div>
     </>

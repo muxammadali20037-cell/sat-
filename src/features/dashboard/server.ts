@@ -1,12 +1,15 @@
 import 'server-only'
 import type { Db } from '@/lib/supabase/server'
 import type { CurrentProfile } from '@/lib/auth/session'
-import { localDate } from '@/lib/time'
+import { localDate, startOfLocalDay } from '@/lib/time'
+import { richTextExcerpt } from '@/lib/rich-text/tokenize'
+import { lockedQuestionIds } from '@/features/practice/queries'
 import { getEntitlements, getUsage, type Entitlements } from '@/features/entitlements/server'
 import { loadCatalog } from '@/features/courses/server'
 import { firstIncompleteLesson, SUBJECT_SLUGS, type CatalogLesson, type ProgressSummary } from '@/features/courses/catalog'
 import {
   pickRecommendedSkills,
+  practiceHref,
   rollupByDomain,
   rollupBySubject,
   skillStats,
@@ -31,6 +34,17 @@ import {
   type LatestEstimate,
   type WeekDay,
 } from './logic'
+import {
+  buildMission,
+  latestMistakes,
+  masteryLevel,
+  todayActivity,
+  weekSummary,
+  type MasteryDomain,
+  type Mission,
+  type MistakeRow,
+  type WeekSummary,
+} from './today'
 
 export type ContinueLesson = {
   state: 'resume' | 'next'
@@ -88,8 +102,22 @@ export type MockCard =
     }
   | { state: 'none' | 'all_done' }
 
+export type RecentMistake = {
+  questionId: string
+  excerpt: string
+  skillName: string | null
+  answeredAt: string
+  kind: 'practice' | 'diagnostic' | 'mock_exam'
+  href: string
+}
+
 export type DashboardData = {
   today: string
+  mission: Mission
+  mastery: MasteryDomain[]
+  weekSummary: WeekSummary
+  mistakes: RecentMistake[]
+  questionsAvailable: boolean
   isNewStudent: boolean
   streak: number
   week: WeekDay[]
@@ -136,8 +164,25 @@ export async function loadDashboard(db: Db, admin: () => Db, profile: CurrentPro
   const tz = profile.timezone || 'Asia/Tashkent'
   const today = localDate(tz)
 
-  const [catalog, entitlements, streakRes, activityRes, perfRes, practiceCountRes, recentRes, estimateRes, diagCountRes, planRes, mockInProgressRes, mockExamsRes, completedMocksRes] =
-    await Promise.all([
+  const [
+    catalog,
+    entitlements,
+    streakRes,
+    activityRes,
+    perfRes,
+    practiceCountRes,
+    recentRes,
+    estimateRes,
+    diagCountRes,
+    planRes,
+    mockInProgressRes,
+    mockExamsRes,
+    completedMocksRes,
+    publishedCountRes,
+    todayAttemptsRes,
+    mistakeRes,
+    locked,
+  ] = await Promise.all([
       loadCatalog(db, userId),
       getEntitlements(userId),
       admin().rpc('activity_streak', { p_user_id: userId, p_today: today }),
@@ -182,6 +227,24 @@ export async function loadDashboard(db: Db, admin: () => Db, profile: CurrentPro
         .maybeSingle(),
       db.from('mock_exams').select('id, title, is_full_length').eq('status', 'published').order('created_at'),
       db.from('attempts').select('mock_exam_id').eq('user_id', userId).eq('kind', 'mock_exam').eq('status', 'completed'),
+      // Whether practice and the diagnostic can start at all (a count only; no question data).
+      admin().from('questions').select('id', { count: 'exact', head: true }).eq('status', 'published'),
+      db
+        .from('attempts')
+        .select('kind, practice_mode')
+        .eq('user_id', userId)
+        .eq('status', 'completed')
+        .gte('completed_at', startOfLocalDay(tz).toISOString()),
+      db
+        .from('attempt_answers')
+        .select('question_id, attempt_id, answered_at, attempts!inner(kind, status)')
+        .eq('user_id', userId)
+        .eq('is_correct', false)
+        .eq('attempts.status', 'completed')
+        .not('answered_at', 'is', null)
+        .order('answered_at', { ascending: false })
+        .limit(60),
+      lockedQuestionIds(admin(), userId),
     ])
 
   const streak = must(streakRes) ?? 0
@@ -195,6 +258,15 @@ export async function loadDashboard(db: Db, admin: () => Db, profile: CurrentPro
   const mockInProgress = must(mockInProgressRes)
   const mockExams = rows(mockExamsRes)
   const completedMocks = rows(completedMocksRes)
+  if (publishedCountRes.error) throw publishedCountRes.error
+  const questionsAvailable = (publishedCountRes.count ?? 0) > 0
+  const todayAttempts = rows(todayAttemptsRes)
+  const mistakeRows: MistakeRow[] = rows(mistakeRes).map((r) => ({
+    question_id: r.question_id,
+    attempt_id: r.attempt_id,
+    answered_at: r.answered_at as string,
+    kind: (r.attempts as unknown as { kind: string }).kind,
+  }))
 
   const { taxonomy } = catalog
   const scored = totals(perf)
@@ -375,6 +447,72 @@ export async function loadDashboard(db: Db, admin: () => Db, profile: CurrentPro
     }
   }
 
+  // Recent mistakes (latest wrong answer per question, never from a running timed test) --------
+  const allMistakes = latestMistakes(mistakeRows, locked, 60)
+  const shownMistakes = allMistakes.slice(0, 5)
+  let mistakes: RecentMistake[] = []
+  if (shownMistakes.length > 0) {
+    // Students cannot read the question bank directly (answer keys live next to it); the service
+    // role reads only the stem and skill of questions this student has already answered.
+    const { data: qs, error } = await admin()
+      .from('questions')
+      .select('id, stem, skill_id')
+      .in(
+        'id',
+        shownMistakes.map((m) => m.question_id),
+      )
+    if (error) throw error
+    const byId = new Map((qs ?? []).map((q) => [q.id, q]))
+    mistakes = shownMistakes.flatMap((m) => {
+      const q = byId.get(m.question_id)
+      if (!q || !ATTEMPT_KINDS.has(m.kind)) return []
+      return [
+        {
+          questionId: m.question_id,
+          excerpt: richTextExcerpt(q.stem, 110),
+          skillName: q.skill_id ? (taxonomy.skillById.get(q.skill_id)?.name ?? null) : null,
+          answeredAt: m.answered_at,
+          kind: m.kind as RecentMistake['kind'],
+          href: resultHref(m.kind, m.attempt_id),
+        },
+      ]
+    })
+  }
+
+  // Mastery map: every domain, in framework order ------------------------------------------------
+  const mastery: MasteryDomain[] = sections.flatMap((section) =>
+    section.domains.map((d) => ({
+      id: d.id,
+      name: d.name,
+      subjectCode: section.code,
+      weightPercent: taxonomy.domainById.get(d.id)?.weightPercent ?? 0,
+      scored: d.scored,
+      level: masteryLevel(d.scored),
+      lessonsTotal: d.lessonsTotal,
+      lessonsCompleted: d.lessonsCompleted,
+      href: `/dashboard/practice?${new URLSearchParams({ subject: section.code, domain: d.id }).toString()}`,
+    })),
+  )
+
+  // Daily mission --------------------------------------------------------------------------------
+  const focus = recommended[0]
+  const latestMistakeAttempt = allMistakes[0]
+  const mission = buildMission({
+    planTasks: tasks,
+    hasCompletedDiagnostic: (diagCountRes.count ?? 0) > 0,
+    diagnosticToday: todayAttempts.some((a) => a.kind === 'diagnostic'),
+    questionsAvailable,
+    focusSkill: focus ? { name: focus.skillName, href: practiceHref(focus) } : null,
+    lesson:
+      continueLearning.state === 'resume' || continueLearning.state === 'next'
+        ? { title: continueLearning.lesson.title, resume: continueLearning.state === 'resume', href: `/dashboard/lesson/${continueLearning.lesson.id}` }
+        : null,
+    mistakes: latestMistakeAttempt ? { count: allMistakes.length, href: resultHref(latestMistakeAttempt.kind, latestMistakeAttempt.attempt_id) } : null,
+    retryCompletedToday: todayAttempts.some((a) => a.kind === 'practice' && a.practice_mode === 'retry'),
+    today: todayActivity(today, activity),
+    dailyStudyMinutes: profile.dailyStudyMinutes,
+  })
+
   const isNewStudent =
     scored.answered === 0 &&
     practiceAnswered === 0 &&
@@ -385,6 +523,11 @@ export async function loadDashboard(db: Db, admin: () => Db, profile: CurrentPro
 
   return {
     today,
+    mission,
+    mastery,
+    weekSummary: weekSummary(today, activity, profile.dailyStudyMinutes),
+    mistakes,
+    questionsAvailable,
     isNewStudent,
     streak,
     week: currentWeek(today, activity),
