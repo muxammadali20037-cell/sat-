@@ -77,7 +77,15 @@ const serverSchema = z.object({
 export type ServerEnv = z.infer<typeof serverSchema>
 
 let cached: ServerEnv | null = null
+let problems: EnvProblem[] = []
 
+export type EnvProblem = { key: string; message: string }
+
+/**
+ * Server settings, validated once per process. Every server setting is optional or has a default,
+ * so one malformed value must not take the whole site down: an invalid value is logged, treated as
+ * "not set" (or its default), and reported in the admin panel through serverEnvProblems().
+ */
 export function serverEnv(): ServerEnv {
   if (typeof window !== 'undefined') {
     throw new Error('serverEnv() must not be called in the browser')
@@ -88,9 +96,27 @@ export function serverEnv(): ServerEnv {
       const value = process.env[key]
       raw[key] = value === '' ? undefined : value
     }
-    cached = serverSchema.parse(raw)
+    const result = serverSchema.safeParse(raw)
+    if (result.success) {
+      cached = result.data
+      problems = []
+    } else {
+      problems = result.error.issues.map((issue) => ({ key: String(issue.path[0]), message: issue.message }))
+      for (const { key, message } of problems) {
+        raw[key] = undefined
+        // Name and rule only — never the value, which may be a secret.
+        console.error(`[env] ${key} is set but invalid (${message}); treating it as not set.`)
+      }
+      cached = serverSchema.parse(raw)
+    }
   }
   return cached
+}
+
+/** Settings that are present but invalid (ignored at runtime). Shown to admins. */
+export function serverEnvProblems(): EnvProblem[] {
+  serverEnv()
+  return problems
 }
 
 export const isProduction = () => serverEnv().NODE_ENV === 'production'

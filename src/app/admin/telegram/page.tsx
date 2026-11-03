@@ -2,7 +2,8 @@ import type { Metadata } from 'next'
 import { requireRole } from '@/lib/auth/session'
 import { createServerSupabase } from '@/lib/supabase/server'
 import { ADMIN_ROLES } from '@/config/roles'
-import { publicEnv, serverEnv, siteUrl } from '@/lib/env'
+import { publicEnv, serverEnv, serverEnvProblems, siteUrl } from '@/lib/env'
+import { EnvProblemsAlert } from '@/components/admin/env-problems'
 import { PageHeader } from '@/components/layout/page-header'
 import { Alert, Badge } from '@/components/ui/card'
 import { ConfigureTelegramButton } from '@/components/admin/configure-telegram-button'
@@ -49,6 +50,7 @@ export default async function TelegramAdminPage() {
   const miniAppUrl = siteUrl(MINI_APP_PATH)
   const webhookUrl = siteUrl('/api/webhooks/telegram')
   const status = tokenSet ? await botStatus() : null
+  const envProblems = serverEnvProblems().filter((p) => p.key.startsWith('TELEGRAM_'))
 
   const db = await createServerSupabase()
   const { count: linked } = await db.from('telegram_accounts').select('user_id', { count: 'exact', head: true })
@@ -66,7 +68,8 @@ export default async function TelegramAdminPage() {
         actions={<ConfigureTelegramButton disabled={!tokenSet || !secretSet || !https} />}
       />
 
-      {(!tokenSet || !secretSet) && (
+      <EnvProblemsAlert problems={envProblems} className="mb-5" />
+      {(!tokenSet || !secretSet) && envProblems.length === 0 && (
         <Alert variant="warning" className="mb-5" title="The bot is not connected yet">
           Create a bot with @BotFather, then set <code>TELEGRAM_BOT_TOKEN</code> and <code>TELEGRAM_WEBHOOK_SECRET</code> in the hosting
           environment and redeploy. Steps: docs/TELEGRAM.md.

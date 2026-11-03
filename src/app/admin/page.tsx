@@ -18,6 +18,8 @@ import { requireRole } from '@/lib/auth/session'
 import { createServerSupabase } from '@/lib/supabase/server'
 import { ADMIN_ROLES, STAFF_ROLES, hasRole } from '@/config/roles'
 import { PageHeader } from '@/components/layout/page-header'
+import { EnvProblemsAlert } from '@/components/admin/env-problems'
+import { serverEnvProblems } from '@/lib/env'
 import { StatCard } from '@/components/ui/progress'
 import { EmptyState } from '@/components/ui/states'
 import { MetricCard, Panel, SegmentedLinks } from '@/components/admin/metric-card'
@@ -81,6 +83,7 @@ export default async function AdminOverviewPage({ searchParams }: { searchParams
   return (
     <>
       <PageHeader title="Overview" description={`Welcome back, ${firstName}. Every number here comes from live data.`} />
+      <EnvProblemsAlert problems={serverEnvProblems()} className="mb-6" />
 
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-4">
         <MetricCard
