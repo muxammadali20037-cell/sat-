@@ -18,7 +18,9 @@ import {
   buildExplainUserContent,
   buildGenerationUserContent,
   buildHintUserContent,
+  buildLearnerProfile,
   buildVerificationUserContent,
+  type LearnerProfile,
   generationSystemPrompt,
   tutorSystemPrompt,
   verificationSystemPrompt,
@@ -32,8 +34,10 @@ import { SUBJECT_LABELS } from '@/types/questions'
 import { ACCESS_MESSAGES, decideExplain, decideGenerateFromQuestion, decideHint } from './gating'
 import { loadQuestionFacts, toQuestionContextInput } from './context'
 import {
+  applyChatPolicy,
   applyExplainPolicy,
   applyHintPolicy,
+  checkCalculations,
   clampText,
   clampTutorResponse,
   cleanGeneratedDraft as cleanDraft,
@@ -76,6 +80,39 @@ async function metered<T>(ctx: TutorCtx, fn: (p: Prepared) => Promise<T>): Promi
     return await fn(await prepare(ctx))
   } finally {
     await reservation.release()
+  }
+}
+
+/**
+ * The student's own results that help the tutor pitch its explanation (service role, filtered by
+ * the authorized id). Failures here never block the tutor: it simply gets no profile.
+ */
+async function loadLearnerProfile(ctx: TutorCtx, taxonomy: Taxonomy, opts: { skillId: string | null; questionId: string | null }): Promise<LearnerProfile | null> {
+  try {
+    const [perf, wrong] = await Promise.all([
+      ctx.admin.rpc('skill_performance', { p_user_id: ctx.userId }),
+      opts.questionId
+        ? ctx.admin.from('attempt_answers').select('id', { count: 'exact', head: true }).eq('user_id', ctx.userId).eq('question_id', opts.questionId).eq('is_correct', false)
+        : Promise.resolve({ count: 0, error: null }),
+    ])
+    if (perf.error) throw perf.error
+    const rows = perf.data ?? []
+    const skillRow = opts.skillId ? rows.find((r) => r.skill_id === opts.skillId) : undefined
+    const skillName = opts.skillId ? taxonomy.skillById.get(opts.skillId)?.name : undefined
+    return {
+      skill: skillName ? { name: skillName, answered: skillRow?.answered ?? 0, correct: skillRow?.correct ?? 0 } : null,
+      timesWrongOnQuestion: wrong.count ?? 0,
+      weakestSkills: opts.skillId
+        ? []
+        : rows
+            .filter((r) => r.answered >= 5 && taxonomy.skillById.has(r.skill_id))
+            .map((r) => ({ name: taxonomy.skillById.get(r.skill_id)!.name, accuracy: r.correct / r.answered }))
+            .sort((a, b) => a.accuracy - b.accuracy)
+            .slice(0, 3),
+    }
+  } catch (err) {
+    console.error('[ai-tutor] learner profile unavailable', err)
+    return null
   }
 }
 
@@ -136,6 +173,7 @@ async function tutorTurn(
       },
     })
     let response = opts.finalize(clampTutorResponse(run.data))
+    const checks = checkCalculations(response)
     const relatedSkillId = opts.questionSkillId ?? matchSkill(response.related_skill, p.taxonomy.skills)
     if (relatedSkillId) response = { ...response, related_skill: p.taxonomy.skillById.get(relatedSkillId)?.name ?? response.related_skill }
 
@@ -148,6 +186,7 @@ async function tutorTurn(
         hintLevel: opts.hintLevel ?? null,
         relatedSkillId,
         questionId: opts.contextQuestionId,
+        checks,
       },
     }
     const persisted = await persistExchange(ctx.admin, {
@@ -188,9 +227,9 @@ export async function tutorChat(ctx: TutorCtx, body: { sessionId?: string; messa
       newSessionTitle: sessionTitle(body.message, 60),
       contextQuestionId: null,
       storedUserContent: body.message,
-      modelUserContent: wrapStudentMessage(body.message),
+      modelUserContent: buildLearnerProfile(await loadLearnerProfile(ctx, p.taxonomy, { skillId: null, questionId: null })) + wrapStudentMessage(body.message),
       system: tutorSystemPrompt({ mode: 'chat', locale: ctx.profile.locale, skills: skillNames(p.taxonomy) }),
-      finalize: (r) => r,
+      finalize: applyChatPolicy,
       questionSkillId: null,
     })
   })
@@ -218,20 +257,28 @@ export async function tutorExplain(
 
     const verifiedAnswer = formatVerifiedAnswer(question, key)
     const studentAnswer = formatStudentAnswer(question, latestScored)
+    const learner = await loadLearnerProfile(ctx, p.taxonomy, { skillId: question.skillId, questionId: question.id })
+    const choices =
+      question.questionType === 'multiple_choice'
+        ? {
+            labels: question.options.map((o) => o.label.toUpperCase()),
+            correct: key.type === 'multiple_choice' ? (question.options.find((o) => o.id === key.correctOptionId)?.label.toUpperCase() ?? null) : null,
+          }
+        : { labels: [], correct: null }
     return tutorTurn(ctx, p, {
       mode: 'explain',
       sessionId: body.sessionId,
       newSessionTitle: sessionTitle(`${question.skillName}: ${question.stem}`),
       contextQuestionId: question.id,
       storedUserContent: body.message ?? '',
-      modelUserContent: buildExplainUserContent(
+      modelUserContent: buildLearnerProfile(learner) + buildExplainUserContent(
         toQuestionContextInput(question),
         { answer: verifiedAnswer, explanation: explanations.get(question.id) ?? null },
         { answer: studentAnswer, isCorrect: latestScored.isCorrect },
         body.message,
       ),
       system: tutorSystemPrompt({ mode: 'explain', locale: ctx.profile.locale, skills: skillNames(p.taxonomy) }),
-      finalize: (r) => applyExplainPolicy(r, verifiedAnswer),
+      finalize: (r) => applyExplainPolicy(r, verifiedAnswer, choices),
       questionSkillId: question.skillId,
     })
   })
@@ -262,7 +309,9 @@ export async function tutorHint(
       newSessionTitle: sessionTitle(`${question.skillName}: ${question.stem}`),
       contextQuestionId: question.id,
       storedUserContent: body.message ?? '',
-      modelUserContent: buildHintUserContent(toQuestionContextInput(question), body.level, body.message),
+      modelUserContent:
+        buildLearnerProfile(await loadLearnerProfile(ctx, p.taxonomy, { skillId: question.skillId, questionId: question.id })) +
+        buildHintUserContent(toQuestionContextInput(question), body.level, body.message),
       system: tutorSystemPrompt({ mode: 'hint', locale: ctx.profile.locale, skills: skillNames(p.taxonomy), hintLevel: body.level }),
       validate: (r) => (key && hintRevealsAnswer(r, question, key) ? 'answer_leak' : null),
       finalize: applyHintPolicy,

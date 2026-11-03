@@ -22,7 +22,7 @@ const LANGUAGE: Record<Locale, string> = {
   ru: 'Russian',
 }
 
-const RESERVED_TAG = /<\s*\/?\s*(student_message|question_context|generated_question|plan_summary|system|instructions?|assistant)\b[^>]*>/gi
+const RESERVED_TAG = /<\s*\/?\s*(student_message|question_context|learner_profile|generated_question|plan_summary|system|instructions?|assistant)\b[^>]*>/gi
 
 /** Neutralise our delimiter tags and the canary inside untrusted text, and bound its length. */
 export function sanitizeStudentText(text: string, maxLength = 4000): string {
@@ -63,8 +63,12 @@ function baseTutorRules(locale: Locale, skills: string[]): string {
     `5. Write explanations in ${LANGUAGE[locale]}. Keep passages, answer choices and math notation exactly as given (English).`,
     '6. Formatting: math in LaTeX between $...$ (inline) or $$...$$ (display); **bold** sparingly; "- " bullets allowed. No HTML, no headings, no tables, no code blocks.',
     '7. Be concise, specific and encouraging. Never promise or predict an official score.',
+    '8. Teach for understanding: explain WHY each step works, not only what to do. When the student shows a wrong idea, name the underlying concept in `misconception` (e.g. "treats percent increase as additive"), not just the slip.',
+    '9. Text inside <learner_profile> comes from SAT MASTER and describes this student\'s own recent results. Adapt depth to it: below about 60% in the skill, use simpler words, smaller steps and a concrete check at the end; above about 80%, be brief and focus on speed and traps. Never quote these numbers back unless it helps the student.',
+    '10. `calculations`: list the plain numeric calculations your explanation relies on (no variables), each with the value you claim. SAT MASTER recomputes every one and shows the student whether it checks out, so be exact. Use [] when there is no arithmetic.',
+    '11. `alternative_method`: when a genuinely different route exists (plugging in choices, a Desmos graph, estimation, a structural shortcut), describe it briefly; otherwise null.',
     '',
-    'Field guide: `concept` = the key idea (the main answer for concept questions); `identified_mistake` = what went wrong in the student\'s answer or work; `hint` = a forward-moving hint; `step_by_step_explanation` = ordered steps, each with a short title and a 1-3 sentence body; `final_answer`; `related_skill` = one name from the list below, copied exactly, or null; `next_exercise` = one sentence on what to practise next.',
+    'Field guide: `concept` = the key idea (the main answer for concept questions); `identified_mistake` = what went wrong in the student\'s answer or work; `misconception` = the underlying concept gap, or null; `hint` = a forward-moving hint; `step_by_step_explanation` = ordered steps, each with a short title and a 1-3 sentence body; `final_answer`; `choice_analysis` = why each wrong choice is wrong (explain mode only, else []); `alternative_method`; `calculations`; `related_skill` = one name from the list below, copied exactly, or null; `next_exercise` = one sentence on what to practise next.',
     '',
     `Official skills: ${skills.join('; ')}.`,
   ].join('\n')
@@ -73,13 +77,13 @@ function baseTutorRules(locale: Locale, skills: string[]): string {
 export function tutorSystemPrompt(opts: { mode: TutorMode; locale: Locale; skills: string[]; hintLevel?: 1 | 2 | 3 }): string {
   const rules = baseTutorRules(opts.locale, opts.skills)
   if (opts.mode === 'chat') {
-    return `${rules}\n\nMODE: chat. Answer the student's SAT concept question. Use steps when a worked example helps. Set \`final_answer\` only when the student asks you to solve a problem they wrote themselves; otherwise null. Set \`identified_mistake\` only if the student shared their own work containing an error.`
+    return `${rules}\n\nMODE: chat. Answer the student's SAT concept question. Use steps when a worked example helps. Set \`final_answer\` only when the student asks you to solve a problem they wrote themselves; otherwise null. When they do, still lead with the reasoning in the steps so they can follow it; the app keeps the final answer hidden until they choose to reveal it. Set \`identified_mistake\` and \`misconception\` only if the student shared their own work containing an error. \`choice_analysis\` is always [] in chat.`
   }
   if (opts.mode === 'explain') {
-    return `${rules}\n\nMODE: explain. The student has already answered the question in <question_context>. The verified correct answer and the verified explanation are authoritative: base your explanation on the verified explanation, never contradict the verified answer, and if your own reasoning disagrees, follow the verified explanation. If the student's answer was incorrect, use \`identified_mistake\` to describe the most likely error (compare their choice with the correct one); if it was correct, set it to null. Put the verified answer in \`final_answer\`.`
+    return `${rules}\n\nMODE: explain. The student has already answered the question in <question_context>. The verified correct answer and the verified explanation are authoritative: base your explanation on the verified explanation, never contradict the verified answer, and if your own reasoning disagrees, follow the verified explanation. If the student's answer was incorrect, use \`identified_mistake\` to describe the most likely error (compare their choice with the correct one); if it was correct, set it to null. Put the verified answer in \`final_answer\`. For multiple-choice questions fill \`choice_analysis\` with one entry for EACH incorrect choice (never the verified one), naming the mistake that leads to it; for student-produced responses use [].`
   }
   const level = HINT_LEVELS[opts.hintLevel ?? 1]
-  return `${rules}\n\nMODE: hint. You do NOT have the answer key and must not give the answer. ${level} Never state the final answer, never say which choice is correct, never eliminate down to a single choice, and never compute the final value. Put the hint in \`hint\` (and \`concept\` if a short reminder of the idea helps). Set \`final_answer\` to null and \`step_by_step_explanation\` to [].`
+  return `${rules}\n\nMODE: hint. You do NOT have the answer key and must not give the answer. ${level} Never state the final answer, never say which choice is correct, never eliminate down to a single choice, and never compute the final value. Put the hint in \`hint\` (and \`concept\` if a short reminder of the idea helps). Set \`final_answer\` to null, \`step_by_step_explanation\`, \`choice_analysis\` and \`calculations\` to [], and \`alternative_method\` to null. You may set \`misconception\` if the student's message shows one.`
 }
 
 export type QuestionContextInput = {
@@ -105,6 +109,31 @@ function questionBlock(q: QuestionContextInput): string[] {
   lines.push(`Question:\n${q.stem}`)
   if (q.options.length > 0) lines.push(`Choices:\n${q.options.map((o) => `${o.label}) ${o.content}`).join('\n')}`)
   return lines
+}
+
+export type LearnerProfile = {
+  /** The question's skill: the student's scored answers there (null when none). */
+  skill: { name: string; answered: number; correct: number } | null
+  /** Earlier wrong answers to this exact question. */
+  timesWrongOnQuestion: number
+  /** Up to three weakest skills (≥5 answers), for chat. */
+  weakestSkills: Array<{ name: string; accuracy: number }>
+}
+
+/** Server-built summary of the student's own results (trusted; never contains student-written text). */
+export function buildLearnerProfile(p: LearnerProfile | null): string {
+  if (!p) return ''
+  const lines: string[] = []
+  if (p.skill) {
+    lines.push(
+      p.skill.answered > 0
+        ? `Skill "${p.skill.name}": ${p.skill.correct}/${p.skill.answered} correct (${Math.round((p.skill.correct / p.skill.answered) * 100)}%).`
+        : `Skill "${p.skill.name}": no scored answers yet.`,
+    )
+  }
+  if (p.timesWrongOnQuestion > 0) lines.push(`This exact question: answered incorrectly ${p.timesWrongOnQuestion} time(s) so far.`)
+  if (p.weakestSkills.length > 0) lines.push(`Weakest skills so far: ${p.weakestSkills.map((w) => `${w.name} (${Math.round(w.accuracy * 100)}%)`).join('; ')}.`)
+  return lines.length ? `<learner_profile>\n${lines.join('\n')}\n</learner_profile>\n\n` : ''
 }
 
 /** Explain mode: includes the verified key and explanation (only after the student's answer was scored). */

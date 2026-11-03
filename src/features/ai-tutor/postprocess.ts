@@ -1,5 +1,6 @@
 import type { AnswerKey } from '@/lib/scoring'
 import type { GeneratedPractice, TutorResponse } from '@/lib/ai/schemas'
+import { checkCalculation, type CalculationCheck } from '@/lib/math/arith'
 
 /**
  * Server-side post-processing of validated tutor output (pure, unit-tested):
@@ -17,6 +18,12 @@ export const TUTOR_LIMITS = {
   finalAnswer: 600,
   relatedSkill: 120,
   nextExercise: 400,
+  misconception: 800,
+  choices: 6,
+  choiceText: 600,
+  methodTitle: 80,
+  methodBody: 1200,
+  calculations: 6,
 } as const
 
 /** Trim and cut at a word boundary with an ellipsis. Never splits inside a `$…$` pair if avoidable. */
@@ -50,17 +57,46 @@ export function clampTutorResponse(r: TutorResponse): TutorResponse {
     final_answer: nullableText(r.final_answer, TUTOR_LIMITS.finalAnswer),
     related_skill: nullableText(r.related_skill, TUTOR_LIMITS.relatedSkill),
     next_exercise: nullableText(r.next_exercise, TUTOR_LIMITS.nextExercise),
+    misconception: nullableText(r.misconception ?? null, TUTOR_LIMITS.misconception),
+    choice_analysis: (r.choice_analysis ?? [])
+      .map((c) => ({ choice: c.choice.trim().replace(/^\(?([A-Za-z])\)?\.?$/, '$1').toUpperCase().slice(0, 4), why_wrong: clampText(c.why_wrong, TUTOR_LIMITS.choiceText) }))
+      .filter((c) => c.choice.length > 0 && c.why_wrong.length > 0)
+      .slice(0, TUTOR_LIMITS.choices),
+    alternative_method:
+      r.alternative_method && r.alternative_method.body.trim()
+        ? { title: clampText(r.alternative_method.title, TUTOR_LIMITS.methodTitle), body: clampText(r.alternative_method.body, TUTOR_LIMITS.methodBody) }
+        : null,
+    calculations: (r.calculations ?? [])
+      .filter((c) => c.expression.trim() && c.result.trim())
+      .slice(0, TUTOR_LIMITS.calculations)
+      .map((c) => ({ expression: c.expression.trim().slice(0, 200), result: c.result.trim().slice(0, 60) })),
   }
+}
+
+/** SAT MASTER's own check of each stated calculation (never trusted from the model). */
+export function checkCalculations(r: TutorResponse): CalculationCheck[] {
+  return r.calculations.map((c) => checkCalculation(c.expression, c.result))
 }
 
 /** Hint mode: the answer and the full worked solution are always removed before saving/returning. */
 export function applyHintPolicy(r: TutorResponse): TutorResponse {
-  return { ...r, final_answer: null, step_by_step_explanation: [] }
+  // Worked calculations, a second method and per-choice verdicts would all give the answer away.
+  return { ...r, final_answer: null, step_by_step_explanation: [], calculations: [], alternative_method: null, choice_analysis: [] }
 }
 
 /** Explain mode: the verified key always wins over whatever the model wrote. */
-export function applyExplainPolicy(r: TutorResponse, verifiedAnswer: string): TutorResponse {
-  return { ...r, final_answer: verifiedAnswer }
+export function applyExplainPolicy(r: TutorResponse, verifiedAnswer: string, choices?: { labels: string[]; correct: string | null }): TutorResponse {
+  // Per-choice "why wrong" notes are kept only for real choices that the key marks as wrong, so the
+  // model can never label the verified answer as incorrect.
+  const choice_analysis = choices
+    ? r.choice_analysis.filter((c) => choices.labels.includes(c.choice) && c.choice !== choices.correct)
+    : []
+  return { ...r, final_answer: verifiedAnswer, choice_analysis }
+}
+
+/** Chat has no question attached, so there are no labelled choices to analyse. */
+export function applyChatPolicy(r: TutorResponse): TutorResponse {
+  return { ...r, choice_analysis: [] }
 }
 
 export type QuestionShape = {
@@ -101,7 +137,7 @@ const escapeRegex = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
  * checked. The key is only used here, server-side — it is never sent to the model in hint mode.
  */
 export function hintRevealsAnswer(r: TutorResponse, q: QuestionShape, key: AnswerKey): boolean {
-  const text = [r.concept, r.hint, r.identified_mistake, r.next_exercise]
+  const text = [r.concept, r.hint, r.identified_mistake, r.next_exercise, r.misconception]
     .filter((x): x is string => typeof x === 'string')
     .join('\n')
   if (key.type === 'multiple_choice') {
@@ -133,6 +169,9 @@ export function tutorResponseToText(r: TutorResponse): string {
   if (r.step_by_step_explanation.length) {
     parts.push(r.step_by_step_explanation.map((s, i) => `${i + 1}. ${s.title}: ${s.body}`).join('\n'))
   }
+  if (r.misconception) parts.push(`Misconception: ${r.misconception}`)
+  if (r.choice_analysis.length) parts.push(r.choice_analysis.map((c) => `${c.choice}: ${c.why_wrong}`).join('\n'))
+  if (r.alternative_method) parts.push(`Another way (${r.alternative_method.title}): ${r.alternative_method.body}`)
   if (r.final_answer) parts.push(`Answer: ${r.final_answer}`)
   if (r.next_exercise) parts.push(`Next: ${r.next_exercise}`)
   return parts.join('\n\n').slice(0, 19_000)

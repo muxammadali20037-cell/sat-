@@ -79,6 +79,10 @@ const response = (over: Partial<TutorResponse> = {}): TutorResponse => ({
   final_answer: 'B',
   related_skill: 'Central ideas and details',
   next_exercise: 'Try two more.',
+  misconception: null,
+  choice_analysis: [],
+  alternative_method: null,
+  calculations: [],
   ...over,
 })
 

@@ -82,8 +82,28 @@ describe('structured-output JSON schema', () => {
   it('lists every tutor field as required', () => {
     const json = toProviderJsonSchema(TutorResponseSchema) as { required: string[] }
     expect(json.required.sort()).toEqual(
-      ['concept', 'final_answer', 'hint', 'identified_mistake', 'next_exercise', 'related_skill', 'step_by_step_explanation'].sort(),
+      [
+        'concept',
+        'final_answer',
+        'hint',
+        'identified_mistake',
+        'next_exercise',
+        'related_skill',
+        'step_by_step_explanation',
+        'misconception',
+        'choice_analysis',
+        'alternative_method',
+        'calculations',
+      ].sort(),
     )
+  })
+  it('accepts a nullable alternative method object (anyOf with null)', () => {
+    // Internal $ref/$defs and anyOf with null are supported by structured outputs; at most 16 union-typed fields per request.
+    const json = toProviderJsonSchema(TutorResponseSchema) as { properties: Record<string, { anyOf?: Array<{ type?: string; $ref?: string }> }> }
+    const alt = json.properties.alternative_method?.anyOf ?? []
+    expect(alt.some((x) => x.type === 'null')).toBe(true)
+    expect(alt.some((x) => x.type === 'object' || x.$ref?.startsWith('#/'))).toBe(true)
+    expect(Object.values(json.properties).filter((p) => p.anyOf).length).toBeLessThanOrEqual(16)
   })
 })
 
@@ -222,6 +242,10 @@ const okTutor: TutorResponse = {
   final_answer: null,
   related_skill: null,
   next_exercise: null,
+  misconception: null,
+  choice_analysis: [],
+  alternative_method: null,
+  calculations: [],
 }
 
 function fakeProvider(script: Array<() => unknown>): AiProvider & { calls: number } {

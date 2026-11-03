@@ -1,6 +1,7 @@
 import { z } from 'zod'
-import { TutorResponseSchema, type TutorResponse } from '@/lib/ai/schemas'
+import { StoredTutorResponseSchema, type TutorResponse } from '@/lib/ai/schemas'
 import type { SubjectCode } from '@/types/questions'
+import type { CalculationCheck } from '@/lib/math/arith'
 
 /** Request bodies and client-safe payloads for the AI tutor. No server imports. */
 
@@ -29,6 +30,8 @@ export type TutorMeta = {
   hintLevel?: HintLevel | null
   relatedSkillId?: string | null
   questionId?: string | null
+  /** SAT MASTER's own arithmetic check of the calculations the model stated (lib/math/arith). */
+  checks?: CalculationCheck[]
 }
 
 /** Safe generated question (never includes the correct index). */
@@ -50,11 +53,14 @@ const TutorMetaSchema = z.object({
   hintLevel: HintLevelSchema.nullable().optional(),
   relatedSkillId: z.string().nullable().optional(),
   questionId: z.string().nullable().optional(),
+  checks: z
+    .array(z.object({ expression: z.string(), claimed: z.string(), computed: z.string().nullable(), status: z.enum(['verified', 'mismatch', 'unchecked']) }))
+    .optional(),
 })
 
 /** Shape of ai_messages.structured for assistant rows (validated again when read). */
 export const StoredStructuredSchema = z.discriminatedUnion('kind', [
-  z.object({ kind: z.literal('tutor'), response: TutorResponseSchema, meta: TutorMetaSchema }),
+  z.object({ kind: z.literal('tutor'), response: StoredTutorResponseSchema, meta: TutorMetaSchema }),
   z.object({
     kind: z.literal('generated_practice'),
     generated: z.object({

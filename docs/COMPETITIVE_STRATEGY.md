@@ -91,7 +91,7 @@ Tavsiyalar saqlanmaydi — har safar haqiqiy yozuvlardan qayta hisoblanadi (soxt
    - Learning Intelligence v1 (sof qoidalar dvigateli + dashboard kartasi, uz/en/ru, har tavsiyada dalil raqamlari).
    - Shaxsiy topshiriq (0020), o'qituvchi o'quvchi sahifasidan "zaif domen bo'yicha mashq berish".
    - Kutilayotgan sinf topshiriqlari dashboard missiyasida.
-2. **2.0-B:** AI Tutor promptlari (nega noto'g'ri, muqobil usul, tushunmovchilik), "tekshirilgan / AI tushuntirishi" farqi.
+2. **2.0-B (bajarildi):** AI Tutor: noto'g'ri variantlar tahlili, muqobil usul, tushunmovchilik, o'quvchi darajasiga moslash; hisob-kitoblarni SAT MASTER'ning o'z kalkulyatori tekshiradi; "tekshirilgan / AI yozgan" yorlig'i.
 3. **2.0-C:** Resource Hub (`resources` jadvali: source, license, attribution, approved_by).
 4. **PHASE 4:** jonli dars (LiveKit + tldraw) — egasi qarori bilan.
 5. **PHASE 5:** o'qituvchi obunasi va to'lovlar — provayder tasdig'i bilan.

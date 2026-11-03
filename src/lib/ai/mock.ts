@@ -37,6 +37,10 @@ function mockTutor(system: string, user: string): unknown {
       final_answer: null,
       related_skill: skill,
       next_exercise: `${MOCK_LABEL}: try the next hint level if you are still stuck.`,
+      misconception: null,
+      choice_analysis: [],
+      alternative_method: null,
+      calculations: [],
     }
   }
   return {
@@ -52,6 +56,19 @@ function mockTutor(system: string, user: string): unknown {
     final_answer: mode === 'explain' ? (verified ?? `${MOCK_LABEL}: answer`) : null,
     related_skill: skill,
     next_exercise: `${MOCK_LABEL}: answer two more questions on this skill.`,
+    misconception: mode === 'explain' && incorrect ? `${MOCK_LABEL}: placeholder for the underlying concept gap.` : null,
+    // Every choice label in the question except the verified one ("A) …" lines), so the server's
+    // filtering of the verified choice is exercised too.
+    choice_analysis:
+      mode === 'explain'
+        ? [...user.matchAll(/^([A-D])\) /gm)].map((m) => ({ choice: m[1]!, why_wrong: `${MOCK_LABEL}: placeholder reason why ${m[1]} is wrong.` }))
+        : [],
+    alternative_method: mode === 'chat' ? null : { title: 'Plug in the choices', body: `${MOCK_LABEL}: substitute each choice and keep the one that works.` },
+    // One correct and one deliberately wrong calculation, so both check results are visible in development.
+    calculations: [
+      { expression: '(11 - 3) / 2', result: '4' },
+      { expression: '2 * 4 + 3', result: '12' },
+    ],
   }
 }
 

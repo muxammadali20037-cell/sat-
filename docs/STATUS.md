@@ -1,6 +1,6 @@
 # SAT MASTER — Build status and phase report
 
-_Last updated: 3 November 2026 (SAT MASTER 2.0-A: Learning Intelligence and personal assignments)_
+_Last updated: 3 November 2026 (SAT MASTER 2.0-B: AI tutor explanations and calculation checks)_
 
 The codebase covers phases 1–8 of [DEVELOPMENT_ROADMAP.md](DEVELOPMENT_ROADMAP.md). Phase 9 (deployment) is partly done: a Supabase project exists, and the steps that need the owner's accounts or credentials are listed under "Launch checklist" below.
 
@@ -94,6 +94,21 @@ The flows ran as a real user against real auth, PostgREST and RLS. AI used the l
   - Both checks now run inside SQL functions under a per-student lock (migration 0015). Parallel-connection tests fail without the lock and pass with it.
 - **Admin lists:** question excerpts showed raw LaTeX (`\dfrac{…}`) and escaped prices as `\12`. They now use the same plain-text rendering as student pages.
 - **Pack import (caught before release):** the first version recognised already-imported questions by stem alone. Many Reading and Writing questions share a stem, so a retry after a partial import could have skipped real questions. It now matches passage and stem.
+
+### SAT MASTER 2.0-B (3 Nov): AI tutor
+
+No database change (the tutor's structured output lives in `ai_messages.structured`; rows written before keep working through defaults).
+
+- **New answer parts** (uz/en/ru): the underlying *misconception*; *why each wrong choice is wrong* (explain mode, multiple choice); *another way to solve it*; the model's numeric *calculations*.
+- **Verified vs AI-written, made visible:**
+  - every stated calculation is recomputed on the server by SAT MASTER's own safe arithmetic evaluator (`src/lib/math/arith.ts`: fixed grammar, no `eval`, bounded size, depth and exponents) and shown as "checks out", "SAT MASTER's calculator gets X" or "not checked";
+  - explain mode: the answer still comes from the reviewed answer key, and per-choice notes are dropped for any choice that is not real or that the key marks correct, so the AI can never call the verified answer wrong;
+  - every answer ends with a label: reviewed key + AI explanation / AI-written and unchecked (chat) / AI hint without the answer.
+  - Wolfram|Alpha is still not connected (commercial agreement required), and nothing claims it.
+- **Not revealing answers too early:** in chat the final answer stays hidden behind "Show the answer"; hint mode now also strips calculations, the second method and choice verdicts, and the leak check reads the misconception field too.
+- **Connected to learning progress:** a `<learner_profile>` block built on the server from the student's own results (accuracy in the question's skill, earlier misses of that question; weakest skills for chat) tells the model how deep to go. It is never stored as message text, and students cannot forge it (the tag is neutralised in student text).
+- **Verified:** 579 unit tests (13 new, including the evaluator's refusal cases and old-row parsing); all 683 tests across unit and DB; structured-output schema checked against the documented limits ($ref/$defs and anyOf supported, ≤16 union fields); 13 Playwright checks with the mock provider (`e2e-tutor`); lint and build.
+- **Not verified:** real model quality, because `ANTHROPIC_API_KEY` is not set in production (AI stays `NOT_CONFIGURED`).
 
 ### SAT MASTER 2.0-A (3 Nov): Learning Intelligence, personal assignments
 
