@@ -154,7 +154,7 @@ State on 2 Nov 2026, applied through the Supabase connector with the owner's con
 | 0012 search indexes | **Declined by the owner** at the confirmation prompt. Optional (admin search speed only). Apply later from the SQL editor if wanted. |
 | 0013 study-guide tables | Applied |
 | 0014 study-guide content (~480 KB) | Not applied. Use Admin → Study guides → "Import bundled guides" after the first deploy, or `supabase db push`. |
-| 0017 website Telegram sign-in (1 table, 2 columns; no DELETE or DROP) | Not applied yet. Needed for "Continue with Telegram" on the website; without it that button reports Telegram sign-in as unavailable, and everything else works. |
+| 0017 website Telegram sign-in (1 table, 2 columns; no DELETE or DROP) | Applied on 3 Nov with the owner's approval. Checked afterwards: no `anon` or `authenticated` privileges on `telegram_login_requests`. |
 | 0016 Telegram accounts (1 table) | Applied on 3 Nov with the owner's approval. Checked afterwards: `anon` has no privileges; `authenticated` has SELECT only, limited to the student's own row by RLS. |
 | 0015 atomic quotas (1 table, 2 functions; no existing data touched) | **Not applied** (the owner declined it on 2 Nov and chose to apply only 0016 on 3 Nov). The confirmation prompt's "destructive" warning comes from the word DELETE in the function body, which only clears that new table's stale reservations. The app still works without it: it falls back to the older check and logs `[quota] database function … is missing` (tested). Until it is applied, simultaneous requests can exceed the AI and mock-exam limits slightly. To apply it, paste `supabase/migrations/20261102001500_atomic_quotas.sql` into the Supabase SQL editor, or run `supabase db push`. |
 
@@ -170,7 +170,7 @@ The security advisor reports two kinds of finding, both expected by design:
 supabase link --project-ref ncqqnjnozrymrmblixra
 supabase migration repair --status applied 20261102000100 20261102000200 20261102000300 20261102000400 \
   20261102000500 20261102000600 20261102000700 20261102000800 20261102000900 20261102001000 20261102001100 20261102001300
-supabase db push   # applies 0012 (if still wanted), 0014, 0015 and 0017
+supabase db push   # applies 0012 (if still wanted), 0014 and 0015
 ```
 
 ## Launch checklist (owner actions)
