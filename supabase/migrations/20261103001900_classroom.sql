@@ -6,7 +6,7 @@
 -- Access model (same pattern as attempts/payments):
 --   * Clients (anon/authenticated) can only SELECT, and only what their membership allows (RLS).
 --   * Every write goes through the server, which checks the workspace role first
---     (src/features/workspaces/permissions.ts) and then uses the service role. Multi-row writes
+--     (src/features/classroom/permissions.ts) and then uses the service role. Multi-row writes
 --     that must be atomic (creating a workspace, joining with a code) are SQL functions that only
 --     the service role may call.
 -- Additive: no existing rows change. One existing policy is narrowed (telegram_accounts, below).
