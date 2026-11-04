@@ -30,6 +30,7 @@ export type Action =
   | 'session.manage'
   | 'attendance.mark'
   | 'material.manage'
+  | 'poll.manage'
 
 /** `teachesGroup`: the actor is assigned to the group as a teacher or assistant. */
 export type Context = { teachesGroup?: boolean }
@@ -66,6 +67,7 @@ export function can(role: WorkspaceRole | null | undefined, action: Action, ctx:
     case 'session.manage':
     case 'attendance.mark':
     case 'material.manage':
+    case 'poll.manage':
       return inGroup
   }
 }

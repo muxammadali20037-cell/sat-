@@ -18,6 +18,8 @@ import { getTaxonomy } from '@/features/taxonomy/server'
 import { formatDate, percent } from '@/features/dashboard/format'
 import { loadGroupLessons } from '@/features/classroom/lesson-server'
 import { liveConfig } from '@/features/live/server'
+import { loadStaffPolls } from '@/features/classroom/poll-server'
+import { CreatePollForm, StaffPollCard } from '@/components/classroom/poll-forms'
 import { sessionTiming } from '@/features/classroom/lessons'
 import {
   AddLinkMaterialForm,
@@ -48,6 +50,7 @@ export default async function GroupPage({ params }: { params: Promise<{ ws: stri
     admin.from('mock_exams').select('id, title').eq('status', 'published').order('created_at'),
     loadGroupLessons(admin, groupId),
   ])
+  const polls = await loadStaffPolls(admin, groupId, { limit: 10 })
   const now = new Date()
   const when = (iso: string) => formatDate(iso, locale, tz, { weekday: 'short', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' })
   const upcoming = lessons.sessions.filter((x) => sessionTiming(x.startsAt, x.durationMinutes, now) !== 'ended')
@@ -153,6 +156,18 @@ export default async function GroupPage({ params }: { params: Promise<{ ws: stri
               {!liveOn && <p className="-mt-2 mb-4 text-xs text-muted-foreground" data-testid="live-not-configured">{L.liveNotConfigured}</p>}
               <CreateSessionForm workspaceId={ws} groupId={groupId} />
             </Card>
+          </div>
+        </Section>
+
+        <Section title={t.polls.title} description={t.polls.description}>
+          <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
+            <div className="space-y-3" data-testid="group-polls">
+              {polls.length === 0 ? <p className="text-[13px] text-muted-foreground">{t.polls.empty}</p> : polls.map((p) => <StaffPollCard key={p.id} poll={p} />)}
+            </div>
+            <div className="rounded-lg border border-border bg-surface p-4">
+              <h3 className="mb-3 text-[15px] font-semibold">{t.polls.newTitle}</h3>
+              <CreatePollForm workspaceId={ws} groupId={groupId} />
+            </div>
           </div>
         </Section>
 

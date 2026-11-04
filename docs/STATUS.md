@@ -1,6 +1,6 @@
 # SAT MASTER — Build status and phase report
 
-_Last updated: 4 November 2026 (SAT MASTER PHASE 4-B: in-app live lessons)_
+_Last updated: 4 November 2026 (SAT MASTER PHASE 4-C: class polls and quick quizzes)_
 
 The codebase covers phases 1–8 of [DEVELOPMENT_ROADMAP.md](DEVELOPMENT_ROADMAP.md). Phase 9 (deployment) is partly done: a Supabase project exists, and the steps that need the owner's accounts or credentials are listed under "Launch checklist" below.
 
@@ -94,6 +94,16 @@ The flows ran as a real user against real auth, PostgREST and RLS. AI used the l
   - Both checks now run inside SQL functions under a per-student lock (migration 0015). Parallel-connection tests fail without the lock and pass with it.
 - **Admin lists:** question excerpts showed raw LaTeX (`\dfrac{…}`) and escaped prices as `\12`. They now use the same plain-text rendering as student pages.
 - **Pack import (caught before release):** the first version recognised already-imported questions by stem alone. Many Reading and Writing questions share a stem, so a retry after a partial import could have skipped real questions. It now matches passage and stem.
+
+### SAT MASTER PHASE 4-C (4 Nov): class polls and quick quizzes
+
+- **Migration 0024:** `class_polls` (poll or quiz, 2–6 options, optional lesson link) and `class_poll_answers` (one answer per student).
+  - The **quiz key column is not readable by any browser client** (column-level grant; staff included). The server sends it to students only after the teacher closes the quiz.
+  - A student reads only their own answers; the group's staff read all. No client writes. Constraints keep the key in range, polls without a key, answers inside the workspace.
+- **Teacher (group page):** ask a poll or quiz, see live counts, "{answered}/{students} answered", % correct, who answered what; close to reveal results.
+- **Student (Classes page):** answer (and change the answer) while open; no counts and no key until closed; then results, the correct answer and their own answer.
+- **Live room:** a "Questions" panel. The teacher asks during the lesson; students' panels and the teacher's counts update without reloading. The data channel only carries a "fetch again" nudge; results and keys come from the server (`GET /api/polls?sessionId=`, role-shaped).
+- **Verified:** 6 unit tests, 4 DB tests (key column denied to clients, own answers only, no client writes, constraints); all 728 tests; lint, build, 0 vulnerabilities; 14 Playwright checks (`e2e-polls`), including the live room against a local LiveKit server; earlier suites re-run (live 22/22, lessons 22/22).
 
 ### SAT MASTER PHASE 4-B (4 Nov): in-app live lessons
 
@@ -353,6 +363,7 @@ State on 2 Nov 2026, applied through the Supabase connector with the owner's con
 | 0012 search indexes | **Declined by the owner** at the confirmation prompt. Optional (admin search speed only). Apply later from the SQL editor if wanted. |
 | 0013 study-guide tables | Applied |
 | 0014 study-guide content (~480 KB) | Not applied. Use Admin → Study guides → "Import bundled guides" after the first deploy, or `supabase db push`. |
+| 0024 class polls (2 tables; no existing data touched) | Pending the owner's approval. |
 | 0023 live lesson joins (1 table; no existing data touched) | Applied on 4 Nov with the owner's approval. Checked afterwards: RLS on, one read policy, `authenticated` SELECT only, `anon` nothing; 64 tables, all with RLS. |
 | 0022 class lessons (3 tables, 1 private bucket; no existing data touched) | Applied on 4 Nov with the owner's approval. Checked afterwards: RLS on all three tables, `authenticated` SELECT only, `anon` nothing; `workspace-files` bucket private (20 MB, PDF/PNG/JPG/WEBP) with no storage policies; 63 tables, all with RLS. |
 | 0021 Resource Hub (1 table; no existing data touched) | Applied on 4 Nov with the owner's approval. Checked afterwards: RLS on, one read policy, `authenticated` has SELECT only, `anon` nothing; 60 tables, all with RLS. |

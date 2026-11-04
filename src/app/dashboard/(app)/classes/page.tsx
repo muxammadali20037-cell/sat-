@@ -17,6 +17,8 @@ import { loadMyLessons } from '@/features/classroom/lesson-server'
 import { sessionTiming } from '@/features/classroom/lessons'
 import { MaterialOpenButton } from '@/components/classroom/lesson-forms'
 import { liveConfig } from '@/features/live/server'
+import { loadStudentPolls } from '@/features/classroom/poll-server'
+import { StudentPollCard } from '@/components/classroom/poll-forms'
 
 export async function generateMetadata(): Promise<Metadata> {
   return { title: (await getDict(classroomDict)).classes.metaTitle }
@@ -31,6 +33,7 @@ export default async function ClassesPage() {
   const admin = createAdminSupabase()
   const { workspaces } = await loadMyClasses(admin, profile.id)
   const tz = profile.timezone || 'Asia/Tashkent'
+  const pollsBy = new Map(await Promise.all(workspaces.map(async (w) => [w.workspace.id, await loadStudentPolls(admin, profile.id, w.groups.map((g) => g.id), { limit: 8 })] as const)))
   const lessonsBy = new Map(await Promise.all(workspaces.map(async (w) => [w.workspace.id, await loadMyLessons(admin, profile.id, w.groups)] as const)))
   const now = new Date()
   const liveOn = liveConfig() !== null
@@ -63,8 +66,19 @@ export default async function ClassesPage() {
                 </Card>
                 {(() => {
                   const ls = lessonsBy.get(w.workspace.id)!
+                  const ps = pollsBy.get(w.workspace.id) ?? []
                   return (
                     <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
+                      {ps.length > 0 && (
+                        <div className="space-y-3 lg:col-span-2" data-testid="my-polls">
+                          <h3 className="text-[15px] font-semibold">{t.pollsTitle}</h3>
+                          <div className="grid grid-cols-1 gap-3 lg:grid-cols-2">
+                            {ps.map((p) => (
+                              <StudentPollCard key={p.id} poll={p} />
+                            ))}
+                          </div>
+                        </div>
+                      )}
                       <Card className="p-4" data-testid="my-lessons">
                         <h3 className="text-[15px] font-semibold">{t.lessonsTitle}</h3>
                         {ls.attendance.counted > 0 && (

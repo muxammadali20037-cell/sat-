@@ -63,6 +63,8 @@ export default async function LivePage({ params }: { params: Promise<{ sessionId
       role={access.role}
       selfId={profile.id}
       backHref={back}
+      workspaceId={s.workspaceId}
+      groupId={s.groupId}
     />
   )
 }

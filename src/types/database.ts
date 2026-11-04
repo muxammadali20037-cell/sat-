@@ -660,6 +660,75 @@ export type Database = {
         }
         Relationships: []
       }
+      class_polls: {
+        Row: {
+          id: string
+          workspace_id: string
+          group_id: string
+          session_id: string | null
+          kind: string
+          question: string
+          options: string[]
+          correct_index: number | null
+          status: string
+          created_by: string | null
+          created_at: string
+          closed_at: string | null
+        }
+        Insert: {
+          id?: string
+          workspace_id: string
+          group_id: string
+          session_id?: string | null
+          kind: string
+          question: string
+          options: string[]
+          correct_index?: number | null
+          status?: string
+          created_by?: string | null
+          created_at?: string
+          closed_at?: string | null
+        }
+        Update: {
+          id?: string
+          workspace_id?: string
+          group_id?: string
+          session_id?: string | null
+          kind?: string
+          question?: string
+          options?: string[]
+          correct_index?: number | null
+          status?: string
+          created_by?: string | null
+          created_at?: string
+          closed_at?: string | null
+        }
+        Relationships: []
+      }
+      class_poll_answers: {
+        Row: {
+          workspace_id: string
+          poll_id: string
+          student_id: string
+          choice: number
+          answered_at: string
+        }
+        Insert: {
+          workspace_id: string
+          poll_id: string
+          student_id: string
+          choice: number
+          answered_at?: string
+        }
+        Update: {
+          workspace_id?: string
+          poll_id?: string
+          student_id?: string
+          choice?: number
+          answered_at?: string
+        }
+        Relationships: []
+      }
       attempt_answers: {
         Row: {
           id: string

@@ -11,6 +11,7 @@ import { apiFetch, ApiClientError } from '@/lib/api/client'
 import { cn } from '@/lib/utils'
 import { Button } from '@/components/ui/button'
 import { Whiteboard } from './whiteboard'
+import { LivePolls } from './live-polls'
 import {
   applyBoard,
   BoardMessageSchema,
@@ -64,6 +65,8 @@ export function LiveRoom({
   role,
   selfId,
   backHref,
+  workspaceId,
+  groupId,
 }: {
   sessionId: string
   title: string
@@ -71,6 +74,8 @@ export function LiveRoom({
   role: 'staff' | 'student'
   selfId: string
   backHref: string
+  workspaceId: string
+  groupId: string
 }) {
   const t = useDict(liveDict)
   const room = React.useRef<Room | null>(null)
@@ -85,6 +90,7 @@ export function LiveRoom({
   const [hands, setHands] = React.useState<Set<string>>(new Set())
   const [draftChat, setDraftChat] = React.useState('')
   const [mediaProblem, setMediaProblem] = React.useState(false)
+  const [pollsVersion, setPollsVersion] = React.useState(0)
   const staff = role === 'staff'
 
   const updateStrokes = React.useCallback((next: Stroke[]) => {
@@ -150,6 +156,8 @@ export function LiveRoom({
             })
           } else if (msg.t === 'lower-all' && senderRole === 'staff') {
             setHands(new Set())
+          } else if (msg.t === 'polls') {
+            setPollsVersion((v) => v + 1)
           }
         }
       })
@@ -302,6 +310,18 @@ export function LiveRoom({
               {t.desmos}
             </a>
           </section>
+          <LivePolls
+            sessionId={sessionId}
+            workspaceId={workspaceId}
+            groupId={groupId}
+            staff={staff}
+            version={pollsVersion}
+            labels={{ title: t.polls, empty: t.noPolls, ask: t.askQuestion }}
+            onChanged={() => {
+              setPollsVersion((v) => v + 1)
+              void send(TOPIC_CLASS, { t: 'polls' })
+            }}
+          />
         </div>
 
         <aside className="flex min-w-0 flex-col gap-4">

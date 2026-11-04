@@ -37,6 +37,8 @@ export const ClassMessageSchema = z.discriminatedUnion('t', [
   z.object({ t: z.literal('chat'), text: z.string().trim().min(1).max(MAX_CHAT) }),
   z.object({ t: z.literal('hand'), up: z.boolean() }),
   z.object({ t: z.literal('lower-all') }),
+  /** "Polls changed, fetch them again" — carries no poll data. */
+  z.object({ t: z.literal('polls') }),
 ])
 export type ClassMessage = z.infer<typeof ClassMessageSchema>
 

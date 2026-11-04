@@ -39,6 +39,9 @@ export const liveDict = defineDict({
     disconnected: 'You left the lesson.',
     rejoin: 'Join again',
     error: 'Could not join the lesson. Try again.',
+    polls: 'Questions',
+    noPolls: 'No questions in this lesson yet.',
+    askQuestion: 'Ask a poll or quiz question',
   },
   uz: {
     metaTitle: 'Jonli dars',
@@ -77,6 +80,9 @@ export const liveDict = defineDict({
     disconnected: 'Siz darsdan chiqdingiz.',
     rejoin: 'Qayta qo‘shilish',
     error: "Darsga qo'shilib bo'lmadi. Qayta urinib ko'ring.",
+    polls: 'Savollar',
+    noPolls: "Bu darsda hali savol yo'q.",
+    askQuestion: "So'rovnoma yoki quiz savoli berish",
   },
   ru: {
     metaTitle: 'Онлайн-урок',
@@ -115,5 +121,8 @@ export const liveDict = defineDict({
     disconnected: 'Вы вышли с урока.',
     rejoin: 'Войти снова',
     error: 'Не удалось подключиться к уроку. Попробуйте ещё раз.',
+    polls: 'Вопросы',
+    noPolls: 'На этом уроке пока нет вопросов.',
+    askQuestion: 'Задать опрос или вопрос квиза',
   },
 })
