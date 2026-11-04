@@ -239,9 +239,10 @@ Migratsiya: **0025+**.
 | 0022 | **Yozilgan (PHASE 4-A):** `class_sessions`, `attendance`, `class_materials`, `workspace-files` bucket |
 | 0023 | **Yozilgan (PHASE 4-B):** `session_joins` — jonli darsga kim qo'shilgani (LiveKit) |
 | 0024 | **Yozilgan (PHASE 4-C):** `class_polls`, `class_poll_answers` — so'rovnoma va quiz |
-| 0025 | yozuvlar (rozilik bilan), recurrences, guests, participants, `attendance`, `live_events`, `chat_messages`, polls, `recordings`, consents, `webhook_events`, `usage_counters`, `materials` + `workspace-files` bucket |
-| 0026 | doska snapshot'lari (kerak bo'lsa), snapshots, assets |
-| 0027 | Workspace plans, prices, subscriptions; `payments.purpose` kengaytmasi; guruh leaderboard'i |
+| 0025 | **Yozilgan:** `class_challenges`, `workspace_members.leaderboard_opt_in` — challenge va rozilik bilan reyting |
+| 0026 | yozuvlar (rozilik bilan), recurrences, guests, participants, `attendance`, `live_events`, `chat_messages`, polls, `recordings`, consents, `webhook_events`, `usage_counters`, `materials` + `workspace-files` bucket |
+| 0027 | doska snapshot'lari (kerak bo'lsa), snapshots, assets |
+| 0028 | Workspace plans, prices, subscriptions; `payments.purpose` kengaytmasi; guruh leaderboard'i |
 | 0025+ | Marketplace |
 
 Mavjud migratsiya: **0015** (qo'llanmagan).

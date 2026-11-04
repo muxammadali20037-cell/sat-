@@ -729,6 +729,54 @@ export type Database = {
         }
         Relationships: []
       }
+      class_challenges: {
+        Row: {
+          id: string
+          workspace_id: string
+          group_id: string
+          title: string
+          metric: string
+          mode: string
+          target: number
+          starts_on: string
+          ends_on: string
+          status: string
+          created_by: string | null
+          created_at: string
+          ended_at: string | null
+        }
+        Insert: {
+          id?: string
+          workspace_id: string
+          group_id: string
+          title: string
+          metric: string
+          mode: string
+          target: number
+          starts_on: string
+          ends_on: string
+          status?: string
+          created_by?: string | null
+          created_at?: string
+          ended_at?: string | null
+        }
+        Update: {
+          id?: string
+          workspace_id?: string
+          group_id?: string
+          title?: string
+          metric?: string
+          mode?: string
+          target?: number
+          starts_on?: string
+          ends_on?: string
+          status?: string
+          created_by?: string | null
+          created_at?: string
+          ended_at?: string | null
+        }
+        Relationships: []
+      }
       attempt_answers: {
         Row: {
           id: string
@@ -3505,6 +3553,7 @@ export type Database = {
           joined_at: string
           removed_at: string | null
           invited_by: string | null
+          leaderboard_opt_in: boolean
         }
         Insert: {
           workspace_id: string
@@ -3514,6 +3563,7 @@ export type Database = {
           joined_at?: string
           removed_at?: string | null
           invited_by?: string | null
+          leaderboard_opt_in?: boolean
         }
         Update: {
           workspace_id?: string
@@ -3523,6 +3573,7 @@ export type Database = {
           joined_at?: string
           removed_at?: string | null
           invited_by?: string | null
+          leaderboard_opt_in?: boolean
         }
         Relationships: [
           {

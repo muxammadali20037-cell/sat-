@@ -20,6 +20,9 @@ import { loadGroupLessons } from '@/features/classroom/lesson-server'
 import { liveConfig } from '@/features/live/server'
 import { loadStaffPolls } from '@/features/classroom/poll-server'
 import { CreatePollForm, StaffPollCard } from '@/components/classroom/poll-forms'
+import { loadEngagement } from '@/features/classroom/challenge-server'
+import { CreateChallengeForm, EngagementPanel } from '@/components/classroom/challenge-ui'
+import { addDays, localDate } from '@/lib/time'
 import { sessionTiming } from '@/features/classroom/lessons'
 import {
   AddLinkMaterialForm,
@@ -50,7 +53,15 @@ export default async function GroupPage({ params }: { params: Promise<{ ws: stri
     admin.from('mock_exams').select('id, title').eq('status', 'published').order('created_at'),
     loadGroupLessons(admin, groupId),
   ])
-  const polls = await loadStaffPolls(admin, groupId, { limit: 10 })
+  const [polls, engagement] = await Promise.all([
+    loadStaffPolls(admin, groupId, { limit: 10 }),
+    loadEngagement(admin, { workspaceId: ws, groupId, timeZone: m.workspace.timezone, viewer: { id: profile.id, staff: true } }),
+  ])
+  const wsToday = localDate(m.workspace.timezone)
+  const dayLabel = (d: string) => formatDate(`${d}T12:00:00Z`, locale, 'UTC', { day: 'numeric', month: 'short' })
+  const dateLabels = Object.fromEntries(
+    [engagement.week.from, engagement.week.to, ...engagement.challenges.flatMap((x) => [x.startsOn, x.endsOn])].map((d) => [d, dayLabel(d)]),
+  )
   const now = new Date()
   const when = (iso: string) => formatDate(iso, locale, tz, { weekday: 'short', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' })
   const upcoming = lessons.sessions.filter((x) => sessionTiming(x.startsAt, x.durationMinutes, now) !== 'ended')
@@ -156,6 +167,16 @@ export default async function GroupPage({ params }: { params: Promise<{ ws: stri
               {!liveOn && <p className="-mt-2 mb-4 text-xs text-muted-foreground" data-testid="live-not-configured">{L.liveNotConfigured}</p>}
               <CreateSessionForm workspaceId={ws} groupId={groupId} />
             </Card>
+          </div>
+        </Section>
+
+        <Section title={t.challenges.title} description={t.challenges.description}>
+          <div className="space-y-4">
+            <EngagementPanel data={engagement} staff dateLabel={dateLabels} />
+            <div className="rounded-lg border border-border bg-surface p-4">
+              <h3 className="mb-3 text-[15px] font-semibold">{t.challenges.newTitle}</h3>
+              <CreateChallengeForm workspaceId={ws} groupId={groupId} today={wsToday} nextWeek={addDays(wsToday, 6)} />
+            </div>
           </div>
         </Section>
 

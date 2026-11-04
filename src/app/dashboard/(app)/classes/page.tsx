@@ -19,6 +19,8 @@ import { MaterialOpenButton } from '@/components/classroom/lesson-forms'
 import { liveConfig } from '@/features/live/server'
 import { loadStudentPolls } from '@/features/classroom/poll-server'
 import { StudentPollCard } from '@/components/classroom/poll-forms'
+import { loadEngagement, type Engagement } from '@/features/classroom/challenge-server'
+import { EngagementPanel, LeaderboardOptIn } from '@/components/classroom/challenge-ui'
 
 export async function generateMetadata(): Promise<Metadata> {
   return { title: (await getDict(classroomDict)).classes.metaTitle }
@@ -34,6 +36,25 @@ export default async function ClassesPage() {
   const { workspaces } = await loadMyClasses(admin, profile.id)
   const tz = profile.timezone || 'Asia/Tashkent'
   const pollsBy = new Map(await Promise.all(workspaces.map(async (w) => [w.workspace.id, await loadStudentPolls(admin, profile.id, w.groups.map((g) => g.id), { limit: 8 })] as const)))
+  const { data: optRows } = await admin.from('workspace_members').select('workspace_id, leaderboard_opt_in').eq('user_id', profile.id).eq('status', 'active')
+  const optIn = new Map((optRows ?? []).map((r) => [r.workspace_id, r.leaderboard_opt_in]))
+  const engagementBy = new Map<string, Array<{ group: { id: string; name: string }; data: Engagement }>>(
+    await Promise.all(
+      workspaces.map(
+        async (w) =>
+          [
+            w.workspace.id,
+            await Promise.all(
+              w.groups.map(async (g) => ({
+                group: g,
+                data: await loadEngagement(admin, { workspaceId: w.workspace.id, groupId: g.id, timeZone: w.workspace.timezone, viewer: { id: profile.id, staff: false } }),
+              })),
+            ),
+          ] as const,
+      ),
+    ),
+  )
+  const dayLabel = (d: string) => formatDate(`${d}T12:00:00Z`, locale, 'UTC', { day: 'numeric', month: 'short' })
   const lessonsBy = new Map(await Promise.all(workspaces.map(async (w) => [w.workspace.id, await loadMyLessons(admin, profile.id, w.groups)] as const)))
   const now = new Date()
   const liveOn = liveConfig() !== null
@@ -63,6 +84,20 @@ export default async function ClassesPage() {
               <div className="space-y-4">
                 <Card className="p-4">
                   <SharingToggle workspaceId={w.workspace.id} enabled={w.sharing} />
+                </Card>
+                <Card className="space-y-4 p-4" data-testid="my-engagement">
+                  <h3 className="text-[15px] font-semibold">{t.leaderboardTitle}</h3>
+                  <LeaderboardOptIn workspaceId={w.workspace.id} enabled={optIn.get(w.workspace.id) ?? false} />
+                  {(engagementBy.get(w.workspace.id) ?? []).map(({ group, data }) => (
+                    <div key={group.id} className="space-y-2">
+                      {(engagementBy.get(w.workspace.id) ?? []).length > 1 && <p className="text-[13px] font-medium text-muted-foreground">{group.name}</p>}
+                      <EngagementPanel
+                        data={data}
+                        staff={false}
+                        dateLabel={Object.fromEntries([data.week.from, data.week.to, ...data.challenges.flatMap((x) => [x.startsOn, x.endsOn])].map((d) => [d, dayLabel(d)]))}
+                      />
+                    </div>
+                  ))}
                 </Card>
                 {(() => {
                   const ls = lessonsBy.get(w.workspace.id)!

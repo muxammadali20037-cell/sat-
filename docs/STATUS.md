@@ -1,6 +1,6 @@
 # SAT MASTER — Build status and phase report
 
-_Last updated: 4 November 2026 (SAT MASTER PHASE 4-C: class polls and quick quizzes)_
+_Last updated: 4 November 2026 (SAT MASTER 2.0 retention: challenges and an opt-in leaderboard)_
 
 The codebase covers phases 1–8 of [DEVELOPMENT_ROADMAP.md](DEVELOPMENT_ROADMAP.md). Phase 9 (deployment) is partly done: a Supabase project exists, and the steps that need the owner's accounts or credentials are listed under "Launch checklist" below.
 
@@ -94,6 +94,17 @@ The flows ran as a real user against real auth, PostgREST and RLS. AI used the l
   - Both checks now run inside SQL functions under a per-student lock (migration 0015). Parallel-connection tests fail without the lock and pass with it.
 - **Admin lists:** question excerpts showed raw LaTeX (`\dfrac{…}`) and escaped prices as `\12`. They now use the same plain-text rendering as student pages.
 - **Pack import (caught before release):** the first version recognised already-imported questions by stem alone. Many Reading and Writing questions share a stem, so a retry after a partial import could have skipped real questions. It now matches passage and stem.
+
+### SAT MASTER 2.0 retention (4 Nov): class challenges and an opt-in progress leaderboard
+
+- **Migration 0025:**
+  - `workspace_members.leaderboard_opt_in` (default off; only the server changes it, at the student's request, audited);
+  - `class_challenges` (goal = correct answers, days studied or study minutes; for each student or the group together; up to 92 days). Clients SELECT only, group-scoped.
+- **No meaningless gamification, no score shaming:** weekly points come only from real study activity (1 per correct answer, 10 per day studied, 20 per piece of class work handed in) and the formula is shown. Test scores are never ranked. Zero-point students are left out.
+- **Consent:** names and individual progress appear only for students who opted in (teachers additionally see students who share their progress). A group challenge's total counts only opted-in students; a private student still sees their own progress and a note that it is not counted.
+- **Teacher (group page):** leaderboard for the week, challenges with progress, "set a challenge", "end now".
+- **Student (Classes page):** the opt-in switch, their own week, the leaderboard and challenge progress.
+- **Verified:** 6 unit tests, 1 DB test (group-only reads, no client writes including the opt-in column, constraints); all 735 tests; lint and build; 11 Playwright checks (`e2e-challenges`); polls 14/14, lessons 22/22, classroom 32/32 re-run.
 
 ### SAT MASTER PHASE 4-C (4 Nov): class polls and quick quizzes
 
@@ -363,6 +374,7 @@ State on 2 Nov 2026, applied through the Supabase connector with the owner's con
 | 0012 search indexes | **Declined by the owner** at the confirmation prompt. Optional (admin search speed only). Apply later from the SQL editor if wanted. |
 | 0013 study-guide tables | Applied |
 | 0014 study-guide content (~480 KB) | Not applied. Use Admin → Study guides → "Import bundled guides" after the first deploy, or `supabase db push`. |
+| 0025 class challenges (1 table, 1 column; no existing data touched) | Pending the owner's approval. |
 | 0024 class polls (2 tables; no existing data touched) | Applied on 4 Nov with the owner's approval. Checked afterwards: RLS on both; `authenticated` cannot read `correct_index`, can read the other columns, cannot write; `anon` nothing; 66 tables, all with RLS. |
 | 0023 live lesson joins (1 table; no existing data touched) | Applied on 4 Nov with the owner's approval. Checked afterwards: RLS on, one read policy, `authenticated` SELECT only, `anon` nothing; 64 tables, all with RLS. |
 | 0022 class lessons (3 tables, 1 private bucket; no existing data touched) | Applied on 4 Nov with the owner's approval. Checked afterwards: RLS on all three tables, `authenticated` SELECT only, `anon` nothing; `workspace-files` bucket private (20 MB, PDF/PNG/JPG/WEBP) with no storage policies; 63 tables, all with RLS. |
