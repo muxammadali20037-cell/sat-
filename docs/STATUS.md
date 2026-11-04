@@ -305,7 +305,7 @@ State on 2 Nov 2026, applied through the Supabase connector with the owner's con
 | 0012 search indexes | **Declined by the owner** at the confirmation prompt. Optional (admin search speed only). Apply later from the SQL editor if wanted. |
 | 0013 study-guide tables | Applied |
 | 0014 study-guide content (~480 KB) | Not applied. Use Admin → Study guides → "Import bundled guides" after the first deploy, or `supabase db push`. |
-| 0021 Resource Hub (1 table; no existing data touched) | Pending the owner's approval. |
+| 0021 Resource Hub (1 table; no existing data touched) | Applied on 4 Nov with the owner's approval. Checked afterwards: RLS on, one read policy, `authenticated` has SELECT only, `anon` nothing; 60 tables, all with RLS. |
 | 0020 personal assignments (1 column, 1 FK, 1 index, one policy changed; no existing data touched) | Applied on 3 Nov with the owner's approval. Checked afterwards: column, FK and new read policy present; clients still have SELECT only on `assignments`; 59 tables, all with RLS. |
 | 0019 classroom (8 tables, 2 columns, 7 functions; one policy narrowed; no existing data touched) | Applied on 3 Nov with the owner's approval. Checked afterwards: 59 tables, all with RLS; `authenticated` cannot insert, update or delete any classroom table and `anon` cannot read them; `workspace_create` and `workspace_join` are callable by the server only; the Telegram policy now allows only the owner and admins. |
 | 0018 learning extras (1 table, 1 column, wider practice-mode check; no existing data touched) | Applied on 3 Nov with the owner's approval. Checked afterwards: RLS on; `authenticated` can only SELECT `flashcard_reviews` (own rows), cannot insert, update or delete; may update `country_code` but still not `role`; `anon` has no access. |
@@ -325,7 +325,7 @@ The security advisor reports two kinds of finding, both expected by design:
 supabase link --project-ref ncqqnjnozrymrmblixra
 supabase migration repair --status applied 20261102000100 20261102000200 20261102000300 20261102000400 \
   20261102000500 20261102000600 20261102000700 20261102000800 20261102000900 20261102001000 20261102001100 20261102001300 \
-  20261102001500 20261102001600 20261102001700 20261103001800 20261103001900 20261103002000
+  20261102001500 20261102001600 20261102001700 20261103001800 20261103001900 20261103002000 20261103002100
 supabase db push   # applies 0012 (if still wanted) and 0014
 ```
 
