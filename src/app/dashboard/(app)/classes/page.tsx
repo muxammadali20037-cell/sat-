@@ -16,6 +16,7 @@ import { formatDate, percent } from '@/features/dashboard/format'
 import { loadMyLessons } from '@/features/classroom/lesson-server'
 import { sessionTiming } from '@/features/classroom/lessons'
 import { MaterialOpenButton } from '@/components/classroom/lesson-forms'
+import { liveConfig } from '@/features/live/server'
 
 export async function generateMetadata(): Promise<Metadata> {
   return { title: (await getDict(classroomDict)).classes.metaTitle }
@@ -32,6 +33,7 @@ export default async function ClassesPage() {
   const tz = profile.timezone || 'Asia/Tashkent'
   const lessonsBy = new Map(await Promise.all(workspaces.map(async (w) => [w.workspace.id, await loadMyLessons(admin, profile.id, w.groups)] as const)))
   const now = new Date()
+  const liveOn = liveConfig() !== null
   const when = (iso: string) => formatDate(iso, locale, tz, { weekday: 'short', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' })
 
   return (
@@ -88,6 +90,11 @@ export default async function ClassesPage() {
                                   ) : timing === 'live' ? (
                                     <span className="flex items-center gap-2">
                                       <Badge variant="success">{t.live}</Badge>
+                                      {liveOn && (
+                                        <Button asChild size="sm">
+                                          <Link href={`/live/${x.id}`}>{t.liveRoom}</Link>
+                                        </Button>
+                                      )}
                                       {x.meetingUrl && (
                                         <Button asChild size="sm">
                                           <a href={x.meetingUrl} target="_blank" rel="noopener noreferrer">

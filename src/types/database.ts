@@ -633,6 +633,33 @@ export type Database = {
         }
         Relationships: []
       }
+      session_joins: {
+        Row: {
+          workspace_id: string
+          session_id: string
+          user_id: string
+          first_joined_at: string
+          last_joined_at: string
+          join_count: number
+        }
+        Insert: {
+          workspace_id: string
+          session_id: string
+          user_id: string
+          first_joined_at?: string
+          last_joined_at?: string
+          join_count?: number
+        }
+        Update: {
+          workspace_id?: string
+          session_id?: string
+          user_id?: string
+          first_joined_at?: string
+          last_joined_at?: string
+          join_count?: number
+        }
+        Relationships: []
+      }
       attempt_answers: {
         Row: {
           id: string

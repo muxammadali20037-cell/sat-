@@ -97,12 +97,14 @@ export async function loadSessionForTeacher(admin: Db, m: Membership, userId: st
   if (error) throw error
   if (!s || s.workspace_id !== m.workspace.id) notFound()
   if (!(await teachableGroupIds(admin, m, userId)).has(s.group_id)) notFound()
-  const [members, att, group] = await Promise.all([
+  const [members, att, group, joins] = await Promise.all([
     admin.from('group_members').select('user_id').eq('group_id', s.group_id).eq('role', 'student').is('left_at', null),
     admin.from('attendance').select('student_id, status, note').eq('session_id', s.id),
     admin.from('groups').select('id, name').eq('id', s.group_id).single(),
+    admin.from('session_joins').select('user_id, first_joined_at').eq('session_id', s.id),
   ])
-  for (const r of [members, att, group]) if (r.error) throw r.error
+  for (const r of [members, att, group, joins]) if (r.error) throw r.error
+  const joinedAt = new Map((joins.data ?? []).map((j) => [j.user_id, j.first_joined_at]))
   const ids = (members.data ?? []).map((x) => x.user_id)
   const names = await profileNames(admin, ids)
   const marks = new Map((att.data ?? []).map((a) => [a.student_id, a]))
@@ -110,7 +112,13 @@ export async function loadSessionForTeacher(admin: Db, m: Membership, userId: st
     session: toSession(s as SessionRow, (att.data ?? []).length),
     group: group.data!,
     students: ids
-      .map((id) => ({ id, name: names.get(id)?.name ?? '—', status: (marks.get(id)?.status as AttendanceStatus | undefined) ?? null, note: marks.get(id)?.note ?? '' }))
+      .map((id) => ({
+        id,
+        name: names.get(id)?.name ?? '—',
+        status: (marks.get(id)?.status as AttendanceStatus | undefined) ?? null,
+        note: marks.get(id)?.note ?? '',
+        joinedAt: joinedAt.get(id) ?? null,
+      }))
       .sort((a, b) => a.name.localeCompare(b.name)),
   }
 }

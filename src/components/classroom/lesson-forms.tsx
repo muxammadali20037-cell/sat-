@@ -9,7 +9,7 @@ import { classroomDict } from '@/lib/i18n/dictionaries/classroom'
 import type { ActionResult } from '@/lib/api/errors'
 import { createBrowserSupabase } from '@/lib/supabase/client'
 import { Button } from '@/components/ui/button'
-import { Input, Label, NativeSelect, Textarea } from '@/components/ui/input'
+import { Input, Label, NativeSelect } from '@/components/ui/input'
 import { toast } from '@/components/ui/toast'
 import { ConfirmActionButton } from './forms'
 import {
@@ -131,7 +131,7 @@ export function AttendanceForm({
 }: {
   workspaceId: string
   sessionId: string
-  students: Array<{ id: string; name: string; status: AttendanceStatus | null; note: string }>
+  students: Array<{ id: string; name: string; status: AttendanceStatus | null; note: string; joinedAt?: string | null; joinedLabel?: string | null }>
 }) {
   const t = useDict(classroomDict).teach.lessons
   const { pending, run } = useRun()
@@ -156,7 +156,10 @@ export function AttendanceForm({
           const v = marks.get(s.id)!
           return (
             <li key={s.id} className="flex flex-col gap-2 px-4 py-3 sm:flex-row sm:items-center sm:justify-between" data-student={s.id}>
-              <span className="text-sm font-medium text-foreground">{s.name}</span>
+              <span className="text-sm font-medium text-foreground">
+                {s.name}
+                {s.joinedLabel && <span className="ml-2 text-xs font-normal text-success">{s.joinedLabel}</span>}
+              </span>
               <div className="flex flex-wrap items-center gap-1.5" role="radiogroup" aria-label={s.name}>
                 {ATTENDANCE_STATUSES.map((st) => (
                   <label

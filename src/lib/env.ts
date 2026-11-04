@@ -71,6 +71,10 @@ const serverSchema = z.object({
   ESKIZ_PASSWORD: optional,
   ESKIZ_FROM: z.string().min(1).default('4546'),
   ESKIZ_API_BASE: z.url().default('https://notify.eskiz.uz/api'),
+  /** Live lessons (LiveKit Cloud or self-hosted). wss:// URL; the key and secret never reach the browser. */
+  LIVEKIT_URL: z.string().regex(/^wss?:\/\/[^\s]+$/, 'Expected the LiveKit WebSocket URL, e.g. wss://your-project.livekit.cloud').optional(),
+  LIVEKIT_API_KEY: optional,
+  LIVEKIT_API_SECRET: z.string().min(16, 'The LiveKit API secret is longer than this').optional(),
   SEND_SMS_HOOK_SECRET: z.string().regex(/^(v1,)?whsec_[A-Za-z0-9+/=]+$/, 'Copy the secret from Supabase: v1,whsec_…').optional(),
 })
 

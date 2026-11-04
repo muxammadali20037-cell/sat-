@@ -17,6 +17,7 @@ import { can } from '@/features/classroom/permissions'
 import { getTaxonomy } from '@/features/taxonomy/server'
 import { formatDate, percent } from '@/features/dashboard/format'
 import { loadGroupLessons } from '@/features/classroom/lesson-server'
+import { liveConfig } from '@/features/live/server'
 import { sessionTiming } from '@/features/classroom/lessons'
 import {
   AddLinkMaterialForm,
@@ -53,6 +54,7 @@ export default async function GroupPage({ params }: { params: Promise<{ ws: stri
   const past = lessons.sessions.filter((x) => sessionTiming(x.startsAt, x.durationMinutes, now) === 'ended').reverse().slice(0, 10)
   const a = lessons.analytics
   const L = t.lessons
+  const liveOn = liveConfig() !== null
   const M = t.materials
   const invitations: InvitationView[] = await Promise.all(
     data.invitations.map(async (i) => {
@@ -128,6 +130,11 @@ export default async function GroupPage({ params }: { params: Promise<{ ws: stri
                               {L.mark} · {format(L.attendanceOf, { marked: x.marked, total: data.students.length })}
                             </Link>
                           )}
+                          {liveOn && x.status !== 'cancelled' && timing !== 'ended' && (
+                            <Link href={`/live/${x.id}`} className="font-medium text-primary hover:underline">
+                              {L.liveRoom}
+                            </Link>
+                          )}
                           {x.meetingUrl && x.status !== 'cancelled' && timing !== 'ended' && (
                             <a href={x.meetingUrl} target="_blank" rel="noopener noreferrer" className="font-medium text-primary hover:underline">
                               {L.join}
@@ -143,6 +150,7 @@ export default async function GroupPage({ params }: { params: Promise<{ ws: stri
             )}
             <Card className="p-5">
               <h3 className="mb-4 text-[15px] font-semibold">{L.newTitle}</h3>
+              {!liveOn && <p className="-mt-2 mb-4 text-xs text-muted-foreground" data-testid="live-not-configured">{L.liveNotConfigured}</p>}
               <CreateSessionForm workspaceId={ws} groupId={groupId} />
             </Card>
           </div>

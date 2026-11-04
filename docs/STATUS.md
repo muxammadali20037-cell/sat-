@@ -1,6 +1,6 @@
 # SAT MASTER — Build status and phase report
 
-_Last updated: 4 November 2026 (SAT MASTER PHASE 4-A: lessons, attendance, class materials)_
+_Last updated: 4 November 2026 (SAT MASTER PHASE 4-B: in-app live lessons)_
 
 The codebase covers phases 1–8 of [DEVELOPMENT_ROADMAP.md](DEVELOPMENT_ROADMAP.md). Phase 9 (deployment) is partly done: a Supabase project exists, and the steps that need the owner's accounts or credentials are listed under "Launch checklist" below.
 
@@ -94,6 +94,33 @@ The flows ran as a real user against real auth, PostgREST and RLS. AI used the l
   - Both checks now run inside SQL functions under a per-student lock (migration 0015). Parallel-connection tests fail without the lock and pass with it.
 - **Admin lists:** question excerpts showed raw LaTeX (`\dfrac{…}`) and escaped prices as `\12`. They now use the same plain-text rendering as student pages.
 - **Pack import (caught before release):** the first version recognised already-imported questions by stem alone. Many Reading and Writing questions share a stem, so a retry after a partial import could have skipped real questions. It now matches passage and stem.
+
+### SAT MASTER PHASE 4-B (4 Nov): in-app live lessons
+
+- **Video, audio and screen sharing via LiveKit** (`livekit-client`, `livekit-server-sdk`, Apache-2.0). Without keys the site shows **NOT_CONFIGURED**: the live page explains it and offers the teacher's own meeting link, and the teacher's lesson form says so.
+- **Token API** `POST /api/live/token` (rate-limited):
+  - only the group's teachers/assistants (or workspace managers) and its current students; anyone else gets 404;
+  - only from 15 minutes before the start to 30 minutes after the end (409 otherwise, also for cancelled lessons);
+  - the token is for that lesson's room only, valid 3 hours, with the role signed into its metadata. Students may publish camera and microphone only (no screen sharing, no room admin, cannot change their metadata).
+  - The API key and secret never reach the browser.
+- **Room page** `/live/[sessionId]` (uz/en/ru):
+  - camera tiles with speaking highlight, mic/camera toggles, screen sharing for staff;
+  - a shared **whiteboard** (own small canvas component — Excalidraw was rejected because it pulls in dependencies with known high-severity advisories). Pen, line, box, text, 6 colours, undo, clear. Only staff draw: every board message is schema-checked, size-bounded and applied only when the sender's server-signed role is staff. Students who join late get the current board from the teacher;
+  - **chat** and **raise hand / lower all hands** over the data channel. Chat is not stored; "Lessons are not recorded";
+  - a Desmos link.
+- **Migration 0023** (`session_joins`): the server logs who received a token, and when. The attendance page shows "joined online at …". It is a log only; the teacher still marks attendance. A user reads their own rows, the group's staff the lesson's rows, no client writes.
+- **Security headers:** camera, microphone and screen capture are allowed only on `/live/*` (everywhere else still `camera=()` etc.); CSP `connect-src` adds the LiveKit host only when `LIVEKIT_URL` is set (read at build time, so **redeploy after adding the keys**).
+- **Verified:**
+  - 8 unit tests: token grants checked by decoding with `TokenVerifier`, wrong-secret rejection, joining window, board protocol/role rules, oversized and malformed messages;
+  - 1 DB test; all 718 tests pass;
+  - **22 Playwright checks against a real LiveKit server** (open-source `livekit-server` 1.9.1 in dev mode, fake camera/microphone): two-way video, teacher stroke reaches the student, a student cannot draw, chat, hands, late-join board sync, join log on the attendance page, other-group student gets 404 from the page and the API, too-early (409) and cancelled lessons, 390 px;
+  - earlier suites re-run (lessons 22/22, classroom 32/32);
+  - lint, build, `npm audit --omit=dev` 0 vulnerabilities.
+- **Owner steps to switch it on:**
+  1. Create a LiveKit Cloud project (Build plan: $0, no card, 5,000 participant-minutes and 100 concurrent connections a month; Ship from $50/month).
+  2. In Vercel add `LIVEKIT_URL` (wss://…livekit.cloud), `LIVEKIT_API_KEY`, `LIVEKIT_API_SECRET`.
+  3. Redeploy.
+- **Not built yet:** recordings (need consent flows and storage), polls/quizzes, PDF annotation, guest teachers.
 
 ### SAT MASTER PHASE 4-A (4 Nov): lessons, attendance, class materials
 
@@ -326,6 +353,7 @@ State on 2 Nov 2026, applied through the Supabase connector with the owner's con
 | 0012 search indexes | **Declined by the owner** at the confirmation prompt. Optional (admin search speed only). Apply later from the SQL editor if wanted. |
 | 0013 study-guide tables | Applied |
 | 0014 study-guide content (~480 KB) | Not applied. Use Admin → Study guides → "Import bundled guides" after the first deploy, or `supabase db push`. |
+| 0023 live lesson joins (1 table; no existing data touched) | Pending the owner's approval. |
 | 0022 class lessons (3 tables, 1 private bucket; no existing data touched) | Applied on 4 Nov with the owner's approval. Checked afterwards: RLS on all three tables, `authenticated` SELECT only, `anon` nothing; `workspace-files` bucket private (20 MB, PDF/PNG/JPG/WEBP) with no storage policies; 63 tables, all with RLS. |
 | 0021 Resource Hub (1 table; no existing data touched) | Applied on 4 Nov with the owner's approval. Checked afterwards: RLS on, one read policy, `authenticated` has SELECT only, `anon` nothing; 60 tables, all with RLS. |
 | 0020 personal assignments (1 column, 1 FK, 1 index, one policy changed; no existing data touched) | Applied on 3 Nov with the owner's approval. Checked afterwards: column, FK and new read policy present; clients still have SELECT only on `assignments`; 59 tables, all with RLS. |

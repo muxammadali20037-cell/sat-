@@ -161,3 +161,20 @@ export function groupAnalytics(input: {
     averageScore: { value: ratios.length ? ratios.reduce((x, y) => x + y, 0) / ratios.length : null, count: ratios.length },
   }
 }
+
+/** In-app live lessons can be joined from 15 minutes before the start until 30 minutes after the end. */
+export const LIVE_OPENS_MINUTES_BEFORE = 15
+export const LIVE_CLOSES_MINUTES_AFTER = 30
+
+export type LiveWindow = 'too_early' | 'open' | 'closed'
+
+export function liveWindow(startsAt: string, durationMinutes: number, now: Date): LiveWindow {
+  const start = Date.parse(startsAt)
+  const t = now.getTime()
+  if (t < start - LIVE_OPENS_MINUTES_BEFORE * 60_000) return 'too_early'
+  if (t > start + (durationMinutes + LIVE_CLOSES_MINUTES_AFTER) * 60_000) return 'closed'
+  return 'open'
+}
+
+/** LiveKit room name for a lesson (one room per lesson). */
+export const liveRoomName = (sessionId: string) => `lesson-${sessionId}`

@@ -49,7 +49,14 @@ export default async function SessionPage({ params }: { params: Promise<{ ws: st
           {s.status === 'cancelled' ? (
             <p className="text-sm text-muted-foreground">{L.statuses.cancelled}</p>
           ) : (
-            <AttendanceForm workspaceId={ws} sessionId={s.id} students={data.students} />
+            <AttendanceForm
+              workspaceId={ws}
+              sessionId={s.id}
+              students={data.students.map((st) => ({
+                ...st,
+                joinedLabel: st.joinedAt ? format(L.joinedOnline, { time: formatDate(st.joinedAt, locale, tz, { hour: '2-digit', minute: '2-digit' }) }) : null,
+              }))}
+            />
           )}
         </Card>
       </Section>

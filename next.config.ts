@@ -12,6 +12,17 @@ const supabaseUrl = (() => {
 const supabaseOrigin = supabaseUrl ? supabaseUrl.origin : ''
 const supabaseWs = supabaseUrl ? supabaseOrigin.replace(/^http/, 'ws') : ''
 const videoHost = process.env.BUNNY_STREAM_CDN_HOST ?? ''
+// LiveKit signalling (wss) and its HTTP validation endpoint, only when live lessons are configured.
+const livekit = (() => {
+  try {
+    if (!process.env.LIVEKIT_URL) return ''
+    const u = new URL(process.env.LIVEKIT_URL)
+    const http = u.protocol === 'ws:' ? 'http:' : 'https:'
+    return ` ${u.protocol}//${u.host} ${http}//${u.host}`
+  } catch {
+    return ''
+  }
+})()
 // Desmos graphing calculator script + assets, only when a key is configured.
 const desmos = process.env.NEXT_PUBLIC_DESMOS_API_KEY ? ' https://www.desmos.com' : ''
 
@@ -25,7 +36,7 @@ const csp = [
   `img-src 'self' data: blob:${supabaseOrigin ? ` ${supabaseOrigin}` : ''}${desmos}`,
   `font-src 'self' data:${desmos}`,
   `media-src 'self' blob:${supabaseOrigin ? ` ${supabaseOrigin}` : ''}${videoHost ? ` https://${videoHost}` : ''}`,
-  `connect-src 'self'${supabaseOrigin ? ` ${supabaseOrigin} ${supabaseWs}` : ''}${videoHost ? ` https://${videoHost}` : ''}${desmos}`,
+  `connect-src 'self'${supabaseOrigin ? ` ${supabaseOrigin} ${supabaseWs}` : ''}${videoHost ? ` https://${videoHost}` : ''}${desmos}${livekit}`,
   "worker-src 'self' blob:", // hls.js transmuxing worker
   // Telegram Web shows Mini Apps in a frame; no other site may frame these pages.
   "frame-ancestors 'self' https://web.telegram.org",
@@ -61,7 +72,11 @@ const nextConfig: NextConfig = {
       : [],
   },
   async headers() {
-    return [{ source: '/:path*', headers: securityHeaders }]
+    return [
+      { source: '/:path*', headers: securityHeaders },
+      // Live lessons are the only pages that may use the camera, microphone and screen sharing.
+      { source: '/live/:path*', headers: [{ key: 'Permissions-Policy', value: 'camera=(self), microphone=(self), display-capture=(self), geolocation=(), payment=()' }] },
+    ]
   },
 }
 
