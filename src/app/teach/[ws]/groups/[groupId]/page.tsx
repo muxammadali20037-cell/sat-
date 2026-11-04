@@ -15,7 +15,17 @@ import { ArchiveGroupButton, CreateAssignmentForm, CreateInvitationForm, Invitat
 import { loadGroup, requireStaffMembership } from '@/features/classroom/server'
 import { can } from '@/features/classroom/permissions'
 import { getTaxonomy } from '@/features/taxonomy/server'
-import { formatDate } from '@/features/dashboard/format'
+import { formatDate, percent } from '@/features/dashboard/format'
+import { loadGroupLessons } from '@/features/classroom/lesson-server'
+import { sessionTiming } from '@/features/classroom/lessons'
+import {
+  AddLinkMaterialForm,
+  ArchiveMaterialButton,
+  CancelSessionButton,
+  CreateSessionForm,
+  MaterialOpenButton,
+  UploadMaterialForm,
+} from '@/components/classroom/lesson-forms'
 
 export async function generateMetadata(): Promise<Metadata> {
   return { title: (await getDict(classroomDict)).teach.metaTitle }
@@ -32,7 +42,18 @@ export default async function GroupPage({ params }: { params: Promise<{ ws: stri
   const tz = profile.timezone || m.workspace.timezone
   const date = (iso: string) => formatDate(iso, locale, tz, { dateStyle: 'medium' })
 
-  const [taxonomy, mocks] = await Promise.all([getTaxonomy(admin), admin.from('mock_exams').select('id, title').eq('status', 'published').order('created_at')])
+  const [taxonomy, mocks, lessons] = await Promise.all([
+    getTaxonomy(admin),
+    admin.from('mock_exams').select('id, title').eq('status', 'published').order('created_at'),
+    loadGroupLessons(admin, groupId),
+  ])
+  const now = new Date()
+  const when = (iso: string) => formatDate(iso, locale, tz, { weekday: 'short', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' })
+  const upcoming = lessons.sessions.filter((x) => sessionTiming(x.startsAt, x.durationMinutes, now) !== 'ended')
+  const past = lessons.sessions.filter((x) => sessionTiming(x.startsAt, x.durationMinutes, now) === 'ended').reverse().slice(0, 10)
+  const a = lessons.analytics
+  const L = t.lessons
+  const M = t.materials
   const invitations: InvitationView[] = await Promise.all(
     data.invitations.map(async (i) => {
       const link = siteUrl(`/join/${i.code}`)
@@ -50,6 +71,120 @@ export default async function GroupPage({ params }: { params: Promise<{ ws: stri
         actions={can(m.role, 'group.archive', { teachesGroup: teaches }) ? <ArchiveGroupButton workspaceId={ws} groupId={groupId} /> : undefined}
       />
       <div className="space-y-10">
+        <section aria-label={t.analytics.title} className="grid grid-cols-2 gap-3 lg:grid-cols-4" data-testid="group-analytics">
+          {[
+            { label: t.analytics.students, value: String(a.students), hint: null },
+            {
+              label: t.analytics.attendance,
+              value: a.attendance.rate === null ? t.analytics.none : percent(a.attendance.rate),
+              hint: a.attendance.rate === null ? null : format(t.analytics.attendanceHint, { n: a.attendance.present + a.attendance.late + a.attendance.absent }),
+            },
+            {
+              label: t.analytics.completion,
+              value: a.completion.rate === null ? t.analytics.none : percent(a.completion.rate),
+              hint: a.completion.rate === null ? null : format(t.analytics.completionHint, { done: a.completion.done, total: a.completion.expected }),
+            },
+            {
+              label: t.analytics.avgScore,
+              value: a.averageScore.value === null ? t.analytics.none : percent(a.averageScore.value),
+              hint: a.averageScore.value === null ? null : format(t.analytics.avgScoreHint, { n: a.averageScore.count }),
+            },
+          ].map((x) => (
+            <Card key={x.label} className="p-4">
+              <p className="text-[13px] text-muted-foreground">{x.label}</p>
+              <p className="mt-1 text-xl font-semibold tabular text-foreground">{x.value}</p>
+              {x.hint && <p className="mt-0.5 text-xs text-muted-foreground">{x.hint}</p>}
+            </Card>
+          ))}
+        </section>
+
+        <Section title={L.title} description={L.description}>
+          <div className="space-y-4">
+            {lessons.sessions.length === 0 ? (
+              <p className="text-[13px] text-muted-foreground">{L.empty}</p>
+            ) : (
+              <Card className="p-0">
+                <ul className="divide-y divide-border">
+                  {[...upcoming, ...past].map((x) => {
+                    const timing = sessionTiming(x.startsAt, x.durationMinutes, now)
+                    return (
+                      <li key={x.id} className="flex flex-wrap items-center justify-between gap-3 px-5 py-3" data-session={x.id}>
+                        <div className="min-w-0">
+                          <p className="text-sm font-medium text-foreground">
+                            {x.title}
+                            {timing === 'ended' && <span className="ml-2 text-xs font-normal text-muted-foreground">{L.past}</span>}
+                          </p>
+                          <p className="text-xs text-muted-foreground">
+                            {when(x.startsAt)} · {format(L.minutes, { n: x.durationMinutes })}
+                            {x.location && ` · ${x.location}`}
+                          </p>
+                        </div>
+                        <div className="flex flex-wrap items-center gap-2 text-xs">
+                          <Badge variant={x.status === 'cancelled' ? 'neutral' : timing === 'live' ? 'success' : x.status === 'completed' ? 'primary' : 'neutral'}>
+                            {x.status === 'scheduled' && timing === 'live' ? L.statuses.live : L.statuses[x.status]}
+                          </Badge>
+                          {x.status !== 'cancelled' && (
+                            <Link href={`/teach/${ws}/sessions/${x.id}`} className="font-medium text-primary hover:underline">
+                              {L.mark} · {format(L.attendanceOf, { marked: x.marked, total: data.students.length })}
+                            </Link>
+                          )}
+                          {x.meetingUrl && x.status !== 'cancelled' && timing !== 'ended' && (
+                            <a href={x.meetingUrl} target="_blank" rel="noopener noreferrer" className="font-medium text-primary hover:underline">
+                              {L.join}
+                            </a>
+                          )}
+                          {x.status === 'scheduled' && timing !== 'ended' && <CancelSessionButton workspaceId={ws} sessionId={x.id} />}
+                        </div>
+                      </li>
+                    )
+                  })}
+                </ul>
+              </Card>
+            )}
+            <Card className="p-5">
+              <h3 className="mb-4 text-[15px] font-semibold">{L.newTitle}</h3>
+              <CreateSessionForm workspaceId={ws} groupId={groupId} />
+            </Card>
+          </div>
+        </Section>
+
+        <Section title={M.title} description={M.description}>
+          <div className="space-y-4">
+            {lessons.materials.length === 0 ? (
+              <p className="text-[13px] text-muted-foreground">{M.empty}</p>
+            ) : (
+              <Card className="p-0">
+                <ul className="divide-y divide-border">
+                  {lessons.materials.map((x) => (
+                    <li key={x.id} className="flex flex-wrap items-center justify-between gap-3 px-5 py-3" data-material={x.id}>
+                      <div className="min-w-0">
+                        <p className="truncate text-sm font-medium text-foreground">{x.title}</p>
+                        <p className="truncate text-xs text-muted-foreground">
+                          {x.kind === 'file' ? `${x.fileName ?? ''} · ${Math.max(1, Math.round((x.sizeBytes ?? 0) / 1024))} KB` : x.url}
+                        </p>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <MaterialOpenButton materialId={x.id} kind={x.kind} url={x.url} label={x.kind === 'file' ? M.download : M.open} />
+                        <ArchiveMaterialButton materialId={x.id} />
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              </Card>
+            )}
+            <Card className="space-y-5 p-5">
+              <div>
+                <h3 className="mb-3 text-[15px] font-semibold">{M.addFile}</h3>
+                <UploadMaterialForm workspaceId={ws} groupId={groupId} />
+              </div>
+              <div className="border-t border-border pt-5">
+                <h3 className="mb-3 text-[15px] font-semibold">{M.addLink}</h3>
+                <AddLinkMaterialForm workspaceId={ws} groupId={groupId} />
+              </div>
+            </Card>
+          </div>
+        </Section>
+
         <Section title={t.group.studentsTitle}>
           {data.students.length === 0 ? (
             <EmptyState icon={<UsersRound />} title={t.group.noStudentsTitle} description={t.group.noStudentsBody} />

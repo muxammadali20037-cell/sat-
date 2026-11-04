@@ -501,6 +501,138 @@ export type Database = {
         }
         Relationships: []
       }
+      class_sessions: {
+        Row: {
+          id: string
+          workspace_id: string
+          group_id: string
+          title: string
+          description: string
+          starts_at: string
+          duration_minutes: number
+          location: string
+          meeting_url: string | null
+          status: string
+          created_by: string | null
+          created_at: string
+          updated_at: string
+        }
+        Insert: {
+          id?: string
+          workspace_id: string
+          group_id: string
+          title: string
+          description?: string
+          starts_at: string
+          duration_minutes: number
+          location?: string
+          meeting_url?: string | null
+          status?: string
+          created_by?: string | null
+          created_at?: string
+          updated_at?: string
+        }
+        Update: {
+          id?: string
+          workspace_id?: string
+          group_id?: string
+          title?: string
+          description?: string
+          starts_at?: string
+          duration_minutes?: number
+          location?: string
+          meeting_url?: string | null
+          status?: string
+          created_by?: string | null
+          created_at?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
+      attendance: {
+        Row: {
+          workspace_id: string
+          session_id: string
+          student_id: string
+          status: string
+          note: string
+          marked_by: string | null
+          marked_at: string
+        }
+        Insert: {
+          workspace_id: string
+          session_id: string
+          student_id: string
+          status: string
+          note?: string
+          marked_by?: string | null
+          marked_at?: string
+        }
+        Update: {
+          workspace_id?: string
+          session_id?: string
+          student_id?: string
+          status?: string
+          note?: string
+          marked_by?: string | null
+          marked_at?: string
+        }
+        Relationships: []
+      }
+      class_materials: {
+        Row: {
+          id: string
+          workspace_id: string
+          group_id: string
+          session_id: string | null
+          title: string
+          description: string
+          kind: string
+          storage_path: string | null
+          file_name: string | null
+          mime_type: string | null
+          size_bytes: number | null
+          url: string | null
+          created_by: string | null
+          created_at: string
+          archived_at: string | null
+        }
+        Insert: {
+          id?: string
+          workspace_id: string
+          group_id: string
+          session_id?: string | null
+          title: string
+          description?: string
+          kind: string
+          storage_path?: string | null
+          file_name?: string | null
+          mime_type?: string | null
+          size_bytes?: number | null
+          url?: string | null
+          created_by?: string | null
+          created_at?: string
+          archived_at?: string | null
+        }
+        Update: {
+          id?: string
+          workspace_id?: string
+          group_id?: string
+          session_id?: string | null
+          title?: string
+          description?: string
+          kind?: string
+          storage_path?: string | null
+          file_name?: string | null
+          mime_type?: string | null
+          size_bytes?: number | null
+          url?: string | null
+          created_by?: string | null
+          created_at?: string
+          archived_at?: string | null
+        }
+        Relationships: []
+      }
       attempt_answers: {
         Row: {
           id: string

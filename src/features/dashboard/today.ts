@@ -35,6 +35,8 @@ export type MissionItem =
   | { kind: 'mistakes'; count: number; href: string; done: boolean }
   /** Teacher-set work that is not submitted yet (nearest due first); `more` = the rest. */
   | { kind: 'class_work'; title: string; personal: boolean; more: number; href: string; done: boolean }
+  /** A class lesson today that has not ended (time already formatted for the student). */
+  | { kind: 'class_lesson'; title: string; time: string; group: string; href: string; done: boolean }
   | { kind: 'minutes'; progress: MissionProgress; done: boolean }
 
 export type TodayActivity = { studySeconds: number; questionsAnswered: number; lessonsCompleted: number }
@@ -58,6 +60,8 @@ export type MissionInput = {
   retryCompletedToday: boolean
   /** Open class assignments, already ordered (personal and nearest due first). */
   classWork?: Array<{ id: string; title: string; personal: boolean }>
+  /** Today's remaining class lessons, earliest first. */
+  classLessons?: Array<{ title: string; time: string; group: string }>
   today: TodayActivity
   dailyStudyMinutes: number | null
 }
@@ -80,9 +84,13 @@ export function buildMission(input: MissionInput): Mission {
     ? { kind: 'class_work', title: work[0].title, personal: work[0].personal, more: work.length - 1, href: `/dashboard/classes/${work[0].id}`, done: false }
     : null
 
+  const lesson = input.classLessons?.[0]
+  const lessonItem: MissionItem | null = lesson ? { kind: 'class_lesson', title: lesson.title, time: lesson.time, group: lesson.group, href: '/dashboard/classes', done: false } : null
+
   const plan = input.planTasks.filter((t) => t.status !== 'skipped')
   if (plan.length > 0) {
-    // Work a teacher set comes first: it has a deadline the plan does not know about.
+    // A lesson today and work a teacher set come first: the plan does not know about them.
+    if (lessonItem) items.push(lessonItem)
     if (classItem) items.push(classItem)
     for (const t of plan) {
       items.push({ kind: 'plan_task', id: t.id, taskType: t.type, title: t.title, minutes: t.minutes, href: t.href, done: t.status === 'completed' })
@@ -92,6 +100,7 @@ export function buildMission(input: MissionInput): Mission {
     return summarize('plan', items)
   }
 
+  if (lessonItem) items.push(lessonItem)
   if (classItem) items.push(classItem)
   if (!input.hasCompletedDiagnostic || input.diagnosticToday) {
     if (input.questionsAvailable) items.push({ kind: 'diagnostic', href: '/dashboard/diagnostic', done: input.diagnosticToday })

@@ -42,6 +42,7 @@ const taskIcon: Record<string, React.ReactNode> = {
   mock_exam: <ListChecks />,
   mistakes: <RotateCcw />,
   class_work: <Users />,
+  class_lesson: <CalendarDays />,
   minutes: <Clock3 />,
 }
 
@@ -67,6 +68,8 @@ function missionText(item: MissionItem, t: T): { title: string; hint: string | n
         href: item.href,
       }
     }
+    case 'class_lesson':
+      return { title: format(m.classLesson, { title: item.title }), hint: `${item.time} · ${item.group}`, icon: taskIcon.class_lesson, href: item.href }
     case 'minutes':
       return { title: format(m.minutes, { n: item.progress.target }), hint: m.minutesHint, icon: taskIcon.minutes, href: null }
   }

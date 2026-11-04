@@ -12,7 +12,10 @@ import { Button } from '@/components/ui/button'
 import { EmptyState } from '@/components/ui/states'
 import { JoinForm, SharingToggle } from '@/components/classroom/forms'
 import { loadMyClasses } from '@/features/classroom/server'
-import { formatDate } from '@/features/dashboard/format'
+import { formatDate, percent } from '@/features/dashboard/format'
+import { loadMyLessons } from '@/features/classroom/lesson-server'
+import { sessionTiming } from '@/features/classroom/lessons'
+import { MaterialOpenButton } from '@/components/classroom/lesson-forms'
 
 export async function generateMetadata(): Promise<Metadata> {
   return { title: (await getDict(classroomDict)).classes.metaTitle }
@@ -24,8 +27,12 @@ export default async function ClassesPage() {
   const profile = await requireStudentReady({ next: '/dashboard/classes' })
   const [c, locale] = await Promise.all([getDict(classroomDict), getLocale()])
   const t = c.classes
-  const { workspaces } = await loadMyClasses(createAdminSupabase(), profile.id)
+  const admin = createAdminSupabase()
+  const { workspaces } = await loadMyClasses(admin, profile.id)
   const tz = profile.timezone || 'Asia/Tashkent'
+  const lessonsBy = new Map(await Promise.all(workspaces.map(async (w) => [w.workspace.id, await loadMyLessons(admin, profile.id, w.groups)] as const)))
+  const now = new Date()
+  const when = (iso: string) => formatDate(iso, locale, tz, { weekday: 'short', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' })
 
   return (
     <>
@@ -52,6 +59,71 @@ export default async function ClassesPage() {
                 <Card className="p-4">
                   <SharingToggle workspaceId={w.workspace.id} enabled={w.sharing} />
                 </Card>
+                {(() => {
+                  const ls = lessonsBy.get(w.workspace.id)!
+                  return (
+                    <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
+                      <Card className="p-4" data-testid="my-lessons">
+                        <h3 className="text-[15px] font-semibold">{t.lessonsTitle}</h3>
+                        {ls.attendance.counted > 0 && (
+                          <p className="mt-0.5 text-xs text-muted-foreground">{format(t.myAttendance, { rate: percent(ls.attendance.rate), n: ls.attendance.counted })}</p>
+                        )}
+                        {ls.sessions.length === 0 ? (
+                          <p className="mt-2 text-[13px] text-muted-foreground">{t.noLessons}</p>
+                        ) : (
+                          <ul className="mt-2 divide-y divide-border">
+                            {ls.sessions.slice(0, 6).map((x) => {
+                              const timing = sessionTiming(x.startsAt, x.durationMinutes, now)
+                              return (
+                                <li key={x.id} className="flex flex-wrap items-center justify-between gap-2 py-2.5">
+                                  <div className="min-w-0">
+                                    <p className={`text-sm font-medium ${x.status === 'cancelled' ? 'text-muted-foreground line-through' : 'text-foreground'}`}>{x.title}</p>
+                                    <p className="text-xs text-muted-foreground">
+                                      {when(x.startsAt)} · {format(t.minutes, { n: x.durationMinutes })} · {x.groupName}
+                                      {x.location && ` · ${x.location}`}
+                                    </p>
+                                  </div>
+                                  {x.status === 'cancelled' ? (
+                                    <Badge variant="neutral">{t.lessonCancelled}</Badge>
+                                  ) : timing === 'live' ? (
+                                    <span className="flex items-center gap-2">
+                                      <Badge variant="success">{t.live}</Badge>
+                                      {x.meetingUrl && (
+                                        <Button asChild size="sm">
+                                          <a href={x.meetingUrl} target="_blank" rel="noopener noreferrer">
+                                            {t.joinLesson}
+                                          </a>
+                                        </Button>
+                                      )}
+                                    </span>
+                                  ) : null}
+                                </li>
+                              )
+                            })}
+                          </ul>
+                        )}
+                      </Card>
+                      <Card className="p-4" data-testid="my-materials">
+                        <h3 className="text-[15px] font-semibold">{t.materialsTitle}</h3>
+                        {ls.materials.length === 0 ? (
+                          <p className="mt-2 text-[13px] text-muted-foreground">{t.noMaterials}</p>
+                        ) : (
+                          <ul className="mt-2 divide-y divide-border">
+                            {ls.materials.slice(0, 12).map((x) => (
+                              <li key={x.id} className="flex flex-wrap items-center justify-between gap-2 py-2.5">
+                                <div className="min-w-0">
+                                  <p className="truncate text-sm font-medium text-foreground">{x.title}</p>
+                                  <p className="text-xs text-muted-foreground">{x.groupName}</p>
+                                </div>
+                                <MaterialOpenButton materialId={x.id} kind={x.kind} url={x.url} label={x.kind === 'file' ? t.download : t.openLink} />
+                              </li>
+                            ))}
+                          </ul>
+                        )}
+                      </Card>
+                    </div>
+                  )
+                })()}
                 {w.assignments.length === 0 ? (
                   <p className="text-[13px] text-muted-foreground">{t.noAssignments}</p>
                 ) : (

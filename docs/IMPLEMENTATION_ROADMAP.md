@@ -236,9 +236,10 @@ Migratsiya: **0025+**.
 | 0019 | **Yozilgan (PHASE 3):** workspaces, members, invitations, groups, group_members, progress_sharing, assignments, submissions, `attempts.assignment_id`, `audit_logs.workspace_id`, S1 |
 | 0020 | **Yozilgan (2.0-A):** `assignments.assignee_id` — bitta o'quvchiga shaxsiy topshiriq |
 | 0021 | **Yozilgan (2.0-C):** `learning_resources` — Resource Hub (manba, ruxsat, atribut) |
-| 0022 | `live_sessions`, recurrences, guests, participants, `attendance`, `live_events`, `chat_messages`, polls, `recordings`, consents, `webhook_events`, `usage_counters`, `materials` + `workspace-files` bucket |
-| 0023 | `whiteboards`, snapshots, assets |
-| 0024 | Workspace plans, prices, subscriptions; `payments.purpose` kengaytmasi; guruh leaderboard'i |
+| 0022 | **Yozilgan (PHASE 4-A):** `class_sessions`, `attendance`, `class_materials`, `workspace-files` bucket |
+| 0023 | `live_sessions` (LiveKit), recurrences, guests, participants, `attendance`, `live_events`, `chat_messages`, polls, `recordings`, consents, `webhook_events`, `usage_counters`, `materials` + `workspace-files` bucket |
+| 0024 | `whiteboards`, snapshots, assets |
+| 0025 | Workspace plans, prices, subscriptions; `payments.purpose` kengaytmasi; guruh leaderboard'i |
 | 0025+ | Marketplace |
 
 Mavjud migratsiya: **0015** (qo'llanmagan).

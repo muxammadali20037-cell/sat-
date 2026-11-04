@@ -1,6 +1,6 @@
 # SAT MASTER — Build status and phase report
 
-_Last updated: 4 November 2026 (SAT MASTER 2.0-C: Resource Hub)_
+_Last updated: 4 November 2026 (SAT MASTER PHASE 4-A: lessons, attendance, class materials)_
 
 The codebase covers phases 1–8 of [DEVELOPMENT_ROADMAP.md](DEVELOPMENT_ROADMAP.md). Phase 9 (deployment) is partly done: a Supabase project exists, and the steps that need the owner's accounts or credentials are listed under "Launch checklist" below.
 
@@ -94,6 +94,27 @@ The flows ran as a real user against real auth, PostgREST and RLS. AI used the l
   - Both checks now run inside SQL functions under a per-student lock (migration 0015). Parallel-connection tests fail without the lock and pass with it.
 - **Admin lists:** question excerpts showed raw LaTeX (`\dfrac{…}`) and escaped prices as `\12`. They now use the same plain-text rendering as student pages.
 - **Pack import (caught before release):** the first version recognised already-imported questions by stem alone. Many Reading and Writing questions share a stem, so a retry after a partial import could have skipped real questions. It now matches passage and stem.
+
+### SAT MASTER PHASE 4-A (4 Nov): lessons, attendance, class materials
+
+The owner chose the parts of the live classroom that need no external service first. Video (LiveKit) and a shared whiteboard come later.
+
+- **Migration 0022:** `class_sessions`, `attendance`, `class_materials` and a private `workspace-files` bucket (PDF/PNG/JPG/WEBP, 20 MB).
+  - Composite foreign keys keep every row inside one workspace.
+  - Clients may only SELECT: the group's staff and current students; a student reads only their own attendance (and keeps it after leaving the group).
+  - No client storage policies at all; files go through server-signed upload/download URLs (10-minute downloads) after membership checks.
+  - URL and storage-path checks in the database.
+- **Teacher (group page):**
+  - "Group at a glance": students, attendance rate (late counts as attended, excused is left out), work submitted vs expected, average grade — each with its basis, "No data yet" instead of zeros.
+  - Lessons: schedule (optionally weekly for up to 16 weeks) with room and the teacher's own https meeting link (Zoom/Meet/Telegram; SAT MASTER does not host video yet), "now" from 10 minutes before the start, cancel (kept, not deleted).
+  - Attendance page: present / late / absent / excused with notes, "mark everyone present".
+  - Materials: upload a file (two-step signed upload, real type and size re-checked on the server, path bound to the workspace and group) or add a link; remove = archive.
+  - New permissions `session.manage`, `attendance.mark`, `material.manage` (teachers and assistants of the group; managers).
+  - Students of the group get a notification in their own language with the time in the workspace's time zone.
+- **Student:** Classes page shows upcoming lessons (live → "Join" button), cancelled ones crossed out, class materials, and their own attendance rate; a lesson later today is the first item of the daily mission.
+- **Refactor:** shared classroom action plumbing moved to `features/classroom/action-kit.ts` (no behaviour change).
+- **Verified:** 11 unit tests, 5 DB tests (per-role SELECT, own attendance only, anon and client writes denied separately, composite FKs, URL/path/size checks, leaving the group); all 709 tests; lint and build; 22 Playwright checks (`e2e-lessons`) plus earlier suites (classroom 32/32 after fixing a race in the test itself, intelligence 24/24, dashboard 37/37).
+- **Not verified locally:** an actual file upload/download, because the local stack has no storage service (the E2E check confirms the failure is reported honestly and nothing is recorded). It uses the same signed-upload mechanism already used for lesson files in production.
 
 ### SAT MASTER 2.0-C (4 Nov): Resource Hub
 
@@ -305,6 +326,7 @@ State on 2 Nov 2026, applied through the Supabase connector with the owner's con
 | 0012 search indexes | **Declined by the owner** at the confirmation prompt. Optional (admin search speed only). Apply later from the SQL editor if wanted. |
 | 0013 study-guide tables | Applied |
 | 0014 study-guide content (~480 KB) | Not applied. Use Admin → Study guides → "Import bundled guides" after the first deploy, or `supabase db push`. |
+| 0022 class lessons (3 tables, 1 private bucket; no existing data touched) | Pending the owner's approval. |
 | 0021 Resource Hub (1 table; no existing data touched) | Applied on 4 Nov with the owner's approval. Checked afterwards: RLS on, one read policy, `authenticated` has SELECT only, `anon` nothing; 60 tables, all with RLS. |
 | 0020 personal assignments (1 column, 1 FK, 1 index, one policy changed; no existing data touched) | Applied on 3 Nov with the owner's approval. Checked afterwards: column, FK and new read policy present; clients still have SELECT only on `assignments`; 59 tables, all with RLS. |
 | 0019 classroom (8 tables, 2 columns, 7 functions; one policy narrowed; no existing data touched) | Applied on 3 Nov with the owner's approval. Checked afterwards: 59 tables, all with RLS; `authenticated` cannot insert, update or delete any classroom table and `anon` cannot read them; `workspace_create` and `workspace_join` are callable by the server only; the Telegram policy now allows only the owner and admins. |

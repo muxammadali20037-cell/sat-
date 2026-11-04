@@ -50,6 +50,7 @@ import { achievements, ADVANCED_DOMAIN_MIN_ANSWERS, longestStreak, type Achievem
 import { analyze, type IntelligenceResult, type SubjectCode as IntelSubject } from '@/features/intelligence/engine'
 import { countFlashcardsDue, loadAnswerSignals } from '@/features/intelligence/server'
 import { loadMyClasses } from '@/features/classroom/server'
+import { loadMyLessons } from '@/features/classroom/lesson-server'
 import { addDays } from '@/lib/time'
 
 export type ContinueLesson = {
@@ -515,6 +516,13 @@ export async function loadDashboard(db: Db, admin: () => Db, profile: CurrentPro
     .filter((a) => a.status === 'not_started' || a.status === 'started')
     .sort((a, b) => Number(b.personal) - Number(a.personal) || (a.dueAt ?? '9999').localeCompare(b.dueAt ?? '9999'))
     .map((a) => ({ id: a.id, title: a.title, personal: a.personal }))
+  // Class lessons still ahead today (in the student's own time zone).
+  const myLessons = await loadMyLessons(admin(), userId, classes.workspaces.flatMap((w) => w.groups))
+  const nowMs = Date.now()
+  const timeFmt = new Intl.DateTimeFormat(profile.locale === 'uz' ? 'uz-Latn-UZ' : profile.locale, { hour: '2-digit', minute: '2-digit', timeZone: tz })
+  const classLessons = myLessons.sessions
+    .filter((x) => x.status !== 'cancelled' && localDate(tz, new Date(x.startsAt)) === today && Date.parse(x.startsAt) + x.durationMinutes * 60_000 > nowMs)
+    .map((x) => ({ title: x.title, time: timeFmt.format(new Date(x.startsAt)), group: x.groupName }))
   const lessonBySkill = new Map<string, { id: string; title: string; minutes: number }>()
   // Catalog order (course, then lesson position).
   for (const l of publishedLessons) {
@@ -558,6 +566,7 @@ export async function loadDashboard(db: Db, admin: () => Db, profile: CurrentPro
         : null,
     mistakes: latestMistakeAttempt ? { count: allMistakes.length, href: '/dashboard/mistakes' } : null,
     classWork,
+    classLessons,
     retryCompletedToday: todayAttempts.some((a) => a.kind === 'practice' && (a.practice_mode === 'retry' || a.practice_mode === 'mistakes')),
     today: todayActivity(today, activity),
     dailyStudyMinutes: profile.dailyStudyMinutes,
