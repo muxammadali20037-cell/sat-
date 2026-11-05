@@ -246,7 +246,7 @@
     "skill_code": "evaluating_statistical_claims",
     "difficulty": "hard",
     "question_type": "spr",
-    "stem": "A high school has 2,400 students. The school selected a random sample of 300 of its students and randomly assigned 150 of them to receive text message reminders about homework deadlines; the other 150 received no reminders. During the term, 120 of the students who received reminders and 96 of the students who did not receive reminders submitted all their homework on time. Based on this study, if all 2,400 students at the school received the reminders instead of none of them, by about how many would the number of students who submit all their homework on time be expected to increase?",
+    "stem": "A high school has 2,400 students. The school selected a random sample of 300 of its students and randomly assigned 150 of them to receive text message reminders about homework deadlines; the other 150 received no reminders. During the term, 120 of the students who received reminders and 96 of the students who did not receive reminders submitted all their homework on time. Based on this study, if all 2,400 students at the school received the reminders instead of none of them, what is the best estimate of the increase in the number of students who would submit all their homework on time?",
     "spr_answers": [
       "384"
     ],
