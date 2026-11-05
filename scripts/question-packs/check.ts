@@ -154,9 +154,13 @@ function main() {
       else if (row.passage && otherPassages.has(norm(String(row.passage)))) errors.push(`row ${i + 1}: same passage as ${otherPassages.get(norm(String(row.passage)))}`)
     })
     if (rows.length !== PER_SKILL) errors.push(`expected ${PER_SKILL} questions, found ${rows.length}`)
-    if (rows.length === PER_SKILL && PER_SKILL === 8 && (diff.easy !== 3 || diff.medium !== 3 || diff.hard !== 2))
-      errors.push(`difficulty mix must be 3 easy / 3 medium / 2 hard (got ${diff.easy ?? 0}/${diff.medium ?? 0}/${diff.hard ?? 0})`)
-    if (isMath && rows.length > 0 && spr < 2) errors.push(`Math skills need at least 2 student-produced-response questions (found ${spr})`)
+    // Packs of 8k questions per skill keep the 3:3:2 easy/medium/hard mix (8 → 3/3/2, 16 → 6/6/4).
+    const k = PER_SKILL / 8
+    if (rows.length === PER_SKILL && Number.isInteger(k) && (diff.easy !== 3 * k || diff.medium !== 3 * k || diff.hard !== 2 * k))
+      errors.push(`difficulty mix must be ${3 * k} easy / ${3 * k} medium / ${2 * k} hard (got ${diff.easy ?? 0}/${diff.medium ?? 0}/${diff.hard ?? 0})`)
+    // About a quarter of real-test Math items are student-produced responses (at least 2 per skill).
+    const minSpr = Math.max(2, Math.floor(PER_SKILL / 4))
+    if (isMath && rows.length > 0 && spr < minSpr) errors.push(`Math skills need at least ${minSpr} student-produced-response questions (found ${spr})`)
 
     if (!selected.includes(file)) continue
     if (errors.length) {
