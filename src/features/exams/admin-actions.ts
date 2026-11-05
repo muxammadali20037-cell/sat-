@@ -6,6 +6,7 @@ import { getApiContext } from '@/lib/auth/session'
 import { createServerSupabase, type Db } from '@/lib/supabase/server'
 import { ApiError, type ActionResult } from '@/lib/api/errors'
 import { writeAudit } from '@/lib/audit'
+import { fetchAll } from '@/features/admin/server-utils'
 import { CONTENT_ROLES } from '@/config/roles'
 import { getTaxonomy } from '@/features/taxonomy/server'
 import { FULL_LENGTH_COUNTS, type ExamSection, type ModuleVariant } from './machine'
@@ -345,22 +346,25 @@ export async function autoFillModuleAction(input: unknown): Promise<ActionResult
       .map((r) => ({ id: r.question_id, domainId: r.questions!.domain_id, skillId: r.questions!.skill_id, difficulty: r.questions!.difficulty as PoolQuestion['difficulty'] }))
     if (existing.length >= target) return { ok: true, data: { added: 0, shortfall: 0 }, message: 'The module is already full.' }
 
-    const { data: pool, error: pErr } = await ctx.db
-      .from('questions')
-      .select('id, domain_id, skill_id, difficulty')
-      .eq('subject_id', subject.id)
-      .eq('status', 'published')
-      .limit(10000)
-    if (pErr) throw pErr
+    // Paged: the hosted API returns at most 1000 rows per request.
+    const { rows: pool } = await fetchAll(
+      (from, to) => ctx.db.from('questions').select('id, domain_id, skill_id, difficulty').eq('subject_id', subject.id).eq('status', 'published').order('id').range(from, to),
+      { max: 100_000 },
+    )
     // Questions already used in OTHER mock exams: kept for last, so each exam gets fresh questions
     // while the bank allows; they are only reused to cover a shortfall.
-    const { data: otherRows, error: oErr } = await ctx.db
-      .from('mock_exam_questions')
-      .select('question_id, mock_exam_modules!inner(mock_exam_id)')
-      .neq('mock_exam_modules.mock_exam_id', mod.mock_exam_id)
-      .limit(20000)
-    if (oErr) throw oErr
-    const inOtherExams = new Set((otherRows ?? []).map((r) => r.question_id))
+    const { rows: otherRows } = await fetchAll(
+      (from, to) =>
+        ctx.db
+          .from('mock_exam_questions')
+          .select('question_id, mock_exam_modules!inner(mock_exam_id)')
+          .neq('mock_exam_modules.mock_exam_id', mod.mock_exam_id)
+          .order('module_id')
+          .order('question_id')
+          .range(from, to),
+      { max: 200_000 },
+    )
+    const inOtherExams = new Set(otherRows.map((r) => r.question_id))
     const candidates = pool
       .filter((q) => !used.has(q.id))
       .map((q) => ({ id: q.id, domainId: q.domain_id, skillId: q.skill_id, difficulty: q.difficulty as PoolQuestion['difficulty'] }))
