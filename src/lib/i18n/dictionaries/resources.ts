@@ -10,7 +10,7 @@ export const resourcesDict = defineDict({
       groups: { official: 'Official practice', textbook: 'Free textbooks', classic: 'Classics for reading practice', grammar: 'Grammar and writing' },
       groupHints: {
         official: 'Full practice tests and question banks from the makers of the SAT.',
-        textbook: 'Open textbooks (CC BY) for the math and writing behind the SAT.',
+        textbook: 'Free textbooks for the math and writing behind the SAT, read on the publisher’s site.',
         classic: 'Public-domain books like the ones SAT passages come from. Read a chapter a day and save new words.',
         grammar: 'Clear explanations of the rules tested in Standard English Conventions.',
       },
@@ -44,7 +44,7 @@ export const resourcesDict = defineDict({
       groups: { official: 'Rasmiy amaliy testlar', textbook: 'Bepul darsliklar', classic: "O'qish uchun klassik asarlar", grammar: 'Grammatika va yozuv' },
       groupHints: {
         official: "SAT tuzuvchilaridan to'liq amaliy testlar va savollar banki.",
-        textbook: "SAT matematikasi va yozuvi uchun ochiq darsliklar (CC BY).",
+        textbook: "SAT matematikasi va yozuvi uchun bepul darsliklar (nashriyot saytida o'qiladi).",
         classic: "SAT matnlari olinadigan turdagi jamoat mulkidagi kitoblar. Har kuni bir bob o'qing va yangi so'zlarni saqlang.",
         grammar: "Standard English Conventions bo'limida tekshiriladigan qoidalar tushuntirishi.",
       },
@@ -78,7 +78,7 @@ export const resourcesDict = defineDict({
       groups: { official: 'Официальная практика', textbook: 'Бесплатные учебники', classic: 'Классика для чтения', grammar: 'Грамматика и письмо' },
       groupHints: {
         official: 'Полные пробные тесты и банк вопросов от создателей SAT.',
-        textbook: 'Открытые учебники (CC BY) по математике и письму для SAT.',
+        textbook: 'Бесплатные учебники по математике и письму для SAT (читаются на сайте издателя).',
         classic: 'Книги в общественном достоянии — такие, из каких берут тексты SAT. Читайте по главе в день и сохраняйте новые слова.',
         grammar: 'Понятные объяснения правил из раздела Standard English Conventions.',
       },

@@ -19,7 +19,7 @@ describe('library shelves', () => {
     expect(validateResourceUrl('http://openstax.org/x', 'openstax', null)).toBe('https_only')
   })
   it('the usage terms say link only and name the licence', () => {
-    expect(PROVIDER_DEFAULTS.openstax.usageTerms).toMatch(/Link only.*CC BY 4\.0/)
+    expect(PROVIDER_DEFAULTS.openstax.usageTerms).toMatch(/Link only.*CC BY-NC-SA 4\.0.*nothing is copied/)
     expect(PROVIDER_DEFAULTS.gutenberg.usageTerms).toMatch(/Link only.*public-domain/)
   })
 })

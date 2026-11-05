@@ -38,8 +38,8 @@ export const PROVIDER_DEFAULTS: Record<Provider, { name: string; usageTerms: str
   youtube: { name: 'YouTube', usageTerms: 'Link only. The video belongs to its creator; we do not copy or embed it.', attribution: '' },
   openstax: {
     name: 'OpenStax',
-    usageTerms: 'Link only. A free textbook by OpenStax (Rice University) under CC BY 4.0; not affiliated with SAT MASTER.',
-    attribution: 'OpenStax, Rice University (CC BY 4.0)',
+    usageTerms: 'Link only. A free textbook by OpenStax (Rice University) under CC BY-NC-SA 4.0, read on openstax.org; nothing is copied into SAT MASTER, which is not affiliated with OpenStax.',
+    attribution: 'OpenStax, Rice University',
   },
   gutenberg: {
     name: 'Project Gutenberg',
