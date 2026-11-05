@@ -1,0 +1,296 @@
+[
+  {
+    "skill_code": "percentages",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "A school library has $1{,}240$ books, and $15\\%$ of them are novels. How many novels does the library have?",
+    "option_a": "$124$",
+    "option_b": "$186$",
+    "option_c": "$1{,}054$",
+    "option_d": "$1{,}426$",
+    "correct": "B",
+    "explanation_en": "$15\\%$ of $1{,}240$ is $0.15 \\times 1{,}240 = 186$.\n\nChoice A is $10\\%$ of $1{,}240$. Choice C is the number of books that are not novels ($85\\%$). Choice D is $115\\%$ of $1{,}240$, which adds $15\\%$ to the total.",
+    "explanation_uz": "$1{,}240$ ning $15\\%$ i: $0.15 \\times 1{,}240 = 186$.\n\nA variant — $1{,}240$ ning $10\\%$ i. C variant — roman bo‘lmagan kitoblar soni ($85\\%$). D variant — $1{,}240$ ning $115\\%$ i, ya’ni jamiga $15\\%$ qo‘shilgan.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "percent-of"
+    ]
+  },
+  {
+    "skill_code": "percentages",
+    "difficulty": "easy",
+    "question_type": "spr",
+    "stem": "The price of a kilogram of cherries at a market rose from $80{,}000$ soums to $92{,}000$ soums. By what percent did the price increase?",
+    "spr_answers": [
+      "15"
+    ],
+    "explanation_en": "The increase is $92{,}000 - 80{,}000 = 12{,}000$ soums. Divide by the original price: $\\frac{12{,}000}{80{,}000} = 0.15 = 15\\%$. Dividing by the new price ($\\frac{12{,}000}{92{,}000} \\approx 13\\%$) is a common error.",
+    "explanation_uz": "O‘sish $92{,}000 - 80{,}000 = 12{,}000$ so‘m. Uni boshlang‘ich narxga bo‘lamiz: $\\frac{12{,}000}{80{,}000} = 0.15 = 15\\%$. Yangi narxga bo‘lish ($\\frac{12{,}000}{92{,}000} \\approx 13\\%$) — ko‘p uchraydigan xato.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "percent-change"
+    ]
+  },
+  {
+    "skill_code": "percentages",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "In a class of $48$ students, $36$ students passed a driving-theory test. What percent of the students in the class passed the test?",
+    "option_a": "$25\\%$",
+    "option_b": "$36\\%$",
+    "option_c": "$75\\%$",
+    "option_d": "$133\\frac{1}{3}\\%$",
+    "correct": "C",
+    "explanation_en": "Divide the part by the whole: $\\frac{36}{48} = 0.75 = 75\\%$.\n\nChoice A is the percent of students who did not pass ($\\frac{12}{48}$). Choice B treats the number of students who passed as a percent. Choice D divides the whole by the part ($\\frac{48}{36}$).",
+    "explanation_uz": "Qismni butunga bo‘lamiz: $\\frac{36}{48} = 0.75 = 75\\%$.\n\nA variant — testdan o‘ta olmaganlar ulushi ($\\frac{12}{48}$). B variant testdan o‘tganlar sonini foiz deb olgan. D variant butunni qismga bo‘lgan ($\\frac{48}{36}$).",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "part-of-whole"
+    ]
+  },
+  {
+    "skill_code": "percentages",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "A winter coat normally costs $640{,}000$ soums. During a sale, the price is reduced by $35\\%$. What is the sale price of the coat, in soums?",
+    "option_a": "$224{,}000$",
+    "option_b": "$416{,}000$",
+    "option_c": "$605{,}000$",
+    "option_d": "$864{,}000$",
+    "correct": "B",
+    "explanation_en": "After a $35\\%$ discount, the customer pays $100\\% - 35\\% = 65\\%$ of the price: $0.65 \\times 640{,}000 = 416{,}000$ soums.\n\nChoice A is the amount of the discount, not the sale price. Choice C subtracts $35{,}000$ soums instead of $35\\%$. Choice D increases the price by $35\\%$.",
+    "explanation_uz": "$35\\%$ chegirmadan keyin xaridor narxning $100\\% - 35\\% = 65\\%$ ini to‘laydi: $0.65 \\times 640{,}000 = 416{,}000$ so‘m.\n\nA variant — chegirma miqdori, chegirmali narx emas. C variant $35\\%$ o‘rniga $35{,}000$ so‘m ayirgan. D variant narxni $35\\%$ ga oshirgan.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "discount"
+    ]
+  },
+  {
+    "skill_code": "percentages",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "If $30\\%$ of a number is $54$, what is the number?",
+    "option_a": "$16.2$",
+    "option_b": "$84$",
+    "option_c": "$162$",
+    "option_d": "$180$",
+    "correct": "D",
+    "explanation_en": "Let the number be $n$. Then $0.3n = 54$, so $n = \\frac{54}{0.3} = 180$. Check: $0.3 \\times 180 = 54$.\n\nChoice A is $30\\%$ of $54$, not the number whose $30\\%$ is $54$. Choice B adds $30$ to $54$. Choice C multiplies $54$ by $3$ instead of dividing by $0.3$.",
+    "explanation_uz": "Son $n$ bo‘lsin. U holda $0.3n = 54$, demak $n = \\frac{54}{0.3} = 180$. Tekshiruv: $0.3 \\times 180 = 54$.\n\nA variant — $54$ ning $30\\%$ i, $30\\%$ i $54$ ga teng bo‘lgan son emas. B variant $54$ ga $30$ ni qo‘shgan. C variant $0.3$ ga bo‘lish o‘rniga $54$ ni $3$ ga ko‘paytirgan.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "find-whole"
+    ]
+  },
+  {
+    "skill_code": "percentages",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "The price of a train ticket was $p$ soums. The price then increased by $7\\%$. Which expression represents the new price, in soums?",
+    "option_a": "$p + 7$",
+    "option_b": "$0.07p$",
+    "option_c": "$1.07p$",
+    "option_d": "$1.7p$",
+    "correct": "C",
+    "explanation_en": "The new price is the old price plus $7\\%$ of it: $p + 0.07p = 1.07p$.\n\nChoice A adds $7$ soums, not $7\\%$. Choice B is only the amount of the increase. Choice D represents a $70\\%$ increase.",
+    "explanation_uz": "Yangi narx — eski narx va uning $7\\%$ i yig‘indisi: $p + 0.07p = 1.07p$.\n\nA variant $7\\%$ emas, $7$ so‘m qo‘shgan. B variant — faqat o‘sish miqdori. D variant $70\\%$ o‘sishni ifodalaydi.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "percent-expression"
+    ]
+  },
+  {
+    "skill_code": "percentages",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "After the number of members in a robotics club increased by $25\\%$, the club had $340$ members. How many members did the club have before the increase?",
+    "spr_answers": [
+      "272"
+    ],
+    "explanation_en": "The new number is $125\\%$ of the original: $1.25n = 340$, so $n = \\frac{340}{1.25} = 272$. Check: $272 + 0.25(272) = 272 + 68 = 340$. Subtracting $25\\%$ of $340$ ($340 - 85 = 255$) is wrong, because the $25\\%$ is a percent of the original number, not of $340$.",
+    "explanation_uz": "Yangi son dastlabki sonning $125\\%$ i: $1.25n = 340$, demak $n = \\frac{340}{1.25} = 272$. Tekshiruv: $272 + 0.25(272) = 272 + 68 = 340$. $340$ dan uning $25\\%$ ini ayirish ($340 - 85 = 255$) xato, chunki $25\\%$ — dastlabki sonning foizi, $340$ ning emas.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "reverse-percent"
+    ]
+  },
+  {
+    "skill_code": "percentages",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "A family used $4{,}800$ liters of water in May. After they repaired a leaking pipe, they used $3{,}600$ liters of water in June. By what percent did the family's water use decrease from May to June?",
+    "option_a": "$12\\%$",
+    "option_b": "$25\\%$",
+    "option_c": "$33\\frac{1}{3}\\%$",
+    "option_d": "$75\\%$",
+    "correct": "B",
+    "explanation_en": "The decrease is $4{,}800 - 3{,}600 = 1{,}200$ liters. Divide by the original (May) amount: $\\frac{1{,}200}{4{,}800} = 0.25 = 25\\%$.\n\nChoice A treats the decrease of $1{,}200$ liters as if it were $12\\%$. Choice C divides by the June amount instead of the May amount ($\\frac{1{,}200}{3{,}600}$). Choice D is June's use as a percent of May's use, not the decrease.",
+    "explanation_uz": "Kamayish $4{,}800 - 3{,}600 = 1{,}200$ litr. Uni dastlabki (may) miqdorga bo‘lamiz: $\\frac{1{,}200}{4{,}800} = 0.25 = 25\\%$.\n\nA variant $1{,}200$ litr kamayishni $12\\%$ deb olgan. C variant may o‘rniga iyun miqdoriga bo‘lgan ($\\frac{1{,}200}{3{,}600}$). D variant — iyundagi sarf mayning necha foizi ekani, kamayish emas.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "percent-change"
+    ]
+  },
+  {
+    "skill_code": "percentages",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "A shop increased the price of a pair of headphones by $25\\%$. A month later, the shop offered a $20\\%$ discount on the increased price. How does the final price compare with the original price?",
+    "option_a": "The final price is $5\\%$ greater than the original price.",
+    "option_b": "The final price is equal to the original price.",
+    "option_c": "The final price is $5\\%$ less than the original price.",
+    "option_d": "The final price is $45\\%$ greater than the original price.",
+    "correct": "B",
+    "explanation_en": "Let the original price be $p$. After the increase, the price is $1.25p$. After the discount, it is $0.80 \\times 1.25p = 1.00p$. So the final price equals the original price.\n\nChoice A subtracts the percents ($25\\% - 20\\% = 5\\%$) instead of multiplying the factors. Choice C makes the same mistake with the wrong sign. Choice D adds the two percents as if both were increases.",
+    "explanation_uz": "Dastlabki narx $p$ bo‘lsin. Oshirilgandan keyin narx $1.25p$. Chegirmadan keyin u $0.80 \\times 1.25p = 1.00p$ bo‘ladi. Demak, oxirgi narx dastlabki narxga teng.\n\nA variant ko‘paytuvchilarni ko‘paytirish o‘rniga foizlarni ayirgan ($25\\% - 20\\% = 5\\%$). C variant xuddi shu xatoni teskari ishora bilan qilgan. D variant ikkala foizni o‘sish deb qo‘shgan.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "successive-percent"
+    ]
+  },
+  {
+    "skill_code": "percentages",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "In a survey of the residents of a town, $40\\%$ of the respondents were younger than $25$, and the rest were $25$ or older. Of the respondents younger than $25$, $65\\%$ said they prefer taking the bus to work. Of the respondents $25$ or older, $30\\%$ said they prefer taking the bus to work. What percent of all respondents said they prefer taking the bus to work?",
+    "spr_answers": [
+      "44"
+    ],
+    "explanation_en": "Respondents younger than $25$ who prefer the bus: $0.65 \\times 40\\% = 26\\%$ of all respondents. Respondents $25$ or older make up $60\\%$, and $0.30 \\times 60\\% = 18\\%$ of all respondents prefer the bus. In total, $26\\% + 18\\% = 44\\%$. Averaging $65\\%$ and $30\\%$ ($47.5\\%$) is wrong because the two groups are different sizes.",
+    "explanation_uz": "$25$ yoshdan kichik va avtobusni afzal ko‘radiganlar: barcha respondentlarning $0.65 \\times 40\\% = 26\\%$ i. $25$ yosh va undan kattalar $60\\%$ ni tashkil qiladi, ulardan $0.30 \\times 60\\% = 18\\%$ (barcha respondentlarga nisbatan) avtobusni afzal ko‘radi. Jami $26\\% + 18\\% = 44\\%$. $65\\%$ va $30\\%$ ning o‘rta qiymatini olish ($47.5\\%$) xato, chunki ikki guruhning hajmi har xil.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "percent-of-percent"
+    ]
+  },
+  {
+    "skill_code": "percentages",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "A museum had $2{,}500$ visitors in March. The number of visitors in July was $160\\%$ greater than the number of visitors in March. How many visitors did the museum have in July?",
+    "option_a": "$2{,}660$",
+    "option_b": "$4{,}000$",
+    "option_c": "$4{,}100$",
+    "option_d": "$6{,}500$",
+    "correct": "D",
+    "explanation_en": "$160\\%$ greater means the March number plus $160\\%$ of it: $2{,}500 + 1.6 \\times 2{,}500 = 2.6 \\times 2{,}500 = 6{,}500$ visitors.\n\nChoice A adds $160$ visitors instead of $160\\%$. Choice B is $160\\%$ of the March number ($1.6 \\times 2{,}500$), not $160\\%$ greater. Choice C adds $1{,}600$ visitors, treating $160\\%$ as a number of visitors.",
+    "explanation_uz": "$160\\%$ ko‘p degani — mart sonining ustiga uning $160\\%$ ini qo‘shish: $2{,}500 + 1.6 \\times 2{,}500 = 2.6 \\times 2{,}500 = 6{,}500$ tashrifchi.\n\nA variant $160\\%$ o‘rniga $160$ tashrifchi qo‘shgan. B variant — mart sonining $160\\%$ i ($1.6 \\times 2{,}500$), $160\\%$ ko‘p emas. C variant $160\\%$ ni tashrifchilar soni deb, $1{,}600$ qo‘shgan.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "percent-greater"
+    ]
+  },
+  {
+    "skill_code": "percentages",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "At a school, the percent of students who passed a mathematics exam rose from $40\\%$ last year to $50\\%$ this year. By what percent did the pass rate increase?",
+    "option_a": "$10\\%$",
+    "option_b": "$20\\%$",
+    "option_c": "$25\\%$",
+    "option_d": "$50\\%$",
+    "correct": "C",
+    "explanation_en": "The pass rate rose by $50 - 40 = 10$ percentage points. As a percent of the original rate, the increase is $\\frac{10}{40} = 0.25 = 25\\%$.\n\nChoice A is the increase in percentage points, not the percent increase. Choice B divides by the new rate ($\\frac{10}{50}$). Choice D is the new pass rate itself.",
+    "explanation_uz": "O‘tish ko‘rsatkichi $50 - 40 = 10$ foiz punktga oshgan. Dastlabki ko‘rsatkichga nisbatan foizda bu $\\frac{10}{40} = 0.25 = 25\\%$.\n\nA variant — foiz punktlardagi o‘sish, foizli o‘sish emas. B variant yangi ko‘rsatkichga bo‘lgan ($\\frac{10}{50}$). D variant — yangi ko‘rsatkichning o‘zi.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "percent-change"
+    ]
+  },
+  {
+    "skill_code": "percentages",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "The positive number $x$ is $75\\%$ greater than the positive number $y$, and $y$ is $20\\%$ less than the positive number $z$. The value of $x$ is what percent greater than the value of $z$?",
+    "spr_answers": [
+      "40"
+    ],
+    "explanation_en": "From the conditions, $x = 1.75y$ and $y = 0.80z$. So $x = 1.75 \\times 0.80z = 1.4z$, which means $x$ is $40\\%$ greater than $z$. Adding and subtracting the percents ($75\\% - 20\\% = 55\\%$) is wrong, because the two percents are taken of different numbers.",
+    "explanation_uz": "Shartlardan $x = 1.75y$ va $y = 0.80z$. Demak, $x = 1.75 \\times 0.80z = 1.4z$, ya’ni $x$ soni $z$ dan $40\\%$ katta. Foizlarni qo‘shib-ayirish ($75\\% - 20\\% = 55\\%$) xato, chunki ikki foiz har xil sonlardan olingan.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "chained-percent"
+    ]
+  },
+  {
+    "skill_code": "percentages",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "A cook has $200$ grams of sugar syrup that is $12\\%$ sugar by mass. How many grams of pure sugar must the cook add to the syrup to make a syrup that is $20\\%$ sugar by mass?",
+    "option_a": "$16$",
+    "option_b": "$20$",
+    "option_c": "$24$",
+    "option_d": "$40$",
+    "correct": "B",
+    "explanation_en": "The syrup contains $0.12 \\times 200 = 24$ grams of sugar. After adding $s$ grams of sugar, there are $24 + s$ grams of sugar in $200 + s$ grams of syrup. Set $\\frac{24 + s}{200 + s} = 0.20$: $24 + s = 40 + 0.2s$, so $0.8s = 16$ and $s = 20$. Check: $\\frac{44}{220} = 0.20$.\n\nChoice A is $8\\%$ of $200$, which ignores that adding sugar also increases the total mass. Choice C is the amount of sugar already in the syrup. Choice D is the amount of sugar needed in $200$ grams of a $20\\%$ syrup, not the amount to add.",
+    "explanation_uz": "Sharbatda $0.12 \\times 200 = 24$ gramm shakar bor. $s$ gramm shakar qo‘shilgach, $200 + s$ gramm sharbatda $24 + s$ gramm shakar bo‘ladi. $\\frac{24 + s}{200 + s} = 0.20$ deb olamiz: $24 + s = 40 + 0.2s$, demak $0.8s = 16$ va $s = 20$. Tekshiruv: $\\frac{44}{220} = 0.20$.\n\nA variant — $200$ ning $8\\%$ i; bunda shakar qo‘shilganda umumiy massa ham ortishi hisobga olinmagan. C variant — sharbatda allaqachon bor shakar miqdori. D variant — $200$ gramm $20\\%$ li sharbatdagi shakar miqdori, qo‘shiladigan miqdor emas.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "mixture"
+    ]
+  },
+  {
+    "skill_code": "percentages",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "The number of students in Club A is $20\\%$ greater than the number of students in Club B. If $12$ students moved from Club A to Club B, the two clubs would have the same number of students. How many students are in Club A?",
+    "option_a": "$120$",
+    "option_b": "$132$",
+    "option_c": "$144$",
+    "option_d": "$264$",
+    "correct": "C",
+    "explanation_en": "Let $B$ be the number of students in Club B; then Club A has $1.2B$. After the move: $1.2B - 12 = B + 12$, so $0.2B = 24$ and $B = 120$. Club A has $1.2 \\times 120 = 144$ students. Check: $144 - 12 = 132$ and $120 + 12 = 132$.\n\nChoice A is the number of students in Club B. Choice B is the number in each club after the move. Choice D is the total number of students in both clubs.",
+    "explanation_uz": "B klubdagi o‘quvchilar soni $B$ bo‘lsin; u holda A klubda $1.2B$ o‘quvchi bor. Ko‘chishdan keyin: $1.2B - 12 = B + 12$, demak $0.2B = 24$ va $B = 120$. A klubda $1.2 \\times 120 = 144$ o‘quvchi bor. Tekshiruv: $144 - 12 = 132$ va $120 + 12 = 132$.\n\nA variant — B klubdagi o‘quvchilar soni. B variant — ko‘chishdan keyin har bir klubdagi o‘quvchilar soni. D variant — ikkala klubdagi jami o‘quvchilar soni.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "percent-greater"
+    ]
+  },
+  {
+    "skill_code": "percentages",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "The population of a town increased by $25\\%$ from $2020$ to $2022$. From $2022$ to $2024$, the population decreased by $p\\%$. The population in $2024$ was $10\\%$ greater than the population in $2020$. What is the value of $p$?",
+    "spr_answers": [
+      "12"
+    ],
+    "explanation_en": "Let the 2020 population be $P$. In 2022 it was $1.25P$, and in 2024 it was $1.25P\\left(1 - \\frac{p}{100}\\right)$. This equals $1.10P$, so $1 - \\frac{p}{100} = \\frac{1.10}{1.25} = 0.88$, and $p = 12$. Subtracting the percents ($25 - 10 = 15$) is wrong, because the decrease is a percent of the larger 2022 population.",
+    "explanation_uz": "2020-yildagi aholi $P$ bo‘lsin. 2022-yilda u $1.25P$, 2024-yilda esa $1.25P\\left(1 - \\frac{p}{100}\\right)$ bo‘lgan. Bu $1.10P$ ga teng, demak $1 - \\frac{p}{100} = \\frac{1.10}{1.25} = 0.88$ va $p = 12$. Foizlarni ayirish ($25 - 10 = 15$) xato, chunki kamayish 2022-yildagi kattaroq aholi sonining foizi hisoblanadi.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "successive-percent"
+    ]
+  }
+]
