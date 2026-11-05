@@ -11,7 +11,7 @@ const publicSchema = z.object({
   NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY: z.string().min(20).optional(),
   /** Desmos API key (desmos.com/my-api). Public by design — Desmos keys are domain-bound browser keys. */
   NEXT_PUBLIC_DESMOS_API_KEY: z.string().min(8).optional(),
-  NEXT_PUBLIC_DESMOS_API_VERSION: z.string().regex(/^v\d+\.\d+$/).default('v1.13'),
+  NEXT_PUBLIC_DESMOS_API_VERSION: z.string().regex(/^v\d+\.\d+$/).default('v1.12'),
   /** Shows "sign in with phone (SMS code)" once Supabase phone auth + the SMS hook are set up. */
   NEXT_PUBLIC_ENABLE_PHONE_AUTH: z.enum(['true', 'false']).default('false'),
 })
