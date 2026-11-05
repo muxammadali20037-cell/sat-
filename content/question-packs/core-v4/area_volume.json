@@ -1,0 +1,294 @@
+[
+  {
+    "skill_code": "area_volume",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "A rectangular rug has a perimeter of 46 feet. The length of the rug is 15 feet. What is the area, in square feet, of the rug?",
+    "option_a": "23",
+    "option_b": "120",
+    "option_c": "240",
+    "option_d": "345",
+    "correct": "B",
+    "explanation_en": "The perimeter is $2(\\ell + w) = 46$, so $\\ell + w = 23$ and $w = 23 - 15 = 8$ feet. The area is $15 \\cdot 8 = 120$ square feet. Choice B is correct.\n\nChoice A (23) is the sum of the length and the width, not the area. Choice C (240) is twice the area. Choice D (345) is $15 \\cdot 23$; it uses half the perimeter as the width.",
+    "explanation_uz": "Perimetr $2(\\ell + w) = 46$, demak $\\ell + w = 23$ va $w = 23 - 15 = 8$ fut. Yuza $15 \\cdot 8 = 120$ kvadrat fut. To‘g‘ri javob B.\n\nA (23) — uzunlik va enning yig‘indisi, yuza emas. C (240) — yuzaning ikki baravari. D (345) — bu $15 \\cdot 23$; unda perimetrning yarmi en sifatida olingan.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "rectangle"
+    ]
+  },
+  {
+    "skill_code": "area_volume",
+    "difficulty": "easy",
+    "question_type": "spr",
+    "stem": "A storage box is shaped like a rectangular prism. The base of the box is 9 inches long and 8 inches wide, and the volume of the box is 360 cubic inches. What is the height, in inches, of the box?",
+    "spr_answers": [
+      "5"
+    ],
+    "explanation_en": "The volume of a rectangular prism is $V = \\ell w h$. So $360 = 9 \\cdot 8 \\cdot h = 72h$, and $h = \\frac{360}{72} = 5$ inches. If you got 40, you divided 360 by only one dimension of the base.",
+    "explanation_uz": "To‘g‘ri burchakli parallelepiped hajmi $V = \\ell w h$. Demak $360 = 9 \\cdot 8 \\cdot h = 72h$ va $h = \\frac{360}{72} = 5$ dyuym. Agar 40 chiqqan bo‘lsa, siz 360 ni asosning faqat bitta o‘lchamiga bo‘lgansiz.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "prism_volume"
+    ]
+  },
+  {
+    "skill_code": "area_volume",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "A right circular cone has a base radius of 3 centimeters and a height of 8 centimeters. What is the volume, in cubic centimeters, of the cone?",
+    "option_a": "$8\\pi$",
+    "option_b": "$24\\pi$",
+    "option_c": "$72\\pi$",
+    "option_d": "$96\\pi$",
+    "correct": "B",
+    "explanation_en": "The volume of a cone is $V = \\frac{1}{3}\\pi r^2 h = \\frac{1}{3}\\pi (3)^2(8) = 24\\pi$ cubic centimeters. Choice B is correct.\n\nChoice A uses $r$ instead of $r^2$: $\\frac{1}{3}\\pi(3)(8) = 8\\pi$. Choice C, $\\pi(3)^2(8) = 72\\pi$, is the volume of a cylinder; it leaves out the factor $\\frac{1}{3}$. Choice D uses the diameter 6 as the radius: $\\frac{1}{3}\\pi(6)^2(8) = 96\\pi$.",
+    "explanation_uz": "Konus hajmi $V = \\frac{1}{3}\\pi r^2 h = \\frac{1}{3}\\pi (3)^2(8) = 24\\pi$ kub santimetr. To‘g‘ri javob B.\n\nA javobda $r^2$ o‘rniga $r$ olingan: $\\frac{1}{3}\\pi(3)(8) = 8\\pi$. C, ya’ni $\\pi(3)^2(8) = 72\\pi$, silindr hajmi; unda $\\frac{1}{3}$ ko‘paytuvchi tushib qolgan. D javobda radius o‘rniga diametr 6 olingan: $\\frac{1}{3}\\pi(6)^2(8) = 96\\pi$.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "cone_volume"
+    ]
+  },
+  {
+    "skill_code": "area_volume",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "A solid metal ball is shaped like a sphere with a radius of 3 inches. What is the volume, in cubic inches, of the ball?",
+    "option_a": "$12\\pi$",
+    "option_b": "$27\\pi$",
+    "option_c": "$36\\pi$",
+    "option_d": "$108\\pi$",
+    "correct": "C",
+    "explanation_en": "The volume of a sphere is $V = \\frac{4}{3}\\pi r^3 = \\frac{4}{3}\\pi(27) = 36\\pi$ cubic inches. Choice C is correct.\n\nChoice A is $4\\pi r = 12\\pi$, which is not a volume formula. Choice B is $\\pi r^3 = 27\\pi$; it leaves out the factor $\\frac{4}{3}$. Choice D is $4\\pi r^3 = 108\\pi$; it forgets to divide by 3.",
+    "explanation_uz": "Shar hajmi $V = \\frac{4}{3}\\pi r^3 = \\frac{4}{3}\\pi(27) = 36\\pi$ kub dyuym. To‘g‘ri javob C.\n\nA — bu $4\\pi r = 12\\pi$, hajm formulasi emas. B — bu $\\pi r^3 = 27\\pi$; unda $\\frac{4}{3}$ ko‘paytuvchi tushib qolgan. D — bu $4\\pi r^3 = 108\\pi$; 3 ga bo‘lish unutilgan.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "sphere_volume"
+    ]
+  },
+  {
+    "skill_code": "area_volume",
+    "difficulty": "easy",
+    "question_type": "spr",
+    "stem": "A cube has a volume of 64 cubic centimeters. What is the total surface area, in square centimeters, of the cube?",
+    "spr_answers": [
+      "96"
+    ],
+    "explanation_en": "The edge length $s$ satisfies $s^3 = 64$, so $s = 4$ centimeters. A cube has 6 square faces, each with area $4^2 = 16$, so the total surface area is $6 \\cdot 16 = 96$ square centimeters. If you got 16, you found the area of only one face.",
+    "explanation_uz": "Qirra uzunligi $s$ uchun $s^3 = 64$, demak $s = 4$ santimetr. Kubning 6 ta kvadrat yog‘i bor, har birining yuzi $4^2 = 16$, shuning uchun to‘la sirt yuzi $6 \\cdot 16 = 96$ kvadrat santimetr. Agar 16 chiqqan bo‘lsa, siz faqat bitta yoqning yuzini topgansiz.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "surface_area"
+    ]
+  },
+  {
+    "skill_code": "area_volume",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "The length of a rectangle is doubled, and the width of the rectangle is tripled. The area of the new rectangle is how many times the area of the original rectangle?",
+    "option_a": "5",
+    "option_b": "6",
+    "option_c": "9",
+    "option_d": "36",
+    "correct": "B",
+    "explanation_en": "If the original rectangle has length $\\ell$ and width $w$, its area is $\\ell w$. The new area is $(2\\ell)(3w) = 6\\ell w$, which is 6 times the original area. Choice B is correct.\n\nChoice A adds the two factors instead of multiplying them. Choice C is $3^2$, and choice D is $(2 \\cdot 3)^2$; neither length is squared when only the length and width change.",
+    "explanation_uz": "Agar dastlabki to‘g‘ri to‘rtburchakning uzunligi $\\ell$, eni $w$ bo‘lsa, yuzi $\\ell w$. Yangi yuza $(2\\ell)(3w) = 6\\ell w$, ya’ni dastlabkisidan 6 marta katta. To‘g‘ri javob B.\n\nA javobda ikki ko‘paytuvchi ko‘paytirilish o‘rniga qo‘shilgan. C — bu $3^2$, D esa $(2 \\cdot 3)^2$; faqat uzunlik va en o‘zgarganda hech narsa kvadratga oshirilmaydi.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "scaling"
+    ]
+  },
+  {
+    "skill_code": "area_volume",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "Cone $A$ and cone $B$ are similar right circular cones. The height of cone $A$ is 4 centimeters, and the height of cone $B$ is 10 centimeters. The volume of cone $A$ is $16\\pi$ cubic centimeters. What is the volume, in cubic centimeters, of cone $B$?",
+    "option_a": "$40\\pi$",
+    "option_b": "$100\\pi$",
+    "option_c": "$250\\pi$",
+    "option_d": "$400\\pi$",
+    "correct": "C",
+    "explanation_en": "The scale factor from cone $A$ to cone $B$ is $\\frac{10}{4} = \\frac{5}{2}$. Volumes of similar solids scale by the cube of the scale factor, so the volume of cone $B$ is $16\\pi \\cdot \\left(\\frac{5}{2}\\right)^3 = 16\\pi \\cdot \\frac{125}{8} = 250\\pi$. Choice C is correct.\n\nChoice A multiplies by the linear factor $\\frac{5}{2}$, and choice B multiplies by its square, $\\frac{25}{4}$, which is the factor for areas. Choice D multiplies by $5^2 = 25$.",
+    "explanation_uz": "$A$ konusdan $B$ konusga o‘xshashlik koeffitsiyenti $\\frac{10}{4} = \\frac{5}{2}$. O‘xshash jismlarning hajmlari koeffitsiyentning kubiga proporsional, shuning uchun $B$ konus hajmi $16\\pi \\cdot \\left(\\frac{5}{2}\\right)^3 = 16\\pi \\cdot \\frac{125}{8} = 250\\pi$. To‘g‘ri javob C.\n\nA javobda chiziqli koeffitsiyent $\\frac{5}{2}$ ga, B javobda esa uning kvadrati $\\frac{25}{4}$ ga ko‘paytirilgan — bu yuzalar uchun koeffitsiyent. D javobda $5^2 = 25$ ga ko‘paytirilgan.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "similar_solids"
+    ]
+  },
+  {
+    "skill_code": "area_volume",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "A right circular cylinder has a volume of $180\\pi$ cubic meters and a height of 5 meters. What is the radius, in meters, of the cylinder?",
+    "spr_answers": [
+      "6"
+    ],
+    "explanation_en": "The volume of a cylinder is $V = \\pi r^2 h$. So $180\\pi = \\pi r^2 (5)$, which gives $r^2 = 36$ and $r = 6$ meters. If you got 36, you stopped at $r^2$.",
+    "explanation_uz": "Silindr hajmi $V = \\pi r^2 h$. Demak $180\\pi = \\pi r^2 (5)$, bundan $r^2 = 36$ va $r = 6$ metr. Agar 36 chiqqan bo‘lsa, siz $r^2$ da to‘xtab qolgansiz.",
+    "estimated_seconds": 100,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "cylinder_volume"
+    ]
+  },
+  {
+    "skill_code": "area_volume",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "A closed wooden crate is shaped like a rectangular prism with edges of length 3 feet, 4 feet, and 10 feet. What is the total surface area, in square feet, of the outside of the crate?",
+    "option_a": "82",
+    "option_b": "120",
+    "option_c": "140",
+    "option_d": "164",
+    "correct": "D",
+    "explanation_en": "The prism has three pairs of congruent faces with areas $3 \\cdot 4 = 12$, $3 \\cdot 10 = 30$, and $4 \\cdot 10 = 40$. The total surface area is $2(12 + 30 + 40) = 164$ square feet. Choice D is correct.\n\nChoice A counts each pair of faces only once. Choice B is the volume, $3 \\cdot 4 \\cdot 10$. Choice C, $2(3 + 4) \\cdot 10 = 140$, is only the four side faces; it leaves out the two $3$-by-$4$ ends.",
+    "explanation_uz": "Parallelepipedning yuzalari $3 \\cdot 4 = 12$, $3 \\cdot 10 = 30$ va $4 \\cdot 10 = 40$ bo‘lgan uch juft teng yog‘i bor. To‘la sirt yuzi $2(12 + 30 + 40) = 164$ kvadrat fut. To‘g‘ri javob D.\n\nA javobda har bir juft yoq faqat bir marta hisoblangan. B — hajm, $3 \\cdot 4 \\cdot 10$. C, ya’ni $2(3 + 4) \\cdot 10 = 140$ — faqat to‘rtta yon yoq; ikkita $3 \\times 4$ o‘lchamli asos tushib qolgan.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "surface_area"
+    ]
+  },
+  {
+    "skill_code": "area_volume",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "A rectangular sheet of metal is 20 inches long and 12 inches wide. A square with a side length of 5 inches is cut out of one corner of the sheet. What is the perimeter, in inches, of the remaining piece of metal?",
+    "option_a": "54",
+    "option_b": "64",
+    "option_c": "74",
+    "option_d": "215",
+    "correct": "B",
+    "explanation_en": "The original perimeter is $2(20 + 12) = 64$ inches. Cutting out the corner square removes two 5-inch pieces of the boundary but adds two new 5-inch edges along the cut, so the perimeter stays $64$ inches. Choice B is correct.\n\nChoice A subtracts the two removed pieces but forgets the two new edges, and choice C adds the new edges without removing the old ones. Choice D is the area of the remaining piece, $240 - 25 = 215$ square inches.",
+    "explanation_uz": "Dastlabki perimetr $2(20 + 12) = 64$ dyuym. Burchakdagi kvadrat kesib olinganda chegaradan ikkita 5 dyuymli bo‘lak olib tashlanadi, lekin kesim bo‘ylab ikkita yangi 5 dyuymli tomon paydo bo‘ladi, shuning uchun perimetr $64$ dyuymligicha qoladi. To‘g‘ri javob B.\n\nA javobda olib tashlangan ikki bo‘lak ayirilgan, ammo ikkita yangi tomon unutilgan; C javobda esa yangi tomonlar qo‘shilgan, eskilari ayirilmagan. D — qolgan bo‘lakning yuzi: $240 - 25 = 215$ kvadrat dyuym.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "composite_figure"
+    ]
+  },
+  {
+    "skill_code": "area_volume",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "A right circular cylinder and a right circular cone have the same base radius and the same volume. The height of the cylinder is 7 inches. What is the height, in inches, of the cone?",
+    "option_a": "$\\frac{7}{3}$",
+    "option_b": "7",
+    "option_c": "14",
+    "option_d": "21",
+    "correct": "D",
+    "explanation_en": "Let $r$ be the common radius and $h$ the height of the cone. Equal volumes give $\\pi r^2 (7) = \\frac{1}{3}\\pi r^2 h$, so $7 = \\frac{h}{3}$ and $h = 21$ inches. Choice D is correct.\n\nChoice A divides by 3 instead of multiplying: a cone with the same base and height is one third of the cylinder, so the cone must be taller, not shorter. Choice B ignores the factor $\\frac{1}{3}$, and choice C uses a factor of 2.",
+    "explanation_uz": "Umumiy radius $r$, konus balandligi $h$ bo‘lsin. Hajmlar tengligidan $\\pi r^2 (7) = \\frac{1}{3}\\pi r^2 h$, demak $7 = \\frac{h}{3}$ va $h = 21$ dyuym. To‘g‘ri javob D.\n\nA javobda 3 ga ko‘paytirish o‘rniga bo‘lingan: asosi va balandligi bir xil konus silindrning uchdan biriga teng, shuning uchun konus pastroq emas, balandroq bo‘lishi kerak. B javobda $\\frac{1}{3}$ ko‘paytuvchi e’tiborga olinmagan, C javobda esa 2 ko‘paytuvchi ishlatilgan.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "cone_cylinder"
+    ]
+  },
+  {
+    "skill_code": "area_volume",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "A rectangular aquarium has an inside base that is 30 centimeters long and 20 centimeters wide, and it is partly filled with water. A metal block is placed in the aquarium, and the block is completely under the water. As a result, the water level rises by 1.5 centimeters, and no water overflows. What is the volume, in cubic centimeters, of the block?",
+    "spr_answers": [
+      "900"
+    ],
+    "explanation_en": "The volume of the block equals the volume of the water it pushes up: a layer with base $30 \\times 20$ and height 1.5. So the volume is $30 \\cdot 20 \\cdot 1.5 = 900$ cubic centimeters. If you got 600, you found only the area of the base.",
+    "explanation_uz": "Blokning hajmi u ko‘targan suv hajmiga teng: asosi $30 \\times 20$, balandligi 1.5 bo‘lgan qatlam. Demak hajm $30 \\cdot 20 \\cdot 1.5 = 900$ kub santimetr. Agar 600 chiqqan bo‘lsa, siz faqat asos yuzini topgansiz.",
+    "estimated_seconds": 100,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "displacement"
+    ]
+  },
+  {
+    "skill_code": "area_volume",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "The radius of a right circular cylinder is increased by 20%, and the height of the cylinder is decreased by 20%. Which of the following describes the change in the volume of the cylinder?",
+    "option_a": "The volume does not change.",
+    "option_b": "The volume decreases by 4%.",
+    "option_c": "The volume increases by 15.2%.",
+    "option_d": "The volume increases by 44%.",
+    "correct": "C",
+    "explanation_en": "The volume is $V = \\pi r^2 h$. The new volume is $\\pi (1.2r)^2 (0.8h) = 1.44 \\cdot 0.8 \\cdot \\pi r^2 h = 1.152V$, an increase of 15.2%. Choice C is correct.\n\nChoice A assumes the two 20% changes cancel. Choice B uses $1.2 \\cdot 0.8 = 0.96$; it forgets that the radius is squared. Choice D uses only $1.2^2 = 1.44$ and ignores the change in height.",
+    "explanation_uz": "Hajm $V = \\pi r^2 h$. Yangi hajm $\\pi (1.2r)^2 (0.8h) = 1.44 \\cdot 0.8 \\cdot \\pi r^2 h = 1.152V$, ya’ni 15.2% ga oshadi. To‘g‘ri javob C.\n\nA javob ikkala 20% lik o‘zgarish bir-birini yo‘qqa chiqaradi deb hisoblaydi. B javobda $1.2 \\cdot 0.8 = 0.96$ olingan; radius kvadratga oshirilishi unutilgan. D javobda faqat $1.2^2 = 1.44$ olingan, balandlik o‘zgarishi hisobga olinmagan.",
+    "estimated_seconds": 130,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "percent_change_dimensions"
+    ]
+  },
+  {
+    "skill_code": "area_volume",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "A closed box shaped like a rectangular prism has a square base. The height of the box is twice the side length of the base, and the total surface area of the box is 250 square inches. What is the volume, in cubic inches, of the box?",
+    "spr_answers": [
+      "250"
+    ],
+    "explanation_en": "Let the base have side $s$; then the height is $2s$. The box has 2 square faces with area $s^2$ and 4 side faces with area $s \\cdot 2s = 2s^2$, so the surface area is $2s^2 + 8s^2 = 10s^2 = 250$. Then $s^2 = 25$ and $s = 5$ inches, the height is 10 inches, and the volume is $5 \\cdot 5 \\cdot 10 = 250$ cubic inches. (A common error is to count only one square face, which gives $9s^2 = 250$ and no whole-number side.)",
+    "explanation_uz": "Asos tomoni $s$ bo‘lsin; u holda balandlik $2s$. Qutining yuzi $s^2$ bo‘lgan 2 ta kvadrat yog‘i va yuzi $s \\cdot 2s = 2s^2$ bo‘lgan 4 ta yon yog‘i bor, shuning uchun sirt yuzi $2s^2 + 8s^2 = 10s^2 = 250$. U holda $s^2 = 25$, $s = 5$ dyuym, balandlik 10 dyuym va hajm $5 \\cdot 5 \\cdot 10 = 250$ kub dyuym. (Ko‘p uchraydigan xato — faqat bitta kvadrat yoqni hisoblash; bu $9s^2 = 250$ ni beradi va butun son chiqmaydi.)",
+    "estimated_seconds": 140,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "surface_area_volume"
+    ]
+  },
+  {
+    "skill_code": "area_volume",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "A sphere is placed inside a cube so that the sphere is tangent to each of the six faces of the cube. What fraction of the volume of the cube lies outside the sphere?",
+    "option_a": "$\\frac{\\pi}{6}$",
+    "option_b": "$1 - \\frac{\\pi}{6}$",
+    "option_c": "$1 - \\frac{\\pi}{4}$",
+    "option_d": "$\\frac{1}{3}$",
+    "correct": "B",
+    "explanation_en": "If the sphere has radius $r$, the edge of the cube is $2r$. The cube's volume is $(2r)^3 = 8r^3$, and the sphere's volume is $\\frac{4}{3}\\pi r^3$. The sphere fills $\\frac{\\frac{4}{3}\\pi r^3}{8r^3} = \\frac{\\pi}{6}$ of the cube, so the fraction outside is $1 - \\frac{\\pi}{6}$. Choice B is correct.\n\nChoice A is the fraction inside the sphere. Choice C uses the area ratio of a circle inscribed in a square, $\\frac{\\pi}{4}$. Choice D uses $\\frac{2}{3}$, the ratio of a sphere to the cylinder that surrounds it, not to a cube.",
+    "explanation_uz": "Shar radiusi $r$ bo‘lsa, kub qirrasi $2r$. Kub hajmi $(2r)^3 = 8r^3$, shar hajmi $\\frac{4}{3}\\pi r^3$. Shar kubning $\\frac{\\frac{4}{3}\\pi r^3}{8r^3} = \\frac{\\pi}{6}$ qismini egallaydi, demak tashqarida qolgan qism $1 - \\frac{\\pi}{6}$. To‘g‘ri javob B.\n\nA — shar ichidagi qism. C javobda kvadratga ichki chizilgan doira yuzalari nisbati $\\frac{\\pi}{4}$ ishlatilgan. D javobda $\\frac{2}{3}$ ishlatilgan — bu shar hajmining kubga emas, uni o‘rab turgan silindrga nisbati.",
+    "estimated_seconds": 130,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "inscribed_solids"
+    ]
+  },
+  {
+    "skill_code": "area_volume",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "Two rectangular prisms are similar. The total surface area of the smaller prism is 88 square centimeters, and the total surface area of the larger prism is 198 square centimeters. The volume of the smaller prism is 48 cubic centimeters. What is the volume, in cubic centimeters, of the larger prism?",
+    "spr_answers": [
+      "162"
+    ],
+    "explanation_en": "The ratio of the surface areas is $\\frac{198}{88} = \\frac{9}{4}$, which is the square of the scale factor, so the scale factor is $\\frac{3}{2}$. Volumes scale by the cube of the scale factor: $48 \\cdot \\left(\\frac{3}{2}\\right)^3 = 48 \\cdot \\frac{27}{8} = 162$ cubic centimeters. If you got 108, you multiplied the volume by the area ratio $\\frac{9}{4}$.",
+    "explanation_uz": "Sirt yuzalari nisbati $\\frac{198}{88} = \\frac{9}{4}$ — bu o‘xshashlik koeffitsiyentining kvadrati, demak koeffitsiyent $\\frac{3}{2}$. Hajmlar koeffitsiyentning kubiga proporsional: $48 \\cdot \\left(\\frac{3}{2}\\right)^3 = 48 \\cdot \\frac{27}{8} = 162$ kub santimetr. Agar 108 chiqqan bo‘lsa, siz hajmni yuzalar nisbati $\\frac{9}{4}$ ga ko‘paytirgansiz.",
+    "estimated_seconds": 140,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "similar_solids"
+    ]
+  }
+]
