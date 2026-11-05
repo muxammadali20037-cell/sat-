@@ -1,0 +1,338 @@
+[
+  {
+    "skill_code": "command_of_evidence_quantitative",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "For a science fair project, Sabina Rahimova placed identical ice cubes on plates made of four different materials and timed how long each cube took to melt completely at room temperature. She found that the ice melted fastest on the ______\n\n**Time for an ice cube to melt on plates of different materials**\n\n| Plate material | Melting time (minutes) |\n| --- | ---: |\n| Aluminum | 6 |\n| Glass | 14 |\n| Wood | 23 |\n| Plastic | 19 |",
+    "stem": "Which choice most effectively uses data from the table to complete the statement?",
+    "option_a": "wood plate, where the cube took 23 minutes to melt.",
+    "option_b": "plastic plate, where the cube took 19 minutes to melt.",
+    "option_c": "aluminum plate, where the cube took only 6 minutes to melt.",
+    "option_d": "glass plate, where the cube took 14 minutes to melt.",
+    "correct": "C",
+    "explanation_en": "The statement asks for the plate on which the ice melted fastest, that is, in the shortest time. The aluminum plate had the shortest melting time, 6 minutes, so choice C is correct.\n\nChoice A names the wood plate, which had the longest time (23 minutes), so the ice melted slowest there. Choices B and D give accurate times for the plastic and glass plates, but both times are longer than 6 minutes.",
+    "explanation_uz": "Gapda muz eng tez, ya’ni eng qisqa vaqtda erigan likop haqida so‘raladi. Eng qisqa vaqt — 6 daqiqa — alyuminiy likopga tegishli, shuning uchun to‘g‘ri javob C.\n\nA yog‘och likopni ko‘rsatadi, unda vaqt eng uzun (23 daqiqa), ya’ni muz u yerda eng sekin erigan. B va D plastik va shisha likoplar uchun to‘g‘ri vaqtni beradi, lekin ikkalasi ham 6 daqiqadan uzun.",
+    "estimated_seconds": 50,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "complete_statement"
+    ]
+  },
+  {
+    "skill_code": "command_of_evidence_quantitative",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Librarian Shoira Qosimova asked members of a city library which book format they prefer. She found that among members aged 60 and older, the most popular format was ______\n\n**Preferred book format of library members, by age group (%)**\n\n| Age group | Printed books | E-books | Audiobooks |\n| --- | ---: | ---: | ---: |\n| 18–29 | 38 | 27 | 35 |\n| 30–44 | 45 | 30 | 25 |\n| 45–59 | 52 | 21 | 27 |\n| 60 and older | 61 | 9 | 30 |",
+    "stem": "Which choice most effectively uses data from the table to complete the statement?",
+    "option_a": "audiobooks, which 30 percent of members in that age group preferred.",
+    "option_b": "printed books, which 61 percent of members in that age group preferred.",
+    "option_c": "e-books, which 9 percent of members in that age group preferred.",
+    "option_d": "printed books, which 38 percent of members in that age group preferred.",
+    "correct": "B",
+    "explanation_en": "The statement is about members aged 60 and older. In that row, printed books have the highest percentage, 61 percent, so choice B is correct.\n\nChoice A gives the correct figure for audiobooks (30 percent), but that is less than 61 percent. Choice C gives the figure for e-books, the least popular format in that group. Choice D names the right format but takes the figure from the wrong row: 38 percent is the share for members aged 18–29.",
+    "explanation_uz": "Gap 60 va undan katta yoshdagi a’zolar haqida. Shu qatorda eng yuqori ko‘rsatkich bosma kitoblarga tegishli — 61 foiz, shuning uchun to‘g‘ri javob B.\n\nA audiokitoblar uchun to‘g‘ri raqamni (30 foiz) beradi, lekin u 61 foizdan kam. C shu guruhdagi eng kam mashhur format — elektron kitoblar ko‘rsatkichini beradi. D formatni to‘g‘ri aytadi, lekin raqamni noto‘g‘ri qatordan oladi: 38 foiz 18–29 yoshdagilarga tegishli.",
+    "estimated_seconds": 55,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "complete_statement"
+    ]
+  },
+  {
+    "skill_code": "command_of_evidence_quantitative",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Museum educator Dilnoza Karimova recorded the number of visitors to a history museum in Bukhara on each day of one week in October. She noted that weekend attendance was much higher than attendance early in the week; for example, ______\n\n**Visitors to a history museum during one week**\n\n| Day | Number of visitors |\n| --- | ---: |\n| Monday | 410 |\n| Tuesday | 455 |\n| Wednesday | 520 |\n| Thursday | 480 |\n| Friday | 690 |\n| Saturday | 1,130 |\n| Sunday | 1,050 |",
+    "stem": "Which choice most effectively uses data from the table to complete the statement?",
+    "option_a": "1,130 people visited the museum on Saturday, more than twice the 410 people who visited on Monday.",
+    "option_b": "1,050 people visited the museum on Sunday, compared with 690 on Friday.",
+    "option_c": "410 people visited the museum on Monday, the fewest of any day that week.",
+    "option_d": "520 people visited the museum on Wednesday, compared with 455 on Tuesday.",
+    "correct": "A",
+    "explanation_en": "The statement contrasts the weekend with the early part of the week. Choice A compares a weekend day (Saturday, 1,130 visitors) with an early weekday (Monday, 410 visitors) and accurately notes that Saturday's attendance was more than twice Monday's (2 × 410 = 820).\n\nChoice B compares Sunday with Friday, which is the end of the week, not the early part. Choice C gives only Monday's figure, with no weekend comparison. Choice D compares two weekdays and does not involve the weekend.",
+    "explanation_uz": "Gapda dam olish kunlari hafta boshidagi kunlar bilan solishtiriladi. A javob dam olish kunini (shanba, 1,130 tashrifchi) hafta boshidagi kun (dushanba, 410 tashrifchi) bilan solishtiradi va shanbadagi tashrifchilar dushanbadagidan ikki baravardan ko‘p ekanini to‘g‘ri aytadi (2 × 410 = 820).\n\nB yakshanbani jumaga solishtiradi, juma esa hafta boshi emas, oxiri. C faqat dushanba raqamini beradi, dam olish kuni bilan solishtirmaydi. D ikki ish kunini solishtiradi, dam olish kuni yo‘q.",
+    "estimated_seconds": 55,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "complete_statement"
+    ]
+  },
+  {
+    "skill_code": "command_of_evidence_quantitative",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Chemistry student Ozoda Yusupova dissolved different amounts of table salt in samples of water and measured the temperature at which each sample began to freeze. She claims that the more salt is dissolved in water, the lower the temperature at which the water freezes.\n\n**Freezing temperature of salt water**\n\n| Salt in water (% by mass) | Freezing temperature (°C) |\n| ---: | ---: |\n| 0 | 0.0 |\n| 5 | −3.0 |\n| 10 | −6.6 |\n| 15 | −10.9 |\n| 20 | −16.5 |",
+    "stem": "Which choice most effectively uses data from the table to support Yusupova's claim?",
+    "option_a": "Water with no salt froze at 0.0°C.",
+    "option_b": "Water with 10% salt froze at −6.6°C, a higher temperature than water with 5% salt.",
+    "option_c": "Water with 15% salt froze at −10.9°C.",
+    "option_d": "As the amount of salt rose from 0% to 20%, the freezing temperature fell at every step, from 0.0°C to −16.5°C.",
+    "correct": "D",
+    "explanation_en": "The claim describes a trend: more salt means a lower freezing temperature. Choice D describes that trend across all the samples: each increase in salt came with a lower freezing temperature, from 0.0°C with no salt to −16.5°C with 20% salt.\n\nChoices A and C each give a single, accurate data point, but one sample alone cannot show how freezing temperature changes as salt increases. Choice B misreads the table: −6.6°C is lower, not higher, than −3.0°C, the freezing temperature of the 5% sample.",
+    "explanation_uz": "Da’vo tendensiyani tasvirlaydi: tuz qancha ko‘p bo‘lsa, muzlash harorati shuncha past. D javob bu tendensiyani barcha namunalar bo‘yicha ko‘rsatadi: tuz har safar ko‘paytirilganda muzlash harorati pasaygan — tuzsiz suvda 0.0°C dan 20% tuzli suvda −16.5°C gacha.\n\nA va C har biri bitta to‘g‘ri ma’lumot beradi, lekin bitta namuna tuz ko‘payganda muzlash harorati qanday o‘zgarishini ko‘rsata olmaydi. B jadvalni noto‘g‘ri o‘qiydi: −6.6°C 5% li namunaning muzlash haroratidan (−3.0°C) yuqori emas, past.",
+    "estimated_seconds": 55,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "support_claim"
+    ]
+  },
+  {
+    "skill_code": "command_of_evidence_quantitative",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "A basketball coach claims that the players on his team who sleep more each night score more points per game. His assistant, Shahzod Ergashev, recorded each starting player's average nightly sleep and average points per game over one season.\n\n**Sleep and scoring of four basketball players**\n\n| Player | Average sleep (hours per night) | Average points per game |\n| --- | ---: | ---: |\n| Aziz | 7.0 | 12 |\n| Behruz | 8.5 | 9 |\n| Doniyor | 6.5 | 14 |\n| Elyor | 9.0 | 7 |",
+    "stem": "Which choice most effectively uses data from the table to weaken the coach's claim?",
+    "option_a": "Aziz slept an average of 7.0 hours per night and scored an average of 12 points per game.",
+    "option_b": "Doniyor slept the least, 6.5 hours per night, yet scored the most, 14 points per game, while Elyor slept the most, 9.0 hours, and scored the fewest, 7 points.",
+    "option_c": "Elyor slept an average of 9.0 hours per night, more than any other player.",
+    "option_d": "Behruz scored an average of 9 points per game, more than Elyor but fewer than Aziz.",
+    "correct": "B",
+    "explanation_en": "The coach claims that more sleep goes with more points. Choice B shows the opposite pattern at both extremes: the player who slept least (Doniyor) scored most, and the player who slept most (Elyor) scored least. This weakens the claim.\n\nChoice A gives data for one player only, which cannot show a relationship between sleep and points. Choice C gives only sleep data, and choice D gives only scoring data, so neither connects the two quantities in the claim.",
+    "explanation_uz": "Murabbiy ko‘proq uxlash ko‘proq ochko bilan bog‘liq deb da’vo qiladi. B javob ikkala chekkada ham teskari holatni ko‘rsatadi: eng kam uxlagan o‘yinchi (Doniyor) eng ko‘p ochko olgan, eng ko‘p uxlagan o‘yinchi (Elyor) esa eng kam. Bu da’voni zaiflashtiradi.\n\nA faqat bitta o‘yinchi haqida ma’lumot beradi, bu uyqu va ochko o‘rtasidagi bog‘liqlikni ko‘rsata olmaydi. C faqat uyqu, D esa faqat ochko haqida ma’lumot beradi, shuning uchun ikkalasi ham da’vodagi ikki kattalikni bog‘lamaydi.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "weaken_claim"
+    ]
+  },
+  {
+    "skill_code": "command_of_evidence_quantitative",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Biology student Gulnoza Aliyeva surveyed two ponds near Samarkand and counted how many species of four kinds of animals lived in each pond. She found that the two ponds had the same number of species in only one of these groups: ______\n\n**Number of species found in two ponds**\n\n| Animal group | Pond A | Pond B |\n| --- | ---: | ---: |\n| Dragonflies | 9 | 5 |\n| Water beetles | 14 | 17 |\n| Snails | 6 | 6 |\n| Frogs | 3 | 2 |",
+    "stem": "Which choice most effectively uses data from the table to complete the statement?",
+    "option_a": "water beetles, with 14 species in Pond A and 17 species in Pond B.",
+    "option_b": "frogs, with 3 species in Pond A and 2 species in Pond B.",
+    "option_c": "dragonflies, with 9 species in Pond A and 5 species in Pond B.",
+    "option_d": "snails, with 6 species in each pond.",
+    "correct": "D",
+    "explanation_en": "The statement asks for the one group with the same number of species in both ponds. Only snails have equal counts, 6 species in each pond, so choice D is correct.\n\nChoices A, B, and C report the table accurately, but in each of those groups the two ponds have different numbers of species, so none of them completes the statement.",
+    "explanation_uz": "Gapda ikkala ko‘lmakda tur soni bir xil bo‘lgan yagona guruh so‘raladi. Faqat shilliqqurtlarda son teng — har bir ko‘lmakda 6 tur, shuning uchun to‘g‘ri javob D.\n\nA, B va C jadvaldagi raqamlarni to‘g‘ri beradi, lekin bu guruhlarning har birida ikki ko‘lmakdagi tur soni har xil, shuning uchun ular gapni to‘ldirmaydi.",
+    "estimated_seconds": 50,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "complete_statement"
+    ]
+  },
+  {
+    "skill_code": "command_of_evidence_quantitative",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Engineer Jamshid Turg'unov tested wall panels made of three insulating materials. Straw panels are known to be inexpensive, while foam panels are known to keep heat from escaping especially well. Turg'unov claims that panels made of wool felt combine these two advantages.\n\n**Cost and heat loss of three types of wall panels**\n\n| Material | Cost per panel (dollars) | Heat loss (watts per square meter) |\n| --- | ---: | ---: |\n| Straw | 12 | 38 |\n| Foam | 41 | 22 |\n| Wool felt | 14 | 24 |",
+    "stem": "Which choice most effectively uses data from the table to support Turg'unov's claim?",
+    "option_a": "Wool felt panels cost 14 dollars each, close to the 12-dollar cost of straw panels, and lost 24 watts per square meter, close to the 22 watts lost by foam panels.",
+    "option_b": "Foam panels lost only 22 watts per square meter, less than either of the other two materials.",
+    "option_c": "Wool felt panels cost 14 dollars each, only slightly more than straw panels.",
+    "option_d": "Wool felt panels lost 24 watts per square meter, far less than the 38 watts lost by foam panels.",
+    "correct": "A",
+    "explanation_en": "The claim has two parts: wool felt is nearly as cheap as straw and nearly as good at preventing heat loss as foam (lower heat loss is better). Choice A supports both parts with accurate data: 14 dollars versus 12 for straw, and 24 watts versus 22 for foam.\n\nChoice B is accurate but describes only foam and says nothing about wool felt. Choice C supports only the cost part of the claim. Choice D misreads the table: 38 watts is the heat loss of straw panels, not foam panels.",
+    "explanation_uz": "Da’vo ikki qismdan iborat: jun kigiz deyarli somon kabi arzon va issiqlik yo‘qotilishining oldini olishda deyarli ko‘pik kabi yaxshi (issiqlik yo‘qotilishi qancha kam bo‘lsa, shuncha yaxshi). A javob ikkala qismni ham to‘g‘ri ma’lumot bilan qo‘llab-quvvatlaydi: somon uchun 12 dollarga nisbatan 14 dollar va ko‘pik uchun 22 vattga nisbatan 24 vatt.\n\nB to‘g‘ri, lekin faqat ko‘pikni tasvirlaydi, jun kigiz haqida hech narsa demaydi. C da’voning faqat narx qismini qo‘llab-quvvatlaydi. D jadvalni noto‘g‘ri o‘qiydi: 38 vatt ko‘pik emas, somon panellarining issiqlik yo‘qotilishi.",
+    "estimated_seconds": 75,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "support_claim"
+    ]
+  },
+  {
+    "skill_code": "command_of_evidence_quantitative",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "In 2018, conservationists released 40 goitered gazelles, a species of small antelope, into a fenced steppe reserve in Uzbekistan. Ecologist Nargiza Sodiqova, who counts the herd every autumn, reports that the population has grown every year since the release but that its growth has slowed in recent years as the herd has begun to fill the available habitat.\n\n**Number of goitered gazelles in the reserve**\n\n| Year | Number of gazelles |\n| --- | ---: |\n| 2018 | 40 |\n| 2019 | 58 |\n| 2020 | 81 |\n| 2021 | 109 |\n| 2022 | 124 |\n| 2023 | 133 |\n| 2024 | 138 |",
+    "stem": "Which choice most effectively uses data from the table to support Sodiqova's report?",
+    "option_a": "The number of gazelles rose from 40 in 2018 to 138 in 2024.",
+    "option_b": "The number of gazelles grew by 18 from 2018 to 2019 and by 28 from 2020 to 2021.",
+    "option_c": "The number of gazelles grew by 28 from 2020 to 2021 but by only 5 from 2023 to 2024.",
+    "option_d": "The number of gazelles fell from 133 in 2023 to 124 in 2024.",
+    "correct": "C",
+    "explanation_en": "Sodiqova reports that the herd kept growing but that the growth has slowed recently. Choice C shows both: the herd was still growing from 2023 to 2024, but by only 5 animals, compared with a gain of 28 from 2020 to 2021.\n\nChoice A shows overall growth but not the slowdown. Choice B compares two early periods in which growth sped up (from 18 to 28), the opposite of a slowdown. Choice D misreads the table: the population rose from 133 to 138 in that period; 124 is the 2022 figure.",
+    "explanation_uz": "Sodiqova poda o‘sishda davom etgani, lekin so‘nggi yillarda o‘sish sekinlashganini aytadi. C javob ikkalasini ham ko‘rsatadi: 2023 yildan 2024 yilgacha poda hali ham o‘sgan, lekin bor-yo‘g‘i 5 taga, 2020 yildan 2021 yilgacha esa 28 taga o‘sgan edi.\n\nA umumiy o‘sishni ko‘rsatadi, lekin sekinlashuvni emas. B o‘sish tezlashgan (18 dan 28 ga) ikki erta davrni solishtiradi, bu sekinlashuvning aksi. D jadvalni noto‘g‘ri o‘qiydi: bu davrda son 133 dan 138 ga oshgan; 124 — 2022 yil ko‘rsatkichi.",
+    "estimated_seconds": 75,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "support_claim"
+    ]
+  },
+  {
+    "skill_code": "command_of_evidence_quantitative",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Reeds provide cover in which many water birds hide their nests. Ornithologist Kamron Mahmudov claims that, among the wetlands he surveyed in the Amu Darya delta, the wetlands with a greater percentage of reed cover had more bird nests.\n\n**Reed cover and bird nests in four wetlands**\n\n| Wetland | Reed cover (%) | Bird nests counted |\n| --- | ---: | ---: |\n| Wetland 1 | 20 | 34 |\n| Wetland 2 | 45 | 61 |\n| Wetland 3 | 70 | 88 |\n| Wetland 4 | 85 | 52 |",
+    "stem": "Which choice most effectively uses data from the table to weaken Mahmudov's claim?",
+    "option_a": "Wetland 3 had 70% reed cover and 88 nests, more nests than any other wetland.",
+    "option_b": "Wetland 1 had the least reed cover, 20%, and the fewest nests, 34.",
+    "option_c": "Wetland 2 had 45% reed cover and 61 nests.",
+    "option_d": "Wetland 4 had the most reed cover, 85%, but only 52 nests, fewer than either Wetland 2 or Wetland 3.",
+    "correct": "D",
+    "explanation_en": "If more reed cover went with more nests, the wetland with the most reeds should have the most nests. Choice D shows that Wetland 4 had the most reed cover (85%) but fewer nests (52) than two wetlands with less reed cover, which weakens the claim.\n\nChoices A and B describe wetlands that fit the claim (high cover with many nests, low cover with few nests), so they support it. Choice C gives data for a single wetland, which cannot show whether nests increase with reed cover.",
+    "explanation_uz": "Agar qamish ko‘p bo‘lgan joyda uyalar ko‘p bo‘lsa, eng ko‘p qamishli botqoqlikda eng ko‘p uya bo‘lishi kerak. D javob 4-botqoqlikda qamish eng ko‘p (85%) bo‘lsa ham, unda qamishi kamroq bo‘lgan ikki botqoqlikdan kamroq uya (52) borligini ko‘rsatadi. Bu da’voni zaiflashtiradi.\n\nA va B da’voga mos botqoqliklarni (qamish ko‘p — uya ko‘p, qamish kam — uya kam) tasvirlaydi, ya’ni da’voni qo‘llab-quvvatlaydi. C faqat bitta botqoqlik haqida ma’lumot beradi, bu uyalar soni qamish bilan birga ortishini ko‘rsata olmaydi.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "weaken_claim"
+    ]
+  },
+  {
+    "skill_code": "command_of_evidence_quantitative",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Urban planner Jasur Ortiqov surveyed residents of four districts of a large city about how they usually travel to work. He found that the metro was the most common way of commuting in only one district: ______\n\n**Usual way of commuting to work, by district (% of residents)**\n\n| District | Car | Bus | Metro | Walking or cycling |\n| --- | ---: | ---: | ---: | ---: |\n| North | 35 | 30 | 20 | 15 |\n| East | 25 | 22 | 41 | 12 |\n| South | 44 | 29 | 10 | 17 |\n| West | 31 | 36 | 18 | 15 |",
+    "stem": "Which choice most effectively uses data from the table to complete the statement?",
+    "option_a": "the East district, where 41 percent of residents commuted by metro, compared with 25 percent by car and 22 percent by bus.",
+    "option_b": "the North district, where 20 percent of residents commuted by metro.",
+    "option_c": "the West district, where 36 percent of residents commuted by bus, more than by any other way.",
+    "option_d": "the South district, where only 10 percent of residents commuted by metro.",
+    "correct": "A",
+    "explanation_en": "The statement asks for the one district where the metro was the most common way of commuting. In the East district, 41 percent of residents used the metro, more than used any other way, so choice A is correct.\n\nChoice B is wrong because in the North district the car (35 percent) and the bus (30 percent) were both more common than the metro (20 percent). Choice C names a district where the bus, not the metro, was most common. Choice D names the district with the lowest metro use.",
+    "explanation_uz": "Gapda metro eng keng tarqalgan qatnov usuli bo‘lgan yagona tuman so‘raladi. Sharqiy tumanda aholining 41 foizi metrodan foydalangan, bu boshqa har qanday usuldan ko‘p, shuning uchun to‘g‘ri javob A.\n\nB noto‘g‘ri: Shimoliy tumanda avtomobil (35 foiz) ham, avtobus (30 foiz) ham metrodan (20 foiz) ko‘proq ishlatilgan. C metro emas, avtobus eng keng tarqalgan tumanni ko‘rsatadi. D metrodan eng kam foydalanilgan tumanni ko‘rsatadi.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "complete_statement"
+    ]
+  },
+  {
+    "skill_code": "command_of_evidence_quantitative",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Researchers at a language-learning app tested whether daily reminder messages help users keep studying. For one month, some new users received a reminder each day and others received none. The researchers claim that the reminders helped users of every age group keep studying.\n\n**New users still studying after 30 days (%)**\n\n| Age group | Without reminders | With reminders |\n| --- | ---: | ---: |\n| 18–24 | 22 | 31 |\n| 25–39 | 18 | 29 |\n| 40–59 | 15 | 33 |\n| 60 and older | 12 | 27 |",
+    "stem": "Which choice most effectively uses data from the table to support the researchers' claim?",
+    "option_a": "Among users aged 18–24, 31 percent of those who received reminders were still studying after 30 days.",
+    "option_b": "In every age group, a greater percentage of users were still studying after 30 days with reminders (27 to 33 percent) than without them (12 to 22 percent).",
+    "option_c": "Users aged 60 and older who received no reminders had the lowest rate of continued study, 12 percent.",
+    "option_d": "Users aged 40–59 who received reminders had the highest rate of continued study, 33 percent.",
+    "correct": "B",
+    "explanation_en": "The claim is about every age group, so the evidence must compare users with and without reminders in all four groups. Choice B does this: in each group, the rate with reminders (27 to 33 percent) is higher than the rate without (12 to 22 percent).\n\nChoice A gives only one figure for one age group, with no comparison to users without reminders. Choices C and D each describe a single cell of the table, which cannot show that reminders helped in every group.",
+    "explanation_uz": "Da’vo barcha yosh guruhlari haqida, shuning uchun dalil to‘rtta guruhning har birida eslatma olgan va olmagan foydalanuvchilarni solishtirishi kerak. B javob shuni qiladi: har bir guruhda eslatma bilan ko‘rsatkich (27–33 foiz) eslatmasiz ko‘rsatkichdan (12–22 foiz) yuqori.\n\nA bitta guruh uchun bitta raqam beradi va eslatma olmaganlar bilan solishtirmaydi. C va D jadvalning bittadan katagini tasvirlaydi, bu eslatmalar har bir guruhda yordam berganini ko‘rsata olmaydi.",
+    "estimated_seconds": 75,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "support_claim"
+    ]
+  },
+  {
+    "skill_code": "command_of_evidence_quantitative",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Agricultural economist Sherzod Normatov tracked the area planted with pistachio orchards in four farming regions. He observed that pistachio planting expanded very unevenly: while the orchard area in the Hill region more than tripled from 2015 to 2023, ______\n\n**Area of pistachio orchards (hectares)**\n\n| Region | 2015 | 2019 | 2023 |\n| --- | ---: | ---: | ---: |\n| Hill | 1,200 | 2,300 | 3,900 |\n| Valley | 2,500 | 2,700 | 2,900 |\n| Plain | 800 | 1,400 | 2,100 |\n| River | 1,600 | 1,500 | 1,700 |",
+    "stem": "Which choice most effectively uses data from the table to complete the statement?",
+    "option_a": "the orchard area in the Plain region grew from 800 hectares to 2,100 hectares over the same period.",
+    "option_b": "the River region had 1,500 hectares of orchards in 2019.",
+    "option_c": "the orchard area in the Valley region grew by only 400 hectares, from 2,500 hectares to 2,900 hectares.",
+    "option_d": "the orchard area in the Valley region fell from 2,700 hectares in 2019 to 2,500 hectares in 2023.",
+    "correct": "C",
+    "explanation_en": "The word \"while\" signals a contrast with the Hill region's rapid growth, so the blank needs a region whose orchard area grew little over the same period. Choice C accurately shows that the Valley region grew by only 400 hectares from 2015 to 2023.\n\nChoice A is accurate, but the Plain region also grew rapidly (more than doubling), so it does not contrast with the Hill region. Choice B gives a single figure from one year, which shows no change at all. Choice D misreads the table: the Valley region had 2,500 hectares in 2015 and 2,900 in 2023; its area never fell.",
+    "explanation_uz": "\"While\" (\"holbuki\") so‘zi Tepalik mintaqasidagi tez o‘sish bilan qarama-qarshilikni bildiradi, shuning uchun bo‘sh joyga o‘sha davrda kam o‘sgan mintaqa kerak. C javob Vodiy mintaqasi 2015–2023 yillarda bor-yo‘g‘i 400 gektarga o‘sganini to‘g‘ri ko‘rsatadi.\n\nA to‘g‘ri, lekin Tekislik mintaqasi ham tez o‘sgan (ikki baravardan ko‘p), shuning uchun u Tepalik mintaqasiga qarama-qarshi emas. B bitta yilning bitta raqamini beradi, hech qanday o‘zgarishni ko‘rsatmaydi. D jadvalni noto‘g‘ri o‘qiydi: Vodiy mintaqasida 2015 yilda 2,500, 2023 yilda 2,900 gektar bo‘lgan; maydon hech qachon kamaymagan.",
+    "estimated_seconds": 75,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "complete_statement"
+    ]
+  },
+  {
+    "skill_code": "command_of_evidence_quantitative",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Horticulturist Sevara Tojiyeva hypothesized that covering plants with shade cloth during the summer would increase the yield of lettuce, which wilts in strong heat, by a greater amount than it would increase the yield of tomatoes, which tolerate heat better. She grew both crops with and without shade cloth over two summers.\n\n**Average yield per plot (kilograms)**\n\n| Crop | 2023, no shade | 2023, shade cloth | 2024, no shade | 2024, shade cloth |\n| --- | ---: | ---: | ---: | ---: |\n| Lettuce | 18 | 27 | 15 | 25 |\n| Tomatoes | 40 | 43 | 36 | 41 |",
+    "stem": "Which choice most effectively uses data from the table to support Tojiyeva's hypothesis?",
+    "option_a": "In both years, tomato plots produced more than lettuce plots, whether or not they were covered with shade cloth.",
+    "option_b": "Shade cloth raised lettuce yields by 9 kilograms per plot in 2023 and by 10 kilograms in 2024, but raised tomato yields by only 3 and 5 kilograms.",
+    "option_c": "In 2023, shade cloth raised the lettuce yield from 18 to 27 kilograms per plot, an increase of 9 kilograms.",
+    "option_d": "In 2024, shade cloth raised the tomato yield from 36 to 41 kilograms per plot, a larger increase than in 2023.",
+    "correct": "B",
+    "explanation_en": "The hypothesis compares the increase that shade produced for lettuce with the increase it produced for tomatoes. Choice B computes both increases for both years (lettuce: 27 − 18 = 9 and 25 − 15 = 10; tomatoes: 43 − 40 = 3 and 41 − 36 = 5) and shows that lettuce gained more each time.\n\nChoice A is accurate but compares total yields, not the effect of shade cloth. Choice C gives lettuce's increase for one year without comparing it with tomatoes. Choice D compares tomatoes' gains in two different years, which says nothing about lettuce.",
+    "explanation_uz": "Gipoteza soya to‘rining salatga bergan o‘sishini pomidorga bergan o‘sish bilan solishtiradi. B javob ikkala yil uchun ikkala o‘sishni hisoblaydi (salat: 27 − 18 = 9 va 25 − 15 = 10; pomidor: 43 − 40 = 3 va 41 − 36 = 5) va har safar salat ko‘proq o‘sganini ko‘rsatadi.\n\nA to‘g‘ri, lekin soya to‘rining ta’sirini emas, umumiy hosilni solishtiradi. C bitta yil uchun salatning o‘sishini beradi, pomidor bilan solishtirmaydi. D pomidorning ikki xil yildagi o‘sishini solishtiradi, salat haqida hech narsa demaydi.",
+    "estimated_seconds": 95,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "support_claim"
+    ]
+  },
+  {
+    "skill_code": "command_of_evidence_quantitative",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Energy analyst Bobur Xolmatov compared the shares of electricity generated from wind and from solar power in four regional power grids. He notes that solar power grew faster than wind power in all four grids, so that by 2024 only one grid still generated a larger share of its electricity from wind than from solar: ______\n\n**Share of electricity from wind and solar power (%)**\n\n| Grid | Wind, 2015 | Solar, 2015 | Wind, 2024 | Solar, 2024 |\n| --- | ---: | ---: | ---: | ---: |\n| Grid 1 | 8 | 3 | 12 | 15 |\n| Grid 2 | 5 | 6 | 9 | 14 |\n| Grid 3 | 11 | 4 | 18 | 13 |\n| Grid 4 | 2 | 1 | 4 | 9 |",
+    "stem": "Which choice most effectively uses data from the table to complete the statement?",
+    "option_a": "Grid 1, which generated 8 percent of its electricity from wind and 3 percent from solar in 2015.",
+    "option_b": "Grid 4, where wind's share of electricity doubled from 2 percent in 2015 to 4 percent in 2024.",
+    "option_c": "Grid 2, which generated 9 percent of its electricity from wind in 2024.",
+    "option_d": "Grid 3, which generated 18 percent of its electricity from wind in 2024, compared with 13 percent from solar.",
+    "correct": "D",
+    "explanation_en": "The statement requires the one grid in which wind's share was larger than solar's in 2024. Comparing the two 2024 columns, only Grid 3 qualifies (18 percent from wind versus 13 percent from solar), so choice D is correct. (Grid 3 also led with wind in 2015, which fits the word \"still.\")\n\nChoice A uses the wrong year: Grid 1 favored wind in 2015, but by 2024 solar (15 percent) had passed wind (12 percent). Choice B is accurate but describes wind's growth in Grid 4, where solar (9 percent) exceeded wind (4 percent) in 2024. Choice C gives Grid 2's wind share without noting that its solar share was larger (14 percent).",
+    "explanation_uz": "Gap 2024 yilda shamol ulushi quyosh ulushidan katta bo‘lgan yagona tarmoqni talab qiladi. 2024 yilning ikki ustunini solishtirsak, faqat 3-tarmoq mos keladi (shamoldan 18 foiz, quyoshdan 13 foiz), shuning uchun to‘g‘ri javob D. (3-tarmoqda 2015 yilda ham shamol ustun bo‘lgan, bu \"still\" — \"hali ham\" so‘ziga mos.)\n\nA noto‘g‘ri yilni oladi: 1-tarmoqda 2015 yilda shamol ustun bo‘lgan, lekin 2024 yilga kelib quyosh (15 foiz) shamoldan (12 foiz) o‘tib ketgan. B to‘g‘ri, lekin 4-tarmoqdagi shamol o‘sishini tasvirlaydi, u yerda 2024 yilda quyosh (9 foiz) shamoldan (4 foiz) ko‘p. C 2-tarmoqning shamol ulushini beradi, lekin uning quyosh ulushi (14 foiz) kattaroq ekanini hisobga olmaydi.",
+    "estimated_seconds": 100,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "complete_statement"
+    ]
+  },
+  {
+    "skill_code": "command_of_evidence_quantitative",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Linguist Madina Rajabova studied how often speakers in four villages use a traditional verb ending that is gradually being replaced by a standard form. She interviewed speakers from three generations in each village. Rajabova claims that in every village she studied, each younger generation uses the traditional ending less often than the generation before it.\n\n**Use of the traditional verb ending (% of verbs where the ending could appear)**\n\n| Village | Speakers interviewed | Ages 60 and older | Ages 35–59 | Ages 15–34 |\n| --- | ---: | ---: | ---: | ---: |\n| Village 1 | 48 | 82 | 64 | 41 |\n| Village 2 | 52 | 76 | 70 | 52 |\n| Village 3 | 45 | 88 | 59 | 63 |\n| Village 4 | 50 | 71 | 55 | 30 |",
+    "stem": "Which choice most effectively uses data from the table to weaken Rajabova's claim?",
+    "option_a": "In Village 3, speakers aged 15–34 used the traditional ending 63 percent of the time, more often than the 59 percent among speakers aged 35–59.",
+    "option_b": "In Village 4, use of the traditional ending fell from 71 percent among speakers aged 60 and older to 30 percent among speakers aged 15–34.",
+    "option_c": "In Village 3, speakers aged 60 and older used the traditional ending 88 percent of the time, more often than the oldest speakers in any other village.",
+    "option_d": "In Village 2, speakers aged 15–34 used the traditional ending 52 percent of the time, less often than the 70 percent among speakers aged 35–59.",
+    "correct": "A",
+    "explanation_en": "The claim says that in every village, each younger generation uses the traditional ending less than the one before. A single village where a younger generation uses it more would weaken the claim. Choice A identifies that case: in Village 3, the youngest speakers (63 percent) used the ending more than the middle generation (59 percent).\n\nChoices B and D describe declines from older to younger speakers, which fit the claim. Choice C is accurate but compares the oldest speakers across villages; the claim is about differences between generations within each village.",
+    "explanation_uz": "Da’voga ko‘ra, har bir qishloqda har bir yoshroq avlod an’anaviy qo‘shimchani oldingi avloddan kamroq ishlatadi. Yoshroq avlod uni ko‘proq ishlatadigan bitta qishloq ham da’voni zaiflashtiradi. A javob aynan shunday holatni ko‘rsatadi: 3-qishloqda eng yosh so‘zlovchilar (63 foiz) qo‘shimchani o‘rta avloddan (59 foiz) ko‘proq ishlatgan.\n\nB va D kattalardan yoshlarga qarab kamayishni tasvirlaydi, bu da’voga mos. C to‘g‘ri, lekin turli qishloqlarning eng keksa so‘zlovchilarini solishtiradi; da’vo esa har bir qishloq ichidagi avlodlar farqi haqida.",
+    "estimated_seconds": 95,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "weaken_claim"
+    ]
+  },
+  {
+    "skill_code": "command_of_evidence_quantitative",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Ornithologist Aziza Hamidova fitted four shorebirds of the same long-distance migratory species with small tracking devices and followed their spring migrations. She notes that among these birds, traveling a greater distance did not necessarily mean spending more days migrating: ______\n\n**Spring migrations of four tagged shorebirds**\n\n| Bird | Body mass (grams) | Distance traveled (kilometers) | Days spent migrating | Number of stopovers |\n| --- | ---: | ---: | ---: | ---: |\n| R12 | 410 | 9,200 | 31 | 2 |\n| K07 | 385 | 6,100 | 47 | 6 |\n| T33 | 430 | 7,800 | 38 | 3 |\n| M21 | 395 | 5,400 | 29 | 4 |",
+    "stem": "Which choice most effectively uses data from the table to complete the statement?",
+    "option_a": "Bird K07 spent 47 days migrating and made 6 stopovers, more stopovers than any other bird.",
+    "option_b": "Bird M21 traveled the shortest distance, 5,400 kilometers, and also spent the fewest days migrating, 29.",
+    "option_c": "Bird R12 traveled 9,200 kilometers, the farthest of the four birds, yet spent only 31 days migrating, fewer than Birds K07 and T33.",
+    "option_d": "Bird R12 traveled 9,200 kilometers, the farthest of the four birds, and spent more days migrating than any other bird.",
+    "correct": "C",
+    "explanation_en": "The statement needs an example of a bird that traveled farther but did not spend more days migrating. Choice C accurately shows that R12 traveled the farthest (9,200 kilometers) yet spent fewer days migrating (31) than K07 (47 days, 6,100 kilometers) and T33 (38 days, 7,800 kilometers), both of which traveled shorter distances.\n\nChoice A is accurate but focuses on stopovers, which the statement is not about. Choice B is accurate, but a bird with both the shortest distance and the fewest days fits the idea that distance and time go together, so it does not illustrate the statement. Choice D misreads the table: K07 spent the most days migrating (47), not R12.",
+    "explanation_uz": "Gapga uzoqroq uchgan, lekin ko‘chishga ko‘proq kun sarflamagan qush misoli kerak. C javob R12 eng uzoq masofani (9,200 kilometr) bosib o‘tgani, ammo qisqaroq masofani bosgan K07 (47 kun, 6,100 kilometr) va T33 (38 kun, 7,800 kilometr) dan kamroq kun (31) sarflaganini to‘g‘ri ko‘rsatadi.\n\nA to‘g‘ri, lekin gapga aloqasi yo‘q bo‘lgan to‘xtashlar soniga e’tibor qaratadi. B to‘g‘ri, lekin masofasi ham, kunlari ham eng kam bo‘lgan qush masofa va vaqt birga o‘zgaradi degan fikrga mos keladi, shuning uchun gapni misol bilan tasdiqlamaydi. D jadvalni noto‘g‘ri o‘qiydi: ko‘chishga eng ko‘p kun (47) R12 emas, K07 sarflagan.",
+    "estimated_seconds": 100,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "complete_statement"
+    ]
+  }
+]

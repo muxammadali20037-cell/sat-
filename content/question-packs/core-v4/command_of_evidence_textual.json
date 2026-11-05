@@ -1,0 +1,338 @@
+[
+  {
+    "skill_code": "command_of_evidence_textual",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "*The House by the Canal* is a novel. In the novel, the narrator describes her grandmother as tireless, working from early in the morning until late at night.",
+    "stem": "Which quotation from *The House by the Canal* most effectively illustrates the claim?",
+    "option_a": "“Grandmother's plov was famous in three neighborhoods, though she never once wrote down the recipe.”",
+    "option_b": "“Our house had a blue gate that creaked whenever the wind came down from the mountains.”",
+    "option_c": "“Before the roosters stirred, Grandmother was already sweeping the courtyard, and long after the lamps were out, I could hear her loom clicking in the dark.”",
+    "option_d": "“On winter evenings, Grandmother told us stories about the caravans her own grandfather had led.”",
+    "correct": "C",
+    "explanation_en": "The claim is that the grandmother worked from early morning until late at night. Choice C shows both ends of her day: she is sweeping \"before the roosters stirred\" and still weaving \"long after the lamps were out.\"\n\nChoice A praises her cooking but says nothing about how long she worked. Choice B describes the house, not the grandmother. Choice D shows her telling stories in the evening, which is not evidence of nonstop work.",
+    "explanation_uz": "Da’voga ko‘ra, buvi ertalabdan kechgacha tinmay ishlagan. C javob uning kunining ikkala chegarasini ko‘rsatadi: u \"xo‘rozlar uyg‘onmasdan\" hovli supurayotgan va \"chiroqlar o‘chganidan ancha keyin\" ham to‘quv dastgohida ishlayotgan.\n\nA uning taomini maqtaydi, lekin qancha ishlagani haqida hech narsa demaydi. B buvini emas, uyni tasvirlaydi. D uning kechqurun ertak aytishini ko‘rsatadi, bu tinimsiz mehnatga dalil emas.",
+    "estimated_seconds": 55,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "literary_quote"
+    ]
+  },
+  {
+    "skill_code": "command_of_evidence_textual",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "“Orchard in January” is a poem. In the poem, the speaker walks through an orchard in the middle of winter and expresses confidence that the bare, frozen trees will bloom again in spring.",
+    "stem": "Which quotation from “Orchard in January” most effectively illustrates the claim?",
+    "option_a": "“Beneath the frost the patient roots keep count / of every day that leads them back to green.”",
+    "option_b": "“The branches scratch the sky like rusted wire, / and crows sit heavy where the apples hung.”",
+    "option_c": "“I walked here once in summer with my father, / who named each tree the way one names a friend.”",
+    "option_d": "“The wind comes down the valley, sharp and thin, / and finds each gap in my old woolen coat.”",
+    "correct": "A",
+    "explanation_en": "The claim has two elements: the trees are bare and frozen now, and the speaker is confident they will bloom again. Choice A places the roots \"beneath the frost\" and describes them counting the days \"that lead them back to green,\" expressing that confidence.\n\nChoice B describes the bare winter orchard but offers no hope of spring. Choice C recalls a past summer rather than looking ahead. Choice D describes the cold wind and says nothing about the orchard's future.",
+    "explanation_uz": "Da’vo ikki qismdan iborat: bog‘ hozir yalang‘och va muzlagan, so‘zlovchi esa daraxtlar bahorda yana gullashiga ishonadi. A javobda ildizlar \"ayoz ostida\" sabr bilan ularni \"yana yashillikka qaytaradigan\" kunlarni sanaydi, ya’ni ishonch ifodalangan.\n\nB qishki yalang‘och bog‘ni tasvirlaydi, lekin bahorga umid bildirmaydi. C kelajakka emas, o‘tgan yozga qaraydi. D sovuq shamolni tasvirlaydi va bog‘ning kelajagi haqida hech narsa demaydi.",
+    "estimated_seconds": 55,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "literary_quote"
+    ]
+  },
+  {
+    "skill_code": "command_of_evidence_textual",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "*The River Road* is a novel. In the novel, the narrator's father, Rustam, is shown to be both proud that his son has won a place at a university abroad and saddened that his son will soon be living so far away.",
+    "stem": "Which quotation from *The River Road* most effectively illustrates the claim?",
+    "option_a": "“Rustam told everyone at the teahouse about the letter from the university, reading it aloud so many times that the paper went soft at the folds.”",
+    "option_b": "“Rustam had never traveled farther than the regional capital, and he distrusted airplanes on principle.”",
+    "option_c": "“At night Rustam sat alone in the courtyard, looking at the empty chair where his son used to do his homework.”",
+    "option_d": "“‘The whole village will hear of this,’ Rustam said, holding the letter up to the light; and then, more quietly, ‘Seven hours by plane. Seven hours.’”",
+    "correct": "D",
+    "explanation_en": "The claim has two parts: Rustam is proud of his son's achievement and sad about the distance. In choice D, he announces that \"the whole village will hear of this\" (pride) and then quietly repeats \"Seven hours by plane\" (sadness about how far away his son will be).\n\nChoice A shows only pride. Choice C shows only sadness. Choice B describes Rustam's own limited travel and distrust of airplanes but shows neither pride in his son nor sadness about the move.",
+    "explanation_uz": "Da’vo ikki qismdan iborat: Rustam o‘g‘lining yutug‘idan faxrlanadi va uning uzoqqa ketishidan qayg‘uradi. D javobda u \"butun qishloq bundan xabar topadi\" deydi (faxr), so‘ng sekin ovozda \"Samolyotda yetti soat\" deb takrorlaydi (masofadan qayg‘u).\n\nA faqat faxrni ko‘rsatadi. C faqat qayg‘uni ko‘rsatadi. B Rustamning o‘zi uzoqqa bormagani va samolyotlarga ishonmasligini tasvirlaydi, lekin unda na faxr, na qayg‘u bor.",
+    "estimated_seconds": 75,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "literary_quote"
+    ]
+  },
+  {
+    "skill_code": "command_of_evidence_textual",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "*The Silk Merchant's Niece* is a novel. In the novel, the narrator suggests that her aunt Saodat, who was stern with the children in front of others, showed her affection for them only when she believed no one was watching.",
+    "stem": "Which quotation from *The Silk Merchant's Niece* most effectively illustrates the claim?",
+    "option_a": "“Aunt Saodat corrected our posture, our handwriting, and our manners, and she did so in front of any guest who happened to be present.”",
+    "option_b": "“Once, waking early, I saw her through the half-open door, smoothing my brother's blanket and humming the song she claimed not to know; when she noticed me, her face closed like a shutter.”",
+    "option_c": "“At the wedding, in front of all our relatives, she lifted my little sister onto her lap and fed her sweets until the child fell asleep.”",
+    "option_d": "“She kept the household accounts in a green ledger, and no expense, however small, escaped her notice.”",
+    "correct": "B",
+    "explanation_en": "The claim requires three things: Saodat shows affection, she does so in private, and she hides it once she is observed. In choice B, she tenderly smooths a blanket and hums while unaware of the narrator, and when she notices she is being watched, \"her face closed like a shutter.\"\n\nChoice A shows only her sternness in public. Choice C shows affection, but \"in front of all our relatives,\" which contradicts the claim that she showed it only when unobserved. Choice D shows her strictness with money, which has nothing to do with affection for the children.",
+    "explanation_uz": "Da’vo uch narsani talab qiladi: Saodat mehr ko‘rsatadi, buni yolg‘izlikda qiladi va kimdir ko‘rganini sezsa, yashiradi. B javobda u hech kim ko‘rmayapti deb o‘ylab, adyolni mehr bilan to‘g‘rilaydi va xirgoyi qiladi, hikoyachini sezgach esa \"yuzi darcha qopqog‘idek yopiladi\".\n\nA faqat uning boshqalar oldidagi qattiqqo‘lligini ko‘rsatadi. C mehrni ko‘rsatadi, lekin \"barcha qarindoshlar oldida\" — bu mehr faqat hech kim ko‘rmaganda ko‘rsatilgan degan da’voga zid. D uning pul masalasidagi sinchkovligini ko‘rsatadi, bu bolalarga mehr bilan bog‘liq emas.",
+    "estimated_seconds": 95,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "literary_quote"
+    ]
+  },
+  {
+    "skill_code": "command_of_evidence_textual",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Ecologist Feruza Nazarova hypothesizes that magpies nesting in a city park can recognize individual people who have previously disturbed their nests. To test this idea, she had one volunteer briefly climb toward several nests while the birds watched. A few weeks later, that volunteer and several other volunteers, all wearing identical clothing, walked separately through the park.",
+    "stem": "Which finding, if true, would most directly support Nazarova's hypothesis?",
+    "option_a": "The magpies gave alarm calls at all of the volunteers equally often.",
+    "option_b": "The magpies gave alarm calls far more often at the volunteer who had climbed toward the nests than at the other volunteers.",
+    "option_c": "Magpies in the park built their nests higher in trees than magpies outside the city did.",
+    "option_d": "The magpies ignored all of the volunteers, including the one who had climbed toward the nests.",
+    "correct": "B",
+    "explanation_en": "If magpies recognize the individual who disturbed them, they should react to that person differently from others dressed the same way. Choice B describes exactly that: far more alarm calls at the volunteer who had climbed toward the nests.\n\nChoice A suggests the birds reacted to people in general, not to one individual, which would weaken the hypothesis. Choice C concerns nest height, which is unrelated to recognizing people. Choice D suggests the magpies did not remember the disturbance at all.",
+    "explanation_uz": "Agar zag‘izg‘onlar o‘zini bezovta qilgan odamni taniy olsa, ular xuddi shunday kiyingan boshqalarga qaraganda unga boshqacha munosabatda bo‘lishi kerak. B javob aynan shuni tasvirlaydi: uyalarga chiqqan ko‘ngilliga ko‘proq xavf ovozi berilgan.\n\nA qushlar alohida odamga emas, umuman odamlarga munosabat bildirganini ko‘rsatadi, bu gipotezani zaiflashtiradi. C uya balandligi haqida, odamlarni tanishga aloqasi yo‘q. D zag‘izg‘onlar bezovtalikni umuman eslamaganini ko‘rsatadi.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "finding_support"
+    ]
+  },
+  {
+    "skill_code": "command_of_evidence_textual",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Education researcher Javlon Tursunov hypothesizes that students remember new material better when they explain it aloud to a classmate than when they simply reread it. He gave 120 students the same short reading about how volcanoes form. Half of the students then spent ten minutes explaining the reading to a partner, while the other half spent ten minutes rereading it on their own.",
+    "stem": "Which finding, if true, would most directly support Tursunov's hypothesis?",
+    "option_a": "Students in both groups said that they enjoyed the reading about volcanoes.",
+    "option_b": "On a quiz a week later, the two groups of students earned nearly identical average scores.",
+    "option_c": "Students who explained the material reported feeling more nervous than students who reread it.",
+    "option_d": "On a quiz a week later, students who had explained the material to a partner scored higher, on average, than students who had reread it.",
+    "correct": "D",
+    "explanation_en": "The hypothesis predicts that explaining leads to better memory than rereading. Choice D shows that the explaining group remembered more a week later, as measured by higher quiz scores.\n\nChoice A concerns enjoyment, not memory, and does not distinguish the groups. Choice B shows no difference in memory, which would weaken the hypothesis. Choice C concerns nervousness, which says nothing about how well students remembered the material.",
+    "explanation_uz": "Gipotezaga ko‘ra, tushuntirish qayta o‘qishdan ko‘ra yaxshiroq eslab qolishga olib keladi. D javob tushuntirgan guruh bir haftadan keyin testda yuqoriroq ball olganini, ya’ni ko‘proq eslab qolganini ko‘rsatadi.\n\nA eslab qolish haqida emas, zavq haqida va guruhlarni farqlamaydi. B xotirada farq yo‘qligini ko‘rsatadi, bu gipotezani zaiflashtiradi. C hayajon haqida, o‘quvchilar materialni qanchalik eslab qolgani haqida hech narsa demaydi.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "finding_support"
+    ]
+  },
+  {
+    "skill_code": "command_of_evidence_textual",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "At an ancient settlement in Central Asia, archaeologists found several large, flat stones with smooth, worn hollows in their upper surfaces. Archaeologist Nodir Usmonov hypothesizes that people at the settlement used the stones to grind wild grain into flour.",
+    "stem": "Which finding, if true, would most directly weaken Usmonov's hypothesis?",
+    "option_a": "Stones with similar hollows have been found at other ancient sites where people are known to have ground grain.",
+    "option_b": "The hollows in the stones are deeper at the center than at the edges.",
+    "option_c": "Chemical tests of the hollows detected traces of red mineral pigment but no traces of starch from grain.",
+    "option_d": "Seeds of wild grasses were found in the soil near the stones.",
+    "correct": "C",
+    "explanation_en": "If the stones had been used to grind grain, traces of grain starch would be expected in the hollows. Choice C reports the opposite: pigment traces and no starch, which suggests the stones were used for something else, such as grinding pigment. This weakens the hypothesis.\n\nChoice A compares the stones with grain-grinding stones elsewhere, which supports the hypothesis. Choice B describes the shape of the hollows, which is consistent with grinding of any kind. Choice D shows that grain was present nearby, which also supports the hypothesis.",
+    "explanation_uz": "Agar toshlarda don tuyilgan bo‘lsa, chuqurchalarda don kraxmali izlari bo‘lishi kutiladi. C javob buning aksini aytadi: qizil mineral bo‘yoq izlari bor, kraxmal yo‘q. Bu toshlar boshqa maqsadda, masalan, bo‘yoq ezish uchun ishlatilganini ko‘rsatadi va gipotezani zaiflashtiradi.\n\nA toshlarni boshqa joylardagi don tuyiladigan toshlarga o‘xshatadi, bu gipotezani qo‘llab-quvvatlaydi. B chuqurchalar shaklini tasvirlaydi, bu har qanday ezish ishiga mos keladi. D yaqin atrofda don borligini ko‘rsatadi, bu ham gipotezani qo‘llab-quvvatlaydi.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "finding_weaken"
+    ]
+  },
+  {
+    "skill_code": "command_of_evidence_textual",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "In the nineteenth century, several water mills ground grain for the families of a mountain village in the Fergana Valley. Historian Malika Yoqubova claims that the mills were built and maintained by the villagers together rather than by a single wealthy landowner.",
+    "stem": "Which finding, if true, would most directly support Yoqubova's claim?",
+    "option_a": "Village records list dozens of households that contributed labor or money each year to repair the mills.",
+    "option_b": "The mills were powered by a stream that flowed down from the surrounding mountains.",
+    "option_c": "A wealthy landowner kept a detailed list of repairs to the mills and charged villagers a fee to use them.",
+    "option_d": "Similar water mills were used in many other villages in the Fergana Valley.",
+    "correct": "A",
+    "explanation_en": "Yoqubova claims that the villagers built and maintained the mills collectively. Choice A shows many households contributing labor or money for repairs every year, which is direct evidence of shared upkeep.\n\nChoice B explains how the mills were powered, not who maintained them. Choice C points to a single landowner controlling the mills, which would weaken the claim. Choice D says the mills were common in the region but reveals nothing about who built or maintained them.",
+    "explanation_uz": "Yoqubovaning da’vosiga ko‘ra, tegirmonlarni qishloq ahli birgalikda qurgan va saqlagan. A javob har yili ko‘plab xonadonlar ta’mirlash uchun mehnat yoki pul qo‘shganini ko‘rsatadi — bu birgalikdagi parvarishga bevosita dalil.\n\nB tegirmonlar qanday kuch bilan ishlaganini tushuntiradi, kim saqlaganini emas. C bitta boy yer egasi tegirmonlarni boshqarganini ko‘rsatadi, bu da’voni zaiflashtiradi. D bunday tegirmonlar mintaqada keng tarqalganini aytadi, lekin ularni kim qurgan yoki saqlaganini ochmaydi.",
+    "estimated_seconds": 55,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "finding_support"
+    ]
+  },
+  {
+    "skill_code": "command_of_evidence_textual",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Botanist Shohruh Aminov studies a wild mint that grows along streams in the foothills of the Chatkal Mountains. He has observed that the mint often grows tallest in shady spots, and he hypothesizes that shade increases the plant's height only when the soil is also moist. To test this hypothesis, he grew mint plants under four conditions: sun with moist soil, sun with dry soil, shade with moist soil, and shade with dry soil.",
+    "stem": "Which finding, if true, would most directly support Aminov's hypothesis?",
+    "option_a": "Plants in shade with moist soil grew taller than plants in sun with dry soil.",
+    "option_b": "Plants in shade with moist soil grew much taller than plants in sun with moist soil, but plants in shade with dry soil grew no taller than plants in sun with dry soil.",
+    "option_c": "Plants in shade grew taller than plants in sun, whether the soil was moist or dry.",
+    "option_d": "Plants with moist soil grew taller than plants with dry soil, in both sun and shade.",
+    "correct": "B",
+    "explanation_en": "The hypothesis has two parts: shade increases height when the soil is moist, and shade does not increase height when the soil is dry. Choice B confirms both: shade made a large difference with moist soil and no difference with dry soil.\n\nChoice A changes both shade and moisture at once, so it cannot show what shade alone does under either condition. Choice C shows shade helping even in dry soil, which contradicts \"only when the soil is also moist.\" Choice D is about the effect of moisture, not about whether shade's effect depends on moisture.",
+    "explanation_uz": "Gipoteza ikki qismdan iborat: tuproq nam bo‘lsa, soya bo‘yni oshiradi; tuproq quruq bo‘lsa, soya bo‘yni oshirmaydi. B javob ikkalasini ham tasdiqlaydi: nam tuproqda soya katta farq bergan, quruq tuproqda esa farq bermagan.\n\nA bir vaqtning o‘zida ham soyani, ham namlikni o‘zgartiradi, shuning uchun soyaning o‘zi nima qilishini ko‘rsata olmaydi. C soya quruq tuproqda ham yordam berganini ko‘rsatadi, bu \"faqat tuproq nam bo‘lganda\" degan shartga zid. D namlikning ta’siri haqida, soyaning ta’siri namlikka bog‘liqligi haqida emas.",
+    "estimated_seconds": 85,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "finding_support"
+    ]
+  },
+  {
+    "skill_code": "command_of_evidence_textual",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Many desert beetles have shiny, almost mirror-like shells. Entomologist Kamola Rashidova hypothesizes that this shine helps the beetles stay cool by reflecting sunlight. To test the idea, she placed two groups of beetles of the same species in direct sunlight: beetles with their natural shiny shells, and beetles whose shells she had covered with a thin, clear coating that removes the shine without changing the shell's color. She then measured the beetles' body temperatures.",
+    "stem": "Which finding, if true, would most directly weaken Rashidova's hypothesis?",
+    "option_a": "Shiny beetles of this species are found more often than dull-shelled beetles in the hottest parts of the desert.",
+    "option_b": "Beetles of other species that have dull shells are active mostly at night.",
+    "option_c": "The shiny beetles had lower body temperatures than the coated beetles did.",
+    "option_d": "After an hour in the sun, the shiny beetles and the coated beetles had reached the same body temperatures.",
+    "correct": "D",
+    "explanation_en": "If shine keeps the beetles cool, the shiny beetles should stay cooler than the coated ones, which differ only in lacking shine. Choice D reports no difference in temperature, which suggests the shine does not help cooling, so it weakens the hypothesis.\n\nChoice A suggests shiny beetles do well in hot places, which is consistent with the hypothesis. Choice B suggests dull-shelled beetles avoid the daytime heat, which also fits the hypothesis. Choice C is the result the hypothesis predicts, so it supports rather than weakens it.",
+    "explanation_uz": "Agar yaltiroqlik qo‘ng‘izlarni salqin saqlasa, yaltiroq qo‘ng‘izlar faqat yaltiroqligi yo‘qligi bilan farq qiladigan qoplangan qo‘ng‘izlardan salqinroq bo‘lishi kerak. D javob harorat farqi yo‘qligini aytadi, ya’ni yaltiroqlik sovishga yordam bermaydi — bu gipotezani zaiflashtiradi.\n\nA yaltiroq qo‘ng‘izlar issiq joylarda ko‘proq uchrashini aytadi, bu gipotezaga mos. B xira qobiqli qo‘ng‘izlar kunduzgi issiqdan qochishini ko‘rsatadi, bu ham gipotezaga mos. C gipoteza bashorat qilgan natija, shuning uchun uni zaiflashtirmaydi, aksincha qo‘llab-quvvatlaydi.",
+    "estimated_seconds": 80,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "finding_weaken"
+    ]
+  },
+  {
+    "skill_code": "command_of_evidence_textual",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Psychologist Bekzod Alimov claims that the words used to describe a dish can change how much people enjoy eating it, even when the food itself is identical. In a university cafeteria, he served the same lentil soup on two different days. On one day, the menu listed it simply as “lentil soup”; on the other, it was listed as “slow-simmered mountain lentil soup.” Diners who ate the soup were asked to rate its taste.",
+    "stem": "Which finding, if true, would most directly support Alimov's claim?",
+    "option_a": "Diners gave the soup higher taste ratings on the day it was listed as “slow-simmered mountain lentil soup” than on the day it was listed as “lentil soup.”",
+    "option_b": "More diners chose the soup on the day it was listed with the longer description than on the other day.",
+    "option_c": "Diners gave the soup about the same taste ratings on both days.",
+    "option_d": "Diners who ate the soup on both days said that they generally prefer soups with fewer ingredients.",
+    "correct": "A",
+    "explanation_en": "Alimov's claim is about enjoyment: a more vivid description makes the same food taste better to people. Choice A shows higher taste ratings for the identical soup when it had the more vivid name.\n\nChoice B is a trap: it shows that the description affected how many people chose the soup, not how much they enjoyed eating it. Choice C shows no difference in enjoyment, which would weaken the claim. Choice D concerns a general preference that has nothing to do with the menu descriptions.",
+    "explanation_uz": "Alimovning da’vosi zavq haqida: ta’sirliroq tavsif bir xil taomni mazaliroq qilib ko‘rsatadi. A javob bir xil sho‘rva ta’sirliroq nom bilan berilganda yuqoriroq baholanganini ko‘rsatadi.\n\nB tuzoq: u tavsif sho‘rvani nechta odam tanlaganiga ta’sir qilganini ko‘rsatadi, uni yeyishdan qanchalik zavq olganiga emas. C zavqda farq yo‘qligini ko‘rsatadi, bu da’voni zaiflashtiradi. D menyudagi tavsiflarga aloqasi yo‘q umumiy afzallik haqida.",
+    "estimated_seconds": 75,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "finding_support"
+    ]
+  },
+  {
+    "skill_code": "command_of_evidence_textual",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Linguist Anvar Saidov studies a group of words for weaving tools used in several villages along an old trade route. He argues that these words were not formed in the local language but were borrowed from Persian during a period in which Persian-speaking weavers settled in the region.",
+    "stem": "Which finding, if true, would most directly support Saidov's argument?",
+    "option_a": "The words appear in local written records from centuries before the Persian-speaking weavers arrived.",
+    "option_b": "The Persian-speaking settlers also introduced new methods of dyeing cloth to the region.",
+    "option_c": "The words first appear in local written records shortly after the settlers arrived, and they closely resemble Persian terms for the same tools.",
+    "option_d": "Weavers in the villages today use several tools that are not found anywhere else along the trade route.",
+    "correct": "C",
+    "explanation_en": "Saidov's argument has two parts: the words came from Persian, and they arrived when Persian-speaking weavers settled. Choice C supports both: the words resemble Persian terms for the same tools, and they first appear in records right after the settlers came.\n\nChoice A would weaken the argument, since words already in use before the settlers arrived could not have been borrowed from them. Choice B shows the settlers' influence on dyeing, but says nothing about the weaving words. Choice D concerns present-day tools, not the origin of the words.",
+    "explanation_uz": "Saidovning fikri ikki qismdan iborat: so‘zlar fors tilidan olingan va ular forsiyzabon to‘quvchilar ko‘chib kelgan davrda kirib kelgan. C javob ikkalasini ham qo‘llab-quvvatlaydi: so‘zlar xuddi shu asboblarning forscha nomlariga o‘xshaydi va yozma manbalarda to‘quvchilar ko‘chib kelgandan keyin paydo bo‘ladi.\n\nA fikrni zaiflashtiradi: ko‘chib kelganlardan oldin ishlatilgan so‘zlar ulardan o‘zlashtirilgan bo‘lishi mumkin emas. B ko‘chib kelganlarning bo‘yash usullariga ta’sirini ko‘rsatadi, lekin to‘quv so‘zlari haqida hech narsa demaydi. D so‘zlarning kelib chiqishi haqida emas, hozirgi asboblar haqida.",
+    "estimated_seconds": 75,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "finding_support"
+    ]
+  },
+  {
+    "skill_code": "command_of_evidence_textual",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "At the bottom of some lakes, sediment settles in thin, visible layers. Geologist Diyora Karimova hypothesizes that in one mountain lake in Kyrgyzstan, each pair of layers, one light and one dark, represents exactly one year: the light layer forms in summer and the dark layer in winter. If she is right, counting the pairs of layers would give an accurate record of the passage of time.",
+    "stem": "Which finding, if true, would most directly support Karimova's hypothesis?",
+    "option_a": "Between two layers of volcanic ash from eruptions known to have occurred 214 years apart, Karimova counted 214 pairs of light and dark layers.",
+    "option_b": "In the lake's sediment, the light layers are generally thicker than the dark layers.",
+    "option_c": "Between two layers of volcanic ash from eruptions known to have occurred 214 years apart, Karimova counted 428 pairs of light and dark layers.",
+    "option_d": "Thin layers of sediment are also found at the bottom of many other lakes in Central Asia.",
+    "correct": "A",
+    "explanation_en": "If each light-dark pair represents one year, then the number of pairs between two events should equal the number of years between them. Choice A gives exactly that match: 214 pairs between eruptions 214 years apart.\n\nChoice C reports twice as many pairs as years, which would mean that each pair represents about half a year, weakening the hypothesis. Choice B compares the thickness of the layers, which does not test whether a pair equals one year. Choice D notes that layers occur elsewhere but does not test what the layers in this lake represent.",
+    "explanation_uz": "Agar har bir och va to‘q qatlam jufti bir yilni bildirsa, ikki voqea orasidagi juftlar soni ular orasidagi yillar soniga teng bo‘lishi kerak. A javob aynan shu moslikni beradi: 214 yil farq bilan sodir bo‘lgan otilishlar orasida 214 juft.\n\nC yillardan ikki baravar ko‘p juft borligini aytadi, ya’ni har bir juft taxminan yarim yilni bildiradi — bu gipotezani zaiflashtiradi. B qatlamlar qalinligini solishtiradi, bu bir juft bir yilga tengligini tekshirmaydi. D boshqa ko‘llarda ham qatlamlar borligini aytadi, lekin bu ko‘ldagi qatlamlar nimani bildirishini tekshirmaydi.",
+    "estimated_seconds": 80,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "finding_support"
+    ]
+  },
+  {
+    "skill_code": "command_of_evidence_textual",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Animal behaviorist Ulugbek Sobirov studies how young goats learn to solve problems. He hypothesizes that a young goat learns to open a latched food box more quickly after watching its own mother open the box than after watching an unfamiliar adult goat open it. To test this, he divided young goats into three groups: those that watched their mother open the box, those that watched an unfamiliar adult open it, and those that saw no demonstration at all.",
+    "stem": "Which finding, if true, would most directly weaken Sobirov's hypothesis?",
+    "option_a": "The young goats that watched their mother opened the box much more quickly than the young goats that saw no demonstration.",
+    "option_b": "Young goats in both demonstration groups opened the box more quickly than young goats that saw no demonstration.",
+    "option_c": "The young goats that watched an unfamiliar adult opened the box just as quickly as those that watched their mother, and both groups were faster than those that saw no demonstration.",
+    "option_d": "Adult goats that had raised young opened the box more quickly than adult goats that had not.",
+    "correct": "C",
+    "explanation_en": "The hypothesis compares two specific groups: goats that watched their mother and goats that watched an unfamiliar adult, predicting that the first group will be faster. Choice C says these two groups were equally fast, so the mother's demonstration gave no special advantage. This directly weakens the hypothesis.\n\nChoice A compares the mother group with the no-demonstration group, the wrong comparison; it shows that watching helps, not that watching the mother helps more. Choice B also compares demonstration with no demonstration and says nothing about mother versus unfamiliar adult. Choice D concerns adult goats' own skill, not how young goats learn.",
+    "explanation_uz": "Gipoteza ikki aniq guruhni solishtiradi: onasini kuzatgan uloqlar va notanish katta echkini kuzatgan uloqlar; birinchisi tezroq bo‘ladi deb taxmin qilinadi. C javob bu ikki guruh bir xil tezlikda bo‘lganini aytadi, ya’ni onaning ko‘rsatib berishi alohida ustunlik bermagan. Bu gipotezani bevosita zaiflashtiradi.\n\nA ona guruhini hech narsa ko‘rmagan guruh bilan solishtiradi — bu noto‘g‘ri taqqoslash; u kuzatish foyda berishini ko‘rsatadi, onani kuzatish ko‘proq foyda berishini emas. B ham ko‘rsatib berilgan va berilmagan guruhlarni solishtiradi, ona va notanish echka haqida hech narsa demaydi. D uloqlar qanday o‘rganishi haqida emas, katta echkilarning o‘z mahorati haqida.",
+    "estimated_seconds": 95,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "finding_weaken"
+    ]
+  },
+  {
+    "skill_code": "command_of_evidence_textual",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Historian Petra Lindqvist claims that in sixteenth-century northern Europe, having a local printing press did more to raise a town's literacy than simply having access to printed books did. She notes that towns with presses could produce cheap pamphlets and schoolbooks in the local language, not just the expensive volumes that traveling merchants carried from distant cities.",
+    "stem": "Which finding, if true, would most directly support Lindqvist's claim?",
+    "option_a": "Literacy rose faster in towns that had printing presses than in towns that had no access to printed books at all.",
+    "option_b": "Towns that had printing presses also tended to have more merchants than towns without presses.",
+    "option_c": "Printed books sold by traveling merchants were usually more expensive than pamphlets printed locally.",
+    "option_d": "Among towns that regularly bought printed books from traveling merchants, literacy rose faster in towns that also had their own printing press than in towns that did not.",
+    "correct": "D",
+    "explanation_en": "Lindqvist's claim is a comparison: a local press raised literacy more than access to printed books alone. To test it, one must compare towns that had books and a press with towns that had books but no press. Choice D makes exactly this comparison and finds faster literacy growth where there was a press.\n\nChoice A compares press towns with towns that had no printed books at all, so the difference could come from access to books in general rather than from the press. Choice B points to a difference (more merchants) that could explain higher literacy in press towns, which would weaken the claim. Choice C repeats Lindqvist's background point about cost but gives no evidence about literacy.",
+    "explanation_uz": "Lindqvistning da’vosi taqqoslashdan iborat: mahalliy bosmaxona savodxonlikni bosma kitoblardan foydalanish imkoniyatining o‘zidan ko‘ra ko‘proq oshirgan. Buni tekshirish uchun kitobi ham, bosmaxonasi ham bor shaharlarni kitobi bor, lekin bosmaxonasi yo‘q shaharlar bilan solishtirish kerak. D javob aynan shunday taqqoslaydi va bosmaxona bor joyda savodxonlik tezroq o‘sganini ko‘rsatadi.\n\nA bosmaxonali shaharlarni umuman bosma kitob bo‘lmagan shaharlar bilan solishtiradi, shuning uchun farq bosmaxonadan emas, umuman kitob borligidan bo‘lishi mumkin. B bosmaxonali shaharlarda savodxonlik yuqoriligini boshqacha tushuntirishi mumkin bo‘lgan farqni (savdogarlar ko‘pligi) ko‘rsatadi, bu da’voni zaiflashtiradi. C Lindqvistning narx haqidagi fon fikrini takrorlaydi, lekin savodxonlik haqida dalil bermaydi.",
+    "estimated_seconds": 95,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "finding_support"
+    ]
+  },
+  {
+    "skill_code": "command_of_evidence_textual",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "In 2023, a midsize city added a dedicated bus lane along Route 7, its busiest bus route. Over the following year, ridership on Route 7 rose by 18 percent. Transportation analyst Diyor Hasanov concludes that the new lane caused the increase by making the buses faster and more reliable. Critics point out, however, that fuel prices in the city rose sharply in 2023, which may have pushed many drivers to switch to buses.",
+    "stem": "Which finding, if true, would most directly weaken Hasanov's conclusion?",
+    "option_a": "After the lane opened, average travel times on Route 7 fell by several minutes.",
+    "option_b": "Over the same year, ridership rose by about 18 percent on the city's other bus routes, none of which received a dedicated lane.",
+    "option_c": "Surveys showed that most new riders on Route 7 had previously traveled by car.",
+    "option_d": "Fuel prices in the city fell slightly in the year after the lane opened.",
+    "correct": "B",
+    "explanation_en": "If the lane caused the increase, Route 7 should have gained more riders than routes without a lane. Choice B shows that routes without a lane gained riders at the same rate, which suggests a citywide cause, such as fuel prices, rather than the lane. This weakens Hasanov's conclusion.\n\nChoice A shows that the lane made buses faster, which is consistent with Hasanov's explanation. Choice C fits both explanations, since drivers could have switched because of either the lane or fuel prices, so it does not weaken his conclusion. Choice D would actually undercut the critics' alternative explanation, making Hasanov's conclusion more plausible, not less.",
+    "explanation_uz": "Agar yo‘lak o‘sishga sabab bo‘lgan bo‘lsa, 7-yo‘nalish yo‘lagi bo‘lmagan yo‘nalishlarga qaraganda ko‘proq yo‘lovchi qo‘shib olishi kerak edi. B javob yo‘lagi bo‘lmagan yo‘nalishlarda ham yo‘lovchilar xuddi shunday sur’atda ko‘payganini ko‘rsatadi, bu yo‘lak emas, butun shaharga ta’sir qilgan sabab (masalan, yoqilg‘i narxi) borligini bildiradi. Bu Hasanovning xulosasini zaiflashtiradi.\n\nA yo‘lak avtobuslarni tezlashtirganini ko‘rsatadi, bu Hasanovning tushuntirishiga mos. C ikkala tushuntirishga ham mos keladi: haydovchilar yo‘lak tufayli ham, yoqilg‘i narxi tufayli ham o‘tgan bo‘lishi mumkin, shuning uchun xulosani zaiflashtirmaydi. D tanqidchilarning muqobil tushuntirishini zaiflashtiradi va Hasanovning xulosasini ishonarliroq qiladi.",
+    "estimated_seconds": 95,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "finding_weaken"
+    ]
+  }
+]
