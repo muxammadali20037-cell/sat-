@@ -1,0 +1,300 @@
+[
+  {
+    "skill_code": "one_variable_data",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "The list shows the number of pages Dilnoza read on each of 5 days.\n\n24, 31, 18, 40, 27\n\nWhat is the mean number of pages she read per day?",
+    "option_a": "22",
+    "option_b": "27",
+    "option_c": "28",
+    "option_d": "35",
+    "correct": "C",
+    "explanation_en": "The mean is the sum divided by the number of values: $\\frac{24 + 31 + 18 + 40 + 27}{5} = \\frac{140}{5} = 28$. Choice C is correct.\n\nChoice A is the range, $40 - 18$. Choice B is the median. Choice D divides the sum by 4 instead of 5.",
+    "explanation_uz": "O‘rta qiymat — yig‘indining qiymatlar soniga nisbati: $\\frac{24 + 31 + 18 + 40 + 27}{5} = \\frac{140}{5} = 28$. To‘g‘ri javob C.\n\nA — qamrov, $40 - 18$. B — mediana. D javobda yig‘indi 5 ga emas, 4 ga bo‘lingan.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "mean_list"
+    ]
+  },
+  {
+    "skill_code": "one_variable_data",
+    "difficulty": "easy",
+    "question_type": "spr",
+    "passage": "The frequency table shows the number of siblings of each of the 20 students in a class.\n\n| Number of siblings | Number of students |\n| ---: | ---: |\n| 0 | 6 |\n| 1 | 5 |\n| 2 | 3 |\n| 3 | 4 |\n| 4 | 2 |",
+    "stem": "What is the median number of siblings for these 20 students?",
+    "spr_answers": [
+      "1"
+    ],
+    "explanation_en": "With 20 values, the median is the mean of the 10th and 11th values in order. Counting up the table: 6 students have 0 siblings (values 1 to 6) and 5 students have 1 sibling (values 7 to 11). So the 10th and 11th values are both 1, and the median is 1. If you got 2, you took the middle of the list of possible values 0 to 4 instead of the middle student.",
+    "explanation_uz": "20 ta qiymatda mediana tartiblangan qiymatlardan 10- va 11-sining o‘rtachasi. Jadval bo‘yicha sanaymiz: 6 o‘quvchida 0 ta aka-uka/opa-singil bor (1–6-qiymatlar), 5 o‘quvchida 1 ta (7–11-qiymatlar). Demak 10- va 11-qiymatlar ikkalasi ham 1, mediana 1. Agar 2 chiqqan bo‘lsa, siz o‘rtadagi o‘quvchini emas, 0 dan 4 gacha bo‘lgan mumkin qiymatlarning o‘rtasini olgansiz.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "median_frequency_table"
+    ]
+  },
+  {
+    "skill_code": "one_variable_data",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "A data set consists of the 6 values 4, 9, 9, 12, 15, and 21. If the value 21 is changed to 31, which of the following statistics of the data set does NOT change?",
+    "option_a": "The mean",
+    "option_b": "The median",
+    "option_c": "The range",
+    "option_d": "The standard deviation",
+    "correct": "B",
+    "explanation_en": "The median of 6 ordered values is the mean of the 3rd and 4th values: $\\frac{9 + 12}{2} = 10.5$. Changing the greatest value from 21 to 31 keeps it the greatest value, so the 3rd and 4th values stay 9 and 12, and the median stays 10.5. Choice B is correct.\n\nChoice A changes: the sum increases by 10, so the mean increases by $\\frac{10}{6}$. Choice C changes from $21 - 4 = 17$ to $31 - 4 = 27$. Choice D changes because the greatest value moves farther from the rest of the data, so the spread increases.",
+    "explanation_uz": "6 ta tartiblangan qiymatning medianasi 3- va 4-qiymatlarning o‘rtachasi: $\\frac{9 + 12}{2} = 10.5$. Eng katta qiymat 21 dan 31 ga o‘zgarganda u eng kattaligicha qoladi, shuning uchun 3- va 4-qiymatlar 9 va 12 bo‘lib qoladi, mediana esa 10.5. To‘g‘ri javob B.\n\nA o‘zgaradi: yig‘indi 10 ga ortadi, demak o‘rta qiymat $\\frac{10}{6}$ ga ortadi. C $21 - 4 = 17$ dan $31 - 4 = 27$ ga o‘zgaradi. D o‘zgaradi, chunki eng katta qiymat qolgan ma’lumotlardan uzoqlashadi va tarqoqlik ortadi.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "effect_of_change"
+    ]
+  },
+  {
+    "skill_code": "one_variable_data",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "A box plot summarizes the lengths, in centimeters, of fish caught in a lake. The box plot shows a minimum of 12, a first quartile of 18, a median of 25, a third quartile of 31, and a maximum of 44. What is the interquartile range of the lengths, in centimeters?",
+    "option_a": "6",
+    "option_b": "13",
+    "option_c": "25",
+    "option_d": "32",
+    "correct": "B",
+    "explanation_en": "The interquartile range is the third quartile minus the first quartile: $31 - 18 = 13$ centimeters. Choice B is correct.\n\nChoice A is the third quartile minus the median. Choice C is the median. Choice D is the range, $44 - 12$.",
+    "explanation_uz": "Kvartillararo oraliq — uchinchi kvartildan birinchi kvartilni ayirish: $31 - 18 = 13$ santimetr. To‘g‘ri javob B.\n\nA — uchinchi kvartildan medianani ayirish. C — mediana. D — qamrov, $44 - 12$.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "box_plot_iqr"
+    ]
+  },
+  {
+    "skill_code": "one_variable_data",
+    "difficulty": "easy",
+    "question_type": "spr",
+    "passage": "Each of 10 students rated a new school lunch menu on a scale from 1 to 4. The table shows how many students gave each rating.\n\n| Rating | Number of students |\n| ---: | ---: |\n| 1 | 1 |\n| 2 | 2 |\n| 3 | 5 |\n| 4 | 2 |",
+    "stem": "What is the mean rating given by these 10 students?",
+    "spr_answers": [
+      "2.8",
+      "14/5"
+    ],
+    "explanation_en": "Multiply each rating by its frequency and add: $1(1) + 2(2) + 3(5) + 4(2) = 1 + 4 + 15 + 8 = 28$. Divide by the 10 students: $\\frac{28}{10} = 2.8$. If you got 2.5, you averaged the ratings 1, 2, 3, 4 without using the frequencies.",
+    "explanation_uz": "Har bir bahoni uning chastotasiga ko‘paytirib qo‘shamiz: $1(1) + 2(2) + 3(5) + 4(2) = 1 + 4 + 15 + 8 = 28$. 10 o‘quvchiga bo‘lamiz: $\\frac{28}{10} = 2.8$. Agar 2.5 chiqqan bo‘lsa, siz chastotalarni hisobga olmay 1, 2, 3, 4 baholarning o‘rtachasini olgansiz.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "mean_frequency_table"
+    ]
+  },
+  {
+    "skill_code": "one_variable_data",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "Data set A consists of the values 48, 49, 50, 51, and 52. Data set B consists of the values 30, 40, 50, 60, and 70. Which of the following statements is true?",
+    "option_a": "The means are equal, and the standard deviation of data set A is greater.",
+    "option_b": "The means are equal, and the standard deviation of data set B is greater.",
+    "option_c": "The mean of data set B is greater, and the standard deviations are equal.",
+    "option_d": "The means are equal, and the standard deviations are equal.",
+    "correct": "B",
+    "explanation_en": "Each data set is symmetric about 50, so both means are 50. The values in data set B are much farther from 50 (up to 20 away) than the values in data set A (at most 2 away), so data set B has the greater standard deviation. Choice B is correct.\n\nChoice A reverses the comparison of spread. Choice C is wrong because both means are 50. Choice D ignores that B is much more spread out.",
+    "explanation_uz": "Har ikki to‘plam 50 ga nisbatan simmetrik, demak ikkala o‘rta qiymat 50. B to‘plamdagi qiymatlar 50 dan ancha uzoqroq (20 gacha), A to‘plamdagilar esa ko‘pi bilan 2 birlik uzoqda, shuning uchun B ning standart chetlanishi katta. To‘g‘ri javob B.\n\nA javob tarqoqlik taqqoslashini teskari qiladi. C noto‘g‘ri, chunki ikkala o‘rta qiymat ham 50. D javob B ancha tarqoqroq ekanini e’tiborga olmaydi.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "compare_spread"
+    ]
+  },
+  {
+    "skill_code": "one_variable_data",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "A group of 12 students took a test, and their mean score was 70. Later, 8 more students took the same test, and the mean score of all 20 students was 74. What was the mean score of the 8 additional students?",
+    "option_a": "72",
+    "option_b": "74",
+    "option_c": "78",
+    "option_d": "80",
+    "correct": "D",
+    "explanation_en": "The total of all 20 scores is $20 \\cdot 74 = 1{,}480$, and the total of the first 12 scores is $12 \\cdot 70 = 840$. The 8 additional students scored $1{,}480 - 840 = 640$ in total, so their mean is $\\frac{640}{8} = 80$. Choice D is correct.\n\nChoice A is the mean of 70 and 74. Choice B is the overall mean. Choice C, $2 \\cdot 74 - 70$, assumes the two groups have the same size.",
+    "explanation_uz": "20 ta natijaning yig‘indisi $20 \\cdot 74 = 1{,}480$, dastlabki 12 tasiniki $12 \\cdot 70 = 840$. Qo‘shimcha 8 o‘quvchi jami $1{,}480 - 840 = 640$ ball to‘plagan, demak ularning o‘rta qiymati $\\frac{640}{8} = 80$. To‘g‘ri javob D.\n\nA — 70 va 74 ning o‘rtachasi. B — umumiy o‘rta qiymat. C, ya’ni $2 \\cdot 74 - 70$, ikki guruhni teng sonli deb hisoblaydi.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "combined_mean"
+    ]
+  },
+  {
+    "skill_code": "one_variable_data",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "The list shows 6 numbers in order from least to greatest.\n\n5, 8, $x$, 13, 16, 20\n\nThe median of the 6 numbers is 11. What is the value of $x$?",
+    "spr_answers": [
+      "9"
+    ],
+    "explanation_en": "With 6 values, the median is the mean of the 3rd and 4th values: $\\frac{x + 13}{2} = 11$. So $x + 13 = 22$ and $x = 9$, which fits the order $8 \\le 9 \\le 13$. If you set the mean of all 6 numbers equal to 11, you get $x = 4$, which does not fit the order.",
+    "explanation_uz": "6 ta qiymatda mediana 3- va 4-qiymatlarning o‘rtachasi: $\\frac{x + 13}{2} = 11$. Demak $x + 13 = 22$ va $x = 9$; bu $8 \\le 9 \\le 13$ tartibga mos keladi. Agar 6 ta sonning o‘rta qiymatini 11 ga tenglasangiz, $x = 4$ chiqadi, u tartibga mos kelmaydi.",
+    "estimated_seconds": 100,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "median_unknown"
+    ]
+  },
+  {
+    "skill_code": "one_variable_data",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "passage": "The table summarizes the daily step counts, in thousands, of 30 people on one day.\n\n| Steps (thousands) | Number of people |\n| --- | ---: |\n| 0 to less than 4 | 2 |\n| 4 to less than 8 | 6 |\n| 8 to less than 12 | 8 |\n| 12 to less than 16 | 10 |\n| 16 to less than 20 | 4 |",
+    "stem": "Which interval contains the median daily step count of these 30 people?",
+    "option_a": "4 to less than 8",
+    "option_b": "8 to less than 12",
+    "option_c": "12 to less than 16",
+    "option_d": "16 to less than 20",
+    "correct": "B",
+    "explanation_en": "With 30 values, the median is the mean of the 15th and 16th values in order. The cumulative counts are 2 (below 4), $2 + 6 = 8$ (below 8), and $8 + 8 = 16$ (below 12). So the 15th and 16th values are both in the interval 8 to less than 12. Choice B is correct.\n\nChoice C is the interval with the most people (the mode), not the median. Choices A and D contain values that are too low or too high to be in the middle position.",
+    "explanation_uz": "30 ta qiymatda mediana tartiblangan qiymatlardan 15- va 16-sining o‘rtachasi. Jamlangan sonlar: 2 (4 dan kichik), $2 + 6 = 8$ (8 dan kichik) va $8 + 8 = 16$ (12 dan kichik). Demak 15- va 16-qiymatlar ikkalasi ham 8 dan 12 gacha bo‘lgan oraliqda. To‘g‘ri javob B.\n\nC — eng ko‘p odam bor oraliq (moda), mediana emas. A va D oraliqlardagi qiymatlar o‘rtadagi o‘rin uchun juda kichik yoki juda katta.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "median_grouped"
+    ]
+  },
+  {
+    "skill_code": "one_variable_data",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "A data set consists of 9 values. The mean of the data set is 40, and the standard deviation is 6. A 10th value, 40, is added to the data set. Which of the following statements about the new data set of 10 values is true?",
+    "option_a": "The mean and the standard deviation are both unchanged.",
+    "option_b": "The mean is unchanged, and the standard deviation decreases.",
+    "option_c": "The mean increases, and the standard deviation is unchanged.",
+    "option_d": "The mean is unchanged, and the standard deviation increases.",
+    "correct": "B",
+    "explanation_en": "Adding a value equal to the mean keeps the mean at 40, since the new sum $9 \\cdot 40 + 40 = 400$ divided by 10 is 40. The new value is at distance 0 from the mean, so the typical distance from the mean becomes smaller: the standard deviation decreases. Choice B is correct.\n\nChoice A ignores that one more value with zero deviation lowers the average spread. Choice C is wrong because the mean stays 40. Choice D would be true only if the new value were far from the mean.",
+    "explanation_uz": "O‘rta qiymatga teng qiymat qo‘shilganda o‘rta qiymat 40 bo‘lib qoladi: yangi yig‘indi $9 \\cdot 40 + 40 = 400$, 10 ga bo‘linsa 40. Yangi qiymat o‘rta qiymatdan 0 masofada, shuning uchun o‘rta qiymatdan odatiy uzoqlik kamayadi: standart chetlanish kamayadi. To‘g‘ri javob B.\n\nA javob chetlanishi nol bo‘lgan yana bir qiymat o‘rtacha tarqoqlikni kamaytirishini e’tiborga olmaydi. C noto‘g‘ri, chunki o‘rta qiymat 40 ligicha qoladi. D faqat yangi qiymat o‘rta qiymatdan uzoq bo‘lganda to‘g‘ri bo‘lardi.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "effect_on_sd"
+    ]
+  },
+  {
+    "skill_code": "one_variable_data",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "The mean of a list of 8 numbers is 15. When one number is removed from the list, the mean of the remaining 7 numbers is 14. What number was removed?",
+    "spr_answers": [
+      "22"
+    ],
+    "explanation_en": "The sum of the 8 numbers is $8 \\cdot 15 = 120$, and the sum of the remaining 7 numbers is $7 \\cdot 14 = 98$. The removed number is $120 - 98 = 22$. If you got 1, you subtracted the means instead of the sums.",
+    "explanation_uz": "8 ta son yig‘indisi $8 \\cdot 15 = 120$, qolgan 7 tasiniki $7 \\cdot 14 = 98$. Olib tashlangan son $120 - 98 = 22$. Agar 1 chiqqan bo‘lsa, siz yig‘indilarni emas, o‘rta qiymatlarni ayirgansiz.",
+    "estimated_seconds": 100,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "removed_value"
+    ]
+  },
+  {
+    "skill_code": "one_variable_data",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "passage": "The table shows the number of cups of tea that each of 20 people drink per day.\n\n| Cups of tea per day | Number of people |\n| ---: | ---: |\n| 1 | 6 |\n| 2 | 8 |\n| 3 | 4 |\n| 4 | 1 |\n| 10 | 1 |",
+    "stem": "Which of the following gives the mean and the median of the numbers of cups of tea these 20 people drink per day?",
+    "option_a": "Mean 2.4, median 2",
+    "option_b": "Mean 2, median 2.4",
+    "option_c": "Mean 2.4, median 3",
+    "option_d": "Mean 4, median 2",
+    "correct": "A",
+    "explanation_en": "The total is $1(6) + 2(8) + 3(4) + 4(1) + 10(1) = 6 + 16 + 12 + 4 + 10 = 48$, so the mean is $\\frac{48}{20} = 2.4$. The median is the mean of the 10th and 11th values; the first 6 values are 1 and the next 8 (7th to 14th) are 2, so the median is 2. Choice A is correct.\n\nChoice B swaps the mean and the median. Choice C uses the wrong position for the median. Choice D averages the five listed values 1, 2, 3, 4, and 10 without using the frequencies.",
+    "explanation_uz": "Yig‘indi $1(6) + 2(8) + 3(4) + 4(1) + 10(1) = 6 + 16 + 12 + 4 + 10 = 48$, demak o‘rta qiymat $\\frac{48}{20} = 2.4$. Mediana 10- va 11-qiymatlarning o‘rtachasi; dastlabki 6 ta qiymat 1, keyingi 8 tasi (7–14-qiymatlar) 2, shuning uchun mediana 2. To‘g‘ri javob A.\n\nB javobda o‘rta qiymat va mediana almashtirilgan. C javobda mediana uchun noto‘g‘ri o‘rin olingan. D javobda chastotalarsiz 1, 2, 3, 4 va 10 qiymatlarning o‘rtachasi olingan.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "mean_median_skew"
+    ]
+  },
+  {
+    "skill_code": "one_variable_data",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "passage": "Data set X and data set Y each consist of 10 integers from 1 to 5. The table shows how many times each integer appears in each data set.\n\n| Value | Frequency in X | Frequency in Y |\n| ---: | ---: | ---: |\n| 1 | 1 | 4 |\n| 2 | 2 | 1 |\n| 3 | 4 | 0 |\n| 4 | 2 | 1 |\n| 5 | 1 | 4 |",
+    "stem": "Which of the following statements about data set X and data set Y is true?",
+    "option_a": "The means are equal, and the standard deviation of data set X is greater.",
+    "option_b": "The means are equal, and the standard deviation of data set Y is greater.",
+    "option_c": "The mean of data set X is greater, and the standard deviations are equal.",
+    "option_d": "The mean of data set Y is greater, and the standard deviation of data set Y is greater.",
+    "correct": "B",
+    "explanation_en": "Both frequency distributions are symmetric about the value 3, so both means are 3. In data set X, most values are at or near 3 (4 values equal 3). In data set Y, 8 of the 10 values are at 1 or 5, the farthest possible from 3, and none equal 3. So the values of Y are farther from the mean, and Y has the greater standard deviation. Choice B is correct.\n\nChoice A reverses the comparison. Choices C and D are wrong because the means are equal: the sums are $1 + 4 + 12 + 8 + 5 = 30$ for X and $4 + 2 + 0 + 4 + 20 = 30$ for Y.",
+    "explanation_uz": "Ikkala chastota taqsimoti ham 3 qiymatga nisbatan simmetrik, demak ikkala o‘rta qiymat 3. X to‘plamda ko‘p qiymatlar 3 ga teng yoki unga yaqin (4 ta qiymat 3 ga teng). Y to‘plamda 10 ta qiymatdan 8 tasi 1 yoki 5 da — 3 dan eng uzoq joyda, 3 ga tengi esa yo‘q. Demak Y qiymatlari o‘rta qiymatdan uzoqroq va Y ning standart chetlanishi katta. To‘g‘ri javob B.\n\nA javob taqqoslashni teskari qiladi. C va D noto‘g‘ri, chunki o‘rta qiymatlar teng: X uchun yig‘indi $1 + 4 + 12 + 8 + 5 = 30$, Y uchun $4 + 2 + 0 + 4 + 20 = 30$.",
+    "estimated_seconds": 130,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "compare_sd_frequency"
+    ]
+  },
+  {
+    "skill_code": "one_variable_data",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "A data set consists of 7 different positive integers. The mean of the data set is 12, and the median is 10. What is the greatest possible value of the largest integer in the data set?",
+    "spr_answers": [
+      "45"
+    ],
+    "explanation_en": "The sum of the 7 integers is $7 \\cdot 12 = 84$. In order, the 4th integer is the median, 10. To make the largest integer as great as possible, make the other five as small as possible: the three below 10 can be 1, 2, and 3, and the two above 10 (other than the largest) must be at least 11 and 12. Then the largest is $84 - (1 + 2 + 3 + 10 + 11 + 12) = 84 - 39 = 45$. If you got 51, you allowed repeated values (1, 1, 1 below the median and 10, 10 after it), but the integers must be different.",
+    "explanation_uz": "7 ta butun son yig‘indisi $7 \\cdot 12 = 84$. Tartiblanganda 4-son mediana, ya’ni 10. Eng katta sonni iloji boricha katta qilish uchun qolgan beshtasini iloji boricha kichik olamiz: 10 dan kichik uchtasi 1, 2 va 3, 10 dan katta ikkitasi (eng kattasidan tashqari) kamida 11 va 12 bo‘lishi kerak. U holda eng katta son $84 - (1 + 2 + 3 + 10 + 11 + 12) = 84 - 39 = 45$. Agar 51 chiqqan bo‘lsa, siz takrorlanuvchi qiymatlarga (medianadan oldin 1, 1, 1 va keyin 10, 10) yo‘l qo‘ygansiz, lekin sonlar har xil bo‘lishi kerak.",
+    "estimated_seconds": 140,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "extreme_value_constraints"
+    ]
+  },
+  {
+    "skill_code": "one_variable_data",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "A data set consists of 15 different numbers. A new data set is created by increasing the greatest number by 30 and decreasing the least number by 30; the other 13 numbers are unchanged. Which of the following statistics of the new data set must be equal to the corresponding statistic of the original data set?\n\nI. The mean\nII. The median\nIII. The standard deviation",
+    "option_a": "I only",
+    "option_b": "II only",
+    "option_c": "I and II only",
+    "option_d": "I, II, and III",
+    "correct": "C",
+    "explanation_en": "I: The sum changes by $+30 - 30 = 0$, so the mean is unchanged. II: The greatest number stays the greatest and the least stays the least, so the order of the values does not change and the 8th value (the median) is the same. III: The two extreme values move 30 units farther from the unchanged mean, so the spread increases and the standard deviation changes. Choice C is correct.\n\nChoices A and B each leave out one statistic that stays the same. Choice D wrongly includes the standard deviation, which increases.",
+    "explanation_uz": "I: Yig‘indi $+30 - 30 = 0$ ga o‘zgaradi, demak o‘rta qiymat o‘zgarmaydi. II: Eng katta son eng kattaligicha, eng kichigi eng kichikligicha qoladi, shuning uchun qiymatlar tartibi o‘zgarmaydi va 8-qiymat (mediana) avvalgidek. III: Ikki chetki qiymat o‘zgarmagan o‘rta qiymatdan 30 birlik uzoqlashadi, shuning uchun tarqoqlik ortadi va standart chetlanish o‘zgaradi. To‘g‘ri javob C.\n\nA va B javoblar o‘zgarmaydigan statistikalardan birini tushirib qoldiradi. D javob ortadigan standart chetlanishni ham noto‘g‘ri qo‘shadi.",
+    "estimated_seconds": 130,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "effect_of_change"
+    ]
+  },
+  {
+    "skill_code": "one_variable_data",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "Data set A consists of 10 values with a mean of $m$. Data set B is formed by adding 4 to each value in data set A and then including one more value, 50. The mean of data set B is 7 greater than $m$. What is the value of $m$?",
+    "spr_answers": [
+      "13"
+    ],
+    "explanation_en": "The sum of data set A is $10m$. Adding 4 to each of the 10 values adds 40, and including 50 adds 50, so data set B has 11 values with sum $10m + 90$. Its mean is $\\frac{10m + 90}{11} = m + 7$, so $10m + 90 = 11m + 77$ and $m = 13$. Check: B has sum 220 and mean 20, which is $13 + 7$. If you divided by 10 instead of 11, you counted only the original values.",
+    "explanation_uz": "A to‘plam yig‘indisi $10m$. 10 ta qiymatning har biriga 4 qo‘shish yig‘indiga 40 qo‘shadi, 50 ni kiritish esa yana 50 qo‘shadi, demak B to‘plamda yig‘indisi $10m + 90$ bo‘lgan 11 ta qiymat bor. Uning o‘rta qiymati $\\frac{10m + 90}{11} = m + 7$, demak $10m + 90 = 11m + 77$ va $m = 13$. Tekshiruv: B yig‘indisi 220, o‘rta qiymati 20, bu $13 + 7$. Agar 11 ga emas, 10 ga bo‘lgan bo‘lsangiz, faqat dastlabki qiymatlarni sanagansiz.",
+    "estimated_seconds": 140,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "mean_algebra"
+    ]
+  }
+]

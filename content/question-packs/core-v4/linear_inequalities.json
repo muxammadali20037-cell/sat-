@@ -1,0 +1,294 @@
+[
+  {
+    "skill_code": "linear_inequalities",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "Aziz has $150{,}000$ soums to spend on school supplies. Notebooks cost $8{,}000$ soums each and pens cost $3{,}000$ soums each. Which inequality represents the possible numbers of notebooks $n$ and pens $p$ that Aziz can buy without spending more than he has?",
+    "option_a": "$8{,}000n + 3{,}000p \\ge 150{,}000$",
+    "option_b": "$3{,}000n + 8{,}000p \\le 150{,}000$",
+    "option_c": "$8{,}000n + 3{,}000p \\le 150{,}000$",
+    "option_d": "$8{,}000n + 3{,}000p < 150{,}000$",
+    "correct": "C",
+    "explanation_en": "The cost of $n$ notebooks is $8{,}000n$ and the cost of $p$ pens is $3{,}000p$. The total can be at most $150{,}000$ soums (spending exactly $150{,}000$ is allowed), so $8{,}000n + 3{,}000p \\le 150{,}000$.\n\nChoice A requires spending at least $150{,}000$. Choice B matches the prices with the wrong items. Choice D excludes spending exactly $150{,}000$, which Aziz can do.",
+    "explanation_uz": "$n$ ta daftar narxi $8{,}000n$, $p$ ta ruchka narxi $3{,}000p$. Jami ko‘pi bilan $150{,}000$ so‘m bo‘lishi mumkin (aynan $150{,}000$ sarflash ham mumkin), demak $8{,}000n + 3{,}000p \\le 150{,}000$.\n\nA variant kamida $150{,}000$ sarflashni talab qiladi. B variant narxlarni noto‘g‘ri buyumlarga bog‘laydi. D variant aynan $150{,}000$ sarflashni chiqarib tashlaydi, holbuki Aziz buni qila oladi.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "write_budget_inequality"
+    ]
+  },
+  {
+    "skill_code": "linear_inequalities",
+    "difficulty": "easy",
+    "question_type": "spr",
+    "stem": "$$5 - 3x \\ge -16$$ What is the greatest value of $x$ that satisfies the given inequality?",
+    "spr_answers": [
+      "7"
+    ],
+    "explanation_en": "Subtract $5$ from both sides: $-3x \\ge -21$. Dividing by $-3$ reverses the inequality: $x \\le 7$. The greatest value is $7$.\n\nForgetting to reverse the sign gives $x \\ge 7$, which has no greatest value.",
+    "explanation_uz": "Ikkala tomondan $5$ ni ayiramiz: $-3x \\ge -21$. $-3$ ga bo‘lganda tengsizlik belgisi teskarisiga o‘zgaradi: $x \\le 7$. Eng katta qiymat $7$.\n\nBelgini o‘zgartirishni unutish $x \\ge 7$ ni beradi, bunda eng katta qiymat yo‘q.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "solve_inequality_flip"
+    ]
+  },
+  {
+    "skill_code": "linear_inequalities",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "Which of the following values of $x$ satisfies the inequality $4x + 9 < 2x - 5$?",
+    "option_a": "$-8$",
+    "option_b": "$-7$",
+    "option_c": "$0$",
+    "option_d": "$7$",
+    "correct": "A",
+    "explanation_en": "Subtract $2x$ and $9$ from both sides: $2x < -14$, so $x < -7$. Of the choices, only $-8$ is less than $-7$. Check: $4(-8) + 9 = -23$ and $2(-8) - 5 = -21$, and $-23 < -21$.\n\nChoice B makes the two sides equal ($-19 = -19$), so it does not satisfy a strict inequality. Choices C and D are greater than $-7$.",
+    "explanation_uz": "Ikkala tomondan $2x$ va $9$ ni ayiramiz: $2x < -14$, demak $x < -7$. Variantlardan faqat $-8$ son $-7$ dan kichik. Tekshiruv: $4(-8) + 9 = -23$ va $2(-8) - 5 = -21$, va $-23 < -21$.\n\nB variantda ikkala tomon teng bo‘ladi ($-19 = -19$), shuning uchun qat’iy tengsizlik bajarilmaydi. C va D variantlar $-7$ dan katta.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "test_values"
+    ]
+  },
+  {
+    "skill_code": "linear_inequalities",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "Lola tutors students in mathematics and earns $45{,}000$ soums per hour. She has already earned $270{,}000$ soums this month and wants to earn at least $900{,}000$ soums in total this month. Which inequality represents the number of additional hours $h$ she must tutor this month to reach her goal?",
+    "option_a": "$45{,}000h + 270{,}000 \\ge 900{,}000$",
+    "option_b": "$45{,}000h + 270{,}000 \\le 900{,}000$",
+    "option_c": "$45{,}000h \\ge 900{,}000 + 270{,}000$",
+    "option_d": "$270{,}000h + 45{,}000 \\ge 900{,}000$",
+    "correct": "A",
+    "explanation_en": "After $h$ more hours, her total is the $270{,}000$ soums already earned plus $45{,}000h$. “At least $900{,}000$” means the total is greater than or equal to $900{,}000$: $45{,}000h + 270{,}000 \\ge 900{,}000$.\n\nChoice B uses “at most” instead of “at least”. Choice C adds the amount already earned to the goal instead of counting it toward the goal. Choice D swaps the hourly rate and the amount already earned.",
+    "explanation_uz": "Yana $h$ soatdan keyin uning jami daromadi — allaqachon topilgan $270{,}000$ so‘m va $45{,}000h$ yig‘indisi. “Kamida $900{,}000$” — jami $900{,}000$ dan katta yoki teng degani: $45{,}000h + 270{,}000 \\ge 900{,}000$.\n\nB variant “kamida” o‘rniga “ko‘pi bilan” ni ishlatadi. C variant topilgan pulni maqsadga hisoblash o‘rniga uni maqsadga qo‘shadi. D variant soatlik haq bilan topilgan pulni almashtiradi.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "write_goal_inequality"
+    ]
+  },
+  {
+    "skill_code": "linear_inequalities",
+    "difficulty": "easy",
+    "question_type": "spr",
+    "stem": "An elevator has a maximum load of $630$ kilograms. A worker who weighs $80$ kilograms is loading boxes that weigh $24$ kilograms each into the elevator and will ride with them. What is the greatest number of boxes the worker can load so that the total load does not exceed the maximum?",
+    "spr_answers": [
+      "22"
+    ],
+    "explanation_en": "The total load is $80 + 24n \\le 630$, so $24n \\le 550$ and $n \\le 22.91\\ldots$. Since $n$ must be a whole number, the greatest possible value is $22$.\n\nRounding up to $23$ gives $80 + 24(23) = 632$ kilograms, which exceeds the limit. Ignoring the worker's weight gives $26$.",
+    "explanation_uz": "Umumiy yuk $80 + 24n \\le 630$, ya’ni $24n \\le 550$ va $n \\le 22.91\\ldots$. $n$ butun son bo‘lishi kerak, demak eng katta qiymat $22$.\n\n$23$ ga yaxlitlash $80 + 24(23) = 632$ kilogrammni beradi, bu chegaradan oshadi. Ishchining vaznini hisobga olmaslik $26$ ni beradi.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "integer_max_context"
+    ]
+  },
+  {
+    "skill_code": "linear_inequalities",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "Which point $(x, y)$ is a solution to the inequality $y \\ge 2x - 3$?",
+    "option_a": "$(3, 2)$",
+    "option_b": "$(1, 0)$",
+    "option_c": "$(4, 4)$",
+    "option_d": "$(2, 0)$",
+    "correct": "B",
+    "explanation_en": "Substitute each point. For $(1, 0)$: $2(1) - 3 = -1$, and $0 \\ge -1$ is true.\n\nFor $(3, 2)$: $2 \\ge 3$ is false. For $(4, 4)$: $4 \\ge 5$ is false. For $(2, 0)$: $0 \\ge 1$ is false.",
+    "explanation_uz": "Har bir nuqtani qo‘yamiz. $(1, 0)$ uchun: $2(1) - 3 = -1$, va $0 \\ge -1$ to‘g‘ri.\n\n$(3, 2)$ uchun: $2 \\ge 3$ noto‘g‘ri. $(4, 4)$ uchun: $4 \\ge 5$ noto‘g‘ri. $(2, 0)$ uchun: $0 \\ge 1$ noto‘g‘ri.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "point_in_region"
+    ]
+  },
+  {
+    "skill_code": "linear_inequalities",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "A storage tank initially holds $60$ liters of water. Because of a leak, the tank loses between $1.5$ and $2.5$ liters of water per hour, inclusive. Assuming no water is added, which inequality describes the possible amounts of water $A$, in liters, in the tank after $8$ hours?",
+    "option_a": "$12 \\le A \\le 20$",
+    "option_b": "$40 \\le A \\le 48$",
+    "option_c": "$48 \\le A \\le 60$",
+    "option_d": "$72 \\le A \\le 80$",
+    "correct": "B",
+    "explanation_en": "In $8$ hours, the tank loses between $8(1.5) = 12$ and $8(2.5) = 20$ liters. The greatest possible amount left is $60 - 12 = 48$ liters and the least is $60 - 20 = 40$ liters, so $40 \\le A \\le 48$.\n\nChoice A gives the amount lost, not the amount left. Choice C uses only the smallest loss as a lower bound. Choice D adds the losses instead of subtracting them.",
+    "explanation_uz": "$8$ soatda bak $8(1.5) = 12$ dan $8(2.5) = 20$ litrgacha suv yo‘qotadi. Eng ko‘p qoladigan miqdor $60 - 12 = 48$ litr, eng kami $60 - 20 = 40$ litr, demak $40 \\le A \\le 48$.\n\nA variant qolgan emas, yo‘qotilgan miqdorni beradi. C variant faqat eng kichik yo‘qotishni quyi chegara deb oladi. D variant yo‘qotishlarni ayirish o‘rniga qo‘shadi.",
+    "estimated_seconds": 95,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "range_of_rates"
+    ]
+  },
+  {
+    "skill_code": "linear_inequalities",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "In the $xy$-plane, the graph of the inequality $3x + by \\le 18$, where $b$ is a constant, is a region bounded by a line. This boundary line passes through the point $(2, -4)$. What is the value of $b$?",
+    "spr_answers": [
+      "-3"
+    ],
+    "explanation_en": "The boundary line is $3x + by = 18$. Substituting $(2, -4)$: $3(2) + b(-4) = 18$, so $6 - 4b = 18$, $-4b = 12$, and $b = -3$.\n\nAnswering $3$ comes from a sign error when dividing by $-4$.",
+    "explanation_uz": "Chegara chizig‘i $3x + by = 18$. $(2, -4)$ ni qo‘yamiz: $3(2) + b(-4) = 18$, ya’ni $6 - 4b = 18$, $-4b = 12$ va $b = -3$.\n\n$3$ javobi $-4$ ga bo‘lishdagi ishora xatosidan chiqadi.",
+    "estimated_seconds": 95,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "boundary_line_constant"
+    ]
+  },
+  {
+    "skill_code": "linear_inequalities",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "A minibus can carry at most $16$ passengers. The fare is $4{,}000$ soums for an adult and $2{,}000$ soums for a child. On each trip, the driver wants to collect at least $50{,}000$ soums in fares. Which system of inequalities represents the numbers of adults $a$ and children $c$ on a trip that meets both conditions?",
+    "option_a": "$a + c \\le 16$ and $4{,}000a + 2{,}000c \\ge 50{,}000$",
+    "option_b": "$a + c \\ge 16$ and $4{,}000a + 2{,}000c \\le 50{,}000$",
+    "option_c": "$a + c \\le 16$ and $2{,}000a + 4{,}000c \\ge 50{,}000$",
+    "option_d": "$4{,}000a + 2{,}000c \\le 16$ and $a + c \\ge 50{,}000$",
+    "correct": "A",
+    "explanation_en": "“At most $16$ passengers” gives $a + c \\le 16$. The fares collected are $4{,}000a + 2{,}000c$, and “at least $50{,}000$” gives $4{,}000a + 2{,}000c \\ge 50{,}000$.\n\nChoice B reverses both inequality signs. Choice C matches the fares with the wrong passengers. Choice D pairs the passenger limit with the fare expression and the fare goal with the passenger count.",
+    "explanation_uz": "“Ko‘pi bilan $16$ yo‘lovchi” — $a + c \\le 16$. Yig‘ilgan to‘lov $4{,}000a + 2{,}000c$, “kamida $50{,}000$” esa $4{,}000a + 2{,}000c \\ge 50{,}000$ ni beradi.\n\nB variant ikkala tengsizlik belgisini teskari qiladi. C variant narxlarni noto‘g‘ri yo‘lovchilarga bog‘laydi. D variant yo‘lovchilar chegarasini to‘lov ifodasiga, to‘lov maqsadini esa yo‘lovchilar soniga bog‘laydi.",
+    "estimated_seconds": 95,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "write_system_context"
+    ]
+  },
+  {
+    "skill_code": "linear_inequalities",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "Which of the following describes all values of $x$ that satisfy $-3 < 5 - 2x \\le 11$?",
+    "option_a": "$-3 \\le x < 4$",
+    "option_b": "$-3 < x \\le 4$",
+    "option_c": "$-4 < x \\le 3$",
+    "option_d": "$-8 < x \\le 6$",
+    "correct": "A",
+    "explanation_en": "Subtract $5$ from all three parts: $-8 < -2x \\le 6$. Divide all parts by $-2$ and reverse both signs: $4 > x \\ge -3$, which is $-3 \\le x < 4$.\n\nChoice B puts the strict and non-strict signs on the wrong ends: $x = 4$ gives $5 - 2x = -3$, which is excluded, while $x = -3$ gives $11$, which is included. Choice C does not reverse the order of the bounds. Choice D stops before dividing by $-2$.",
+    "explanation_uz": "Uchala qismdan $5$ ni ayiramiz: $-8 < -2x \\le 6$. Hammasini $-2$ ga bo‘lamiz va ikkala belgini teskarisiga o‘zgartiramiz: $4 > x \\ge -3$, ya’ni $-3 \\le x < 4$.\n\nB variant qat’iy va noqat’iy belgilarni noto‘g‘ri uchlarga qo‘yadi: $x = 4$ da $5 - 2x = -3$, bu qiymat kirmaydi, $x = -3$ da esa $11$, bu qiymat kiradi. C variant chegaralar tartibini almashtirmaydi. D variant $-2$ ga bo‘lishdan oldin to‘xtaydi.",
+    "estimated_seconds": 95,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "compound_inequality"
+    ]
+  },
+  {
+    "skill_code": "linear_inequalities",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "A juice vendor sells each cup of fresh juice for $6{,}000$ soums. Each cup costs the vendor $2{,}500$ soums to make, and the vendor also pays $190{,}000$ soums per day for the stand. What is the least number of cups the vendor must sell in one day to make a profit of at least $100{,}000$ soums that day?",
+    "spr_answers": [
+      "83"
+    ],
+    "explanation_en": "Each cup gives $6{,}000 - 2{,}500 = 3{,}500$ soums toward profit, so the daily profit is $3{,}500c - 190{,}000$. We need $3{,}500c - 190{,}000 \\ge 100{,}000$, so $3{,}500c \\ge 290{,}000$ and $c \\ge 82.857\\ldots$.\n\nSince $c$ is a whole number, the least value is $83$. Rounding down to $82$ gives a profit of $97{,}000$ soums, which is not enough.",
+    "explanation_uz": "Har bir stakan foydaga $6{,}000 - 2{,}500 = 3{,}500$ so‘m qo‘shadi, demak kunlik foyda $3{,}500c - 190{,}000$. Kerak: $3{,}500c - 190{,}000 \\ge 100{,}000$, ya’ni $3{,}500c \\ge 290{,}000$ va $c \\ge 82.857\\ldots$.\n\n$c$ butun son bo‘lgani uchun eng kichik qiymat $83$. $82$ ga yaxlitlash $97{,}000$ so‘m foyda beradi, bu yetarli emas.",
+    "estimated_seconds": 95,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "profit_threshold"
+    ]
+  },
+  {
+    "skill_code": "linear_inequalities",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "In the $xy$-plane, a line passes through the points $(0, 2)$ and $(3, 8)$. Which inequality describes the region of all points that lie above this line, not including the points on the line?",
+    "option_a": "$y \\ge 2x + 2$",
+    "option_b": "$y > 2x + 2$",
+    "option_c": "$y < 2x + 2$",
+    "option_d": "$y > \\dfrac{1}{2}x + 2$",
+    "correct": "B",
+    "explanation_en": "The slope is $\\frac{8 - 2}{3 - 0} = 2$ and the $y$-intercept is $2$, so the line is $y = 2x + 2$. Points above the line have $y$-values greater than the line's, and the line itself is excluded, so the inequality is strict: $y > 2x + 2$.\n\nChoice A includes the line. Choice C describes the region below the line. Choice D uses the reciprocal of the slope.",
+    "explanation_uz": "Qiyalik $\\frac{8 - 2}{3 - 0} = 2$ va $y$ o‘qi bilan kesishish $2$, demak chiziq $y = 2x + 2$. Chiziqdan yuqoridagi nuqtalarda $y$ qiymati chiziqnikidan katta, chiziqning o‘zi kirmaydi, shuning uchun tengsizlik qat’iy: $y > 2x + 2$.\n\nA variant chiziqning o‘zini ham qo‘shadi. C variant chiziqdan pastdagi sohani tasvirlaydi. D variant qiyalikning teskarisini oladi.",
+    "estimated_seconds": 95,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "region_from_line"
+    ]
+  },
+  {
+    "skill_code": "linear_inequalities",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "A truck delivers sacks of rice and sacks of flour to a market. Each sack of rice weighs $50$ kilograms and each sack of flour weighs $40$ kilograms. The truck can carry at most $2{,}000$ kilograms and has room for at most $45$ sacks. On one trip, the truck must carry at least $15$ sacks of rice. What is the greatest number of sacks of flour the truck can carry on this trip?",
+    "spr_answers": [
+      "30"
+    ],
+    "explanation_en": "Let $r$ be the number of sacks of rice and $f$ the number of sacks of flour. The conditions are $50r + 40f \\le 2{,}000$, $r + f \\le 45$, and $r \\ge 15$. To make $f$ as large as possible, use the least rice, $r = 15$.\n\nWeight: $750 + 40f \\le 2{,}000$, so $f \\le 31.25$, which allows at most $31$ sacks. Space: $15 + f \\le 45$, so $f \\le 30$. Both conditions must hold, so the greatest value is $30$.\n\nAnswering $31$ checks only the weight limit and ignores the limit on the number of sacks.",
+    "explanation_uz": "Guruch qoplari soni $r$, un qoplari soni $f$ bo‘lsin. Shartlar: $50r + 40f \\le 2{,}000$, $r + f \\le 45$ va $r \\ge 15$. $f$ ni eng katta qilish uchun guruchni eng kam, $r = 15$ olamiz.\n\nVazn: $750 + 40f \\le 2{,}000$, ya’ni $f \\le 31.25$, demak ko‘pi bilan $31$ qop. Joy: $15 + f \\le 45$, ya’ni $f \\le 30$. Ikkala shart ham bajarilishi kerak, demak eng katta qiymat $30$.\n\n$31$ javobi faqat vazn chegarasini tekshirib, qoplar soni chegarasini e’tiborsiz qoldiradi.",
+    "estimated_seconds": 140,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "two_constraint_integer_max"
+    ]
+  },
+  {
+    "skill_code": "linear_inequalities",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "$$ax - 4 \\ge 3x + 2$$ In the given inequality, $a$ is a constant. The solution set of the inequality is $x \\le -3$. What is the value of $a$?",
+    "option_a": "$-1$",
+    "option_b": "$1$",
+    "option_c": "$3$",
+    "option_d": "$5$",
+    "correct": "B",
+    "explanation_en": "Rearrange: $ax - 3x \\ge 6$, so $(a - 3)x \\ge 6$. The solution set has the form $x \\le \\ldots$, so dividing by $a - 3$ must reverse the sign, which means $a - 3 < 0$. Then $x \\le \\frac{6}{a - 3}$, and $\\frac{6}{a - 3} = -3$ gives $a - 3 = -2$, so $a = 1$.\n\nChoice D comes from setting $\\frac{6}{a - 3} = 3$; it gives $x \\ge 3$. Choice C makes the inequality $0 \\ge 6$, which has no solution. Choice A gives $x \\le -\\frac{3}{2}$.",
+    "explanation_uz": "Hadlarni ko‘chiramiz: $ax - 3x \\ge 6$, ya’ni $(a - 3)x \\ge 6$. Yechimlar to‘plami $x \\le \\ldots$ ko‘rinishida, demak $a - 3$ ga bo‘lganda belgi teskarisiga o‘zgarishi kerak, ya’ni $a - 3 < 0$. U holda $x \\le \\frac{6}{a - 3}$, va $\\frac{6}{a - 3} = -3$ dan $a - 3 = -2$, demak $a = 1$.\n\nD variant $\\frac{6}{a - 3} = 3$ deb olishdan chiqadi; u $x \\ge 3$ ni beradi. C variant tengsizlikni $0 \\ge 6$ ga aylantiradi, bu yechimga ega emas. A variant $x \\le -\\frac{3}{2}$ ni beradi.",
+    "estimated_seconds": 140,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "parameter_solution_set"
+    ]
+  },
+  {
+    "skill_code": "linear_inequalities",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "How many integers $x$ satisfy both $3x - 7 > 11$ and $2x + 1 < 35$?",
+    "spr_answers": [
+      "10"
+    ],
+    "explanation_en": "From $3x - 7 > 11$: $3x > 18$, so $x > 6$. From $2x + 1 < 35$: $2x < 34$, so $x < 17$. The integers with $6 < x < 17$ are $7, 8, \\ldots, 16$, which is $16 - 7 + 1 = 10$ integers.\n\nAnswering $11$ or $12$ includes one or both endpoints, $6$ and $17$, which make the strict inequalities false.",
+    "explanation_uz": "$3x - 7 > 11$ dan: $3x > 18$, ya’ni $x > 6$. $2x + 1 < 35$ dan: $2x < 34$, ya’ni $x < 17$. $6 < x < 17$ bo‘ladigan butun sonlar $7, 8, \\ldots, 16$, ularning soni $16 - 7 + 1 = 10$.\n\n$11$ yoki $12$ javobi chegaraviy $6$ va $17$ sonlaridan birini yoki ikkalasini qo‘shadi, lekin ular qat’iy tengsizliklarni qanoatlantirmaydi.",
+    "estimated_seconds": 140,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "count_integer_solutions"
+    ]
+  },
+  {
+    "skill_code": "linear_inequalities",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "A phone's battery is at $92\\%$ charge. While a navigation app runs, the battery charge drops by at least $6$ and at most $9$ percentage points per hour, depending on conditions. What is the greatest whole number of hours $h$ for which the battery is guaranteed to still have at least $20\\%$ charge after running the app for $h$ hours?",
+    "option_a": "$8$",
+    "option_b": "$9$",
+    "option_c": "$12$",
+    "option_d": "$15$",
+    "correct": "A",
+    "explanation_en": "A guarantee must hold even in the worst case, when the battery drops $9$ percentage points per hour. Then the charge after $h$ hours is $92 - 9h$, and $92 - 9h \\ge 20$ gives $9h \\le 72$, so $h \\le 8$. The greatest whole number is $8$.\n\nChoice C uses the best-case rate of $6$ points per hour ($92 - 6h \\ge 20$ gives $h \\le 12$), which is possible but not guaranteed. Choice B is too large: in the worst case the charge after $9$ hours is $92 - 81 = 11\\%$. Choice D divides $92$ by $6$ and ignores the $20\\%$ requirement.",
+    "explanation_uz": "Kafolat eng yomon holatda ham bajarilishi kerak, ya’ni batareya soatiga $9$ foiz punktga kamayganda. U holda $h$ soatdan keyingi zaryad $92 - 9h$, va $92 - 9h \\ge 20$ dan $9h \\le 72$, ya’ni $h \\le 8$. Eng katta butun son $8$.\n\nC variant eng yaxshi holatdagi soatiga $6$ punkt sur’atni oladi ($92 - 6h \\ge 20$ dan $h \\le 12$); bu mumkin, lekin kafolatlanmagan. B variant juda katta: eng yomon holatda $9$ soatdan keyin zaryad $92 - 81 = 11\\%$. D variant $92$ ni $6$ ga bo‘ladi va $20\\%$ talabini e’tiborsiz qoldiradi.",
+    "estimated_seconds": 140,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "worst_case_reasoning"
+    ]
+  }
+]
