@@ -46,8 +46,14 @@ const csp = [
   "object-src 'none'",
 ].join('; ')
 
+// The Desmos calculator evaluates strings as code, so 'unsafe-eval' is allowed when a Desmos key is
+// configured. Client-side navigation keeps the first page's policy (e.g. /login → /dashboard), so it
+// applies site-wide; script-src already needs 'unsafe-inline' for hydration, so the added exposure
+// is small. The admin panel, which has no calculator, keeps the stricter policy.
+const cspWithEval = desmos ? csp.replace("script-src 'self' 'unsafe-inline'", "script-src 'self' 'unsafe-inline' 'unsafe-eval'") : csp
+
 const securityHeaders = [
-  { key: 'Content-Security-Policy', value: csp },
+  { key: 'Content-Security-Policy', value: cspWithEval },
   { key: 'X-Content-Type-Options', value: 'nosniff' },
   { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
   // No X-Frame-Options: it cannot allow a single origin; CSP frame-ancestors above is the control.
@@ -75,6 +81,9 @@ const nextConfig: NextConfig = {
   async headers() {
     return [
       { source: '/:path*', headers: securityHeaders },
+      // Later entries override the same header for matching paths.
+      { source: '/admin', headers: [{ key: 'Content-Security-Policy', value: csp }] },
+      { source: '/admin/:path*', headers: [{ key: 'Content-Security-Policy', value: csp }] },
       // Live lessons are the only pages that may use the camera, microphone and screen sharing.
       { source: '/live/:path*', headers: [{ key: 'Permissions-Policy', value: 'camera=(self), microphone=(self), display-capture=(self), geolocation=(), payment=()' }] },
     ]
