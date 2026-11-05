@@ -95,6 +95,12 @@ The flows ran as a real user against real auth, PostgREST and RLS. AI used the l
 - **Admin lists:** question excerpts showed raw LaTeX (`\dfrac{…}`) and escaped prices as `\12`. They now use the same plain-text rendering as student pages.
 - **Pack import (caught before release):** the first version recognised already-imported questions by stem alone. Many Reading and Writing questions share a stem, so a retry after a partial import could have skipped real questions. It now matches passage and stem.
 
+### Real sources: core-v3 (240 questions), Library with 61 verified links (5 Nov)
+
+- **core-v3:** 240 more questions (8 per skill). Reading and Writing uses **genuine excerpts from public-domain works** (Brontë, Austen, Douglass, Cather, Darwin, Du Bois, Thoreau, Zitkala-Ša, Twain) taken from Project Gutenberg and introduced the SAT way ("The following text is from …"); spot checks against Gutenberg matched word for word. Other passages and data are grounded in checked real facts (stat.uz population, Olympic results, NASA planetary data, Tashkent climate, Britannica/NASA/UNESCO facts). Independent blind solve: 239/240 matched; the one difference was the solver's error (checked by hand). Two hard words-in-context items use rare words ("mean" in its old sense, "sedulously") — kept as hard. College Board questions are still never copied.
+- **Library** (/dashboard/library, "Kutubxona"): shelves Official practice (College Board, Khan Academy), Free textbooks (OpenStax), Classics for reading practice (25 public-domain books on Project Gutenberg) and Grammar and writing (Purdue OWL, UNC), with search. Links only. **OpenStax books are CC BY-NC-SA 4.0** (found while checking), so nothing of them is copied. Migration 0031 widens the Resource Hub kind/provider checks and adds the 61 links as drafts; "Check and publish drafts" publishes the ones that answer. Library E2E 10/10.
+- Packs now: core-v1 + core-v2 + core-v3 = 720 questions (264 Reading and Writing) — enough for three full adaptive mock exams from different questions.
+
 ### More content: 240 new questions (core-v2) and 30 text lessons (5 Nov)
 
 - **Question pack core-v2:** 240 new original questions, 8 for every SAT skill (3 easy / 3 medium / 2 hard; Math has 2–3 student-produced-response items per skill), with English and Uzbek explanations. Math keys were recomputed by scripts while writing; then an independent solver who never saw the keys answered all 240: 239 matched and the one difference was the solver's error (checked by hand). No question was flagged as ambiguous. The checker now also refuses a question or passage repeated from another pack. Admin → Import questions shows each pack with its own import button; imported questions are drafts until reviewed and published.
@@ -430,6 +436,7 @@ State on 2 Nov 2026, applied through the Supabase connector with the owner's con
 | 0028 my words (1 new table; no existing data touched) | Applied on 5 Nov with the owner's approval. Checked: RLS on; clients can only SELECT their own rows; anon has no access. |
 | 0029 topic videos (data only: 33 draft links in learning_resources; nothing published) | Applied on 5 Nov with the owner's approval. Checked: 33 drafts covering 30 skills, 0 published. An admin publishes them with **Check and publish drafts**. |
 | 0030 Telegram drills (2 new columns, default off; 1 new server-only table) | Applied on 5 Nov with the owner's approval. Checked: RLS on; clients have no access to drill items; nobody has drills turned on; 72 tables, all with RLS. |
+| 0031 library (kind/provider checks widened; 61 draft links; nothing published) | Not applied yet. |
 | 0025 class challenges (1 table, 1 column; no existing data touched) | Applied on 5 Nov with the owner's approval. Checked afterwards: RLS on, `authenticated` SELECT only, cannot update `leaderboard_opt_in`, `anon` nothing; every existing member starts opted out; 67 tables, all with RLS. |
 | 0024 class polls (2 tables; no existing data touched) | Applied on 4 Nov with the owner's approval. Checked afterwards: RLS on both; `authenticated` cannot read `correct_index`, can read the other columns, cannot write; `anon` nothing; 66 tables, all with RLS. |
 | 0023 live lesson joins (1 table; no existing data touched) | Applied on 4 Nov with the owner's approval. Checked afterwards: RLS on, one read policy, `authenticated` SELECT only, `anon` nothing; 64 tables, all with RLS. |
@@ -454,7 +461,7 @@ The security advisor reports two kinds of finding, both expected by design:
 supabase link --project-ref ncqqnjnozrymrmblixra
 supabase migration repair --status applied 20261102000100 20261102000200 20261102000300 20261102000400 \
   20261102000500 20261102000600 20261102000700 20261102000800 20261102000900 20261102001000 20261102001100 20261102001300 \
-  20261102001500 20261102001600 20261102001700 20261103001800 20261103001900 20261103002000 20261103002100 20261104002200 20261104002300 20261104002400 20261104002500 20261105002600 20261105002700 20261105002800 20261105002900 20261105003000
+  20261102001500 20261102001600 20261102001700 20261103001800 20261103001900 20261103002000 20261103002100 20261104002200 20261104002300 20261104002400 20261104002500 20261105002600 20261105002700 20261105002800 20261105002900 20261105003000 20261105003100
 supabase db push   # applies 0012 (if still wanted) and 0014
 ```
 
