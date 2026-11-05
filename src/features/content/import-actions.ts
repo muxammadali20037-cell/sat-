@@ -90,14 +90,14 @@ async function runImport({ db, profile }: Ctx, text: string, format: 'csv' | 'js
 }
 
 /**
- * Imports the question pack bundled with the app (content/question-packs → question-pack.generated.ts)
+ * Imports the question pack bundled with the app (content/question-packs → packs/<pack>.generated.ts)
  * as DRAFTS, through the same validation and RPC as a file import. Every bundled row carries the pack
  * id as a tag; rows whose passage + stem already exist among questions with that tag are skipped, so
  * pressing the button twice (or retrying after a partial import) never duplicates or loses a question. Imported drafts still go through review and publishing.
  */
-export async function importBundledQuestionPackAction(): Promise<ActionResult<ImportOutcome & { alreadyImported: number }>> {
+export async function importBundledQuestionPackAction(packId: string): Promise<ActionResult<ImportOutcome & { alreadyImported: number }>> {
   return adminAction(CONTENT_ROLES, async (ctx) => {
-    const pack = await loadBundledPack()
+    const pack = typeof packId === 'string' && /^[a-z0-9-]{1,40}$/.test(packId) ? await loadBundledPack(packId) : null
     if (!pack) return { ok: false, error: 'This build has no bundled question pack.' }
     const have = await importedPackKeys(ctx.db, pack.id)
     const todo = pack.rows.filter((r) => !have.has(packKey(r)))

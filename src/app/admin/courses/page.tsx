@@ -8,6 +8,8 @@ import { DataTable } from '@/components/ui/data-table'
 import { FilterBar, FilterSelect } from '@/components/admin/filter-bar'
 import { ContentStatusBadge } from '@/components/admin/status-badge'
 import { CourseDialogButton, DeleteCourseButton } from '@/components/admin/course-editor'
+import { ImportCoursesButton } from '@/components/admin/import-courses-button'
+import { missingBundledLessons } from '@/features/courses/bundle-status'
 import { CONTENT_STATUSES, CONTENT_STATUS_LABELS, COURSE_LEVEL_LABELS, type CourseLevel } from '@/features/content/constants'
 import { DbActionError, fetchAll } from '@/features/admin/server-utils'
 import { oneOf, uuidParam } from '@/features/admin/params'
@@ -27,10 +29,11 @@ export default async function CoursesPage({ searchParams }: { searchParams: Prom
   let q = db.from('courses').select('id, subject_id, slug, title, description, level, status, position, updated_at').order('position').order('title')
   if (subjectFilter) q = q.eq('subject_id', subjectFilter)
   if (statusFilter) q = q.eq('status', statusFilter)
-  const [subjects, courses, lessons] = await Promise.all([
+  const [subjects, courses, lessons, missing] = await Promise.all([
     db.from('subjects').select('id, name, position').order('position'),
     q,
     fetchAll((from, to) => db.from('lessons').select('id, course_id, status').order('id').range(from, to)),
+    canEdit ? missingBundledLessons(db).catch(() => 0) : Promise.resolve(0),
   ])
   if (subjects.error) throw new DbActionError(subjects.error)
   if (courses.error) throw new DbActionError(courses.error)
@@ -45,7 +48,14 @@ export default async function CoursesPage({ searchParams }: { searchParams: Prom
       <PageHeader
         title="Courses"
         description="Courses group lessons by subject. Students only see published courses and published lessons."
-        actions={canEdit ? <CourseDialogButton subjects={subjectList} /> : undefined}
+        actions={
+          canEdit ? (
+            <div className="flex flex-wrap gap-2">
+              {missing > 0 && <ImportCoursesButton missing={missing} />}
+              <CourseDialogButton subjects={subjectList} />
+            </div>
+          ) : undefined
+        }
       />
       <FilterBar action="/admin/courses" resetHref="/admin/courses">
         <FilterSelect name="subject" label="Subject" defaultValue={subjectFilter} options={[{ value: '', label: 'All subjects' }, ...subjectList.map((s) => ({ value: s.id, label: s.name }))]} />

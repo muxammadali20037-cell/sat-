@@ -11,7 +11,7 @@ Pack questions are never published automatically. Importing creates **drafts**, 
 | Question files | `content/question-packs/<pack>/<skill_code>.json`, one JSON array per skill |
 | Row format | The admin import format (`src/features/content/question-import.ts`): `skill_code`, `difficulty`, `question_type`, `stem`, options or `spr_answers`, `correct`, `explanation_en`, `explanation_uz`, `tags`, `source` |
 | Checker | `scripts/question-packs/check.ts` |
-| Bundled copy used by the admin import | `src/features/content/question-pack.generated.ts`, generated and server only (it contains answer keys) |
+| Bundled copy used by the admin import | `src/features/content/packs/<pack>.generated.ts` (one per pack, listed in `packs/index.generated.ts`), generated and server only (it contains answer keys) |
 | Admin import | Admin → Question bank → Import → "Starter question pack" |
 
 ## Rules every pack question follows

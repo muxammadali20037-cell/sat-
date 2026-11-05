@@ -1,0 +1,274 @@
+{
+ "slug": "digital-sat-math-core",
+ "subject": "math",
+ "title": "Digital SAT Math: core skills",
+ "description": "Short text lessons on the core skills in all four Math domains, each with a worked example, common traps and a quick self-check.",
+ "lessons": [
+  {
+   "slug": "solving-linear-equations",
+   "skill": "linear_equations_one_variable",
+   "title": "Solving linear equations in one variable",
+   "description": "Solve one-variable linear equations step by step and recognize equations with no solution or infinitely many solutions.",
+   "objectives": [
+    "Solve linear equations that contain fractions and parentheses",
+    "Recognize equations with no solution or infinitely many solutions",
+    "Check a solution by substitution"
+   ],
+   "minutes": 5,
+   "free_preview": true,
+   "body": "**Key idea**\n\nA linear equation in one variable states that two expressions are equal. Solving it means finding the value of the variable that makes the statement true. Every step must keep the two sides balanced: whatever you do to one side, you do to the other. A reliable order is to clear fractions, expand parentheses, collect the variable terms on one side and the constants on the other, and finally divide by the coefficient.\n\n**Worked example**\n\nSolve $\\frac{2}{3}(x - 6) + 5 = x - 3$.\n\n- Multiply every term by 3 to clear the fraction: $2(x - 6) + 15 = 3x - 9$.\n- Expand and simplify: $2x - 12 + 15 = 3x - 9$, so $2x + 3 = 3x - 9$.\n- Subtract $2x$ from both sides and add 9 to both sides: $x = 12$.\n\nCheck: $\\frac{2}{3}(12 - 6) + 5 = 4 + 5 = 9$ and $12 - 3 = 9$. Both sides match.\n\n**Special cases**\n\nIf the variable disappears and you are left with a true statement such as $4 = 4$, the equation has infinitely many solutions. If you are left with a false statement such as $4 = 7$, it has no solution. Questions often ask for the constant that produces one of these cases: make the coefficients of $x$ equal on both sides, then compare the constants.\n\n**Common traps**\n\n- Multiplying only some of the terms when clearing fractions.\n- Sign errors when distributing a negative: $-3(x - 4) = -3x + 12$.\n- Stopping at $2x = 10$ when the question asks for $x$, or giving $x$ when it asks for $3x + 1$.\n\n**Quick self-check**\n\nSolve $5 - 2(x + 1) = 9$. (Answer: $x = -3$.)"
+  },
+  {
+   "slug": "systems-of-linear-equations",
+   "skill": "systems_linear_equations",
+   "title": "Systems of two linear equations",
+   "description": "Solve systems by substitution and elimination, and decide how many solutions a system has.",
+   "objectives": [
+    "Solve a system of two linear equations by elimination or substitution",
+    "Determine whether a system has one, none or infinitely many solutions",
+    "Answer the quantity the question actually asks for"
+   ],
+   "minutes": 6,
+   "free_preview": false,
+   "body": "**Key idea**\n\nA system of two linear equations asks for the point $(x, y)$ that makes both equations true. On a graph, that point is where the two lines cross. Two lines can cross once (one solution), be parallel (no solution) or be the same line (infinitely many solutions).\n\n**Two solving methods**\n\n- Substitution: solve one equation for one variable and substitute the result into the other equation. This works well when a variable already has a coefficient of 1.\n- Elimination: add or subtract the equations, after multiplying if needed, so that one variable cancels. This is usually the faster method.\n\n**Worked example**\n\nSolve the system $2x + 3y = 12$ and $4x - y = 10$.\n\nMultiply the second equation by 3 to get $12x - 3y = 30$. Adding this to the first equation gives $14x = 42$, so $x = 3$. Substitute into $4x - y = 10$: $12 - y = 10$, so $y = 2$. Check in the first equation: $2(3) + 3(2) = 12$.\n\n**Number of solutions**\n\nRewrite both equations as $y = mx + b$. Different slopes give exactly one solution. Equal slopes with different intercepts give no solution. Equal slopes and equal intercepts give infinitely many solutions. For $ax + 2y = 5$ and $6x + 4y = 7$, there is no solution when $\\frac{a}{6} = \\frac{2}{4}$, so $a = 3$; the constants are not in the same ratio, so the lines are parallel and distinct.\n\n**Common traps**\n\n- Forgetting to multiply the constant when scaling an equation.\n- Answering with $x$ when the question asks for $y$, $x + y$ or $xy$.\n- Assuming that \"no solution\" means the answer is 0.\n\n**Quick self-check**\n\nIf $x + y = 9$ and $x - y = 3$, what is $xy$? (Answer: $x = 6$ and $y = 3$, so $xy = 18$.)"
+  },
+  {
+   "slug": "quadratic-functions-and-graphs",
+   "skill": "nonlinear_functions",
+   "title": "Quadratic functions and their graphs",
+   "description": "Read the vertex, intercepts and direction of a parabola from the three forms of a quadratic function.",
+   "objectives": [
+    "Identify the vertex, intercepts and direction of opening of a parabola",
+    "Choose the form of a quadratic that reveals the needed feature",
+    "Use the symmetry of a parabola to find its axis"
+   ],
+   "minutes": 6,
+   "free_preview": false,
+   "body": "**Key idea**\n\nA quadratic function has the form $f(x) = ax^2 + bx + c$, and its graph is a parabola. If $a > 0$ the parabola opens upward and has a minimum; if $a < 0$ it opens downward and has a maximum. Three forms of the same function each reveal something different:\n\n- Standard form $ax^2 + bx + c$: the $y$-intercept is $c$.\n- Vertex form $a(x - h)^2 + k$: the vertex is $(h, k)$.\n- Factored form $a(x - r)(x - s)$: the $x$-intercepts are $r$ and $s$.\n\n**Worked example**\n\nFor $f(x) = x^2 - 6x + 5$, find the vertex and the $x$-intercepts.\n\nThe $x$-coordinate of the vertex is $-\\frac{b}{2a} = \\frac{6}{2} = 3$, and $f(3) = 9 - 18 + 5 = -4$, so the vertex is $(3, -4)$. Factoring gives $f(x) = (x - 1)(x - 5)$, so the $x$-intercepts are $(1, 0)$ and $(5, 0)$. The vertex lies halfway between the intercepts because the parabola is symmetric about the line $x = 3$.\n\n**Using symmetry**\n\nIf two inputs give the same output, the axis of symmetry lies halfway between them. For example, if $g(2) = g(8)$ for a quadratic function $g$, the vertex has $x$-coordinate 5.\n\n**Common traps**\n\n- Reading the vertex of $a(x + 2)^2 + 7$ as $(2, 7)$ instead of $(-2, 7)$.\n- Confusing the minimum value (the $y$-coordinate of the vertex) with the $x$-value where it occurs.\n- Forgetting that $(-3)^2 = 9$ but $-3^2 = -9$.\n\n**Quick self-check**\n\nWhat is the minimum value of $f(x) = 2(x - 4)^2 + 3$, and where does it occur? (Answer: the minimum value is 3, at $x = 4$.)"
+  },
+  {
+   "slug": "rewriting-expressions",
+   "skill": "equivalent_expressions",
+   "title": "Rewriting algebraic expressions",
+   "description": "Expand, factor and combine expressions to recognize equivalent forms quickly and accurately.",
+   "objectives": [
+    "Expand products and special products correctly",
+    "Apply exponent rules and combine rational expressions",
+    "Use test values to confirm equivalence"
+   ],
+   "minutes": 6,
+   "free_preview": false,
+   "body": "**Key idea**\n\nTwo expressions are equivalent when they give the same value for every allowed input. You usually show equivalence by expanding, factoring or combining fractions, and then comparing the result with the answer choices.\n\n**Core tools**\n\n- Distribute and combine like terms: $3(x - 2) - (x + 4) = 2x - 10$.\n- Special products: $(a + b)^2 = a^2 + 2ab + b^2$ and $(a - b)(a + b) = a^2 - b^2$.\n- Exponent rules: $x^a \\cdot x^b = x^{a+b}$, $(x^a)^b = x^{ab}$ and $x^{-n} = \\frac{1}{x^n}$.\n- Rational expressions: rewrite them over a common denominator before adding.\n\n**Worked example**\n\nWhich expression is equivalent to $(x + 5)^2 - (x - 5)^2$?\n\nExpand each square: $(x^2 + 10x + 25) - (x^2 - 10x + 25)$. Distribute the subtraction to every term: $x^2 + 10x + 25 - x^2 + 10x - 25 = 20x$. Confirm with a test value: at $x = 1$, the original expression is $36 - 16 = 20$, and $20(1) = 20$.\n\n**Test-value strategy**\n\nWhen the answer choices are long, pick a simple value such as $x = 2$ (avoid 0 and 1, which can hide differences), evaluate the original expression and each choice, and keep only the choices that match.\n\n**Common traps**\n\n- Writing $(x + 5)^2$ as $x^2 + 25$ and losing the middle term.\n- Distributing a subtraction sign to the first term only.\n- Cancelling terms instead of factors: $\\frac{x + 6}{6}$ is not equal to $x$.\n\n**Quick self-check**\n\nExpand $(2x - 3)^2$. (Answer: $4x^2 - 12x + 9$.)"
+  },
+  {
+   "slug": "ratios-rates-and-units",
+   "skill": "ratios_rates_proportions_units",
+   "title": "Ratios, rates and unit conversion",
+   "description": "Set up proportions, work with rates and convert units so that they cancel correctly.",
+   "objectives": [
+    "Solve problems with ratios and constant rates",
+    "Convert units using conversion factors",
+    "Distinguish part-to-part from part-to-whole ratios"
+   ],
+   "minutes": 5,
+   "free_preview": false,
+   "body": "**Key idea**\n\nA ratio compares two quantities, and a rate is a ratio with different units, such as kilometers per hour. In a proportional relationship the ratio stays constant, so you can write an equation such as $\\frac{a}{b} = \\frac{c}{d}$ and cross-multiply.\n\n**Worked example: a constant rate**\n\nA printer produces 45 pages in 3 minutes. At this rate, how long does it take to print 240 pages? The rate is $45 \\div 3 = 15$ pages per minute, so the time is $240 \\div 15 = 16$ minutes.\n\n**Worked example: unit conversion**\n\nConvert 18 meters per second to kilometers per hour. Multiply by conversion factors arranged so that the unwanted units cancel:\n\n$$18 \\, \\frac{\\text{m}}{\\text{s}} \\times \\frac{3600 \\text{ s}}{1 \\text{ h}} \\times \\frac{1 \\text{ km}}{1000 \\text{ m}} = 64.8 \\, \\frac{\\text{km}}{\\text{h}}$$\n\n**Parts and totals**\n\nIf the ratio of red beads to blue beads is $2 : 5$, then red beads make up $\\frac{2}{7}$ of the total, not $\\frac{2}{5}$. Always check whether a question asks about part to part or part to whole.\n\n**Common traps**\n\n- Dividing when you should multiply in a conversion. Write the units and make sure they cancel.\n- Forgetting to square the factor for area units: $1 \\text{ m}^2 = 10{,}000 \\text{ cm}^2$, not 100.\n- Treating a constant difference as if it were a constant ratio.\n\n**Quick self-check**\n\nA car uses 6 liters of fuel per 100 kilometers. How many liters does it use for 350 kilometers? (Answer: 21 liters.)"
+  },
+  {
+   "slug": "percentages-and-percent-change",
+   "skill": "percentages",
+   "title": "Percentages and percent change",
+   "description": "Use multipliers to handle percent increases, decreases, percent change and reverse percentages.",
+   "objectives": [
+    "Model percent increases and decreases with multipliers",
+    "Compute percent change from an original value",
+    "Find an original value after a percent change"
+   ],
+   "minutes": 5,
+   "free_preview": false,
+   "body": "**Key idea**\n\nPercent means \"per hundred,\" so $p\\%$ of a quantity is $\\frac{p}{100}$ times that quantity. The most useful habit is to think in multipliers:\n\n- An increase of $p\\%$ multiplies the quantity by $1 + \\frac{p}{100}$.\n- A decrease of $p\\%$ multiplies the quantity by $1 - \\frac{p}{100}$.\n\n**Worked example**\n\nA phone costs \\$400. Its price rises by 10% and then falls by 10%. What is the final price? Compute $400 \\times 1.10 \\times 0.90 = 396$, so the final price is \\$396, not \\$400. The 10% decrease is taken from the larger amount, \\$440, so it removes more than the increase added.\n\n**Percent change**\n\n$$\\text{percent change} = \\frac{\\text{new} - \\text{original}}{\\text{original}} \\times 100$$\n\nIf attendance grows from 250 to 290, the change is $\\frac{40}{250} \\times 100 = 16\\%$.\n\n**Finding the original value**\n\nIf a price after a 20% discount is \\$64, then $0.8x = 64$, so $x = 80$. Adding 20% of 64 back on gives \\$76.80, which is wrong, because the discount was 20% of the original price, not of the sale price.\n\n**Common traps**\n\n- Dividing by the new value instead of the original value when computing percent change.\n- Adding successive percents: a 10% increase followed by a 20% increase is a 32% increase, not 30%.\n- Confusing \"percent of\" with \"percent more than\": 150 is 150% of 100 but 50% more than 100.\n\n**Quick self-check**\n\nA town of 5,000 people shrinks by 4%. What is the new population? (Answer: $5000 \\times 0.96 = 4800$.)"
+  },
+  {
+   "slug": "right-triangles-and-trigonometry",
+   "skill": "right_triangles_trigonometry",
+   "title": "Right triangles and trigonometric ratios",
+   "description": "Apply the Pythagorean theorem, special right triangles and sine, cosine and tangent.",
+   "objectives": [
+    "Apply the Pythagorean theorem to find a missing side",
+    "Use sine, cosine and tangent in right triangles",
+    "Use special right triangles and complementary angles"
+   ],
+   "minutes": 6,
+   "free_preview": false,
+   "body": "**Key idea**\n\nIn a right triangle with legs $a$ and $b$ and hypotenuse $c$, the Pythagorean theorem states that $a^2 + b^2 = c^2$. For an acute angle $\\theta$, the trigonometric ratios compare the sides:\n\n- $\\sin \\theta = \\frac{\\text{opposite}}{\\text{hypotenuse}}$\n- $\\cos \\theta = \\frac{\\text{adjacent}}{\\text{hypotenuse}}$\n- $\\tan \\theta = \\frac{\\text{opposite}}{\\text{adjacent}}$\n\n**Special right triangles**\n\nA $45^\\circ$-$45^\\circ$-$90^\\circ$ triangle has sides in the ratio $1 : 1 : \\sqrt{2}$. A $30^\\circ$-$60^\\circ$-$90^\\circ$ triangle has sides in the ratio $1 : \\sqrt{3} : 2$, with the shortest side opposite the $30^\\circ$ angle.\n\n**Worked example**\n\nIn right triangle $DEF$, angle $F$ is the right angle, $DF = 8$ and $EF = 15$. Find $\\sin D$.\n\nFirst find the hypotenuse: $DE = \\sqrt{8^2 + 15^2} = \\sqrt{289} = 17$. The side opposite angle $D$ is $EF = 15$, so $\\sin D = \\frac{15}{17}$.\n\n**Complementary angles**\n\nThe two acute angles of a right triangle add up to $90^\\circ$, so the sine of one equals the cosine of the other: $\\sin x^\\circ = \\cos(90 - x)^\\circ$. In the example, $\\cos E = \\sin D = \\frac{15}{17}$.\n\n**Common traps**\n\n- Labeling \"opposite\" and \"adjacent\" from the wrong angle. Always start from the angle named in the question.\n- Using the hypotenuse as a leg in the Pythagorean theorem.\n- Forgetting that similar triangles have equal trigonometric ratios, whatever their size.\n\n**Quick self-check**\n\nA right triangle has a $30^\\circ$ angle and a hypotenuse of length 10. How long is the side opposite the $30^\\circ$ angle? (Answer: 5.)"
+  },
+  {
+   "slug": "circles-arcs-sectors-equations",
+   "skill": "circles",
+   "title": "Circles: arcs, sectors and equations",
+   "description": "Find arc lengths and sector areas with proportions, and read circle equations by completing the square.",
+   "objectives": [
+    "Compute arc length and sector area from a central angle",
+    "Find the center and radius from a circle equation",
+    "Complete the square to rewrite an expanded circle equation"
+   ],
+   "minutes": 6,
+   "free_preview": false,
+   "body": "**Key idea**\n\nMany circle questions are really proportion questions. A central angle of $\\theta$ degrees cuts off the fraction $\\frac{\\theta}{360}$ of the whole circle, so:\n\n- arc length $= \\frac{\\theta}{360} \\times 2\\pi r$\n- sector area $= \\frac{\\theta}{360} \\times \\pi r^2$\n\nIn radians a full turn is $2\\pi$, so the arc length is $r\\theta$ and the sector area is $\\frac{1}{2}r^2\\theta$.\n\n**Worked example**\n\nA circle has radius 6. Find the arc length and the sector area for a central angle of $120^\\circ$. The fraction of the circle is $\\frac{120}{360} = \\frac{1}{3}$. Arc length: $\\frac{1}{3} \\times 12\\pi = 4\\pi$. Sector area: $\\frac{1}{3} \\times 36\\pi = 12\\pi$.\n\n**Circle equations**\n\nA circle with center $(h, k)$ and radius $r$ has the equation $(x - h)^2 + (y - k)^2 = r^2$. If the equation is expanded, complete the square. For $x^2 + y^2 - 4x + 6y = 12$:\n\n$$(x^2 - 4x + 4) + (y^2 + 6y + 9) = 12 + 4 + 9$$\n\nso $(x - 2)^2 + (y + 3)^2 = 25$, which gives center $(2, -3)$ and radius 5.\n\n**Useful facts**\n\n- A tangent line is perpendicular to the radius at the point of tangency.\n- An inscribed angle is half of the central angle that cuts off the same arc.\n- To convert degrees to radians, multiply by $\\frac{\\pi}{180}$.\n\n**Common traps**\n\n- Using $r^2$ as the radius when reading an equation.\n- Forgetting to add the completing-the-square constants to both sides.\n- Mixing degrees and radians in one formula.\n\n**Quick self-check**\n\nWhat is the radius of the circle $x^2 + y^2 + 10x = 0$? (Answer: $(x + 5)^2 + y^2 = 25$, so the radius is 5.)"
+  },
+  {
+   "slug": "linear-equations-in-two-variables",
+   "skill": "linear_equations_two_variables",
+   "title": "Linear equations in two variables",
+   "description": "Build and interpret equations of the form ax + by = c that model a fixed total made from two quantities.",
+   "objectives": [
+    "Write a two-variable linear equation from a context",
+    "Interpret the coefficients and intercepts in context",
+    "Find one variable when the other is given"
+   ],
+   "minutes": 5,
+   "free_preview": false,
+   "body": "**Key idea**\n\nAn equation such as $ax + by = c$ has two variables, so it has infinitely many solutions. Each solution is an ordered pair $(x, y)$, and together the solutions form a straight line. On the SAT these equations usually describe a fixed total built from two kinds of items: $a$ and $b$ are the values per item, $x$ and $y$ are the counts, and $c$ is the total.\n\n**Reading the parts**\n\n- A coefficient is the amount contributed by one unit of its variable.\n- The $x$-intercept, found by setting $y = 0$, is the value of $x$ when none of the second item is used.\n- The $y$-intercept, found by setting $x = 0$, is the value of $y$ when none of the first item is used.\n\n**Worked example**\n\nA school concert sells adult tickets for 8 dollars each and student tickets for 5 dollars each. Ticket sales total 230 dollars. Write an equation, and find the number of student tickets sold if 15 adult tickets were sold.\n\nLet $a$ be the number of adult tickets and $s$ the number of student tickets. Then $8a + 5s = 230$. Substitute $a = 15$: $120 + 5s = 230$, so $5s = 110$ and $s = 22$.\n\nIn this equation, the 8 means that each adult ticket adds 8 dollars to the total, not that 8 adult tickets were sold.\n\n**Strategy**\n\nName each variable in words first. Then check that every term has the same unit as the total, such as dollars.\n\n**Common traps**\n\n- Pairing a price with the wrong variable.\n- Confusing a coefficient (a value per item) with a count of items.\n- Forgetting that counts must be whole numbers.\n\n**Quick self-check**\n\nWhat are the intercepts of the graph of $3x + 4y = 24$? (Answer: the $x$-intercept is $(8, 0)$ and the $y$-intercept is $(0, 6)$.)"
+  },
+  {
+   "slug": "linear-functions-and-slope",
+   "skill": "linear_functions",
+   "title": "Linear functions, slope and intercept",
+   "description": "Find and interpret the slope and y-intercept of a linear function from points, tables, graphs and contexts.",
+   "objectives": [
+    "Compute slope from two points or a table",
+    "Write a linear function in slope-intercept form",
+    "Interpret slope and intercept in a real-world context"
+   ],
+   "minutes": 6,
+   "free_preview": false,
+   "body": "**Key idea**\n\nA linear function changes by the same amount for every one-unit increase in its input. In slope-intercept form, $f(x) = mx + b$, the slope $m$ is that constant rate of change and $b$ is the value of the function when $x = 0$. In a context, $m$ is usually a rate such as \"liters per minute,\" and $b$ is a starting amount.\n\n**Formulas**\n\n- Slope through $(x_1, y_1)$ and $(x_2, y_2)$: $m = \\frac{y_2 - y_1}{x_2 - x_1}$\n- Parallel lines have equal slopes.\n- Perpendicular lines have slopes whose product is $-1$, such as $2$ and $-\\frac{1}{2}$.\n\n**Worked example**\n\nThe amount of water in a tank, in liters, is a linear function $f$ of the time $x$, in minutes. If $f(2) = 50$ and $f(6) = 30$, write $f(x)$ and find when the tank is empty.\n\nThe slope is $\\frac{30 - 50}{6 - 2} = \\frac{-20}{4} = -5$, so the tank loses 5 liters per minute. Substitute a point: $50 = -5(2) + b$, so $b = 60$. Therefore $f(x) = -5x + 60$, and the tank started with 60 liters. Setting $f(x) = 0$ gives $x = 12$ minutes.\n\n**Strategy**\n\nWhen a table is given, check that equal steps in $x$ produce equal steps in $f(x)$; that confirms the function is linear. Then read the slope directly from the steps and work backward to the value at $x = 0$.\n\n**Common traps**\n\n- Subtracting the coordinates in different orders in the numerator and the denominator.\n- Calling $f(1)$ the starting value instead of $f(0)$.\n- Describing a negative slope as an increase; here the water decreases by 5 liters each minute.\n\n**Quick self-check**\n\nA line passes through $(1, 4)$ and $(3, 10)$. What is the value of $f(5)$? (Answer: the slope is 3 and $f(x) = 3x + 1$, so $f(5) = 16$.)"
+  },
+  {
+   "slug": "linear-inequalities",
+   "skill": "linear_inequalities",
+   "title": "Linear inequalities and their graphs",
+   "description": "Solve linear inequalities, model limits such as budgets and read the graphs of inequalities and systems.",
+   "objectives": [
+    "Solve a linear inequality and reverse the sign when needed",
+    "Model a word problem with an inequality and interpret the answer",
+    "Test whether a point satisfies an inequality or a system"
+   ],
+   "minutes": 5,
+   "free_preview": false,
+   "body": "**Key idea**\n\nA linear inequality is solved almost exactly like a linear equation, but its answer is a range of values instead of a single value. Words such as \"at most,\" \"no more than\" and \"maximum\" mean $\\le$; words such as \"at least,\" \"minimum\" and \"no fewer than\" mean $\\ge$.\n\n**Rules**\n\n- You may add or subtract any number on both sides.\n- Multiplying or dividing both sides by a negative number reverses the inequality sign.\n- On a graph, $<$ and $>$ use a dashed boundary line; $\\le$ and $\\ge$ use a solid line.\n- For $y > mx + b$, shade above the line; for $y < mx + b$, shade below it.\n\n**Worked example**\n\nA sports center charges a joining fee of 25 dollars plus 4 dollars per visit. Bekzod can spend at most 70 dollars. What is the greatest number of visits he can pay for?\n\nWrite $25 + 4v \\le 70$. Subtract 25: $4v \\le 45$. Divide by 4: $v \\le 11.25$. The number of visits must be a whole number, so the greatest possible number is 11, not 12.\n\n**Strategy**\n\nTo check whether a point is a solution, substitute it. Is $(2, 1)$ a solution of the system $y \\le -x + 4$ and $y > x - 3$? The first gives $1 \\le 2$, which is true, and the second gives $1 > -1$, which is also true, so the point satisfies the system. A point must satisfy every inequality in a system, not just one.\n\n**Common traps**\n\n- Forgetting to flip the sign after dividing by a negative number.\n- Rounding $11.25$ up to 12 when the context requires staying under a limit.\n- Reading \"at least\" as $\\le$.\n\n**Quick self-check**\n\nSolve $-3x + 5 > 17$. (Answer: $-3x > 12$, so $x < -4$.)"
+  },
+  {
+   "slug": "nonlinear-equations-and-systems",
+   "skill": "nonlinear_equations_systems",
+   "title": "Nonlinear equations and systems",
+   "description": "Solve quadratic and radical equations, count real solutions and solve systems that combine a line and a curve.",
+   "objectives": [
+    "Solve quadratic equations by factoring or the quadratic formula",
+    "Use the discriminant to count real solutions",
+    "Solve a system of a linear and a quadratic equation and check for extraneous solutions"
+   ],
+   "minutes": 6,
+   "free_preview": false,
+   "body": "**Key idea**\n\nA nonlinear equation contains a squared variable, a square root, a variable in a denominator or another curved relationship. The usual plan is to rearrange the equation into the form $ax^2 + bx + c = 0$ and then solve it by factoring or with the quadratic formula, $x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$.\n\n**The discriminant**\n\nThe quantity $b^2 - 4ac$ tells you how many real solutions there are:\n\n- positive: two real solutions\n- zero: exactly one real solution\n- negative: no real solutions\n\n**Worked example**\n\nSolve the system $y = x^2 - 4x + 7$ and $y = 2x - 1$.\n\nSet the expressions for $y$ equal: $x^2 - 4x + 7 = 2x - 1$. Rearrange: $x^2 - 6x + 8 = 0$, which factors as $(x - 2)(x - 4) = 0$. So $x = 2$ or $x = 4$. Substituting into the line gives the points $(2, 3)$ and $(4, 7)$. Graphically, the line crosses the parabola twice.\n\n**Checking radical equations**\n\nSquaring both sides can create false answers. For $\\sqrt{x + 6} = x$, squaring gives $x^2 - x - 6 = 0$, so $x = 3$ or $x = -2$. But $\\sqrt{4} = 2$, not $-2$, so only $x = 3$ works.\n\n**Strategy**\n\nOn the digital test, the built-in graphing calculator can confirm intersection points quickly. Use algebra when the question asks for a constant, such as the value that gives exactly one solution.\n\n**Common traps**\n\n- Dividing both sides by $x$ and losing the solution $x = 0$.\n- Skipping the check after squaring both sides.\n- Giving only the $x$-values when the question asks for the points.\n\n**Quick self-check**\n\nFor what value of $c$ does $x^2 - 8x + c = 0$ have exactly one real solution? (Answer: $64 - 4c = 0$, so $c = 16$.)"
+  },
+  {
+   "slug": "area-and-volume",
+   "skill": "area_volume",
+   "title": "Area, volume and scale factors",
+   "description": "Apply area and volume formulas and predict how measurements change when every length is scaled.",
+   "objectives": [
+    "Choose and apply the correct area or volume formula",
+    "Relate cones and pyramids to cylinders and prisms",
+    "Use scale factors for lengths, areas and volumes"
+   ],
+   "minutes": 5,
+   "free_preview": false,
+   "body": "**Key idea**\n\nArea measures the space inside a flat shape and uses square units; volume measures the space inside a solid and uses cubic units. The Digital SAT provides a reference sheet with the main formulas, so the skill being tested is choosing the right formula and using it carefully.\n\n**Formulas**\n\n- Rectangle: $A = \\ell w$; triangle: $A = \\frac{1}{2}bh$; circle: $A = \\pi r^2$\n- Rectangular prism: $V = \\ell w h$; cylinder: $V = \\pi r^2 h$\n- Cone: $V = \\frac{1}{3}\\pi r^2 h$; rectangular pyramid: $V = \\frac{1}{3}\\ell w h$\n- Sphere: $V = \\frac{4}{3}\\pi r^3$\n\n**Worked example**\n\nA cylinder has radius 3 cm and height 10 cm. A cone has the same base and the same height. Find both volumes.\n\nCylinder: $V = \\pi(3^2)(10) = 90\\pi$ cubic centimeters. The cone is one third of the matching cylinder: $V = \\frac{1}{3}(90\\pi) = 30\\pi$ cubic centimeters. Leave answers in terms of $\\pi$ when the choices do.\n\n**Scale factors**\n\nIf every length of a figure is multiplied by $k$, its area is multiplied by $k^2$ and its volume by $k^3$. Doubling the radius and the height of the cylinder above multiplies its volume by $2^3 = 8$, giving $720\\pi$.\n\n**Strategy**\n\nSketch the figure and label every given measurement. If a diameter is given, halve it before using a formula that needs the radius. Convert all lengths to the same unit first.\n\n**Common traps**\n\n- Using the diameter as the radius.\n- Multiplying the volume by $k$ instead of $k^3$ after scaling.\n- Using a slanted edge as the height of a cone or pyramid; the height is perpendicular to the base.\n\n**Quick self-check**\n\nA cube has a surface area of 54 square units. What is its volume? (Answer: each face has area 9, so the side is 3 and the volume is 27 cubic units.)"
+  },
+  {
+   "slug": "lines-angles-and-triangles",
+   "skill": "lines_angles_triangles",
+   "title": "Lines, angles and triangles",
+   "description": "Use angle relationships, parallel lines and similar triangles to find missing angles and lengths.",
+   "objectives": [
+    "Apply vertical, supplementary and parallel-line angle relationships",
+    "Use the triangle angle sum and the exterior angle rule",
+    "Set up proportions with similar triangles"
+   ],
+   "minutes": 6,
+   "free_preview": false,
+   "body": "**Key idea**\n\nMost geometry questions about lines and triangles rely on a short list of angle facts. Mark every angle you know on the figure, then look for the relationship that links a known angle to the unknown one.\n\n**Rules**\n\n- Vertical angles are equal, and angles that form a straight line add up to $180^\\circ$.\n- When a transversal crosses two parallel lines, corresponding angles and alternate interior angles are equal, and same-side interior angles add up to $180^\\circ$.\n- The angles of a triangle add up to $180^\\circ$.\n- An exterior angle of a triangle equals the sum of the two interior angles that are not next to it.\n- In an isosceles triangle, the angles opposite the equal sides are equal.\n- Similar triangles have equal corresponding angles and proportional corresponding sides.\n\n**Worked example**\n\nThe angles of a triangle measure $(2x + 10)^\\circ$, $(3x)^\\circ$ and $(x + 20)^\\circ$. Find the largest angle.\n\nAdd them: $6x + 30 = 180$, so $x = 25$. The angles are $60^\\circ$, $75^\\circ$ and $45^\\circ$, so the largest is $75^\\circ$.\n\n**Similar triangles**\n\nIn triangle $ABC$, segment $DE$ is parallel to $BC$, with $D$ on $AB$ and $E$ on $AC$. If $AD = 4$, $DB = 6$ and $DE = 5$, then triangle $ADE$ is similar to triangle $ABC$. Since $AB = 10$, the scale factor is $\\frac{10}{4}$, so $BC = 5 \\times \\frac{10}{4} = 12.5$.\n\n**Strategy**\n\nAfter finding $x$, substitute it back to get the angle that is asked for.\n\n**Common traps**\n\n- Using $DB$ instead of the whole side $AB$ in the proportion.\n- Assuming lines are parallel because the figure looks that way. Use only stated facts.\n- Stopping at $x = 25$ when the question asks for an angle.\n\n**Quick self-check**\n\nTwo interior angles of a triangle measure $40^\\circ$ and $75^\\circ$. What is the exterior angle at the third vertex? (Answer: $115^\\circ$.)"
+  },
+  {
+   "slug": "evaluating-statistical-claims",
+   "skill": "evaluating_statistical_claims",
+   "title": "Evaluating statistical claims",
+   "description": "Decide what a study's design allows you to conclude about a population and about cause and effect.",
+   "objectives": [
+    "Explain when results can be generalized to a population",
+    "Explain when a study supports a cause-and-effect conclusion",
+    "Recognize biased samples and conclusions that go too far"
+   ],
+   "minutes": 6,
+   "free_preview": false,
+   "body": "**Key idea**\n\nQuestions about statistical claims ask which conclusion a study supports. The answer depends on how the study was designed, not on how impressive the results look. Ask two separate questions.\n\n**Two design questions**\n\n- Was the sample selected at random from a population? If so, the results can be generalized to that population, and only to that population.\n- Were the treatments randomly assigned to the subjects? If so, the study can support a cause-and-effect conclusion. Without random assignment, the study shows only an association.\n\nA study can have both features, one, or neither, and each feature supports a different kind of conclusion.\n\n**Worked example**\n\nResearchers randomly selected 300 students from all high schools in one city. They then randomly assigned half of these students to use a vocabulary app for 20 minutes a day, while the other half did not use it. After two months, the app group scored noticeably higher on a vocabulary test.\n\nRandom selection lets the researchers generalize to high school students in that city. Random assignment lets them conclude that the app likely caused the improvement. They cannot extend the conclusion to all students in the country or to adults, because those groups were not sampled.\n\n**Strategy**\n\nUnderline how people were chosen (\"randomly selected,\" \"volunteers\") and how groups were formed (\"randomly assigned,\" \"chose to\"). Then match the conclusion to those words.\n\n**Common traps**\n\n- Treating an association in an observational study as proof of cause.\n- Generalizing to a larger or different population than the one sampled.\n- Assuming a large sample fixes a biased method. A large group of volunteers is still not a random sample.\n\n**Quick self-check**\n\nA gym posts an online survey, and 80% of the members who choose to respond say they exercise daily. Can this be generalized to all residents of the city? (Answer: no; the respondents volunteered, and only gym members were surveyed.)"
+  },
+  {
+   "slug": "sample-statistics-and-margin-of-error",
+   "skill": "inference_margin_of_error",
+   "title": "Sample statistics and margin of error",
+   "description": "Use a sample estimate and its margin of error to describe plausible values for a population.",
+   "objectives": [
+    "Build a plausible interval from an estimate and a margin of error",
+    "Draw a conclusion about a population from a random sample",
+    "Explain how sample size affects the margin of error"
+   ],
+   "minutes": 6,
+   "free_preview": false,
+   "body": "**Key idea**\n\nA random sample gives an estimate of a population value, such as a mean or a percentage. The margin of error describes how far the true population value could plausibly be from that estimate. The SAT treats the interval from (estimate $-$ margin) to (estimate $+$ margin) as the range of plausible values for the population value.\n\n**Rules**\n\n- The interval describes the population value, not individual members of the population.\n- A larger random sample generally produces a smaller margin of error, so the estimate is more precise.\n- The margin of error accounts only for random variation. It does not fix a biased sampling method.\n\n**Worked example**\n\nA random sample of 400 residents of a city of 50,000 finds that 62% support building a new park. The margin of error is 4 percentage points. Which conclusion is appropriate?\n\nThe plausible interval is $62\\% - 4\\% = 58\\%$ to $62\\% + 4\\% = 66\\%$. It is plausible that between 58% and 66% of all residents support the park. In numbers of people, that is between $0.58 \\times 50{,}000 = 29{,}000$ and $0.66 \\times 50{,}000 = 33{,}000$ residents.\n\nIt is not appropriate to say that exactly 62% of residents support the park.\n\n**Strategy**\n\nWhen comparing two groups, build both intervals. If the intervals overlap, the data do not clearly show that one population value is larger than the other.\n\n**Common traps**\n\n- Stating the sample estimate as the exact population value.\n- Using the interval to describe individual people, for example \"every resident sleeps between 6.9 and 7.5 hours.\"\n- Thinking that a larger sample increases the margin of error.\n\n**Quick self-check**\n\nA random sample of students has a mean sleep time of 7.2 hours, with a margin of error of 0.3 hours. Is 7.6 hours a plausible value for the population mean? (Answer: no; the plausible interval is 6.9 to 7.5 hours.)"
+  },
+  {
+   "slug": "mean-median-and-spread",
+   "skill": "one_variable_data",
+   "title": "Mean, median and spread",
+   "description": "Compare measures of center and spread and predict how outliers and changes to data affect them.",
+   "objectives": [
+    "Compute and compare the mean and the median",
+    "Predict the effect of an outlier on center and spread",
+    "Use the sum of the values to find a missing data point"
+   ],
+   "minutes": 5,
+   "free_preview": false,
+   "body": "**Key idea**\n\nOne-variable data questions describe a single list of values, often shown in a dot plot, histogram or box plot. You are asked about the center of the data (mean or median) and its spread (range or standard deviation).\n\n**Rules**\n\n- Mean: the sum of the values divided by the number of values.\n- Median: the middle value after sorting, or the average of the two middle values.\n- Range: the largest value minus the smallest value.\n- Standard deviation: a measure of how far the values typically lie from the mean. Data clustered near the mean has a smaller standard deviation.\n\n**Worked example**\n\nSeven students reported the hours they spent reading last week: 4, 6, 6, 7, 8, 9 and 30.\n\nThe sum is 70, so the mean is $\\frac{70}{7} = 10$. The median is the fourth value, 7. If the outlier 30 is removed, the mean drops to $\\frac{40}{6} \\approx 6.67$, while the median becomes $\\frac{6 + 7}{2} = 6.5$. The mean changed by more than 3 hours, but the median by only half an hour. Outliers pull the mean much more than the median.\n\n**Strategy**\n\nThink in sums. If the mean of 5 values is 12, their sum is 60, so a missing value is 60 minus the sum of the other four. Adding the same number to every value shifts the mean and the median but leaves the range and standard deviation unchanged.\n\n**Common traps**\n\n- Finding the median without sorting the data first.\n- Forgetting to use frequencies in a dot plot or frequency table.\n- Assuming that a larger range always means a larger standard deviation.\n\n**Quick self-check**\n\nThe mean of four test scores is 80. What fifth score makes the mean of all five scores 82? (Answer: $5 \\times 82 - 4 \\times 80 = 410 - 320 = 90$.)"
+  },
+  {
+   "slug": "probability-and-conditional-probability",
+   "skill": "probability_conditional",
+   "title": "Probability and conditional probability",
+   "description": "Find simple and conditional probabilities, especially from two-way tables, by choosing the correct group to divide by.",
+   "objectives": [
+    "Compute a probability as favorable outcomes over possible outcomes",
+    "Identify the group a conditional probability is restricted to",
+    "Read row and column totals in a two-way table"
+   ],
+   "minutes": 6,
+   "free_preview": false,
+   "body": "**Key idea**\n\nThe probability of an event is the number of favorable outcomes divided by the number of possible outcomes, when all outcomes are equally likely. A conditional probability restricts the possible outcomes to one group first. The phrase \"given that,\" or a description such as \"a student chosen from grade 11,\" tells you which group becomes the denominator.\n\n**Rules**\n\n- $P(A) = \\frac{\\text{outcomes in } A}{\\text{all outcomes}}$\n- $P(A \\text{ given } B) = \\frac{\\text{outcomes in both } A \\text{ and } B}{\\text{outcomes in } B}$\n- Probabilities are between 0 and 1, and $P(\\text{not } A) = 1 - P(A)$.\n\n**Worked example**\n\nA survey asked 200 students which section of the SAT they prefer:\n\n- Grade 10: Math 48, Reading and Writing 52 (total 100)\n- Grade 11: Math 66, Reading and Writing 34 (total 100)\n- Totals: Math 114, Reading and Writing 86\n\nIf one student is chosen at random, the probability of preferring Math is $\\frac{114}{200} = 0.57$. If the student is chosen from grade 11, the probability of preferring Math is $\\frac{66}{100} = 0.66$. If the student is chosen from those who prefer Math, the probability of being in grade 11 is $\\frac{66}{114} \\approx 0.579$. The numerator is the same in the last two questions, but the denominators differ.\n\n**Strategy**\n\nBefore calculating, say the group out loud: \"out of grade 11 students\" or \"out of Math fans.\" Find that group's total in the table and divide by it.\n\n**Common traps**\n\n- Dividing by the grand total when the question restricts the group.\n- Confusing $P(A \\text{ given } B)$ with $P(B \\text{ given } A)$.\n- Adding a row or column incorrectly; check that the totals agree.\n\n**Quick self-check**\n\nUsing the table, what is the probability that a student who prefers Reading and Writing is in grade 10? (Answer: $\\frac{52}{86} = \\frac{26}{43}$.)"
+  },
+  {
+   "slug": "scatterplots-and-lines-of-best-fit",
+   "skill": "two_variable_data",
+   "title": "Scatterplots and lines of best fit",
+   "description": "Interpret lines of best fit, make predictions and compare linear and exponential models of two-variable data.",
+   "objectives": [
+    "Interpret the slope and intercept of a line of best fit in context",
+    "Make predictions and compare them with actual values",
+    "Distinguish linear from exponential patterns"
+   ],
+   "minutes": 6,
+   "free_preview": false,
+   "body": "**Key idea**\n\nA scatterplot shows pairs of values for two variables. When the points follow a roughly straight pattern, a line of best fit models the relationship and can be used to make predictions. Most actual points lie somewhat above or below the line.\n\n**Reading a model**\n\n- Slope: the predicted change in $y$ for each one-unit increase in $x$.\n- $y$-intercept: the predicted value of $y$ when $x = 0$.\n- Actual minus predicted is positive for a point above the line and negative for a point below it.\n- A linear model adds the same amount each step; an exponential model multiplies by the same factor each step.\n\n**Worked example**\n\nThe height $y$, in centimeters, of a plant after $x$ weeks is modeled by $y = 1.8x + 12$.\n\nThe slope means the model predicts growth of about 1.8 cm per week. The intercept means the predicted height at week 0 is 12 cm. At week 10 the predicted height is $1.8(10) + 12 = 30$ cm. If the actual height at week 10 was 27 cm, the actual value is $27 - 30 = -3$ cm away from the prediction, so that point lies below the line.\n\n**Strategy**\n\nUse words such as \"predicted\" when interpreting a model, and include units. Be careful with predictions far outside the range of the data.\n\n**Common traps**\n\n- Treating the slope as an exact change rather than a predicted change.\n- Concluding that one variable causes the other just because they are strongly associated.\n- Choosing a linear model for data that grow by a constant percentage.\n\n**Quick self-check**\n\nThe price $y$, in thousands of dollars, of a used car of age $x$ years is modeled by $y = 24 - 2.5x$. What is the predicted price of a 4-year-old car, and what does $-2.5$ mean? (Answer: 14 thousand dollars; the predicted price drops by about 2.5 thousand dollars per year.)"
+  }
+ ]
+}

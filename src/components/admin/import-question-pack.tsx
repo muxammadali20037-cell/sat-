@@ -20,12 +20,12 @@ export function ImportQuestionPack({ id, total, skills, imported }: { id: string
   const reviewHref = `/admin/questions?view=review&tag=${encodeURIComponent(id)}`
 
   return (
-    <section aria-labelledby="pack-heading" className="mb-6 rounded-lg border border-border bg-card p-4 sm:p-5">
+    <section aria-labelledby={`pack-heading-${id}`} className="mb-6 rounded-lg border border-border bg-card p-4 sm:p-5">
       <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
         <div className="min-w-0">
-          <h2 id="pack-heading" className="flex items-center gap-2 text-base font-semibold">
+          <h2 id={`pack-heading-${id}`} className="flex items-center gap-2 text-base font-semibold">
             <PackageOpen className="size-5 shrink-0 text-primary" aria-hidden />
-            Starter question pack
+            {id === 'core-v1' ? 'Starter question pack' : `Question pack ${id}`}
           </h2>
           <p className="mt-1 max-w-prose text-sm text-muted-foreground">
             {total} original practice questions written for this platform across {skills} Digital SAT skill{skills === 1 ? '' : 's'}, with English and
@@ -53,7 +53,7 @@ export function ImportQuestionPack({ id, total, skills, imported }: { id: string
             loading={pending}
             onClick={() =>
               start(async () => {
-                const res = await importBundledQuestionPackAction()
+                const res = await importBundledQuestionPackAction(id)
                 if (!res.ok) {
                   toast.error(res.error)
                   return

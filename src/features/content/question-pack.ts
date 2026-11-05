@@ -19,22 +19,32 @@ export async function importedPackKeys(db: Db, packId: string): Promise<Set<stri
   return new Set((data ?? []).map(packKey))
 }
 
-/** The question pack bundled into this build, or null when the build has none. Contains answer keys: server only. */
-export async function loadBundledPack(): Promise<{ id: string; rows: PackRow[] } | null> {
-  const { QUESTION_PACK_ID, QUESTION_PACK_JSON } = await import('./question-pack.generated')
-  const rows = JSON.parse(QUESTION_PACK_JSON) as PackRow[]
-  return rows.length ? { id: QUESTION_PACK_ID, rows } : null
+export type BundledPack = { id: string; rows: PackRow[] }
+
+/** Every question pack bundled into this build (oldest first). Contains answer keys: server only. */
+export async function loadBundledPacks(): Promise<BundledPack[]> {
+  const { BUNDLED_PACKS } = await import('./packs/index.generated')
+  return BUNDLED_PACKS.map((p) => ({ id: p.id, rows: JSON.parse(p.json) as PackRow[] })).filter((p) => p.rows.length > 0)
 }
 
-/** How many questions the bundled pack holds and how many this environment already has (any status). */
-export async function bundledPackStatus(db: Db): Promise<{ id: string; total: number; skills: number; imported: number } | null> {
-  const pack = await loadBundledPack()
-  if (!pack) return null
-  const have = await importedPackKeys(db, pack.id)
-  return {
-    id: pack.id,
-    total: pack.rows.length,
-    skills: new Set(pack.rows.map((r) => r.skill_code)).size,
-    imported: pack.rows.filter((r) => have.has(packKey(r))).length,
-  }
+export async function loadBundledPack(id: string): Promise<BundledPack | null> {
+  return (await loadBundledPacks()).find((p) => p.id === id) ?? null
+}
+
+export type PackStatus = { id: string; total: number; skills: number; imported: number }
+
+/** For each bundled pack: how many questions it holds and how many this environment already has (any status). */
+export async function bundledPacksStatus(db: Db): Promise<PackStatus[]> {
+  const packs = await loadBundledPacks()
+  return Promise.all(
+    packs.map(async (pack) => {
+      const have = await importedPackKeys(db, pack.id)
+      return {
+        id: pack.id,
+        total: pack.rows.length,
+        skills: new Set(pack.rows.map((r) => r.skill_code)).size,
+        imported: pack.rows.filter((r) => have.has(packKey(r))).length,
+      }
+    }),
+  )
 }

@@ -6,7 +6,7 @@ import { PageHeader } from '@/components/layout/page-header'
 import { Breadcrumb } from '@/components/ui/breadcrumb'
 import { QuestionImportClient } from '@/components/admin/question-import-client'
 import { editorTaxonomy } from '@/features/admin/editor-taxonomy'
-import { bundledPackStatus } from '@/features/content/question-pack'
+import { bundledPacksStatus } from '@/features/content/question-pack'
 import { ImportQuestionPack } from '@/components/admin/import-question-pack'
 
 export const metadata: Metadata = { title: 'Import questions' }
@@ -14,7 +14,7 @@ export const metadata: Metadata = { title: 'Import questions' }
 export default async function QuestionImportPage() {
   await requireRole(CONTENT_ROLES, { next: '/admin/question-import' })
   const db = await createServerSupabase()
-  const [taxonomy, pack] = await Promise.all([editorTaxonomy(db), bundledPackStatus(db)])
+  const [taxonomy, packs] = await Promise.all([editorTaxonomy(db), bundledPacksStatus(db)])
   return (
     <>
       <PageHeader
@@ -22,7 +22,9 @@ export default async function QuestionImportPage() {
         title="Import questions"
         description="Bulk-create questions from CSV or JSON. Every row is validated first; valid rows are saved as drafts for review."
       />
-      {pack && <ImportQuestionPack {...pack} />}
+      {packs.map((p) => (
+        <ImportQuestionPack key={p.id} {...p} />
+      ))}
       <QuestionImportClient taxonomy={taxonomy} />
     </>
   )
