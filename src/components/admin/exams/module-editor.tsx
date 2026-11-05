@@ -177,7 +177,7 @@ function AutoFill({ data }: { data: ModuleEditorData }) {
       <CardHeader>
         <CardTitle>Auto-fill</CardTitle>
         <CardDescription>
-          Picks published questions by domain weight with {difficultyText}, spread across skills. Never reuses a question already in this exam.
+          Picks published questions by domain weight with {difficultyText}, spread across skills. Never reuses a question already in this exam, and prefers questions not used in any other mock exam (it only reuses them if the bank runs short).
         </CardDescription>
       </CardHeader>
       <CardContent className="grid grid-cols-1 gap-4">
