@@ -1,0 +1,140 @@
+[
+  {
+    "skill_code": "nonlinear_equations_systems",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "What are the solutions to the equation $x^2 + 5x - 36 = 0$?",
+    "option_a": "$-9$ and $4$",
+    "option_b": "$-4$ and $9$",
+    "option_c": "$-9$ and $-4$",
+    "option_d": "$-6$ and $6$",
+    "correct": "A",
+    "explanation_en": "Find two numbers whose product is $-36$ and whose sum is $5$: they are $9$ and $-4$. So $x^2 + 5x - 36 = (x + 9)(x - 4) = 0$.\n\nSetting each factor equal to $0$ gives $x = -9$ and $x = 4$. Check: $(-9)^2 + 5(-9) - 36 = 81 - 45 - 36 = 0$ and $16 + 20 - 36 = 0$.\n\nChoice B uses the numbers from the factors without changing their signs. Choice C gives two numbers whose product is $+36$, not $-36$. Choice D comes from ignoring the $5x$ term and solving $x^2 = 36$.",
+    "explanation_uz": "Ko‘paytmasi $-36$, yig‘indisi $5$ bo‘lgan ikki sonni topamiz: bular $9$ va $-4$. Demak $x^2 + 5x - 36 = (x + 9)(x - 4) = 0$.\n\nHar bir ko‘paytuvchini $0$ ga tenglab, $x = -9$ va $x = 4$ ni olamiz. Tekshirish: $(-9)^2 + 5(-9) - 36 = 81 - 45 - 36 = 0$ va $16 + 20 - 36 = 0$.\n\nB variantda ko‘paytuvchilardagi sonlar ishorasi o‘zgartirilmasdan olingan. C variantdagi sonlarning ko‘paytmasi $-36$ emas, $+36$. D variant $5x$ hadini tashlab, $x^2 = 36$ ni yechishdan kelib chiqqan.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "nonlinear_equations_systems",
+    "difficulty": "easy",
+    "question_type": "spr",
+    "stem": "A stone is dropped from a bridge. The height $h$, in meters, of the stone above the water $t$ seconds after it is dropped is modeled by the equation $h = 45 - 5t^2$. According to the model, how many seconds after the stone is dropped does it hit the water?",
+    "spr_answers": [
+      "3"
+    ],
+    "explanation_en": "The stone hits the water when its height is $0$: $45 - 5t^2 = 0$.\n\nThen $5t^2 = 45$, so $t^2 = 9$ and $t = 3$ or $t = -3$.\n\nTime after the drop cannot be negative, so the stone hits the water after $3$ seconds. A common error is entering $9$, the value of $t^2$, or $45$, the starting height.",
+    "explanation_uz": "Tosh suvga tushganda uning balandligi $0$ bo‘ladi: $45 - 5t^2 = 0$.\n\nU holda $5t^2 = 45$, ya’ni $t^2 = 9$ va $t = 3$ yoki $t = -3$.\n\nTosh tashlangandan keyingi vaqt manfiy bo‘lishi mumkin emas, demak tosh $3$ soniyadan keyin suvga tushadi. Ko‘p uchraydigan xato — $t^2$ ning qiymati $9$ ni yoki boshlang‘ich balandlik $45$ ni kiritish.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "nonlinear_equations_systems",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "Iodine-131, which is used in medicine, has a half-life of about $8$ days. The mass $M$, in milligrams, of iodine-131 remaining $t$ days after a $200$-milligram sample is prepared is modeled by the equation $M = 200\\left(\\dfrac{1}{2}\\right)^{t/8}$. According to the model, after how many days will $25$ milligrams of the sample remain?",
+    "option_a": "$3$",
+    "option_b": "$8$",
+    "option_c": "$16$",
+    "option_d": "$24$",
+    "correct": "D",
+    "explanation_en": "Set $M = 25$: $200\\left(\\frac{1}{2}\\right)^{t/8} = 25$, so $\\left(\\frac{1}{2}\\right)^{t/8} = \\frac{25}{200} = \\frac{1}{8} = \\left(\\frac{1}{2}\\right)^3$.\n\nTherefore $\\frac{t}{8} = 3$ and $t = 24$ days. This makes sense: $200 \\to 100 \\to 50 \\to 25$ takes three half-lives of $8$ days each.\n\nChoice A is the number of half-lives, not the number of days. Choice B is one half-life, when $100$ milligrams remain. Choice C is two half-lives, when $50$ milligrams remain.",
+    "explanation_uz": "$M = 25$ deb olamiz: $200\\left(\\frac{1}{2}\\right)^{t/8} = 25$, bundan $\\left(\\frac{1}{2}\\right)^{t/8} = \\frac{25}{200} = \\frac{1}{8} = \\left(\\frac{1}{2}\\right)^3$.\n\nDemak $\\frac{t}{8} = 3$ va $t = 24$ kun. Bu mantiqan to‘g‘ri: $200 \\to 100 \\to 50 \\to 25$ uchun har biri $8$ kunlik uchta yarim yemirilish davri kerak.\n\nA variant — kunlar soni emas, yarim yemirilish davrlari soni. B variant — bitta davr, bunda $100$ milligramm qoladi. C variant — ikkita davr, bunda $50$ milligramm qoladi.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "nonlinear_equations_systems",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "A ball is thrown upward from a balcony. The height $h$, in meters, of the ball above the ground $t$ seconds after it is thrown is modeled by the equation $h = -4.9t^2 + 19.6t + 1.5$. According to the model, at what times, in seconds, is the ball $16.2$ meters above the ground?",
+    "option_a": "$1$ only",
+    "option_b": "$1$ and $3$",
+    "option_c": "$2$ only",
+    "option_d": "$3$ only",
+    "correct": "B",
+    "explanation_en": "Set $h = 16.2$: $-4.9t^2 + 19.6t + 1.5 = 16.2$, so $-4.9t^2 + 19.6t - 14.7 = 0$.\n\nDivide every term by $-4.9$: $t^2 - 4t + 3 = 0$, which factors as $(t - 1)(t - 3) = 0$. So $t = 1$ or $t = 3$.\n\nBoth times are positive, so both are valid: the ball passes $16.2$ meters on the way up at $t = 1$ and on the way down at $t = 3$.\n\nChoices A and D keep only one of the two valid times. Choice C is the time of the maximum height; at $t = 2$ the height is $21.1$ meters.",
+    "explanation_uz": "$h = 16.2$ deb olamiz: $-4.9t^2 + 19.6t + 1.5 = 16.2$, ya’ni $-4.9t^2 + 19.6t - 14.7 = 0$.\n\nHar bir hadni $-4.9$ ga bo‘lamiz: $t^2 - 4t + 3 = 0$, bu $(t - 1)(t - 3) = 0$ ko‘rinishida ajraladi. Demak $t = 1$ yoki $t = 3$.\n\nIkkala vaqt ham musbat, demak ikkalasi ham to‘g‘ri: to‘p $16.2$ metrdan yuqoriga ko‘tarilayotganda $t = 1$ da, pastga tushayotganda $t = 3$ da o‘tadi.\n\nA va D variantlarda ikkita to‘g‘ri vaqtdan faqat bittasi olingan. C variant — eng yuqori nuqtaga yetish vaqti; $t = 2$ da balandlik $21.1$ metr.",
+    "estimated_seconds": 85,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "nonlinear_equations_systems",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "What are all the solutions to the equation $x - \\sqrt{x} = 12$?",
+    "option_a": "$9$ and $16$",
+    "option_b": "$9$",
+    "option_c": "$16$",
+    "option_d": "$4$",
+    "correct": "C",
+    "explanation_en": "Let $u = \\sqrt{x}$, so $x = u^2$ and $u \\ge 0$. The equation becomes $u^2 - u - 12 = 0$, which factors as $(u - 4)(u + 3) = 0$.\n\nSo $u = 4$ or $u = -3$. A square root cannot be negative, so $u = -3$ is rejected. Then $\\sqrt{x} = 4$ and $x = 16$. Check: $16 - \\sqrt{16} = 16 - 4 = 12$.\n\nChoices A and B square the rejected value $u = -3$ to get $x = 9$, but $9 - \\sqrt{9} = 6$, not $12$, so $9$ is extraneous. Choice D is the value of $u = \\sqrt{x}$, not $x$.",
+    "explanation_uz": "$u = \\sqrt{x}$ deb belgilaymiz, u holda $x = u^2$ va $u \\ge 0$. Tenglama $u^2 - u - 12 = 0$ ko‘rinishiga keladi va $(u - 4)(u + 3) = 0$ ga ajraladi.\n\nDemak $u = 4$ yoki $u = -3$. Kvadrat ildiz manfiy bo‘lmaydi, shuning uchun $u = -3$ tashlanadi. U holda $\\sqrt{x} = 4$ va $x = 16$. Tekshirish: $16 - \\sqrt{16} = 16 - 4 = 12$.\n\nA va B variantlarda tashlangan $u = -3$ kvadratga ko‘tarilib, $x = 9$ olingan, lekin $9 - \\sqrt{9} = 6$, $12$ emas, demak $9$ — chet ildiz. D variant — $x$ emas, $u = \\sqrt{x}$ ning qiymati.",
+    "estimated_seconds": 95,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "nonlinear_equations_systems",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "$$\\begin{aligned} y &= x^2 + 3 \\\\ y &= 4x \\end{aligned}$$\n\nIf $(x, y)$ is a solution to the given system of equations and $x > 1$, what is the value of $y$?",
+    "spr_answers": [
+      "12"
+    ],
+    "explanation_en": "Substitute $y = 4x$ into the first equation: $4x = x^2 + 3$, so $x^2 - 4x + 3 = 0$ and $(x - 1)(x - 3) = 0$.\n\nThe solutions are $x = 1$ and $x = 3$. Since $x > 1$, $x = 3$, and $y = 4(3) = 12$. Check in the first equation: $3^2 + 3 = 12$.\n\nA common error is entering $3$, the value of $x$, or $4$, the $y$-value of the other solution $(1, 4)$.",
+    "explanation_uz": "$y = 4x$ ni birinchi tenglamaga qo‘yamiz: $4x = x^2 + 3$, ya’ni $x^2 - 4x + 3 = 0$ va $(x - 1)(x - 3) = 0$.\n\nYechimlar $x = 1$ va $x = 3$. $x > 1$ bo‘lgani uchun $x = 3$ va $y = 4(3) = 12$. Birinchi tenglamada tekshiramiz: $3^2 + 3 = 12$.\n\nKo‘p uchraydigan xato — $x$ ning qiymati $3$ ni yoki boshqa yechim $(1, 4)$ dagi $y$ qiymati $4$ ni kiritish.",
+    "estimated_seconds": 80,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "nonlinear_equations_systems",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "$$\\begin{aligned} y &= 2x^2 - 3x + k \\\\ y &= x + 1 \\end{aligned}$$\n\nIn the given system of equations, $k$ is a constant. If the system has no real solutions, which of the following could be the value of $k$?",
+    "option_a": "$1$",
+    "option_b": "$2$",
+    "option_c": "$3$",
+    "option_d": "$4$",
+    "correct": "D",
+    "explanation_en": "Set the expressions for $y$ equal: $2x^2 - 3x + k = x + 1$, so $2x^2 - 4x + (k - 1) = 0$.\n\nThe system has no real solutions when this quadratic has a negative discriminant: $(-4)^2 - 4(2)(k - 1) < 0$, so $16 - 8k + 8 < 0$, which gives $24 < 8k$ and $k > 3$. Of the choices, only $k = 4$ works.\n\nChoice C, $k = 3$, makes the discriminant exactly $0$, so the line touches the parabola at one point, $(1, 2)$. Choices A and B make the discriminant positive, giving two intersection points.",
+    "explanation_uz": "$y$ uchun ifodalarni tenglashtiramiz: $2x^2 - 3x + k = x + 1$, ya’ni $2x^2 - 4x + (k - 1) = 0$.\n\nBu kvadrat tenglamaning diskriminanti manfiy bo‘lsa, sistema haqiqiy yechimga ega emas: $(-4)^2 - 4(2)(k - 1) < 0$, ya’ni $16 - 8k + 8 < 0$, bundan $24 < 8k$ va $k > 3$. Variantlardan faqat $k = 4$ mos keladi.\n\nC variantda, $k = 3$ da, diskriminant aynan $0$ ga teng, ya’ni to‘g‘ri chiziq parabolaga bitta nuqtada, $(1, 2)$ da urinadi. A va B variantlarda diskriminant musbat, ikkita kesishish nuqtasi bor.",
+    "estimated_seconds": 110,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "nonlinear_equations_systems",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "$$\\begin{aligned} y &= x^2 - 6x + 11 \\\\ y &= -x^2 + 2x + 5 \\end{aligned}$$\n\nWhat is the sum of the $y$-coordinates of all the solutions $(x, y)$ to the given system of equations?",
+    "spr_answers": [
+      "8"
+    ],
+    "explanation_en": "Set the expressions for $y$ equal: $x^2 - 6x + 11 = -x^2 + 2x + 5$, so $2x^2 - 8x + 6 = 0$. Dividing by $2$ gives $x^2 - 4x + 3 = 0$, or $(x - 1)(x - 3) = 0$.\n\nFor $x = 1$: $y = 1 - 6 + 11 = 6$. For $x = 3$: $y = 9 - 18 + 11 = 2$. (Both values check in the second equation: $-1 + 2 + 5 = 6$ and $-9 + 6 + 5 = 2$.)\n\nThe sum of the $y$-coordinates is $6 + 2 = 8$. A common error is entering $4$, the sum of the $x$-coordinates.",
+    "explanation_uz": "$y$ uchun ifodalarni tenglashtiramiz: $x^2 - 6x + 11 = -x^2 + 2x + 5$, ya’ni $2x^2 - 8x + 6 = 0$. $2$ ga bo‘lsak, $x^2 - 4x + 3 = 0$, yoki $(x - 1)(x - 3) = 0$.\n\n$x = 1$ da: $y = 1 - 6 + 11 = 6$. $x = 3$ da: $y = 9 - 18 + 11 = 2$. (Ikkala qiymat ikkinchi tenglamani ham qanoatlantiradi: $-1 + 2 + 5 = 6$ va $-9 + 6 + 5 = 2$.)\n\n$y$ koordinatalar yig‘indisi $6 + 2 = 8$. Ko‘p uchraydigan xato — $x$ koordinatalar yig‘indisi $4$ ni kiritish.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  }
+]

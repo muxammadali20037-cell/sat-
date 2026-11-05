@@ -1,0 +1,141 @@
+[
+  {
+    "skill_code": "area_volume",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "A rectangular cotton field is 120 meters long and 85 meters wide. What is the area, in square meters, of the field?",
+    "option_a": "205",
+    "option_b": "410",
+    "option_c": "5,100",
+    "option_d": "10,200",
+    "correct": "D",
+    "explanation_en": "The area of a rectangle is length times width: $A = 120 \\cdot 85 = 10{,}200$ square meters, so choice D is correct.\n\nChoice A (205) is $120 + 85$, the sum of the two dimensions. Choice B (410) is $2(120 + 85)$, the perimeter of the field, not its area. Choice C (5,100) is half of the correct area; the factor $\\frac{1}{2}$ belongs in the area of a triangle, not a rectangle.",
+    "explanation_uz": "To‘g‘ri to‘rtburchakning yuzasi uzunlik bilan enining ko‘paytmasiga teng: $A = 120 \\cdot 85 = 10{,}200$ kvadrat metr, demak to‘g‘ri javob D.\n\nA (205) — bu $120 + 85$, ya’ni ikki o‘lchamning yig‘indisi. B (410) — bu $2(120 + 85)$, ya’ni maydonning perimetri, yuzasi emas. C (5,100) — to‘g‘ri yuzaning yarmi; $\\frac{1}{2}$ ko‘paytuvchi to‘g‘ri to‘rtburchak uchun emas, uchburchak yuzasi uchun ishlatiladi.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "area_volume",
+    "difficulty": "easy",
+    "question_type": "spr",
+    "stem": "A plot of land is shaped like a triangle. One side of the plot is 30 meters long, and the perpendicular distance from the opposite corner of the plot to the line containing that side is 18 meters. What is the area, in square meters, of the plot?",
+    "spr_answers": [
+      "270"
+    ],
+    "explanation_en": "The 30-meter side is a base, and the 18-meter perpendicular distance is the matching height. The area of a triangle is $A = \\frac{1}{2}bh = \\frac{1}{2}(30)(18) = 270$ square meters.\n\nCommon mistake: $30 \\cdot 18 = 540$ forgets the factor $\\frac{1}{2}$; that would be the area of a rectangle with the same base and height.",
+    "explanation_uz": "30 metrli tomon asos, 18 metrli perpendikulyar masofa esa unga mos balandlik. Uchburchak yuzasi $A = \\frac{1}{2}bh = \\frac{1}{2}(30)(18) = 270$ kvadrat metr.\n\nKo‘p uchraydigan xato: $30 \\cdot 18 = 540$ — bunda $\\frac{1}{2}$ ko‘paytuvchi unutilgan; bu asosi va balandligi xuddi shunday bo‘lgan to‘g‘ri to‘rtburchakning yuzasi bo‘lardi.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "area_volume",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "A water tank is shaped like a right circular cylinder with an inside radius of 5 meters and an inside height of 6 meters. What is the volume, in cubic meters, of the inside of the tank?",
+    "option_a": "$30\\pi$",
+    "option_b": "$60\\pi$",
+    "option_c": "$150\\pi$",
+    "option_d": "$600\\pi$",
+    "correct": "C",
+    "explanation_en": "The volume of a cylinder is $V = \\pi r^2 h = \\pi (5)^2 (6) = 150\\pi$ cubic meters, so choice C is correct.\n\nChoice A ($30\\pi$) is $\\pi r h$; the radius was not squared. Choice B ($60\\pi$) is $2\\pi r h$, the area of the curved side of the tank, not its volume. Choice D ($600\\pi$) uses the diameter, 10, in place of the radius: $\\pi (10)^2 (6)$.",
+    "explanation_uz": "Silindr hajmi $V = \\pi r^2 h = \\pi (5)^2 (6) = 150\\pi$ kub metr, demak to‘g‘ri javob C.\n\nA ($30\\pi$) — bu $\\pi r h$; radius kvadratga oshirilmagan. B ($60\\pi$) — bu $2\\pi r h$, ya’ni bakning yon sirti yuzasi, hajmi emas. D ($600\\pi$) — radius o‘rniga diametr (10) olingan: $\\pi (10)^2 (6)$.",
+    "estimated_seconds": 65,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "area_volume",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "The roof of a pavilion is a dome shaped like a hemisphere (half of a sphere) with a diameter of 12 meters. The curved outer surface of the dome, not including the flat circular base, will be covered with blue tiles. What is the area, in square meters, of the surface to be tiled?",
+    "option_a": "$36\\pi$",
+    "option_b": "$72\\pi$",
+    "option_c": "$144\\pi$",
+    "option_d": "$288\\pi$",
+    "correct": "B",
+    "explanation_en": "The radius is half the diameter: $r = 6$ meters. A sphere has surface area $4\\pi r^2$, so the curved surface of a hemisphere is half of that: $2\\pi r^2 = 2\\pi (6)^2 = 72\\pi$ square meters. Choice B is correct.\n\nChoice A ($36\\pi$) is $\\pi r^2$, the area of the flat circular base. Choice C ($144\\pi$) is $4\\pi r^2$, the surface area of a whole sphere. Choice D ($288\\pi$) uses the diameter, 12, as the radius in $2\\pi r^2$.",
+    "explanation_uz": "Radius diametrning yarmiga teng: $r = 6$ metr. Sfera sirtining yuzasi $4\\pi r^2$, demak yarim sferaning egri sirti uning yarmi: $2\\pi r^2 = 2\\pi (6)^2 = 72\\pi$ kvadrat metr. To‘g‘ri javob B.\n\nA ($36\\pi$) — bu $\\pi r^2$, ya’ni gumbazning tekis doiraviy asosi yuzasi. C ($144\\pi$) — bu $4\\pi r^2$, butun sferaning sirt yuzasi. D ($288\\pi$) — $2\\pi r^2$ formulasida radius o‘rniga diametr (12) olingan.",
+    "estimated_seconds": 85,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "area_volume",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "A solid concrete wheelchair ramp is shaped like a right triangular prism. Each of its two triangular ends is a right triangle with a horizontal leg of 6 meters along the ground and a vertical leg of 0.5 meter. The ramp is 1.5 meters wide, which is the distance between the two triangular ends. What is the volume, in cubic meters, of concrete in the ramp?",
+    "spr_answers": [
+      "2.25",
+      "9/4"
+    ],
+    "explanation_en": "The volume of a prism is the area of its base (here, the triangular end) times the distance between the two ends. The triangular end has area $\\frac{1}{2}(6)(0.5) = 1.5$ square meters, so the volume is $1.5 \\cdot 1.5 = 2.25$ cubic meters.\n\nCommon mistake: $6 \\cdot 0.5 \\cdot 1.5 = 4.5$ treats the ramp as a rectangular box and forgets the factor $\\frac{1}{2}$ for the triangle.",
+    "explanation_uz": "Prizma hajmi asos yuzasini (bu yerda uchburchak shaklidagi uchini) ikki uch orasidagi masofaga ko‘paytirishga teng. Uchburchak yuzasi $\\frac{1}{2}(6)(0.5) = 1.5$ kvadrat metr, demak hajm $1.5 \\cdot 1.5 = 2.25$ kub metr.\n\nKo‘p uchraydigan xato: $6 \\cdot 0.5 \\cdot 1.5 = 4.5$ — bunda pandus to‘g‘ri burchakli quti deb olingan va uchburchak uchun $\\frac{1}{2}$ ko‘paytuvchi unutilgan.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "area_volume",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "A stone monument is shaped like a pyramid with a square base. Each side of the base is 9 meters long, and the height of the pyramid (the perpendicular distance from the top vertex to the base) is 12 meters. What is the volume, in cubic meters, of the monument?",
+    "option_a": "324",
+    "option_b": "432",
+    "option_c": "648",
+    "option_d": "972",
+    "correct": "A",
+    "explanation_en": "The volume of a pyramid is $V = \\frac{1}{3}Bh$, where $B$ is the area of the base. Here $B = 9^2 = 81$ square meters, so $V = \\frac{1}{3}(81)(12) = 324$ cubic meters. Choice A is correct.\n\nChoice B (432) is $\\frac{1}{3}(12^2)(9)$; it squares the height instead of the base side. Choice C (648) uses $\\frac{1}{2}$ instead of $\\frac{1}{3}$. Choice D (972) is $81 \\cdot 12$, the volume of a prism with the same base and height; it forgets the $\\frac{1}{3}$.",
+    "explanation_uz": "Piramida hajmi $V = \\frac{1}{3}Bh$, bu yerda $B$ — asos yuzasi. Bu yerda $B = 9^2 = 81$ kvadrat metr, demak $V = \\frac{1}{3}(81)(12) = 324$ kub metr. To‘g‘ri javob A.\n\nB (432) — bu $\\frac{1}{3}(12^2)(9)$; asos tomoni o‘rniga balandlik kvadratga oshirilgan. C (648) — $\\frac{1}{3}$ o‘rniga $\\frac{1}{2}$ olingan. D (972) — bu $81 \\cdot 12$, ya’ni asosi va balandligi bir xil bo‘lgan prizmaning hajmi; $\\frac{1}{3}$ unutilgan.",
+    "estimated_seconds": 85,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "area_volume",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "A grain silo is made of a right circular cylinder with a hemisphere (half of a sphere) on top. The cylinder and the hemisphere both have a radius of 3 meters, and the flat face of the hemisphere fits exactly on the top of the cylinder. The total height of the silo, from the ground to the highest point of the hemisphere, is 13 meters. What is the total volume, in cubic meters, of the silo?",
+    "option_a": "$90\\pi$",
+    "option_b": "$99\\pi$",
+    "option_c": "$108\\pi$",
+    "option_d": "$135\\pi$",
+    "correct": "C",
+    "explanation_en": "The hemisphere is 3 meters tall (its radius), so the cylinder is $13 - 3 = 10$ meters tall. Cylinder: $\\pi (3)^2 (10) = 90\\pi$. Hemisphere: $\\frac{1}{2} \\cdot \\frac{4}{3}\\pi (3)^3 = 18\\pi$. Total: $90\\pi + 18\\pi = 108\\pi$ cubic meters, so choice C is correct.\n\nChoice A ($90\\pi$) is the cylinder alone. Choice B ($99\\pi$) treats the top as a cone of height 3: $\\frac{1}{3}\\pi(3)^2(3) = 9\\pi$. Choice D ($135\\pi$) uses the full 13 meters as the height of the cylinder: $117\\pi + 18\\pi$.",
+    "explanation_uz": "Yarim sferaning balandligi uning radiusiga, ya’ni 3 metrga teng, shuning uchun silindrning balandligi $13 - 3 = 10$ metr. Silindr: $\\pi (3)^2 (10) = 90\\pi$. Yarim sfera: $\\frac{1}{2} \\cdot \\frac{4}{3}\\pi (3)^3 = 18\\pi$. Jami: $90\\pi + 18\\pi = 108\\pi$ kub metr, demak to‘g‘ri javob C.\n\nA ($90\\pi$) — faqat silindr hajmi. B ($99\\pi$) — tepa qism balandligi 3 bo‘lgan konus deb olingan: $\\frac{1}{3}\\pi(3)^2(3) = 9\\pi$. D ($135\\pi$) — silindr balandligi sifatida butun 13 metr olingan: $117\\pi + 18\\pi$.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "area_volume",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "On a map, 1 centimeter represents an actual distance of 200 meters. A farm plot is shown on the map as a region with an area of 7.5 square centimeters. If 1 hectare equals 10,000 square meters, what is the actual area, in hectares, of the farm plot?",
+    "spr_answers": [
+      "30"
+    ],
+    "explanation_en": "Lengths scale by 200, so areas scale by $200^2$: 1 square centimeter on the map represents $200 \\cdot 200 = 40{,}000$ square meters. The actual area is $7.5 \\cdot 40{,}000 = 300{,}000$ square meters, which is $\\frac{300{,}000}{10{,}000} = 30$ hectares.\n\nCommon mistake: multiplying by 200 only once gives $7.5 \\cdot 200 = 1{,}500$ square meters, or 0.15 hectare. Areas must be scaled by the square of the length scale.",
+    "explanation_uz": "Uzunliklar 200 marta kattalashadi, demak yuzalar $200^2$ marta kattalashadi: xaritadagi 1 kvadrat santimetr $200 \\cdot 200 = 40{,}000$ kvadrat metrga mos keladi. Haqiqiy yuza $7.5 \\cdot 40{,}000 = 300{,}000$ kvadrat metr, ya’ni $\\frac{300{,}000}{10{,}000} = 30$ gektar.\n\nKo‘p uchraydigan xato: faqat bir marta 200 ga ko‘paytirish $7.5 \\cdot 200 = 1{,}500$ kvadrat metr, ya’ni 0.15 gektar beradi. Yuzalar uzunlik masshtabining kvadratiga ko‘paytirilishi kerak.",
+    "estimated_seconds": 115,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  }
+]

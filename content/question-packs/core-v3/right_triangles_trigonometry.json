@@ -1,0 +1,143 @@
+[
+  {
+    "skill_code": "right_triangles_trigonometry",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "A ladder 6.5 meters long leans against a vertical wall. The foot of the ladder is on level ground, 2.5 meters from the base of the wall. How high up the wall, in meters, does the top of the ladder reach?",
+    "option_a": "4",
+    "option_b": "6",
+    "option_c": "9",
+    "option_d": "36",
+    "correct": "B",
+    "explanation_en": "The wall, the ground, and the ladder form a right triangle with the ladder as the hypotenuse. By the Pythagorean theorem, $h^2 + 2.5^2 = 6.5^2$, so $h^2 = 42.25 - 6.25 = 36$ and $h = 6$ meters. Choice B is correct.\n\nChoice A (4) is $6.5 - 2.5$; side lengths of a right triangle cannot simply be subtracted. Choice C (9) is $6.5 + 2.5$. Choice D (36) is $h^2$; the square root was not taken.",
+    "explanation_uz": "Devor, yer va narvon to‘g‘ri burchakli uchburchak hosil qiladi, narvon — gipotenuza. Pifagor teoremasiga ko‘ra $h^2 + 2.5^2 = 6.5^2$, demak $h^2 = 42.25 - 6.25 = 36$ va $h = 6$ metr. To‘g‘ri javob B.\n\nA (4) — bu $6.5 - 2.5$; to‘g‘ri burchakli uchburchak tomonlarini oddiygina ayirib bo‘lmaydi. C (9) — bu $6.5 + 2.5$. D (36) — bu $h^2$; kvadrat ildiz chiqarilmagan.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "right_triangles_trigonometry",
+    "difficulty": "easy",
+    "question_type": "spr",
+    "stem": "In a right triangle, $A$ is one of the acute angles and $\\cos A = 0.6$. What is the value of $\\sin A$?",
+    "spr_answers": [
+      "0.8",
+      ".8",
+      "4/5"
+    ],
+    "explanation_en": "Since $\\cos A = 0.6 = \\frac{3}{5}$, the side adjacent to $A$ and the hypotenuse are in the ratio $3 : 5$. Using the 3-4-5 right triangle, the side opposite $A$ is 4, so $\\sin A = \\frac{4}{5} = 0.8$. (Equivalently, $\\sin^2 A = 1 - 0.36 = 0.64$.)\n\nCommon mistake: $1 - 0.6 = 0.4$ is not correct; it is $\\sin^2 A + \\cos^2 A$ that equals 1, not $\\sin A + \\cos A$.",
+    "explanation_uz": "$\\cos A = 0.6 = \\frac{3}{5}$ bo‘lgani uchun $A$ ga yopishgan katet va gipotenuza $3 : 5$ nisbatda. 3-4-5 to‘g‘ri burchakli uchburchakdan $A$ ga qarama-qarshi katet 4 ga teng, demak $\\sin A = \\frac{4}{5} = 0.8$. (Boshqacha: $\\sin^2 A = 1 - 0.36 = 0.64$.)\n\nKo‘p uchraydigan xato: $1 - 0.6 = 0.4$ noto‘g‘ri; 1 ga $\\sin A + \\cos A$ emas, $\\sin^2 A + \\cos^2 A$ teng.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "right_triangles_trigonometry",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "A straight ramp rises 0.7 meter over a horizontal distance of 2.4 meters. What is the length, in meters, of the sloped surface of the ramp?",
+    "option_a": "2.5",
+    "option_b": "3.1",
+    "option_c": "6.25",
+    "option_d": "9.61",
+    "correct": "A",
+    "explanation_en": "The rise and the horizontal distance are the legs of a right triangle, and the ramp is the hypotenuse: $\\sqrt{0.7^2 + 2.4^2} = \\sqrt{0.49 + 5.76} = \\sqrt{6.25} = 2.5$ meters. Choice A is correct.\n\nChoice B (3.1) is $0.7 + 2.4$, the sum of the legs. Choice C (6.25) is the square of the length; the square root was not taken. Choice D (9.61) is $(0.7 + 2.4)^2$.",
+    "explanation_uz": "Ko‘tarilish balandligi va gorizontal masofa to‘g‘ri burchakli uchburchakning katetlari, pandus esa gipotenuza: $\\sqrt{0.7^2 + 2.4^2} = \\sqrt{0.49 + 5.76} = \\sqrt{6.25} = 2.5$ metr. To‘g‘ri javob A.\n\nB (3.1) — bu $0.7 + 2.4$, katetlar yig‘indisi. C (6.25) — uzunlikning kvadrati; ildiz chiqarilmagan. D (9.61) — bu $(0.7 + 2.4)^2$.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "right_triangles_trigonometry",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "A surveyor stands on level ground 24 meters from the base of a vertical minaret. From ground level at that spot, the angle of elevation to the top of the minaret is $60^\\circ$. What is the height, in meters, of the minaret?",
+    "option_a": "$8\\sqrt{3}$",
+    "option_b": "12",
+    "option_c": "$24\\sqrt{3}$",
+    "option_d": "48",
+    "correct": "C",
+    "explanation_en": "The height is the side opposite the $60^\\circ$ angle, and the 24-meter distance is the adjacent side, so $\\tan 60^\\circ = \\frac{h}{24}$. Since $\\tan 60^\\circ = \\sqrt{3}$, $h = 24\\sqrt{3}$ meters (about 41.6 meters). Choice C is correct.\n\nChoice A ($8\\sqrt{3}$) uses $\\tan 30^\\circ = \\frac{\\sqrt{3}}{3}$ instead of $\\tan 60^\\circ$. Choice B (12) is $24 \\cos 60^\\circ$, which mixes up the ratio. Choice D (48) is $\\frac{24}{\\cos 60^\\circ}$, the length of the line of sight (the hypotenuse), not the height.",
+    "explanation_uz": "Balandlik $60^\\circ$ li burchakka qarama-qarshi katet, 24 metrli masofa esa yopishgan katet, demak $\\tan 60^\\circ = \\frac{h}{24}$. $\\tan 60^\\circ = \\sqrt{3}$ bo‘lgani uchun $h = 24\\sqrt{3}$ metr (taxminan 41.6 metr). To‘g‘ri javob C.\n\nA ($8\\sqrt{3}$) — $\\tan 60^\\circ$ o‘rniga $\\tan 30^\\circ = \\frac{\\sqrt{3}}{3}$ olingan. B (12) — bu $24 \\cos 60^\\circ$, nisbat chalkashtirilgan. D (48) — bu $\\frac{24}{\\cos 60^\\circ}$, ya’ni balandlik emas, qarash chizig‘ining uzunligi (gipotenuza).",
+    "estimated_seconds": 80,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "right_triangles_trigonometry",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "In right triangle $ABC$, angle $C$ is the right angle, $\\sin A = \\frac{12}{13}$, and $AC = 15$. What is the length of $\\overline{BC}$?",
+    "spr_answers": [
+      "36"
+    ],
+    "explanation_en": "Side $\\overline{BC}$ is opposite angle $A$ and $\\overline{AC}$ is adjacent to it, so $\\tan A = \\frac{BC}{AC}$. From $\\sin A = \\frac{12}{13}$, the sides are in the ratio of a 5-12-13 triangle: opposite 12, adjacent 5, hypotenuse 13. So $\\tan A = \\frac{12}{5}$ and $BC = 15 \\cdot \\frac{12}{5} = 36$. (Check: $AB = 39$ and $15^2 + 36^2 = 39^2$.)\n\nCommon mistake: $15 \\cdot \\frac{12}{13} = \\frac{180}{13} \\approx 13.8$ treats $AC$ as the hypotenuse. In fact, $AC$ is a leg, adjacent to angle $A$.",
+    "explanation_uz": "$\\overline{BC}$ tomon $A$ burchakka qarama-qarshi, $\\overline{AC}$ esa unga yopishgan, demak $\\tan A = \\frac{BC}{AC}$. $\\sin A = \\frac{12}{13}$ dan tomonlar 5-12-13 uchburchak nisbatida: qarama-qarshi katet 12, yopishgan katet 5, gipotenuza 13. Demak $\\tan A = \\frac{12}{5}$ va $BC = 15 \\cdot \\frac{12}{5} = 36$. (Tekshirish: $AB = 39$ va $15^2 + 36^2 = 39^2$.)\n\nKo‘p uchraydigan xato: $15 \\cdot \\frac{12}{13} = \\frac{180}{13} \\approx 13.8$ — bunda $AC$ gipotenuza deb olingan. Aslida $AC$ — $A$ burchakka yopishgan katet.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "right_triangles_trigonometry",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "In right triangle $ABC$, angle $C$ is the right angle and $\\tan A = \\frac{8}{15}$. What is the value of $\\cos B$?",
+    "option_a": "$\\frac{15}{17}$",
+    "option_b": "$\\frac{8}{15}$",
+    "option_c": "$\\frac{15}{8}$",
+    "option_d": "$\\frac{8}{17}$",
+    "correct": "D",
+    "explanation_en": "From $\\tan A = \\frac{8}{15}$, take $BC = 8$ (opposite $A$) and $AC = 15$ (adjacent to $A$). The hypotenuse is $AB = \\sqrt{8^2 + 15^2} = 17$. For angle $B$, the adjacent leg is $BC = 8$, so $\\cos B = \\frac{8}{17}$. (This also follows from $\\cos B = \\sin A$, since $A$ and $B$ are complementary.) Choice D is correct.\n\nChoice A ($\\frac{15}{17}$) is $\\cos A$ (equal to $\\sin B$), not $\\cos B$. Choice B ($\\frac{8}{15}$) is $\\tan A$ itself. Choice C ($\\frac{15}{8}$) is $\\tan B$.",
+    "explanation_uz": "$\\tan A = \\frac{8}{15}$ dan $BC = 8$ ($A$ ga qarama-qarshi) va $AC = 15$ ($A$ ga yopishgan) deb olamiz. Gipotenuza $AB = \\sqrt{8^2 + 15^2} = 17$. $B$ burchak uchun yopishgan katet $BC = 8$, demak $\\cos B = \\frac{8}{17}$. ($A$ va $B$ burchaklar yig‘indisi $90^\\circ$ bo‘lgani uchun bu $\\cos B = \\sin A$ dan ham kelib chiqadi.) To‘g‘ri javob D.\n\nA ($\\frac{15}{17}$) — bu $\\cos B$ emas, $\\cos A$ ($\\sin B$ ga teng). B ($\\frac{8}{15}$) — bu $\\tan A$ ning o‘zi. C ($\\frac{15}{8}$) — bu $\\tan B$.",
+    "estimated_seconds": 80,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "right_triangles_trigonometry",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "From a point on level ground, the angle of elevation to the top of a vertical clock tower is $45^\\circ$. After walking 20 meters straight toward the tower on the same level ground, the angle of elevation to the top of the tower is $60^\\circ$. Both angles are measured from ground level. What is the height, in meters, of the tower?",
+    "option_a": "20",
+    "option_b": "$10 + 10\\sqrt{3}$",
+    "option_c": "$20\\sqrt{3}$",
+    "option_d": "$30 + 10\\sqrt{3}$",
+    "correct": "D",
+    "explanation_en": "Let $h$ be the height. From the first point, $\\tan 45^\\circ = \\frac{h}{d_1}$, so the distance to the base is $d_1 = h$. From the second point, $\\tan 60^\\circ = \\frac{h}{d_2}$, so $d_2 = \\frac{h}{\\sqrt{3}}$. The points are 20 meters apart, so $h - \\frac{h}{\\sqrt{3}} = 20$. Multiply by $\\sqrt{3}$: $h(\\sqrt{3} - 1) = 20\\sqrt{3}$, so $h = \\frac{20\\sqrt{3}}{\\sqrt{3} - 1} = \\frac{20\\sqrt{3}(\\sqrt{3} + 1)}{2} = 30 + 10\\sqrt{3}$ meters (about 47.3 meters). Choice D is correct.\n\nChoice A (20) assumes the first point is 20 meters from the tower. Choice B ($10 + 10\\sqrt{3}$) is the distance $d_2$ from the second point to the base of the tower; it also results from using $\\tan\\theta = \\frac{\\text{adjacent}}{\\text{opposite}}$. Choice C ($20\\sqrt{3}$) assumes the second point is 20 meters from the tower.",
+    "explanation_uz": "Balandlikni $h$ deb olaylik. Birinchi nuqtadan $\\tan 45^\\circ = \\frac{h}{d_1}$, demak minoraning asosigacha masofa $d_1 = h$. Ikkinchi nuqtadan $\\tan 60^\\circ = \\frac{h}{d_2}$, demak $d_2 = \\frac{h}{\\sqrt{3}}$. Nuqtalar orasidagi masofa 20 metr, shuning uchun $h - \\frac{h}{\\sqrt{3}} = 20$. $\\sqrt{3}$ ga ko‘paytiramiz: $h(\\sqrt{3} - 1) = 20\\sqrt{3}$, demak $h = \\frac{20\\sqrt{3}}{\\sqrt{3} - 1} = \\frac{20\\sqrt{3}(\\sqrt{3} + 1)}{2} = 30 + 10\\sqrt{3}$ metr (taxminan 47.3 metr). To‘g‘ri javob D.\n\nA (20) — birinchi nuqta minoradan 20 metr uzoqlikda deb olingan. B ($10 + 10\\sqrt{3}$) — ikkinchi nuqtadan minora asosigacha bo‘lgan $d_2$ masofa; bu natija $\\tan\\theta = \\frac{\\text{yopishgan}}{\\text{qarama-qarshi}}$ deb olinganda ham chiqadi. C ($20\\sqrt{3}$) — ikkinchi nuqta minoradan 20 metr uzoqlikda deb olingan.",
+    "estimated_seconds": 130,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "right_triangles_trigonometry",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "A straight loading ramp makes an angle $\\theta$ with the level ground, where $\\sin\\theta = \\frac{7}{25}$. The top of the ramp is 1.4 meters above the ground. What is the horizontal distance, in meters, from the bottom of the ramp to the point on the ground directly below the top of the ramp?",
+    "spr_answers": [
+      "4.8",
+      "24/5"
+    ],
+    "explanation_en": "The rise is the side opposite $\\theta$ and the ramp is the hypotenuse, so $\\sin\\theta = \\frac{1.4}{L} = \\frac{7}{25}$, which gives $L = 1.4 \\cdot \\frac{25}{7} = 5$ meters. The horizontal distance is the adjacent leg: $\\sqrt{5^2 - 1.4^2} = \\sqrt{25 - 1.96} = \\sqrt{23.04} = 4.8$ meters. (Or: $\\cos\\theta = \\frac{24}{25}$ from the 7-24-25 triangle, and $5 \\cdot \\frac{24}{25} = 4.8$.)\n\nCommon mistake: 5 is the length of the ramp itself (the hypotenuse), not the horizontal distance; $1.4 \\cdot \\frac{25}{7}$ must be followed by one more step.",
+    "explanation_uz": "Ko‘tarilish balandligi $\\theta$ ga qarama-qarshi katet, pandus esa gipotenuza, demak $\\sin\\theta = \\frac{1.4}{L} = \\frac{7}{25}$, bundan $L = 1.4 \\cdot \\frac{25}{7} = 5$ metr. Gorizontal masofa yopishgan katet: $\\sqrt{5^2 - 1.4^2} = \\sqrt{25 - 1.96} = \\sqrt{23.04} = 4.8$ metr. (Yoki: 7-24-25 uchburchakdan $\\cos\\theta = \\frac{24}{25}$ va $5 \\cdot \\frac{24}{25} = 4.8$.)\n\nKo‘p uchraydigan xato: 5 — bu gorizontal masofa emas, pandusning o‘z uzunligi (gipotenuza); $1.4 \\cdot \\frac{25}{7}$ hisobidan keyin yana bir qadam kerak.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  }
+]

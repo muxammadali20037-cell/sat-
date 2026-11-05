@@ -1,0 +1,140 @@
+[
+  {
+    "skill_code": "lines_angles_triangles",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "A wooden roof truss is shaped like an isosceles triangle. The two angles at the base of the truss each measure $35^\\circ$. What is the measure of the angle at the top of the truss?",
+    "option_a": "$35^\\circ$",
+    "option_b": "$55^\\circ$",
+    "option_c": "$70^\\circ$",
+    "option_d": "$110^\\circ$",
+    "correct": "D",
+    "explanation_en": "The three angles of a triangle add to $180^\\circ$, so the top angle measures $180^\\circ - 35^\\circ - 35^\\circ = 110^\\circ$. Choice D is correct.\n\nChoice A ($35^\\circ$) assumes all three angles are equal, but an isosceles triangle has only two equal angles here. Choice B ($55^\\circ$) is $90^\\circ - 35^\\circ$, which would apply only to a right triangle. Choice C ($70^\\circ$) is the sum of the two base angles, not the remaining angle.",
+    "explanation_uz": "Uchburchak uchta burchagining yig‘indisi $180^\\circ$, demak tepadagi burchak $180^\\circ - 35^\\circ - 35^\\circ = 110^\\circ$. To‘g‘ri javob D.\n\nA ($35^\\circ$) — uchala burchak teng deb olingan, lekin bu teng yonli uchburchakda faqat ikkita burchak teng. B ($55^\\circ$) — bu $90^\\circ - 35^\\circ$, bu faqat to‘g‘ri burchakli uchburchak uchun to‘g‘ri bo‘lardi. C ($70^\\circ$) — asosdagi ikki burchakning yig‘indisi, qolgan burchak emas.",
+    "estimated_seconds": 55,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "lines_angles_triangles",
+    "difficulty": "easy",
+    "question_type": "spr",
+    "stem": "Two straight, parallel streets are crossed by a straight avenue. At the first street, one of the angles between the street and the avenue that lies between the two streets measures $64^\\circ$. At the second street, consider the angle between the street and the avenue that also lies between the two streets and is on the same side of the avenue as the $64^\\circ$ angle. What is the measure, in degrees, of that angle?",
+    "spr_answers": [
+      "116"
+    ],
+    "explanation_en": "The avenue is a transversal of the two parallel streets. The two angles described are same-side interior angles (both between the parallel lines, on the same side of the transversal), and such angles are supplementary. So the angle measures $180^\\circ - 64^\\circ = 116^\\circ$.\n\nCommon mistake: answering 64 treats the angles as alternate interior or corresponding angles, which are congruent; same-side interior angles add to $180^\\circ$ instead.",
+    "explanation_uz": "Avenyu ikki parallel ko‘chani kesib o‘tuvchi kesuvchidir. Tasvirlangan ikki burchak bir tomonli ichki burchaklar (ikkalasi ham parallel chiziqlar orasida, kesuvchining bir tomonida), bunday burchaklarning yig‘indisi $180^\\circ$. Demak burchak $180^\\circ - 64^\\circ = 116^\\circ$.\n\nKo‘p uchraydigan xato: 64 javobi burchaklarni ichki almashinuvchi yoki mos burchaklar deb hisoblashdan kelib chiqadi, ular teng bo‘ladi; bir tomonli ichki burchaklarning esa yig‘indisi $180^\\circ$ ga teng.",
+    "estimated_seconds": 65,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "lines_angles_triangles",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "In triangle $PQR$, the measure of angle $P$ is $48^\\circ$ and the measure of angle $Q$ is $67^\\circ$. Side $\\overline{QR}$ is extended beyond $R$ to point $S$. What is the measure of angle $PRS$?",
+    "option_a": "$65^\\circ$",
+    "option_b": "$113^\\circ$",
+    "option_c": "$115^\\circ$",
+    "option_d": "$132^\\circ$",
+    "correct": "C",
+    "explanation_en": "Angle $PRS$ is an exterior angle of the triangle at $R$. An exterior angle equals the sum of the two remote interior angles: $48^\\circ + 67^\\circ = 115^\\circ$. (Check: angle $PRQ = 180^\\circ - 115^\\circ = 65^\\circ$, and $65^\\circ + 115^\\circ = 180^\\circ$.) Choice C is correct.\n\nChoice A ($65^\\circ$) is the interior angle $PRQ$, not the exterior angle. Choice B ($113^\\circ$) is $180^\\circ - 67^\\circ$, and choice D ($132^\\circ$) is $180^\\circ - 48^\\circ$; each uses only one of the two remote interior angles.",
+    "explanation_uz": "$PRS$ burchak uchburchakning $R$ uchidagi tashqi burchagidir. Tashqi burchak unga qo‘shni bo‘lmagan ikki ichki burchakning yig‘indisiga teng: $48^\\circ + 67^\\circ = 115^\\circ$. (Tekshirish: $PRQ = 180^\\circ - 115^\\circ = 65^\\circ$ va $65^\\circ + 115^\\circ = 180^\\circ$.) To‘g‘ri javob C.\n\nA ($65^\\circ$) — bu tashqi emas, ichki $PRQ$ burchak. B ($113^\\circ$) — bu $180^\\circ - 67^\\circ$, D ($132^\\circ$) esa $180^\\circ - 48^\\circ$; ikkalasida ham qo‘shni bo‘lmagan ikki ichki burchakdan faqat bittasi olingan.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "lines_angles_triangles",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "A traditional geometric tile pattern contains tiles shaped like regular octagons (8-sided polygons with all sides equal and all angles equal). What is the measure of each interior angle of one of these octagons?",
+    "option_a": "$45^\\circ$",
+    "option_b": "$135^\\circ$",
+    "option_c": "$144^\\circ$",
+    "option_d": "$1{,}080^\\circ$",
+    "correct": "B",
+    "explanation_en": "The interior angles of an $n$-sided polygon add to $(n - 2) \\cdot 180^\\circ$. For $n = 8$: $6 \\cdot 180^\\circ = 1{,}080^\\circ$. All 8 angles are equal, so each measures $\\frac{1{,}080^\\circ}{8} = 135^\\circ$. Choice B is correct.\n\nChoice A ($45^\\circ$) is $\\frac{360^\\circ}{8}$, the exterior angle. Choice C ($144^\\circ$) is the interior angle of a regular 10-sided polygon. Choice D ($1{,}080^\\circ$) is the sum of all 8 interior angles, not one of them.",
+    "explanation_uz": "$n$ burchakli ko‘pburchak ichki burchaklarining yig‘indisi $(n - 2) \\cdot 180^\\circ$. $n = 8$ uchun: $6 \\cdot 180^\\circ = 1{,}080^\\circ$. Barcha 8 ta burchak teng, demak har biri $\\frac{1{,}080^\\circ}{8} = 135^\\circ$. To‘g‘ri javob B.\n\nA ($45^\\circ$) — bu $\\frac{360^\\circ}{8}$, ya’ni tashqi burchak. C ($144^\\circ$) — muntazam o‘nburchakning ichki burchagi. D ($1{,}080^\\circ$) — 8 ta ichki burchakning yig‘indisi, bittasi emas.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "lines_angles_triangles",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "To estimate the height of a minaret, a student places a small flat mirror on level ground 32 meters from the base of the minaret. She then stands 2 meters from the mirror, on the other side of it from the minaret, so that she sees the top of the minaret in the mirror. Her eyes are 1.5 meters above the ground. The minaret and the student are both vertical, and the angle at which light hits the mirror equals the angle at which it leaves. What is the height, in meters, of the minaret?",
+    "spr_answers": [
+      "24"
+    ],
+    "explanation_en": "The equal angles at the mirror, together with the right angles at the base of the minaret and at the student's feet, make the two right triangles similar (AA). Corresponding sides are proportional: $\\frac{h}{32} = \\frac{1.5}{2}$, so $h = 32 \\cdot 0.75 = 24$ meters.\n\nCommon mistake: setting up $\\frac{h}{1.5} = \\frac{2}{32}$ pairs the sides incorrectly and gives a height of less than 1 meter, which is not reasonable for a minaret.",
+    "explanation_uz": "Ko‘zgudagi teng burchaklar hamda minora asosi va o‘quvchi oyog‘i yonidagi to‘g‘ri burchaklar ikki to‘g‘ri burchakli uchburchakni o‘xshash qiladi (ikki burchak bo‘yicha). Mos tomonlar proporsional: $\\frac{h}{32} = \\frac{1.5}{2}$, demak $h = 32 \\cdot 0.75 = 24$ metr.\n\nKo‘p uchraydigan xato: $\\frac{h}{1.5} = \\frac{2}{32}$ proporsiyasi tomonlarni noto‘g‘ri juftlaydi va 1 metrdan kichik balandlik beradi, bu minora uchun mantiqqa to‘g‘ri kelmaydi.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "lines_angles_triangles",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "The three angles of a triangle measure $(2x + 10)^\\circ$, $(3x - 5)^\\circ$, and $(x + 25)^\\circ$. What is the measure of the largest angle of the triangle?",
+    "option_a": "$25^\\circ$",
+    "option_b": "$50^\\circ$",
+    "option_c": "$60^\\circ$",
+    "option_d": "$70^\\circ$",
+    "correct": "D",
+    "explanation_en": "The angles add to $180^\\circ$: $(2x + 10) + (3x - 5) + (x + 25) = 6x + 30 = 180$, so $6x = 150$ and $x = 25$. The angles are $2(25) + 10 = 60^\\circ$, $3(25) - 5 = 70^\\circ$, and $25 + 25 = 50^\\circ$. The largest is $70^\\circ$, choice D.\n\nChoice A (25) is the value of $x$, not an angle measure. Choice B ($50^\\circ$) is the smallest angle, and choice C ($60^\\circ$) is the middle one.",
+    "explanation_uz": "Burchaklar yig‘indisi $180^\\circ$: $(2x + 10) + (3x - 5) + (x + 25) = 6x + 30 = 180$, demak $6x = 150$ va $x = 25$. Burchaklar: $2(25) + 10 = 60^\\circ$, $3(25) - 5 = 70^\\circ$ va $25 + 25 = 50^\\circ$. Eng kattasi $70^\\circ$, ya’ni D.\n\nA (25) — bu burchak emas, $x$ ning qiymati. B ($50^\\circ$) — eng kichik burchak, C ($60^\\circ$) esa o‘rtachasi.",
+    "estimated_seconds": 80,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "lines_angles_triangles",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "Lines $\\ell$ and $m$ are parallel. Point $P$ lies between the two lines. Point $A$ is on line $\\ell$, point $B$ is on line $m$, and both $A$ and $B$ are to the right of $P$. Segment $\\overline{PA}$ makes an acute angle of $38^\\circ$ with line $\\ell$ at $A$, and segment $\\overline{PB}$ makes an acute angle of $47^\\circ$ with line $m$ at $B$. What is the measure of angle $APB$?",
+    "option_a": "$85^\\circ$",
+    "option_b": "$95^\\circ$",
+    "option_c": "$133^\\circ$",
+    "option_d": "$275^\\circ$",
+    "correct": "A",
+    "explanation_en": "Draw the line through $P$ parallel to $\\ell$ (and therefore also parallel to $m$). This line splits angle $APB$ into two parts. The part toward $A$ and the $38^\\circ$ angle at $A$ are alternate interior angles for the parallel lines and transversal $\\overline{PA}$, so that part is $38^\\circ$. In the same way, the part toward $B$ is $47^\\circ$. So angle $APB = 38^\\circ + 47^\\circ = 85^\\circ$. Choice A is correct.\n\nChoice B ($95^\\circ$) is $180^\\circ - 85^\\circ$, the supplement of the correct angle. Choice C ($133^\\circ$) is $180^\\circ - 47^\\circ$, which uses only one of the given angles. Choice D ($275^\\circ$) is $360^\\circ - 85^\\circ$, the reflex angle on the other side of $P$.",
+    "explanation_uz": "$P$ nuqta orqali $\\ell$ ga parallel (demak $m$ ga ham parallel) to‘g‘ri chiziq o‘tkazamiz. Bu chiziq $APB$ burchakni ikki qismga ajratadi. $A$ tomondagi qism va $A$ dagi $38^\\circ$ li burchak parallel chiziqlar va $\\overline{PA}$ kesuvchi uchun ichki almashinuvchi burchaklardir, shuning uchun bu qism $38^\\circ$. Xuddi shunday, $B$ tomondagi qism $47^\\circ$. Demak $APB = 38^\\circ + 47^\\circ = 85^\\circ$. To‘g‘ri javob A.\n\nB ($95^\\circ$) — bu $180^\\circ - 85^\\circ$, to‘g‘ri burchakka qo‘shni burchak. C ($133^\\circ$) — bu $180^\\circ - 47^\\circ$, berilgan burchaklardan faqat bittasi ishlatilgan. D ($275^\\circ$) — bu $360^\\circ - 85^\\circ$, $P$ ning narigi tomonidagi botiq burchak.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "lines_angles_triangles",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "In triangle $ABC$, point $D$ lies on side $\\overline{AB}$ and point $E$ lies on side $\\overline{AC}$. Angle $ADE$ is congruent to angle $ACB$. If $AD = 4$, $AE = 5$, and $EC = 7$, what is the length of $\\overline{DB}$?",
+    "spr_answers": [
+      "11"
+    ],
+    "explanation_en": "Triangles $ADE$ and $ACB$ share angle $A$, and angle $ADE$ is congruent to angle $ACB$, so the triangles are similar with $D$ corresponding to $C$ and $E$ corresponding to $B$. Then $\\frac{AD}{AC} = \\frac{AE}{AB}$. Since $AC = 5 + 7 = 12$, this gives $\\frac{4}{12} = \\frac{5}{AB}$, so $AB = 15$ and $DB = 15 - 4 = 11$.\n\nCommon mistake: matching $D$ with $B$ (as if $\\overline{DE}$ were parallel to $\\overline{BC}$) gives $\\frac{4}{AB} = \\frac{5}{12}$, so $AB = 9.6$ and $DB = 5.6$. The congruent angles show that $D$ corresponds to $C$, not to $B$.",
+    "explanation_uz": "$ADE$ va $ACB$ uchburchaklarning $A$ burchagi umumiy, $ADE$ burchak esa $ACB$ burchakka teng, shuning uchun uchburchaklar o‘xshash, bunda $D$ ga $C$, $E$ ga esa $B$ mos keladi. U holda $\\frac{AD}{AC} = \\frac{AE}{AB}$. $AC = 5 + 7 = 12$ bo‘lgani uchun $\\frac{4}{12} = \\frac{5}{AB}$, demak $AB = 15$ va $DB = 15 - 4 = 11$.\n\nKo‘p uchraydigan xato: $D$ ni $B$ ga mos qo‘yish (go‘yo $\\overline{DE}$ kesma $\\overline{BC}$ ga parallel bo‘lgandek) $\\frac{4}{AB} = \\frac{5}{12}$ ni beradi, bundan $AB = 9.6$ va $DB = 5.6$. Teng burchaklar $D$ ga $B$ emas, $C$ mos kelishini ko‘rsatadi.",
+    "estimated_seconds": 130,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  }
+]

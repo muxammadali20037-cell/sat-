@@ -1,0 +1,140 @@
+[
+  {
+    "skill_code": "circles",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "A circular fountain has a diameter of 14 meters. A decorative stone border runs once around the outer edge of the fountain. What is the length, in meters, of the border?",
+    "option_a": "$14\\pi$",
+    "option_b": "$28\\pi$",
+    "option_c": "$49\\pi$",
+    "option_d": "$196\\pi$",
+    "correct": "A",
+    "explanation_en": "The border is the circumference of the circle: $C = \\pi d = \\pi (14) = 14\\pi$ meters (equivalently, $2\\pi r$ with $r = 7$). Choice A is correct.\n\nChoice B ($28\\pi$) is $2\\pi(14)$; it uses the diameter as the radius. Choice C ($49\\pi$) is $\\pi(7)^2$, the area of the fountain, not the length around it. Choice D ($196\\pi$) is $\\pi(14)^2$, an area computed with the diameter in place of the radius.",
+    "explanation_uz": "Hoshiya — bu aylananing uzunligi: $C = \\pi d = \\pi (14) = 14\\pi$ metr (yoki $r = 7$ bilan $2\\pi r$). To‘g‘ri javob A.\n\nB ($28\\pi$) — bu $2\\pi(14)$; diametr radius sifatida olingan. C ($49\\pi$) — bu $\\pi(7)^2$, ya’ni favvoraning yuzasi, atrofining uzunligi emas. D ($196\\pi$) — bu $\\pi(14)^2$, radius o‘rniga diametr bilan hisoblangan yuza.",
+    "estimated_seconds": 55,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "circles",
+    "difficulty": "easy",
+    "question_type": "spr",
+    "stem": "The minute hand of a wall clock is 15 centimeters long. In 20 minutes, the tip of the minute hand travels along an arc of length $k\\pi$ centimeters. What is the value of $k$?",
+    "spr_answers": [
+      "10"
+    ],
+    "explanation_en": "The minute hand makes a full turn ($360^\\circ$) in 60 minutes, so in 20 minutes it turns $\\frac{20}{60} = \\frac{1}{3}$ of a full turn. The full circle traced by the tip has circumference $2\\pi(15) = 30\\pi$ centimeters, so the arc is $\\frac{1}{3} \\cdot 30\\pi = 10\\pi$ centimeters, and $k = 10$.\n\nIf you got 75, you found the area of the sector, $\\frac{1}{3}\\pi(15)^2 = 75\\pi$, instead of the arc length. If you got 5, you used $\\pi r$ instead of $2\\pi r$ for the circumference.",
+    "explanation_uz": "Minut mili to‘liq aylanishni ($360^\\circ$) 60 daqiqada bajaradi, demak 20 daqiqada u to‘liq aylanishning $\\frac{20}{60} = \\frac{1}{3}$ qismiga buriladi. Mil uchi chizadigan aylananing uzunligi $2\\pi(15) = 30\\pi$ santimetr, shuning uchun yoy uzunligi $\\frac{1}{3} \\cdot 30\\pi = 10\\pi$ santimetr va $k = 10$.\n\nAgar 75 chiqqan bo‘lsa, siz yoy uzunligi o‘rniga sektor yuzasini, $\\frac{1}{3}\\pi(15)^2 = 75\\pi$ ni topgansiz. Agar 5 chiqqan bo‘lsa, aylana uzunligi uchun $2\\pi r$ o‘rniga $\\pi r$ olingan.",
+    "estimated_seconds": 65,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "circles",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "In the $xy$-plane, the graph of $(x - 5)^2 + (y + 2)^2 = 49$ is a circle. Which of the following gives the center and the radius of the circle?",
+    "option_a": "Center $(-5, 2)$, radius 7",
+    "option_b": "Center $(-5, 2)$, radius 49",
+    "option_c": "Center $(5, -2)$, radius 49",
+    "option_d": "Center $(5, -2)$, radius 7",
+    "correct": "D",
+    "explanation_en": "A circle with center $(h, k)$ and radius $r$ has equation $(x - h)^2 + (y - k)^2 = r^2$. Writing $(y + 2)$ as $(y - (-2))$ shows that $h = 5$ and $k = -2$, and $r^2 = 49$ gives $r = 7$. Choice D is correct.\n\nChoices A and B flip the signs of the center coordinates; the numbers inside the parentheses are subtracted from $x$ and $y$. Choices B and C give 49 as the radius, but 49 is $r^2$, not $r$.",
+    "explanation_uz": "Markazi $(h, k)$ va radiusi $r$ bo‘lgan aylana tenglamasi $(x - h)^2 + (y - k)^2 = r^2$ ko‘rinishida bo‘ladi. $(y + 2)$ ni $(y - (-2))$ deb yozsak, $h = 5$ va $k = -2$ ekani ko‘rinadi, $r^2 = 49$ dan esa $r = 7$. To‘g‘ri javob D.\n\nA va B variantlarida markaz koordinatalarining ishoralari almashtirilgan; qavs ichidagi sonlar $x$ va $y$ dan ayiriladi. B va C variantlarida radius 49 deb olingan, lekin 49 — bu $r$ emas, $r^2$.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "circles",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "A rotating sprinkler waters a region of a lawn shaped like a sector of a circle. The radius of the sector is 12 meters, and its central angle measures $150^\\circ$. What is the area, in square meters, of the watered region?",
+    "option_a": "$10\\pi$",
+    "option_b": "$60\\pi$",
+    "option_c": "$72\\pi$",
+    "option_d": "$144\\pi$",
+    "correct": "B",
+    "explanation_en": "The sector is $\\frac{150}{360} = \\frac{5}{12}$ of the whole circle. The whole circle has area $\\pi(12)^2 = 144\\pi$, so the sector has area $\\frac{5}{12} \\cdot 144\\pi = 60\\pi$ square meters. Choice B is correct.\n\nChoice A ($10\\pi$) is $\\frac{5}{12} \\cdot 24\\pi$, the length of the arc, not the area. Choice C ($72\\pi$) is the area of a half circle, which would need a $180^\\circ$ angle. Choice D ($144\\pi$) is the area of the whole circle.",
+    "explanation_uz": "Sektor butun doiraning $\\frac{150}{360} = \\frac{5}{12}$ qismini tashkil qiladi. Butun doiraning yuzasi $\\pi(12)^2 = 144\\pi$, demak sektor yuzasi $\\frac{5}{12} \\cdot 144\\pi = 60\\pi$ kvadrat metr. To‘g‘ri javob B.\n\nA ($10\\pi$) — bu $\\frac{5}{12} \\cdot 24\\pi$, ya’ni yoy uzunligi, yuza emas. C ($72\\pi$) — yarim doira yuzasi, buning uchun burchak $180^\\circ$ bo‘lishi kerak edi. D ($144\\pi$) — butun doiraning yuzasi.",
+    "estimated_seconds": 80,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "circles",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "Points $A$, $B$, and $C$ lie on a circle, and $\\overline{AB}$ is a diameter of the circle. The measure of angle $CAB$ is $28^\\circ$. What is the measure, in degrees, of angle $ABC$?",
+    "spr_answers": [
+      "62"
+    ],
+    "explanation_en": "An angle inscribed in a semicircle is a right angle, so angle $ACB$, which intercepts diameter $\\overline{AB}$, measures $90^\\circ$. The angles of triangle $ABC$ add to $180^\\circ$, so angle $ABC$ measures $180^\\circ - 90^\\circ - 28^\\circ = 62^\\circ$.\n\nCommon mistakes: 152 comes from $180 - 28$ (forgetting the right angle at $C$), and 56 doubles the $28^\\circ$ angle as if it were a central angle.",
+    "explanation_uz": "Yarim aylanaga tiralgan ichki chizilgan burchak to‘g‘ri burchak bo‘ladi, shuning uchun $\\overline{AB}$ diametrga tiralgan $ACB$ burchak $90^\\circ$ ga teng. $ABC$ uchburchak burchaklarining yig‘indisi $180^\\circ$, demak $ABC$ burchak $180^\\circ - 90^\\circ - 28^\\circ = 62^\\circ$.\n\nKo‘p uchraydigan xatolar: 152 — bu $180 - 28$ ($C$ dagi to‘g‘ri burchak unutilgan), 56 esa $28^\\circ$ li burchakni markaziy burchak deb ikkilantirish natijasi.",
+    "estimated_seconds": 80,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "circles",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "A Ferris wheel has a diameter of 40 meters. As the wheel turns, a passenger cabin on its rim moves along an arc of length $10\\pi$ meters. Through what angle, in radians, does the wheel turn?",
+    "option_a": "$\\frac{1}{2}$",
+    "option_b": "$\\frac{\\pi}{4}$",
+    "option_c": "$\\frac{\\pi}{2}$",
+    "option_d": "$\\pi$",
+    "correct": "C",
+    "explanation_en": "The radius is $\\frac{40}{2} = 20$ meters. For an angle $\\theta$ in radians, arc length is $s = r\\theta$, so $\\theta = \\frac{s}{r} = \\frac{10\\pi}{20} = \\frac{\\pi}{2}$. Choice C is correct.\n\nChoice A ($\\frac{1}{2}$) drops the $\\pi$ from the arc length. Choice B ($\\frac{\\pi}{4}$) divides by the diameter, 40, instead of the radius. Choice D ($\\pi$) compares the arc with $\\pi r = 20\\pi$ instead of the full circumference $2\\pi r = 40\\pi$, so it doubles the fraction of a turn.",
+    "explanation_uz": "Radius $\\frac{40}{2} = 20$ metr. Radianlarda berilgan $\\theta$ burchak uchun yoy uzunligi $s = r\\theta$, demak $\\theta = \\frac{s}{r} = \\frac{10\\pi}{20} = \\frac{\\pi}{2}$. To‘g‘ri javob C.\n\nA ($\\frac{1}{2}$) — yoy uzunligidagi $\\pi$ tushirib qoldirilgan. B ($\\frac{\\pi}{4}$) — radius o‘rniga diametrga (40 ga) bo‘lingan. D ($\\pi$) — yoy to‘liq aylana uzunligi $2\\pi r = 40\\pi$ bilan emas, $\\pi r = 20\\pi$ bilan solishtirilgan, shuning uchun aylanish ulushi ikki baravar oshib ketgan.",
+    "estimated_seconds": 85,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "circles",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "In the $xy$-plane, a circle has its center at the point $(6, k)$, where $k$ is a positive constant. The radius of the circle is 10, and the circle passes through the origin, $(0, 0)$. Which of the following is an equation of the circle?",
+    "option_a": "$(x - 6)^2 + (y - 8)^2 = 100$",
+    "option_b": "$(x + 6)^2 + (y + 8)^2 = 100$",
+    "option_c": "$(x - 6)^2 + (y - 8)^2 = 10$",
+    "option_d": "$(x - 8)^2 + (y - 6)^2 = 100$",
+    "correct": "A",
+    "explanation_en": "The distance from the center $(6, k)$ to the origin is the radius, so $6^2 + k^2 = 10^2$, which gives $k^2 = 64$ and, since $k > 0$, $k = 8$. With center $(6, 8)$ and $r^2 = 100$, the equation is $(x - 6)^2 + (y - 8)^2 = 100$. Choice A is correct.\n\nChoice B has center $(-6, -8)$; the signs inside the parentheses are reversed. Choice C sets the right side equal to the radius, 10, instead of $r^2 = 100$. Choice D has center $(8, 6)$; that circle also passes through the origin, but its center does not have $x$-coordinate 6.",
+    "explanation_uz": "Markaz $(6, k)$ dan koordinata boshigacha bo‘lgan masofa radiusga teng, demak $6^2 + k^2 = 10^2$, bundan $k^2 = 64$ va $k > 0$ bo‘lgani uchun $k = 8$. Markazi $(6, 8)$ va $r^2 = 100$ bo‘lgani uchun tenglama $(x - 6)^2 + (y - 8)^2 = 100$. To‘g‘ri javob A.\n\nB variantda markaz $(-6, -8)$; qavs ichidagi ishoralar teskari olingan. C variantda o‘ng tomonga $r^2 = 100$ o‘rniga radiusning o‘zi, 10 yozilgan. D variantda markaz $(8, 6)$; bu aylana ham koordinata boshidan o‘tadi, lekin uning markazining $x$-koordinatasi 6 emas.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "circles",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "The entrance arch of a madrasa is shaped like an arc of a circle. The two ends of the arch are on the same horizontal floor and are 16 meters apart. The highest point of the arch is 4 meters above the floor, directly above the midpoint between the two ends. What is the radius, in meters, of the circle that contains the arch?",
+    "spr_answers": [
+      "10"
+    ],
+    "explanation_en": "Let $r$ be the radius. The center of the circle lies on the vertical line through the highest point, $r$ meters below that point, so it is $r - 4$ meters below the floor. A segment from the center to one end of the arch is a radius, and it is the hypotenuse of a right triangle with legs 8 (half of 16) and $r - 4$. So $r^2 = 8^2 + (r - 4)^2 = 64 + r^2 - 8r + 16$, which gives $8r = 80$ and $r = 10$.\n\nCommon mistakes: 8 assumes the arch is a semicircle (half the span), but then its height would be 8, not 4; and $\\sqrt{8^2 + 4^2} = \\sqrt{80}$ treats the 4-meter height as a leg from the center.",
+    "explanation_uz": "Radiusni $r$ deb olaylik. Aylana markazi eng baland nuqtadan o‘tuvchi vertikal chiziqda, shu nuqtadan $r$ metr pastda yotadi, ya’ni poldan $r - 4$ metr pastda. Markazdan arkaning bir uchigacha bo‘lgan kesma radius bo‘lib, u katetlari 8 (16 ning yarmi) va $r - 4$ bo‘lgan to‘g‘ri burchakli uchburchakning gipotenuzasidir. Demak $r^2 = 8^2 + (r - 4)^2 = 64 + r^2 - 8r + 16$, bundan $8r = 80$ va $r = 10$.\n\nKo‘p uchraydigan xatolar: 8 — arkani yarim aylana deb hisoblash (oraliqning yarmi), lekin u holda arkaning balandligi 4 emas, 8 bo‘lardi; $\\sqrt{8^2 + 4^2} = \\sqrt{80}$ esa 4 metrli balandlikni markazdan chiquvchi katet deb olish natijasi.",
+    "estimated_seconds": 130,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  }
+]

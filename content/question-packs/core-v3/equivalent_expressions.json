@@ -1,0 +1,140 @@
+[
+  {
+    "skill_code": "equivalent_expressions",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "Which expression is equivalent to $4x^2y \\cdot 3xy^3$?",
+    "option_a": "$7x^3y^4$",
+    "option_b": "$12x^2y^3$",
+    "option_c": "$12x^3y^4$",
+    "option_d": "$12x^3y^3$",
+    "correct": "C",
+    "explanation_en": "Multiply the coefficients and add the exponents of each variable: $4 \\cdot 3 = 12$, $x^2 \\cdot x = x^{2+1} = x^3$, and $y \\cdot y^3 = y^{1+3} = y^4$.\n\nSo the product is $12x^3y^4$.\n\nChoice A adds the coefficients ($4 + 3 = 7$) instead of multiplying them. Choice B ignores the unwritten exponent $1$ on $x$ and $y$ in the second and first factors. Choice D leaves out the $y$ in the first factor.",
+    "explanation_uz": "Koeffitsiyentlarni ko‘paytiramiz, har bir o‘zgaruvchining daraja ko‘rsatkichlarini qo‘shamiz: $4 \\cdot 3 = 12$, $x^2 \\cdot x = x^{2+1} = x^3$ va $y \\cdot y^3 = y^{1+3} = y^4$.\n\nDemak ko‘paytma $12x^3y^4$ ga teng.\n\nA variantda koeffitsiyentlar ko‘paytirilish o‘rniga qo‘shilgan ($4 + 3 = 7$). B variantda $x$ va $y$ ning yozilmagan $1$ ko‘rsatkichi hisobga olinmagan. D variantda birinchi ko‘paytuvchidagi $y$ tushib qolgan.",
+    "estimated_seconds": 55,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "equivalent_expressions",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "Which expression is equivalent to $9x^2 - 49$?",
+    "option_a": "$(3x - 7)^2$",
+    "option_b": "$(9x - 7)(x + 7)$",
+    "option_c": "$(3x + 7)^2$",
+    "option_d": "$(3x - 7)(3x + 7)$",
+    "correct": "D",
+    "explanation_en": "Both terms are perfect squares: $9x^2 = (3x)^2$ and $49 = 7^2$. A difference of squares factors as $a^2 - b^2 = (a - b)(a + b)$, so $9x^2 - 49 = (3x - 7)(3x + 7)$.\n\nCheck: $(3x - 7)(3x + 7) = 9x^2 + 21x - 21x - 49 = 9x^2 - 49$.\n\nChoice A expands to $9x^2 - 42x + 49$ and choice C to $9x^2 + 42x + 49$; both have a middle term and a $+49$. Choice B expands to $9x^2 + 56x - 49$, because $9x$ and $x$ are not the square roots of $9x^2$.",
+    "explanation_uz": "Ikkala had ham to‘liq kvadrat: $9x^2 = (3x)^2$ va $49 = 7^2$. Kvadratlar ayirmasi $a^2 - b^2 = (a - b)(a + b)$ ko‘rinishida ko‘paytuvchilarga ajraladi, shuning uchun $9x^2 - 49 = (3x - 7)(3x + 7)$.\n\nTekshiramiz: $(3x - 7)(3x + 7) = 9x^2 + 21x - 21x - 49 = 9x^2 - 49$.\n\nA variant $9x^2 - 42x + 49$ ga, C variant esa $9x^2 + 42x + 49$ ga teng; ikkalasida o‘rta had va $+49$ bor. B variant $9x^2 + 56x - 49$ ga teng, chunki $9x$ va $x$ lar $9x^2$ ning kvadrat ildizi emas.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "equivalent_expressions",
+    "difficulty": "easy",
+    "question_type": "spr",
+    "stem": "The expression $(5x^2 + 3x) - 3(x^2 - 4x + 2)$ is equivalent to $ax^2 + bx + c$, where $a$, $b$, and $c$ are constants. What is the value of $a + b + c$?",
+    "spr_answers": [
+      "11"
+    ],
+    "explanation_en": "Distribute $-3$ to every term in the parentheses: $-3(x^2 - 4x + 2) = -3x^2 + 12x - 6$.\n\nCombine like terms: $5x^2 + 3x - 3x^2 + 12x - 6 = 2x^2 + 15x - 6$.\n\nSo $a = 2$, $b = 15$, $c = -6$, and $a + b + c = 2 + 15 - 6 = 11$.\n\nIf you multiply $-3$ by $-4x$ and get $-12x$, you get $2x^2 - 9x - 6$ and the wrong sum $-13$. If you forget to multiply the $2$ by $-3$, you get $c = -2$ and the wrong sum $15$.",
+    "explanation_uz": "$-3$ ni qavs ichidagi har bir hadga ko‘paytiramiz: $-3(x^2 - 4x + 2) = -3x^2 + 12x - 6$.\n\nO‘xshash hadlarni birlashtiramiz: $5x^2 + 3x - 3x^2 + 12x - 6 = 2x^2 + 15x - 6$.\n\nDemak $a = 2$, $b = 15$, $c = -6$ va $a + b + c = 2 + 15 - 6 = 11$.\n\nAgar $-3$ ni $-4x$ ga ko‘paytirib $-12x$ olinsa, $2x^2 - 9x - 6$ va noto‘g‘ri yig‘indi $-13$ chiqadi. $2$ ni $-3$ ga ko‘paytirish unutilsa, $c = -2$ va noto‘g‘ri yig‘indi $15$ hosil bo‘ladi.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "equivalent_expressions",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "Which of the following is equivalent to $\\dfrac{2}{x - 3} - \\dfrac{1}{x + 3}$ for $x > 3$?",
+    "option_a": "$\\dfrac{x + 3}{x^2 - 9}$",
+    "option_b": "$\\dfrac{x + 9}{x^2 - 9}$",
+    "option_c": "$\\dfrac{3x + 3}{x^2 - 9}$",
+    "option_d": "$\\dfrac{1}{x^2 - 9}$",
+    "correct": "B",
+    "explanation_en": "The common denominator is $(x - 3)(x + 3) = x^2 - 9$.\n\nRewrite each fraction: $\\frac{2(x + 3)}{x^2 - 9} - \\frac{x - 3}{x^2 - 9} = \\frac{2x + 6 - x + 3}{x^2 - 9} = \\frac{x + 9}{x^2 - 9}$.\n\nChoice A subtracts only $x$ and not the whole numerator $x - 3$, so it gets $2x + 6 - x - 3 = x + 3$. Choice C adds the fractions instead of subtracting: $2x + 6 + x - 3 = 3x + 3$. Choice D subtracts the original numerators $2 - 1$ without rewriting them over the common denominator.",
+    "explanation_uz": "Umumiy maxraj $(x - 3)(x + 3) = x^2 - 9$.\n\nHar bir kasrni shu maxrajga keltiramiz: $\\frac{2(x + 3)}{x^2 - 9} - \\frac{x - 3}{x^2 - 9} = \\frac{2x + 6 - x + 3}{x^2 - 9} = \\frac{x + 9}{x^2 - 9}$.\n\nA variantda butun surat $x - 3$ emas, faqat $x$ ayirilgan: $2x + 6 - x - 3 = x + 3$. C variantda kasrlar ayirilish o‘rniga qo‘shilgan: $2x + 6 + x - 3 = 3x + 3$. D variantda dastlabki suratlar $2 - 1$ umumiy maxrajga keltirilmasdan ayirilgan.",
+    "estimated_seconds": 80,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "equivalent_expressions",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "Dilnoza deposits $2{,}000{,}000$ soums in a savings account that pays $18\\%$ annual interest compounded monthly. The balance, in soums, after $t$ years is given by the expression $2{,}000{,}000(1.015)^{12t}$. Which of the following expressions is equivalent to the given expression?",
+    "option_a": "$2{,}000{,}000\\left(1.015^{12}\\right)^{t}$",
+    "option_b": "$2{,}000{,}000(1.18)^{t}$",
+    "option_c": "$24{,}000{,}000(1.015)^{t}$",
+    "option_d": "$2{,}000{,}000(1.015)^{t + 12}$",
+    "correct": "A",
+    "explanation_en": "By the power-of-a-power rule, $a^{mn} = (a^m)^n$. So $(1.015)^{12t} = \\left(1.015^{12}\\right)^{t}$, and the balance is $2{,}000{,}000\\left(1.015^{12}\\right)^{t}$.\n\nChoice B assumes $1.015^{12} = 1.18$, but $1.015^{12} \\approx 1.1956$: monthly compounding earns more than $18\\%$ per year, so the two expressions are not equal. Choice C multiplies the $12$ into the coefficient instead of keeping it in the exponent. Choice D adds $12$ to the exponent instead of multiplying, since $a^{t + 12} = a^t \\cdot a^{12}$, not $a^{12t}$.",
+    "explanation_uz": "Darajani darajaga ko‘tarish qoidasiga ko‘ra $a^{mn} = (a^m)^n$. Demak $(1.015)^{12t} = \\left(1.015^{12}\\right)^{t}$ va hisobdagi pul $2{,}000{,}000\\left(1.015^{12}\\right)^{t}$ ga teng.\n\nB variant $1.015^{12} = 1.18$ deb hisoblaydi, lekin $1.015^{12} \\approx 1.1956$: oylik murakkab foiz yiliga $18\\%$ dan ko‘proq daromad beradi, shuning uchun bu ifodalar teng emas. C variantda $12$ daraja ko‘rsatkichida qolish o‘rniga koeffitsiyentga ko‘paytirilgan. D variantda $12$ ko‘rsatkichga ko‘paytirilish o‘rniga qo‘shilgan, holbuki $a^{t + 12} = a^t \\cdot a^{12}$, $a^{12t}$ emas.",
+    "estimated_seconds": 85,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "equivalent_expressions",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "For $x \\ne 3$, the expression $\\dfrac{2x^2 - 5x + 4}{x - 3}$ is equivalent to $2x + 1 + \\dfrac{r}{x - 3}$, where $r$ is a constant. What is the value of $r$?",
+    "spr_answers": [
+      "7"
+    ],
+    "explanation_en": "Multiply both sides by $x - 3$: $2x^2 - 5x + 4 = (2x + 1)(x - 3) + r$.\n\nExpand: $(2x + 1)(x - 3) = 2x^2 - 6x + x - 3 = 2x^2 - 5x - 3$.\n\nSo $2x^2 - 5x + 4 = 2x^2 - 5x - 3 + r$, which gives $r = 4 - (-3) = 7$.\n\nA quick check: substitute $x = 3$ into the numerator, $2(9) - 15 + 4 = 7$, which is the remainder. A common error is entering $4$, the constant term of the numerator, or $1$, the constant term of the quotient.",
+    "explanation_uz": "Ikkala tomonni $x - 3$ ga ko‘paytiramiz: $2x^2 - 5x + 4 = (2x + 1)(x - 3) + r$.\n\nQavslarni ochamiz: $(2x + 1)(x - 3) = 2x^2 - 6x + x - 3 = 2x^2 - 5x - 3$.\n\nDemak $2x^2 - 5x + 4 = 2x^2 - 5x - 3 + r$, bundan $r = 4 - (-3) = 7$.\n\nTez tekshirish: suratga $x = 3$ ni qo‘yamiz, $2(9) - 15 + 4 = 7$ — bu qoldiq. Ko‘p uchraydigan xato — suratning ozod hadi $4$ ni yoki bo‘linmaning ozod hadi $1$ ni kiritish.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "equivalent_expressions",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "If $x - y = 6$ and $xy = 8$, what is the value of $x^2 + y^2$?",
+    "option_a": "$20$",
+    "option_b": "$28$",
+    "option_c": "$52$",
+    "option_d": "$68$",
+    "correct": "C",
+    "explanation_en": "Square the first equation: $(x - y)^2 = x^2 - 2xy + y^2 = 36$.\n\nSo $x^2 + y^2 = 36 + 2xy = 36 + 2(8) = 52$. There is no need to find $x$ and $y$ themselves.\n\nChoice A subtracts $2xy$ instead of adding it: $36 - 16 = 20$. Choice B uses $(x - y)^2 = x^2 - xy + y^2$ with the wrong sign as well: $36 - 8 = 28$. Choice D is $(x + y)^2 = x^2 + y^2 + 2xy = 52 + 16 = 68$, not $x^2 + y^2$.",
+    "explanation_uz": "Birinchi tenglikni kvadratga ko‘taramiz: $(x - y)^2 = x^2 - 2xy + y^2 = 36$.\n\nDemak $x^2 + y^2 = 36 + 2xy = 36 + 2(8) = 52$. $x$ va $y$ ning o‘zini topish shart emas.\n\nA variantda $2xy$ qo‘shilish o‘rniga ayirilgan: $36 - 16 = 20$. B variantda $(x - y)^2 = x^2 - xy + y^2$ deb olinib, ishora ham xato qilingan: $36 - 8 = 28$. D variant — bu $(x + y)^2 = x^2 + y^2 + 2xy = 52 + 16 = 68$, $x^2 + y^2$ emas.",
+    "estimated_seconds": 95,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "equivalent_expressions",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "For all positive values of $x$ and $y$, the expression $\\dfrac{(x^3y^{-2})^4}{x^{-2}y^5}$ is equivalent to $x^ay^b$, where $a$ and $b$ are constants. What is the value of $a - b$?",
+    "spr_answers": [
+      "27"
+    ],
+    "explanation_en": "Raise each factor to the fourth power: $(x^3y^{-2})^4 = x^{12}y^{-8}$.\n\nDivide by subtracting exponents: $x^{12 - (-2)}y^{-8 - 5} = x^{14}y^{-13}$.\n\nSo $a = 14$, $b = -13$, and $a - b = 14 - (-13) = 27$.\n\nCommon errors: adding the exponents $3 + 4$ instead of multiplying them; computing $12 - 2 = 10$ for $x$ (ignoring the negative exponent in the denominator); or giving $a + b = 1$ instead of $a - b$.",
+    "explanation_uz": "Har bir ko‘paytuvchini to‘rtinchi darajaga ko‘taramiz: $(x^3y^{-2})^4 = x^{12}y^{-8}$.\n\nBo‘lishda ko‘rsatkichlar ayiriladi: $x^{12 - (-2)}y^{-8 - 5} = x^{14}y^{-13}$.\n\nDemak $a = 14$, $b = -13$ va $a - b = 14 - (-13) = 27$.\n\nKo‘p uchraydigan xatolar: ko‘rsatkichlarni ko‘paytirish o‘rniga qo‘shish ($3 + 4$); $x$ uchun $12 - 2 = 10$ deb hisoblash (maxrajdagi manfiy ko‘rsatkichni e’tiborsiz qoldirish); yoki $a - b$ o‘rniga $a + b = 1$ ni kiritish.",
+    "estimated_seconds": 110,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  }
+]

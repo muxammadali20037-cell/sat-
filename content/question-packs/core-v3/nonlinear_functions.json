@@ -1,0 +1,142 @@
+[
+  {
+    "skill_code": "nonlinear_functions",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "A ball is kicked from a platform. The height, in meters, of the ball above the ground $t$ seconds after it is kicked is modeled by the function $h(t) = -5t^2 + 20t + 2$. What is the best interpretation of $2$ in this context?",
+    "option_a": "The maximum height of the ball is $2$ meters.",
+    "option_b": "The ball was $2$ meters above the ground when it was kicked.",
+    "option_c": "The ball hits the ground $2$ seconds after it is kicked.",
+    "option_d": "The height of the ball increases by $2$ meters each second.",
+    "correct": "B",
+    "explanation_en": "The constant term is the value of the function when $t = 0$: $h(0) = -5(0)^2 + 20(0) + 2 = 2$. At $t = 0$ the ball is just being kicked, so $2$ is its starting height above the ground, in meters.\n\nChoice A is wrong because the maximum occurs at $t = 2$ and equals $h(2) = 22$ meters. Choice C is wrong because $h(2) = 22$, not $0$. Choice D describes a linear model; in a quadratic model the height does not change by a constant amount each second.",
+    "explanation_uz": "Ozod had — bu $t = 0$ dagi funksiya qiymati: $h(0) = -5(0)^2 + 20(0) + 2 = 2$. $t = 0$ da to‘p endigina tepilgan, demak $2$ — uning yerdan boshlang‘ich balandligi (metrda).\n\nA variant noto‘g‘ri, chunki eng katta balandlik $t = 2$ da bo‘ladi va $h(2) = 22$ metrga teng. C variant noto‘g‘ri, chunki $h(2) = 22$, $0$ emas. D variant chiziqli modelni tasvirlaydi; kvadratik modelda balandlik har soniyada bir xil miqdorga o‘zgarmaydi.",
+    "estimated_seconds": 55,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "nonlinear_functions",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "The population of a town $t$ years after 2025 is modeled by the function $P(t) = 52{,}000(1.024)^t$. According to the model, which of the following is closest to the population of the town in 2027?",
+    "option_a": "$53{,}248$",
+    "option_b": "$54{,}496$",
+    "option_c": "$54{,}526$",
+    "option_d": "$106{,}496$",
+    "correct": "C",
+    "explanation_en": "The year 2027 is $2$ years after 2025, so $t = 2$: $P(2) = 52{,}000(1.024)^2 = 52{,}000(1.048576) \\approx 54{,}526$.\n\nChoice A uses $t = 1$, the population in 2026. Choice B adds the first year's increase of $1{,}248$ twice, treating the growth as linear and ignoring that the second year's $2.4\\%$ is taken of a larger population. Choice D multiplies $52{,}000$ by $2(1.024)$ instead of raising $1.024$ to the power $2$.",
+    "explanation_uz": "2027-yil 2025-yildan $2$ yil keyin, demak $t = 2$: $P(2) = 52{,}000(1.024)^2 = 52{,}000(1.048576) \\approx 54{,}526$.\n\nA variantda $t = 1$ olingan, bu 2026-yildagi aholi. B variantda birinchi yildagi o‘sish $1{,}248$ ikki marta qo‘shilgan, ya’ni o‘sish chiziqli deb olingan va ikkinchi yilgi $2.4\\%$ kattaroq aholidan hisoblanishi e’tiborsiz qoldirilgan. D variantda $1.024$ ni ikkinchi darajaga ko‘tarish o‘rniga $52{,}000$ soni $2(1.024)$ ga ko‘paytirilgan.",
+    "estimated_seconds": 65,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "nonlinear_functions",
+    "difficulty": "easy",
+    "question_type": "spr",
+    "stem": "The function $f$ is defined by $f(x) = \\dfrac{x^2 + 8}{x - 1}$. What is the value of $f(3)$?",
+    "spr_answers": [
+      "17/2",
+      "8.5"
+    ],
+    "explanation_en": "Substitute $x = 3$: $f(3) = \\frac{3^2 + 8}{3 - 1} = \\frac{9 + 8}{2} = \\frac{17}{2}$, or $8.5$.\n\nCommon errors include computing $3^2$ as $6$, which gives $\\frac{14}{2} = 7$, and dividing only the $8$ by $2$, which gives $9 + 4 = 13$.",
+    "explanation_uz": "$x = 3$ ni qo‘yamiz: $f(3) = \\frac{3^2 + 8}{3 - 1} = \\frac{9 + 8}{2} = \\frac{17}{2}$, ya’ni $8.5$.\n\nKo‘p uchraydigan xatolar: $3^2$ ni $6$ deb hisoblash, bu $\\frac{14}{2} = 7$ ni beradi, va faqat $8$ ni $2$ ga bo‘lish, bu $9 + 4 = 13$ ni beradi.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "nonlinear_functions",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "Cesium-137 has a half-life of about $30$ years. A sample initially contains $120$ grams of cesium-137. Which of the following functions best models the mass $M$, in grams, of cesium-137 remaining in the sample $t$ years later?",
+    "option_a": "$M(t) = 120\\left(\\dfrac{1}{2}\\right)^{t/30}$",
+    "option_b": "$M(t) = 120\\left(\\dfrac{1}{2}\\right)^{30t}$",
+    "option_c": "$M(t) = 60\\left(\\dfrac{1}{2}\\right)^{t/30}$",
+    "option_d": "$M(t) = 120 - 2t$",
+    "correct": "A",
+    "explanation_en": "Radioactive decay is exponential: the mass is multiplied by $\\frac{1}{2}$ once every $30$ years. After $t$ years, $\\frac{t}{30}$ half-lives have passed, so $M(t) = 120\\left(\\frac{1}{2}\\right)^{t/30}$. Check: $M(0) = 120$ and $M(30) = 60$.\n\nChoice B halves the mass $30$ times every year, so $M(1)$ would be almost $0$. Choice C starts with $60$ grams instead of $120$. Choice D is linear: it matches $M(30) = 60$ but predicts $0$ grams after $60$ years, while the correct model gives $30$ grams.",
+    "explanation_uz": "Radioaktiv yemirilish ko‘rsatkichli funksiya bilan ifodalanadi: massa har $30$ yilda bir marta $\\frac{1}{2}$ ga ko‘paytiriladi. $t$ yilda $\\frac{t}{30}$ ta yarim yemirilish davri o‘tadi, demak $M(t) = 120\\left(\\frac{1}{2}\\right)^{t/30}$. Tekshirish: $M(0) = 120$ va $M(30) = 60$.\n\nB variantda massa har yili $30$ marta ikkiga bo‘linadi, shuning uchun $M(1)$ deyarli $0$ bo‘lardi. C variant $120$ emas, $60$ grammdan boshlanadi. D variant chiziqli: u $M(30) = 60$ ga mos keladi, lekin $60$ yildan keyin $0$ gramm qoladi deydi, to‘g‘ri model esa $30$ grammni beradi.",
+    "estimated_seconds": 80,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "nonlinear_functions",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "The function $f$ is defined by $f(x) = 3(2)^x - 12$. In the $xy$-plane, what is the $x$-intercept of the graph of $y = f(x)$?",
+    "option_a": "$(0, -9)$",
+    "option_b": "$(-12, 0)$",
+    "option_c": "$(4, 0)$",
+    "option_d": "$(2, 0)$",
+    "correct": "D",
+    "explanation_en": "At the $x$-intercept, $f(x) = 0$: $3(2)^x - 12 = 0$, so $3(2)^x = 12$, $2^x = 4 = 2^2$, and $x = 2$. The $x$-intercept is $(2, 0)$.\n\nChoice A is the $y$-intercept: $f(0) = 3(1) - 12 = -9$. Choice B uses the constant $-12$ as the intercept. Choice C stops at $2^x = 4$ and takes $4$ as the value of $x$; but $f(4) = 3(16) - 12 = 36$.",
+    "explanation_uz": "$x$ o‘qini kesish nuqtasida $f(x) = 0$: $3(2)^x - 12 = 0$, ya’ni $3(2)^x = 12$, $2^x = 4 = 2^2$ va $x = 2$. Kesish nuqtasi $(2, 0)$.\n\nA variant — $y$ o‘qini kesish nuqtasi: $f(0) = 3(1) - 12 = -9$. B variantda ozod had $-12$ kesish nuqtasi deb olingan. C variantda $2^x = 4$ da to‘xtab, $x$ ning qiymati $4$ deb olingan; lekin $f(4) = 3(16) - 12 = 36$.",
+    "estimated_seconds": 75,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "nonlinear_functions",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "The balance, in soums, of a bank deposit $t$ years after it was opened is modeled by the function $B(t) = 4{,}000{,}000(1.25)^t$. According to the model, what is the smallest whole number of years $t$ for which the balance is greater than $9{,}000{,}000$ soums?",
+    "spr_answers": [
+      "4"
+    ],
+    "explanation_en": "Compute the balance year by year (each year it is multiplied by $1.25$):\n\n$B(1) = 5{,}000{,}000$, $B(2) = 6{,}250{,}000$, $B(3) = 7{,}812{,}500$, $B(4) = 9{,}765{,}625$.\n\nThe balance first exceeds $9{,}000{,}000$ soums at $t = 4$.\n\nA common error is treating the growth as linear: adding $1{,}000{,}000$ soums per year would give $B(5) = 9{,}000{,}000$, which is not greater than $9{,}000{,}000$, and leads to $6$. Another error is entering $3$, because $B(3)$ is still below $9{,}000{,}000$.",
+    "explanation_uz": "Hisobdagi pulni yilma-yil hisoblaymiz (har yili $1.25$ ga ko‘paytiriladi):\n\n$B(1) = 5{,}000{,}000$, $B(2) = 6{,}250{,}000$, $B(3) = 7{,}812{,}500$, $B(4) = 9{,}765{,}625$.\n\nHisobdagi pul birinchi marta $t = 4$ da $9{,}000{,}000$ so‘mdan oshadi.\n\nKo‘p uchraydigan xato — o‘sishni chiziqli deb olish: yiliga $1{,}000{,}000$ so‘m qo‘shilsa, $B(5) = 9{,}000{,}000$ bo‘ladi, bu $9{,}000{,}000$ dan katta emas, va $6$ javobiga olib keladi. Yana bir xato — $3$ ni kiritish, chunki $B(3)$ hali $9{,}000{,}000$ dan kichik.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "nonlinear_functions",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "For the exponential function $f$, $f(x + 1) = 1.5f(x)$ for all values of $x$, and $f(2) = 36$. Which of the following defines $f$?",
+    "option_a": "$f(x) = 12(1.5)^x$",
+    "option_b": "$f(x) = 16(1.5)^x$",
+    "option_c": "$f(x) = 24(1.5)^x$",
+    "option_d": "$f(x) = 36(1.5)^x$",
+    "correct": "B",
+    "explanation_en": "Since $f(x + 1) = 1.5f(x)$, each time $x$ increases by $1$ the value is multiplied by $1.5$, so $f(x) = a(1.5)^x$ with $a = f(0)$.\n\nWork backward from $f(2) = 36$: $f(1) = \\frac{36}{1.5} = 24$ and $f(0) = \\frac{24}{1.5} = 16$. So $f(x) = 16(1.5)^x$. Check: $16(1.5)^2 = 16(2.25) = 36$.\n\nChoice A divides $36$ by $1.5 \\cdot 2 = 3$ instead of by $(1.5)^2 = 2.25$. Choice C uses $f(1) = 24$ as the initial value. Choice D uses $f(2) = 36$ as the initial value $f(0)$; it gives $f(2) = 81$.",
+    "explanation_uz": "$f(x + 1) = 1.5f(x)$ bo‘lgani uchun $x$ har safar $1$ ga oshganda qiymat $1.5$ ga ko‘paytiriladi, demak $f(x) = a(1.5)^x$, bunda $a = f(0)$.\n\n$f(2) = 36$ dan orqaga hisoblaymiz: $f(1) = \\frac{36}{1.5} = 24$ va $f(0) = \\frac{24}{1.5} = 16$. Demak $f(x) = 16(1.5)^x$. Tekshirish: $16(1.5)^2 = 16(2.25) = 36$.\n\nA variantda $36$ soni $(1.5)^2 = 2.25$ ga emas, $1.5 \\cdot 2 = 3$ ga bo‘lingan. C variantda boshlang‘ich qiymat sifatida $f(1) = 24$ olingan. D variantda $f(2) = 36$ boshlang‘ich qiymat $f(0)$ deb olingan; bu $f(2) = 81$ ni beradi.",
+    "estimated_seconds": 105,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "nonlinear_functions",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "A ball is thrown upward. The height, in meters, of the ball above the ground $t$ seconds after it is thrown is modeled by the function $h(t) = -5t^2 + bt + 1.6$, where $b$ is a constant. According to the model, the ball reaches its maximum height $1.8$ seconds after it is thrown. What is the maximum height of the ball, in meters?",
+    "spr_answers": [
+      "17.8",
+      "89/5"
+    ],
+    "explanation_en": "The maximum of $h(t) = at^2 + bt + c$ occurs at $t = -\\frac{b}{2a}$. Here $-\\frac{b}{2(-5)} = \\frac{b}{10} = 1.8$, so $b = 18$.\n\nThen $h(1.8) = -5(1.8)^2 + 18(1.8) + 1.6 = -5(3.24) + 32.4 + 1.6 = -16.2 + 32.4 + 1.6 = 17.8$ meters.\n\nCommon errors: entering $b = 18$ instead of the height; using $t = -\\frac{b}{a}$, which gives $b = 9$ and a height of only $1.6$; or forgetting the starting height $1.6$, which gives $16.2$.",
+    "explanation_uz": "$h(t) = at^2 + bt + c$ ning eng katta qiymati $t = -\\frac{b}{2a}$ da bo‘ladi. Bu yerda $-\\frac{b}{2(-5)} = \\frac{b}{10} = 1.8$, demak $b = 18$.\n\nU holda $h(1.8) = -5(1.8)^2 + 18(1.8) + 1.6 = -5(3.24) + 32.4 + 1.6 = -16.2 + 32.4 + 1.6 = 17.8$ metr.\n\nKo‘p uchraydigan xatolar: balandlik o‘rniga $b = 18$ ni kiritish; $t = -\\frac{b}{a}$ formulasidan foydalanish, bu $b = 9$ va atigi $1.6$ balandlikni beradi; yoki boshlang‘ich balandlik $1.6$ ni unutish, bu $16.2$ ni beradi.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  }
+]
