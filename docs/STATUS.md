@@ -390,7 +390,7 @@ State on 2 Nov 2026, applied through the Supabase connector with the owner's con
 | 0012 search indexes | **Declined by the owner** at the confirmation prompt. Optional (admin search speed only). Apply later from the SQL editor if wanted. |
 | 0013 study-guide tables | Applied |
 | 0014 study-guide content (~480 KB) | Not applied. Use Admin → Study guides → "Import bundled guides" after the first deploy, or `supabase db push`. |
-| 0026 workspace plans (1 table, 2 columns, 1 new function, `workspace_join` replaced with a limit check; no existing data touched, no plans created) | Pending the owner's approval. |
+| 0026 workspace plans (1 table, 2 columns, 1 new function, `workspace_join` replaced with a limit check; no existing data touched, no plans created) | Applied on 5 Nov with the owner's approval. Checked afterwards: RLS on; 0 plans and no workspace has a plan, so nothing is limited; clients cannot write plans, set a workspace plan or call either function; the server can; `workspace_join` contains the limit check; 68 tables, all with RLS. |
 | 0025 class challenges (1 table, 1 column; no existing data touched) | Applied on 5 Nov with the owner's approval. Checked afterwards: RLS on, `authenticated` SELECT only, cannot update `leaderboard_opt_in`, `anon` nothing; every existing member starts opted out; 67 tables, all with RLS. |
 | 0024 class polls (2 tables; no existing data touched) | Applied on 4 Nov with the owner's approval. Checked afterwards: RLS on both; `authenticated` cannot read `correct_index`, can read the other columns, cannot write; `anon` nothing; 66 tables, all with RLS. |
 | 0023 live lesson joins (1 table; no existing data touched) | Applied on 4 Nov with the owner's approval. Checked afterwards: RLS on, one read policy, `authenticated` SELECT only, `anon` nothing; 64 tables, all with RLS. |
@@ -415,7 +415,7 @@ The security advisor reports two kinds of finding, both expected by design:
 supabase link --project-ref ncqqnjnozrymrmblixra
 supabase migration repair --status applied 20261102000100 20261102000200 20261102000300 20261102000400 \
   20261102000500 20261102000600 20261102000700 20261102000800 20261102000900 20261102001000 20261102001100 20261102001300 \
-  20261102001500 20261102001600 20261102001700 20261103001800 20261103001900 20261103002000 20261103002100 20261104002200 20261104002300 20261104002400 20261104002500
+  20261102001500 20261102001600 20261102001700 20261103001800 20261103001900 20261103002000 20261103002100 20261104002200 20261104002300 20261104002400 20261104002500 20261105002600
 supabase db push   # applies 0012 (if still wanted) and 0014
 ```
 
