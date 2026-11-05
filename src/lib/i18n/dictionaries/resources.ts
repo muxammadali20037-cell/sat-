@@ -3,6 +3,8 @@ import { defineDict } from '../dict'
 /** Student Resource Hub (/dashboard/resources). */
 export const resourcesDict = defineDict({
   en: {
+    topicVideos: 'Videos on this topic',
+    topicVideosNote: 'Free videos by other creators on YouTube (link only). They are not part of SAT MASTER.',
     metaTitle: 'Resource Hub',
     title: 'Resource Hub',
     description: 'Hand-picked links to official SAT information, free lessons and tools, sorted by SAT domain.',
@@ -18,6 +20,8 @@ export const resourcesDict = defineDict({
     emptyBody: 'Our team adds links only after checking where they come from and that we are allowed to share them. Meanwhile, use the lessons, guides and practice in SAT MASTER.',
   },
   uz: {
+    topicVideos: 'Shu mavzu bo‘yicha videolar',
+    topicVideosNote: "YouTube'dagi boshqa mualliflarning bepul videolari (faqat havola). Ular SAT MASTER'ga tegishli emas.",
     metaTitle: 'Manbalar markazi',
     title: 'Manbalar markazi',
     description: "Rasmiy SAT ma'lumotlari, bepul darslar va vositalarga tanlab olingan havolalar, SAT yo'nalishlari bo'yicha.",
@@ -33,6 +37,8 @@ export const resourcesDict = defineDict({
     emptyBody: "Jamoamiz havolani faqat manbasi va uni ulashishga ruxsatimiz borligini tekshirgandan keyin qo'shadi. Hozircha SAT MASTER'dagi darslar, qo'llanmalar va mashqlardan foydalaning.",
   },
   ru: {
+    topicVideos: 'Видео по этой теме',
+    topicVideosNote: 'Бесплатные видео других авторов на YouTube (только ссылка). Они не входят в SAT MASTER.',
     metaTitle: 'Полезные ресурсы',
     title: 'Полезные ресурсы',
     description: 'Отобранные ссылки на официальную информацию о SAT, бесплатные уроки и инструменты по разделам SAT.',

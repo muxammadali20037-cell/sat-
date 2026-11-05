@@ -203,7 +203,7 @@ export async function unlinkTelegram(userId: string, email: string): Promise<{ u
 
 /** The signed-in student's Telegram connection, for Settings. */
 export async function myTelegramAccount(db: Db, userId: string) {
-  const { data } = await db.from('telegram_accounts').select('username, first_name, created_via, linked_at, phone_number').eq('user_id', userId).maybeSingle()
+  const { data } = await db.from('telegram_accounts').select('username, first_name, created_via, linked_at, phone_number, drills_enabled').eq('user_id', userId).maybeSingle()
   return data
 }
 

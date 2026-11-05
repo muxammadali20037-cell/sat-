@@ -1,5 +1,6 @@
 'use server'
 
+import { DRILL_COPY } from './drill-copy'
 import { revalidatePath } from 'next/cache'
 import { ADMIN_ROLES } from '@/config/roles'
 import type { ActionResult } from '@/lib/api/errors'
@@ -39,13 +40,13 @@ export async function configureTelegramBotAction(): Promise<ActionResult<{ steps
       await run('Menu button', 'setChatMenuButton', {
         menu_button: { type: 'web_app', text: BOT_COPY.uz.menuButton, web_app: { url: siteUrl(MINI_APP_PATH) } },
       })
-      await run('Commands (English)', 'setMyCommands', { commands: [{ command: 'start', description: BOT_COPY.en.commandStart }] })
-      await run('Commands (Uzbek)', 'setMyCommands', { commands: [{ command: 'start', description: BOT_COPY.uz.commandStart }], language_code: 'uz' })
+      await run('Commands (English)', 'setMyCommands', { commands: [{ command: 'start', description: BOT_COPY.en.commandStart }, { command: 'drill', description: DRILL_COPY.en.commandDrill }] })
+      await run('Commands (Uzbek)', 'setMyCommands', { commands: [{ command: 'start', description: BOT_COPY.uz.commandStart }, { command: 'drill', description: DRILL_COPY.uz.commandDrill }], language_code: 'uz' })
       await run('Description (English)', 'setMyDescription', { description: BOT_COPY.en.description })
       await run('Description (Uzbek)', 'setMyDescription', { description: BOT_COPY.uz.description, language_code: 'uz' })
       await run('Short description (English)', 'setMyShortDescription', { short_description: BOT_COPY.en.shortDescription })
       await run('Short description (Uzbek)', 'setMyShortDescription', { short_description: BOT_COPY.uz.shortDescription, language_code: 'uz' })
-      await run('Commands (Russian)', 'setMyCommands', { commands: [{ command: 'start', description: BOT_COPY.ru.commandStart }], language_code: 'ru' })
+      await run('Commands (Russian)', 'setMyCommands', { commands: [{ command: 'start', description: BOT_COPY.ru.commandStart }, { command: 'drill', description: DRILL_COPY.ru.commandDrill }], language_code: 'ru' })
       await run('Description (Russian)', 'setMyDescription', { description: BOT_COPY.ru.description, language_code: 'ru' })
       await run('Short description (Russian)', 'setMyShortDescription', { short_description: BOT_COPY.ru.shortDescription, language_code: 'ru' })
     } catch (err) {

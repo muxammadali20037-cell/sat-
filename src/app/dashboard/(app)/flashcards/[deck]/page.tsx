@@ -10,7 +10,9 @@ import { PageHeader } from '@/components/layout/page-header'
 import { Button } from '@/components/ui/button'
 import { EmptyState } from '@/components/ui/states'
 import { FlashcardStudy } from '@/components/flashcards/study'
-import { loadStudySession } from '@/features/flashcards/server'
+import { loadStudySession, newCardsLeftToday, SESSION_SIZE } from '@/features/flashcards/server'
+import { MINE_DECK, myWordsSession } from '@/features/vocab/server'
+import { vocabDict } from '@/lib/i18n/dictionaries/vocab'
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getDict(flashcardsDict)
@@ -22,7 +24,14 @@ export default async function FlashcardDeckPage({ params }: { params: Promise<{ 
   if (!/^[a-z0-9-]{1,50}$/.test(deckId)) notFound()
   const profile = await requireStudentReady({ next: `/dashboard/flashcards/${deckId}` })
   const [t, locale, db] = await Promise.all([getDict(flashcardsDict), getLocale(), createServerSupabase()])
-  const session = await loadStudySession(db, profile, deckId, locale)
+  const session =
+    deckId === MINE_DECK
+      ? await (async () => {
+          const [v, newAllowance] = await Promise.all([getDict(vocabDict), newCardsLeftToday(db, profile)])
+          const mine = await myWordsSession(db, profile, locale, { newAllowance, max: SESSION_SIZE })
+          return { deck: { id: MINE_DECK, title: v.deckTitle }, cards: mine.cards, total: mine.total }
+        })()
+      : await loadStudySession(db, profile, deckId, locale)
   if (!session) notFound()
 
   const backLink = (

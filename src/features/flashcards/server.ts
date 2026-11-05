@@ -8,6 +8,7 @@ import { startOfLocalDay } from '@/lib/time'
 import { recordActivity } from '@/features/activity/server'
 import { allDecks, cardKey, findCard, findDeck, localCard, type LocalCard } from './content'
 import { cardStatus, GRADES, review, sessionQueue, type Grade } from './srs'
+import { ownsWord } from '@/features/vocab/server'
 
 /** New cards a student starts per day (across all decks), and the size of one session. */
 export const NEW_CARDS_PER_DAY = 20
@@ -86,7 +87,8 @@ export async function loadStudySession(
 
 /** Grade one card: the next review date is computed here, never by the browser. */
 export async function recordReview(admin: Db, profile: CurrentProfile, input: ReviewInput): Promise<{ dueAt: string; intervalDays: number }> {
-  if (!findCard(input.cardKey)) throw new ApiError(404, 'NOT_FOUND', 'Card not found.')
+  // Built-in deck cards, or the student's own saved words ('mine/<word>').
+  if (!findCard(input.cardKey) && !(await ownsWord(admin, profile.id, input.cardKey))) throw new ApiError(404, 'NOT_FOUND', 'Card not found.')
   const { data: prev, error } = await admin
     .from('flashcard_reviews')
     .select('ease, interval_days, reps, lapses')
@@ -114,4 +116,9 @@ export async function recordReview(admin: Db, profile: CurrentProfile, input: Re
   // Flashcard time counts as study time (at most 2 minutes per card).
   await recordActivity(profile.id, profile.timezone, { studySeconds: Math.min(120, input.seconds) })
   return { dueAt: next.dueAt, intervalDays: next.intervalDays }
+}
+
+/** New cards the student may still start today (shared by all decks and "My words"). */
+export async function newCardsLeftToday(db: Db, profile: CurrentProfile): Promise<number> {
+  return newLeft(await loadStates(db, profile.id), profile.timezone)
 }

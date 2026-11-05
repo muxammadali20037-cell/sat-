@@ -14,6 +14,10 @@ import { Breadcrumb } from '@/components/ui/breadcrumb'
 import { Alert, Badge } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { RichText } from '@/components/learning/rich-text'
+import { WordLookup, WordLookupHint } from '@/components/vocab/word-lookup'
+import { TopicVideos } from '@/components/resources/topic-videos'
+import { loadTopicVideos } from '@/features/resources/server'
+import { resourcesDict } from '@/lib/i18n/dictionaries/resources'
 import { UpgradeNotice } from '@/components/subscription/upgrade-notice'
 import { LessonStudy } from '@/components/courses/lesson-study'
 import { LessonNavigation } from '@/components/courses/lesson-navigation'
@@ -37,7 +41,12 @@ export default async function LessonPage({ params }: Props) {
   const view = await getLessonView({ db, admin: createAdminSupabase, user: { id: profile.id, role: profile.role }, lessonId: id })
   if (!view) notFound()
 
-  const [tg, guideSlugs] = await Promise.all([getDict(guidesDict), guideSlugsBySkill(db).catch(() => ({}) as Record<string, string>)])
+  const [tg, guideSlugs, tr, videos] = await Promise.all([
+    getDict(guidesDict),
+    guideSlugsBySkill(db).catch(() => ({}) as Record<string, string>),
+    getDict(resourcesDict),
+    view.skill ? loadTopicVideos(db, view.skill.id).catch(() => []) : Promise.resolve([]),
+  ])
   const guideSlug = view.skill ? guideSlugs[view.skill.id] : undefined
   const subjectName = t.subjects[view.course.subjectCode]
   const KindIcon = view.kind === 'video' ? PlayCircle : BookOpen
@@ -46,7 +55,10 @@ export default async function LessonPage({ params }: Props) {
       <h2 id="lesson-notes" className="text-[19px] font-semibold text-foreground">
         {t.lesson.notes}
       </h2>
-      <RichText source={view.body} className="reading mt-3 text-foreground" />
+      <WordLookup source="lesson" sourceRef={view.id}>
+        <RichText source={view.body} className="reading mt-3 text-foreground" />
+      </WordLookup>
+      <WordLookupHint className="mt-3" />
     </section>
   ) : null
 
@@ -115,6 +127,8 @@ export default async function LessonPage({ params }: Props) {
             </Button>
           </aside>
         )}
+
+        <TopicVideos videos={videos} title={tr.topicVideos} note={tr.topicVideosNote} />
 
         {view.objectives.length > 0 && (
           <section aria-labelledby="lesson-objectives">

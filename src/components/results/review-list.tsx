@@ -12,6 +12,7 @@ import { Badge } from '@/components/ui/card'
 import { EmptyState } from '@/components/ui/states'
 import { QuestionCard } from '@/components/learning/question-card'
 import type { RevealedAnswer, SafeQuestion } from '@/types/questions'
+import { WordLookup } from '@/components/vocab/word-lookup'
 
 export type ReviewEntry = {
   position: number
@@ -62,39 +63,41 @@ export function ReviewList({ entries, showTime }: { entries: ReviewEntry[]; show
         <ol className="space-y-4">
           {shown.map((e) => (
             <li key={e.question.id}>
-              <QuestionCard
-                question={e.question}
-                number={e.position}
-                reveal={e.reveal}
-                selectedOptionId={e.reveal.selectedOptionId}
-                responseText={e.reveal.responseText ?? ''}
-                disabled
-                headerActions={
-                  <div className="flex items-center gap-2 text-[13px] text-muted-foreground">
-                    {e.markedForReview && (
-                      <Badge variant="warning">
-                        <Flag aria-hidden /> {t.flagged}
-                      </Badge>
-                    )}
-                    {showTime && e.timeSpentSeconds > 0 && (
-                      <span className="flex items-center gap-1 tabular">
-                        <Clock className="size-3.5" aria-hidden />
-                        <span className="sr-only">{format(t.timeOn, { time: formatDuration(e.timeSpentSeconds) })}</span>
-                        <span aria-hidden>{formatDuration(e.timeSpentSeconds)}</span>
-                      </span>
-                    )}
-                  </div>
-                }
-                footer={
-                  e.answered ? (
-                    <Button asChild variant="secondary" size="sm">
-                      <Link href={`/dashboard/ai-tutor?questionId=${e.question.id}`}>
-                        <Sparkles aria-hidden /> {t.askAi}
-                      </Link>
-                    </Button>
-                  ) : null
-                }
-              />
+              <WordLookup source="review" sourceRef={e.question.id}>
+                <QuestionCard
+                  question={e.question}
+                  number={e.position}
+                  reveal={e.reveal}
+                  selectedOptionId={e.reveal.selectedOptionId}
+                  responseText={e.reveal.responseText ?? ''}
+                  disabled
+                  headerActions={
+                    <div className="flex items-center gap-2 text-[13px] text-muted-foreground">
+                      {e.markedForReview && (
+                        <Badge variant="warning">
+                          <Flag aria-hidden /> {t.flagged}
+                        </Badge>
+                      )}
+                      {showTime && e.timeSpentSeconds > 0 && (
+                        <span className="flex items-center gap-1 tabular">
+                          <Clock className="size-3.5" aria-hidden />
+                          <span className="sr-only">{format(t.timeOn, { time: formatDuration(e.timeSpentSeconds) })}</span>
+                          <span aria-hidden>{formatDuration(e.timeSpentSeconds)}</span>
+                        </span>
+                      )}
+                    </div>
+                  }
+                  footer={
+                    e.answered ? (
+                      <Button asChild variant="secondary" size="sm">
+                        <Link href={`/dashboard/ai-tutor?questionId=${e.question.id}`}>
+                          <Sparkles aria-hidden /> {t.askAi}
+                        </Link>
+                      </Button>
+                    ) : null
+                  }
+                />
+              </WordLookup>
             </li>
           ))}
         </ol>

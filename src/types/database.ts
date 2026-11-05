@@ -1601,6 +1601,56 @@ export type Database = {
           },
         ]
       }
+      vocab_words: {
+        Row: {
+          id: string
+          user_id: string
+          word: string
+          display: string
+          in_dictionary: boolean
+          translation: string | null
+          context: string | null
+          source: string
+          source_ref: string | null
+          created_at: string
+          updated_at: string
+        }
+        Insert: {
+          id?: string
+          user_id: string
+          word: string
+          display: string
+          in_dictionary?: boolean
+          translation?: string | null
+          context?: string | null
+          source?: string
+          source_ref?: string | null
+          created_at?: string
+          updated_at?: string
+        }
+        Update: {
+          id?: string
+          user_id?: string
+          word?: string
+          display?: string
+          in_dictionary?: boolean
+          translation?: string | null
+          context?: string | null
+          source?: string
+          source_ref?: string | null
+          created_at?: string
+          updated_at?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "vocab_words_user_id_fkey"
+            columns: ["user_id"]
+            isOneToOne: false
+            referencedRelation: "profiles"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       flashcard_reviews: {
         Row: {
           user_id: string
@@ -3429,6 +3479,60 @@ export type Database = {
           },
         ]
       }
+      telegram_drill_items: {
+        Row: {
+          id: string
+          user_id: string
+          drill_date: string
+          position: number
+          kind: string
+          ref: string
+          prompt: string
+          choices: Json
+          correct_index: number
+          explanation: string | null
+          sent_at: string | null
+          message_id: number | null
+          answered_index: number | null
+          answered_at: string | null
+          created_at: string
+        }
+        Insert: {
+          id?: string
+          user_id: string
+          drill_date: string
+          position: number
+          kind: string
+          ref: string
+          prompt: string
+          choices: Json
+          correct_index: number
+          explanation?: string | null
+          sent_at?: string | null
+          message_id?: number | null
+          answered_index?: number | null
+          answered_at?: string | null
+          created_at?: string
+        }
+        Update: {
+          id?: string
+          user_id?: string
+          drill_date?: string
+          position?: number
+          kind?: string
+          ref?: string
+          prompt?: string
+          choices?: Json
+          correct_index?: number
+          explanation?: string | null
+          sent_at?: string | null
+          message_id?: number | null
+          answered_index?: number | null
+          answered_at?: string | null
+          created_at?: string
+        }
+        Relationships: []
+      }
       telegram_accounts: {
         Row: {
           user_id: string
@@ -3442,6 +3546,8 @@ export type Database = {
           last_seen_at: string
           phone_number: string | null
           phone_shared_at: string | null
+          drills_enabled: boolean
+          drills_last_sent_on: string | null
         }
         Insert: {
           user_id: string
@@ -3455,6 +3561,8 @@ export type Database = {
           last_seen_at?: string
           phone_number?: string | null
           phone_shared_at?: string | null
+          drills_enabled?: boolean
+          drills_last_sent_on?: string | null
         }
         Update: {
           user_id?: string
@@ -3468,6 +3576,8 @@ export type Database = {
           last_seen_at?: string
           phone_number?: string | null
           phone_shared_at?: string | null
+          drills_enabled?: boolean
+          drills_last_sent_on?: string | null
         }
         Relationships: [
           {

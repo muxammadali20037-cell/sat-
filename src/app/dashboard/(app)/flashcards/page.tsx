@@ -10,6 +10,8 @@ import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import { ProgressBar } from '@/components/ui/progress'
 import { loadDeckSummaries, NEW_CARDS_PER_DAY } from '@/features/flashcards/server'
+import { loadMyWords } from '@/features/vocab/server'
+import { vocabDict } from '@/lib/i18n/dictionaries/vocab'
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getDict(flashcardsDict)
@@ -19,13 +21,35 @@ export async function generateMetadata(): Promise<Metadata> {
 export default async function FlashcardsPage() {
   const profile = await requireStudentReady({ next: '/dashboard/flashcards' })
   const [t, locale, db] = await Promise.all([getDict(flashcardsDict), getLocale(), createServerSupabase()])
-  const { decks, newLeftToday } = await loadDeckSummaries(db, profile, locale)
+  const [{ decks, newLeftToday }, mine, v] = await Promise.all([loadDeckSummaries(db, profile, locale), loadMyWords(db, profile, locale), getDict(vocabDict)])
 
   return (
     <>
       <PageHeader title={t.title} description={t.description} />
       <p className="-mt-3 mb-5 text-[13px] text-muted-foreground tabular">{format(t.newLeft, { n: newLeftToday, total: NEW_CARDS_PER_DAY })}</p>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+        <Card className="flex flex-col gap-4 border-primary/40 p-5" data-testid="my-words-card">
+          <div>
+            <p className="text-xs font-medium text-muted-foreground">{plural(mine.words.length, v.count)}</p>
+            <h2 className="mt-1 text-[17px] font-semibold text-foreground">{v.myWords}</h2>
+            <p className="mt-1 text-[13px] text-muted-foreground">{v.myWordsDescription}</p>
+          </div>
+          <p className="flex flex-wrap gap-x-3 text-xs text-muted-foreground tabular">
+            <span className={mine.due > 0 ? 'font-medium text-foreground' : undefined}>{format(t.stats.due, { n: mine.due })}</span>
+            <span>{format(t.stats.new, { n: mine.newCount })}</span>
+            <span>{format(t.stats.learned, { n: mine.learned })}</span>
+          </p>
+          <div className="mt-auto flex flex-wrap gap-2">
+            {mine.due + Math.min(mine.newCount, newLeftToday) > 0 && (
+              <Button asChild size="sm">
+                <Link href="/dashboard/flashcards/mine">{mine.due > 0 ? format(t.studyDue, { n: mine.due }) : t.study}</Link>
+              </Button>
+            )}
+            <Button asChild size="sm" variant="secondary">
+              <Link href="/dashboard/flashcards/my-words">{v.myWords}</Link>
+            </Button>
+          </div>
+        </Card>
         {decks.map((d) => {
           const available = d.due + Math.min(d.newCount, newLeftToday)
           return (

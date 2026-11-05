@@ -119,3 +119,30 @@ export async function setResourceStatusAction(input: unknown): Promise<ActionRes
     return { ok: true, message: parsed.data.status === 'published' ? 'Published' : parsed.data.status === 'archived' ? 'Archived' : 'Moved to drafts' }
   })
 }
+
+/**
+ * Checks every draft link now (YouTube through oEmbed) and publishes the ones that answer; the rest
+ * stay drafts with the status they returned. At most 60 per run.
+ */
+export async function publishWorkingDraftsAction(): Promise<ActionResult<{ published: number; failed: number }>> {
+  return adminAction(CONTENT_ROLES, async ({ profile }) => {
+    const admin = createAdminSupabase()
+    const { data: drafts } = check(await admin.from('learning_resources').select('id, url').eq('status', 'draft').order('created_at').limit(60), { entity: 'resource' })
+    let published = 0
+    let failed = 0
+    for (const r of drafts ?? []) {
+      const link = await checkLink(r.url)
+      const now = new Date().toISOString()
+      if (linkWorks(link.status)) {
+        check(await admin.from('learning_resources').update({ status: 'published', link_status: link.status, link_checked_at: now, published_at: now, updated_by: profile.id }).eq('id', r.id).eq('status', 'draft'), { entity: 'resource' })
+        await writeAudit({ actorId: profile.id, actorRole: profile.role, action: 'resource.published', entityType: 'learning_resource', entityId: r.id, before: { status: 'draft' }, after: { status: 'published' } })
+        published++
+      } else {
+        check(await admin.from('learning_resources').update({ link_status: link.status, link_checked_at: now }).eq('id', r.id), { entity: 'resource' })
+        failed++
+      }
+    }
+    refresh()
+    return { ok: true, data: { published, failed }, message: `Published ${published}. ${failed} did not answer and stay drafts.` }
+  })
+}

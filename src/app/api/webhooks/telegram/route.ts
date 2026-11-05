@@ -6,6 +6,7 @@ import { BOT_COPY, botLocale } from '@/features/telegram/bot-copy'
 import { MINI_APP_PATH } from '@/features/telegram/shared'
 import { LOGIN_COPY } from '@/features/telegram/login-shared'
 import { handleLoginCallback, handleLoginStart, handlePhoneSkip, handleSharedContact } from '@/features/telegram/login'
+import { handleDrillCallback, handleDrillCommand } from '@/features/telegram/drills'
 
 /**
  * POST /api/webhooks/telegram — bot updates. Telegram echoes the secret set with setWebhook in
@@ -13,6 +14,7 @@ import { handleLoginCallback, handleLoginStart, handlePhoneSkip, handleSharedCon
  * - /start, /app, /help → a button that opens the Mini App;
  * - /start login_<token> → website sign-in confirmation (see features/telegram/login.ts);
  * - "Confirm"/"Cancel" buttons (callback queries) for that confirmation;
+ * - /drill (/mashq) → today's short drill; its answer buttons are graded on the server;
  * - a shared contact → saves the student's own phone number.
  * Always 200 for accepted updates, so Telegram does not retry a reply that failed on our side.
  */
@@ -34,6 +36,7 @@ function secretMatches(given: string | null, expected: string): boolean {
 
 async function handle(update: Update) {
   if (update.callback_query) {
+    if (await handleDrillCallback(update.callback_query)) return
     await handleLoginCallback(update.callback_query)
     return
   }
@@ -56,6 +59,10 @@ async function handle(update: Update) {
   const skip = LOGIN_COPY[botLocale(from.language_code)].phoneSkip
   if (text === skip || text === LOGIN_COPY.uz.phoneSkip || text === LOGIN_COPY.en.phoneSkip) {
     await handlePhoneSkip(message.chat.id, from)
+    return
+  }
+  if (command === '/drill' || command === '/mashq' || command === '/practice') {
+    await handleDrillCommand(message.chat.id, from.id, from.language_code)
     return
   }
   if (command && COMMANDS.has(command)) {

@@ -21,6 +21,7 @@ import { myTelegramAccount } from '@/features/telegram/server'
 import { isTelegramOnlyEmail } from '@/features/telegram/shared'
 import { formatUzPhone } from '@/features/auth/phone'
 import { DisconnectTelegramButton } from '@/components/telegram/disconnect-telegram-button'
+import { DrillSettings } from '@/components/telegram/drill-settings'
 import { format } from '@/lib/i18n/dict'
 import { authDict } from '@/lib/i18n/dictionaries/auth'
 import { TelegramLogin } from '@/components/auth/telegram-login'
@@ -126,6 +127,7 @@ export default async function SettingsPage() {
           {telegram ? format(t.telegram.connected, { username: telegram.username ? ` (@${telegram.username})` : '' }) : t.telegram.notConnected}
         </p>
         {telegram?.phone_number && <p className="mt-2 text-sm text-muted-foreground">{format(t.telegram.phone, { phone: telegram.phone_number })}</p>}
+        {telegram && isTelegramConfigured() && <DrillSettings enabled={telegram.drills_enabled} labels={t.telegram} />}
         {telegramOnly ? (
           <p className="mt-2 text-sm text-muted-foreground">{t.telegram.telegramOnly}</p>
         ) : telegram ? (

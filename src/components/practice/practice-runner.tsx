@@ -21,6 +21,7 @@ import type { RevealedAnswer, SafeQuestion } from '@/types/questions'
 import { BookmarkButton } from './bookmark-button'
 import { CalculatorSheet, CalculatorSidePanel, CalculatorToggleButton, useCalculator } from './calculator-panel'
 import { errorDetails, isPlanLimit, practiceErrorMessage } from './error-message'
+import { WordLookup, WordLookupHint } from '@/components/vocab/word-lookup'
 
 export type RunnerItem = {
   position: number
@@ -310,43 +311,46 @@ export function PracticeRunner({
           {limit && <UpgradeNotice title={t.usage.limitTitle} description={format(t.usage.limitBody, { limit: limit.limit })} actionLabel={t.usage.seePlans} />}
           {planRequired && <UpgradeNotice title={t.usage.disabledTitle} description={t.usage.disabledBody} actionLabel={t.usage.seePlans} />}
 
-          <QuestionCard
-            key={current.id}
-            question={current}
-            selectedOptionId={draft.selectedOptionId}
-            responseText={draft.responseText}
-            onSelectOption={(id) => setDraft({ selectedOptionId: id })}
-            onResponseChange={(text) => setDraft({ responseText: text })}
-            reveal={item.reveal}
-            disabled={checking}
-            eliminated={eliminatedSet}
-            onToggleEliminate={toggleEliminate}
-            headerActions={
-              <BookmarkButton
-                questionId={current.id}
-                bookmarked={item.bookmarked}
-                onChange={(b) => setItems((prev) => prev.map((it) => (it.question.id === current.id ? { ...it, bookmarked: b } : it)))}
-              />
-            }
-            footer={
-              answered ? (
-                <div className="flex flex-wrap gap-2">
-                  <Button asChild variant="secondary" size="sm">
-                    <Link href={`/dashboard/ai-tutor?questionId=${current.id}`}>
-                      <Sparkles aria-hidden /> {t.runner.askAi}
-                    </Link>
-                  </Button>
-                  {guideLabel && guideSlugs[current.skillId] && (
-                    <Button asChild variant="ghost" size="sm">
-                      <Link href={`/dashboard/guides/${guideSlugs[current.skillId]}`}>
-                        <Languages aria-hidden /> {guideLabel}
+          <WordLookup source="practice" sourceRef={current.id}>
+            <QuestionCard
+              key={current.id}
+              question={current}
+              selectedOptionId={draft.selectedOptionId}
+              responseText={draft.responseText}
+              onSelectOption={(id) => setDraft({ selectedOptionId: id })}
+              onResponseChange={(text) => setDraft({ responseText: text })}
+              reveal={item.reveal}
+              disabled={checking}
+              eliminated={eliminatedSet}
+              onToggleEliminate={toggleEliminate}
+              headerActions={
+                <BookmarkButton
+                  questionId={current.id}
+                  bookmarked={item.bookmarked}
+                  onChange={(b) => setItems((prev) => prev.map((it) => (it.question.id === current.id ? { ...it, bookmarked: b } : it)))}
+                />
+              }
+              footer={
+                answered ? (
+                  <div className="flex flex-wrap gap-2">
+                    <Button asChild variant="secondary" size="sm">
+                      <Link href={`/dashboard/ai-tutor?questionId=${current.id}`}>
+                        <Sparkles aria-hidden /> {t.runner.askAi}
                       </Link>
                     </Button>
-                  )}
-                </div>
-              ) : null
-            }
-          />
+                    {guideLabel && guideSlugs[current.skillId] && (
+                      <Button asChild variant="ghost" size="sm">
+                        <Link href={`/dashboard/guides/${guideSlugs[current.skillId]}`}>
+                          <Languages aria-hidden /> {guideLabel}
+                        </Link>
+                      </Button>
+                    )}
+                  </div>
+                ) : null
+              }
+            />
+          </WordLookup>
+          <WordLookupHint className="-mt-1" />
 
           {error && (
             <Alert variant="destructive" className="py-3">

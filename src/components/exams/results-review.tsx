@@ -11,6 +11,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/menus'
 import { Button } from '@/components/ui/button'
 import { QuestionCard } from '@/components/learning/question-card'
 import type { ResultModule } from '@/features/exams/queries'
+import { WordLookup } from '@/components/vocab/word-lookup'
 
 /** Post-exam review: per-module tabs, a correctness grid, and the revealed question with its explanation. */
 export function ResultsReview({ modules }: { modules: ResultModule[] }) {
@@ -59,25 +60,27 @@ export function ResultsReview({ modules }: { modules: ResultModule[] }) {
             </ol>
             {item && (
               <div className="mt-5">
-                <QuestionCard
-                  key={item.attemptQuestionId}
-                  question={item.question}
-                  number={item.position}
-                  total={m.questions.length}
-                  reveal={item.reveal}
-                  selectedOptionId={item.reveal.selectedOptionId}
-                  responseText={item.reveal.responseText ?? ''}
-                  layout="split"
-                  footer={
-                    item.answered ? (
-                      <Button asChild variant="secondary" size="sm">
-                        <Link href={`/dashboard/ai-tutor?questionId=${item.question.id}`}>
-                          <MessageCircle /> {t.results.askTutor}
-                        </Link>
-                      </Button>
-                    ) : null
-                  }
-                />
+                <WordLookup source="review" sourceRef={item.question.id}>
+                  <QuestionCard
+                    key={item.attemptQuestionId}
+                    question={item.question}
+                    number={item.position}
+                    total={m.questions.length}
+                    reveal={item.reveal}
+                    selectedOptionId={item.reveal.selectedOptionId}
+                    responseText={item.reveal.responseText ?? ''}
+                    layout="split"
+                    footer={
+                      item.answered ? (
+                        <Button asChild variant="secondary" size="sm">
+                          <Link href={`/dashboard/ai-tutor?questionId=${item.question.id}`}>
+                            <MessageCircle /> {t.results.askTutor}
+                          </Link>
+                        </Button>
+                      ) : null
+                    }
+                  />
+                </WordLookup>
               </div>
             )}
           </TabsContent>

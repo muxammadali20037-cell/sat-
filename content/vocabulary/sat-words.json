@@ -1,0 +1,1595 @@
+{
+ "description": "SAT MASTER's own SAT-vocabulary dictionary (original definitions and example sentences, written for this app). Keys are lowercase base forms.",
+ "version": 1,
+ "words": {
+  "abandon": {
+   "pos": "verb",
+   "uz": "tashlab ketmoq, voz kechmoq",
+   "ru": "покидать, отказываться",
+   "def": "to leave behind or give up completely",
+   "ex": "The team refused to abandon the project after the first failure."
+  },
+  "abundant": {
+   "pos": "adj",
+   "uz": "mo'l, serob",
+   "ru": "обильный",
+   "def": "existing in large amounts",
+   "ex": "Fresh water is abundant in the northern valleys."
+  },
+  "accelerate": {
+   "pos": "verb",
+   "uz": "tezlashtirmoq",
+   "ru": "ускорять",
+   "def": "to make something happen faster",
+   "ex": "Warmer temperatures can accelerate the melting of ice."
+  },
+  "accommodate": {
+   "pos": "verb",
+   "uz": "joylashtirmoq, moslashmoq",
+   "ru": "вмещать, приспосабливаться",
+   "def": "to make room for or adjust to someone's needs",
+   "ex": "The library was redesigned to accommodate more students."
+  },
+  "accumulate": {
+   "pos": "verb",
+   "uz": "to'plamoq, yig'ilmoq",
+   "ru": "накапливать",
+   "def": "to gather or build up over time",
+   "ex": "Dust accumulated on the shelves of the empty house."
+  },
+  "accurate": {
+   "pos": "adj",
+   "uz": "aniq, to'g'ri",
+   "ru": "точный",
+   "def": "correct in every detail",
+   "ex": "The scientist needed an accurate measurement of the sample."
+  },
+  "acknowledge": {
+   "pos": "verb",
+   "uz": "tan olmoq, e'tirof etmoq",
+   "ru": "признавать",
+   "def": "to accept or admit that something is true",
+   "ex": "The author acknowledges that her data are incomplete."
+  },
+  "acquire": {
+   "pos": "verb",
+   "uz": "egallamoq, qo'lga kiritmoq",
+   "ru": "приобретать",
+   "def": "to get or gain something",
+   "ex": "Children acquire language mostly by listening."
+  },
+  "adapt": {
+   "pos": "verb",
+   "uz": "moslashmoq",
+   "ru": "адаптироваться",
+   "def": "to change in order to fit new conditions",
+   "ex": "Some birds adapt quickly to life in cities."
+  },
+  "adequate": {
+   "pos": "adj",
+   "uz": "yetarli",
+   "ru": "достаточный",
+   "def": "good or large enough for a purpose",
+   "ex": "The village lacked adequate housing for new workers."
+  },
+  "adjacent": {
+   "pos": "adj",
+   "uz": "qo'shni, yonma-yon",
+   "ru": "смежный, соседний",
+   "def": "next to or near something",
+   "ex": "The museum is adjacent to the central park."
+  },
+  "advocate": {
+   "pos": "noun/verb",
+   "uz": "tarafdor; himoya qilmoq",
+   "ru": "сторонник; выступать за",
+   "def": "a supporter of a cause; to publicly support",
+   "ex": "She became an advocate for clean energy."
+  },
+  "aesthetic": {
+   "pos": "adj",
+   "uz": "estetik, go'zallikka oid",
+   "ru": "эстетический",
+   "def": "related to beauty or artistic taste",
+   "ex": "The building's aesthetic value is as important as its function."
+  },
+  "affirm": {
+   "pos": "verb",
+   "uz": "tasdiqlamoq",
+   "ru": "подтверждать",
+   "def": "to state firmly that something is true",
+   "ex": "The new study affirms earlier findings."
+  },
+  "alleviate": {
+   "pos": "verb",
+   "uz": "yengillashtirmoq",
+   "ru": "облегчать",
+   "def": "to make pain or a problem less severe",
+   "ex": "New bus routes helped alleviate traffic."
+  },
+  "allocate": {
+   "pos": "verb",
+   "uz": "ajratmoq, taqsimlamoq",
+   "ru": "выделять, распределять",
+   "def": "to give out resources for a specific purpose",
+   "ex": "The city allocated funds to repair the bridges."
+  },
+  "ambiguous": {
+   "pos": "adj",
+   "uz": "noaniq, ikki ma'noli",
+   "ru": "двусмысленный",
+   "def": "having more than one possible meaning",
+   "ex": "The last line of the poem is deliberately ambiguous."
+  },
+  "ambivalent": {
+   "pos": "adj",
+   "uz": "ikkilanuvchi",
+   "ru": "двойственный, неоднозначный",
+   "def": "having mixed feelings about something",
+   "ex": "He felt ambivalent about moving to a new city."
+  },
+  "analogous": {
+   "pos": "adj",
+   "uz": "o'xshash",
+   "ru": "аналогичный",
+   "def": "similar in some way, allowing comparison",
+   "ex": "The heart is analogous to a pump."
+  },
+  "anomaly": {
+   "pos": "noun",
+   "uz": "g'ayritabiiylik, istisno",
+   "ru": "аномалия",
+   "def": "something that differs from what is normal",
+   "ex": "The unusually warm winter was an anomaly."
+  },
+  "anticipate": {
+   "pos": "verb",
+   "uz": "oldindan kutmoq",
+   "ru": "предвидеть, ожидать",
+   "def": "to expect or predict something",
+   "ex": "Planners did not anticipate so many visitors."
+  },
+  "apparent": {
+   "pos": "adj",
+   "uz": "aniq ko'rinib turgan; zohiriy",
+   "ru": "очевидный; кажущийся",
+   "def": "clearly seen, or seeming true but possibly not",
+   "ex": "The apparent calm of the lake hid strong currents."
+  },
+  "arbitrary": {
+   "pos": "adj",
+   "uz": "o'zboshimcha, tasodifiy",
+   "ru": "произвольный",
+   "def": "based on chance or personal whim, not reason",
+   "ex": "The rule seemed arbitrary to the students."
+  },
+  "articulate": {
+   "pos": "verb/adj",
+   "uz": "aniq ifodalamoq; ravon",
+   "ru": "чётко выражать; красноречивый",
+   "def": "to express clearly; able to speak clearly",
+   "ex": "She articulated her argument in three short points."
+  },
+  "assert": {
+   "pos": "verb",
+   "uz": "qat'iy ta'kidlamoq",
+   "ru": "утверждать",
+   "def": "to state something confidently",
+   "ex": "The researcher asserts that the trend will continue."
+  },
+  "assess": {
+   "pos": "verb",
+   "uz": "baholamoq",
+   "ru": "оценивать",
+   "def": "to judge the value or quality of something",
+   "ex": "Teachers assess progress with short quizzes."
+  },
+  "attribute": {
+   "pos": "verb/noun",
+   "uz": "bog'lamoq (sababini); xususiyat",
+   "ru": "приписывать; свойство",
+   "def": "to say something is caused by; a quality",
+   "ex": "He attributes his success to daily practice."
+  },
+  "autonomy": {
+   "pos": "noun",
+   "uz": "mustaqillik, avtonomiya",
+   "ru": "автономия, независимость",
+   "def": "the freedom to make one's own decisions",
+   "ex": "The region gained greater autonomy in 1990."
+  },
+  "benevolent": {
+   "pos": "adj",
+   "uz": "mehribon, xayrixoh",
+   "ru": "доброжелательный",
+   "def": "kind and wanting to help others",
+   "ex": "A benevolent donor paid for the new library."
+  },
+  "bias": {
+   "pos": "noun",
+   "uz": "xolis bo'lmaslik, tarafkashlik",
+   "ru": "предвзятость",
+   "def": "an unfair preference for or against something",
+   "ex": "The survey's questions showed a clear bias."
+  },
+  "candid": {
+   "pos": "adj",
+   "uz": "ochiq, samimiy",
+   "ru": "откровенный",
+   "def": "honest and direct",
+   "ex": "In a candid interview, the coach admitted his mistakes."
+  },
+  "catalyst": {
+   "pos": "noun",
+   "uz": "katalizator, turtki",
+   "ru": "катализатор",
+   "def": "something that causes an important change",
+   "ex": "The invention was a catalyst for economic growth."
+  },
+  "cautious": {
+   "pos": "adj",
+   "uz": "ehtiyotkor",
+   "ru": "осторожный",
+   "def": "careful to avoid risks",
+   "ex": "Scientists remain cautious about the early results."
+  },
+  "coherent": {
+   "pos": "adj",
+   "uz": "izchil, mantiqiy",
+   "ru": "связный, последовательный",
+   "def": "logical and well organized",
+   "ex": "The essay presents a coherent argument."
+  },
+  "coincide": {
+   "pos": "verb",
+   "uz": "to'g'ri kelmoq, mos tushmoq",
+   "ru": "совпадать",
+   "def": "to happen at the same time or agree",
+   "ex": "The festival coincides with the harvest."
+  },
+  "collaborate": {
+   "pos": "verb",
+   "uz": "hamkorlik qilmoq",
+   "ru": "сотрудничать",
+   "def": "to work together with others",
+   "ex": "Two labs collaborated on the study."
+  },
+  "compelling": {
+   "pos": "adj",
+   "uz": "ishonarli, jalb qiluvchi",
+   "ru": "убедительный",
+   "def": "very convincing or interesting",
+   "ex": "The author offers compelling evidence."
+  },
+  "compensate": {
+   "pos": "verb",
+   "uz": "qoplamoq, o'rnini to'ldirmoq",
+   "ru": "компенсировать",
+   "def": "to make up for a loss or weakness",
+   "ex": "Plants compensate for low light by growing larger leaves."
+  },
+  "complement": {
+   "pos": "verb/noun",
+   "uz": "to'ldirmoq; to'ldiruvchi",
+   "ru": "дополнять; дополнение",
+   "def": "to go well with something and complete it",
+   "ex": "The sauce complements the fish."
+  },
+  "comprehensive": {
+   "pos": "adj",
+   "uz": "keng qamrovli, to'liq",
+   "ru": "всесторонний",
+   "def": "including everything or nearly everything",
+   "ex": "The report gives a comprehensive review of the data."
+  },
+  "comprise": {
+   "pos": "verb",
+   "uz": "tashkil topmoq, iborat bo'lmoq",
+   "ru": "состоять из",
+   "def": "to consist of or be made up of",
+   "ex": "The committee comprises five scientists."
+  },
+  "concede": {
+   "pos": "verb",
+   "uz": "tan olmoq (istamay)",
+   "ru": "признавать, уступать",
+   "def": "to admit something is true, often reluctantly",
+   "ex": "The critic concedes that the film is beautiful."
+  },
+  "conceive": {
+   "pos": "verb",
+   "uz": "o'ylab topmoq, tasavvur qilmoq",
+   "ru": "задумывать, представлять",
+   "def": "to form an idea or plan",
+   "ex": "Engineers conceived a new kind of bridge."
+  },
+  "concise": {
+   "pos": "adj",
+   "uz": "qisqa va lo'nda",
+   "ru": "краткий, сжатый",
+   "def": "giving information clearly in few words",
+   "ex": "Write a concise summary of the passage."
+  },
+  "conclusive": {
+   "pos": "adj",
+   "uz": "qat'iy, isbotlovchi",
+   "ru": "окончательный, убедительный",
+   "def": "ending doubt; proving something",
+   "ex": "There is no conclusive proof yet."
+  },
+  "concur": {
+   "pos": "verb",
+   "uz": "rozi bo'lmoq",
+   "ru": "соглашаться",
+   "def": "to agree",
+   "ex": "Most experts concur with the new estimate."
+  },
+  "condemn": {
+   "pos": "verb",
+   "uz": "qoralamoq",
+   "ru": "осуждать",
+   "def": "to express strong disapproval",
+   "ex": "The editorial condemned the decision."
+  },
+  "conform": {
+   "pos": "verb",
+   "uz": "bo'ysunmoq, mos kelmoq",
+   "ru": "соответствовать, подчиняться",
+   "def": "to follow rules or match a standard",
+   "ex": "The design must conform to safety rules."
+  },
+  "consensus": {
+   "pos": "noun",
+   "uz": "umumiy kelishuv",
+   "ru": "консенсус",
+   "def": "general agreement among a group",
+   "ex": "There is a growing consensus among researchers."
+  },
+  "consequently": {
+   "pos": "adv",
+   "uz": "natijada, shuning uchun",
+   "ru": "следовательно",
+   "def": "as a result",
+   "ex": "The road was closed; consequently, the bus was late."
+  },
+  "considerable": {
+   "pos": "adj",
+   "uz": "sezilarli, katta",
+   "ru": "значительный",
+   "def": "fairly large in size or amount",
+   "ex": "The project required considerable effort."
+  },
+  "consistent": {
+   "pos": "adj",
+   "uz": "izchil, bir xil",
+   "ru": "последовательный, постоянный",
+   "def": "always behaving or happening in the same way",
+   "ex": "Her results were consistent across trials."
+  },
+  "constrain": {
+   "pos": "verb",
+   "uz": "cheklamoq",
+   "ru": "ограничивать",
+   "def": "to limit or restrict",
+   "ex": "A small budget constrained the study."
+  },
+  "contemplate": {
+   "pos": "verb",
+   "uz": "chuqur o'ylamoq",
+   "ru": "размышлять",
+   "def": "to think carefully about something",
+   "ex": "He contemplated leaving his job."
+  },
+  "contemporary": {
+   "pos": "adj/noun",
+   "uz": "zamonaviy; zamondosh",
+   "ru": "современный; современник",
+   "def": "belonging to the present or the same time",
+   "ex": "Contemporary artists often use digital tools."
+  },
+  "contend": {
+   "pos": "verb",
+   "uz": "da'vo qilmoq; kurashmoq",
+   "ru": "утверждать; бороться",
+   "def": "to argue a claim; to struggle",
+   "ex": "Some historians contend that the war was avoidable."
+  },
+  "contradict": {
+   "pos": "verb",
+   "uz": "zid kelmoq, inkor qilmoq",
+   "ru": "противоречить",
+   "def": "to say or show the opposite",
+   "ex": "The new data contradict the old theory."
+  },
+  "controversial": {
+   "pos": "adj",
+   "uz": "munozarali",
+   "ru": "спорный",
+   "def": "causing strong disagreement",
+   "ex": "The plan was controversial among residents."
+  },
+  "conventional": {
+   "pos": "adj",
+   "uz": "an'anaviy, odatiy",
+   "ru": "традиционный, обычный",
+   "def": "following accepted customs",
+   "ex": "Conventional farming uses more water."
+  },
+  "conversely": {
+   "pos": "adv",
+   "uz": "aksincha",
+   "ru": "наоборот",
+   "def": "in an opposite way",
+   "ex": "Conversely, prices fall when supply rises."
+  },
+  "convey": {
+   "pos": "verb",
+   "uz": "yetkazmoq, ifodalamoq",
+   "ru": "передавать",
+   "def": "to communicate an idea or feeling",
+   "ex": "The photograph conveys a sense of loneliness."
+  },
+  "corroborate": {
+   "pos": "verb",
+   "uz": "tasdiqlamoq (dalil bilan)",
+   "ru": "подтверждать",
+   "def": "to support with evidence",
+   "ex": "A second experiment corroborated the result."
+  },
+  "credible": {
+   "pos": "adj",
+   "uz": "ishonchli",
+   "ru": "достоверный",
+   "def": "believable or trustworthy",
+   "ex": "The witness gave a credible account."
+  },
+  "crucial": {
+   "pos": "adj",
+   "uz": "hal qiluvchi, juda muhim",
+   "ru": "решающий",
+   "def": "extremely important",
+   "ex": "Sleep is crucial for memory."
+  },
+  "curtail": {
+   "pos": "verb",
+   "uz": "qisqartirmoq",
+   "ru": "сокращать",
+   "def": "to reduce or limit",
+   "ex": "The storm curtailed the outdoor events."
+  },
+  "cynical": {
+   "pos": "adj",
+   "uz": "shubhakor, kinik",
+   "ru": "циничный",
+   "def": "believing people act only from self-interest",
+   "ex": "He was cynical about the politicians' promises."
+  },
+  "debilitating": {
+   "pos": "adj",
+   "uz": "holsizlantiruvchi",
+   "ru": "изнурительный",
+   "def": "making someone very weak",
+   "ex": "The disease can be debilitating."
+  },
+  "deduce": {
+   "pos": "verb",
+   "uz": "xulosa chiqarmoq",
+   "ru": "делать вывод",
+   "def": "to reach a conclusion by reasoning",
+   "ex": "From the footprints, she deduced the animal's size."
+  },
+  "deficient": {
+   "pos": "adj",
+   "uz": "yetishmaydigan, kam",
+   "ru": "недостаточный",
+   "def": "lacking something needed",
+   "ex": "The soil was deficient in nitrogen."
+  },
+  "delineate": {
+   "pos": "verb",
+   "uz": "aniq tasvirlamoq, chegaralamoq",
+   "ru": "очерчивать, описывать",
+   "def": "to describe or mark exactly",
+   "ex": "The map delineates the park's borders."
+  },
+  "denote": {
+   "pos": "verb",
+   "uz": "bildirmoq",
+   "ru": "обозначать",
+   "def": "to be a sign of; to mean",
+   "ex": "In the graph, a dashed line denotes the forecast."
+  },
+  "depict": {
+   "pos": "verb",
+   "uz": "tasvirlamoq",
+   "ru": "изображать",
+   "def": "to show or describe in art or words",
+   "ex": "The mural depicts village life."
+  },
+  "deplete": {
+   "pos": "verb",
+   "uz": "tugatmoq, kamaytirmoq",
+   "ru": "истощать",
+   "def": "to use up a supply",
+   "ex": "Overfishing has depleted the stocks."
+  },
+  "derive": {
+   "pos": "verb",
+   "uz": "kelib chiqmoq, olmoq",
+   "ru": "получать, происходить",
+   "def": "to obtain from a source",
+   "ex": "Many medicines are derived from plants."
+  },
+  "deteriorate": {
+   "pos": "verb",
+   "uz": "yomonlashmoq",
+   "ru": "ухудшаться",
+   "def": "to become worse",
+   "ex": "The old road deteriorated quickly."
+  },
+  "deviate": {
+   "pos": "verb",
+   "uz": "chetga chiqmoq",
+   "ru": "отклоняться",
+   "def": "to move away from a usual path or plan",
+   "ex": "The results deviated from the prediction."
+  },
+  "diminish": {
+   "pos": "verb",
+   "uz": "kamaymoq",
+   "ru": "уменьшаться",
+   "def": "to become or make smaller",
+   "ex": "The noise diminished after midnight."
+  },
+  "discern": {
+   "pos": "verb",
+   "uz": "farqlamoq, ilg'amoq",
+   "ru": "различать",
+   "def": "to notice or understand something not obvious",
+   "ex": "It was hard to discern any pattern."
+  },
+  "discrepancy": {
+   "pos": "noun",
+   "uz": "nomuvofiqlik, farq",
+   "ru": "расхождение",
+   "def": "a difference between things that should match",
+   "ex": "A discrepancy appeared between the two reports."
+  },
+  "disdain": {
+   "pos": "noun/verb",
+   "uz": "nafrat, mensimaslik",
+   "ru": "презрение",
+   "def": "a feeling that something is unworthy",
+   "ex": "She looked at the cheap copy with disdain."
+  },
+  "disparate": {
+   "pos": "adj",
+   "uz": "tubdan farqli",
+   "ru": "несопоставимый, разнородный",
+   "def": "very different from each other",
+   "ex": "The book connects disparate ideas."
+  },
+  "disperse": {
+   "pos": "verb",
+   "uz": "tarqalmoq, tarqatmoq",
+   "ru": "рассеивать",
+   "def": "to spread over a wide area",
+   "ex": "Wind disperses the seeds."
+  },
+  "disrupt": {
+   "pos": "verb",
+   "uz": "buzmoq, izdan chiqarmoq",
+   "ru": "нарушать",
+   "def": "to interrupt the normal course of something",
+   "ex": "The strike disrupted train service."
+  },
+  "distinct": {
+   "pos": "adj",
+   "uz": "alohida, aniq farqlanadigan",
+   "ru": "отчётливый, особый",
+   "def": "clearly different or noticeable",
+   "ex": "Each region has a distinct dialect."
+  },
+  "diverse": {
+   "pos": "adj",
+   "uz": "xilma-xil",
+   "ru": "разнообразный",
+   "def": "showing a lot of variety",
+   "ex": "The reef supports diverse species."
+  },
+  "dominant": {
+   "pos": "adj",
+   "uz": "ustun, hukmron",
+   "ru": "доминирующий",
+   "def": "most powerful or important",
+   "ex": "Rice is the dominant crop in the area."
+  },
+  "dubious": {
+   "pos": "adj",
+   "uz": "shubhali",
+   "ru": "сомнительный",
+   "def": "doubtful or not to be trusted",
+   "ex": "The claim seems dubious."
+  },
+  "elaborate": {
+   "pos": "adj/verb",
+   "uz": "murakkab, batafsil; batafsil tushuntirmoq",
+   "ru": "сложный; развивать мысль",
+   "def": "detailed and complicated; to explain more",
+   "ex": "Could you elaborate on your second point?"
+  },
+  "elicit": {
+   "pos": "verb",
+   "uz": "chaqirmoq (javob, his)",
+   "ru": "вызывать (реакцию)",
+   "def": "to draw out a response or reaction",
+   "ex": "The speech elicited loud applause."
+  },
+  "eloquent": {
+   "pos": "adj",
+   "uz": "notiq, ta'sirli",
+   "ru": "красноречивый",
+   "def": "fluent and persuasive in speech",
+   "ex": "She gave an eloquent defense of science."
+  },
+  "embody": {
+   "pos": "verb",
+   "uz": "o'zida mujassam etmoq",
+   "ru": "воплощать",
+   "def": "to represent an idea or quality",
+   "ex": "The statue embodies freedom."
+  },
+  "emerge": {
+   "pos": "verb",
+   "uz": "paydo bo'lmoq",
+   "ru": "появляться",
+   "def": "to come out or become known",
+   "ex": "A new pattern emerged from the data."
+  },
+  "empirical": {
+   "pos": "adj",
+   "uz": "tajribaga asoslangan",
+   "ru": "эмпирический",
+   "def": "based on observation or experiment",
+   "ex": "The theory lacks empirical support."
+  },
+  "emulate": {
+   "pos": "verb",
+   "uz": "taqlid qilmoq (yaxshi tomondan)",
+   "ru": "подражать",
+   "def": "to try to match or copy someone admired",
+   "ex": "Young players emulate their heroes."
+  },
+  "endorse": {
+   "pos": "verb",
+   "uz": "qo'llab-quvvatlamoq",
+   "ru": "одобрять",
+   "def": "to publicly approve or support",
+   "ex": "Several doctors endorsed the program."
+  },
+  "enhance": {
+   "pos": "verb",
+   "uz": "yaxshilamoq, oshirmoq",
+   "ru": "улучшать",
+   "def": "to improve quality or value",
+   "ex": "Good lighting enhances the photos."
+  },
+  "enigmatic": {
+   "pos": "adj",
+   "uz": "sirli, jumboqli",
+   "ru": "загадочный",
+   "def": "mysterious and hard to understand",
+   "ex": "The painting's smile is enigmatic."
+  },
+  "ephemeral": {
+   "pos": "adj",
+   "uz": "o'tkinchi, qisqa umrli",
+   "ru": "мимолётный",
+   "def": "lasting a very short time",
+   "ex": "Fame on social media is often ephemeral."
+  },
+  "equivalent": {
+   "pos": "adj/noun",
+   "uz": "teng, ekvivalent",
+   "ru": "эквивалентный",
+   "def": "equal in value or meaning",
+   "ex": "One kilometer is equivalent to 1,000 meters."
+  },
+  "erode": {
+   "pos": "verb",
+   "uz": "yemirmoq, asta yo'q qilmoq",
+   "ru": "разрушать, подрывать",
+   "def": "to wear away slowly",
+   "ex": "Waves eroded the cliffs; doubt eroded his confidence."
+  },
+  "evoke": {
+   "pos": "verb",
+   "uz": "uyg'otmoq (xotira, his)",
+   "ru": "вызывать (чувства)",
+   "def": "to bring a feeling or memory to mind",
+   "ex": "The song evokes childhood summers."
+  },
+  "exacerbate": {
+   "pos": "verb",
+   "uz": "kuchaytirmoq (yomonni)",
+   "ru": "усугублять",
+   "def": "to make a problem worse",
+   "ex": "Drought exacerbated the food shortage."
+  },
+  "exemplify": {
+   "pos": "verb",
+   "uz": "namuna bo'lmoq",
+   "ru": "служить примером",
+   "def": "to be a typical example of",
+   "ex": "The bridge exemplifies modern design."
+  },
+  "explicit": {
+   "pos": "adj",
+   "uz": "aniq, ochiq-oydin",
+   "ru": "явный",
+   "def": "stated clearly and directly",
+   "ex": "The rules are explicit about late work."
+  },
+  "exploit": {
+   "pos": "verb",
+   "uz": "foydalanmoq; ekspluatatsiya qilmoq",
+   "ru": "использовать; эксплуатировать",
+   "def": "to use fully, sometimes unfairly",
+   "ex": "The plant exploits gaps in the forest canopy."
+  },
+  "facilitate": {
+   "pos": "verb",
+   "uz": "osonlashtirmoq",
+   "ru": "облегчать, способствовать",
+   "def": "to make an action easier",
+   "ex": "The app facilitates group study."
+  },
+  "feasible": {
+   "pos": "adj",
+   "uz": "amalga oshirsa bo'ladigan",
+   "ru": "осуществимый",
+   "def": "possible to do",
+   "ex": "Is the plan financially feasible?"
+  },
+  "fluctuate": {
+   "pos": "verb",
+   "uz": "o'zgarib turmoq",
+   "ru": "колебаться",
+   "def": "to change often, rising and falling",
+   "ex": "Prices fluctuate with the seasons."
+  },
+  "formidable": {
+   "pos": "adj",
+   "uz": "qo'rqinchli darajada kuchli",
+   "ru": "грозный, внушительный",
+   "def": "impressive and difficult to defeat",
+   "ex": "She was a formidable opponent."
+  },
+  "foster": {
+   "pos": "verb",
+   "uz": "rivojlantirmoq, qo'llab-quvvatlamoq",
+   "ru": "развивать, поощрять",
+   "def": "to encourage growth or development",
+   "ex": "Teachers can foster curiosity."
+  },
+  "fragment": {
+   "pos": "noun",
+   "uz": "bo'lak, parcha",
+   "ru": "фрагмент",
+   "def": "a small broken part",
+   "ex": "Only a fragment of the letter survived."
+  },
+  "frugal": {
+   "pos": "adj",
+   "uz": "tejamkor",
+   "ru": "бережливый",
+   "def": "careful with money",
+   "ex": "A frugal family saves for years."
+  },
+  "fundamental": {
+   "pos": "adj",
+   "uz": "asosiy, tub",
+   "ru": "фундаментальный",
+   "def": "basic and essential",
+   "ex": "Fractions are fundamental to algebra."
+  },
+  "furthermore": {
+   "pos": "adv",
+   "uz": "bundan tashqari",
+   "ru": "кроме того",
+   "def": "in addition",
+   "ex": "Furthermore, the data are recent."
+  },
+  "generate": {
+   "pos": "verb",
+   "uz": "hosil qilmoq",
+   "ru": "порождать, вырабатывать",
+   "def": "to produce or create",
+   "ex": "Wind turbines generate electricity."
+  },
+  "hierarchy": {
+   "pos": "noun",
+   "uz": "ierarxiya",
+   "ru": "иерархия",
+   "def": "a system ranked by level of importance",
+   "ex": "The company has a strict hierarchy."
+  },
+  "hinder": {
+   "pos": "verb",
+   "uz": "to'sqinlik qilmoq",
+   "ru": "мешать",
+   "def": "to make something difficult",
+   "ex": "Heavy snow hindered the rescue."
+  },
+  "hostile": {
+   "pos": "adj",
+   "uz": "dushmanona",
+   "ru": "враждебный",
+   "def": "unfriendly or opposed",
+   "ex": "The desert is a hostile environment."
+  },
+  "however": {
+   "pos": "adv",
+   "uz": "biroq, ammo",
+   "ru": "однако",
+   "def": "used to show contrast",
+   "ex": "The test was hard; however, most passed."
+  },
+  "hypothesis": {
+   "pos": "noun",
+   "uz": "faraz, gipoteza",
+   "ru": "гипотеза",
+   "def": "a proposed explanation to be tested",
+   "ex": "The data support the hypothesis."
+  },
+  "illuminate": {
+   "pos": "verb",
+   "uz": "yoritmoq, tushuntirmoq",
+   "ru": "освещать, проливать свет",
+   "def": "to light up or make clear",
+   "ex": "The letters illuminate the writer's life."
+  },
+  "illustrate": {
+   "pos": "verb",
+   "uz": "misol bilan ko'rsatmoq",
+   "ru": "иллюстрировать",
+   "def": "to explain with examples or pictures",
+   "ex": "The chart illustrates the trend."
+  },
+  "immense": {
+   "pos": "adj",
+   "uz": "ulkan",
+   "ru": "огромный",
+   "def": "extremely large",
+   "ex": "The telescope revealed an immense galaxy."
+  },
+  "impartial": {
+   "pos": "adj",
+   "uz": "xolis",
+   "ru": "беспристрастный",
+   "def": "fair and not taking sides",
+   "ex": "Judges must be impartial."
+  },
+  "implement": {
+   "pos": "verb",
+   "uz": "amalga oshirmoq",
+   "ru": "внедрять, осуществлять",
+   "def": "to put a plan into action",
+   "ex": "The school implemented a new schedule."
+  },
+  "implication": {
+   "pos": "noun",
+   "uz": "oqibat; bilvosita ma'no",
+   "ru": "следствие; подтекст",
+   "def": "a possible result or an unstated meaning",
+   "ex": "Consider the implications of the findings."
+  },
+  "implicit": {
+   "pos": "adj",
+   "uz": "yashirin, bilvosita",
+   "ru": "подразумеваемый",
+   "def": "suggested but not stated directly",
+   "ex": "There was implicit criticism in her tone."
+  },
+  "imply": {
+   "pos": "verb",
+   "uz": "nazarda tutmoq, bildirmoq",
+   "ru": "подразумевать",
+   "def": "to suggest without saying directly",
+   "ex": "The author implies that the policy failed."
+  },
+  "incentive": {
+   "pos": "noun",
+   "uz": "rag'bat",
+   "ru": "стимул",
+   "def": "something that encourages action",
+   "ex": "Lower prices are an incentive to buy."
+  },
+  "incongruous": {
+   "pos": "adj",
+   "uz": "nomuvofiq",
+   "ru": "неуместный",
+   "def": "not fitting with its surroundings",
+   "ex": "A modern tower looked incongruous in the old town."
+  },
+  "indifferent": {
+   "pos": "adj",
+   "uz": "befarq",
+   "ru": "равнодушный",
+   "def": "not interested or concerned",
+   "ex": "He seemed indifferent to the result."
+  },
+  "indispensable": {
+   "pos": "adj",
+   "uz": "ajralmas, juda zarur",
+   "ru": "незаменимый",
+   "def": "absolutely necessary",
+   "ex": "Water is indispensable to life."
+  },
+  "inevitable": {
+   "pos": "adj",
+   "uz": "muqarrar",
+   "ru": "неизбежный",
+   "def": "certain to happen",
+   "ex": "Change is inevitable."
+  },
+  "infer": {
+   "pos": "verb",
+   "uz": "xulosa qilmoq",
+   "ru": "делать вывод",
+   "def": "to conclude from evidence",
+   "ex": "We can infer that the narrator is tired."
+  },
+  "inherent": {
+   "pos": "adj",
+   "uz": "ichki, tabiatan xos",
+   "ru": "присущий",
+   "def": "existing as a natural part of something",
+   "ex": "Risk is inherent in exploration."
+  },
+  "inhibit": {
+   "pos": "verb",
+   "uz": "to'xtatmoq, sekinlashtirmoq",
+   "ru": "подавлять, сдерживать",
+   "def": "to slow or prevent",
+   "ex": "Cold inhibits bacterial growth."
+  },
+  "innovative": {
+   "pos": "adj",
+   "uz": "innovatsion, yangi",
+   "ru": "инновационный",
+   "def": "new and creative",
+   "ex": "The firm is known for innovative designs."
+  },
+  "insight": {
+   "pos": "noun",
+   "uz": "chuqur tushuncha",
+   "ru": "понимание, озарение",
+   "def": "a clear, deep understanding",
+   "ex": "The study offers new insight into sleep."
+  },
+  "instead": {
+   "pos": "adv",
+   "uz": "o'rniga",
+   "ru": "вместо этого",
+   "def": "as an alternative",
+   "ex": "He didn't drive; instead, he walked."
+  },
+  "integral": {
+   "pos": "adj",
+   "uz": "ajralmas qism",
+   "ru": "неотъемлемый",
+   "def": "necessary to make a whole complete",
+   "ex": "Music is integral to the festival."
+  },
+  "intricate": {
+   "pos": "adj",
+   "uz": "murakkab, nozik",
+   "ru": "замысловатый",
+   "def": "having many small, complex parts",
+   "ex": "The carpet has an intricate pattern."
+  },
+  "intrinsic": {
+   "pos": "adj",
+   "uz": "ichki, o'ziga xos",
+   "ru": "внутренний, присущий",
+   "def": "belonging to the basic nature of something",
+   "ex": "The intrinsic value of learning."
+  },
+  "irony": {
+   "pos": "noun",
+   "uz": "kinoya, istehzo",
+   "ru": "ирония",
+   "def": "a contrast between what is expected and what happens",
+   "ex": "The irony is that the fire station burned down."
+  },
+  "jeopardize": {
+   "pos": "verb",
+   "uz": "xavf ostiga qo'ymoq",
+   "ru": "ставить под угрозу",
+   "def": "to put in danger",
+   "ex": "Missing classes jeopardized his grades."
+  },
+  "lament": {
+   "pos": "verb/noun",
+   "uz": "nola qilmoq; nola",
+   "ru": "сетовать; плач",
+   "def": "to express sorrow or regret",
+   "ex": "The poet laments the loss of the forest."
+  },
+  "legitimate": {
+   "pos": "adj",
+   "uz": "qonuniy, asosli",
+   "ru": "законный, обоснованный",
+   "def": "allowed by law or reasonable",
+   "ex": "She raised a legitimate concern."
+  },
+  "likewise": {
+   "pos": "adv",
+   "uz": "xuddi shu tarzda",
+   "ru": "так же",
+   "def": "in the same way",
+   "ex": "She worked hard; her brother did likewise."
+  },
+  "lucid": {
+   "pos": "adj",
+   "uz": "tushunarli, ravshan",
+   "ru": "ясный",
+   "def": "clear and easy to understand",
+   "ex": "The guide gives lucid instructions."
+  },
+  "magnitude": {
+   "pos": "noun",
+   "uz": "kattalik, miqyos",
+   "ru": "величина, масштаб",
+   "def": "great size or importance",
+   "ex": "They underestimated the magnitude of the problem."
+  },
+  "meanwhile": {
+   "pos": "adv",
+   "uz": "shu orada",
+   "ru": "тем временем",
+   "def": "at the same time",
+   "ex": "Meanwhile, prices kept rising."
+  },
+  "meticulous": {
+   "pos": "adj",
+   "uz": "sinchkov, puxta",
+   "ru": "дотошный",
+   "def": "showing great attention to detail",
+   "ex": "Her notes were meticulous."
+  },
+  "mitigate": {
+   "pos": "verb",
+   "uz": "yumshatmoq, kamaytirmoq",
+   "ru": "смягчать",
+   "def": "to make less severe",
+   "ex": "Trees mitigate summer heat."
+  },
+  "modest": {
+   "pos": "adj",
+   "uz": "kamtar; o'rtacha",
+   "ru": "скромный; умеренный",
+   "def": "not boastful; not large",
+   "ex": "The plan produced modest gains."
+  },
+  "moreover": {
+   "pos": "adv",
+   "uz": "bundan tashqari",
+   "ru": "более того",
+   "def": "in addition; also",
+   "ex": "The plan is cheap; moreover, it is fast."
+  },
+  "mundane": {
+   "pos": "adj",
+   "uz": "oddiy, zerikarli",
+   "ru": "обыденный",
+   "def": "ordinary and not exciting",
+   "ex": "The novel turns mundane events into drama."
+  },
+  "namely": {
+   "pos": "adv",
+   "uz": "ya'ni",
+   "ru": "а именно",
+   "def": "that is to say",
+   "ex": "Two countries, namely Peru and Chile."
+  },
+  "negligible": {
+   "pos": "adj",
+   "uz": "juda kichik, arzimas",
+   "ru": "незначительный",
+   "def": "so small it can be ignored",
+   "ex": "The cost difference is negligible."
+  },
+  "nonetheless": {
+   "pos": "adv",
+   "uz": "shunga qaramay",
+   "ru": "тем не менее",
+   "def": "in spite of that",
+   "ex": "The task was hard; nonetheless, she finished."
+  },
+  "notion": {
+   "pos": "noun",
+   "uz": "tushuncha, fikr",
+   "ru": "понятие, представление",
+   "def": "an idea or belief",
+   "ex": "The notion that bigger is better."
+  },
+  "novel": {
+   "pos": "adj",
+   "uz": "yangi, original",
+   "ru": "новый, оригинальный",
+   "def": "new and unusual",
+   "ex": "The team tried a novel approach."
+  },
+  "objective": {
+   "pos": "adj/noun",
+   "uz": "xolis; maqsad",
+   "ru": "объективный; цель",
+   "def": "not influenced by feelings; a goal",
+   "ex": "Give an objective description."
+  },
+  "obscure": {
+   "pos": "adj/verb",
+   "uz": "noma'lum; to'smoq",
+   "ru": "малоизвестный; скрывать",
+   "def": "not well known; to hide",
+   "ex": "Clouds obscured the moon."
+  },
+  "obsolete": {
+   "pos": "adj",
+   "uz": "eskirgan",
+   "ru": "устаревший",
+   "def": "no longer used",
+   "ex": "Fax machines are nearly obsolete."
+  },
+  "ominous": {
+   "pos": "adj",
+   "uz": "xavotirli, yomonlik alomati",
+   "ru": "зловещий",
+   "def": "suggesting something bad will happen",
+   "ex": "Ominous clouds gathered."
+  },
+  "optimal": {
+   "pos": "adj",
+   "uz": "eng maqbul",
+   "ru": "оптимальный",
+   "def": "best or most effective",
+   "ex": "Find the optimal temperature for growth."
+  },
+  "paradox": {
+   "pos": "noun",
+   "uz": "paradoks",
+   "ru": "парадокс",
+   "def": "a statement that seems to contradict itself",
+   "ex": "It is a paradox that more choice can make people less happy."
+  },
+  "paramount": {
+   "pos": "adj",
+   "uz": "eng muhim",
+   "ru": "первостепенный",
+   "def": "more important than anything else",
+   "ex": "Safety is paramount."
+  },
+  "perceive": {
+   "pos": "verb",
+   "uz": "idrok etmoq",
+   "ru": "воспринимать",
+   "def": "to notice or understand",
+   "ex": "Bees perceive ultraviolet light."
+  },
+  "peripheral": {
+   "pos": "adj",
+   "uz": "ikkinchi darajali, chetki",
+   "ru": "второстепенный, периферийный",
+   "def": "on the edge; not central",
+   "ex": "The detail is peripheral to the argument."
+  },
+  "persistent": {
+   "pos": "adj",
+   "uz": "qat'iyatli, davomli",
+   "ru": "настойчивый, стойкий",
+   "def": "continuing firmly or for a long time",
+   "ex": "A persistent cough lasted weeks."
+  },
+  "perspective": {
+   "pos": "noun",
+   "uz": "nuqtai nazar",
+   "ru": "точка зрения",
+   "def": "a particular way of viewing things",
+   "ex": "The story is told from a child's perspective."
+  },
+  "pervasive": {
+   "pos": "adj",
+   "uz": "hamma joyga tarqalgan",
+   "ru": "повсеместный",
+   "def": "spread widely throughout",
+   "ex": "Smartphones are pervasive in daily life."
+  },
+  "phenomenon": {
+   "pos": "noun",
+   "uz": "hodisa",
+   "ru": "явление",
+   "def": "an observable fact or event",
+   "ex": "Northern lights are a natural phenomenon."
+  },
+  "plausible": {
+   "pos": "adj",
+   "uz": "ehtimoli bor, ishonarli",
+   "ru": "правдоподобный",
+   "def": "seeming reasonable or probable",
+   "ex": "That is a plausible explanation."
+  },
+  "pragmatic": {
+   "pos": "adj",
+   "uz": "amaliy",
+   "ru": "прагматичный",
+   "def": "dealing with things in a practical way",
+   "ex": "She took a pragmatic approach."
+  },
+  "precede": {
+   "pos": "verb",
+   "uz": "oldin kelmoq",
+   "ru": "предшествовать",
+   "def": "to come before",
+   "ex": "Lightning precedes thunder."
+  },
+  "precise": {
+   "pos": "adj",
+   "uz": "aniq",
+   "ru": "точный",
+   "def": "exact and accurate",
+   "ex": "Give a precise answer."
+  },
+  "predominantly": {
+   "pos": "adv",
+   "uz": "asosan",
+   "ru": "преимущественно",
+   "def": "mainly; for the most part",
+   "ex": "The region is predominantly rural."
+  },
+  "premise": {
+   "pos": "noun",
+   "uz": "asos, dastlabki fikr",
+   "ru": "предпосылка",
+   "def": "an idea an argument is based on",
+   "ex": "The premise of the study is flawed."
+  },
+  "prevalent": {
+   "pos": "adj",
+   "uz": "keng tarqalgan",
+   "ru": "распространённый",
+   "def": "common in a place or time",
+   "ex": "The disease is prevalent in wet regions."
+  },
+  "profound": {
+   "pos": "adj",
+   "uz": "chuqur",
+   "ru": "глубокий",
+   "def": "very great or deep",
+   "ex": "The book had a profound effect on her."
+  },
+  "prolific": {
+   "pos": "adj",
+   "uz": "sermahsul",
+   "ru": "плодовитый",
+   "def": "producing a lot",
+   "ex": "A prolific author of short stories."
+  },
+  "prominent": {
+   "pos": "adj",
+   "uz": "taniqli, ko'zga ko'rinadigan",
+   "ru": "выдающийся, заметный",
+   "def": "important or easy to see",
+   "ex": "A prominent scientist spoke at the event."
+  },
+  "proponent": {
+   "pos": "noun",
+   "uz": "tarafdor",
+   "ru": "сторонник",
+   "def": "a person who supports an idea",
+   "ex": "Proponents of the plan cite lower costs."
+  },
+  "provoke": {
+   "pos": "verb",
+   "uz": "qo'zg'atmoq",
+   "ru": "провоцировать, вызывать",
+   "def": "to cause a reaction",
+   "ex": "The remark provoked a debate."
+  },
+  "prudent": {
+   "pos": "adj",
+   "uz": "oqilona, ehtiyotkor",
+   "ru": "благоразумный",
+   "def": "wise and careful",
+   "ex": "It is prudent to save some money."
+  },
+  "refute": {
+   "pos": "verb",
+   "uz": "rad etmoq (isbot bilan)",
+   "ru": "опровергать",
+   "def": "to prove a claim wrong",
+   "ex": "New evidence refuted the theory."
+  },
+  "regardless": {
+   "pos": "adv",
+   "uz": "qat'i nazar",
+   "ru": "несмотря на",
+   "def": "without being affected by",
+   "ex": "Regardless of the weather, the race will start."
+  },
+  "reinforce": {
+   "pos": "verb",
+   "uz": "mustahkamlamoq",
+   "ru": "укреплять",
+   "def": "to strengthen",
+   "ex": "Practice reinforces learning."
+  },
+  "reluctant": {
+   "pos": "adj",
+   "uz": "istamay, ikkilanib",
+   "ru": "неохотный",
+   "def": "unwilling",
+   "ex": "He was reluctant to speak."
+  },
+  "render": {
+   "pos": "verb",
+   "uz": "qilmoq, holga keltirmoq",
+   "ru": "делать, превращать",
+   "def": "to cause to become",
+   "ex": "The storm rendered the road unusable."
+  },
+  "replicate": {
+   "pos": "verb",
+   "uz": "takrorlamoq (tajribani)",
+   "ru": "воспроизводить",
+   "def": "to repeat or copy exactly",
+   "ex": "Other labs could not replicate the result."
+  },
+  "resilient": {
+   "pos": "adj",
+   "uz": "chidamli",
+   "ru": "устойчивый, жизнестойкий",
+   "def": "able to recover quickly",
+   "ex": "Coral can be surprisingly resilient."
+  },
+  "reverence": {
+   "pos": "noun",
+   "uz": "chuqur hurmat",
+   "ru": "благоговение",
+   "def": "deep respect",
+   "ex": "They spoke of the poet with reverence."
+  },
+  "rigorous": {
+   "pos": "adj",
+   "uz": "qat'iy, puxta",
+   "ru": "строгий, тщательный",
+   "def": "very thorough and strict",
+   "ex": "The study used rigorous methods."
+  },
+  "scrutinize": {
+   "pos": "verb",
+   "uz": "sinchiklab tekshirmoq",
+   "ru": "тщательно изучать",
+   "def": "to examine closely",
+   "ex": "Editors scrutinize every fact."
+  },
+  "similarly": {
+   "pos": "adv",
+   "uz": "xuddi shunday",
+   "ru": "аналогично",
+   "def": "in a similar way",
+   "ex": "Similarly, the second group improved."
+  },
+  "skeptical": {
+   "pos": "adj",
+   "uz": "shubhali, ishonmaydigan",
+   "ru": "скептический",
+   "def": "doubting that something is true",
+   "ex": "Many were skeptical of the claim."
+  },
+  "solely": {
+   "pos": "adv",
+   "uz": "faqat",
+   "ru": "исключительно",
+   "def": "only",
+   "ex": "The decision was based solely on cost."
+  },
+  "sparse": {
+   "pos": "adj",
+   "uz": "siyrak, kam",
+   "ru": "редкий, скудный",
+   "def": "thinly spread; few",
+   "ex": "Vegetation is sparse in the desert."
+  },
+  "specifically": {
+   "pos": "adv",
+   "uz": "aniqrog'i",
+   "ru": "в частности",
+   "def": "in an exact way",
+   "ex": "Specifically, the study measured sleep."
+  },
+  "speculate": {
+   "pos": "verb",
+   "uz": "taxmin qilmoq",
+   "ru": "предполагать",
+   "def": "to form a theory without firm evidence",
+   "ex": "Scientists speculate about life on other planets."
+  },
+  "subsequent": {
+   "pos": "adj",
+   "uz": "keyingi",
+   "ru": "последующий",
+   "def": "coming after",
+   "ex": "Subsequent tests confirmed the result."
+  },
+  "substantial": {
+   "pos": "adj",
+   "uz": "sezilarli, katta",
+   "ru": "существенный",
+   "def": "large in amount or importance",
+   "ex": "A substantial number of people agreed."
+  },
+  "subtle": {
+   "pos": "adj",
+   "uz": "nozik, sezilmas",
+   "ru": "тонкий, едва заметный",
+   "def": "not obvious; delicate",
+   "ex": "There is a subtle difference in tone."
+  },
+  "sufficient": {
+   "pos": "adj",
+   "uz": "yetarli",
+   "ru": "достаточный",
+   "def": "enough",
+   "ex": "We have sufficient evidence."
+  },
+  "superficial": {
+   "pos": "adj",
+   "uz": "yuzaki",
+   "ru": "поверхностный",
+   "def": "on the surface only; not deep",
+   "ex": "His knowledge of the topic is superficial."
+  },
+  "supplement": {
+   "pos": "verb/noun",
+   "uz": "to'ldirmoq; qo'shimcha",
+   "ru": "дополнять; добавка",
+   "def": "to add to something to improve it",
+   "ex": "Videos supplement the textbook."
+  },
+  "suppress": {
+   "pos": "verb",
+   "uz": "bostirmoq",
+   "ru": "подавлять",
+   "def": "to stop or hold back",
+   "ex": "She suppressed a laugh."
+  },
+  "sustain": {
+   "pos": "verb",
+   "uz": "qo'llab-quvvatlamoq, saqlab turmoq",
+   "ru": "поддерживать",
+   "def": "to keep something going",
+   "ex": "The river sustains many farms."
+  },
+  "tentative": {
+   "pos": "adj",
+   "uz": "taxminiy, ikkilanuvchi",
+   "ru": "предварительный",
+   "def": "not certain or final",
+   "ex": "They reached a tentative agreement."
+  },
+  "therefore": {
+   "pos": "adv",
+   "uz": "shuning uchun",
+   "ru": "поэтому",
+   "def": "for that reason",
+   "ex": "The data were incomplete; therefore, no conclusion was drawn."
+  },
+  "thrive": {
+   "pos": "verb",
+   "uz": "gullab-yashnamoq",
+   "ru": "процветать",
+   "def": "to grow or develop well",
+   "ex": "Cacti thrive in dry climates."
+  },
+  "thus": {
+   "pos": "adv",
+   "uz": "shunday qilib, demak",
+   "ru": "таким образом",
+   "def": "as a result; in this way",
+   "ex": "Thus, the theory was rejected."
+  },
+  "trivial": {
+   "pos": "adj",
+   "uz": "arzimas",
+   "ru": "незначительный, тривиальный",
+   "def": "of little importance",
+   "ex": "Don't worry about trivial errors."
+  },
+  "ultimately": {
+   "pos": "adv",
+   "uz": "oxir-oqibat",
+   "ru": "в конечном счёте",
+   "def": "in the end",
+   "ex": "Ultimately, the plan succeeded."
+  },
+  "undermine": {
+   "pos": "verb",
+   "uz": "putur yetkazmoq",
+   "ru": "подрывать",
+   "def": "to weaken gradually",
+   "ex": "The scandal undermined public trust."
+  },
+  "unprecedented": {
+   "pos": "adj",
+   "uz": "misli ko'rilmagan",
+   "ru": "беспрецедентный",
+   "def": "never done or known before",
+   "ex": "The flood was unprecedented."
+  },
+  "validate": {
+   "pos": "verb",
+   "uz": "tasdiqlamoq",
+   "ru": "подтверждать",
+   "def": "to prove that something is correct",
+   "ex": "The experiment validated the model."
+  },
+  "versatile": {
+   "pos": "adj",
+   "uz": "ko'p qirrali",
+   "ru": "универсальный",
+   "def": "able to be used in many ways",
+   "ex": "Bamboo is a versatile material."
+  },
+  "viable": {
+   "pos": "adj",
+   "uz": "hayotiy, amalga oshadigan",
+   "ru": "жизнеспособный",
+   "def": "capable of working successfully",
+   "ex": "Solar power is a viable option."
+  },
+  "vindicate": {
+   "pos": "verb",
+   "uz": "oqlamoq",
+   "ru": "оправдывать",
+   "def": "to prove right after doubt",
+   "ex": "New evidence vindicated the scientist."
+  },
+  "volatile": {
+   "pos": "adj",
+   "uz": "beqaror",
+   "ru": "нестабильный",
+   "def": "likely to change suddenly",
+   "ex": "The market was volatile."
+  },
+  "vulnerable": {
+   "pos": "adj",
+   "uz": "zaif, himoyasiz",
+   "ru": "уязвимый",
+   "def": "easily harmed",
+   "ex": "Young plants are vulnerable to frost."
+  },
+  "warrant": {
+   "pos": "verb/noun",
+   "uz": "asoslamoq; asos",
+   "ru": "оправдывать; основание",
+   "def": "to justify; a reason",
+   "ex": "The results warrant further study."
+  },
+  "whereas": {
+   "pos": "conj",
+   "uz": "holbuki, ...esa",
+   "ru": "тогда как",
+   "def": "in contrast to the fact that",
+   "ex": "Some prefer tea, whereas others prefer coffee."
+  },
+  "yield": {
+   "pos": "verb/noun",
+   "uz": "bermoq, hosil; yon bermoq",
+   "ru": "давать (урожай); уступать",
+   "def": "to produce; to give way",
+   "ex": "The field yields two crops a year."
+  }
+ }
+}

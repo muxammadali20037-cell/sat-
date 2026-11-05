@@ -8,7 +8,7 @@ import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/card'
 import { Input, Label, NativeSelect, Textarea } from '@/components/ui/input'
 import { toast } from '@/components/ui/toast'
-import { saveResourceAction, setResourceStatusAction } from '@/features/resources/actions'
+import { publishWorkingDraftsAction, saveResourceAction, setResourceStatusAction } from '@/features/resources/actions'
 import { KINDS, PROVIDER_DEFAULTS, PROVIDERS, linkWorks, type Provider } from '@/features/resources/rules'
 import type { ResourceRow } from '@/features/resources/server'
 
@@ -101,9 +101,18 @@ export function ResourceManager({ rows, taxonomy, canEdit }: { rows: ResourceRow
     (r.subject_id && taxonomy.subjects.find((s) => s.id === r.subject_id)?.name) ||
     'General'
 
+  const draftCount = rows.filter((r) => r.status === 'draft').length
   return (
     <div className="grid grid-cols-1 gap-6 xl:grid-cols-[minmax(0,1fr)_26rem]">
       <div className="min-w-0 space-y-2">
+        {canEdit && draftCount > 0 && (
+          <div className="flex flex-wrap items-center justify-between gap-2 rounded-lg border border-border bg-surface p-3 text-sm">
+            <span className="text-muted-foreground">{draftCount} draft(s). Each link is checked now; only links that answer are published.</span>
+            <Button type="button" size="sm" loading={pending} onClick={() => run(() => publishWorkingDraftsAction())}>
+              Check and publish drafts
+            </Button>
+          </div>
+        )}
         {rows.length === 0 ? (
           <p className="rounded-lg border border-dashed border-border p-6 text-sm text-muted-foreground">
             No resources yet. Add links to official SAT information, free lessons or tools. Students see a link only after you publish it, and only if it answers when published.

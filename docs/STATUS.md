@@ -95,6 +95,16 @@ The flows ran as a real user against real auth, PostgREST and RLS. AI used the l
 - **Admin lists:** question excerpts showed raw LaTeX (`\dfrac{…}`) and escaped prices as `\12`. They now use the same plain-text rendering as student pages.
 - **Pack import (caught before release):** the first version recognised already-imported questions by stem alone. Many Reading and Writing questions share a stem, so a retry after a partial import could have skipped real questions. It now matches passage and stem.
 
+### Vocabulary while reading, topic videos, daily Telegram drill (5 Nov)
+
+- **My words (migration 0028):** in practice, results review, lessons and guides a student double-clicks (or long-presses) a word and sees its Uzbek/Russian translation, a plain-English meaning and an example, then saves it. The dictionary is SAT MASTER's own (`content/vocabulary/sat-words.json`, 227 SAT words with original definitions and examples; inflected forms are matched to the base form). A word that is not in it can be saved with the student's own translation, and a Google Translate link is offered. **Not available in timed mock exams.**
+  - "My words" page: list, edit own translation, add by hand, remove (with its review history); review as flashcards with the existing spaced-repetition schedule (card key `mine/<word>`; the server refuses reviews of words the student has not saved).
+  - `vocab_words`: students read only their own rows; all writes through the server; at most 2,000 words each.
+- **Topic videos (migration 0029, data only):** 33 free YouTube videos for all 30 SAT skills, found and checked against YouTube pages by a research pass, added as **drafts**. Students see none until a content admin presses **Check and publish drafts** in Admin → Resources: every link is checked from the server and only working ones are published. YouTube links are now checked through **oEmbed**, because a removed video's watch page still answers 200. Published videos appear in the Resource Hub and as "Videos on this topic" on the skill's lesson and guide pages (link only, credited to the channel, opens on YouTube). This sandbox cannot reach YouTube, so the real check happens on the live site.
+- **Daily Telegram drill (migration 0030):** Settings → Telegram: "Send me the daily drill" and "Send today's drill now". At 19:00 Tashkent time (Vercel cron, `CRON_SECRET`) the bot sends five items one by one: three word meanings (the student's saved words first) and two short published SAT questions that read well as plain text. Buttons carry only the item and the choice; the correct choice is stored only in `telegram_drill_items` (no client access). Answers are graded on the server, show the right answer and an explanation, count as study activity, and give a flashcard review to saved words. `/drill` or `/mashq` in the bot sends today's drill. Once per day; a student who blocks the bot is switched off.
+- **Verified:** unit tests for the dictionary, drills and YouTube checks; DB tests for 0028 and 0030; 640+ tests in total; lint, typecheck, build. Playwright: My words 19/19 (`e2e-vocab`), word lookup in practice 4/4, Telegram drill 21/21 with the mock Telegram API (`e2e-drills`), topic videos 6/6 (`e2e-videos`); sign-in 29/29, dashboard 37/37 and resources 14/14 re-run.
+- **Honest limits:** College Board questions are copyrighted, so the app links to the official free practice (Bluebook, Khan Academy) through the Resource Hub instead of copying it. No score is guaranteed. Word meanings come from our dictionary only; AI explanations of any word can be added once Anthropic is connected.
+
 ### Sign-in with Google and Apple, easier log-in (5 Nov)
 
 - **Buttons appear by themselves** once Google or Apple is enabled in Supabase Auth (read from Supabase's public settings, cached 5 minutes). Until then they stay hidden: today neither is enabled on the hosted project, so the live site is unchanged. The `NEXT_PUBLIC_ENABLE_GOOGLE_AUTH` flag is no longer used.
@@ -411,6 +421,9 @@ State on 2 Nov 2026, applied through the Supabase connector with the owner's con
 | 0014 study-guide content (~480 KB) | Not applied. Use Admin → Study guides → "Import bundled guides" after the first deploy, or `supabase db push`. |
 | 0026 workspace plans (1 table, 2 columns, 1 new function, `workspace_join` replaced with a limit check; no existing data touched, no plans created) | Applied on 5 Nov with the owner's approval. Checked afterwards: RLS on; 0 plans and no workspace has a plan, so nothing is limited; clients cannot write plans, set a workspace plan or call either function; the server can; `workspace_join` contains the limit check; 68 tables, all with RLS. |
 | 0027 session guests (2 new tables; no existing table or data touched) | Applied on 5 Nov with the owner's approval. Checked afterwards: RLS on both tables with one read policy each; clients can only SELECT (no insert/update/delete), anon has no access; 70 tables, all with RLS. |
+| 0028 my words (1 new table; no existing data touched) | Not applied yet. |
+| 0029 topic videos (data only: 33 draft links in learning_resources; nothing published) | Not applied yet. |
+| 0030 Telegram drills (2 new columns, default off; 1 new server-only table) | Not applied yet. |
 | 0025 class challenges (1 table, 1 column; no existing data touched) | Applied on 5 Nov with the owner's approval. Checked afterwards: RLS on, `authenticated` SELECT only, cannot update `leaderboard_opt_in`, `anon` nothing; every existing member starts opted out; 67 tables, all with RLS. |
 | 0024 class polls (2 tables; no existing data touched) | Applied on 4 Nov with the owner's approval. Checked afterwards: RLS on both; `authenticated` cannot read `correct_index`, can read the other columns, cannot write; `anon` nothing; 66 tables, all with RLS. |
 | 0023 live lesson joins (1 table; no existing data touched) | Applied on 4 Nov with the owner's approval. Checked afterwards: RLS on, one read policy, `authenticated` SELECT only, `anon` nothing; 64 tables, all with RLS. |
@@ -435,7 +448,7 @@ The security advisor reports two kinds of finding, both expected by design:
 supabase link --project-ref ncqqnjnozrymrmblixra
 supabase migration repair --status applied 20261102000100 20261102000200 20261102000300 20261102000400 \
   20261102000500 20261102000600 20261102000700 20261102000800 20261102000900 20261102001000 20261102001100 20261102001300 \
-  20261102001500 20261102001600 20261102001700 20261103001800 20261103001900 20261103002000 20261103002100 20261104002200 20261104002300 20261104002400 20261104002500 20261105002600 20261105002700
+  20261102001500 20261102001600 20261102001700 20261103001800 20261103001900 20261103002000 20261103002100 20261104002200 20261104002300 20261104002400 20261104002500 20261105002600 20261105002700 20261105002800 20261105002900 20261105003000
 supabase db push   # applies 0012 (if still wanted) and 0014
 ```
 

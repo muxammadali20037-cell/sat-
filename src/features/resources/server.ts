@@ -72,3 +72,20 @@ export async function loadHub(
   if (general.length) sections.push({ key: 'general', scope: 'general', title: '', subjectCode: null, items: general })
   return sections
 }
+
+export type TopicVideo = { id: string; title: string; url: string; providerName: string; attribution: string; language: string; description: string }
+
+/** Published videos for one SAT skill (link only), shown next to its lessons and guides. */
+export async function loadTopicVideos(db: Db, skillId: string, limit = 3): Promise<TopicVideo[]> {
+  const { data, error } = await db
+    .from('learning_resources')
+    .select('id, title, url, provider_name, attribution, language, description')
+    .eq('status', 'published')
+    .eq('kind', 'video')
+    .eq('skill_id', skillId)
+    .order('position')
+    .order('title')
+    .limit(limit)
+  if (error) throw error
+  return (data ?? []).map((r) => ({ id: r.id, title: r.title, url: r.url, providerName: r.provider_name, attribution: r.attribution, language: r.language, description: r.description }))
+}

@@ -49,8 +49,30 @@ async function hostIsPublic(host: string): Promise<boolean> {
   }
 }
 
+/** A YouTube video id from a watch, short or youtu.be link; null for anything else. */
+export function youtubeVideoId(raw: string): string | null {
+  let url: URL
+  try {
+    url = new URL(raw)
+  } catch {
+    return null
+  }
+  const host = url.hostname.replace(/^(www\.|m\.)/, '')
+  const id = host === 'youtu.be' ? url.pathname.slice(1) : host === 'youtube.com' ? (url.pathname === '/watch' ? url.searchParams.get('v') : url.pathname.match(/^\/(?:shorts|embed|live)\/([^/]+)/)?.[1]) : null
+  return id && /^[A-Za-z0-9_-]{11}$/.test(id) ? id : null
+}
+
+/**
+ * What to request to check a link. A YouTube watch page answers 200 even for a removed or private
+ * video, so YouTube links are checked through oEmbed, which answers 200 only for a public video.
+ */
+export function linkCheckTarget(raw: string): string {
+  const id = youtubeVideoId(raw)
+  return id ? `https://www.youtube.com/oembed?format=json&url=${encodeURIComponent(`https://www.youtube.com/watch?v=${id}`)}` : raw
+}
+
 export async function checkLink(raw: string): Promise<LinkCheck> {
-  let current = raw
+  let current = linkCheckTarget(raw)
   for (let hop = 0; hop <= MAX_REDIRECTS; hop++) {
     let url: URL
     try {

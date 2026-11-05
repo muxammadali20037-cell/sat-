@@ -11,6 +11,10 @@ import { Breadcrumb } from '@/components/ui/breadcrumb'
 import { Badge } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { GuideSections, sectionAnchor } from '@/components/guides/guide-sections'
+import { WordLookup } from '@/components/vocab/word-lookup'
+import { TopicVideos } from '@/components/resources/topic-videos'
+import { loadTopicVideos } from '@/features/resources/server'
+import { resourcesDict } from '@/lib/i18n/dictionaries/resources'
 import { MarkReadButton } from '@/components/guides/mark-read-button'
 import { getGuide } from '@/features/guides/server'
 
@@ -55,6 +59,7 @@ export default async function GuidePage({ params }: Props) {
       }).toString()}`
     : null
   const others = guide.availableLocales.filter((l) => l !== guide.locale)
+  const [tr, videos] = await Promise.all([getDict(resourcesDict), guide.skillId ? loadTopicVideos(db, guide.skillId).catch(() => []) : Promise.resolve([])])
 
   return (
     <article className="mx-auto max-w-6xl">
@@ -110,10 +115,18 @@ export default async function GuidePage({ params }: Props) {
             )}
           </header>
 
-          <div lang={guide.locale}>
-            {/* Section labels follow the guide's language, not the interface language. */}
-            <GuideSections sections={guide.sections} t={resolveDict(guidesDict, guide.locale as 'uz' | 'en')} />
-          </div>
+          <WordLookup source="guide" sourceRef={slug}>
+            <div lang={guide.locale}>
+              {/* Section labels follow the guide's language, not the interface language. */}
+              <GuideSections sections={guide.sections} t={resolveDict(guidesDict, guide.locale as 'uz' | 'en')} />
+            </div>
+          </WordLookup>
+
+          {videos.length > 0 && (
+            <div className="mt-10">
+              <TopicVideos videos={videos} title={tr.topicVideos} note={tr.topicVideosNote} />
+            </div>
+          )}
 
           {(practiceHref || lessons.length > 0) && (
             <footer className="mt-12 grid grid-cols-1 gap-4 border-t border-border pt-8 sm:grid-cols-2">

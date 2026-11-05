@@ -71,6 +71,7 @@ export const RATE_LIMITS = {
   start: { bucket: 'start', limit: 30, windowSec: 300 },
   progress: { bucket: 'progress', limit: 30, windowSec: 60 },
   flashcards: { bucket: 'flashcards', limit: 120, windowSec: 60 },
+  vocab: { bucket: 'vocab', limit: 90, windowSec: 60 },
   liveToken: { bucket: 'live-token', limit: 20, windowSec: 600 },
   // Joining a class with an invitation code (guessing protection).
   classroomJoin: { bucket: 'classroom-join', limit: 10, windowSec: 600 },
