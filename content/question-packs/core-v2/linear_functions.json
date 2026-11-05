@@ -1,0 +1,140 @@
+[
+  {
+    "skill_code": "linear_functions",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "The function $g$ is defined by $g(x) = 7 - 3x$. What is the value of $g(4)$?",
+    "option_a": "$-5$",
+    "option_b": "$5$",
+    "option_c": "$16$",
+    "option_d": "$19$",
+    "correct": "A",
+    "explanation_en": "Substitute $x = 4$: $g(4) = 7 - 3(4) = 7 - 12 = -5$.\n\nChoice B reverses the subtraction ($12 - 7$). Choice C computes $(7 - 3) \\cdot 4$, ignoring the order of operations. Choice D adds $12$ instead of subtracting it.",
+    "explanation_uz": "$x = 4$ ni qo‘yamiz: $g(4) = 7 - 3(4) = 7 - 12 = -5$.\n\nB variantda ayirish teskari bajarilgan ($12 - 7$). C variantda amallar tartibi buzilib, $(7 - 3) \\cdot 4$ hisoblangan. D variantda $12$ ayirilish o‘rniga qo‘shilgan.",
+    "estimated_seconds": 45,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "linear_functions",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "The amount of mobile data, in gigabytes, remaining on Bekzod's monthly plan $t$ days after the start of the month is given by the function $D(t) = 20 - 0.6t$. What is the best interpretation of $0.6$ in this context?",
+    "option_a": "The total amount of data, in gigabytes, on the plan at the start of the month",
+    "option_b": "The amount of data, in gigabytes, that Bekzod uses each day",
+    "option_c": "The number of days it takes Bekzod to use all of the data",
+    "option_d": "The amount of data, in gigabytes, remaining after one day",
+    "correct": "B",
+    "explanation_en": "The function is linear, and $0.6$ is the coefficient of $t$. Each time $t$ increases by $1$ day, $D(t)$ decreases by $0.6$ gigabyte, so $0.6$ is the amount of data Bekzod uses each day.\n\nChoice A describes $20$, the value of $D(0)$. Choice C describes $\\frac{20}{0.6} \\approx 33.3$, the value of $t$ when $D(t) = 0$. Choice D describes $D(1) = 19.4$.",
+    "explanation_uz": "Funksiya chiziqli, $0.6$ esa $t$ oldidagi koeffitsiyent. $t$ har $1$ kunga oshganda $D(t)$ $0.6$ gigabaytga kamayadi, demak $0.6$ — Bekzod har kuni sarflaydigan internet hajmi.\n\nA variant $20$ ni, ya’ni $D(0)$ ni tasvirlaydi. C variant $D(t) = 0$ bo‘ladigan $t = \\frac{20}{0.6} \\approx 33.3$ ni tasvirlaydi. D variant $D(1) = 19.4$ ni tasvirlaydi.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "linear_functions",
+    "difficulty": "easy",
+    "question_type": "spr",
+    "stem": "The function $f$ is defined by $f(x) = 5x + b$, where $b$ is a constant. If $f(2) = 13$, what is the value of $b$?",
+    "spr_answers": [
+      "3"
+    ],
+    "explanation_en": "Substitute $x = 2$: $f(2) = 5(2) + b = 10 + b$. Since $f(2) = 13$, $10 + b = 13$ and $b = 3$.\n\nA common mistake is substituting $13$ for $x$ instead of for $f(x)$.",
+    "explanation_uz": "$x = 2$ ni qo‘yamiz: $f(2) = 5(2) + b = 10 + b$. $f(2) = 13$ bo‘lgani uchun $10 + b = 13$ va $b = 3$.\n\nKo‘p uchraydigan xato: $13$ ni $f(x)$ o‘rniga emas, $x$ o‘rniga qo‘yish.",
+    "estimated_seconds": 55,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "linear_functions",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "The table shows three values of $x$ and their corresponding values of $h(x)$ for the linear function $h$.\n\n| x | h(x) |\n| ---: | ---: |\n| 1 | 11 |\n| 4 | 2 |\n| 7 | −7 |\n\nWhich equation defines $h$?",
+    "option_a": "$h(x) = 3x + 8$",
+    "option_b": "$h(x) = -3x + 11$",
+    "option_c": "$h(x) = -3x + 14$",
+    "option_d": "$h(x) = -\\frac{1}{3}x + \\frac{34}{3}$",
+    "correct": "C",
+    "explanation_en": "The slope is $\\dfrac{2 - 11}{4 - 1} = \\dfrac{-9}{3} = -3$. Write $h(x) = -3x + c$ and use $h(1) = 11$: $-3 + c = 11$, so $c = 14$. Check: $h(4) = 2$ and $h(7) = -7$.\n\nChoice B uses $h(1) = 11$ as the $y$-intercept, but the $y$-intercept is $h(0)$. Choice A has the wrong sign for the slope. Choice D uses $\\frac{\\text{change in } x}{\\text{change in } h(x)}$ as the slope; it fits $(1, 11)$ but gives $h(4) = 10$, not $2$.",
+    "explanation_uz": "Burchak koeffitsiyenti: $\\dfrac{2 - 11}{4 - 1} = \\dfrac{-9}{3} = -3$. $h(x) = -3x + c$ deb yozamiz va $h(1) = 11$ dan foydalanamiz: $-3 + c = 11$, demak $c = 14$. Tekshiruv: $h(4) = 2$ va $h(7) = -7$.\n\nB variantda $h(1) = 11$ ozod had deb olingan, lekin ozod had $h(0)$ ga teng. A variantda koeffitsiyent ishorasi noto‘g‘ri. D variantda koeffitsiyent teskari olingan; u $(1, 11)$ ga mos keladi, ammo $h(4) = 10$ beradi, $2$ emas.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "linear_functions",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "The amount of fuel in a car's tank decreases at a constant rate as the car is driven. After the car has been driven 150 kilometers, the tank contains 36 liters of fuel. After the car has been driven 400 kilometers, the tank contains 16 liters of fuel. Which function $F$ gives the number of liters of fuel in the tank after the car has been driven $d$ kilometers?",
+    "option_a": "$F(d) = 36 - 0.08d$",
+    "option_b": "$F(d) = 48 + 0.08d$",
+    "option_c": "$F(d) = 48 - 12.5d$",
+    "option_d": "$F(d) = 48 - 0.08d$",
+    "correct": "D",
+    "explanation_en": "The rate of change is $\\dfrac{16 - 36}{400 - 150} = \\dfrac{-20}{250} = -0.08$ liter per kilometer. So $F(d) = -0.08d + c$. Using $F(150) = 36$: $-12 + c = 36$, so $c = 48$. Thus $F(d) = 48 - 0.08d$.\n\nChoice A uses $36$, the fuel after $150$ km, as the starting amount. Choice B makes the fuel increase. Choice C uses $\\frac{250}{20} = 12.5$ kilometers per liter as the rate.",
+    "explanation_uz": "O‘zgarish tezligi: $\\dfrac{16 - 36}{400 - 150} = \\dfrac{-20}{250} = -0.08$ litr/km. Demak $F(d) = -0.08d + c$. $F(150) = 36$ dan: $-12 + c = 36$, ya’ni $c = 48$. Shunday qilib, $F(d) = 48 - 0.08d$.\n\nA variantda $150$ km dan keyingi yoqilg‘i — $36$ boshlang‘ich miqdor deb olingan. B variantda yoqilg‘i ortib boradi. C variantda tezlik sifatida $\\frac{250}{20} = 12.5$ km/litr ishlatilgan.",
+    "estimated_seconds": 100,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "linear_functions",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "The function $f$ is defined by $f(x) = 4x - 5$. For any value of $k$, what is the value of $f(k + 3) - f(k)$?",
+    "spr_answers": [
+      "12"
+    ],
+    "explanation_en": "$f(k + 3) = 4(k + 3) - 5 = 4k + 7$ and $f(k) = 4k - 5$. The difference is $(4k + 7) - (4k - 5) = 12$.\n\nAnother way: the slope is $4$, so when the input increases by $3$, the output increases by $4 \\times 3 = 12$.\n\nCommon mistakes: answering $3$ (the change in input, not output) or writing $f(k + 3)$ as $4k + 3 - 5$.",
+    "explanation_uz": "$f(k + 3) = 4(k + 3) - 5 = 4k + 7$ va $f(k) = 4k - 5$. Ayirma: $(4k + 7) - (4k - 5) = 12$.\n\nBoshqa usul: burchak koeffitsiyenti $4$, demak argument $3$ ga oshganda qiymat $4 \\times 3 = 12$ ga oshadi.\n\nKo‘p uchraydigan xatolar: $3$ deb javob berish (bu qiymatning emas, argumentning o‘zgarishi) yoki $f(k + 3)$ ni $4k + 3 - 5$ deb yozish.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "linear_functions",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "For the linear function $f$, $f(0) = 3$, $f(a) = 9$, and $f(a + 5) = -1$, where $a$ is a constant. What is the value of $a$?",
+    "option_a": "$-12$",
+    "option_b": "$-6$",
+    "option_c": "$-3$",
+    "option_d": "$3$",
+    "correct": "C",
+    "explanation_en": "When the input increases by $5$ (from $a$ to $a + 5$), the output changes by $-1 - 9 = -10$. So the slope is $\\frac{-10}{5} = -2$, and with $f(0) = 3$, $f(x) = -2x + 3$.\n\nThen $f(a) = -2a + 3 = 9$, so $-2a = 6$ and $a = -3$. Check: $f(2) = -1$.\n\nChoice A uses $-\\frac{1}{2}$ (run over rise) as the slope. Choice B treats the slope as $-1$, using only the change in output. Choice D uses a slope of $+2$, losing the negative sign.",
+    "explanation_uz": "Argument $5$ ga oshganda ($a$ dan $a + 5$ gacha) qiymat $-1 - 9 = -10$ ga o‘zgaradi. Demak burchak koeffitsiyenti $\\frac{-10}{5} = -2$, $f(0) = 3$ bo‘lgani uchun $f(x) = -2x + 3$.\n\nU holda $f(a) = -2a + 3 = 9$, ya’ni $-2a = 6$ va $a = -3$. Tekshiruv: $f(2) = -1$.\n\nA variantda koeffitsiyent teskari olingan: $-\\frac{1}{2}$. B variantda faqat qiymat o‘zgarishiga qarab koeffitsiyent $-1$ deb olingan. D variantda manfiy ishora yo‘qotilib, koeffitsiyent $+2$ deb olingan.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "linear_functions",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "The total amount a gym member has paid, in thousands of soums, is a linear function of the number of months since joining and includes a one-time sign-up fee. After 4 months, the member had paid a total of 1,140 thousand soums. After 10 months, the member had paid a total of 2,250 thousand soums. What is the total amount, in thousands of soums, the member will have paid after 15 months?",
+    "spr_answers": [
+      "3175"
+    ],
+    "explanation_en": "The monthly rate is $\\dfrac{2{,}250 - 1{,}140}{10 - 4} = \\dfrac{1{,}110}{6} = 185$ thousand soums per month.\n\nFrom month $10$ to month $15$ the total grows by $5 \\times 185 = 925$, so the total after $15$ months is $2{,}250 + 925 = 3{,}175$ thousand soums. (The sign-up fee is $1{,}140 - 4 \\times 185 = 400$ thousand soums, and $400 + 15 \\times 185 = 3{,}175$ as well.)\n\nA common mistake is treating the total as proportional to the number of months, for example $\\frac{1{,}140}{4} \\times 15 = 4{,}275$, which ignores the one-time fee.",
+    "explanation_uz": "Oylik to‘lov: $\\dfrac{2{,}250 - 1{,}140}{10 - 4} = \\dfrac{1{,}110}{6} = 185$ ming so‘m.\n\n$10$-oydan $15$-oygacha jami summa $5 \\times 185 = 925$ ga oshadi, demak $15$ oydan keyin jami $2{,}250 + 925 = 3{,}175$ ming so‘m. (Ro‘yxatdan o‘tish to‘lovi $1{,}140 - 4 \\times 185 = 400$ ming so‘m va $400 + 15 \\times 185 = 3{,}175$ ham shuni beradi.)\n\nKo‘p uchraydigan xato: jami summani oylar soniga proporsional deb hisoblash, masalan $\\frac{1{,}140}{4} \\times 15 = 4{,}275$; bunda bir martalik to‘lov hisobga olinmaydi.",
+    "estimated_seconds": 130,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  }
+]

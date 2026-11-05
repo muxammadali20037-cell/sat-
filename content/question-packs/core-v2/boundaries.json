@@ -1,0 +1,162 @@
+[
+  {
+    "skill_code": "boundaries",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "A honeybee that has found a rich patch of flowers returns to its hive and performs a so-called waggle ______ angle of the dance tells the other bees which direction to fly.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "option_a": "dance, the",
+    "option_b": "dance the",
+    "option_c": "dance, then the",
+    "option_d": "dance. The",
+    "correct": "D",
+    "explanation_en": "“A honeybee … performs a so-called waggle dance” and “The angle of the dance tells the other bees which direction to fly” are both independent clauses. Choice D correctly separates them into two sentences with a period.\n\nChoice A joins the two independent clauses with only a comma, creating a comma splice. Choice B joins them with no punctuation at all, creating a run-on sentence. Choice C is also a comma splice: “then” is an adverb, not a conjunction, so “then the angle of the dance tells…” is still an independent clause joined to the first with only a comma.",
+    "explanation_uz": "“A honeybee … performs a so-called waggle dance” va “The angle of the dance tells the other bees which direction to fly” — ikkalasi ham mustaqil gap. D ularni nuqta yordamida ikki alohida gapga to‘g‘ri ajratadi.\n\nA — ikki mustaqil gapni faqat vergul bilan bog‘laydi, bu “comma splice” xatosi. B — ularni hech qanday tinish belgisiz qo‘shib yuboradi, bu “run-on” gap. C — bu ham “comma splice”: “then” bog‘lovchi emas, ravish, shuning uchun “then the angle of the dance tells…” baribir mustaqil gap va birinchi gapga faqat vergul bilan ulangan.",
+    "estimated_seconds": 50,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "boundaries",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "When the first heavy snow of the season falls on the Chimgan ______ ski instructors begin grooming the slopes and repairing the lifts for winter visitors.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "option_a": "mountains;",
+    "option_b": "mountains,",
+    "option_c": "mountains:",
+    "option_d": "mountains—",
+    "correct": "B",
+    "explanation_en": "The sentence begins with a dependent clause, “When the first heavy snow of the season falls on the Chimgan mountains,” followed by the main clause, “ski instructors begin….” A comma is the standard way to separate an introductory dependent clause from the main clause, so choice B is correct.\n\nChoice A's semicolon should join two independent clauses, but the “When” clause cannot stand alone. Choice C's colon must follow an independent clause, and the “When” clause is not one. Choice D's single dash is not used to separate an introductory clause from the main clause.",
+    "explanation_uz": "Gap tobe gap bilan boshlanadi: “When the first heavy snow of the season falls on the Chimgan mountains”, so‘ngra bosh gap keladi: “ski instructors begin….” Kirish tobe gapni bosh gapdan ajratishning standart usuli — vergul, shuning uchun B to‘g‘ri.\n\nA — nuqtali vergul ikki mustaqil gapni bog‘lashi kerak, ammo “When” bilan boshlangan qism mustaqil gap emas. C — ikki nuqta mustaqil gapdan keyin kelishi kerak, “When” qismi esa mustaqil emas. D — bitta tire kirish qismini bosh gapdan ajratish uchun ishlatilmaydi.",
+    "estimated_seconds": 50,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "boundaries",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "This year, the regional science fair will award prizes in three ______ biology, engineering, and computer science. Winners in each category will receive a scholarship for a summer research program.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "option_a": "categories:",
+    "option_b": "categories;",
+    "option_c": "categories",
+    "option_d": "categories, and",
+    "correct": "A",
+    "explanation_en": "The clause “the regional science fair will award prizes in three categories” is complete, and the list that follows names those categories. A colon correctly introduces a list that explains what comes before it, so choice A is correct.\n\nChoice B's semicolon must join two independent clauses, but “biology, engineering, and computer science” is not a clause. Choice C runs the list straight into “categories” with no punctuation, which is confusing and nonstandard. Choice D's “and” makes the list read as something added to the categories rather than as the names of the categories.",
+    "explanation_uz": "“The regional science fair will award prizes in three categories” — to‘liq gap, undan keyingi ro‘yxat esa o‘sha yo‘nalishlarni nomlaydi. Ikki nuqta oldingi qismni tushuntiruvchi ro‘yxatni to‘g‘ri kiritadi, shuning uchun A to‘g‘ri.\n\nB — nuqtali vergul ikki mustaqil gapni bog‘lashi kerak, ammo “biology, engineering, and computer science” gap emas. C — ro‘yxat “categories” so‘ziga tinish belgisiz qo‘shilib ketadi, bu chalkash va nostandart. D — “and” ro‘yxatni yo‘nalishlarning nomi emas, balki ularga qo‘shimcha narsa sifatida ko‘rsatadi.",
+    "estimated_seconds": 50,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "boundaries",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "On their journey, the merchants passed through three historic trading cities: Merv, in present-day ______ Herat, in Afghanistan; and Samarkand, in Uzbekistan.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "option_a": "Turkmenistan,",
+    "option_b": "Turkmenistan:",
+    "option_c": "Turkmenistan;",
+    "option_d": "Turkmenistan",
+    "correct": "C",
+    "explanation_en": "Each item in this list contains its own comma (“Merv, in present-day Turkmenistan”). When list items already contain commas, semicolons are used to separate the items, as the text does before “and Samarkand.” Choice C supplies the matching semicolon after the first item.\n\nChoice A uses a comma, which would make it unclear where one item ends and the next begins and would be inconsistent with the semicolon later in the list. Choice B's colon would wrongly introduce “Herat” as an explanation of Turkmenistan. Choice D leaves no punctuation between the first and second items.",
+    "explanation_uz": "Bu ro‘yxatdagi har bir element o‘z ichida vergulga ega (“Merv, in present-day Turkmenistan”). Ro‘yxat elementlarida vergul bo‘lsa, elementlar nuqtali vergul bilan ajratiladi — matnda “and Samarkand” oldidan ham shunday qilingan. C birinchi elementdan keyin mos nuqtali vergulni qo‘yadi.\n\nA — vergul bitta element qayerda tugab, keyingisi qayerda boshlanishini noaniq qiladi va ro‘yxatdagi keyingi nuqtali vergulga mos kelmaydi. B — ikki nuqta “Herat”ni Turkmanistonning izohi sifatida noto‘g‘ri kiritadi. D — birinchi va ikkinchi element orasida hech qanday tinish belgisi qoldirmaydi.",
+    "estimated_seconds": 65,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "boundaries",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Marine biologist and underwater ______ has spent the past decade tracking humpback whales as they migrate along the eastern coast of Madagascar.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "option_a": "photographer Ines Rakoto",
+    "option_b": "photographer, Ines Rakoto,",
+    "option_c": "photographer, Ines Rakoto",
+    "option_d": "photographer Ines Rakoto,",
+    "correct": "A",
+    "explanation_en": "“Marine biologist and underwater photographer” is a title placed directly before the name “Ines Rakoto,” with no article such as “the.” Such a title is essential to identifying the subject and should not be separated from the name by commas. The full subject “Marine biologist and underwater photographer Ines Rakoto” then leads directly to the verb “has spent,” so choice A is correct.\n\nChoice B sets the name off with commas, which would leave the title without an article and break the subject apart. Choice C places a comma between the title and the name. Choice D places a comma between the subject and its verb, “has spent.”",
+    "explanation_uz": "“Marine biologist and underwater photographer” — “the” kabi artiklsiz, to‘g‘ridan-to‘g‘ri “Ines Rakoto” ismidan oldin kelgan unvon. Bunday unvon egani aniqlash uchun zarur va ismdan vergul bilan ajratilmaydi. Butun ega “Marine biologist and underwater photographer Ines Rakoto” to‘g‘ridan-to‘g‘ri “has spent” kesimiga o‘tadi, shuning uchun A to‘g‘ri.\n\nB — ismni vergullar bilan ajratadi, natijada unvon artiklsiz qolib, ega bo‘linib ketadi. C — unvon va ism orasiga vergul qo‘yadi. D — ega va uning kesimi “has spent” orasiga vergul qo‘yadi.",
+    "estimated_seconds": 65,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "boundaries",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "The saiga, an antelope whose large, drooping nose filters out dust in summer and warms frigid air in ______ roams the dry grasslands of Kazakhstan, Mongolia, and southern Russia.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "option_a": "winter;",
+    "option_b": "winter—",
+    "option_c": "winter:",
+    "option_d": "winter,",
+    "correct": "D",
+    "explanation_en": "The phrase “an antelope whose large, drooping nose … in winter” is a nonessential appositive describing “The saiga.” It begins with a comma after “saiga,” so it must end with a matching comma before the verb “roams.” Choice D provides that comma.\n\nChoice A's semicolon would separate the subject “The saiga” from its verb “roams.” Choice B closes the appositive with a dash, but an element that opens with a comma must close with a comma. Choice C's colon would also wrongly separate the subject from its verb.",
+    "explanation_uz": "“An antelope whose large, drooping nose … in winter” iborasi “The saiga”ni tasvirlovchi qo‘shimcha (nonessential) izoh. U “saiga” dan keyingi vergul bilan boshlangan, demak “roams” kesimidan oldin xuddi shunday vergul bilan yopilishi kerak. D aynan shu vergulni beradi.\n\nA — nuqtali vergul “The saiga” egasini “roams” kesimidan ajratib qo‘yadi. B — izohni tire bilan yopadi, ammo vergul bilan boshlangan izoh vergul bilan yopilishi shart. C — ikki nuqta ham egani kesimdan noto‘g‘ri ajratadi.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "boundaries",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "The council's decision to turn the abandoned cotton mill on the edge of town into a public library, a café, and a set of artists' ______ surprised residents who had assumed the building would be torn down.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "option_a": "studios,",
+    "option_b": "studios;",
+    "option_c": "studios",
+    "option_d": "studios—",
+    "correct": "C",
+    "explanation_en": "The subject of this sentence is the long noun phrase “The council's decision to turn the abandoned cotton mill … into a public library, a café, and a set of artists' studios,” and its verb is “surprised.” No punctuation should separate a subject from its verb, so choice C is correct.\n\nChoice A is tempting because the list inside the subject contains commas, but a comma after “studios” would separate the subject from “surprised.” Choice B's semicolon would also split the subject from its verb, leaving two fragments. Choice D's dash would do the same, and there is no opening dash for it to pair with.",
+    "explanation_uz": "Bu gapning egasi uzun ot birikmasi: “The council's decision to turn the abandoned cotton mill … into a public library, a café, and a set of artists' studios”, kesimi esa “surprised”. Ega va kesim orasida hech qanday tinish belgisi bo‘lmasligi kerak, shuning uchun C to‘g‘ri.\n\nA — jozibali, chunki ega ichidagi ro‘yxatda vergullar bor, ammo “studios” dan keyingi vergul egani “surprised” dan ajratib qo‘yadi. B — nuqtali vergul ham egani kesimdan ajratadi va ikki to‘liqsiz gap hosil qiladi. D — tire ham xuddi shunday qiladi, buning ustiga u juftlanadigan ochuvchi tire yo‘q.",
+    "estimated_seconds": 75,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "boundaries",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "The first field trials of the new drought-resistant wheat were disappointing, producing yields no better than those of the standard variety. The second round of trials, ______ produced yields nearly 20 percent higher, largely because the seeds were planted earlier in the spring.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "option_a": "however;",
+    "option_b": "however,",
+    "option_c": "however",
+    "option_d": "however:",
+    "correct": "B",
+    "explanation_en": "“However” is inserted in the middle of the clause “The second round of trials … produced yields nearly 20 percent higher.” Because it interrupts the clause between the subject and verb, it must be set off by a pair of commas. The text supplies the first comma after “trials,” so choice B supplies the second.\n\nChoice A's semicolon would separate the subject “The second round of trials” from its verb “produced,” leaving two fragments. Choice C omits the closing comma, so the interrupting word is not properly set off. Choice D's colon would also wrongly separate the subject from its verb.",
+    "explanation_uz": "“However” so‘zi “The second round of trials … produced yields nearly 20 percent higher” gapining o‘rtasiga — ega va kesim orasiga qo‘yilgan. Gapni bo‘lib turgan bunday so‘z ikki tomondan vergul bilan ajratilishi kerak. Matnda birinchi vergul “trials” dan keyin bor, B esa ikkinchisini qo‘yadi.\n\nA — nuqtali vergul “The second round of trials” egasini “produced” kesimidan ajratib, ikki to‘liqsiz gap hosil qiladi. C — yopuvchi vergulni tushirib qoldiradi, natijada gapni bo‘luvchi so‘z to‘g‘ri ajratilmaydi. D — ikki nuqta ham egani kesimdan noto‘g‘ri ajratadi.",
+    "estimated_seconds": 75,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  }
+]

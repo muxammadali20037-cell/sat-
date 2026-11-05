@@ -1,0 +1,141 @@
+[
+  {
+    "skill_code": "systems_linear_equations",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "$$\\begin{aligned} x &= 3y \\\\ 2x + y &= 35 \\end{aligned}$$\n\nWhat is the solution $(x, y)$ to the given system of equations?",
+    "option_a": "$(5, 15)$",
+    "option_b": "$(7, 21)$",
+    "option_c": "$(10, 15)$",
+    "option_d": "$(15, 5)$",
+    "correct": "D",
+    "explanation_en": "Substitute $x = 3y$ into the second equation: $2(3y) + y = 35$, so $7y = 35$ and $y = 5$. Then $x = 3(5) = 15$. The solution is $(15, 5)$.\n\nChoice A swaps $x$ and $y$. Choices B and C satisfy $2x + y = 35$ but not $x = 3y$.",
+    "explanation_uz": "$x = 3y$ ni ikkinchi tenglamaga qo‘yamiz: $2(3y) + y = 35$, ya’ni $7y = 35$ va $y = 5$. U holda $x = 3(5) = 15$. Yechim: $(15, 5)$.\n\nA variantda $x$ va $y$ o‘rni almashtirilgan. B va C variantlar $2x + y = 35$ ni qanoatlantiradi, lekin $x = 3y$ ni qanoatlantirmaydi.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "systems_linear_equations",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "A puppet theater in Tashkent sells adult tickets for 30,000 soums each and child tickets for 15,000 soums each. A family bought 9 tickets for a total of 195,000 soums. How many adult tickets did the family buy?",
+    "option_a": "$4$",
+    "option_b": "$5$",
+    "option_c": "$6$",
+    "option_d": "$13$",
+    "correct": "A",
+    "explanation_en": "Let $a$ be the number of adult tickets and $c$ the number of child tickets: $a + c = 9$ and $30{,}000a + 15{,}000c = 195{,}000$.\n\nFrom the first equation, $c = 9 - a$. Substitute: $30{,}000a + 15{,}000(9 - a) = 195{,}000$, so $15{,}000a + 135{,}000 = 195{,}000$, $15{,}000a = 60{,}000$ and $a = 4$. Check: $4$ adult and $5$ child tickets cost $120{,}000 + 75{,}000 = 195{,}000$ soums.\n\nChoice B is the number of child tickets. Choice D divides the total by the child price as if every ticket were a child ticket. Choice C divides the total by the adult price and ignores the child tickets.",
+    "explanation_uz": "$a$ — kattalar chiptalari, $c$ — bolalar chiptalari soni bo‘lsin: $a + c = 9$ va $30{,}000a + 15{,}000c = 195{,}000$.\n\nBirinchi tenglamadan $c = 9 - a$. Qo‘yamiz: $30{,}000a + 15{,}000(9 - a) = 195{,}000$, ya’ni $15{,}000a + 135{,}000 = 195{,}000$, $15{,}000a = 60{,}000$ va $a = 4$. Tekshiruv: $4$ ta kattalar va $5$ ta bolalar chiptasi $120{,}000 + 75{,}000 = 195{,}000$ so‘m.\n\nB variant — bolalar chiptalari soni. D variantda umumiy summa bolalar chiptasi narxiga bo‘lingan, go‘yo hamma chipta bolalar uchun bo‘lgandek. C variantda umumiy summa kattalar chiptasi narxiga bo‘lingan va bolalar chiptalari hisobga olinmagan.",
+    "estimated_seconds": 75,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "systems_linear_equations",
+    "difficulty": "easy",
+    "question_type": "spr",
+    "stem": "$$\\begin{aligned} 4x + 3y &= 26 \\\\ 4x - 3y &= 2 \\end{aligned}$$\n\nIf $(x, y)$ is the solution to the given system of equations, what is the value of $x$?",
+    "spr_answers": [
+      "7/2",
+      "3.5"
+    ],
+    "explanation_en": "Add the two equations to eliminate $y$: $8x = 28$, so $x = \\frac{28}{8} = \\frac{7}{2}$. Enter 7/2 or 3.5. (Then $3y = 26 - 14 = 12$, so $y = 4$.)\n\nA common mistake is subtracting the equations, which eliminates $x$ instead and gives $6y = 24$; the value $4$ is $y$, not $x$.",
+    "explanation_uz": "$y$ ni yo‘qotish uchun tenglamalarni qo‘shamiz: $8x = 28$, demak $x = \\frac{28}{8} = \\frac{7}{2}$. Javobni 7/2 yoki 3.5 shaklida kiriting. (Keyin $3y = 26 - 14 = 12$, ya’ni $y = 4$.)\n\nKo‘p uchraydigan xato: tenglamalarni ayirish. Bunda $x$ yo‘qolib, $6y = 24$ hosil bo‘ladi; $4$ esa $x$ emas, $y$ ning qiymati.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "systems_linear_equations",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "At a market, 3 kilograms of apples and 2 kilograms of grapes cost a total of 63,000 soums. At the same prices, 1 kilogram of apples and 4 kilograms of grapes cost a total of 76,000 soums. What is the price, in soums, of 1 kilogram of grapes?",
+    "option_a": "$10{,}000$",
+    "option_b": "$16{,}500$",
+    "option_c": "$19{,}000$",
+    "option_d": "$21{,}000$",
+    "correct": "B",
+    "explanation_en": "Let $a$ and $g$ be the prices, in soums, of $1$ kilogram of apples and grapes: $3a + 2g = 63{,}000$ and $a + 4g = 76{,}000$.\n\nFrom the second equation, $a = 76{,}000 - 4g$. Substitute: $3(76{,}000 - 4g) + 2g = 63{,}000$, so $228{,}000 - 10g = 63{,}000$, $10g = 165{,}000$ and $g = 16{,}500$. Then $a = 10{,}000$.\n\nChoice A is the price of apples. Choice C divides $76{,}000$ by $4$, ignoring the apples. Choice D divides $63{,}000$ by $3$, which ignores the grapes in the first purchase.",
+    "explanation_uz": "$a$ va $g$ — $1$ kilogramm olma va uzum narxi (so‘mda) bo‘lsin: $3a + 2g = 63{,}000$ va $a + 4g = 76{,}000$.\n\nIkkinchi tenglamadan $a = 76{,}000 - 4g$. Qo‘yamiz: $3(76{,}000 - 4g) + 2g = 63{,}000$, ya’ni $228{,}000 - 10g = 63{,}000$, $10g = 165{,}000$ va $g = 16{,}500$. U holda $a = 10{,}000$.\n\nA variant — olma narxi. C variantda olma e’tiborga olinmay, $76{,}000$ $4$ ga bo‘lingan. D variantda birinchi xariddagi uzum e’tiborga olinmay, $63{,}000$ $3$ ga bo‘lingan.",
+    "estimated_seconds": 100,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "systems_linear_equations",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "In the $xy$-plane, the graphs of $y = 2x - 3$ and $y = -x + 9$ intersect at the point $(a, b)$. What is the value of $a + b$?",
+    "spr_answers": [
+      "9"
+    ],
+    "explanation_en": "At the intersection the $y$-values are equal: $2x - 3 = -x + 9$, so $3x = 12$ and $x = 4$. Then $y = 2(4) - 3 = 5$. So $a = 4$, $b = 5$ and $a + b = 9$.\n\nA common mistake is stopping after finding $a = 4$, or writing $x = 2$ from $3x = 6$ by subtracting $3$ instead of adding it.",
+    "explanation_uz": "Kesishish nuqtasida $y$ qiymatlari teng: $2x - 3 = -x + 9$, ya’ni $3x = 12$ va $x = 4$. U holda $y = 2(4) - 3 = 5$. Demak $a = 4$, $b = 5$ va $a + b = 9$.\n\nKo‘p uchraydigan xato: $a = 4$ ni topib to‘xtab qolish yoki $3$ ni qo‘shish o‘rniga ayirib, $3x = 6$ va $x = 2$ deb yozish.",
+    "estimated_seconds": 80,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "systems_linear_equations",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "$$\\begin{aligned} 2x - 5y &= 8 \\\\ 6x - 15y &= c \\end{aligned}$$\n\nIn the given system of equations, $c$ is a constant. For what value of $c$ does the system have infinitely many solutions?",
+    "option_a": "$-24$",
+    "option_b": "$8$",
+    "option_c": "$24$",
+    "option_d": "$40$",
+    "correct": "C",
+    "explanation_en": "A system of two linear equations has infinitely many solutions when one equation is a multiple of the other. Multiplying $2x - 5y = 8$ by $3$ gives $6x - 15y = 24$, so $c = 24$.\n\nFor any other value of $c$, the lines are parallel and distinct, and the system has no solution.\n\nChoice A uses the factor $-3$, but $6x - 15y$ is $+3$ times $2x - 5y$. Choice B keeps the right side unchanged. Choice D multiplies $8$ by $5$, the coefficient of $y$, instead of by the scale factor $3$.",
+    "explanation_uz": "Ikki chiziqli tenglamalar sistemasi bir tenglama ikkinchisiga karrali bo‘lganda cheksiz ko‘p yechimga ega bo‘ladi. $2x - 5y = 8$ ni $3$ ga ko‘paytirsak, $6x - 15y = 24$ hosil bo‘ladi, demak $c = 24$.\n\n$c$ ning boshqa har qanday qiymatida to‘g‘ri chiziqlar parallel va har xil bo‘ladi, sistema esa yechimga ega bo‘lmaydi.\n\nA variantda ko‘paytuvchi $-3$ olingan, lekin $6x - 15y$ ifoda $2x - 5y$ ning $+3$ barobari. B variantda o‘ng tomon o‘zgartirilmagan. D variantda $8$ ko‘paytuvchi $3$ ga emas, $y$ oldidagi koeffitsiyent $5$ ga ko‘paytirilgan.",
+    "estimated_seconds": 80,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "systems_linear_equations",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "A boat travels 48 kilometers downstream (with the current) in 2 hours. The return trip of 48 kilometers upstream (against the current) takes 3 hours. The speed of the boat in still water and the speed of the current are both constant. What is the speed of the current, in kilometers per hour?",
+    "option_a": "$4$",
+    "option_b": "$8$",
+    "option_c": "$16$",
+    "option_d": "$20$",
+    "correct": "A",
+    "explanation_en": "Let $b$ be the boat's speed in still water and $w$ the speed of the current, both in km/h. Downstream speed: $b + w = \\frac{48}{2} = 24$. Upstream speed: $b - w = \\frac{48}{3} = 16$.\n\nSubtract the equations: $2w = 8$, so $w = 4$. (Adding them gives $2b = 40$, so $b = 20$.)\n\nChoice B is $24 - 16$, which equals $2w$, not $w$. Choice C is the upstream speed. Choice D is the speed of the boat in still water.",
+    "explanation_uz": "$b$ — qayiqning turg‘un suvdagi tezligi, $w$ — oqim tezligi (km/soat) bo‘lsin. Oqim bo‘ylab tezlik: $b + w = \\frac{48}{2} = 24$. Oqimga qarshi tezlik: $b - w = \\frac{48}{3} = 16$.\n\nTenglamalarni ayiramiz: $2w = 8$, demak $w = 4$. (Qo‘shsak, $2b = 40$, ya’ni $b = 20$.)\n\nB variant — $24 - 16$, bu $w$ emas, $2w$ ga teng. C variant — oqimga qarshi tezlik. D variant — qayiqning turg‘un suvdagi tezligi.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "systems_linear_equations",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "Two pipes, A and B, each deliver water to a reservoir at its own constant rate. When both pipes are open for 4 hours, they deliver a total of 1,040 liters. When pipe A is open for 3 hours and pipe B is open for 5 hours, they deliver a total of 1,100 liters. At what rate, in liters per hour, does pipe A deliver water?",
+    "spr_answers": [
+      "100"
+    ],
+    "explanation_en": "Let $a$ and $b$ be the rates of pipes A and B, in liters per hour. Then $4a + 4b = 1{,}040$, so $a + b = 260$, and $3a + 5b = 1{,}100$.\n\nSubstitute $b = 260 - a$: $3a + 5(260 - a) = 1{,}100$, so $1{,}300 - 2a = 1{,}100$, $2a = 200$ and $a = 100$. (Then $b = 160$. Check: $3(100) + 5(160) = 1{,}100$.)\n\nCommon mistakes: forgetting to divide $1{,}040$ by $4$ (using $a + b = 1{,}040$), or giving $160$, the rate of pipe B.",
+    "explanation_uz": "$a$ va $b$ — A va B quvurlarning tezligi (litr/soat) bo‘lsin. U holda $4a + 4b = 1{,}040$, ya’ni $a + b = 260$, va $3a + 5b = 1{,}100$.\n\n$b = 260 - a$ ni qo‘yamiz: $3a + 5(260 - a) = 1{,}100$, ya’ni $1{,}300 - 2a = 1{,}100$, $2a = 200$ va $a = 100$. (U holda $b = 160$. Tekshiruv: $3(100) + 5(160) = 1{,}100$.)\n\nKo‘p uchraydigan xatolar: $1{,}040$ ni $4$ ga bo‘lishni unutish ($a + b = 1{,}040$ deb olish) yoki B quvurning tezligi $160$ ni javob qilib yozish.",
+    "estimated_seconds": 130,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  }
+]

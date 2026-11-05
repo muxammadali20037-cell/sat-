@@ -1,0 +1,162 @@
+[
+  {
+    "skill_code": "command_of_evidence_quantitative",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Engineering student Kamila Yusupova tested how long four types of rechargeable batteries could keep the same flashlight lit on a single charge. She claims that the lithium-ion battery performed better than every other battery she tested.\n\n**Hours of light from one full charge**\n\n| Battery type | Hours of light |\n| --- | ---: |\n| Nickel-cadmium | 6.5 |\n| Nickel-metal hydride | 9.0 |\n| Lithium-ion | 14.5 |\n| Lead-acid | 4.0 |",
+    "stem": "Which choice most effectively uses data from the table to support Yusupova's claim?",
+    "option_a": "The nickel-metal hydride battery kept the flashlight lit for 9.0 hours.",
+    "option_b": "The lithium-ion battery kept the flashlight lit for 14.5 hours, longer than any of the other three batteries.",
+    "option_c": "The nickel-cadmium battery kept the flashlight lit longer than the lead-acid battery did.",
+    "option_d": "The lead-acid battery kept the flashlight lit for only 4.0 hours.",
+    "correct": "B",
+    "explanation_en": "Yusupova claims that the lithium-ion battery outperformed every other battery. The table shows that it lasted 14.5 hours, more than any other battery (the next best was 9.0 hours), so choice B supports the claim.\n\nChoice A gives an accurate figure for a different battery and says nothing about the lithium-ion battery. Choice C is accurate but compares two other batteries. Choice D shows that the lead-acid battery performed worst, which does not show that the lithium-ion battery performed best.",
+    "explanation_uz": "Yusupova litiy-ion batareya boshqa barcha batareyalardan yaxshiroq ishlaganini da’vo qiladi. Jadvalga ko‘ra u 14,5 soat ishlagan — bu boshqa har qanday batareyadan ko‘p (keyingi eng yaxshi natija 9,0 soat). Demak, B javob da’voni qo‘llab-quvvatlaydi.\n\nA boshqa batareya haqidagi to‘g‘ri raqamni beradi, litiy-ion batareya haqida esa hech narsa demaydi. C ham to‘g‘ri, lekin boshqa ikki batareyani solishtiradi. D qo‘rg‘oshin-kislotali batareya eng yomon natija ko‘rsatganini bildiradi, bu esa litiy-ion batareya eng yaxshi ekanini isbotlamaydi.",
+    "estimated_seconds": 55,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "command_of_evidence_quantitative",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "A school in the city of Termez asked 400 students to name their favorite after-school activity. The survey found that sports was the most popular choice, named by ______\n\n**Favorite after-school activity**\n\n| Activity | Number of students |\n| --- | ---: |\n| Sports | 186 |\n| Music | 94 |\n| Robotics | 71 |\n| Drama | 49 |",
+    "stem": "Which choice most effectively uses data from the table to complete the statement?",
+    "option_a": "94 students, nearly twice as many as named drama.",
+    "option_b": "71 students, more than named music.",
+    "option_c": "186 students, fewer than named music.",
+    "option_d": "186 students, about twice as many as named music, the next most popular activity.",
+    "correct": "D",
+    "explanation_en": "The table shows that 186 students named sports and 94 named music, the second most popular activity; 186 is about twice 94. Choice D reports these figures accurately.\n\nChoice A gives the number for music (94), not sports. Choice B gives the number for robotics, and 71 is not more than the 94 who named music. Choice C gives the correct number for sports but wrongly says it is fewer than the number for music.",
+    "explanation_uz": "Jadvalga ko‘ra 186 nafar o‘quvchi sportni, 94 nafari esa ikkinchi eng ommabop mashg‘ulot — musiqani tanlagan; 186 taxminan 94 ning ikki baravari. D javob bu raqamlarni to‘g‘ri beradi.\n\nA sport emas, musiqa uchun raqamni (94) beradi. B robototexnika raqamini beradi, 71 esa musiqani tanlagan 94 nafardan ko‘p emas. C sport uchun to‘g‘ri raqamni beradi, lekin uni musiqadan kam deb noto‘g‘ri aytadi.",
+    "estimated_seconds": 55,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "command_of_evidence_quantitative",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Marine biologist Selin Arslan counted sea turtle nests on Kavak Beach every other year from 2016 to 2024. At the end of 2020, the town dimmed the streetlights along the beach, since bright lights can confuse nesting turtles. Arslan claims that the number of nests increased after the lights were dimmed.\n\n**Sea turtle nests on Kavak Beach**\n\n| Year | Number of nests |\n| --- | ---: |\n| 2016 | 41 |\n| 2018 | 38 |\n| 2020 | 44 |\n| 2022 | 79 |\n| 2024 | 96 |",
+    "stem": "Which choice most effectively uses data from the table to support Arslan's claim?",
+    "option_a": "The beach had 44 nests in 2020 and 96 nests in 2024.",
+    "option_b": "The beach had 41 nests in 2016 and 38 nests in 2018.",
+    "option_c": "The beach had fewer nests in 2016 than in 2020.",
+    "option_d": "The beach had 79 nests in 2022.",
+    "correct": "A",
+    "explanation_en": "Arslan claims that nests increased after the lights were dimmed at the end of 2020. Choice A compares the 2020 count (44, before the change took effect) with the 2024 count (96, after it), showing a large increase.\n\nChoice B compares two years before the lights were dimmed, and it shows a decrease. Choice C also compares only years before the lights were dimmed. Choice D gives a single figure from after the change without any earlier figure to compare it with, so it does not show an increase.",
+    "explanation_uz": "Arslan chiroqlar 2020-yil oxirida xiralashtirilgandan keyin uyalar soni ko‘payganini da’vo qiladi. A javob 2020-yilgi (o‘zgarishdan oldingi) 44 ta uyani 2024-yilgi (o‘zgarishdan keyingi) 96 ta uya bilan solishtiradi va katta o‘sishni ko‘rsatadi.\n\nB chiroqlar xiralashtirilishidan oldingi ikki yilni solishtiradi va hatto kamayishni ko‘rsatadi. C ham faqat o‘zgarishdan oldingi yillarni solishtiradi. D o‘zgarishdan keyingi bitta raqamni beradi, lekin solishtirish uchun oldingi raqam yo‘q, shuning uchun o‘sishni ko‘rsatmaydi.",
+    "estimated_seconds": 55,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "command_of_evidence_quantitative",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Agricultural researchers grew tomatoes in test plots using four irrigation methods and recorded how much water each method used and how many kilograms of tomatoes each plot produced. They found that drip irrigation used the least water for each kilogram of tomatoes, but it did not produce the highest yield: ______\n\n**Tomato yield and water use by irrigation method**\n\n| Irrigation method | Water used per kg of tomatoes (liters) | Yield per plot (kg) |\n| --- | ---: | ---: |\n| Flood | 210 | 48 |\n| Furrow | 160 | 52 |\n| Sprinkler | 140 | 55 |\n| Drip | 90 | 51 |",
+    "stem": "Which choice most effectively uses data from the table to complete the statement?",
+    "option_a": "drip irrigation used 90 liters of water per kilogram of tomatoes, compared with 210 liters for flood irrigation.",
+    "option_b": "drip-irrigated plots yielded 51 kg of tomatoes, more than the 48 kg yielded by flood-irrigated plots.",
+    "option_c": "drip-irrigated plots yielded 51 kg of tomatoes, less than the 55 kg yielded by sprinkler-irrigated plots.",
+    "option_d": "sprinkler irrigation used 140 liters of water per kilogram of tomatoes, more than drip irrigation used.",
+    "correct": "C",
+    "explanation_en": "The blank must show that drip irrigation \"did not produce the highest yield.\" Choice C does this: drip plots yielded 51 kg, less than the 55 kg from sprinkler plots.\n\nChoices A and D are accurate, but they describe water use, which supports the first part of the statement rather than the part after the colon. Choice B is accurate, but showing that drip beat flood irrigation does not show that drip failed to produce the highest yield.",
+    "explanation_uz": "Bo‘sh joy tomchilatib sug‘orish eng yuqori hosil bermaganini (“did not produce the highest yield”) ko‘rsatishi kerak. C javob aynan shuni qiladi: tomchilatib sug‘orilgan maydonlar 51 kg hosil bergan, bu yomg‘irlatib sug‘orilgan maydonlardagi 55 kg dan kam.\n\nA va D to‘g‘ri ma’lumot beradi, lekin ular suv sarfi haqida, ya’ni ikki nuqtadan keyingi qismni emas, gapning birinchi qismini tasdiqlaydi. B ham to‘g‘ri, ammo tomchilatib sug‘orish bostirib sug‘orishdan yaxshiroq ekani uning eng yuqori hosil bermaganini ko‘rsatmaydi.",
+    "estimated_seconds": 72,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "command_of_evidence_quantitative",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Ecologist Javohir Ergashev recorded how many blossoms grew on each plant and how often bees visited four garden plants. He argues that gardeners who want to help bees should choose native wildflowers over popular ornamental flowers, because in his study the native plants attracted far more bee visits even though they produced fewer blossoms.\n\n**Blossoms and bee visits for four garden plants**\n\n| Plant | Type | Blossoms per plant | Bee visits per hour |\n| --- | --- | ---: | ---: |\n| Purple coneflower | Native | 22 | 31 |\n| Petunia | Ornamental | 40 | 6 |\n| Wild bergamot | Native | 18 | 27 |\n| Begonia | Ornamental | 35 | 4 |",
+    "stem": "Which choice most effectively uses data from the table to support Ergashev's argument?",
+    "option_a": "Wild bergamot had fewer blossoms per plant than petunia did (18 versus 40) but received far more bee visits per hour (27 versus 6).",
+    "option_b": "Petunia had more blossoms per plant than any other plant in the study.",
+    "option_c": "Purple coneflower had more blossoms per plant than wild bergamot did (22 versus 18).",
+    "option_d": "Begonia received fewer bee visits per hour than petunia did (4 versus 6).",
+    "correct": "A",
+    "explanation_en": "Ergashev argues that native plants attracted more bee visits than ornamentals despite producing fewer blossoms. Choice A compares a native plant with an ornamental one on both measures: wild bergamot had fewer blossoms (18 versus 40) but many more visits (27 versus 6).\n\nChoice B mentions only blossoms and says nothing about bee visits. Choice C compares two native plants, so it says nothing about natives versus ornamentals. Choice D compares two ornamental plants and likewise leaves out the native plants.",
+    "explanation_uz": "Ergashev mahalliy o‘simliklar kamroq gul ochishiga qaramay, manzarali gullarga qaraganda ko‘proq asalari jalb qilganini ta’kidlaydi. A javob mahalliy va manzarali o‘simlikni ikkala ko‘rsatkich bo‘yicha solishtiradi: yovvoyi bergamotda gul kamroq (18 ga qarshi 40), lekin asalari tashriflari ancha ko‘p (27 ga qarshi 6).\n\nB faqat gullar sonini aytadi, asalari tashriflari haqida hech narsa demaydi. C ikki mahalliy o‘simlikni solishtiradi, mahalliy va manzarali o‘simliklar farqini ko‘rsatmaydi. D ikki manzarali o‘simlikni solishtiradi va mahalliy o‘simliklarni chetda qoldiradi.",
+    "estimated_seconds": 72,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "command_of_evidence_quantitative",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Geographer Nilufar Saidova measured how far four mountain glaciers retreated between 2000 and 2020. She found that larger glaciers tended to retreat less than smaller ones: the Torva Glacier, the largest of the four, retreated ______\n\n**Glacier size and retreat, 2000–2020**\n\n| Glacier | Area in 2000 (km²) | Retreat, 2000–2020 (meters) |\n| --- | ---: | ---: |\n| Torva | 48 | 210 |\n| Ilsk | 12 | 540 |\n| Brenn | 20 | 390 |\n| Kaldo | 7 | 615 |",
+    "stem": "Which choice most effectively uses data from the table to complete the statement?",
+    "option_a": "615 meters, while the Kaldo Glacier, the smallest, retreated 210 meters.",
+    "option_b": "210 meters, while the Brenn Glacier, the smallest, retreated 390 meters.",
+    "option_c": "540 meters, more than any other glacier in the study.",
+    "option_d": "210 meters, while the Kaldo Glacier, the smallest, retreated 615 meters.",
+    "correct": "D",
+    "explanation_en": "The Torva Glacier (48 km²) retreated 210 meters, and the smallest glacier, Kaldo (7 km²), retreated 615 meters. Choice D reports these figures correctly and illustrates the pattern that larger glaciers retreated less.\n\nChoice A swaps the two retreat figures. Choice B gives Torva's figure correctly but calls Brenn the smallest glacier, although Kaldo is smaller. Choice C gives Ilsk's figure for Torva, and the largest retreat actually belongs to Kaldo.",
+    "explanation_uz": "Torva muzligi (48 km²) 210 metr chekingan, eng kichik muzlik — Kaldo (7 km²) esa 615 metr chekingan. D javob bu raqamlarni to‘g‘ri beradi va kattaroq muzliklar kamroq chekinganini ko‘rsatadi.\n\nA ikki raqamning o‘rnini almashtiradi. B Torva raqamini to‘g‘ri beradi, lekin Brennni eng kichik muzlik deb ataydi, holbuki Kaldo undan kichikroq. C Torva uchun Ilsk raqamini beradi, eng ko‘p chekinish esa aslida Kaldoga tegishli.",
+    "estimated_seconds": 72,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "command_of_evidence_quantitative",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Agricultural scientist Malika Nurova tested whether planting marigolds near cabbages reduces damage from cabbage-eating caterpillars. She argues that the marigolds' effect depends on distance: marigolds substantially reduced damage only when they were planted within one meter of the cabbages.\n\n**Percentage of cabbage leaves damaged by caterpillars**\n\n| Planting arrangement | 2023 | 2024 |\n| --- | ---: | ---: |\n| No marigolds | 42% | 47% |\n| Marigolds 0.5 m from cabbages | 15% | 18% |\n| Marigolds 1 m from cabbages | 19% | 21% |\n| Marigolds 3 m from cabbages | 40% | 44% |",
+    "stem": "Which choice most effectively uses data from the table to support Nurova's argument?",
+    "option_a": "In both years, plots with marigolds 0.5 m from the cabbages had less damage than plots with marigolds 1 m from the cabbages.",
+    "option_b": "In both years, plots with marigolds 0.5 m or 1 m from the cabbages had far less damage than plots without marigolds, while plots with marigolds 3 m away had nearly as much damage as plots without marigolds.",
+    "option_c": "In plots without marigolds, the percentage of damaged leaves rose from 42% in 2023 to 47% in 2024.",
+    "option_d": "In 2024, plots with marigolds 3 m from the cabbages had less damage (44%) than plots without marigolds (47%).",
+    "correct": "B",
+    "explanation_en": "Nurova's argument has two parts: marigolds within one meter substantially reduced damage, and marigolds farther away did not. Choice B supports both: damage at 0.5 m and 1 m (15–21%) was far below damage without marigolds (42–47%), while damage at 3 m (40–44%) was nearly the same as without marigolds.\n\nChoice A is accurate but compares only two distances within one meter, so it says nothing about whether farther marigolds failed to help. Choice C describes only the plots without marigolds. Choice D is accurate but highlights a small benefit at 3 m, which, if anything, works against the claim that only nearby marigolds helped.",
+    "explanation_uz": "Nurova argumenti ikki qismdan iborat: bir metr ichida ekilgan tagetes (marigold) zararni sezilarli kamaytirgan, uzoqroqdagilar esa kamaytirmagan. B javob ikkalasini ham tasdiqlaydi: 0,5 m va 1 m masofada zarar (15–21%) tagetessiz maydonlardagidan (42–47%) ancha past, 3 m masofada esa (40–44%) tagetessiz maydonlardagiga deyarli teng.\n\nA to‘g‘ri, lekin faqat bir metr ichidagi ikki masofani solishtiradi, uzoqroqdagi tageteslar foyda bermaganini ko‘rsatmaydi. C faqat tagetessiz maydonlarni tasvirlaydi. D ham to‘g‘ri, ammo 3 m masofadagi kichik foydani ta’kidlaydi, bu esa faqat yaqin tageteslar foyda bergani haqidagi da’voga, aksincha, zid ishlaydi.",
+    "estimated_seconds": 88,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "command_of_evidence_quantitative",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Between 2010 and 2020, enrollment in children's music schools rose in some regions of the country of Valmora. Demographer Ilyos Rashidov found that rising enrollment was not simply the result of a growing number of children: in at least one region, enrollment rose even as the number of school-age children fell. For example, ______\n\n**Children and music-school students by region**\n\n| Region | Children aged 7–15, 2010 | Children aged 7–15, 2020 | Music-school students, 2010 | Music-school students, 2020 |\n| --- | ---: | ---: | ---: | ---: |\n| Northern | 84,000 | 79,000 | 2,100 | 3,400 |\n| Eastern | 61,000 | 70,000 | 1,500 | 2,600 |\n| Southern | 95,000 | 88,000 | 3,000 | 2,700 |\n| Western | 52,000 | 58,000 | 1,800 | 1,600 |",
+    "stem": "Which choice most effectively uses data from the table to complete the statement?",
+    "option_a": "in the Eastern region, music-school enrollment rose from 1,500 to 2,600 while the number of children aged 7–15 rose from 61,000 to 70,000.",
+    "option_b": "in the Southern region, the number of children aged 7–15 fell from 95,000 to 88,000, and music-school enrollment fell from 3,000 to 2,700.",
+    "option_c": "in the Northern region, the number of children aged 7–15 fell from 84,000 to 79,000, but music-school enrollment rose from 2,100 to 3,400.",
+    "option_d": "in the Western region, the number of children aged 7–15 rose from 52,000 to 58,000, but music-school enrollment fell from 1,800 to 1,600.",
+    "correct": "C",
+    "explanation_en": "The example must show a region where the number of children fell while music-school enrollment rose. Only the Northern region fits: children fell from 84,000 to 79,000, and enrollment rose from 2,100 to 3,400. Choice C reports this.\n\nChoice A describes a region where both numbers rose, which is consistent with enrollment growing simply because there were more children. Choice B describes a region where both numbers fell. Choice D describes the reverse pattern: children increased while enrollment decreased.",
+    "explanation_uz": "Misol bolalar soni kamaygan, musiqa maktabidagi o‘quvchilar soni esa oshgan hududni ko‘rsatishi kerak. Faqat Shimoliy hudud mos keladi: bolalar 84 000 dan 79 000 gacha kamaygan, o‘quvchilar esa 2 100 dan 3 400 gacha ko‘paygan. C javob aynan shuni beradi.\n\nA ikkala ko‘rsatkich ham oshgan hududni tasvirlaydi — bu o‘sish shunchaki bolalar ko‘paygani bilan izohlanishi mumkin. B ikkala ko‘rsatkich ham kamaygan hududni tasvirlaydi. D teskari holatni ko‘rsatadi: bolalar ko‘paygan, o‘quvchilar esa kamaygan.",
+    "estimated_seconds": 88,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  }
+]

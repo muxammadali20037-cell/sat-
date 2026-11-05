@@ -1,0 +1,162 @@
+[
+  {
+    "skill_code": "transitions",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Octopuses have no bones; the only hard part of an octopus's body is its small, parrot-like beak. ______ an octopus can squeeze through almost any opening that is larger than its beak.",
+    "stem": "Which choice completes the text with the most logical transition?",
+    "option_a": "As a result,",
+    "option_b": "However,",
+    "option_c": "For example,",
+    "option_d": "In contrast,",
+    "correct": "A",
+    "explanation_en": "The first sentence explains that an octopus has no bones and only one small hard part. The second sentence describes a consequence of that body structure: it can squeeze through almost any opening larger than its beak. “As a result” correctly signals this cause-and-effect relationship.\n\n“However” and “In contrast” signal a contrast, but the second sentence follows from the first rather than opposing it. “For example” would introduce an example of the first sentence's claim, but squeezing through openings is a consequence of having no bones, not an example of it.",
+    "explanation_uz": "Birinchi gap sakkizoyoqning suyaklari yo‘qligini va faqat bitta kichik qattiq a’zosi borligini tushuntiradi. Ikkinchi gap shu tana tuzilishining oqibatini tasvirlaydi: u tumshug‘idan kattaroq deyarli har qanday teshikdan o‘ta oladi. “As a result” (natijada) bu sabab-oqibat munosabatini to‘g‘ri ifodalaydi.\n\n“However” va “In contrast” qarama-qarshilikni bildiradi, lekin ikkinchi gap birinchisiga zid emas, undan kelib chiqadi. “For example” birinchi gapdagi fikrga misol keltiradi, ammo teshikdan o‘tish suyaksizlikning misoli emas, oqibatidir.",
+    "estimated_seconds": 50,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "transitions",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Most bats hunt at night and rely on echolocation, bouncing sounds off objects to locate insects in the dark. ______ many fruit bats find their food mainly by sight and smell, using large eyes and a keen sense of smell to locate ripe fruit.",
+    "stem": "Which choice completes the text with the most logical transition?",
+    "option_a": "Similarly,",
+    "option_b": "Therefore,",
+    "option_c": "By contrast,",
+    "option_d": "For instance,",
+    "correct": "C",
+    "explanation_en": "The first sentence says most bats find food by echolocation. The second sentence says many fruit bats instead use sight and smell. Because the second sentence describes a different method, “By contrast” is the logical transition.\n\n“Similarly” would suggest that fruit bats find food in the same way as most bats, which is not what the text says. “Therefore” would mean that fruit bats use sight and smell because most bats use echolocation, which makes no sense. “For instance” would present fruit bats as an example of bats that use echolocation, but they are an exception.",
+    "explanation_uz": "Birinchi gapda ko‘pchilik ko‘rshapalaklar ovqatni exolokatsiya orqali topishi aytiladi. Ikkinchi gapda esa ko‘plab mevaxo‘r ko‘rshapalaklar buning o‘rniga ko‘rish va hid bilish sezgisidan foydalanishi aytiladi. Ikkinchi gap boshqa usulni tasvirlagani uchun “By contrast” (aksincha) mantiqiy bog‘lovchi bo‘ladi.\n\n“Similarly” (xuddi shunday) mevaxo‘r ko‘rshapalaklar ham boshqalar kabi ovqat topadi degan ma’noni beradi, bu matnga zid. “Therefore” (shuning uchun) ko‘pchilik exolokatsiyadan foydalangani uchun mevaxo‘rlar ko‘z va hiddan foydalanadi degan ma’noni beradi — bu mantiqsiz. “For instance” mevaxo‘rlarni exolokatsiyadan foydalanuvchilarga misol qilib ko‘rsatadi, holbuki ular istisno.",
+    "estimated_seconds": 50,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "transitions",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "To make plov, cooks first heat oil in a heavy pot called a kazan and fry pieces of meat until they are brown. ______ they add sliced onions and carrots, which cook together with the meat before the rice is layered on top.",
+    "stem": "Which choice completes the text with the most logical transition?",
+    "option_a": "In contrast,",
+    "option_b": "Next,",
+    "option_c": "For instance,",
+    "option_d": "Nevertheless,",
+    "correct": "B",
+    "explanation_en": "The text describes the steps of making plov in order: first the meat is fried, then onions and carrots are added, and finally the rice is layered on top. “Next” correctly signals the following step in this sequence.\n\n“In contrast” and “Nevertheless” signal opposition, but adding vegetables does not contrast with frying meat. “For instance” would present the vegetables as an example of frying meat, which is illogical.",
+    "explanation_uz": "Matn palov tayyorlash bosqichlarini tartib bilan tasvirlaydi: avval go‘sht qovuriladi, keyin piyoz va sabzi qo‘shiladi, oxirida ustidan guruch solinadi. “Next” (keyin) bu ketma-ketlikdagi navbatdagi bosqichni to‘g‘ri bildiradi.\n\n“In contrast” va “Nevertheless” qarama-qarshilikni bildiradi, ammo sabzavot qo‘shish go‘sht qovurishga zid emas. “For instance” sabzavotlarni go‘sht qovurishning misoli sifatida ko‘rsatadi, bu mantiqsiz.",
+    "estimated_seconds": 50,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "transitions",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Many shoppers assume that the palest honey on the shelf will always have the mildest flavor. Color, ______ is a poor guide to taste: some very light honeys, such as those made from linden blossoms, have a sharp, almost minty flavor.",
+    "stem": "Which choice completes the text with the most logical transition?",
+    "option_a": "for example,",
+    "option_b": "in other words,",
+    "option_c": "similarly,",
+    "option_d": "however,",
+    "correct": "D",
+    "explanation_en": "The first sentence describes an assumption that pale honey is always mild. The second sentence contradicts it: color is a poor guide, and some light honeys taste sharp. “However” correctly signals this contrast between the assumption and reality.\n\n“For example” would present the second sentence as an example of the assumption, but it disproves the assumption. “In other words” would mean the second sentence restates the first, yet it says the opposite. “Similarly” would suggest the two sentences make parallel points, which they do not.",
+    "explanation_uz": "Birinchi gapda och rangli asal har doim yumshoq ta’mli bo‘ladi degan taxmin tasvirlanadi. Ikkinchi gap unga zid: rang ta’mni aniqlash uchun yomon ko‘rsatkich, ba’zi och rangli asallar o‘tkir ta’mga ega. “However” (biroq) taxmin va haqiqat o‘rtasidagi bu qarama-qarshilikni to‘g‘ri ifodalaydi.\n\n“For example” ikkinchi gapni taxminga misol sifatida ko‘rsatadi, holbuki u taxminni rad etadi. “In other words” (boshqacha aytganda) ikkinchi gap birinchisini qayta ifodalaydi degan ma’noni beradi, ammo u aksini aytadi. “Similarly” ikkala gap bir xil fikrni bildiradi degan ma’no beradi, bu noto‘g‘ri.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "transitions",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Itchan Kala, the inner town of Khiva, is enclosed by mud-brick walls about 10 meters high that have stood for centuries. ______ the town contains more than fifty historic monuments, including mosques, madrasas, and palaces, within an area that can be crossed on foot in about fifteen minutes.",
+    "stem": "Which choice completes the text with the most logical transition?",
+    "option_a": "Moreover,",
+    "option_b": "Instead,",
+    "option_c": "Consequently,",
+    "option_d": "Regardless,",
+    "correct": "A",
+    "explanation_en": "Both sentences describe impressive features of Itchan Kala: its ancient walls and its many monuments packed into a small area. The second sentence adds further information supporting the same picture, so “Moreover” is the logical choice.\n\n“Instead” would suggest that the monuments replace the walls, which makes no sense. “Consequently” would mean the walls caused the town to contain many monuments, a relationship the text does not suggest. “Regardless” would imply that the second fact holds despite the first, but nothing about the walls works against the monuments.",
+    "explanation_uz": "Ikkala gap ham Ichan qal’aning ta’sirli jihatlarini tasvirlaydi: qadimiy devorlari va kichik hududga jamlangan ko‘plab yodgorliklari. Ikkinchi gap xuddi shu manzarani to‘ldiruvchi qo‘shimcha ma’lumot beradi, shuning uchun “Moreover” (bundan tashqari) mantiqiy tanlov.\n\n“Instead” (o‘rniga) yodgorliklar devorlar o‘rnini egallaydi degan ma’noni beradi, bu mantiqsiz. “Consequently” (natijada) devorlar sababli shaharda ko‘p yodgorlik bor degan ma’noni beradi — matn bunday bog‘liqlikni ko‘rsatmaydi. “Regardless” (qaramay) ikkinchi fakt birinchisiga qaramay to‘g‘ri degan ma’noni beradi, ammo devorlar yodgorliklarga hech qanday to‘sqinlik qilmaydi.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "transitions",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Some plants have evolved surprising ways of spreading their seeds far from the parent plant. ______ when the fruit of the squirting cucumber ripens, pressure builds up inside it until the fruit bursts off its stem, spraying seeds several meters away.",
+    "stem": "Which choice completes the text with the most logical transition?",
+    "option_a": "Nonetheless,",
+    "option_b": "Likewise,",
+    "option_c": "For example,",
+    "option_d": "In summary,",
+    "correct": "C",
+    "explanation_en": "The first sentence makes a general claim: some plants have surprising ways of spreading seeds. The second sentence describes one specific plant, the squirting cucumber, that does this. “For example” correctly introduces a specific example of the general claim.\n\n“Nonetheless” signals a contrast, but the second sentence supports the first. “Likewise” would introduce a separate, similar point rather than an instance of the first claim. “In summary” would introduce a restatement of earlier points, but the second sentence adds a new, specific detail.",
+    "explanation_uz": "Birinchi gap umumiy fikr bildiradi: ba’zi o‘simliklar urug‘larini tarqatishning hayratlanarli usullariga ega. Ikkinchi gap buni qiladigan bitta aniq o‘simlik — sapchiydigan bodringni tasvirlaydi. “For example” (masalan) umumiy fikrga aniq misolni to‘g‘ri kiritadi.\n\n“Nonetheless” qarama-qarshilikni bildiradi, ammo ikkinchi gap birinchisini qo‘llab-quvvatlaydi. “Likewise” (xuddi shuningdek) birinchi fikrning misolini emas, alohida o‘xshash fikrni kiritadi. “In summary” (xulosa qilib aytganda) avvalgi fikrlarni umumlashtiradi, ikkinchi gap esa yangi, aniq tafsilot qo‘shadi.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "transitions",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Agronomists expected that adding more fertilizer to their test fields would steadily increase the cotton harvest. Up to a point, it did: yields rose as fertilizer use climbed to moderate levels. Beyond that point, ______ extra fertilizer brought no further gain and in some fields even lowered yields, as excess nitrogen encouraged leafy growth at the expense of cotton bolls.",
+    "stem": "Which choice completes the text with the most logical transition?",
+    "option_a": "for instance,",
+    "option_b": "similarly,",
+    "option_c": "therefore,",
+    "option_d": "however,",
+    "correct": "D",
+    "explanation_en": "The text first says that yields rose as fertilizer use increased to moderate levels. The final sentence describes what happened beyond that point: extra fertilizer brought no gain and sometimes lowered yields. This outcome contrasts with both the expectation of a steady increase and the earlier rise, so “however” is the logical transition.\n\n“For instance” would present the final sentence as an example of yields rising, but it describes the opposite. “Similarly” would suggest that the results beyond the point matched the earlier rise. “Therefore” would mean that the earlier rise caused the later decline, a relationship the text does not claim; the text gives a different cause, excess nitrogen.",
+    "explanation_uz": "Matnda avval o‘g‘it miqdori o‘rtacha darajagacha oshirilganda hosil ortgani aytiladi. Oxirgi gap esa o‘sha nuqtadan keyin nima bo‘lganini tasvirlaydi: qo‘shimcha o‘g‘it foyda bermagan, ba’zan hatto hosilni kamaytirgan. Bu natija ham hosil doimiy o‘sadi degan kutishga, ham avvalgi o‘sishga zid, shuning uchun “however” (biroq) mantiqiy bog‘lovchi.\n\n“For instance” oxirgi gapni hosil o‘sishiga misol qilib ko‘rsatadi, holbuki u aksini tasvirlaydi. “Similarly” o‘sha nuqtadan keyingi natijalar avvalgi o‘sishga o‘xshash degan ma’no beradi. “Therefore” avvalgi o‘sish keyingi pasayishga sabab bo‘lgan degan ma’no beradi — matn bunday demaydi, u boshqa sababni, ortiqcha azotni ko‘rsatadi.",
+    "estimated_seconds": 75,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "transitions",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Critics of the city's plan to plant 10,000 street trees pointed out that the young trees would need years of regular watering before they provided any real shade. The plan's supporters did not dispute this point. ______ they argued that the cost of watering was small compared with the long-term benefits, since mature trees can lower nearby street temperatures by several degrees.",
+    "stem": "Which choice completes the text with the most logical transition?",
+    "option_a": "Similarly,",
+    "option_b": "Instead,",
+    "option_c": "As a result,",
+    "option_d": "For example,",
+    "correct": "B",
+    "explanation_en": "The text says the supporters “did not dispute” the critics' point. The next sentence describes what they did in place of disputing it: they argued that the benefits outweighed the cost. “Instead” correctly signals this alternative response.\n\n“Similarly” would suggest the supporters made the same argument as the critics, but they reached the opposite conclusion about the plan. “As a result” would mean the supporters argued for the plan because they did not dispute the point, which is not a cause-and-effect relationship. “For example” would present the argument as an example of not disputing the point, which is illogical.",
+    "explanation_uz": "Matnda tarafdorlar tanqidchilarning fikrini “did not dispute” — rad etmagani aytiladi. Keyingi gap ular rad etish o‘rniga nima qilganini tasvirlaydi: foydasi xarajatdan ko‘p ekanini ta’kidlashgan. “Instead” (buning o‘rniga) bu muqobil javobni to‘g‘ri bildiradi.\n\n“Similarly” tarafdorlar tanqidchilar bilan bir xil dalil keltirgan degan ma’noni beradi, holbuki ular reja haqida qarama-qarshi xulosaga kelgan. “As a result” tarafdorlar fikrni rad etmagani uchun reja foydasiga gapirgan degan ma’noni beradi, bu sabab-oqibat emas. “For example” dalilni rad etmaslikning misoli sifatida ko‘rsatadi — bu mantiqsiz.",
+    "estimated_seconds": 75,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  }
+]

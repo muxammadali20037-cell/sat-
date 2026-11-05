@@ -1,0 +1,142 @@
+[
+  {
+    "skill_code": "evaluating_statistical_claims",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "A fitness app posted a survey for its users. Of the 2,000 users who chose to respond, 80% said they exercise every day. Based on these results, the app's developers claim that about 80% of all adults in the country exercise every day. Which of the following is the best reason this claim is not justified?",
+    "option_a": "The survey had fewer than 5,000 responses.",
+    "option_b": "The respondents were app users who chose to respond, so they are not a random sample of all adults in the country.",
+    "option_c": "Some of the respondents may have exercised more than once a day.",
+    "option_d": "The survey asked about exercise instead of about diet.",
+    "correct": "B",
+    "explanation_en": "To generalize to all adults in the country, the sample should be selected at random from that population. Here the respondents were app users (people already interested in fitness) who chose to answer, so the sample is likely biased toward people who exercise. Choice A is not the main problem: 2,000 responses is a large sample, and a larger biased sample is still biased. Choice C does not affect whether someone exercises every day. Choice D is irrelevant to the claim, which is about exercise.",
+    "explanation_uz": "Mamlakatdagi barcha kattalarga umumlashtirish uchun tanlanma shu aholi orasidan tasodifiy tanlanishi kerak. Bu yerda javob berganlar — ilova foydalanuvchilari (sport bilan allaqachon qiziqadigan odamlar) va ular javob berishni o‘zlari tanlagan, shuning uchun tanlanma, ehtimol, mashq qiladiganlar tomon og‘gan. A javob asosiy muammo emas: 2,000 ta javob — katta tanlanma, noxolis tanlanmani kattalashtirish esa uni xolis qilmaydi. C javob odam har kuni mashq qilish-qilmasligiga ta’sir qilmaydi. D javob da’voga aloqasi yo‘q, chunki da’vo mashq haqida.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "evaluating_statistical_claims",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "A researcher selected a random sample of 300 households from a list of all households in Samarkand city. The households in the sample used an average of 210 kilowatt-hours of electricity in January. To which of the following groups can the results of this study most appropriately be generalized?",
+    "option_a": "Only the 300 households in the sample",
+    "option_b": "All households in Uzbekistan",
+    "option_c": "All households in Samarkand city",
+    "option_d": "All households in the world",
+    "correct": "C",
+    "explanation_en": "Because the sample was selected at random from all households in Samarkand city, the results can be generalized to that population: all households in Samarkand city. Choice A is too narrow; the purpose of a random sample is to learn about the whole population it was drawn from. Choices B and D are too broad, because households outside Samarkand city had no chance of being selected and may use different amounts of electricity.",
+    "explanation_uz": "Tanlanma Samarqand shahridagi barcha xonadonlar orasidan tasodifiy olingani uchun natijalarni shu aholiga — Samarqand shahridagi barcha xonadonlarga umumlashtirish mumkin. A javob juda tor: tasodifiy tanlanmaning maqsadi — u olingan butun aholi haqida ma’lumot olish. B va D javoblar juda keng, chunki Samarqand shahridan tashqaridagi xonadonlar tanlanish imkoniga ega bo‘lmagan va ular boshqacha miqdorda elektr ishlatishi mumkin.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "evaluating_statistical_claims",
+    "difficulty": "easy",
+    "question_type": "spr",
+    "stem": "In an experiment, 120 volunteers with mild back pain were randomly assigned to two groups of 60. One group did a daily stretching routine, and the other group did not. After 4 weeks, 42 people in the stretching group and 27 people in the other group reported less back pain. The percentage of the stretching group who reported less back pain was how many percentage points greater than the percentage of the other group who reported less back pain?",
+    "spr_answers": [
+      "25"
+    ],
+    "explanation_en": "Stretching group: $\\frac{42}{60} = 0.70$, or 70%. Other group: $\\frac{27}{60} = 0.45$, or 45%. The difference is $70 - 45 = 25$ percentage points. Because the volunteers were **randomly assigned** to the groups, this difference can reasonably be attributed to the stretching routine for people like these volunteers. Entering 15, the difference in counts $42 - 27$, does not give percentage points. Enter 25.",
+    "explanation_uz": "Cho‘zilish mashqlari guruhi: $\\frac{42}{60} = 0.70$, ya’ni 70%. Ikkinchi guruh: $\\frac{27}{60} = 0.45$, ya’ni 45%. Farq $70 - 45 = 25$ foiz punkti. Ko‘ngillilar guruhlarga **tasodifiy taqsimlangani** uchun bu farqni shunday ko‘ngillilarga o‘xshash odamlar uchun mashqlar ta’siri deb hisoblash mumkin. 15 (sonlar farqi $42 - 27$) deb yozish foiz punktini bermaydi. Javob maydoniga 25 deb yozing.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "evaluating_statistical_claims",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "A researcher recruited 80 university students who volunteered for a study. The researcher randomly assigned 40 of the students to drink a cup of green tea every day for 8 weeks and the other 40 to drink no green tea. At the end of the study, the students who drank green tea had lower blood pressure, on average, than the students who did not, and the difference was large enough that it is unlikely to be due to chance. Which of the following conclusions is most appropriate?",
+    "option_a": "Drinking green tea daily causes lower blood pressure for students like those in the study.",
+    "option_b": "Drinking green tea daily causes lower blood pressure for all adults in the country.",
+    "option_c": "Drinking green tea daily is associated with lower blood pressure, but no cause-and-effect conclusion can be made.",
+    "option_d": "No conclusion can be made, because the students were volunteers.",
+    "correct": "A",
+    "explanation_en": "Random assignment to the two groups allows a cause-and-effect conclusion: since the groups were alike except for the tea, the difference in blood pressure can be attributed to the tea. However, the students were volunteers, not a random sample of a larger population, so the conclusion applies only to students like those in the study. Choice B generalizes too far, to a population that was not sampled. Choice C ignores that random assignment supports causation. Choice D is too strong: volunteers limit how far the results generalize, but they do not prevent a conclusion about people like them.",
+    "explanation_uz": "Ikki guruhga tasodifiy taqsimlash sabab-oqibat xulosasiga imkon beradi: guruhlar choydan tashqari hamma jihatdan o‘xshash bo‘lgani uchun qon bosimidagi farqni choyga bog‘lash mumkin. Ammo talabalar ko‘ngillilar bo‘lgan, kattaroq aholidan tasodifiy tanlanmagan, shuning uchun xulosa faqat tadqiqotdagilarga o‘xshash talabalarga tegishli. B javob xulosani tanlanma olinmagan aholiga juda keng umumlashtirgan. C javob tasodifiy taqsimlash sababiylikni tasdiqlashini e’tiborsiz qoldirgan. D javob haddan tashqari qat’iy: ko‘ngillilik natijalarni qanchalik keng umumlashtirishni cheklaydi, lekin ularga o‘xshash odamlar haqida xulosa chiqarishga to‘sqinlik qilmaydi.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "evaluating_statistical_claims",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "A researcher surveyed a random sample of 1,000 adults in a region. The adults who reported eating breakfast every day also reported higher energy levels at work, on average, than the adults who reported not eating breakfast every day. Which of the following conclusions is best supported by this study?",
+    "option_a": "Eating breakfast every day causes adults in the region to have higher energy levels at work.",
+    "option_b": "Among adults in the region, eating breakfast every day is associated with higher energy levels at work.",
+    "option_c": "Eating breakfast every day causes higher energy levels at work for adults everywhere.",
+    "option_d": "The results apply only to the 1,000 adults who were surveyed.",
+    "correct": "B",
+    "explanation_en": "Because the sample was selected at random from adults in the region, the results can be generalized to adults in the region. However, this is an observational study: the adults chose for themselves whether to eat breakfast, so other differences between the groups (such as sleep or work schedules) could explain the result. Therefore the study shows an association, not cause and effect. Choices A and C claim causation, which would require random assignment; choice C also generalizes beyond the region. Choice D is too narrow, since a random sample supports conclusions about the population it was drawn from.",
+    "explanation_uz": "Tanlanma mintaqadagi kattalar orasidan tasodifiy olingani uchun natijalarni mintaqadagi kattalarga umumlashtirish mumkin. Ammo bu kuzatuv tadqiqoti: kattalar nonushta qilish-qilmaslikni o‘zlari tanlagan, shuning uchun guruhlar orasidagi boshqa farqlar (masalan, uyqu yoki ish jadvali) natijani tushuntirishi mumkin. Demak, tadqiqot sabab-oqibatni emas, bog‘liqlikni ko‘rsatadi. A va C javoblar sababiylikni da’vo qiladi, buning uchun esa tasodifiy taqsimlash kerak; C javob bundan tashqari mintaqadan tashqariga umumlashtirgan. D javob juda tor, chunki tasodifiy tanlanma u olingan aholi haqida xulosa chiqarishga imkon beradi.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "evaluating_statistical_claims",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "A shop owner wants to know how satisfied all of the shop's customers are with its service. On one Saturday morning, the owner asked every 10th customer leaving the shop to rate the service. Which of the following changes would most likely make the results more representative of all of the shop's customers?",
+    "option_a": "Asking every 5th customer leaving the shop on the same Saturday morning",
+    "option_b": "Asking only customers who have shopped there for more than a year",
+    "option_c": "Asking customers who choose to fill out a comment card at the checkout",
+    "option_d": "Selecting customers at random from those who shop on all days of the week and at all times of day",
+    "correct": "D",
+    "explanation_en": "Customers who shop on Saturday mornings may differ from customers who shop at other times (for example, in their schedules or in how crowded the shop is when they visit). Selecting customers at random across all days and times gives every customer a chance to be selected, which makes the sample more representative. Choice A increases the sample size but keeps the same Saturday-morning bias. Choice B leaves out newer customers. Choice C creates a voluntary-response sample, which tends to overrepresent customers with strong opinions.",
+    "explanation_uz": "Shanba kuni ertalab xarid qiladigan mijozlar boshqa vaqtlarda keladigan mijozlardan farq qilishi mumkin (masalan, ish jadvali yoki ular kelganda do‘kon qanchalik gavjum ekani bo‘yicha). Haftaning barcha kunlari va kunning barcha vaqtlaridan mijozlarni tasodifiy tanlash har bir mijozga tanlanish imkonini beradi, bu esa tanlanmani vakilliroq qiladi. A javob tanlanma hajmini oshiradi, lekin shanba ertalabi bilan bog‘liq noxolislik saqlanib qoladi. B javob yangi mijozlarni chetda qoldiradi. C javob ixtiyoriy javob tanlanmasini hosil qiladi, unda kuchli fikrga ega mijozlar ortiqcha ulushda bo‘ladi.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "evaluating_statistical_claims",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "Two studies examined whether listening to music while studying affects test performance.\n\nStudy 1: A random sample of 500 high school students in a city was surveyed. Students who reported listening to music while studying had lower test scores, on average, than students who reported studying in silence.\n\nStudy 2: A teacher recruited 60 student volunteers from her school and randomly assigned half to study a lesson with music and half to study it in silence. The music group had lower test scores, on average, and the difference was unlikely to be due to chance.\n\nWhich of the following statements is best supported by these studies?",
+    "option_a": "Study 1 shows that listening to music while studying causes lower test scores for high school students in the city.",
+    "option_b": "Study 2 shows that listening to music while studying causes lower test scores for all high school students in the city.",
+    "option_c": "Study 1 supports an association that can be generalized to high school students in the city, and Study 2 supports a cause-and-effect conclusion for students like the volunteers.",
+    "option_d": "Neither study supports any conclusion beyond the students who participated.",
+    "correct": "C",
+    "explanation_en": "Study 1 used random **sampling** but no random assignment, so its association can be generalized to high school students in the city, but it cannot show cause and effect (students chose whether to listen to music). Study 2 used random **assignment** but not random sampling, so it supports a causal conclusion only for students like the volunteers. Choice A claims causation from an observational study. Choice B generalizes a volunteer sample to the whole city. Choice D ignores what each design does allow.",
+    "explanation_uz": "1-tadqiqotda tasodifiy **tanlash** bor, lekin tasodifiy taqsimlash yo‘q, shuning uchun undagi bog‘liqlikni shahardagi o‘rta maktab o‘quvchilariga umumlashtirish mumkin, ammo sabab-oqibatni ko‘rsatib bo‘lmaydi (musiqa tinglashni o‘quvchilar o‘zlari tanlagan). 2-tadqiqotda tasodifiy **taqsimlash** bor, lekin tasodifiy tanlash yo‘q, shuning uchun u sabab-oqibat xulosasini faqat ko‘ngillilarga o‘xshash o‘quvchilar uchun tasdiqlaydi. A javob kuzatuv tadqiqotidan sababiylik xulosasini chiqargan. B javob ko‘ngillilar tanlanmasini butun shaharga umumlashtirgan. D javob har bir tadqiqot dizayni nimaga imkon berishini e’tiborsiz qoldirgan.",
+    "estimated_seconds": 130,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "evaluating_statistical_claims",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "A town has three secondary schools. School A has 420 tenth-grade students, School B has 380 tenth-grade students, and School C has 300 tenth-grade students. A researcher combined the lists of all tenth-grade students at School A and School B and selected 200 students at random from the combined list. No students from School C were selected. To how many students in total can the results of this survey most appropriately be generalized?",
+    "spr_answers": [
+      "800"
+    ],
+    "explanation_en": "Results from a random sample can be generalized only to the population the sample was drawn from. The sample was drawn at random from the combined list of tenth-grade students at Schools A and B, so that population has $420 + 380 = 800$ students. Students at School C had no chance of being selected, so they are not part of this population. Entering 1100 ($420 + 380 + 300$) incorrectly includes School C, and entering 200 limits the results to the sample itself. Enter 800.",
+    "explanation_uz": "Tasodifiy tanlanma natijalarini faqat u olingan aholiga umumlashtirish mumkin. Tanlanma A va B maktablardagi 10-sinf o‘quvchilarining birlashtirilgan ro‘yxatidan tasodifiy olingan, demak bu aholida $420 + 380 = 800$ nafar o‘quvchi bor. C maktab o‘quvchilari tanlanish imkoniga ega bo‘lmagan, shuning uchun ular bu aholiga kirmaydi. 1100 ($420 + 380 + 300$) deb yozish C maktabni noto‘g‘ri qo‘shadi, 200 esa natijalarni faqat tanlanmaning o‘zi bilan cheklaydi. Javob maydoniga 800 deb yozing.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  }
+]

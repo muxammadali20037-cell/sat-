@@ -1,0 +1,162 @@
+[
+  {
+    "skill_code": "cross_text_connections",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "**Text 1**\n\nIt is often said that goldfish have a memory span of only a few seconds. According to this popular belief, a goldfish swimming around its bowl finds everything new each time it completes a lap.\n\n**Text 2**\n\nBiologist Hana Kovač trained goldfish to push a small lever to receive food. She then removed the lever for three months. When the lever was returned, most of the fish pushed it within minutes, much faster than untrained fish learned to do so. Kovač concludes that goldfish can remember what they have learned for months.",
+    "stem": "Based on the texts, how would Kovač (Text 2) most likely respond to the popular belief described in Text 1?",
+    "option_a": "She would reject it, since her goldfish remembered a learned behavior after three months.",
+    "option_b": "She would accept it, since her goldfish forgot how to use the lever within a few seconds.",
+    "option_c": "She would argue that it is true of wild goldfish but not of goldfish kept in bowls.",
+    "option_d": "She would claim that goldfish remember sounds but not actions.",
+    "correct": "A",
+    "explanation_en": "Text 1 describes the belief that goldfish remember things for only a few seconds. In Kovač's study, trained goldfish still knew how to use the lever after three months, so she would reject the belief, as choice A says.\n\nChoice B contradicts her results. Choice C is unsupported: Text 2 does not discuss wild goldfish. Choice D is unsupported: Text 2 says nothing about sounds, and the fish clearly remembered an action.",
+    "explanation_uz": "Text 1 da oltin baliqlar narsalarni faqat bir necha soniya eslab qoladi degan tushuncha keltirilgan. Kovač tadqiqotida esa o‘rgatilgan baliqlar uch oydan keyin ham richagdan foydalanishni eslab qolgan. Demak, u bu tushunchani rad etardi — to‘g‘ri javob A.\n\nB uning natijalariga zid. C asossiz: Text 2 da yovvoyi oltin baliqlar haqida gap yo‘q. D ham asossiz: Text 2 da tovushlar haqida hech narsa aytilmagan, baliqlar esa harakatni aniq eslab qolgan.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "cross_text_connections",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "**Text 1**\n\nArchitect Lola Nematova supports covering city rooftops with soil and plants. Such green roofs, she argues, are worth their cost mainly because they keep buildings cooler in summer, reducing the energy needed for air conditioning.\n\n**Text 2**\n\nEngineer Paolo Ricci agrees that green roofs are worth building but emphasizes a different benefit. During heavy rain, the soil and plants on a green roof absorb much of the water, reducing the amount that rushes into city drains and helping prevent street flooding.",
+    "stem": "Based on the texts, Nematova (Text 1) and Ricci (Text 2) would most likely agree with which statement?",
+    "option_a": "Green roofs increase the amount of rainwater that flows into city drains.",
+    "option_b": "Green roofs have little effect on how much energy buildings use.",
+    "option_c": "Green roofs provide benefits that justify building them.",
+    "option_d": "Reducing the cost of cooling buildings is the most important benefit of green roofs.",
+    "correct": "C",
+    "explanation_en": "Nematova says green roofs are \"worth their cost,\" and Ricci \"agrees that green roofs are worth building,\" though each stresses a different benefit. Both would therefore accept choice C.\n\nChoice A contradicts Ricci, who says green roofs reduce the water flowing into drains. Choice B contradicts Nematova, who says green roofs reduce the energy needed for air conditioning. Choice D reflects only Nematova's emphasis; Ricci stresses a different benefit.",
+    "explanation_uz": "Nematova yashil tomlar o‘z narxiga arziydi (“worth their cost”) deydi, Ricci ham yashil tomlar qurishga arziydi degan fikrga qo‘shiladi, garchi har biri turli foydani ta’kidlasa ham. Demak, ikkalasi ham C fikriga rozi bo‘ladi.\n\nA Riccining fikriga zid: u yashil tomlar kanalizatsiyaga oqadigan suvni kamaytiradi deydi. B Nematovaning fikriga zid: u yashil tomlar konditsioner uchun kerakli energiyani kamaytiradi deydi. D faqat Nematovaning urg‘usini aks ettiradi; Ricci boshqa foydani ta’kidlaydi.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "cross_text_connections",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "**Text 1**\n\nWhen photography was invented in the nineteenth century, many art critics refused to consider it an art form. A camera, they argued, simply records whatever is placed in front of it, so a photograph is a mechanical copy rather than a creative work.\n\n**Text 2**\n\nHistorian Leila Ortiz points out that early photographers made many decisions that shaped their images. They chose what to include in the frame, arranged lighting, decided how long to expose each plate and experimented with chemicals during developing to darken or soften parts of a picture.",
+    "stem": "Based on the texts, how would Ortiz (Text 2) most likely respond to the critics' argument in Text 1?",
+    "option_a": "By agreeing that early photographs were merely mechanical copies of their subjects",
+    "option_b": "By pointing out that photographers made many choices that shaped how their images looked",
+    "option_c": "By arguing that nineteenth-century paintings were less accurate than photographs",
+    "option_d": "By claiming that photography became popular only after critics praised it",
+    "correct": "B",
+    "explanation_en": "The critics in Text 1 argue that photographs are mechanical copies rather than creative works. Ortiz describes the many decisions early photographers made about framing, lighting, exposure and developing, so she would respond as choice B says.\n\nChoice A is the opposite of her point. Choice C is unsupported: Text 2 never compares the accuracy of paintings and photographs. Choice D is unsupported: Text 2 does not discuss photography's popularity or any praise from critics.",
+    "explanation_uz": "Text 1 dagi tanqidchilar fotosuratni ijodiy asar emas, mexanik nusxa deb hisoblaydi. Ortiz esa ilk fotograflar kadrga nimani olish, yorug‘lik, ekspozitsiya va suratni ochiltirish bo‘yicha ko‘plab qarorlar qabul qilganini tasvirlaydi. Demak, u B javobdagidek javob berardi.\n\nA uning fikrining aksi. C asossiz: Text 2 da rasmlar va fotosuratlarning aniqligi solishtirilmaydi. D ham asossiz: Text 2 da fotografiyaning ommabopligi yoki tanqidchilar maqtovi haqida gap yo‘q.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "cross_text_connections",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "**Text 1**\n\nA fast-growing vine introduced from overseas now covers long stretches of the riverbanks along the Zarin River, smothering native shrubs. Ecologist Daniel Moss argues that clearing the vine will allow the native warblers that once nested in those shrubs to return.\n\n**Text 2**\n\nEcologist Ayesha Karimi studied riverbank sites where the same vine had been cleared five years earlier. At sites that were simply cleared, the bare banks eroded and were quickly taken over by weedy grasses, and warblers did not return. Warblers returned only at sites where native shrubs had been planted after the vine was removed.",
+    "stem": "Based on the texts, how would Karimi (Text 2) most likely respond to Moss's argument in Text 1?",
+    "option_a": "She would agree that clearing the vine is enough by itself to bring warblers back.",
+    "option_b": "She would argue that the vine benefits warblers and should be left in place.",
+    "option_c": "She would claim that warblers never nested along the Zarin River.",
+    "option_d": "She would argue that clearing the vine is unlikely to bring warblers back unless native shrubs are also planted.",
+    "correct": "D",
+    "explanation_en": "Moss argues that clearing the vine will let warblers return. Karimi found that warblers did not return to sites that were simply cleared but did return where native shrubs were planted after clearing. She would therefore say that clearing alone is not enough, as choice D says.\n\nChoice A contradicts her finding about sites that were simply cleared. Choice B goes too far: Karimi studies what happens after the vine is removed and never suggests the vine helps warblers. Choice C is unsupported and conflicts with her finding that warblers returned to some sites.",
+    "explanation_uz": "Moss chirmovuqni tozalash qushlarning qaytishiga imkon beradi deb hisoblaydi. Karimi esa shunchaki tozalangan joylarga qushlar qaytmaganini, tozalangandan keyin mahalliy butalar ekilgan joylarga esa qaytganini aniqlagan. Demak, u faqat tozalashning o‘zi yetarli emas deb aytardi — to‘g‘ri javob D.\n\nA uning shunchaki tozalangan joylar haqidagi topilmasiga zid. B haddan oshib ketadi: Karimi chirmovuq olib tashlangandan keyin nima bo‘lishini o‘rganadi, chirmovuq qushlarga foyda keltiradi demaydi. C asossiz va qushlar ba’zi joylarga qaytgani haqidagi topilmaga zid.",
+    "estimated_seconds": 77,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "cross_text_connections",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "**Text 1**\n\nThe early poems of Rasa Ilmen are long, crowded with images and full of difficult allusions. Her late poems, by contrast, are short and use plain, everyday words. Critic Owen Hart sees this change as evidence that Ilmen's ambition declined as she aged and that she no longer wished to challenge herself.\n\n**Text 2**\n\nScholar Farhod Mirzaev has examined the drafts of Ilmen's late poems. Many began as pages-long works that Ilmen revised for years, cutting lines and replacing rare words with common ones, until only a few short stanzas remained. In her notebooks, she called this process \"the hardest work I have done.\"",
+    "stem": "Based on the texts, how would Mirzaev (Text 2) most likely respond to Hart's view in Text 1?",
+    "option_a": "He would argue that the simplicity of the late poems reflects careful, demanding work rather than a decline in ambition.",
+    "option_b": "He would agree that Ilmen wrote her late poems quickly and with little effort.",
+    "option_c": "He would argue that Ilmen's early poems were also short and simple.",
+    "option_d": "He would claim that the late poems were most likely written by someone other than Ilmen.",
+    "correct": "A",
+    "explanation_en": "Hart reads the late poems' simplicity as a sign of declining ambition. Mirzaev shows that the poems became simple through years of deliberate revision, which Ilmen herself called \"the hardest work I have done.\" He would therefore argue as choice A says.\n\nChoice B contradicts the evidence of long, difficult revision. Choice C contradicts both texts: Text 1 describes the early poems as long and complex, and Text 2 does not dispute this. Choice D is unsupported: Mirzaev studies Ilmen's own drafts and notebooks.",
+    "explanation_uz": "Hart kech davr she’rlarining soddaligini intilish susaygani belgisi deb biladi. Mirzaev esa she’rlar yillar davomida ongli ravishda qayta ishlash orqali soddalashganini ko‘rsatadi; Ilmenning o‘zi buni “qilgan eng og‘ir ishim” deb atagan. Demak, u A javobdagidek fikr bildirardi.\n\nB uzoq va mashaqqatli tahrir haqidagi dalillarga zid. C ikkala matnga ham zid: Text 1 da ilk she’rlar uzun va murakkab deb tasvirlanadi, Text 2 esa buni inkor etmaydi. D asossiz: Mirzaev Ilmenning o‘z qoralamalari va daftarlarini o‘rgangan.",
+    "estimated_seconds": 77,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "cross_text_connections",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "**Text 1**\n\nThe ancient city of Varesh was largely abandoned by about 930 CE. Sediment cores from a nearby lake show that the region experienced a severe, decades-long drought beginning around 880. Many researchers conclude that this drought caused the city's decline by making it impossible to grow enough food.\n\n**Text 2**\n\nArchaeologist Selma Duran has dated the abandonment of houses throughout Varesh. She finds that the city's population began falling around 820 and had already dropped by half by 870, as trade routes shifted away from the city. The drought, Duran argues, may have hastened the end of a city that was already in decline.",
+    "stem": "Based on the texts, how would Duran (Text 2) most likely respond to the conclusion described in Text 1?",
+    "option_a": "She would agree that the drought was the main reason the population of Varesh began to fall.",
+    "option_b": "She would argue that the drought could not have started the city's decline, since the population was already falling decades before the drought began.",
+    "option_c": "She would argue that the lake sediments do not actually show a drought in the region.",
+    "option_d": "She would claim that the trade routes shifted away from Varesh because of the drought.",
+    "correct": "B",
+    "explanation_en": "Text 1 says the drought, beginning around 880, caused Varesh's decline. Duran finds that the population started falling around 820 and had halved by 870, before the drought. She would therefore say the drought cannot have started the decline, though it may have sped it up, as choice B says.\n\nChoice A contradicts her timeline. Choice C is wrong because Duran does not dispute that a drought occurred; she says it \"may have hastened\" the city's end. Choice D is impossible given her timeline: the trade routes shifted while the population was falling from 820 on, before the drought began.",
+    "explanation_uz": "Text 1 ga ko‘ra, taxminan 880-yilda boshlangan qurg‘oqchilik Vareshning tanazzuliga sabab bo‘lgan. Duran esa aholi taxminan 820-yildan kamaya boshlaganini va 870-yilga kelib, ya’ni qurg‘oqchilikdan oldin, ikki baravar qisqarganini aniqlagan. Demak, u qurg‘oqchilik tanazzulni boshlab bera olmagan, faqat uni tezlashtirgan bo‘lishi mumkin der edi — to‘g‘ri javob B.\n\nA uning xronologiyasiga zid. C noto‘g‘ri: Duran qurg‘oqchilik bo‘lganini inkor etmaydi, aksincha, u shahar oxirini “tezlashtirgan bo‘lishi mumkin” deydi. D uning xronologiyasiga ko‘ra imkonsiz: savdo yo‘llari aholi 820-yildan boshlab kamayayotgan paytda, qurg‘oqchilikdan oldin o‘zgargan.",
+    "estimated_seconds": 77,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "cross_text_connections",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "**Text 1**\n\nIn a recent trial, sixty companies moved their employees to a four-day workweek with no reduction in pay. After six months, output per employee at most of the companies was the same as or higher than before. Economist Aziz Salimov argues that the results show that most businesses could adopt a four-day workweek without losing productivity.\n\n**Text 2**\n\nEconomist Marta Lindgren notes that the companies in the trial chose to take part, and nearly all were small firms whose work is done mainly at computers. Businesses that expected a shorter week to cause problems, such as factories and hospitals that must be staffed at all hours, generally declined to join. Lindgren does not dispute the trial's measurements, but she cautions against drawing broad conclusions from them.",
+    "stem": "Based on the texts, how would Lindgren (Text 2) most likely respond to Salimov's argument in Text 1?",
+    "option_a": "She would argue that his conclusion rests on inaccurate measurements of employees' output.",
+    "option_b": "She would agree with his conclusion but add that small firms benefited the most from the shorter week.",
+    "option_c": "She would argue that the trial shows that a four-day workweek reduces productivity at factories and hospitals.",
+    "option_d": "She would argue that the trial's results do not justify his conclusion about most businesses, since the companies that took part were not typical of businesses in general.",
+    "correct": "D",
+    "explanation_en": "Salimov generalizes from the trial to \"most businesses.\" Lindgren points out that the participants chose to join and were mostly small computer-based firms, while businesses expecting problems stayed out, and she warns against broad conclusions. She would therefore say the results do not support his claim about most businesses, as choice D says.\n\nChoice A is wrong because the text states that Lindgren \"does not dispute the trial's measurements.\" Choice B is wrong because she questions his conclusion rather than agreeing with it. Choice C is wrong because factories and hospitals generally did not take part, so the trial provides no evidence about them either way.",
+    "explanation_uz": "Salimov sinov natijalarini “ko‘pchilik korxonalar”ga umumlashtiradi. Lindgren esa ishtirokchilar o‘z ixtiyori bilan qatnashganini va ular asosan kompyuterda ishlaydigan kichik firmalar bo‘lganini, muammo kutgan korxonalar esa qatnashmaganini ta’kidlaydi va keng xulosa chiqarishdan ogohlantiradi. Demak, u natijalar ko‘pchilik korxonalar haqidagi da’voni oqlamaydi der edi — to‘g‘ri javob D.\n\nA noto‘g‘ri, chunki matnda Lindgren sinov o‘lchovlariga e’tiroz bildirmasligi (“does not dispute the trial's measurements”) aytilgan. B noto‘g‘ri: u Salimovning xulosasiga qo‘shilmaydi, aksincha, uni shubha ostiga oladi. C noto‘g‘ri: zavod va shifoxonalar asosan qatnashmagan, shuning uchun sinov ular haqida hech qanday dalil bermaydi.",
+    "estimated_seconds": 93,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "cross_text_connections",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "**Text 1**\n\nFor thirty years, Hanna Ruel, a farmer's wife in the village of Osterby, kept a diary of daily life: harvests, weddings, illnesses, prices at market. Historian Kerem Aslan prizes the diary as a record of eighteenth-century village life, arguing that because Ruel wrote each entry as events happened, her account is free of the reshaping that memory brings.\n\n**Text 2**\n\nAnalyzing the diary's ink and paper, scholar Ivana Petrov found that the entries for 1760 to 1775 were copied out in the 1790s, when Ruel was elderly, and that some of these entries refer to events that had not yet happened on the dates they bear. Petrov nonetheless considers the diary valuable, especially as evidence of how Ruel, late in life, understood her own past.",
+    "stem": "Based on the texts, how would Petrov (Text 2) most likely respond to Aslan's reasoning in Text 1?",
+    "option_a": "She would agree that the diary is an unaltered record of daily life in Osterby.",
+    "option_b": "She would argue that the diary has little value to historians because parts of it were rewritten.",
+    "option_c": "She would argue that at least some entries were not written as events happened and so may reflect the kind of reshaping by memory that Aslan says the diary is free of.",
+    "option_d": "She would argue that the diary was most likely written by someone other than Ruel.",
+    "correct": "C",
+    "explanation_en": "Aslan's reasoning depends on the assumption that each entry was written as events happened. Petrov found that many entries were copied out decades later and that some mention events that had not yet occurred on their dates, so these entries could have been reshaped by memory. Choice C states this response.\n\nChoice A contradicts her findings. Choice B misrepresents her view: Petrov \"nonetheless considers the diary valuable.\" Choice D is unsupported: she describes the entries as copied out by Ruel herself when she was elderly.",
+    "explanation_uz": "Aslanning mulohazasi har bir yozuv voqealar sodir bo‘lgan paytda yozilgan degan farazga tayanadi. Petrov esa ko‘plab yozuvlar o‘n yillar o‘tib qayta ko‘chirilganini va ularning ba’zilarida ko‘rsatilgan sanada hali sodir bo‘lmagan voqealar tilga olinganini aniqlagan; demak, bu yozuvlar xotira ta’sirida o‘zgargan bo‘lishi mumkin. C javob aynan shu javobni ifodalaydi.\n\nA uning topilmalariga zid. B uning fikrini buzib ko‘rsatadi: Petrov shunga qaramay kundalikni qimmatli deb biladi (“nonetheless considers the diary valuable”). D asossiz: u yozuvlarni Ruelning o‘zi keksaygan chog‘ida ko‘chirib yozgan deb tasvirlaydi.",
+    "estimated_seconds": 93,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  }
+]

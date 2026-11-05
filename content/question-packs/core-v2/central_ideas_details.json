@@ -1,0 +1,162 @@
+[
+  {
+    "skill_code": "central_ideas_details",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "In 2018, the public library in the mountain town of Sarvon began lending seeds as well as books. In spring, gardeners borrow packets of local bean, squash and pepper seeds; in the fall, they return seeds saved from the plants they grew. Librarian Nodira Qosimova says the program has done more than supply gardens: vegetable varieties that only a few elderly farmers still grew are now planted in dozens of yards across town.",
+    "stem": "Which choice best states the main idea of the text?",
+    "option_a": "The Sarvon library stopped lending books in order to make room for its seed collection.",
+    "option_b": "The Sarvon library's seed-lending program supplies gardeners and has helped spread local vegetable varieties that were becoming rare.",
+    "option_c": "Most gardeners in Sarvon do not return seeds to the library after borrowing them.",
+    "option_d": "Elderly farmers in Sarvon have refused to share their seeds with the library.",
+    "correct": "B",
+    "explanation_en": "The text explains how the library's seed program works and then reports Qosimova's point that the program has done \"more than supply gardens\": rare local varieties are now grown in dozens of yards. Choice B combines both parts.\n\nChoice A is wrong because the library lends seeds \"as well as books\"; it did not stop lending books. Choice C is unsupported: the text says gardeners return saved seeds and never suggests that most fail to. Choice D is unsupported: the text says nothing about farmers refusing to share seeds.",
+    "explanation_uz": "Matnda kutubxonaning urug‘ berish dasturi qanday ishlashi tushuntiriladi, so‘ng Qosimovaning fikri keltiriladi: dastur faqat bog‘larni urug‘ bilan ta’minlash bilan cheklanmagan — kamyob bo‘lib qolgan mahalliy navlar endi o‘nlab hovlilarda ekilmoqda. B javob ikkala qismni ham birlashtiradi.\n\nA noto‘g‘ri: kutubxona urug‘larni kitoblar bilan bir qatorda (“as well as books”) beradi, kitob berishni to‘xtatmagan. C asossiz: matnda bog‘bonlar yig‘ib olgan urug‘larni qaytarishi aytiladi, ko‘pchilik qaytarmasligi haqida gap yo‘q. D asossiz: fermerlar urug‘ berishdan bosh tortgani haqida hech narsa aytilmagan.",
+    "estimated_seconds": 55,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "central_ideas_details",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "In the coastal deserts of southwestern Africa, rain almost never falls, but fog rolls in from the ocean on many mornings. Some darkling beetles survive there by \"fog basking.\" A beetle climbs to the top of a sand dune, faces into the wind and tilts its body forward. Tiny droplets of fog collect on its back, merge into larger drops and roll down toward its mouth.",
+    "stem": "According to the text, how do some darkling beetles obtain water?",
+    "option_a": "By digging down to moist sand beneath the dunes",
+    "option_b": "By drinking rainwater that collects at the bottoms of dunes",
+    "option_c": "By eating plants that store water from the ocean",
+    "option_d": "By positioning their bodies so that fog droplets collect and roll toward their mouths",
+    "correct": "D",
+    "explanation_en": "The text describes \"fog basking\": a beetle faces into the wind and tilts forward so that fog droplets collect on its back and roll down toward its mouth. Choice D restates this process.\n\nChoice A is never mentioned; the beetles climb to the top of dunes, not dig beneath them. Choice B contradicts the text, which says that rain \"almost never falls\" there. Choice C is never mentioned: the text says nothing about the beetles eating plants.",
+    "explanation_uz": "Matnda “fog basking” jarayoni tasvirlanadi: qo‘ng‘iz shamolga qarab turadi va oldinga egiladi, natijada tuman tomchilari uning orqasida yig‘ilib, og‘ziga qarab oqib tushadi. D javob aynan shu jarayonni ifodalaydi.\n\nA haqida matnda gap yo‘q: qo‘ng‘izlar qumtepalar ostini qazimaydi, aksincha, cho‘qqisiga chiqadi. B matnga zid: u yerda yomg‘ir deyarli yog‘maydi (“almost never falls”). C ham tilga olinmagan: matnda qo‘ng‘izlar o‘simlik yeyishi haqida hech narsa aytilmagan.",
+    "estimated_seconds": 55,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "central_ideas_details",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "The following text is adapted from a short story.\n\nFor weeks Dilnoza had practiced the speech she would give at her school's graduation, reciting it to the mirror, to the cat, to the kettle as it boiled. But when she stepped onto the stage and saw the rows of faces, every word she had memorized vanished. She found her mother in the third row, took a breath and began to talk simply about what the school had meant to her. Afterward, several teachers told her it was the best graduation speech they had heard in years.",
+    "stem": "Which choice best states the main idea of the text?",
+    "option_a": "Although Dilnoza forgets her prepared speech, she succeeds by speaking simply and sincerely.",
+    "option_b": "Dilnoza decides that practicing a speech in advance is a waste of time.",
+    "option_c": "Dilnoza's mother helps her remember the words of her prepared speech.",
+    "option_d": "The teachers are surprised that Dilnoza was chosen to speak at graduation.",
+    "correct": "A",
+    "explanation_en": "Dilnoza practices for weeks, forgets every memorized word on stage, then speaks simply about what the school meant to her, and teachers call it the best speech in years. Choice A captures this turn from a problem to an unexpected success.\n\nChoice B goes beyond the text, which never shows Dilnoza drawing any conclusion about practice. Choice C is unsupported: she looks at her mother, but nothing suggests her mother helps her recall the prepared words; in fact, she gives a different speech. Choice D is unsupported: the teachers praise the speech, and nothing suggests surprise that she was chosen.",
+    "explanation_uz": "Dilnoza bir necha hafta mashq qiladi, sahnada yodlagan hamma so‘zlarini unutib qo‘yadi, so‘ng maktab u uchun nimani anglatgani haqida oddiygina gapiradi va o‘qituvchilar buni yillar davomidagi eng yaxshi nutq deb aytadi. A javob muammodan kutilmagan muvaffaqiyatga o‘tishni ifodalaydi.\n\nB matn doirasidan chiqadi: Dilnoza mashq qilish haqida biror xulosa chiqargani ko‘rsatilmagan. C asossiz: u onasiga qaraydi, lekin onasi unga tayyorlangan so‘zlarni eslatgani aytilmagan; aslida u boshqacha nutq so‘zlaydi. D asossiz: o‘qituvchilar nutqni maqtaydi, uning tanlanganidan hayron bo‘lgani haqida gap yo‘q.",
+    "estimated_seconds": 55,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "central_ideas_details",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Biologists have long known that birds living in noisy cities often sing at higher pitches than members of the same species living in quiet forests, likely because higher notes are easier to hear over the low rumble of traffic. Ecologist Farid Aliyev wanted to know whether this difference is learned or inherited. He raised chicks from city and forest populations of the same species in identical quiet aviaries. As adults, birds from both populations sang at nearly the same pitch.",
+    "stem": "Which choice best states the main idea of the text?",
+    "option_a": "Birds in quiet forests sing at higher pitches than city birds because forests contain more obstacles to sound.",
+    "option_b": "Aliyev found that city birds are born with a tendency to sing at higher pitches than forest birds.",
+    "option_c": "Aliyev's study suggests that city birds' higher-pitched songs are a response to their noisy surroundings rather than an inherited trait.",
+    "option_d": "Traffic noise has caused some bird species to disappear from cities entirely.",
+    "correct": "C",
+    "explanation_en": "Aliyev raised city and forest chicks in the same quiet conditions, and as adults they sang at nearly the same pitch. If the higher pitch were inherited, the city-born birds should still have sung higher; because they did not, the difference appears to come from the noisy environment. Choice C states this main finding.\n\nChoice A reverses the pattern in the text, in which city birds sing higher. Choice B is the opposite of what the study suggests, since city-born birds raised in quiet did not sing higher. Choice D is never discussed in the text.",
+    "explanation_uz": "Aliyev shahar va o‘rmon qushlarining jo‘jalarini bir xil sokin sharoitda boqqan, ular katta bo‘lgach deyarli bir xil balandlikda sayragan. Agar baland ovoz irsiy bo‘lganida, shahar qushlarining avlodi baribir balandroq sayrashi kerak edi; bunday bo‘lmagani farq shovqinli muhit ta’sirida paydo bo‘lishini ko‘rsatadi. C javob shu asosiy natijani ifodalaydi.\n\nA matndagi holatni teskari qiladi: matnga ko‘ra balandroq sayraydiganlar — shahar qushlari. B tadqiqot ko‘rsatgan narsaning aksi, chunki sokin sharoitda o‘sgan shahar qushlari balandroq sayramagan. D haqida matnda umuman gap yo‘q.",
+    "estimated_seconds": 72,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "central_ideas_details",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Historians have generally assumed that the weaving workshops of nineteenth-century Lorvan were run by men, since the workshops' licenses were issued in men's names. But historian Aru Bekova examined the workshops' daily account books and found that most entries recording purchases of thread, payments to workers and sales to merchants were written and signed by women. Bekova concludes that women often managed the everyday business of the workshops even when men held the licenses.",
+    "stem": "According to the text, what did Bekova find in the workshops' account books?",
+    "option_a": "Most of the workshops' licenses had been issued in women's names.",
+    "option_b": "Most records of the workshops' purchases, payments and sales were written and signed by women.",
+    "option_c": "Women who worked in the workshops were paid more than men.",
+    "option_d": "Merchants were unwilling to buy cloth from workshops managed by women.",
+    "correct": "B",
+    "explanation_en": "The text states that in the account books, \"most entries recording purchases of thread, payments to workers and sales to merchants were written and signed by women.\" Choice B restates this finding.\n\nChoice A contradicts the text, which says the licenses were issued in men's names. Choice C confuses who wrote the payment records with how much workers were paid; the text compares no wages. Choice D is unsupported: the books record sales to merchants, and nothing suggests merchants refused to buy.",
+    "explanation_uz": "Matnda hisob daftarlarida ip xaridi, ishchilarga to‘lov va savdogarlarga sotuv haqidagi yozuvlarning ko‘pchiligi ayollar tomonidan yozilgani va imzolangani aytiladi. B javob aynan shu topilmani takrorlaydi.\n\nA matnga zid: litsenziyalar erkaklar nomiga berilgan. C to‘lov yozuvlarini kim yozganini ishchilarga qancha haq to‘langani bilan adashtiradi; matnda maoshlar solishtirilmaydi. D asossiz: daftarlarda savdogarlarga sotuvlar qayd etilgan, ular sotib olishdan bosh tortgani haqida gap yo‘q.",
+    "estimated_seconds": 72,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "central_ideas_details",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "The following text is from a poem. The speaker is describing the first snowfall of the year in a city.\n\nAll night the snow came down without a sound\nand filled the potholes, softened every curb,\nlaid equal white on mansion roof and shed,\non the mayor's car and on the junk dealer's cart.\nBy morning no one could have told the rich street\nfrom the poor one; the whole city lay\nunder a single blanket, as if, for one day,\nit had agreed to be one place.",
+    "stem": "Which choice best states the main idea of the text?",
+    "option_a": "The speaker resents the snow for making travel through the city difficult.",
+    "option_b": "The city's wealthy residents clear the snow from their streets before poorer residents can.",
+    "option_c": "The snowfall reveals how much the city has changed over the years.",
+    "option_d": "The snowfall briefly hides the differences between parts of the city, making the city seem unified.",
+    "correct": "D",
+    "explanation_en": "The speaker notes that the snow fell \"equal\" on mansion and shed, on the mayor's car and the junk dealer's cart, so that by morning \"no one could have told the rich street / from the poor one.\" The poem ends with the city seeming, \"for one day,\" to be \"one place.\" Choice D states this central idea.\n\nChoice A is unsupported: the speaker never complains about travel or expresses resentment. Choice B contradicts the poem, which stresses that the snow treated all streets alike. Choice C is unsupported: the poem describes a single night and morning, not changes over the years.",
+    "explanation_uz": "Shoir qor saroy tomiga ham, shiyponga ham, hokimning mashinasiga ham, eskifurushning aravasiga ham “teng” yoqqanini, ertalab esa boy ko‘chani kambag‘al ko‘chadan ajratib bo‘lmay qolganini aytadi. She’r shahar “bir kunga” go‘yo “bitta joy” bo‘lishga rozi bo‘lgandek tuyulishi bilan tugaydi. D javob shu markaziy g‘oyani ifodalaydi.\n\nA asossiz: shoir yo‘l qiyinchiligidan shikoyat qilmaydi va norozilik bildirmaydi. B she’rga zid: unda qor barcha ko‘chalarga bir xil yoqqani ta’kidlanadi. C asossiz: she’rda yillar davomidagi o‘zgarishlar emas, bir kecha va bir tong tasvirlanadi.",
+    "estimated_seconds": 72,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "central_ideas_details",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "For decades, governments measured the success of programs that pay farmers to plant trees by counting how many saplings were planted. Economist Rustam Haydarov argues that this measure can be misleading. In the region he studied, more than a million saplings were planted under such programs between 2005 and 2010, yet satellite images show that total tree cover barely changed. Many farmers, he found, had cut down older trees elsewhere on their land to make room for the new plantings, which were the only trees for which they received payment.",
+    "stem": "Which choice best states the main idea of the text?",
+    "option_a": "Counting saplings can overstate how much tree-planting programs increase tree cover, since farmers may remove existing trees to make room for paid plantings.",
+    "option_b": "Tree-planting programs fail mainly because most saplings die before they grow large enough to appear in satellite images.",
+    "option_c": "Farmers in Haydarov's region planted far fewer saplings than the programs reported.",
+    "option_d": "Satellite images are a less reliable way to measure tree cover than counts of saplings planted.",
+    "correct": "A",
+    "explanation_en": "Haydarov argues that sapling counts can mislead: over a million saplings were planted, but total tree cover barely changed because farmers cut older trees to make room for the paid plantings. Choice A states both the claim and the reason he gives for it.\n\nChoice B offers a plausible explanation that the text never gives; Haydarov attributes the lack of change to farmers removing older trees, not to saplings dying. Choice C is unsupported: the text never questions the number of saplings planted. Choice D reverses Haydarov's reasoning, which relies on satellite images to show that sapling counts are misleading.",
+    "explanation_uz": "Haydarovning fikricha, ko‘chatlar sonini sanash chalg‘itishi mumkin: milliondan ortiq ko‘chat ekilgan, lekin umumiy daraxt qoplami deyarli o‘zgarmagan, chunki fermerlar haq to‘lanadigan yangi ko‘chatlarga joy ochish uchun eski daraxtlarni kesgan. A javob ham da’voni, ham uning sababini ifodalaydi.\n\nB ishonarli tuyulsa-da, matnda keltirilmagan izoh beradi: Haydarov o‘zgarish yo‘qligini ko‘chatlar qurib qolgani bilan emas, fermerlar eski daraxtlarni kesgani bilan izohlaydi. C asossiz: matnda ekilgan ko‘chatlar soni shubha ostiga olinmaydi. D Haydarovning mulohazasini teskari qiladi: u aynan sun’iy yo‘ldosh suratlariga tayanib, ko‘chatlar sonini sanash chalg‘itishini ko‘rsatadi.",
+    "estimated_seconds": 88,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "central_ideas_details",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "The following text is adapted from a novel. Teodor, a retired watchmaker, is visiting the shop he once owned.\n\nThe new owner had replaced the dark wooden counters with glass and steel, and the clocks that once ticked from every wall were gone; a single screen now listed the prices of repairs. Teodor had expected to feel wounded. Instead, watching a young woman bend over a customer's watch with the same narrowed eyes and steady fingers he had once had, he found himself smiling. The room was a stranger to him, but the work, he saw, was the same.",
+    "stem": "Which choice best states the main idea of the text?",
+    "option_a": "Teodor regrets selling his shop and wishes he could buy it back.",
+    "option_b": "Teodor disapproves of the changes to his old shop but hides his feelings from the new owner.",
+    "option_c": "Although the shop looks very different, Teodor is reassured to see that the craft he practiced continues there.",
+    "option_d": "Teodor realizes that modern watch repair requires skills he never learned.",
+    "correct": "C",
+    "explanation_en": "Teodor notices how much the shop's appearance has changed and expects to be hurt, but seeing a young woman repair a watch with the same care he once showed makes him smile: \"the work, he saw, was the same.\" Choice C captures this contrast between the changed room and the continuing craft.\n\nChoice A is unsupported: Teodor expresses no regret about selling. Choice B misreads the passage; he expected to feel wounded, but \"instead\" he smiles, and nothing suggests he is hiding disapproval. Choice D contradicts the final sentence, which stresses that the work has not changed.",
+    "explanation_uz": "Teodor do‘kon ko‘rinishi qanchalik o‘zgarganini ko‘radi va ranjishini kutadi, ammo yosh ayol soatni xuddi o‘zi kabi diqqat bilan ta’mirlayotganini ko‘rib jilmayadi: ish esa o‘sha-o‘sha ekan (“the work, he saw, was the same”). C javob o‘zgargan xona va davom etayotgan hunar o‘rtasidagi shu qarama-qarshilikni ifodalaydi.\n\nA asossiz: Teodor do‘konni sotganidan afsuslanmaydi. B parchani noto‘g‘ri talqin qiladi: u ranjishni kutgan edi, lekin buning o‘rniga (“instead”) jilmayadi; noroziligini yashirayotgani haqida hech qanday ishora yo‘q. D oxirgi jumlaga zid: unda ish o‘zgarmagani ta’kidlanadi.",
+    "estimated_seconds": 88,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  }
+]

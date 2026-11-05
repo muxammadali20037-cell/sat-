@@ -1,0 +1,162 @@
+[
+  {
+    "skill_code": "words_in_context",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Chess coach Rustam Aliev is famously ______ with praise. Former students say that in ten years of lessons, they heard him call a move “excellent” only a handful of times, and most of his comments pointed out what could have been played better.",
+    "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+    "option_a": "generous",
+    "option_b": "sparing",
+    "option_c": "careless",
+    "option_d": "quick",
+    "correct": "B",
+    "explanation_en": "The text says Aliev called a move “excellent” only a handful of times in ten years and usually pointed out mistakes, so he gives praise rarely: he is “sparing” with it. “Generous” means the opposite, giving praise freely. “Careless” suggests he praises without thinking, which the text does not describe. “Quick” with praise would mean he praises readily, which also contradicts the text.",
+    "explanation_uz": "Matnga ko‘ra, Aliev o‘n yil ichida biror yurishni atigi bir necha marta “excellent” deb atagan va ko‘pincha xatolarni ko‘rsatgan. Demak, u maqtovni juda kam beradi — bu “sparing” (tejamkor, xasis) so‘zining ma’nosi. “Generous” (saxiy) buning aksini bildiradi: maqtovni ko‘p berish. “Careless” (beparvo) — o‘ylamasdan maqtash degani, matnda bunday gap yo‘q. “Quick” with praise — tez-tez, osonlik bilan maqtash degani, bu ham matnga zid.",
+    "estimated_seconds": 55,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "words_in_context",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "The museum's exhibit on desert insects proved so popular that the curators decided to let it run for another three months. Schoolchildren in particular kept coming back to watch the live beetles and ants, and ticket sales stayed high long after the opening week.",
+    "stem": "As used in the text, what does the word “run” most nearly mean?",
+    "option_a": "continue",
+    "option_b": "hurry",
+    "option_c": "manage",
+    "option_d": "flow",
+    "correct": "A",
+    "explanation_en": "The exhibit was popular, so the curators let it “run” for three more months, meaning they let it go on being shown: “continue.” “Hurry” fits “run to the bus,” not an exhibit that stays open. “Manage” fits “run a business,” but the curators already manage the exhibit; the point is how long it stays open. “Flow” fits liquids, as in “water runs downhill,” not an exhibit.",
+    "explanation_uz": "Ko‘rgazma mashhur bo‘lgani uchun kuratorlar uni yana uch oy “run” qilishga ruxsat berishgan, ya’ni ko‘rgazma davom etadi — “continue” (davom etmoq). “Hurry” (shoshilmoq) “run to the bus” kabi iboralarga mos, ochiq turgan ko‘rgazmaga emas. “Manage” (boshqarmoq) “run a business” ma’nosiga mos, ammo bu yerda gap ko‘rgazma qancha vaqt ochiq turishi haqida. “Flow” (oqmoq) suyuqliklarga tegishli, ko‘rgazmaga emas.",
+    "estimated_seconds": 50,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "words_in_context",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Glaciers can look perfectly still, but most of them are anything but ______. Using GPS markers placed on the ice, researchers found that one glacier in Alaska slid nearly 40 meters downhill in a single year.",
+    "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+    "option_a": "massive",
+    "option_b": "frozen",
+    "option_c": "ancient",
+    "option_d": "stationary",
+    "correct": "D",
+    "explanation_en": "The text contrasts how glaciers look (“perfectly still”) with what the GPS data show: a glacier slid nearly 40 meters in a year. So glaciers are “anything but stationary,” meaning they are not motionless. “Massive,” “frozen” and “ancient” may all describe glaciers, but saying glaciers are “anything but” massive, frozen or ancient would contradict facts about glaciers, and none of these words connects to the evidence about movement.",
+    "explanation_uz": "Matn muzliklarning tashqi ko‘rinishini (“perfectly still” — butunlay harakatsiz) GPS ma’lumotlari bilan qarama-qarshi qo‘yadi: bir muzlik bir yilda deyarli 40 metr pastga siljigan. Demak, muzliklar “anything but stationary”, ya’ni umuman harakatsiz emas. “Massive” (ulkan), “frozen” (muzlagan) va “ancient” (qadimiy) muzliklarni tasvirlashi mumkin, lekin muzliklar bularning “aksi” deyish faktlarga zid bo‘lardi va bu so‘zlarning hech biri harakat haqidagi dalilga bog‘lanmaydi.",
+    "estimated_seconds": 55,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "words_in_context",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Early reactions to the city's redesigned bus routes were ______. Some riders praised the shorter waits at downtown stops, while others complained that the changes had left their neighborhoods with fewer direct connections to the center.",
+    "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+    "option_a": "unanimous",
+    "option_b": "scathing",
+    "option_c": "mixed",
+    "option_d": "delayed",
+    "correct": "C",
+    "explanation_en": "The text describes two opposite reactions: some riders praised the new routes and others complained. Reactions that include both praise and criticism are “mixed.” “Unanimous” means everyone agreed, which contradicts the split. “Scathing” means harshly critical, which ignores the riders who praised the routes. “Delayed” means late, but nothing in the text suggests the reactions came slowly.",
+    "explanation_uz": "Matnda ikki qarama-qarshi munosabat bor: ba’zi yo‘lovchilar yangi yo‘nalishlarni maqtagan, boshqalari esa shikoyat qilgan. Ham maqtov, ham tanqidni o‘z ichiga olgan munosabat — “mixed” (aralash). “Unanimous” (bir ovozdan) hamma bir fikrda bo‘lganini bildiradi, bu esa fikrlar bo‘linganiga zid. “Scathing” (keskin tanqidiy) maqtagan yo‘lovchilarni inobatga olmaydi. “Delayed” (kechikkan) — matnda munosabatlar kech bildirilgani haqida hech narsa yo‘q.",
+    "estimated_seconds": 65,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "words_in_context",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Marine biologist Teo Lindqvist argues that some coral reefs have survived warming seas because of their ability to host new kinds of algae. Corals that cannot take in heat-tolerant algae, he notes, are far more likely to bleach and die when water temperatures rise.",
+    "stem": "As used in the text, what does the word “host” most nearly mean?",
+    "option_a": "accommodate",
+    "option_b": "entertain",
+    "option_c": "present",
+    "option_d": "organize",
+    "correct": "A",
+    "explanation_en": "The text explains that surviving corals can “host” new algae, and the next sentence restates this as being able to “take in” heat-tolerant algae. So “host” means to provide a place for something to live: “accommodate.” “Entertain” fits hosting guests at a party, not algae living in coral. “Present” fits hosting a television show. “Organize” fits hosting an event, which does not describe corals taking in algae.",
+    "explanation_uz": "Matnda omon qolgan marjonlar yangi suvo‘tlarni “host” qila olishi aytiladi, keyingi gapda esa bu issiqqa chidamli suvo‘tlarni “take in” — o‘ziga qabul qilish deb qayta ifodalanadi. Demak, “host” bu yerda biror narsaga yashash joyi berish — “accommodate” (joylashtirmoq, sig‘dirmoq). “Entertain” (mehmon kutmoq, ko‘ngil ochmoq) ziyofatga mos, marjondagi suvo‘tlarga emas. “Present” (olib bormoq) teleko‘rsatuvga mos. “Organize” (tashkil qilmoq) tadbirga mos va marjonning suvo‘tlarni qabul qilishini tasvirlamaydi.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "words_in_context",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Historian Ilhom Saidov argues that the merchants of medieval Bukhara were not ______ go-betweens who simply moved goods from East to West. Their surviving letters show that they actively shaped demand, for instance by ordering textiles in colors and patterns they knew would sell well in distant markets.",
+    "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+    "option_a": "ambitious",
+    "option_b": "prosperous",
+    "option_c": "skilled",
+    "option_d": "passive",
+    "correct": "D",
+    "explanation_en": "The sentence says the merchants were not go-betweens who “simply moved goods,” and the next sentence shows them “actively” shaping demand. The missing word must therefore be the opposite of active: “passive.” “Ambitious” and “skilled” describe traits that the letters actually support, so saying the merchants were “not” ambitious or skilled would contradict the evidence. “Prosperous” is about wealth, which the text does not discuss.",
+    "explanation_uz": "Gapda savdogarlar tovarlarni “shunchaki” tashuvchi vositachilar bo‘lmagani aytiladi, keyingi gap esa ular talabni “faol” shakllantirganini ko‘rsatadi. Demak, bo‘sh joyga “faol” so‘zining aksi kerak — “passive” (sust, passiv). “Ambitious” (shuhratparast, intiluvchan) va “skilled” (mohir) xatlar tasdiqlaydigan xususiyatlar, shuning uchun savdogarlar bunday “emas edi” deyish dalilga zid bo‘ladi. “Prosperous” (badavlat) boylik haqida, matnda esa bu muhokama qilinmaydi.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "words_in_context",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Physicist Lena Moroz admits that she once entertained the idea that a strange signal in her detector came from a distant, previously unknown star. Months of testing, however, traced the signal to a faulty cable, and she now tells the story to warn students against reaching dramatic conclusions too quickly.",
+    "stem": "As used in the text, what does the word “entertained” most nearly mean?",
+    "option_a": "amused",
+    "option_b": "hosted",
+    "option_c": "considered",
+    "option_d": "celebrated",
+    "correct": "C",
+    "explanation_en": "Moroz “entertained the idea” that the signal came from a star before testing showed it came from a faulty cable. She thought about the idea as a possibility, so “entertained” means “considered.” “Amused” uses the sense of entertaining an audience, which makes no sense with “the idea.” “Hosted” uses the sense of entertaining guests. “Celebrated” goes too far: the text says only that she thought the idea possible, and she now warns against reaching dramatic conclusions, not that she publicly rejoiced over it.",
+    "explanation_uz": "Moroz sinovlar signal nosoz kabeldan kelganini ko‘rsatmasdan oldin signal yulduzdan keladi degan g‘oyani “entertained” qilgan. U bu g‘oyani ehtimol sifatida ko‘rib chiqqan, demak “entertained” bu yerda “considered” (ko‘rib chiqmoq, o‘ylab ko‘rmoq) ma’nosida. “Amused” (kuldirmoq) tomoshabinlarni xursand qilish ma’nosidan olingan va “the idea” bilan mos kelmaydi. “Hosted” (mehmon qilmoq) mehmon kutish ma’nosidan olingan. “Celebrated” (nishonlamoq) haddan oshib ketadi: matnda u faqat bu g‘oyani mumkin deb o‘ylagani aytilgan, uni tantana qilgani emas.",
+    "estimated_seconds": 80,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "words_in_context",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Critics have long praised novelist Kenji Arata for his spare, unadorned prose. His latest book, however, marks a striking departure from that style: its sentences are ______, crowded with long lists, elaborate metaphors, and clause after clause of description.",
+    "stem": "Which choice completes the text with the most logical and precise word or phrase?",
+    "option_a": "laconic",
+    "option_b": "florid",
+    "option_c": "candid",
+    "option_d": "halting",
+    "correct": "B",
+    "explanation_en": "The word “however” signals that the new book differs from Arata's usual “spare, unadorned” prose, and the colon introduces a description of sentences crowded with lists, metaphors and description. Such heavily decorated writing is “florid.” “Laconic” means using very few words, which describes his old spare style, not the new one. “Candid” means frank or open, which says nothing about how decorated the sentences are. “Halting” means hesitant or broken, which does not match long, flowing, crowded sentences.",
+    "explanation_uz": "“However” so‘zi yangi kitob Arataning odatiy “spare, unadorned” (sodda, bezaksiz) uslubidan farq qilishini bildiradi, ikki nuqtadan keyin esa ro‘yxatlar, murakkab metaforalar va tasvirlarga to‘la gaplar tasvirlanadi. Bunday ortiqcha bezakli uslub — “florid” (dabdabali, jimjimador). “Laconic” (qisqa, lo‘nda) uning eski sodda uslubini tasvirlaydi, yangisini emas. “Candid” (ochiq, samimiy) gaplarning bezakdorligi haqida hech narsa demaydi. “Halting” (duduqlanuvchi, uzuq-yuluq) uzun, to‘lib-toshgan gaplarga mos kelmaydi.",
+    "estimated_seconds": 85,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  }
+]

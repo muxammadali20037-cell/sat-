@@ -1,0 +1,142 @@
+[
+  {
+    "skill_code": "right_triangles_trigonometry",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "In right triangle $DEF$, angle $E$ is the right angle, $DE = 20$, $EF = 21$, and $DF = 29$. What is the value of $\\cos F$?",
+    "option_a": "$\\frac{20}{29}$",
+    "option_b": "$\\frac{20}{21}$",
+    "option_c": "$\\frac{21}{29}$",
+    "option_d": "$\\frac{21}{20}$",
+    "correct": "C",
+    "explanation_en": "The hypotenuse is $\\overline{DF}$, opposite the right angle $E$. The leg adjacent to angle $F$ is $\\overline{EF}$. So $\\cos F = \\frac{\\text{adjacent}}{\\text{hypotenuse}} = \\frac{EF}{DF} = \\frac{21}{29}$. Choice C is correct.\n\nChoice A ($\\frac{20}{29}$) is $\\sin F$, which uses the opposite leg. Choice B ($\\frac{20}{21}$) is $\\tan F$. Choice D ($\\frac{21}{20}$) is $\\tan D$, the reciprocal of $\\tan F$.",
+    "explanation_uz": "Gipotenuza — to‘g‘ri burchak $E$ qarshisidagi $\\overline{DF}$. $F$ burchakka yopishgan katet $\\overline{EF}$. Demak $\\cos F = \\frac{\\text{yopishgan katet}}{\\text{gipotenuza}} = \\frac{EF}{DF} = \\frac{21}{29}$. To‘g‘ri javob C.\n\nA ($\\frac{20}{29}$) — bu $\\sin F$, qarshidagi katet olingan. B ($\\frac{20}{21}$) — bu $\\tan F$. D ($\\frac{21}{20}$) — bu $\\tan D$, ya’ni $\\tan F$ ning teskarisi.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "right_triangles_trigonometry",
+    "difficulty": "easy",
+    "question_type": "spr",
+    "stem": "A right triangle has a hypotenuse of length 26 and one leg of length 10. What is the length of the other leg?",
+    "spr_answers": [
+      "24"
+    ],
+    "explanation_en": "By the Pythagorean theorem, $10^2 + b^2 = 26^2$, so $b^2 = 676 - 100 = 576$ and $b = 24$.\n\nIf you got about 27.86 (that is, $\\sqrt{776}$), you added the squares as if 26 were a leg instead of the hypotenuse. If you got 16, you subtracted the lengths without squaring.",
+    "explanation_uz": "Pifagor teoremasiga ko‘ra $10^2 + b^2 = 26^2$, demak $b^2 = 676 - 100 = 576$ va $b = 24$.\n\nAgar taxminan 27.86 (ya’ni $\\sqrt{776}$) chiqqan bo‘lsa, 26 gipotenuza emas, katet deb olinib kvadratlar qo‘shilgan. Agar 16 chiqqan bo‘lsa, uzunliklar kvadratga ko‘tarilmasdan ayirilgan.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "right_triangles_trigonometry",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "An isosceles right triangle has two legs that are each 7 centimeters long. What is the length, in centimeters, of the hypotenuse?",
+    "option_a": "$7\\sqrt{2}$",
+    "option_b": "$7\\sqrt{3}$",
+    "option_c": "$14$",
+    "option_d": "$49$",
+    "correct": "A",
+    "explanation_en": "In a $45^\\circ$-$45^\\circ$-$90^\\circ$ triangle the hypotenuse is $\\sqrt{2}$ times a leg, so it is $7\\sqrt{2}$. Using the Pythagorean theorem: $\\sqrt{7^2 + 7^2} = \\sqrt{98} = 7\\sqrt{2}$. Choice A is correct.\n\nChoice B ($7\\sqrt{3}$) uses the $30^\\circ$-$60^\\circ$-$90^\\circ$ ratio. Choice C ($14$) adds the legs. Choice D ($49$) is $7^2$, the square of one leg.",
+    "explanation_uz": "$45^\\circ$-$45^\\circ$-$90^\\circ$ uchburchakda gipotenuza katetdan $\\sqrt{2}$ marta uzun, ya’ni $7\\sqrt{2}$. Pifagor teoremasi bilan: $\\sqrt{7^2 + 7^2} = \\sqrt{98} = 7\\sqrt{2}$. To‘g‘ri javob A.\n\nB ($7\\sqrt{3}$) — $30^\\circ$-$60^\\circ$-$90^\\circ$ nisbati ishlatilgan. C ($14$) — katetlar qo‘shilgan. D ($49$) — bitta katetning kvadrati, $7^2$.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "right_triangles_trigonometry",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "An equilateral triangle has sides of length 10. What is the height of the triangle (the length of the perpendicular segment from one vertex to the opposite side)?",
+    "option_a": "$5$",
+    "option_b": "$5\\sqrt{2}$",
+    "option_c": "$5\\sqrt{3}$",
+    "option_d": "$10\\sqrt{3}$",
+    "correct": "C",
+    "explanation_en": "The height splits the equilateral triangle into two $30^\\circ$-$60^\\circ$-$90^\\circ$ triangles, each with hypotenuse 10 and shorter leg $\\frac{10}{2} = 5$. The height is the longer leg: $5\\sqrt{3}$. Check: $\\sqrt{10^2 - 5^2} = \\sqrt{75} = 5\\sqrt{3}$. Choice C is correct.\n\nChoice A ($5$) is the shorter leg, half the base. Choice B ($5\\sqrt{2}$) uses the $45^\\circ$-$45^\\circ$-$90^\\circ$ ratio. Choice D ($10\\sqrt{3}$) multiplies the full side, instead of half of it, by $\\sqrt{3}$.",
+    "explanation_uz": "Balandlik teng tomonli uchburchakni ikkita $30^\\circ$-$60^\\circ$-$90^\\circ$ uchburchakka bo‘ladi; har birining gipotenuzasi 10, qisqa kateti $\\frac{10}{2} = 5$. Balandlik uzun katet: $5\\sqrt{3}$. Tekshiruv: $\\sqrt{10^2 - 5^2} = \\sqrt{75} = 5\\sqrt{3}$. To‘g‘ri javob C.\n\nA ($5$) — qisqa katet, asosning yarmi. B ($5\\sqrt{2}$) — $45^\\circ$-$45^\\circ$-$90^\\circ$ nisbati ishlatilgan. D ($10\\sqrt{3}$) — tomonning yarmi emas, butuni $\\sqrt{3}$ ga ko‘paytirilgan.",
+    "estimated_seconds": 80,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "right_triangles_trigonometry",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "In right triangle $RST$, angle $T$ is the right angle and $\\sin R = \\frac{5}{13}$. What is the value of $\\tan S$?",
+    "spr_answers": [
+      "12/5",
+      "2.4"
+    ],
+    "explanation_en": "$\\sin R = \\frac{\\text{opposite}}{\\text{hypotenuse}} = \\frac{ST}{RS} = \\frac{5}{13}$, so we can take $ST = 5$ and $RS = 13$. By the Pythagorean theorem, $RT = \\sqrt{13^2 - 5^2} = 12$. For angle $S$, the opposite leg is $RT$ and the adjacent leg is $ST$, so $\\tan S = \\frac{RT}{ST} = \\frac{12}{5}$. Enter 12/5 or 2.4.\n\nIf you got $\\frac{5}{12}$, you found $\\tan R$ instead of $\\tan S$. If you got $\\frac{12}{13}$, you found $\\cos R$ (which equals $\\sin S$).",
+    "explanation_uz": "$\\sin R = \\frac{\\text{qarshidagi katet}}{\\text{gipotenuza}} = \\frac{ST}{RS} = \\frac{5}{13}$, demak $ST = 5$ va $RS = 13$ deb olish mumkin. Pifagor teoremasiga ko‘ra $RT = \\sqrt{13^2 - 5^2} = 12$. $S$ burchak uchun qarshidagi katet $RT$, yopishgan katet $ST$, shuning uchun $\\tan S = \\frac{RT}{ST} = \\frac{12}{5}$. 12/5 yoki 2.4 kiriting.\n\nAgar $\\frac{5}{12}$ chiqqan bo‘lsa, siz $\\tan S$ o‘rniga $\\tan R$ ni topgansiz. Agar $\\frac{12}{13}$ chiqqan bo‘lsa, bu $\\cos R$ (u $\\sin S$ ga teng).",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "right_triangles_trigonometry",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "A surveyor stands on level ground 40 meters from the base of a vertical tower. The angle of elevation from the ground at the surveyor’s position to the top of the tower is $30^\\circ$. What is the height, in meters, of the tower?",
+    "option_a": "$20$",
+    "option_b": "$\\frac{40\\sqrt{3}}{3}$",
+    "option_c": "$20\\sqrt{3}$",
+    "option_d": "$40\\sqrt{3}$",
+    "correct": "B",
+    "explanation_en": "The tower, the ground, and the line of sight form a right triangle. The 40-meter distance is the leg adjacent to the $30^\\circ$ angle, and the height $h$ is the opposite leg. So $\\tan 30^\\circ = \\frac{h}{40}$, and $h = 40 \\cdot \\frac{1}{\\sqrt{3}} = \\frac{40\\sqrt{3}}{3}$ meters (about 23.1 meters). Choice B is correct.\n\nChoice A ($20$) is $40 \\sin 30^\\circ$, which treats 40 as the hypotenuse. Choice C ($20\\sqrt{3}$) is $40 \\cos 30^\\circ$, also treating 40 as the hypotenuse. Choice D ($40\\sqrt{3}$) is $40 \\tan 60^\\circ$, using the wrong angle.",
+    "explanation_uz": "Minora, yer va ko‘rish chizig‘i to‘g‘ri burchakli uchburchak hosil qiladi. 40 metrlik masofa $30^\\circ$ burchakka yopishgan katet, balandlik $h$ esa qarshidagi katet. Demak $\\tan 30^\\circ = \\frac{h}{40}$ va $h = 40 \\cdot \\frac{1}{\\sqrt{3}} = \\frac{40\\sqrt{3}}{3}$ metr (taxminan 23.1 metr). To‘g‘ri javob B.\n\nA ($20$) — bu $40 \\sin 30^\\circ$, 40 gipotenuza deb olingan. C ($20\\sqrt{3}$) — bu $40 \\cos 30^\\circ$, bunda ham 40 gipotenuza deb olingan. D ($40\\sqrt{3}$) — bu $40 \\tan 60^\\circ$, noto‘g‘ri burchak olingan.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "right_triangles_trigonometry",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "In right triangle $ABC$, angle $C$ is the right angle. The altitude from $C$ meets hypotenuse $\\overline{AB}$ at point $D$, with $AD = 4$ and $DB = 9$. What is the length of $\\overline{BC}$?",
+    "option_a": "$6$",
+    "option_b": "$2\\sqrt{13}$",
+    "option_c": "$9$",
+    "option_d": "$3\\sqrt{13}$",
+    "correct": "D",
+    "explanation_en": "The altitude to the hypotenuse creates triangles similar to the original triangle. Triangle $CBD$ is similar to triangle $ABC$ (they share angle $B$ and each has a right angle), so $\\frac{BC}{AB} = \\frac{DB}{BC}$, which gives $BC^2 = DB \\cdot AB = 9 \\cdot 13 = 117$. So $BC = \\sqrt{117} = 3\\sqrt{13}$. Check: $CD = \\sqrt{4 \\cdot 9} = 6$, and $CD^2 + DB^2 = 36 + 81 = 117$. Choice D is correct.\n\nChoice A ($6$) is the altitude $CD$. Choice B ($2\\sqrt{13}$) is $AC$, the other leg, from $AC^2 = AD \\cdot AB = 52$. Choice C ($9$) is $DB$, which is only part of the hypotenuse, not a side of triangle $ABC$.",
+    "explanation_uz": "Gipotenuzaga tushirilgan balandlik dastlabki uchburchakka o‘xshash uchburchaklar hosil qiladi. $CBD$ uchburchak $ABC$ uchburchakka o‘xshash ($B$ burchak umumiy va ikkalasida to‘g‘ri burchak bor), demak $\\frac{BC}{AB} = \\frac{DB}{BC}$, ya’ni $BC^2 = DB \\cdot AB = 9 \\cdot 13 = 117$. Shuning uchun $BC = \\sqrt{117} = 3\\sqrt{13}$. Tekshiruv: $CD = \\sqrt{4 \\cdot 9} = 6$ va $CD^2 + DB^2 = 36 + 81 = 117$. To‘g‘ri javob D.\n\nA ($6$) — bu $CD$ balandlik. B ($2\\sqrt{13}$) — bu boshqa katet $AC$, $AC^2 = AD \\cdot AB = 52$ dan. C ($9$) — bu $DB$, gipotenuzaning faqat bir qismi, $ABC$ uchburchakning tomoni emas.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "right_triangles_trigonometry",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "In triangle $ABC$, $AB = AC = 17$ and $BC = 16$. What is the value of $\\tan B$?",
+    "spr_answers": [
+      "15/8",
+      "1.875"
+    ],
+    "explanation_en": "Draw the altitude from $A$ to $\\overline{BC}$, meeting it at $M$. Because the triangle is isosceles with $AB = AC$, this altitude bisects $\\overline{BC}$, so $BM = 8$. In right triangle $ABM$, $AM = \\sqrt{17^2 - 8^2} = \\sqrt{225} = 15$. Then $\\tan B = \\frac{\\text{opposite}}{\\text{adjacent}} = \\frac{AM}{BM} = \\frac{15}{8}$. Enter 15/8 or 1.875.\n\nIf you got $\\frac{8}{15}$, you inverted the ratio (that is $\\tan \\angle BAM$). If you got $\\frac{15}{16}$, you used all of $\\overline{BC}$ as the adjacent side even though the right angle is at $M$, the midpoint. If you got $\\frac{8}{17}$, you found $\\cos B$.",
+    "explanation_uz": "$A$ dan $\\overline{BC}$ ga balandlik tushiramiz, u $\\overline{BC}$ ni $M$ nuqtada kesadi. Uchburchak teng yonli ($AB = AC$) bo‘lgani uchun bu balandlik $\\overline{BC}$ ni teng ikkiga bo‘ladi, ya’ni $BM = 8$. $ABM$ to‘g‘ri burchakli uchburchakda $AM = \\sqrt{17^2 - 8^2} = \\sqrt{225} = 15$. U holda $\\tan B = \\frac{\\text{qarshidagi katet}}{\\text{yopishgan katet}} = \\frac{AM}{BM} = \\frac{15}{8}$. 15/8 yoki 1.875 kiriting.\n\nAgar $\\frac{8}{15}$ chiqqan bo‘lsa, nisbat teskari olingan (bu $\\tan \\angle BAM$). Agar $\\frac{15}{16}$ chiqqan bo‘lsa, to‘g‘ri burchak o‘rtadagi $M$ nuqtada bo‘lsa ham yopishgan katet sifatida butun $\\overline{BC}$ olingan. Agar $\\frac{8}{17}$ chiqqan bo‘lsa, siz $\\cos B$ ni topgansiz.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  }
+]

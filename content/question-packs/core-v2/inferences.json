@@ -1,0 +1,162 @@
+[
+  {
+    "skill_code": "inferences",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Gardeners in the village of Terek noticed that deer ate the lettuce in almost every garden except those surrounded by rows of garlic. Once the garlic had been harvested in midsummer, however, deer began eating the lettuce in those gardens as well. This suggests that ______",
+    "stem": "Which choice most logically completes the text?",
+    "option_a": "deer prefer the taste of garlic to the taste of lettuce.",
+    "option_b": "lettuce grown next to garlic tastes better to people.",
+    "option_c": "gardens without garlic produce more lettuce than gardens with garlic.",
+    "option_d": "the growing garlic helped keep deer away from the lettuce.",
+    "correct": "D",
+    "explanation_en": "Deer avoided the lettuce only in gardens surrounded by garlic and began eating it there once the garlic was harvested. The most logical conclusion is that the garlic itself kept the deer away, as choice D says.\n\nChoice A contradicts the text: the deer stayed away from gardens with garlic rather than eating it. Choice B concerns people's taste, which the text never mentions. Choice C is unsupported: the text describes which gardens deer ate from, not how much lettuce each garden produced.",
+    "explanation_uz": "Bug‘ular faqat sarimsoq bilan o‘ralgan bog‘lardagi salatga tegmagan, sarimsoq yig‘ib olingach esa u yerdagi salatni ham yeya boshlagan. Eng mantiqiy xulosa — bug‘ularni sarimsoqning o‘zi uzoqlashtirib turgan. To‘g‘ri javob — D.\n\nA matnga zid: bug‘ular sarimsoqni yemagan, aksincha, sarimsoqli bog‘lardan uzoq turgan. B odamlarning ta’mi haqida, matnda bu haqda gap yo‘q. C asossiz: matnda qaysi bog‘dagi salat qancha hosil bergani emas, bug‘ular qaysi bog‘dan oziqlangani aytiladi.",
+    "estimated_seconds": 55,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "inferences",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "In a letter written in 1903, the traveler Ines Morrow described a tall tower of black stone standing beside the village of Kelt. No such tower stands there today. However, the walls of Kelt's schoolhouse, built in 1925, are made of a black stone that matches no rock found in the surrounding hills, and local records show no black stone being brought to the village from elsewhere. Taken together, these facts suggest that ______",
+    "stem": "Which choice most logically completes the text?",
+    "option_a": "Morrow never actually visited the village of Kelt.",
+    "option_b": "the tower had been destroyed by an earthquake before 1903.",
+    "option_c": "the stone used to build Kelt's schoolhouse may have come from the tower that Morrow described.",
+    "option_d": "black stone was quarried in the hills around Kelt in the 1920s.",
+    "correct": "C",
+    "explanation_en": "A black stone tower stood in Kelt in 1903 and is gone today; the 1925 schoolhouse is built of black stone that does not come from the local hills and was not brought from elsewhere. The most logical explanation is that the schoolhouse was built with stone from the vanished tower, as choice C says.\n\nChoice A is unsupported: nothing in the text casts doubt on Morrow's visit. Choice B contradicts the text, since Morrow saw the tower standing in 1903. Choice D contradicts the statement that the stone matches no rock found in the surrounding hills.",
+    "explanation_uz": "1903-yilda Keltda qora toshdan qurilgan minora bo‘lgan, bugun esa u yo‘q; 1925-yilda qurilgan maktab esa mahalliy tepaliklarda uchramaydigan va boshqa joydan keltirilmagan qora toshdan qurilgan. Eng mantiqiy izoh — maktab yo‘qolgan minoraning toshidan qurilgan. To‘g‘ri javob — C.\n\nA asossiz: matnda Morrowning tashrifiga shubha uyg‘otadigan hech narsa yo‘q. B matnga zid, chunki Morrow minorani 1903-yilda tik turgan holda ko‘rgan. D tosh atrofdagi tepaliklardagi hech qaysi jinsga o‘xshamasligi haqidagi gapga zid.",
+    "estimated_seconds": 55,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "inferences",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Chemist Sevara Ortiqova tested a new paint designed to protect metal. She painted one half of each of twenty steel plates, left the other half bare, and placed all the plates outdoors for a year. At the end of the year, the bare half of every plate was heavily rusted, while the painted half showed little or no rust. These results suggest that ______",
+    "stem": "Which choice most logically completes the text?",
+    "option_a": "the new paint helps protect steel from rusting.",
+    "option_b": "steel rusts more slowly outdoors than indoors.",
+    "option_c": "the new paint gradually weakens the steel beneath it.",
+    "option_d": "rain has little effect on how quickly steel rusts.",
+    "correct": "A",
+    "explanation_en": "Each plate had a painted half and a bare half exposed to the same conditions, and only the bare halves rusted heavily. This suggests that the paint helps prevent rust, as choice A says.\n\nChoice B is unsupported because no plates were kept indoors for comparison. Choice C is unsupported: the text reports nothing about the strength of the steel. Choice D is unsupported: the experiment did not test the effect of rain.",
+    "explanation_uz": "Har bir plastinaning bo‘yalgan va bo‘yalmagan yarmi bir xil sharoitda turgan va faqat bo‘yalmagan yarmi qattiq zanglagan. Bu bo‘yoq zanglashning oldini olishga yordam berishini ko‘rsatadi — to‘g‘ri javob A.\n\nB asossiz, chunki solishtirish uchun hech qaysi plastina xonada saqlanmagan. C asossiz: matnda po‘latning mustahkamligi haqida hech narsa aytilmagan. D ham asossiz: tajribada yomg‘irning ta’siri sinab ko‘rilmagan.",
+    "estimated_seconds": 55,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "inferences",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "In 2021, the city of Pellam began charging drivers a fee to enter its downtown area on weekdays but not on weekends. Over the following year, weekday car traffic downtown fell by 18 percent, while weekend traffic stayed about the same as before. Meanwhile, downtown shops reported that their weekday sales were about the same as in the year before the fee. These findings suggest that ______",
+    "stem": "Which choice most logically completes the text?",
+    "option_a": "the fee caused many shoppers to move their downtown visits from weekdays to weekends.",
+    "option_b": "the drop in weekday car traffic downtown did not harm downtown shops' weekday business.",
+    "option_c": "the fee did not reduce the number of cars entering downtown on weekdays.",
+    "option_d": "downtown shops raised their prices to make up for customers lost because of the fee.",
+    "correct": "B",
+    "explanation_en": "Weekday car traffic fell by 18 percent, yet weekday sales at downtown shops stayed about the same. This suggests that the reduced driving did not hurt shops' weekday business, as choice B says.\n\nChoice A is unlikely: weekend traffic did not rise and weekday sales did not fall, so there is no sign that shoppers shifted to weekends. Choice C contradicts the reported 18 percent drop in weekday traffic. Choice D is unsupported: the text never mentions prices, and stable sales give no reason to think customers were lost.",
+    "explanation_uz": "Ish kunlaridagi avtomobil harakati 18 foizga kamaygan, lekin markazdagi do‘konlarning ish kunlaridagi savdosi deyarli o‘zgarmagan. Bu harakatning kamayishi do‘konlarning ish kunlaridagi savdosiga zarar yetkazmaganini ko‘rsatadi — to‘g‘ri javob B.\n\nA ehtimoldan yiroq: dam olish kunlaridagi harakat oshmagan, ish kunlaridagi savdo ham kamaymagan, demak xaridorlar dam olish kunlariga o‘tgani haqida belgi yo‘q. C ish kunlaridagi harakat 18 foizga kamaygani haqidagi ma’lumotga zid. D asossiz: matnda narxlar tilga olinmagan, barqaror savdo esa xaridorlar yo‘qotilganini o‘ylashga asos bermaydi.",
+    "estimated_seconds": 72,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "inferences",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Archaeologists excavating Darsa, an ancient settlement located about 300 kilometers from the sea, found the bones of several fish species that live only in salt water. Cut marks on the bones match those made when fish are split open for drying and salting, a common way of preserving fish for long journeys. The archaeologists also found pottery made in the style of coastal towns but no fishing equipment of any kind. These findings suggest that ______",
+    "stem": "Which choice most logically completes the text?",
+    "option_a": "Darsa was once located on the coast before the sea retreated.",
+    "option_b": "the people of Darsa made their own fishing equipment from materials that do not survive.",
+    "option_c": "saltwater fish were the main source of food for the people of Darsa.",
+    "option_d": "the people of Darsa obtained preserved saltwater fish through contact with communities near the coast.",
+    "correct": "D",
+    "explanation_en": "Darsa is far inland, the fish bones show signs of preservation for long journeys, coastal-style pottery was found there, and there is no fishing equipment. Together these clues point to fish being brought from the coast, as choice D says.\n\nChoice A is unsupported, and the preservation marks suggest the fish traveled a long way rather than being caught nearby. Choice B is speculation that the text gives no reason for; the evidence points to fish arriving already preserved. Choice C goes too far: the text shows that some saltwater fish were eaten, not that they were the main food.",
+    "explanation_uz": "Darsa dengizdan ancha uzoqda joylashgan, baliq suyaklarida uzoq yo‘lga saqlash uchun ishlov berilganini ko‘rsatuvchi izlar bor, u yerda sohil shaharlari uslubidagi sopol idishlar topilgan, baliq ovlash anjomlari esa yo‘q. Bu dalillar baliq sohildan keltirilganini ko‘rsatadi — to‘g‘ri javob D.\n\nA asossiz; bundan tashqari, saqlash izlari baliq yaqin joyda ovlanmay, uzoq yo‘l bosganini bildiradi. B matnda asosi bo‘lmagan taxmin; dalillar baliq allaqachon saqlashga tayyorlangan holda kelganini ko‘rsatadi. C haddan oshib ketadi: matn dengiz baliqlari iste’mol qilinganini ko‘rsatadi, ular asosiy ozuqa bo‘lganini emas.",
+    "estimated_seconds": 72,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "inferences",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Biologist Zarina Ahmedova trained bumblebees to find sugar water in a blue artificial flower placed among yellow flowers that held only plain water. When she moved the blue flower to a different position each day, the bees continued to find it quickly. But when she put the sugar water in a yellow flower and filled the blue flower with plain water, the bees still flew to the blue flower first. This suggests that the bees ______",
+    "stem": "Which choice most logically completes the text?",
+    "option_a": "relied more on the flower's color than on its position to find the sugar water.",
+    "option_b": "were unable to tell blue flowers from yellow ones.",
+    "option_c": "preferred plain water to sugar water.",
+    "option_d": "remembered the position of the sugar water but not the color of its flower.",
+    "correct": "A",
+    "explanation_en": "The bees found the blue flower even when its position changed, and they kept flying to it first after the sugar water was moved to a yellow flower. Both results show that they were tracking the color blue rather than a location, as choice A says.\n\nChoice B contradicts the results, since the bees consistently picked out the blue flower among yellow ones. Choice C is unsupported: the bees went to the blue flower because they had learned it held sugar water. Choice D reverses the finding: the bees followed the color, not the position.",
+    "explanation_uz": "Arilar ko‘k gul joyi o‘zgarganda ham uni topgan, shakarli suv sariq gulga o‘tkazilgandan keyin ham birinchi bo‘lib ko‘k gulga uchgan. Ikkala natija ham arilar joyni emas, ko‘k rangni kuzatganini ko‘rsatadi — to‘g‘ri javob A.\n\nB natijalarga zid, chunki arilar sariq gullar orasidan ko‘k gulni doim ajratib olgan. C asossiz: arilar ko‘k gulga unda shakarli suv borligini o‘rgangani uchun borgan. D topilmani teskari qiladi: arilar joyga emas, rangga ergashgan.",
+    "estimated_seconds": 72,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "inferences",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "The large townhouse that the merchant Pieter Vandell built in 1652 is often cited as evidence of how profitable the spice trade was for merchants in the port of Haldern. Yet Vandell's surviving account books show that his trading profits during the 1640s were smaller than those of most other Haldern merchants, many of whom lived in modest homes. The account books also record that in 1651, his wife, Margriet, received a large inheritance from her father, a wealthy landowner. These records suggest that ______",
+    "stem": "Which choice most logically completes the text?",
+    "option_a": "the spice trade was unprofitable for nearly all Haldern merchants during the 1640s.",
+    "option_b": "Vandell's townhouse may be weak evidence of the spice trade's profitability, since the money to build it may have come largely from Margriet's inheritance.",
+    "option_c": "Vandell recorded smaller profits in his account books than he actually earned.",
+    "option_d": "most Haldern merchants who earned large profits from the spice trade built large townhouses.",
+    "correct": "B",
+    "explanation_en": "The townhouse is cited as a sign of spice-trade wealth, but Vandell's trade profits were below average, and his wife received a large inheritance the year before the house was built. This suggests the house may have been paid for mainly with inherited money, so it may say little about the spice trade, as choice B says.\n\nChoice A goes too far: the text says other merchants earned more than Vandell, which does not mean the trade was unprofitable. Choice C has no support; nothing suggests that the account books are inaccurate. Choice D conflicts with the text, which says that many of the merchants who earned more than Vandell lived in modest homes.",
+    "explanation_uz": "Uy ziravorlar savdosidan kelgan boylik belgisi sifatida keltiriladi, ammo Vandellning savdo foydasi o‘rtachadan past bo‘lgan, rafiqasi esa uy qurilishidan bir yil oldin katta meros olgan. Bu uy asosan meros puli hisobiga qurilgan bo‘lishi mumkinligini, demak u ziravorlar savdosi haqida kam narsa aytishini ko‘rsatadi — to‘g‘ri javob B.\n\nA haddan oshib ketadi: matnda boshqa savdogarlar Vandelldan ko‘proq foyda ko‘rgani aytilgan, bu savdo foydasiz bo‘lganini anglatmaydi. C asossiz: hisob daftarlari noto‘g‘ri ekani haqida hech qanday ishora yo‘q. D matnga zid: Vandelldan ko‘p topgan savdogarlarning ko‘pchiligi oddiy uylarda yashagani aytilgan.",
+    "estimated_seconds": 88,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "inferences",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "In 2022, the weekly farmers' market in the town of Brisk moved from a small downtown square to a larger lot at the edge of town. The number of vendors rose from 40 to 65, but total sales for the market as a whole were nearly the same in 2022 as in 2021. Many of the original 40 vendors reported lower sales after the move and blamed the new site's distance from downtown. However, because the market's total sales barely changed, ______",
+    "stem": "Which choice most logically completes the text?",
+    "option_a": "the new location must have attracted far more customers than the old one did.",
+    "option_b": "the new vendors probably sold less, on average, than the original vendors did.",
+    "option_c": "the original vendors' lower sales may be explained largely by competition from the new vendors rather than by a loss of customers.",
+    "option_d": "the move to the edge of town must have caused the market's total sales to decline.",
+    "correct": "C",
+    "explanation_en": "If total spending at the market stayed about the same while 25 new vendors joined, the same money was divided among more sellers. That would lower the original vendors' sales even if no customers were lost, so the move's distance from downtown need not be the cause. Choice C draws this conclusion.\n\nChoice A is unsupported: unchanged total sales do not show that more customers came. Choice B is unsupported: the text gives no figures comparing new and original vendors. Choice D contradicts the statement that total sales barely changed.",
+    "explanation_uz": "Agar bozordagi umumiy xarajat deyarli o‘zgarmagan holda 25 ta yangi sotuvchi qo‘shilgan bo‘lsa, o‘sha pul ko‘proq sotuvchi o‘rtasida taqsimlangan. Bu hatto xaridorlar kamaymagan taqdirda ham eski sotuvchilarning savdosini kamaytiradi, ya’ni sabab yangi joyning markazdan uzoqligi bo‘lmasligi mumkin. C javob aynan shu xulosani chiqaradi.\n\nA asossiz: umumiy savdo o‘zgarmagani ko‘proq xaridor kelganini isbotlamaydi. B asossiz: matnda yangi va eski sotuvchilarni solishtiruvchi raqamlar yo‘q. D umumiy savdo deyarli o‘zgarmagani haqidagi gapga zid.",
+    "estimated_seconds": 88,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  }
+]

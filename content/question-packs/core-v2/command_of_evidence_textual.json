@@ -1,0 +1,162 @@
+[
+  {
+    "skill_code": "command_of_evidence_textual",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Certain acacia trees on the grasslands of East Africa have swollen, hollow thorns in which colonies of ants live. Ecologist Grace Mwangi hypothesizes that the ants protect the trees from large plant-eating animals, such as giraffes, by swarming over and biting any animal that begins to eat the leaves.",
+    "stem": "Which finding, if true, would most directly support Mwangi's hypothesis?",
+    "option_a": "The ants living in the acacia thorns feed on a sugary liquid that the trees produce.",
+    "option_b": "Giraffes spend more time feeding during the dry season than during the rainy season.",
+    "option_c": "Giraffes ate far fewer leaves from acacia trees with ant colonies than from acacia trees whose ants had been removed.",
+    "option_d": "Acacia trees with hollow thorns grow in many parts of East Africa.",
+    "correct": "C",
+    "explanation_en": "Mwangi's hypothesis is that the ants protect the trees from plant-eating animals. Choice C compares trees with and without ants and shows that giraffes ate far fewer leaves from trees with ants, which is exactly what the hypothesis predicts.\n\nChoice A explains what the ants get from the trees, not whether they protect the trees. Choice B concerns when giraffes feed, not whether ants affect their feeding. Choice D concerns where the trees grow and says nothing about the ants' effect on giraffes.",
+    "explanation_uz": "Mwangi gipotezasiga ko‘ra, chumolilar daraxtlarni o‘txo‘r hayvonlardan himoya qiladi. C javob chumolili va chumolisiz daraxtlarni solishtiradi va jirafalar chumolili daraxtlardan ancha kam barg yeganini ko‘rsatadi — gipoteza aynan shuni bashorat qiladi.\n\nA chumolilar daraxtdan nima olishini tushuntiradi, ular daraxtni himoya qiladimi-yo‘qmi, buni emas. B jirafalar qachon oziqlanishi haqida, chumolilar bunga ta’sir qilishi haqida emas. D daraxtlar qayerda o‘sishi haqida, chumolilarning jirafalarga ta’siri haqida hech narsa demaydi.",
+    "estimated_seconds": 55,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "command_of_evidence_textual",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "*The Salt Road* is a 1971 novel by Mirela Dace. In the novel, the narrator describes her aunt Vesna as a restless person who can hardly stay still.",
+    "stem": "Which quotation from *The Salt Road* most effectively illustrates the claim?",
+    "option_a": "“Even at dinner, Aunt Vesna was up three times before the soup was finished, straightening a picture, opening a window, moving the bread from one end of the table to the other.”",
+    "option_b": "“Aunt Vesna had lived in the same stone house by the harbor for forty years.”",
+    "option_c": "“Her letters, when they came, were short and always written in green ink.”",
+    "option_d": "“Everyone in the village agreed that Aunt Vesna made the best plum jam on the coast.”",
+    "correct": "A",
+    "explanation_en": "The claim is that Aunt Vesna is restless and can hardly stay still. Choice A shows her getting up three times during a single dinner to do small tasks, a clear illustration of restlessness.\n\nChoice B describes her living in one house for forty years, which, if anything, suggests stability. Choice C describes her letters, not her restlessness. Choice D describes her skill at making jam.",
+    "explanation_uz": "Da’voga ko‘ra, Vesna xola bezovta, bir joyda tinch o‘tira olmaydigan odam. A javob uning bitta kechki ovqat davomida mayda ishlar uchun uch marta o‘rnidan turganini ko‘rsatadi — bu bezovtalikning yaqqol misoli.\n\nB uning qirq yil bir uyda yashaganini aytadi, bu esa, aksincha, barqarorlikni bildiradi. C bezovtaligini emas, maktublarini tasvirlaydi. D uning murabbo pishirish mahoratini tasvirlaydi.",
+    "estimated_seconds": 55,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "command_of_evidence_textual",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Urban planner Akmal Hamidov hypothesizes that installing benches along a shopping street makes older residents more likely to walk there, since they can stop and rest whenever they need to.",
+    "stem": "Which finding, if true, would most directly support Hamidov's hypothesis?",
+    "option_a": "Older residents said that they preferred shopping streets lined with trees.",
+    "option_b": "The benches on the street were used most often by teenagers in the evening.",
+    "option_c": "Most of the shops on the street were owned by residents over the age of 65.",
+    "option_d": "After benches were installed on the street, the number of residents over 65 who walked there each week rose sharply, while it stayed the same on a similar street without new benches.",
+    "correct": "D",
+    "explanation_en": "Hamidov's hypothesis connects benches with how often older residents walk on a street. Choice D shows that older residents' walking rose sharply on the street that got benches but not on a similar street that did not, directly supporting the hypothesis.\n\nChoice A concerns trees, not benches. Choice B concerns teenagers, not older residents. Choice C concerns who owns the shops, not who walks on the street.",
+    "explanation_uz": "Hamidov gipotezasi o‘rindiqlarni keksa aholining ko‘chada qanchalik ko‘p yurishi bilan bog‘laydi. D javob o‘rindiq o‘rnatilgan ko‘chada keksalarning yurishi keskin ko‘payganini, o‘rindiq qo‘yilmagan o‘xshash ko‘chada esa o‘zgarmaganini ko‘rsatadi — bu gipotezani bevosita tasdiqlaydi.\n\nA o‘rindiqlar emas, daraxtlar haqida. B keksalar emas, o‘smirlar haqida. C ko‘chada kim yurishi emas, do‘konlar kimga tegishli ekani haqida.",
+    "estimated_seconds": 55,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "command_of_evidence_textual",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "At the Bronze Age site of Ural Tepe, archaeologists have found hundreds of small clay cones, spheres and disks. Archaeologist Kamol Rashidov hypothesizes that the objects were pieces used in a board game, noting that they come in a few standard shapes and sizes, much like the pieces of known ancient games.",
+    "stem": "Which finding, if true, would most directly weaken Rashidov's hypothesis?",
+    "option_a": "Similar clay objects have been found at several other Bronze Age sites in the region.",
+    "option_b": "The objects were found almost exclusively inside sealed storage jars, alongside clay tablets recording amounts of grain and oil.",
+    "option_c": "A carved stone board marked with a grid of squares was found in one of the houses at Ural Tepe.",
+    "option_d": "Many of the objects show the kind of wear that comes from frequent handling.",
+    "correct": "B",
+    "explanation_en": "If the objects were game pieces, they would be expected where people played games, not sealed away in storage. Choice B places them almost exclusively in sealed storage jars beside records of grain and oil, which points to a different use, such as keeping track of goods, and so weakens the hypothesis.\n\nChoice A says nothing about how the objects were used. Choice C would support the hypothesis, since a game board suggests that games were played at the site. Choice D is consistent with game pieces, which are handled often, so it does not weaken the hypothesis.",
+    "explanation_uz": "Agar bu buyumlar o‘yin donalari bo‘lganida, ular o‘yin o‘ynalgan joylarda topilishi kutilardi, omborda muhrlab qo‘yilgan holda emas. B javobga ko‘ra ular deyarli faqat muhrlangan saqlash ko‘zalarida, don va yog‘ miqdori yozilgan sopol lavhalar yonida topilgan. Bu boshqa vazifani — masalan, mahsulotlarni hisobga olishni ko‘rsatadi va gipotezani zaiflashtiradi.\n\nA buyumlar nima uchun ishlatilgani haqida hech narsa demaydi. C aksincha gipotezani qo‘llab-quvvatlaydi, chunki o‘yin taxtasi u yerda o‘yin o‘ynalganini bildiradi. D o‘yin donalariga mos keladi, chunki ular tez-tez qo‘lda ushlanadi, shuning uchun gipotezani zaiflashtirmaydi.",
+    "estimated_seconds": 72,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "command_of_evidence_textual",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "“Lantern Hours” is a 1927 poem by Ilse Carrow. In the poem, the speaker describes feeling lonely even when surrounded by other people.",
+    "stem": "Which quotation from “Lantern Hours” most effectively illustrates the claim?",
+    "option_a": "“The city's lamps came on along the quay, / one, then another, like a slow-spoken word.”",
+    "option_b": "“I walked alone across the empty field / and heard no voice except the wind's.”",
+    "option_c": "“My friends and I would laugh till morning came, / and every window glowed with our delight.”",
+    "option_d": "“The room was loud with dancing and with talk, / and still I stood as if on some far shore.”",
+    "correct": "D",
+    "explanation_en": "The claim has two parts: the speaker feels lonely, and this happens while surrounded by people. In choice D, the room is \"loud with dancing and with talk,\" yet the speaker stands \"as if on some far shore,\" an image of isolation in the middle of a crowd.\n\nChoice A describes lamps coming on and involves neither people nor loneliness. Choice B shows the speaker alone, but in an \"empty field,\" not among other people. Choice C shows the speaker among friends but feeling joy, not loneliness.",
+    "explanation_uz": "Da’vo ikki qismdan iborat: shoir o‘zini yolg‘iz his qiladi va bu odamlar orasida bo‘lganda sodir bo‘ladi. D javobda xona “raqs va suhbatdan shovqinli”, ammo shoir go‘yo “olis qirg‘oqda” turgandek — bu olomon ichidagi yolg‘izlik timsoli.\n\nA chiroqlar yonishini tasvirlaydi, unda na odamlar, na yolg‘izlik bor. B shoirni yolg‘iz ko‘rsatadi, lekin odamlar orasida emas, “bo‘m-bo‘sh dalada” (“empty field”). C shoirni do‘stlari orasida ko‘rsatadi, ammo u yolg‘izlik emas, quvonch his qiladi.",
+    "estimated_seconds": 72,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "command_of_evidence_textual",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Sleep researcher Timur Valiev hypothesizes that a short afternoon nap improves people's ability to learn a new physical skill only if the nap includes a stage of deep sleep.",
+    "stem": "Which finding, if true, would most directly support Valiev's hypothesis?",
+    "option_a": "Participants whose naps included deep sleep improved at a new typing task more than participants whose naps of the same length contained no deep sleep.",
+    "option_b": "Participants who napped reported feeling more alert afterward than participants who did not nap.",
+    "option_c": "Participants who napped for 20 minutes and participants who napped for 60 minutes improved equally at a new typing task.",
+    "option_d": "Participants learned a new typing task faster in the morning than in the evening.",
+    "correct": "A",
+    "explanation_en": "Valiev's hypothesis links improvement in learning a physical skill to whether a nap contains deep sleep. Choice A compares naps of the same length that differ only in whether they include deep sleep and shows greater improvement with deep sleep, directly supporting the hypothesis.\n\nChoice B concerns alertness, not skill learning. Choice C compares nap lengths but says nothing about deep sleep, so it cannot show that deep sleep matters. Choice D concerns the time of day, not napping.",
+    "explanation_uz": "Valiev gipotezasi jismoniy ko‘nikmani o‘rganishdagi yaxshilanishni uyquda chuqur uyqu bosqichi bor-yo‘qligi bilan bog‘laydi. A javob bir xil davomiylikdagi, faqat chuqur uyqu bor-yo‘qligi bilan farq qiladigan uyqularni solishtiradi va chuqur uyquda yaxshilanish ko‘proq ekanini ko‘rsatadi — bu gipotezani bevosita tasdiqlaydi.\n\nB ko‘nikma o‘rganish emas, tetiklik haqida. C uyqu davomiyligini solishtiradi, lekin chuqur uyqu haqida hech narsa demaydi, shuning uchun uning ahamiyatini ko‘rsata olmaydi. D uyqu emas, kunning vaqti haqida.",
+    "estimated_seconds": 72,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "command_of_evidence_textual",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Female Corsan finches often weave fresh leaves of aromatic herbs, such as wild mint, into their nests. Some researchers have proposed that the leaves simply help keep the nest warm. Ecologist Dina Morales, however, hypothesizes that chemicals released by the herbs reduce the number of blood-feeding mites in the nest.",
+    "stem": "Which finding, if true, would most directly support Morales's hypothesis?",
+    "option_a": "Nests containing aromatic herbs had fewer mites and stayed warmer than nests to which no leaves had been added.",
+    "option_b": "Corsan finches added more herbs to their nests during the colder weeks of the breeding season.",
+    "option_c": "Nests in which researchers replaced the herbs with an equal amount of fresh, nonaromatic leaves had many more mites than nests that kept their herbs, even though nest temperatures were the same.",
+    "option_d": "Mites are more common in Corsan finch nests than in the nests of other songbirds in the same area.",
+    "correct": "C",
+    "explanation_en": "Morales's hypothesis is that chemicals from the aromatic herbs reduce mites. Choice C keeps the amount of leaf material and the nest temperature the same and changes only whether the leaves are aromatic; the nests with nonaromatic leaves had many more mites. This isolates the herbs' chemical effect and rules out warmth as the explanation.\n\nChoice A shows fewer mites in herb nests, but those nests were also warmer and simply had more material, so the result fits the insulation idea as well and does not specifically support Morales. Choice B supports the competing idea that herbs provide warmth. Choice D compares finches with other birds and says nothing about the herbs' effect.",
+    "explanation_uz": "Morales gipotezasiga ko‘ra, xushbo‘y o‘tlardan ajraladigan kimyoviy moddalar kanalar sonini kamaytiradi. C javobda barg miqdori va uya harorati bir xil saqlanadi, faqat barglarning xushbo‘y yoki xushbo‘y emasligi o‘zgaradi; xushbo‘y bo‘lmagan bargli uyalarda kanalar ancha ko‘p bo‘lgan. Bu o‘tlarning kimyoviy ta’sirini ajratib ko‘rsatadi va issiqlik izohini istisno qiladi.\n\nA o‘tli uyalarda kanalar kamligini ko‘rsatadi, lekin bu uyalar issiqroq ham bo‘lgan va ularda shunchaki ko‘proq material bo‘lgan; demak, natija issiqlik g‘oyasiga ham mos keladi va aynan Moralesni qo‘llab-quvvatlamaydi. B o‘tlar issiqlik beradi degan raqib g‘oyani qo‘llab-quvvatlaydi. D Corsan qushlarini boshqa qushlar bilan solishtiradi va o‘tlarning ta’siri haqida hech narsa demaydi.",
+    "estimated_seconds": 88,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "command_of_evidence_textual",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "*The Lamplighter's Daughter* is a 1949 novel by Corin Ashby. In the novel, the narrator, Anouk, suggests that her mother's apparent indifference to Anouk's career as a pianist concealed a quiet pride in her achievements.",
+    "stem": "Which quotation from *The Lamplighter's Daughter* most effectively illustrates the narrator's suggestion?",
+    "option_a": "“When I won the conservatory prize, Mother said only, ‘Good. Now perhaps you will stop practicing so late at night.’”",
+    "option_b": "“She never once spoke to me about my playing, yet after she died I found the program from every one of my concerts folded neatly in her sewing box.”",
+    "option_c": "“My teacher told me that I had a rare gift, and I believed her more readily than I believed anyone at home.”",
+    "option_d": "“It was years before I learned that Mother, as a girl, had dreamed of becoming a pianist herself.”",
+    "correct": "B",
+    "explanation_en": "The narrator's suggestion has two parts: her mother seemed indifferent, but she was secretly proud. Choice B shows both: the mother \"never once spoke\" about Anouk's playing (apparent indifference), yet she had saved the program from every concert (quiet pride).\n\nChoice A shows only the apparent indifference, with no sign of hidden pride. Choice C concerns the teacher's view, not the mother's. Choice D reveals a hidden fact about the mother, but a past dream of her own does not show that she was proud of Anouk's achievements; it could just as easily suggest envy or regret.",
+    "explanation_uz": "Hikoyachining fikri ikki qismdan iborat: onasi befarq ko‘ringan, lekin ichida faxrlangan. B javob ikkalasini ham ko‘rsatadi: ona Anukning ijrosi haqida “hech qachon gapirmagan” (tashqi befarqlik), ammo uning har bir konserti dasturini saqlab qo‘ygan (yashirin faxr).\n\nA faqat tashqi befarqlikni ko‘rsatadi, yashirin faxrga ishora yo‘q. C onaning emas, o‘qituvchining fikri haqida. D ona haqidagi yashirin bir faktni ochadi, lekin uning yoshlikdagi orzusi Anukning yutuqlaridan faxrlanganini ko‘rsatmaydi; bu hasad yoki afsusni ham anglatishi mumkin.",
+    "estimated_seconds": 88,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  }
+]

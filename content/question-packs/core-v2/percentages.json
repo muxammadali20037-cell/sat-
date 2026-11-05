@@ -1,0 +1,140 @@
+[
+  {
+    "skill_code": "percentages",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "A fruit seller had 75 kilograms of apples. Of these apples, 40% by weight were green apples. How many kilograms of green apples did the seller have?",
+    "option_a": "$45$",
+    "option_b": "$30$",
+    "option_c": "$35$",
+    "option_d": "$105$",
+    "correct": "B",
+    "explanation_en": "Find 40% of 75: $0.40 \\times 75 = 30$ kilograms. Choice A, 45, is the weight of the apples that are **not** green (60% of 75). Choice C subtracts 40 from 75, treating the percent as a number of kilograms. Choice D increases 75 by 40% ($1.40 \\times 75$) instead of finding 40% of 75.",
+    "explanation_uz": "75 ning 40% ini topamiz: $0.40 \\times 75 = 30$ kilogramm. A javob (45) — yashil **bo‘lmagan** olmalar og‘irligi (75 ning 60% i). C javob foizni kilogramm deb olib, 75 dan 40 ni ayirgan. D javob 75 ning 40% ini topish o‘rniga 75 ni 40% ga oshirgan ($1.40 \\times 75$).",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "percentages",
+    "difficulty": "easy",
+    "question_type": "spr",
+    "stem": "A jacket normally costs 250 thousand soums. During a sale, the price of the jacket is reduced by 20%. What is the sale price of the jacket, in thousands of soums?",
+    "spr_answers": [
+      "200"
+    ],
+    "explanation_en": "A 20% decrease multiplies the price by $1 - 0.20 = 0.80$: $250 \\times 0.80 = 200$. (The discount itself is $0.20 \\times 250 = 50$ thousand soums.) Entering 50 gives only the amount of the discount, and entering 230 subtracts 20 instead of 20%. Enter 200.",
+    "explanation_uz": "20% ga kamayish narxni $1 - 0.20 = 0.80$ ga ko‘paytiradi: $250 \\times 0.80 = 200$. (Chegirmaning o‘zi $0.20 \\times 250 = 50$ ming so‘m.) 50 deb yozsangiz, bu faqat chegirma miqdori bo‘ladi; 230 esa 20% emas, 20 ni ayirish natijasi. Javob maydoniga 200 deb yozing.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "percentages",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "In a class of 25 students, 9 students wear glasses. What percent of the students in the class wear glasses?",
+    "option_a": "$9\\%$",
+    "option_b": "$16\\%$",
+    "option_c": "$36\\%$",
+    "option_d": "$64\\%$",
+    "correct": "C",
+    "explanation_en": "The percent is $\\frac{9}{25} \\times 100\\% = 0.36 \\times 100\\% = 36\\%$. Choice A uses the number of students, 9, as the percent. Choice B, 16%, comes from $25 - 9 = 16$, the number of students who do not wear glasses. Choice D, 64%, is the percent of students who do **not** wear glasses.",
+    "explanation_uz": "Foiz: $\\frac{9}{25} \\times 100\\% = 0.36 \\times 100\\% = 36\\%$. A javob o‘quvchilar soni 9 ni foiz deb olgan. B javob (16%) $25 - 9 = 16$ dan kelib chiqqan — bu ko‘zoynak taqmaydigan o‘quvchilar soni. D javob (64%) — ko‘zoynak **taqmaydigan** o‘quvchilar foizi.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "percentages",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "A farm harvested 1,250 kilograms of cotton in 2024 and 1,000 kilograms of cotton in 2025. The 2025 harvest was what percent less than the 2024 harvest?",
+    "option_a": "$20\\%$",
+    "option_b": "$25\\%$",
+    "option_c": "$75\\%$",
+    "option_d": "$80\\%$",
+    "correct": "A",
+    "explanation_en": "Percent decrease $= \\frac{\\text{decrease}}{\\text{original}} \\times 100\\%$. The decrease is $1{,}250 - 1{,}000 = 250$ kilograms, and the original amount is the 2024 harvest, so $\\frac{250}{1{,}250} = 0.20$, or 20%. Choice B divides by the 2025 harvest ($\\frac{250}{1{,}000}$), which gives the percent by which 2024 was greater than 2025. Choice D, 80%, is the 2025 harvest as a percent **of** the 2024 harvest, not the percent decrease. Choice C is $100\\% - 25\\%$, combining two errors.",
+    "explanation_uz": "Foizli kamayish $= \\frac{\\text{kamayish}}{\\text{dastlabki qiymat}} \\times 100\\%$. Kamayish $1{,}250 - 1{,}000 = 250$ kilogramm, dastlabki qiymat esa 2024-yilgi hosil: $\\frac{250}{1{,}250} = 0.20$, ya’ni 20%. B javob 2025-yilgi hosilga bo‘lgan ($\\frac{250}{1{,}000}$) — bu 2024-yil 2025-yildan necha foiz ko‘p ekanini bildiradi. D javob (80%) — 2025-yilgi hosilning 2024-yilgi hosilga **nisbatan** foizi, kamayish foizi emas. C javob $100\\% - 25\\%$ — ikki xato birlashgan.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "percentages",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "After a 15% discount, a pair of sneakers costs 340 thousand soums. What was the price of the sneakers before the discount, in thousands of soums?",
+    "spr_answers": [
+      "400"
+    ],
+    "explanation_en": "Let $x$ be the original price. After a 15% discount, the price is $0.85x$, so $0.85x = 340$ and $x = \\frac{340}{0.85} = 400$. A common error is to add 15% of 340 to 340: $1.15 \\times 340 = 391$. That is wrong because the 15% was taken of the **original** price, not of 340. Check: $0.85 \\times 400 = 340$. Enter 400.",
+    "explanation_uz": "Dastlabki narxni $x$ deb olamiz. 15% chegirmadan keyin narx $0.85x$ bo‘ladi, demak $0.85x = 340$ va $x = \\frac{340}{0.85} = 400$. Ko‘p uchraydigan xato — 340 ga uning 15% ini qo‘shish: $1.15 \\times 340 = 391$. Bu noto‘g‘ri, chunki 15% 340 dan emas, **dastlabki** narxdan olingan. Tekshiruv: $0.85 \\times 400 = 340$. Javob maydoniga 400 deb yozing.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "percentages",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "In a survey of 800 households in a district, 45% of the households own a car. Of the households that own a car, 30% own an electric car. How many of the surveyed households own an electric car?",
+    "option_a": "$240$",
+    "option_b": "$360$",
+    "option_c": "$252$",
+    "option_d": "$108$",
+    "correct": "D",
+    "explanation_en": "First, the number of households that own a car is $0.45 \\times 800 = 360$. Then 30% of these own an electric car: $0.30 \\times 360 = 108$. (Equivalently, $0.45 \\times 0.30 \\times 800 = 108$.) Choice A takes 30% of all 800 households, ignoring that the 30% applies only to car owners. Choice B is the number of car owners. Choice C, $360 - 108 = 252$, is the number of car owners who do **not** own an electric car.",
+    "explanation_uz": "Avval avtomobilga ega xonadonlar sonini topamiz: $0.45 \\times 800 = 360$. Ularning 30% ida elektromobil bor: $0.30 \\times 360 = 108$. (Yoki $0.45 \\times 0.30 \\times 800 = 108$.) A javob barcha 800 xonadonning 30% ini olgan, holbuki 30% faqat avtomobil egalariga tegishli. B javob — avtomobil egalari soni. C javob ($360 - 108 = 252$) — elektromobili **bo‘lmagan** avtomobil egalari soni.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "percentages",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "A chemist has 40 liters of a salt solution that is 15% salt by volume. How many liters of pure water must be added to the solution to make a solution that is 10% salt by volume?",
+    "option_a": "$4$",
+    "option_b": "$6$",
+    "option_c": "$20$",
+    "option_d": "$60$",
+    "correct": "C",
+    "explanation_en": "The amount of salt does not change when water is added: $0.15 \\times 40 = 6$ liters of salt. If $w$ liters of water are added, the new volume is $40 + w$, and salt must be 10% of it: $0.10(40 + w) = 6$, so $40 + w = 60$ and $w = 20$. Check: $\\frac{6}{60} = 10\\%$. Choice B, 6, is the amount of salt. Choice D, 60, is the total volume of the new solution, not the amount of water added. Choice A, 4, is 10% of the original 40 liters.",
+    "explanation_uz": "Suv qo‘shilganda tuz miqdori o‘zgarmaydi: $0.15 \\times 40 = 6$ litr tuz. Agar $w$ litr suv qo‘shilsa, yangi hajm $40 + w$ bo‘ladi va tuz uning 10% ini tashkil qilishi kerak: $0.10(40 + w) = 6$, demak $40 + w = 60$ va $w = 20$. Tekshiruv: $\\frac{6}{60} = 10\\%$. B javob (6) — tuz miqdori. D javob (60) — qo‘shilgan suv emas, yangi eritmaning umumiy hajmi. A javob (4) — dastlabki 40 litrning 10% i.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "percentages",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "A shop buys a rug from a supplier and sets its selling price 80% higher than the amount the shop paid. During a sale, the shop sells the rug at 25% off the selling price. The shop's profit on the rug is what percent of the amount the shop paid for it?",
+    "spr_answers": [
+      "35"
+    ],
+    "explanation_en": "Let $c$ be the amount the shop paid. The selling price is $1.80c$, and the sale price is $0.75 \\times 1.80c = 1.35c$. The profit is $1.35c - c = 0.35c$, which is 35% of $c$. A common error is to subtract the percents, $80 - 25 = 55$; this is wrong because the 25% discount is taken of the larger selling price, not of $c$. Enter 35.",
+    "explanation_uz": "Do‘kon to‘lagan summani $c$ deb olamiz. Sotuv narxi $1.80c$, chegirmadagi narx esa $0.75 \\times 1.80c = 1.35c$. Foyda $1.35c - c = 0.35c$, ya’ni $c$ ning 35% i. Ko‘p uchraydigan xato — foizlarni ayirish: $80 - 25 = 55$. Bu noto‘g‘ri, chunki 25% chegirma $c$ dan emas, kattaroq sotuv narxidan olinadi. Javob maydoniga 35 deb yozing.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  }
+]

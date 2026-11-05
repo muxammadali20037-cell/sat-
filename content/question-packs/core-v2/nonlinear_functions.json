@@ -1,0 +1,141 @@
+[
+  {
+    "skill_code": "nonlinear_functions",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "The function $g$ is defined by $g(x) = x^3 - 4x$. What is the value of $g(-3)$?",
+    "option_a": "$-15$",
+    "option_b": "$15$",
+    "option_c": "$-39$",
+    "option_d": "$39$",
+    "correct": "A",
+    "explanation_en": "Substitute $-3$ for $x$, keeping it in parentheses: $g(-3) = (-3)^3 - 4(-3) = -27 + 12 = -15$.\n\nChoice B evaluates $(-3)^3$ as $+27$ and then subtracts $12$; an odd power of a negative number is negative. Choice C treats $-4(-3)$ as $-12$ instead of $+12$. Choice D makes both sign errors: $27 + 12$.",
+    "explanation_uz": "$x$ o‘rniga $-3$ ni qavs ichida qo‘yamiz: $g(-3) = (-3)^3 - 4(-3) = -27 + 12 = -15$.\n\nB variantda $(-3)^3$ musbat $27$ deb olinib, undan $12$ ayirilgan; manfiy sonning toq darajasi manfiy bo‘ladi. C variantda $-4(-3)$ ning qiymati $+12$ o‘rniga $-12$ deb olingan. D variantda ikkala ishora xatosi birga qilingan: $27 + 12$.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "nonlinear_functions",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "The value $V$, in dollars, of a used car $t$ years after it was purchased is modeled by the function $V(t) = 18{,}000(0.88)^t$. What is the best interpretation of $18{,}000$ in this context?",
+    "option_a": "The car loses $18{,}000$ dollars of its value each year.",
+    "option_b": "The value of the car, in dollars, when it was purchased",
+    "option_c": "The value of the car, in dollars, $1$ year after it was purchased",
+    "option_d": "The number of years it takes for the car to lose all of its value",
+    "correct": "B",
+    "explanation_en": "When $t = 0$, $V(0) = 18{,}000(0.88)^0 = 18{,}000(1) = 18{,}000$. So $18{,}000$ is the value of the car, in dollars, at the moment it was purchased.\n\nChoice A describes a linear model; in this exponential model the car loses $12\\%$ of its value each year, not a fixed amount. Choice C would be $V(1) = 18{,}000(0.88) = 15{,}840$ dollars. Choice D is wrong because an exponential decay model never reaches $0$.",
+    "explanation_uz": "$t = 0$ da $V(0) = 18{,}000(0.88)^0 = 18{,}000(1) = 18{,}000$. Demak, $18{,}000$ — avtomobil sotib olingan paytdagi qiymati (dollarda).\n\nA variant chiziqli modelni tasvirlaydi; bu ko‘rsatkichli modelda avtomobil har yili belgilangan miqdorni emas, qiymatining $12\\%$ ini yo‘qotadi. C variant — bu $V(1) = 18{,}000(0.88) = 15{,}840$ dollar bo‘lardi. D variant noto‘g‘ri, chunki ko‘rsatkichli kamayish modeli hech qachon $0$ ga yetmaydi.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "nonlinear_functions",
+    "difficulty": "easy",
+    "question_type": "spr",
+    "stem": "The function $f$ is defined by $f(x) = 4x^2 - 1$. If $f(a) = 35$ and $a > 0$, what is the value of $a$?",
+    "spr_answers": [
+      "3"
+    ],
+    "explanation_en": "Set $f(a) = 35$: $4a^2 - 1 = 35$. Add $1$: $4a^2 = 36$. Divide by $4$: $a^2 = 9$. So $a = 3$ or $a = -3$, and since $a > 0$, $a = 3$.\n\nA common error is entering $9$, the value of $a^2$, without taking the square root. Another is entering $\\pm 3$ or $-3$; the condition $a > 0$ rules out the negative value.",
+    "explanation_uz": "$f(a) = 35$ deb olamiz: $4a^2 - 1 = 35$. $1$ ni qo‘shamiz: $4a^2 = 36$. $4$ ga bo‘lamiz: $a^2 = 9$. Demak, $a = 3$ yoki $a = -3$, va $a > 0$ bo‘lgani uchun $a = 3$.\n\nKo‘p uchraydigan xato — ildiz chiqarmasdan $a^2$ ning qiymati $9$ ni kiritish. Yana bir xato — $-3$ ni kiritish; $a > 0$ sharti manfiy qiymatni chiqarib tashlaydi.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "nonlinear_functions",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "The function $f$ is defined by $f(x) = -2(x - 5)^2 + 8$. What is the $y$-coordinate of the $y$-intercept of the graph of $y = f(x)$ in the $xy$-plane?",
+    "option_a": "$8$",
+    "option_b": "$58$",
+    "option_c": "$-42$",
+    "option_d": "$-92$",
+    "correct": "C",
+    "explanation_en": "The $y$-intercept occurs where $x = 0$: $f(0) = -2(0 - 5)^2 + 8 = -2(25) + 8 = -50 + 8 = -42$.\n\nChoice A is the $y$-coordinate of the vertex, $(5, 8)$, not the $y$-intercept. Choice B drops the negative sign of the coefficient: $2(25) + 8$. Choice D multiplies $-2$ by $-5$ before squaring: $-(10)^2 + 8$.",
+    "explanation_uz": "$y$ o‘qini kesish nuqtasida $x = 0$: $f(0) = -2(0 - 5)^2 + 8 = -2(25) + 8 = -50 + 8 = -42$.\n\nA variant — $y$ o‘qini kesish nuqtasi emas, parabola uchi $(5, 8)$ ning $y$ koordinatasi. B variantda koeffitsiyentning minus ishorasi tashlab yuborilgan: $2(25) + 8$. D variantda kvadratga oshirishdan oldin $-2$ ni $-5$ ga ko‘paytirilgan: $-(10)^2 + 8$.",
+    "estimated_seconds": 85,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "nonlinear_functions",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "The function $f$ is defined by $f(x) = a(b)^x$, where $a$ and $b$ are positive constants. If $f(0) = 6$ and $f(2) = 54$, which of the following defines $f$?",
+    "option_a": "$f(x) = 6(9)^x$",
+    "option_b": "$f(x) = 3(6)^x$",
+    "option_c": "$f(x) = 6(24)^x$",
+    "option_d": "$f(x) = 6(3)^x$",
+    "correct": "D",
+    "explanation_en": "Since $b^0 = 1$, $f(0) = a = 6$. Then $f(2) = 6b^2 = 54$, so $b^2 = 9$ and, because $b > 0$, $b = 3$. Therefore $f(x) = 6(3)^x$. Check: $f(2) = 6 \\cdot 9 = 54$. ✓\n\nChoice A uses $b^2 = 9$ as the base without taking the square root; then $f(2) = 6 \\cdot 81 = 486$. Choice B swaps the roles of $a$ and $b$. Choice C uses the difference $54 - 6 = 48$ divided by $2$ as the base, mixing up a linear rate of change with a growth factor.",
+    "explanation_uz": "$b^0 = 1$ bo‘lgani uchun $f(0) = a = 6$. So‘ng $f(2) = 6b^2 = 54$, demak $b^2 = 9$ va $b > 0$ bo‘lgani uchun $b = 3$. Shunday qilib, $f(x) = 6(3)^x$. Tekshiruv: $f(2) = 6 \\cdot 9 = 54$. ✓\n\nA variantda ildiz chiqarilmasdan $b^2 = 9$ asos sifatida olingan; u holda $f(2) = 6 \\cdot 81 = 486$ bo‘lardi. B variantda $a$ va $b$ ning o‘rni almashtirilgan. C variantda asos sifatida $54 - 6 = 48$ ayirmaning yarmi olingan, ya’ni chiziqli o‘zgarish tezligi o‘sish ko‘paytuvchisi bilan adashtirilgan.",
+    "estimated_seconds": 95,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "nonlinear_functions",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "In the $xy$-plane, the graph of $y = x^2 - 8x + k$, where $k$ is a constant, has exactly one $x$-intercept. What is the value of $k$?",
+    "spr_answers": [
+      "16"
+    ],
+    "explanation_en": "The graph has exactly one $x$-intercept when the equation $x^2 - 8x + k = 0$ has exactly one real solution, that is, when its discriminant is $0$: $(-8)^2 - 4(1)(k) = 0$, so $64 - 4k = 0$ and $k = 16$.\n\nAlternatively, $x^2 - 8x + 16 = (x - 4)^2$, a perfect square whose graph touches the $x$-axis only at $(4, 0)$.\n\nA common error is entering $64$, which sets $b^2 = k$ and forgets the factor $4a$. Another is entering $4$, the $x$-coordinate of the vertex.",
+    "explanation_uz": "Grafik $x$ o‘qini faqat bitta nuqtada kesishi uchun $x^2 - 8x + k = 0$ tenglama yagona haqiqiy yechimga ega bo‘lishi, ya’ni diskriminant $0$ bo‘lishi kerak: $(-8)^2 - 4(1)(k) = 0$, demak $64 - 4k = 0$ va $k = 16$.\n\nBoshqa usul: $x^2 - 8x + 16 = (x - 4)^2$ — to‘liq kvadrat, uning grafigi $x$ o‘qiga faqat $(4, 0)$ nuqtada tegadi.\n\nKo‘p uchraydigan xato — $4a$ ko‘paytuvchini unutib, $b^2 = k$ deb $64$ ni kiritish. Yana bir xato — parabola uchining $x$ koordinatasi $4$ ni kiritish.",
+    "estimated_seconds": 95,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "nonlinear_functions",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "The function $f$ is defined by $f(x) = 2^x$. The function $g$ is defined by $g(x) = f(x + 3) - 5$. Which of the following is an equivalent form of $g(x)$?",
+    "option_a": "$g(x) = 2^x - 2$",
+    "option_b": "$g(x) = 8(2)^x - 5$",
+    "option_c": "$g(x) = 6(2)^x - 5$",
+    "option_d": "$g(x) = \\dfrac{1}{8}(2)^x - 5$",
+    "correct": "B",
+    "explanation_en": "Replace $x$ with $x + 3$ in $f$: $f(x + 3) = 2^{x + 3}$. By the product rule for exponents, $2^{x + 3} = 2^x \\cdot 2^3 = 8(2)^x$. So $g(x) = 8(2)^x - 5$.\n\nChoice A adds $3$ to the output instead of the input, giving $2^x + 3 - 5$. Choice C multiplies $2 \\cdot 3$ instead of computing $2^3$. Choice D uses $f(x - 3) = 2^{x - 3} = \\frac{1}{8}(2)^x$, shifting in the wrong direction.",
+    "explanation_uz": "$f$ dagi $x$ ni $x + 3$ bilan almashtiramiz: $f(x + 3) = 2^{x + 3}$. Darajalar ko‘paytmasi qoidasiga ko‘ra $2^{x + 3} = 2^x \\cdot 2^3 = 8(2)^x$. Demak, $g(x) = 8(2)^x - 5$.\n\nA variantda $3$ argumentga emas, funksiya qiymatiga qo‘shilgan: $2^x + 3 - 5$. C variantda $2^3$ o‘rniga $2 \\cdot 3$ hisoblangan. D variantda $f(x - 3) = 2^{x - 3} = \\frac{1}{8}(2)^x$ olingan, ya’ni siljish noto‘g‘ri yo‘nalishda bajarilgan.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "nonlinear_functions",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "The function $f$ is defined by $f(x) = a(b)^x$, where $a$ and $b$ are positive constants. If $f(1) = 12$ and $f(3) = 108$, what is the value of $f(-1)$?",
+    "spr_answers": [
+      "4/3",
+      "1.333"
+    ],
+    "explanation_en": "Divide the two given values: $\\dfrac{f(3)}{f(1)} = \\dfrac{ab^3}{ab} = b^2 = \\dfrac{108}{12} = 9$. Since $b > 0$, $b = 3$. Then $f(1) = 3a = 12$, so $a = 4$ and $f(x) = 4(3)^x$.\n\nTherefore $f(-1) = 4(3)^{-1} = \\dfrac{4}{3}$, which can be entered as 4/3 or 1.333.\n\nA common error is entering $4$, which is $f(0) = a$ rather than $f(-1)$. Another is entering $-12$, which assumes $f(-1) = -f(1)$; exponential functions do not behave this way.",
+    "explanation_uz": "Berilgan ikki qiymatni bo‘lamiz: $\\dfrac{f(3)}{f(1)} = \\dfrac{ab^3}{ab} = b^2 = \\dfrac{108}{12} = 9$. $b > 0$ bo‘lgani uchun $b = 3$. So‘ng $f(1) = 3a = 12$, demak $a = 4$ va $f(x) = 4(3)^x$.\n\nShunday qilib, $f(-1) = 4(3)^{-1} = \\dfrac{4}{3}$; javobni 4/3 yoki 1.333 ko‘rinishida kiritish mumkin.\n\nKo‘p uchraydigan xato — $f(-1)$ o‘rniga $f(0) = a$ qiymati $4$ ni kiritish. Yana bir xato — $f(-1) = -f(1)$ deb $-12$ ni kiritish; ko‘rsatkichli funksiyalar bunday xossaga ega emas.",
+    "estimated_seconds": 140,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  }
+]

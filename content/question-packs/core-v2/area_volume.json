@@ -1,0 +1,141 @@
+[
+  {
+    "skill_code": "area_volume",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "A parallelogram has a base of 18 meters and an adjacent side of 13 meters. The height of the parallelogram, measured perpendicular to the base, is 11 meters. What is the area, in square meters, of the parallelogram?",
+    "option_a": "$62$",
+    "option_b": "$99$",
+    "option_c": "$143$",
+    "option_d": "$198$",
+    "correct": "D",
+    "explanation_en": "The area of a parallelogram is base times height, where the height is perpendicular to the base: $18 \\cdot 11 = 198$ square meters. The slanted side length 13 is not used. Choice D is correct.\n\nChoice A ($62$) is the perimeter, $2(18 + 13)$. Choice B ($99$) uses the triangle formula $\\frac{1}{2}bh$. Choice C ($143$) multiplies the slanted side by the height, $13 \\cdot 11$, instead of the base by the height.",
+    "explanation_uz": "Parallelogramm yuzasi asos va unga perpendikulyar balandlik ko‘paytmasiga teng: $18 \\cdot 11 = 198$ kvadrat metr. Qiya tomon uzunligi 13 bu yerda kerak emas. To‘g‘ri javob D.\n\nA ($62$) — bu perimetr, $2(18 + 13)$. B ($99$) — uchburchak formulasi $\\frac{1}{2}bh$ ishlatilgan. C ($143$) — asos o‘rniga qiya tomon balandlikka ko‘paytirilgan, $13 \\cdot 11$.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "area_volume",
+    "difficulty": "easy",
+    "question_type": "spr",
+    "stem": "An aquarium is shaped like a rectangular prism. The inside of its base is 50 centimeters long and 30 centimeters wide, and the water in it is 20 centimeters deep. If 1 liter equals 1,000 cubic centimeters, how many liters of water are in the aquarium?",
+    "spr_answers": [
+      "30"
+    ],
+    "explanation_en": "The water forms a rectangular prism, so its volume is $50 \\cdot 30 \\cdot 20 = 30{,}000$ cubic centimeters. Dividing by 1,000 converts to liters: $\\frac{30{,}000}{1{,}000} = 30$ liters.\n\nIf you entered 30000, you found the volume in cubic centimeters but did not convert to liters.",
+    "explanation_uz": "Suv to‘g‘ri burchakli parallelepiped shaklini egallaydi, uning hajmi $50 \\cdot 30 \\cdot 20 = 30{,}000$ kub santimetr. Litrga o‘tkazish uchun 1,000 ga bo‘lamiz: $\\frac{30{,}000}{1{,}000} = 30$ litr.\n\nAgar 30000 javob chiqqan bo‘lsa, siz hajmni kub santimetrda topgansiz, lekin litrga o‘tkazmagansiz.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "area_volume",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "A square tile has a perimeter of 36 centimeters. What is the area, in square centimeters, of the tile?",
+    "option_a": "$36$",
+    "option_b": "$81$",
+    "option_c": "$324$",
+    "option_d": "$1{,}296$",
+    "correct": "B",
+    "explanation_en": "A square has 4 equal sides, so each side is $\\frac{36}{4} = 9$ centimeters. The area is $9^2 = 81$ square centimeters. Choice B is correct.\n\nChoice A ($36$) repeats the perimeter. Choice C ($324$) divides the perimeter by 2 instead of 4, giving a side of 18 and $18^2 = 324$. Choice D ($1{,}296$) squares the perimeter, $36^2$.",
+    "explanation_uz": "Kvadratning 4 ta tomoni teng, demak har bir tomon $\\frac{36}{4} = 9$ santimetr. Yuza $9^2 = 81$ kvadrat santimetr. To‘g‘ri javob B.\n\nA ($36$) — perimetrning o‘zi. C ($324$) — perimetr 4 ga emas, 2 ga bo‘lingan: tomon 18 va $18^2 = 324$. D ($1{,}296$) — perimetr kvadratga ko‘tarilgan, $36^2$.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "area_volume",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "A metal plate is made from a rectangle that is 14 centimeters long and 8 centimeters wide. A semicircle is cut out of the plate; the diameter of the semicircle is one entire 8-centimeter side of the rectangle, and the semicircle lies inside the rectangle. What is the area, in square centimeters, of the remaining plate?",
+    "option_a": "$112 - 32\\pi$",
+    "option_b": "$112 - 16\\pi$",
+    "option_c": "$112 - 8\\pi$",
+    "option_d": "$112 + 8\\pi$",
+    "correct": "C",
+    "explanation_en": "The rectangle has area $14 \\cdot 8 = 112$. The semicircle has diameter 8, so its radius is 4 and its area is $\\frac{1}{2}\\pi(4)^2 = 8\\pi$. (It fits inside the rectangle because its radius, 4, is less than the length, 14.) The remaining area is $112 - 8\\pi$ square centimeters. Choice C is correct.\n\nChoice A ($112 - 32\\pi$) uses 8 as the radius of the semicircle. Choice B ($112 - 16\\pi$) subtracts a full circle of radius 4 instead of half of one. Choice D ($112 + 8\\pi$) adds the semicircle instead of removing it.",
+    "explanation_uz": "To‘g‘ri to‘rtburchak yuzasi $14 \\cdot 8 = 112$. Yarim doiraning diametri 8, demak radiusi 4 va yuzasi $\\frac{1}{2}\\pi(4)^2 = 8\\pi$. (U to‘rtburchak ichiga sig‘adi, chunki radius 4 uzunlik 14 dan kichik.) Qolgan yuza $112 - 8\\pi$ kvadrat santimetr. To‘g‘ri javob C.\n\nA ($112 - 32\\pi$) — 8 radius deb olingan. B ($112 - 16\\pi$) — yarim doira o‘rniga radiusi 4 bo‘lgan butun doira ayirilgan. D ($112 + 8\\pi$) — yarim doira ayirilish o‘rniga qo‘shilgan.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "area_volume",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "A right circular cone has a volume of $96\\pi$ cubic inches and a base radius of 6 inches. What is the height, in inches, of the cone?",
+    "spr_answers": [
+      "8"
+    ],
+    "explanation_en": "The volume of a cone is $V = \\frac{1}{3}\\pi r^2 h$. Substituting gives $96\\pi = \\frac{1}{3}\\pi(6)^2 h = 12\\pi h$, so $h = \\frac{96}{12} = 8$ inches.\n\nIf you got $\\frac{8}{3}$, you used the cylinder formula $\\pi r^2 h$ and forgot the factor $\\frac{1}{3}$. If you got 2, you used the diameter, 12, in place of the radius.",
+    "explanation_uz": "Konus hajmi $V = \\frac{1}{3}\\pi r^2 h$. Qiymatlarni qo‘yamiz: $96\\pi = \\frac{1}{3}\\pi(6)^2 h = 12\\pi h$, demak $h = \\frac{96}{12} = 8$ dyuym.\n\nAgar $\\frac{8}{3}$ chiqqan bo‘lsa, siz silindr formulasini $\\pi r^2 h$ ishlatgansiz va $\\frac{1}{3}$ ko‘paytuvchini unutgansiz. Agar 2 chiqqan bo‘lsa, radius o‘rniga diametr (12) olingan.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "area_volume",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "A gift box is shaped like a rectangular prism with a square base and a height of 10 inches. The volume of the box is 360 cubic inches. The four side faces of the box (not the top or the bottom) will be covered with paper. What is the total area, in square inches, of the four side faces?",
+    "option_a": "$240$",
+    "option_b": "$276$",
+    "option_c": "$312$",
+    "option_d": "$360$",
+    "correct": "A",
+    "explanation_en": "Let $s$ be the side length of the square base. Then $s^2 \\cdot 10 = 360$, so $s^2 = 36$ and $s = 6$ inches. Each side face is a 6-by-10 rectangle with area 60, so the four side faces have a total area of $4 \\cdot 60 = 240$ square inches. Choice A is correct.\n\nChoice B ($276$) adds one square base, $240 + 36$. Choice C ($312$) is the total surface area including both the top and the bottom. Choice D ($360$) is the volume, not an area.",
+    "explanation_uz": "Kvadrat asos tomonini $s$ deb olamiz. U holda $s^2 \\cdot 10 = 360$, demak $s^2 = 36$ va $s = 6$ dyuym. Har bir yon yog‘ 6 ga 10 o‘lchamli to‘g‘ri to‘rtburchak, yuzasi 60. To‘rtta yon yog‘ning umumiy yuzasi $4 \\cdot 60 = 240$ kvadrat dyuym. To‘g‘ri javob A.\n\nB ($276$) — bitta kvadrat asos qo‘shilgan, $240 + 36$. C ($312$) — ust va pastki asoslar bilan birga to‘liq sirt yuzasi. D ($360$) — bu hajm, yuza emas.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "area_volume",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "Cylinder $A$ and cylinder $B$ are similar right circular cylinders. The ratio of the total surface area of cylinder $A$ to the total surface area of cylinder $B$ is $9 : 25$. The volume of cylinder $A$ is $54\\pi$ cubic centimeters. What is the volume, in cubic centimeters, of cylinder $B$?",
+    "option_a": "$90\\pi$",
+    "option_b": "$150\\pi$",
+    "option_c": "$250\\pi$",
+    "option_d": "$750\\pi$",
+    "correct": "C",
+    "explanation_en": "For similar solids, areas scale by the square of the length ratio and volumes by the cube. Since $\\frac{9}{25} = \\left(\\frac{3}{5}\\right)^2$, the length ratio of $A$ to $B$ is $3 : 5$, so the volume ratio is $3^3 : 5^3 = 27 : 125$. Therefore the volume of $B$ is $54\\pi \\cdot \\frac{125}{27} = 250\\pi$ cubic centimeters. Choice C is correct.\n\nChoice A ($90\\pi$) multiplies by the length ratio $\\frac{5}{3}$ instead of its cube. Choice B ($150\\pi$) multiplies by the area ratio $\\frac{25}{9}$. Choice D ($750\\pi$) multiplies by $\\frac{125}{9}$, mixing the cube of 5 with the square of 3.",
+    "explanation_uz": "O‘xshash jismlarda yuzalar uzunliklar nisbatining kvadrati bo‘yicha, hajmlar esa kubi bo‘yicha o‘zgaradi. $\\frac{9}{25} = \\left(\\frac{3}{5}\\right)^2$ bo‘lgani uchun $A$ va $B$ uzunliklari nisbati $3 : 5$, hajmlar nisbati esa $3^3 : 5^3 = 27 : 125$. Demak $B$ ning hajmi $54\\pi \\cdot \\frac{125}{27} = 250\\pi$ kub santimetr. To‘g‘ri javob C.\n\nA ($90\\pi$) — uzunliklar nisbati $\\frac{5}{3}$ ga ko‘paytirilgan, uning kubiga emas. B ($150\\pi$) — yuzalar nisbati $\\frac{25}{9}$ ga ko‘paytirilgan. D ($750\\pi$) — $\\frac{125}{9}$ ga ko‘paytirilgan, ya’ni 5 ning kubi va 3 ning kvadrati aralashtirilgan.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "area_volume",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "A rectangular tank has an inside base that is 48 centimeters long and 24 centimeters wide, and an inside height of 40 centimeters. The tank contains water to a depth of 20 centimeters. A solid metal cube with an edge length of 12 centimeters is placed in the tank and sinks to the bottom, where it is completely under water. No water spills out. By how many centimeters does the water level rise?",
+    "spr_answers": [
+      "1.5",
+      "3/2"
+    ],
+    "explanation_en": "The cube pushes aside a volume of water equal to its own volume, $12^3 = 1{,}728$ cubic centimeters. That extra volume spreads over the base of the tank, which has area $48 \\cdot 24 = 1{,}152$ square centimeters. The rise $h$ satisfies $1{,}152h = 1{,}728$, so $h = 1.5$ centimeters. The new depth, 21.5 centimeters, is more than 12, so the cube is indeed fully under water, and it is less than 40, so nothing spills. Enter 1.5 or 3/2.\n\nIf you got 21.5, you gave the new depth instead of the rise. If you got 0.125 (that is, $\\frac{144}{1{,}152}$), you used the area of one face of the cube, $12^2$, in place of its volume.",
+    "explanation_uz": "Kub o‘z hajmiga teng hajmdagi suvni siqib chiqaradi: $12^3 = 1{,}728$ kub santimetr. Bu qo‘shimcha hajm idish asosi bo‘ylab tarqaladi, asos yuzasi $48 \\cdot 24 = 1{,}152$ kvadrat santimetr. Ko‘tarilish $h$ uchun $1{,}152h = 1{,}728$, demak $h = 1.5$ santimetr. Yangi chuqurlik 21.5 santimetr 12 dan katta, ya’ni kub haqiqatan to‘liq suv ostida, va 40 dan kichik, ya’ni suv to‘kilmaydi. 1.5 yoki 3/2 kiriting.\n\nAgar 21.5 chiqqan bo‘lsa, siz ko‘tarilish o‘rniga yangi chuqurlikni yozgansiz. Agar 0.125 (ya’ni $\\frac{144}{1{,}152}$) chiqqan bo‘lsa, kub hajmi o‘rniga uning bitta yog‘i yuzasi $12^2$ olingan.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  }
+]

@@ -1,0 +1,142 @@
+[
+  {
+    "skill_code": "inference_margin_of_error",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "A random sample of 400 high school students in a region was asked whether they plan to study at a university after graduating. Based on the sample, it is estimated that 62% of all high school students in the region plan to study at a university, with a margin of error of 5 percentage points. Which of the following gives the plausible values for the percentage of all high school students in the region who plan to study at a university?",
+    "option_a": "From 60% to 64%",
+    "option_b": "From 57% to 67%",
+    "option_c": "From 52% to 72%",
+    "option_d": "From 62% to 67%",
+    "correct": "B",
+    "explanation_en": "The plausible values are the estimate plus or minus the margin of error: $62 - 5 = 57$ and $62 + 5 = 67$, so from 57% to 67%. Choice D adds the margin of error but does not subtract it. Choice C uses twice the margin of error on each side. Choice A uses a margin of error of only 2 percentage points.",
+    "explanation_uz": "Ishonchli qiymatlar — baho plyus-minus xatolik chegarasi: $62 - 5 = 57$ va $62 + 5 = 67$, ya’ni 57% dan 67% gacha. D javob xatolik chegarasini qo‘shgan, lekin ayirmagan. C javob har tomonga xatolik chegarasining ikki baravarini olgan. A javob xatolik chegarasini atigi 2 foiz punkti deb olgan.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "inference_margin_of_error",
+    "difficulty": "easy",
+    "question_type": "spr",
+    "stem": "A shipment contains 3,000 boxes of tomatoes. An inspector selected a random sample of 120 boxes from the shipment and found that 9 of the sampled boxes contained damaged tomatoes. Based on the sample, what is the best estimate of the number of boxes in the entire shipment that contain damaged tomatoes?",
+    "spr_answers": [
+      "225"
+    ],
+    "explanation_en": "In the sample, $\\frac{9}{120} = 0.075$, or 7.5%, of the boxes contained damaged tomatoes. Because the sample was selected at random, the same proportion is the best estimate for the whole shipment: $0.075 \\times 3{,}000 = 225$ boxes. Entering 9 gives only the number in the sample. Enter 225.",
+    "explanation_uz": "Tanlanmadagi qutilarning $\\frac{9}{120} = 0.075$ qismida, ya’ni 7.5% ida shikastlangan pomidor bo‘lgan. Tanlanma tasodifiy olingani uchun butun partiya uchun eng yaxshi baho ham shu ulush: $0.075 \\times 3{,}000 = 225$ quti. 9 deb yozish faqat tanlanmadagi sonni beradi. Javob maydoniga 225 deb yozing.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "inference_margin_of_error",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "A random sample of 250 adults in a city was asked how much water they drink each day. The sample mean was 2.1 liters, with an associated margin of error of 0.3 liter. Which of the following is a plausible value for the mean amount of water, in liters, that all adults in the city drink each day?",
+    "option_a": "$1.6$",
+    "option_b": "$1.75$",
+    "option_c": "$2.25$",
+    "option_d": "$2.5$",
+    "correct": "C",
+    "explanation_en": "Plausible values for the population mean lie from $2.1 - 0.3 = 1.8$ liters to $2.1 + 0.3 = 2.4$ liters. Of the choices, only 2.25 is between 1.8 and 2.4. Choices A and B are less than 1.8, and choice D is greater than 2.4, so they are outside the interval of plausible values.",
+    "explanation_uz": "Aholi o‘rta qiymati uchun ishonchli qiymatlar $2.1 - 0.3 = 1.8$ litrdan $2.1 + 0.3 = 2.4$ litrgacha. Javoblardan faqat 2.25 1.8 va 2.4 orasida. A va B javoblar 1.8 dan kichik, D javob esa 2.4 dan katta, demak ular ishonchli qiymatlar oralig‘idan tashqarida.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "inference_margin_of_error",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "A random sample of voters in a city was asked whether they support a plan to build a new stadium. Based on the sample, it is estimated that 47% of all voters in the city support the plan, with a margin of error of 4 percentage points. Which of the following conclusions is best supported by these results?",
+    "option_a": "Fewer than half of all voters in the city support the plan.",
+    "option_b": "Exactly 47% of all voters in the city support the plan.",
+    "option_c": "It is plausible that more than half of all voters in the city support the plan, and it is also plausible that fewer than half do.",
+    "option_d": "More than half of all voters in the city support the plan.",
+    "correct": "C",
+    "explanation_en": "The plausible values for the percentage of all voters who support the plan are from $47 - 4 = 43\\%$ to $47 + 4 = 51\\%$. This interval includes values below 50% and values above 50%, so the results do not show whether a majority supports the plan; both possibilities are plausible. Choice A is too certain, because values from 50% to 51% are plausible. Choice B treats the sample estimate as the exact population value. Choice D is not supported, because most of the plausible values are below 50%.",
+    "explanation_uz": "Rejani qo‘llab-quvvatlovchi saylovchilar foizi uchun ishonchli qiymatlar $47 - 4 = 43\\%$ dan $47 + 4 = 51\\%$ gacha. Bu oraliqda 50% dan kichik va 50% dan katta qiymatlar bor, shuning uchun natijalar ko‘pchilik rejani qo‘llashini ham, qo‘llamasligini ham isbotlamaydi — ikkala holat ham ishonchli. A javob haddan tashqari qat’iy, chunki 50% dan 51% gacha bo‘lgan qiymatlar ham ishonchli. B javob tanlanma bahosini aholining aniq qiymati deb olgan. D javob asoslanmagan, chunki ishonchli qiymatlarning aksariyati 50% dan kichik.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "inference_margin_of_error",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "A random sample of 90 smartphones of one model was tested to estimate the mean battery life, in hours, of all smartphones of that model. Based on the sample, plausible values for the mean battery life of all smartphones of that model are from 18.4 hours to 19.2 hours. What is the margin of error, in hours, associated with this estimate?",
+    "spr_answers": [
+      "0.4",
+      ".4",
+      "2/5"
+    ],
+    "explanation_en": "The interval of plausible values is centered at the estimate and extends the margin of error on each side. The estimate is the midpoint, $\\frac{18.4 + 19.2}{2} = 18.8$ hours, and the margin of error is half the width of the interval: $\\frac{19.2 - 18.4}{2} = 0.4$ hour. Entering 0.8, the full width of the interval, double-counts the margin of error. Enter 0.4, .4, or 2/5.",
+    "explanation_uz": "Ishonchli qiymatlar oralig‘ining markazi — baho, u har tomonga xatolik chegarasi miqdorida cho‘ziladi. Baho — o‘rta nuqta: $\\frac{18.4 + 19.2}{2} = 18.8$ soat, xatolik chegarasi esa oraliq kengligining yarmi: $\\frac{19.2 - 18.4}{2} = 0.4$ soat. 0.8 (oraliqning to‘liq kengligi) deb yozish xatolik chegarasini ikki marta hisoblash bo‘ladi. Javob maydoniga 0.4, .4 yoki 2/5 deb yozing.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "inference_margin_of_error",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "A researcher plans to estimate the mean number of hours per week that students at a large university spend on homework. Which of the following changes to the study would most likely produce an estimate with a **smaller** margin of error, assuming the same method and confidence level are used?",
+    "option_a": "Selecting a larger random sample of students from the university",
+    "option_b": "Selecting a smaller random sample of students from the university",
+    "option_c": "Surveying only students who volunteer to answer an online form",
+    "option_d": "Surveying only students who live in one dormitory",
+    "correct": "A",
+    "explanation_en": "When everything else stays the same, a larger random sample tends to give a smaller margin of error, because estimates from larger samples vary less from sample to sample. Choice B would tend to **increase** the margin of error. Choices C and D create samples that are not random and may be biased; a biased sample does not give a more trustworthy estimate of the whole university's mean.",
+    "explanation_uz": "Boshqa shartlar o‘zgarmaganda, kattaroq tasodifiy tanlanma odatda kichikroq xatolik chegarasini beradi, chunki katta tanlanmalardan olingan baholar bir tanlanmadan boshqasiga kamroq o‘zgaradi. B javob xatolik chegarasini odatda **oshiradi**. C va D javoblar tasodifiy bo‘lmagan, noxolis bo‘lishi mumkin bo‘lgan tanlanmalarni hosil qiladi; noxolis tanlanma butun universitet o‘rta qiymati uchun ishonchliroq baho bermaydi.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "inference_margin_of_error",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "Researchers estimated the mean daily screen time of teenagers in two cities. A random sample of teenagers was selected in each city. In City A, the sample mean was 7.2 hours, with a margin of error of 0.5 hour. In City B, the sample mean was 6.3 hours, with a margin of error of 0.3 hour. Which of the following statements is best supported by these results?",
+    "option_a": "The mean daily screen time of all teenagers in City A is exactly 0.9 hour greater than in City B.",
+    "option_b": "It is plausible that the mean daily screen time of all teenagers in City A is equal to that of all teenagers in City B.",
+    "option_c": "The estimate for City B is less accurate than the estimate for City A because its margin of error is smaller.",
+    "option_d": "The mean daily screen time of all teenagers in City A is likely greater than that of all teenagers in City B.",
+    "correct": "D",
+    "explanation_en": "Plausible values for City A are from $7.2 - 0.5 = 6.7$ to $7.2 + 0.5 = 7.7$ hours; for City B they are from $6.3 - 0.3 = 6.0$ to $6.3 + 0.3 = 6.6$ hours. The intervals do not overlap, and every plausible value for City A is greater than every plausible value for City B, so City A's mean is likely greater. Choice B is wrong because no value is plausible for both cities. Choice A treats the sample means as exact population values. Choice C is backward: a smaller margin of error indicates a more precise estimate.",
+    "explanation_uz": "A shahar uchun ishonchli qiymatlar $7.2 - 0.5 = 6.7$ dan $7.2 + 0.5 = 7.7$ soatgacha; B shahar uchun $6.3 - 0.3 = 6.0$ dan $6.3 + 0.3 = 6.6$ soatgacha. Oraliqlar kesishmaydi va A shahar uchun har bir ishonchli qiymat B shahar uchun har bir ishonchli qiymatdan katta, demak A shahardagi o‘rta qiymat katta bo‘lishi ehtimoli yuqori. B javob noto‘g‘ri, chunki ikkala shahar uchun ham ishonchli bo‘lgan qiymat yo‘q. A javob tanlanma o‘rta qiymatlarini aholining aniq qiymatlari deb olgan. C javob teskari: kichikroq xatolik chegarasi aniqroq bahoni bildiradi.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "inference_margin_of_error",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "A town has 15,000 households. A random sample of the town's households was surveyed, and based on the sample, it is estimated that 38% of all households in the town own a bicycle. When the margin of error is applied to this estimate, the least plausible number of households in the town that own a bicycle is 5,100. What is the margin of error, in percentage points, associated with the estimate?",
+    "spr_answers": [
+      "4"
+    ],
+    "explanation_en": "Convert the least plausible number to a percentage of all households: $\\frac{5{,}100}{15{,}000} = 0.34$, or 34%. The least plausible percentage is the estimate minus the margin of error, so $38 - m = 34$ and $m = 4$ percentage points. Entering 34 gives the least plausible percentage, not the margin of error. Entering 600 gives the difference in numbers of households, $0.38 \\times 15{,}000 - 5{,}100 = 5{,}700 - 5{,}100$, rather than percentage points. Enter 4.",
+    "explanation_uz": "Eng kichik ishonchli sonni barcha xonadonlarga nisbatan foizga aylantiramiz: $\\frac{5{,}100}{15{,}000} = 0.34$, ya’ni 34%. Eng kichik ishonchli foiz — baho minus xatolik chegarasi, demak $38 - m = 34$ va $m = 4$ foiz punkti. 34 deb yozish xatolik chegarasini emas, eng kichik ishonchli foizni beradi. 600 deb yozish foiz punktini emas, xonadonlar soni farqini beradi: $0.38 \\times 15{,}000 - 5{,}100 = 5{,}700 - 5{,}100$. Javob maydoniga 4 deb yozing.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  }
+]

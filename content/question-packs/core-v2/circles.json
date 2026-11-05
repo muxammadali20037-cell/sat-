@@ -1,0 +1,140 @@
+[
+  {
+    "skill_code": "circles",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "A round table top has a diameter of 18 inches. What is the area, in square inches, of the table top?",
+    "option_a": "$9\\pi$",
+    "option_b": "$18\\pi$",
+    "option_c": "$81\\pi$",
+    "option_d": "$324\\pi$",
+    "correct": "C",
+    "explanation_en": "The radius is half the diameter: $r = \\frac{18}{2} = 9$ inches. The area is $\\pi r^2 = \\pi(9)^2 = 81\\pi$ square inches. Choice C is correct.\n\nChoice A ($9\\pi$) is $\\pi r$, with the radius not squared. Choice B ($18\\pi$) is the circumference, $\\pi d$. Choice D ($324\\pi$) squares the diameter instead of the radius.",
+    "explanation_uz": "Radius diametrning yarmiga teng: $r = \\frac{18}{2} = 9$ dyuym. Doira yuzasi $\\pi r^2 = \\pi(9)^2 = 81\\pi$ kvadrat dyuym. To‘g‘ri javob C.\n\nA ($9\\pi$) — bu $\\pi r$, radius kvadratga ko‘tarilmagan. B ($18\\pi$) — bu aylana uzunligi, $\\pi d$. D ($324\\pi$) — radius o‘rniga diametr kvadratga ko‘tarilgan.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "circles",
+    "difficulty": "easy",
+    "question_type": "spr",
+    "stem": "In the $xy$-plane, a circle has the equation $(x - 4)^2 + (y + 1)^2 = 36$. What is the diameter of the circle?",
+    "spr_answers": [
+      "12"
+    ],
+    "explanation_en": "The equation has the form $(x - h)^2 + (y - k)^2 = r^2$, so $r^2 = 36$ and the radius is $r = 6$. The diameter is $2r = 12$.\n\nIf you entered 6, you gave the radius. If you entered 36 or 72, you treated $r^2$ as the radius.",
+    "explanation_uz": "Tenglama $(x - h)^2 + (y - k)^2 = r^2$ ko‘rinishida, demak $r^2 = 36$ va radius $r = 6$. Diametr $2r = 12$.\n\nAgar 6 kiritgan bo‘lsangiz, siz radiusni yozgansiz. Agar 36 yoki 72 chiqqan bo‘lsa, $r^2$ radius deb olingan.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "circles",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "An angle measures $240^\\circ$. What is the measure of the angle in radians?",
+    "option_a": "$\\frac{4\\pi}{3}$",
+    "option_b": "$\\frac{\\pi}{3}$",
+    "option_c": "$\\frac{2\\pi}{3}$",
+    "option_d": "$\\frac{8\\pi}{3}$",
+    "correct": "A",
+    "explanation_en": "Multiply by $\\frac{\\pi}{180^\\circ}$: $240^\\circ \\cdot \\frac{\\pi}{180^\\circ} = \\frac{240\\pi}{180} = \\frac{4\\pi}{3}$. Choice A is correct.\n\nChoice B ($\\frac{\\pi}{3}$) converts only $60^\\circ$, the amount by which $240^\\circ$ exceeds $180^\\circ$. Choice C ($\\frac{2\\pi}{3}$) divides by $360^\\circ$ instead of $180^\\circ$, as if $\\pi$ radians were a full turn. Choice D ($\\frac{8\\pi}{3}$) divides by $90^\\circ$ instead of $180^\\circ$.",
+    "explanation_uz": "$\\frac{\\pi}{180^\\circ}$ ga ko‘paytiramiz: $240^\\circ \\cdot \\frac{\\pi}{180^\\circ} = \\frac{240\\pi}{180} = \\frac{4\\pi}{3}$. To‘g‘ri javob A.\n\nB ($\\frac{\\pi}{3}$) — faqat $60^\\circ$ o‘tkazilgan, ya’ni $240^\\circ$ ning $180^\\circ$ dan ortig‘i. C ($\\frac{2\\pi}{3}$) — $180^\\circ$ o‘rniga $360^\\circ$ ga bo‘lingan, go‘yo $\\pi$ radian to‘liq aylanishdek. D ($\\frac{8\\pi}{3}$) — $180^\\circ$ o‘rniga $90^\\circ$ ga bo‘lingan.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "circles",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "A circle has a radius of 8 meters. A sector of the circle has a central angle of $135^\\circ$. What is the area, in square meters, of the sector?",
+    "option_a": "$6\\pi$",
+    "option_b": "$24\\pi$",
+    "option_c": "$40\\pi$",
+    "option_d": "$64\\pi$",
+    "correct": "B",
+    "explanation_en": "The sector is $\\frac{135}{360} = \\frac{3}{8}$ of the circle. The whole circle has area $\\pi(8)^2 = 64\\pi$, so the sector has area $\\frac{3}{8} \\cdot 64\\pi = 24\\pi$ square meters. Choice B is correct.\n\nChoice A ($6\\pi$) is the arc length of the sector, $\\frac{3}{8} \\cdot 16\\pi$. Choice C ($40\\pi$) is the area of the other sector, with central angle $225^\\circ$. Choice D ($64\\pi$) is the area of the whole circle.",
+    "explanation_uz": "Sektor doiraning $\\frac{135}{360} = \\frac{3}{8}$ qismini tashkil qiladi. Butun doira yuzasi $\\pi(8)^2 = 64\\pi$, demak sektor yuzasi $\\frac{3}{8} \\cdot 64\\pi = 24\\pi$ kvadrat metr. To‘g‘ri javob B.\n\nA ($6\\pi$) — sektor yoyining uzunligi, $\\frac{3}{8} \\cdot 16\\pi$. C ($40\\pi$) — markaziy burchagi $225^\\circ$ bo‘lgan qolgan sektorning yuzasi. D ($64\\pi$) — butun doira yuzasi.",
+    "estimated_seconds": 80,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "circles",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "In the $xy$-plane, the points $(-2, 5)$ and $(6, -1)$ are the endpoints of a diameter of a circle. The area of the circle is $k\\pi$. What is the value of $k$?",
+    "spr_answers": [
+      "25"
+    ],
+    "explanation_en": "The length of the diameter is $\\sqrt{(6 - (-2))^2 + (-1 - 5)^2} = \\sqrt{64 + 36} = \\sqrt{100} = 10$. So the radius is 5, and the area is $\\pi(5)^2 = 25\\pi$. Therefore $k = 25$.\n\nIf you got 100, you used the diameter as the radius. If you got 10 or 5, you stopped before computing the area.",
+    "explanation_uz": "Diametr uzunligi $\\sqrt{(6 - (-2))^2 + (-1 - 5)^2} = \\sqrt{64 + 36} = \\sqrt{100} = 10$. Demak radius 5, yuza $\\pi(5)^2 = 25\\pi$. Shuning uchun $k = 25$.\n\nAgar 100 chiqqan bo‘lsa, diametr radius deb olingan. Agar 10 yoki 5 chiqqan bo‘lsa, siz yuzani hisoblashdan oldin to‘xtagansiz.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "circles",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "A circle with center $O$ has a radius of 13 centimeters. Chord $\\overline{AB}$ of the circle is 5 centimeters from $O$; that is, the perpendicular segment from $O$ to $\\overline{AB}$ has length 5. What is the length, in centimeters, of chord $\\overline{AB}$?",
+    "option_a": "$8$",
+    "option_b": "$12$",
+    "option_c": "$24$",
+    "option_d": "$2\\sqrt{194}$",
+    "correct": "C",
+    "explanation_en": "Let $M$ be the point where the perpendicular from $O$ meets $\\overline{AB}$. A perpendicular from the center bisects the chord, so $AM = MB$. In right triangle $OMA$, $OA = 13$ is the hypotenuse and $OM = 5$, so $AM = \\sqrt{13^2 - 5^2} = \\sqrt{144} = 12$. The chord has length $2 \\cdot 12 = 24$ centimeters. Choice C is correct.\n\nChoice A ($8$) subtracts the lengths, $13 - 5$. Choice B ($12$) is only half of the chord. Choice D ($2\\sqrt{194}$) adds the squares, $13^2 + 5^2$, instead of subtracting them.",
+    "explanation_uz": "$O$ dan tushirilgan perpendikulyar $\\overline{AB}$ ni kesgan nuqtani $M$ deb olamiz. Markazdan tushirilgan perpendikulyar vatarni teng ikkiga bo‘ladi, ya’ni $AM = MB$. $OMA$ to‘g‘ri burchakli uchburchakda $OA = 13$ gipotenuza va $OM = 5$, demak $AM = \\sqrt{13^2 - 5^2} = \\sqrt{144} = 12$. Vatar uzunligi $2 \\cdot 12 = 24$ santimetr. To‘g‘ri javob C.\n\nA ($8$) — uzunliklar ayirilgan, $13 - 5$. B ($12$) — bu vatarning faqat yarmi. D ($2\\sqrt{194}$) — kvadratlar ayirilish o‘rniga qo‘shilgan, $13^2 + 5^2$.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "circles",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "Point $P$ lies outside a circle with center $O$ and radius 6. Two lines through $P$ are tangent to the circle, one at point $A$ and the other at point $B$. The distance from $O$ to $P$ is 10. What is the area of quadrilateral $OAPB$?",
+    "option_a": "$24$",
+    "option_b": "$30$",
+    "option_c": "$40$",
+    "option_d": "$48$",
+    "correct": "D",
+    "explanation_en": "A tangent line is perpendicular to the radius at the point of tangency, so angles $OAP$ and $OBP$ are right angles. In right triangle $OAP$, the hypotenuse is $OP = 10$ and $OA = 6$, so $AP = \\sqrt{10^2 - 6^2} = 8$. The area of triangle $OAP$ is $\\frac{1}{2}(6)(8) = 24$. Triangle $OBP$ is congruent to triangle $OAP$, so quadrilateral $OAPB$ has area $2 \\cdot 24 = 48$. Choice D is correct.\n\nChoice A ($24$) is the area of only one of the two triangles. Choice B ($30$) uses $\\frac{1}{2}(6)(10)$, treating $OP$ as a leg. Choice C ($40$) uses $\\frac{1}{2}(8)(10)$, again treating the hypotenuse as a leg.",
+    "explanation_uz": "Urinma urinish nuqtasida radiusga perpendikulyar, demak $OAP$ va $OBP$ burchaklar to‘g‘ri burchak. $OAP$ to‘g‘ri burchakli uchburchakda gipotenuza $OP = 10$ va $OA = 6$, shuning uchun $AP = \\sqrt{10^2 - 6^2} = 8$. $OAP$ uchburchak yuzasi $\\frac{1}{2}(6)(8) = 24$. $OBP$ uchburchak $OAP$ ga teng, demak $OAPB$ to‘rtburchak yuzasi $2 \\cdot 24 = 48$. To‘g‘ri javob D.\n\nA ($24$) — ikki uchburchakdan faqat bittasining yuzasi. B ($30$) — $\\frac{1}{2}(6)(10)$, ya’ni $OP$ katet deb olingan. C ($40$) — $\\frac{1}{2}(8)(10)$, bunda ham gipotenuza katet deb olingan.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "circles",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "In the $xy$-plane, the graph of $x^2 + y^2 - 10x - 6y + 9 = 0$ is a circle. The point $(9, k)$ lies on the circle, where $k > 0$. What is the value of $k$?",
+    "spr_answers": [
+      "6"
+    ],
+    "explanation_en": "Complete the square in each variable: $(x^2 - 10x + 25) + (y^2 - 6y + 9) = -9 + 25 + 9$, so $(x - 5)^2 + (y - 3)^2 = 25$. Substituting $x = 9$ gives $16 + (k - 3)^2 = 25$, so $(k - 3)^2 = 9$ and $k - 3 = 3$ or $k - 3 = -3$. Thus $k = 6$ or $k = 0$. Since $k > 0$, $k = 6$.\n\nIf you got 0, you chose the other intersection point, which does not satisfy $k > 0$. You can also substitute directly: $81 + k^2 - 90 - 6k + 9 = 0$ gives $k^2 - 6k = 0$, so $k(k - 6) = 0$.",
+    "explanation_uz": "Har bir o‘zgaruvchi bo‘yicha to‘la kvadrat ajratamiz: $(x^2 - 10x + 25) + (y^2 - 6y + 9) = -9 + 25 + 9$, demak $(x - 5)^2 + (y - 3)^2 = 25$. $x = 9$ ni qo‘yamiz: $16 + (k - 3)^2 = 25$, ya’ni $(k - 3)^2 = 9$ va $k - 3 = 3$ yoki $k - 3 = -3$. Demak $k = 6$ yoki $k = 0$. $k > 0$ bo‘lgani uchun $k = 6$.\n\nAgar 0 chiqqan bo‘lsa, siz $k > 0$ shartini qanoatlantirmaydigan ikkinchi nuqtani tanlagansiz. To‘g‘ridan-to‘g‘ri qo‘yish ham mumkin: $81 + k^2 - 90 - 6k + 9 = 0$ dan $k^2 - 6k = 0$, ya’ni $k(k - 6) = 0$.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  }
+]

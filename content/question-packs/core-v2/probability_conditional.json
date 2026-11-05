@@ -1,0 +1,153 @@
+[
+  {
+    "skill_code": "probability_conditional",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "A bag contains 20 tiles numbered 1 through 20, with one number on each tile. If one tile is selected at random from the bag, what is the probability that the number on the tile is a multiple of 3?",
+    "option_a": "$\\frac{1}{3}$",
+    "option_b": "$\\frac{3}{10}$",
+    "option_c": "$\\frac{3}{20}$",
+    "option_d": "$\\frac{7}{10}$",
+    "correct": "B",
+    "explanation_en": "The multiples of 3 from 1 to 20 are 3, 6, 9, 12, 15, and 18, which is 6 numbers. The probability is $\\frac{6}{20} = \\frac{3}{10}$. Choice A assumes exactly one-third of the numbers are multiples of 3, but 20 is not a multiple of 3. Choice C uses 3 favorable outcomes instead of counting all 6. Choice D is the probability that the number is **not** a multiple of 3.",
+    "explanation_uz": "1 dan 20 gacha bo‘lgan 3 ga karrali sonlar: 3, 6, 9, 12, 15 va 18 — jami 6 ta. Ehtimollik $\\frac{6}{20} = \\frac{3}{10}$. A javob sonlarning aynan uchdan biri 3 ga karrali deb hisoblagan, lekin 20 soni 3 ga karrali emas. C javob 6 ta qulay natijani sanash o‘rniga 3 ni olgan. D javob — son 3 ga karrali **bo‘lmaslik** ehtimolligi.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "probability_conditional",
+    "difficulty": "easy",
+    "question_type": "spr",
+    "stem": "A shipment contains 40 melons. Of these melons, 34 are ripe and the rest are not ripe. If one melon is selected at random from the shipment, what is the probability that the melon is **not** ripe?",
+    "spr_answers": [
+      "3/20",
+      ".15",
+      "0.15"
+    ],
+    "explanation_en": "The number of melons that are not ripe is $40 - 34 = 6$. The probability is $\\frac{6}{40} = \\frac{3}{20} = 0.15$. Entering 34/40 (or 0.85) gives the probability that the melon **is** ripe. Enter 3/20, .15, or 0.15.",
+    "explanation_uz": "Pishmagan qovunlar soni $40 - 34 = 6$. Ehtimollik $\\frac{6}{40} = \\frac{3}{20} = 0.15$. 34/40 (yoki 0.85) deb yozish qovunning pishgan **bo‘lish** ehtimolligini beradi. Javob maydoniga 3/20, .15 yoki 0.15 deb yozing.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "probability_conditional",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "If one of these guests is selected at random, what is the probability that the guest was **not** satisfied?",
+    "passage": "A hotel asked 160 guests whether they were satisfied with their stay. The results, by the main purpose of each guest's trip, are shown in the table.\n\n| Purpose of trip | Satisfied | Not satisfied | Total |\n| --- | ---: | ---: | ---: |\n| Business | 52 | 18 | 70 |\n| Leisure | 74 | 16 | 90 |\n| Total | 126 | 34 | 160 |",
+    "option_a": "$\\frac{17}{80}$",
+    "option_b": "$\\frac{9}{80}$",
+    "option_c": "$\\frac{9}{35}$",
+    "option_d": "$\\frac{17}{63}$",
+    "correct": "A",
+    "explanation_en": "All 160 guests can be selected, and 34 of them were not satisfied, so the probability is $\\frac{34}{160} = \\frac{17}{80}$. Choice B, $\\frac{18}{160}$, counts only the business guests who were not satisfied. Choice C, $\\frac{18}{70}$, is the probability for business guests only. Choice D, $\\frac{34}{126}$, divides by the number of satisfied guests instead of by all guests.",
+    "explanation_uz": "Barcha 160 nafar mehmon tanlanishi mumkin, ulardan 34 nafari mamnun bo‘lmagan, demak ehtimollik $\\frac{34}{160} = \\frac{17}{80}$. B javob ($\\frac{18}{160}$) faqat mamnun bo‘lmagan ish safaridagi mehmonlarni sanagan. C javob ($\\frac{18}{70}$) — faqat ish safaridagi mehmonlar uchun ehtimollik. D javob ($\\frac{34}{126}$) barcha mehmonlar o‘rniga mamnun bo‘lgan mehmonlar soniga bo‘lgan.",
+    "estimated_seconds": 75,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "probability_conditional",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "If one of the seeds that did **not** sprout is selected at random, what is the probability that it was given fertilizer Q?",
+    "passage": "A biology class planted 340 bean seeds. Each seed was given fertilizer P, fertilizer Q, or no fertilizer. The table shows how many seeds sprouted within two weeks.\n\n| Treatment | Sprouted | Did not sprout | Total |\n| --- | ---: | ---: | ---: |\n| Fertilizer P | 84 | 36 | 120 |\n| Fertilizer Q | 99 | 21 | 120 |\n| No fertilizer | 57 | 43 | 100 |\n| Total | 240 | 100 | 340 |",
+    "option_a": "$\\frac{7}{40}$",
+    "option_b": "$\\frac{21}{100}$",
+    "option_c": "$\\frac{21}{340}$",
+    "option_d": "$\\frac{33}{80}$",
+    "correct": "B",
+    "explanation_en": "The selection is made only from the seeds that did not sprout, so the denominator is $36 + 21 + 43 = 100$. Of these, 21 were given fertilizer Q, so the probability is $\\frac{21}{100}$. Choice A, $\\frac{21}{120}$, reverses the condition: it is the probability that a seed given fertilizer Q did not sprout. Choice C divides by all 340 seeds. Choice D, $\\frac{99}{240}$, is the probability that a seed that **did** sprout was given fertilizer Q.",
+    "explanation_uz": "Tanlov faqat unib chiqmagan urug‘lar orasidan amalga oshiriladi, shuning uchun maxraj $36 + 21 + 43 = 100$. Ulardan 21 tasiga Q o‘g‘it berilgan, demak ehtimollik $\\frac{21}{100}$. A javob ($\\frac{21}{120}$) shartni teskari olgan: bu Q o‘g‘it berilgan urug‘ning unib chiqmaslik ehtimolligi. C javob barcha 340 urug‘ga bo‘lgan. D javob ($\\frac{99}{240}$) — unib **chiqqan** urug‘ga Q o‘g‘it berilgan bo‘lish ehtimolligi.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "probability_conditional",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "A fair coin is flipped once, and a fair 6-sided die with faces numbered 1 through 6 is rolled once. What is the probability that the coin lands heads up **and** the die shows a number greater than 4?",
+    "spr_answers": [
+      "1/6",
+      ".1666",
+      ".1667",
+      "0.166",
+      "0.167"
+    ],
+    "explanation_en": "The coin and the die do not affect each other, so multiply the probabilities. The probability of heads is $\\frac{1}{2}$. The numbers greater than 4 are 5 and 6, so that probability is $\\frac{2}{6} = \\frac{1}{3}$. The probability of both is $\\frac{1}{2} \\times \\frac{1}{3} = \\frac{1}{6}$. You can also list all 12 equally likely outcomes; exactly 2 of them (heads and 5, heads and 6) work, and $\\frac{2}{12} = \\frac{1}{6}$. Adding the probabilities, $\\frac{1}{2} + \\frac{1}{3}$, is wrong for \"and.\" Enter 1/6, .1666, .1667, 0.166, or 0.167.",
+    "explanation_uz": "Tanga va o‘yin soqqasi bir-biriga ta’sir qilmaydi, shuning uchun ehtimolliklarni ko‘paytiramiz. Gerb tushish ehtimolligi $\\frac{1}{2}$. 4 dan katta sonlar 5 va 6, demak bu ehtimollik $\\frac{2}{6} = \\frac{1}{3}$. Ikkalasining birga ro‘y berish ehtimolligi $\\frac{1}{2} \\times \\frac{1}{3} = \\frac{1}{6}$. Teng ehtimolli barcha 12 natijani ham yozib chiqish mumkin: ulardan aynan 2 tasi (gerb va 5, gerb va 6) mos keladi, $\\frac{2}{12} = \\frac{1}{6}$. \"Va\" uchun ehtimolliklarni qo‘shish ($\\frac{1}{2} + \\frac{1}{3}$) xato. Javob maydoniga 1/6, .1666, .1667, 0.166 yoki 0.167 deb yozing.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "probability_conditional",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "A basket contains 5 red apples and 3 green apples. Two apples are taken from the basket at random, one after the other, without putting the first apple back. What is the probability that both apples are red?",
+    "option_a": "$\\frac{25}{64}$",
+    "option_b": "$\\frac{15}{56}$",
+    "option_c": "$\\frac{5}{8}$",
+    "option_d": "$\\frac{5}{14}$",
+    "correct": "D",
+    "explanation_en": "The probability that the first apple is red is $\\frac{5}{8}$. After one red apple is removed, 4 of the remaining 7 apples are red, so the probability that the second is red is $\\frac{4}{7}$. The probability that both are red is $\\frac{5}{8} \\times \\frac{4}{7} = \\frac{20}{56} = \\frac{5}{14}$. Choice A, $\\frac{5}{8} \\times \\frac{5}{8}$, assumes the first apple is put back. Choice B, $\\frac{5}{8} \\times \\frac{3}{7}$, is the probability that the first is red and the second is green. Choice C is the probability for the first apple only.",
+    "explanation_uz": "Birinchi olma qizil bo‘lish ehtimolligi $\\frac{5}{8}$. Bitta qizil olma olingandan keyin qolgan 7 ta olmadan 4 tasi qizil, demak ikkinchisi qizil bo‘lish ehtimolligi $\\frac{4}{7}$. Ikkalasi ham qizil bo‘lish ehtimolligi $\\frac{5}{8} \\times \\frac{4}{7} = \\frac{20}{56} = \\frac{5}{14}$. A javob ($\\frac{5}{8} \\times \\frac{5}{8}$) birinchi olma qaytarib qo‘yilgan deb hisoblagan. B javob ($\\frac{5}{8} \\times \\frac{3}{7}$) — birinchisi qizil, ikkinchisi yashil bo‘lish ehtimolligi. C javob faqat birinchi olma uchun ehtimollik.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "probability_conditional",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "If one of the students who chose robotics is selected at random, the probability that the student is in grade 11 is $\\frac{3}{5}$. What is the value of $x$?",
+    "passage": "The table shows the numbers of 10th-grade and 11th-grade students at a school who chose each of two clubs. Each student chose exactly one club.\n\n| Club | Grade 10 | Grade 11 |\n| --- | ---: | ---: |\n| Robotics | 24 | $x$ |\n| Debate | 30 | 18 |",
+    "option_a": "$14.4$",
+    "option_b": "$16$",
+    "option_c": "$36$",
+    "option_d": "$60$",
+    "correct": "C",
+    "explanation_en": "The students who chose robotics number $24 + x$, and $x$ of them are in grade 11, so $\\frac{x}{24 + x} = \\frac{3}{5}$. Cross-multiplying gives $5x = 72 + 3x$, so $2x = 72$ and $x = 36$. Check: $\\frac{36}{60} = \\frac{3}{5}$. Choice B comes from $\\frac{24}{24 + x} = \\frac{3}{5}$, which treats $\\frac{3}{5}$ as the probability of grade 10. Choice A comes from $\\frac{x}{24} = \\frac{3}{5}$, using the wrong denominator. Choice D, 60, is the total number of students who chose robotics.",
+    "explanation_uz": "Robototexnikani tanlagan o‘quvchilar soni $24 + x$, ulardan $x$ nafari 11-sinfda, demak $\\frac{x}{24 + x} = \\frac{3}{5}$. Ko‘paytirib chiqsak, $5x = 72 + 3x$, ya’ni $2x = 72$ va $x = 36$. Tekshiruv: $\\frac{36}{60} = \\frac{3}{5}$. B javob $\\frac{24}{24 + x} = \\frac{3}{5}$ tenglamasidan kelib chiqqan — $\\frac{3}{5}$ ni 10-sinf ehtimolligi deb olgan. A javob $\\frac{x}{24} = \\frac{3}{5}$ dan kelib chiqqan — maxraj noto‘g‘ri. D javob (60) — robototexnikani tanlagan o‘quvchilarning umumiy soni.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "probability_conditional",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "A clinic tested 500 people for a certain condition. Of these people, 80 have the condition and 420 do not. The test was positive for 72 of the people who have the condition and for 42 of the people who do not have the condition. If one of the people whose test was positive is selected at random, what is the probability that the person has the condition?",
+    "spr_answers": [
+      "12/19",
+      ".6315",
+      ".6316",
+      "0.631",
+      "0.632"
+    ],
+    "explanation_en": "Only the people with a positive test can be selected: $72 + 42 = 114$ people. Of these, 72 have the condition, so the probability is $\\frac{72}{114} = \\frac{12}{19} \\approx 0.6316$. Entering $\\frac{72}{80} = 0.9$ reverses the condition: that is the probability that a person who has the condition tests positive. Entering $\\frac{72}{500}$ divides by everyone tested. Enter 12/19, .6315, .6316, 0.631, or 0.632.",
+    "explanation_uz": "Faqat testi ijobiy chiqqan odamlar tanlanishi mumkin: $72 + 42 = 114$ kishi. Ulardan 72 nafarida kasallik bor, demak ehtimollik $\\frac{72}{114} = \\frac{12}{19} \\approx 0.6316$. $\\frac{72}{80} = 0.9$ deb yozish shartni teskari olish bo‘ladi: bu kasalligi bor odamning testi ijobiy chiqish ehtimolligi. $\\frac{72}{500}$ esa barcha tekshirilganlarga bo‘lish. Javob maydoniga 12/19, .6315, .6316, 0.631 yoki 0.632 deb yozing.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  }
+]

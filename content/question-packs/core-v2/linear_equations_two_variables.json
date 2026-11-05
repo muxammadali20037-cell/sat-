@@ -1,0 +1,140 @@
+[
+  {
+    "skill_code": "linear_equations_two_variables",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "In the equation $5x + 2y = 40$, what is the value of $y$ when $x = 6$?",
+    "option_a": "$2$",
+    "option_b": "$5$",
+    "option_c": "$10$",
+    "option_d": "$17$",
+    "correct": "B",
+    "explanation_en": "Substitute $x = 6$: $5(6) + 2y = 40$, so $30 + 2y = 40$. Subtract $30$: $2y = 10$. Divide by $2$: $y = 5$.\n\nChoice C stops at $2y = 10$ and forgets to divide by $2$. Choice A divides $10$ by $5$ instead of by $2$. Choice D subtracts $6$ instead of $5(6)$: $(40 - 6) \\div 2 = 17$.",
+    "explanation_uz": "$x = 6$ ni qo‘yamiz: $5(6) + 2y = 40$, ya’ni $30 + 2y = 40$. $30$ ni ayiramiz: $2y = 10$. $2$ ga bo‘lamiz: $y = 5$.\n\nC variantda $2y = 10$ da to‘xtab, $2$ ga bo‘lish unutilgan. A variantda $10$ ni $2$ ga emas, $5$ ga bo‘lingan. D variantda $5(6)$ o‘rniga $6$ ayirilgan: $(40 - 6) \\div 2 = 17$.",
+    "estimated_seconds": 55,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "linear_equations_two_variables",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "A stationery shop in Samarkand sells notebooks for 4,000 soums each and pens for 1,500 soums each. Malika spent exactly 23,000 soums on $n$ notebooks and $p$ pens. Which equation represents this situation?",
+    "option_a": "$1{,}500n + 4{,}000p = 23{,}000$",
+    "option_b": "$n + p = 23{,}000$",
+    "option_c": "$4{,}000n + 1{,}500p = 23{,}000$",
+    "option_d": "$5{,}500(n + p) = 23{,}000$",
+    "correct": "C",
+    "explanation_en": "The notebooks cost $4{,}000n$ soums in total and the pens cost $1{,}500p$ soums in total. Together they cost $23{,}000$ soums, so $4{,}000n + 1{,}500p = 23{,}000$.\n\nChoice A matches each price with the wrong item. Choice B adds the numbers of items, not their costs. Choice D charges every item $5{,}500$ soums, the sum of the two prices.",
+    "explanation_uz": "Daftarlar jami $4{,}000n$ so‘m, ruchkalar jami $1{,}500p$ so‘m turadi. Birgalikda ular $23{,}000$ so‘m, demak $4{,}000n + 1{,}500p = 23{,}000$.\n\nA variantda narxlar buyumlarga noto‘g‘ri mos qo‘yilgan. B variantda narxlar emas, buyumlar soni qo‘shilgan. D variantda har bir buyum ikki narx yig‘indisi — $5{,}500$ so‘mdan hisoblangan.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "linear_equations_two_variables",
+    "difficulty": "easy",
+    "question_type": "spr",
+    "stem": "In the $xy$-plane, the graph of $3x - 4y = 24$ crosses the $y$-axis at the point $(0, b)$. What is the value of $b$?",
+    "spr_answers": [
+      "-6"
+    ],
+    "explanation_en": "On the $y$-axis, $x = 0$. Substitute: $3(0) - 4y = 24$, so $-4y = 24$ and $y = -6$. Thus $b = -6$.\n\nCommon mistakes: answering $6$ (dropping the negative sign) or $8$, which is the $x$-intercept (found by setting $y = 0$).",
+    "explanation_uz": "$y$ o‘qida $x = 0$ bo‘ladi. Qo‘yamiz: $3(0) - 4y = 24$, ya’ni $-4y = 24$ va $y = -6$. Demak $b = -6$.\n\nKo‘p uchraydigan xatolar: manfiy ishorani tushirib qoldirib $6$ deb javob berish yoki $y = 0$ deb topiladigan $x$ o‘qi bilan kesishish nuqtasi — $8$ ni yozish.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "linear_equations_two_variables",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "A line in the $xy$-plane passes through the points $(2, -1)$ and $(6, 11)$. Which equation defines the line?",
+    "option_a": "$y = \\frac{1}{3}x - \\frac{5}{3}$",
+    "option_b": "$y = 3x - 1$",
+    "option_c": "$y = 3x + 5$",
+    "option_d": "$y = 3x - 7$",
+    "correct": "D",
+    "explanation_en": "The slope is $\\dfrac{11 - (-1)}{6 - 2} = \\dfrac{12}{4} = 3$. In $y = 3x + c$, substitute $(6, 11)$: $11 = 18 + c$, so $c = -7$. The line is $y = 3x - 7$. Check with $(2, -1)$: $3(2) - 7 = -1$.\n\nChoice A uses the run over the rise, $\\frac{4}{12} = \\frac{1}{3}$, as the slope. Choice B uses the $y$-coordinate $-1$ of a point as the $y$-intercept. Choice C mixes the two points, using $x = 2$ with $y = 11$: $11 = 6 + c$.",
+    "explanation_uz": "Burchak koeffitsiyenti: $\\dfrac{11 - (-1)}{6 - 2} = \\dfrac{12}{4} = 3$. $y = 3x + c$ ga $(6, 11)$ ni qo‘yamiz: $11 = 18 + c$, demak $c = -7$. To‘g‘ri chiziq: $y = 3x - 7$. $(2, -1)$ bilan tekshiramiz: $3(2) - 7 = -1$.\n\nA variantda burchak koeffitsiyenti teskari olingan: $\\frac{4}{12} = \\frac{1}{3}$. B variantda nuqtaning $y$-koordinatasi $-1$ kesishish nuqtasi deb olingan. C variantda ikki nuqta aralashtirilgan: $x = 2$ va $y = 11$ olinib, $11 = 6 + c$ yozilgan.",
+    "estimated_seconds": 85,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "linear_equations_two_variables",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "In the $xy$-plane, the graph of $ax + 3y = 12$, where $a$ is a constant, passes through the point $(2, 6)$. What is the slope of the graph?",
+    "spr_answers": [
+      "1"
+    ],
+    "explanation_en": "Substitute $(2, 6)$: $2a + 18 = 12$, so $2a = -6$ and $a = -3$. The equation is $-3x + 3y = 12$, or $y = x + 4$. The slope is $1$.\n\nA common mistake is giving the value of $a$ ($-3$) as the slope. The slope of $ax + 3y = 12$ is $-\\frac{a}{3}$, not $a$.",
+    "explanation_uz": "$(2, 6)$ ni qo‘yamiz: $2a + 18 = 12$, ya’ni $2a = -6$ va $a = -3$. Tenglama: $-3x + 3y = 12$ yoki $y = x + 4$. Burchak koeffitsiyenti $1$ ga teng.\n\nKo‘p uchraydigan xato: $a$ ning qiymati ($-3$) ni burchak koeffitsiyenti deb yozish. $ax + 3y = 12$ ning burchak koeffitsiyenti $a$ emas, $-\\frac{a}{3}$ ga teng.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "linear_equations_two_variables",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "A school has 1,200,000 soums to spend on chairs and desks. Each chair costs 150,000 soums and each desk costs 300,000 soums. The equation $150{,}000c + 300{,}000d = 1{,}200{,}000$ represents spending the entire amount on $c$ chairs and $d$ desks. If the school buys $2$ more desks, how many fewer chairs can it buy?",
+    "option_a": "$1$",
+    "option_b": "$2$",
+    "option_c": "$4$",
+    "option_d": "$8$",
+    "correct": "C",
+    "explanation_en": "Two more desks cost $2 \\times 300{,}000 = 600{,}000$ soums more. To keep the total at $1{,}200{,}000$ soums, chair spending must drop by $600{,}000$ soums, which is $600{,}000 \\div 150{,}000 = 4$ chairs.\n\nEquivalently, solving for $c$ gives $c = 8 - 2d$, so each extra desk means $2$ fewer chairs, and $2$ extra desks mean $4$ fewer chairs.\n\nChoice B assumes one chair is given up for each desk. Choice A uses the inverted ratio $\\frac{150{,}000}{300{,}000}$. Choice D is the number of chairs the school could buy with no desks at all.",
+    "explanation_uz": "Ikkita qo‘shimcha parta $2 \\times 300{,}000 = 600{,}000$ so‘m ko‘p turadi. Umumiy summa $1{,}200{,}000$ so‘m bo‘lib qolishi uchun stullarga sarf $600{,}000$ so‘mga kamayishi kerak, bu $600{,}000 \\div 150{,}000 = 4$ ta stul.\n\nBoshqacha: $c$ ni ifodalasak, $c = 8 - 2d$; har bir qo‘shimcha parta $2$ ta stulni kamaytiradi, $2$ ta parta esa $4$ ta stulni.\n\nB variantda har bir parta uchun bitta stul kamayadi deb olingan. A variantda nisbat teskari olingan: $\\frac{150{,}000}{300{,}000}$. D variant — parta umuman olinmaganda sotib olish mumkin bo‘lgan stullar soni.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "linear_equations_two_variables",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "Line $m$ in the $xy$-plane is parallel to the line $4x - 6y = 9$ and passes through the point $(3, -2)$. What is the $y$-coordinate of the $y$-intercept of line $m$?",
+    "option_a": "$-4$",
+    "option_b": "$-\\frac{3}{2}$",
+    "option_c": "$0$",
+    "option_d": "$\\frac{5}{2}$",
+    "correct": "A",
+    "explanation_en": "Rewrite $4x - 6y = 9$ as $y = \\frac{2}{3}x - \\frac{3}{2}$, so its slope is $\\frac{2}{3}$. Parallel lines have equal slopes, so line $m$ is $y = \\frac{2}{3}x + c$.\n\nSubstitute $(3, -2)$: $-2 = \\frac{2}{3}(3) + c = 2 + c$, so $c = -4$.\n\nChoice B is the $y$-intercept of the given line, not of line $m$. Choice C uses the slope $-\\frac{2}{3}$ (a sign error when solving for $y$). Choice D uses the perpendicular slope $-\\frac{3}{2}$.",
+    "explanation_uz": "$4x - 6y = 9$ ni $y = \\frac{2}{3}x - \\frac{3}{2}$ ko‘rinishiga keltiramiz, burchak koeffitsiyenti $\\frac{2}{3}$. Parallel to‘g‘ri chiziqlarning burchak koeffitsiyentlari teng, demak $m$: $y = \\frac{2}{3}x + c$.\n\n$(3, -2)$ ni qo‘yamiz: $-2 = \\frac{2}{3}(3) + c = 2 + c$, bundan $c = -4$.\n\nB variant — berilgan to‘g‘ri chiziqning $y$ o‘qi bilan kesishishi, $m$ niki emas. C variantda burchak koeffitsiyenti $-\\frac{2}{3}$ olingan ($y$ ni ifodalashda ishora xatosi). D variantda perpendikulyar to‘g‘ri chiziqning koeffitsiyenti $-\\frac{3}{2}$ ishlatilgan.",
+    "estimated_seconds": 110,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "linear_equations_two_variables",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "In the $xy$-plane, the graph of $px + 5y = q$, where $p$ and $q$ are constants, is parallel to the graph of $y = -0.8x + 3$ and has an $x$-intercept of $(10, 0)$. What is the value of $p + q$?",
+    "spr_answers": [
+      "44"
+    ],
+    "explanation_en": "Solving $px + 5y = q$ for $y$ gives $y = -\\frac{p}{5}x + \\frac{q}{5}$, so the slope is $-\\frac{p}{5}$. Parallel lines have equal slopes: $-\\frac{p}{5} = -0.8$, so $p = 4$.\n\nThe point $(10, 0)$ is on the graph: $4(10) + 5(0) = q$, so $q = 40$. Therefore $p + q = 44$.\n\nA common mistake is taking the slope of $px + 5y = q$ as $\\frac{p}{5}$, which gives $p = -4$, $q = -40$ and $p + q = -44$.",
+    "explanation_uz": "$px + 5y = q$ dan $y$ ni ifodalaymiz: $y = -\\frac{p}{5}x + \\frac{q}{5}$, burchak koeffitsiyenti $-\\frac{p}{5}$. Parallel to‘g‘ri chiziqlarda ular teng: $-\\frac{p}{5} = -0.8$, demak $p = 4$.\n\n$(10, 0)$ nuqta grafikda yotadi: $4(10) + 5(0) = q$, demak $q = 40$. Shunday qilib, $p + q = 44$.\n\nKo‘p uchraydigan xato: $px + 5y = q$ ning burchak koeffitsiyentini $\\frac{p}{5}$ deb olish. Unda $p = -4$, $q = -40$ va $p + q = -44$ chiqadi.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  }
+]

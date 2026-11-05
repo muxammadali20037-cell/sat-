@@ -1,0 +1,142 @@
+[
+  {
+    "skill_code": "ratios_rates_proportions_units",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "A cyclist rides 54 kilometers in 3 hours. At this rate, how many kilometers will the cyclist ride in 5 hours?",
+    "option_a": "$18$",
+    "option_b": "$56$",
+    "option_c": "$270$",
+    "option_d": "$90$",
+    "correct": "D",
+    "explanation_en": "The cyclist's rate is $\\frac{54}{3} = 18$ kilometers per hour. In 5 hours the cyclist rides $18 \\times 5 = 90$ kilometers. Choice A is the rate per hour, not the distance in 5 hours. Choice B adds the 2 extra hours to 54 as if they were kilometers. Choice C multiplies the 3-hour distance by 5, which is the distance for 15 hours.",
+    "explanation_uz": "Velosipedchining tezligi $\\frac{54}{3} = 18$ km/soat. 5 soatda u $18 \\times 5 = 90$ kilometr yuradi. A javob — 5 soatdagi masofa emas, bir soatlik tezlik. B javob qo‘shimcha 2 soatni kilometr deb, 54 ga qo‘shgan. C javob 3 soatlik masofani 5 ga ko‘paytirgan — bu 15 soatlik masofa.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "ratios_rates_proportions_units",
+    "difficulty": "easy",
+    "question_type": "spr",
+    "stem": "A cook uses 1.5 kilograms of rice to make 6 servings of plov. At this rate, how many kilograms of rice are needed to make 20 servings of plov?",
+    "spr_answers": [
+      "5"
+    ],
+    "explanation_en": "Each serving uses $\\frac{1.5}{6} = 0.25$ kilogram of rice, so 20 servings use $20 \\times 0.25 = 5$ kilograms. Equivalently, solve the proportion $\\frac{1.5}{6} = \\frac{x}{20}$: $6x = 30$, so $x = 5$. Setting up the proportion upside down, $\\frac{1.5}{6} = \\frac{20}{x}$, gives 80, which is not reasonable. Enter 5.",
+    "explanation_uz": "Bir porsiyaga $\\frac{1.5}{6} = 0.25$ kilogramm guruch ketadi, demak 20 porsiyaga $20 \\times 0.25 = 5$ kilogramm kerak. Yoki $\\frac{1.5}{6} = \\frac{x}{20}$ proporsiyasini yechamiz: $6x = 30$, $x = 5$. Proporsiyani teskari tuzish ($\\frac{1.5}{6} = \\frac{20}{x}$) 80 ni beradi, bu mantiqsiz. Javob maydoniga 5 deb yozing.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "ratios_rates_proportions_units",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "A runner's average speed is 5 meters per second. What is this speed in kilometers per hour? (1 kilometer = 1,000 meters)",
+    "option_a": "$1.8$",
+    "option_b": "$18$",
+    "option_c": "$300$",
+    "option_d": "$18{,}000$",
+    "correct": "B",
+    "explanation_en": "In one hour there are $60 \\times 60 = 3{,}600$ seconds, so the runner covers $5 \\times 3{,}600 = 18{,}000$ meters per hour. Since 1 kilometer is 1,000 meters, this is $\\frac{18{,}000}{1{,}000} = 18$ kilometers per hour. Choice D is the speed in meters per hour; it was not converted to kilometers. Choice C multiplies by 60 only once (meters per minute). Choice A divides by 10,000 instead of 1,000.",
+    "explanation_uz": "Bir soatda $60 \\times 60 = 3{,}600$ sekund bor, demak yuguruvchi bir soatda $5 \\times 3{,}600 = 18{,}000$ metr yuguradi. 1 kilometr 1,000 metr bo‘lgani uchun bu $\\frac{18{,}000}{1{,}000} = 18$ km/soat. D javob — metr/soatdagi tezlik, kilometrga o‘tkazilmagan. C javob faqat bir marta 60 ga ko‘paytirgan (metr/daqiqa). A javob 1,000 o‘rniga 10,000 ga bo‘lgan.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "ratios_rates_proportions_units",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "On a map, 1 centimeter represents 2.5 kilometers. The actual distance between two villages is 37 kilometers. What is the distance between the two villages on the map, in centimeters?",
+    "option_a": "$14.8$",
+    "option_b": "$34.5$",
+    "option_c": "$92.5$",
+    "option_d": "$1.48$",
+    "correct": "A",
+    "explanation_en": "Each centimeter on the map stands for 2.5 kilometers, so the map distance is $\\frac{37}{2.5} = 14.8$ centimeters. Check: $14.8 \\times 2.5 = 37$. Choice C multiplies 37 by 2.5, which converts in the wrong direction. Choice B subtracts 2.5 from 37. Choice D misplaces the decimal point (it divides by 25).",
+    "explanation_uz": "Xaritadagi har bir santimetr 2.5 kilometrga to‘g‘ri keladi, demak xaritadagi masofa $\\frac{37}{2.5} = 14.8$ santimetr. Tekshiruv: $14.8 \\times 2.5 = 37$. C javob 37 ni 2.5 ga ko‘paytirgan — teskari yo‘nalishda o‘tkazgan. B javob 37 dan 2.5 ni ayirgan. D javobda vergul noto‘g‘ri qo‘yilgan (25 ga bo‘lingan).",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "ratios_rates_proportions_units",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "A block of a certain metal has a mass of 540 grams and a volume of 200 cubic centimeters. A larger block of the same metal has a volume of 1,500 cubic centimeters. What is the mass of the larger block, in **kilograms**? (1 kilogram = 1,000 grams)",
+    "spr_answers": [
+      "4.05",
+      "81/20"
+    ],
+    "explanation_en": "The density of the metal is $\\frac{540}{200} = 2.7$ grams per cubic centimeter. The larger block has mass $2.7 \\times 1{,}500 = 4{,}050$ grams, which is $\\frac{4{,}050}{1{,}000} = 4.05$ kilograms. Entering 4050 gives the mass in grams, not kilograms. Enter 4.05 or 81/20.",
+    "explanation_uz": "Metallning zichligi $\\frac{540}{200} = 2.7$ g/sm³. Katta blokning massasi $2.7 \\times 1{,}500 = 4{,}050$ gramm, ya’ni $\\frac{4{,}050}{1{,}000} = 4.05$ kilogramm. 4050 deb yozish massani kilogrammda emas, grammda berish bo‘ladi. Javob maydoniga 4.05 yoki 81/20 deb yozing.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "ratios_rates_proportions_units",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "A builder mixes cement, sand, and gravel in the ratio $1 : 2 : 4$ by mass to make concrete. How many kilograms of sand are needed to make 350 kilograms of this concrete?",
+    "option_a": "$50$",
+    "option_b": "$175$",
+    "option_c": "$100$",
+    "option_d": "$200$",
+    "correct": "C",
+    "explanation_en": "The ratio has $1 + 2 + 4 = 7$ parts in total, so each part is $\\frac{350}{7} = 50$ kilograms. Sand is 2 parts: $2 \\times 50 = 100$ kilograms. Choice A is the mass of cement (1 part). Choice D is the mass of gravel (4 parts). Choice B treats sand as half of the mixture, using the ratio $2 : 4$ and ignoring the cement.",
+    "explanation_uz": "Nisbatda jami $1 + 2 + 4 = 7$ ulush bor, demak bir ulush $\\frac{350}{7} = 50$ kilogramm. Qum 2 ulush: $2 \\times 50 = 100$ kilogramm. A javob — sement massasi (1 ulush). D javob — shag‘al massasi (4 ulush). B javob sementni hisobga olmay, $2 : 4$ nisbatdan qumni aralashmaning yarmi deb olgan.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "ratios_rates_proportions_units",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "A farmer will spread fertilizer on a rectangular field that is 120 meters long and 0.25 kilometer wide. The fertilizer is applied at a rate of 25 grams per square meter. How many **kilograms** of fertilizer are needed for the entire field? (1 kilometer = 1,000 meters; 1 kilogram = 1,000 grams)",
+    "option_a": "$0.75$",
+    "option_b": "$75$",
+    "option_c": "$750$",
+    "option_d": "$7{,}500$",
+    "correct": "C",
+    "explanation_en": "First express both sides in meters: 0.25 kilometer is 250 meters, so the area is $120 \\times 250 = 30{,}000$ square meters. The fertilizer needed is $25 \\times 30{,}000 = 750{,}000$ grams, which is $\\frac{750{,}000}{1{,}000} = 750$ kilograms. Choice A multiplies 120 by 0.25 without converting kilometers to meters. Choice D divides by 100 instead of 1,000 when converting grams to kilograms, and choice B divides by 10,000.",
+    "explanation_uz": "Avval ikkala tomonni metrda ifodalaymiz: 0.25 kilometr 250 metr, demak yuza $120 \\times 250 = 30{,}000$ kvadrat metr. Kerakli o‘g‘it $25 \\times 30{,}000 = 750{,}000$ gramm, ya’ni $\\frac{750{,}000}{1{,}000} = 750$ kilogramm. A javob kilometrni metrga o‘tkazmasdan, 120 ni 0.25 ga ko‘paytirgan. D javob grammni kilogrammga o‘tkazishda 1,000 o‘rniga 100 ga, B javob esa 10,000 ga bo‘lgan.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "ratios_rates_proportions_units",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "Pipe A alone can fill an empty water tank in 6 hours. Pipe B alone can fill the same empty tank in 9 hours. If both pipes work together at these rates, how many hours will it take to fill the empty tank?",
+    "spr_answers": [
+      "3.6",
+      "18/5"
+    ],
+    "explanation_en": "Pipe A fills $\\frac{1}{6}$ of the tank per hour and pipe B fills $\\frac{1}{9}$ of the tank per hour. Together they fill $\\frac{1}{6} + \\frac{1}{9} = \\frac{3}{18} + \\frac{2}{18} = \\frac{5}{18}$ of the tank per hour, so the time needed is $\\frac{18}{5} = 3.6$ hours. Averaging the two times, $\\frac{6 + 9}{2} = 7.5$, is wrong, because working together must be faster than either pipe alone. Adding the times (15) is also wrong. Enter 3.6 or 18/5.",
+    "explanation_uz": "A quvur bir soatda bakning $\\frac{1}{6}$ qismini, B quvur esa $\\frac{1}{9}$ qismini to‘ldiradi. Birgalikda ular bir soatda $\\frac{1}{6} + \\frac{1}{9} = \\frac{3}{18} + \\frac{2}{18} = \\frac{5}{18}$ qismini to‘ldiradi, demak kerakli vaqt $\\frac{18}{5} = 3.6$ soat. Ikki vaqtning o‘rtachasini olish ($\\frac{6 + 9}{2} = 7.5$) noto‘g‘ri, chunki birga ishlaganda har bir quvurning yolg‘iz ishlashidan tezroq bo‘lishi kerak. Vaqtlarni qo‘shish (15) ham xato. Javob maydoniga 3.6 yoki 18/5 deb yozing.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  }
+]

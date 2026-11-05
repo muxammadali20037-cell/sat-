@@ -1,0 +1,162 @@
+[
+  {
+    "skill_code": "rhetorical_synthesis",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- The axolotl is a salamander native to lakes near Mexico City.\n- Unlike most salamanders, it keeps its feathery external gills throughout its adult life.\n- Axolotls can regrow lost limbs, as well as parts of the heart and spinal cord.\n- Scientists study axolotls to learn how tissue regeneration works.",
+    "stem": "The student wants to emphasize the axolotl's ability to regrow body parts. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "option_a": "The axolotl is a salamander that is native to lakes near Mexico City.",
+    "option_b": "Unlike most salamanders, the axolotl keeps its feathery external gills as an adult.",
+    "option_c": "The axolotl can regrow not only lost limbs but also parts of its heart and spinal cord.",
+    "option_d": "Scientists study the axolotl, a salamander native to lakes near Mexico City.",
+    "correct": "C",
+    "explanation_en": "The goal is to emphasize the axolotl's ability to regrow body parts. Choice C does this directly, and the phrase “not only … but also” stresses how many different body parts the animal can regrow.\n\nChoice A gives the axolotl's habitat, not its ability to regrow body parts. Choice B describes its gills, a different feature. Choice D says that scientists study the axolotl but never mentions regeneration.",
+    "explanation_uz": "Maqsad — aksolotlning tana a’zolarini qayta o‘stira olish qobiliyatini ta’kidlash. C buni to‘g‘ridan-to‘g‘ri qiladi, “not only … but also” iborasi esa hayvon qanchalik ko‘p turli a’zolarni qayta o‘stira olishini alohida ta’kidlaydi.\n\nA — a’zolarni qayta o‘stirish haqida emas, aksolotlning yashash joyi haqida. B — uning jabralarini, ya’ni boshqa xususiyatini tasvirlaydi. D — olimlar aksolotlni o‘rganishini aytadi, lekin qayta tiklanishni umuman tilga olmaydi.",
+    "estimated_seconds": 55,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "rhetorical_synthesis",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- The saxaul is a small tree that grows in the deserts of Central Asia, including the Kyzylkum.\n- Its roots can reach groundwater more than 10 meters below the surface.\n- Groves of saxaul help hold sand in place and reduce dust storms.\n- Uzbekistan has planted saxaul across large areas of the dried bed of the Aral Sea.",
+    "stem": "The student wants to explain why saxaul is planted on the dried bed of the Aral Sea. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "option_a": "Because groves of saxaul help hold sand in place and reduce dust storms, Uzbekistan has planted the tree across large areas of the dried Aral Sea bed.",
+    "option_b": "The saxaul, a small tree, grows in the deserts of Central Asia, such as the Kyzylkum.",
+    "option_c": "The roots of the saxaul can reach groundwater more than 10 meters below the surface.",
+    "option_d": "Uzbekistan has planted saxaul across large areas of the dried bed of the Aral Sea.",
+    "correct": "A",
+    "explanation_en": "The goal is to explain why saxaul is planted on the dried Aral Sea bed. Choice A gives the reason, using “Because” to connect the tree's ability to hold sand and reduce dust storms with the planting.\n\nChoice B tells where saxaul grows naturally but not why it is planted on the seabed. Choice C describes the tree's roots without linking them to the planting. Choice D states that the tree has been planted there but gives no reason.",
+    "explanation_uz": "Maqsad — saksovul nima uchun Orol dengizining qurigan tubiga ekilishini tushuntirish. A sababni beradi: “Because” so‘zi daraxtning qumni ushlab turishi va chang bo‘ronlarini kamaytirishini ekish bilan bog‘laydi.\n\nB — saksovul tabiiy holda qayerda o‘sishini aytadi, lekin nima uchun dengiz tubiga ekilishini emas. C — daraxt ildizlarini tasvirlaydi, ammo ularni ekish bilan bog‘lamaydi. D — daraxt u yerga ekilganini aytadi, lekin hech qanday sabab keltirmaydi.",
+    "estimated_seconds": 55,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "rhetorical_synthesis",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- Venus is the second planet from the Sun.\n- Venus takes about 243 Earth days to rotate once on its axis.\n- Venus takes about 225 Earth days to complete one orbit around the Sun.\n- Venus rotates in the opposite direction from most other planets in the solar system.",
+    "stem": "The student wants to emphasize that Venus takes longer to rotate once on its axis than to orbit the Sun once. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "option_a": "Venus, the second planet from the Sun, rotates in the opposite direction from most other planets.",
+    "option_b": "Venus takes about 225 Earth days to complete one orbit around the Sun.",
+    "option_c": "Venus is the second planet from the Sun, and it takes about 243 Earth days to rotate once.",
+    "option_d": "Venus takes about 243 Earth days to rotate once on its axis, which is longer than the roughly 225 Earth days it takes to orbit the Sun.",
+    "correct": "D",
+    "explanation_en": "The goal is to emphasize that one rotation of Venus takes longer than one orbit. Choice D gives both figures, 243 and 225 Earth days, and states directly that the rotation time is “longer.”\n\nChoice A is about the direction of rotation, not its length. Choice B gives only the orbit time, so no comparison is made. Choice C gives only the rotation time and adds the planet's position, so it also makes no comparison.",
+    "explanation_uz": "Maqsad — Veneraning o‘z o‘qi atrofida bir marta aylanishi Quyosh atrofida bir marta aylanishidan uzoqroq davom etishini ta’kidlash. D ikkala raqamni — 243 va 225 Yer kunini — beradi va o‘z o‘qi atrofida aylanish vaqti “longer” (uzoqroq) ekanini to‘g‘ridan-to‘g‘ri aytadi.\n\nA — aylanish davomiyligi haqida emas, yo‘nalishi haqida. B — faqat orbita vaqtini beradi, shuning uchun taqqoslash yo‘q. C — faqat o‘z o‘qi atrofida aylanish vaqtini va sayyoraning o‘rnini aytadi, bu ham taqqoslash emas.",
+    "estimated_seconds": 55,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "rhetorical_synthesis",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- Great tits are small songbirds found in both European cities and forests.\n- Biologist Elif Demir recorded the songs of great tits in 10 cities and 10 nearby forests.\n- The city birds sang at higher pitches than the forest birds did.\n- Traffic noise is mostly low-pitched.\n- Demir concluded that high-pitched songs are easier to hear over traffic noise.",
+    "stem": "The student wants to explain the reason Demir gave for the difference between the songs of city and forest great tits. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "option_a": "Demir recorded the songs of great tits living in 10 cities and in 10 nearby forests.",
+    "option_b": "According to Demir, city great tits sing at higher pitches than forest great tits do because high-pitched songs are easier to hear over low-pitched traffic noise.",
+    "option_c": "Great tits living in cities sang at higher pitches than great tits living in forests did.",
+    "option_d": "Great tits are small songbirds found in European cities, where traffic noise is mostly low-pitched.",
+    "correct": "B",
+    "explanation_en": "The goal is to explain the reason Demir gave for the difference in songs. Choice B names the difference (city birds sing at higher pitches) and gives Demir's explanation (high-pitched songs are easier to hear over low-pitched traffic noise).\n\nChoice A describes how Demir collected her data, not her explanation. Choice C states the difference but gives no reason for it. Choice D mentions traffic noise but never mentions the difference in songs or Demir's conclusion.",
+    "explanation_uz": "Maqsad — shahar va o‘rmondagi katta chittaklar (great tit) sayrashidagi farq uchun Demir keltirgan sababni tushuntirish. B farqni (shahar qushlari balandroq ohangda sayraydi) ham, Demirning izohini ham (baland ohangli sayrash past ohangli transport shovqini ustidan yaxshiroq eshitiladi) beradi.\n\nA — Demir ma’lumotlarni qanday yig‘ganini tasvirlaydi, uning izohini emas. C — farqni aytadi, ammo sababini bermaydi. D — transport shovqinini tilga oladi, lekin sayrashdagi farq ham, Demirning xulosasi ham aytilmaydi.",
+    "estimated_seconds": 65,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "rhetorical_synthesis",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- The dutar is a long-necked lute played in Uzbekistan and neighboring countries.\n- It has two strings.\n- The rubab is a short-necked lute that is also played in Central Asia.\n- It usually has more strings than the dutar, and its body is often covered with animal skin.\n- Both instruments are often played to accompany singers.",
+    "stem": "The student wants to emphasize a similarity between the dutar and the rubab. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "option_a": "The dutar has only two strings, while the rubab usually has more.",
+    "option_b": "The dutar has a long neck, but the rubab has a short one.",
+    "option_c": "The rubab, a short-necked lute, often has a body covered with animal skin.",
+    "option_d": "The dutar and the rubab are both Central Asian lutes that are often played to accompany singers.",
+    "correct": "D",
+    "explanation_en": "The goal is to emphasize a similarity. Choice D uses “both” to point out what the instruments share: each is a Central Asian lute often played to accompany singers.\n\nChoices A and B each point out a difference (number of strings; length of neck), which is the opposite of the goal. Choice C describes only the rubab, so it cannot show a similarity between the two instruments.",
+    "explanation_uz": "Maqsad — o‘xshashlikni ta’kidlash. D “both” (ikkalasi ham) so‘zi orqali cholg‘ularning umumiy jihatini ko‘rsatadi: ikkalasi ham Markaziy Osiyo cholg‘usi bo‘lib, ko‘pincha xonandalarga jo‘r bo‘lish uchun chalinadi.\n\nA va B farqni ko‘rsatadi (torlar soni; dastaning uzunligi) — bu maqsadga teskari. C faqat rubob haqida, shuning uchun ikki cholg‘u o‘rtasidagi o‘xshashlikni ko‘rsata olmaydi.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "rhetorical_synthesis",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- A windcatcher is a tall tower built on top of a house in hot, dry regions such as central Iran.\n- Openings near the top of the tower face the wind.\n- Wind entering the openings is pushed down the tower into the rooms below.\n- As this moving air enters, warm indoor air is forced out through windows and doors.\n- Some windcatchers are more than 30 meters tall.",
+    "stem": "The student wants to explain how a windcatcher cools a house. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "option_a": "Wind entering openings near the top of a windcatcher is pushed down into the rooms below, forcing warm indoor air out through windows and doors.",
+    "option_b": "A windcatcher is a tall tower built on top of a house in a hot, dry region such as central Iran.",
+    "option_c": "Some windcatchers, which are built in hot, dry regions, are more than 30 meters tall.",
+    "option_d": "The openings near the top of a windcatcher face the wind.",
+    "correct": "A",
+    "explanation_en": "The goal is to explain how a windcatcher cools a house, which requires describing the process. Choice A traces the whole process: wind enters at the top, is pushed down into the rooms, and forces warm air out.\n\nChoice B defines what a windcatcher is and where it is found but not how it works. Choice C gives the height of some windcatchers, which does not explain cooling. Choice D describes only the first part of the process and never says how the house is cooled.",
+    "explanation_uz": "Maqsad — shamol ushlagich (badgir) uyni qanday sovitishini tushuntirish, buning uchun jarayonni tasvirlash kerak. A butun jarayonni ko‘rsatadi: shamol tepadan kiradi, xonalarga pastga yo‘naltiriladi va issiq havoni tashqariga chiqarib yuboradi.\n\nB — shamol ushlagich nima ekanini va qayerda uchrashini aytadi, lekin qanday ishlashini emas. C — ba’zi shamol ushlagichlarning balandligini beradi, bu sovitishni tushuntirmaydi. D — jarayonning faqat birinchi qismini tasvirlaydi va uy qanday sovishini aytmaydi.",
+    "estimated_seconds": 65,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "rhetorical_synthesis",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- Desert ants of the genus Cataglyphis search for food far from their nests in the Sahara.\n- Researchers once assumed that these ants found their way home mainly by following scent trails.\n- However, scent trails evaporate quickly on hot sand.\n- In experiments, ants whose legs had been lengthened with tiny stilts walked past their nest, while ants with shortened legs stopped before reaching it.\n- These results suggest that the ants measure distance by counting their steps.",
+    "stem": "The student wants to contrast the earlier assumption about how Cataglyphis ants find their way home with what the experiments suggest. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "option_a": "Because scent trails evaporate quickly on hot sand, Cataglyphis ants search for food far from their nests.",
+    "option_b": "Although researchers once assumed that Cataglyphis ants found their way home by following scent trails, experiments suggest that the ants instead measure distance by counting their steps.",
+    "option_c": "In experiments, Cataglyphis ants with lengthened legs walked past their nest, while those with shortened legs stopped before reaching it.",
+    "option_d": "Cataglyphis ants search for food far from their nests in the Sahara and find their way home by counting their steps.",
+    "correct": "B",
+    "explanation_en": "The goal requires two parts: the earlier assumption and what the experiments suggest, set against each other. Choice B presents both, using “Although” and “instead” to make the contrast clear.\n\nChoice A creates a cause-and-effect link that the notes do not support and mentions neither the assumption nor the experiments' conclusion. Choice C reports the experimental results but leaves out the earlier assumption, so there is no contrast. Choice D gives the newer explanation but omits the earlier assumption, so it also makes no contrast.",
+    "explanation_uz": "Maqsad ikki qismni talab qiladi: avvalgi taxmin va tajribalar ko‘rsatgan natija, bir-biriga qarama-qarshi qo‘yilgan holda. B ikkalasini ham beradi, “Although” va “instead” so‘zlari esa qarama-qarshilikni aniq ko‘rsatadi.\n\nA — eslatmalarda tasdiqlanmagan sabab-oqibat bog‘lanishini yaratadi va na taxminni, na tajribalar xulosasini aytadi. C — tajriba natijalarini beradi, ammo avvalgi taxminni tushirib qoldiradi, shuning uchun qarama-qarshilik yo‘q. D — yangi izohni beradi, lekin avvalgi taxmin yo‘q, demak bu ham qarama-qarshilik emas.",
+    "estimated_seconds": 80,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "rhetorical_synthesis",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- The Svalbard Global Seed Vault is located on a Norwegian island about 1,300 kilometers from the North Pole.\n- It stores backup copies of seeds from gene banks around the world.\n- The vault can hold up to 4.5 million seed samples.\n- It is built deep inside a mountain, where the surrounding permafrost helps keep the seeds frozen even if the power fails.\n- In 2015, researchers withdrew seeds from the vault to replace collections lost during the war in Syria.",
+    "stem": "The student wants to explain how the vault's design helps protect the seeds it stores. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "option_a": "The Svalbard Global Seed Vault, which can hold up to 4.5 million seed samples, stores backup copies of seeds from gene banks around the world.",
+    "option_b": "Located on a Norwegian island about 1,300 kilometers from the North Pole, the Svalbard Global Seed Vault stores backup copies of seeds from around the world.",
+    "option_c": "Because the Svalbard Global Seed Vault is built deep inside a mountain, the surrounding permafrost helps keep its seeds frozen even if the power fails.",
+    "option_d": "In 2015, researchers withdrew seeds from the Svalbard Global Seed Vault to replace collections lost during the war in Syria.",
+    "correct": "C",
+    "explanation_en": "The goal is to explain how the vault's design protects the seeds. Choice C describes a design feature (being built deep inside a mountain) and explains its protective effect (permafrost keeps the seeds frozen even during a power failure).\n\nChoice A gives the vault's capacity and purpose but not how it protects the seeds. Choice B gives the vault's location, which is tempting, but it never explains how that location or the building's design protects anything. Choice D describes one use of the stored seeds, not how they are protected.",
+    "explanation_uz": "Maqsad — omborning tuzilishi (dizayni) undagi urug‘larni qanday himoya qilishini tushuntirish. C dizayn xususiyatini (tog‘ ichida chuqur qurilgani) va uning himoya ta’sirini (abadiy muzloq urug‘larni hatto elektr o‘chganda ham muzlagan holda saqlaydi) tushuntiradi.\n\nA — omborning sig‘imi va vazifasini beradi, lekin urug‘lar qanday himoyalanishini emas. B — omborning joylashuvini aytadi, bu jozibali tuyuladi, ammo bu joylashuv yoki bino tuzilishi qanday himoya qilishini tushuntirmaydi. D — saqlangan urug‘lardan bir marta foydalanilganini tasvirlaydi, ular qanday himoyalanishini emas.",
+    "estimated_seconds": 80,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  }
+]

@@ -1,0 +1,143 @@
+[
+  {
+    "skill_code": "two_variable_data",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "A teacher collected data from 30 students on the number of hours each student studied per week, $x$, and each student's score on a final exam, $y$. The line of best fit for the data is $y = 2.5x + 58$. Which of the following is the best interpretation of 2.5 in this context?",
+    "option_a": "The predicted exam score of a student who does not study",
+    "option_b": "The predicted increase in exam score for each additional hour studied per week",
+    "option_c": "The predicted number of hours studied per week by a student who scores 58",
+    "option_d": "The actual exam score of every student who studies 1 hour per week",
+    "correct": "B",
+    "explanation_en": "In a linear model $y = mx + b$, the slope $m$ is the change in $y$ for each increase of 1 in $x$. Here the slope is 2.5, so the model predicts that a student's exam score increases by 2.5 points for each additional hour studied per week. Choice A describes the $y$-intercept, 58. Choice C confuses the variables. Choice D is wrong because a line of best fit gives **predicted** values, not actual scores, and the predicted score at $x = 1$ is $60.5$, not 2.5.",
+    "explanation_uz": "$y = mx + b$ chiziqli modelida $m$ qiyalik — $x$ 1 ga ortganda $y$ ning o‘zgarishi. Bu yerda qiyalik 2.5, demak model bo‘yicha haftalik o‘qish vaqti har 1 soatga ortganda imtihon bali 2.5 ballga oshadi. A javob $y$ o‘qi bilan kesishish nuqtasi 58 ni tasvirlaydi. C javob o‘zgaruvchilarni chalkashtirgan. D javob noto‘g‘ri, chunki eng yaxshi moslik chizig‘i haqiqiy emas, **bashorat qilingan** qiymatlarni beradi; bundan tashqari, $x = 1$ dagi bashorat 2.5 emas, $60.5$.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "two_variable_data",
+    "difficulty": "easy",
+    "question_type": "spr",
+    "stem": "A scientist measured the air temperature at different altitudes on a mountain at the same time of day. The line of best fit for the data is $y = -0.65x + 31$, where $y$ is the predicted temperature, in degrees Celsius, and $x$ is the altitude, in hundreds of meters. According to the line of best fit, what is the predicted temperature, in degrees Celsius, at an altitude of 1,200 meters?",
+    "spr_answers": [
+      "23.2",
+      "116/5"
+    ],
+    "explanation_en": "Because $x$ is measured in hundreds of meters, an altitude of 1,200 meters corresponds to $x = 12$. Then $y = -0.65(12) + 31 = -7.8 + 31 = 23.2$. Substituting $x = 1{,}200$ directly gives $-749$, a temperature that makes no sense here; always check the units of $x$. Enter 23.2 or 116/5.",
+    "explanation_uz": "$x$ yuzlab metrlarda o‘lchangani uchun 1,200 metr balandlik $x = 12$ ga mos keladi. U holda $y = -0.65(12) + 31 = -7.8 + 31 = 23.2$. To‘g‘ridan-to‘g‘ri $x = 1{,}200$ ni qo‘yish $-749$ ni beradi — bu yerda mantiqsiz harorat; har doim $x$ ning birliklarini tekshiring. Javob maydoniga 23.2 yoki 116/5 deb yozing.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "two_variable_data",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "Which of the following best describes the relationship between the age and the price of the cars in the table?",
+    "passage": "The table shows the age, in years, and the price, in millions of soums, of 8 used cars of the same model.\n\n| Age (years) | Price (millions of soums) |\n| ---: | ---: |\n| 1 | 178 |\n| 2 | 160 |\n| 3 | 149 |\n| 4 | 131 |\n| 5 | 120 |\n| 6 | 104 |\n| 7 | 92 |\n| 8 | 77 |",
+    "option_a": "A positive linear association",
+    "option_b": "An exponential growth relationship",
+    "option_c": "No association",
+    "option_d": "A negative linear association",
+    "correct": "D",
+    "explanation_en": "As the age increases, the price decreases, so the association is negative. The price drops by roughly the same amount (between 11 and 18 million soums) for each additional year, so the pattern is approximately linear. Choice A would mean that older cars tend to cost more. Choice B would require the prices to increase, and by a growing amount each year. Choice C is wrong because the prices follow a clear downward pattern.",
+    "explanation_uz": "Yosh ortgan sari narx kamayadi, demak bog‘liqlik manfiy. Har bir qo‘shimcha yil uchun narx taxminan bir xil miqdorga (11 dan 18 million so‘mgacha) tushadi, demak bog‘liqlik taxminan chiziqli. A javob eski avtomobillar qimmatroq bo‘lishini anglatardi. B javob uchun narxlar o‘sishi, har yili esa tobora ko‘proq o‘sishi kerak edi. C javob noto‘g‘ri, chunki narxlar aniq kamayish tendensiyasiga ega.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "two_variable_data",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "A scatterplot shows the number of hours, $x$, that each of 20 workers spent on training and the number of products, $y$, each worker assembled in one day. The line of best fit for the data is $y = 4x + 20$. One worker spent 6 hours on training and assembled 41 products in one day. Which of the following is true about this worker's data point?",
+    "option_a": "The actual number of products is 3 less than the number predicted by the line of best fit.",
+    "option_b": "The actual number of products is 3 greater than the number predicted by the line of best fit.",
+    "option_c": "The actual number of products is 17 greater than the number predicted by the line of best fit.",
+    "option_d": "The actual number of products is equal to the number predicted by the line of best fit.",
+    "correct": "A",
+    "explanation_en": "The predicted number of products for $x = 6$ is $4(6) + 20 = 44$. The worker actually assembled 41 products, and $41 - 44 = -3$, so the actual number is 3 **less** than predicted (the point lies below the line). Choice B has the right size of difference but the wrong direction. Choice C compares 41 with $4(6) = 24$, forgetting to add 20: $41 - 24 = 17$. Choice D would require the point to lie on the line.",
+    "explanation_uz": "$x = 6$ uchun bashorat qilingan mahsulotlar soni $4(6) + 20 = 44$. Ishchi aslida 41 ta mahsulot yig‘gan, $41 - 44 = -3$, demak haqiqiy son bashoratdan 3 ta **kam** (nuqta chiziqdan pastda). B javobda farq miqdori to‘g‘ri, lekin yo‘nalishi teskari. C javob 20 ni qo‘shishni unutib, 41 ni $4(6) = 24$ bilan solishtirgan: $41 - 24 = 17$. D javob nuqta chiziq ustida yotishini talab qilardi.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "two_variable_data",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "A model predicts the value of a laptop $x$ years after it is bought. According to the model, the value $V$, in thousands of soums, is $V = 9{,}600(0.88)^x$. According to the model, the value of the laptop decreases by what percent each year?",
+    "spr_answers": [
+      "12"
+    ],
+    "explanation_en": "In an exponential model $V = a(b)^x$ with $0 < b < 1$, the value is multiplied by $b$ each year, so it decreases by $(1 - b) \\times 100\\%$ each year. Here $b = 0.88$, so the value decreases by $(1 - 0.88) \\times 100\\% = 12\\%$ per year. Entering 88 confuses the percent that **remains** each year with the percent lost. Enter 12.",
+    "explanation_uz": "$0 < b < 1$ bo‘lgan $V = a(b)^x$ eksponensial modelida qiymat har yili $b$ ga ko‘paytiriladi, demak har yili $(1 - b) \\times 100\\%$ ga kamayadi. Bu yerda $b = 0.88$, shuning uchun qiymat har yili $(1 - 0.88) \\times 100\\% = 12\\%$ ga kamayadi. 88 deb yozish har yili **qoladigan** foizni yo‘qotilgan foiz bilan chalkashtirishdir. Javob maydoniga 12 deb yozing.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "two_variable_data",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "Which of the following equations best models the data in the table?",
+    "passage": "The table shows the amount of water $y$, in liters, remaining in a tank $x$ minutes after a valve was opened.\n\n| $x$ (minutes) | $y$ (liters) |\n| ---: | ---: |\n| 0 | 80 |\n| 2 | 71 |\n| 4 | 62 |\n| 6 | 53 |",
+    "option_a": "$y = 80 - 9x$",
+    "option_b": "$y = 80(0.89)^x$",
+    "option_c": "$y = 80 - 4.5x$",
+    "option_d": "$y = 53 + 4.5x$",
+    "correct": "C",
+    "explanation_en": "Each time $x$ increases by 2, $y$ decreases by 9, so the data are linear with slope $\\frac{-9}{2} = -4.5$. At $x = 0$, $y = 80$, so the model is $y = 80 - 4.5x$. Check: at $x = 6$, $80 - 4.5(6) = 53$. Choice A uses the change in $y$ per 2 units of $x$ as the slope. Choice B is exponential, but the data decrease by a constant **difference**, not a constant ratio. Choice D has a positive slope and starts at the last value, so it predicts increasing values.",
+    "explanation_uz": "$x$ har safar 2 ga ortganda $y$ 9 ga kamayadi, demak ma’lumotlar chiziqli va qiyalik $\\frac{-9}{2} = -4.5$. $x = 0$ da $y = 80$, demak model $y = 80 - 4.5x$. Tekshiruv: $x = 6$ da $80 - 4.5(6) = 53$. A javob $x$ ning 2 birlik o‘zgarishiga mos $y$ o‘zgarishini qiyalik deb olgan. B javob eksponensial, lekin ma’lumotlar o‘zgarmas nisbat bilan emas, o‘zgarmas **ayirma** bilan kamayadi. D javobning qiyaligi musbat va u oxirgi qiymatdan boshlanadi, shuning uchun o‘suvchi qiymatlarni beradi.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "two_variable_data",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "For each of two cities, a researcher made a scatterplot of the number of years since 2015, $x$, and the number of electric buses in service, $y$. The line of best fit for City A is $y = 1.2x + 5$, and the line of best fit for City B is $y = 0.8x + 9$. Which of the following statements is true according to the lines of best fit?",
+    "option_a": "For every value of $x$, City B is predicted to have more electric buses than City A.",
+    "option_b": "City A and City B are predicted to have the same number of electric buses when $x = 14$.",
+    "option_c": "For every value of $x$ less than 10, City A is predicted to have more electric buses than City B.",
+    "option_d": "For every value of $x$ greater than 10, City A is predicted to have more electric buses than City B.",
+    "correct": "D",
+    "explanation_en": "The predictions are equal when $1.2x + 5 = 0.8x + 9$, so $0.4x = 4$ and $x = 10$ (both predict 17 buses). Because City A's line has the greater slope (1.2 versus 0.8), City A's predicted number grows faster, so for $x > 10$ City A's prediction is greater. For example, at $x = 15$: City A, $23$; City B, $21$. Choice C reverses the inequality: for $x < 10$, City B's prediction is greater. Choice A ignores that the lines cross. Choice B comes from an error in solving the equation; at $x = 14$ the predictions are 21.8 and 20.2.",
+    "explanation_uz": "Bashoratlar $1.2x + 5 = 0.8x + 9$ bo‘lganda teng, ya’ni $0.4x = 4$ va $x = 10$ (ikkalasi ham 17 ta avtobusni bashorat qiladi). A shahar chizig‘ining qiyaligi kattaroq (1.2 va 0.8), shuning uchun A shahar bashorati tezroq o‘sadi va $x > 10$ da A shaharniki katta bo‘ladi. Masalan, $x = 15$ da: A shahar — $23$, B shahar — $21$. C javob tengsizlikni teskari olgan: $x < 10$ da B shahar bashorati katta. A javob chiziqlar kesishishini e’tiborsiz qoldirgan. B javob tenglamani yechishdagi xatodan kelib chiqqan; $x = 14$ da bashoratlar 21.8 va 20.2.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "two_variable_data",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "A line of best fit for a data set is $y = ax + 15$, where $a$ is a constant. The line of best fit predicts a $y$-value of 51 when $x = 8$. The data set includes the point $(12, 66)$. What is the actual $y$-value of this point minus the $y$-value predicted by the line of best fit when $x = 12$?",
+    "spr_answers": [
+      "-3"
+    ],
+    "explanation_en": "First find $a$: $8a + 15 = 51$, so $8a = 36$ and $a = 4.5$. The predicted $y$-value when $x = 12$ is $4.5(12) + 15 = 54 + 15 = 69$. The actual value is 66, so actual minus predicted is $66 - 69 = -3$. The negative sign shows that the point lies below the line. Entering 3 reverses the subtraction (predicted minus actual). Enter -3.",
+    "explanation_uz": "Avval $a$ ni topamiz: $8a + 15 = 51$, demak $8a = 36$ va $a = 4.5$. $x = 12$ da bashorat qilingan qiymat $4.5(12) + 15 = 54 + 15 = 69$. Haqiqiy qiymat 66, demak haqiqiy minus bashorat $66 - 69 = -3$. Manfiy ishora nuqta chiziqdan pastda yotishini ko‘rsatadi. 3 deb yozish ayirishni teskari bajarish (bashorat minus haqiqiy) bo‘ladi. Javob maydoniga -3 deb yozing.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  }
+]

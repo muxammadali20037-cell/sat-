@@ -1,0 +1,140 @@
+[
+  {
+    "skill_code": "equivalent_expressions",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "Which expression is equivalent to $(2x^2 - 5x + 3) - (x^2 + 4x - 6)$?",
+    "option_a": "$x^2 - x - 3$",
+    "option_b": "$3x^2 - x - 3$",
+    "option_c": "$x^2 - 9x + 9$",
+    "option_d": "$x^2 - 9x - 3$",
+    "correct": "C",
+    "explanation_en": "Distribute the negative sign to every term of the second polynomial: $2x^2 - 5x + 3 - x^2 - 4x + 6$. Combine like terms: $(2x^2 - x^2) + (-5x - 4x) + (3 + 6) = x^2 - 9x + 9$.\n\nChoice A comes from subtracting only $x^2$ and keeping $+4x - 6$ unchanged. Choice B adds the $x^2$ terms instead of subtracting them. Choice D subtracts $-6$ incorrectly, writing $3 - 6$ instead of $3 + 6$.",
+    "explanation_uz": "Ikkinchi ko‘phadning har bir hadiga minus ishorasini tarqatamiz: $2x^2 - 5x + 3 - x^2 - 4x + 6$. O‘xshash hadlarni birlashtiramiz: $(2x^2 - x^2) + (-5x - 4x) + (3 + 6) = x^2 - 9x + 9$.\n\nA variant — faqat $x^2$ ayirilib, $+4x - 6$ o‘zgarmay qolgandagi natija. B variantda $x^2$ hadlari ayirilish o‘rniga qo‘shilgan. D variantda $-6$ ni ayirish noto‘g‘ri bajarilgan: $3 + 6$ o‘rniga $3 - 6$ yozilgan.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "equivalent_expressions",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "Which expression is equivalent to $(2x + 5)^2$?",
+    "option_a": "$4x^2 + 20x + 25$",
+    "option_b": "$4x^2 + 25$",
+    "option_c": "$4x^2 + 10x + 25$",
+    "option_d": "$2x^2 + 20x + 25$",
+    "correct": "A",
+    "explanation_en": "Write the square as a product and expand: $(2x + 5)(2x + 5) = 4x^2 + 10x + 10x + 25 = 4x^2 + 20x + 25$. This matches the pattern $(a + b)^2 = a^2 + 2ab + b^2$ with $a = 2x$ and $b = 5$.\n\nChoice B squares each term separately and drops the middle term $2ab$. Choice C includes the middle term only once ($10x$) instead of twice. Choice D forgets to square the coefficient $2$ in $(2x)^2$.",
+    "explanation_uz": "Kvadratni ko‘paytma ko‘rinishida yozib, qavslarni ochamiz: $(2x + 5)(2x + 5) = 4x^2 + 10x + 10x + 25 = 4x^2 + 20x + 25$. Bu $(a + b)^2 = a^2 + 2ab + b^2$ formulasiga mos keladi, bunda $a = 2x$, $b = 5$.\n\nB variantda har bir had alohida kvadratga oshirilib, o‘rta had $2ab$ tashlab yuborilgan. C variantda o‘rta had ikki marta emas, bir marta ($10x$) olingan. D variantda $(2x)^2$ dagi $2$ koeffitsiyent kvadratga oshirilmagan.",
+    "estimated_seconds": 55,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "equivalent_expressions",
+    "difficulty": "easy",
+    "question_type": "spr",
+    "stem": "The expression $5x(x - 4) + 3x$ is equivalent to $ax^2 + bx$, where $a$ and $b$ are constants. What is the value of $b$?",
+    "spr_answers": [
+      "-17"
+    ],
+    "explanation_en": "Distribute $5x$: $5x(x - 4) = 5x^2 - 20x$. Then add $3x$: $5x^2 - 20x + 3x = 5x^2 - 17x$. So $a = 5$ and $b = -17$.\n\nA common error is entering $-23$, which comes from treating $+3x$ as $-3x$, or entering $-20$, which forgets to combine the $3x$ term at all.",
+    "explanation_uz": "$5x$ ni qavs ichiga ko‘paytiramiz: $5x(x - 4) = 5x^2 - 20x$. So‘ng $3x$ ni qo‘shamiz: $5x^2 - 20x + 3x = 5x^2 - 17x$. Demak, $a = 5$ va $b = -17$.\n\nKo‘p uchraydigan xatolar: $+3x$ ni $-3x$ deb olib, $-23$ ni kiritish yoki $3x$ hadini umuman qo‘shmay, $-20$ ni kiritish.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "equivalent_expressions",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "For $x > 0$, which of the following is equivalent to $\\sqrt[3]{x^2} \\cdot \\sqrt{x}$?",
+    "option_a": "$x^{\\frac{1}{3}}$",
+    "option_b": "$x^{\\frac{7}{6}}$",
+    "option_c": "$x^{\\frac{3}{5}}$",
+    "option_d": "$x^{\\frac{5}{6}}$",
+    "correct": "B",
+    "explanation_en": "Rewrite each radical as a rational exponent: $\\sqrt[3]{x^2} = x^{\\frac{2}{3}}$ and $\\sqrt{x} = x^{\\frac{1}{2}}$. When multiplying powers with the same base, add the exponents: $\\frac{2}{3} + \\frac{1}{2} = \\frac{4}{6} + \\frac{3}{6} = \\frac{7}{6}$. So the expression equals $x^{\\frac{7}{6}}$.\n\nChoice A multiplies the exponents ($\\frac{2}{3} \\cdot \\frac{1}{2}$) instead of adding them. Choice C adds numerators and denominators separately ($\\frac{2 + 1}{3 + 2}$). Choice D uses $x^{\\frac{1}{3}}$ for $\\sqrt[3]{x^2}$, ignoring the square inside the cube root.",
+    "explanation_uz": "Har bir ildizni kasr daraja ko‘rinishida yozamiz: $\\sqrt[3]{x^2} = x^{\\frac{2}{3}}$ va $\\sqrt{x} = x^{\\frac{1}{2}}$. Asoslari bir xil darajalar ko‘paytirilganda ko‘rsatkichlar qo‘shiladi: $\\frac{2}{3} + \\frac{1}{2} = \\frac{4}{6} + \\frac{3}{6} = \\frac{7}{6}$. Demak, ifoda $x^{\\frac{7}{6}}$ ga teng.\n\nA variantda ko‘rsatkichlar qo‘shilish o‘rniga ko‘paytirilgan ($\\frac{2}{3} \\cdot \\frac{1}{2}$). C variantda surat va maxrajlar alohida qo‘shilgan ($\\frac{2 + 1}{3 + 2}$). D variantda $\\sqrt[3]{x^2}$ o‘rniga $x^{\\frac{1}{3}}$ olingan, ya’ni ildiz ostidagi kvadrat e’tiborga olinmagan.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "equivalent_expressions",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "In the equation $(3x + k)(x - 2) = 3x^2 + 7x - 26$, $k$ is a constant. If the equation is true for all values of $x$, what is the value of $k$?",
+    "spr_answers": [
+      "13"
+    ],
+    "explanation_en": "Expand the left side: $(3x + k)(x - 2) = 3x^2 - 6x + kx - 2k = 3x^2 + (k - 6)x - 2k$. Matching coefficients with $3x^2 + 7x - 26$ gives $k - 6 = 7$ and $-2k = -26$. Both equations give $k = 13$.\n\nA common error is entering $1$, which comes from writing the $x$-coefficient as $k + 6$ (losing the negative sign in $-2 \\cdot 3x$). Another is entering $-13$ from mishandling the sign in $-2k = -26$.",
+    "explanation_uz": "Chap tomonni ochamiz: $(3x + k)(x - 2) = 3x^2 - 6x + kx - 2k = 3x^2 + (k - 6)x - 2k$. Koeffitsiyentlarni $3x^2 + 7x - 26$ bilan tenglashtiramiz: $k - 6 = 7$ va $-2k = -26$. Ikkalasidan ham $k = 13$ chiqadi.\n\nKo‘p uchraydigan xato — $x$ oldidagi koeffitsiyentni $k + 6$ deb yozib ($-2 \\cdot 3x$ dagi minusni yo‘qotib), $1$ ni kiritish. Yana bir xato — $-2k = -26$ dagi ishorani noto‘g‘ri olib, $-13$ ni kiritish.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "equivalent_expressions",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "Which of the following is equivalent to $\\dfrac{x^2 - 16}{x^2 + 2x - 8}$ for $x \\ne -4$ and $x \\ne 2$?",
+    "option_a": "$\\dfrac{x + 4}{x - 2}$",
+    "option_b": "$\\dfrac{-16}{2x - 8}$",
+    "option_c": "$\\dfrac{x - 4}{x + 2}$",
+    "option_d": "$\\dfrac{x - 4}{x - 2}$",
+    "correct": "D",
+    "explanation_en": "Factor the numerator as a difference of squares: $x^2 - 16 = (x - 4)(x + 4)$. Factor the denominator: $x^2 + 2x - 8 = (x + 4)(x - 2)$, since $4 \\cdot (-2) = -8$ and $4 + (-2) = 2$. Cancel the common factor $x + 4$: $\\dfrac{(x - 4)(x + 4)}{(x + 4)(x - 2)} = \\dfrac{x - 4}{x - 2}$.\n\nChoice A cancels the wrong factor, keeping $x + 4$ in the numerator. Choice B \"cancels\" the $x^2$ terms, which is not allowed because they are terms, not factors. Choice C factors the denominator with the wrong signs, as $(x + 4)(x + 2)$.",
+    "explanation_uz": "Suratni kvadratlar ayirmasi sifatida ko‘paytuvchilarga ajratamiz: $x^2 - 16 = (x - 4)(x + 4)$. Maxrajni ajratamiz: $x^2 + 2x - 8 = (x + 4)(x - 2)$, chunki $4 \\cdot (-2) = -8$ va $4 + (-2) = 2$. Umumiy ko‘paytuvchi $x + 4$ ga qisqartiramiz: $\\dfrac{(x - 4)(x + 4)}{(x + 4)(x - 2)} = \\dfrac{x - 4}{x - 2}$.\n\nA variantda noto‘g‘ri ko‘paytuvchi qisqartirilib, suratda $x + 4$ qolgan. B variantda $x^2$ hadlari “qisqartirilgan” — bu mumkin emas, chunki ular ko‘paytuvchi emas, qo‘shiluvchi. C variantda maxraj noto‘g‘ri ishoralar bilan $(x + 4)(x + 2)$ deb ajratilgan.",
+    "estimated_seconds": 95,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "equivalent_expressions",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "In the equation $(ax + 3)(2x - b) = 6x^2 + cx - 15$, $a$, $b$, and $c$ are constants. If the equation is true for all values of $x$, what is the value of $c$?",
+    "option_a": "$-9$",
+    "option_b": "$9$",
+    "option_c": "$-21$",
+    "option_d": "$21$",
+    "correct": "A",
+    "explanation_en": "Expand the left side: $(ax + 3)(2x - b) = 2ax^2 - abx + 6x - 3b = 2ax^2 + (6 - ab)x - 3b$.\n\nMatch coefficients with $6x^2 + cx - 15$:\n- $x^2$ terms: $2a = 6$, so $a = 3$.\n- Constant terms: $-3b = -15$, so $b = 5$.\n- $x$ terms: $c = 6 - ab = 6 - 3(5) = -9$.\n\nChoice B reverses the sign of the result, using $ab - 6$. Choice C subtracts both parts of the middle term, using $-ab - 6$. Choice D adds both parts, using $ab + 6$, which forgets that the $-b$ makes $-abx$ negative.",
+    "explanation_uz": "Chap tomonni ochamiz: $(ax + 3)(2x - b) = 2ax^2 - abx + 6x - 3b = 2ax^2 + (6 - ab)x - 3b$.\n\nKoeffitsiyentlarni $6x^2 + cx - 15$ bilan tenglashtiramiz:\n- $x^2$ hadlari: $2a = 6$, demak $a = 3$.\n- Ozod hadlar: $-3b = -15$, demak $b = 5$.\n- $x$ hadlari: $c = 6 - ab = 6 - 3(5) = -9$.\n\nB variantda natijaning ishorasi teskari olingan ($ab - 6$). C variantda o‘rta hadning ikkala qismi ham ayirilgan ($-ab - 6$). D variantda ikkala qism qo‘shilgan ($ab + 6$), ya’ni $-b$ tufayli $-abx$ manfiy ekani unutilgan.",
+    "estimated_seconds": 130,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "equivalent_expressions",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "The expression $2x^2 - 12x + 23$ can be written in the form $a(x - h)^2 + k$, where $a$, $h$, and $k$ are constants. What is the value of $a + h + k$?",
+    "spr_answers": [
+      "10"
+    ],
+    "explanation_en": "The leading coefficient gives $a = 2$. Factor $2$ out of the $x$ terms: $2x^2 - 12x + 23 = 2(x^2 - 6x) + 23$. Complete the square inside the parentheses by adding and subtracting $9$: $2(x^2 - 6x + 9 - 9) + 23 = 2(x - 3)^2 - 18 + 23 = 2(x - 3)^2 + 5$.\n\nSo $a = 2$, $h = 3$, $k = 5$, and $a + h + k = 10$.\n\nA common error is entering $19$: it comes from subtracting only $9$ instead of $2 \\cdot 9 = 18$ outside the parentheses, which gives $k = 14$. Another is entering $4$, which uses $h = -3$ by misreading the sign in $(x - h)^2$.",
+    "explanation_uz": "Bosh koeffitsiyentdan $a = 2$. $x$ li hadlardan $2$ ni qavsdan tashqariga chiqaramiz: $2x^2 - 12x + 23 = 2(x^2 - 6x) + 23$. Qavs ichida $9$ ni qo‘shib-ayirib, to‘liq kvadrat ajratamiz: $2(x^2 - 6x + 9 - 9) + 23 = 2(x - 3)^2 - 18 + 23 = 2(x - 3)^2 + 5$.\n\nDemak, $a = 2$, $h = 3$, $k = 5$ va $a + h + k = 10$.\n\nKo‘p uchraydigan xato — $19$ ni kiritish: qavs tashqarisida $2 \\cdot 9 = 18$ o‘rniga faqat $9$ ayirilsa, $k = 14$ chiqadi. Yana bir xato — $(x - h)^2$ dagi ishorani noto‘g‘ri o‘qib, $h = -3$ olish va $4$ ni kiritish.",
+    "estimated_seconds": 140,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  }
+]

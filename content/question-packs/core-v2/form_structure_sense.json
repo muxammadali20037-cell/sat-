@@ -1,0 +1,162 @@
+[
+  {
+    "skill_code": "form_structure_sense",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Archaeologists working near the city of Termez have uncovered a small clay jar filled with ancient silver coins. Each of the coins ______ a portrait of a ruler on one side and a horse on the other.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "option_a": "shows",
+    "option_b": "show",
+    "option_c": "are showing",
+    "option_d": "have shown",
+    "correct": "A",
+    "explanation_en": "The subject of the verb is “Each,” which is singular; “of the coins” is a prepositional phrase that does not change the number of the subject. A singular subject needs a singular verb, so “shows” is correct.\n\nChoices B, C and D are all plural verb forms (“show,” “are showing,” “have shown”), which would agree with “coins” rather than with the actual subject, “Each.”",
+    "explanation_uz": "Kesimning egasi — “Each” (har biri), u birlikda. “Of the coins” predlogli birikma bo‘lib, eganing sonini o‘zgartirmaydi. Birlikdagi egaga birlikdagi kesim kerak, shuning uchun “shows” to‘g‘ri.\n\nB, C va D — ko‘plikdagi fe’l shakllari (“show”, “are showing”, “have shown”); ular haqiqiy ega “Each” bilan emas, “coins” bilan moslashgan bo‘lardi.",
+    "estimated_seconds": 50,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "form_structure_sense",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Researchers placed motion-activated cameras along a mountain ridge to study the five snow leopards that live there. By comparing the ______ routes over several months, they learned that the animals rarely used the same paths at the same time.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "option_a": "cat's",
+    "option_b": "cats",
+    "option_c": "cats's",
+    "option_d": "cats'",
+    "correct": "D",
+    "explanation_en": "The routes belong to the five snow leopards, so the blank needs a plural possessive. The plural noun is “cats,” and a plural noun ending in “s” forms its possessive by adding only an apostrophe: “cats'.”\n\nChoice A, “cat's,” is singular possessive, but the text discusses five animals. Choice B, “cats,” is plural but not possessive, so it cannot show that the routes belong to the cats. Choice C, “cats's,” is not a standard form.",
+    "explanation_uz": "Yo‘nalishlar beshta qor qoploniga tegishli, shuning uchun bo‘sh joyga ko‘plikdagi qaratqich (egalik) shakli kerak. Ko‘plik shakli “cats”, “s” bilan tugaydigan ko‘plikdagi ot egalik shaklini faqat apostrof qo‘shib hosil qiladi: “cats'”.\n\nA — “cat's” birlikdagi egalik shakli, matnda esa beshta hayvon haqida gap boradi. B — “cats” ko‘plikda, lekin egalikni bildirmaydi. C — “cats's” standart shakl emas.",
+    "estimated_seconds": 50,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "form_structure_sense",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "In 1957, the Soviet Union ______ Sputnik 1, the first artificial satellite, into orbit around Earth. The small metal sphere sent radio signals back to the ground for about three weeks.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "option_a": "launches",
+    "option_b": "will launch",
+    "option_c": "launched",
+    "option_d": "has launched",
+    "correct": "C",
+    "explanation_en": "The text describes an event that was completed at a specific time in the past, “In 1957,” and the next sentence uses the past tense (“sent”). The simple past tense, “launched,” is therefore correct.\n\nChoice A is present tense and choice B is future tense; neither fits an event in 1957. Choice D, the present perfect “has launched,” is not used with a specific completed past time such as “In 1957.”",
+    "explanation_uz": "Matnda o‘tmishda aniq bir vaqtda — “In 1957” yilda — tugallangan voqea tasvirlanadi, keyingi gapda ham o‘tgan zamon (“sent”) ishlatilgan. Shuning uchun oddiy o‘tgan zamon “launched” to‘g‘ri.\n\nA — hozirgi zamon, B — kelasi zamon; ikkalasi ham 1957 yildagi voqeaga mos kelmaydi. D — “has launched” (present perfect) “In 1957” kabi aniq o‘tgan vaqt bilan ishlatilmaydi.",
+    "estimated_seconds": 50,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "form_structure_sense",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "The sand dunes of the Kyzylkum Desert may look permanent, but strong winds constantly reshape ______, moving some of the largest dunes several meters each year.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "option_a": "it",
+    "option_b": "them",
+    "option_c": "its",
+    "option_d": "itself",
+    "correct": "B",
+    "explanation_en": "The pronoun refers to “The sand dunes,” a plural noun, and it is the object of the verb “reshape.” The plural object pronoun “them” is therefore correct.\n\nChoice A, “it,” is singular and does not agree with “dunes.” Choice C, “its,” is a possessive form and cannot serve as the object of “reshape” on its own. Choice D, “itself,” is a singular reflexive pronoun, which would wrongly suggest that the winds reshape themselves.",
+    "explanation_uz": "Olmosh ko‘plikdagi “The sand dunes” (qum barxanlari) otiga ishora qiladi va “reshape” fe’lining to‘ldiruvchisi vazifasida keladi. Shuning uchun ko‘plikdagi obyekt olmoshi “them” to‘g‘ri.\n\nA — “it” birlikda, “dunes” bilan moslashmaydi. C — “its” egalik shakli va o‘zi yolg‘iz “reshape” ning to‘ldiruvchisi bo‘la olmaydi. D — “itself” birlikdagi o‘zlik olmoshi bo‘lib, shamollar o‘zini o‘zi o‘zgartiradi degan noto‘g‘ri ma’noni beradi.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "form_structure_sense",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Flowing more than 2,000 kilometers from the mountains of Kyrgyzstan to the remains of the Aral Sea, ______",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "option_a": "farmers and cities along its banks have long depended on the Syr Darya for water.",
+    "option_b": "the Syr Darya's banks have long been home to farms and cities that depend on its water.",
+    "option_c": "the Syr Darya has long supplied water to farms and cities along its banks.",
+    "option_d": "people have long used the Syr Darya to supply their farms and cities with water.",
+    "correct": "C",
+    "explanation_en": "The introductory phrase “Flowing more than 2,000 kilometers from the mountains of Kyrgyzstan to the remains of the Aral Sea” describes a river. A modifying phrase like this must be placed directly before the noun it describes, so the sentence must continue with “the Syr Darya,” as in choice C.\n\nChoice A makes it seem that the farmers and cities flow 2,000 kilometers. Choice B makes the modifier describe “the Syr Darya's banks,” which do not flow, and in choice D the modifier describes “people.” Each of these is a dangling modifier.",
+    "explanation_uz": "“Flowing more than 2,000 kilometers from the mountains of Kyrgyzstan to the remains of the Aral Sea” kirish iborasi daryoni tasvirlaydi. Bunday aniqlovchi ibora o‘zi tasvirlayotgan otdan darhol oldin kelishi kerak, shuning uchun gap C dagidek “the Syr Darya” bilan davom etishi lozim.\n\nA — go‘yo dehqonlar va shaharlar 2000 kilometr oqib o‘tgandek ko‘rsatadi. B — iborani daryoning o‘ziga emas, oqmaydigan “the Syr Darya's banks” (qirg‘oqlar) ga bog‘laydi, D da esa ibora “people” ni tasvirlaydi. Bularning har biri “dangling modifier” (osilib qolgan aniqlovchi) xatosi.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "form_structure_sense",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Hidden in a narrow canyon in the mountains of southern Uzbekistan is a shallow rock shelter. Along its back wall ______ dozens of red-brown paintings of hunters, wild bulls, and dogs, some of which may be thousands of years old.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "option_a": "are",
+    "option_b": "is",
+    "option_c": "was",
+    "option_d": "has been",
+    "correct": "A",
+    "explanation_en": "This sentence is inverted: the subject, “dozens of red-brown paintings,” comes after the verb. Because the subject is plural, the verb must be plural, so “are” is correct. The present tense also matches the surrounding text (“is a shallow rock shelter”).\n\nChoices B, C and D are all singular verbs (“is,” “was,” “has been”), which might seem to agree with the nearby singular noun “wall,” but “wall” is part of the prepositional phrase “Along its back wall,” not the subject.",
+    "explanation_uz": "Bu gapda so‘z tartibi teskari: ega — “dozens of red-brown paintings” — kesimdan keyin keladi. Ega ko‘plikda bo‘lgani uchun kesim ham ko‘plikda bo‘lishi kerak, shuning uchun “are” to‘g‘ri. Hozirgi zamon matnning qolgan qismiga (“is a shallow rock shelter”) ham mos keladi.\n\nB, C va D — birlikdagi fe’llar (“is”, “was”, “has been”). Ular yaqindagi birlikdagi “wall” so‘zi bilan moslashgandek tuyulishi mumkin, ammo “wall” ega emas, “Along its back wall” predlogli birikmasining qismi.",
+    "estimated_seconds": 65,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "form_structure_sense",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "The climbers spent the morning waiting out high winds at their camp below the summit. If the team had left camp just an hour earlier, it ______ the peak before the storm arrived and been back in camp by nightfall.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "option_a": "will reach",
+    "option_b": "would have reached",
+    "option_c": "reaches",
+    "option_d": "would reach",
+    "correct": "B",
+    "explanation_en": "The sentence describes an unreal past situation: the team did not leave an hour earlier. The “if” clause uses the past perfect (“had left”), so the result clause needs “would have” plus a past participle. The sentence also continues with “and been back in camp,” which only works with “would have … been,” confirming that “would have reached” is correct.\n\nChoice A, “will reach,” is used for real future possibilities, not imagined past ones. Choice C, “reaches,” is present tense. Choice D, “would reach,” refers to an imagined present or future result, and it cannot combine with “and been back in camp.”",
+    "explanation_uz": "Gap o‘tmishdagi real bo‘lmagan vaziyatni tasvirlaydi: guruh bir soat oldin yo‘lga chiqmagan. “If” qismida past perfect (“had left”) ishlatilgan, shuning uchun natija qismiga “would have” + uchinchi shakl (past participle) kerak. Gap “and been back in camp” bilan davom etadi, bu faqat “would have … been” bilan mos keladi — bu “would have reached” to‘g‘ri ekanini tasdiqlaydi.\n\nA — “will reach” real kelajakdagi imkoniyatlar uchun ishlatiladi, o‘tmishdagi xayoliy vaziyat uchun emas. C — “reaches” hozirgi zamon. D — “would reach” hozirgi yoki kelajakdagi xayoliy natijani bildiradi va “and been back in camp” bilan birika olmaydi.",
+    "estimated_seconds": 80,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "form_structure_sense",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "The collection of letters, diaries, and travel sketches that the nineteenth-century explorer left to the national library ______ historians a rare look at daily life along the caravan routes of Central Asia.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "option_a": "offer",
+    "option_b": "have offered",
+    "option_c": "are offering",
+    "option_d": "offers",
+    "correct": "D",
+    "explanation_en": "The subject of the sentence is “The collection,” which is singular. Everything between “collection” and the blank (“of letters, diaries, and travel sketches that the nineteenth-century explorer left to the national library”) is a modifier that does not change the subject's number. A singular subject needs a singular verb, so “offers” is correct.\n\nChoices A, B and C are plural forms (“offer,” “have offered,” “are offering”). They are tempting because the plural nouns “letters,” “diaries” and “sketches” appear near the blank, but none of those nouns is the subject.",
+    "explanation_uz": "Gapning egasi — birlikdagi “The collection” (to‘plam). “Collection” va bo‘sh joy orasidagi hamma narsa (“of letters, diaries, and travel sketches that the nineteenth-century explorer left to the national library”) aniqlovchi bo‘lib, eganing sonini o‘zgartirmaydi. Birlikdagi egaga birlikdagi kesim kerak, shuning uchun “offers” to‘g‘ri.\n\nA, B va C — ko‘plik shakllari (“offer”, “have offered”, “are offering”). Ular jozibali, chunki bo‘sh joy yaqinida ko‘plikdagi “letters”, “diaries” va “sketches” otlari bor, ammo bu otlarning hech biri ega emas.",
+    "estimated_seconds": 80,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  }
+]

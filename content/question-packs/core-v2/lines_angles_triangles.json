@@ -1,0 +1,140 @@
+[
+  {
+    "skill_code": "lines_angles_triangles",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "Two adjacent angles together form a straight line. One angle measures $(2x + 10)^\\circ$ and the other measures $(3x - 20)^\\circ$. What is the measure, in degrees, of the smaller angle?",
+    "option_a": "$38$",
+    "option_b": "$76$",
+    "option_c": "$86$",
+    "option_d": "$94$",
+    "correct": "C",
+    "explanation_en": "Angles that form a straight line are supplementary, so $(2x + 10) + (3x - 20) = 180$. This gives $5x - 10 = 180$, so $5x = 190$ and $x = 38$. The angles measure $2(38) + 10 = 86^\\circ$ and $3(38) - 20 = 94^\\circ$. The smaller angle is $86^\\circ$. Choice C is correct.\n\nChoice A ($38$) is the value of $x$, not an angle measure. Choice B ($76$) is $2x$, leaving out the $+10$. Choice D ($94$) is the larger angle.",
+    "explanation_uz": "To‘g‘ri chiziq hosil qiluvchi burchaklar yig‘indisi $180^\\circ$, demak $(2x + 10) + (3x - 20) = 180$. Bundan $5x - 10 = 180$, $5x = 190$ va $x = 38$. Burchaklar $2(38) + 10 = 86^\\circ$ va $3(38) - 20 = 94^\\circ$. Kichigi $86^\\circ$. To‘g‘ri javob C.\n\nA ($38$) — bu $x$ ning qiymati, burchak emas. B ($76$) — bu $2x$, $+10$ tushirib qoldirilgan. D ($94$) — katta burchak.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "lines_angles_triangles",
+    "difficulty": "easy",
+    "question_type": "spr",
+    "stem": "In isosceles triangle $PQR$, $PQ = PR$, and the measure of angle $P$ is $46^\\circ$. What is the measure, in degrees, of angle $Q$?",
+    "spr_answers": [
+      "67"
+    ],
+    "explanation_en": "Since $PQ = PR$, the angles opposite those sides, angles $R$ and $Q$, are equal. The three angles sum to $180^\\circ$, so $46 + 2\\angle Q = 180$, which gives $2\\angle Q = 134$ and $\\angle Q = 67^\\circ$.\n\nIf you got 134, you forgot to divide by 2. If you got 46, you assumed angle $Q$ equals angle $P$.",
+    "explanation_uz": "$PQ = PR$ bo‘lgani uchun bu tomonlar qarshisidagi $R$ va $Q$ burchaklar teng. Uchburchak burchaklari yig‘indisi $180^\\circ$, demak $46 + 2\\angle Q = 180$, bundan $2\\angle Q = 134$ va $\\angle Q = 67^\\circ$.\n\nAgar 134 chiqqan bo‘lsa, 2 ga bo‘lish unutilgan. Agar 46 chiqqan bo‘lsa, $Q$ burchak $P$ burchakka teng deb olingan.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "lines_angles_triangles",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "Two sides of a triangle have lengths 7 and 12. Which of the following could be the length of the third side?",
+    "option_a": "$3$",
+    "option_b": "$11$",
+    "option_c": "$19$",
+    "option_d": "$20$",
+    "correct": "B",
+    "explanation_en": "By the triangle inequality, the third side must be greater than $12 - 7 = 5$ and less than $12 + 7 = 19$. Only 11 lies strictly between 5 and 19. Choice B is correct.\n\nChoice A ($3$) is too short: $3 + 7 = 10$, which is not greater than 12. Choice C ($19$) equals $7 + 12$, so the three segments would lie flat on a line instead of forming a triangle. Choice D ($20$) is longer than $7 + 12$.",
+    "explanation_uz": "Uchburchak tengsizligiga ko‘ra uchinchi tomon $12 - 7 = 5$ dan katta va $12 + 7 = 19$ dan kichik bo‘lishi kerak. Faqat 11 soni 5 va 19 orasida yotadi. To‘g‘ri javob B.\n\nA ($3$) — juda qisqa: $3 + 7 = 10$, bu 12 dan katta emas. C ($19$) — $7 + 12$ ga teng, kesmalar uchburchak hosil qilmay, bitta to‘g‘ri chiziqda yotadi. D ($20$) — $7 + 12$ dan uzun.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "lines_angles_triangles",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "Parallel lines $p$ and $q$ are intersected by transversal $t$. Two alternate interior angles formed by these lines measure $(5x + 12)^\\circ$ and $(7x - 24)^\\circ$. What is the measure, in degrees, of the angle that measures $(5x + 12)^\\circ$?",
+    "option_a": "$16$",
+    "option_b": "$18$",
+    "option_c": "$78$",
+    "option_d": "$102$",
+    "correct": "D",
+    "explanation_en": "When parallel lines are cut by a transversal, alternate interior angles are congruent. So $5x + 12 = 7x - 24$, which gives $36 = 2x$ and $x = 18$. The angle measures $5(18) + 12 = 102^\\circ$ (and $7(18) - 24 = 102^\\circ$ checks). Choice D is correct.\n\nChoice A ($16$) comes from treating the angles as supplementary: $12x - 12 = 180$ gives $x = 16$. Choice B ($18$) is the value of $x$. Choice C ($78$) is the supplement of the correct angle.",
+    "explanation_uz": "Parallel to‘g‘ri chiziqlar kesuvchi bilan kesilganda ichki almashinuvchi burchaklar teng bo‘ladi. Demak $5x + 12 = 7x - 24$, bundan $36 = 2x$ va $x = 18$. Burchak $5(18) + 12 = 102^\\circ$ ga teng (tekshiruv: $7(18) - 24 = 102^\\circ$). To‘g‘ri javob D.\n\nA ($16$) — burchaklar yig‘indisi $180^\\circ$ deb olingan: $12x - 12 = 180$ dan $x = 16$. B ($18$) — bu $x$ ning qiymati. C ($78$) — to‘g‘ri burchakni $180^\\circ$ gacha to‘ldiruvchi burchak.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "lines_angles_triangles",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "Each exterior angle of a regular polygon measures $24^\\circ$. How many sides does the polygon have?",
+    "spr_answers": [
+      "15"
+    ],
+    "explanation_en": "The exterior angles of any convex polygon, one at each vertex, add up to $360^\\circ$. In a regular polygon all of them are equal, so the number of sides is $\\frac{360}{24} = 15$.\n\nIf you got 7.5, you used $180^\\circ$ instead of $360^\\circ$. Using the interior angle instead: each interior angle is $180 - 24 = 156^\\circ$, and $\\frac{(15 - 2) \\cdot 180}{15} = 156$ confirms the answer.",
+    "explanation_uz": "Har qanday qavariq ko‘pburchakning tashqi burchaklari (har bir uchda bittadan) yig‘indisi $360^\\circ$. Muntazam ko‘pburchakda ularning barchasi teng, demak tomonlar soni $\\frac{360}{24} = 15$.\n\nAgar 7.5 chiqqan bo‘lsa, $360^\\circ$ o‘rniga $180^\\circ$ olingan. Ichki burchak orqali tekshirish: har bir ichki burchak $180 - 24 = 156^\\circ$, va $\\frac{(15 - 2) \\cdot 180}{15} = 156$ javobni tasdiqlaydi.",
+    "estimated_seconds": 80,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "lines_angles_triangles",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "A triangle has side lengths 6, 8, and 10 inches. A second triangle is similar to the first and has a perimeter of 60 inches. What is the length, in inches, of the shortest side of the second triangle?",
+    "option_a": "$15$",
+    "option_b": "$20$",
+    "option_c": "$25$",
+    "option_d": "$42$",
+    "correct": "A",
+    "explanation_en": "The first triangle has perimeter $6 + 8 + 10 = 24$ inches. Perimeters of similar triangles are in the same ratio as corresponding sides, so the scale factor is $\\frac{60}{24} = 2.5$. The shortest side of the second triangle is $6 \\cdot 2.5 = 15$ inches. Choice A is correct.\n\nChoice B ($20$) is the middle side, $8 \\cdot 2.5$ (it is also $\\frac{60}{3}$, as if the triangle were equilateral). Choice C ($25$) is the longest side, $10 \\cdot 2.5$. Choice D ($42$) adds the perimeter difference, $6 + 36$, instead of multiplying by a scale factor.",
+    "explanation_uz": "Birinchi uchburchak perimetri $6 + 8 + 10 = 24$ dyuym. O‘xshash uchburchaklar perimetrlari mos tomonlar kabi nisbatda bo‘ladi, demak o‘xshashlik koeffitsiyenti $\\frac{60}{24} = 2.5$. Ikkinchi uchburchakning eng qisqa tomoni $6 \\cdot 2.5 = 15$ dyuym. To‘g‘ri javob A.\n\nB ($20$) — o‘rtacha tomon, $8 \\cdot 2.5$ (bu $\\frac{60}{3}$ ga ham teng, go‘yo uchburchak teng tomonli). C ($25$) — eng uzun tomon, $10 \\cdot 2.5$. D ($42$) — koeffitsiyentga ko‘paytirish o‘rniga perimetrlar farqi qo‘shilgan, $6 + 36$.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "lines_angles_triangles",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "In triangle $ABC$, $AB = AC$ and the measure of angle $BAC$ is $36^\\circ$. Point $D$ lies on side $\\overline{AC}$ so that $\\overline{BD}$ bisects angle $ABC$. What is the measure, in degrees, of angle $BDC$?",
+    "option_a": "$36$",
+    "option_b": "$72$",
+    "option_c": "$90$",
+    "option_d": "$108$",
+    "correct": "B",
+    "explanation_en": "Because $AB = AC$, the base angles are equal: $\\angle ABC = \\angle ACB = \\frac{180 - 36}{2} = 72^\\circ$. The bisector splits angle $ABC$ into two $36^\\circ$ angles, so $\\angle ABD = 36^\\circ$. Angle $BDC$ is an exterior angle of triangle $ABD$, so it equals the sum of the two remote interior angles: $\\angle BAD + \\angle ABD = 36 + 36 = 72^\\circ$. (Check in triangle $BDC$: $36 + 72 + 72 = 180$.) Choice B is correct.\n\nChoice A ($36$) is the measure of angle $DBC$. Choice C ($90$) assumes the bisector is perpendicular to the opposite side, which is true only for the bisector of the vertex angle $A$. Choice D ($108$) is angle $ADB$, the supplement of angle $BDC$.",
+    "explanation_uz": "$AB = AC$ bo‘lgani uchun asosdagi burchaklar teng: $\\angle ABC = \\angle ACB = \\frac{180 - 36}{2} = 72^\\circ$. Bissektrisa $ABC$ burchakni ikkita $36^\\circ$ li burchakka bo‘ladi, demak $\\angle ABD = 36^\\circ$. $BDC$ burchak $ABD$ uchburchakning tashqi burchagi, shuning uchun u o‘ziga qo‘shni bo‘lmagan ikki ichki burchak yig‘indisiga teng: $\\angle BAD + \\angle ABD = 36 + 36 = 72^\\circ$. (Tekshiruv, $BDC$ uchburchakda: $36 + 72 + 72 = 180$.) To‘g‘ri javob B.\n\nA ($36$) — bu $DBC$ burchak. C ($90$) — bissektrisa qarama-qarshi tomonga perpendikulyar deb olingan, bu faqat uchidagi $A$ burchak bissektrisasi uchun to‘g‘ri. D ($108$) — bu $ADB$ burchak, $BDC$ burchakka qo‘shni burchak.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "lines_angles_triangles",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "In triangle $ABC$, $AB = 12$ and $BC = 18$. Point $D$ lies on side $\\overline{BC}$ so that angle $BAD$ is congruent to angle $BCA$. What is the length of $\\overline{BD}$?",
+    "spr_answers": [
+      "8"
+    ],
+    "explanation_en": "Triangles $BAD$ and $BCA$ share angle $B$, and angle $BAD$ is congruent to angle $BCA$. By angle-angle similarity, triangle $BAD$ is similar to triangle $BCA$, with $B \\leftrightarrow B$, $A \\leftrightarrow C$, and $D \\leftrightarrow A$. Corresponding sides are proportional: $\\frac{BD}{BA} = \\frac{BA}{BC}$. So $\\frac{BD}{12} = \\frac{12}{18}$, and $BD = \\frac{144}{18} = 8$.\n\nIf you got 18 or 27, you matched the vertices in the wrong order (for example, writing $\\frac{BD}{BC} = \\frac{BA}{BA}$ or $\\frac{BD}{18} = \\frac{18}{12}$). Always match the congruent angles first: the angle at $A$ in the small triangle corresponds to the angle at $C$ in the large one.",
+    "explanation_uz": "$BAD$ va $BCA$ uchburchaklarda $B$ burchak umumiy, $BAD$ burchak esa $BCA$ burchakka teng. Ikki burchak bo‘yicha $BAD$ uchburchak $BCA$ uchburchakka o‘xshash, bunda $B \\leftrightarrow B$, $A \\leftrightarrow C$ va $D \\leftrightarrow A$. Mos tomonlar proporsional: $\\frac{BD}{BA} = \\frac{BA}{BC}$. Demak $\\frac{BD}{12} = \\frac{12}{18}$ va $BD = \\frac{144}{18} = 8$.\n\nAgar 18 yoki 27 chiqqan bo‘lsa, uchlar noto‘g‘ri moslashtirilgan (masalan, $\\frac{BD}{18} = \\frac{18}{12}$ deb yozilgan). Avval teng burchaklarni moslang: kichik uchburchakdagi $A$ burchak katta uchburchakdagi $C$ burchakka mos keladi.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  }
+]

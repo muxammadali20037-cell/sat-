@@ -1,0 +1,141 @@
+[
+  {
+    "skill_code": "linear_equations_one_variable",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "What value of $x$ is the solution to the equation $4(x - 3) = 2x + 10$?",
+    "option_a": "$-1$",
+    "option_b": "$\\frac{11}{3}$",
+    "option_c": "$\\frac{13}{2}$",
+    "option_d": "$11$",
+    "correct": "D",
+    "explanation_en": "Distribute the $4$: $4x - 12 = 2x + 10$. Subtract $2x$ from both sides: $2x - 12 = 10$. Add $12$ to both sides: $2x = 22$, so $x = 11$.\n\nCheck: $4(11 - 3) = 32$ and $2(11) + 10 = 32$.\n\nChoice C comes from multiplying only $x$ by $4$, which gives $4x - 3 = 2x + 10$. Choice A comes from subtracting $12$ instead of adding it ($2x = 10 - 12$). Choice B comes from adding $2x$ to the left side instead of subtracting it ($6x = 22$).",
+    "explanation_uz": "$4$ ni qavs ichidagi har bir hadga ko‘paytiramiz: $4x - 12 = 2x + 10$. Ikkala tomondan $2x$ ni ayiramiz: $2x - 12 = 10$. Ikkala tomonga $12$ ni qo‘shamiz: $2x = 22$, demak $x = 11$.\n\nTekshiruv: $4(11 - 3) = 32$ va $2(11) + 10 = 32$.\n\nC variant faqat $x$ ni $4$ ga ko‘paytirishdan kelib chiqadi: $4x - 3 = 2x + 10$. A variant $12$ ni qo‘shish o‘rniga ayirishdan chiqadi ($2x = 10 - 12$). B variant $2x$ ni ayirish o‘rniga chap tomonga qo‘shishdan chiqadi ($6x = 22$).",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "linear_equations_one_variable",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "A taxi service in Tashkent charges a fixed fee of 5,000 soums plus 2,500 soums for each kilometer driven. A ride cost a total of 32,500 soums. How many kilometers long was the ride?",
+    "option_a": "$6.5$",
+    "option_b": "$11$",
+    "option_c": "$13$",
+    "option_d": "$15$",
+    "correct": "B",
+    "explanation_en": "Let $k$ be the length of the ride in kilometers. The total cost is $5{,}000 + 2{,}500k = 32{,}500$.\n\nSubtract $5{,}000$ from both sides: $2{,}500k = 27{,}500$. Divide by $2{,}500$: $k = 11$.\n\nChoice C ($13$) divides the whole cost by $2{,}500$ and ignores the fixed fee. Choice D ($15$) adds the fee instead of subtracting it ($37{,}500 \\div 2{,}500$). Choice A ($6.5$) divides the total by the fixed fee instead of by the price per kilometer.",
+    "explanation_uz": "$k$ — yo‘l uzunligi (kilometrda) bo‘lsin. Umumiy narx: $5{,}000 + 2{,}500k = 32{,}500$.\n\nIkkala tomondan $5{,}000$ ni ayiramiz: $2{,}500k = 27{,}500$. $2{,}500$ ga bo‘lamiz: $k = 11$.\n\nC variant ($13$) — butun summani $2{,}500$ ga bo‘lish natijasi; bunda qat’iy to‘lov hisobga olinmagan. D variant ($15$) — to‘lovni ayirish o‘rniga qo‘shish natijasi ($37{,}500 \\div 2{,}500$). A variant ($6.5$) — umumiy summani kilometr narxiga emas, qat’iy to‘lovga bo‘lishdan chiqadi.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "linear_equations_one_variable",
+    "difficulty": "easy",
+    "question_type": "spr",
+    "stem": "$$\\frac{x}{4} + 6 = 9$$\n\nWhat is the solution to the given equation?",
+    "spr_answers": [
+      "12"
+    ],
+    "explanation_en": "Subtract $6$ from both sides: $\\frac{x}{4} = 3$. Multiply both sides by $4$: $x = 12$.\n\nCheck: $\\frac{12}{4} + 6 = 3 + 6 = 9$.\n\nA common mistake is multiplying only $\\frac{x}{4}$ by $4$ and not the other terms, which gives $x + 6 = 9$ and the wrong answer $x = 3$.",
+    "explanation_uz": "Ikkala tomondan $6$ ni ayiramiz: $\\frac{x}{4} = 3$. Ikkala tomonni $4$ ga ko‘paytiramiz: $x = 12$.\n\nTekshiruv: $\\frac{12}{4} + 6 = 3 + 6 = 9$.\n\nKo‘p uchraydigan xato: $4$ ga faqat $\\frac{x}{4}$ ni ko‘paytirib, qolgan hadlarni ko‘paytirmaslik. Unda $x + 6 = 9$ va noto‘g‘ri javob $x = 3$ chiqadi.",
+    "estimated_seconds": 55,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "linear_equations_one_variable",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "What is the solution to the equation $\\dfrac{x}{3} - \\dfrac{x}{5} = 4$?",
+    "option_a": "$-30$",
+    "option_b": "$\\frac{8}{15}$",
+    "option_c": "$30$",
+    "option_d": "$60$",
+    "correct": "C",
+    "explanation_en": "Multiply both sides by $15$, the least common denominator: $5x - 3x = 60$. So $2x = 60$ and $x = 30$.\n\nCheck: $\\frac{30}{3} - \\frac{30}{5} = 10 - 6 = 4$.\n\nChoice D treats $5x - 3x$ as $x$. Choice A subtracts the fractions in the wrong order ($\\frac{x}{5} - \\frac{x}{3}$). Choice B finds $\\frac{x}{3} - \\frac{x}{5} = \\frac{2}{15}x$ correctly but then multiplies $4$ by $\\frac{2}{15}$ instead of dividing.",
+    "explanation_uz": "Ikkala tomonni eng kichik umumiy maxraj $15$ ga ko‘paytiramiz: $5x - 3x = 60$. Demak $2x = 60$ va $x = 30$.\n\nTekshiruv: $\\frac{30}{3} - \\frac{30}{5} = 10 - 6 = 4$.\n\nD variantda $5x - 3x$ xato ravishda $x$ deb olingan. A variantda kasrlar teskari tartibda ayirilgan ($\\frac{x}{5} - \\frac{x}{3}$). B variantda $\\frac{x}{3} - \\frac{x}{5} = \\frac{2}{15}x$ to‘g‘ri topilgan, lekin $4$ ni $\\frac{2}{15}$ ga bo‘lish o‘rniga ko‘paytirilgan.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "linear_equations_one_variable",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "Dilnoza has 180,000 soums in savings and adds 25,000 soums each week. Her brother Jasur has 420,000 soums and spends 15,000 soums of it each week. If both continue this pattern, after how many weeks will they have the same amount of money?",
+    "option_a": "$6$",
+    "option_b": "$9.6$",
+    "option_c": "$15$",
+    "option_d": "$24$",
+    "correct": "A",
+    "explanation_en": "After $w$ weeks, Dilnoza has $180{,}000 + 25{,}000w$ soums and Jasur has $420{,}000 - 15{,}000w$ soums. Set them equal:\n\n$180{,}000 + 25{,}000w = 420{,}000 - 15{,}000w$, so $40{,}000w = 240{,}000$ and $w = 6$. After $6$ weeks each has $330{,}000$ soums.\n\nChoice D subtracts the weekly amounts ($10{,}000w = 240{,}000$), but the gap closes from both sides, so the rates add. Choice B ignores Jasur's spending ($240{,}000 \\div 25{,}000$). Choice C adds the starting amounts instead of subtracting them ($600{,}000 \\div 40{,}000$).",
+    "explanation_uz": "$w$ haftadan keyin Dilnozada $180{,}000 + 25{,}000w$ so‘m, Jasurda esa $420{,}000 - 15{,}000w$ so‘m bo‘ladi. Ularni tenglaymiz:\n\n$180{,}000 + 25{,}000w = 420{,}000 - 15{,}000w$, bundan $40{,}000w = 240{,}000$ va $w = 6$. $6$ haftadan keyin har birida $330{,}000$ so‘m bo‘ladi.\n\nD variantda haftalik miqdorlar ayirilgan ($10{,}000w = 240{,}000$), ammo farq ikki tomondan qisqaradi, shuning uchun sur’atlar qo‘shiladi. B variantda Jasurning sarfi hisobga olinmagan ($240{,}000 \\div 25{,}000$). C variantda boshlang‘ich summalar ayirilish o‘rniga qo‘shilgan ($600{,}000 \\div 40{,}000$).",
+    "estimated_seconds": 100,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "linear_equations_one_variable",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "$$0.4(5x - 2) = 1.3x + 2$$\n\nWhat is the solution to the given equation?",
+    "spr_answers": [
+      "4"
+    ],
+    "explanation_en": "Distribute $0.4$: $2x - 0.8 = 1.3x + 2$. Subtract $1.3x$ from both sides: $0.7x - 0.8 = 2$. Add $0.8$: $0.7x = 2.8$. Divide by $0.7$: $x = 4$.\n\nCheck: $0.4(20 - 2) = 7.2$ and $1.3(4) + 2 = 7.2$.\n\nA common mistake is multiplying only $5x$ by $0.4$, which gives $2x - 2 = 1.3x + 2$ and the wrong value $x = \\frac{40}{7}$.",
+    "explanation_uz": "$0.4$ ni qavs ichiga ko‘paytiramiz: $2x - 0.8 = 1.3x + 2$. Ikkala tomondan $1.3x$ ni ayiramiz: $0.7x - 0.8 = 2$. $0.8$ ni qo‘shamiz: $0.7x = 2.8$. $0.7$ ga bo‘lamiz: $x = 4$.\n\nTekshiruv: $0.4(20 - 2) = 7.2$ va $1.3(4) + 2 = 7.2$.\n\nKo‘p uchraydigan xato: $0.4$ ga faqat $5x$ ni ko‘paytirish. Unda $2x - 2 = 1.3x + 2$ va noto‘g‘ri javob $x = \\frac{40}{7}$ chiqadi.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "linear_equations_one_variable",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "$$a(x - 2) + 7 = 3x + b$$\n\nIn the given equation, $a$ and $b$ are constants and $a \\ne 3$. Which of the following is the solution to the given equation?",
+    "option_a": "$x = \\dfrac{b - 7}{a - 3}$",
+    "option_b": "$x = \\dfrac{b + 2a - 7}{a - 3}$",
+    "option_c": "$x = \\dfrac{b - 2a - 7}{a - 3}$",
+    "option_d": "$x = \\dfrac{b + 2a - 7}{a + 3}$",
+    "correct": "B",
+    "explanation_en": "Distribute: $ax - 2a + 7 = 3x + b$. Collect the $x$-terms on the left and the other terms on the right: $ax - 3x = b + 2a - 7$.\n\nFactor out $x$: $(a - 3)x = b + 2a - 7$. Because $a \\ne 3$, divide by $a - 3$: $x = \\dfrac{b + 2a - 7}{a - 3}$.\n\nChoice A forgets to distribute $a$ to $-2$. Choice C moves $-2a$ to the right side without changing its sign. Choice D adds $3x$ to the left side instead of subtracting it, which gives $a + 3$ in the denominator.",
+    "explanation_uz": "Qavsni ochamiz: $ax - 2a + 7 = 3x + b$. $x$ li hadlarni chapga, qolganlarini o‘ngga o‘tkazamiz: $ax - 3x = b + 2a - 7$.\n\n$x$ ni qavsdan tashqariga chiqaramiz: $(a - 3)x = b + 2a - 7$. $a \\ne 3$ bo‘lgani uchun $a - 3$ ga bo‘lamiz: $x = \\dfrac{b + 2a - 7}{a - 3}$.\n\nA variantda $a$ ni $-2$ ga ko‘paytirish unutilgan. C variantda $-2a$ o‘ng tomonga ishorasi o‘zgartirilmasdan o‘tkazilgan. D variantda $3x$ chap tomondan ayirilish o‘rniga qo‘shilgan, shuning uchun maxrajda $a + 3$ hosil bo‘lgan.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "linear_equations_one_variable",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "$$\\frac{3}{4}(8x - 12) - 2(x - k) = 5x + 1$$\n\nIn the given equation, $k$ is a constant. If $x = 3$ is a solution to the equation, what is the value of $k$?",
+    "spr_answers": [
+      "13/2",
+      "6.5"
+    ],
+    "explanation_en": "Simplify the left side: $\\frac{3}{4}(8x - 12) = 6x - 9$ and $-2(x - k) = -2x + 2k$, so the equation is $4x - 9 + 2k = 5x + 1$.\n\nSubstitute $x = 3$: $12 - 9 + 2k = 15 + 1$, so $3 + 2k = 16$, $2k = 13$ and $k = \\frac{13}{2}$. Enter 13/2 or 6.5.\n\nA common mistake is writing $-2(x - k)$ as $-2x - 2k$, which leads to $3 - 2k = 16$ and the wrong value $k = -\\frac{13}{2}$.",
+    "explanation_uz": "Chap tomonni soddalashtiramiz: $\\frac{3}{4}(8x - 12) = 6x - 9$ va $-2(x - k) = -2x + 2k$, demak tenglama $4x - 9 + 2k = 5x + 1$ ko‘rinishini oladi.\n\n$x = 3$ ni qo‘yamiz: $12 - 9 + 2k = 15 + 1$, ya’ni $3 + 2k = 16$, $2k = 13$ va $k = \\frac{13}{2}$. Javobni 13/2 yoki 6.5 shaklida kiriting.\n\nKo‘p uchraydigan xato: $-2(x - k)$ ni $-2x - 2k$ deb yozish. Unda $3 - 2k = 16$ va noto‘g‘ri javob $k = -\\frac{13}{2}$ chiqadi.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  }
+]

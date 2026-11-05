@@ -1,0 +1,141 @@
+[
+  {
+    "skill_code": "linear_inequalities",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "Which inequality describes all solutions to $5 - 2x > 13$?",
+    "option_a": "$x < 4$",
+    "option_b": "$x > 4$",
+    "option_c": "$x > -4$",
+    "option_d": "$x < -4$",
+    "correct": "D",
+    "explanation_en": "Subtract $5$ from both sides: $-2x > 8$. Divide both sides by $-2$; dividing by a negative number reverses the inequality: $x < -4$.\n\nCheck: $x = -5$ gives $5 + 10 = 15 > 13$, which is true.\n\nChoice C forgets to reverse the inequality sign. Choice B drops the negative sign of $-2$ and solves $2x > 8$. Choice A drops the negative sign and also reverses the inequality, which is only needed when dividing by a negative number.",
+    "explanation_uz": "Ikkala tomondan $5$ ni ayiramiz: $-2x > 8$. Ikkala tomonni $-2$ ga bo‘lamiz; manfiy songa bo‘lganda tengsizlik belgisi teskarisiga o‘zgaradi: $x < -4$.\n\nTekshiruv: $x = -5$ da $5 + 10 = 15 > 13$ — to‘g‘ri.\n\nC variantda tengsizlik belgisini o‘zgartirish unutilgan. B variantda $-2$ ning manfiy ishorasi tushirib qoldirilib, $2x > 8$ yechilgan. A variantda manfiy ishora tushirib qoldirilgan va belgi ham o‘zgartirilgan, holbuki belgi faqat manfiy songa bo‘lganda o‘zgaradi.",
+    "estimated_seconds": 55,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "linear_inequalities",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "An elevator can safely carry at most 650 kilograms. An operator who weighs 80 kilograms rides in the elevator with boxes of supplies that weigh 25 kilograms each. What is the greatest number of boxes the operator can take in one trip?",
+    "option_a": "$22$",
+    "option_b": "$23$",
+    "option_c": "$26$",
+    "option_d": "$29$",
+    "correct": "A",
+    "explanation_en": "Let $b$ be the number of boxes. The total weight must satisfy $80 + 25b \\le 650$. Subtract $80$: $25b \\le 570$. Divide by $25$: $b \\le 22.8$. The number of boxes must be a whole number, so the greatest possible value is $22$.\n\nChoice B rounds $22.8$ up, but $23$ boxes and the operator weigh $655$ kilograms, which is too much. Choice C ignores the operator's weight ($650 \\div 25$). Choice D adds the operator's weight instead of subtracting it ($730 \\div 25 \\approx 29.2$).",
+    "explanation_uz": "$b$ — qutilar soni bo‘lsin. Umumiy og‘irlik: $80 + 25b \\le 650$. $80$ ni ayiramiz: $25b \\le 570$. $25$ ga bo‘lamiz: $b \\le 22.8$. Qutilar soni butun son bo‘lishi kerak, demak eng katta qiymat $22$.\n\nB variantda $22.8$ yuqoriga yaxlitlangan, ammo $23$ ta quti va operator $655$ kilogramm bo‘ladi — bu ruxsat etilganidan ko‘p. C variantda operatorning og‘irligi hisobga olinmagan ($650 \\div 25$). D variantda operator og‘irligi ayirilish o‘rniga qo‘shilgan ($730 \\div 25 \\approx 29.2$).",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "linear_inequalities",
+    "difficulty": "easy",
+    "question_type": "spr",
+    "stem": "What is the least integer $n$ that satisfies the inequality $3n + 4 > 19$?",
+    "spr_answers": [
+      "6"
+    ],
+    "explanation_en": "Subtract $4$ from both sides: $3n > 15$. Divide by $3$: $n > 5$. The least integer greater than $5$ is $6$.\n\nA common mistake is answering $5$, but $3(5) + 4 = 19$, and $19 > 19$ is false.",
+    "explanation_uz": "Ikkala tomondan $4$ ni ayiramiz: $3n > 15$. $3$ ga bo‘lamiz: $n > 5$. $5$ dan katta eng kichik butun son — $6$.\n\nKo‘p uchraydigan xato: $5$ deb javob berish. Lekin $3(5) + 4 = 19$ va $19 > 19$ noto‘g‘ri.",
+    "estimated_seconds": 55,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "linear_inequalities",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "Sardor has 300,000 soums. He buys a book for 85,000 soums and plans to visit a café, where each visit costs 18,000 soums. He wants to have at least 50,000 soums left after buying the book and paying for the café visits. Which inequality represents this situation, where $v$ is the number of café visits?",
+    "option_a": "$300{,}000 - 18{,}000v \\ge 50{,}000$",
+    "option_b": "$215{,}000 - 18{,}000v \\le 50{,}000$",
+    "option_c": "$215{,}000 - 18{,}000v \\ge 50{,}000$",
+    "option_d": "$18{,}000v - 215{,}000 \\ge 50{,}000$",
+    "correct": "C",
+    "explanation_en": "After the book, Sardor has $300{,}000 - 85{,}000 = 215{,}000$ soums. After $v$ visits he has $215{,}000 - 18{,}000v$ soums. \\\"At least $50{,}000$ left\\\" means this amount is greater than or equal to $50{,}000$: $215{,}000 - 18{,}000v \\ge 50{,}000$.\n\nChoice A forgets the cost of the book. Choice B uses $\\le$, which means \\\"at most $50{,}000$ left.\\\" Choice D subtracts in the wrong order.",
+    "explanation_uz": "Kitobdan keyin Sardorda $300{,}000 - 85{,}000 = 215{,}000$ so‘m qoladi. $v$ marta borgandan keyin unda $215{,}000 - 18{,}000v$ so‘m qoladi. \\\"Kamida $50{,}000$ qolishi\\\" bu miqdor $50{,}000$ dan katta yoki teng degani: $215{,}000 - 18{,}000v \\ge 50{,}000$.\n\nA variantda kitob narxi unutilgan. B variantda $\\le$ ishlatilgan, bu \\\"ko‘pi bilan $50{,}000$ qoladi\\\" degani. D variantda ayirish teskari tartibda bajarilgan.",
+    "estimated_seconds": 85,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "linear_inequalities",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "Which of the following describes all values of $x$ that satisfy both $2x - 3 \\ge 5$ and $x + 7 < 20$?",
+    "option_a": "$1 \\le x < 13$",
+    "option_b": "$4 \\le x < 13$",
+    "option_c": "$4 < x \\le 13$",
+    "option_d": "$4 \\le x < 27$",
+    "correct": "B",
+    "explanation_en": "First inequality: $2x \\ge 8$, so $x \\ge 4$. Second inequality: $x < 13$. Values that satisfy both are $4 \\le x < 13$.\n\nChoice A subtracts $3$ instead of adding it in the first inequality ($2x \\ge 2$). Choice C puts the strict and non-strict signs on the wrong ends. Choice D adds $7$ instead of subtracting it in the second inequality.",
+    "explanation_uz": "Birinchi tengsizlik: $2x \\ge 8$, demak $x \\ge 4$. Ikkinchi tengsizlik: $x < 13$. Ikkalasini qanoatlantiradigan qiymatlar: $4 \\le x < 13$.\n\nA variantda birinchi tengsizlikda $3$ qo‘shilish o‘rniga ayirilgan ($2x \\ge 2$). C variantda qat’iy va noqat’iy belgilar o‘rni almashtirilgan. D variantda ikkinchi tengsizlikda $7$ ayirilish o‘rniga qo‘shilgan.",
+    "estimated_seconds": 75,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "linear_inequalities",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "$$-3(x - 4) \\ge 7x - 23$$\n\nWhat is the greatest value of $x$ that satisfies the given inequality?",
+    "spr_answers": [
+      "7/2",
+      "3.5"
+    ],
+    "explanation_en": "Distribute: $-3x + 12 \\ge 7x - 23$. Add $3x$ and $23$ to both sides: $35 \\ge 10x$. Divide by $10$: $x \\le 3.5$. The greatest value is $3.5$. Enter 7/2 or 3.5.\n\nA common mistake is writing $-3(x - 4)$ as $-3x - 12$, which gives $11 \\ge 10x$ and the wrong value $1.1$.",
+    "explanation_uz": "Qavsni ochamiz: $-3x + 12 \\ge 7x - 23$. Ikkala tomonga $3x$ va $23$ ni qo‘shamiz: $35 \\ge 10x$. $10$ ga bo‘lamiz: $x \\le 3.5$. Eng katta qiymat — $3.5$. Javobni 7/2 yoki 3.5 shaklida kiriting.\n\nKo‘p uchraydigan xato: $-3(x - 4)$ ni $-3x - 12$ deb yozish. Unda $11 \\ge 10x$ va noto‘g‘ri javob $1.1$ chiqadi.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "linear_inequalities",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "A delivery van can carry at most 1,500 kilograms of cargo. Each box weighs 40 kilograms and each sack weighs 25 kilograms. For a certain delivery, the number of boxes must be at least twice the number of sacks. What is the greatest number of sacks the van can carry on this delivery?",
+    "option_a": "$14$",
+    "option_b": "$15$",
+    "option_c": "$23$",
+    "option_d": "$60$",
+    "correct": "A",
+    "explanation_en": "Let $x$ be the number of boxes and $y$ the number of sacks. The conditions are $40x + 25y \\le 1{,}500$ and $x \\ge 2y$.\n\nTo carry as many sacks as possible, use the fewest boxes allowed, $x = 2y$. Then $40(2y) + 25y = 105y \\le 1{,}500$, so $y \\le 14.28\\ldots$ and the greatest whole number is $14$. Check: $28$ boxes and $14$ sacks weigh $1{,}120 + 350 = 1{,}470$ kg. With $15$ sacks, at least $30$ boxes are needed, and $1{,}200 + 375 = 1{,}575$ kg is too heavy.\n\nChoice B rounds $14.28\\ldots$ up. Choice C uses one box per sack ($1{,}500 \\div 65 \\approx 23.1$). Choice D ignores the condition on boxes and fills the van with sacks only ($1{,}500 \\div 25$).",
+    "explanation_uz": "$x$ — qutilar soni, $y$ — qoplar soni bo‘lsin. Shartlar: $40x + 25y \\le 1{,}500$ va $x \\ge 2y$.\n\nQoplar iloji boricha ko‘p bo‘lishi uchun qutilarni ruxsat etilgan eng kam miqdorda olamiz: $x = 2y$. U holda $40(2y) + 25y = 105y \\le 1{,}500$, ya’ni $y \\le 14.28\\ldots$, eng katta butun son $14$. Tekshiruv: $28$ ta quti va $14$ ta qop $1{,}120 + 350 = 1{,}470$ kg. $15$ ta qop uchun kamida $30$ ta quti kerak va $1{,}200 + 375 = 1{,}575$ kg — juda og‘ir.\n\nB variantda $14.28\\ldots$ yuqoriga yaxlitlangan. C variantda har bir qopga bitta quti olingan ($1{,}500 \\div 65 \\approx 23.1$). D variantda qutilar sharti e’tiborga olinmay, furgon faqat qoplar bilan to‘ldirilgan ($1{,}500 \\div 25$).",
+    "estimated_seconds": 140,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "linear_inequalities",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "$$kx - 6 \\le 2x + 9$$\n\nIn the given inequality, $k$ is a constant. If the solution set of the inequality is $x \\ge -5$, what is the value of $k$?",
+    "spr_answers": [
+      "-1"
+    ],
+    "explanation_en": "Rearrange: $(k - 2)x \\le 15$. The solution set is $x \\ge -5$, so the inequality sign must reverse when dividing by $k - 2$. That means $k - 2 < 0$ and $x \\ge \\frac{15}{k - 2}$.\n\nSet $\\frac{15}{k - 2} = -5$: $k - 2 = -3$, so $k = -1$. Check: $-x - 6 \\le 2x + 9$ gives $-15 \\le 3x$, or $x \\ge -5$.\n\nA common mistake is not reversing the sign; that leads to $x \\le \\frac{15}{k - 2}$, which can never be the set $x \\ge -5$.",
+    "explanation_uz": "Tengsizlikni qayta yozamiz: $(k - 2)x \\le 15$. Yechimlar to‘plami $x \\ge -5$, demak $k - 2$ ga bo‘lganda belgi teskarisiga o‘zgarishi kerak. Bu $k - 2 < 0$ va $x \\ge \\frac{15}{k - 2}$ degani.\n\n$\\frac{15}{k - 2} = -5$ deb olamiz: $k - 2 = -3$, demak $k = -1$. Tekshiruv: $-x - 6 \\le 2x + 9$ dan $-15 \\le 3x$, ya’ni $x \\ge -5$.\n\nKo‘p uchraydigan xato: belgini o‘zgartirmaslik; unda $x \\le \\frac{15}{k - 2}$ hosil bo‘ladi, bu hech qachon $x \\ge -5$ to‘plami bo‘la olmaydi.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  }
+]

@@ -1,0 +1,162 @@
+[
+  {
+    "skill_code": "text_structure_purpose",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Long before electric refrigerators, people in the deserts of Iran kept ice through the summer in structures called yakhchals. In winter, water was channeled into shallow pools, where it froze during the cold nights. The ice was cut into blocks and packed into a deep pit beneath a tall dome. The dome's thick walls, made of a special heat-resistant mortar, kept the ice frozen for months.",
+    "stem": "Which choice best states the main purpose of the text?",
+    "option_a": "To argue that yakhchals work better than modern refrigerators",
+    "option_b": "To describe how a traditional structure allowed people to keep ice through hot summers",
+    "option_c": "To explain why nights in the deserts of Iran are cold in winter",
+    "option_d": "To compare several building materials used in desert architecture",
+    "correct": "B",
+    "explanation_en": "The text introduces yakhchals and walks through how they worked: freezing water in winter, storing the blocks in a deep pit and keeping them cold beneath a thick-walled dome. Choice B states this purpose.\n\nChoice A is wrong because the text makes no comparison with modern refrigerators beyond noting that yakhchals came earlier. Choice C is wrong because the text mentions cold nights without explaining their cause. Choice D is wrong because the text mentions only one material, the mortar, and compares nothing.",
+    "explanation_uz": "Matn yaxchollarni tanishtiradi va ular qanday ishlaganini bosqichma-bosqich tushuntiradi: qishda suvni muzlatish, muz bo‘laklarini chuqur o‘raga joylash va qalin devorli gumbaz ostida sovuq saqlash. B javob shu maqsadni ifodalaydi.\n\nA noto‘g‘ri: matnda yaxchollar zamonaviy muzlatgichlardan oldin bo‘lgani aytiladi, xolos, ular solishtirilmaydi. C noto‘g‘ri: matnda sovuq tunlar tilga olinadi, lekin ularning sababi tushuntirilmaydi. D noto‘g‘ri: matnda faqat bitta material — qorishma tilga olinadi va hech narsa solishtirilmaydi.",
+    "estimated_seconds": 55,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "text_structure_purpose",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "At high altitudes, the air contains less oxygen, and mountain climbers often suffer headaches and shortness of breath. __Yet the bar-headed goose regularly flies over the Himalayas at heights above 7,000 meters, where the air is thinner still.__ Researchers have found that the goose's blood picks up oxygen unusually efficiently and that its flight muscles are packed with tiny blood vessels that deliver oxygen quickly.",
+    "stem": "Which choice best describes the function of the underlined sentence in the text as a whole?",
+    "option_a": "It explains why mountain climbers suffer headaches at high altitudes.",
+    "option_b": "It argues that bar-headed geese fly higher than any other bird.",
+    "option_c": "It describes the methods researchers used to study bar-headed geese.",
+    "option_d": "It introduces an animal that thrives in conditions that cause humans difficulty, setting up the explanation that follows.",
+    "correct": "D",
+    "explanation_en": "The first sentence describes how thin air affects people. The underlined sentence, beginning with \"Yet,\" introduces a goose that flies in even thinner air, and the final sentence explains how the goose manages this. Choice D describes this function.\n\nChoice A describes the first sentence, not the underlined one. Choice B is wrong because the text never compares the goose with other birds. Choice C is wrong because the underlined sentence says nothing about research methods; the final sentence reports findings, not methods.",
+    "explanation_uz": "Birinchi jumla siyrak havo odamlarga qanday ta’sir qilishini tasvirlaydi. “Yet” bilan boshlangan tagiga chizilgan jumla bundan ham siyrak havoda uchadigan g‘ozni tanishtiradi, oxirgi jumla esa g‘oz buni qanday uddalashini tushuntiradi. D javob shu vazifani ifodalaydi.\n\nA tagiga chizilgan jumlani emas, birinchi jumlani tasvirlaydi. B noto‘g‘ri: matnda g‘oz boshqa qushlar bilan solishtirilmaydi. C noto‘g‘ri: tagiga chizilgan jumlada tadqiqot usullari haqida gap yo‘q; oxirgi jumlada ham usullar emas, natijalar keltiriladi.",
+    "estimated_seconds": 55,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "text_structure_purpose",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "The following text is adapted from a short story.\n\nShahlo checked her phone again. Nothing. She set it face down on the table, picked up her tea and put the cup back down without drinking. Through the window she watched a bus pull up, open its doors and drive away. Then she turned the phone over once more. The university had promised to announce its decisions by noon, and the clock on the wall said 11:52.",
+    "stem": "Which choice best states the main purpose of the text?",
+    "option_a": "To portray a character's restless anticipation as she waits to learn a decision",
+    "option_b": "To explain why a character chose to apply to a particular university",
+    "option_c": "To describe a character's usual morning routine",
+    "option_d": "To contrast a character's calm mood with the busy street outside",
+    "correct": "A",
+    "explanation_en": "Shahlo repeatedly checks her phone, puts it down, picks up her tea without drinking, and watches the clock as the university's noon deadline approaches. These details portray her restless waiting, as choice A says.\n\nChoice B is wrong because the text never explains why she applied. Choice C is wrong because the scene shows a particular, tense morning, not a usual routine. Choice D is wrong because Shahlo is not calm, and the street is not described as busy; a single bus passes.",
+    "explanation_uz": "Shahlo telefonini qayta-qayta tekshiradi, uni yuzini pastga qilib qo‘yadi, choyini olib, ichmasdan joyiga qo‘yadi va universitet e’lon qiladigan peshin yaqinlashayotganida soatga qaraydi. Bu tafsilotlar uning bezovta kutishini tasvirlaydi — to‘g‘ri javob A.\n\nB noto‘g‘ri: matnda u nega hujjat topshirgani tushuntirilmaydi. C noto‘g‘ri: sahnada odatiy kun tartibi emas, o‘ziga xos, hayajonli tong tasvirlangan. D noto‘g‘ri: Shahlo xotirjam emas, ko‘cha ham gavjum deb tasvirlanmagan — faqat bitta avtobus o‘tadi.",
+    "estimated_seconds": 55,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "text_structure_purpose",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Many people assume that trees produce the bright colors of autumn leaves only when the weather turns cool. In fact, the yellow and orange pigments in many leaves are present all summer, hidden by green chlorophyll. As the days shorten, trees stop making chlorophyll, and the hidden colors appear. Red colors are a different matter: the red pigments are newly produced in autumn, and scientists still debate why trees spend energy making them just before the leaves fall.",
+    "stem": "Which choice best describes the overall structure of the text?",
+    "option_a": "It describes a scientific debate and then explains how that debate was finally settled.",
+    "option_b": "It explains a natural process and then argues that one popular explanation of it is fully correct.",
+    "option_c": "It presents a common assumption, explains why it is largely mistaken, and then identifies an exception whose cause is not yet understood.",
+    "option_d": "It compares the leaves of trees in two regions and explains why they change color differently.",
+    "correct": "C",
+    "explanation_en": "The text opens with a common assumption about autumn colors, explains that yellow and orange pigments are actually present all summer, and then notes that red pigments are an exception, newly made in autumn for reasons scientists \"still debate.\" Choice C follows this sequence.\n\nChoice A is wrong because the debate mentioned at the end is unresolved. Choice B is wrong because the text corrects the popular assumption rather than defending it. Choice D is wrong because the text does not discuss different regions.",
+    "explanation_uz": "Matn kuz ranglari haqidagi keng tarqalgan tasavvur bilan boshlanadi, so‘ng sariq va to‘q sariq pigmentlar aslida butun yoz davomida barglarda bo‘lishini tushuntiradi va oxirida qizil pigmentlar istisno ekanini qayd etadi: ular kuzda yangidan hosil bo‘ladi, buning sababi esa hali ham bahsli (“still debate”). C javob shu ketma-ketlikka mos.\n\nA noto‘g‘ri: oxirida tilga olingan bahs hal qilinmagan. B noto‘g‘ri: matn keng tarqalgan tasavvurni himoya qilmaydi, balki uni tuzatadi. D noto‘g‘ri: matnda turli hududlar muhokama qilinmaydi.",
+    "estimated_seconds": 72,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "text_structure_purpose",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "When the city of Vardo installed its first public water fountains in 1878, officials expected residents to use them mainly for drinking. __Within a year, however, more complaints were filed about people washing laundry in the fountains than about any other problem.__ In response, the city built public washhouses next to several of the fountains, and the washhouses soon became gathering places where neighbors exchanged news.",
+    "stem": "Which choice best describes the function of the underlined sentence in the text as a whole?",
+    "option_a": "It describes an unexpected use of the fountains that led to the city's later decision to build washhouses.",
+    "option_b": "It shows that residents rarely used the fountains that the city installed.",
+    "option_c": "It explains why city officials decided to install the fountains.",
+    "option_d": "It suggests that residents disliked the washhouses that the city built.",
+    "correct": "A",
+    "explanation_en": "The first sentence states what officials expected the fountains to be used for. The underlined sentence, signaled by \"however,\" reveals a different use, washing laundry, and the next sentence describes the city's response: building washhouses. Choice A captures this role.\n\nChoice B contradicts the underlined sentence, which shows heavy use of the fountains. Choice C is wrong because the reason for installing the fountains appears in the first sentence and concerns drinking. Choice D is wrong because the washhouses became popular gathering places.",
+    "explanation_uz": "Birinchi jumlada rasmiylar favvoralardan nima maqsadda foydalanilishini kutgani aytiladi. “However” bilan ajratilgan tagiga chizilgan jumla boshqa foydalanish usulini — kir yuvishni ochib beradi, keyingi jumla esa shaharning javobini — kir yuvish uylari qurilganini tasvirlaydi. A javob shu vazifani ifodalaydi.\n\nB tagiga chizilgan jumlaga zid: unda favvoralardan faol foydalanilgani ko‘rinadi. C noto‘g‘ri: favvoralarni o‘rnatish sababi birinchi jumlada keltirilgan va u ichimlik suvi bilan bog‘liq. D noto‘g‘ri: kir yuvish uylari odamlar yig‘iladigan mashhur joylarga aylangan.",
+    "estimated_seconds": 72,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "text_structure_purpose",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "The following text is from a poem. The speaker addresses a river.\n\nRiver, you never kept a single thing—\nnot the leaf, not the light, not the moon's white coin\nI watched you carry once beneath the bridge.\nYou give back nothing, yet you are never empty.\nTeach me that: to let the days go by\nand still be full.",
+    "stem": "Which choice best states the main purpose of the text?",
+    "option_a": "To warn of the dangers of crossing a river at night",
+    "option_b": "To criticize the river for carrying away things the speaker valued",
+    "option_c": "To recall in detail a particular childhood evening spent near the river",
+    "option_d": "To express the speaker's wish to learn from the river how to let things pass without feeling empty",
+    "correct": "D",
+    "explanation_en": "The speaker observes that the river keeps nothing yet is \"never empty\" and then asks the river to \"teach me that: to let the days go by / and still be full.\" Choice D states this purpose.\n\nChoice A is wrong because the poem mentions no danger. Choice B is wrong because the speaker admires the river's way of letting things go rather than criticizing it. Choice C is wrong because the brief memory of the moon's reflection serves as an example of what the river does not keep; the poem does not recount a childhood evening in detail.",
+    "explanation_uz": "Shoir daryo hech narsani ushlab qolmasligini, ammo hech qachon bo‘sh bo‘lmasligini (“never empty”) kuzatadi va undan “menga shuni o‘rgat: kunlarni o‘tkazib yuborib, baribir to‘la bo‘lishni” deb so‘raydi. D javob shu maqsadni ifodalaydi.\n\nA noto‘g‘ri: she’rda hech qanday xavf tilga olinmaydi. B noto‘g‘ri: shoir daryoni tanqid qilmaydi, aksincha, uning narsalarni qo‘yib yuborishiga havas qiladi. C noto‘g‘ri: oyning aksi haqidagi qisqa xotira daryo ushlab qolmaydigan narsalarga misol sifatida keltirilgan; she’rda bolalikdagi oqshom batafsil hikoya qilinmaydi.",
+    "estimated_seconds": 72,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "text_structure_purpose",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Surveys consistently find that people who own dogs are more physically active than people who do not. __But people who are already active may simply be more likely to get a dog in the first place.__ To find out, researchers tracked the daily step counts of adults for a year before and a year after they adopted dogs. On average, the new owners walked about 2,000 more steps a day after adopting than they had before.",
+    "stem": "Which choice best describes the function of the underlined sentence in the text as a whole?",
+    "option_a": "It states the conclusion that the study described later in the text ultimately supports.",
+    "option_b": "It provides evidence that owning a dog increases a person's physical activity.",
+    "option_c": "It raises a possible alternative explanation for an observed pattern, which the study described next was designed to test.",
+    "option_d": "It explains why the researchers' findings surprised other scientists.",
+    "correct": "C",
+    "explanation_en": "The first sentence reports a pattern: dog owners are more active. The underlined sentence offers another way to explain that pattern (active people may be the ones who get dogs), and the researchers then track the same people before and after adoption \"to find out.\" Choice C describes this function.\n\nChoice A is wrong because the study's result, an increase after adoption, points to dogs raising activity, not to the alternative explanation in the underlined sentence. Choice B is wrong because the underlined sentence questions that conclusion rather than supporting it. Choice D is wrong because the text never mentions other scientists' reactions.",
+    "explanation_uz": "Birinchi jumla qonuniyatni bayon qiladi: it egalari faolroq. Tagiga chizilgan jumla bu qonuniyatni boshqacha izohlaydi (faol odamlar it olishga ko‘proq moyil bo‘lishi mumkin), keyin esa tadqiqotchilar buni aniqlash uchun (“to find out”) o‘sha odamlarni it olishdan oldin va keyin kuzatadi. C javob shu vazifani ifodalaydi.\n\nA noto‘g‘ri: tadqiqot natijasi — it olgandan keyingi o‘sish — tagiga chizilgan jumladagi muqobil izohni emas, itlar faollikni oshirishini ko‘rsatadi. B noto‘g‘ri: tagiga chizilgan jumla bu xulosani tasdiqlamaydi, aksincha, unga shubha bildiradi. D noto‘g‘ri: matnda boshqa olimlarning munosabati haqida gap yo‘q.",
+    "estimated_seconds": 88,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "text_structure_purpose",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "The following text is adapted from a novel. Rustam works as a clerk in a shipping office.\n\nMr. Avery praised Rustam's handwriting, his punctuality, the neatness of his ledgers. He praised them every Friday, in the same words, as he handed out the week's wages. __Rustam had begun to suspect that the praise was a kind of wage too, paid in place of the raise he had asked for in March.__ Still, he thanked Mr. Avery each time, and each time Mr. Avery nodded, satisfied, as though a debt had been settled.",
+    "stem": "Which choice best describes the function of the underlined sentence in the text as a whole?",
+    "option_a": "It shows that Rustam values Mr. Avery's praise more than he values his wages.",
+    "option_b": "It reveals Rustam's growing belief that his employer's compliments are meant to substitute for higher pay.",
+    "option_c": "It explains why Mr. Avery admires the quality of Rustam's work.",
+    "option_d": "It indicates that Rustam has decided to leave his job at the shipping office.",
+    "correct": "B",
+    "explanation_en": "The underlined sentence tells us that Rustam suspects the weekly praise is \"a kind of wage,\" given \"in place of the raise he had asked for.\" This reveals his growing belief that the compliments replace better pay, as choice B says, and it prepares the final image of Mr. Avery acting \"as though a debt had been settled.\"\n\nChoice A misreads the sentence: Rustam thanks Mr. Avery, but the underlined sentence shows suspicion about the praise, not that he values it above money. Choice C is wrong because the sentence concerns Rustam's view of the praise, not the reasons for it. Choice D is unsupported: nothing suggests that Rustam plans to leave, and he keeps thanking Mr. Avery.",
+    "explanation_uz": "Tagiga chizilgan jumla Rustam haftalik maqtovni o‘zi so‘ragan maosh oshirish o‘rniga (“in place of the raise”) beriladigan o‘ziga xos “ish haqi” deb gumon qila boshlaganini aytadi. Bu uning maqtovlar yuqoriroq maosh o‘rnini bosish uchun aytilmoqda degan ishonchi kuchayib borayotganini ochib beradi — to‘g‘ri javob B. Shu bilan birga, u Mr. Averyning go‘yo qarz uzilgandek mamnun bosh irg‘ashi haqidagi yakuniy manzaraga zamin hozirlaydi.\n\nA jumlani noto‘g‘ri talqin qiladi: Rustam minnatdorchilik bildiradi, lekin tagiga chizilgan jumla maqtovga nisbatan gumonni ko‘rsatadi, uni puldan ustun qo‘yishini emas. C noto‘g‘ri: jumla maqtov sabablari haqida emas, Rustamning maqtovga qarashi haqida. D asossiz: Rustam ishdan ketmoqchi ekani haqida ishora yo‘q, u Mr. Averyga minnatdorchilik bildirishda davom etadi.",
+    "estimated_seconds": 88,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  }
+]

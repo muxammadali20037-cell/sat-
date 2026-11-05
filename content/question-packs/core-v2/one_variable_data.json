@@ -1,0 +1,143 @@
+[
+  {
+    "skill_code": "one_variable_data",
+    "difficulty": "easy",
+    "question_type": "spr",
+    "stem": "The list shows the high temperature, in degrees Celsius, in a town on each of 7 days.\n\n18, 22, 19, 25, 21, 17, 23\n\nWhat is the median high temperature, in degrees Celsius, for these 7 days?",
+    "spr_answers": [
+      "21"
+    ],
+    "explanation_en": "Order the values from least to greatest: 17, 18, 19, 21, 22, 23, 25. With 7 values, the median is the 4th value, which is 21. Choosing the middle value of the list **as written** gives 25, which is wrong because the values must be ordered first. The mean, $\\frac{145}{7} \\approx 20.7$, is a different measure of center. Enter 21.",
+    "explanation_uz": "Qiymatlarni o‘sish tartibida yozamiz: 17, 18, 19, 21, 22, 23, 25. 7 ta qiymat bo‘lgani uchun mediana 4-qiymat, ya’ni 21. Ro‘yxatning **berilgan holatdagi** o‘rtasidagi qiymatni olish 25 ni beradi — bu xato, chunki avval qiymatlarni tartiblash kerak. O‘rta arifmetik $\\frac{145}{7} \\approx 20.7$ esa boshqa markaziy ko‘rsatkich. Javob maydoniga 21 deb yozing.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "one_variable_data",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "The masses, in kilograms, of 6 melons are 3.2, 4.8, 2.9, 5.1, 3.7, and 4.4. What is the range of these masses, in kilograms?",
+    "option_a": "$2.2$",
+    "option_b": "$1.2$",
+    "option_c": "$1.9$",
+    "option_d": "$8.0$",
+    "correct": "A",
+    "explanation_en": "The range is the greatest value minus the least value: $5.1 - 2.9 = 2.2$ kilograms. Choice B subtracts the first listed value from the last listed value, $4.4 - 3.2$, instead of using the greatest and least values. Choice C uses the greatest value but the first listed value, $5.1 - 3.2$. Choice D adds the greatest and least values instead of subtracting.",
+    "explanation_uz": "Qamrov — eng katta va eng kichik qiymatlar ayirmasi: $5.1 - 2.9 = 2.2$ kilogramm. B javob eng katta va eng kichik qiymat o‘rniga ro‘yxatdagi oxirgi va birinchi qiymatlarni ayirgan: $4.4 - 3.2$. C javob eng katta qiymatni, lekin ro‘yxatdagi birinchi qiymatni olgan: $5.1 - 3.2$. D javob eng katta va eng kichik qiymatlarni ayirish o‘rniga qo‘shgan.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "one_variable_data",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "What is the mode of the shoe sizes of these students?",
+    "passage": "The table shows the shoe sizes of the 25 students in a class.\n\n| Shoe size | Number of students |\n| ---: | ---: |\n| 36 | 3 |\n| 37 | 5 |\n| 38 | 9 |\n| 39 | 6 |\n| 40 | 2 |",
+    "option_a": "$5$",
+    "option_b": "$9$",
+    "option_c": "$40$",
+    "option_d": "$38$",
+    "correct": "D",
+    "explanation_en": "The mode is the value that occurs most often. The greatest number of students, 9, wear size 38, so the mode is 38. Choice B, 9, is how many students wear the most common size, not the size itself. Choice A is the number of different sizes in the table, and choice C is the largest size.",
+    "explanation_uz": "Moda — eng ko‘p uchraydigan qiymat. Eng ko‘p o‘quvchi (9 nafar) 38-o‘lchamdagi poyabzal kiyadi, demak moda 38. B javob (9) — o‘lchamning o‘zi emas, eng ko‘p uchraydigan o‘lchamni kiyadigan o‘quvchilar soni. A javob — jadvaldagi turli o‘lchamlar soni, C javob esa eng katta o‘lcham.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "one_variable_data",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "Which of the following statements about the means and standard deviations of the scores of the two archers is true?",
+    "passage": "Two archers each shot 5 arrows at a target. Their scores are shown.\n\n- Dilnoza: 7, 8, 8, 8, 9\n- Sardor: 4, 6, 8, 10, 12",
+    "option_a": "The means are equal, and the standard deviation of Dilnoza's scores is greater.",
+    "option_b": "The means are equal, and the standard deviation of Sardor's scores is greater.",
+    "option_c": "The mean of Dilnoza's scores is greater, and the standard deviations are equal.",
+    "option_d": "The mean of Sardor's scores is greater, and the standard deviation of Sardor's scores is greater.",
+    "correct": "B",
+    "explanation_en": "Both means equal 8: $\\frac{7 + 8 + 8 + 8 + 9}{5} = \\frac{40}{5} = 8$ and $\\frac{4 + 6 + 8 + 10 + 12}{5} = \\frac{40}{5} = 8$. Standard deviation measures how spread out the values are from the mean. Dilnoza's scores are all within 1 point of 8, while Sardor's scores are as far as 4 points from 8, so Sardor's scores have the greater standard deviation. Choice A reverses the spreads. Choices C and D claim different means, but both means are 8; Sardor's larger values (10 and 12) are balanced by his smaller values (4 and 6).",
+    "explanation_uz": "Ikkala o‘rta qiymat ham 8 ga teng: $\\frac{7 + 8 + 8 + 8 + 9}{5} = \\frac{40}{5} = 8$ va $\\frac{4 + 6 + 8 + 10 + 12}{5} = \\frac{40}{5} = 8$. Standart chetlanish qiymatlar o‘rta qiymat atrofida qanchalik tarqalganini o‘lchaydi. Dilnozaning barcha ballari 8 dan ko‘pi bilan 1 ballga farq qiladi, Sardorning ballari esa 8 dan 4 ballgacha uzoqlashadi, demak Sardorning ballari standart chetlanishi kattaroq. A javobda tarqoqliklar teskari olingan. C va D javoblar o‘rta qiymatlar har xil deydi, lekin ikkalasi ham 8: Sardorning katta qiymatlari (10 va 12) kichik qiymatlari (4 va 6) bilan muvozanatlashadi.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "one_variable_data",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "Aziz took 5 tests. His scores on the first 4 tests were 82, 75, 90, and 68. The mean of his scores on all 5 tests was 80. What was his score on the fifth test?",
+    "spr_answers": [
+      "85"
+    ],
+    "explanation_en": "If the mean of 5 scores is 80, the sum of the 5 scores is $5 \\times 80 = 400$. The first 4 scores add up to $82 + 75 + 90 + 68 = 315$, so the fifth score is $400 - 315 = 85$. Check: $\\frac{315 + 85}{5} = 80$. Entering 78.75, the mean of the first 4 scores, does not answer the question. Enter 85.",
+    "explanation_uz": "Agar 5 ta ballning o‘rta qiymati 80 bo‘lsa, ularning yig‘indisi $5 \\times 80 = 400$. Dastlabki 4 ta ball yig‘indisi $82 + 75 + 90 + 68 = 315$, demak beshinchi ball $400 - 315 = 85$. Tekshiruv: $\\frac{315 + 85}{5} = 80$. 78.75 (dastlabki 4 ta ballning o‘rtachasi) savolga javob emas. Javob maydoniga 85 deb yozing.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "one_variable_data",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "The prices, in thousands of soums, of 7 notebooks in a shop are 8, 9, 9, 10, 11, 12, and 45. If the notebook that costs 45 thousand soums is removed from the data, which of the following best describes how the mean and the median of the prices change?",
+    "option_a": "Only the mean decreases; the median does not change.",
+    "option_b": "Both the mean and the median decrease, and the mean decreases by more.",
+    "option_c": "Both the mean and the median decrease by the same amount.",
+    "option_d": "Both the mean and the median decrease, and the median decreases by more.",
+    "correct": "B",
+    "explanation_en": "Before the change, the mean is $\\frac{104}{7} \\approx 14.9$ and the median (the 4th of 7 values) is 10. After removing 45, the mean is $\\frac{59}{6} \\approx 9.8$, and the median of the 6 remaining values is $\\frac{9 + 10}{2} = 9.5$. Both decrease: the mean by about 5.0 and the median by 0.5, so the mean decreases by more. Removing an extreme value strongly affects the mean but changes the median only a little. Choice A forgets that with an even number of values the median is the average of the two middle values. Choices C and D misjudge how much an outlier affects each measure.",
+    "explanation_uz": "O‘zgarishdan oldin o‘rta qiymat $\\frac{104}{7} \\approx 14.9$, mediana (7 ta qiymatning 4-si) esa 10. 45 olib tashlangach, o‘rta qiymat $\\frac{59}{6} \\approx 9.8$, qolgan 6 ta qiymatning medianasi $\\frac{9 + 10}{2} = 9.5$. Ikkalasi ham kamayadi: o‘rta qiymat taxminan 5.0 ga, mediana 0.5 ga, demak o‘rta qiymat ko‘proq kamayadi. Keskin farq qiluvchi qiymatni olib tashlash o‘rta qiymatga kuchli ta’sir qiladi, medianani esa ozgina o‘zgartiradi. A javob qiymatlar soni juft bo‘lganda mediana ikki o‘rta qiymatning o‘rtachasi ekanini unutgan. C va D javoblar chetdagi qiymat har bir ko‘rsatkichga qanchalik ta’sir qilishini noto‘g‘ri baholagan.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "one_variable_data",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "A data set consists of 10 numbers. The mean of the data set is 16, and the median is 14. A new data set is created by multiplying each number in the original data set by 3 and then subtracting 2 from each result. What are the mean and the median of the new data set?",
+    "option_a": "Mean: 48; median: 42",
+    "option_b": "Mean: 42; median: 36",
+    "option_c": "Mean: 46; median: 40",
+    "option_d": "Mean: 46; median: 42",
+    "correct": "C",
+    "explanation_en": "Multiplying every value by 3 multiplies the mean and the median by 3, and subtracting 2 from every value subtracts 2 from the mean and the median. New mean: $3(16) - 2 = 46$. New median: $3(14) - 2 = 40$. Choice A multiplies by 3 but forgets to subtract 2. Choice B subtracts 2 **before** multiplying: $3(16 - 2) = 42$ and $3(14 - 2) = 36$. Choice D transforms the mean correctly but only multiplies the median.",
+    "explanation_uz": "Har bir qiymatni 3 ga ko‘paytirish o‘rta qiymat va medianani 3 ga ko‘paytiradi, har bir qiymatdan 2 ni ayirish esa o‘rta qiymat va medianadan 2 ni ayiradi. Yangi o‘rta qiymat: $3(16) - 2 = 46$. Yangi mediana: $3(14) - 2 = 40$. A javob 3 ga ko‘paytirgan, lekin 2 ni ayirishni unutgan. B javob 2 ni ko‘paytirishdan **oldin** ayirgan: $3(16 - 2) = 42$ va $3(14 - 2) = 36$. D javob o‘rta qiymatni to‘g‘ri o‘zgartirgan, medianani esa faqat 3 ga ko‘paytirgan.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  },
+  {
+    "skill_code": "one_variable_data",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "The table shows the number of books read last month by each member of a reading club. The mean number of books read per member is 1.6. What is the value of $k$?",
+    "passage": "A reading club recorded how many books each of its members read last month.\n\n| Number of books | Number of members |\n| ---: | ---: |\n| 0 | 4 |\n| 1 | $k$ |\n| 2 | 6 |\n| 3 | 5 |",
+    "spr_answers": [
+      "5"
+    ],
+    "explanation_en": "The number of members is $4 + k + 6 + 5 = 15 + k$, and the total number of books is $0(4) + 1(k) + 2(6) + 3(5) = k + 27$. Since the mean is 1.6, $\\frac{k + 27}{15 + k} = 1.6$. Then $k + 27 = 24 + 1.6k$, so $3 = 0.6k$ and $k = 5$. Check: $\\frac{32}{20} = 1.6$. A common error is to divide the total by the 4 rows of the table instead of by the number of members. Enter 5.",
+    "explanation_uz": "A’zolar soni $4 + k + 6 + 5 = 15 + k$, kitoblarning umumiy soni esa $0(4) + 1(k) + 2(6) + 3(5) = k + 27$. O‘rta qiymat 1.6 bo‘lgani uchun $\\frac{k + 27}{15 + k} = 1.6$. Bundan $k + 27 = 24 + 1.6k$, ya’ni $3 = 0.6k$ va $k = 5$. Tekshiruv: $\\frac{32}{20} = 1.6$. Ko‘p uchraydigan xato — umumiy sonni a’zolar soniga emas, jadvaldagi 4 ta qatorga bo‘lish. Javob maydoniga 5 deb yozing.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v2"
+    ]
+  }
+]
