@@ -822,6 +822,72 @@ export type Database = {
         }
         Relationships: []
       }
+      class_session_guest_links: {
+        Row: {
+          id: string
+          workspace_id: string
+          session_id: string
+          code: string
+          role: string
+          max_uses: number
+          uses: number
+          revoked_at: string | null
+          created_by: string | null
+          created_at: string
+        }
+        Insert: {
+          id?: string
+          workspace_id: string
+          session_id: string
+          code: string
+          role?: string
+          max_uses?: number
+          uses?: number
+          revoked_at?: string | null
+          created_by?: string | null
+          created_at?: string
+        }
+        Update: {
+          id?: string
+          workspace_id?: string
+          session_id?: string
+          code?: string
+          role?: string
+          max_uses?: number
+          uses?: number
+          revoked_at?: string | null
+          created_by?: string | null
+          created_at?: string
+        }
+        Relationships: []
+      }
+      class_session_guests: {
+        Row: {
+          workspace_id: string
+          session_id: string
+          user_id: string
+          link_id: string | null
+          role: string
+          joined_at: string
+        }
+        Insert: {
+          workspace_id: string
+          session_id: string
+          user_id: string
+          link_id?: string | null
+          role: string
+          joined_at?: string
+        }
+        Update: {
+          workspace_id?: string
+          session_id?: string
+          user_id?: string
+          link_id?: string | null
+          role?: string
+          joined_at?: string
+        }
+        Relationships: []
+      }
       attempt_answers: {
         Row: {
           id: string

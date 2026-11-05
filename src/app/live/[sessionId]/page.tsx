@@ -25,7 +25,8 @@ export default async function LivePage({ params }: { params: Promise<{ sessionId
   const [t, locale] = await Promise.all([getDict(liveDict), getLocale()])
   const access = await resolveLiveAccess(createAdminSupabase(), profile.id, sessionId)
   if (!access.ok && access.reason === 'not_found') notFound()
-  const back = access.ok && access.role === 'staff' ? `/teach/${access.session.workspaceId}/groups/${access.session.groupId}` : '/dashboard/classes'
+  const back =
+    access.ok && access.role === 'staff' ? `/teach/${access.session.workspaceId}/groups/${access.session.groupId}` : access.ok && access.role === 'guest' ? '/dashboard' : '/dashboard/classes'
   const configured = liveConfig() !== null
   const tz = profile.timezone || 'Asia/Tashkent'
 

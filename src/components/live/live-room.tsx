@@ -71,7 +71,7 @@ export function LiveRoom({
   sessionId: string
   title: string
   subtitle: string
-  role: 'staff' | 'student'
+  role: 'staff' | 'student' | 'guest'
   selfId: string
   backHref: string
   workspaceId: string
@@ -91,7 +91,9 @@ export function LiveRoom({
   const [draftChat, setDraftChat] = React.useState('')
   const [mediaProblem, setMediaProblem] = React.useState(false)
   const [pollsVersion, setPollsVersion] = React.useState(0)
-  const staff = role === 'staff'
+  // Guests teach like staff in the room (board, screen); the server still limits what they can see.
+  const staff = role !== 'student'
+  const guest = role === 'guest'
 
   const updateStrokes = React.useCallback((next: Stroke[]) => {
     strokesRef.current = next
@@ -314,7 +316,7 @@ export function LiveRoom({
             sessionId={sessionId}
             workspaceId={workspaceId}
             groupId={groupId}
-            staff={staff}
+            staff={staff && !guest}
             version={pollsVersion}
             labels={{ title: t.polls, empty: t.noPolls, ask: t.askQuestion }}
             onChanged={() => {

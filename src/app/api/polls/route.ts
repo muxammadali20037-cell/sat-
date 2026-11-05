@@ -16,6 +16,8 @@ export const GET = route({
     const access = await resolveLiveAccess(db, profile.id, query.sessionId)
     if (!access.ok) throw new ApiError(404, 'NOT_FOUND', 'Lesson not found.')
     const s = access.session
+    // Guests see questions the way students do (no per-student answers: that is student data).
+    if (access.role === 'guest') return { role: 'student' as const, polls: await loadStudentPolls(db, profile.id, [s.groupId], { sessionId: s.id }) }
     if (access.role === 'staff') return { role: 'staff' as const, polls: await loadStaffPolls(db, s.groupId, { sessionId: s.id }) }
     return { role: 'student' as const, polls: await loadStudentPolls(db, profile.id, [s.groupId], { sessionId: s.id }) }
   },

@@ -95,6 +95,14 @@ The flows ran as a real user against real auth, PostgREST and RLS. AI used the l
 - **Admin lists:** question excerpts showed raw LaTeX (`\dfrac{…}`) and escaped prices as `\12`. They now use the same plain-text rendering as student pages.
 - **Pack import (caught before release):** the first version recognised already-imported questions by stem alone. Many Reading and Writing questions share a stem, so a retry after a partial import could have skipped real questions. It now matches passage and stem.
 
+### SAT MASTER PHASE 4-D (5 Nov): guest teachers for one lesson
+
+- **Migration 0027:** `class_session_guest_links` (8-character code, role guest teacher or moderator, 1–20 uses, revoke) and `class_session_guests` (who joined which lesson through which link). Clients can only read: links by the group's staff; guest rows by the group's staff and by the guest themself. All writes go through the server after a permission check.
+- **Teacher (lesson page):** create a guest link (role, how many people), copy, revoke; see who joined. Every change is audited.
+- **Guest:** opens `/live/guest/CODE` (sign-in required), sees the lesson and what the role allows, joins. The use counter is increased atomically, so a one-person link cannot be used twice. A revoked link shows "not found".
+- **What a guest can and cannot do:** in the live room a guest teaches like staff (camera, mic, screen share, board), but is not a room admin and cannot create polls. The guest does **not** join the workspace and cannot open teach pages, group data, students' work or per-student poll answers (the polls API gives guests the student view).
+- **Verified:** 1 unit test (guest token rights), 1 DB test (visibility for staff, guest, student, outsider; no client writes; constraints); 744 tests in total; lint, typecheck, build; 17 Playwright checks against the local LiveKit server (`e2e-guests`), live 22/22, polls 14/14, lessons 22/22, classroom 32/32 re-run.
+
 ### SAT MASTER 2.0 (5 Nov): teacher workspace plans and limits (billing preparation)
 
 The directive says not to invent prices or switch on payments before the provider, fees and business terms are confirmed. So this step adds **limits without prices**, assigned by an administrator.
@@ -391,6 +399,7 @@ State on 2 Nov 2026, applied through the Supabase connector with the owner's con
 | 0013 study-guide tables | Applied |
 | 0014 study-guide content (~480 KB) | Not applied. Use Admin → Study guides → "Import bundled guides" after the first deploy, or `supabase db push`. |
 | 0026 workspace plans (1 table, 2 columns, 1 new function, `workspace_join` replaced with a limit check; no existing data touched, no plans created) | Applied on 5 Nov with the owner's approval. Checked afterwards: RLS on; 0 plans and no workspace has a plan, so nothing is limited; clients cannot write plans, set a workspace plan or call either function; the server can; `workspace_join` contains the limit check; 68 tables, all with RLS. |
+| 0027 session guests (2 new tables; no existing table or data touched) | Not applied yet. |
 | 0025 class challenges (1 table, 1 column; no existing data touched) | Applied on 5 Nov with the owner's approval. Checked afterwards: RLS on, `authenticated` SELECT only, cannot update `leaderboard_opt_in`, `anon` nothing; every existing member starts opted out; 67 tables, all with RLS. |
 | 0024 class polls (2 tables; no existing data touched) | Applied on 4 Nov with the owner's approval. Checked afterwards: RLS on both; `authenticated` cannot read `correct_index`, can read the other columns, cannot write; `anon` nothing; 66 tables, all with RLS. |
 | 0023 live lesson joins (1 table; no existing data touched) | Applied on 4 Nov with the owner's approval. Checked afterwards: RLS on, one read policy, `authenticated` SELECT only, `anon` nothing; 64 tables, all with RLS. |
@@ -415,7 +424,7 @@ The security advisor reports two kinds of finding, both expected by design:
 supabase link --project-ref ncqqnjnozrymrmblixra
 supabase migration repair --status applied 20261102000100 20261102000200 20261102000300 20261102000400 \
   20261102000500 20261102000600 20261102000700 20261102000800 20261102000900 20261102001000 20261102001100 20261102001300 \
-  20261102001500 20261102001600 20261102001700 20261103001800 20261103001900 20261103002000 20261103002100 20261104002200 20261104002300 20261104002400 20261104002500 20261105002600
+  20261102001500 20261102001600 20261102001700 20261103001800 20261103001900 20261103002000 20261103002100 20261104002200 20261104002300 20261104002400 20261104002500 20261105002600 20261105002700
 supabase db push   # applies 0012 (if still wanted) and 0014
 ```
 

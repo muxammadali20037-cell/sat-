@@ -20,7 +20,8 @@ export function liveConfig(): LiveConfig | null {
   return { url: env.LIVEKIT_URL, apiKey: env.LIVEKIT_API_KEY, apiSecret: env.LIVEKIT_API_SECRET }
 }
 
-export type LiveRole = 'staff' | 'student'
+/** `guest`: a guest teacher or moderator invited to this one lesson (no workspace data access). */
+export type LiveRole = 'staff' | 'student' | 'guest'
 
 export type LiveAccess =
   | {
@@ -34,8 +35,8 @@ export type LiveAccess =
   | { ok: false; reason: 'not_found' | 'cancelled' }
 
 /**
- * Who may enter a lesson: staff who teach its group (or workspace managers) and the group's current
- * students. Everyone else gets "not found", whatever the lesson id.
+ * Who may enter a lesson: staff who teach its group (or workspace managers), the group's current
+ * students, and guests invited to this lesson with a guest link. Everyone else gets "not found".
  */
 export async function resolveLiveAccess(admin: Db, userId: string, sessionId: string, now = new Date()): Promise<LiveAccess> {
   if (!/^[0-9a-f-]{36}$/i.test(sessionId)) return { ok: false, reason: 'not_found' }
@@ -47,12 +48,10 @@ export async function resolveLiveAccess(admin: Db, userId: string, sessionId: st
   if (error) throw error
   if (!s) return { ok: false, reason: 'not_found' }
   const m = await getMembership(admin, userId, s.workspace_id)
-  if (!m) return { ok: false, reason: 'not_found' }
-  let role: LiveRole
-  if (isStaffRole(m.role)) {
-    if (!(await teachableGroupIds(admin, m, userId)).has(s.group_id)) return { ok: false, reason: 'not_found' }
+  let role: LiveRole | null = null
+  if (m && isStaffRole(m.role) && (await teachableGroupIds(admin, m, userId)).has(s.group_id)) {
     role = 'staff'
-  } else {
+  } else if (m && m.role === 'student') {
     const { data: gm, error: e2 } = await admin
       .from('group_members')
       .select('user_id')
@@ -62,11 +61,20 @@ export async function resolveLiveAccess(admin: Db, userId: string, sessionId: st
       .is('left_at', null)
       .maybeSingle()
     if (e2) throw e2
-    if (!gm) return { ok: false, reason: 'not_found' }
-    role = 'student'
+    if (gm) role = 'student'
   }
+  if (!role) {
+    // A guest invited to this lesson only.
+    const { data: guest, error: e3 } = await admin.from('class_session_guests').select('role').eq('session_id', s.id).eq('user_id', userId).maybeSingle()
+    if (e3) throw e3
+    if (guest) role = 'guest'
+  }
+  if (!role) return { ok: false, reason: 'not_found' }
   if (s.status === 'cancelled') return { ok: false, reason: 'cancelled' }
-  const { data: g } = await admin.from('groups').select('name').eq('id', s.group_id).single()
+  const [{ data: g }, { data: w }] = await Promise.all([
+    admin.from('groups').select('name').eq('id', s.group_id).single(),
+    admin.from('workspaces').select('name').eq('id', s.workspace_id).single(),
+  ])
   return {
     ok: true,
     role,
@@ -82,7 +90,7 @@ export async function resolveLiveAccess(admin: Db, userId: string, sessionId: st
       groupId: s.group_id,
     },
     groupName: g?.name ?? '',
-    workspaceName: m.workspace.name,
+    workspaceName: w?.name ?? '',
   }
 }
 
@@ -93,7 +101,8 @@ export async function issueLiveToken(cfg: LiveConfig, input: { userId: string; n
     name: input.name.slice(0, 80),
     ttl: '3h',
     // Set by the server and signed into the token; clients cannot change it (no canUpdateOwnMetadata).
-    metadata: JSON.stringify({ role: input.role }),
+    // Guests teach in the room (board, screen) like staff, but are marked as guests and get no room admin.
+    metadata: JSON.stringify(input.role === 'guest' ? { role: 'staff', guest: true } : { role: input.role }),
   })
   at.addGrant({
     roomJoin: true,
@@ -103,7 +112,7 @@ export async function issueLiveToken(cfg: LiveConfig, input: { userId: string; n
     canPublishData: true,
     canUpdateOwnMetadata: false,
     canPublishSources:
-      input.role === 'staff'
+      input.role !== 'student'
         ? [TrackSource.CAMERA, TrackSource.MICROPHONE, TrackSource.SCREEN_SHARE, TrackSource.SCREEN_SHARE_AUDIO]
         : [TrackSource.CAMERA, TrackSource.MICROPHONE],
     roomAdmin: input.role === 'staff',

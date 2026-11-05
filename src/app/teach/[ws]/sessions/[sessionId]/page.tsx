@@ -11,6 +11,9 @@ import { AttendanceForm } from '@/components/classroom/lesson-forms'
 import { requireStaffMembership } from '@/features/classroom/server'
 import { loadSessionForTeacher } from '@/features/classroom/lesson-server'
 import { formatDate } from '@/features/dashboard/format'
+import { siteUrl } from '@/lib/env'
+import { profileNames } from '@/features/classroom/server'
+import { GuestLinks, type GuestLinkView } from '@/components/classroom/guest-ui'
 
 export async function generateMetadata(): Promise<Metadata> {
   return { title: (await getDict(classroomDict)).teach.lessons.attendanceTitle }
@@ -26,6 +29,21 @@ export default async function SessionPage({ params }: { params: Promise<{ ws: st
   const data = await loadSessionForTeacher(admin, m, profile.id, sessionId)
   const tz = profile.timezone || m.workspace.timezone
   const s = data.session
+  const [{ data: linkRows }, { data: guestRows }] = await Promise.all([
+    admin.from('class_session_guest_links').select('id, code, role, uses, max_uses, revoked_at').eq('session_id', s.id).order('created_at', { ascending: false }),
+    admin.from('class_session_guests').select('user_id, role').eq('session_id', s.id),
+  ])
+  const guestNames = await profileNames(admin, (guestRows ?? []).map((g) => g.user_id))
+  const links: GuestLinkView[] = (linkRows ?? []).map((l) => ({
+    id: l.id,
+    code: l.code,
+    link: siteUrl(`/live/guest/${l.code}`),
+    role: l.role as GuestLinkView['role'],
+    uses: l.uses,
+    maxUses: l.max_uses,
+    revoked: !!l.revoked_at,
+  }))
+  const guests = (guestRows ?? []).map((g) => ({ name: guestNames.get(g.user_id)?.name ?? '—', role: g.role as GuestLinkView['role'] }))
   return (
     <>
       <PageHeader
@@ -60,6 +78,13 @@ export default async function SessionPage({ params }: { params: Promise<{ ws: st
           )}
         </Card>
       </Section>
+      {s.status !== 'cancelled' && (
+        <Section title={c.teach.guests.title} description={c.teach.guests.description}>
+          <Card className="p-5">
+            <GuestLinks workspaceId={ws} sessionId={s.id} links={links} guests={guests} />
+          </Card>
+        </Section>
+      )}
     </>
   )
 }

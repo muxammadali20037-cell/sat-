@@ -30,6 +30,14 @@ describe('live token', () => {
     expect(claims.video?.canUpdateOwnMetadata).toBe(false)
     expect(roleFromMetadata(claims.metadata)).toBe('student')
   })
+  it('guest: can teach (screen share, board) but is no room admin and is marked as a guest', async () => {
+    const jwt = await issueLiveToken(cfg, { userId: 'u-guest', name: 'Guest', role: 'guest', sessionId: SESSION })
+    const claims = await new TokenVerifier(cfg.apiKey, cfg.apiSecret).verify(jwt)
+    expect(claims.video?.canPublishSources).toEqual(expect.arrayContaining(['screen_share']))
+    expect(claims.video?.roomAdmin).toBeFalsy()
+    expect(JSON.parse(claims.metadata ?? '{}')).toEqual({ role: 'staff', guest: true })
+    expect(claims.video?.room).toBe(liveRoomName(SESSION))
+  })
   it('a token signed with another secret is rejected', async () => {
     const jwt = await issueLiveToken({ ...cfg, apiSecret: 'some-other-secret-value-1234567' }, { userId: 'x', name: 'x', role: 'staff', sessionId: SESSION })
     await expect(new TokenVerifier(cfg.apiKey, cfg.apiSecret).verify(jwt)).rejects.toThrow()
