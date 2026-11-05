@@ -68,15 +68,22 @@ export async function importBundledCoursesAction(): Promise<ActionResult<{ cours
               duration_seconds: l.minutes * 60,
               position: li + 1,
               is_free_preview: l.free_preview,
-              status: 'published',
-              published_at: now,
+              // Draft first: a text lesson can only be published once its notes exist.
+              status: 'draft',
               created_by: profile.id,
             })
             .select('id')
             .single(),
           { entity: 'lesson' },
         )
-        check(await db.from('lesson_contents').insert({ lesson_id: row!.id, body: l.body }), { entity: 'lesson content' })
+        try {
+          check(await db.from('lesson_contents').insert({ lesson_id: row!.id, body: l.body }), { entity: 'lesson content' })
+          check(await db.from('lessons').update({ status: 'published', published_at: now }).eq('id', row!.id), { entity: 'lesson' })
+        } catch (err) {
+          // Remove the half-created draft so the next import can add this lesson again.
+          await db.from('lessons').delete().eq('id', row!.id)
+          throw err
+        }
         lessons++
       }
     }
