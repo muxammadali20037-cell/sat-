@@ -93,17 +93,35 @@ Only do this once the redirect allow list from step 2 is in place — if the red
 
 Expired or reused links send the student to `/login?error=link_expired`, which explains what happened.
 
-## 5. Google sign-in (optional)
+## 5. Google and Apple sign-in (optional)
 
-1. Google Cloud Console → APIs & Services → Credentials → **Create OAuth client ID** (type: Web application).
-   - Authorized JavaScript origins: `https://satmaster.example`
-   - Authorized redirect URI: `https://<project-ref>.supabase.co/auth/v1/callback` (shown in Supabase under Providers → Google)
-   - Configure the OAuth consent screen (app name "SAT MASTER", support email, links to `/privacy` and `/terms`).
-2. Supabase → Authentication → Providers → **Google**: enable, paste the client ID and secret.
-3. Make sure `https://satmaster.example/auth/callback**` is in the redirect allow list (step 2).
-4. Set `NEXT_PUBLIC_ENABLE_GOOGLE_AUTH=true` and redeploy.
+The "Continue with Google" / "Continue with Apple" buttons appear **automatically** once the provider is enabled in Supabase (the site reads Supabase's public `/auth/v1/settings`, cached for 5 minutes). No environment variable is needed; the old `NEXT_PUBLIC_ENABLE_GOOGLE_AUTH` flag is no longer used. Both buttons are hidden inside the Telegram Mini App, because Google and Apple refuse to sign in inside in-app browsers.
 
-Flow: the server action `signInWithGoogleAction` calls `signInWithOAuth` (PKCE; the code verifier is stored in a cookie) and redirects to Google → Supabase → `/auth/callback?code=…&next=…`, which exchanges the code for a session. New Google users have no onboarding yet, so the student app sends them to `/dashboard/onboarding`. Failures redirect to `/login?error=oauth_failed`.
+Before either provider: make sure `https://<your-site>/auth/callback**` is in the redirect allow list (step 2). For this project the Supabase callback is `https://ncqqnjnozrymrmblixra.supabase.co/auth/v1/callback`.
+
+### 5a. Google (free)
+
+1. Google Cloud Console → **APIs & Services → OAuth consent screen**: app name "SAT MASTER", support email, app logo optional, links to `/privacy` and `/terms`, authorised domain of the site. Scopes: `openid`, `email`, `profile` only. Publish the app (otherwise only test users can sign in).
+2. **Credentials → Create OAuth client ID**, type *Web application*:
+   - Authorised JavaScript origins: the site origin (e.g. `https://sat-iota-nine.vercel.app`)
+   - Authorised redirect URI: `https://<project-ref>.supabase.co/auth/v1/callback`
+3. Supabase → Authentication → Sign In / Providers → **Google**: enable, paste the client ID and client secret, save.
+
+### 5b. Apple (needs a paid Apple Developer account)
+
+1. Apple Developer → Certificates, IDs & Profiles:
+   - **App ID** with "Sign in with Apple" enabled (any bundle id, e.g. `uz.satmaster.app`);
+   - **Services ID** (e.g. `uz.satmaster.web`) with Sign in with Apple configured: domain = the Supabase project host `<project-ref>.supabase.co`, return URL = `https://<project-ref>.supabase.co/auth/v1/callback`;
+   - **Key** with Sign in with Apple enabled → download the `.p8` file once and keep it safe. Note the Key ID and your Team ID.
+2. Generate the client secret (a JWT signed with the `.p8` key) — Supabase's Apple guide has a generator. **Apple secrets expire after at most 6 months:** put a reminder in the calendar to generate a new one, or sign-in with Apple stops working.
+3. Supabase → Providers → **Apple**: enable, Client IDs = the Services ID, Secret Key = the generated secret, save.
+4. Apple may give a private relay address (`…@privaterelay.appleid.com`). To email those users, register your sending domain under *Sign in with Apple for Email Communication*.
+
+Notes: Apple sends the person's name only the first time they approve the app; SAT MASTER saves it then, and onboarding asks for a name if it is missing. A person who already has an account with the same verified email is signed into that same account (Supabase links the identities).
+
+### Flow
+
+`signInWithOAuthAction` (provider must be `google` or `apple` **and** enabled in Supabase; rate limited) calls `signInWithOAuth` with PKCE (the code verifier is in a cookie) and redirects to the provider → Supabase → `/auth/callback?code=…&next=…&via=…`. The callback exchanges the code for a session, remembers the method on this device (`sm_last_auth`, only the method name), and gives a brand-new account the language the person was using on the site. New accounts go through `/dashboard/onboarding`. Cancelling at the provider shows `/login?error=oauth_cancelled`; other failures `/login?error=oauth_failed`.
 
 ## 9. Phone number sign-in (SMS code, optional)
 

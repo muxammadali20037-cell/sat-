@@ -3,7 +3,9 @@
 import { cookies } from 'next/headers'
 import { redirect } from 'next/navigation'
 import type { ActionResult } from '@/lib/api/errors'
-import { isGoogleAuthEnabled, isSupabaseConfigured, siteUrl } from '@/lib/env'
+import { isSupabaseConfigured, siteUrl } from '@/lib/env'
+import { oauthAvailability, oauthProviderSchema } from './providers'
+import { rememberAuthMethod } from './last-method'
 import { createServerSupabase } from '@/lib/supabase/server'
 import { checkRateLimit, clientIp, RATE_LIMITS } from '@/lib/security/rate-limit'
 import { getDict } from '@/lib/i18n/server'
@@ -108,6 +110,7 @@ export async function signInAction(input: SignInInput): Promise<AuthActionResult
     console.error('[auth] signIn failed', { code: error.code, status: error.status })
     return { ok: false, error: t.generic, reason: 'generic' }
   }
+  await rememberAuthMethod('email')
 
   redirect(postAuthRedirect(next))
 }
@@ -190,11 +193,15 @@ export async function updatePasswordAction(input: ResetPasswordInput): Promise<A
   redirect('/dashboard?toast=password_updated')
 }
 
-/** Google OAuth (PKCE). Used with useActionState; on success the browser leaves for Google. */
-export async function signInWithGoogleAction(_prev: AuthActionResult | null, formData: FormData): Promise<AuthActionResult> {
+/**
+ * Google / Apple sign-in (OAuth with PKCE). Used with useActionState; on success the browser leaves
+ * for the provider and comes back to /auth/callback. Refused unless Supabase has the provider on.
+ */
+export async function signInWithOAuthAction(_prev: AuthActionResult | null, formData: FormData): Promise<AuthActionResult> {
   const t = await messages()
   if (!isSupabaseConfigured) return { ok: false, error: t.notConfigured }
-  if (!isGoogleAuthEnabled) return { ok: false, error: t.googleDisabled }
+  const provider = oauthProviderSchema.safeParse(formData.get('provider'))
+  if (!provider.success || !(await oauthAvailability())[provider.data]) return { ok: false, error: t.oauthDisabled }
 
   const ip = await clientIp()
   if (await limited(RATE_LIMITS.authLogin, `oauth:${ip}`)) return { ok: false, error: t.rateLimited, reason: 'rateLimited' }
@@ -203,11 +210,15 @@ export async function signInWithGoogleAction(_prev: AuthActionResult | null, for
   const next = postAuthRedirect(typeof rawNext === 'string' ? rawNext : null)
   const supabase = await createServerSupabase()
   const { data, error } = await supabase.auth.signInWithOAuth({
-    provider: 'google',
-    options: { redirectTo: siteUrl(`/auth/callback?next=${encodeURIComponent(next)}`) },
+    provider: provider.data,
+    options: {
+      redirectTo: siteUrl(`/auth/callback?next=${encodeURIComponent(next)}&via=${provider.data}`),
+      // Apple shares the name only on the first sign-in, and only when asked for it.
+      ...(provider.data === 'apple' ? { scopes: 'name email' } : {}),
+    },
   })
   if (error || !data.url) {
-    console.error('[auth] signInWithOAuth failed', { code: error?.code, status: error?.status })
+    console.error('[auth] signInWithOAuth failed', { provider: provider.data, code: error?.code, status: error?.status })
     return { ok: false, error: t.generic, reason: 'generic' }
   }
   redirect(data.url)

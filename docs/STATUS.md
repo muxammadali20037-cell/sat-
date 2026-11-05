@@ -95,6 +95,17 @@ The flows ran as a real user against real auth, PostgREST and RLS. AI used the l
 - **Admin lists:** question excerpts showed raw LaTeX (`\dfrac{…}`) and escaped prices as `\12`. They now use the same plain-text rendering as student pages.
 - **Pack import (caught before release):** the first version recognised already-imported questions by stem alone. Many Reading and Writing questions share a stem, so a retry after a partial import could have skipped real questions. It now matches passage and stem.
 
+### Sign-in with Google and Apple, easier log-in (5 Nov)
+
+- **Buttons appear by themselves** once Google or Apple is enabled in Supabase Auth (read from Supabase's public settings, cached 5 minutes). Until then they stay hidden: today neither is enabled on the hosted project, so the live site is unchanged. The `NEXT_PUBLIC_ENABLE_GOOGLE_AUTH` flag is no longer used.
+- **Google and Apple** use the same PKCE flow; only these two providers are accepted, and only when enabled; rate limited.
+- **New accounts** get the language the person was using on the site and go through onboarding (which asks for a name if Apple did not share one). An existing account with the same verified email is signed into that same account, not duplicated.
+- **Easier log-in:** Google and Apple at the top; "You used Google last time on this device" (only the method name is stored, for email, Google, Apple, Telegram and phone); a calm message when sign-in is cancelled at the provider; Google/Apple hidden inside the Telegram Mini App (they block in-app browsers).
+- **Settings → Security** lists the ways the person signs in; a Google- or Apple-only account is told how to set a password.
+- **CSP:** `form-action` now allows the Supabase origin, `accounts.google.com` and `appleid.apple.com` (the form's redirect chain without JavaScript).
+- **Verified:** 3 unit tests; 16 Playwright checks (`e2e-oauth`) through the **real local Supabase Auth server** with a local stand-in for Google's and Apple's sign-in servers (test certificate authority + hosts file): new Google account (name, language, onboarding), same-email linking, Apple first-time name and hidden email, last-used method, cancel, tampered provider refused, Mini App, 390 px. The real Google/Apple consoles are not verified (they need the owner's accounts).
+- **Owner steps:** docs/AUTH_SETUP.md §5 (Google is free; Apple needs a paid Apple Developer account and a new secret every 6 months).
+
 ### SAT MASTER PHASE 4-D (5 Nov): guest teachers for one lesson
 
 - **Migration 0027:** `class_session_guest_links` (8-character code, role guest teacher or moderator, 1–20 uses, revoke) and `class_session_guests` (who joined which lesson through which link). Clients can only read: links by the group's staff; guest rows by the group's staff and by the guest themself. All writes go through the server after a permission check.

@@ -62,7 +62,11 @@ export const authDict = defineDict({
     },
     google: {
       continue: 'Continue with Google',
+      apple: 'Continue with Apple',
       or: 'or',
+      lastUsed: 'Last used',
+      lastUsedHint: 'Last time you signed in with {method} on this device.',
+      methods: { email: 'email and password', google: 'Google', apple: 'Apple', telegram: 'Telegram', phone: 'your phone number' },
     },
     telegram: {
       continue: 'Continue with Telegram',
@@ -134,7 +138,8 @@ export const authDict = defineDict({
     },
     queryErrors: {
       link_expired: 'That link has expired or was already used. Log in, or request a new link.',
-      oauth_failed: 'Google sign-in did not complete. Try again or use your email and password.',
+      oauth_failed: 'Sign-in with Google or Apple did not complete. Try again or use another way to sign in.',
+      oauth_cancelled: 'Sign-in was cancelled. Choose a way to sign in.',
       link_other_browser: 'The link was opened in a different browser, so you are not signed in here. If it was a sign-up link, your email is now confirmed: log in below.',
     },
     errors: {
@@ -160,7 +165,7 @@ export const authDict = defineDict({
       signupDisabled: 'New registrations are paused right now. Try again later.',
       linkExpired: 'That link has expired. Request a new one.',
       recoveryRequired: 'Open the reset link from your email again to set a new password.',
-      googleDisabled: 'Google sign-in is not available on this site.',
+      oauthDisabled: 'This way of signing in is not available on this site.',
       notConfigured: 'Sign-in is not configured for this deployment yet.',
       generic: 'Something went wrong. Try again in a moment.',
     },
@@ -225,7 +230,11 @@ export const authDict = defineDict({
     },
     google: {
       continue: 'Google orqali davom etish',
+      apple: 'Apple orqali davom etish',
       or: 'yoki',
+      lastUsed: 'Oxirgi marta',
+      lastUsedHint: "Bu qurilmada oxirgi marta {method} orqali kirgansiz.",
+      methods: { email: 'email va parol', google: 'Google', apple: 'Apple', telegram: 'Telegram', phone: 'telefon raqam' },
     },
     telegram: {
       continue: 'Telegram orqali davom etish',
@@ -297,7 +306,8 @@ export const authDict = defineDict({
     },
     queryErrors: {
       link_expired: "Bu havola eskirgan yoki allaqachon ishlatilgan. Tizimga kiring yoki yangi havola so'rang.",
-      oauth_failed: "Google orqali kirish yakunlanmadi. Qayta urinib ko'ring yoki pochta va parol bilan kiring.",
+      oauth_failed: "Google yoki Apple orqali kirish yakunlanmadi. Qayta urinib ko'ring yoki boshqa usul bilan kiring.",
+      oauth_cancelled: "Kirish bekor qilindi. Kirish usulini tanlang.",
       link_other_browser: "Havola boshqa brauzerda ochildi, shuning uchun bu yerda kirilmadi. Agar bu ro'yxatdan o'tish havolasi bo'lsa, emailingiz tasdiqlandi — quyida kiring.",
     },
     errors: {
@@ -323,7 +333,7 @@ export const authDict = defineDict({
       signupDisabled: "Hozircha yangi ro'yxatdan o'tish to'xtatilgan. Keyinroq urinib ko'ring.",
       linkExpired: "Havola eskirgan. Yangisini so'rang.",
       recoveryRequired: "Yangi parol o'rnatish uchun pochtangizdagi tiklash havolasini qayta oching.",
-      googleDisabled: "Bu saytda Google orqali kirish mavjud emas.",
+      oauthDisabled: "Bu saytda bu usul bilan kirish mavjud emas.",
       notConfigured: "Bu saytda kirish hali sozlanmagan.",
       generic: "Nimadir xato ketdi. Birozdan so'ng qayta urinib ko'ring.",
     },
@@ -388,7 +398,11 @@ export const authDict = defineDict({
     },
     google: {
       continue: 'Продолжить с Google',
+      apple: 'Продолжить с Apple',
       or: 'или',
+      lastUsed: 'В прошлый раз',
+      lastUsedHint: 'В прошлый раз на этом устройстве вы входили через {method}.',
+      methods: { email: 'email и пароль', google: 'Google', apple: 'Apple', telegram: 'Telegram', phone: 'номер телефона' },
     },
     telegram: {
       continue: 'Продолжить с Telegram',
@@ -460,7 +474,8 @@ export const authDict = defineDict({
     },
     queryErrors: {
       link_expired: 'Срок действия ссылки истёк, или она уже использована. Войдите или запросите новую ссылку.',
-      oauth_failed: 'Вход через Google не завершён. Попробуйте ещё раз или войдите по почте и паролю.',
+      oauth_failed: 'Вход через Google или Apple не завершён. Попробуйте ещё раз или выберите другой способ.',
+      oauth_cancelled: 'Вход отменён. Выберите способ входа.',
       link_other_browser: 'Ссылка открыта в другом браузере, поэтому здесь вы не вошли. Если это была ссылка для регистрации, ваша почта уже подтверждена: войдите ниже.',
     },
     errors: {
@@ -486,7 +501,7 @@ export const authDict = defineDict({
       signupDisabled: 'Регистрация новых пользователей сейчас приостановлена. Попробуйте позже.',
       linkExpired: 'Срок действия ссылки истёк. Запросите новую.',
       recoveryRequired: 'Снова откройте ссылку для сброса из письма, чтобы задать новый пароль.',
-      googleDisabled: 'Вход через Google на этом сайте недоступен.',
+      oauthDisabled: 'Этот способ входа на сайте недоступен.',
       notConfigured: 'Вход для этого сайта пока не настроен.',
       generic: 'Что-то пошло не так. Попробуйте ещё раз чуть позже.',
     },

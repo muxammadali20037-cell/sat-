@@ -56,6 +56,12 @@ export default async function SettingsPage() {
   const phoneOnly = !profile.email && Boolean(user?.phone)
   const providers = (user?.app_metadata?.providers as string[] | undefined) ?? [user?.app_metadata?.provider as string | undefined]
   const hasPassword = !telegramOnly && !phoneOnly && (providers.includes('email') || Boolean(user?.identities?.some((i) => i.provider === 'email')))
+  const social = providers.includes('apple') ? 'Apple' : providers.includes('google') ? 'Google' : null
+  const METHOD_NAMES: Record<string, string> = { email: 'Email', google: 'Google', apple: 'Apple', phone: a.google.methods.phone }
+  const methods = [...new Set([...(user?.identities ?? []).map((i) => i.provider), ...providers].filter((p): p is string => typeof p === 'string' && p in METHOD_NAMES))]
+    .filter((p) => !(p === 'email' && telegramOnly))
+    .map((p) => METHOD_NAMES[p]!)
+  if (telegram) methods.push('Telegram')
   const today = localDate(profile.timezone)
   const subjects = profile.preferredSubjects.filter((s): s is Subject => (SUBJECTS as readonly string[]).includes(s))
 
@@ -137,7 +143,15 @@ export default async function SettingsPage() {
         <div className="grid grid-cols-1 gap-8">
           <div>
             <h3 className="mb-4 text-base font-semibold">{t.security.passwordTitle}</h3>
-            <ChangePasswordForm hasPassword={hasPassword} noPasswordNote={telegramOnly ? t.telegram.telegramOnly : phoneOnly ? t.telegram.phoneOnly : undefined} />
+            {methods.length > 0 && (
+              <p className="mb-4 text-sm text-muted-foreground" data-testid="signin-methods">
+                {t.security.methodsLabel}: <span className="font-medium text-foreground">{methods.join(', ')}</span>
+              </p>
+            )}
+            <ChangePasswordForm
+              hasPassword={hasPassword}
+              noPasswordNote={telegramOnly ? t.telegram.telegramOnly : phoneOnly ? t.telegram.phoneOnly : social ? format(t.security.googleNote, { provider: social }) : undefined}
+            />
           </div>
           <div className="border-t border-border pt-6">
             <h3 className="text-base font-semibold">{t.security.signOutTitle}</h3>

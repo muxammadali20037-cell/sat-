@@ -1,5 +1,6 @@
 'use server'
 
+import { rememberAuthMethod } from './last-method'
 import { redirect } from 'next/navigation'
 import { z } from 'zod'
 import { isPhoneAuthEnabled, isSupabaseConfigured } from '@/lib/env'
@@ -52,5 +53,6 @@ export async function verifyPhoneCodeAction(input: { phone: string; code: string
   const supabase = await createServerSupabase()
   const { error } = await supabase.auth.verifyOtp({ phone, token: parsed.data.code, type: 'sms' })
   if (error) return { ok: false, error: error.code === 'otp_expired' ? t.expiredCode : t.invalidCode }
+  await rememberAuthMethod('phone')
   redirect(postAuthRedirect(parsed.data.next, '/dashboard'))
 }

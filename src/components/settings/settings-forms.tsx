@@ -272,7 +272,7 @@ export function ChangePasswordForm({ hasPassword, noPasswordNote }: { hasPasswor
     defaultValues: { currentPassword: '', newPassword: '', confirmPassword: '' },
   })
 
-  if (!hasPassword) return <p className="text-sm text-muted-foreground">{noPasswordNote ?? t.security.googleNote}</p>
+  if (!hasPassword) return <p className="text-sm text-muted-foreground">{noPasswordNote ?? format(t.security.googleNote, { provider: 'Google' })}</p>
 
   const onSubmit = handleSubmit((values) => {
     setFormError(null)

@@ -9,7 +9,6 @@ const publicSchema = z.object({
   NEXT_PUBLIC_SITE_URL: z.url().default('http://localhost:3000'),
   NEXT_PUBLIC_SUPABASE_URL: z.url().optional(),
   NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY: z.string().min(20).optional(),
-  NEXT_PUBLIC_ENABLE_GOOGLE_AUTH: z.enum(['true', 'false']).default('false'),
   /** Desmos API key (desmos.com/my-api). Public by design — Desmos keys are domain-bound browser keys. */
   NEXT_PUBLIC_DESMOS_API_KEY: z.string().min(8).optional(),
   NEXT_PUBLIC_DESMOS_API_VERSION: z.string().regex(/^v\d+\.\d+$/).default('v1.13'),
@@ -22,7 +21,6 @@ export const publicEnv = publicSchema.parse({
   NEXT_PUBLIC_SUPABASE_URL: process.env.NEXT_PUBLIC_SUPABASE_URL || undefined,
   NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY:
     process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || undefined,
-  NEXT_PUBLIC_ENABLE_GOOGLE_AUTH: process.env.NEXT_PUBLIC_ENABLE_GOOGLE_AUTH || undefined,
   NEXT_PUBLIC_DESMOS_API_KEY: process.env.NEXT_PUBLIC_DESMOS_API_KEY || undefined,
   NEXT_PUBLIC_DESMOS_API_VERSION: process.env.NEXT_PUBLIC_DESMOS_API_VERSION || undefined,
   NEXT_PUBLIC_ENABLE_PHONE_AUTH: process.env.NEXT_PUBLIC_ENABLE_PHONE_AUTH || undefined,
@@ -31,7 +29,6 @@ export const publicEnv = publicSchema.parse({
 export const isSupabaseConfigured = Boolean(
   publicEnv.NEXT_PUBLIC_SUPABASE_URL && publicEnv.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY,
 )
-export const isGoogleAuthEnabled = publicEnv.NEXT_PUBLIC_ENABLE_GOOGLE_AUTH === 'true'
 export const isDesmosConfigured = Boolean(publicEnv.NEXT_PUBLIC_DESMOS_API_KEY)
 export const isPhoneAuthEnabled = publicEnv.NEXT_PUBLIC_ENABLE_PHONE_AUTH === 'true'
 

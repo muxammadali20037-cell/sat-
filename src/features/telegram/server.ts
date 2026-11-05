@@ -1,4 +1,5 @@
 import 'server-only'
+import { rememberAuthMethod } from '@/features/auth/last-method'
 import { cookies } from 'next/headers'
 import { ApiError } from '@/lib/api/errors'
 import { isProduction } from '@/lib/env'
@@ -58,7 +59,7 @@ async function establishSession(admin: Db, email: string) {
   if (verifyError) {
     console.error('[telegram] could not verify the sign-in token', verifyError)
     throw new ApiError(502, 'INTERNAL_ERROR', 'Sign-in failed. Please try again.')
-  }
+  }  await rememberAuthMethod('telegram')
 }
 
 /** Creates the SAT MASTER account for a Telegram user (idempotent: the placeholder email is per Telegram id). */

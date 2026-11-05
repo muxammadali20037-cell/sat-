@@ -89,7 +89,7 @@ Roles: `SUPER_ADMIN`, `ADMIN`, `CONTENT_EDITOR`, `TEACHER`, `STUDENT` (`roles` t
 
 Students can update only whitelisted profile columns (column-level `GRANT UPDATE`); `role`, `is_suspended` and `email` are not updatable by the user. Role changes go through `admin_set_user_role()` which enforces the hierarchy and writes an audit row.
 
-Auth flows: email/password sign-up with confirmation (`/auth/confirm?token_hash&type` → `verifyOtp`), login, password reset (`resetPasswordForEmail` → `/reset-password`), logout (server action, `signOut({ scope: 'local' })`), optional Google OAuth (`NEXT_PUBLIC_ENABLE_GOOGLE_AUTH=true`, `/auth/callback` exchanges the code). Redirect targets are validated to be same-origin relative paths.
+Auth flows: email/password sign-up with confirmation (`/auth/confirm?token_hash&type` → `verifyOtp`), login, password reset (`resetPasswordForEmail` → `/reset-password`), logout (server action, `signOut({ scope: 'local' })`), optional Google and Apple OAuth (shown when enabled in Supabase Auth; `/auth/callback` exchanges the code). Redirect targets are validated to be same-origin relative paths.
 
 ## 5. API conventions
 
@@ -242,7 +242,6 @@ provider ──webhook──► verify signature/auth ──► insert payment_e
 | `NEXT_PUBLIC_SUPABASE_URL` | public | yes | Supabase project URL |
 | `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY` | public | yes | Anon/publishable key |
 | `SUPABASE_SERVICE_ROLE_KEY` | server | yes | Service role (never `NEXT_PUBLIC_`) |
-| `NEXT_PUBLIC_ENABLE_GOOGLE_AUTH` | public | no | Show Google sign-in |
 | `NEXT_PUBLIC_DESMOS_API_KEY`, `NEXT_PUBLIC_DESMOS_API_VERSION` | public | no | Desmos graphing calculator in Math practice and exams (domain-bound browser key; CSP allows www.desmos.com only when set) |
 | `ANTHROPIC_API_KEY` | server | for AI | Claude API |
 | `AI_PROVIDER` | server | no | `anthropic` (default) or `mock` (dev only) |

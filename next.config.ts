@@ -40,7 +40,8 @@ const csp = [
   "worker-src 'self' blob:", // hls.js transmuxing worker
   // Telegram Web shows Mini Apps in a frame; no other site may frame these pages.
   "frame-ancestors 'self' https://web.telegram.org",
-  "form-action 'self' https://checkout.paycom.uz https://checkout.test.paycom.uz https://my.click.uz https://checkout.stripe.com",
+  // Supabase Auth and the sign-in providers: the OAuth form's redirect chain (matters without JavaScript).
+  `form-action 'self'${supabaseOrigin ? ` ${supabaseOrigin}` : ''} https://accounts.google.com https://appleid.apple.com https://checkout.paycom.uz https://checkout.test.paycom.uz https://my.click.uz https://checkout.stripe.com`,
   "base-uri 'self'",
   "object-src 'none'",
 ].join('; ')
