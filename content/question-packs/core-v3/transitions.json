@@ -1,0 +1,162 @@
+[
+  {
+    "skill_code": "transitions",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Most metals, such as iron, copper, and gold, are solid at room temperature. ______ mercury is a liquid at room temperature; it does not become solid until it is cooled to about −39°C.",
+    "stem": "Which choice completes the text with the most logical transition?",
+    "option_a": "Similarly,",
+    "option_b": "However,",
+    "option_c": "For example,",
+    "option_d": "As a result,",
+    "correct": "B",
+    "explanation_en": "The first sentence says that most metals are solid at room temperature. The second sentence describes mercury, a metal that is an exception because it is liquid at room temperature. “However” introduces a contrast, so choice B is correct.\n\n“Similarly” would wrongly suggest that mercury behaves like the other metals. “For example” would present mercury as an example of a solid metal, but mercury is not solid. “As a result” would wrongly suggest that mercury is liquid because other metals are solid.",
+    "explanation_uz": "Birinchi gapda aksariyat metallar xona haroratida qattiq ekani aytilgan. Ikkinchi gap esa simob haqida: u xona haroratida suyuq, ya’ni istisno. “However” qarama-qarshilikni bildiradi, shuning uchun to‘g‘ri javob B.\n\n“Similarly” simob boshqa metallarga o‘xshash degan noto‘g‘ri ma’noni beradi. “For example” simobni qattiq metallarga misol qilib ko‘rsatadi, holbuki u qattiq emas. “As a result” simob boshqa metallar qattiq bo‘lgani uchun suyuq degan noto‘g‘ri sabab-oqibat bog‘lanishini bildiradi.",
+    "estimated_seconds": 45,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "transitions",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Not all birds can fly. ______ the ostrich, the largest living bird, is far too heavy to lift itself into the air, though it can run at speeds of more than 70 kilometers per hour.",
+    "stem": "Which choice completes the text with the most logical transition?",
+    "option_a": "For example,",
+    "option_b": "Nevertheless,",
+    "option_c": "In contrast,",
+    "option_d": "Afterward,",
+    "correct": "A",
+    "explanation_en": "The first sentence makes a general claim: some birds cannot fly. The second sentence gives a specific case of such a bird, the ostrich. “For example” introduces an example of a general claim, so choice A is correct.\n\n“Nevertheless” signals that what follows happens despite the previous point, but the ostrich supports that point rather than going against it. “In contrast” signals a difference, but the ostrich is consistent with the first sentence. “Afterward” signals a later time, but the sentences do not describe events in sequence.",
+    "explanation_uz": "Birinchi gapda umumiy fikr bor: hamma qushlar ham ucha olmaydi. Ikkinchi gap shunday qushning aniq misolini — tuyaqushni keltiradi. “For example” umumiy fikrga misol keltirishni bildiradi, shuning uchun to‘g‘ri javob A.\n\n“Nevertheless” keyingi fikr oldingisiga qaramay sodir bo‘lishini bildiradi, lekin tuyaqush oldingi fikrga zid emas, uni tasdiqlaydi. “In contrast” farqni bildiradi, ammo tuyaqush birinchi gapga mos keladi. “Afterward” keyinroq vaqtni bildiradi, gaplarda esa voqealar ketma-ketligi tasvirlanmagan.",
+    "estimated_seconds": 45,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "transitions",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "A monarch butterfly begins life as a tiny egg laid on a milkweed plant. After hatching, the caterpillar eats milkweed leaves almost constantly and grows quickly. Next, it hangs upside down and forms a hard-shelled chrysalis, inside which its body is reorganized. ______ an adult butterfly breaks out of the chrysalis, pumps fluid into its crumpled wings, and waits for them to dry before flying away.",
+    "stem": "Which choice completes the text with the most logical transition?",
+    "option_a": "For instance,",
+    "option_b": "In contrast,",
+    "option_c": "Similarly,",
+    "option_d": "Finally,",
+    "correct": "D",
+    "explanation_en": "The text describes the stages of a monarch's life in order: egg, caterpillar, chrysalis. The last sentence describes the final stage, when the adult butterfly emerges. “Finally” introduces the last step in a sequence, so choice D is correct.\n\n“For instance” would present the adult's emergence as an example of the chrysalis stage. “In contrast” would signal a difference between stages, not the next one. “Similarly” would suggest that the adult's emergence is like the chrysalis stage rather than the step that follows it.",
+    "explanation_uz": "Matnda monarx kapalagi hayotining bosqichlari tartib bilan tasvirlangan: tuxum, qurt, g‘umbak. Oxirgi gap yakuniy bosqich — voyaga yetgan kapalak chiqishini tasvirlaydi. “Finally” ketma-ketlikning oxirgi bosqichini kiritadi, shuning uchun to‘g‘ri javob D.\n\n“For instance” kapalakning chiqishini g‘umbak bosqichiga misol qilib ko‘rsatadi. “In contrast” keyingi bosqichni emas, bosqichlar orasidagi farqni bildiradi. “Similarly” kapalakning chiqishi g‘umbak bosqichiga o‘xshash degan ma’noni beradi, holbuki u undan keyingi bosqich.",
+    "estimated_seconds": 50,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "transitions",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "The Moon spins once on its axis about every 27 days, almost exactly the time it takes to complete one orbit around Earth. ______ the same side of the Moon always faces Earth, and people on Earth never see most of the Moon's far side.",
+    "stem": "Which choice completes the text with the most logical transition?",
+    "option_a": "Even so,",
+    "option_b": "For instance,",
+    "option_c": "As a result,",
+    "option_d": "Likewise,",
+    "correct": "C",
+    "explanation_en": "The first sentence explains that the Moon's spin and its orbit take about the same amount of time. The second sentence describes what follows from this: the same side always faces Earth. “As a result” introduces an effect of what was just described, so choice C is correct.\n\n“Even so” would signal that the same side faces Earth despite the matching periods, but the matching periods are actually the cause. “For instance” would present the second sentence as an example, not a consequence. “Likewise” would suggest that the second sentence describes a similar fact rather than a result of the first.",
+    "explanation_uz": "Birinchi gapda Oyning o‘z o‘qi atrofida aylanishi va Yer atrofidagi orbitasi deyarli bir xil vaqt olishi tushuntiriladi. Ikkinchi gap bundan kelib chiqadigan natijani tasvirlaydi: Yerga doim Oyning bir tomoni qaragan bo‘ladi. “As a result” oldingi fikrning natijasini kiritadi, shuning uchun to‘g‘ri javob C.\n\n“Even so” bir tomon Yerga qaragani davrlar mos kelishiga qaramay sodir bo‘ladi degan ma’noni beradi, holbuki aynan shu moslik sababdir. “For instance” ikkinchi gapni natija emas, misol sifatida ko‘rsatadi. “Likewise” ikkinchi gap birinchining natijasi emas, unga o‘xshash fakt degan ma’noni beradi.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "transitions",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Botanists classify the tomato as a fruit because it develops from the flower of the plant and contains the plant's seeds. ______ in 1893 the US Supreme Court ruled that tomatoes should be treated as vegetables under a tax law on imported produce, reasoning that in everyday speech people called tomatoes vegetables and served them with main courses rather than as dessert.",
+    "stem": "Which choice completes the text with the most logical transition?",
+    "option_a": "Nevertheless,",
+    "option_b": "Therefore,",
+    "option_c": "In addition,",
+    "option_d": "Specifically,",
+    "correct": "A",
+    "explanation_en": "The first sentence explains why botanists consider the tomato a fruit. The second sentence describes a court ruling that treated tomatoes as vegetables anyway. “Nevertheless” introduces something that happens in spite of what came before, so choice A is correct.\n\n“Therefore” would wrongly present the court's ruling as a logical result of the botanical classification, when the ruling actually goes against it. “In addition” would present the ruling as further support for the idea that tomatoes are fruits. “Specifically” would introduce a more detailed version of the first sentence, but the ruling reaches a different conclusion.",
+    "explanation_uz": "Birinchi gap botaniklar pomidorni nima uchun meva deb hisoblashini tushuntiradi. Ikkinchi gap esa shunga qaramay pomidorni sabzavot deb topgan sud qarorini tasvirlaydi. “Nevertheless” oldingi fikrga qaramay sodir bo‘lgan narsani kiritadi, shuning uchun to‘g‘ri javob A.\n\n“Therefore” sud qarorini botanik tasnifning mantiqiy natijasi qilib ko‘rsatadi, holbuki qaror unga zid. “In addition” qarorni pomidor meva degan fikrga qo‘shimcha dalil qilib ko‘rsatadi. “Specifically” birinchi gapni batafsilroq ochib berishni bildiradi, ammo sud qarori boshqa xulosaga keladi.",
+    "estimated_seconds": 65,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "transitions",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Marie Curie is the only person to have won Nobel Prizes in two different sciences. ______ she shared the 1903 Nobel Prize in Physics for research on radiation, and she alone received the 1911 Nobel Prize in Chemistry for her work on the element radium.",
+    "stem": "Which choice completes the text with the most logical transition?",
+    "option_a": "Still,",
+    "option_b": "Instead,",
+    "option_c": "Consequently,",
+    "option_d": "Specifically,",
+    "correct": "D",
+    "explanation_en": "The first sentence makes a general statement: Curie won Nobel Prizes in two different sciences. The second sentence gives the precise details—which prizes she won, in which years, and for what work. “Specifically” introduces more exact details about a preceding statement, so choice D is correct.\n\n“Still” would signal that the second sentence is true despite the first, but the two sentences agree. “Instead” would suggest that the prizes replaced something mentioned earlier. “Consequently” would wrongly present winning the two prizes as a result of being the only person to win them, reversing the actual relationship.",
+    "explanation_uz": "Birinchi gap umumiy fikrni bildiradi: Kyuri ikki xil fan bo‘yicha Nobel mukofotini olgan. Ikkinchi gap aniq tafsilotlarni beradi — qaysi mukofotlar, qaysi yillarda va qanday ish uchun. “Specifically” oldingi fikr haqida aniqroq tafsilot kiritadi, shuning uchun to‘g‘ri javob D.\n\n“Still” ikkinchi gap birinchisiga qaramay to‘g‘ri degan ma’noni beradi, holbuki ikki gap bir-biriga mos. “Instead” mukofotlar avval aytilgan nimanidir almashtirgan degan ma’noni beradi. “Consequently” ikki mukofotni olishni yagona g‘olib bo‘lishning natijasi qilib ko‘rsatadi — bu munosabatni teskari qiladi.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "transitions",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "In 2006, the International Astronomical Union (IAU) decided that a planet must meet three criteria: it must orbit the Sun, it must have enough mass for its own gravity to pull it into a nearly round shape, and it must have cleared the area around its orbit of other objects. Pluto orbits the Sun and is nearly round. ______ it shares its orbital zone with many other icy objects, so the IAU classified Pluto as a dwarf planet rather than a planet.",
+    "stem": "Which choice completes the text with the most logical transition?",
+    "option_a": "In addition,",
+    "option_b": "For this reason,",
+    "option_c": "However,",
+    "option_d": "In other words,",
+    "correct": "C",
+    "explanation_en": "Before the blank, the text shows that Pluto meets the first two criteria. After the blank, it shows that Pluto fails the third criterion—it has not cleared its orbital zone—which is why it is not considered a planet. “However” signals this shift from criteria Pluto meets to one it fails, so choice C is correct.\n\n“In addition” might seem to fit because the sentence introduces the third criterion, but it would present Pluto's crowded orbit as one more point in Pluto's favor. “For this reason” would wrongly suggest that Pluto shares its orbit because it is round and orbits the Sun. “In other words” would present the sentence as a restatement of the previous one, but it adds new and contrasting information.",
+    "explanation_uz": "Bo‘sh joydan oldin Pluton dastlabki ikki mezonga javob berishi ko‘rsatilgan. Bo‘sh joydan keyin esa u uchinchi mezonga javob bermasligi — o‘z orbitasi atrofini tozalamagani — va shuning uchun sayyora hisoblanmasligi aytilgan. “However” Pluton javob beradigan mezonlardan javob bermaydigan mezonga o‘tishni bildiradi, shuning uchun to‘g‘ri javob C.\n\n“In addition” to‘g‘ridek ko‘rinishi mumkin, chunki gap uchinchi mezonni kiritadi, lekin u Plutonning gavjum orbitasini uning foydasiga yana bir dalil qilib ko‘rsatadi. “For this reason” Pluton dumaloq bo‘lgani va Quyosh atrofida aylangani uchun orbitasini boshqa jismlar bilan bo‘lishadi degan noto‘g‘ri ma’noni beradi. “In other words” gapni oldingisining qayta ifodasi qilib ko‘rsatadi, holbuki u yangi va qarama-qarshi ma’lumot beradi.",
+    "estimated_seconds": 80,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "transitions",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "In 1866, Gregor Mendel published the results of his experiments with pea plants, which showed that traits are passed from parents to offspring in predictable patterns. Scientists of his time, ______ paid little attention to his work. Only in 1900, sixteen years after Mendel's death, did three botanists working independently rediscover his findings, which became a foundation of modern genetics.",
+    "stem": "Which choice completes the text with the most logical transition?",
+    "option_a": "therefore,",
+    "option_b": "however,",
+    "option_c": "for example,",
+    "option_d": "in other words,",
+    "correct": "B",
+    "explanation_en": "The first sentence describes findings that, as the last sentence makes clear, were important enough to become a foundation of modern genetics. The middle sentence says that Mendel's contemporaries nonetheless paid little attention to them. “However” signals this contrast between the value of the work and the way it was received, so choice B is correct.\n\n“Therefore” would wrongly suggest that scientists ignored the work because it showed that traits follow predictable patterns. “For example” would present the scientists' neglect as an example of something in the first sentence, but the first sentence describes Mendel's findings, not reactions to them. “In other words” would present the middle sentence as a restatement of the first, but it adds new and contrasting information.",
+    "explanation_uz": "Birinchi gap natijalarni tasvirlaydi; oxirgi gapdan ko‘rinadiki, ular zamonaviy genetikaning asosiga aylanadigan darajada muhim bo‘lgan. O‘rtadagi gap esa shunga qaramay Mendelning zamondoshlari ularga deyarli e’tibor bermaganini aytadi. “However” ishning qimmati va unga bo‘lgan munosabat orasidagi qarama-qarshilikni bildiradi, shuning uchun to‘g‘ri javob B.\n\n“Therefore” olimlar ishni belgilar oldindan aytib bo‘ladigan qonuniyat bilan o‘tishini ko‘rsatgani uchun e’tiborsiz qoldirgan degan noto‘g‘ri ma’noni beradi. “For example” olimlarning e’tiborsizligini birinchi gapdagi biror narsaga misol qilib ko‘rsatadi, holbuki birinchi gapda unga bo‘lgan munosabat emas, Mendelning natijalari tasvirlangan. “In other words” o‘rtadagi gapni birinchisining qayta ifodasi qilib ko‘rsatadi, ammo u yangi va qarama-qarshi ma’lumot beradi.",
+    "estimated_seconds": 80,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  }
+]

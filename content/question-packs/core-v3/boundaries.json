@@ -1,0 +1,162 @@
+[
+  {
+    "skill_code": "boundaries",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "The rings visible in a cross section of a tree ______ allow scientists to estimate the tree's age. In temperate climates, most trees add one new ring each year, with the newest ring forming just beneath the bark.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "option_a": "trunk",
+    "option_b": "trunk,",
+    "option_c": "trunk;",
+    "option_d": "trunk:",
+    "correct": "A",
+    "explanation_en": "The subject of the first sentence is “The rings visible in a cross section of a tree trunk,” and its verb is “allow.” No punctuation should separate a subject from its verb, so choice A is correct.\n\nChoice B places a comma between the subject and the verb. Choice C's semicolon should join two independent clauses, but “The rings visible in a cross section of a tree trunk” is not an independent clause. Choice D's colon must follow an independent clause, and it would also separate the subject from its verb.",
+    "explanation_uz": "Birinchi gapning egasi — “The rings visible in a cross section of a tree trunk”, kesimi — “allow”. Ega va kesim orasiga tinish belgisi qo‘yilmaydi, shuning uchun to‘g‘ri javob A.\n\nB ega bilan kesim orasiga vergul qo‘yadi. C dagi nuqtali vergul ikki mustaqil gapni bog‘lashi kerak, lekin “The rings visible in a cross section of a tree trunk” mustaqil gap emas. D dagi ikki nuqta mustaqil gapdan keyin kelishi kerak, bundan tashqari u ham egani kesimdan ajratib qo‘yadi.",
+    "estimated_seconds": 45,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "boundaries",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "The Arctic fox changes its coat with the ______ winter, its thick white fur blends in with the snow, while in summer a thinner brownish-gray coat matches the rocks and plants of the tundra.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "option_a": "seasons, in",
+    "option_b": "seasons in",
+    "option_c": "seasons. In",
+    "option_d": "seasons, which in",
+    "correct": "C",
+    "explanation_en": "“The Arctic fox changes its coat with the seasons” is an independent clause, and “In winter, its thick white fur blends in with the snow, while in summer…” is another. Choice C correctly separates them with a period, making two complete sentences.\n\nChoice A joins the two independent clauses with only a comma, creating a comma splice. Choice B joins them with no punctuation at all, creating a run-on sentence and making “in winter” seem to belong to the first clause. Choice D introduces “which,” but the words that follow do not form a grammatical clause, so the sentence becomes garbled.",
+    "explanation_uz": "“The Arctic fox changes its coat with the seasons” — mustaqil gap, “In winter, its thick white fur blends in with the snow, while in summer…” — yana bir mustaqil gap. C ularni nuqta bilan to‘g‘ri ajratib, ikkita to‘liq gap hosil qiladi.\n\nA ikki mustaqil gapni faqat vergul bilan bog‘laydi — bu “comma splice” xatosi. B ularni hech qanday belgisiz qo‘shadi, natijada qo‘shilib ketgan gap (run-on) hosil bo‘ladi va “in winter” birinchi gapga tegishlidek ko‘rinadi. D “which” so‘zini kiritadi, lekin undan keyingi so‘zlar grammatik jihatdan to‘g‘ri ergash gap hosil qilmaydi, gap buziladi.",
+    "estimated_seconds": 50,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "boundaries",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Baikonur Cosmodrome, a spaceport on the steppe of Kazakhstan, was the launch site of two historic missions of the 1950s and ______ Sputnik 1 in 1957 and Vostok 1 in 1961. The second of these carried Yuri Gagarin, the first person to travel into space.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "option_a": "1960s;",
+    "option_b": "1960s:",
+    "option_c": "1960s",
+    "option_d": "1960s, these were",
+    "correct": "B",
+    "explanation_en": "The first part of the sentence, ending with “two historic missions of the 1950s and 1960s,” is an independent clause, and what follows names those two missions. A colon is used after an independent clause to introduce a list or explanation of what was just mentioned, so choice B is correct.\n\nChoice A's semicolon must join two independent clauses, but “Sputnik 1 in 1957 and Vostok 1 in 1961” is not an independent clause. Choice C has no punctuation, so the names of the missions run directly into “1960s.” Choice D joins two independent clauses with only a comma, creating a comma splice.",
+    "explanation_uz": "Gapning “two historic missions of the 1950s and 1960s” bilan tugaydigan birinchi qismi mustaqil gap, undan keyin esa o‘sha ikki parvoz nomlanadi. Ikki nuqta mustaqil gapdan keyin qo‘yilib, hozirgina aytilgan narsaning ro‘yxati yoki izohini kiritadi, shuning uchun to‘g‘ri javob B.\n\nA dagi nuqtali vergul ikki mustaqil gapni bog‘lashi kerak, lekin “Sputnik 1 in 1957 and Vostok 1 in 1961” mustaqil gap emas. C da tinish belgisi yo‘q, parvozlar nomi “1960s” ga qo‘shilib ketadi. D ikki mustaqil gapni faqat vergul bilan bog‘laydi — bu “comma splice” xatosi.",
+    "estimated_seconds": 50,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "boundaries",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Many of the tulips grown in gardens today are descended from wild species native to the mountains of Central ______ the flowers were grown in Persia by the tenth century and reached Europe in the mid-sixteenth century.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "option_a": "Asia,",
+    "option_b": "Asia",
+    "option_c": "Asia, later",
+    "option_d": "Asia;",
+    "correct": "D",
+    "explanation_en": "“Many of the tulips grown in gardens today are descended from wild species native to the mountains of Central Asia” and “the flowers were grown in Persia by the tenth century and reached Europe in the mid-sixteenth century” are both independent clauses. A semicolon can join two closely related independent clauses, so choice D is correct.\n\nChoice A joins the clauses with only a comma, creating a comma splice. Choice B uses no punctuation, creating a run-on sentence. Choice C adds “later,” but “later” is an adverb, not a conjunction, so the clauses are still joined by only a comma.",
+    "explanation_uz": "“Many of the tulips grown in gardens today are descended from wild species native to the mountains of Central Asia” va “the flowers were grown in Persia by the tenth century and reached Europe in the mid-sixteenth century” — ikkalasi ham mustaqil gap. Ma’nosi yaqin ikki mustaqil gapni nuqtali vergul bilan bog‘lash mumkin, shuning uchun to‘g‘ri javob D.\n\nA gaplarni faqat vergul bilan bog‘laydi — “comma splice” xatosi. B da tinish belgisi yo‘q, natijada qo‘shilib ketgan gap (run-on) hosil bo‘ladi. C “later” so‘zini qo‘shadi, lekin “later” bog‘lovchi emas, ravish, shuning uchun gaplar baribir faqat vergul bilan bog‘langan bo‘lib qoladi.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "boundaries",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Ibn Sina—known in Europe by the Latin form of his name, ______ was born around 980 in Afshana, a village near Bukhara. His Canon of Medicine remained a standard medical textbook in European universities for centuries.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "option_a": "Avicenna—",
+    "option_b": "Avicenna,",
+    "option_c": "Avicenna",
+    "option_d": "Avicenna;",
+    "correct": "A",
+    "explanation_en": "The phrase “known in Europe by the Latin form of his name, Avicenna” is extra information about Ibn Sina that interrupts the sentence between the subject and the verb “was born.” It begins with a dash, so it must end with a matching dash. Choice A is correct.\n\nChoice B closes the interruption with a comma, which does not match the opening dash. Choice C leaves the interruption unclosed, so “Avicenna” runs directly into “was born.” Choice D's semicolon would separate the subject “Ibn Sina” from its verb “was born.”",
+    "explanation_uz": "“known in Europe by the Latin form of his name, Avicenna” — Ibn Sino haqidagi qo‘shimcha ma’lumot bo‘lib, gapni ega bilan “was born” kesimi orasida bo‘lib turadi. U tire bilan boshlangan, demak u xuddi shunday tire bilan yopilishi kerak. To‘g‘ri javob A.\n\nB qo‘shimcha qismni vergul bilan yopadi — bu ochuvchi tirega mos emas. C qo‘shimcha qismni yopmaydi, natijada “Avicenna” to‘g‘ridan-to‘g‘ri “was born” ga qo‘shilib ketadi. D dagi nuqtali vergul “Ibn Sina” egasini “was born” kesimidan ajratib qo‘yadi.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "boundaries",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Uzbek ______ Abdulla Qodiriy wrote O‘tkan kunlar (Bygone Days), a love story set in Tashkent and Margilan in the nineteenth century. Published in the 1920s, the book is widely considered the first full-length novel in the Uzbek language.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "option_a": "novelist,",
+    "option_b": "novelist—",
+    "option_c": "novelist",
+    "option_d": "novelist:",
+    "correct": "C",
+    "explanation_en": "“Uzbek novelist” is a title that comes directly before the name “Abdulla Qodiriy” and identifies him. Because the title and the name work together as the subject of the sentence, no punctuation should separate them. Choice C is correct.\n\nChoices A, B, and D each insert punctuation—a comma, a dash, or a colon—between the title and the name it identifies, which incorrectly separates the parts of the subject.",
+    "explanation_uz": "“Uzbek novelist” — “Abdulla Qodiriy” ismidan oldin keladigan va uni tanishtiradigan unvon. Unvon va ism birgalikda gapning egasini tashkil qilgani uchun ular orasiga tinish belgisi qo‘yilmaydi. To‘g‘ri javob C.\n\nA, B va D unvon bilan ism orasiga tinish belgisi — vergul, tire yoki ikki nuqta — qo‘yadi; bu eganing qismlarini noto‘g‘ri ajratib qo‘yadi.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "boundaries",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "The Kalyan Minaret in Bukhara, built in 1127 on the orders of the Karakhanid ruler Arslan ______ is said to have so impressed Genghis Khan that he ordered it spared when his army destroyed much of the city about a century later.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "option_a": "Khan—",
+    "option_b": "Khan;",
+    "option_c": "Khan",
+    "option_d": "Khan,",
+    "correct": "D",
+    "explanation_en": "The phrase “built in 1127 on the orders of the Karakhanid ruler Arslan Khan” describes the minaret and interrupts the sentence between the subject (“The Kalyan Minaret in Bukhara”) and the verb (“is said”). The phrase opens with a comma after “Bukhara,” so it must close with a comma as well. Choice D is correct.\n\nChoice A closes the phrase with a dash, which does not match the opening comma. Choice B's semicolon would separate the subject from its verb, and what comes before it is not an independent clause. Choice C leaves the phrase unclosed, so “Arslan Khan” runs directly into “is said.”",
+    "explanation_uz": "“built in 1127 on the orders of the Karakhanid ruler Arslan Khan” iborasi minorani tasvirlaydi va gapni ega (“The Kalyan Minaret in Bukhara”) bilan kesim (“is said”) orasida bo‘lib turadi. Ibora “Bukhara” dan keyingi vergul bilan ochilgan, demak u vergul bilan yopilishi ham kerak. To‘g‘ri javob D.\n\nA iborani tire bilan yopadi — bu ochuvchi vergulga mos emas. B dagi nuqtali vergul egani kesimdan ajratib qo‘yadi, bundan tashqari undan oldingi qism mustaqil gap emas. C iborani yopmaydi, natijada “Arslan Khan” to‘g‘ridan-to‘g‘ri “is said” ga qo‘shilib ketadi.",
+    "estimated_seconds": 75,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "boundaries",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "A phone screen produces every color it displays by combining tiny points of just three colors of ______ red, green, and blue—at different levels of brightness.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "option_a": "light:",
+    "option_b": "light—",
+    "option_c": "light,",
+    "option_d": "light;",
+    "correct": "B",
+    "explanation_en": "The list “red, green, and blue” interrupts the sentence to name the three colors, and it ends with a dash before “at different levels of brightness.” An interruption that ends with a dash must also begin with a dash, so choice B is correct.\n\nChoice A's colon cannot pair with the closing dash; a colon introduces material that finishes the sentence, not an interruption that the sentence continues after. Choice C's comma does not match the closing dash and makes it unclear whether “red, green, and blue” names the three colors or continues a longer list. Choice D's semicolon must join two independent clauses, but “red, green, and blue—at different levels of brightness” is not an independent clause.",
+    "explanation_uz": "“red, green, and blue” ro‘yxati gapni bo‘lib, uchta rangni nomlaydi va “at different levels of brightness” dan oldin tire bilan tugaydi. Tire bilan tugaydigan qo‘shimcha qism tire bilan boshlanishi ham kerak, shuning uchun to‘g‘ri javob B.\n\nA dagi ikki nuqta yopuvchi tire bilan juftlasha olmaydi: ikki nuqta gapni yakunlovchi qismni kiritadi, gap undan keyin davom etadigan qo‘shimcha qismni emas. C dagi vergul yopuvchi tirega mos emas va “red, green, and blue” uchta rangni nomlayaptimi yoki uzunroq ro‘yxatni davom ettiryaptimi, noaniq qoladi. D dagi nuqtali vergul ikki mustaqil gapni bog‘lashi kerak, lekin “red, green, and blue—at different levels of brightness” mustaqil gap emas.",
+    "estimated_seconds": 75,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  }
+]

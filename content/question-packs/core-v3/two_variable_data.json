@@ -1,0 +1,143 @@
+[
+  {
+    "skill_code": "two_variable_data",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "A scatterplot shows the permanent population of Uzbekistan on January 1 of each year from 2020 to 2025. The line of best fit for the data is $y = 0.73x + 33.85$, where $y$ is the predicted population, in millions, and $x$ is the number of years since 2020. Which of the following is the best interpretation of 0.73 in this context?",
+    "option_a": "The predicted population increases by about 0.73 million people each year.",
+    "option_b": "The predicted population on January 1, 2020, is 0.73 million people.",
+    "option_c": "The predicted population increases by about 0.73% each year.",
+    "option_d": "The predicted population increases by about 33.85 million people each year.",
+    "correct": "A",
+    "explanation_en": "In a line $y = mx + b$, the slope $m$ is the change in $y$ for each increase of 1 in $x$. Here $x$ increases by 1 each year and $y$ is in millions of people, so 0.73 means the predicted population increases by about 0.73 million (730,000) people per year. Choice B describes the $y$-intercept, but the intercept is 33.85, not 0.73. Choice C treats the slope as a percent; a linear model adds a constant **amount** each year. Choice D confuses the intercept with the slope.",
+    "explanation_uz": "$y = mx + b$ to‘g‘ri chiziqda $m$ qiyalik — $x$ 1 ga ortganda $y$ ning o‘zgarishi. Bu yerda $x$ har yili 1 ga ortadi, $y$ esa million kishida, demak 0.73 bashorat qilingan aholi har yili taxminan 0.73 million (730,000) kishiga ortishini bildiradi. B javob $y$-kesishmani tasvirlaydi, lekin kesishma 0.73 emas, 33.85. C javob qiyalikni foiz deb olgan; chiziqli model har yili o‘zgarmas **miqdor** qo‘shadi. D javob kesishmani qiyalik bilan adashtirgan.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "two_variable_data",
+    "difficulty": "easy",
+    "question_type": "spr",
+    "stem": "For each of the 12 months of the year, a scatterplot shows the mean temperature $x$, in degrees Celsius, and the mean precipitation $y$, in millimeters, in Tashkent, Uzbekistan, based on climate data for 1991–2020. The line of best fit for the data is $y = -2.4x + 76$. According to the line of best fit, what is the predicted precipitation, in millimeters, for a month with a mean temperature of 20°C?",
+    "spr_answers": [
+      "28"
+    ],
+    "explanation_en": "Substitute $x = 20$: $y = -2.4(20) + 76 = -48 + 76 = 28$ millimeters. A common error is to drop the negative sign and get $2.4(20) + 76 = 124$. Enter 28.",
+    "explanation_uz": "$x = 20$ ni qo‘yamiz: $y = -2.4(20) + 76 = -48 + 76 = 28$ millimetr. Ko‘p uchraydigan xato — manfiy ishorani tashlab yuborib, $2.4(20) + 76 = 124$ ni olish. Javob: 28.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "two_variable_data",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "Which of the following best describes the association between a planet's distance from the Sun and its mean temperature for the planets in the table?",
+    "passage": "According to NASA, the planets' mean distances from the Sun and mean temperatures are as shown.\n\n| Planet | Distance from the Sun (millions of km) | Mean temperature (°C) |\n| --- | ---: | ---: |\n| Mercury | 57.9 | 167 |\n| Venus | 108.2 | 464 |\n| Earth | 149.6 | 15 |\n| Mars | 228.0 | -65 |\n| Jupiter | 778.5 | -110 |\n| Saturn | 1,432.0 | -140 |\n| Uranus | 2,867.0 | -195 |\n| Neptune | 4,515.0 | -200 |",
+    "option_a": "A positive association",
+    "option_b": "A negative association",
+    "option_c": "No association",
+    "option_d": "An association in which the temperature first decreases and then increases",
+    "correct": "B",
+    "explanation_en": "As the distance from the Sun increases, the mean temperature generally decreases: from Earth (15°C) outward, every planet is colder than the one before, down to Neptune at −200°C. When greater values of one variable tend to go with lower values of the other, the association is negative. Venus is hotter than Mercury (its thick atmosphere traps heat), but one point that breaks the pattern does not change the overall trend. Choice A would mean that farther planets tend to be hotter. Choice C ignores the clear downward trend, and choice D does not match the data, because the temperatures never rise again after Venus.",
+    "explanation_uz": "Quyoshdan uzoqlik ortgan sari o‘rtacha harorat umuman kamayadi: Yerdan (15°C) boshlab har bir keyingi sayyora oldingisidan sovuqroq, Neptunda −200°C gacha. Bir o‘zgaruvchining katta qiymatlari ikkinchisining kichik qiymatlariga to‘g‘ri kelsa, bog‘liqlik manfiy bo‘ladi. Venera Merkuriydan issiqroq (qalin atmosferasi issiqlikni ushlab qoladi), lekin qoidaga bo‘ysunmaydigan bitta nuqta umumiy tendensiyani o‘zgartirmaydi. A javob uzoqroq sayyoralar issiqroq bo‘lishini anglatardi. C javob aniq kamayish tendensiyasini e’tiborsiz qoldiradi, D javob esa ma’lumotlarga mos emas, chunki Veneradan keyin harorat qayta ko‘tarilmaydi.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "two_variable_data",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "The table shows the permanent population of Uzbekistan on January 1 of each year from 2020 to 2025, where $x$ is the number of years since 2020. Which of the following equations best models the data, where $y$ is the population, in millions?",
+    "passage": "| Year | $x$ | Population (millions) |\n| --- | ---: | ---: |\n| 2020 | 0 | 33.91 |\n| 2021 | 1 | 34.56 |\n| 2022 | 2 | 35.27 |\n| 2023 | 3 | 36.02 |\n| 2024 | 4 | 36.80 |\n| 2025 | 5 | 37.54 |",
+    "option_a": "$y = 33.85x + 0.73$",
+    "option_b": "$y = -0.73x + 37.54$",
+    "option_c": "$y = 0.073x + 33.85$",
+    "option_d": "$y = 0.73x + 33.85$",
+    "correct": "D",
+    "explanation_en": "The population increases by roughly the same amount each year (0.65 to 0.78 million), so a linear model with a positive slope fits. From 2020 to 2025 the population grows by $37.54 - 33.91 = 3.63$ million in 5 years, or about $\\frac{3.63}{5} \\approx 0.73$ million per year, and the value at $x = 0$ is about 33.9. So $y = 0.73x + 33.85$ fits best; for example, it gives $0.73(5) + 33.85 = 37.5$ for 2025. Choice A switches the slope and the intercept and would predict 33.85 million more people every year. Choice B has a negative slope, so it predicts a decreasing population. Choice C's slope is 10 times too small: it predicts only 34.2 million for 2025.",
+    "explanation_uz": "Aholi har yili taxminan bir xil miqdorga (0.65 dan 0.78 milliongacha) ortadi, demak musbat qiyalikli chiziqli model mos keladi. 2020 dan 2025 gacha aholi 5 yilda $37.54 - 33.91 = 3.63$ millionga, ya’ni yiliga taxminan $\\frac{3.63}{5} \\approx 0.73$ millionga ortgan, $x = 0$ dagi qiymat esa taxminan 33.9. Demak $y = 0.73x + 33.85$ eng yaxshi mos keladi; masalan, 2025 uchun $0.73(5) + 33.85 = 37.5$ ni beradi. A javob qiyalik va kesishmani almashtirgan — u har yili 33.85 million kishi qo‘shilishini bashorat qiladi. B javobda qiyalik manfiy, ya’ni aholi kamayishi bashorat qilinadi. C javobning qiyaligi 10 marta kichik: u 2025 uchun atigi 34.2 millionni beradi.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "two_variable_data",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "The line of best fit $y = 0.73x + 33.85$ models the permanent population of Uzbekistan, where $y$ is the predicted population, in millions, on January 1 of the year that is $x$ years after 2020. The actual population on January 1, 2024, was 36.80 million. By how many **thousand** people was the actual population greater than the population predicted by the line of best fit for that date?",
+    "spr_answers": [
+      "30"
+    ],
+    "explanation_en": "January 1, 2024, is 4 years after 2020, so $x = 4$. The predicted population is $0.73(4) + 33.85 = 2.92 + 33.85 = 36.77$ million. The actual population minus the predicted population is $36.80 - 36.77 = 0.03$ million. Since 1 million = 1,000 thousand, $0.03 \\text{ million} = 30$ thousand. Using $x = 2024$ or $x = 24$ instead of $x = 4$ gives an impossible prediction. Entering 0.03 gives the answer in millions, not thousands. Enter 30.",
+    "explanation_uz": "2024 yil 1 yanvar — 2020 dan 4 yil keyin, demak $x = 4$. Bashorat qilingan aholi: $0.73(4) + 33.85 = 2.92 + 33.85 = 36.77$ million. Haqiqiy aholidan bashoratni ayiramiz: $36.80 - 36.77 = 0.03$ million. 1 million = 1,000 ming bo‘lgani uchun $0.03 \\text{ million} = 30$ ming. $x = 4$ o‘rniga $x = 2024$ yoki $x = 24$ ni olish mantiqsiz bashorat beradi. 0.03 deb yozish javobni mingda emas, millionda beradi. Javob: 30.",
+    "estimated_seconds": 100,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "two_variable_data",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "For each of the 12 months of the year, a scatterplot shows the mean temperature $x$, in degrees Celsius, and the mean precipitation $y$, in millimeters, in Tashkent, Uzbekistan. The line of best fit for the data is $y = -2.4x + 76$. Which of the following is the best interpretation of $-2.4$ in this context?",
+    "option_a": "Each month, the precipitation decreases by 2.4 millimeters.",
+    "option_b": "For a month with a mean temperature of 0°C, the predicted precipitation is 2.4 millimeters.",
+    "option_c": "For each increase of 1°C in the mean temperature of a month, the predicted precipitation decreases by 2.4 millimeters.",
+    "option_d": "For each decrease of 1 millimeter in precipitation, the predicted mean temperature increases by 2.4°C.",
+    "correct": "C",
+    "explanation_en": "The slope is the predicted change in $y$ (precipitation, in mm) for each increase of 1 in $x$ (temperature, in °C). A slope of $-2.4$ means that for each 1°C increase in a month's mean temperature, the predicted precipitation is 2.4 mm **less**. Choice A treats $x$ as time, but $x$ is temperature, not the month number. Choice B describes the $y$-intercept, which is 76 mm, not 2.4 mm. Choice D reverses the roles of the variables: the model predicts precipitation from temperature, not temperature from precipitation.",
+    "explanation_uz": "Qiyalik — $x$ (harorat, °C) 1 ga ortganda $y$ (yog‘in, mm) ning bashorat qilingan o‘zgarishi. $-2.4$ qiyalik oyning o‘rtacha harorati har 1°C ga ortganda bashorat qilingan yog‘in 2.4 mm ga **kam** bo‘lishini bildiradi. A javob $x$ ni vaqt deb olgan, lekin $x$ — oy raqami emas, harorat. B javob $y$-kesishmani tasvirlaydi, u esa 2.4 mm emas, 76 mm. D javob o‘zgaruvchilarning rolini almashtirgan: model yog‘inni haroratga qarab bashorat qiladi, aksincha emas.",
+    "estimated_seconds": 80,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "two_variable_data",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "The table shows each planet's mean distance from the Sun, $d$, in astronomical units (AU), where 1 AU is Earth's mean distance from the Sun, and the time it takes the planet to orbit the Sun once, $P$, in Earth years. Which of the following equations best models the relationship between $P$ and $d$?",
+    "passage": "The table is based on NASA data for the five planets closest to the Sun.\n\n| Planet | $d$ (AU) | $P$ (Earth years) |\n| --- | ---: | ---: |\n| Mercury | 0.39 | 0.24 |\n| Venus | 0.72 | 0.62 |\n| Earth | 1.00 | 1.00 |\n| Mars | 1.52 | 1.88 |\n| Jupiter | 5.20 | 11.86 |",
+    "option_a": "$P = 1.5d$",
+    "option_b": "$P = d^{1.5}$",
+    "option_c": "$P = d^2$",
+    "option_d": "$P = 1.68d - 0.68$",
+    "correct": "B",
+    "explanation_en": "Test each model, especially at Jupiter, where the models differ most. $P = d^{1.5}$ gives $5.20^{1.5} = 5.20\\sqrt{5.20} \\approx 11.86$, which matches. It also fits the others: $0.39^{1.5} \\approx 0.24$, $1.52^{1.5} \\approx 1.87$, and at Earth $1^{1.5} = 1$. Choice A gives 7.8 for Jupiter and 1.5 for Earth, which is wrong even at $d = 1$. Choice C gives $5.20^2 \\approx 27.0$ for Jupiter, much too large. Choice D, the line through the points for Earth and Mars, gives only about 8.1 for Jupiter and a negative period (about $-0.02$) for Mercury: the data curve upward, so no line fits all of them.",
+    "explanation_uz": "Har bir modelni, ayniqsa modellar eng ko‘p farq qiladigan Yupiterda tekshiramiz. $P = d^{1.5}$: $5.20^{1.5} = 5.20\\sqrt{5.20} \\approx 11.86$ — mos keladi. Boshqalariga ham mos: $0.39^{1.5} \\approx 0.24$, $1.52^{1.5} \\approx 1.87$, Yerda esa $1^{1.5} = 1$. A javob Yupiter uchun 7.8, Yer uchun 1.5 ni beradi — hatto $d = 1$ da ham xato. C javob Yupiter uchun $5.20^2 \\approx 27.0$ ni beradi — juda katta. D javob (Yer va Mars nuqtalaridan o‘tuvchi to‘g‘ri chiziq) Yupiter uchun atigi 8.1 ga yaqin qiymat, Merkuriy uchun esa manfiy davr (taxminan $-0.02$) beradi: ma’lumotlar yuqoriga egilgan, shuning uchun hech bir to‘g‘ri chiziq hammasiga mos kelmaydi.",
+    "estimated_seconds": 130,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "two_variable_data",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "The line of best fit $y = 0.73x + 33.85$ models the permanent population of Uzbekistan, where $y$ is the predicted population, in millions, on January 1 of the year that is $x$ years after 2020. If the trend continues, in what year will the predicted population on January 1 first be greater than 40 million?",
+    "spr_answers": [
+      "2029"
+    ],
+    "explanation_en": "Solve $0.73x + 33.85 > 40$: $0.73x > 6.15$, so $x > \\frac{6.15}{0.73} \\approx 8.42$. Since $x$ counts whole years, the first value that works is $x = 9$. Check: $x = 8$ gives $0.73(8) + 33.85 = 39.69$ million (not greater than 40), and $x = 9$ gives $40.42$ million. The year is $2020 + 9 = 2029$. Rounding 8.42 down to 8 and answering 2028 is a common error. Enter 2029.",
+    "explanation_uz": "$0.73x + 33.85 > 40$ ni yechamiz: $0.73x > 6.15$, demak $x > \\frac{6.15}{0.73} \\approx 8.42$. $x$ butun yillarni sanagani uchun shartni qanoatlantiradigan birinchi qiymat $x = 9$. Tekshiruv: $x = 8$ da $0.73(8) + 33.85 = 39.69$ million (40 dan katta emas), $x = 9$ da esa $40.42$ million. Yil: $2020 + 9 = 2029$. 8.42 ni 8 gacha yaxlitlab, 2028 deb javob berish — ko‘p uchraydigan xato. Javob: 2029.",
+    "estimated_seconds": 110,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  }
+]

@@ -1,0 +1,140 @@
+[
+  {
+    "skill_code": "inference_margin_of_error",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "A random sample of households in Tashkent was surveyed. Based on the sample, it is estimated that 58% of all households in Tashkent have an air conditioner, with a margin of error of 3.5 percentage points. Which of the following is a plausible value for the percentage of all households in Tashkent that have an air conditioner?",
+    "option_a": "52%",
+    "option_b": "54%",
+    "option_c": "60%",
+    "option_d": "63%",
+    "correct": "C",
+    "explanation_en": "The plausible values are the estimate plus or minus the margin of error: from $58 - 3.5 = 54.5\\%$ to $58 + 3.5 = 61.5\\%$. Only 60% is in this interval. Choice B, 54%, is just below the lower endpoint, and choice D, 63%, is above the upper endpoint. Choice A, 52%, is even farther below the interval; it would be plausible only if the margin of error were at least 6 percentage points.",
+    "explanation_uz": "Ehtimoliy qiymatlar — baho plyus-minus xatolik chegarasi: $58 - 3.5 = 54.5\\%$ dan $58 + 3.5 = 61.5\\%$ gacha. Bu oraliqda faqat 60% bor. B javob (54%) quyi chegaradan sal pastda, D javob (63%) esa yuqori chegaradan yuqorida. A javob (52%) oraliqdan yanada pastda; u faqat xatolik chegarasi kamida 6 foiz punkti bo‘lganda ehtimoliy bo‘lardi.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "inference_margin_of_error",
+    "difficulty": "easy",
+    "question_type": "spr",
+    "stem": "An apricot orchard in the Fergana Valley has 2,400 trees. A random sample of 160 of the trees was inspected, and 12 of the sampled trees had a leaf disease. Based on the sample, what is the best estimate of the number of trees in the entire orchard that have the leaf disease?",
+    "spr_answers": [
+      "180"
+    ],
+    "explanation_en": "The proportion of diseased trees in the random sample is $\\frac{12}{160} = 0.075$. Applying it to the whole orchard: $0.075 \\times 2{,}400 = 180$ trees. Answering 12 counts only the sampled trees. Enter 180.",
+    "explanation_uz": "Tasodifiy tanlanmadagi kasal daraxtlar ulushi $\\frac{12}{160} = 0.075$. Uni butun bog‘ga qo‘llaymiz: $0.075 \\times 2{,}400 = 180$ ta daraxt. 12 deb javob berish faqat tekshirilgan daraxtlarni sanaydi. Javob: 180.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "inference_margin_of_error",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "A random sample of people who ride the Tashkent metro to work was surveyed. Based on the sample, the mean one-way commute time of all people who ride the Tashkent metro to work is estimated to be 34 minutes, with an associated margin of error of 2.5 minutes. Which of the following gives the plausible values for the mean commute time of all people who ride the Tashkent metro to work?",
+    "option_a": "From 29 minutes to 39 minutes",
+    "option_b": "From 31.5 minutes to 36.5 minutes",
+    "option_c": "From 34 minutes to 36.5 minutes",
+    "option_d": "From 33.15 minutes to 34.85 minutes",
+    "correct": "B",
+    "explanation_en": "Plausible values are the estimate minus the margin of error to the estimate plus the margin of error: $34 - 2.5 = 31.5$ to $34 + 2.5 = 36.5$ minutes. Choice A uses twice the margin of error on each side. Choice C adds the margin of error but never subtracts it. Choice D treats the margin of error as 2.5% of 34 ($0.85$ minute) instead of 2.5 minutes.",
+    "explanation_uz": "Ehtimoliy qiymatlar: bahodan xatolik chegarasini ayirgandan bahoga xatolik chegarasini qo‘shgangacha, ya’ni $34 - 2.5 = 31.5$ dan $34 + 2.5 = 36.5$ daqiqagacha. A javob har ikki tomonga xatolik chegarasini ikki marta olgan. C javob xatolik chegarasini faqat qo‘shgan, ayirmagan. D javob xatolik chegarasini 2.5 daqiqa emas, 34 ning 2.5% i ($0.85$ daqiqa) deb olgan.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "inference_margin_of_error",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "Tashkent city has about 3,110,000 residents. Based on a random sample of the city's residents, it is estimated that 24% of all residents ride the metro at least once a week, with a margin of error of 3 percentage points. Based on this estimate, which of the following gives the plausible values for the number of Tashkent residents who ride the metro at least once a week?",
+    "option_a": "From 653,100 to 746,400",
+    "option_b": "From 724,008 to 768,792",
+    "option_c": "From 746,400 to 839,700",
+    "option_d": "From 653,100 to 839,700",
+    "correct": "D",
+    "explanation_en": "The plausible percentages are $24 - 3 = 21\\%$ to $24 + 3 = 27\\%$. Applying them to the population: $0.21 \\times 3{,}110{,}000 = 653{,}100$ and $0.27 \\times 3{,}110{,}000 = 839{,}700$. Choices A and C each give only one half of the interval, from an endpoint to the estimate ($0.24 \\times 3{,}110{,}000 = 746{,}400$). Choice B treats the margin of error as 3% **of** 746,400 instead of 3 percentage points of the population.",
+    "explanation_uz": "Ehtimoliy foizlar: $24 - 3 = 21\\%$ dan $24 + 3 = 27\\%$ gacha. Ularni aholiga qo‘llaymiz: $0.21 \\times 3{,}110{,}000 = 653{,}100$ va $0.27 \\times 3{,}110{,}000 = 839{,}700$. A va C javoblar oraliqning faqat yarmini — chegaradan bahogacha ($0.24 \\times 3{,}110{,}000 = 746{,}400$) bo‘lgan qismini beradi. B javob xatolik chegarasini aholining 3 foiz punkti emas, 746,400 ning 3% i deb olgan.",
+    "estimated_seconds": 100,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "inference_margin_of_error",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "A random sample of students at a university in Samarkand was asked whether they use public transportation to get to classes. Based on the sample, the plausible values for the percentage of all students at the university who use public transportation to get to classes are from 61% to 69%. What is the margin of error, in percentage points, associated with this estimate?",
+    "spr_answers": [
+      "4"
+    ],
+    "explanation_en": "The interval is centered at the estimate, $\\frac{61 + 69}{2} = 65\\%$, and extends the margin of error on each side. So the margin of error is half the width of the interval: $\\frac{69 - 61}{2} = 4$ percentage points. Answering 8 gives the full width of the interval, which is twice the margin of error. Enter 4.",
+    "explanation_uz": "Oraliq markazi — baho: $\\frac{61 + 69}{2} = 65\\%$; oraliq har ikki tomonga xatolik chegarasicha cho‘ziladi. Demak xatolik chegarasi oraliq kengligining yarmi: $\\frac{69 - 61}{2} = 4$ foiz punkti. 8 deb javob berish oraliqning to‘liq kengligini beradi — bu xatolik chegarasining ikki baravari. Javob: 4.",
+    "estimated_seconds": 80,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "inference_margin_of_error",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "A random sample of adults in a city was asked whether they support a plan to plant 10,000 new trees. Based on the sample, it is estimated that 53% of all adults in the city support the plan, with a margin of error of 4 percentage points. A city council member claims that the survey proves that a majority (more than 50%) of the city's adults support the plan. Which of the following best evaluates this claim?",
+    "option_a": "The claim is not supported, because plausible values range from 49% to 57%, and values of 50% or less are in this interval.",
+    "option_b": "The claim is supported, because the estimate of 53% is greater than 50%.",
+    "option_c": "The claim is supported, because 53% plus the margin of error is 57%, which is greater than 50%.",
+    "option_d": "The survey shows that less than half of the city's adults support the plan, because 49% is a plausible value.",
+    "correct": "A",
+    "explanation_en": "The plausible values are $53 - 4 = 49\\%$ to $53 + 4 = 57\\%$. Since this interval includes values at or below 50%, the survey does not prove that more than half of the city's adults support the plan; a majority is plausible but not certain. Choice B ignores the margin of error. Choice C uses only the upper end of the interval. Choice D makes the opposite mistake: 49% is plausible, but so are values above 50%, so the survey does not show that less than half support the plan either.",
+    "explanation_uz": "Ehtimoliy qiymatlar: $53 - 4 = 49\\%$ dan $53 + 4 = 57\\%$ gacha. Bu oraliqda 50% va undan kichik qiymatlar ham bor, shuning uchun so‘rovnoma shahar kattalarining yarmidan ko‘pi rejani qo‘llab-quvvatlashini isbotlamaydi; ko‘pchilik qo‘llashi mumkin, lekin aniq emas. B javob xatolik chegarasini e’tiborsiz qoldirgan. C javob oraliqning faqat yuqori chegarasidan foydalangan. D javob teskari xatoga yo‘l qo‘ygan: 49% ehtimoliy qiymat, lekin 50% dan yuqori qiymatlar ham ehtimoliy, shuning uchun so‘rovnoma yarmidan kami qo‘llashini ham ko‘rsatmaydi.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "inference_margin_of_error",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "To estimate the mean wheat yield per hectare in two regions, a researcher selected a random sample of 200 wheat fields in Region X and a random sample of 200 wheat fields in Region Y. The yields of the sampled fields in Region X had a standard deviation of 0.9 metric ton per hectare, and the yields of the sampled fields in Region Y had a standard deviation of 0.4 metric ton per hectare. The same method was used to calculate a margin of error for each estimate. Which of the following is most likely true?",
+    "option_a": "The estimate for Region X has the smaller margin of error, because its yields vary more.",
+    "option_b": "The estimate for Region Y has the smaller margin of error, because its yields vary less.",
+    "option_c": "The two margins of error are equal, because the two samples are the same size.",
+    "option_d": "The margins of error cannot be compared unless the two sample means are equal.",
+    "correct": "B",
+    "explanation_en": "For samples of the same size, a margin of error depends on how much the data vary: the more the values vary, the less precisely the sample mean estimates the population mean, and the greater the margin of error. Region Y's yields have a much smaller standard deviation (0.4 compared with 0.9), so its estimate most likely has the smaller margin of error. Choice A reverses this relationship. Choice C is wrong because sample size is not the only factor; variability also matters. Choice D is wrong because the margin of error does not depend on the value of the mean.",
+    "explanation_uz": "Hajmi bir xil tanlanmalarda xatolik chegarasi ma’lumotlarning qanchalik tarqoqligiga bog‘liq: qiymatlar qancha ko‘p o‘zgarsa, tanlanma o‘rtachasi to‘plam o‘rtachasini shuncha kam aniqlikda baholaydi va xatolik chegarasi shuncha katta bo‘ladi. Y viloyatidagi hosildorlikning standart chetlanishi ancha kichik (0.9 ga nisbatan 0.4), shuning uchun uning bahosining xatolik chegarasi kichikroq bo‘lishi ehtimoli katta. A javob bu bog‘liqlikni teskari qilgan. C javob noto‘g‘ri, chunki tanlanma hajmi yagona omil emas — tarqoqlik ham muhim. D javob noto‘g‘ri, chunki xatolik chegarasi o‘rtachaning qiymatiga bog‘liq emas.",
+    "estimated_seconds": 110,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "inference_margin_of_error",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "A district has 12,000 households. Based on a random sample of the district's households, the percentage of all households in the district that have a home garden was estimated, along with a margin of error. When the estimate and the margin of error were applied to all 12,000 households, the plausible numbers of households with a home garden were from 2,940 to 3,660. What is the margin of error, in percentage points?",
+    "spr_answers": [
+      "3"
+    ],
+    "explanation_en": "Convert the endpoints to percentages of 12,000: $\\frac{2{,}940}{12{,}000} = 0.245 = 24.5\\%$ and $\\frac{3{,}660}{12{,}000} = 0.305 = 30.5\\%$. The estimate is the center, $\\frac{24.5 + 30.5}{2} = 27.5\\%$, and the margin of error is half the width: $\\frac{30.5 - 24.5}{2} = 3$ percentage points. Equivalently, half the width in households is $\\frac{3{,}660 - 2{,}940}{2} = 360$, and $\\frac{360}{12{,}000} = 3\\%$. Answering 360 gives the margin of error in households, not percentage points, and answering 6 gives the full width. Enter 3.",
+    "explanation_uz": "Chegaralarni 12,000 ga nisbatan foizga aylantiramiz: $\\frac{2{,}940}{12{,}000} = 0.245 = 24.5\\%$ va $\\frac{3{,}660}{12{,}000} = 0.305 = 30.5\\%$. Baho — markaz: $\\frac{24.5 + 30.5}{2} = 27.5\\%$, xatolik chegarasi esa kenglikning yarmi: $\\frac{30.5 - 24.5}{2} = 3$ foiz punkti. Boshqacha aytganda, xonadonlarda kenglikning yarmi $\\frac{3{,}660 - 2{,}940}{2} = 360$, va $\\frac{360}{12{,}000} = 3\\%$. 360 deb javob berish xatolik chegarasini foiz punktida emas, xonadonlar sonida beradi; 6 esa to‘liq kenglik. Javob: 3.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  }
+]

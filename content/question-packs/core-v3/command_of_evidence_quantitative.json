@@ -1,0 +1,162 @@
+[
+  {
+    "skill_code": "command_of_evidence_quantitative",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "A geography student compared the highest points of four Central Asian countries. She noticed that one country's highest point is far lower than the others: ______\n\n**Highest point of four Central Asian countries**\n\n| Country | Highest point | Elevation (m) |\n| --- | --- | ---: |\n| Kazakhstan | Khan Tengri | 7,010 |\n| Kyrgyzstan | Jengish Chokusu | 7,439 |\n| Tajikistan | Ismoil Somoni Peak | 7,495 |\n| Turkmenistan | Aýrybaba | 3,139 |",
+    "stem": "Which choice most effectively uses data from the table to complete the statement?",
+    "option_a": "Tajikistan's Ismoil Somoni Peak rises to 7,495 meters.",
+    "option_b": "Turkmenistan's Aýrybaba reaches only 3,139 meters, less than half the elevation of any of the other three peaks.",
+    "option_c": "Kyrgyzstan's Jengish Chokusu reaches 7,439 meters.",
+    "option_d": "Kazakhstan's Khan Tengri, at 7,010 meters, is the lowest of the four peaks.",
+    "correct": "B",
+    "explanation_en": "The statement says that one country's highest point is far lower than the others. According to the table, Turkmenistan's Aýrybaba is 3,139 meters high, while the other three peaks are all above 7,000 meters; since half of the lowest of them (7,010 ÷ 2 = 3,505) is still greater than 3,139, Aýrybaba is less than half as high as each of them. Choice B is correct.\n\nChoices A and C give the elevations of the two highest peaks, which do not show that any peak is far lower than the others. Choice D is inaccurate: Khan Tengri is the lowest of the three tall peaks, but Aýrybaba, at 3,139 meters, is the lowest of the four.",
+    "explanation_uz": "Gapda bir davlatning eng baland nuqtasi boshqalarnikidan ancha past ekanligi aytilgan. Jadvalga ko‘ra, Turkmanistondagi Ayribaba 3,139 metr, qolgan uch cho‘qqining har biri esa 7,000 metrdan baland. Ularning eng pastining yarmi ham (7,010 ÷ 2 = 3,505) 3,139 dan katta, demak Ayribaba ularning har biridan ikki baravardan ko‘proq past. To‘g‘ri javob — B.\n\nA va C eng baland ikki cho‘qqining balandligini beradi; ular biror cho‘qqi boshqalardan ancha past ekanini ko‘rsatmaydi. D noto‘g‘ri: Xon Tangri uchta baland cho‘qqining eng pasti, lekin to‘rttasi ichida eng pasti 3,139 metrli Ayribaba.",
+    "estimated_seconds": 55,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "command_of_evidence_quantitative",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "For one month, students at a school in Andijan recorded how many minutes they spent each day reading for pleasure. Teacher Zarina Usmonova found that the students who read for pleasure the most were ______\n\n**Average daily time spent reading for pleasure**\n\n| Grade | Average time (minutes per day) |\n| --- | ---: |\n| 7 | 22 |\n| 8 | 18 |\n| 9 | 27 |\n| 10 | 34 |",
+    "stem": "Which choice most effectively uses data from the table to complete the statement?",
+    "option_a": "seventh graders, who averaged 22 minutes a day.",
+    "option_b": "eighth graders, who averaged 18 minutes a day.",
+    "option_c": "ninth graders, who averaged 27 minutes a day.",
+    "option_d": "tenth graders, who averaged 34 minutes a day.",
+    "correct": "D",
+    "explanation_en": "The statement identifies the students who read for pleasure the most. In the table, tenth graders have the greatest average, 34 minutes per day, so choice D is correct.\n\nChoice A names seventh graders, whose average of 22 minutes is lower than that of both ninth and tenth graders. Choice B names eighth graders, who actually read the least (18 minutes). Choice C names ninth graders, whose 27 minutes is the second-highest average, not the highest.",
+    "explanation_uz": "Gapda zavq uchun eng ko‘p kitob o‘qigan o‘quvchilar haqida so‘z boradi. Jadvalda eng katta o‘rtacha ko‘rsatkich — kuniga 34 daqiqa — 10-sinf o‘quvchilariga tegishli, shuning uchun to‘g‘ri javob D.\n\nA dagi 7-sinflarning o‘rtacha vaqti (22 daqiqa) 9- va 10-sinflarnikidan kam. B dagi 8-sinflar, aksincha, eng kam o‘qigan (18 daqiqa). C dagi 9-sinflarning 27 daqiqasi eng yuqori emas, ikkinchi o‘rindagi ko‘rsatkich.",
+    "estimated_seconds": 50,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "command_of_evidence_quantitative",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "In an experiment, biology student Bekzod Tursunov kept 50 mung bean seeds at each of four temperatures and counted how many had sprouted after three days. He reported that the seeds sprouted best at 30°C, far better than they did at the coldest temperature he tested: ______\n\n**Mung bean seeds sprouted after three days (out of 50)**\n\n| Temperature (°C) | Seeds sprouted |\n| ---: | ---: |\n| 10 | 4 |\n| 20 | 31 |\n| 30 | 47 |\n| 40 | 22 |",
+    "stem": "Which choice most effectively uses data from the table to complete the statement?",
+    "option_a": "47 of the 50 seeds kept at 30°C sprouted, compared with only 4 of the 50 seeds kept at 10°C.",
+    "option_b": "31 of the 50 seeds kept at 20°C sprouted.",
+    "option_c": "22 of the 50 seeds kept at 40°C sprouted, compared with 31 of the 50 seeds kept at 20°C.",
+    "option_d": "Fewer seeds sprouted at 40°C than at 20°C.",
+    "correct": "A",
+    "explanation_en": "The statement compares sprouting at 30°C with sprouting at the coldest temperature tested, 10°C. Choice A makes exactly this comparison: 47 of 50 seeds sprouted at 30°C, but only 4 of 50 sprouted at 10°C.\n\nChoice B gives the result for 20°C only, which is neither 30°C nor the coldest temperature. Choices C and D compare 40°C with 20°C; they mention neither 30°C nor 10°C, so they do not support the statement.",
+    "explanation_uz": "Gapda 30°C dagi unib chiqish sinovdagi eng past harorat — 10°C dagisi bilan solishtiriladi. A aynan shu solishtirishni qiladi: 30°C da 50 ta urug‘dan 47 tasi, 10°C da esa atigi 4 tasi unib chiqqan.\n\nB faqat 20°C natijasini beradi — bu na 30°C, na eng past harorat. C va D 40°C ni 20°C bilan solishtiradi; ularda 30°C ham, 10°C ham tilga olinmagan, shuning uchun ular gapni qo‘llab-quvvatlamaydi.",
+    "estimated_seconds": 55,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "command_of_evidence_quantitative",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Food scientist Madina Qosimova compared three ways of drying apricots: in the open sun, in the shade, and in a solar dryer, a covered box that traps the Sun's heat. Open-sun drying is fast, while shade drying is known to preserve more of the fruit's vitamin C. Qosimova claims that the solar dryer combines these two advantages.\n\n**Results of three apricot-drying methods**\n\n| Drying method | Drying time (days) | Vitamin C retained (%) |\n| --- | ---: | ---: |\n| Open sun | 4 | 18 |\n| Shade | 9 | 41 |\n| Solar dryer | 4 | 39 |",
+    "stem": "Which choice most effectively uses data from the table to support Qosimova's claim?",
+    "option_a": "Apricots dried in the shade retained 41% of their vitamin C, the most of any method.",
+    "option_b": "Apricots dried in the open sun took 4 days to dry, while those dried in the shade took 9 days.",
+    "option_c": "Apricots in the solar dryer dried in 4 days, as quickly as those dried in the open sun, and retained 39% of their vitamin C, close to the 41% retained by those dried in the shade.",
+    "option_d": "Apricots in the solar dryer retained 39% of their vitamin C, while those dried in the open sun retained only 18%.",
+    "correct": "C",
+    "explanation_en": "Qosimova claims that the solar dryer combines the speed of open-sun drying with the vitamin C retention of shade drying. Choice C supports both parts: the solar dryer took 4 days, the same as the open sun, and it retained 39% of the vitamin C, nearly as much as the 41% retained in the shade.\n\nChoice A describes only shade drying and says nothing about the solar dryer. Choice B compares the two traditional methods, again without the solar dryer. Choice D shows that the solar dryer retained more vitamin C than open-sun drying, but it says nothing about drying speed, so it supports only part of the claim.",
+    "explanation_uz": "Qosimova quyosh quritgichi ochiq quyoshda quritishning tezligini va soyada quritishning C vitaminini saqlab qolish afzalligini birlashtiradi, deb da’vo qiladi. C ikkala qismni ham qo‘llab-quvvatlaydi: quyosh quritgichida o‘rik ochiq quyoshdagidek 4 kunda qurigan va C vitaminining 39% ini saqlab qolgan — bu soyadagi 41% ga juda yaqin.\n\nA faqat soyada quritish haqida, quyosh quritgichi haqida hech narsa demaydi. B ham quyosh quritgichisiz ikki an’anaviy usulni solishtiradi. D quyosh quritgichi ochiq quyoshga qaraganda ko‘proq C vitamini saqlaganini ko‘rsatadi, lekin quritish tezligi haqida hech narsa demaydi, ya’ni da’voning faqat bir qismini qo‘llab-quvvatlaydi.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "command_of_evidence_quantitative",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Engineer Sardor Aliyev studied how dust affects rooftop solar panels in the city of Nukus. Over one summer, he compared identical panels that were cleaned every week, cleaned once a month, or never cleaned. Aliyev argues that dust buildup steadily reduces output: as the summer went on, the panels that were never cleaned fell further and further behind the panels that were cleaned every week.\n\n**Average daily output of solar panels (kilowatt-hours)**\n\n| Cleaning schedule | June | July | August |\n| --- | ---: | ---: | ---: |\n| Every week | 5.1 | 5.0 | 5.1 |\n| Once a month | 4.8 | 4.6 | 4.7 |\n| Never | 4.6 | 4.0 | 3.5 |",
+    "stem": "Which choice most effectively uses data from the table to support Aliyev's argument?",
+    "option_a": "The gap in average daily output between the panels cleaned every week and the panels never cleaned grew from 0.5 kilowatt-hours in June to 1.0 in July and 1.6 in August.",
+    "option_b": "The panels cleaned every week produced about the same average daily output in all three months: 5.1, 5.0, and 5.1 kilowatt-hours.",
+    "option_c": "In June, the panels cleaned once a month produced 4.8 kilowatt-hours per day on average, more than the 4.6 produced by the panels never cleaned.",
+    "option_d": "The panels cleaned once a month produced less in July (4.6 kilowatt-hours per day) than in June (4.8 kilowatt-hours per day).",
+    "correct": "A",
+    "explanation_en": "Aliyev argues that the never-cleaned panels fell further and further behind the weekly-cleaned panels as the summer went on. Choice A shows exactly this widening gap: 5.1 − 4.6 = 0.5 in June, 5.0 − 4.0 = 1.0 in July, and 5.1 − 3.5 = 1.6 in August.\n\nChoice B describes only the weekly-cleaned panels, so it shows no comparison. Choice C compares the monthly-cleaned and never-cleaned panels in a single month, which cannot show a change over the summer. Choice D describes a small drop for the monthly-cleaned panels between two months; it does not involve the never-cleaned panels or the weekly-cleaned panels.",
+    "explanation_uz": "Aliyevning fikricha, yoz davomida hech tozalanmagan panellar har hafta tozalangan panellardan tobora ko‘proq ortda qolgan. A aynan shu kengayib borayotgan farqni ko‘rsatadi: iyunda 5.1 − 4.6 = 0.5, iyulda 5.0 − 4.0 = 1.0, avgustda 5.1 − 3.5 = 1.6.\n\nB faqat har hafta tozalangan panellarni tasvirlaydi, unda solishtirish yo‘q. C oyda bir tozalangan va hech tozalanmagan panellarni faqat bitta oyda solishtiradi — bu yoz davomidagi o‘zgarishni ko‘rsata olmaydi. D oyda bir tozalangan panellarning ikki oy orasidagi kichik pasayishini tasvirlaydi; unda hech tozalanmagan yoki har hafta tozalangan panellar yo‘q.",
+    "estimated_seconds": 75,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "command_of_evidence_quantitative",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Agronomist Feruza Jurayeva grew barley, wheat, and rice in soils with low, medium, and high levels of salt and recorded each crop's yield as a percentage of its yield in salt-free soil. She concludes that barley is the most salt-tolerant of the three crops: even in the saltiest soil she tested, barley's yield fell much less than the yields of the other two crops did.\n\n**Crop yield in salty soil (% of yield in salt-free soil)**\n\n| Salt level | Barley | Wheat | Rice |\n| --- | ---: | ---: | ---: |\n| Low | 98 | 95 | 88 |\n| Medium | 90 | 78 | 60 |\n| High | 76 | 52 | 31 |",
+    "stem": "Which choice most effectively uses data from the table to support Jurayeva's conclusion?",
+    "option_a": "In soil with a low salt level, barley produced 98% of its normal yield, while wheat produced 95%.",
+    "option_b": "Rice's yield dropped from 88% of its normal yield at the low salt level to 31% at the high salt level.",
+    "option_c": "In soil with a medium salt level, wheat produced 78% of its normal yield.",
+    "option_d": "In soil with a high salt level, barley still produced 76% of its normal yield, compared with 52% for wheat and 31% for rice.",
+    "correct": "D",
+    "explanation_en": "Jurayeva's conclusion focuses on the saltiest soil: there, barley's yield fell much less than the yields of wheat and rice. Choice D gives the high-salt results for all three crops—76% for barley, 52% for wheat, and 31% for rice—so it directly supports the conclusion.\n\nChoice A uses the low-salt results, where barley and wheat differ by only 3 percentage points, so it does not show that barley held up much better. Choice B describes rice alone and does not compare it with barley. Choice C gives a single figure for wheat at the medium salt level and mentions neither barley nor the saltiest soil.",
+    "explanation_uz": "Jurayevaning xulosasi eng sho‘r tuproqqa qaratilgan: u yerda arpaning hosili bug‘doy va sholinikiga qaraganda ancha kam kamaygan. D yuqori sho‘rlikdagi uchala ekin natijasini beradi — arpa 76%, bug‘doy 52%, sholi 31% — shuning uchun xulosani bevosita qo‘llab-quvvatlaydi.\n\nA past sho‘rlikdagi natijalardan foydalanadi; u yerda arpa va bug‘doy orasidagi farq atigi 3 foiz punkti, demak arpa ancha chidamliroq ekanini ko‘rsatmaydi. B faqat sholini tasvirlaydi va uni arpa bilan solishtirmaydi. C o‘rtacha sho‘rlikdagi bug‘doy uchun bitta raqamni beradi, unda na arpa, na eng sho‘r tuproq bor.",
+    "estimated_seconds": 75,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "command_of_evidence_quantitative",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Irrigation researchers grew cotton on test plots with two types of soil, watering half of the plots on each soil with traditional furrow irrigation and half with drip irrigation, which delivers water directly to each plant's roots. Sandy soil drains quickly, so the researchers hypothesized that switching from furrow irrigation to drip irrigation would raise yields more on sandy soil than on loamy soil.\n\n**Average cotton yield (tonnes per hectare)**\n\n| Soil type | Furrow irrigation | Drip irrigation |\n| --- | ---: | ---: |\n| Sandy | 2.0 | 3.0 |\n| Loamy | 4.0 | 4.6 |",
+    "stem": "Which choice most effectively uses data from the table to support the researchers' hypothesis?",
+    "option_a": "On loamy soil, drip irrigation produced an average yield of 4.6 tonnes per hectare, the highest yield in the study.",
+    "option_b": "Switching from furrow to drip irrigation increased the average yield by 1.0 tonne per hectare on sandy soil but by only 0.6 tonne per hectare on loamy soil.",
+    "option_c": "With furrow irrigation, the average yield on loamy soil was 4.0 tonnes per hectare, twice the 2.0 tonnes per hectare on sandy soil.",
+    "option_d": "Drip-irrigated plots produced higher average yields than furrow-irrigated plots on both sandy soil and loamy soil.",
+    "correct": "B",
+    "explanation_en": "The hypothesis is about the size of the improvement from switching irrigation methods on each soil: the gain should be larger on sandy soil. Choice B compares exactly those gains: 3.0 − 2.0 = 1.0 tonne per hectare on sandy soil versus 4.6 − 4.0 = 0.6 tonne per hectare on loamy soil.\n\nChoice A gives the highest single yield, which comes from loamy soil and says nothing about how much drip irrigation helped on each soil. Choice C compares the two soils under furrow irrigation only. Choice D is true but shows only that drip irrigation helped on both soils, not that it helped more on sandy soil.",
+    "explanation_uz": "Gipoteza har bir tuproqda sug‘orish usulini almashtirishdan olingan o‘sish hajmi haqida: qumli tuproqda o‘sish kattaroq bo‘lishi kerak. B aynan shu o‘sishlarni solishtiradi: qumli tuproqda 3.0 − 2.0 = 1.0 tonna/gektar, qumoq tuproqda esa 4.6 − 4.0 = 0.6 tonna/gektar.\n\nA eng yuqori bitta hosilni beradi; u qumoq tuproqqa tegishli va tomchilatib sug‘orish har bir tuproqda qanchalik foyda berganini aytmaydi. C ikki tuproqni faqat egat usulida solishtiradi. D to‘g‘ri ma’lumot, lekin u tomchilatib sug‘orish ikkala tuproqda ham foyda berganini ko‘rsatadi xolos, qumli tuproqda ko‘proq foyda berganini emas.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "command_of_evidence_quantitative",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "A survey asked students at four schools in Fergana whether they would join a new after-school gardening program. Education researcher Otabek Yuldashev cautions against judging the program's popularity by raw counts alone: the school with the greatest number of interested students was not the school where the program was most popular relative to the number of students surveyed.\n\n**Interest in an after-school gardening program**\n\n| School | Students surveyed | Students who would join |\n| --- | ---: | ---: |\n| School 1 | 400 | 120 |\n| School 2 | 250 | 100 |\n| School 3 | 150 | 81 |\n| School 4 | 600 | 150 |",
+    "stem": "Which choice most effectively uses data from the table to support Yuldashev's point?",
+    "option_a": "School 4 had 150 students who said they would join the program, more than any other school.",
+    "option_b": "At School 2, 100 of the 250 students surveyed, or 40 percent, said they would join the program.",
+    "option_c": "School 4 had the greatest number of students who said they would join (150), but School 3 had the greatest proportion: 54 percent, compared with 25 percent at School 4.",
+    "option_d": "School 3 had both the fewest students surveyed (150) and the fewest students who said they would join (81).",
+    "correct": "C",
+    "explanation_en": "Yuldashev's point has two parts: one school had the most interested students, but a different school had the highest proportion of interested students. Choice C supports both parts: School 4 had the most interested students (150), but at School 3, 81 of 150 students (54%) were interested, compared with 150 of 600 (25%) at School 4 and lower proportions at the other schools (30% at School 1 and 40% at School 2).\n\nChoice A gives only the raw count, which supports the first part of the point but does not show that another school had a higher proportion of interested students. Choice B gives one school's proportion, which is not the highest. Choice D uses raw counts to make School 3 look like the least interested school, which is the opposite of what Yuldashev's point requires.",
+    "explanation_uz": "Yuldashevning fikri ikki qismdan iborat: bir maktabda qiziqqan o‘quvchilar soni eng ko‘p, lekin qiziqqanlar ulushi eng yuqori bo‘lgan maktab boshqa. C ikkala qismni ham qo‘llab-quvvatlaydi: 4-maktabda qiziqqanlar eng ko‘p (150), ammo 3-maktabda 150 o‘quvchidan 81 tasi (54%) qiziqqan; 4-maktabda bu ko‘rsatkich 600 dan 150 (25%), boshqa maktablarda esa undan ham past (1-maktabda 30%, 2-maktabda 40%).\n\nA faqat sonni beradi: u fikrning birinchi qismini qo‘llab-quvvatlaydi, lekin boshqa maktabda qiziqqanlar ulushi yuqoriroq ekanini ko‘rsatmaydi. B bitta maktabning ulushini beradi, lekin u eng yuqori emas. D sonlardan foydalanib 3-maktabni eng kam qiziqqan maktabdek ko‘rsatadi — bu Yuldashevning fikriga zid.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  }
+]

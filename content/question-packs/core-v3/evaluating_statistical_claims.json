@@ -1,0 +1,142 @@
+[
+  {
+    "skill_code": "evaluating_statistical_claims",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "Tashkent city has about 3.1 million residents. A radio station in Tashkent asked its listeners to send a text message saying whether they support building a new metro line. Of the 2,400 listeners who sent a message, 78% said they support it. The station then claimed that about 78% of all Tashkent residents support the new metro line. Which of the following is the best reason the station's claim may not be valid?",
+    "option_a": "A sample of 2,400 people is too small to give any information about 3.1 million residents.",
+    "option_b": "The percentage of 78% is too high to be accurate.",
+    "option_c": "The people in the sample chose whether to respond and were not selected at random from all Tashkent residents.",
+    "option_d": "Some of the listeners may live outside Tashkent city.",
+    "correct": "C",
+    "explanation_en": "The sample is made of radio listeners who **chose** to respond. People who feel strongly, and people who listen to this station, may differ from typical residents, so the sample may not represent all Tashkent residents. A random sample from all residents would avoid this bias. Choice A is wrong: a random sample of 2,400 people could estimate a city's opinion quite well; the problem is how the sample was chosen, not its size. Choice B is wrong because a high percentage is not, by itself, a sign of error. Choice D describes a possible problem, but the main flaw is that the respondents selected themselves.",
+    "explanation_uz": "Tanlanma javob berishni o‘zi **tanlagan** radio tinglovchilaridan iborat. Masalaga qattiq qiziqqan odamlar va aynan shu radioni tinglaydiganlar oddiy aholidan farq qilishi mumkin, shuning uchun tanlanma Toshkentning barcha aholisini ifodalamasligi mumkin. Barcha aholidan tasodifiy tanlanma bu xatolikning oldini olardi. A javob noto‘g‘ri: 2,400 kishilik tasodifiy tanlanma shahar fikrini ancha yaxshi baholashi mumkin; muammo tanlanmaning hajmida emas, qanday tanlanganida. B javob noto‘g‘ri, chunki yuqori foizning o‘zi xato belgisi emas. D javob mumkin bo‘lgan muammoni ko‘rsatadi, lekin asosiy kamchilik — javob beruvchilarning o‘zlarini o‘zlari tanlagani.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "evaluating_statistical_claims",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "An agricultural researcher selected a random sample of 300 cotton farms from a list of all cotton farms in the Bukhara region of Uzbekistan. The farms in the sample harvested an average of 3.4 metric tons of cotton per hectare in 2025. To which of the following groups can the results of this study most appropriately be generalized?",
+    "option_a": "All cotton farms in the Bukhara region",
+    "option_b": "All cotton farms in Uzbekistan",
+    "option_c": "All farms of any kind in the Bukhara region",
+    "option_d": "Only the 300 cotton farms in the sample",
+    "correct": "A",
+    "explanation_en": "The sample was selected at random from all cotton farms in the Bukhara region, so the results can be generalized to that population, and only to that population. Choice B is too broad: farms in other regions, with different soil and water conditions, had no chance of being selected. Choice C is also too broad, because farms that do not grow cotton were not in the population sampled. Choice D is too narrow: random sampling is what allows a conclusion about the whole population.",
+    "explanation_uz": "Tanlanma Buxoro viloyatidagi barcha paxta xo‘jaliklari orasidan tasodifiy tanlangan, shuning uchun natijalarni aynan shu to‘plamga va faqat shu to‘plamga umumlashtirish mumkin. B javob juda keng: boshqa viloyatlardagi, tuprog‘i va suv sharoiti boshqacha bo‘lgan xo‘jaliklarning tanlanishga imkoni bo‘lmagan. C javob ham juda keng, chunki paxta yetishtirmaydigan xo‘jaliklar tanlov olingan to‘plamga kirmagan. D javob juda tor: aynan tasodifiy tanlash butun to‘plam haqida xulosa chiqarishga imkon beradi.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "evaluating_statistical_claims",
+    "difficulty": "easy",
+    "question_type": "spr",
+    "stem": "A university has 9,000 students. A random sample of 250 of these students was surveyed, and 70 of the students in the sample said they visit the university library every day. Based on the sample, what is the best estimate of the number of students at the university who visit the library every day?",
+    "spr_answers": [
+      "2520"
+    ],
+    "explanation_en": "The sample was selected at random, so the proportion in the sample estimates the proportion of all students: $\\frac{70}{250} = 0.28$. Then $0.28 \\times 9{,}000 = 2{,}520$ students. Answering 70 counts only the students in the sample. Enter 2520 (without a comma).",
+    "explanation_uz": "Tanlanma tasodifiy olingan, shuning uchun tanlanmadagi ulush barcha talabalar ulushini baholaydi: $\\frac{70}{250} = 0.28$. Demak $0.28 \\times 9{,}000 = 2{,}520$ nafar talaba. 70 deb javob berish faqat tanlanmadagi talabalarni sanaydi. Javob maydoniga vergulsiz 2520 deb yozing.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "evaluating_statistical_claims",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "Using World Bank data for 150 countries, a student found that countries with a higher percentage of people who use the internet tend to have a higher average life expectancy. Which of the following conclusions is best supported by this information?",
+    "option_a": "Increasing internet use in a country will cause the country's average life expectancy to increase.",
+    "option_b": "For the 150 countries, there is a positive association between internet use and life expectancy, but the data do not show that one causes the other.",
+    "option_c": "People who use the internet live longer than people who do not use the internet.",
+    "option_d": "Increasing life expectancy in a country will cause more people in the country to use the internet.",
+    "correct": "B",
+    "explanation_en": "These are observational data: no one assigned internet use to countries. The data show a positive association, but other factors, such as a country's wealth, may raise both internet use and life expectancy, so a cause-and-effect conclusion is not supported. Choices A and D each claim causation (in opposite directions), which requires a randomized experiment. Choice C draws a conclusion about individual people from country-level averages; the data say nothing about whether individual internet users live longer.",
+    "explanation_uz": "Bu kuzatuv ma’lumotlari: hech kim davlatlarga internetdan foydalanishni tayinlamagan. Ma’lumotlar musbat bog‘liqlikni ko‘rsatadi, ammo boshqa omillar, masalan, davlatning boyligi, ham internetdan foydalanishni, ham umr ko‘rish davomiyligini oshirishi mumkin, shuning uchun sabab-oqibat xulosasi asoslanmagan. A va D javoblar sabab-oqibat bog‘liqligini (qarama-qarshi yo‘nalishlarda) da’vo qiladi — buning uchun tasodifiy tayinlashli tajriba kerak. C javob davlatlar bo‘yicha o‘rtacha qiymatlardan alohida odamlar haqida xulosa chiqargan; ma’lumotlar internetdan foydalanuvchi alohida odamlar uzoqroq yashashi haqida hech narsa demaydi.",
+    "estimated_seconds": 80,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "evaluating_statistical_claims",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "A researcher recruited 120 farmers in the Fergana region who volunteered to take part in a study. Each farmer's apricot orchard was randomly assigned to use either drip irrigation or the farmer's usual watering method for one season. The orchards that used drip irrigation produced significantly more apricots, on average, than the other orchards. Which of the following is the most appropriate conclusion?",
+    "option_a": "Drip irrigation increases apricot production for all orchards in Uzbekistan.",
+    "option_b": "Drip irrigation increases apricot production for all orchards in the Fergana region.",
+    "option_c": "No conclusion about cause and effect can be made, because the farmers were volunteers.",
+    "option_d": "Drip irrigation is likely to increase apricot production for orchards similar to those in the study.",
+    "correct": "D",
+    "explanation_en": "Because the watering methods were **randomly assigned**, the difference in production can be attributed to drip irrigation, so a cause-and-effect conclusion is reasonable. However, the farmers were volunteers, not a random sample, so the result cannot be generalized to all orchards in the region or the country, only to orchards like those in the study. Choices A and B generalize too far. Choice C is wrong: random assignment, not random sampling, is what supports a causal conclusion.",
+    "explanation_uz": "Sug‘orish usullari **tasodifiy tayinlangani** uchun hosildagi farqni tomchilatib sug‘orishga bog‘lash mumkin, ya’ni sabab-oqibat xulosasi o‘rinli. Biroq fermerlar tasodifiy tanlanma emas, ko‘ngillilar edi, shuning uchun natijani viloyat yoki mamlakatdagi barcha bog‘larga emas, faqat tadqiqotdagilarga o‘xshash bog‘larga umumlashtirish mumkin. A va B javoblar haddan tashqari keng umumlashtirgan. C javob noto‘g‘ri: sabab-oqibat xulosasini tasodifiy tanlash emas, tasodifiy tayinlash asoslaydi.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "evaluating_statistical_claims",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "The principal of a school with 1,200 students wants to estimate the average number of hours per week that the school's students spend reading for pleasure. Which of the following methods of choosing 100 students to survey is most likely to give an accurate estimate?",
+    "option_a": "Randomly select 100 students from a list of all 1,200 students.",
+    "option_b": "Survey the first 100 students who arrive at school on Monday.",
+    "option_c": "Survey 100 students who are in the school library during lunch.",
+    "option_d": "Randomly select 100 students from the members of the school's book club.",
+    "correct": "A",
+    "explanation_en": "Selecting students at random from a list of **all** students gives every student the same chance of being chosen, so the sample is likely to represent the whole school. Choice C surveys students in the library, who probably read more than typical students. Choice D samples only book club members, who are also likely to read more; random selection within a biased group does not remove the bias. Choice B is a convenience sample: students who arrive first may differ from others, for example, in how far they live from school.",
+    "explanation_uz": "**Barcha** o‘quvchilar ro‘yxatidan tasodifiy tanlash har bir o‘quvchiga tanlanish uchun teng imkoniyat beradi, shuning uchun tanlanma butun maktabni ifodalashi ehtimoli yuqori. C javob kutubxonadagi o‘quvchilarni so‘raydi — ular odatdagi o‘quvchilardan ko‘proq kitob o‘qishi ehtimoli bor. D javob faqat kitobxonlar klubi a’zolaridan tanlaydi, ular ham ko‘proq o‘qiydi; noxolis guruh ichida tasodifiy tanlash noxolislikni yo‘qotmaydi. B javob — qulaylik bo‘yicha tanlanma: birinchi kelgan o‘quvchilar boshqalardan farq qilishi mumkin, masalan, maktabdan qancha uzoqda yashashi bo‘yicha.",
+    "estimated_seconds": 80,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "evaluating_statistical_claims",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "A traffic agency selected a random sample of 600 drivers from a list of all registered drivers in the Samarkand region. The agency randomly assigned 300 of the selected drivers to receive weekly text-message reminders about speed limits for six months; the other 300 received no reminders. During the six months, the drivers who received the reminders got significantly fewer speeding fines, on average, than the drivers who did not. Which of the following is the most appropriate conclusion?",
+    "option_a": "The reminders caused a decrease in speeding fines, but this conclusion applies only to the 600 drivers in the study.",
+    "option_b": "There is an association between the reminders and speeding fines, but no conclusion about cause and effect can be made.",
+    "option_c": "Sending such reminders would likely reduce speeding fines among registered drivers in the Samarkand region.",
+    "option_d": "Sending such reminders would likely reduce speeding fines among all drivers in Uzbekistan.",
+    "correct": "C",
+    "explanation_en": "Two features of the design matter. **Random assignment** to the reminder and no-reminder groups supports a cause-and-effect conclusion. **Random sampling** from all registered drivers in the Samarkand region allows the conclusion to be generalized to that population. So it is reasonable to conclude that the reminders would likely reduce speeding fines among registered drivers in the Samarkand region. Choice A is too narrow because the sample was random. Choice B ignores the random assignment. Choice D is too broad: drivers outside the Samarkand region were not part of the population sampled.",
+    "explanation_uz": "Tadqiqot dizaynining ikki jihati muhim. Eslatma oladigan va olmaydigan guruhlarga **tasodifiy tayinlash** sabab-oqibat xulosasini asoslaydi. Samarqand viloyatidagi barcha ro‘yxatdagi haydovchilardan **tasodifiy tanlash** esa xulosani shu to‘plamga umumlashtirishga imkon beradi. Demak, eslatmalar Samarqand viloyatidagi ro‘yxatdagi haydovchilar orasida tezlikni oshirish uchun jarimalarni kamaytirishi ehtimoli bor degan xulosa o‘rinli. A javob juda tor, chunki tanlanma tasodifiy edi. B javob tasodifiy tayinlashni e’tiborsiz qoldirgan. D javob juda keng: Samarqand viloyatidan tashqaridagi haydovchilar tanlov olingan to‘plamga kirmagan.",
+    "estimated_seconds": 110,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "evaluating_statistical_claims",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "An energy company selected a random sample of 400 households from all of its customers in a city. Of these households, 240 were randomly assigned to receive a monthly report comparing their electricity use with that of their neighbors, and the other 160 households did not receive the report. After one year, 156 of the households that received the report and 72 of the households that did not receive the report had reduced their electricity use. Based on this experiment, the percentage of households that reduce their electricity use is estimated to be how many percentage points greater when households receive the report than when they do not?",
+    "spr_answers": [
+      "20"
+    ],
+    "explanation_en": "Compare percentages, not counts, because the groups have different sizes. With the report: $\\frac{156}{240} = 0.65$, or 65%. Without the report: $\\frac{72}{160} = 0.45$, or 45%. The difference is $65 - 45 = 20$ percentage points. Comparing the counts ($156 - 72 = 84$) or dividing by all 400 households ($\\frac{156}{400} = 39\\%$ and $\\frac{72}{400} = 18\\%$, a difference of 21) gives a wrong answer. Enter 20.",
+    "explanation_uz": "Guruhlar hajmi har xil bo‘lgani uchun sonlarni emas, foizlarni taqqoslaymiz. Hisobot olganlar: $\\frac{156}{240} = 0.65$, ya’ni 65%. Hisobot olmaganlar: $\\frac{72}{160} = 0.45$, ya’ni 45%. Farq $65 - 45 = 20$ foiz punkti. Sonlarni taqqoslash ($156 - 72 = 84$) yoki barcha 400 ta xonadonga bo‘lish ($\\frac{156}{400} = 39\\%$ va $\\frac{72}{400} = 18\\%$, farq 21) noto‘g‘ri javob beradi. Javob: 20.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  }
+]

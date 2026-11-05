@@ -1,0 +1,156 @@
+[
+  {
+    "skill_code": "probability_conditional",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "If one of these 29 medals is selected at random, what is the probability that it was won by an athlete from Kyrgyzstan?",
+    "passage": "The table shows the numbers of medals won at the 2024 Summer Olympics in Paris by athletes from the Central Asian countries that won at least one medal.\n\n| Country | Gold | Silver | Bronze | Total |\n| --- | ---: | ---: | ---: | ---: |\n| Kazakhstan | 1 | 3 | 3 | 7 |\n| Kyrgyzstan | 0 | 2 | 4 | 6 |\n| Tajikistan | 0 | 0 | 3 | 3 |\n| Uzbekistan | 8 | 2 | 3 | 13 |\n| Total | 9 | 7 | 13 | 29 |",
+    "option_a": "$\\frac{6}{23}$",
+    "option_b": "$\\frac{6}{29}$",
+    "option_c": "$\\frac{2}{29}$",
+    "option_d": "$\\frac{1}{4}$",
+    "correct": "B",
+    "explanation_en": "Kyrgyzstan's athletes won $0 + 2 + 4 = 6$ of the 29 medals, so the probability is $\\frac{6}{29}$. Choice A divides by the 23 medals **not** won by Kyrgyzstan. Choice C uses only Kyrgyzstan's 2 silver medals. Choice D treats each of the 4 countries as equally likely, but the countries won different numbers of medals.",
+    "explanation_uz": "Qirg‘iziston sportchilari 29 ta medaldan $0 + 2 + 4 = 6$ tasini qo‘lga kiritgan, demak ehtimollik $\\frac{6}{29}$. A javob Qirg‘iziston **yutmagan** 23 ta medalga bo‘lgan. C javob faqat Qirg‘izistonning 2 ta kumush medalini olgan. D javob 4 ta davlatni teng imkoniyatli deb hisoblagan, holbuki davlatlar turli sondagi medal yutgan.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "probability_conditional",
+    "difficulty": "easy",
+    "question_type": "spr",
+    "stem": "If one of these 29 medals is selected at random, what is the probability that it is a bronze medal?",
+    "passage": "The table shows the numbers of medals won at the 2024 Summer Olympics in Paris by athletes from the Central Asian countries that won at least one medal.\n\n| Country | Gold | Silver | Bronze | Total |\n| --- | ---: | ---: | ---: | ---: |\n| Kazakhstan | 1 | 3 | 3 | 7 |\n| Kyrgyzstan | 0 | 2 | 4 | 6 |\n| Tajikistan | 0 | 0 | 3 | 3 |\n| Uzbekistan | 8 | 2 | 3 | 13 |\n| Total | 9 | 7 | 13 | 29 |",
+    "spr_answers": [
+      "13/29",
+      ".4482",
+      ".4483",
+      "0.448"
+    ],
+    "explanation_en": "There are 13 bronze medals among the 29 medals, so the probability is $\\frac{13}{29} \\approx 0.4483$. Using only one country's bronze medals, or dividing by the number of gold and silver medals ($\\frac{13}{16}$), gives a wrong denominator. Enter 13/29, .4482, .4483, or 0.448.",
+    "explanation_uz": "29 ta medal orasida 13 tasi bronza, demak ehtimollik $\\frac{13}{29} \\approx 0.4483$. Faqat bitta davlatning bronza medallarini olish yoki oltin va kumush medallar soniga bo‘lish ($\\frac{13}{16}$) noto‘g‘ri natija beradi. Javob maydoniga 13/29, .4482, .4483 yoki 0.448 deb yozing.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "probability_conditional",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "Based on climate data for 1991–2020, Tashkent, Uzbekistan, has an average of 59 days with rain in a 365-day year. Based on this average, what is the probability that a day selected at random from such a year is a day with rain?",
+    "option_a": "$\\frac{1}{59}$",
+    "option_b": "$\\frac{59}{306}$",
+    "option_c": "$\\frac{306}{365}$",
+    "option_d": "$\\frac{59}{365}$",
+    "correct": "D",
+    "explanation_en": "Probability $= \\frac{\\text{favorable outcomes}}{\\text{total outcomes}} = \\frac{59}{365}$. Choice C, $\\frac{306}{365}$, is the probability of a day **without** rain ($365 - 59 = 306$). Choice B compares rainy days with dry days instead of with all days. Choice A treats the 59 rainy days as a single outcome.",
+    "explanation_uz": "Ehtimollik $= \\frac{\\text{qulay natijalar}}{\\text{barcha natijalar}} = \\frac{59}{365}$. C javob ($\\frac{306}{365}$) — yomg‘ir **yog‘magan** kunning ehtimolligi ($365 - 59 = 306$). B javob yomg‘irli kunlarni barcha kunlar bilan emas, quruq kunlar bilan taqqoslagan. A javob 59 ta yomg‘irli kunni bitta natija deb olgan.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "probability_conditional",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "If one of the gold medals in the table is selected at random, what is the probability that it was won by an athlete from Uzbekistan?",
+    "passage": "The table shows the numbers of medals won at the 2024 Summer Olympics in Paris by athletes from the Central Asian countries that won at least one medal.\n\n| Country | Gold | Silver | Bronze | Total |\n| --- | ---: | ---: | ---: | ---: |\n| Kazakhstan | 1 | 3 | 3 | 7 |\n| Kyrgyzstan | 0 | 2 | 4 | 6 |\n| Tajikistan | 0 | 0 | 3 | 3 |\n| Uzbekistan | 8 | 2 | 3 | 13 |\n| Total | 9 | 7 | 13 | 29 |",
+    "option_a": "$\\frac{8}{9}$",
+    "option_b": "$\\frac{8}{13}$",
+    "option_c": "$\\frac{8}{29}$",
+    "option_d": "$\\frac{9}{29}$",
+    "correct": "A",
+    "explanation_en": "The selection is made only from the gold medals, so the denominator is the 9 gold medals. Of these, 8 were won by Uzbekistan, so the probability is $\\frac{8}{9}$. Choice B reverses the condition: $\\frac{8}{13}$ is the probability that one of **Uzbekistan's** medals is gold. Choice C divides by all 29 medals, and choice D is the probability that a randomly selected medal from the table is gold.",
+    "explanation_uz": "Tanlov faqat oltin medallar orasidan amalga oshiriladi, shuning uchun maxraj — 9 ta oltin medal. Ulardan 8 tasini O‘zbekiston yutgan, demak ehtimollik $\\frac{8}{9}$. B javobda shart teskari olingan: $\\frac{8}{13}$ — **O‘zbekiston** medallaridan biri oltin bo‘lish ehtimolligi. C javob barcha 29 ta medalga bo‘lgan, D javob esa jadvaldagi tasodifiy medalning oltin bo‘lish ehtimolligi.",
+    "estimated_seconds": 80,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "probability_conditional",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "One of the medals won by athletes from Kazakhstan or Kyrgyzstan is selected at random. What is the probability that the selected medal is a silver medal?",
+    "passage": "The table shows the numbers of medals won at the 2024 Summer Olympics in Paris by athletes from the Central Asian countries that won at least one medal.\n\n| Country | Gold | Silver | Bronze | Total |\n| --- | ---: | ---: | ---: | ---: |\n| Kazakhstan | 1 | 3 | 3 | 7 |\n| Kyrgyzstan | 0 | 2 | 4 | 6 |\n| Tajikistan | 0 | 0 | 3 | 3 |\n| Uzbekistan | 8 | 2 | 3 | 13 |\n| Total | 9 | 7 | 13 | 29 |",
+    "spr_answers": [
+      "5/13",
+      ".3846",
+      ".3847",
+      "0.384",
+      "0.385"
+    ],
+    "explanation_en": "Kazakhstan and Kyrgyzstan won $7 + 6 = 13$ medals together, and $3 + 2 = 5$ of them are silver. The probability is $\\frac{5}{13} \\approx 0.3846$. Dividing by all 7 silver medals ($\\frac{5}{7}$) reverses the condition, and dividing by all 29 medals ($\\frac{5}{29}$) ignores it. Enter 5/13, .3846, .3847, 0.384, or 0.385.",
+    "explanation_uz": "Qozog‘iston va Qirg‘iziston birgalikda $7 + 6 = 13$ ta medal yutgan, ulardan $3 + 2 = 5$ tasi kumush. Ehtimollik $\\frac{5}{13} \\approx 0.3846$. Barcha 7 ta kumush medalga bo‘lish ($\\frac{5}{7}$) shartni teskari qiladi, barcha 29 ta medalga bo‘lish ($\\frac{5}{29}$) esa shartni e’tiborsiz qoldiradi. Javob maydoniga 5/13, .3846, .3847, 0.384 yoki 0.385 deb yozing.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "probability_conditional",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "The table shows the diameter and the mean temperature of each of the 8 planets, according to NASA. If one of the planets with a mean temperature below 0°C is selected at random, what is the probability that its diameter is greater than Earth's diameter?",
+    "passage": "| Planet | Diameter (km) | Mean temperature (°C) |\n| --- | ---: | ---: |\n| Mercury | 4,879 | 167 |\n| Venus | 12,104 | 464 |\n| Earth | 12,756 | 15 |\n| Mars | 6,792 | -65 |\n| Jupiter | 142,984 | -110 |\n| Saturn | 120,536 | -140 |\n| Uranus | 51,118 | -195 |\n| Neptune | 49,528 | -200 |",
+    "option_a": "$\\frac{1}{2}$",
+    "option_b": "$\\frac{5}{8}$",
+    "option_c": "$\\frac{4}{5}$",
+    "option_d": "$\\frac{1}{5}$",
+    "correct": "C",
+    "explanation_en": "Five planets have a mean temperature below 0°C: Mars, Jupiter, Saturn, Uranus, and Neptune. Of these, all but Mars have a diameter greater than 12,756 km, so 4 of the 5 qualify and the probability is $\\frac{4}{5}$. Choice A, $\\frac{4}{8}$, divides by all 8 planets, ignoring the condition. Choice B is the probability that a randomly selected planet has a mean temperature below 0°C. Choice D is the probability of selecting Mars, the cold planet that is smaller than Earth.",
+    "explanation_uz": "Beshta sayyoraning o‘rtacha harorati 0°C dan past: Mars, Yupiter, Saturn, Uran va Neptun. Ulardan Marsdan boshqa hammasining diametri 12,756 km dan katta, demak 5 tadan 4 tasi mos va ehtimollik $\\frac{4}{5}$. A javob ($\\frac{4}{8}$) shartni e’tiborsiz qoldirib, barcha 8 ta sayyoraga bo‘lgan. B javob — tasodifiy sayyoraning o‘rtacha harorati 0°C dan past bo‘lish ehtimolligi. D javob — Yerdan kichik bo‘lgan sovuq sayyora, ya’ni Marsni tanlash ehtimolligi.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "probability_conditional",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "At a large school, 60% of the students study in classes taught in Uzbek, and the other 40% study in classes taught in Russian. Of the students in Uzbek-language classes, 25% are members of the robotics club. Of the students in Russian-language classes, 35% are members of the robotics club. If a member of the robotics club is selected at random, what is the probability that the student studies in a Russian-language class?",
+    "option_a": "$\\frac{7}{50}$",
+    "option_b": "$\\frac{7}{20}$",
+    "option_c": "$\\frac{2}{5}$",
+    "option_d": "$\\frac{14}{29}$",
+    "correct": "D",
+    "explanation_en": "Imagine 1,000 students. Then 600 are in Uzbek-language classes, and $0.25 \\times 600 = 150$ of them are in the club; 400 are in Russian-language classes, and $0.35 \\times 400 = 140$ of them are in the club. The club has $150 + 140 = 290$ members, so the probability is $\\frac{140}{290} = \\frac{14}{29}$. Choice B, $\\frac{7}{20} = 35\\%$, reverses the condition: it is the probability that a student in a Russian-language class is in the club. Choice C is the fraction of **all** students in Russian-language classes. Choice A, $\\frac{140}{1{,}000}$, divides by all students instead of only club members.",
+    "explanation_uz": "1,000 ta o‘quvchini tasavvur qilamiz. Ulardan 600 tasi o‘zbek tilidagi sinflarda, ulardan $0.25 \\times 600 = 150$ tasi to‘garakda; 400 tasi rus tilidagi sinflarda, ulardan $0.35 \\times 400 = 140$ tasi to‘garakda. To‘garakda $150 + 140 = 290$ a’zo bor, demak ehtimollik $\\frac{140}{290} = \\frac{14}{29}$. B javob ($\\frac{7}{20} = 35\\%$) shartni teskari olgan: bu rus tilidagi sinf o‘quvchisining to‘garakda bo‘lish ehtimolligi. C javob — rus tilidagi sinflardagi o‘quvchilarning **barcha** o‘quvchilar ichidagi ulushi. A javob ($\\frac{140}{1{,}000}$) faqat to‘garak a’zolariga emas, barcha o‘quvchilarga bo‘lgan.",
+    "estimated_seconds": 130,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "probability_conditional",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "At the 2024 Summer Olympics in Paris, athletes from Uzbekistan won 13 medals: 8 gold, 2 silver, and 3 bronze. For a museum display, 2 of these 13 medals will be selected at random, one after the other, without replacement. What is the probability that both selected medals are gold?",
+    "spr_answers": [
+      "14/39",
+      ".3589",
+      ".3590",
+      "0.358",
+      "0.359"
+    ],
+    "explanation_en": "The probability that the first medal is gold is $\\frac{8}{13}$. After a gold medal is removed, 7 of the remaining 12 medals are gold, so the probability that the second is also gold is $\\frac{7}{12}$. Multiply: $\\frac{8}{13} \\times \\frac{7}{12} = \\frac{56}{156} = \\frac{14}{39} \\approx 0.3590$. A common error is to use $\\frac{8}{13}$ twice, $\\left(\\frac{8}{13}\\right)^2 = \\frac{64}{169}$, which treats the selections as if the first medal were put back. Enter 14/39, .3589, .3590, 0.358, or 0.359.",
+    "explanation_uz": "Birinchi medalning oltin bo‘lish ehtimolligi $\\frac{8}{13}$. Bitta oltin medal olingach, qolgan 12 ta medaldan 7 tasi oltin, demak ikkinchisining ham oltin bo‘lish ehtimolligi $\\frac{7}{12}$. Ko‘paytiramiz: $\\frac{8}{13} \\times \\frac{7}{12} = \\frac{56}{156} = \\frac{14}{39} \\approx 0.3590$. Ko‘p uchraydigan xato — $\\frac{8}{13}$ ni ikki marta olish: $\\left(\\frac{8}{13}\\right)^2 = \\frac{64}{169}$; bu birinchi medal qaytarib qo‘yilgandek hisoblaydi. Javob maydoniga 14/39, .3589, .3590, 0.358 yoki 0.359 deb yozing.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  }
+]

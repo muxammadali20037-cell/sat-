@@ -1,0 +1,140 @@
+[
+  {
+    "skill_code": "ratios_rates_proportions_units",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "On January 1, 2025, the population of Uzbekistan was about 37.5 million people, and the population density was 83.6 people per square kilometer. Based on these values, which of the following is closest to the area of Uzbekistan, in square kilometers?",
+    "option_a": "4,490",
+    "option_b": "44,900",
+    "option_c": "449,000",
+    "option_d": "3,140,000,000",
+    "correct": "C",
+    "explanation_en": "Density is people per square kilometer, so area $= \\frac{\\text{people}}{\\text{density}} = \\frac{37{,}500{,}000}{83.6} \\approx 448{,}600$, which is closest to 449,000 square kilometers. Choices A and B have the right digits but are off by a factor of 100 and 10, which usually comes from writing 37.5 million with too few zeros. Choice D multiplies the population by the density instead of dividing; its unit would be people² per square kilometer, not square kilometers.",
+    "explanation_uz": "Zichlik — bir kvadrat kilometrga to‘g‘ri keladigan odamlar soni, shuning uchun maydon $= \\frac{\\text{odamlar}}{\\text{zichlik}} = \\frac{37{,}500{,}000}{83.6} \\approx 448{,}600$, bu 449,000 kvadrat kilometrga eng yaqin. A va B javoblarda raqamlar to‘g‘ri, lekin qiymat 100 va 10 marta kichik — odatda 37.5 millionni kam nol bilan yozishdan kelib chiqadi. D javob aholini zichlikka bo‘lish o‘rniga ko‘paytirgan; uning birligi kvadrat kilometr emas.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "ratios_rates_proportions_units",
+    "difficulty": "easy",
+    "question_type": "spr",
+    "stem": "Usain Bolt set the world record in the men's 100-meter race with a time of 9.58 seconds. What was his average speed during this race, in meters per second? (Round your answer to the nearest tenth.)",
+    "spr_answers": [
+      "10.4"
+    ],
+    "explanation_en": "Average speed $= \\frac{\\text{distance}}{\\text{time}} = \\frac{100 \\text{ m}}{9.58 \\text{ s}} \\approx 10.44$ meters per second, which rounds to 10.4. Dividing the time by the distance ($\\frac{9.58}{100} \\approx 0.096$) gives seconds per meter, not meters per second. Enter 10.4.",
+    "explanation_uz": "O‘rtacha tezlik $= \\frac{\\text{masofa}}{\\text{vaqt}} = \\frac{100 \\text{ m}}{9.58 \\text{ s}} \\approx 10.44$ metr/soniya, o‘ndan birgacha yaxlitlansa 10.4. Vaqtni masofaga bo‘lish ($\\frac{9.58}{100} \\approx 0.096$) metr/soniyani emas, soniya/metrni beradi. Javob: 10.4.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "ratios_rates_proportions_units",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "In 2024, the birth rate in Uzbekistan was 24.9 births per 1,000 people. Tashkent city had a population of about 3.11 million people. If the birth rate in Tashkent city were the same as the national rate, which of the following is closest to the number of births in Tashkent city in 2024?",
+    "option_a": "7,700",
+    "option_b": "77,000",
+    "option_c": "125,000",
+    "option_d": "774,000",
+    "correct": "B",
+    "explanation_en": "Set up a proportion: $\\frac{24.9}{1{,}000} = \\frac{x}{3{,}110{,}000}$, so $x = 24.9 \\times 3{,}110 \\approx 77{,}400$, which is closest to 77,000. Choice C divides the population by 24.9, ignoring the “per 1,000.” Choices A and D are off by a factor of 10, which comes from using “per 10,000” or “per 100” instead of “per 1,000.”",
+    "explanation_uz": "Proporsiya tuzamiz: $\\frac{24.9}{1{,}000} = \\frac{x}{3{,}110{,}000}$, demak $x = 24.9 \\times 3{,}110 \\approx 77{,}400$, bu 77,000 ga eng yaqin. C javob “har 1,000 kishiga” ekanini e’tiborsiz qoldirib, aholini 24.9 ga bo‘lgan. A va D javoblar 10 marta xato — “har 1,000 kishiga” o‘rniga “har 10,000” yoki “har 100 kishiga” deb olingan.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "ratios_rates_proportions_units",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "The average distance from Earth to the Sun is 149.6 million kilometers, and light travels at about 299,792 kilometers per second. Which of the following is closest to the time, in minutes, that it takes light to travel from the Sun to Earth?",
+    "option_a": "0.14 minute",
+    "option_b": "0.5 minute",
+    "option_c": "5.0 minutes",
+    "option_d": "8.3 minutes",
+    "correct": "D",
+    "explanation_en": "Time $= \\frac{\\text{distance}}{\\text{speed}} = \\frac{149{,}600{,}000 \\text{ km}}{299{,}792 \\text{ km/s}} \\approx 499$ seconds. Since 1 minute = 60 seconds, $\\frac{499}{60} \\approx 8.3$ minutes. Choice A divides 499 by 3,600, which converts seconds to **hours**, not minutes. Choice B divides 149.6 by 299.792, mixing millions with thousands. Choice C divides 499 by 100, as if a minute had 100 seconds.",
+    "explanation_uz": "Vaqt $= \\frac{\\text{masofa}}{\\text{tezlik}} = \\frac{149{,}600{,}000 \\text{ km}}{299{,}792 \\text{ km/s}} \\approx 499$ soniya. 1 daqiqa = 60 soniya bo‘lgani uchun $\\frac{499}{60} \\approx 8.3$ daqiqa. A javob 499 ni 3,600 ga bo‘lgan — bu soniyani daqiqaga emas, **soatga** aylantiradi. B javob 149.6 ni 299.792 ga bo‘lgan, ya’ni millionlar bilan minglarni aralashtirgan. C javob 499 ni 100 ga bo‘lgan, go‘yo bir daqiqada 100 soniya bordek.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "ratios_rates_proportions_units",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "The men's marathon world record of 2 hours, 0 minutes, 35 seconds was set by Kelvin Kiptum in 2023. A marathon is 42.195 kilometers long. What was Kiptum's average speed during this race, in kilometers per hour? (Round your answer to the nearest whole number.)",
+    "spr_answers": [
+      "21"
+    ],
+    "explanation_en": "Convert the time to hours: 35 seconds is $\\frac{35}{3{,}600} \\approx 0.0097$ hour, so the time is about 2.0097 hours (the 0 minutes add nothing). Then speed $= \\frac{42.195}{2.0097} \\approx 20.995$ kilometers per hour, which rounds to 21. Writing the time as 2.35 hours (reading “35 seconds” as a decimal part of an hour) gives about 18 km/h, which is wrong. Enter 21.",
+    "explanation_uz": "Vaqtni soatga aylantiramiz: 35 soniya $\\frac{35}{3{,}600} \\approx 0.0097$ soat, demak vaqt taxminan 2.0097 soat (0 daqiqa hech narsa qo‘shmaydi). Tezlik $= \\frac{42.195}{2.0097} \\approx 20.995$ km/soat, butun songacha yaxlitlansa 21. Vaqtni 2.35 soat deb yozish (“35 soniya”ni soatning o‘nli qismi deb o‘qish) taxminan 18 km/soat beradi — bu xato. Javob: 21.",
+    "estimated_seconds": 100,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "ratios_rates_proportions_units",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "On January 1, 2025, the population density of Uzbekistan was 83.6 people per square kilometer. A hectare is a unit of area equal to 10,000 square meters. What was the population density of Uzbekistan on that date, in people per hectare? (1 kilometer = 1,000 meters)",
+    "option_a": "0.836",
+    "option_b": "8.36",
+    "option_c": "836",
+    "option_d": "8,360",
+    "correct": "A",
+    "explanation_en": "A square kilometer is 1,000 m by 1,000 m, so $1 \\text{ km}^2 = 1{,}000{,}000 \\text{ m}^2 = \\frac{1{,}000{,}000}{10{,}000} = 100$ hectares. The 83.6 people in 1 km² are spread over 100 hectares: $\\frac{83.6}{100} = 0.836$ person per hectare. Choice D multiplies by 100 instead of dividing; a hectare is smaller than a square kilometer, so it must hold fewer people. Choice B uses $1 \\text{ km}^2 = 10$ hectares, and choice C multiplies by 10.",
+    "explanation_uz": "Bir kvadrat kilometr — 1,000 m ga 1,000 m, demak $1 \\text{ km}^2 = 1{,}000{,}000 \\text{ m}^2 = \\frac{1{,}000{,}000}{10{,}000} = 100$ gektar. 1 km² dagi 83.6 kishi 100 gektarga taqsimlanadi: $\\frac{83.6}{100} = 0.836$ kishi/gektar. D javob 100 ga bo‘lish o‘rniga ko‘paytirgan; gektar kvadrat kilometrdan kichik, shuning uchun unga kamroq odam to‘g‘ri kelishi kerak. B javob $1 \\text{ km}^2 = 10$ gektar deb olgan, C javob esa 10 ga ko‘paytirgan.",
+    "estimated_seconds": 100,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "ratios_rates_proportions_units",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "According to NASA, Proxima Centauri, the star nearest to the Sun, is about 4.24 light-years away. A light-year is the distance light travels in one year. Light travels about $3.00 \\times 10^5$ kilometers per second. Using 1 year = 365.25 days, which of the following is closest to the distance to Proxima Centauri, in kilometers?",
+    "option_a": "$1.27 \\times 10^6$",
+    "option_b": "$4.58 \\times 10^9$",
+    "option_c": "$4.01 \\times 10^{13}$",
+    "option_d": "$4.01 \\times 10^{16}$",
+    "correct": "C",
+    "explanation_en": "Seconds in one year: $365.25 \\times 24 \\times 60 \\times 60 = 31{,}557{,}600 \\approx 3.156 \\times 10^7$. One light-year is $3.00 \\times 10^5 \\times 3.156 \\times 10^7 \\approx 9.47 \\times 10^{12}$ km, so 4.24 light-years is $4.24 \\times 9.47 \\times 10^{12} \\approx 4.01 \\times 10^{13}$ km. Choice A multiplies only 4.24 by the speed, as if light traveled for 4.24 seconds. Choice B multiplies by 3,600, the number of seconds in one **hour**. Choice D is the distance in meters, not kilometers.",
+    "explanation_uz": "Bir yildagi soniyalar: $365.25 \\times 24 \\times 60 \\times 60 = 31{,}557{,}600 \\approx 3.156 \\times 10^7$. Bir yorug‘lik yili $3.00 \\times 10^5 \\times 3.156 \\times 10^7 \\approx 9.47 \\times 10^{12}$ km, demak 4.24 yorug‘lik yili $4.24 \\times 9.47 \\times 10^{12} \\approx 4.01 \\times 10^{13}$ km. A javob 4.24 ni faqat tezlikka ko‘paytirgan — go‘yo yorug‘lik 4.24 soniya yurgandek. B javob bir **soatdagi** soniyalar soniga (3,600) ko‘paytirgan. D javob — kilometrda emas, metrdagi masofa.",
+    "estimated_seconds": 130,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "ratios_rates_proportions_units",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "According to NASA, Earth's diameter at the equator is 12,756 kilometers. Assume that Earth rotates once every 24 hours and that the equator is a circle. A point on the equator travels once around this circle each rotation. What is the speed of this point, in **meters per second**? (Round your answer to the nearest whole number.)",
+    "spr_answers": [
+      "464"
+    ],
+    "explanation_en": "In one rotation the point travels the circumference, $\\pi d = \\pi \\times 12{,}756 \\approx 40{,}074$ km, which is $40{,}074{,}000$ m. The time is $24 \\times 60 \\times 60 = 86{,}400$ seconds. Speed $= \\frac{40{,}074{,}000}{86{,}400} \\approx 463.8$ m/s, which rounds to 464. (Using 3.14 for $\\pi$ also gives 464.) Common errors: using the diameter instead of the circumference (about 148), or stopping at km/h ($\\frac{40{,}074}{24} \\approx 1{,}670$). Enter 464.",
+    "explanation_uz": "Bir aylanishda nuqta aylana uzunligini bosib o‘tadi: $\\pi d = \\pi \\times 12{,}756 \\approx 40{,}074$ km, ya’ni $40{,}074{,}000$ m. Vaqt: $24 \\times 60 \\times 60 = 86{,}400$ soniya. Tezlik $= \\frac{40{,}074{,}000}{86{,}400} \\approx 463.8$ m/s, butun songacha yaxlitlansa 464. ($\\pi$ o‘rniga 3.14 olinsa ham 464 chiqadi.) Ko‘p uchraydigan xatolar: aylana uzunligi o‘rniga diametrni olish (taxminan 148) yoki km/soatda to‘xtab qolish ($\\frac{40{,}074}{24} \\approx 1{,}670$). Javob: 464.",
+    "estimated_seconds": 130,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  }
+]

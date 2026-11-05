@@ -1,0 +1,162 @@
+[
+  {
+    "skill_code": "rhetorical_synthesis",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- Muhammad ibn Musa al-Khwarizmi was a mathematician and astronomer born around 780.\n- His name links him to Khwarazm, a region along the lower Amu Darya in present-day Uzbekistan and Turkmenistan.\n- He worked at the House of Wisdom, a center of learning in Baghdad.\n- One of his books has the Arabic word al-jabr in its title; the English word “algebra” comes from al-jabr.\n- In a Latin translation of another of his books, his name was written “Algoritmi”; the English word “algorithm” comes from this Latin form of his name.",
+    "stem": "The student wants to explain the origin of the word “algorithm”. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "option_a": "The English word “algebra” comes from al-jabr, an Arabic word in the title of one of al-Khwarizmi's books.",
+    "option_b": "Al-Khwarizmi's name links him to Khwarazm, a region in present-day Uzbekistan and Turkmenistan.",
+    "option_c": "The word “algorithm” comes from “Algoritmi,” the Latin form of al-Khwarizmi's name used in a translation of one of his books.",
+    "option_d": "Al-Khwarizmi, a mathematician born around 780, worked at the House of Wisdom in Baghdad.",
+    "correct": "C",
+    "explanation_en": "The goal is to explain where the word “algorithm” comes from. Choice C does this, using the note that the word comes from “Algoritmi,” the Latin form of al-Khwarizmi's name in a translation of his book.\n\nChoice A explains the origin of a different word, “algebra.” Choice B explains where al-Khwarizmi's own name comes from, not the word “algorithm.” Choice D gives facts about his life and work but does not mention the word at all.",
+    "explanation_uz": "Maqsad — “algorithm” so‘zi qayerdan kelib chiqqanini tushuntirish. C buni bajaradi: u so‘z al-Xorazmiy kitobining tarjimasida ishlatilgan ismining lotincha shakli “Algoritmi” dan kelib chiqqani haqidagi eslatmadan foydalanadi.\n\nA boshqa so‘z — “algebra” ning kelib chiqishini tushuntiradi. B “algorithm” so‘zini emas, al-Xorazmiyning o‘z ismi qayerdan kelganini tushuntiradi. D uning hayoti va faoliyati haqida ma’lumot beradi, lekin bu so‘zni umuman tilga olmaydi.",
+    "estimated_seconds": 55,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "rhetorical_synthesis",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- The Rosetta Stone is a stone slab carved with a decree issued in Egypt in 196 BCE.\n- French soldiers found it in 1799 near the town of Rosetta (Rashid) in northern Egypt.\n- The same decree is written on the stone in three scripts: Egyptian hieroglyphs, Demotic, and ancient Greek.\n- Scholars could already read ancient Greek, but no one could read hieroglyphs.\n- By comparing the texts, Jean-François Champollion was able to announce in 1822 that he had deciphered hieroglyphs.\n- The stone has been displayed at the British Museum in London since 1802.",
+    "stem": "The student wants to explain why the Rosetta Stone was useful for deciphering hieroglyphs. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "option_a": "Because the stone repeats the same decree in hieroglyphs and in ancient Greek, a language scholars could already read, they could compare the texts to work out what the hieroglyphs meant.",
+    "option_b": "The Rosetta Stone, which French soldiers found in 1799, has been displayed at the British Museum since 1802.",
+    "option_c": "The Rosetta Stone is carved with a decree that was issued in Egypt in 196 BCE.",
+    "option_d": "In 1822, Jean-François Champollion announced that he had deciphered Egyptian hieroglyphs.",
+    "correct": "A",
+    "explanation_en": "The goal is to explain why the stone helped scholars decipher hieroglyphs. Choice A gives the reason: the stone contains the same text in hieroglyphs and in ancient Greek, which scholars could already read, so the two versions could be compared.\n\nChoice B tells when the stone was found and where it is displayed, not why it was useful. Choice C tells what the inscription is and when it was issued. Choice D states that hieroglyphs were deciphered but does not explain how the stone made this possible.",
+    "explanation_uz": "Maqsad — tosh nima uchun iyerogliflarni o‘qishga yordam berganini tushuntirish. A sababini aytadi: toshda bir xil matn iyerogliflarda ham, olimlar allaqachon o‘qiy oladigan qadimgi yunon tilida ham yozilgan, shuning uchun ikki variantni solishtirish mumkin bo‘lgan.\n\nB tosh qachon topilgani va qayerda saqlanayotganini aytadi, nima uchun foydali bo‘lganini emas. C yozuv nima ekanini va qachon chiqarilganini aytadi. D iyerogliflar o‘qilganini ta’kidlaydi, lekin tosh buni qanday imkon berganini tushuntirmaydi.",
+    "estimated_seconds": 55,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "rhetorical_synthesis",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- Shahrisabz is a city in southern Uzbekistan.\n- Its name means “green city” in Persian.\n- In earlier centuries, the city was called Kesh.\n- Timur, the founder of the Timurid Empire, was born near Kesh in the fourteenth century.\n- In 1380, Timur began building a grand palace in the city called Ak-Saray (“White Palace”).\n- In 2000, the historic center of Shahrisabz was added to UNESCO's World Heritage List.",
+    "stem": "The student wants to emphasize the city's connection to Timur. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "option_a": "Shahrisabz, a city in southern Uzbekistan, has a name that means “green city” in Persian.",
+    "option_b": "In 2000, the historic center of Shahrisabz was added to UNESCO's World Heritage List.",
+    "option_c": "Shahrisabz, a city in southern Uzbekistan, was once called Kesh.",
+    "option_d": "Timur, the founder of the Timurid Empire, was born near Shahrisabz (then called Kesh) and later began building his Ak-Saray palace there in 1380.",
+    "correct": "D",
+    "explanation_en": "The goal is to emphasize the city's connection to Timur. Choice D does this by stating that Timur was born near the city and later began building his Ak-Saray palace there.\n\nChoices A, B, and C each give a true fact about Shahrisabz—the meaning of its name, its UNESCO listing, and its former name—but none of them mentions Timur.",
+    "explanation_uz": "Maqsad — shaharning Temur bilan bog‘liqligini ta’kidlash. D buni bajaradi: Temur shu shahar yaqinida tug‘ilgani va keyinchalik u yerda Oqsaroy saroyini qura boshlagani aytilgan.\n\nA, B va C Shahrisabz haqida to‘g‘ri ma’lumot beradi — nomining ma’nosi, UNESCO ro‘yxatiga kiritilgani va avvalgi nomi — lekin ularning hech birida Temur tilga olinmagan.",
+    "estimated_seconds": 50,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "rhetorical_synthesis",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- The Tashkent Metro is the subway system of Tashkent, the capital of Uzbekistan.\n- Its first line opened on November 6, 1977, with nine stations.\n- It was the first metro system in Central Asia.\n- In 1966, a powerful earthquake struck Tashkent.\n- Planning for the metro began in 1968, and its tunnels were designed to withstand strong earthquakes.\n- Each station has its own decorative theme, with interiors made from materials such as marble, granite, and ceramics.",
+    "stem": "The student wants to emphasize that the Tashkent Metro was built with earthquakes in mind. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "option_a": "The Tashkent Metro, which opened in 1977 with nine stations, was the first metro system in Central Asia.",
+    "option_b": "Planned soon after a powerful earthquake struck the city in 1966, the Tashkent Metro has tunnels that were designed to withstand strong earthquakes.",
+    "option_c": "Each station of the Tashkent Metro has its own decorative theme, with interiors made from marble, granite, and ceramics.",
+    "option_d": "In 1966, a powerful earthquake struck Tashkent, two years before planning for the city's metro began.",
+    "correct": "B",
+    "explanation_en": "The goal is to emphasize that the metro was built with earthquakes in mind. Choice B does this by stating that the metro's tunnels were designed to withstand strong earthquakes and by linking the metro's planning to the 1966 earthquake.\n\nChoice A emphasizes that the metro was the first in Central Asia. Choice C describes the stations' decoration. Choice D mentions the earthquake, but it says only that the earthquake came before planning began; it does not say that the metro was designed to withstand earthquakes.",
+    "explanation_uz": "Maqsad — metro zilzilalarni hisobga olib qurilganini ta’kidlash. B buni bajaradi: unda metro tunnellari kuchli zilzilalarga bardosh beradigan qilib loyihalangani aytilgan va metroni rejalashtirish 1966-yilgi zilzila bilan bog‘langan.\n\nA metro Markaziy Osiyodagi birinchi metro ekanini ta’kidlaydi. C bekatlarning bezagini tasvirlaydi. D zilzilani eslatadi, lekin faqat u rejalashtirishdan oldin bo‘lganini aytadi; metro zilzilaga bardoshli qilib loyihalangani haqida hech narsa demaydi.",
+    "estimated_seconds": 65,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "rhetorical_synthesis",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- The Caspian Sea is bordered by Kazakhstan, Turkmenistan, Iran, Azerbaijan, and Russia.\n- It is the largest inland body of water on Earth by surface area, covering about 371,000 square kilometers.\n- Its water is slightly salty.\n- At its deepest point, the Caspian Sea is about 1,025 meters deep.\n- Lake Baikal, in southern Siberia, Russia, is the deepest lake in the world, more than 1,600 meters deep at its deepest point.\n- Baikal is a freshwater lake that holds about 20 percent of Earth's fresh surface water.",
+    "stem": "The student wants to contrast the records held by the Caspian Sea and Lake Baikal. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "option_a": "The Caspian Sea covers about 371,000 square kilometers and is about 1,025 meters deep at its deepest point.",
+    "option_b": "Lake Baikal, which is more than 1,600 meters deep, holds about 20 percent of Earth's fresh surface water.",
+    "option_c": "The Caspian Sea and Lake Baikal are both inland bodies of water, and both are more than 1,000 meters deep at their deepest points.",
+    "option_d": "While the Caspian Sea is the largest inland body of water on Earth by surface area, Lake Baikal is the deepest lake in the world.",
+    "correct": "D",
+    "explanation_en": "The goal is to contrast the records the two bodies of water hold. Choice D names both records—the Caspian Sea is the largest inland body of water by surface area, and Lake Baikal is the deepest lake—and uses “While” to set them against each other.\n\nChoice A describes only the Caspian Sea, and Choice B describes only Lake Baikal, so neither makes a contrast. Choice C points out similarities between the two rather than a contrast, and it mentions neither record.",
+    "explanation_uz": "Maqsad — ikki suv havzasiga tegishli rekordlarni bir-biriga qarama-qarshi qo‘yish. D ikkala rekordni ham aytadi — Kaspiy dengizi maydoni bo‘yicha eng katta ichki suv havzasi, Baykal esa eng chuqur ko‘l — va “While” orqali ularni bir-biriga qarshi qo‘yadi.\n\nA faqat Kaspiy dengizini, B esa faqat Baykal ko‘lini tasvirlaydi, shuning uchun ularda qarama-qarshilik yo‘q. C farqni emas, o‘xshashliklarni ko‘rsatadi va rekordlarning hech birini tilga olmaydi.",
+    "estimated_seconds": 65,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "rhetorical_synthesis",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- In 1928, Scottish scientist Alexander Fleming noticed that mold had contaminated a dish of bacteria in his laboratory.\n- The bacteria near the mold had been killed.\n- Fleming called the bacteria-killing substance produced by the mold penicillin.\n- Fleming lacked the chemistry expertise to turn penicillin into a stable, usable drug.\n- In 1940, Oxford scientists Howard Florey and Ernst Chain made the chemical advances needed to develop penicillin into a medicine.\n- In 1945, Fleming, Florey, and Chain shared the Nobel Prize in Physiology or Medicine.",
+    "stem": "The student wants to emphasize that turning Fleming's discovery into a medicine depended on the work of other scientists. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "option_a": "Although Fleming discovered penicillin in 1928, he could not turn it into a usable drug; that step depended on Howard Florey and Ernst Chain, who made the necessary chemical advances in 1940.",
+    "option_b": "In 1945, Alexander Fleming, Howard Florey, and Ernst Chain shared the Nobel Prize in Physiology or Medicine.",
+    "option_c": "In 1928, Fleming noticed that bacteria near a patch of mold in his laboratory had been killed.",
+    "option_d": "Fleming called the bacteria-killing substance produced by the mold he found in 1928 penicillin.",
+    "correct": "A",
+    "explanation_en": "The goal is to emphasize that making penicillin into a medicine depended on scientists other than Fleming. Choice A does this: it states that Fleming could not turn penicillin into a usable drug and that Florey and Chain made the advances that did.\n\nChoice B shows that the three scientists shared a prize, but it does not explain what Florey and Chain contributed or that the medicine depended on their work. Choices C and D describe only Fleming's own discovery.",
+    "explanation_uz": "Maqsad — penitsillinni dori holiga keltirish Flemingdan boshqa olimlarning ishiga bog‘liq bo‘lganini ta’kidlash. A buni bajaradi: Fleming penitsillinni foydalanish mumkin bo‘lgan dori qila olmagani, buni Flori va Cheyn amalga oshirgani aytilgan.\n\nB uch olim mukofotni bo‘lishganini ko‘rsatadi, lekin Flori va Cheyn nima qilganini yoki dori ularning ishiga bog‘liq bo‘lganini tushuntirmaydi. C va D faqat Flemingning o‘z kashfiyotini tasvirlaydi.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "rhetorical_synthesis",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- Biologists Peter and Rosemary Grant studied medium ground finches on Daphne Major, a small island in the Galápagos.\n- In 1977, a severe drought struck the island, and plants produced few seeds.\n- The finches quickly ate the small, soft seeds, leaving mainly large seeds with tough husks.\n- Only finches with large, deep beaks could crack these tough seeds.\n- The island's population of medium ground finches fell from about 1,400 birds to a few hundred.\n- Before the drought, the finches' average beak depth was 9.2 millimeters; among finches born after the drought, in 1978, it was 9.7 millimeters.",
+    "stem": "The student wants to explain why the average beak depth of the island's medium ground finches increased after the drought. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "option_a": "After a severe drought in 1977, the average beak depth of medium ground finches on Daphne Major increased from 9.2 to 9.7 millimeters.",
+    "option_b": "During the 1977 drought on Daphne Major, the population of medium ground finches fell from about 1,400 birds to a few hundred.",
+    "option_c": "Because the drought left mainly large, tough seeds that only deep-beaked finches could crack, those finches were the ones that survived, and the average beak depth rose from 9.2 millimeters before the drought to 9.7 millimeters among finches born in 1978.",
+    "option_d": "Peter and Rosemary Grant studied how a 1977 drought affected the medium ground finches of Daphne Major, a small island in the Galápagos.",
+    "correct": "C",
+    "explanation_en": "The goal is to explain why the average beak depth increased. Choice C gives the cause: the drought left mainly tough seeds that only deep-beaked finches could crack, so those finches survived, and the next generation had deeper beaks on average.\n\nChoice A reports the increase in beak depth but does not explain why it happened. Choice B describes the drop in population without connecting it to beak size. Choice D describes the study's focus without giving any of its findings.",
+    "explanation_uz": "Maqsad — tumshuqning o‘rtacha chuqurligi nima uchun oshganini tushuntirish. C sababini aytadi: qurg‘oqchilikdan keyin asosan faqat chuqur tumshuqli vyuroklar chaqa oladigan qattiq urug‘lar qolgan, shuning uchun aynan o‘sha qushlar omon qolgan va keyingi avlodning tumshug‘i o‘rtacha chuqurroq bo‘lgan.\n\nA tumshuq chuqurligi oshganini aytadi, lekin nima uchun oshganini tushuntirmaydi. B populyatsiya kamayganini tasvirlaydi, ammo buni tumshuq kattaligi bilan bog‘lamaydi. D tadqiqot nimaga bag‘ishlanganini aytadi, lekin uning natijalaridan hech birini keltirmaydi.",
+    "estimated_seconds": 80,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "rhetorical_synthesis",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- The platypus lives in rivers and streams in eastern Australia, including Tasmania.\n- It has a flat, duck-like bill and hunts for small animals underwater.\n- The short-beaked echidna lives throughout Australia and is covered with sharp spines.\n- It uses a long, sticky tongue to eat ants and termites.\n- Platypuses and echidnas are monotremes, the only mammals that lay eggs.\n- Like other mammals, monotremes feed their young milk.",
+    "stem": "The student wants to emphasize a similarity between the platypus and the short-beaked echidna. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "option_a": "The platypus has a flat, duck-like bill, while the short-beaked echidna is covered with sharp spines.",
+    "option_b": "Although the platypus hunts underwater and the short-beaked echidna eats ants and termites, both animals are monotremes: mammals that lay eggs.",
+    "option_c": "Monotremes are the only mammals that lay eggs, but like other mammals, they feed their young milk.",
+    "option_d": "The platypus lives in rivers and streams in eastern Australia, while the short-beaked echidna lives throughout Australia.",
+    "correct": "B",
+    "explanation_en": "The goal is to emphasize a similarity between the platypus and the short-beaked echidna. Choice B names both animals and states what they have in common: both are monotremes, mammals that lay eggs. Its opening clause mentions their differences only to highlight that shared trait.\n\nChoices A and D each name both animals but emphasize differences—in appearance and in where they live. Choice C does describe a similarity, but it is a similarity between monotremes and other mammals, and it does not mention the platypus or the echidna.",
+    "explanation_uz": "Maqsad — o‘rdakburun va qisqa tumshuqli exidna orasidagi o‘xshashlikni ta’kidlash. B ikkala hayvonni ham nomlaydi va ularning umumiy jihatini aytadi: ikkalasi ham monotremlar, ya’ni tuxum qo‘yadigan sutemizuvchilar. Gapning birinchi qismidagi farqlar faqat shu umumiy belgini ajratib ko‘rsatish uchun keltirilgan.\n\nA va D ikkala hayvonni nomlaydi, lekin farqlarni — tashqi ko‘rinish va yashash joyidagi farqni — ta’kidlaydi. C haqiqatan ham o‘xshashlikni tasvirlaydi, ammo bu monotremlar bilan boshqa sutemizuvchilar orasidagi o‘xshashlik; unda o‘rdakburun ham, exidna ham tilga olinmagan.",
+    "estimated_seconds": 80,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  }
+]

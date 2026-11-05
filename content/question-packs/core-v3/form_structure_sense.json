@@ -1,0 +1,162 @@
+[
+  {
+    "skill_code": "form_structure_sense",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "In January 1610, Galileo Galilei pointed his telescope at Jupiter and spotted four small points of light near the planet. Over several nights, he tracked the four ______ changing positions and concluded that they were moons orbiting Jupiter.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "option_a": "object's",
+    "option_b": "objects",
+    "option_c": "objects'",
+    "option_d": "objects's",
+    "correct": "C",
+    "explanation_en": "The blank needs a plural possessive noun: the changing positions belong to the four objects. A plural noun that ends in -s forms its possessive by adding only an apostrophe, so “objects'” (choice C) is correct.\n\nChoice A, “object's,” is singular possessive, but there are four objects. Choice B, “objects,” is plural but not possessive. Choice D, “objects's,” adds an extra s that is not used for plural nouns ending in -s.",
+    "explanation_uz": "Bo‘sh joyga ko‘plikdagi qaratqich shakl kerak: o‘zgarib turgan joylashuvlar to‘rtta jismga tegishli. -s bilan tugaydigan ko‘plikdagi otga faqat apostrof qo‘shiladi, shuning uchun “objects'” (C) to‘g‘ri.\n\nA — “object's” birlikdagi qaratqich shakl, jismlar esa to‘rtta. B — “objects” ko‘plikda, lekin qaratqich shaklda emas. D — “objects's” da -s bilan tugaydigan ko‘plikdagi otlarda ishlatilmaydigan ortiqcha s bor.",
+    "estimated_seconds": 45,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "form_structure_sense",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "In 1869, Russian chemist Dmitri Mendeleev ______ a table that arranged the known chemical elements in order of increasing atomic weight. He left gaps in the table for elements that had not yet been discovered.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "option_a": "published",
+    "option_b": "publishes",
+    "option_c": "will publish",
+    "option_d": "is publishing",
+    "correct": "A",
+    "explanation_en": "The sentence describes an event that happened at a specific time in the past, 1869, and the next sentence also uses the past tense (“left”). The simple past tense “published” is therefore correct, choice A.\n\nChoice B (“publishes”) and choice D (“is publishing”) are present-tense forms, and choice C (“will publish”) is a future form. None of them fits an action completed in 1869.",
+    "explanation_uz": "Gapda o‘tmishdagi aniq vaqtda — 1869-yilda sodir bo‘lgan voqea tasvirlangan, keyingi gapda ham o‘tgan zamon (“left”) ishlatilgan. Shuning uchun oddiy o‘tgan zamondagi “published” to‘g‘ri, javob A.\n\nB (“publishes”) va D (“is publishing”) hozirgi zamon shakllari, C (“will publish”) esa kelasi zamon shakli. Ularning hech biri 1869-yilda tugallangan harakatga mos kelmaydi.",
+    "estimated_seconds": 40,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "form_structure_sense",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "During the Antarctic winter, male emperor penguins huddle together in large groups to survive bitter cold and wind. By continually shuffling between the cold outer edge of the huddle and its warm center, ______ take turns sheltering from the wind.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "option_a": "it",
+    "option_b": "he",
+    "option_c": "one",
+    "option_d": "they",
+    "correct": "D",
+    "explanation_en": "The pronoun in the blank refers to “male emperor penguins,” a plural noun, and it must agree with the plural verb “take.” The plural pronoun “they” does both, so choice D is correct.\n\nChoices A (“it”), B (“he”), and C (“one”) are singular pronouns. They do not agree with the plural antecedent “penguins” or with the plural verb “take.”",
+    "explanation_uz": "Bo‘sh joydagi olmosh “male emperor penguins” ga, ya’ni ko‘plikdagi otga ishora qiladi va ko‘plikdagi “take” kesimiga mos kelishi kerak. Ko‘plikdagi “they” olmoshi ikkalasiga ham mos, shuning uchun to‘g‘ri javob D.\n\nA (“it”), B (“he”) va C (“one”) birlikdagi olmoshlar. Ular ko‘plikdagi “penguins” so‘ziga ham, ko‘plikdagi “take” kesimiga ham mos kelmaydi.",
+    "estimated_seconds": 45,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "form_structure_sense",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "The Shah-i-Zinda necropolis in Samarkand, a narrow street lined with more than twenty mausoleums and other buildings, ______ built over roughly eight centuries, from the eleventh century to the nineteenth.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "option_a": "were",
+    "option_b": "was",
+    "option_c": "have been",
+    "option_d": "are being",
+    "correct": "B",
+    "explanation_en": "The subject of the sentence is the singular noun “necropolis” (“The Shah-i-Zinda necropolis in Samarkand”). The long phrase that follows, “a narrow street lined with more than twenty mausoleums and other buildings,” only describes the necropolis and does not change the subject's number. A singular verb is needed, and because the building took place in the past, “was” (choice B) is correct.\n\nChoices A (“were”), C (“have been”), and D (“are being”) are plural verbs. They might seem to agree with the nearby plural nouns “mausoleums” and “buildings,” but those nouns are not the subject.",
+    "explanation_uz": "Gapning egasi — birlikdagi “necropolis” (“The Shah-i-Zinda necropolis in Samarkand”). Undan keyingi uzun ibora — “a narrow street lined with more than twenty mausoleums and other buildings” — faqat nekropolni tasvirlaydi va eganing sonini o‘zgartirmaydi. Birlikdagi fe’l kerak, qurilish esa o‘tmishda bo‘lgani uchun “was” (B) to‘g‘ri.\n\nA (“were”), C (“have been”) va D (“are being”) ko‘plikdagi fe’llar. Ular yaqin turgan ko‘plikdagi “mausoleums” va “buildings” so‘zlariga mosdek ko‘rinishi mumkin, lekin bu so‘zlar ega emas.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "form_structure_sense",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "For decades, coelacanths were known to scientists only from fossils, and researchers believed that these large fish had died out tens of millions of years ago. Caught by a fishing boat off the coast of South Africa in 1938, ______",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "option_a": "a living coelacanth astonished scientists who had assumed that the group was extinct.",
+    "option_b": "scientists who had assumed that the group was extinct were astonished by a living coelacanth.",
+    "option_c": "the discovery of a living coelacanth astonished scientists who had assumed that the group was extinct.",
+    "option_d": "the news of a living coelacanth astonished scientists who had assumed that the group was extinct.",
+    "correct": "A",
+    "explanation_en": "The sentence begins with the modifier “Caught by a fishing boat off the coast of South Africa in 1938.” A modifier like this must be followed immediately by the noun it describes. The thing that was caught is the coelacanth, so the main clause must begin with “a living coelacanth.” Choice A is correct.\n\nChoice B places “scientists” right after the modifier, illogically saying that the scientists were caught by a fishing boat. Choices C and D place “the discovery” and “the news” after the modifier, but neither a discovery nor news can be caught by a fishing boat.",
+    "explanation_uz": "Gap “Caught by a fishing boat off the coast of South Africa in 1938” aniqlovchi iborasi bilan boshlanadi. Bunday iboradan keyin darhol u tasvirlayotgan ot kelishi kerak. Qayiq tutgan narsa — selakant, shuning uchun bosh gap “a living coelacanth” bilan boshlanishi kerak. To‘g‘ri javob A.\n\nB iboradan keyin “scientists” ni qo‘yadi — natijada olimlarni baliqchi qayiq tutgan degan mantiqsiz ma’no chiqadi. C va D iboradan keyin “the discovery” va “the news” ni qo‘yadi, lekin kashfiyotni ham, xabarni ham qayiq tuta olmaydi.",
+    "estimated_seconds": 65,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "form_structure_sense",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "The Indian mathematician and astronomer Brahmagupta, in a work that he completed in 628 CE, ______ rules for calculating with zero, which he defined as the result of subtracting a number from itself.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "option_a": "giving",
+    "option_b": "having given",
+    "option_c": "gave",
+    "option_d": "to give",
+    "correct": "C",
+    "explanation_en": "The subject of the sentence is “Brahmagupta,” but without the blank the sentence has no main verb: “in a work that he completed in 628 CE” is a phrase, and “completed” belongs to that phrase. The blank must supply a finite verb for the subject. “Gave” is a finite past-tense verb, so choice C is correct.\n\nChoices A (“giving”), B (“having given”), and D (“to give”) are nonfinite forms—a participle, a perfect participle, and an infinitive. None of them can serve as the main verb of a sentence, so each choice leaves the sentence incomplete.",
+    "explanation_uz": "Gapning egasi — “Brahmagupta”, lekin bo‘sh joysiz gapda asosiy kesim yo‘q: “in a work that he completed in 628 CE” — ibora, “completed” esa shu iboraga tegishli. Bo‘sh joyga egaga mos shaxsli fe’l kerak. “Gave” — o‘tgan zamondagi shaxsli fe’l, shuning uchun to‘g‘ri javob C.\n\nA (“giving”), B (“having given”) va D (“to give”) — shaxssiz shakllar: sifatdosh, tugallangan sifatdosh va infinitiv. Ularning hech biri gapning asosiy kesimi bo‘la olmaydi, shuning uchun gap tugallanmay qoladi.",
+    "estimated_seconds": 65,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "form_structure_sense",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Voyager 1 was launched from Cape Canaveral, Florida, in 1977 to study Jupiter and Saturn. Since then, the spacecraft ______ farther from Earth than any other human-made object, and in 2012 it became the first spacecraft to enter interstellar space.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "option_a": "traveled",
+    "option_b": "travels",
+    "option_c": "had traveled",
+    "option_d": "has traveled",
+    "correct": "D",
+    "explanation_en": "The phrase “Since then” describes an action that began in the past (1977) and continues up to the present. The present perfect tense is used for such actions, so “has traveled” (choice D) is correct.\n\nChoice A (“traveled”) is the simple past tense, which describes a finished action and does not fit with “since then.” Choice B (“travels”) is the simple present tense, which does not connect the action to its starting point in the past. Choice C (“had traveled”) is the past perfect tense, which describes an action completed before another past event; no such later past event is given.",
+    "explanation_uz": "“Since then” iborasi o‘tmishda (1977-yilda) boshlanib, hozirgacha davom etayotgan harakatni bildiradi. Bunday harakatlar uchun “present perfect” zamoni ishlatiladi, shuning uchun “has traveled” (D) to‘g‘ri.\n\nA (“traveled”) oddiy o‘tgan zamon — u tugallangan harakatni bildiradi va “since then” ga mos kelmaydi. B (“travels”) oddiy hozirgi zamon — u harakatni o‘tmishdagi boshlanish nuqtasi bilan bog‘lamaydi. C (“had traveled”) “past perfect” zamoni — u o‘tmishdagi boshqa voqeadan oldin tugagan harakatni bildiradi, matnda esa bunday keyingi o‘tmish voqeasi yo‘q.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "form_structure_sense",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Emmanuelle Charpentier and Jennifer Doudna, whose 2012 research showed how a defense system that bacteria use against viruses could be turned into a precise tool for editing DNA, ______ awarded the 2020 Nobel Prize in Chemistry.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "option_a": "was",
+    "option_b": "were",
+    "option_c": "is",
+    "option_d": "has been",
+    "correct": "B",
+    "explanation_en": "The subject of the sentence is “Emmanuelle Charpentier and Jennifer Doudna,” two people joined by “and,” so it requires a plural verb. The long clause beginning with “whose” separates the subject from the verb but does not change its number. Because the prize was awarded in the past (2020), the plural past-tense verb “were” (choice B) is correct.\n\nChoices A (“was”), C (“is”), and D (“has been”) are singular verbs. They may seem to fit because the singular nouns “system,” “tool,” and “DNA” appear just before the blank, but those words are part of the interrupting clause, not the subject.",
+    "explanation_uz": "Gapning egasi — “Emmanuelle Charpentier and Jennifer Doudna”, ya’ni “and” bilan bog‘langan ikki kishi, shuning uchun ko‘plikdagi fe’l kerak. “whose” bilan boshlanadigan uzun ergash gap egani kesimdan ajratib turadi, lekin eganing sonini o‘zgartirmaydi. Mukofot o‘tmishda (2020-yilda) berilgani uchun ko‘plikdagi o‘tgan zamon fe’li “were” (B) to‘g‘ri.\n\nA (“was”), C (“is”) va D (“has been”) birlikdagi fe’llar. Bo‘sh joydan oldin birlikdagi “system”, “tool” va “DNA” so‘zlari kelgani uchun ular to‘g‘ridek ko‘rinishi mumkin, lekin bu so‘zlar ega emas, oraliq ergash gapning qismi.",
+    "estimated_seconds": 75,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  }
+]

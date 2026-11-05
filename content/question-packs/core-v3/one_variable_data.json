@@ -1,0 +1,147 @@
+[
+  {
+    "skill_code": "one_variable_data",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "What is the range of the 12 monthly mean temperatures shown in the table?",
+    "passage": "The table shows the mean temperature in Tashkent, Uzbekistan, for each month, based on climate data for 1991–2020.\n\n| Month | Mean temperature (°C) |\n| --- | ---: |\n| January | 3.0 |\n| February | 4.9 |\n| March | 10.8 |\n| April | 16.2 |\n| May | 21.2 |\n| June | 26.0 |\n| July | 28.0 |\n| August | 26.6 |\n| September | 21.5 |\n| October | 15.2 |\n| November | 9.0 |\n| December | 4.3 |",
+    "option_a": "3.0°C",
+    "option_b": "15.6°C",
+    "option_c": "25.0°C",
+    "option_d": "28.0°C",
+    "correct": "C",
+    "explanation_en": "The range is the greatest value minus the least value. The greatest monthly mean is 28.0°C (July), and the least is 3.0°C (January), so the range is $28.0 - 3.0 = 25.0$°C. Choice D is only the greatest value, and choice A is only the least value. Choice B, about 15.6°C, is the mean of the 12 values, which measures center, not spread.",
+    "explanation_uz": "Oraliq (range) — eng katta qiymatdan eng kichik qiymatni ayirish. Eng katta oylik o‘rtacha harorat 28.0°C (iyul), eng kichigi 3.0°C (yanvar), demak oraliq $28.0 - 3.0 = 25.0$°C. D javob — faqat eng katta qiymat, A javob — faqat eng kichik qiymat. B javob (taxminan 15.6°C) — 12 ta qiymatning o‘rtachasi; u tarqoqlikni emas, markazni o‘lchaydi.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "one_variable_data",
+    "difficulty": "easy",
+    "question_type": "spr",
+    "stem": "The list shows the number of gold medals won by athletes from Uzbekistan at each of the 8 Summer Olympics from 1996 to 2024, in order.\n\n0, 1, 2, 0, 0, 4, 3, 8\n\nWhat is the median number of gold medals won per Summer Olympics?",
+    "spr_answers": [
+      "1.5",
+      "3/2"
+    ],
+    "explanation_en": "Order the values: 0, 0, 0, 1, 2, 3, 4, 8. There are 8 values, an even number, so the median is the mean of the 4th and 5th values: $\\frac{1 + 2}{2} = 1.5$. Taking the middle values of the unordered list (0 and 0) gives 0, which is wrong; the list must be ordered first. Enter 1.5 or 3/2.",
+    "explanation_uz": "Qiymatlarni tartiblaymiz: 0, 0, 0, 1, 2, 3, 4, 8. Qiymatlar soni 8 ta (juft), shuning uchun mediana 4- va 5-qiymatlarning o‘rtachasi: $\\frac{1 + 2}{2} = 1.5$. Tartiblanmagan ro‘yxatning o‘rtadagi qiymatlarini (0 va 0) olish 0 ni beradi — bu xato; avval ro‘yxatni tartiblash kerak. Javob maydoniga 1.5 yoki 3/2 deb yozing.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "one_variable_data",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "The table shows the total number of medals won by each of the 5 Central Asian countries at the 2024 Summer Olympics in Paris. What are the mean and the median of these 5 totals?",
+    "passage": "| Country | Total medals |\n| --- | ---: |\n| Kazakhstan | 7 |\n| Kyrgyzstan | 6 |\n| Tajikistan | 3 |\n| Turkmenistan | 0 |\n| Uzbekistan | 13 |",
+    "option_a": "Mean: 5.8; median: 3",
+    "option_b": "Mean: 5.8; median: 6",
+    "option_c": "Mean: 6; median: 5.8",
+    "option_d": "Mean: 7.25; median: 6.5",
+    "correct": "B",
+    "explanation_en": "The sum of the totals is $7 + 6 + 3 + 0 + 13 = 29$, so the mean is $\\frac{29}{5} = 5.8$. In order, the totals are 0, 3, 6, 7, 13, and the middle (3rd) value is 6, so the median is 6. Choice A takes the middle row of the table (Tajikistan, 3) without ordering the values. Choice C switches the mean and the median. Choice D leaves out Turkmenistan's total of 0; a value of 0 is still a data value and must be included.",
+    "explanation_uz": "Jami medallar yig‘indisi $7 + 6 + 3 + 0 + 13 = 29$, demak o‘rtacha $\\frac{29}{5} = 5.8$. Tartiblangan qiymatlar: 0, 3, 6, 7, 13; o‘rtadagi (3-) qiymat 6, demak mediana 6. A javob qiymatlarni tartiblamasdan jadvalning o‘rta qatorini (Tojikiston, 3) olgan. C javob o‘rtacha va medianani almashtirib qo‘ygan. D javob Turkmanistonning 0 natijasini tashlab yuborgan; 0 ham ma’lumot qiymati, uni hisobga olish shart.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "one_variable_data",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "Which of the following is true about the standard deviations of the two data sets?",
+    "passage": "The table shows the mean temperature, in degrees Celsius, for each month in Tashkent, Uzbekistan, and in Singapore, based on long-term climate records.\n\n| Month | Tashkent | Singapore |\n| --- | ---: | ---: |\n| Jan | 3.0 | 26.8 |\n| Feb | 4.9 | 27.3 |\n| Mar | 10.8 | 27.9 |\n| Apr | 16.2 | 28.2 |\n| May | 21.2 | 28.6 |\n| Jun | 26.0 | 28.5 |\n| Jul | 28.0 | 28.2 |\n| Aug | 26.6 | 28.1 |\n| Sep | 21.5 | 28.0 |\n| Oct | 15.2 | 27.9 |\n| Nov | 9.0 | 27.2 |\n| Dec | 4.3 | 26.8 |",
+    "option_a": "The standard deviation of the Singapore data is greater, because Singapore's monthly mean temperatures are higher.",
+    "option_b": "The two standard deviations are equal, because each data set has 12 values.",
+    "option_c": "The standard deviation of the Singapore data is greater, because its mean is greater than the mean of the Tashkent data.",
+    "option_d": "The standard deviation of the Tashkent data is greater, because Tashkent's monthly mean temperatures are spread farther from their mean.",
+    "correct": "D",
+    "explanation_en": "Standard deviation measures how far the values tend to be from their mean, not how large the values are. Tashkent's values range from 3.0 to 28.0 (range 25.0), while Singapore's range from 26.8 to 28.6 (range 1.8). Tashkent's values are much more spread out, so its standard deviation is greater (about 8.7°C compared with about 0.6°C). Choices A and C confuse large values or a large mean with large spread. Choice B is wrong because having the same number of values says nothing about spread.",
+    "explanation_uz": "Standart chetlanish qiymatlarning o‘z o‘rtachasidan qanchalik uzoqligini o‘lchaydi, qiymatlarning kattaligini emas. Toshkent qiymatlari 3.0 dan 28.0 gacha (oraliq 25.0), Singapurniki esa 26.8 dan 28.6 gacha (oraliq 1.8). Toshkent qiymatlari ancha tarqoq, shuning uchun uning standart chetlanishi katta (taxminan 8.7°C, Singapurda esa taxminan 0.6°C). A va C javoblar katta qiymatlar yoki katta o‘rtachani katta tarqoqlik bilan adashtirgan. B javob noto‘g‘ri: qiymatlar soni bir xil bo‘lishi tarqoqlik haqida hech narsa demaydi.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "one_variable_data",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "What is the median of the numbers of births, in thousands, shown in the table?",
+    "passage": "The table shows the number of registered births in Uzbekistan, in thousands, for each year from 2015 to 2024.\n\n| Year | Births (thousands) |\n| --- | ---: |\n| 2015 | 734.1 |\n| 2016 | 726.2 |\n| 2017 | 715.5 |\n| 2018 | 768.5 |\n| 2019 | 815.0 |\n| 2020 | 841.8 |\n| 2021 | 905.2 |\n| 2022 | 932.2 |\n| 2023 | 962.0 |\n| 2024 | 926.4 |",
+    "spr_answers": [
+      "828.4"
+    ],
+    "explanation_en": "Order the 10 values: 715.5, 726.2, 734.1, 768.5, **815.0**, **841.8**, 905.2, 926.4, 932.2, 962.0. With an even number of values, the median is the mean of the two middle (5th and 6th) values: $\\frac{815.0 + 841.8}{2} = \\frac{1{,}656.8}{2} = 828.4$. The mean of the 10 values, about 832.7, is a different measure. Enter 828.4.",
+    "explanation_uz": "10 ta qiymatni tartiblaymiz: 715.5, 726.2, 734.1, 768.5, **815.0**, **841.8**, 905.2, 926.4, 932.2, 962.0. Qiymatlar soni juft, shuning uchun mediana o‘rtadagi ikki (5- va 6-) qiymatning o‘rtachasi: $\\frac{815.0 + 841.8}{2} = \\frac{1{,}656.8}{2} = 828.4$. 10 ta qiymatning o‘rtachasi (taxminan 832.7) — boshqa ko‘rsatkich. Javob: 828.4.",
+    "estimated_seconds": 100,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "one_variable_data",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "The table shows the diameter, in kilometers, of each of the 8 planets in the solar system. Which of the following gives the mean and the median of these 8 diameters, to the nearest kilometer?",
+    "passage": "According to NASA, the diameters of the planets are as shown.\n\n| Planet | Diameter (km) |\n| --- | ---: |\n| Mercury | 4,879 |\n| Venus | 12,104 |\n| Earth | 12,756 |\n| Mars | 6,792 |\n| Jupiter | 142,984 |\n| Saturn | 120,536 |\n| Uranus | 51,118 |\n| Neptune | 49,528 |",
+    "option_a": "Mean: 50,087; median: 31,142",
+    "option_b": "Mean: 50,087; median: 74,888",
+    "option_c": "Mean: 31,142; median: 50,087",
+    "option_d": "Mean: 74,888; median: 31,142",
+    "correct": "A",
+    "explanation_en": "The sum of the diameters is 400,697, so the mean is $\\frac{400{,}697}{8} \\approx 50{,}087$ km. Ordered, the diameters are 4,879; 6,792; 12,104; 12,756; 49,528; 51,118; 120,536; 142,984. The median is the mean of the 4th and 5th values: $\\frac{12{,}756 + 49{,}528}{2} = 31{,}142$ km. The mean is much greater than the median because of the two very large values (Jupiter and Saturn). Choice B averages the middle two rows of the **unordered** table (Mars and Jupiter). Choice C switches the two measures, and choice D also uses the unordered middle values.",
+    "explanation_uz": "Diametrlar yig‘indisi 400,697, demak o‘rtacha $\\frac{400{,}697}{8} \\approx 50{,}087$ km. Tartiblangan diametrlar: 4,879; 6,792; 12,104; 12,756; 49,528; 51,118; 120,536; 142,984. Mediana — 4- va 5-qiymatlarning o‘rtachasi: $\\frac{12{,}756 + 49{,}528}{2} = 31{,}142$ km. Ikki juda katta qiymat (Yupiter va Saturn) tufayli o‘rtacha medianadan ancha katta. B javob **tartiblanmagan** jadvalning o‘rtadagi ikki qatorini (Mars va Yupiter) o‘rtachalagan. C javob ikki ko‘rsatkichni almashtirgan, D javob ham tartiblanmagan o‘rtadagi qiymatlardan foydalangan.",
+    "estimated_seconds": 110,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "one_variable_data",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "The 3 months with the least precipitation are removed from the data. Compared with the original 12 values, how do the mean and the median of the remaining 9 values change?",
+    "passage": "The table shows the average monthly precipitation, in millimeters, in Tashkent, Uzbekistan, based on climate data for 1991–2020.\n\n| Month | Precipitation (mm) |\n| --- | ---: |\n| January | 55 |\n| February | 72 |\n| March | 66 |\n| April | 63 |\n| May | 41 |\n| June | 17 |\n| July | 3 |\n| August | 2 |\n| September | 5 |\n| October | 24 |\n| November | 51 |\n| December | 58 |",
+    "option_a": "The mean increases, and the median does not change.",
+    "option_b": "Both increase, and the median increases by more than the mean.",
+    "option_c": "Both increase, and the mean increases by more than the median.",
+    "option_d": "The mean increases, and the median decreases.",
+    "correct": "C",
+    "explanation_en": "The original sum is 457 mm, so the mean is $\\frac{457}{12} \\approx 38.1$ mm. Ordered, the values are 2, 3, 5, 17, 24, 41, 51, 55, 58, 63, 66, 72, so the median is $\\frac{41 + 51}{2} = 46$ mm. Removing the 3 least values, 2, 3, and 5 (August, July, and September), leaves 9 values with sum $457 - 10 = 447$, so the new mean is $\\frac{447}{9} \\approx 49.7$ mm. In order, the remaining values are 17, 24, 41, 51, 55, 58, 63, 66, 72, so the new median is the 5th value, 55 mm. The mean increases by about $49.7 - 38.1 = 11.6$ mm, and the median increases by $55 - 46 = 9$ mm, so the mean increases more. Choice A wrongly assumes that removing values at one end never changes the median; here the middle position shifts to greater values. Choice B reverses the comparison. Choice D is wrong because removing the least values cannot lower the median.",
+    "explanation_uz": "Dastlabki yig‘indi 457 mm, demak o‘rtacha $\\frac{457}{12} \\approx 38.1$ mm. Tartiblangan qiymatlar: 2, 3, 5, 17, 24, 41, 51, 55, 58, 63, 66, 72, shuning uchun mediana $\\frac{41 + 51}{2} = 46$ mm. Eng kichik 3 ta qiymat — 2, 3 va 5 (avgust, iyul va sentabr) olib tashlansa, yig‘indisi $457 - 10 = 447$ bo‘lgan 9 ta qiymat qoladi, yangi o‘rtacha $\\frac{447}{9} \\approx 49.7$ mm. Qolgan qiymatlar tartibda: 17, 24, 41, 51, 55, 58, 63, 66, 72, demak yangi mediana 5-qiymat, ya’ni 55 mm. O‘rtacha taxminan $49.7 - 38.1 = 11.6$ mm ga, mediana esa $55 - 46 = 9$ mm ga oshadi — o‘rtacha ko‘proq oshadi. A javob bir chetdan qiymatlarni olib tashlash medianani o‘zgartirmaydi deb noto‘g‘ri hisoblagan; aslida o‘rta o‘rin kattaroq qiymatlar tomon siljiydi. B javob taqqoslashni teskari qilgan. D javob noto‘g‘ri, chunki eng kichik qiymatlarni olib tashlash medianani kamaytira olmaydi.",
+    "estimated_seconds": 150,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "one_variable_data",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "The list shows the total number of medals won by athletes from Uzbekistan at each of the 8 Summer Olympics from 1996 to 2024, in order.\n\n2, 4, 5, 4, 3, 13, 5, 13\n\nSuppose Uzbekistan's athletes win $x$ medals at the 2028 Summer Olympics, and the mean number of medals for all 9 Summer Olympics from 1996 to 2028 is 7. What is the median number of medals for these 9 Summer Olympics?",
+    "spr_answers": [
+      "5"
+    ],
+    "explanation_en": "The sum of the 8 given totals is 49. For the mean of 9 values to be 7, their sum must be $9 \\times 7 = 63$, so $x = 63 - 49 = 14$. Ordered, the 9 values are 2, 3, 4, 4, 5, 5, 13, 13, 14, and the median is the 5th value, 5. Answering 14 gives the value of $x$, not the median. Using the old median of the 8 values, $\\frac{4 + 5}{2} = 4.5$, ignores the new value. Enter 5.",
+    "explanation_uz": "Berilgan 8 ta natija yig‘indisi 49. 9 ta qiymatning o‘rtachasi 7 bo‘lishi uchun ularning yig‘indisi $9 \\times 7 = 63$ bo‘lishi kerak, demak $x = 63 - 49 = 14$. Tartiblangan 9 ta qiymat: 2, 3, 4, 4, 5, 5, 13, 13, 14; mediana — 5-qiymat, ya’ni 5. 14 deb javob berish $x$ ning qiymatini beradi, medianani emas. 8 ta qiymatning eski medianasi $\\frac{4 + 5}{2} = 4.5$ ni olish yangi qiymatni hisobga olmaydi. Javob: 5.",
+    "estimated_seconds": 130,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  }
+]
