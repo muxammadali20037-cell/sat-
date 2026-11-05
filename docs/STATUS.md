@@ -95,6 +95,12 @@ The flows ran as a real user against real auth, PostgREST and RLS. AI used the l
 - **Admin lists:** question excerpts showed raw LaTeX (`\dfrac{…}`) and escaped prices as `\12`. They now use the same plain-text rendering as student pages.
 - **Pack import (caught before release):** the first version recognised already-imported questions by stem alone. Many Reading and Writing questions share a stem, so a retry after a partial import could have skipped real questions. It now matches passage and stem.
 
+### More content: 240 new questions (core-v2) and 30 text lessons (5 Nov)
+
+- **Question pack core-v2:** 240 new original questions, 8 for every SAT skill (3 easy / 3 medium / 2 hard; Math has 2–3 student-produced-response items per skill), with English and Uzbek explanations. Math keys were recomputed by scripts while writing; then an independent solver who never saw the keys answered all 240: 239 matched and the one difference was the solver's error (checked by hand). No question was flagged as ambiguous. The checker now also refuses a question or passage repeated from another pack. Admin → Import questions shows each pack with its own import button; imported questions are drafts until reviewed and published.
+- **Courses:** 2 courses with one text lesson per SAT skill (30 lessons: 16 from the former development samples, 14 new), each with a key idea, a worked example, common traps and a self-check. Admin → Courses → "Import bundled lessons" adds only missing courses and lessons (nothing existing is changed). Lesson pages also show the Uzbek guide card and the topic videos for the skill.
+- With both packs (480 questions; 176 Reading and Writing), two full adaptive mock exams can be built from different questions with Admin → Mock exams → Auto-fill.
+
 ### Vocabulary while reading, topic videos, daily Telegram drill (5 Nov)
 
 - **My words (migration 0028):** in practice, results review, lessons and guides a student double-clicks (or long-presses) a word and sees its Uzbek/Russian translation, a plain-English meaning and an example, then saves it. The dictionary is SAT MASTER's own (`content/vocabulary/sat-words.json`, 227 SAT words with original definitions and examples; inflected forms are matched to the base form). A word that is not in it can be saved with the student's own translation, and a Google Translate link is offered. **Not available in timed mock exams.**
