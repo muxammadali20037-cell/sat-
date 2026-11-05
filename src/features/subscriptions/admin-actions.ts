@@ -11,7 +11,7 @@ import { createAdminSupabase } from '@/lib/supabase/admin'
 import { createServerSupabase } from '@/lib/supabase/server'
 import { FEATURE_KEYS } from '@/features/entitlements/server'
 import { majorToMinor } from '@/lib/payments/purpose'
-import { loadCurrentSubscription } from './server'
+import { extendPlanAccess } from './grant'
 
 function failure(err: unknown, fallback: string): ActionResult<never> {
   if (err instanceof ApiError) return { ok: false, error: err.message, code: err.code }
@@ -45,55 +45,9 @@ export async function grantAccessAction(input: z.input<typeof GrantInput>): Prom
     const { data: plan } = await admin.from('plans').select('id, code, name, price_minor, is_active').eq('code', d.planCode).maybeSingle()
     if (!plan || !plan.is_active || Number(plan.price_minor) <= 0) return { ok: false, error: 'Choose an active paid plan.' }
 
-    const now = new Date()
-    const ms = d.days * 86_400_000
-    const current = await loadCurrentSubscription(user.id, now)
-    let subscriptionId: string
-    let before: Record<string, string | boolean | null> | null = null
-
-    if (current && current.effective === 'expired') {
-      await admin.from('subscriptions').update({ status: 'expired' }).eq('id', current.id).eq('status', 'active')
-    }
-    if (current && current.effective !== 'expired') {
-      before = { plan: current.plan.code, current_period_end: current.periodEnd, cancel_at_period_end: current.cancelAtPeriodEnd }
-      const base = Math.max(new Date(current.periodEnd).getTime(), now.getTime())
-      const changePlan = current.plan.id !== plan.id
-      const { data, error } = await admin
-        .from('subscriptions')
-        .update({
-          plan_id: plan.id,
-          current_period_end: new Date(base + ms).toISOString(),
-          ...(changePlan || new Date(current.periodEnd) < now ? { current_period_start: now.toISOString() } : {}),
-          ...(changePlan ? { scheduled_plan_id: null } : {}),
-          cancel_at_period_end: false,
-          canceled_at: null,
-          last_provider: 'manual',
-        })
-        .eq('id', current.id)
-        .eq('status', 'active')
-        .select('id')
-      if (error) throw error
-      if (data.length === 0) return { ok: false, error: 'The subscription changed meanwhile. Reload and try again.' }
-      subscriptionId = current.id
-    } else {
-      const { data, error } = await admin
-        .from('subscriptions')
-        .insert({
-          user_id: user.id,
-          plan_id: plan.id,
-          status: 'active',
-          current_period_start: now.toISOString(),
-          current_period_end: new Date(now.getTime() + ms).toISOString(),
-          last_provider: 'manual',
-        })
-        .select('id')
-        .single()
-      if (error) {
-        if (error.code === '23505') return { ok: false, error: 'The student got an active subscription meanwhile. Reload and try again.' }
-        throw error
-      }
-      subscriptionId = data.id
-    }
+    const granted = await extendPlanAccess(admin, { userId: user.id, plan, days: d.days })
+    if (!granted.ok) return { ok: false, error: 'The subscription changed meanwhile. Reload and try again.' }
+    const { subscriptionId, before } = granted
 
     await writeAudit({
       actorId: profile.id,

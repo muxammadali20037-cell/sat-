@@ -3034,6 +3034,92 @@ export type Database = {
           },
         ]
       }
+      referral_codes: {
+        Row: {
+          user_id: string
+          code: string
+          created_at: string
+        }
+        Insert: {
+          user_id: string
+          code: string
+          created_at?: string
+        }
+        Update: {
+          user_id?: string
+          code?: string
+          created_at?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "referral_codes_user_id_fkey"
+            columns: ["user_id"]
+            isOneToOne: true
+            referencedRelation: "profiles"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      referrals: {
+        Row: {
+          id: string
+          referrer_id: string
+          referred_id: string
+          code: string
+          status: string
+          qualified_at: string | null
+          referrer_days: number
+          friend_days: number
+          rewarded_at: string | null
+          no_reward_reason: string | null
+          created_at: string
+          updated_at: string
+        }
+        Insert: {
+          id?: string
+          referrer_id: string
+          referred_id: string
+          code: string
+          status?: string
+          qualified_at?: string | null
+          referrer_days?: number
+          friend_days?: number
+          rewarded_at?: string | null
+          no_reward_reason?: string | null
+          created_at?: string
+          updated_at?: string
+        }
+        Update: {
+          id?: string
+          referrer_id?: string
+          referred_id?: string
+          code?: string
+          status?: string
+          qualified_at?: string | null
+          referrer_days?: number
+          friend_days?: number
+          rewarded_at?: string | null
+          no_reward_reason?: string | null
+          created_at?: string
+          updated_at?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "referrals_referrer_id_fkey"
+            columns: ["referrer_id"]
+            isOneToOne: false
+            referencedRelation: "profiles"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "referrals_referred_id_fkey"
+            columns: ["referred_id"]
+            isOneToOne: true
+            referencedRelation: "profiles"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       rate_limits: {
         Row: {
           bucket_key: string

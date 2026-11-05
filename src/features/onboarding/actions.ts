@@ -14,6 +14,9 @@ import { fieldErrorKeys, localizeFieldErrors } from '@/features/auth/schemas'
 import { onboardingNext } from '@/features/auth/errors'
 import { onboardingSchema, type OnboardingInput } from './schemas'
 import { guessCountry } from '@/config/countries'
+import { createAdminSupabase } from '@/lib/supabase/admin'
+import { REFERRAL_COOKIE } from '@/features/referrals/logic'
+import { claimReferral } from '@/features/referrals/server'
 
 /**
  * Completes onboarding: validates every answer, updates the student's own profile through the
@@ -64,6 +67,16 @@ export async function saveOnboardingAction(input: OnboardingInput & { next?: str
 
   const cookieStore = await cookies()
   cookieStore.set(LOCALE_COOKIE, v.locale, { path: '/', maxAge: 60 * 60 * 24 * 365, sameSite: 'lax' })
+  // Joined through a friend's invite link: link the new account to the friend (server rules apply).
+  const refCode = cookieStore.get(REFERRAL_COOKIE)?.value
+  if (refCode) {
+    try {
+      await claimReferral(createAdminSupabase(), userId, refCode)
+    } catch (err) {
+      console.error('[onboarding] referral claim failed', err)
+    }
+    cookieStore.delete(REFERRAL_COOKIE)
+  }
   revalidatePath('/dashboard', 'layout')
   redirect(onboardingNext(input.next))
 }

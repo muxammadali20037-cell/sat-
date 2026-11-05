@@ -4,7 +4,7 @@ import type { Role } from './roles'
 export type NavIconKey =
   | 'home' | 'courses' | 'practice' | 'diagnostic' | 'exams' | 'results' | 'analytics' | 'plan' | 'tutor'
   | 'bookmarks' | 'subscription' | 'settings' | 'students' | 'subjects' | 'domains' | 'skills' | 'lessons' | 'mistakes' | 'flashcards' | 'classes' | 'groups' | 'team' | 'teach'
-  | 'questions' | 'import' | 'payments' | 'ai' | 'audit' | 'admin' | 'guides' | 'telegram' | 'resources' | 'library'
+  | 'questions' | 'import' | 'payments' | 'ai' | 'audit' | 'admin' | 'guides' | 'telegram' | 'resources' | 'library' | 'path' | 'invite'
 
 export type NavItem = {
   href: string
@@ -22,6 +22,7 @@ export const STUDENT_NAV: NavSection[] = [
   {
     items: [
       { href: '/dashboard', labelKey: 'dashboard', icon: 'home', exact: true },
+      { href: '/dashboard/path', labelKey: 'path', icon: 'path' },
       { href: '/dashboard/courses', labelKey: 'courses', icon: 'courses' },
       { href: '/dashboard/guides', labelKey: 'guides', icon: 'guides' },
       { href: '/dashboard/library', labelKey: 'library', icon: 'library' },
@@ -41,6 +42,7 @@ export const STUDENT_NAV: NavSection[] = [
       { href: '/dashboard/analytics', labelKey: 'analytics', icon: 'analytics' },
       { href: '/dashboard/results', labelKey: 'results', icon: 'results' },
       { href: '/dashboard/bookmarks', labelKey: 'bookmarks', icon: 'bookmarks' },
+      { href: '/dashboard/invite', labelKey: 'invite', icon: 'invite' },
     ],
   },
 ]

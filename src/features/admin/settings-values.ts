@@ -76,6 +76,10 @@ const KNOWN_RULES: Record<string, (v: Json) => string | null> = {
   'practice.max_questions_per_session': (v) => (isIntIn(v, 1, 100) ? null : 'Use a whole number between 1 and 100.'),
   'exams.answer_grace_seconds': (v) => (isIntIn(v, 0, 60) ? null : 'Use a whole number of seconds between 0 and 60.'),
   'lessons.completion_ratio': (v) => (typeof v === 'number' && v > 0 && v <= 1 ? null : 'Use a ratio greater than 0 and at most 1 (e.g. 0.9).'),
+  'referrals.referrer_days': (v) => (isIntIn(v, 0, 366) ? null : 'Use a whole number of days between 0 and 366 (0 = no reward).'),
+  'referrals.friend_days': (v) => (isIntIn(v, 0, 366) ? null : 'Use a whole number of days between 0 and 366 (0 = no reward).'),
+  'referrals.monthly_cap': (v) => (isIntIn(v, 0, 1000) ? null : 'Use a whole number between 0 and 1000.'),
+  'referrals.plan_code': (v) => (typeof v === 'string' && /^[a-z0-9_]{2,40}$/.test(v) ? null : 'Use a plan code such as "pro".'),
   'ai.rate_limit_per_minute': (v) => (isIntIn(v, 1, 120) ? null : 'Use a whole number between 1 and 120.'),
   'contact.support_email': (v) =>
     typeof v === 'string' && (v === '' || /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)) ? null : 'Enter a valid email address, or leave empty to hide it.',

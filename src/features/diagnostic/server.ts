@@ -14,6 +14,7 @@ import { loadOwnedAttempt } from '@/features/practice/server'
 import { secondsBetween } from '@/features/practice/timing'
 import { composeDiagnostic, type DiagnosticCandidate } from './compose'
 import { DEFAULT_ANSWER_GRACE_SECONDS, type DiagnosticAnswerInput } from './schemas'
+import { qualifyReferral } from '@/features/referrals/server'
 
 type Attempt = Tables<'attempts'>
 type DiagnosticTest = Pick<Tables<'diagnostic_tests'>, 'id' | 'slug' | 'title' | 'description' | 'subject_scope' | 'questions_per_domain' | 'duration_seconds'>
@@ -500,6 +501,8 @@ export async function finalizeDiagnostic(admin: Db, profile: CurrentProfile, att
   if (claimed) {
     const { answered, correct } = await scoreDiagnostic(admin, current)
     await recordActivity(profile.id, profile.timezone, { questions: answered, correct, studySeconds: current.time_spent_seconds })
+    // Joined by invite: the invite qualifies now (rewards per admin settings). Never throws.
+    await qualifyReferral(admin, profile.id, answered)
   } else {
     await ensureDiagnosticScored(admin, current)
   }

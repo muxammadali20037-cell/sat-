@@ -18,8 +18,8 @@ export async function generateMetadata(): Promise<Metadata> {
   return { title: t.meta.register }
 }
 
-export default async function RegisterPage({ searchParams }: { searchParams: Promise<{ next?: string }> }) {
-  const [{ next: rawNext }, t] = await Promise.all([searchParams, getDict(authDict, { public: true })])
+export default async function RegisterPage({ searchParams }: { searchParams: Promise<{ next?: string; invited?: string }> }) {
+  const [{ next: rawNext, invited }, t] = await Promise.all([searchParams, getDict(authDict, { public: true })])
   // After sign-up the student goes through onboarding; `next` may only point into the student app.
   const next = rawNext ? onboardingNext(rawNext) : undefined
   const loginHref = next ? `/login?next=${encodeURIComponent(next)}` : '/login'
@@ -42,6 +42,11 @@ export default async function RegisterPage({ searchParams }: { searchParams: Pro
         </>
       }
     >
+      {invited === '1' && (
+        <p className="rounded-md border border-primary/30 bg-primary/5 px-3 py-2 text-sm" data-testid="invited-banner">
+          {t.register.invited}
+        </p>
+      )}
       {!isSupabaseConfigured && <NotConfiguredAlert message={t.notConfigured} />}
       {(telegramEnabled || anyOAuth || isPhoneAuthEnabled) && (
         <>

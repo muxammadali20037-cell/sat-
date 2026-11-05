@@ -394,6 +394,20 @@ The guides are free on every plan. They are linked from lessons, practice feedba
 
 Authoring and editing workflow: [GUIDES.md](GUIDES.md).
 
+### Path to 1600 and invite friends (0032)
+
+**Analysis of the owner's materials (5 Nov).** 34 PDFs (about 4,300 pages) were analysed for counts only: 317 recalled 2026 math items, 163 recalled reading-and-writing items and 1,813 topic-sorted practice items. No question, passage or answer from them is copied into the product (they are third-party or College Board material). The counts set the focus skills of each path stage. Main findings: math is led by nonlinear functions, linear functions, nonlinear equations/systems and equivalent expressions; about 18% of real-exam math items are hard and 28% are student-produced responses; R&W is led by words in context, transitions, boundaries and form/structure/sense.
+
+**Path to 1600** (`/dashboard/path`): six stages (Foundation 400–800, Climb, Builder, Strong, Elite, Summit 1450–1600). A stage is passed only when the latest diagnostic or mock estimate reaches its goal; missions (lessons, correct answers by difficulty, mocks, best streak, saved words) come from the student's own records and unlock nothing. Each stage links its focus skills to practice at the stage's difficulty. A Telegram share button carries the student's invite link. The disclaimer says estimates are not official and no score is guaranteed.
+
+**Invite friends** (`/dashboard/invite`, link `/r/<code>`):
+- The code is kept in an httpOnly cookie and attached only when a NEW account (at most 7 days old, not the inviter, not already invited) finishes onboarding.
+- The invite qualifies when the friend finishes a diagnostic with at least 10 answers; this happens once (atomic status change).
+- Rewards are free days of the plan in `referrals.plan_code` for the inviter and/or the friend, set in Admin → Settings (`referrals.referrer_days`, `referrals.friend_days`). **Both start at 0, so no reward is given until the owner sets them.** `referrals.monthly_cap` (default 10) limits rewarded invites per inviter per month.
+- A student on another paid plan keeps it and gets the days on it. No payment or revenue is recorded; every grant is in the audit log (`billing.referral_reward`); both sides get a notification. The inviter sees friends by first name only.
+
+Verified locally: unit tests (path stages, invite rules), RLS integration test (own rows only, no client writes, no deletes, constraints), browser test 21/21 (link, cookie, onboarding claim, diagnostic qualification, +7/+3 days, audit, notifications, no second reward, existing account not attached, monthly cap, no page errors), screenshots desktop and phone without horizontal scroll.
+
 ## Not verified (needs real accounts or credentials)
 
 | Area | Status | What closes it |
