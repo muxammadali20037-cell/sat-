@@ -5,9 +5,9 @@
  */
 import { z } from 'zod'
 
-export const PROVIDERS = ['sat_master', 'college_board', 'khan_academy', 'desmos', 'youtube', 'other'] as const
+export const PROVIDERS = ['sat_master', 'college_board', 'khan_academy', 'desmos', 'youtube', 'openstax', 'gutenberg', 'other'] as const
 export type Provider = (typeof PROVIDERS)[number]
-export const KINDS = ['lesson', 'video', 'practice', 'tool', 'official_info', 'article'] as const
+export const KINDS = ['lesson', 'video', 'practice', 'tool', 'official_info', 'article', 'book'] as const
 export type ResourceKind = (typeof KINDS)[number]
 
 /** Registrable domains per provider; subdomains are allowed. `null` = any public host. */
@@ -17,6 +17,8 @@ export const PROVIDER_HOSTS: Record<Provider, readonly string[] | null> = {
   khan_academy: ['khanacademy.org'],
   desmos: ['desmos.com'],
   youtube: ['youtube.com', 'youtu.be'],
+  openstax: ['openstax.org'],
+  gutenberg: ['gutenberg.org'],
   other: null,
 }
 
@@ -34,6 +36,16 @@ export const PROVIDER_DEFAULTS: Record<Provider, { name: string; usageTerms: str
   },
   desmos: { name: 'Desmos', usageTerms: 'Link only. A free tool by Desmos Studio, not affiliated with SAT MASTER.', attribution: 'Desmos' },
   youtube: { name: 'YouTube', usageTerms: 'Link only. The video belongs to its creator; we do not copy or embed it.', attribution: '' },
+  openstax: {
+    name: 'OpenStax',
+    usageTerms: 'Link only. A free textbook by OpenStax (Rice University) under CC BY 4.0; not affiliated with SAT MASTER.',
+    attribution: 'OpenStax, Rice University (CC BY 4.0)',
+  },
+  gutenberg: {
+    name: 'Project Gutenberg',
+    usageTerms: 'Link only. A public-domain book, free to read on Project Gutenberg; not affiliated with SAT MASTER.',
+    attribution: 'Project Gutenberg',
+  },
   other: { name: '', usageTerms: 'Link only.', attribution: '' },
 }
 
@@ -84,3 +96,16 @@ export const ResourceStatusSchema = z.object({ id, status: z.enum(['draft', 'pub
 
 /** 2xx and 3xx answers count as a working link. */
 export const linkWorks = (status: number | null | undefined) => typeof status === 'number' && status >= 200 && status <= 399
+
+export const LIBRARY_GROUPS = ['official', 'textbook', 'classic', 'grammar'] as const
+export type LibraryGroup = (typeof LIBRARY_GROUPS)[number]
+
+/** Which Library shelf a resource belongs to, or null if it is not a Library item (videos, tools…). */
+export function libraryGroup(r: { provider: string; kind: string }): LibraryGroup | null {
+  if (r.provider === 'gutenberg') return 'classic'
+  if (r.provider === 'openstax') return 'textbook'
+  if ((r.provider === 'college_board' || r.provider === 'khan_academy') && (r.kind === 'practice' || r.kind === 'official_info' || r.kind === 'book')) return 'official'
+  if (r.kind === 'book') return 'textbook'
+  if (r.provider === 'other' && r.kind === 'article') return 'grammar'
+  return null
+}

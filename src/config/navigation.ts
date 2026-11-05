@@ -4,7 +4,7 @@ import type { Role } from './roles'
 export type NavIconKey =
   | 'home' | 'courses' | 'practice' | 'diagnostic' | 'exams' | 'results' | 'analytics' | 'plan' | 'tutor'
   | 'bookmarks' | 'subscription' | 'settings' | 'students' | 'subjects' | 'domains' | 'skills' | 'lessons' | 'mistakes' | 'flashcards' | 'classes' | 'groups' | 'team' | 'teach'
-  | 'questions' | 'import' | 'payments' | 'ai' | 'audit' | 'admin' | 'guides' | 'telegram' | 'resources'
+  | 'questions' | 'import' | 'payments' | 'ai' | 'audit' | 'admin' | 'guides' | 'telegram' | 'resources' | 'library'
 
 export type NavItem = {
   href: string
@@ -24,6 +24,7 @@ export const STUDENT_NAV: NavSection[] = [
       { href: '/dashboard', labelKey: 'dashboard', icon: 'home', exact: true },
       { href: '/dashboard/courses', labelKey: 'courses', icon: 'courses' },
       { href: '/dashboard/guides', labelKey: 'guides', icon: 'guides' },
+      { href: '/dashboard/library', labelKey: 'library', icon: 'library' },
       { href: '/dashboard/resources', labelKey: 'resources', icon: 'resources' },
       { href: '/dashboard/practice', labelKey: 'practice', icon: 'practice' },
       { href: '/dashboard/mistakes', labelKey: 'mistakes', icon: 'mistakes' },

@@ -31,6 +31,7 @@ export const NAV_ICONS: Record<NavIconKey, LucideIcon> = {
   admin: LayoutDashboard,
   guides: Languages,
   resources: Library,
+  library: BookOpen,
   telegram: Send,
   mistakes: CircleAlert,
   flashcards: Layers3,

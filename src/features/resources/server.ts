@@ -89,3 +89,23 @@ export async function loadTopicVideos(db: Db, skillId: string, limit = 3): Promi
   if (error) throw error
   return (data ?? []).map((r) => ({ id: r.id, title: r.title, url: r.url, providerName: r.provider_name, attribution: r.attribution, language: r.language, description: r.description }))
 }
+
+export type LibraryItem = { id: string; group: import('./rules').LibraryGroup; title: string; description: string; url: string; host: string; providerName: string; attribution: string; kind: string }
+
+/** Published Library items (books, official practice, grammar guides), shelf by shelf. RLS: published only. */
+export async function loadLibrary(db: Db): Promise<LibraryItem[]> {
+  const { libraryGroup } = await import('./rules')
+  const { data, error } = await db
+    .from('learning_resources')
+    .select('id, provider, provider_name, kind, title, description, url, attribution, position')
+    .eq('status', 'published')
+    .neq('kind', 'video')
+    .order('position')
+    .order('title')
+    .limit(500)
+  if (error) throw error
+  return (data ?? []).flatMap((r) => {
+    const group = libraryGroup(r)
+    return group ? [{ id: r.id, group, title: r.title, description: r.description, url: r.url, host: hostOf(r.url), providerName: r.provider_name, attribution: r.attribution, kind: r.kind }] : []
+  })
+}

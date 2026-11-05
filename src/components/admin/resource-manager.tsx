@@ -24,6 +24,8 @@ const PROVIDER_LABEL: Record<Provider, string> = {
   khan_academy: 'Khan Academy',
   desmos: 'Desmos',
   youtube: 'YouTube',
+  openstax: 'OpenStax',
+  gutenberg: 'Project Gutenberg',
   other: 'Other',
 }
 const KIND_LABEL: Record<(typeof KINDS)[number], string> = {
@@ -33,6 +35,7 @@ const KIND_LABEL: Record<(typeof KINDS)[number], string> = {
   tool: 'Tool',
   official_info: 'Official information',
   article: 'Article',
+  book: 'Book',
 }
 const field = 'grid grid-cols-1 gap-1.5'
 
