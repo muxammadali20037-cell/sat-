@@ -408,6 +408,12 @@ Authoring and editing workflow: [GUIDES.md](GUIDES.md).
 
 Verified locally: unit tests (path stages, invite rules), RLS integration test (own rows only, no client writes, no deletes, constraints), browser test 21/21 (link, cookie, onboarding claim, diagnostic qualification, +7/+3 days, audit, notifications, no second reward, existing account not attached, monthly cap, no page errors), screenshots desktop and phone without horizontal scroll.
 
+### Question pack core-v4 (480 original questions) and whole-exam auto-fill
+
+- **core-v4:** 16 per skill (6 easy / 6 medium / 4 hard; Math at least 4 SPR), written from the counts-only analysis of the owner's materials, blind-checked 480/480. Bundled for Admin → Question bank → Import ("Import 480 questions as drafts"); verified locally: 480 drafts, none published, a second press imports nothing. Details and reviewer notes: [QUESTION_PACKS.md](QUESTION_PACKS.md).
+- **Auto-fill all modules:** one button on a draft mock exam fills all six modules (fresh questions first; reuse reported). The allocator no longer overfills a module whose existing questions sit unevenly across domains (unit test). Browser test 9/9.
+- **Bank size and mocks:** a full-length mock uses 147 distinct questions (81 RW + 66 Math across both module-2 routes). With the bank at 1,200 questions (once core-v4 is published), about 8 fully distinct mocks fit; beyond that, auto-fill reuses questions and says so.
+
 ## Not verified (needs real accounts or credentials)
 
 | Area | Status | What closes it |

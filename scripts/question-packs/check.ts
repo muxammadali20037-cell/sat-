@@ -36,8 +36,26 @@ const flag = (name: string) => {
 const blindOut = flag('--blind')
 const compareIn = flag('--compare')
 const bundle = args.includes('--bundle')
-const PER_SKILL = Number(flag('--per-skill') ?? 8)
 const DIR = resolve(ROOT, 'content/question-packs', pack)
+/**
+ * Questions per skill: --per-skill N, else the size a pack declares by its files (the most common
+ * file length, so one short or long file is still reported), else 8.
+ */
+function inferPerSkill(): number {
+  if (!existsSync(DIR)) return 8
+  const counts = new Map<number, number>()
+  for (const f of readdirSync(DIR).filter((x) => x.endsWith('.json'))) {
+    try {
+      const n = (JSON.parse(readFileSync(resolve(DIR, f), 'utf8')) as unknown[]).length
+      counts.set(n, (counts.get(n) ?? 0) + 1)
+    } catch {
+      // Invalid files are reported by the main check.
+    }
+  }
+  const best = [...counts.entries()].sort((a, b) => b[1] - a[1] || b[0] - a[0])[0]
+  return best && best[0] % 8 === 0 ? best[0] : 8
+}
+const PER_SKILL = Number(flag('--per-skill') ?? inferPerSkill())
 const explicit = args.slice(1).filter((a, i, arr) => !a.startsWith('--') && !['--blind', '--compare', '--per-skill'].includes(arr[i - 1] ?? ''))
 
 function taxonomy(): ImportTaxonomy & { subjectOfSkill: Map<string, string> } {

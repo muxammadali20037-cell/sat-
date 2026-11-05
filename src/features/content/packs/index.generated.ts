@@ -2,5 +2,6 @@
 import { PACK as p0 } from './core-v1.generated'
 import { PACK as p1 } from './core-v2.generated'
 import { PACK as p2 } from './core-v3.generated'
+import { PACK as p3 } from './core-v4.generated'
 
-export const BUNDLED_PACKS: Array<{ id: string; json: string }> = [p0, p1, p2]
+export const BUNDLED_PACKS: Array<{ id: string; json: string }> = [p0, p1, p2, p3]

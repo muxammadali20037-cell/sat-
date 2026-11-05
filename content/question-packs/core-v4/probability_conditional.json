@@ -128,7 +128,8 @@
     "tags": [
       "core-v4",
       "conditional"
-    ]
+    ],
+    "passage": "A museum in Samarkand surveyed 200 visitors. Each visitor was classified by age group and by whether it was the visitor's first visit to the museum. The results are shown in the table.\n\n| Age group | First visit | Returning visitor | Total |\n| --- | ---: | ---: | ---: |\n| Under 25 years | 48 | 32 | 80 |\n| 25 years or older | 54 | 66 | 120 |\n| Total | 102 | 98 | 200 |"
   },
   {
     "skill_code": "probability_conditional",
