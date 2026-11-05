@@ -451,6 +451,7 @@ State on 2 Nov 2026, applied through the Supabase connector with the owner's con
 | 0029 topic videos (data only: 33 draft links in learning_resources; nothing published) | Applied on 5 Nov with the owner's approval. Checked: 33 drafts covering 30 skills, 0 published. An admin publishes them with **Check and publish drafts**. |
 | 0030 Telegram drills (2 new columns, default off; 1 new server-only table) | Applied on 5 Nov with the owner's approval. Checked: RLS on; clients have no access to drill items; nobody has drills turned on; 72 tables, all with RLS. |
 | 0031 library (kind/provider checks widened; 61 draft links; nothing published) | Applied on 5 Nov with the owner's approval. Checked: 61 drafts (14 College Board, 2 Khan Academy, 8 OpenStax, 25 Gutenberg, 12 grammar guides); the 33 published videos are unchanged. |
+| 0032 referrals (2 new tables, 4 settings rows; no existing data touched) | Applied on 5 Nov with the owner's approval. Checked: RLS on both; `authenticated` SELECT only, `anon` nothing; reward days 0 (off), cap 10, plan `pro`; 74 tables, all with RLS; the 1 active subscription unchanged. |
 | 0025 class challenges (1 table, 1 column; no existing data touched) | Applied on 5 Nov with the owner's approval. Checked afterwards: RLS on, `authenticated` SELECT only, cannot update `leaderboard_opt_in`, `anon` nothing; every existing member starts opted out; 67 tables, all with RLS. |
 | 0024 class polls (2 tables; no existing data touched) | Applied on 4 Nov with the owner's approval. Checked afterwards: RLS on both; `authenticated` cannot read `correct_index`, can read the other columns, cannot write; `anon` nothing; 66 tables, all with RLS. |
 | 0023 live lesson joins (1 table; no existing data touched) | Applied on 4 Nov with the owner's approval. Checked afterwards: RLS on, one read policy, `authenticated` SELECT only, `anon` nothing; 64 tables, all with RLS. |
@@ -475,7 +476,7 @@ The security advisor reports two kinds of finding, both expected by design:
 supabase link --project-ref ncqqnjnozrymrmblixra
 supabase migration repair --status applied 20261102000100 20261102000200 20261102000300 20261102000400 \
   20261102000500 20261102000600 20261102000700 20261102000800 20261102000900 20261102001000 20261102001100 20261102001300 \
-  20261102001500 20261102001600 20261102001700 20261103001800 20261103001900 20261103002000 20261103002100 20261104002200 20261104002300 20261104002400 20261104002500 20261105002600 20261105002700 20261105002800 20261105002900 20261105003000 20261105003100
+  20261102001500 20261102001600 20261102001700 20261103001800 20261103001900 20261103002000 20261103002100 20261104002200 20261104002300 20261104002400 20261104002500 20261105002600 20261105002700 20261105002800 20261105002900 20261105003000 20261105003100 20261105003200
 supabase db push   # applies 0012 (if still wanted) and 0014
 ```
 
