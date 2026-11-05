@@ -11,6 +11,8 @@ import type { Db } from '@/lib/supabase/server'
 import { invitableRoles, isManagerRole } from './permissions'
 import { generateCode, normalizeCode } from './codes'
 import { assignmentById, getMembership } from './server'
+import { planUsage } from './plan-server'
+import { hasRoom } from './plans'
 import {
   AssignmentRefSchema,
   CreateAssignmentSchema,
@@ -69,6 +71,9 @@ export async function createGroupAction(input: unknown): Promise<ActionResult<{ 
     if (!parsed.success) return { ok: false, error: ctx.t.errors.checkFields }
     const d = parsed.data
     await staffFor(ctx, d.workspaceId, 'group.create')
+    // Plan limit (0026): only active groups count; archived ones free a place.
+    const usage = await planUsage(ctx.admin, d.workspaceId)
+    if (!hasRoom(usage.groups, usage.plan?.maxGroups ?? null)) throw new Denied('groupLimit')
     const group = row(
       await ctx.admin.from('groups').insert({ workspace_id: d.workspaceId, name: d.name, subject: d.subject, created_by: ctx.profile.id }).select('id').single(),
     )
@@ -357,6 +362,7 @@ export async function joinWithCodeAction(input: unknown): Promise<ActionResult<{
       if (/expired/.test(m)) throw new Denied('inviteExpired')
       if (/used up/.test(m)) throw new Denied('inviteUsedUp')
       if (/unavailable/.test(m)) throw new Denied('workspaceUnavailable')
+      if (/student limit/.test(m)) throw new Denied('studentLimit')
       throw error
     }
     const joined = (data as Array<{ workspace_id: string; group_id: string | null; role: string; joined: boolean }>)[0]!

@@ -1,6 +1,6 @@
 # SAT MASTER — Build status and phase report
 
-_Last updated: 4 November 2026 (SAT MASTER 2.0 retention: challenges and an opt-in leaderboard)_
+_Last updated: 5 November 2026 (SAT MASTER 2.0: teacher workspace plans and limits)_
 
 The codebase covers phases 1–8 of [DEVELOPMENT_ROADMAP.md](DEVELOPMENT_ROADMAP.md). Phase 9 (deployment) is partly done: a Supabase project exists, and the steps that need the owner's accounts or credentials are listed under "Launch checklist" below.
 
@@ -94,6 +94,22 @@ The flows ran as a real user against real auth, PostgREST and RLS. AI used the l
   - Both checks now run inside SQL functions under a per-student lock (migration 0015). Parallel-connection tests fail without the lock and pass with it.
 - **Admin lists:** question excerpts showed raw LaTeX (`\dfrac{…}`) and escaped prices as `\12`. They now use the same plain-text rendering as student pages.
 - **Pack import (caught before release):** the first version recognised already-imported questions by stem alone. Many Reading and Writing questions share a stem, so a retry after a partial import could have skipped real questions. It now matches passage and stem.
+
+### SAT MASTER 2.0 (5 Nov): teacher workspace plans and limits (billing preparation)
+
+The directive says not to invent prices or switch on payments before the provider, fees and business terms are confirmed. So this step adds **limits without prices**, assigned by an administrator.
+
+- **Migration 0026:**
+  - `workspace_plans` (code, name, max students, max active groups, in-app live lessons yes/no, default flag; no price columns);
+  - `workspaces.plan_id` and `plan_until`;
+  - `workspace_effective_plan()`: the assigned plan while valid, else the default plan, else none;
+  - `workspace_join` refuses a new or returning student at the student limit, under a per-workspace lock so simultaneous joins cannot exceed it (otherwise unchanged).
+  - **No plan rows are created**, so nothing changes for existing workspaces until an admin defines plans.
+- **Enforcement:** joining (database), creating a group (server, active groups only), in-app live lessons (token API 403 + a clear page).
+- **Admin → Teacher workspaces** (`/admin/workspaces`, admins only): create/edit plans, one default plan, assign a plan to a workspace with an optional end date and an audit note (e.g. an invoice number). Every change is audited with the acting admin.
+- **Teacher → Team page:** current plan, where it comes from, students/groups used of the limit, live lessons included or not, "contact SAT MASTER to change". Clear messages (uz/en/ru) when a limit is hit.
+- **Verified:** 3 unit tests, 4 DB tests (no plans = no limits; default vs assigned vs expired; staff not counted; returning students need a place; one default; client privileges); all 742 tests; lint, build, 0 vulnerabilities; 13 Playwright checks (`e2e-plans`); classroom 32/32, live 22/22, challenges 11/11, intelligence 24/24 re-run.
+- **Still to decide (owner):** teacher plan prices, which provider takes teacher payments, and whether teacher plans renew automatically. Then checkout can reuse the verified Click/Payme/Stripe pipeline.
 
 ### SAT MASTER 2.0 retention (4 Nov): class challenges and an opt-in progress leaderboard
 
@@ -374,6 +390,7 @@ State on 2 Nov 2026, applied through the Supabase connector with the owner's con
 | 0012 search indexes | **Declined by the owner** at the confirmation prompt. Optional (admin search speed only). Apply later from the SQL editor if wanted. |
 | 0013 study-guide tables | Applied |
 | 0014 study-guide content (~480 KB) | Not applied. Use Admin → Study guides → "Import bundled guides" after the first deploy, or `supabase db push`. |
+| 0026 workspace plans (1 table, 2 columns, 1 new function, `workspace_join` replaced with a limit check; no existing data touched, no plans created) | Pending the owner's approval. |
 | 0025 class challenges (1 table, 1 column; no existing data touched) | Applied on 5 Nov with the owner's approval. Checked afterwards: RLS on, `authenticated` SELECT only, cannot update `leaderboard_opt_in`, `anon` nothing; every existing member starts opted out; 67 tables, all with RLS. |
 | 0024 class polls (2 tables; no existing data touched) | Applied on 4 Nov with the owner's approval. Checked afterwards: RLS on both; `authenticated` cannot read `correct_index`, can read the other columns, cannot write; `anon` nothing; 66 tables, all with RLS. |
 | 0023 live lesson joins (1 table; no existing data touched) | Applied on 4 Nov with the owner's approval. Checked afterwards: RLS on, one read policy, `authenticated` SELECT only, `anon` nothing; 64 tables, all with RLS. |

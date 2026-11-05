@@ -777,6 +777,51 @@ export type Database = {
         }
         Relationships: []
       }
+      workspace_plans: {
+        Row: {
+          id: string
+          code: string
+          name: string
+          description: string
+          max_students: number | null
+          max_groups: number | null
+          live_lessons: boolean
+          is_default: boolean
+          is_active: boolean
+          position: number
+          created_at: string
+          updated_at: string
+        }
+        Insert: {
+          id?: string
+          code: string
+          name: string
+          description?: string
+          max_students?: number | null
+          max_groups?: number | null
+          live_lessons?: boolean
+          is_default?: boolean
+          is_active?: boolean
+          position?: number
+          created_at?: string
+          updated_at?: string
+        }
+        Update: {
+          id?: string
+          code?: string
+          name?: string
+          description?: string
+          max_students?: number | null
+          max_groups?: number | null
+          live_lessons?: boolean
+          is_default?: boolean
+          is_active?: boolean
+          position?: number
+          created_at?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
       attempt_answers: {
         Row: {
           id: string
@@ -3611,6 +3656,8 @@ export type Database = {
           created_at: string
           updated_at: string
           archived_at: string | null
+          plan_id: string | null
+          plan_until: string | null
         }
         Insert: {
           id?: string
@@ -3623,6 +3670,8 @@ export type Database = {
           created_at?: string
           updated_at?: string
           archived_at?: string | null
+          plan_id?: string | null
+          plan_until?: string | null
         }
         Update: {
           id?: string
@@ -3635,6 +3684,8 @@ export type Database = {
           created_at?: string
           updated_at?: string
           archived_at?: string | null
+          plan_id?: string | null
+          plan_until?: string | null
         }
         Relationships: [
           {
@@ -3682,6 +3733,7 @@ export type Database = {
       subscription_effective_status: { Args: { p_status: string; p_period_end: string }; Returns: string }
       workspace_create: { Args: { p_owner: string; p_name: string; p_kind: string; p_country: string; p_timezone: string }; Returns: string }
       workspace_join: { Args: { p_user: string; p_code: string }; Returns: { workspace_id: string; group_id: string; role: string; joined: boolean }[] }
+      workspace_effective_plan: { Args: { p_workspace: string }; Returns: Database['public']['Tables']['workspace_plans']['Row'][] }
       workspace_role: { Args: { p_workspace: string }; Returns: string }
       write_audit_log: { Args: { p_action: string; p_entity_type: string; p_entity_id: string; p_summary: string; p_before?: Json; p_after?: Json; p_actor?: string }; Returns: undefined }
     }

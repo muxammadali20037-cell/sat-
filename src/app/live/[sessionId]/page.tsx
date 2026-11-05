@@ -12,6 +12,7 @@ import { Button } from '@/components/ui/button'
 import { LiveRoom } from '@/components/live/live-room'
 import { liveConfig, resolveLiveAccess } from '@/features/live/server'
 import { formatDate } from '@/features/dashboard/format'
+import { effectivePlan } from '@/features/classroom/plan-server'
 
 export async function generateMetadata(): Promise<Metadata> {
   return { title: (await getDict(liveDict)).metaTitle }
@@ -52,6 +53,8 @@ export default async function LivePage({ params }: { params: Promise<{ sessionId
     </Button>
   ) : null
   if (!configured) return notice(t.notConfiguredTitle, t.notConfiguredBody, external)
+  const { plan } = await effectivePlan(createAdminSupabase(), s.workspaceId)
+  if (plan && !plan.liveLessons) return notice(t.notIncludedTitle, t.notIncludedBody, external)
   if (access.window === 'too_early') return notice(s.title, format(t.tooEarly, { time: formatDate(s.startsAt, locale, tz, { dateStyle: 'medium', timeStyle: 'short' }) }))
   if (access.window === 'closed') return notice(s.title, t.closed)
 

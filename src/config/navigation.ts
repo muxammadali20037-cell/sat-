@@ -69,6 +69,7 @@ export const ADMIN_NAV: NavSection[] = [
     items: [
       { href: '/admin/students', labelKey: 'Students', icon: 'students', roles: VIEWERS },
       { href: '/admin/subscriptions', labelKey: 'Subscriptions', icon: 'subscription', roles: ADMINS },
+      { href: '/admin/workspaces', labelKey: 'Teacher workspaces', icon: 'teach', roles: ADMINS },
       { href: '/admin/payments', labelKey: 'Payments', icon: 'payments', roles: ADMINS },
     ],
   },
