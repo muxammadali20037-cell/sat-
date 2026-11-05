@@ -1,0 +1,140 @@
+[
+  {
+    "skill_code": "percentages",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "At the 2024 Summer Olympics in Paris, athletes from Uzbekistan won 13 medals, and 8 of these medals were gold. To the nearest whole percent, what percent of Uzbekistan's medals were gold?",
+    "option_a": "8%",
+    "option_b": "38%",
+    "option_c": "62%",
+    "option_d": "163%",
+    "correct": "C",
+    "explanation_en": "Divide the part by the whole: $\\frac{8}{13} \\approx 0.615$, which is about 62%. Choice B, 38%, is the percent of the medals that were **not** gold ($\\frac{5}{13}$). Choice A treats the number of gold medals as a percent. Choice D divides the whole by the part ($\\frac{13}{8} = 1.625$).",
+    "explanation_uz": "Qismni butunga bo‘lamiz: $\\frac{8}{13} \\approx 0.615$, ya’ni taxminan 62%. B javob (38%) — oltin **bo‘lmagan** medallar ulushi ($\\frac{5}{13}$). A javob oltin medallar sonini foiz deb olgan. D javob esa butunni qismga bo‘lgan ($\\frac{13}{8} = 1.625$).",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "percentages",
+    "difficulty": "easy",
+    "question_type": "spr",
+    "stem": "According to NASA, the gravity at the surface of Mars is about 38% of the gravity at the surface of Earth. A robotic rover weighs 9,000 newtons on Earth. Based on this percentage, how many newtons would the rover weigh on Mars?",
+    "spr_answers": [
+      "3420"
+    ],
+    "explanation_en": "The rover's weight on Mars is 38% of its weight on Earth: $0.38 \\times 9{,}000 = 3{,}420$ newtons. Subtracting instead ($9{,}000 - 0.38 \\times 9{,}000 = 5{,}580$) gives the amount by which the weight decreases, not the weight on Mars. Enter 3420 (without a comma).",
+    "explanation_uz": "Marsdagi og‘irlik Yerdagi og‘irlikning 38% iga teng: $0.38 \\times 9{,}000 = 3{,}420$ nyuton. Ayirib hisoblash ($9{,}000 - 0.38 \\times 9{,}000 = 5{,}580$) og‘irlik qanchaga kamayishini beradi, Marsdagi og‘irlikni emas. Javob maydoniga vergulsiz 3420 deb yozing.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "percentages",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "On January 1, 2025, the permanent population of Uzbekistan was about 37.5 million people, and about 18.4 million of them lived in rural areas. Which of the following is closest to the percent of Uzbekistan's population that lived in rural areas on that date?",
+    "option_a": "0.49%",
+    "option_b": "49%",
+    "option_c": "51%",
+    "option_d": "204%",
+    "correct": "B",
+    "explanation_en": "Percent $= \\frac{\\text{part}}{\\text{whole}} \\times 100\\%$: $\\frac{18.4}{37.5} \\approx 0.49$, or about 49%. Choice C, 51%, is the percent that lived in **urban** areas ($\\frac{37.5 - 18.4}{37.5}$). Choice A is the decimal 0.49 with a percent sign added, which is 100 times too small. Choice D divides the whole population by the rural population.",
+    "explanation_uz": "Foiz $= \\frac{\\text{qism}}{\\text{butun}} \\times 100\\%$: $\\frac{18.4}{37.5} \\approx 0.49$, ya’ni taxminan 49%. C javob (51%) — **shaharda** yashovchilar ulushi ($\\frac{37.5 - 18.4}{37.5}$). A javob 0.49 o‘nli kasrga shunchaki foiz belgisini qo‘shgan — bu 100 marta kichik. D javob butun aholini qishloq aholisiga bo‘lgan.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "percentages",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "Athletes from Uzbekistan won 5 medals at the 2020 Summer Olympics in Tokyo and 13 medals at the 2024 Summer Olympics in Paris. To the nearest whole percent, the number of medals won in Tokyo was what percent less than the number won in Paris?",
+    "option_a": "62%",
+    "option_b": "38%",
+    "option_c": "260%",
+    "option_d": "160%",
+    "correct": "A",
+    "explanation_en": "“Less than the number won in Paris” means Paris is the base: $\\frac{13 - 5}{13} = \\frac{8}{13} \\approx 0.615$, or about 62%. Choice D, 160%, uses Tokyo as the base ($\\frac{8}{5}$); it answers the different question “Paris was what percent greater than Tokyo?” Choice B, 38%, is Tokyo's total as a percent **of** Paris's total ($\\frac{5}{13}$). Choice C is Paris's total as a percent of Tokyo's ($\\frac{13}{5}$).",
+    "explanation_uz": "“Parijdagidan necha foiz kam” degani — asos Parij: $\\frac{13 - 5}{13} = \\frac{8}{13} \\approx 0.615$, ya’ni taxminan 62%. D javob (160%) asos sifatida Tokioni olgan ($\\frac{8}{5}$) — bu “Parij Tokiodan necha foiz ko‘p?” degan boshqa savolning javobi. B javob (38%) — Tokiodagi medallar Parijdagilarning necha foizini **tashkil etishi** ($\\frac{5}{13}$). C javob — Parijdagi medallar Tokiodagilarning necha foizi ekanligi ($\\frac{13}{5}$).",
+    "estimated_seconds": 80,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "percentages",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "According to NASA, the diameter of Earth is 12,756 kilometers and the diameter of Mars is 6,792 kilometers. The diameter of Mars is what percent less than the diameter of Earth? (Round your answer to the nearest whole percent.)",
+    "spr_answers": [
+      "47"
+    ],
+    "explanation_en": "The base of the comparison is Earth's diameter: $\\frac{12{,}756 - 6{,}792}{12{,}756} = \\frac{5{,}964}{12{,}756} \\approx 0.4675$, which rounds to 47%. Dividing the difference by Mars's diameter instead ($\\frac{5{,}964}{6{,}792} \\approx 0.88$) answers “Earth's diameter is what percent greater than Mars's?” and gives 88. Enter 47.",
+    "explanation_uz": "Taqqoslash asosi — Yerning diametri: $\\frac{12{,}756 - 6{,}792}{12{,}756} = \\frac{5{,}964}{12{,}756} \\approx 0.4675$, yaxlitlansa 47%. Farqni Marsning diametriga bo‘lish ($\\frac{5{,}964}{6{,}792} \\approx 0.88$) “Yerning diametri Marsnikidan necha foiz katta?” degan savolga javob beradi va 88 ni beradi. Javob: 47.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "percentages",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "On January 1, 2025, the population of Tashkent city was about 3.11 million, which was about 21% greater than the city's population on January 1, 2020. Which of the following is closest to the population of Tashkent city on January 1, 2020?",
+    "option_a": "2.46 million",
+    "option_b": "2.57 million",
+    "option_c": "2.90 million",
+    "option_d": "3.76 million",
+    "correct": "B",
+    "explanation_en": "Let $p$ be the 2020 population. A 21% increase multiplies it by 1.21, so $1.21p = 3.11$ and $p = \\frac{3.11}{1.21} \\approx 2.57$ million. Choice A decreases 3.11 million by 21% ($0.79 \\times 3.11 \\approx 2.46$), but the 21% was calculated from the 2020 population, not the 2025 population. Choice C subtracts 0.21 million, treating the percent as a number of people. Choice D increases the 2025 population by another 21%. Check: $2.57 \\times 1.21 \\approx 3.11$.",
+    "explanation_uz": "2020 yilgi aholini $p$ deb olamiz. 21% ga oshish uni 1.21 ga ko‘paytiradi: $1.21p = 3.11$, demak $p = \\frac{3.11}{1.21} \\approx 2.57$ million. A javob 3.11 millionni 21% ga kamaytirgan ($0.79 \\times 3.11 \\approx 2.46$), ammo 21% 2025 yilgi emas, 2020 yilgi aholidan hisoblangan. C javob foizni odamlar soni deb olib, 0.21 millionni ayirgan. D javob 2025 yilgi aholini yana 21% ga oshirgan. Tekshiruv: $2.57 \\times 1.21 \\approx 3.11$.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "percentages",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "Usain Bolt's world record in the men's 100-meter race is 9.58 seconds. Noah Lyles won the men's 100-meter race at the 2024 Summer Olympics with a time of 9.79 seconds. Bolt's average speed in his world-record race was approximately what percent greater than Lyles's average speed in his Olympic race?",
+    "option_a": "0.21%",
+    "option_b": "2.1%",
+    "option_c": "2.2%",
+    "option_d": "97.9%",
+    "correct": "C",
+    "explanation_en": "Both runners covered 100 meters, so each average speed is $\\frac{100}{\\text{time}}$. The ratio of the speeds is $\\frac{100/9.58}{100/9.79} = \\frac{9.79}{9.58} \\approx 1.0219$, so Bolt's speed was about 2.2% greater. Choice B, 2.1%, is the percent by which Bolt's **time** was less than Lyles's time ($\\frac{0.21}{9.79} \\approx 0.0215$); speed and time are inversely related, so these percents are not equal. Choice A treats the 0.21-second difference as a percent. Choice D, $\\frac{9.58}{9.79} \\approx 97.9\\%$, compares the times, not the speeds.",
+    "explanation_uz": "Ikkala yuguruvchi ham 100 metr yugurgan, shuning uchun har birining o‘rtacha tezligi $\\frac{100}{\\text{vaqt}}$. Tezliklar nisbati: $\\frac{100/9.58}{100/9.79} = \\frac{9.79}{9.58} \\approx 1.0219$, demak Boltning tezligi taxminan 2.2% katta. B javob (2.1%) — Boltning **vaqti** Laylsnikidan necha foiz kamligi ($\\frac{0.21}{9.79} \\approx 0.0215$); tezlik va vaqt teskari proporsional, shuning uchun bu foizlar teng emas. A javob 0.21 soniyalik farqni foiz deb olgan. D javob ($\\frac{9.58}{9.79} \\approx 97.9\\%$) tezliklarni emas, vaqtlarni taqqoslagan.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "percentages",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "From January 1, 2024, to January 1, 2025, the permanent population of Uzbekistan increased by about 2%. Suppose the population increases by exactly 2% each year for 3 years, starting on January 1, 2025. By what percent will the population increase in total over these 3 years? (Round your answer to the nearest tenth of a percent.)",
+    "spr_answers": [
+      "6.1"
+    ],
+    "explanation_en": "Each 2% increase multiplies the population by 1.02, so after 3 years the population is multiplied by $1.02^3 = 1.061208$. That is a total increase of about 6.1208%, or 6.1% to the nearest tenth. Adding the percents ($3 \\times 2\\% = 6\\%$) is a common error: each year's 2% is calculated from a larger population than the year before, so the total increase is more than 6%. Enter 6.1.",
+    "explanation_uz": "Har bir 2% lik o‘sish aholini 1.02 ga ko‘paytiradi, demak 3 yildan keyin aholi $1.02^3 = 1.061208$ ga ko‘payadi. Bu jami taxminan 6.1208% o‘sish, o‘ndan birgacha yaxlitlansa 6.1%. Foizlarni qo‘shish ($3 \\times 2\\% = 6\\%$) — keng tarqalgan xato: har yilgi 2% oldingi yildagidan kattaroq aholidan hisoblanadi, shuning uchun jami o‘sish 6% dan ko‘p. Javob: 6.1.",
+    "estimated_seconds": 110,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  }
+]

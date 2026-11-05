@@ -1,0 +1,140 @@
+[
+  {
+    "skill_code": "linear_functions",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "The function $f$ is defined by $f(x) = -2x + 11$. What is the value of $f(-4)$?",
+    "option_a": "$-19$",
+    "option_b": "$3$",
+    "option_c": "$19$",
+    "option_d": "$7.5$",
+    "correct": "C",
+    "explanation_en": "Substitute $x = -4$: $f(-4) = -2(-4) + 11 = 8 + 11 = 19$.\n\nChoice B comes from writing $-2(-4)$ as $-8$, which gives $-8 + 11 = 3$. Choice A has the sign of the whole answer flipped. Choice D solves $-2x + 11 = -4$, the $x$-value where the output is $-4$, instead of finding the output when the input is $-4$.",
+    "explanation_uz": "$x = -4$ ni qo‘yamiz: $f(-4) = -2(-4) + 11 = 8 + 11 = 19$.\n\nB variant $-2(-4)$ ni $-8$ deb yozishdan chiqadi: $-8 + 11 = 3$. A variantda butun javobning ishorasi teskari. D variant $-2x + 11 = -4$ tenglamani yechadi, ya’ni qiymati $-4$ bo‘ladigan $x$ ni topadi, kirish qiymati $-4$ bo‘lgandagi natijani emas.",
+    "estimated_seconds": 55,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "linear_functions",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "In the lower atmosphere, air temperature drops by about $6.5$°C for each kilometer of altitude. On a summer afternoon, the temperature $T$, in degrees Celsius, at an altitude of $h$ kilometers above the Tashkent region is modeled by $T(h) = 34 - 6.5h$. What is the best interpretation of $6.5$ in this context?",
+    "option_a": "The temperature decreases by $6.5$°C for each $1$-kilometer increase in altitude.",
+    "option_b": "The temperature at ground level is $6.5$°C.",
+    "option_c": "The altitude increases by $6.5$ kilometers for each $1$°C drop in temperature.",
+    "option_d": "The temperature is $6.5$°C at an altitude of $1$ kilometer.",
+    "correct": "A",
+    "explanation_en": "In $T(h) = 34 - 6.5h$, the number $-6.5$ is the slope: each time $h$ increases by $1$, $T$ changes by $-6.5$. So the temperature falls by $6.5$°C for every additional kilometer of altitude.\n\nChoice B describes $T(0) = 34$, the ground-level temperature, which is $34$°C, not $6.5$°C. Choice C reverses the roles of the variables. Choice D is wrong because $T(1) = 34 - 6.5 = 27.5$°C.",
+    "explanation_uz": "$T(h) = 34 - 6.5h$ da $-6.5$ — qiyalik: $h$ har safar $1$ ga oshganda $T$ $-6.5$ ga o‘zgaradi. Demak, balandlik har $1$ kilometrga oshganda harorat $6.5$°C ga pasayadi.\n\nB variant $T(0) = 34$, ya’ni yer sathidagi haroratni tasvirlaydi — u $34$°C, $6.5$°C emas. C variant o‘zgaruvchilarning rolini almashtiradi. D variant noto‘g‘ri, chunki $T(1) = 34 - 6.5 = 27.5$°C.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "linear_functions",
+    "difficulty": "easy",
+    "question_type": "spr",
+    "stem": "The speed of sound in dry air depends on the air temperature. The function $v(T) = 331 + 0.6T$ gives the approximate speed of sound $v$, in meters per second, when the air temperature is $T$ degrees Celsius. What is the approximate speed of sound, in meters per second, when the air temperature is $25$°C?",
+    "spr_answers": [
+      "346"
+    ],
+    "explanation_en": "Substitute $T = 25$: $v(25) = 331 + 0.6(25) = 331 + 15 = 346$ meters per second.\n\nA common error is to add $0.6$ and $25$ instead of multiplying, which gives $356.6$.",
+    "explanation_uz": "$T = 25$ ni qo‘yamiz: $v(25) = 331 + 0.6(25) = 331 + 15 = 346$ metr/sekund.\n\nKo‘p uchraydigan xato — $0.6$ va $25$ ni ko‘paytirish o‘rniga qo‘shish: unda $356.6$ chiqadi.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "linear_functions",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "For the linear function $g$, $g(-2) = 13$, $g(1) = 4$, and $g(5) = -8$. Which equation defines $g$?",
+    "option_a": "$g(x) = -x + 11$",
+    "option_b": "$g(x) = 3x + 1$",
+    "option_c": "$g(x) = -3x + 13$",
+    "option_d": "$g(x) = -3x + 7$",
+    "correct": "D",
+    "explanation_en": "Slope: $\\frac{4 - 13}{1 - (-2)} = \\frac{-9}{3} = -3$. Using $(1, 4)$: $4 = -3(1) + b$, so $b = 7$ and $g(x) = -3x + 7$.\n\nCheck all three points: $-3(-2) + 7 = 13$, $-3(1) + 7 = 4$, $-3(5) + 7 = -8$.\n\nChoice A fits only $(-2, 13)$; at $x = 1$ it gives $10$. Choice B fits only $(1, 4)$ and has the wrong sign of slope. Choice C has the correct slope but uses $13$ as the $y$-intercept, although $13$ is the value at $x = -2$, not at $x = 0$.",
+    "explanation_uz": "Qiyalik: $\\frac{4 - 13}{1 - (-2)} = \\frac{-9}{3} = -3$. $(1, 4)$ nuqtadan: $4 = -3(1) + b$, demak $b = 7$ va $g(x) = -3x + 7$.\n\nUchala nuqtani tekshiramiz: $-3(-2) + 7 = 13$, $-3(1) + 7 = 4$, $-3(5) + 7 = -8$.\n\nA variant faqat $(-2, 13)$ ga mos keladi; $x = 1$ da $10$ beradi. B variant faqat $(1, 4)$ ga mos va qiyalik ishorasi xato. C variantda qiyalik to‘g‘ri, lekin $13$ ozod had deb olingan, holbuki $13$ — $x = 0$ dagi emas, $x = -2$ dagi qiymat.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "linear_functions",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "The population of Uzbekistan was about $37.5$ million on January 1, 2025, and about $38.2$ million on January 1, 2026. Suppose the population $P$, in millions, $t$ years after January 1, 2025, is modeled by a linear function that fits these two values. According to the model, how many years after January 1, 2025, will the population be $42.4$ million?",
+    "option_a": "$4.9$",
+    "option_b": "$6$",
+    "option_c": "$7$",
+    "option_d": "$61$",
+    "correct": "C",
+    "explanation_en": "The population grew by $38.2 - 37.5 = 0.7$ million in one year, so $P(t) = 37.5 + 0.7t$.\n\nSolve $37.5 + 0.7t = 42.4$: $0.7t = 4.9$, so $t = 7$ years after January 1, 2025 (that is, in 2032).\n\nChoice A is the total growth $4.9$ million, not a number of years. Choice B counts years after 2026 ($\\frac{42.4 - 38.2}{0.7} = 6$) but the question measures from 2025. Choice D divides $42.4$ by $0.7$ without subtracting the starting population.",
+    "explanation_uz": "Aholi bir yilda $38.2 - 37.5 = 0.7$ millionga o‘sgan, demak $P(t) = 37.5 + 0.7t$.\n\n$37.5 + 0.7t = 42.4$ ni yechamiz: $0.7t = 4.9$, ya’ni 2025-yil 1-yanvardan $t = 7$ yil o‘tib (2032-yilda).\n\nA variant — umumiy o‘sish $4.9$ million, yillar soni emas. B variant yillarni 2026-yildan sanaydi ($\\frac{42.4 - 38.2}{0.7} = 6$), savol esa 2025-yildan boshlab so‘raydi. D variant boshlang‘ich aholini ayirmasdan $42.4$ ni $0.7$ ga bo‘ladi.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "linear_functions",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "For the linear function $f$, $f(-1) = 8$ and $f(3) = -4$. For what value of $x$ is $f(x) = -16$?",
+    "spr_answers": [
+      "7"
+    ],
+    "explanation_en": "Slope: $\\frac{-4 - 8}{3 - (-1)} = \\frac{-12}{4} = -3$. Using $(-1, 8)$: $8 = -3(-1) + b$, so $b = 5$ and $f(x) = -3x + 5$.\n\nSolve $-3x + 5 = -16$: $-3x = -21$, so $x = 7$. Check: $f(7) = -21 + 5 = -16$.\n\nA common error is to answer $f(-16) = 53$, which reverses input and output.",
+    "explanation_uz": "Qiyalik: $\\frac{-4 - 8}{3 - (-1)} = \\frac{-12}{4} = -3$. $(-1, 8)$ nuqtadan: $8 = -3(-1) + b$, demak $b = 5$ va $f(x) = -3x + 5$.\n\n$-3x + 5 = -16$ ni yechamiz: $-3x = -21$, demak $x = 7$. Tekshiruv: $f(7) = -21 + 5 = -16$.\n\nKo‘p uchraydigan xato — kirish va chiqishni almashtirib, $f(-16) = 53$ ni javob deb berish.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "linear_functions",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "The linear function $f$ is defined by $f(x) = ax + b$, where $a$ and $b$ are constants. If $f(2x + 1) = 6x + 7$ for all values of $x$, what is the value of $f(4)$?",
+    "option_a": "$13$",
+    "option_b": "$16$",
+    "option_c": "$19$",
+    "option_d": "$31$",
+    "correct": "B",
+    "explanation_en": "$f(2x + 1) = a(2x + 1) + b = 2ax + a + b$. Matching with $6x + 7$: $2a = 6$, so $a = 3$, and $a + b = 7$, so $b = 4$. Then $f(x) = 3x + 4$ and $f(4) = 16$.\n\nFaster: $2x + 1 = 4$ when $x = 1.5$, so $f(4) = 6(1.5) + 7 = 16$.\n\nChoice D substitutes $4$ directly into $6x + 7$, treating $6x + 7$ as $f(x)$. Choice C uses $a = 3$ but takes $b = 7$. Choice A uses $x = 1$, which gives $f(3) = 13$, not $f(4)$.",
+    "explanation_uz": "$f(2x + 1) = a(2x + 1) + b = 2ax + a + b$. Buni $6x + 7$ bilan solishtiramiz: $2a = 6$, demak $a = 3$, va $a + b = 7$, demak $b = 4$. U holda $f(x) = 3x + 4$ va $f(4) = 16$.\n\nQisqa yo‘l: $2x + 1 = 4$ bo‘lishi uchun $x = 1.5$, demak $f(4) = 6(1.5) + 7 = 16$.\n\nD variant $4$ ni to‘g‘ridan-to‘g‘ri $6x + 7$ ga qo‘yadi, ya’ni $6x + 7$ ni $f(x)$ deb oladi. C variant $a = 3$ ni to‘g‘ri topadi, lekin $b = 7$ deb oladi. A variant $x = 1$ ni qo‘yadi — bu $f(3) = 13$ beradi, $f(4)$ ni emas.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "linear_functions",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "The function $f$ is defined by $f(x) = 3x - 2$. The graph of the linear function $g$ in the $xy$-plane has a $y$-intercept of $(0, 22)$ and intersects the graph of $f$ at the point where $x = 4$. What is the value of $g(10)$?",
+    "spr_answers": [
+      "-8"
+    ],
+    "explanation_en": "At $x = 4$ the graphs meet, so $g(4) = f(4) = 3(4) - 2 = 10$.\n\nThe graph of $g$ passes through $(0, 22)$ and $(4, 10)$, so its slope is $\\frac{10 - 22}{4 - 0} = -3$ and $g(x) = -3x + 22$.\n\nThen $g(10) = -30 + 22 = -8$. A common error is to use the slope of $f$ for $g$, which gives $3(10) + 22 = 52$; another is to compute $f(10) = 28$ instead of $g(10)$.",
+    "explanation_uz": "$x = 4$ da grafiklar kesishadi, demak $g(4) = f(4) = 3(4) - 2 = 10$.\n\n$g$ ning grafigi $(0, 22)$ va $(4, 10)$ nuqtalardan o‘tadi, uning qiyaligi $\\frac{10 - 22}{4 - 0} = -3$ va $g(x) = -3x + 22$.\n\nU holda $g(10) = -30 + 22 = -8$. Ko‘p uchraydigan xato — $g$ uchun $f$ ning qiyaligini olish: $3(10) + 22 = 52$; yana biri — $g(10)$ o‘rniga $f(10) = 28$ ni hisoblash.",
+    "estimated_seconds": 130,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  }
+]

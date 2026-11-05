@@ -1,0 +1,143 @@
+[
+  {
+    "skill_code": "linear_equations_two_variables",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "Which point $(x, y)$ lies on the graph of $5x + 4y = 20$ in the $xy$-plane?",
+    "option_a": "$(2, 3)$",
+    "option_b": "$(10, -4)$",
+    "option_c": "$(4, 5)$",
+    "option_d": "$(-4, 10)$",
+    "correct": "D",
+    "explanation_en": "Substitute each point into $5x + 4y$ and look for a value of $20$.\n\nFor $(-4, 10)$: $5(-4) + 4(10) = -20 + 40 = 20$. This point lies on the graph.\n\nChoice A gives $10 + 12 = 22$. Choice B swaps the coordinates of the correct point and gives $50 - 16 = 34$. Choice C combines the $x$-intercept $4$ and the $y$-intercept $5$ into one point, but $(4, 5)$ gives $20 + 20 = 40$; the intercepts are $(4, 0)$ and $(0, 5)$.",
+    "explanation_uz": "Har bir nuqtani $5x + 4y$ ga qo‘yib, natija $20$ bo‘ladiganini qidiramiz.\n\n$(-4, 10)$ uchun: $5(-4) + 4(10) = -20 + 40 = 20$. Bu nuqta grafikda yotadi.\n\nA variant $10 + 12 = 22$ beradi. B variant to‘g‘ri nuqtaning koordinatalarini almashtirib qo‘yadi: $50 - 16 = 34$. C variant $x$ o‘qi bilan kesishish ($4$) va $y$ o‘qi bilan kesishish ($5$) qiymatlarini bitta nuqtaga birlashtiradi, lekin $(4, 5)$ uchun $20 + 20 = 40$; aslida kesishish nuqtalari $(4, 0)$ va $(0, 5)$.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "linear_equations_two_variables",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "At Chorsu Bazaar in Tashkent, dried apricots cost $60{,}000$ soums per kilogram and raisins cost $45{,}000$ soums per kilogram. A customer spends exactly $300{,}000$ soums on $a$ kilograms of dried apricots and $r$ kilograms of raisins, so $60{,}000a + 45{,}000r = 300{,}000$. If the customer buys $2$ kilograms of dried apricots, how many kilograms of raisins does the customer buy?",
+    "option_a": "$3$",
+    "option_b": "$4$",
+    "option_c": "$5$",
+    "option_d": "$6\\frac{2}{3}$",
+    "correct": "B",
+    "explanation_en": "Substitute $a = 2$: $120{,}000 + 45{,}000r = 300{,}000$.\n\nSubtract $120{,}000$: $45{,}000r = 180{,}000$. Divide by $45{,}000$: $r = 4$.\n\nChoice A divides the remaining $180{,}000$ soums by the apricot price $60{,}000$ instead of the raisin price. Choice D divides the whole $300{,}000$ by $45{,}000$, ignoring the money spent on apricots. Choice C is $300{,}000 \\div 60{,}000$, the amount of apricots alone that the money would buy.",
+    "explanation_uz": "$a = 2$ ni qo‘yamiz: $120{,}000 + 45{,}000r = 300{,}000$.\n\n$120{,}000$ ni ayiramiz: $45{,}000r = 180{,}000$. $45{,}000$ ga bo‘lamiz: $r = 4$.\n\nA variant qolgan $180{,}000$ so‘mni mayiz narxiga emas, o‘rik narxi $60{,}000$ ga bo‘ladi. D variant o‘rikka sarflangan pulni hisobga olmay, butun $300{,}000$ ni $45{,}000$ ga bo‘ladi. C variant — $300{,}000 \\div 60{,}000$, ya’ni butun pulga faqat o‘rik olinsa qancha bo‘lishi.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "linear_equations_two_variables",
+    "difficulty": "easy",
+    "question_type": "spr",
+    "stem": "In the $xy$-plane, the graph of $2x + 5y = k$, where $k$ is a constant, passes through the point $(3, -4)$. What is the value of $k$?",
+    "spr_answers": [
+      "-14"
+    ],
+    "explanation_en": "A point lies on a graph when its coordinates satisfy the equation. Substitute $x = 3$ and $y = -4$: $k = 2(3) + 5(-4) = 6 - 20 = -14$.\n\nA common error is to swap the coordinates and compute $2(-4) + 5(3) = 7$.",
+    "explanation_uz": "Nuqta grafikda yotishi uchun uning koordinatalari tenglamani qanoatlantirishi kerak. $x = 3$ va $y = -4$ ni qo‘yamiz: $k = 2(3) + 5(-4) = 6 - 20 = -14$.\n\nKo‘p uchraydigan xato — koordinatalarni almashtirib, $2(-4) + 5(3) = 7$ deb hisoblash.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "linear_equations_two_variables",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "Javlon has $90{,}000$ soums to spend on his mobile plan. Calls cost $150$ soums per minute and mobile internet costs $3{,}000$ soums per gigabyte. The equation $150m + 3{,}000g = 90{,}000$ represents the situation in which Javlon spends all of the money on $m$ minutes of calls and $g$ gigabytes of internet. What is the best interpretation of the fact that $m = 0$, $g = 30$ is a solution to the equation?",
+    "option_a": "If Javlon makes no calls, he can buy $30$ gigabytes of internet.",
+    "option_b": "If Javlon buys no internet, he can make $30$ minutes of calls.",
+    "option_c": "One gigabyte of internet costs $30$ soums.",
+    "option_d": "Javlon uses $30$ gigabytes of internet each day.",
+    "correct": "A",
+    "explanation_en": "The solution $m = 0$, $g = 30$ says: $0$ minutes of calls and $30$ gigabytes of internet together cost exactly $90{,}000$ soums. Check: $150(0) + 3{,}000(30) = 90{,}000$.\n\nSo if Javlon makes no calls, all of his money buys $30$ gigabytes.\n\nChoice B mixes up the variables: with no internet ($g = 0$), he could make $90{,}000 \\div 150 = 600$ minutes of calls. Choice C confuses a quantity with a price (one gigabyte costs $3{,}000$ soums). Choice D adds a time period that the equation does not contain.",
+    "explanation_uz": "$m = 0$, $g = 30$ yechimi shuni bildiradi: $0$ daqiqa qo‘ng‘iroq va $30$ gigabayt internet birgalikda aynan $90{,}000$ so‘m turadi. Tekshiruv: $150(0) + 3{,}000(30) = 90{,}000$.\n\nDemak, Javlon umuman qo‘ng‘iroq qilmasa, butun puliga $30$ gigabayt internet sotib oladi.\n\nB variant o‘zgaruvchilarni chalkashtiradi: internet olinmasa ($g = 0$), u $90{,}000 \\div 150 = 600$ daqiqa gaplasha oladi. C variant miqdorni narx bilan adashtiradi (bir gigabayt $3{,}000$ so‘m turadi). D variant tenglamada yo‘q bo‘lgan vaqt davrini qo‘shadi.",
+    "estimated_seconds": 80,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "linear_equations_two_variables",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "A line in the $xy$-plane passes through the points $(-2, 7)$ and $(4, -2)$. What is the $x$-coordinate of the $x$-intercept of the line?",
+    "spr_answers": [
+      "8/3",
+      "2.666",
+      "2.667"
+    ],
+    "explanation_en": "Slope: $\\frac{-2 - 7}{4 - (-2)} = \\frac{-9}{6} = -\\frac{3}{2}$.\n\nAt the $x$-intercept, $y = 0$. Starting from $(4, -2)$, $y$ must increase by $2$. Since $y$ changes by $-\\frac{3}{2}$ for each $1$ unit increase in $x$, $x$ must change by $\\frac{2}{-3/2} = -\\frac{4}{3}$. So $x = 4 - \\frac{4}{3} = \\frac{8}{3}$.\n\nEquation check: $y - 7 = -\\frac{3}{2}(x + 2)$; with $y = 0$: $x + 2 = \\frac{14}{3}$, so $x = \\frac{8}{3}$. Enter 8/3, 2.666, or 2.667. A common error is to give the $y$-intercept, $4$, instead.",
+    "explanation_uz": "Qiyalik: $\\frac{-2 - 7}{4 - (-2)} = \\frac{-9}{6} = -\\frac{3}{2}$.\n\n$x$ o‘qi bilan kesishish nuqtasida $y = 0$. $(4, -2)$ nuqtadan boshlasak, $y$ $2$ ga oshishi kerak. $x$ har $1$ ga oshganda $y$ $-\\frac{3}{2}$ ga o‘zgaradi, demak $x$ $\\frac{2}{-3/2} = -\\frac{4}{3}$ ga o‘zgarishi kerak. Shunday qilib, $x = 4 - \\frac{4}{3} = \\frac{8}{3}$.\n\nTenglama bilan tekshiruv: $y - 7 = -\\frac{3}{2}(x + 2)$; $y = 0$ bo‘lsa, $x + 2 = \\frac{14}{3}$, ya’ni $x = \\frac{8}{3}$. Javobni 8/3, 2.666 yoki 2.667 shaklida kiriting. Ko‘p uchraydigan xato — o‘rniga $y$ o‘qi bilan kesishish qiymati $4$ ni yozish.",
+    "estimated_seconds": 100,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "linear_equations_two_variables",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "In the $xy$-plane, line $\\ell$ passes through the point $(0, -3)$ and has the same $x$-intercept as the graph of $3x - 4y = 18$. What is the slope of line $\\ell$?",
+    "option_a": "$-\\frac{1}{2}$",
+    "option_b": "$\\frac{3}{4}$",
+    "option_c": "$\\frac{1}{2}$",
+    "option_d": "$2$",
+    "correct": "C",
+    "explanation_en": "The $x$-intercept of $3x - 4y = 18$: set $y = 0$, so $3x = 18$ and $x = 6$. Line $\\ell$ passes through $(6, 0)$ and $(0, -3)$.\n\nSlope of $\\ell$: $\\frac{0 - (-3)}{6 - 0} = \\frac{3}{6} = \\frac{1}{2}$.\n\nChoice B is the slope of the given line $3x - 4y = 18$, not of $\\ell$. Choice D inverts the slope ($\\frac{6}{3}$). Choice A comes from a sign error in $0 - (-3)$.",
+    "explanation_uz": "$3x - 4y = 18$ ning $x$ o‘qi bilan kesishish nuqtasi: $y = 0$ desak, $3x = 18$ va $x = 6$. Demak $\\ell$ to‘g‘ri chiziq $(6, 0)$ va $(0, -3)$ nuqtalardan o‘tadi.\n\n$\\ell$ ning qiyaligi: $\\frac{0 - (-3)}{6 - 0} = \\frac{3}{6} = \\frac{1}{2}$.\n\nB variant — berilgan $3x - 4y = 18$ chiziqning qiyaligi, $\\ell$ niki emas. D variant qiyalikni teskari oladi ($\\frac{6}{3}$). A variant $0 - (-3)$ dagi ishora xatosidan chiqadi.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "linear_equations_two_variables",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "A temperature of $C$ degrees Celsius is equal to $F$ degrees Fahrenheit, where $9C - 5F = -160$. At what temperature, in degrees Celsius, is the Fahrenheit reading exactly twice the Celsius reading?",
+    "option_a": "$-40$",
+    "option_b": "$80$",
+    "option_c": "$320$",
+    "option_d": "$160$",
+    "correct": "D",
+    "explanation_en": "The Fahrenheit reading is twice the Celsius reading, so $F = 2C$. Substitute: $9C - 5(2C) = -160$, so $-C = -160$ and $C = 160$.\n\nCheck: at $160$°C, $F = \\frac{9(160) + 160}{5} = \\frac{1600}{5} = 320$, and $320 = 2(160)$.\n\nChoice A is the temperature at which the two readings are equal ($F = C$), not where one is twice the other. Choice C is the Fahrenheit reading, $320$, but the question asks for the Celsius temperature. Choice B is half of the correct temperature: at $80$°C, $F = \\frac{9(80) + 160}{5} = 176$, which is not $2(80) = 160$.",
+    "explanation_uz": "Farengeyt ko‘rsatkichi Selsiy ko‘rsatkichidan ikki marta katta, ya’ni $F = 2C$. Qo‘yamiz: $9C - 5(2C) = -160$, demak $-C = -160$ va $C = 160$.\n\nTekshiruv: $160$°C da $F = \\frac{9(160) + 160}{5} = \\frac{1600}{5} = 320$ va $320 = 2(160)$.\n\nA variant — ikki ko‘rsatkich teng bo‘ladigan harorat ($F = C$), biri ikkinchisidan ikki marta katta bo‘ladigani emas. C variant — Farengeyt ko‘rsatkichi $320$, lekin savol Selsiy bo‘yicha haroratni so‘rayapti. B variant — to‘g‘ri javobning yarmi: $80$°C da $F = \\frac{9(80) + 160}{5} = 176$, bu $2(80) = 160$ emas.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "linear_equations_two_variables",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "In the $xy$-plane, the graph of $(k - 1)x + 3y = 6$, where $k$ is a constant and $k \\ne 1$, has an $x$-intercept that is twice its $y$-intercept. What is the value of $k$?",
+    "spr_answers": [
+      "5/2",
+      "2.5"
+    ],
+    "explanation_en": "$y$-intercept: set $x = 0$, so $3y = 6$ and $y = 2$. The $x$-intercept must therefore be $2(2) = 4$.\n\nSet $y = 0$ and $x = 4$: $(k - 1)(4) = 6$, so $k - 1 = \\frac{3}{2}$ and $k = \\frac{5}{2}$. Enter 5/2 or 2.5.\n\nCheck: the line $1.5x + 3y = 6$ crosses the axes at $(4, 0)$ and $(0, 2)$. A common error is to stop at $k - 1 = \\frac{3}{2}$ and enter $1.5$, or to make the $y$-intercept twice the $x$-intercept, which gives $k - 1 = 6$ and $k = 7$.",
+    "explanation_uz": "$y$ o‘qi bilan kesishish: $x = 0$ desak, $3y = 6$ va $y = 2$. Demak $x$ o‘qi bilan kesishish $2(2) = 4$ bo‘lishi kerak.\n\n$y = 0$ va $x = 4$ ni qo‘yamiz: $(k - 1)(4) = 6$, demak $k - 1 = \\frac{3}{2}$ va $k = \\frac{5}{2}$. Javobni 5/2 yoki 2.5 shaklida kiriting.\n\nTekshiruv: $1.5x + 3y = 6$ chiziq o‘qlarni $(4, 0)$ va $(0, 2)$ nuqtalarda kesadi. Ko‘p uchraydigan xato — $k - 1 = \\frac{3}{2}$ da to‘xtab, $1.5$ ni kiritish yoki aksincha $y$ o‘qidagi kesishishni ikki marta katta deb olish: unda $k - 1 = 6$ va $k = 7$ chiqadi.",
+    "estimated_seconds": 130,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  }
+]

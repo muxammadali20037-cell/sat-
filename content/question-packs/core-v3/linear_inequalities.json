@@ -1,0 +1,140 @@
+[
+  {
+    "skill_code": "linear_inequalities",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "Which of the following values of $x$ satisfies the inequality $\\dfrac{x}{2} - 3 > 4$?",
+    "option_a": "$16$",
+    "option_b": "$14$",
+    "option_c": "$10$",
+    "option_d": "$7$",
+    "correct": "A",
+    "explanation_en": "Add $3$ to both sides: $\\frac{x}{2} > 7$. Multiply by $2$: $x > 14$. Of the choices, only $16$ is greater than $14$.\n\nChoice B is the boundary value: at $x = 14$, $\\frac{14}{2} - 3 = 4$, and $4 > 4$ is false. Choice D comes from stopping at $\\frac{x}{2} > 7$ and forgetting to multiply by $2$. Choice C gives $5 - 3 = 2$, which is not greater than $4$.",
+    "explanation_uz": "Ikkala tomonga $3$ ni qo‘shamiz: $\\frac{x}{2} > 7$. $2$ ga ko‘paytiramiz: $x > 14$. Variantlardan faqat $16$ $14$ dan katta.\n\nB variant — chegaraviy qiymat: $x = 14$ da $\\frac{14}{2} - 3 = 4$, $4 > 4$ esa noto‘g‘ri. D variant $\\frac{x}{2} > 7$ da to‘xtab, $2$ ga ko‘paytirishni unutishdan chiqadi. C variant $5 - 3 = 2$ beradi, bu $4$ dan katta emas.",
+    "estimated_seconds": 55,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "linear_inequalities",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "A small bridge over an irrigation canal in Khorezm has a posted weight limit of $20$ tonnes. A truck weighs $7.5$ tonnes when empty, and it is loaded with $n$ bales of cotton that weigh $0.25$ tonne each. Which inequality represents the numbers of bales $n$ for which the loaded truck does not exceed the bridge's weight limit?",
+    "option_a": "$7.5 + 0.25n \\ge 20$",
+    "option_b": "$7.5 + 0.25n \\le 20$",
+    "option_c": "$0.25 + 7.5n \\le 20$",
+    "option_d": "$7.5n + 0.25n \\le 20$",
+    "correct": "B",
+    "explanation_en": "The loaded truck weighs $7.5$ tonnes plus $0.25$ tonne for each of the $n$ bales: $7.5 + 0.25n$. “Does not exceed” means less than or equal to, so $7.5 + 0.25n \\le 20$.\n\nChoice A uses the wrong direction (it describes trucks that are at least $20$ tonnes). Choice C swaps the fixed weight and the weight per bale. Choice D multiplies the truck's empty weight by $n$, as if the truck were counted once per bale.",
+    "explanation_uz": "Yuklangan yuk mashinasi $7.5$ tonna va $n$ ta toyning har biri uchun $0.25$ tonna og‘irlikka ega: $7.5 + 0.25n$. “Oshmaydi” — kichik yoki teng degani, demak $7.5 + 0.25n \\le 20$.\n\nA variantda tengsizlik yo‘nalishi xato (u kamida $20$ tonna bo‘lgan holatni tasvirlaydi). C variant mashinaning o‘z og‘irligi bilan bitta toy og‘irligini almashtirib qo‘yadi. D variant bo‘sh mashina og‘irligini $n$ ga ko‘paytiradi, go‘yo mashina har bir toy uchun qayta sanalgandek.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "linear_inequalities",
+    "difficulty": "easy",
+    "question_type": "spr",
+    "stem": "What is the greatest integer $x$ that satisfies the inequality $2(x + 3) < 15$?",
+    "spr_answers": [
+      "4"
+    ],
+    "explanation_en": "Divide both sides by $2$: $x + 3 < 7.5$. Subtract $3$: $x < 4.5$.\n\nThe greatest integer less than $4.5$ is $4$. Check: $2(4 + 3) = 14 < 15$, but $2(5 + 3) = 16$, which is not less than $15$.\n\nA common error is to distribute as $2x + 3 < 15$, which gives $x < 6$ and the wrong answer $5$.",
+    "explanation_uz": "Ikkala tomonni $2$ ga bo‘lamiz: $x + 3 < 7.5$. $3$ ni ayiramiz: $x < 4.5$.\n\n$4.5$ dan kichik eng katta butun son — $4$. Tekshiruv: $2(4 + 3) = 14 < 15$, lekin $2(5 + 3) = 16$, bu $15$ dan kichik emas.\n\nKo‘p uchraydigan xato — qavsni $2x + 3 < 15$ deb ochish: unda $x < 6$ va noto‘g‘ri javob $5$ chiqadi.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "linear_inequalities",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "$$\\begin{aligned} y &< -2x + 5 \\\\ y &\\ge x - 4 \\end{aligned}$$\n\nWhich point $(x, y)$ is a solution to the given system of inequalities?",
+    "option_a": "$(3, 0)$",
+    "option_b": "$(1, -4)$",
+    "option_c": "$(2, 0)$",
+    "option_d": "$(1, 3)$",
+    "correct": "C",
+    "explanation_en": "Test each point in both inequalities.\n\n$(2, 0)$: $0 < -2(2) + 5 = 1$ is true, and $0 \\ge 2 - 4 = -2$ is true. So $(2, 0)$ is a solution.\n\n$(3, 0)$: $0 < -1$ is false. $(1, -4)$: $-4 < 3$ is true, but $-4 \\ge -3$ is false. $(1, 3)$: $3 < 3$ is false; this point lies on the boundary line $y = -2x + 5$, which is not included because the inequality is strict.",
+    "explanation_uz": "Har bir nuqtani ikkala tengsizlikka qo‘yib tekshiramiz.\n\n$(2, 0)$: $0 < -2(2) + 5 = 1$ to‘g‘ri va $0 \\ge 2 - 4 = -2$ to‘g‘ri. Demak $(2, 0)$ — yechim.\n\n$(3, 0)$: $0 < -1$ noto‘g‘ri. $(1, -4)$: $-4 < 3$ to‘g‘ri, lekin $-4 \\ge -3$ noto‘g‘ri. $(1, 3)$: $3 < 3$ noto‘g‘ri; bu nuqta $y = -2x + 5$ chegara chizig‘ida yotadi, tengsizlik qat’iy bo‘lgani uchun esa chegara kirmaydi.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "linear_inequalities",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "At standard atmospheric pressure, pure water is a liquid when its temperature $C$, in degrees Celsius, satisfies $0 < C < 100$. The temperature $F$, in degrees Fahrenheit, is related to $C$ by $F = 1.8C + 32$. Which inequality describes the Fahrenheit temperatures at which pure water is a liquid at standard atmospheric pressure?",
+    "option_a": "$0 < F < 100$",
+    "option_b": "$32 < F < 212$",
+    "option_c": "$32 < F < 180$",
+    "option_d": "$-17.8 < F < 37.8$",
+    "correct": "B",
+    "explanation_en": "Multiply each part of $0 < C < 100$ by $1.8$: $0 < 1.8C < 180$. Add $32$ to each part: $32 < 1.8C + 32 < 212$, that is, $32 < F < 212$.\n\nChoice A keeps the Celsius bounds unchanged. Choice C multiplies by $1.8$ but adds $32$ only to the lower bound. Choice D applies the reverse conversion, $\\frac{F - 32}{1.8}$, to the numbers $0$ and $100$, which turns Fahrenheit into Celsius rather than Celsius into Fahrenheit.",
+    "explanation_uz": "$0 < C < 100$ ning har bir qismini $1.8$ ga ko‘paytiramiz: $0 < 1.8C < 180$. Har bir qismga $32$ ni qo‘shamiz: $32 < 1.8C + 32 < 212$, ya’ni $32 < F < 212$.\n\nA variant Selsiy chegaralarini o‘zgarishsiz qoldiradi. C variant $1.8$ ga ko‘paytiradi, lekin $32$ ni faqat quyi chegaraga qo‘shadi. D variant $0$ va $100$ sonlariga teskari formulani, $\\frac{F - 32}{1.8}$ ni qo‘llaydi — bu Selsiyni Farengeytga emas, Farengeytni Selsiyga o‘tkazadi.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "linear_inequalities",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "Nilufar's final grade is the average of five test scores, and she needs an average of at least $85$. Her scores on the first four tests were $78$, $92$, $81$, and $88$. Each test is scored out of $100$ points, and scores are whole numbers. What is the least score she can get on the fifth test to reach her goal?",
+    "spr_answers": [
+      "86"
+    ],
+    "explanation_en": "Let $s$ be the fifth score. The average must satisfy $\\frac{78 + 92 + 81 + 88 + s}{5} \\ge 85$.\n\nThe first four scores add to $339$. Multiply by $5$: $339 + s \\ge 425$, so $s \\ge 86$. The least score is $86$.\n\nCheck: $\\frac{339 + 86}{5} = 85$ exactly. A common error is to average the four known scores ($84.75$) and conclude that any score above $85$ works, or to forget to multiply by $5$.",
+    "explanation_uz": "$s$ — beshinchi test bali bo‘lsin. O‘rtacha qiymat quyidagini qanoatlantirishi kerak: $\\frac{78 + 92 + 81 + 88 + s}{5} \\ge 85$.\n\nDastlabki to‘rt ball yig‘indisi $339$. $5$ ga ko‘paytiramiz: $339 + s \\ge 425$, demak $s \\ge 86$. Eng kichik ball — $86$.\n\nTekshiruv: $\\frac{339 + 86}{5} = 85$ — aynan kerakli qiymat. Ko‘p uchraydigan xato — ma’lum to‘rt ballning o‘rtachasini ($84.75$) olib, $85$ dan yuqori har qanday ball yetadi deb o‘ylash yoki $5$ ga ko‘paytirishni unutish.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "linear_inequalities",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "A workshop in Samarkand makes embroidered suzani pillow covers and wall hangings. Each pillow cover takes $3$ hours to make and sells for $150{,}000$ soums. Each wall hanging takes $8$ hours to make and sells for $600{,}000$ soums. This month, the workshop has at most $120$ hours of work time and must earn at least $4{,}000{,}000$ soums. If the workshop makes exactly $5$ wall hangings this month, which of the following describes all possible numbers $p$ of pillow covers it can make?",
+    "option_a": "$6 \\le p \\le 26$",
+    "option_b": "$7 \\le p \\le 40$",
+    "option_c": "$0 \\le p \\le 26$",
+    "option_d": "$7 \\le p \\le 26$",
+    "correct": "D",
+    "explanation_en": "Time: $3p + 8(5) \\le 120$, so $3p \\le 80$ and $p \\le 26.67$. Since $p$ is a whole number, $p \\le 26$.\n\nMoney: $150{,}000p + 600{,}000(5) \\ge 4{,}000{,}000$, so $150{,}000p \\ge 1{,}000{,}000$ and $p \\ge 6.67$. Since $p$ is a whole number, $p \\ge 7$. Together: $7 \\le p \\le 26$.\n\nChoice A rounds $6.67$ down to $6$, but $6$ covers earn only $900{,}000 + 3{,}000{,}000 = 3{,}900{,}000$ soums. Choice B ignores the $40$ hours spent on wall hangings ($120 \\div 3 = 40$). Choice C ignores the earnings requirement.",
+    "explanation_uz": "Vaqt: $3p + 8(5) \\le 120$, demak $3p \\le 80$ va $p \\le 26.67$. $p$ butun son bo‘lgani uchun $p \\le 26$.\n\nDaromad: $150{,}000p + 600{,}000(5) \\ge 4{,}000{,}000$, demak $150{,}000p \\ge 1{,}000{,}000$ va $p \\ge 6.67$. $p$ butun son, shuning uchun $p \\ge 7$. Birgalikda: $7 \\le p \\le 26$.\n\nA variant $6.67$ ni pastga, $6$ ga yaxlitlaydi, lekin $6$ ta yostiq jildi bilan daromad atigi $900{,}000 + 3{,}000{,}000 = 3{,}900{,}000$ so‘m bo‘ladi. B variant devoriy so‘zanalarga ketadigan $40$ soatni hisobga olmaydi ($120 \\div 3 = 40$). C variant daromad shartini e’tiborsiz qoldiradi.",
+    "estimated_seconds": 150,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "linear_inequalities",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "$$\\begin{aligned} y &> 2x - 6 \\\\ y &< -x + 9 \\end{aligned}$$\n\nThe point $(x, y)$ is a solution to the given system of inequalities. If $x$ is an integer, what is the greatest possible value of $x$?",
+    "spr_answers": [
+      "4"
+    ],
+    "explanation_en": "A value $y$ exists exactly when $2x - 6 < y < -x + 9$ has room for $y$, that is, when $2x - 6 < -x + 9$. This gives $3x < 15$, so $x < 5$.\n\nThe greatest integer less than $5$ is $4$. For $x = 4$ we need $2 < y < 5$; for example, $(4, 3)$ satisfies both inequalities.\n\nA common error is to answer $5$, the $x$-coordinate where the two boundary lines intersect. At $x = 5$ the conditions become $y > 4$ and $y < 4$, which no $y$ satisfies.",
+    "explanation_uz": "$y$ mavjud bo‘lishi uchun $2x - 6 < y < -x + 9$ oralig‘i bo‘sh bo‘lmasligi, ya’ni $2x - 6 < -x + 9$ bo‘lishi kerak. Bundan $3x < 15$, demak $x < 5$.\n\n$5$ dan kichik eng katta butun son — $4$. $x = 4$ da $2 < y < 5$ kerak; masalan, $(4, 3)$ ikkala tengsizlikni qanoatlantiradi.\n\nKo‘p uchraydigan xato — ikki chegara chizig‘i kesishgan nuqtaning $x$ koordinatasi $5$ ni javob deb berish. $x = 5$ da shartlar $y > 4$ va $y < 4$ ko‘rinishiga keladi, bunday $y$ yo‘q.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  }
+]

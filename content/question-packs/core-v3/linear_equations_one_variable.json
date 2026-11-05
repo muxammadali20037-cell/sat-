@@ -1,0 +1,141 @@
+[
+  {
+    "skill_code": "linear_equations_one_variable",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "What value of $x$ is the solution to the equation $9 - 2(x - 4) = 3x + 2$?",
+    "option_a": "$-\\frac{1}{5}$",
+    "option_b": "$\\frac{3}{5}$",
+    "option_c": "$3$",
+    "option_d": "$15$",
+    "correct": "C",
+    "explanation_en": "Distribute the $-2$: $9 - 2x + 8 = 3x + 2$, so $17 - 2x = 3x + 2$.\n\nAdd $2x$ to both sides and subtract $2$: $15 = 5x$, so $x = 3$. Check: $9 - 2(3 - 4) = 9 + 2 = 11$ and $3(3) + 2 = 11$.\n\nChoice A comes from writing $-2(x - 4)$ as $-2x - 8$ (the sign of the $8$ is wrong). Choice B comes from multiplying only $x$ by $-2$, writing $-2x - 4$. Choice D is $5x$, not $x$: the last division by $5$ was skipped.",
+    "explanation_uz": "$-2$ ni qavsga ko‘paytiramiz: $9 - 2x + 8 = 3x + 2$, ya’ni $17 - 2x = 3x + 2$.\n\nIkkala tomonga $2x$ ni qo‘shamiz va $2$ ni ayiramiz: $15 = 5x$, demak $x = 3$. Tekshiruv: $9 - 2(3 - 4) = 9 + 2 = 11$ va $3(3) + 2 = 11$.\n\nA variant $-2(x - 4)$ ni $-2x - 8$ deb yozishdan chiqadi ($8$ ning ishorasi xato). B variant faqat $x$ ni $-2$ ga ko‘paytirib, $-2x - 4$ deb yozishdan kelib chiqadi. D variant — bu $5x$ ning qiymati: oxirida $5$ ga bo‘lish unutilgan.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "linear_equations_one_variable",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "The Afrosiyob high-speed train runs on the $344$-kilometer rail line from Tashkent to Samarkand. On one trip, after traveling at an average speed of $160$ kilometers per hour for $t$ hours, the train still had $104$ kilometers left to travel. The equation $344 - 160t = 104$ represents this situation. What is the value of $t$?",
+    "option_a": "$0.65$",
+    "option_b": "$1.5$",
+    "option_c": "$2.15$",
+    "option_d": "$2.8$",
+    "correct": "B",
+    "explanation_en": "Subtract $344$ from both sides: $-160t = 104 - 344 = -240$. Divide by $-160$: $t = 1.5$.\n\nSo the train had been traveling for $1.5$ hours. Check: $160(1.5) = 240$ km traveled, and $344 - 240 = 104$ km remain.\n\nChoice A is $104 \\div 160$, the time needed for the remaining distance, not the time already spent. Choice C is $344 \\div 160$, the time for the whole trip. Choice D comes from adding instead of subtracting: $(344 + 104) \\div 160 = 2.8$.",
+    "explanation_uz": "Ikkala tomondan $344$ ni ayiramiz: $-160t = 104 - 344 = -240$. $-160$ ga bo‘lamiz: $t = 1.5$.\n\nDemak, poyezd $1.5$ soat yo‘l yurgan. Tekshiruv: $160(1.5) = 240$ km bosib o‘tilgan va $344 - 240 = 104$ km qolgan.\n\nA variant — $104 \\div 160$, ya’ni qolgan masofa uchun kerak bo‘ladigan vaqt, o‘tgan vaqt emas. C variant — $344 \\div 160$, butun yo‘l uchun vaqt. D variant ayirish o‘rniga qo‘shishdan chiqadi: $(344 + 104) \\div 160 = 2.8$.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "linear_equations_one_variable",
+    "difficulty": "easy",
+    "question_type": "spr",
+    "stem": "The temperature $F$, in degrees Fahrenheit, and the temperature $C$, in degrees Celsius, are related by the equation $F = 1.8C + 32$. On a January morning in Nukus, a thermometer showed a temperature of $14$ degrees Fahrenheit. What was this temperature, in degrees Celsius?",
+    "spr_answers": [
+      "-10"
+    ],
+    "explanation_en": "Substitute $F = 14$: $14 = 1.8C + 32$.\n\nSubtract $32$ from both sides: $1.8C = -18$. Divide by $1.8$: $C = -10$.\n\nCheck: $1.8(-10) + 32 = -18 + 32 = 14$. A common error is to divide first and then subtract, $\\frac{14}{1.8} - 32 \\approx -24.2$; the $32$ must be removed before dividing by $1.8$.",
+    "explanation_uz": "$F = 14$ ni qo‘yamiz: $14 = 1.8C + 32$.\n\nIkkala tomondan $32$ ni ayiramiz: $1.8C = -18$. $1.8$ ga bo‘lamiz: $C = -10$.\n\nTekshiruv: $1.8(-10) + 32 = -18 + 32 = 14$. Ko‘p uchraydigan xato — avval bo‘lib, keyin ayirish: $\\frac{14}{1.8} - 32 \\approx -24.2$. $1.8$ ga bo‘lishdan oldin $32$ ni ayirish kerak.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "linear_equations_one_variable",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "What is the solution to the equation $\\dfrac{3x + 2}{4} - \\dfrac{x - 1}{6} = 2$?",
+    "option_a": "$-1$",
+    "option_b": "$-\\frac{6}{7}$",
+    "option_c": "$\\frac{20}{7}$",
+    "option_d": "$\\frac{16}{7}$",
+    "correct": "D",
+    "explanation_en": "Multiply every term by the least common denominator, $12$: $3(3x + 2) - 2(x - 1) = 24$.\n\nDistribute: $9x + 6 - 2x + 2 = 24$, so $7x + 8 = 24$. Then $7x = 16$ and $x = \\frac{16}{7}$.\n\nChoice C comes from writing $-2(x - 1)$ as $-2x - 2$, which gives $7x + 4 = 24$. Choice B comes from multiplying the left side by $12$ but leaving the right side as $2$. Choice A makes the same mistake with the denominator $24$: $6(3x + 2) - 4(x - 1) = 2$.",
+    "explanation_uz": "Har bir hadni eng kichik umumiy maxraj $12$ ga ko‘paytiramiz: $3(3x + 2) - 2(x - 1) = 24$.\n\nQavslarni ochamiz: $9x + 6 - 2x + 2 = 24$, ya’ni $7x + 8 = 24$. U holda $7x = 16$ va $x = \\frac{16}{7}$.\n\nC variant $-2(x - 1)$ ni $-2x - 2$ deb yozishdan chiqadi, bunda $7x + 4 = 24$ hosil bo‘ladi. B variant chap tomonni $12$ ga ko‘paytirib, o‘ng tomondagi $2$ ni ko‘paytirmay qoldirishdan chiqadi. A variant ham xuddi shu xato, faqat maxraj $24$ olingan: $6(3x + 2) - 4(x - 1) = 2$.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "linear_equations_one_variable",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "On January 1, 2026, the population of Uzbekistan was about $38.2$ million. A planner uses the equation $38.2 + 0.68t = 45$ to estimate the number of years $t$ after January 1, 2026, at which the population will reach $45$ million. According to this model, in which year will the population reach $45$ million?",
+    "option_a": "$2036$",
+    "option_b": "$2033$",
+    "option_c": "$2016$",
+    "option_d": "$2092$",
+    "correct": "A",
+    "explanation_en": "Subtract $38.2$ from both sides: $0.68t = 6.8$. Divide by $0.68$: $t = 10$.\n\nThe population reaches $45$ million $10$ years after 2026, that is, in $2026 + 10 = 2036$.\n\nChoice B treats the increase $6.8$ million as a number of years ($2026 + 6.8 \\approx 2033$). Choice C subtracts $10$ years instead of adding them. Choice D divides $45$ by $0.68$ ($\\approx 66$ years) without first subtracting the starting population.",
+    "explanation_uz": "Ikkala tomondan $38.2$ ni ayiramiz: $0.68t = 6.8$. $0.68$ ga bo‘lamiz: $t = 10$.\n\nAholi soni 2026-yildan $10$ yil o‘tib $45$ millionga yetadi, ya’ni $2026 + 10 = 2036$-yilda.\n\nB variant $6.8$ million o‘sishni yillar soni deb oladi ($2026 + 6.8 \\approx 2033$). C variant $10$ yilni qo‘shish o‘rniga ayiradi. D variant boshlang‘ich aholi sonini ayirmasdan $45$ ni $0.68$ ga bo‘ladi ($\\approx 66$ yil).",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "linear_equations_one_variable",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "$$\\frac{5}{6}x - \\frac{1}{3} = \\frac{1}{2}(x + 3)$$\n\nWhat is the solution to the given equation?",
+    "spr_answers": [
+      "11/2",
+      "5.5"
+    ],
+    "explanation_en": "Multiply both sides by $6$: $5x - 2 = 3(x + 3) = 3x + 9$.\n\nSubtract $3x$ and add $2$: $2x = 11$, so $x = \\frac{11}{2}$. Enter 11/2 or 5.5.\n\nCheck: $\\frac{5}{6}(5.5) - \\frac{1}{3} = \\frac{55}{12} - \\frac{4}{12} = \\frac{51}{12} = 4.25$ and $\\frac{1}{2}(8.5) = 4.25$. A common error is to multiply only the $x + 3$ by $6$ on the right and forget the factor $\\frac{1}{2}$, which gives $5x - 2 = 6x + 18$ and $x = -20$.",
+    "explanation_uz": "Ikkala tomonni $6$ ga ko‘paytiramiz: $5x - 2 = 3(x + 3) = 3x + 9$.\n\n$3x$ ni ayiramiz va $2$ ni qo‘shamiz: $2x = 11$, demak $x = \\frac{11}{2}$. Javobni 11/2 yoki 5.5 shaklida kiriting.\n\nTekshiruv: $\\frac{5}{6}(5.5) - \\frac{1}{3} = \\frac{55}{12} - \\frac{4}{12} = \\frac{51}{12} = 4.25$ va $\\frac{1}{2}(8.5) = 4.25$. Ko‘p uchraydigan xato — o‘ng tomonda $\\frac{1}{2}$ ko‘paytuvchini unutib, $x + 3$ ni to‘g‘ridan-to‘g‘ri $6$ ga ko‘paytirish: $5x - 2 = 6x + 18$ va $x = -20$.",
+    "estimated_seconds": 100,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "linear_equations_one_variable",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "$$k(2x + 3) - 4 = 6x + 2k$$\n\nIn the given equation, $k$ is a constant. For what value of $k$ does the equation have no solution?",
+    "option_a": "$-3$",
+    "option_b": "$3$",
+    "option_c": "$4$",
+    "option_d": "$6$",
+    "correct": "B",
+    "explanation_en": "Expand the left side: $2kx + 3k - 4 = 6x + 2k$. A linear equation has no solution when the $x$-coefficients on the two sides are equal but the constant terms are different.\n\nEqual coefficients: $2k = 6$, so $k = 3$. Then the constants are $3(3) - 4 = 5$ on the left and $2(3) = 6$ on the right. The equation becomes $6x + 5 = 6x + 6$, which is never true, so there is no solution.\n\nChoice C makes the constants equal ($3k - 4 = 2k$ gives $k = 4$), but then $8x + 8 = 6x + 8$ has exactly one solution, $x = 0$. Choice D sets $k$ equal to the coefficient $6$ instead of $2k = 6$. Choice A has the wrong sign; with $k = -3$ the equation $-6x - 13 = 6x - 6$ has one solution.",
+    "explanation_uz": "Chap tomonni ochamiz: $2kx + 3k - 4 = 6x + 2k$. Chiziqli tenglama ikkala tomondagi $x$ koeffitsiyentlari teng, ozod hadlari esa har xil bo‘lganda yechimga ega bo‘lmaydi.\n\nKoeffitsiyentlar teng: $2k = 6$, demak $k = 3$. Bunda chapdagi ozod had $3(3) - 4 = 5$, o‘ngdagisi $2(3) = 6$. Tenglama $6x + 5 = 6x + 6$ ko‘rinishiga keladi — bu hech qachon to‘g‘ri emas, demak yechim yo‘q.\n\nC variant ozod hadlarni tenglashtiradi ($3k - 4 = 2k$ dan $k = 4$), lekin unda $8x + 8 = 6x + 8$ tenglama aynan bitta yechimga ($x = 0$) ega. D variant $2k = 6$ o‘rniga $k$ ni $6$ ga tenglaydi. A variantda ishora xato: $k = -3$ bo‘lsa, $-6x - 13 = 6x - 6$ bitta yechimga ega.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "linear_equations_one_variable",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "$$\\frac{a}{3}(6x - 9) + 4 = 10x + b$$\n\nIn the given equation, $a$ and $b$ are constants. If the equation has infinitely many solutions, what is the value of $a - b$?",
+    "spr_answers": [
+      "16"
+    ],
+    "explanation_en": "Expand the left side: $\\frac{a}{3} \\cdot 6x - \\frac{a}{3} \\cdot 9 + 4 = 2ax - 3a + 4$.\n\nFor infinitely many solutions, both sides must be the same expression: $2a = 10$ and $-3a + 4 = b$. So $a = 5$ and $b = -15 + 4 = -11$.\n\nTherefore $a - b = 5 - (-11) = 16$. A common error is to compute $5 - 11 = -6$, ignoring that $b$ is negative; another is to use $a = 10$ by forgetting the factor $\\frac{6}{3} = 2$.",
+    "explanation_uz": "Chap tomonni ochamiz: $\\frac{a}{3} \\cdot 6x - \\frac{a}{3} \\cdot 9 + 4 = 2ax - 3a + 4$.\n\nCheksiz ko‘p yechim bo‘lishi uchun ikkala tomon bir xil ifoda bo‘lishi kerak: $2a = 10$ va $-3a + 4 = b$. Demak $a = 5$ va $b = -15 + 4 = -11$.\n\nShunday qilib, $a - b = 5 - (-11) = 16$. Ko‘p uchraydigan xato — $b$ manfiy ekanini e’tiborsiz qoldirib, $5 - 11 = -6$ deb hisoblash; yana bir xato — $\\frac{6}{3} = 2$ ko‘paytuvchini unutib, $a = 10$ deb olish.",
+    "estimated_seconds": 130,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  }
+]

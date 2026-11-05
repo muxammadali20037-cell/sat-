@@ -1,0 +1,140 @@
+[
+  {
+    "skill_code": "systems_linear_equations",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "$$\\begin{aligned} y &= 4x - 7 \\\\ y &= x + 5 \\end{aligned}$$\n\nWhat is the solution $(x, y)$ to the given system of equations?",
+    "option_a": "$(2, 7)$",
+    "option_b": "$(9, 4)$",
+    "option_c": "$(4, 9)$",
+    "option_d": "$(-4, 1)$",
+    "correct": "C",
+    "explanation_en": "Set the two expressions for $y$ equal: $4x - 7 = x + 5$. Then $3x = 12$, so $x = 4$, and $y = 4 + 5 = 9$.\n\nCheck in the first equation: $4(4) - 7 = 9$.\n\nChoice B swaps $x$ and $y$. Choice A satisfies only the second equation ($2 + 5 = 7$, but $4(2) - 7 = 1$). Choice D also satisfies only the second equation.",
+    "explanation_uz": "$y$ uchun ikki ifodani tenglaymiz: $4x - 7 = x + 5$. U holda $3x = 12$, demak $x = 4$ va $y = 4 + 5 = 9$.\n\nBirinchi tenglamada tekshiramiz: $4(4) - 7 = 9$.\n\nB variant $x$ va $y$ ni almashtirib qo‘yadi. A variant faqat ikkinchi tenglamani qanoatlantiradi ($2 + 5 = 7$, lekin $4(2) - 7 = 1$). D variant ham faqat ikkinchi tenglamani qanoatlantiradi.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "systems_linear_equations",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "A farmer in the Fergana Valley packed $52$ crates of fruit. Each crate held either $12$ kilograms of apricots or $15$ kilograms of peaches. The total mass of fruit in the crates was $699$ kilograms. How many crates of peaches did the farmer pack?",
+    "option_a": "$25$",
+    "option_b": "$27$",
+    "option_c": "$47$",
+    "option_d": "$58$",
+    "correct": "A",
+    "explanation_en": "Let $a$ be the number of apricot crates and $p$ the number of peach crates: $a + p = 52$ and $12a + 15p = 699$.\n\nSubstitute $a = 52 - p$: $12(52 - p) + 15p = 699$, so $624 + 3p = 699$, $3p = 75$, and $p = 25$.\n\nCheck: $a = 27$ and $12(27) + 15(25) = 324 + 375 = 699$. Choice B is the number of apricot crates. Choice C is about $699 \\div 15$ and Choice D is about $699 \\div 12$; each assumes all the fruit is one kind.",
+    "explanation_uz": "$a$ — o‘rik yashiklari soni, $p$ — shaftoli yashiklari soni bo‘lsin: $a + p = 52$ va $12a + 15p = 699$.\n\n$a = 52 - p$ ni qo‘yamiz: $12(52 - p) + 15p = 699$, ya’ni $624 + 3p = 699$, $3p = 75$ va $p = 25$.\n\nTekshiruv: $a = 27$ va $12(27) + 15(25) = 324 + 375 = 699$. B variant — o‘rik yashiklari soni. C variant taxminan $699 \\div 15$, D variant esa taxminan $699 \\div 12$; ikkalasi ham barcha meva bir xil deb hisoblaydi.",
+    "estimated_seconds": 75,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "systems_linear_equations",
+    "difficulty": "easy",
+    "question_type": "spr",
+    "stem": "$$\\begin{aligned} 3x + 2y &= 7 \\\\ -3x + 5y &= 28 \\end{aligned}$$\n\nIf $(x, y)$ is the solution to the given system of equations, what is the value of $x$?",
+    "spr_answers": [
+      "-1"
+    ],
+    "explanation_en": "Add the equations to eliminate $x$: $7y = 35$, so $y = 5$.\n\nSubstitute into the first equation: $3x + 10 = 7$, so $3x = -3$ and $x = -1$. Check: $-3(-1) + 5(5) = 3 + 25 = 28$.\n\nBe careful to enter $x$; entering $y = 5$ is a common error.",
+    "explanation_uz": "$x$ ni yo‘qotish uchun tenglamalarni qo‘shamiz: $7y = 35$, demak $y = 5$.\n\nBirinchi tenglamaga qo‘yamiz: $3x + 10 = 7$, demak $3x = -3$ va $x = -1$. Tekshiruv: $-3(-1) + 5(5) = 3 + 25 = 28$.\n\nE’tibor bering: savol $x$ ni so‘rayapti; $y = 5$ ni kiritish — ko‘p uchraydigan xato.",
+    "estimated_seconds": 65,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "systems_linear_equations",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "According to official statistics, the permanent population of Uzbekistan was about $38.2$ million on January 1, 2026, and there were about $0.4$ million more men than women. Based on these figures, about how many million women lived in Uzbekistan?",
+    "option_a": "$18.7$",
+    "option_b": "$18.9$",
+    "option_c": "$19.3$",
+    "option_d": "$37.8$",
+    "correct": "B",
+    "explanation_en": "Let $m$ and $w$ be the numbers of men and women, in millions: $m + w = 38.2$ and $m - w = 0.4$.\n\nSubtract the second equation from the first: $2w = 37.8$, so $w = 18.9$. Then $m = 19.3$, and $19.3 - 18.9 = 0.4$.\n\nChoice C is the number of men. Choice D is $2w$, the result before dividing by $2$. Choice A halves the total and then subtracts the whole difference ($19.1 - 0.4$); only half of the difference should be subtracted.",
+    "explanation_uz": "$m$ va $w$ — erkaklar va ayollar soni (million) bo‘lsin: $m + w = 38.2$ va $m - w = 0.4$.\n\nBirinchi tenglamadan ikkinchisini ayiramiz: $2w = 37.8$, demak $w = 18.9$. U holda $m = 19.3$ va $19.3 - 18.9 = 0.4$.\n\nC variant — erkaklar soni. D variant — $2w$, ya’ni $2$ ga bo‘lishdan oldingi natija. A variant jami sonning yarmini olib, butun farqni ayiradi ($19.1 - 0.4$); aslida farqning yarmini ayirish kerak.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "systems_linear_equations",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "$$\\begin{aligned} 2x + 3y &= 12 \\\\ 5x - 2y &= 11 \\end{aligned}$$\n\nIf $(x, y)$ is the solution to the given system of equations, what is the value of $7x + y$?",
+    "option_a": "$1$",
+    "option_b": "$5$",
+    "option_c": "$21$",
+    "option_d": "$23$",
+    "correct": "D",
+    "explanation_en": "Adding the two equations gives $(2x + 5x) + (3y - 2y) = 12 + 11$, that is, $7x + y = 23$, without solving for $x$ and $y$.\n\n(Solving fully gives $x = 3$ and $y = 2$, and $7(3) + 2 = 23$.)\n\nChoice B is $x + y$ and Choice A is $x - y$. Choice C is $7x$; the value of $y$ was left out.",
+    "explanation_uz": "Ikkala tenglamani qo‘shsak, $(2x + 5x) + (3y - 2y) = 12 + 11$, ya’ni $7x + y = 23$ — $x$ va $y$ ni alohida topmasdan.\n\n(To‘liq yechsak, $x = 3$ va $y = 2$, hamda $7(3) + 2 = 23$.)\n\nB variant — $x + y$, A variant — $x - y$. C variant — $7x$; $y$ ning qiymati qo‘shilmay qolgan.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "systems_linear_equations",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "The rail distance between Tashkent and Samarkand is $344$ kilometers. At noon, a freight train leaves Tashkent for Samarkand at an average speed of $90$ kilometers per hour, and at the same time another freight train leaves Samarkand for Tashkent at an average speed of $82$ kilometers per hour on a parallel track. How far from Tashkent, in kilometers, are the trains when they pass each other?",
+    "spr_answers": [
+      "180"
+    ],
+    "explanation_en": "Let $d$ be the distance from Tashkent where they pass and $t$ the time in hours: $d = 90t$ and $344 - d = 82t$.\n\nAdding: $344 = 172t$, so $t = 2$ hours. Then $d = 90(2) = 180$ kilometers.\n\nCheck: the second train travels $82(2) = 164$ km, and $180 + 164 = 344$. A common error is to enter $164$, the distance from Samarkand, or $2$, the time.",
+    "explanation_uz": "$d$ — poyezdlar uchrashadigan joyning Toshkentdan masofasi, $t$ — soatlardagi vaqt bo‘lsin: $d = 90t$ va $344 - d = 82t$.\n\nQo‘shamiz: $344 = 172t$, demak $t = 2$ soat. U holda $d = 90(2) = 180$ kilometr.\n\nTekshiruv: ikkinchi poyezd $82(2) = 164$ km yuradi va $180 + 164 = 344$. Ko‘p uchraydigan xato — Samarqanddan masofa $164$ ni yoki vaqt $2$ ni kiritish.",
+    "estimated_seconds": 100,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "systems_linear_equations",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "$$\\begin{aligned} ax + 3y &= 9 \\\\ 4x + (a + 1)y &= 12 \\end{aligned}$$\n\nIn the given system of equations, $a$ is a constant. For which value of $a$ does the system have infinitely many solutions?",
+    "option_a": "$-4$",
+    "option_b": "$-3$",
+    "option_c": "$3$",
+    "option_d": "$4$",
+    "correct": "C",
+    "explanation_en": "The system has infinitely many solutions when one equation is a multiple of the other: $\\frac{a}{4} = \\frac{3}{a + 1} = \\frac{9}{12}$.\n\nFrom $\\frac{a}{4} = \\frac{3}{4}$, $a = 3$. Check: $\\frac{3}{a + 1} = \\frac{3}{4}$ as well. With $a = 3$, the equations are $3x + 3y = 9$ and $4x + 4y = 12$, both equivalent to $x + y = 3$.\n\nChoice A also makes the lines parallel, since $a(a + 1) = 12$ holds for $a = -4$, but then the equations are $-4x + 3y = 9$ and $4x - 3y = 12$, i.e., $4x - 3y = -9$ and $4x - 3y = 12$: the system has no solution. Choices B and D give non-parallel lines, so the system has exactly one solution.",
+    "explanation_uz": "Tenglamalardan biri ikkinchisining karralisi bo‘lsa, sistema cheksiz ko‘p yechimga ega: $\\frac{a}{4} = \\frac{3}{a + 1} = \\frac{9}{12}$.\n\n$\\frac{a}{4} = \\frac{3}{4}$ dan $a = 3$. Tekshiruv: $\\frac{3}{a + 1} = \\frac{3}{4}$ ham bajariladi. $a = 3$ da tenglamalar $3x + 3y = 9$ va $4x + 4y = 12$ bo‘ladi, ikkalasi ham $x + y = 3$ ga teng kuchli.\n\nA variantda ham chiziqlar parallel, chunki $a = -4$ uchun ham $a(a + 1) = 12$, lekin unda tenglamalar $-4x + 3y = 9$ va $4x - 3y = 12$, ya’ni $4x - 3y = -9$ va $4x - 3y = 12$ bo‘ladi: sistema yechimga ega emas. B va D variantlarda chiziqlar parallel emas, demak sistema aynan bitta yechimga ega.",
+    "estimated_seconds": 130,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "systems_linear_equations",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "A worker strikes one end of a long steel rail with a hammer. A student with an ear pressed to the other end hears two sounds: one that travels through the steel and one that travels through the air. Assume that sound travels at $5{,}100$ meters per second in steel and $340$ meters per second in air. The student hears the sound through the air $1.4$ seconds after hearing the sound through the steel. What is the length of the rail, in meters?",
+    "spr_answers": [
+      "510"
+    ],
+    "explanation_en": "Let $d$ be the length in meters and $t$ the time, in seconds, for sound to travel through the steel. Then $d = 5{,}100t$ and $d = 340(t + 1.4)$.\n\nSet them equal: $5{,}100t = 340t + 476$, so $4{,}760t = 476$ and $t = 0.1$ second. Then $d = 5{,}100(0.1) = 510$ meters.\n\nCheck: through the air, $510 \\div 340 = 1.5$ seconds, and $1.5 - 0.1 = 1.4$. A common error is to use only the air speed, $340(1.4) = 476$ meters, which ignores the time the steel sound took.",
+    "explanation_uz": "$d$ — relsning uzunligi (metr), $t$ — tovushning po‘lat orqali o‘tish vaqti (sekund) bo‘lsin. U holda $d = 5{,}100t$ va $d = 340(t + 1.4)$.\n\nUlarni tenglaymiz: $5{,}100t = 340t + 476$, demak $4{,}760t = 476$ va $t = 0.1$ sekund. U holda $d = 5{,}100(0.1) = 510$ metr.\n\nTekshiruv: havo orqali $510 \\div 340 = 1.5$ sekund va $1.5 - 0.1 = 1.4$. Ko‘p uchraydigan xato — faqat havodagi tezlikni olib, $340(1.4) = 476$ metr deb hisoblash; bunda po‘lat orqali o‘tgan tovush vaqti hisobga olinmaydi.",
+    "estimated_seconds": 150,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  }
+]
