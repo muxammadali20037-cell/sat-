@@ -1,0 +1,298 @@
+[
+  {
+    "skill_code": "equivalent_expressions",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "Which expression is equivalent to $12x^3y - 18x^2y^2$?",
+    "option_a": "$6x^2y(2x - 3y)$",
+    "option_b": "$6xy(2x^2 - 3y)$",
+    "option_c": "$6x^2y(2x + 3y)$",
+    "option_d": "$2x^2y(6x - 9y^2)$",
+    "correct": "A",
+    "explanation_en": "The greatest common factor of $12x^3y$ and $18x^2y^2$ is $6x^2y$. Dividing each term by it gives $2x$ and $3y$, so the expression equals $6x^2y(2x - 3y)$. Check: $6x^2y \\cdot 2x = 12x^3y$ and $6x^2y \\cdot 3y = 18x^2y^2$.\n\nChoice B expands to $12x^3y - 18xy^2$ (only one factor of $x$ in the second term). Choice C has the wrong sign. Choice D expands to $12x^3y - 18x^2y^3$.",
+    "explanation_uz": "$12x^3y$ va $18x^2y^2$ ning eng katta umumiy bo‘luvchisi $6x^2y$. Har bir hadni unga bo‘lsak, $2x$ va $3y$ chiqadi, demak ifoda $6x^2y(2x - 3y)$ ga teng. Tekshiruv: $6x^2y \\cdot 2x = 12x^3y$ va $6x^2y \\cdot 3y = 18x^2y^2$.\n\nB variant qavs ochilganda $12x^3y - 18xy^2$ beradi (ikkinchi hadda $x$ faqat bitta). C variantda ishora noto‘g‘ri. D variant $12x^3y - 18x^2y^3$ beradi.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "factor_gcf"
+    ]
+  },
+  {
+    "skill_code": "equivalent_expressions",
+    "difficulty": "easy",
+    "question_type": "spr",
+    "stem": "The expression $(3x - 2)(x + 5) - x^2$ is equivalent to $ax^2 + bx + c$, where $a$, $b$, and $c$ are constants. What is the value of $a + b + c$?",
+    "spr_answers": [
+      "5"
+    ],
+    "explanation_en": "Expand: $(3x - 2)(x + 5) = 3x^2 + 15x - 2x - 10 = 3x^2 + 13x - 10$. Subtracting $x^2$ gives $2x^2 + 13x - 10$, so $a = 2$, $b = 13$, $c = -10$, and $a + b + c = 5$.\n\nShortcut: $a + b + c$ is the value of the expression at $x = 1$: $(1)(6) - 1 = 5$.",
+    "explanation_uz": "Qavslarni ochamiz: $(3x - 2)(x + 5) = 3x^2 + 15x - 2x - 10 = 3x^2 + 13x - 10$. $x^2$ ni ayirsak, $2x^2 + 13x - 10$, ya’ni $a = 2$, $b = 13$, $c = -10$ va $a + b + c = 5$.\n\nQisqa yo‘l: $a + b + c$ — ifodaning $x = 1$ dagi qiymati: $(1)(6) - 1 = 5$.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "expand_and_combine"
+    ]
+  },
+  {
+    "skill_code": "equivalent_expressions",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "Which expression is equivalent to $\\sqrt[3]{x^2} \\cdot \\sqrt{x}$, where $x > 0$?",
+    "option_a": "$x^{\\frac{7}{6}}$",
+    "option_b": "$x^{\\frac{1}{3}}$",
+    "option_c": "$x^{\\frac{3}{5}}$",
+    "option_d": "$x^{\\frac{2}{5}}$",
+    "correct": "A",
+    "explanation_en": "Write each root as a power: $\\sqrt[3]{x^2} = x^{\\frac{2}{3}}$ and $\\sqrt{x} = x^{\\frac{1}{2}}$. When multiplying powers with the same base, add the exponents: $\\frac{2}{3} + \\frac{1}{2} = \\frac{4}{6} + \\frac{3}{6} = \\frac{7}{6}$.\n\nChoice B multiplies the exponents instead of adding them. Choice C adds the numerators and the denominators separately, $\\frac{2 + 1}{3 + 2}$. Choice D keeps the exponent $2$ and adds the root indexes, $3 + 2$.",
+    "explanation_uz": "Har bir ildizni daraja ko‘rinishida yozamiz: $\\sqrt[3]{x^2} = x^{\\frac{2}{3}}$ va $\\sqrt{x} = x^{\\frac{1}{2}}$. Asoslari bir xil darajalar ko‘paytirilganda ko‘rsatkichlar qo‘shiladi: $\\frac{2}{3} + \\frac{1}{2} = \\frac{4}{6} + \\frac{3}{6} = \\frac{7}{6}$.\n\nB variant ko‘rsatkichlarni qo‘shish o‘rniga ko‘paytiradi. C variant suratlar va maxrajlarni alohida qo‘shadi: $\\frac{2 + 1}{3 + 2}$. D variant $2$ darajani saqlab, ildiz ko‘rsatkichlarini qo‘shadi: $3 + 2$.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "rational_exponents"
+    ]
+  },
+  {
+    "skill_code": "equivalent_expressions",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "The kinetic energy $E$ of a moving object is given by the formula $E = \\dfrac{1}{2}mv^2$, where $m$ is the mass of the object and $v$ is its speed. Which equation gives $v$ in terms of $E$ and $m$, for $v > 0$?",
+    "option_a": "$v = \\sqrt{\\dfrac{2E}{m}}$",
+    "option_b": "$v = \\sqrt{\\dfrac{E}{2m}}$",
+    "option_c": "$v = \\dfrac{2E}{m}$",
+    "option_d": "$v = \\sqrt{2Em}$",
+    "correct": "A",
+    "explanation_en": "Multiply both sides by $2$: $2E = mv^2$. Divide by $m$: $v^2 = \\frac{2E}{m}$. Since $v > 0$, take the positive square root: $v = \\sqrt{\\frac{2E}{m}}$.\n\nChoice B divides by $2$ instead of multiplying. Choice C forgets the square root. Choice D multiplies by $m$ instead of dividing.",
+    "explanation_uz": "Ikkala tomonni $2$ ga ko‘paytiramiz: $2E = mv^2$. $m$ ga bo‘lamiz: $v^2 = \\frac{2E}{m}$. $v > 0$ bo‘lgani uchun musbat kvadrat ildiz olamiz: $v = \\sqrt{\\frac{2E}{m}}$.\n\nB variant $2$ ga ko‘paytirish o‘rniga bo‘ladi. C variant kvadrat ildizni unutadi. D variant $m$ ga bo‘lish o‘rniga ko‘paytiradi.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "rearrange_formula"
+    ]
+  },
+  {
+    "skill_code": "equivalent_expressions",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "Which expression is equivalent to $4x^2 - (x - 3)^2$?",
+    "option_a": "$3x^2 - 6x + 9$",
+    "option_b": "$3x^2 + 6x - 9$",
+    "option_c": "$3x^2 - 9$",
+    "option_d": "$3x^2 - 6x - 9$",
+    "correct": "B",
+    "explanation_en": "First expand the square: $(x - 3)^2 = x^2 - 6x + 9$. Then subtract the whole expression: $4x^2 - (x^2 - 6x + 9) = 4x^2 - x^2 + 6x - 9 = 3x^2 + 6x - 9$.\n\nChoice A does not distribute the negative sign. Choice C uses $(x - 3)^2 = x^2 + 9$, dropping the middle term $-6x$. Choice D changes the sign of only the last term.",
+    "explanation_uz": "Avval kvadratni ochamiz: $(x - 3)^2 = x^2 - 6x + 9$. Keyin butun ifodani ayiramiz: $4x^2 - (x^2 - 6x + 9) = 4x^2 - x^2 + 6x - 9 = 3x^2 + 6x - 9$.\n\nA variant minus ishorasini qavs ichidagi hadlarga tarqatmaydi. C variant $(x - 3)^2 = x^2 + 9$ deb, o‘rta had $-6x$ ni tushirib qoldiradi. D variant faqat oxirgi hadning ishorasini o‘zgartiradi.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "subtract_squared_binomial"
+    ]
+  },
+  {
+    "skill_code": "equivalent_expressions",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "Which expression is equivalent to $(2x^3 + 5x - 1) - (x^3 - 7x + 4)$?",
+    "option_a": "$x^3 + 12x - 5$",
+    "option_b": "$x^3 - 2x + 3$",
+    "option_c": "$x^3 - 2x - 5$",
+    "option_d": "$x^3 + 12x + 3$",
+    "correct": "A",
+    "explanation_en": "Distribute the subtraction to every term in the second polynomial: $2x^3 + 5x - 1 - x^3 + 7x - 4$. Combine like terms: $(2x^3 - x^3) + (5x + 7x) + (-1 - 4) = x^3 + 12x - 5$.\n\nChoice B adds the polynomials instead of subtracting. Choice C subtracts only the constant correctly. Choice D subtracts only the $x$-term correctly.",
+    "explanation_uz": "Ayirishni ikkinchi ko‘phadning har bir hadiga tarqatamiz: $2x^3 + 5x - 1 - x^3 + 7x - 4$. O‘xshash hadlarni birlashtiramiz: $(2x^3 - x^3) + (5x + 7x) + (-1 - 4) = x^3 + 12x - 5$.\n\nB variant ko‘phadlarni ayirish o‘rniga qo‘shadi. C variant faqat ozod hadni to‘g‘ri ayiradi. D variant faqat $x$ li hadni to‘g‘ri ayiradi.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "polynomial_add_subtract"
+    ]
+  },
+  {
+    "skill_code": "equivalent_expressions",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "Which expression is equivalent to $2x^2 - 7x - 15$?",
+    "option_a": "$(2x + 3)(x - 5)$",
+    "option_b": "$(2x - 3)(x + 5)$",
+    "option_c": "$(2x + 5)(x - 3)$",
+    "option_d": "$(2x - 5)(x + 3)$",
+    "correct": "A",
+    "explanation_en": "Expand choice A: $(2x + 3)(x - 5) = 2x^2 - 10x + 3x - 15 = 2x^2 - 7x - 15$. This matches.\n\nChoice B gives $2x^2 + 7x - 15$ (signs reversed). Choice C gives $2x^2 - x - 15$, and choice D gives $2x^2 + x - 15$. All four have the right first and last terms, so only the middle term decides.",
+    "explanation_uz": "A variantni ochamiz: $(2x + 3)(x - 5) = 2x^2 - 10x + 3x - 15 = 2x^2 - 7x - 15$. Mos keladi.\n\nB variant $2x^2 + 7x - 15$ beradi (ishoralar teskari). C variant $2x^2 - x - 15$, D variant esa $2x^2 + x - 15$ beradi. To‘rttalasida ham birinchi va oxirgi hadlar to‘g‘ri, shuning uchun faqat o‘rta had hal qiladi.",
+    "estimated_seconds": 95,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "factor_trinomial"
+    ]
+  },
+  {
+    "skill_code": "equivalent_expressions",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "The equation $(ax + 3)(2x - b) = 6x^2 - 6x - 12$ is true for all values of $x$, where $a$ and $b$ are constants. What is the value of $a + b$?",
+    "spr_answers": [
+      "7"
+    ],
+    "explanation_en": "Expand the left side: $2ax^2 - abx + 6x - 3b = 2ax^2 + (6 - ab)x - 3b$. Matching coefficients: $2a = 6$, so $a = 3$; and $-3b = -12$, so $b = 4$. Check the middle term: $6 - ab = 6 - 12 = -6$. So $a + b = 7$.",
+    "explanation_uz": "Chap tomonni ochamiz: $2ax^2 - abx + 6x - 3b = 2ax^2 + (6 - ab)x - 3b$. Koeffitsiyentlarni tenglashtiramiz: $2a = 6$, ya’ni $a = 3$; $-3b = -12$, ya’ni $b = 4$. O‘rta hadni tekshiramiz: $6 - ab = 6 - 12 = -6$. Demak $a + b = 7$.",
+    "estimated_seconds": 95,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "identity_coefficients"
+    ]
+  },
+  {
+    "skill_code": "equivalent_expressions",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "Which expression is equivalent to $\\sqrt{48x^6}$, where $x > 0$?",
+    "option_a": "$4x^3\\sqrt{3}$",
+    "option_b": "$16x^3\\sqrt{3}$",
+    "option_c": "$24x^3$",
+    "option_d": "$4x^4\\sqrt{3}$",
+    "correct": "A",
+    "explanation_en": "Split the radicand into a perfect square and the rest: $48x^6 = 16x^6 \\cdot 3 = (4x^3)^2 \\cdot 3$. So $\\sqrt{48x^6} = 4x^3\\sqrt{3}$.\n\nChoice B takes $16$ out of the root without taking its square root. Choice C divides $48$ by $2$ as if the square root halved the number. Choice D subtracts $2$ from the exponent instead of dividing it by $2$.",
+    "explanation_uz": "Ildiz ostidagi ifodani to‘la kvadrat va qolgan qismga ajratamiz: $48x^6 = 16x^6 \\cdot 3 = (4x^3)^2 \\cdot 3$. Demak $\\sqrt{48x^6} = 4x^3\\sqrt{3}$.\n\nB variant $16$ ni ildizdan kvadrat ildizini olmasdan chiqaradi. C variant kvadrat ildiz sonni ikkiga bo‘ladi deb, $48$ ni $2$ ga bo‘ladi. D variant daraja ko‘rsatkichini $2$ ga bo‘lish o‘rniga undan $2$ ni ayiradi.",
+    "estimated_seconds": 95,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "radicals"
+    ]
+  },
+  {
+    "skill_code": "equivalent_expressions",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "When two resistors with resistances $a$ and $b$ are connected in parallel, their combined resistance $R$ satisfies $\\dfrac{1}{R} = \\dfrac{1}{a} + \\dfrac{1}{b}$. Which equation gives $b$ in terms of $a$ and $R$?",
+    "option_a": "$b = \\dfrac{aR}{a - R}$",
+    "option_b": "$b = \\dfrac{aR}{R - a}$",
+    "option_c": "$b = a - R$",
+    "option_d": "$b = \\dfrac{a - R}{aR}$",
+    "correct": "A",
+    "explanation_en": "Isolate $\\frac{1}{b}$: $\\frac{1}{b} = \\frac{1}{R} - \\frac{1}{a} = \\frac{a - R}{aR}$. Take reciprocals of both sides: $b = \\frac{aR}{a - R}$.\n\nChoice B subtracts in the wrong order ($\\frac{1}{a} - \\frac{1}{R}$). Choice C treats the reciprocals as if they could be dropped. Choice D gives $\\frac{1}{b}$ instead of $b$.",
+    "explanation_uz": "$\\frac{1}{b}$ ni ajratamiz: $\\frac{1}{b} = \\frac{1}{R} - \\frac{1}{a} = \\frac{a - R}{aR}$. Ikkala tomonning teskarisini olamiz: $b = \\frac{aR}{a - R}$.\n\nB variant ayirish tartibini almashtiradi ($\\frac{1}{a} - \\frac{1}{R}$). C variant teskari kasrlarni tashlab yuboradi. D variant $b$ ni emas, $\\frac{1}{b}$ ni beradi.",
+    "estimated_seconds": 95,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "rearrange_formula"
+    ]
+  },
+  {
+    "skill_code": "equivalent_expressions",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "For $x \\ne -2$ and $x \\ne 4$, the expression $\\dfrac{3}{x + 2} + \\dfrac{5}{x - 4}$ is equivalent to $\\dfrac{ax + b}{(x + 2)(x - 4)}$, where $a$ and $b$ are constants. What is the value of $a - b$?",
+    "spr_answers": [
+      "10"
+    ],
+    "explanation_en": "Use the common denominator $(x + 2)(x - 4)$: the numerator is $3(x - 4) + 5(x + 2) = 3x - 12 + 5x + 10 = 8x - 2$. So $a = 8$ and $b = -2$, and $a - b = 8 - (-2) = 10$.\n\nAnswering $6$ computes $a + b$ or drops the sign of $b$.",
+    "explanation_uz": "Umumiy maxraj $(x + 2)(x - 4)$: surat $3(x - 4) + 5(x + 2) = 3x - 12 + 5x + 10 = 8x - 2$. Demak $a = 8$, $b = -2$, va $a - b = 8 - (-2) = 10$.\n\n$6$ javobi $a + b$ ni hisoblaydi yoki $b$ ning ishorasini tashlab yuboradi.",
+    "estimated_seconds": 95,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "rational_expressions"
+    ]
+  },
+  {
+    "skill_code": "equivalent_expressions",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "Which expression is equivalent to $(2x + 3)(x - 1) - (x + 2)^2$?",
+    "option_a": "$x^2 - 3x - 7$",
+    "option_b": "$x^2 + 5x + 1$",
+    "option_c": "$x^2 + x - 7$",
+    "option_d": "$3x^2 + 5x + 1$",
+    "correct": "A",
+    "explanation_en": "Expand each part: $(2x + 3)(x - 1) = 2x^2 + x - 3$ and $(x + 2)^2 = x^2 + 4x + 4$. Subtract: $2x^2 + x - 3 - x^2 - 4x - 4 = x^2 - 3x - 7$.\n\nChoice B subtracts only the $x^2$ term and adds the other two. Choice C uses $(x + 2)^2 = x^2 + 4$, missing the middle term $4x$. Choice D adds the $x^2$ terms instead of subtracting them.",
+    "explanation_uz": "Har bir qismni ochamiz: $(2x + 3)(x - 1) = 2x^2 + x - 3$ va $(x + 2)^2 = x^2 + 4x + 4$. Ayiramiz: $2x^2 + x - 3 - x^2 - 4x - 4 = x^2 - 3x - 7$.\n\nB variant faqat $x^2$ hadni ayirib, qolgan ikkitasini qo‘shadi. C variant $(x + 2)^2 = x^2 + 4$ deb, o‘rta had $4x$ ni tushirib qoldiradi. D variant $x^2$ hadlarni ayirish o‘rniga qo‘shadi.",
+    "estimated_seconds": 95,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "product_minus_square"
+    ]
+  },
+  {
+    "skill_code": "equivalent_expressions",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "Which of the following is equivalent to $x^4 - 13x^2 + 36$?",
+    "option_a": "$(x^2 + 4)(x^2 + 9)$",
+    "option_b": "$(x - 2)(x + 2)(x - 3)(x + 3)$",
+    "option_c": "$(x - 2)^2(x - 3)^2$",
+    "option_d": "$(x^2 - 4)(x^2 + 9)$",
+    "correct": "B",
+    "explanation_en": "Treat $x^2$ as a single variable $u$: $u^2 - 13u + 36 = (u - 4)(u - 9)$. So $x^4 - 13x^2 + 36 = (x^2 - 4)(x^2 - 9)$, and each factor is a difference of squares: $(x - 2)(x + 2)(x - 3)(x + 3)$.\n\nChoice A expands to $x^4 + 13x^2 + 36$ (wrong middle sign). Choice C expands to a polynomial with odd powers of $x$, such as $-10x^3$. Choice D expands to $x^4 + 5x^2 - 36$.",
+    "explanation_uz": "$x^2$ ni bitta o‘zgaruvchi $u$ deb olamiz: $u^2 - 13u + 36 = (u - 4)(u - 9)$. Demak $x^4 - 13x^2 + 36 = (x^2 - 4)(x^2 - 9)$, va har bir ko‘paytuvchi kvadratlar ayirmasi: $(x - 2)(x + 2)(x - 3)(x + 3)$.\n\nA variant ochilganda $x^4 + 13x^2 + 36$ chiqadi (o‘rta hadning ishorasi noto‘g‘ri). C variant ochilganda $x$ ning toq darajalari, masalan $-10x^3$, paydo bo‘ladi. D variant $x^4 + 5x^2 - 36$ beradi.",
+    "estimated_seconds": 140,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "quadratic_form_factoring"
+    ]
+  },
+  {
+    "skill_code": "equivalent_expressions",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "For all values of $x$, the expression $(2x^2 - 5)^2 - (2x^2 + 3)^2$ is equivalent to $ax^2 + b$, where $a$ and $b$ are constants. What is the value of $a + b$?",
+    "spr_answers": [
+      "-16"
+    ],
+    "explanation_en": "Use the difference of squares $P^2 - Q^2 = (P - Q)(P + Q)$ with $P = 2x^2 - 5$ and $Q = 2x^2 + 3$: $P - Q = -8$ and $P + Q = 4x^2 - 2$. So the expression equals $-8(4x^2 - 2) = -32x^2 + 16$.\n\nThus $a = -32$, $b = 16$, and $a + b = -16$. Expanding both squares directly gives the same result: $(4x^4 - 20x^2 + 25) - (4x^4 + 12x^2 + 9) = -32x^2 + 16$.",
+    "explanation_uz": "Kvadratlar ayirmasi $P^2 - Q^2 = (P - Q)(P + Q)$ ni $P = 2x^2 - 5$ va $Q = 2x^2 + 3$ bilan qo‘llaymiz: $P - Q = -8$ va $P + Q = 4x^2 - 2$. Demak ifoda $-8(4x^2 - 2) = -32x^2 + 16$ ga teng.\n\nShunday qilib $a = -32$, $b = 16$ va $a + b = -16$. Ikkala kvadratni to‘g‘ridan-to‘g‘ri ochsak ham shu chiqadi: $(4x^4 - 20x^2 + 25) - (4x^4 + 12x^2 + 9) = -32x^2 + 16$.",
+    "estimated_seconds": 140,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "difference_of_squares_binomial"
+    ]
+  },
+  {
+    "skill_code": "equivalent_expressions",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "$$(ax + 3)(bx - 5) = 12x^2 + 11x - 15$$ The given equation is true for all values of $x$, where $a$ and $b$ are integers. What is the value of $a + b$?",
+    "option_a": "$-7$",
+    "option_b": "$-1$",
+    "option_c": "$1$",
+    "option_d": "$7$",
+    "correct": "A",
+    "explanation_en": "Expanding the left side gives $abx^2 + (3b - 5a)x - 15$. So $ab = 12$ and $3b - 5a = 11$. Try integer pairs with $ab = 12$: $a = 4, b = 3$ gives $9 - 20 = -11$, which has the wrong sign. The pair $a = -4, b = -3$ gives $3(-3) - 5(-4) = -9 + 20 = 11$, which works.\n\nCheck: $(-4x + 3)(-3x - 5) = 12x^2 + 20x - 9x - 15 = 12x^2 + 11x - 15$. So $a + b = -7$.\n\nChoice D comes from $a = 4$, $b = 3$, which produces $-11x$, not $11x$. Choices B and C are impossible: integer pairs with $ab = 12$ have sums $\\pm 7$, $\\pm 8$, or $\\pm 13$, never $\\pm 1$.",
+    "explanation_uz": "Chap tomonni ochsak, $abx^2 + (3b - 5a)x - 15$. Demak $ab = 12$ va $3b - 5a = 11$. $ab = 12$ bo‘ladigan butun juftlarni sinaymiz: $a = 4, b = 3$ da $9 - 20 = -11$, ishora noto‘g‘ri. $a = -4, b = -3$ da $3(-3) - 5(-4) = -9 + 20 = 11$, mos keladi.\n\nTekshiruv: $(-4x + 3)(-3x - 5) = 12x^2 + 20x - 9x - 15 = 12x^2 + 11x - 15$. Demak $a + b = -7$.\n\nD variant $a = 4$, $b = 3$ dan chiqadi, bu $11x$ emas, $-11x$ beradi. B va C variantlar bo‘lishi mumkin emas: $ab = 12$ bo‘ladigan butun juftlarning yig‘indisi $\\pm 7$, $\\pm 8$ yoki $\\pm 13$, hech qachon $\\pm 1$ emas.",
+    "estimated_seconds": 140,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "identity_integer_constants"
+    ]
+  },
+  {
+    "skill_code": "equivalent_expressions",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "Which of the following is equivalent to $\\dfrac{x^2 - 9}{x^2 + 5x + 6} \\div \\dfrac{2x - 6}{x + 2}$, for $x > 3$?",
+    "option_a": "$\\dfrac{1}{2}$",
+    "option_b": "$2$",
+    "option_c": "$\\dfrac{2(x - 3)^2}{(x + 2)^2}$",
+    "option_d": "$\\dfrac{x + 3}{2(x + 2)}$",
+    "correct": "A",
+    "explanation_en": "Factor everything: $x^2 - 9 = (x - 3)(x + 3)$, $x^2 + 5x + 6 = (x + 2)(x + 3)$, and $2x - 6 = 2(x - 3)$. So the first fraction is $\\frac{x - 3}{x + 2}$.\n\nDividing means multiplying by the reciprocal: $\\frac{x - 3}{x + 2} \\cdot \\frac{x + 2}{2(x - 3)} = \\frac{1}{2}$.\n\nChoice B inverts the wrong fraction. Choice C multiplies by the second fraction instead of by its reciprocal. Choice D cancels $(x + 3)$ incorrectly and never uses the division.",
+    "explanation_uz": "Hammasini ko‘paytuvchilarga ajratamiz: $x^2 - 9 = (x - 3)(x + 3)$, $x^2 + 5x + 6 = (x + 2)(x + 3)$ va $2x - 6 = 2(x - 3)$. Demak birinchi kasr $\\frac{x - 3}{x + 2}$ ga teng.\n\nBo‘lish — teskari kasrga ko‘paytirish: $\\frac{x - 3}{x + 2} \\cdot \\frac{x + 2}{2(x - 3)} = \\frac{1}{2}$.\n\nB variant noto‘g‘ri kasrni teskarisiga aylantiradi. C variant ikkinchi kasrning teskarisiga emas, o‘ziga ko‘paytiradi. D variant $(x + 3)$ ni noto‘g‘ri qisqartiradi va bo‘lishni umuman bajarmaydi.",
+    "estimated_seconds": 140,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "rational_division"
+    ]
+  }
+]

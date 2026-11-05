@@ -1,0 +1,338 @@
+[
+  {
+    "skill_code": "rhetorical_synthesis",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- Jupiter is the largest planet in the solar system.\n- The Great Red Spot is a giant storm in Jupiter's atmosphere.\n- The storm is wider than the entire planet Earth.\n- Astronomers have observed the storm for more than 150 years.\n- Measurements show that the storm has been shrinking over recent decades.",
+    "stem": "The student wants to emphasize the size of the Great Red Spot. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "option_a": "The Great Red Spot, a storm in Jupiter's atmosphere, is wider than the entire planet Earth.",
+    "option_b": "Astronomers have been observing the Great Red Spot, a storm on Jupiter, for more than 150 years.",
+    "option_c": "Jupiter, the planet on which the Great Red Spot is found, is the largest planet in the solar system.",
+    "option_d": "Measurements show that the Great Red Spot, a storm on Jupiter, has been shrinking over recent decades.",
+    "correct": "A",
+    "explanation_en": "The goal is to emphasize how big the Great Red Spot is. Choice A does this by stating that the storm is wider than the entire planet Earth.\n\nChoice B emphasizes how long the storm has been observed, not its size. Choice C emphasizes the size of Jupiter, not the size of the storm. Choice D describes a change in the storm's size over time but does not emphasize how large it is.",
+    "explanation_uz": "Maqsad — Katta Qizil Dog‘ning qanchalik kattaligini ta’kidlash. A buni bajaradi: bo‘ron butun Yer sayyorasidan ham kengroq ekanini aytadi.\n\nB bo‘ronning hajmini emas, qancha vaqtdan beri kuzatilayotganini ta’kidlaydi. C bo‘ronning emas, Yupiterning kattaligini ta’kidlaydi. D bo‘ron hajmining vaqt o‘tishi bilan o‘zgarishini tasvirlaydi, lekin uning qanchalik katta ekanini ta’kidlamaydi.",
+    "estimated_seconds": 50,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "emphasize-detail"
+    ]
+  },
+  {
+    "skill_code": "rhetorical_synthesis",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- The Registan is a public square in the center of Samarkand, Uzbekistan.\n- Three madrasas (Islamic schools) stand on three sides of the square.\n- The Ulugh Beg Madrasa was built from 1417 to 1420.\n- The Sher-Dor Madrasa was built from 1619 to 1636.\n- The Tilya-Kori Madrasa was built from 1646 to 1660; inside it is a mosque decorated with gold.",
+    "stem": "The student wants to identify the oldest of the three madrasas on the Registan. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "option_a": "The Tilya-Kori Madrasa, built from 1646 to 1660, contains a mosque decorated with gold.",
+    "option_b": "The Registan, a public square in Samarkand, is bordered on three sides by madrasas.",
+    "option_c": "Of the three madrasas on the Registan, the oldest is the Ulugh Beg Madrasa, built from 1417 to 1420.",
+    "option_d": "The Sher-Dor and Tilya-Kori Madrasas on the Registan were both built in the seventeenth century.",
+    "correct": "C",
+    "explanation_en": "The goal is to identify which madrasa is the oldest. Choice C names the Ulugh Beg Madrasa as the oldest of the three and gives its construction dates, 1417 to 1420, which are earlier than those of the other two.\n\nChoice A describes the Tilya-Kori Madrasa, which is actually the newest of the three. Choice B describes the square without naming any madrasa. Choice D gives the century of the two newer madrasas but never says which madrasa is the oldest.",
+    "explanation_uz": "Maqsad — qaysi madrasa eng qadimgi ekanini aniqlash. C uchtasi orasida eng qadimgisi Ulug‘bek madrasasi ekanini aytadi va uning qurilish yillarini — 1417–1420 — keltiradi; bu boshqa ikkalasidan oldinroq.\n\nA Tillakori madrasasini tasvirlaydi, u esa aslida uchtasining eng yangisi. B maydonni tasvirlaydi, lekin birorta madrasani nomlamaydi. D ikki yangiroq madrasa qaysi asrda qurilganini aytadi, lekin qaysi biri eng qadimgi ekanini aytmaydi.",
+    "estimated_seconds": 50,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "identify-detail"
+    ]
+  },
+  {
+    "skill_code": "rhetorical_synthesis",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- Economist Sardor Karimov studied how shoppers at a large bazaar in Tashkent decide where to buy fruit and vegetables.\n- He surveyed 400 shoppers over three months.\n- 68 percent of the shoppers said they usually buy from the same one or two sellers.\n- Most of these shoppers said they trust those sellers to offer fresh produce at a fair price.\n- Only 12 percent of the shoppers said they always compare prices at several stalls before buying.",
+    "stem": "The student wants to emphasize that most shoppers in Karimov's study stay loyal to particular sellers. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "option_a": "Karimov surveyed 400 shoppers at a large bazaar in Tashkent over a period of three months.",
+    "option_b": "Only 12 percent of the shoppers in Karimov's study said they always compare prices at several stalls before buying.",
+    "option_c": "Karimov wanted to learn how shoppers at a Tashkent bazaar decide where to buy fruit and vegetables.",
+    "option_d": "In Karimov's survey, 68 percent of shoppers said they usually buy from the same one or two sellers, often because they trust them to offer fresh produce at a fair price.",
+    "correct": "D",
+    "explanation_en": "The goal is to emphasize that most shoppers stay loyal to particular sellers. Choice D does this directly: 68 percent—a majority—said they usually buy from the same one or two sellers, and the choice adds their reason.\n\nChoice A describes how the study was done, not what it found. Choice B reports how few shoppers always compare prices, but that does not show that most shoppers return to the same sellers. Choice C states the purpose of the study, not its result.",
+    "explanation_uz": "Maqsad — tadqiqotdagi xaridorlarning aksariyati muayyan sotuvchilarga sodiq qolishini ta’kidlash. D buni to‘g‘ridan-to‘g‘ri bajaradi: 68 foiz — ya’ni ko‘pchilik — odatda bir yoki ikki sotuvchidan xarid qilishini aytgan, variant ularning sababini ham qo‘shadi.\n\nA tadqiqot qanday o‘tkazilganini tasvirlaydi, natijasini emas. B narxlarni doim solishtiradigan xaridorlar qanchalik kamligini aytadi, lekin bu ko‘pchilik o‘sha sotuvchilarga qaytishini ko‘rsatmaydi. C tadqiqot maqsadini aytadi, natijasini emas.",
+    "estimated_seconds": 55,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "present-finding"
+    ]
+  },
+  {
+    "skill_code": "rhetorical_synthesis",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- Honeybees that find a good source of food return to the hive and perform a movement called the waggle dance.\n- During the dance, the bee runs in a straight line while shaking its body from side to side.\n- The angle of this run tells other bees the direction of the food relative to the Sun.\n- The length of time the bee spends waggling tells other bees how far away the food is.\n- Austrian scientist Karl von Frisch decoded the dance and shared the 1973 Nobel Prize in Physiology or Medicine.",
+    "stem": "The student wants to explain how the waggle dance tells other bees the distance to a food source. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "option_a": "Karl von Frisch, an Austrian scientist, shared the 1973 Nobel Prize in Physiology or Medicine after decoding the honeybee's waggle dance.",
+    "option_b": "In the waggle dance, the length of time a honeybee spends waggling tells other bees how far away the food is.",
+    "option_c": "During the waggle dance, a honeybee runs in a straight line while shaking its body from side to side.",
+    "option_d": "The angle of a honeybee's waggle run tells other bees the direction of the food relative to the Sun.",
+    "correct": "B",
+    "explanation_en": "The goal is to explain how the dance communicates distance. Choice B does this: the length of time the bee spends waggling tells other bees how far away the food is.\n\nChoice A tells who decoded the dance, not how it shows distance. Choice C describes the movement of the dance but not what it communicates. Choice D explains how the dance shows direction, not distance.",
+    "explanation_uz": "Maqsad — raqs masofani qanday bildirishini tushuntirish. B buni bajaradi: asalarining tebranishga sarflagan vaqti boshqa asalarilarga ozuqa qanchalik uzoqda ekanini bildiradi.\n\nA raqsni kim ochib berganini aytadi, u masofani qanday ko‘rsatishini emas. C raqs harakatini tasvirlaydi, lekin u nimani bildirishini aytmaydi. D raqs masofani emas, yo‘nalishni qanday ko‘rsatishini tushuntiradi.",
+    "estimated_seconds": 50,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "explain-detail"
+    ]
+  },
+  {
+    "skill_code": "rhetorical_synthesis",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- The Venus flytrap is a plant that catches and digests insects.\n- In the wild, it grows only in wetlands in North Carolina and South Carolina in the United States.\n- Each trap is formed by two lobes at the end of a leaf.\n- Tiny trigger hairs grow on the inner surface of each lobe.\n- The trap snaps shut when an insect touches the trigger hairs twice within about 20 seconds.",
+    "stem": "The student wants to specify where the Venus flytrap grows in the wild. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "option_a": "The Venus flytrap catches insects with traps formed by two lobes at the end of a leaf.",
+    "option_b": "A Venus flytrap's trap snaps shut when its trigger hairs are touched twice within about 20 seconds.",
+    "option_c": "In the wild, the Venus flytrap grows only in wetlands in North Carolina and South Carolina.",
+    "option_d": "The Venus flytrap is a plant that catches and digests insects.",
+    "correct": "C",
+    "explanation_en": "The goal is to say where the plant grows in the wild. Choice C gives that location: wetlands in North Carolina and South Carolina.\n\nChoices A and B describe how the trap is built and how it closes, and choice D says what the plant does. None of them mentions where the plant grows.",
+    "explanation_uz": "Maqsad — o‘simlik tabiatda qayerda o‘sishini aytish. C aynan shu joyni ko‘rsatadi: Shimoliy va Janubiy Karolinadagi botqoqliklar.\n\nA va B tuzoq qanday tuzilgani va qanday yopilishini, D esa o‘simlik nima qilishini tasvirlaydi. Ularning hech biri o‘simlik qayerda o‘sishini aytmaydi.",
+    "estimated_seconds": 45,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "specify-location"
+    ]
+  },
+  {
+    "skill_code": "rhetorical_synthesis",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- Suzanis are large decorative textiles embroidered by hand in Central Asia.\n- The name comes from the Persian word for “needle.”\n- Suzanis were traditionally made by women as part of a bride's dowry.\n- Common designs on suzanis include flowers, vines, and sun and moon discs.\n- Bukhara, Samarkand, Nurata, and Shahrisabz are among the places known for suzani making.",
+    "stem": "The student wants to give examples of designs commonly found on suzanis. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "option_a": "Suzanis are often decorated with designs such as flowers, vines, and sun and moon discs.",
+    "option_b": "Bukhara, Samarkand, Nurata, and Shahrisabz are among the places known for suzani making.",
+    "option_c": "The name “suzani” comes from the Persian word for “needle.”",
+    "option_d": "Suzanis, large embroidered textiles, were traditionally made by women as part of a bride's dowry.",
+    "correct": "A",
+    "explanation_en": "The goal is to give examples of designs found on suzanis. Choice A lists three such designs: flowers, vines, and sun and moon discs.\n\nChoice B gives examples, but of places where suzanis are made, not of designs. Choice C explains where the name comes from. Choice D explains who traditionally made suzanis and why.",
+    "explanation_uz": "Maqsad — so‘zanalarda ko‘p uchraydigan naqshlarga misollar keltirish. A uchta shunday naqshni sanab o‘tadi: gullar, novdalar hamda quyosh va oy doiralari.\n\nB ham misollar keltiradi, lekin naqshlarga emas, so‘zana tikiladigan joylarga. C nomning kelib chiqishini tushuntiradi. D so‘zanalarni an’anaviy ravishda kim va nima uchun tikkanini tushuntiradi.",
+    "estimated_seconds": 50,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "give-examples"
+    ]
+  },
+  {
+    "skill_code": "rhetorical_synthesis",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- Many limestone caves contain mineral formations called speleothems.\n- Speleothems form as water drips through a cave and leaves behind tiny amounts of the mineral calcite.\n- Stalactites are speleothems that hang down from a cave's ceiling.\n- Stalagmites are speleothems that rise up from a cave's floor.\n- Both kinds of formations usually grow by only a fraction of a millimeter per year.",
+    "stem": "The student wants to emphasize a difference between stalactites and stalagmites. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "option_a": "Stalactites and stalagmites both form as dripping water leaves behind tiny amounts of calcite.",
+    "option_b": "Stalactites, which hang from a cave's ceiling, usually grow by only a fraction of a millimeter per year.",
+    "option_c": "Speleothems, a group of formations that includes stalactites and stalagmites, are found in many limestone caves.",
+    "option_d": "While stalactites hang down from a cave's ceiling, stalagmites rise up from its floor.",
+    "correct": "D",
+    "explanation_en": "The goal is to emphasize a difference between the two formations, so the answer must mention both and show how they differ. Choice D does this: stalactites hang from the ceiling, whereas stalagmites rise from the floor.\n\nChoice A mentions both formations but describes a similarity, not a difference. Choice B describes only stalactites. Choice C names both but only says they belong to the same group and are found in caves.",
+    "explanation_uz": "Maqsad — ikki shakl o‘rtasidagi farqni ta’kidlash, shuning uchun javob ikkalasini ham tilga olib, ular qanday farqlanishini ko‘rsatishi kerak. D buni bajaradi: stalaktitlar shiftdan osilib turadi, stalagmitlar esa poldan yuqoriga o‘sadi.\n\nA ikkalasini tilga oladi, lekin farqni emas, o‘xshashlikni tasvirlaydi. B faqat stalaktitlarni tasvirlaydi. C ikkalasini nomlaydi, lekin faqat ular bitta guruhga kirishi va g‘orlarda uchrashini aytadi.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "contrast"
+    ]
+  },
+  {
+    "skill_code": "rhetorical_synthesis",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- The olm is a salamander that lives in underground waters in caves of the Dinaric Alps in southeastern Europe.\n- The Mexican tetra is a fish; some of its populations live in surface rivers, and others live in caves in northeastern Mexico.\n- The olm lives in complete darkness and lacks working eyes; its tiny eyes are covered by skin.\n- Cave-dwelling Mexican tetras also live in complete darkness and have lost their eyes.\n- River-dwelling Mexican tetras have normal, working eyes.",
+    "stem": "The student wants to emphasize a similarity between the olm and cave-dwelling Mexican tetras. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "option_a": "Unlike cave-dwelling Mexican tetras, river-dwelling Mexican tetras have normal, working eyes.",
+    "option_b": "The olm and cave-dwelling Mexican tetras both live in complete darkness and lack working eyes.",
+    "option_c": "The olm is a salamander, while the Mexican tetra is a fish.",
+    "option_d": "The olm lives in caves in southeastern Europe, whereas cave-dwelling Mexican tetras live in caves in northeastern Mexico.",
+    "correct": "B",
+    "explanation_en": "The goal is to emphasize a similarity between the olm and cave-dwelling Mexican tetras. Choice B names both animals and states what they share: both live in complete darkness and lack working eyes.\n\nChoice A contrasts two groups of Mexican tetras and does not mention the olm. Choices C and D mention both animals but emphasize differences—the kind of animal and the location—rather than a similarity.",
+    "explanation_uz": "Maqsad — olm va g‘orda yashovchi meksika tetralari o‘rtasidagi o‘xshashlikni ta’kidlash. B ikkala hayvonni nomlaydi va ularning umumiy jihatini aytadi: ikkalasi ham to‘liq qorong‘ilikda yashaydi va ishlaydigan ko‘zlari yo‘q.\n\nA meksika tetralarining ikki guruhini solishtiradi va olmni umuman tilga olmaydi. C va D ikkala hayvonni tilga oladi, lekin o‘xshashlikni emas, farqlarni — hayvon turi va yashash joyini — ta’kidlaydi.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "similarity"
+    ]
+  },
+  {
+    "skill_code": "rhetorical_synthesis",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- An onion's cells contain sulfur-containing compounds and, stored separately, enzymes that can react with them.\n- When an onion is cut, its cells break open and the enzymes mix with the sulfur compounds.\n- This reaction produces a chemical called syn-propanethial-S-oxide, which escapes into the air as a gas.\n- When the gas reaches a person's eyes, it irritates nerves there, and the eyes produce tears to wash it away.\n- Chilling an onion before cutting it slows the reaction.",
+    "stem": "The student wants to explain why cutting an onion can make a person's eyes water. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "option_a": "Cutting an onion releases a gas that irritates nerves in a person's eyes, which then produce tears to wash the gas away.",
+    "option_b": "Chilling an onion before cutting it slows the chemical reaction that happens when the onion's cells break open.",
+    "option_c": "An onion's cells contain sulfur-containing compounds and, stored separately, enzymes that can react with them.",
+    "option_d": "Syn-propanethial-S-oxide is a chemical that is produced when an onion is cut.",
+    "correct": "A",
+    "explanation_en": "The goal is to explain why cutting an onion makes eyes water. Choice A gives the full cause-and-effect chain in brief: cutting releases a gas, the gas irritates nerves in the eyes, and the eyes produce tears.\n\nChoice B tells how to slow the reaction, not why tears form. Choice C describes what is inside onion cells but not what happens when they are cut. Choice D names the chemical that is produced but does not connect it to tears.",
+    "explanation_uz": "Maqsad — piyoz to‘g‘ralganda nima uchun ko‘zdan yosh oqishini tushuntirish. A sabab-oqibat zanjirini qisqa qilib to‘liq beradi: to‘g‘rash gaz chiqaradi, gaz ko‘zdagi nervlarni bezovta qiladi va ko‘zlar yosh chiqaradi.\n\nB reaksiyani qanday sekinlashtirishni aytadi, yosh nima uchun paydo bo‘lishini emas. C piyoz hujayralari ichida nima borligini tasvirlaydi, lekin ular kesilganda nima bo‘lishini aytmaydi. D hosil bo‘ladigan kimyoviy moddani nomlaydi, lekin uni ko‘z yoshi bilan bog‘lamaydi.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "explain-cause"
+    ]
+  },
+  {
+    "skill_code": "rhetorical_synthesis",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- Abdulla Qodiriy (1894–1938) was an Uzbek writer.\n- His novel O‘tkan kunlar (Bygone Days) was first published in the 1920s.\n- It is often regarded as the first modern Uzbek novel.\n- The novel is set in Tashkent and Margilan in the mid-nineteenth century.\n- Its main character, Otabek, is a young merchant from Tashkent.",
+    "stem": "The student wants to introduce the novel O‘tkan kunlar to an audience unfamiliar with it. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "option_a": "O‘tkan kunlar's main character is Otabek, a young merchant from Tashkent.",
+    "option_b": "Abdulla Qodiriy, who lived from 1894 to 1938, was an Uzbek writer.",
+    "option_c": "O‘tkan kunlar (Bygone Days), a novel by the Uzbek writer Abdulla Qodiriy first published in the 1920s, is often regarded as the first modern Uzbek novel.",
+    "option_d": "Set in the mid-nineteenth century, O‘tkan kunlar was first published in the 1920s.",
+    "correct": "C",
+    "explanation_en": "An audience unfamiliar with the novel needs to be told what it is. Choice C does this: it identifies O‘tkan kunlar as a novel, names its author, gives the time it was published, and explains why it is important.\n\nChoice A assumes the reader already knows the work and does not even say that it is a novel. Choice B introduces the author, not the novel. Choice D gives dates but does not say what kind of work O‘tkan kunlar is or who wrote it.",
+    "explanation_uz": "Asarni bilmaydigan auditoriyaga u nima ekanini aytish kerak. C buni bajaradi: “O‘tkan kunlar” roman ekanini aytadi, muallifini nomlaydi, qachon nashr etilganini va nima uchun muhimligini tushuntiradi.\n\nA o‘quvchi asarni allaqachon biladi deb hisoblaydi va hatto uning roman ekanini ham aytmaydi. B romanni emas, muallifni tanishtiradi. D sanalarni beradi, lekin “O‘tkan kunlar” qanday asar ekanini ham, uni kim yozganini ham aytmaydi.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "unfamiliar-audience"
+    ]
+  },
+  {
+    "skill_code": "rhetorical_synthesis",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- Sociologist Gulnora Rahimova wanted to know whether neighbors who share a courtyard garden trust one another more than neighbors who do not.\n- She interviewed 240 residents of apartment buildings in Samarkand.\n- Half of the residents lived in buildings with a shared courtyard garden; the other half lived in buildings without one.\n- Residents with a shared garden were nearly twice as likely to say they would leave a spare key with a neighbor.\n- Rahimova concluded that shared gardens may help build trust among neighbors.",
+    "stem": "The student wants to describe how Rahimova conducted her study. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "option_a": "Rahimova concluded that shared courtyard gardens may help build trust among neighbors.",
+    "option_b": "Residents with a shared courtyard garden were nearly twice as likely as other residents to say they would leave a spare key with a neighbor.",
+    "option_c": "Rahimova wanted to know whether sharing a courtyard garden affects how much neighbors trust one another.",
+    "option_d": "Rahimova interviewed 240 apartment residents in Samarkand, half of whom lived in buildings with a shared courtyard garden and half in buildings without one.",
+    "correct": "D",
+    "explanation_en": "The goal is to describe the study's method—how it was carried out. Choice D does this: it states who was interviewed, how many people took part, and how the two groups were divided.\n\nChoice A gives Rahimova's conclusion. Choice B gives a result. Choice C gives the question the study tried to answer. All three are accurate, but none describes how the study was conducted.",
+    "explanation_uz": "Maqsad — tadqiqot usulini, ya’ni u qanday o‘tkazilganini tasvirlash. D buni bajaradi: kimlar bilan suhbat qilingani, qancha odam qatnashgani va ikki guruh qanday ajratilganini aytadi.\n\nA Rahimovaning xulosasini beradi. B natijani beradi. C tadqiqot javob izlagan savolni beradi. Uchalasi ham to‘g‘ri ma’lumot, lekin hech biri tadqiqot qanday o‘tkazilganini tasvirlamaydi.",
+    "estimated_seconds": 65,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "methodology"
+    ]
+  },
+  {
+    "skill_code": "rhetorical_synthesis",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- Before the mid-1400s, books in Europe were usually copied by hand, and copying a single long book could take a scribe many months.\n- Around 1450, Johannes Gutenberg developed a printing system in Mainz, Germany.\n- His system used small, reusable metal letters (movable type) that could be arranged into pages, inked, and printed again and again.\n- His workshop's Bible, completed around 1455, was printed in about 180 copies.\n- Fewer than 50 copies of the Gutenberg Bible are known to survive today.",
+    "stem": "The student wants to emphasize an advantage of Gutenberg's printing system over copying books by hand. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "option_a": "Fewer than 50 copies of the Gutenberg Bible, which was completed around 1455, are known to survive today.",
+    "option_b": "Whereas a scribe could spend many months copying a single book by hand, Gutenberg's reusable metal type allowed the same pages to be printed again and again.",
+    "option_c": "Around 1450, Johannes Gutenberg developed a printing system in Mainz, Germany.",
+    "option_d": "Before the mid-1400s, books in Europe were usually copied by hand, often by scribes.",
+    "correct": "B",
+    "explanation_en": "The goal is to emphasize an advantage of Gutenberg's system over hand copying, so the answer must compare the two. Choice B does this: hand copying a book could take months, while reusable type let the same pages be printed repeatedly.\n\nChoice A tells how many copies survive today, which is not an advantage of the system. Choice C tells when and where the system was developed but not what made it better. Choice D describes only hand copying and never mentions Gutenberg's system.",
+    "explanation_uz": "Maqsad — Gutenberg tizimining qo‘lda ko‘chirishdan afzalligini ta’kidlash, shuning uchun javob ikkalasini solishtirishi kerak. B buni bajaradi: kitobni qo‘lda ko‘chirish oylab vaqt olgan, qayta ishlatiladigan harflar esa bir xil sahifalarni qayta-qayta chop etish imkonini bergan.\n\nA bugungi kungacha qancha nusxa saqlanib qolganini aytadi, bu tizimning afzalligi emas. C tizim qachon va qayerda yaratilganini aytadi, lekin uni nima yaxshiroq qilganini aytmaydi. D faqat qo‘lda ko‘chirishni tasvirlaydi va Gutenberg tizimini umuman tilga olmaydi.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "emphasize-advantage"
+    ]
+  },
+  {
+    "skill_code": "rhetorical_synthesis",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- Many desert lizards spend part of the hottest hours of the day perched on top of rocks.\n- Biologists have traditionally assumed that the lizards do this to warm their bodies in the sun.\n- Herpetologist Nodira Saidova measured air and surface temperatures in a desert in southern Uzbekistan.\n- At midday, the air about 30 centimeters above the rocks was up to 8°C cooler than the ground's surface.\n- Saidova observed that lizards on rocks at midday often raised their bodies off the hot stone.\n- She concluded that at midday, perching on rocks may help the lizards avoid overheating rather than warm up.",
+    "stem": "The student wants to contrast the traditional explanation for the lizards' midday perching with Saidova's conclusion. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "option_a": "Although biologists have traditionally assumed that desert lizards perch on rocks to warm up, Saidova concluded that at midday the behavior may instead help them avoid overheating.",
+    "option_b": "Saidova found that at midday, the air above the rocks was up to 8°C cooler than the ground, and she observed that lizards often raised their bodies off the hot stone.",
+    "option_c": "Biologists have traditionally assumed that desert lizards perch on rocks to warm their bodies, an assumption that Saidova's measurements confirmed.",
+    "option_d": "Many desert lizards perch on rocks during the hottest hours of the day, a behavior that Saidova studied in a desert in southern Uzbekistan.",
+    "correct": "A",
+    "explanation_en": "The goal requires two things: the traditional explanation and Saidova's conclusion, presented as a contrast. Choice A gives both—warming up versus avoiding overheating—and links them with “although.”\n\nChoice B reports Saidova's evidence but never mentions the traditional explanation or states her conclusion. Choice C mentions the traditional explanation but wrongly claims that Saidova confirmed it; according to the notes, she reached a different conclusion. Choice D describes the behavior and where it was studied but gives neither explanation.",
+    "explanation_uz": "Maqsad ikki narsani talab qiladi: an’anaviy tushuntirish va Saidovaning xulosasi, bir-biriga qarama-qarshi qo‘yilgan holda. A ikkalasini ham beradi — isinish va qizib ketishdan saqlanish — hamda ularni “although” bilan bog‘laydi.\n\nB Saidovaning dalillarini keltiradi, lekin an’anaviy tushuntirishni ham, uning xulosasini ham aytmaydi. C an’anaviy tushuntirishni tilga oladi, lekin Saidova uni tasdiqlagan deb noto‘g‘ri da’vo qiladi; eslatmalarga ko‘ra, u boshqa xulosaga kelgan. D xatti-harakatni va u qayerda o‘rganilganini tasvirlaydi, lekin hech qanday tushuntirish bermaydi.",
+    "estimated_seconds": 85,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "contrast-views"
+    ]
+  },
+  {
+    "skill_code": "rhetorical_synthesis",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- Loggerhead sea turtles that hatch on beaches in Florida swim thousands of kilometers around the Atlantic Ocean before returning to the coast where they hatched.\n- Experiments suggest that the turtles detect features of Earth's magnetic field to stay on course.\n- Homing pigeons can find their way home from places they have never visited; studies indicate that Earth's magnetic field is one of the cues they use.\n- European robins migrate at night, and experiments show that they orient themselves using Earth's magnetic field.\n- Some migrating songbirds also use the positions of stars to find their direction.",
+    "stem": "The student wants to make a generalization about how some animals navigate. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "option_a": "Loggerhead sea turtles that hatch in Florida detect features of Earth's magnetic field to stay on course during journeys of thousands of kilometers.",
+    "option_b": "Animals as different as sea turtles, homing pigeons, and European robins appear to rely, at least in part, on Earth's magnetic field to find their way.",
+    "option_c": "All migrating animals navigate by detecting Earth's magnetic field rather than by using other cues.",
+    "option_d": "European robins, which migrate at night, orient themselves using Earth's magnetic field, and some songbirds also use the stars.",
+    "correct": "B",
+    "explanation_en": "A generalization draws a broad statement from several specific cases. Choice B does this: it groups three very different animals from the notes and states what they have in common—using Earth's magnetic field to navigate—while limiting the claim to “animals as different as” these.\n\nChoices A and D each describe specific animals rather than making a general statement. Choice C does generalize, but too far: the notes cover only a few species, and they say that some songbirds also use the stars, so the claim that all migrating animals rely only on the magnetic field is not supported.",
+    "explanation_uz": "Umumlashtirish bir nechta aniq holatlardan keng xulosa chiqaradi. B buni bajaradi: eslatmalardagi bir-biridan juda farq qiladigan uchta hayvonni birlashtiradi va ularning umumiy jihatini — yo‘l topishda Yerning magnit maydonidan foydalanishini — aytadi, shu bilan birga da’voni faqat shu kabi hayvonlar bilan cheklaydi.\n\nA va D umumiy fikr aytmasdan, alohida hayvonlarni tasvirlaydi. C umumlashtiradi, lekin haddan tashqari: eslatmalar faqat bir necha tur haqida va ularda ba’zi qo‘shiqchi qushlar yulduzlardan ham foydalanishi aytilgan, shuning uchun barcha ko‘chib yuruvchi hayvonlar faqat magnit maydonga tayanadi degan da’vo asossiz.",
+    "estimated_seconds": 85,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "generalization"
+    ]
+  },
+  {
+    "skill_code": "rhetorical_synthesis",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- Shashmaqom is a classical music tradition of Central Asia closely associated with the city of Bukhara.\n- Its name means “six maqoms”; each maqom is a long suite of vocal and instrumental pieces.\n- Performers include singers and players of instruments such as the tanbur, the dutar, and the doira (a frame drum).\n- Many of the song texts come from classical poetry in Persian and Uzbek.\n- Shashmaqom has long been performed in both Uzbekistan and Tajikistan, and UNESCO recognizes it as part of the intangible cultural heritage of both countries.",
+    "stem": "The student wants to introduce Shashmaqom to an audience unfamiliar with it and emphasize that it belongs to the cultural heritage of more than one country. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "option_a": "UNESCO recognizes Shashmaqom as part of the intangible cultural heritage of both Uzbekistan and Tajikistan.",
+    "option_b": "Shashmaqom, a classical music tradition associated with Bukhara, is made up of six long suites of vocal and instrumental pieces.",
+    "option_c": "Shashmaqom, a Central Asian classical music tradition made up of six suites of vocal and instrumental pieces, is recognized by UNESCO as part of the cultural heritage of both Uzbekistan and Tajikistan.",
+    "option_d": "Performed by singers and by players of the tanbur, dutar, and doira, Shashmaqom draws many of its song texts from poetry in both Persian and Uzbek.",
+    "correct": "C",
+    "explanation_en": "The goal has two parts: explain what Shashmaqom is for readers who have never heard of it, and emphasize that it belongs to more than one country's heritage. Choice C does both: it explains that Shashmaqom is a classical music tradition made of six suites, and it states that UNESCO recognizes it as heritage of both Uzbekistan and Tajikistan.\n\nChoice A covers the shared heritage but never explains what Shashmaqom is. Choice B introduces Shashmaqom but says nothing about more than one country. Choice D mentions two languages, not two countries, and does not clearly explain what Shashmaqom is.",
+    "explanation_uz": "Maqsad ikki qismdan iborat: Shashmaqom haqida eshitmagan o‘quvchilarga uning nima ekanini tushuntirish va u bir nechta mamlakatning merosi ekanini ta’kidlash. C ikkalasini ham bajaradi: Shashmaqom oltita turkumdan iborat mumtoz musiqa an’anasi ekanini tushuntiradi va YUNESKO uni O‘zbekiston va Tojikistonning merosi sifatida tan olishini aytadi.\n\nA umumiy merosni qamrab oladi, lekin Shashmaqom nima ekanini tushuntirmaydi. B Shashmaqomni tanishtiradi, lekin bir nechta mamlakat haqida hech narsa demaydi. D ikki mamlakatni emas, ikki tilni tilga oladi va Shashmaqom nima ekanini aniq tushuntirmaydi.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "audience-two-part"
+    ]
+  },
+  {
+    "skill_code": "rhetorical_synthesis",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- Astronomer Rustam Xolmatov's team studied a red dwarf star whose mass is about one-fifth that of the Sun.\n- Red dwarfs are the most common type of star in our galaxy.\n- By measuring tiny changes in the star's light, the team detected a planet about the size of Saturn orbiting it.\n- Leading models of planet formation predict that the disks of gas and dust around such small stars contain too little material to build giant planets.\n- The team plans to study the planet's atmosphere with additional telescopes.",
+    "stem": "The student wants to explain why the team's discovery was surprising. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "option_a": "Red dwarfs, the most common type of star in our galaxy, can have planets about the size of Saturn orbiting them.",
+    "option_b": "Xolmatov's team detected a Saturn-sized planet orbiting a red dwarf star whose mass is only about one-fifth that of the Sun.",
+    "option_c": "Because leading models predict that small stars have too little material in their disks to build giant planets, Xolmatov's team plans to study the planet's atmosphere.",
+    "option_d": "Although leading models predict that small stars lack enough material in their disks to form giant planets, Xolmatov's team found a Saturn-sized planet orbiting a red dwarf only about one-fifth as massive as the Sun.",
+    "correct": "D",
+    "explanation_en": "A discovery is surprising when it goes against what was expected. Choice D states both the expectation (models predict that small stars cannot form giant planets) and the finding that contradicts it (a Saturn-sized planet around a small red dwarf).\n\nChoice B reports the discovery accurately but leaves out the prediction that makes it surprising. Choice A presents the result as an ordinary fact about red dwarfs, hiding the surprise. Choice C mentions the prediction but links it to the team's future plans with an illogical “because” and never states the discovery itself.",
+    "explanation_uz": "Kashfiyot kutilganiga zid bo‘lganda hayratlanarli bo‘ladi. D ham kutilgan natijani (modellarga ko‘ra kichik yulduzlar atrofida ulkan sayyoralar hosil bo‘lmaydi), ham unga zid bo‘lgan topilmani (kichik qizil mitti atrofida Saturn kattaligidagi sayyora) aytadi.\n\nB kashfiyotni to‘g‘ri bayon qiladi, lekin uni hayratlanarli qiladigan bashoratni tushirib qoldiradi. A natijani qizil mittilar haqidagi oddiy fakt sifatida ko‘rsatadi va hayratni yashiradi. C bashoratni tilga oladi, lekin uni “because” orqali jamoaning kelajakdagi rejalariga mantiqsiz bog‘laydi va kashfiyotning o‘zini aytmaydi.",
+    "estimated_seconds": 85,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "explain-surprise"
+    ]
+  }
+]

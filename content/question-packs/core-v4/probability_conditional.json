@@ -1,0 +1,307 @@
+[
+  {
+    "skill_code": "probability_conditional",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "A tray contains 30 samsas: 12 are filled with meat, 10 are filled with pumpkin, and 8 are filled with potato. If one samsa is selected at random from the tray, what is the probability that it is **not** filled with pumpkin?",
+    "option_a": "$\\frac{1}{3}$",
+    "option_b": "$\\frac{2}{5}$",
+    "option_c": "$\\frac{1}{2}$",
+    "option_d": "$\\frac{2}{3}$",
+    "correct": "D",
+    "explanation_en": "There are $30 - 10 = 20$ samsas that are not filled with pumpkin, so the probability is $\\frac{20}{30} = \\frac{2}{3}$. Choice A is the probability that the samsa **is** filled with pumpkin. Choice B counts only the 12 meat samsas. Choice C compares the 10 pumpkin samsas with the 20 others ($\\frac{10}{20}$) instead of dividing by the total.",
+    "explanation_uz": "Qovoqli bo‘lmagan samsalar $30 - 10 = 20$ ta, demak ehtimollik $\\frac{20}{30} = \\frac{2}{3}$. A javob — samsa qovoqli **bo‘lish** ehtimolligi. B javob faqat 12 ta go‘shtli samsani sanagan. C javob 10 ta qovoqli samsani qolgan 20 tasi bilan solishtirgan ($\\frac{10}{20}$), umumiy songa bo‘lmagan.",
+    "estimated_seconds": 50,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "complement"
+    ]
+  },
+  {
+    "skill_code": "probability_conditional",
+    "difficulty": "easy",
+    "question_type": "spr",
+    "stem": "For a certain variety of melon, the probability that a seed planted in a greenhouse sprouts is 0.85. If a farmer plants 360 of these seeds in a greenhouse, how many of the seeds are expected to sprout?",
+    "spr_answers": [
+      "306"
+    ],
+    "explanation_en": "The expected number is the probability times the number of trials: $0.85 \\times 360 = 306$ seeds. Answering 54 gives the expected number of seeds that do **not** sprout ($0.15 \\times 360$). Enter 306.",
+    "explanation_uz": "Kutilgan son — ehtimollik ko‘paytirilgan sinovlar soni: $0.85 \\times 360 = 306$ ta urug‘. 54 deb javob berish unib **chiqmaydigan** urug‘lar sonini beradi ($0.15 \\times 360$). Javob: 306.",
+    "estimated_seconds": 50,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "expected count"
+    ]
+  },
+  {
+    "skill_code": "probability_conditional",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "passage": "A museum in Samarkand surveyed 200 visitors. Each visitor was classified by age group and by whether it was the visitor's first visit to the museum. The results are shown in the table.\n\n| Age group | First visit | Returning visitor | Total |\n| --- | ---: | ---: | ---: |\n| Under 25 years | 48 | 32 | 80 |\n| 25 years or older | 54 | 66 | 120 |\n| Total | 102 | 98 | 200 |",
+    "stem": "If one of the 200 visitors is selected at random, what is the probability that the visitor is a returning visitor?",
+    "option_a": "$\\frac{16}{49}$",
+    "option_b": "$\\frac{2}{5}$",
+    "option_c": "$\\frac{49}{100}$",
+    "option_d": "$\\frac{33}{50}$",
+    "correct": "C",
+    "explanation_en": "There are 98 returning visitors among the 200 visitors, so the probability is $\\frac{98}{200} = \\frac{49}{100}$. Choice A is $\\frac{32}{98}$, the fraction of returning visitors who are under 25. Choice B is $\\frac{80}{200}$, the probability that the visitor is under 25. Choice D is $\\frac{66}{100}$; it uses only the returning visitors who are 25 or older and the wrong total.",
+    "explanation_uz": "200 nafar tashrif buyuruvchidan 98 nafari qayta kelgan, demak ehtimollik $\\frac{98}{200} = \\frac{49}{100}$. A javob $\\frac{32}{98}$ — qayta kelganlar orasida 25 yoshdan kichiklar ulushi. B javob $\\frac{80}{200}$ — tashrif buyuruvchining 25 yoshdan kichik bo‘lish ehtimolligi. D javob $\\frac{66}{100}$; u faqat 25 va undan katta yoshdagi qayta kelganlarni va noto‘g‘ri umumiy sonni olgan.",
+    "estimated_seconds": 50,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "two-way table"
+    ]
+  },
+  {
+    "skill_code": "probability_conditional",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "For a school raffle, 50 tickets are numbered with the consecutive integers from 101 to 150, with one number on each ticket. If one ticket is selected at random, what is the probability that its number is a multiple of 10?",
+    "option_a": "$\\frac{1}{10}$",
+    "option_b": "$\\frac{1}{5}$",
+    "option_c": "$\\frac{1}{50}$",
+    "option_d": "$\\frac{3}{50}$",
+    "correct": "A",
+    "explanation_en": "The multiples of 10 from 101 to 150 are 110, 120, 130, 140, and 150, which is 5 tickets. The probability is $\\frac{5}{50} = \\frac{1}{10}$. Choice B counts the numbers that end in 0 **or** 5 (multiples of 5). Choice C counts only one ticket, and choice D misses 110 and 150, counting only 120, 130 and 140.",
+    "explanation_uz": "101 dan 150 gacha bo‘lgan 10 ga karrali sonlar: 110, 120, 130, 140 va 150 — jami 5 ta chipta. Ehtimollik $\\frac{5}{50} = \\frac{1}{10}$. B javob 0 **yoki** 5 bilan tugaydigan sonlarni (5 ga karralilarni) sanagan. C javob faqat bitta chiptani sanagan, D javob esa 110 va 150 ni tushirib qoldirib, faqat 120, 130 va 140 ni sanagan.",
+    "estimated_seconds": 50,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "simple probability"
+    ]
+  },
+  {
+    "skill_code": "probability_conditional",
+    "difficulty": "easy",
+    "question_type": "spr",
+    "stem": "A jar contains only white beans and black beans. There are 45 white beans in the jar. If one bean is selected at random from the jar, the probability that it is white is 0.36. How many black beans are in the jar?",
+    "spr_answers": [
+      "80"
+    ],
+    "explanation_en": "If $n$ is the total number of beans, then $\\frac{45}{n} = 0.36$, so $n = \\frac{45}{0.36} = 125$. The number of black beans is $125 - 45 = 80$. Answering 125 gives the total number of beans, not the number of black beans. Enter 80.",
+    "explanation_uz": "Agar $n$ — loviyalarning umumiy soni bo‘lsa, $\\frac{45}{n} = 0.36$, demak $n = \\frac{45}{0.36} = 125$. Qora loviyalar soni $125 - 45 = 80$. 125 deb javob berish qora loviyalar sonini emas, umumiy sonni beradi. Javob: 80.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "simple probability"
+    ]
+  },
+  {
+    "skill_code": "probability_conditional",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "passage": "A museum in Samarkand surveyed 200 visitors. Each visitor was classified by age group and by whether it was the visitor's first visit to the museum. The results are shown in the table.\n\n| Age group | First visit | Returning visitor | Total |\n| --- | ---: | ---: | ---: |\n| Under 25 years | 48 | 32 | 80 |\n| 25 years or older | 54 | 66 | 120 |\n| Total | 102 | 98 | 200 |",
+    "stem": "If one of the 200 visitors is selected at random, what is the probability that the visitor is under 25 years and is on a first visit?",
+    "option_a": "$\\frac{6}{25}$",
+    "option_b": "$\\frac{8}{17}$",
+    "option_c": "$\\frac{3}{5}$",
+    "option_d": "$\\frac{51}{100}$",
+    "correct": "A",
+    "explanation_en": "The table shows 48 visitors who are under 25 and on a first visit, out of 200 visitors in total. The probability is $\\frac{48}{200} = \\frac{6}{25}$. Choice B is $\\frac{48}{102}$, which divides only by the first-time visitors. Choice C is $\\frac{48}{80}$, which divides only by the visitors under 25. Choice D is $\\frac{102}{200}$, the probability of a first visit for any age.",
+    "explanation_uz": "Jadvalga ko‘ra, jami 200 nafar tashrif buyuruvchidan 48 nafari 25 yoshdan kichik va birinchi marta kelgan. Ehtimollik $\\frac{48}{200} = \\frac{6}{25}$. B javob $\\frac{48}{102}$ — faqat birinchi marta kelganlarga bo‘lgan. C javob $\\frac{48}{80}$ — faqat 25 yoshdan kichiklarga bo‘lgan. D javob $\\frac{102}{200}$ — har qanday yoshdagi birinchi tashrif ehtimolligi.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "two-way table"
+    ]
+  },
+  {
+    "skill_code": "probability_conditional",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "If one of the visitors who are under 25 years is selected at random, what is the probability that the visitor is a returning visitor?",
+    "option_a": "$\\frac{4}{25}$",
+    "option_b": "$\\frac{16}{49}$",
+    "option_c": "$\\frac{2}{5}$",
+    "option_d": "$\\frac{49}{100}$",
+    "correct": "C",
+    "explanation_en": "The condition limits the selection to the 80 visitors under 25. Of these, 32 are returning visitors, so the probability is $\\frac{32}{80} = \\frac{2}{5}$. Choice A divides by all 200 visitors. Choice B is $\\frac{32}{98}$, which answers the reverse question (the probability that a returning visitor is under 25). Choice D ignores the age condition.",
+    "explanation_uz": "Shart tanlovni 25 yoshdan kichik 80 nafar tashrif buyuruvchi bilan cheklaydi. Ulardan 32 nafari qayta kelgan, demak ehtimollik $\\frac{32}{80} = \\frac{2}{5}$. A javob barcha 200 nafarga bo‘lgan. B javob $\\frac{32}{98}$ — teskari savolning javobi (qayta kelgan tashrif buyuruvchining 25 yoshdan kichik bo‘lish ehtimolligi). D javob yosh shartini hisobga olmagan.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "conditional"
+    ]
+  },
+  {
+    "skill_code": "probability_conditional",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "passage": "A museum in Samarkand surveyed 200 visitors. Each visitor was classified by age group and by whether it was the visitor's first visit to the museum. The results are shown in the table.\n\n| Age group | First visit | Returning visitor | Total |\n| --- | ---: | ---: | ---: |\n| Under 25 years | 48 | 32 | 80 |\n| 25 years or older | 54 | 66 | 120 |\n| Total | 102 | 98 | 200 |",
+    "stem": "If one of the returning visitors is selected at random, what is the probability that the visitor is 25 years or older? (Express your answer as a fraction or a decimal.)",
+    "spr_answers": [
+      "33/49",
+      ".6734",
+      ".6735",
+      "0.673",
+      "66/98"
+    ],
+    "explanation_en": "There are 98 returning visitors, and 66 of them are 25 years or older. The probability is $\\frac{66}{98} = \\frac{33}{49} \\approx 0.6735$. Dividing by 120 (all visitors 25 or older) answers the reverse question, and dividing by 200 ignores the condition. Enter 33/49, .6734, .6735, or 0.673.",
+    "explanation_uz": "Qayta kelganlar 98 nafar, ulardan 66 nafari 25 va undan katta yoshda. Ehtimollik $\\frac{66}{98} = \\frac{33}{49} \\approx 0.6735$. 120 ga (25 va undan katta yoshdagi barcha tashrif buyuruvchilarga) bo‘lish teskari savolga javob beradi, 200 ga bo‘lish esa shartni hisobga olmaydi. Javob: 33/49, .6734, .6735 yoki 0.673.",
+    "estimated_seconds": 80,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "conditional"
+    ]
+  },
+  {
+    "skill_code": "probability_conditional",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "A sports center has 50 members. Of these members, 28 swim, 17 play tennis, and 6 both swim and play tennis. If one member is selected at random, what is the probability that the member swims or plays tennis?",
+    "option_a": "$\\frac{11}{50}$",
+    "option_b": "$\\frac{33}{50}$",
+    "option_c": "$\\frac{39}{50}$",
+    "option_d": "$\\frac{9}{10}$",
+    "correct": "C",
+    "explanation_en": "Adding $28 + 17$ counts the 6 members who do both activities twice, so the number of members who swim or play tennis is $28 + 17 - 6 = 39$. The probability is $\\frac{39}{50}$. Choice D, $\\frac{45}{50}$, counts those 6 members twice. Choice B, $\\frac{33}{50}$, subtracts the overlap twice. Choice A, $\\frac{11}{50}$, is the probability that the member does **neither** activity.",
+    "explanation_uz": "$28 + 17$ ni qo‘shish ikkala mashg‘ulot bilan shug‘ullanadigan 6 kishini ikki marta sanaydi, demak suzadigan yoki tennis o‘ynaydigan a’zolar $28 + 17 - 6 = 39$ nafar. Ehtimollik $\\frac{39}{50}$. D javob ($\\frac{45}{50}$) o‘sha 6 kishini ikki marta sanagan. B javob ($\\frac{33}{50}$) umumiy qismni ikki marta ayirgan. A javob ($\\frac{11}{50}$) — a’zoning **hech qaysi** mashg‘ulot bilan shug‘ullanmaslik ehtimolligi.",
+    "estimated_seconds": 80,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "union"
+    ]
+  },
+  {
+    "skill_code": "probability_conditional",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "A textile factory has two machines that operate independently of each other. On a given day, the probability that machine A breaks down is 0.05, and the probability that machine B breaks down is 0.08. What is the probability that **neither** machine breaks down on that day?",
+    "option_a": "0.004",
+    "option_b": "0.126",
+    "option_c": "0.870",
+    "option_d": "0.874",
+    "correct": "D",
+    "explanation_en": "The probability that machine A does not break down is $1 - 0.05 = 0.95$, and for machine B it is $1 - 0.08 = 0.92$. Because the machines are independent, the probability that neither breaks down is $0.95 \\times 0.92 = 0.874$. Choice A is the probability that **both** break down ($0.05 \\times 0.08$). Choice B is $1 - 0.874$, the probability that at least one breaks down. Choice C subtracts the sum of the two probabilities from 1, which ignores the chance that both break down.",
+    "explanation_uz": "A mashinaning buzilmaslik ehtimolligi $1 - 0.05 = 0.95$, B mashina uchun esa $1 - 0.08 = 0.92$. Mashinalar bir-biriga bog‘liq bo‘lmagani uchun hech biri buzilmaslik ehtimolligi $0.95 \\times 0.92 = 0.874$. A javob — **ikkalasi** ham buzilish ehtimolligi ($0.05 \\times 0.08$). B javob $1 - 0.874$, ya’ni kamida bittasi buzilish ehtimolligi. C javob ikki ehtimollik yig‘indisini 1 dan ayirgan, bunda ikkalasi birga buzilish holati hisobga olinmaydi.",
+    "estimated_seconds": 80,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "independent events"
+    ]
+  },
+  {
+    "skill_code": "probability_conditional",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "passage": "A researcher tested 300 seeds of two wheat varieties to see whether each seed germinated within 10 days. The results are shown in the table.\n\n| Variety | Germinated | Did not germinate | Total |\n| --- | ---: | ---: | ---: |\n| Variety X | 108 | 12 | 120 |\n| Variety Y | 153 | 27 | 180 |\n| Total | 261 | 39 | 300 |",
+    "stem": "If one of the seeds that did **not** germinate is selected at random, what is the probability that it is a seed of Variety X?",
+    "option_a": "$\\frac{1}{25}$",
+    "option_b": "$\\frac{1}{10}$",
+    "option_c": "$\\frac{4}{13}$",
+    "option_d": "$\\frac{9}{13}$",
+    "correct": "C",
+    "explanation_en": "The condition restricts the selection to the 39 seeds that did not germinate. Of these, 12 are Variety X seeds, so the probability is $\\frac{12}{39} = \\frac{4}{13}$. Choice A divides by all 300 seeds. Choice B, $\\frac{12}{120}$, is the probability that a Variety X seed did not germinate, which is the reverse condition. Choice D is the probability that the seed is Variety Y.",
+    "explanation_uz": "Shart tanlovni unib chiqmagan 39 ta urug‘ bilan cheklaydi. Ulardan 12 tasi X navi, demak ehtimollik $\\frac{12}{39} = \\frac{4}{13}$. A javob barcha 300 ta urug‘ga bo‘lgan. B javob ($\\frac{12}{120}$) — X navi urug‘ining unib chiqmaslik ehtimolligi, ya’ni teskari shart. D javob — urug‘ning Y navi bo‘lish ehtimolligi.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "conditional"
+    ]
+  },
+  {
+    "skill_code": "probability_conditional",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "A box contains 12 tea bags: 7 are green tea and 5 are black tea. Two tea bags are taken from the box at random, one after the other, without the first one being put back. What is the probability that both tea bags are green tea?",
+    "spr_answers": [
+      "7/22",
+      ".3181",
+      ".3182",
+      "0.318"
+    ],
+    "explanation_en": "The probability that the first bag is green tea is $\\frac{7}{12}$. After it is removed, 6 of the remaining 11 bags are green tea, so the probability that the second is green tea is $\\frac{6}{11}$. The probability that both are green tea is $\\frac{7}{12} \\cdot \\frac{6}{11} = \\frac{42}{132} = \\frac{7}{22} \\approx 0.3182$. Using $\\frac{7}{12} \\cdot \\frac{7}{12} = \\frac{49}{144}$ wrongly assumes the first bag is put back. Enter 7/22, .3181, .3182, or 0.318.",
+    "explanation_uz": "Birinchi paketning ko‘k choy bo‘lish ehtimolligi $\\frac{7}{12}$. U olingandan keyin qolgan 11 ta paketdan 6 tasi ko‘k choy, demak ikkinchisining ko‘k choy bo‘lish ehtimolligi $\\frac{6}{11}$. Ikkalasining ham ko‘k choy bo‘lish ehtimolligi $\\frac{7}{12} \\cdot \\frac{6}{11} = \\frac{42}{132} = \\frac{7}{22} \\approx 0.3182$. $\\frac{7}{12} \\cdot \\frac{7}{12} = \\frac{49}{144}$ ni hisoblash birinchi paket qaytarib solinadi deb noto‘g‘ri faraz qiladi. Javob: 7/22, .3181, .3182 yoki 0.318.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "without replacement"
+    ]
+  },
+  {
+    "skill_code": "probability_conditional",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "A city surveyed 400 adult residents. Of the residents surveyed, 55% own a car. Of the residents who own a car, 30% use the metro at least once a week. Of the residents who do not own a car, 70% use the metro at least once a week. If one of the surveyed residents who use the metro at least once a week is selected at random, what is the probability that the resident owns a car?",
+    "option_a": "$\\frac{3}{10}$",
+    "option_b": "$\\frac{33}{200}$",
+    "option_c": "$\\frac{11}{32}$",
+    "option_d": "$\\frac{21}{32}$",
+    "correct": "C",
+    "explanation_en": "Car owners: $0.55 \\times 400 = 220$, of whom $0.30 \\times 220 = 66$ use the metro weekly. Residents without a car: $400 - 220 = 180$, of whom $0.70 \\times 180 = 126$ use the metro weekly. So $66 + 126 = 192$ residents use the metro weekly, and the probability is $\\frac{66}{192} = \\frac{11}{32}$. Choice A is the probability that a car owner uses the metro, the reverse condition. Choice B is $\\frac{66}{400}$, which divides by all residents. Choice D is the probability that a weekly metro user does **not** own a car.",
+    "explanation_uz": "Mashina egalari: $0.55 \\times 400 = 220$, ulardan $0.30 \\times 220 = 66$ nafari har hafta metrodan foydalanadi. Mashinasi yo‘qlar: $400 - 220 = 180$, ulardan $0.70 \\times 180 = 126$ nafari har hafta metrodan foydalanadi. Demak har hafta metrodan $66 + 126 = 192$ nafar foydalanadi va ehtimollik $\\frac{66}{192} = \\frac{11}{32}$. A javob — mashina egasining metrodan foydalanish ehtimolligi, ya’ni teskari shart. B javob $\\frac{66}{400}$ — barcha aholiga bo‘lgan. D javob — har hafta metrodan foydalanuvchining mashinasi **yo‘q** bo‘lish ehtimolligi.",
+    "estimated_seconds": 130,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "conditional"
+    ]
+  },
+  {
+    "skill_code": "probability_conditional",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "passage": "Every participant in a two-week coding workshop was in either Group A or Group B. The table shows the numbers of participants in each group who did and did not complete the final project, where $x$ is a positive integer.\n\n| Group | Completed | Did not complete |\n| --- | ---: | ---: |\n| Group A | $x$ | 18 |\n| Group B | 45 | 15 |",
+    "stem": "If one of the participants who completed the final project is selected at random, the probability that the participant is in Group A is $\\frac{3}{8}$. How many participants were in the workshop?",
+    "spr_answers": [
+      "105"
+    ],
+    "explanation_en": "There are $x + 45$ participants who completed the project, and $x$ of them are in Group A, so $\\frac{x}{x + 45} = \\frac{3}{8}$. Then $8x = 3x + 135$, so $5x = 135$ and $x = 27$. The total number of participants is $27 + 18 + 45 + 15 = 105$. Answering 27 gives only the value of $x$. Enter 105.",
+    "explanation_uz": "Loyihani yakunlaganlar $x + 45$ nafar, ulardan $x$ nafari A guruhda, demak $\\frac{x}{x + 45} = \\frac{3}{8}$. U holda $8x = 3x + 135$, ya’ni $5x = 135$ va $x = 27$. Ishtirokchilarning umumiy soni $27 + 18 + 45 + 15 = 105$. 27 deb javob berish faqat $x$ ning qiymatini beradi. Javob: 105.",
+    "estimated_seconds": 130,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "two-way table unknown"
+    ]
+  },
+  {
+    "skill_code": "probability_conditional",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "A courier company finds that each of its deliveries arrives late with probability 0.1, independently of the other deliveries. A customer orders 3 deliveries. What is the probability that **at least one** of the 3 deliveries arrives late?",
+    "option_a": "0.001",
+    "option_b": "0.271",
+    "option_c": "0.300",
+    "option_d": "0.729",
+    "correct": "B",
+    "explanation_en": "It is easiest to use the complement. The probability that one delivery is on time is $1 - 0.1 = 0.9$, so the probability that all 3 are on time is $0.9^3 = 0.729$. The probability that at least one is late is $1 - 0.729 = 0.271$. Choice A is the probability that **all three** are late ($0.1^3$). Choice C adds $0.1$ three times, which counts the cases with two or three late deliveries more than once. Choice D is the probability that none is late.",
+    "explanation_uz": "To‘ldiruvchi hodisadan foydalanish eng qulay. Bitta yetkazib berishning o‘z vaqtida bo‘lish ehtimolligi $1 - 0.1 = 0.9$, demak uchalasining ham o‘z vaqtida bo‘lish ehtimolligi $0.9^3 = 0.729$. Kamida bittasining kechikish ehtimolligi $1 - 0.729 = 0.271$. A javob — **uchalasining ham** kechikish ehtimolligi ($0.1^3$). C javob $0.1$ ni uch marta qo‘shgan, bunda ikki yoki uchta kechikish holatlari bir necha marta sanaladi. D javob — hech biri kechikmaslik ehtimolligi.",
+    "estimated_seconds": 110,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "complement"
+    ]
+  },
+  {
+    "skill_code": "probability_conditional",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "passage": "The table shows the numbers of 10th-grade and 11th-grade students in a school's chess club and art club, where $n$ is a positive integer. No student is in both clubs.\n\n| Club | Grade 10 | Grade 11 |\n| --- | ---: | ---: |\n| Chess | 12 | 18 |\n| Art | 20 | $n$ |",
+    "stem": "The probability that a randomly selected member of the chess club is in grade 11 is equal to the probability that a randomly selected member of the art club is in grade 11. What is the value of $n$?",
+    "spr_answers": [
+      "30"
+    ],
+    "explanation_en": "For the chess club, the probability is $\\frac{18}{12 + 18} = \\frac{18}{30} = 0.6$. For the art club, it is $\\frac{n}{20 + n}$. Setting them equal: $\\frac{n}{20 + n} = 0.6$, so $n = 12 + 0.6n$, which gives $0.4n = 12$ and $n = 30$. A common error is to use $\\frac{n}{20} = 0.6$ (dividing by grade 10 only), which gives 12. Enter 30.",
+    "explanation_uz": "Shaxmat to‘garagi uchun ehtimollik $\\frac{18}{12 + 18} = \\frac{18}{30} = 0.6$. San’at to‘garagi uchun u $\\frac{n}{20 + n}$. Ularni tenglaymiz: $\\frac{n}{20 + n} = 0.6$, demak $n = 12 + 0.6n$, bundan $0.4n = 12$ va $n = 30$. Ko‘p uchraydigan xato — $\\frac{n}{20} = 0.6$ deb olish (faqat 10-sinfga bo‘lish), bu 12 ni beradi. Javob: 30.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "two-way table unknown"
+    ]
+  }
+]

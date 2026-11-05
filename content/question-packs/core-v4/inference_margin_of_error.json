@@ -1,0 +1,294 @@
+[
+  {
+    "skill_code": "inference_margin_of_error",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "A transport company selected a random sample of its taxi drivers in Tashkent and recorded the distance each driver traveled on one workday. Based on the sample, the mean distance traveled by all of the company's taxi drivers on that day is estimated to be 182 kilometers, with an associated margin of error of 9 kilometers. Which of the following is a plausible value for the mean distance, in kilometers, traveled by all of the company's taxi drivers on that day?",
+    "option_a": "168",
+    "option_b": "175",
+    "option_c": "193",
+    "option_d": "198",
+    "correct": "B",
+    "explanation_en": "The plausible values are from $182 - 9 = 173$ to $182 + 9 = 191$ kilometers. Only 175 is in this interval. Choice A is below 173. Choice C, 193, is just above 191, and choice D is even farther above the interval; these would be plausible only with a larger margin of error.",
+    "explanation_uz": "Ehtimoliy qiymatlar $182 - 9 = 173$ dan $182 + 9 = 191$ kilometrgacha. Bu oraliqda faqat 175 bor. A javob 173 dan kichik. C javob (193) 191 dan sal katta, D javob esa oraliqdan yanada uzoqda; ular faqat xatolik chegarasi kattaroq bo‘lganda ehtimoliy bo‘lardi.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "plausible values"
+    ]
+  },
+  {
+    "skill_code": "inference_margin_of_error",
+    "difficulty": "easy",
+    "question_type": "spr",
+    "stem": "A school has 4,500 students. A random sample of 150 of the students was asked whether they play a musical instrument, and 27 of the students in the sample said they do. Based on the sample, what is the best estimate of the number of students at the school who play a musical instrument?",
+    "spr_answers": [
+      "810"
+    ],
+    "explanation_en": "In the random sample, $\\frac{27}{150} = 0.18$, or 18%, of the students play an instrument. Applying this proportion to the whole school gives $0.18 \\times 4{,}500 = 810$ students. Answering 27 counts only the students in the sample. Enter 810.",
+    "explanation_uz": "Tasodifiy tanlanmada o‘quvchilarning $\\frac{27}{150} = 0.18$ qismi, ya’ni 18% i cholg‘u asbobida chaladi. Bu ulushni butun maktabga qo‘llasak, $0.18 \\times 4{,}500 = 810$ nafar o‘quvchi chiqadi. 27 deb javob berish faqat tanlanmadagi o‘quvchilarni sanaydi. Javob: 810.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "estimate from sample"
+    ]
+  },
+  {
+    "skill_code": "inference_margin_of_error",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "Based on a random sample of farmers in a region, researchers estimated the percentage of all farmers in the region who use drip irrigation. They reported that the plausible values for this percentage are from 31% to 39%. If the interval was found by adding and subtracting the margin of error from the sample estimate, what is the margin of error, in percentage points?",
+    "option_a": "4",
+    "option_b": "8",
+    "option_c": "31",
+    "option_d": "35",
+    "correct": "A",
+    "explanation_en": "The estimate is the midpoint of the interval, $\\frac{31 + 39}{2} = 35\\%$, and the margin of error is the distance from the estimate to either endpoint: $39 - 35 = 4$ percentage points. Choice B is the full width of the interval, which is twice the margin of error. Choice C is the lower endpoint, and choice D is the estimate itself.",
+    "explanation_uz": "Baho — oraliqning o‘rtasi: $\\frac{31 + 39}{2} = 35\\%$, xatolik chegarasi esa bahodan istalgan chetgacha bo‘lgan masofa: $39 - 35 = 4$ foiz punkti. B javob — oraliqning to‘liq kengligi, u xatolik chegarasidan ikki marta katta. C javob — quyi chegara, D javob esa bahoning o‘zi.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "margin from interval"
+    ]
+  },
+  {
+    "skill_code": "inference_margin_of_error",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "A researcher plans to estimate the mean number of hours per week that university students in a city spend on part-time jobs. The researcher will select a random sample of students from all university students in the city. Which of the following sample sizes would most likely result in the smallest margin of error for the estimate?",
+    "option_a": "50",
+    "option_b": "200",
+    "option_c": "800",
+    "option_d": "1,600",
+    "correct": "D",
+    "explanation_en": "When the samples are selected the same way from the same population, a larger random sample usually gives a more precise estimate, which means a smaller margin of error. The largest sample, 1,600 students, would most likely give the smallest margin of error. Choice A, the smallest sample, would most likely give the **largest** margin of error, and choices B and C are smaller than 1,600.",
+    "explanation_uz": "Tanlanmalar bir xil to‘plamdan bir xil usulda olinganda, kattaroq tasodifiy tanlanma odatda aniqroq baho beradi, ya’ni xatolik chegarasi kichikroq bo‘ladi. Eng katta tanlanma — 1,600 nafar talaba — eng kichik xatolik chegarasini berishi ehtimoli eng yuqori. A javob, eng kichik tanlanma, aksincha **eng katta** xatolik chegarasini berishi mumkin, B va C javoblar esa 1,600 dan kichik.",
+    "estimated_seconds": 50,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "sample size"
+    ]
+  },
+  {
+    "skill_code": "inference_margin_of_error",
+    "difficulty": "easy",
+    "question_type": "spr",
+    "stem": "A random sample of adults in Namangan was asked whether they shop at an online marketplace at least once a month. Based on the sample, it is estimated that 62% of all adults in Namangan shop at an online marketplace at least once a month, with an associated margin of error of 3.8 percentage points. Based on this estimate and margin of error, what is the greatest plausible percentage of all adults in Namangan who shop at an online marketplace at least once a month?",
+    "spr_answers": [
+      "65.8"
+    ],
+    "explanation_en": "The plausible values are the estimate plus or minus the margin of error, from $62 - 3.8 = 58.2\\%$ to $62 + 3.8 = 65.8\\%$. The greatest plausible percentage is 65.8%. Enter 65.8 (without the percent sign).",
+    "explanation_uz": "Ehtimoliy qiymatlar — baho plyus-minus xatolik chegarasi: $62 - 3.8 = 58.2\\%$ dan $62 + 3.8 = 65.8\\%$ gacha. Eng katta ehtimoliy foiz 65.8%. Javob: 65.8 (foiz belgisisiz).",
+    "estimated_seconds": 50,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "plausible values"
+    ]
+  },
+  {
+    "skill_code": "inference_margin_of_error",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "A random sample of 120 bus passengers in Samarkand was surveyed. Based on the sample, the mean waiting time at a bus stop for all bus passengers in Samarkand is estimated to be 11 minutes, with an associated margin of error of 2 minutes. Which of the following is the most appropriate conclusion?",
+    "option_a": "Every bus passenger in Samarkand waits between 9 and 13 minutes at a bus stop.",
+    "option_b": "It is plausible that the mean waiting time for all bus passengers in Samarkand is between 9 and 13 minutes.",
+    "option_c": "The mean waiting time for all bus passengers in Samarkand is exactly 11 minutes.",
+    "option_d": "The mean waiting time for the 120 passengers in the sample is between 9 and 13 minutes, but it is not known exactly.",
+    "correct": "B",
+    "explanation_en": "An estimate with a margin of error gives an interval of plausible values for a population **mean**: from $11 - 2 = 9$ to $11 + 2 = 13$ minutes. Choice A is about individual passengers; many passengers may wait less than 9 or more than 13 minutes. Choice C claims too much: 11 minutes is only an estimate. Choice D is wrong because the sample mean is known exactly (11 minutes); the uncertainty is about the population mean.",
+    "explanation_uz": "Xatolik chegarali baho to‘plam **o‘rtachasi** uchun ehtimoliy qiymatlar oralig‘ini beradi: $11 - 2 = 9$ dan $11 + 2 = 13$ daqiqagacha. A javob alohida yo‘lovchilar haqida; ko‘p yo‘lovchilar 9 daqiqadan kam yoki 13 daqiqadan ko‘p kutishi mumkin. C javob ortiqcha da’vo qiladi: 11 daqiqa — faqat baho. D javob noto‘g‘ri, chunki tanlanma o‘rtachasi aniq ma’lum (11 daqiqa); noaniqlik to‘plam o‘rtachasiga tegishli.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "interpretation"
+    ]
+  },
+  {
+    "skill_code": "inference_margin_of_error",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "A district has 80,000 households. Based on a random sample of the district's households, it is estimated that 35% of all households in the district have a pet, with an associated margin of error of 4 percentage points. Which of the following is a plausible number of households in the district that have a pet?",
+    "option_a": "24,000",
+    "option_b": "26,500",
+    "option_c": "32,000",
+    "option_d": "35,000",
+    "correct": "B",
+    "explanation_en": "The plausible percentages are from $35 - 4 = 31\\%$ to $35 + 4 = 39\\%$. Of 80,000 households, that is from $0.31 \\times 80{,}000 = 24{,}800$ to $0.39 \\times 80{,}000 = 31{,}200$ households. Only 26,500 is in this range. Choice A (30% of the households) is too small. Choice C (40%) and choice D (about 44%) are too large; choice D uses the number 35 as if it were thousands of households.",
+    "explanation_uz": "Ehtimoliy foizlar $35 - 4 = 31\\%$ dan $35 + 4 = 39\\%$ gacha. 80,000 ta xonadon uchun bu $0.31 \\times 80{,}000 = 24{,}800$ dan $0.39 \\times 80{,}000 = 31{,}200$ gacha. Bu oraliqda faqat 26,500 bor. A javob (xonadonlarning 30% i) juda kichik. C javob (40%) va D javob (taxminan 44%) juda katta; D javob 35 sonini go‘yo minglab xonadonlar soni deb olgan.",
+    "estimated_seconds": 80,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "population count"
+    ]
+  },
+  {
+    "skill_code": "inference_margin_of_error",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "A town has 12,500 adult residents. Based on a random sample of the town's adult residents, it is estimated that 18% of all adult residents of the town ride a bicycle to work, with an associated margin of error of 2.4 percentage points. Based on this estimate and margin of error, what is the greatest plausible number of adult residents of the town who ride a bicycle to work?",
+    "spr_answers": [
+      "2550"
+    ],
+    "explanation_en": "The greatest plausible percentage is $18 + 2.4 = 20.4\\%$. Of 12,500 residents, that is $0.204 \\times 12{,}500 = 2{,}550$. Using only the estimate, $0.18 \\times 12{,}500 = 2{,}250$, gives the best estimate, not the greatest plausible value. Enter 2550.",
+    "explanation_uz": "Eng katta ehtimoliy foiz $18 + 2.4 = 20.4\\%$. 12,500 nafar aholidan bu $0.204 \\times 12{,}500 = 2{,}550$. Faqat bahodan foydalanish, $0.18 \\times 12{,}500 = 2{,}250$, eng katta ehtimoliy qiymatni emas, eng yaxshi bahoni beradi. Javob: 2550.",
+    "estimated_seconds": 80,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "population count"
+    ]
+  },
+  {
+    "skill_code": "inference_margin_of_error",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "Two researchers each estimated the mean daily water use of households in the same city. Each researcher selected a random sample of households from all households in the city. Researcher A used a sample of 150 households, and Researcher B used a sample of 900 households. The two researchers used the same method to calculate their margins of error. Which of the following is most likely true?",
+    "option_a": "The margin of error for Researcher A's estimate is smaller than the margin of error for Researcher B's estimate.",
+    "option_b": "The margin of error for Researcher B's estimate is smaller than the margin of error for Researcher A's estimate.",
+    "option_c": "The margins of error are equal, because both samples come from the same city.",
+    "option_d": "The margins of error cannot be compared, because the two samples will give different estimates.",
+    "correct": "B",
+    "explanation_en": "When everything else is the same, a larger random sample usually gives a smaller margin of error. Researcher B's sample (900 households) is larger than Researcher A's (150), so B's margin of error is most likely smaller. Choice A reverses this relationship. Choice C is wrong because the margin of error depends on the sample size, not only on the population. Choice D is wrong because the sample sizes, not the particular estimates, tell which margin is likely smaller.",
+    "explanation_uz": "Boshqa barcha shartlar bir xil bo‘lsa, kattaroq tasodifiy tanlanma odatda kichikroq xatolik chegarasini beradi. B tadqiqotchining tanlanmasi (900 xonadon) A nikidan (150) katta, demak B ning xatolik chegarasi kichikroq bo‘lishi ehtimoli yuqori. A javob bu bog‘liqlikni teskari qilgan. C javob noto‘g‘ri, chunki xatolik chegarasi faqat to‘plamga emas, tanlanma hajmiga ham bog‘liq. D javob noto‘g‘ri, chunki qaysi chegara kichikroq ekanini aniq bahoning o‘zi emas, tanlanma hajmlari ko‘rsatadi.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "sample size"
+    ]
+  },
+  {
+    "skill_code": "inference_margin_of_error",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "Researchers selected a random sample of adults in City P and a separate random sample of adults in City Q and asked each adult whether they read the news online every day. Based on the samples, 46% of all adults in City P read the news online every day, with a margin of error of 4 percentage points, and 41% of all adults in City Q do, with a margin of error of 3 percentage points. Which of the following conclusions is best supported by these results?",
+    "option_a": "The percentage of all adults who read the news online every day is greater in City P than in City Q.",
+    "option_b": "The percentage of all adults who read the news online every day is greater in City Q than in City P.",
+    "option_c": "It is plausible that the percentage of all adults who read the news online every day is the same in the two cities.",
+    "option_d": "Exactly 5% more adults in City P than in City Q read the news online every day.",
+    "correct": "C",
+    "explanation_en": "The plausible values are 42% to 50% for City P and 38% to 44% for City Q. These intervals overlap (for example, 43% is plausible for both cities), so it is plausible that the two percentages are equal. Choice A goes too far: although the estimate for City P is greater, the intervals overlap, so the data do not show that City P's percentage is greater. Choice B has no support in the data. Choice D is wrong because 5 is the difference between the two estimates, in percentage points, not a known difference, and it is not a percent of adults.",
+    "explanation_uz": "Ehtimoliy qiymatlar P shahar uchun 42% dan 50% gacha, Q shahar uchun 38% dan 44% gacha. Bu oraliqlar kesishadi (masalan, 43% ikkala shahar uchun ham ehtimoliy), demak ikki foizning teng bo‘lishi ehtimoliy. A javob ortiqcha xulosa chiqaradi: P shahar bahosi katta bo‘lsa ham, oraliqlar kesishgani uchun ma’lumotlar P shahar foizi katta ekanini ko‘rsatmaydi. B javobni ma’lumotlar qo‘llab-quvvatlamaydi. D javob noto‘g‘ri, chunki 5 — ikki baho orasidagi foiz punktlardagi farq, ma’lum farq emas, va u kattalar sonining foizi ham emas.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "compare estimates"
+    ]
+  },
+  {
+    "skill_code": "inference_margin_of_error",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "A beekeeper has 400 beehives. A random sample of 60 of the beehives was selected, and the amount of honey from each hive in one season was measured. Based on the sample, the mean amount of honey per hive for all 400 hives is estimated to be 18.5 kilograms, with an associated margin of error of 1.2 kilograms. Based on this estimate and margin of error, what is the greatest plausible total amount of honey, in kilograms, from all 400 hives?",
+    "spr_answers": [
+      "7880"
+    ],
+    "explanation_en": "The greatest plausible mean is $18.5 + 1.2 = 19.7$ kilograms per hive. For 400 hives, the greatest plausible total is $19.7 \\times 400 = 7{,}880$ kilograms. Multiplying by 60 uses only the hives in the sample, and $18.5 \\times 400 = 7{,}400$ is the best estimate, not the greatest plausible value. Enter 7880.",
+    "explanation_uz": "Eng katta ehtimoliy o‘rtacha har bir uyaga $18.5 + 1.2 = 19.7$ kilogramm. 400 ta uya uchun eng katta ehtimoliy jami miqdor $19.7 \\times 400 = 7{,}880$ kilogramm. 60 ga ko‘paytirish faqat tanlanmadagi uyalarni hisobga oladi, $18.5 \\times 400 = 7{,}400$ esa eng katta ehtimoliy qiymat emas, eng yaxshi baho. Javob: 7880.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "mean total"
+    ]
+  },
+  {
+    "skill_code": "inference_margin_of_error",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "A researcher selected a random sample of 400 students from all students at one university in Fergana and asked how many hours they spend on social media each day. Based on the sample, the mean time for all students at the university is estimated to be 3.2 hours, with an associated margin of error of 0.3 hour. Which of the following statements is best supported by this information?",
+    "option_a": "It is plausible that the mean time spent on social media each day by all students at this university is between 2.9 and 3.5 hours.",
+    "option_b": "It is plausible that the mean time spent on social media each day by all university students in Uzbekistan is between 2.9 and 3.5 hours.",
+    "option_c": "Most students at this university spend between 2.9 and 3.5 hours on social media each day.",
+    "option_d": "The mean time spent on social media each day by all students at this university is between 3.2 and 3.5 hours.",
+    "correct": "A",
+    "explanation_en": "The sample was selected at random from the students at this one university, so the interval $3.2 \\pm 0.3$, from 2.9 to 3.5 hours, gives plausible values for the mean of **that** population. Choice B extends the conclusion to all university students in the country, who were not sampled. Choice C describes individual students instead of the mean. Choice D uses only the upper half of the interval; values below 3.2 are equally plausible.",
+    "explanation_uz": "Tanlanma faqat shu bitta universitet talabalaridan tasodifiy olingan, shuning uchun $3.2 \\pm 0.3$ oraliq, ya’ni 2.9 dan 3.5 soatgacha, aynan **shu** to‘plam o‘rtachasining ehtimoliy qiymatlarini beradi. B javob xulosani tanlanma olinmagan butun mamlakatdagi talabalarga kengaytirgan. C javob o‘rtachani emas, alohida talabalarni tasvirlaydi. D javob oraliqning faqat yuqori yarmini olgan; 3.2 dan kichik qiymatlar ham xuddi shunday ehtimoliy.",
+    "estimated_seconds": 80,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "interpretation"
+    ]
+  },
+  {
+    "skill_code": "inference_margin_of_error",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "Researchers selected a random sample of households in District A, which has 6,000 households, and a separate random sample of households in District B, which has 9,000 households. Based on the samples, 30% of the households in District A have solar panels, with a margin of error of 4 percentage points, and 22% of the households in District B have solar panels, with a margin of error of 3 percentage points. Which of the following statements is best supported by these estimates?",
+    "option_a": "District A has more households with solar panels than District B does.",
+    "option_b": "District B has more households with solar panels than District A does.",
+    "option_c": "It is plausible that the percentage of households with solar panels is the same in the two districts.",
+    "option_d": "It is plausible that the number of households with solar panels is the same in the two districts.",
+    "correct": "D",
+    "explanation_en": "The plausible percentages are 26% to 34% for District A and 19% to 25% for District B. These intervals do not overlap, so choice C is not supported. Converting to numbers of households: District A has from $0.26 \\times 6{,}000 = 1{,}560$ to $0.34 \\times 6{,}000 = 2{,}040$, and District B has from $0.19 \\times 9{,}000 = 1{,}710$ to $0.25 \\times 9{,}000 = 2{,}250$. These ranges overlap (for example, 1,800 is plausible for both), so the numbers may be equal. Choice A confuses a greater percentage with a greater number. Choice B is not certain either: the best estimates are 1,800 and 1,980, but because the ranges overlap, District A could have more.",
+    "explanation_uz": "Ehtimoliy foizlar A tuman uchun 26% dan 34% gacha, B tuman uchun 19% dan 25% gacha. Bu oraliqlar kesishmaydi, shuning uchun C javob asoslanmagan. Xonadonlar soniga o‘tkazamiz: A tumanda $0.26 \\times 6{,}000 = 1{,}560$ dan $0.34 \\times 6{,}000 = 2{,}040$ gacha, B tumanda $0.19 \\times 9{,}000 = 1{,}710$ dan $0.25 \\times 9{,}000 = 2{,}250$ gacha. Bu oraliqlar kesishadi (masalan, 1,800 ikkalasi uchun ham ehtimoliy), demak sonlar teng bo‘lishi mumkin. A javob kattaroq foizni kattaroq son bilan adashtirgan. B javob ham aniq emas: eng yaxshi baholar 1,800 va 1,980, lekin oraliqlar kesishgani uchun A tumanda ko‘proq bo‘lishi ham mumkin.",
+    "estimated_seconds": 140,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "compare estimates"
+    ]
+  },
+  {
+    "skill_code": "inference_margin_of_error",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "An orchard has 6,000 apple trees. A random sample of 250 of the trees was inspected for a certain pest. Based on the sample, the plausible numbers of trees in the entire orchard that have the pest are from 1,140 to 1,500, where this range was found by applying the sample percentage plus or minus a margin of error to all 6,000 trees. How many of the trees in the sample had the pest?",
+    "spr_answers": [
+      "55"
+    ],
+    "explanation_en": "The estimate is the middle of the range: $\\frac{1{,}140 + 1{,}500}{2} = 1{,}320$ trees. As a percentage of the orchard, that is $\\frac{1{,}320}{6{,}000} = 0.22$, or 22%, which is the sample percentage. In the sample of 250 trees, $0.22 \\times 250 = 55$ trees had the pest. (The margin of error is $\\frac{180}{6{,}000} = 3$ percentage points.) Enter 55.",
+    "explanation_uz": "Baho — oraliqning o‘rtasi: $\\frac{1{,}140 + 1{,}500}{2} = 1{,}320$ ta daraxt. Bog‘ga nisbatan foizda bu $\\frac{1{,}320}{6{,}000} = 0.22$, ya’ni 22% — bu tanlanmadagi foiz. 250 ta daraxtli tanlanmada zararkunanda $0.22 \\times 250 = 55$ ta daraxtda bo‘lgan. (Xatolik chegarasi $\\frac{180}{6{,}000} = 3$ foiz punkti.) Javob: 55.",
+    "estimated_seconds": 130,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "reverse interval"
+    ]
+  },
+  {
+    "skill_code": "inference_margin_of_error",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "A mobile phone company selected a random sample of 500 of its customers and asked whether they were satisfied with the company's service. Based on the sample, it is estimated that 64% of all of the company's customers are satisfied, with an associated margin of error of 4.3 percentage points. The company's advertisement claims that at least 70% of its customers are satisfied with its service. Which of the following is the best evaluation of the advertisement's claim?",
+    "option_a": "The claim is supported, because 70% is within two margins of error of 64%.",
+    "option_b": "The claim is not supported, because all of the plausible values for the percentage of satisfied customers are less than 70%.",
+    "option_c": "The data prove that exactly 64% of the company's customers are satisfied, so the claim is false.",
+    "option_d": "The claim cannot be evaluated, because a sample of 500 customers is too small to give information about all customers.",
+    "correct": "B",
+    "explanation_en": "The plausible values for the percentage of all customers who are satisfied are from $64 - 4.3 = 59.7\\%$ to $64 + 4.3 = 68.3\\%$. Every plausible value is less than 70%, so the data do not support the claim. Choice A uses two margins of error, but the plausible values are found with one margin of error. Choice C overstates the result: 64% is an estimate, not an exact value. Choice D is wrong because a random sample of 500 customers can give useful information about all customers; that is what the margin of error measures.",
+    "explanation_uz": "Barcha mijozlar orasida mamnunlar foizining ehtimoliy qiymatlari $64 - 4.3 = 59.7\\%$ dan $64 + 4.3 = 68.3\\%$ gacha. Har bir ehtimoliy qiymat 70% dan kichik, demak ma’lumotlar da’voni qo‘llab-quvvatlamaydi. A javob ikki xatolik chegarasini olgan, lekin ehtimoliy qiymatlar bitta xatolik chegarasi bilan topiladi. C javob natijani bo‘rttirgan: 64% — aniq qiymat emas, baho. D javob noto‘g‘ri, chunki 500 nafar mijozdan iborat tasodifiy tanlanma barcha mijozlar haqida foydali ma’lumot beradi; xatolik chegarasi aynan shuni o‘lchaydi.",
+    "estimated_seconds": 110,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "evaluate claim"
+    ]
+  },
+  {
+    "skill_code": "inference_margin_of_error",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "A city district has 24,000 adult residents. Based on a random sample of the district's adult residents, a researcher estimated the percentage of all adult residents who exercise at least three times a week, with an associated margin of error. Applying the plausible percentages to all 24,000 adult residents gives plausible numbers from 8,160 to 9,600. What is the margin of error, in percentage points?",
+    "spr_answers": [
+      "3"
+    ],
+    "explanation_en": "Half the width of the range of plausible numbers is $\\frac{9{,}600 - 8{,}160}{2} = 720$ residents. As a percentage of 24,000 residents, that is $\\frac{720}{24{,}000} = 0.03$, or 3 percentage points. (The estimate is $\\frac{8{,}880}{24{,}000} = 37\\%$, so the plausible percentages are 34% to 40%.) Answering 6 uses the whole width of the range instead of half of it. Enter 3.",
+    "explanation_uz": "Ehtimoliy sonlar oralig‘i kengligining yarmi $\\frac{9{,}600 - 8{,}160}{2} = 720$ nafar aholi. 24,000 nafar aholiga nisbatan foizda bu $\\frac{720}{24{,}000} = 0.03$, ya’ni 3 foiz punkti. (Baho $\\frac{8{,}880}{24{,}000} = 37\\%$, demak ehtimoliy foizlar 34% dan 40% gacha.) 6 deb javob berish oraliqning yarmini emas, to‘liq kengligini olishdir. Javob: 3.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "margin from interval"
+    ]
+  }
+]

@@ -1,0 +1,296 @@
+[
+  {
+    "skill_code": "systems_linear_equations",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "$$\\begin{aligned} y &= 3x - 2 \\\\ 2x + y &= 18 \\end{aligned}$$\n\nWhat is the solution $(x, y)$ to the given system of equations?",
+    "option_a": "$(3, 7)$",
+    "option_b": "$(4, 10)$",
+    "option_c": "$(5, 8)$",
+    "option_d": "$(10, 4)$",
+    "correct": "B",
+    "explanation_en": "Substitute $y = 3x - 2$ into the second equation: $2x + 3x - 2 = 18$, so $5x = 20$ and $x = 4$. Then $y = 3(4) - 2 = 10$. Check: $2(4) + 10 = 18$.\n\nChoice A satisfies only the first equation ($2(3) + 7 = 13$, not $18$). Choice C satisfies only the second equation ($3(5) - 2 = 13$, not $8$). Choice D reverses the coordinates.",
+    "explanation_uz": "$y = 3x - 2$ ni ikkinchi tenglamaga qo‘yamiz: $2x + 3x - 2 = 18$, demak $5x = 20$ va $x = 4$. U holda $y = 3(4) - 2 = 10$. Tekshiruv: $2(4) + 10 = 18$.\n\nA variant faqat birinchi tenglamani qanoatlantiradi ($2(3) + 7 = 13$, $18$ emas). C variant faqat ikkinchi tenglamani qanoatlantiradi ($3(5) - 2 = 13$, $8$ emas). D variantda koordinatalar almashtirilgan.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "solve-substitution"
+    ]
+  },
+  {
+    "skill_code": "systems_linear_equations",
+    "difficulty": "easy",
+    "question_type": "spr",
+    "stem": "$$\\begin{aligned} x + 3y &= 19 \\\\ x - y &= 3 \\end{aligned}$$\n\nIf $(x, y)$ is the solution to the given system of equations, what is the value of $x$?",
+    "spr_answers": [
+      "7"
+    ],
+    "explanation_en": "Subtract the second equation from the first: $(x + 3y) - (x - y) = 19 - 3$, so $4y = 16$ and $y = 4$. Then $x = 3 + y = 7$. Check: $7 + 3(4) = 19$. Entering $4$ gives $y$, not $x$.",
+    "explanation_uz": "Birinchi tenglamadan ikkinchisini ayiramiz: $(x + 3y) - (x - y) = 19 - 3$, demak $4y = 16$ va $y = 4$. U holda $x = 3 + y = 7$. Tekshiruv: $7 + 3(4) = 19$. $4$ deb yozish — bu $y$ ning qiymati, $x$ niki emas.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "solve-elimination"
+    ]
+  },
+  {
+    "skill_code": "systems_linear_equations",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "A theater sold $120$ tickets for a concert. Student tickets cost $8{,}000$ soums each and adult tickets cost $15{,}000$ soums each. The total from ticket sales was $1{,}380{,}000$ soums. If $s$ is the number of student tickets sold and $a$ is the number of adult tickets sold, which system of equations represents this situation?",
+    "option_a": "$\\begin{aligned} s + a &= 120 \\\\ 15{,}000s + 8{,}000a &= 1{,}380{,}000 \\end{aligned}$",
+    "option_b": "$\\begin{aligned} s + a &= 120 \\\\ 8{,}000s + 15{,}000a &= 1{,}380{,}000 \\end{aligned}$",
+    "option_c": "$\\begin{aligned} s + a &= 1{,}380{,}000 \\\\ 8{,}000s + 15{,}000a &= 120 \\end{aligned}$",
+    "option_d": "$\\begin{aligned} 8{,}000s + 15{,}000a &= 120 \\\\ s - a &= 1{,}380{,}000 \\end{aligned}$",
+    "correct": "B",
+    "explanation_en": "The number of tickets gives $s + a = 120$. Student tickets bring in $8{,}000s$ soums and adult tickets bring in $15{,}000a$ soums, so $8{,}000s + 15{,}000a = 1{,}380{,}000$.\n\nChoice A swaps the prices of the two kinds of tickets. Choices C and D mix up the number of tickets with the amount of money.",
+    "explanation_uz": "Chiptalar soni bo‘yicha $s + a = 120$. Talaba chiptalaridan $8{,}000s$ so‘m, kattalar chiptalaridan $15{,}000a$ so‘m tushadi, shuning uchun $8{,}000s + 15{,}000a = 1{,}380{,}000$.\n\nA variantda ikki xil chipta narxlari almashtirilgan. C va D variantlar chiptalar sonini pul miqdori bilan adashtirgan.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "write-system"
+    ]
+  },
+  {
+    "skill_code": "systems_linear_equations",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "$$\\begin{aligned} 2x + 5y &= 26 \\\\ 5x + 2y &= 9 \\end{aligned}$$\n\nIf $(x, y)$ is the solution to the given system of equations, what is the value of $x + y$?",
+    "option_a": "$5$",
+    "option_b": "$\\frac{17}{3}$",
+    "option_c": "$7$",
+    "option_d": "$35$",
+    "correct": "A",
+    "explanation_en": "Add the two equations: $7x + 7y = 35$. Divide by $7$: $x + y = 5$. There is no need to find $x$ and $y$ separately.\n\nChoice B is $y - x$, found by subtracting the equations. Choice C is the common coefficient, $7$. Choice D is $7x + 7y$; the division by $7$ was skipped.",
+    "explanation_uz": "Ikki tenglamani qo‘shamiz: $7x + 7y = 35$. $7$ ga bo‘lamiz: $x + y = 5$. $x$ va $y$ ni alohida topish shart emas.\n\nB variant — tenglamalarni ayirib topilgan $y - x$. C variant — umumiy koeffitsiyent $7$. D variant — $7x + 7y$; $7$ ga bo‘lish o‘tkazib yuborilgan.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "combination"
+    ]
+  },
+  {
+    "skill_code": "systems_linear_equations",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "$$\\begin{aligned} y &= 2x + 5 \\\\ 4x - 2y &= 6 \\end{aligned}$$\n\nHow many solutions does the given system of equations have?",
+    "option_a": "Zero",
+    "option_b": "Exactly one",
+    "option_c": "Exactly two",
+    "option_d": "Infinitely many",
+    "correct": "A",
+    "explanation_en": "Solve the second equation for $y$: $-2y = -4x + 6$, so $y = 2x - 3$. Both lines have slope $2$, but their $y$-intercepts are different ($5$ and $-3$). The lines are parallel and never meet, so the system has zero solutions.\n\nExactly one solution would need different slopes. Two lines can't meet in exactly two points. Infinitely many solutions would need the same slope and the same $y$-intercept.",
+    "explanation_uz": "Ikkinchi tenglamadan $y$ ni topamiz: $-2y = -4x + 6$, ya’ni $y = 2x - 3$. Ikkala to‘g‘ri chiziqning qiyaligi $2$, lekin $y$ o‘qini kesish nuqtalari har xil ($5$ va $-3$). To‘g‘ri chiziqlar parallel va kesishmaydi, demak sistemaning yechimi yo‘q.\n\nBitta yechim uchun qiyaliklar har xil bo‘lishi kerak. Ikki to‘g‘ri chiziq aynan ikki nuqtada kesisha olmaydi. Cheksiz ko‘p yechim uchun qiyalik ham, $y$ o‘qini kesish nuqtasi ham bir xil bo‘lishi kerak.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "number-of-solutions"
+    ]
+  },
+  {
+    "skill_code": "systems_linear_equations",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "The sum of two numbers is $64$, and the larger number is $18$ more than the smaller number. What is the larger number?",
+    "option_a": "$23$",
+    "option_b": "$41$",
+    "option_c": "$46$",
+    "option_d": "$82$",
+    "correct": "B",
+    "explanation_en": "Let the larger number be $x$ and the smaller be $y$: $x + y = 64$ and $x - y = 18$. Adding the equations gives $2x = 82$, so $x = 41$ (and $y = 23$). Check: $41 + 23 = 64$ and $41 - 23 = 18$.\n\nChoice A is the smaller number. Choice C is $64 - 18$, which is twice the smaller number. Choice D is $2x$; the division by $2$ was skipped.",
+    "explanation_uz": "Kattaroq son $x$, kichigi $y$ bo‘lsin: $x + y = 64$ va $x - y = 18$. Tenglamalarni qo‘shsak, $2x = 82$, demak $x = 41$ (va $y = 23$). Tekshiruv: $41 + 23 = 64$ va $41 - 23 = 18$.\n\nA variant — kichik son. C variant — $64 - 18$, bu kichik sonning ikki baravari. D variant — $2x$; $2$ ga bo‘lish o‘tkazib yuborilgan.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "word-problem"
+    ]
+  },
+  {
+    "skill_code": "systems_linear_equations",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "$$\\begin{aligned} 5x + 2y &= 31 \\\\ 3x + 4y &= 13 \\end{aligned}$$\n\nIf $(x, y)$ is the solution to the given system of equations, what is the value of $x - y$?",
+    "spr_answers": [
+      "9"
+    ],
+    "explanation_en": "Subtract the second equation from the first: $(5x + 2y) - (3x + 4y) = 31 - 13$, so $2x - 2y = 18$ and $x - y = 9$. (Solving fully gives $x = 7$ and $y = -2$, and $7 - (-2) = 9$.)",
+    "explanation_uz": "Birinchi tenglamadan ikkinchisini ayiramiz: $(5x + 2y) - (3x + 4y) = 31 - 13$, ya’ni $2x - 2y = 18$ va $x - y = 9$. (To‘liq yechsak, $x = 7$ va $y = -2$, $7 - (-2) = 9$.)",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "combination"
+    ]
+  },
+  {
+    "skill_code": "systems_linear_equations",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "The perimeter of a rectangular garden is $58$ meters. The length of the garden is $5$ meters more than twice its width. What is the length, in meters, of the garden?",
+    "option_a": "$8$",
+    "option_b": "$16$",
+    "option_c": "$21$",
+    "option_d": "$\\frac{121}{3}$",
+    "correct": "C",
+    "explanation_en": "Let $L$ be the length and $W$ the width: $2L + 2W = 58$ and $L = 2W + 5$. Substitute: $2(2W + 5) + 2W = 58$, so $6W + 10 = 58$, $W = 8$, and $L = 2(8) + 5 = 21$. Check: $2(21) + 2(8) = 58$.\n\nChoice A is the width. Choice B is twice the width, without the extra $5$ meters. Choice D comes from using $L + W = 58$, treating the perimeter as the sum of just one length and one width.",
+    "explanation_uz": "Uzunlik $L$, eni $W$ bo‘lsin: $2L + 2W = 58$ va $L = 2W + 5$. O‘rniga qo‘yamiz: $2(2W + 5) + 2W = 58$, ya’ni $6W + 10 = 58$, $W = 8$ va $L = 2(8) + 5 = 21$. Tekshiruv: $2(21) + 2(8) = 58$.\n\nA variant — bog‘ning eni. B variant — enining ikki baravari, qo‘shimcha $5$ metrsiz. D variant perimetrni bitta uzunlik va bitta en yig‘indisi deb, $L + W = 58$ dan foydalangan.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "word-problem"
+    ]
+  },
+  {
+    "skill_code": "systems_linear_equations",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "A cash box contains only $500$-soum coins and $1{,}000$-soum coins. There are $50$ coins in the box, and their total value is $40{,}500$ soums. How many $1{,}000$-soum coins are in the box?",
+    "option_a": "$19$",
+    "option_b": "$31$",
+    "option_c": "$40$",
+    "option_d": "$81$",
+    "correct": "B",
+    "explanation_en": "Let $a$ be the number of $500$-soum coins and $b$ the number of $1{,}000$-soum coins: $a + b = 50$ and $500a + 1{,}000b = 40{,}500$. Substitute $a = 50 - b$: $25{,}000 - 500b + 1{,}000b = 40{,}500$, so $500b = 15{,}500$ and $b = 31$. Check: $19$ coins of $500$ soums and $31$ coins of $1{,}000$ soums give $9{,}500 + 31{,}000 = 40{,}500$.\n\nChoice A is the number of $500$-soum coins. Choice C is about $40{,}500 \\div 1{,}000$, as if all coins were $1{,}000$-soum coins. Choice D is $40{,}500 \\div 500$, as if all coins were $500$-soum coins.",
+    "explanation_uz": "$500$ so‘mlik tangalar soni $a$, $1{,}000$ so‘mliklar soni $b$ bo‘lsin: $a + b = 50$ va $500a + 1{,}000b = 40{,}500$. $a = 50 - b$ ni qo‘yamiz: $25{,}000 - 500b + 1{,}000b = 40{,}500$, demak $500b = 15{,}500$ va $b = 31$. Tekshiruv: $19$ ta $500$ so‘mlik va $31$ ta $1{,}000$ so‘mlik tanga $9{,}500 + 31{,}000 = 40{,}500$ so‘m beradi.\n\nA variant — $500$ so‘mlik tangalar soni. C variant — taxminan $40{,}500 \\div 1{,}000$, go‘yo hamma tangalar $1{,}000$ so‘mlik. D variant — $40{,}500 \\div 500$, go‘yo hamma tangalar $500$ so‘mlik.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "word-problem"
+    ]
+  },
+  {
+    "skill_code": "systems_linear_equations",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "At a stationery shop, $4$ notebooks and $3$ pens cost a total of $31{,}000$ soums, and $2$ notebooks and $5$ pens cost a total of $26{,}000$ soums. Each notebook has the same price and each pen has the same price. What is the price, in soums, of one pen?",
+    "spr_answers": [
+      "3000"
+    ],
+    "explanation_en": "Let $n$ and $p$ be the prices of a notebook and a pen: $4n + 3p = 31{,}000$ and $2n + 5p = 26{,}000$. Multiply the second equation by $2$: $4n + 10p = 52{,}000$. Subtract the first equation: $7p = 21{,}000$, so $p = 3{,}000$. (Then $n = 5{,}500$; check: $2(5{,}500) + 5(3{,}000) = 26{,}000$.) Enter 3000 without a comma.",
+    "explanation_uz": "Daftar narxi $n$, ruchka narxi $p$ bo‘lsin: $4n + 3p = 31{,}000$ va $2n + 5p = 26{,}000$. Ikkinchi tenglamani $2$ ga ko‘paytiramiz: $4n + 10p = 52{,}000$. Undan birinchi tenglamani ayiramiz: $7p = 21{,}000$, demak $p = 3{,}000$. (U holda $n = 5{,}500$; tekshiruv: $2(5{,}500) + 5(3{,}000) = 26{,}000$.) Javobni vergulsiz 3000 deb yozing.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "word-problem"
+    ]
+  },
+  {
+    "skill_code": "systems_linear_equations",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "One equation in a system of two linear equations is $4x - 6y = 10$. Which of the following could be the other equation if the system has infinitely many solutions?",
+    "option_a": "$2x - 3y = 10$",
+    "option_b": "$2x - 3y = 5$",
+    "option_c": "$6x - 4y = 10$",
+    "option_d": "$4x + 6y = 10$",
+    "correct": "B",
+    "explanation_en": "Dividing $4x - 6y = 10$ by $2$ gives $2x - 3y = 5$, an equivalent equation. Both equations describe the same line, so every point on that line is a solution: infinitely many solutions.\n\nChoice A has the same left side as $2x - 3y = 5$ but a different constant, so its line is parallel to the first one: no solution. Choices C and D have different slopes, so each gives exactly one solution.",
+    "explanation_uz": "$4x - 6y = 10$ ni $2$ ga bo‘lsak, $2x - 3y = 5$ hosil bo‘ladi — bu teng kuchli tenglama. Ikkala tenglama bitta to‘g‘ri chiziqni ifodalaydi, shuning uchun shu chiziqdagi har bir nuqta yechim: cheksiz ko‘p yechim.\n\nA variantning chap tomoni $2x - 3y = 5$ niki bilan bir xil, lekin ozod hadi boshqa, demak uning chizig‘i birinchisiga parallel: yechim yo‘q. C va D variantlarning qiyaligi boshqacha, shuning uchun har biri aynan bitta yechim beradi.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "infinitely-many"
+    ]
+  },
+  {
+    "skill_code": "systems_linear_equations",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "At a bakery, $3$ cakes and $4$ pies cost a total of $205$ thousand soums, and $5$ cakes and $2$ pies cost a total of $225$ thousand soums. Each cake has the same price and each pie has the same price. How many thousand soums more does one cake cost than one pie?",
+    "option_a": "$10$",
+    "option_b": "$20$",
+    "option_c": "$25$",
+    "option_d": "$35$",
+    "correct": "A",
+    "explanation_en": "Let $c$ and $p$ be the prices of a cake and a pie, in thousands of soums: $3c + 4p = 205$ and $5c + 2p = 225$. Subtract the first equation from the second: $2c - 2p = 20$, so $c - p = 10$. (Solving fully gives $c = 35$ and $p = 25$.)\n\nChoice B is $2c - 2p$; the division by $2$ was skipped. Choice C is the price of one pie. Choice D is the price of one cake.",
+    "explanation_uz": "Tort va pirog narxi (ming so‘mda) $c$ va $p$ bo‘lsin: $3c + 4p = 205$ va $5c + 2p = 225$. Ikkinchi tenglamadan birinchisini ayiramiz: $2c - 2p = 20$, demak $c - p = 10$. (To‘liq yechsak, $c = 35$ va $p = 25$.)\n\nB variant — $2c - 2p$; $2$ ga bo‘lish o‘tkazib yuborilgan. C variant — bitta pirog narxi. D variant — bitta tort narxi.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "combination"
+    ]
+  },
+  {
+    "skill_code": "systems_linear_equations",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "$$\\begin{aligned} 3x + 5y &= 7 \\\\ 5x + 3y &= k \\end{aligned}$$\n\nIn the given system of equations, $k$ is a constant. If the solution $(x, y)$ to the system satisfies $x + y = 3$, what is the value of $k$?",
+    "spr_answers": [
+      "17"
+    ],
+    "explanation_en": "Add the two equations: $8x + 8y = 7 + k$, so $8(x + y) = 7 + k$. Since $x + y = 3$, $24 = 7 + k$, and $k = 17$. Check: from $3x + 5y = 7$ and $x + y = 3$ we get $x = 4$ and $y = -1$, and $5(4) + 3(-1) = 17$.",
+    "explanation_uz": "Ikki tenglamani qo‘shamiz: $8x + 8y = 7 + k$, ya’ni $8(x + y) = 7 + k$. $x + y = 3$ bo‘lgani uchun $24 = 7 + k$ va $k = 17$. Tekshiruv: $3x + 5y = 7$ va $x + y = 3$ dan $x = 4$, $y = -1$ chiqadi va $5(4) + 3(-1) = 17$.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "combination-parameter"
+    ]
+  },
+  {
+    "skill_code": "systems_linear_equations",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "In a math competition with $40$ questions, a contestant earns $2$ points for each correct answer and loses $0.5$ point for each incorrect answer. Unanswered questions earn $0$ points. Ravshan answered $36$ of the questions and finished with a score of $52$ points. How many questions did Ravshan answer incorrectly?",
+    "option_a": "$4$",
+    "option_b": "$8$",
+    "option_c": "$20$",
+    "option_d": "$28$",
+    "correct": "B",
+    "explanation_en": "Let $c$ be the number of correct answers and $w$ the number of incorrect answers. He answered $36$ questions, so $c + w = 36$, and $2c - 0.5w = 52$. Substitute $c = 36 - w$: $72 - 2w - 0.5w = 52$, so $2.5w = 20$ and $w = 8$. Check: $c = 28$, and $2(28) - 0.5(8) = 56 - 4 = 52$.\n\nChoice A is the number of unanswered questions ($40 - 36$). Choice C is the value of $2.5w$; the final division by $2.5$ was skipped. Choice D is the number of correct answers.",
+    "explanation_uz": "To‘g‘ri javoblar soni $c$, noto‘g‘rilar soni $w$ bo‘lsin. U $36$ ta savolga javob bergan, demak $c + w = 36$ va $2c - 0.5w = 52$. $c = 36 - w$ ni qo‘yamiz: $72 - 2w - 0.5w = 52$, ya’ni $2.5w = 20$ va $w = 8$. Tekshiruv: $c = 28$ va $2(28) - 0.5(8) = 56 - 4 = 52$.\n\nA variant — javob berilmagan savollar soni ($40 - 36$). C variant — $2.5w$ ning qiymati; oxirida $2.5$ ga bo‘lish o‘tkazib yuborilgan. D variant — to‘g‘ri javoblar soni.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "word-problem"
+    ]
+  },
+  {
+    "skill_code": "systems_linear_equations",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "$$\\begin{aligned} \\frac{x}{3} - \\frac{y}{2} &= 1 \\\\ cx - 3y &= 10 \\end{aligned}$$\n\nIn the given system of equations, $c$ is a constant. For what value of $c$ does the system have no solution?",
+    "option_a": "$-2$",
+    "option_b": "$\\frac{1}{3}$",
+    "option_c": "$2$",
+    "option_d": "$6$",
+    "correct": "C",
+    "explanation_en": "Multiply the first equation by $6$ to clear the fractions: $2x - 3y = 6$. The second equation is $cx - 3y = 10$. The $y$-coefficients already match, so if $c = 2$ the left sides are identical while the right sides are different ($6 \\ne 10$). The lines are parallel and distinct, so there is no solution. For any other value of $c$, the slopes differ and there is exactly one solution.\n\nChoice A gets the sign of the $x$-coefficient wrong. Choice B copies the coefficient of $x$ from the first equation without clearing the fractions; the $y$-coefficients would then not match. Choice D is the multiplier $6$, not the resulting coefficient.",
+    "explanation_uz": "Kasrlardan qutulish uchun birinchi tenglamani $6$ ga ko‘paytiramiz: $2x - 3y = 6$. Ikkinchi tenglama $cx - 3y = 10$. $y$ koeffitsiyentlari allaqachon teng, shuning uchun $c = 2$ bo‘lsa, chap tomonlar bir xil, o‘ng tomonlar esa har xil ($6 \\ne 10$). To‘g‘ri chiziqlar parallel va ustma-ust tushmaydi, demak yechim yo‘q. $c$ ning boshqa har qanday qiymatida qiyaliklar har xil bo‘lib, aynan bitta yechim bo‘ladi.\n\nA variantda $x$ koeffitsiyentining ishorasi xato. B variant kasrlardan qutulmasdan birinchi tenglamadagi $x$ koeffitsiyentini ko‘chirgan; bunda $y$ koeffitsiyentlari mos kelmaydi. D variant — natijaviy koeffitsiyent emas, ko‘paytiruvchi $6$.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "no-solution-parameter"
+    ]
+  },
+  {
+    "skill_code": "systems_linear_equations",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "Akmal deposited a total of $24$ million soums into two savings accounts. One account pays $6\\%$ simple interest per year, and the other pays $9\\%$ simple interest per year. After one year, the two accounts earned a total of $1.89$ million soums in interest. How many million soums did Akmal deposit into the account that pays $9\\%$?",
+    "spr_answers": [
+      "15"
+    ],
+    "explanation_en": "Let $A$ and $B$ be the amounts, in millions of soums, in the $6\\%$ and $9\\%$ accounts: $A + B = 24$ and $0.06A + 0.09B = 1.89$. Substitute $A = 24 - B$: $1.44 - 0.06B + 0.09B = 1.89$, so $0.03B = 0.45$ and $B = 15$. Check: $0.06(9) + 0.09(15) = 0.54 + 1.35 = 1.89$. Entering $9$ gives the amount in the $6\\%$ account.",
+    "explanation_uz": "$6\\%$ li va $9\\%$ li hisoblardagi summalar (million so‘mda) $A$ va $B$ bo‘lsin: $A + B = 24$ va $0.06A + 0.09B = 1.89$. $A = 24 - B$ ni qo‘yamiz: $1.44 - 0.06B + 0.09B = 1.89$, demak $0.03B = 0.45$ va $B = 15$. Tekshiruv: $0.06(9) + 0.09(15) = 0.54 + 1.35 = 1.89$. $9$ deb yozish — bu $6\\%$ li hisobdagi summa.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "word-problem"
+    ]
+  }
+]
