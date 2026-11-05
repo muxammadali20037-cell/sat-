@@ -1,0 +1,338 @@
+[
+  {
+    "skill_code": "inferences",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Botanist Leila Haddad grew two groups of identical basil plants in the same type of soil and gave every plant the same amount of water. One group received eight hours of light each day, and the other received fourteen hours. After six weeks, the plants that had received fourteen hours of light weighed, on average, twice as much as the other plants. Because the amount of light was the only condition that differed between the groups, Haddad concluded that ______",
+    "stem": "Which choice most logically completes the text?",
+    "option_a": "basil plants need more water than most other herbs do.",
+    "option_b": "the extra hours of light most likely caused the greater growth.",
+    "option_c": "the soil used in the experiment lacked nutrients that basil needs.",
+    "option_d": "basil plants given only eight hours of light cannot survive longer than six weeks.",
+    "correct": "B",
+    "explanation_en": "The two groups were treated the same in every way except the hours of light, and the group with more light grew much heavier. When only one condition differs, that condition is the most likely cause of the difference, so choice B follows.\n\nChoice A is wrong because both groups received the same water and the text never compares basil with other herbs. Choice C is unsupported: both groups grew in the same soil, and the text gives no evidence that it lacked nutrients. Choice D goes too far; the text reports that these plants were lighter, not that they would die.",
+    "explanation_uz": "Ikki guruhga yorug‘lik soatlaridan boshqa barcha jihatdan bir xil sharoit yaratilgan va ko‘proq yorug‘lik olgan guruh ancha og‘irroq bo‘lib o‘sgan. Faqat bitta shart farq qilsa, aynan shu shart farqning eng ehtimoliy sababi bo‘ladi, shuning uchun B mantiqan kelib chiqadi.\n\nA noto‘g‘ri: ikkala guruh bir xil miqdorda suv olgan va matnda rayhon boshqa o‘tlar bilan solishtirilmaydi. C asossiz: ikkala guruh ham bir xil tuproqda o‘sgan, tuproqda ozuqa yetishmagani haqida dalil yo‘q. D haddan oshib ketadi: matnda bu o‘simliklar yengilroq bo‘lgani aytiladi, nobud bo‘lishi haqida emas.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "science-controlled-experiment"
+    ]
+  },
+  {
+    "skill_code": "inferences",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "The merchant Yusuf Karimov kept a detailed diary throughout his trading journeys, and the surviving volumes cover the years 1871 to 1879. Entries for the year 1874, however, are missing entirely. In a letter written in 1880, Karimov's son mentioned that one volume of his father's diary had been lent to a family friend and was never returned. Given this information, it is reasonable to suspect that ______",
+    "stem": "Which choice most logically completes the text?",
+    "option_a": "Karimov did not make any trading journeys in 1874.",
+    "option_b": "the family friend wrote the diary entries for 1874.",
+    "option_c": "the volume that was lent and never returned contained the entries for 1874.",
+    "option_d": "Karimov stopped keeping a diary after 1879 because he had lost one volume.",
+    "correct": "C",
+    "explanation_en": "The surviving diary has a gap at 1874, and the son's letter says that one volume was lent out and never came back. Putting these two facts together, the missing volume most likely held the 1874 entries, as choice C says.\n\nChoice A ignores the letter; the son's explanation suggests a lost volume, not a year without travel. Choice B has no support: the friend borrowed a volume but nothing suggests the friend wrote in it. Choice D invents a reason for something the text does not discuss; we are not told why the diary ends in 1879.",
+    "explanation_uz": "Saqlanib qolgan kundalikda 1874-yil uchun bo‘shliq bor, o‘g‘lining maktubida esa bir jild kimgadir berilgani va qaytarilmagani aytiladi. Bu ikki faktni birlashtirsak, yo‘qolgan jildda 1874-yil yozuvlari bo‘lgan bo‘lishi ehtimoli katta — C.\n\nA maktubni e’tiborsiz qoldiradi; o‘g‘il yo‘qolgan jild haqida gapiradi, safar qilinmagan yil haqida emas. B asossiz: oila do‘sti jildni olgan, lekin unga yozuv qilgani haqida hech narsa aytilmagan. D matnda muhokama qilinmagan narsaga sabab o‘ylab topadi; kundalik nega 1879-yilda tugashi aytilmagan.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "history-missing-record"
+    ]
+  },
+  {
+    "skill_code": "inferences",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "To find out whether longer hours would attract more visitors, a city library stayed open until 10 p.m. instead of 6 p.m. on weekdays for three months. Total weekday visits rose by only 4 percent. Nearly all of the additional visits took place between 6 p.m. and 7 p.m., and very few people came to the library after 8 p.m. These results suggest that ______",
+    "stem": "Which choice most logically completes the text?",
+    "option_a": "most of the city's residents prefer to visit the library on weekends.",
+    "option_b": "the library's weekday visits more than doubled during the three-month trial.",
+    "option_c": "most of the people who came to the library after 8 p.m. were students.",
+    "option_d": "keeping the library open until about 7 p.m. would attract most of the additional visitors that the later closing time brought in.",
+    "correct": "D",
+    "explanation_en": "Almost all of the extra visits happened between 6 and 7 p.m., and very few came after 8 p.m. So extending hours only to around 7 p.m. would capture most of the gain, as choice D says.\n\nChoice A is unsupported because the study did not examine weekend visits. Choice B contradicts the text, which reports a rise of only 4 percent. Choice C is unsupported: the text says very few people came after 8 p.m. but says nothing about who they were.",
+    "explanation_uz": "Qo‘shimcha tashriflarning deyarli hammasi soat 18:00 dan 19:00 gacha bo‘lgan, 20:00 dan keyin esa juda kam odam kelgan. Demak, ish vaqtini faqat soat 19:00 gacha uzaytirish ham o‘sishning katta qismini saqlab qoladi — D.\n\nA asossiz, chunki tadqiqot dam olish kunlaridagi tashriflarni o‘rganmagan. B matnga zid: matnda faqat 4 foizlik o‘sish haqida aytilgan. C asossiz: matnda soat 20:00 dan keyin juda kam odam kelgani aytiladi, lekin ular kimligi haqida hech narsa deyilmaydi.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "social-science-results"
+    ]
+  },
+  {
+    "skill_code": "inferences",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Many lizards control their body temperature partly by changing the color of their skin. Darker skin absorbs more sunlight, and therefore more heat, than lighter skin does. Biologist Tomas Elling observed that the lizards of one desert population had dark skin in the cool early morning but became noticeably lighter by midday, when the ground was hottest. This pattern suggests that the lizards ______",
+    "stem": "Which choice most logically completes the text?",
+    "option_a": "are unable to control their body temperature through any behavior.",
+    "option_b": "absorb more sunlight at midday than they do in the early morning.",
+    "option_c": "darken when it is cool to absorb heat and lighten when it is hot to avoid overheating.",
+    "option_d": "change color mainly to hide from predators that hunt at midday.",
+    "correct": "C",
+    "explanation_en": "Dark skin absorbs more heat. The lizards are dark when it is cool and light when it is hot, which matches a strategy of gaining heat in the morning and limiting heat gain at midday, as choice C says.\n\nChoice A contradicts the first sentence, which says lizards control their temperature partly by changing color. Choice B reverses the logic: the lizards are lighter at midday, so their skin absorbs less of the sunlight that reaches it. Choice D introduces predators, which the text never mentions.",
+    "explanation_uz": "Qora teri ko‘proq issiqlik yutadi. Kaltakesaklar salqin paytda qoramtir, issiq paytda esa och rangda bo‘ladi; bu ertalab issiqlik to‘plash va tushda ortiqcha qizib ketmaslik strategiyasiga mos keladi — C.\n\nA birinchi gapga zid: unda kaltakesaklar tana haroratini qisman rang o‘zgartirish orqali boshqarishi aytilgan. B mantiqni teskari qiladi: tushda kaltakesaklar och rangda, demak terisi o‘ziga tushgan quyosh nurining kamroq qismini yutadi. D yirtqichlarni tilga oladi, matnda esa ular haqida gap yo‘q.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "science-mechanism"
+    ]
+  },
+  {
+    "skill_code": "inferences",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "An unsigned painting of a fishing harbor has long been attributed to the landscape painter Hendrika Vos, who died in 1862. A recent chemical analysis, however, found that the green paint used for the harbor's water contains a pigment that, according to manufacturers' records, was not produced anywhere before 1871. Unless that paint was added by someone else at a later date, this finding indicates that ______",
+    "stem": "Which choice most logically completes the text?",
+    "option_a": "Vos experimented with newly invented pigments late in her career.",
+    "option_b": "the painting was not made by Vos.",
+    "option_c": "the harbor shown in the painting no longer exists.",
+    "option_d": "Vos signed most of the paintings that she completed.",
+    "correct": "B",
+    "explanation_en": "Vos died in 1862, but the painting contains a pigment that did not exist until 1871. If the paint was not added later by someone else, Vos could not have painted it, so choice B follows.\n\nChoice A is impossible on the text's facts: the pigment did not exist during Vos's lifetime. Choice C concerns the harbor itself, which the analysis tells us nothing about. Choice D is about Vos's other paintings, which the text never discusses.",
+    "explanation_uz": "Vos 1862-yilda vafot etgan, rasmda esa 1871-yilgacha mavjud bo‘lmagan pigment bor. Agar bo‘yoqni keyinroq boshqa birov qo‘shmagan bo‘lsa, rasmni Vos chizgan bo‘lishi mumkin emas — B.\n\nA matndagi faktlarga ko‘ra imkonsiz: bu pigment Vos hayotligida mavjud bo‘lmagan. C portning o‘zi haqida, tahlil esa bu haqda hech narsa aytmaydi. D Vosning boshqa rasmlari haqida, matnda ular muhokama qilinmaydi.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "humanities-dating"
+    ]
+  },
+  {
+    "skill_code": "inferences",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "The seeds of bloodroot, a woodland wildflower of eastern North America, carry a small fatty attachment called an elaiosome. Ants find elaiosomes attractive: they carry the seeds back to their nests, eat the elaiosomes, and then discard the seeds, which remain unharmed. Because the soil in and around ant nests is often richer in nutrients than the surrounding forest floor, researchers suggest that ______",
+    "stem": "Which choice most logically completes the text?",
+    "option_a": "ants usually eat the entire bloodroot seed, including the part that would grow.",
+    "option_b": "bloodroot seeds without elaiosomes are more likely to be carried away by ants.",
+    "option_c": "ants prefer bloodroot seeds to every other kind of food in the forest.",
+    "option_d": "bloodroot plants benefit when ants move their seeds.",
+    "correct": "D",
+    "explanation_en": "Ants carry bloodroot seeds to their nests and leave the seeds unharmed in soil that is richer in nutrients than the surrounding ground. That arrangement places the seeds in a good spot to grow, so the plant benefits, as choice D says.\n\nChoice A contradicts the text: the ants eat only the elaiosome and the seeds “remain unharmed.” Choice B reverses the text's logic, since the elaiosome is what attracts the ants. Choice C goes beyond the text, which never compares bloodroot seeds with all other foods.",
+    "explanation_uz": "Chumolilar urug‘larni uyalariga olib boradi va ularni atrofdagi yerdan ozuqaga boyroq tuproqda zararsiz qoldiradi. Bu urug‘larni o‘sish uchun qulay joyga joylashtiradi, demak o‘simlik foyda ko‘radi — D.\n\nA matnga zid: chumolilar faqat elaiosomani yeydi, urug‘lar esa “zararsiz qoladi.” B matn mantiqini teskari qiladi, chunki chumolilarni aynan elaiosoma jalb qiladi. C matndan tashqariga chiqadi: matnda urug‘lar boshqa barcha ozuqalar bilan solishtirilmaydi.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "science-mutual-benefit"
+    ]
+  },
+  {
+    "skill_code": "inferences",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "To evaluate a new fertilizer, agronomist Dilnoza Rahimova compared tomato harvests on two farms with similar soil. Farm A used the fertilizer and harvested 30 percent more tomatoes per hectare than Farm B, which did not use it. However, Farm A also installed a drip irrigation system that season, while Farm B continued to rely on rainfall alone. Because of this difference between the farms, the comparison ______",
+    "stem": "Which choice most logically completes the text?",
+    "option_a": "proves that drip irrigation, not the fertilizer, caused Farm A's larger harvest.",
+    "option_b": "cannot show how much of Farm A's larger harvest, if any, resulted from the fertilizer.",
+    "option_c": "shows that the fertilizer is effective only when it is combined with drip irrigation.",
+    "option_d": "suggests that Farm B received more rainfall during the season than Farm A did.",
+    "correct": "B",
+    "explanation_en": "Farm A differed from Farm B in two ways: it used the fertilizer and it had drip irrigation. Either change, or both, could explain the larger harvest, so the comparison cannot separate the fertilizer's effect, as choice B says.\n\nChoice A overcorrects: the irrigation is a possible cause, but nothing proves that it was the only one. Choice C claims a specific interaction that was never tested, since no farm used irrigation without the fertilizer or the fertilizer without irrigation. Choice D is unsupported; the text says nothing about how much rain each farm received.",
+    "explanation_uz": "A ferma B fermadan ikki jihatdan farq qilgan: u o‘g‘itdan foydalangan va unda tomchilatib sug‘orish tizimi bo‘lgan. Hosilning ko‘pligini ikkala o‘zgarishning istalgan biri yoki ikkalasi birga tushuntirishi mumkin, shuning uchun bu taqqoslash o‘g‘itning ta’sirini ajratib ko‘rsata olmaydi — B.\n\nA haddan oshadi: sug‘orish mumkin bo‘lgan sabab, ammo uning yagona sabab ekanini hech narsa isbotlamaydi. C hech qachon sinab ko‘rilmagan o‘zaro ta’sirni da’vo qiladi, chunki birorta ferma o‘g‘itsiz sug‘orish yoki sug‘orishsiz o‘g‘itni qo‘llamagan. D asossiz: matnda har bir fermaga qancha yomg‘ir yoqqani haqida hech narsa aytilmagan.",
+    "estimated_seconds": 85,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "science-confound"
+    ]
+  },
+  {
+    "skill_code": "inferences",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "A technology company wanted to estimate how much time adults in a large country spend reading printed books. It posted a survey on its own website, and 12,000 visitors responded, reporting an average of just 9 minutes of print reading per day. The people who visit the company's website, however, tend to spend far more of their free time online than most adults in the country do. For this reason, the survey's result ______",
+    "stem": "Which choice most logically completes the text?",
+    "option_a": "proves that people who read printed books rarely use the internet.",
+    "option_b": "shows that adults in the country spend more time reading online than reading printed books.",
+    "option_c": "may not accurately reflect the reading habits of adults in the country as a whole.",
+    "option_d": "would have been accurate if the company had collected more than 12,000 responses.",
+    "correct": "C",
+    "explanation_en": "The survey reached only visitors to one website, a group whose free time differs from that of typical adults. Because the sample is not representative, its average may not describe the country's adults in general, as choice C says.\n\nChoice B is unsupported because the survey measured print reading only, not online reading. Choice A is far too strong and is not about the survey's accuracy at all. Choice D misses the problem: collecting more responses from the same unrepresentative group would not remove the bias.",
+    "explanation_uz": "So‘rovnoma faqat bitta veb-sayt tashrifchilarini qamrab olgan, ularning bo‘sh vaqti esa oddiy kattalarnikidan farq qiladi. Tanlanma (sample) reprezentativ bo‘lmagani uchun uning o‘rtacha ko‘rsatkichi mamlakatdagi kattalarni umuman to‘g‘ri aks ettirmasligi mumkin — C.\n\nB asossiz: so‘rovnoma faqat bosma kitob o‘qishni o‘lchagan, onlayn o‘qishni emas. A juda keskin va umuman so‘rovnomaning aniqligi haqida emas. D muammoni ko‘rmaydi: xuddi shu reprezentativ bo‘lmagan guruhdan ko‘proq javob yig‘ish xatolikni yo‘qotmaydi.",
+    "estimated_seconds": 85,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "social-science-sampling"
+    ]
+  },
+  {
+    "skill_code": "inferences",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Two anonymous travel accounts describing Bukhara in the 1840s have often been attributed to a single writer, because both describe several of the same buildings in very similar words. Historian Aziza Nurmatova points out, however, that a widely read guidebook published in 1838 describes those buildings in almost identical language, and that copying passages from popular guidebooks was common among travel writers of that period. If Nurmatova is correct, the similar descriptions ______",
+    "stem": "Which choice most logically completes the text?",
+    "option_a": "do not by themselves establish that the two accounts share an author.",
+    "option_b": "prove that the two accounts were written by two different authors.",
+    "option_c": "show that both accounts were written before the guidebook appeared in 1838.",
+    "option_d": "indicate that the author of the guidebook copied passages from the two accounts.",
+    "correct": "A",
+    "explanation_en": "Nurmatova shows another way the similarity could have arisen: two different writers could each have copied the same guidebook. The similar wording therefore no longer points only to a single author, so it cannot on its own establish one, as choice A says.\n\nChoice B is too strong; the evidence is now inconclusive, which does not prove there were two authors. Choice C conflicts with the text, which dates the accounts to the 1840s, after the guidebook. Choice D reverses the direction of copying: a guidebook from 1838 could not have copied accounts written in the 1840s.",
+    "explanation_uz": "Nurmatova o‘xshashlik boshqa yo‘l bilan ham paydo bo‘lishi mumkinligini ko‘rsatadi: ikki xil muallif bir xil yo‘riqnomadan ko‘chirgan bo‘lishi mumkin. Demak, o‘xshash ifodalar endi faqat bitta muallifga ishora qilmaydi va o‘z-o‘zidan yagona muallifni isbotlay olmaydi — A.\n\nB juda keskin: dalil endi aniq emas, bu esa ikki muallif bo‘lganini isbotlamaydi. C matnga zid: matnda yozuvlar 1840-yillarga, ya’ni yo‘riqnomadan keyingi davrga tegishli. D ko‘chirish yo‘nalishini teskari qiladi: 1838-yilgi yo‘riqnoma 1840-yillarda yozilgan yozuvlardan ko‘chira olmas edi.",
+    "estimated_seconds": 85,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "humanities-authorship"
+    ]
+  },
+  {
+    "skill_code": "inferences",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Low-pitched traffic noise can drown out bird songs in cities. Ornithologist Pavel Orlov found that great tits living in city parks sing at higher pitches than great tits in nearby forests. To learn more, Orlov recorded the same city birds on a public holiday when traffic nearly stopped, and he found that on that day their songs dropped to pitches similar to those of the forest birds. This finding suggests that the city birds' higher pitch ______",
+    "stem": "Which choice most logically completes the text?",
+    "option_a": "is an adjustment the birds make in response to the noise around them at the time.",
+    "option_b": "is an inherited trait passed down from parents that also lived in cities.",
+    "option_c": "makes city great tits less attractive to potential mates than forest great tits.",
+    "option_d": "is caused by differences in the food available in city parks and forests.",
+    "correct": "A",
+    "explanation_en": "The same city birds lowered their pitch on the one day when traffic noise nearly disappeared. A trait that changes from day to day with the current noise level is an adjustment, not a fixed feature, as choice A says.\n\nChoice B conflicts with the finding: a fixed inherited pitch would not drop on a quiet day. Choice C introduces mate choice, which the text never discusses. Choice D cannot explain the holiday result, because the birds' food did not change in one day while their pitch did.",
+    "explanation_uz": "Aynan o‘sha shahar qushlari transport shovqini deyarli yo‘qolgan kuni ovoz balandligini pasaytirgan. Kundan kunga joriy shovqin darajasiga qarab o‘zgaradigan xususiyat — moslashuv, o‘zgarmas belgi emas — A.\n\nB topilmaga zid: irsiy, o‘zgarmas ovoz balandligi tinch kunda pasaymas edi. C juft tanlash masalasini kiritadi, matnda esa bu haqda gap yo‘q. D bayram kunidagi natijani tushuntira olmaydi: bir kun ichida qushlarning ozuqasi o‘zgarmagan, ovoz balandligi esa o‘zgargan.",
+    "estimated_seconds": 85,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "science-alternative-explanation"
+    ]
+  },
+  {
+    "skill_code": "inferences",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "At a tenth-century trading settlement on the Baltic coast, archaeologists found hundreds of silver coins minted in cities of the Abbasid Caliphate, thousands of kilometers to the southeast. Some researchers have treated the find as evidence that merchants from the settlement traveled to those distant cities. But coins often changed hands many times, and written sources describe traders along the Volga River regularly exchanging such coins for furs from the north. The find is therefore ______",
+    "stem": "Which choice most logically completes the text?",
+    "option_a": "proof that no one from the settlement ever traveled to the Abbasid Caliphate.",
+    "option_b": "evidence that the settlement's residents valued furs more highly than silver.",
+    "option_c": "consistent with the coins having reached the settlement through intermediaries rather than through direct travel.",
+    "option_d": "a sign that the coins were made in the settlement and stamped to look foreign.",
+    "correct": "C",
+    "explanation_en": "The text offers a second way the coins could have arrived: through a chain of trades, such as the Volga exchanges of coins for furs. So the find fits that explanation as well as the direct-travel one, as choice C says.\n\nChoice A is too strong; showing another possible route does not prove that no one ever made the journey. Choice B is unsupported, since nothing compares how the settlement's residents valued furs and silver. Choice D contradicts the text, which says the coins were minted in Abbasid cities.",
+    "explanation_uz": "Matn tangalar yetib kelishining ikkinchi yo‘lini ko‘rsatadi: Volga bo‘yida tangalarni mo‘ynaga almashtirish kabi bir qator savdo bitimlari orqali. Demak, topilma to‘g‘ridan-to‘g‘ri safar haqidagi izohga ham, bu izohga ham mos keladi — C.\n\nA juda keskin: boshqa mumkin bo‘lgan yo‘lni ko‘rsatish hech kim u yerga bormaganini isbotlamaydi. B asossiz, chunki aholining mo‘yna va kumushni qanday qadrlagani solishtirilmaydi. D matnga zid: unda tangalar Abbosiylar shaharlarida zarb qilingani aytiladi.",
+    "estimated_seconds": 85,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "history-intermediaries"
+    ]
+  },
+  {
+    "skill_code": "inferences",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Literary scholars have generally assumed that the novelist Ramón Iturbe wrote the final chapter of *The Glass Orchard* last, because it neatly resolves plot threads introduced throughout the book. However, Iturbe's notebooks show that he drafted that chapter in 1931, two years before he began writing the novel's earlier chapters, and that he changed it very little before the book was published. This evidence suggests that Iturbe ______",
+    "stem": "Which choice most logically completes the text?",
+    "option_a": "decided how the novel would end before writing most of the material that leads up to the ending.",
+    "option_b": "added the final chapter only after his publisher asked for a clearer ending.",
+    "option_c": "did not intend the final chapter to resolve the novel's plot threads.",
+    "option_d": "wrote the chapters of the novel in the same order in which they appear in the book.",
+    "correct": "A",
+    "explanation_en": "The notebooks show that the final chapter was drafted first and barely revised, yet it resolves threads introduced earlier in the book. Iturbe must therefore have settled on the ending before writing most of the chapters that lead to it, as choice A says.\n\nChoice B conflicts with the evidence that the chapter existed two years before the rest and was changed very little. Choice C ignores the text's statement that the chapter neatly resolves the plot threads. Choice D is exactly the assumption the notebooks disprove.",
+    "explanation_uz": "Daftarlar so‘nggi bob birinchi bo‘lib yozilgani va deyarli o‘zgartirilmaganini ko‘rsatadi, shunga qaramay u kitobda avvalroq boshlangan syujet chiziqlarini yakunlaydi. Demak, Iturbe yakunga olib boradigan boblarning ko‘pini yozishdan oldin romanning oxirini belgilab olgan — A.\n\nB dalilga zid: bob qolgan qismdan ikki yil oldin mavjud bo‘lgan va juda kam o‘zgartirilgan. C matndagi bob syujet chiziqlarini puxta yakunlaydi degan fikrni e’tiborsiz qoldiradi. D aynan daftarlar rad etgan taxminning o‘zi.",
+    "estimated_seconds": 85,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "literature-composition"
+    ]
+  },
+  {
+    "skill_code": "inferences",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Some marine bacteria in the genus *Vibrio* glow only when their population is dense, a behavior controlled by a signaling molecule that each cell both releases and detects. Microbiologist Inês Carvalho found that a normal strain grown at low density did not glow, but it began glowing within an hour after she added signaling molecules collected from a dense culture. A mutant strain, by contrast, failed to glow at low density, at high density, or after the added molecules—even though chemical tests confirmed that its cells released the signaling molecule in normal amounts. These results suggest that the mutant strain's failure to glow most likely arises from ______",
+    "stem": "Which choice most logically completes the text?",
+    "option_a": "the low population density at which the mutant cells were grown.",
+    "option_b": "a defect in some step that follows the release of the signaling molecule, not in its release.",
+    "option_c": "the mutant cells' inability to release the signaling molecule.",
+    "option_d": "the added signaling molecules being too weak to affect bacterial cells.",
+    "correct": "B",
+    "explanation_en": "The tests rule out the obvious explanations. The mutant released the molecule normally, so release is not the problem; it stayed dark even at high density and with molecules added, so low density or too little signal is not the problem either. What remains is something after release, such as detecting the molecule or producing light in response, as choice B says.\n\nChoice A is ruled out because the mutant also failed at high density and with added molecules. Choice C directly contradicts the chemical tests. Choice D is ruled out because the same added molecules made the normal strain glow.",
+    "explanation_uz": "Sinovlar aniq ko‘rinadigan izohlarni istisno qiladi. Mutant molekulani normal ajratgan, demak muammo ajratishda emas; u yuqori zichlikda ham, molekula qo‘shilgandan keyin ham yorug‘lik chiqarmagan, demak muammo past zichlik yoki signal yetishmasligida ham emas. Faqat ajratishdan keyingi bosqich qoladi — masalan, molekulani sezish yoki unga javoban yorug‘lik hosil qilish — B.\n\nA istisno qilinadi: mutant yuqori zichlikda va molekula qo‘shilganda ham yorug‘lik chiqarmagan. C kimyoviy sinovlar natijasiga bevosita zid. D ham istisno qilinadi, chunki aynan shu qo‘shilgan molekulalar normal shtammni yorug‘lik chiqarishga majbur qilgan.",
+    "estimated_seconds": 100,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "science-elimination"
+    ]
+  },
+  {
+    "skill_code": "inferences",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "A widely used ecological model holds that, all else being equal, larger islands support more species than smaller ones do. Ecologist Farrukh Toshev surveyed beetle species on fourteen islands in a large lake and found that the model's predictions held for thirteen of them. The exception, Kemer Island, is mid-sized but has fewer beetle species than several much smaller islands nearby. Kemer is also the only island in the lake whose forests were cleared for grazing during the twentieth century; trees have regrown there only over the past thirty years. Unless beetles colonize islands much faster than Toshev's other data suggest, this history implies that ______",
+    "stem": "Which choice most logically completes the text?",
+    "option_a": "the model should be revised to state that mid-sized islands support fewer species than small islands do.",
+    "option_b": "the smaller islands near Kemer were also cleared for grazing at some point in the twentieth century.",
+    "option_c": "beetles are unable to survive on any island that has ever been used for grazing.",
+    "option_d": "Kemer's low beetle count may reflect habitat loss from which its beetle populations have not yet recovered, rather than a failure of the model.",
+    "correct": "D",
+    "explanation_en": "The model compares islands when “all else” is equal, but Kemer differs in an important way: its forests were removed and have regrown only recently. If beetles recolonize slowly, Kemer may simply not have regained its species yet. That explains the exception without rejecting the model, as choice D says.\n\nChoice A overreacts to one exception that has a likely explanation; the model held for the other thirteen islands. Choice B contradicts the text, which says Kemer is the only island that was cleared. Choice C is too extreme: Kemer still has some beetles, and the text implies only slow recovery, not complete impossibility.",
+    "explanation_uz": "Model orollarni “boshqa sharoitlar teng bo‘lganda” solishtiradi, Kemer esa muhim jihatdan farq qiladi: uning o‘rmonlari kesilgan va yaqindagina qayta o‘sgan. Agar qo‘ng‘izlar orollarni sekin qayta egallasa, Kemer o‘z turlarini hali tiklab ulgurmagan bo‘lishi mumkin. Bu istisnoni modelni rad etmasdan tushuntiradi — D.\n\nA ehtimoliy izohi bor bitta istisnoga haddan ortiq javob beradi; model qolgan o‘n uchta orol uchun to‘g‘ri chiqqan. B matnga zid: unda faqat Kemer o‘rmonlari kesilgani aytiladi. C juda keskin: Kemerda baribir ba’zi qo‘ng‘izlar bor, matn esa faqat sekin tiklanishni nazarda tutadi, mutlaq imkonsizlikni emas.",
+    "estimated_seconds": 100,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "science-model-exception"
+    ]
+  },
+  {
+    "skill_code": "inferences",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Dendrochronologists can determine the year in which a tree was cut down by matching its growth rings to a regional record. Samples from six roof beams in the old meeting hall of the village of Dornick show that the trees were felled between 1508 and 1512, and the hall is therefore often dated to around 1512. A village record from 1630, however, states that the meeting hall was built in that year “with the good timber of the old church,” which had been taken down after a fire. If the record is accurate and refers to this hall, then ______",
+    "stem": "Which choice most logically completes the text?",
+    "option_a": "the tree-ring method must give inaccurate felling dates for timber cut before 1600.",
+    "option_b": "the old church was most likely built in 1630, at the same time as the hall.",
+    "option_c": "the hall was built around 1512 and later repaired with timber from the old church in 1630.",
+    "option_d": "the hall is likely more than a century younger than the trees that supplied its roof beams.",
+    "correct": "D",
+    "explanation_en": "The tree-ring dates tell when the trees were cut (1508–1512), not when the timber was placed in this building. If the hall was built in 1630 from timber reused from the old church, the beams are older than the hall by more than a century, as choice D says.\n\nChoice A is wrong because the record does not challenge the felling dates themselves; it explains why they differ from the building date. Choice B misreads the record: in 1630 the old church was already gone and its timber was reused. Choice C contradicts the record, which says the hall was built, not repaired, in 1630.",
+    "explanation_uz": "Daraxt halqalari bo‘yicha sanalar daraxtlar qachon kesilganini (1508–1512) ko‘rsatadi, yog‘och shu binoga qachon qo‘yilganini emas. Agar zal 1630-yilda eski cherkovdan qolgan yog‘ochdan qurilgan bo‘lsa, to‘sinlar zaldan yuz yildan ham ko‘proq qadimiyroq — D.\n\nA noto‘g‘ri: yozuv kesilish sanalarining o‘ziga shubha uyg‘otmaydi, faqat ular nega qurilish sanasidan farq qilishini tushuntiradi. B yozuvni noto‘g‘ri tushunadi: 1630-yilda eski cherkov allaqachon buzilgan va uning yog‘ochi qayta ishlatilgan. C yozuvga zid: unda zal 1630-yilda ta’mirlangani emas, qurilgani aytiladi.",
+    "estimated_seconds": 100,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "history-reused-material"
+    ]
+  },
+  {
+    "skill_code": "inferences",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Economists Nodira Yusupova and Lars Eklund studied a mid-sized city that eliminated fares on all of its buses in 2019. Over the following year, bus ridership rose by 35 percent, yet car traffic in the city center fell by less than 2 percent. Surveys showed that most of the new bus riders had previously walked or cycled to their destinations rather than driven. Yusupova and Eklund argue that a fare-free policy can substantially reduce traffic congestion only if a large share of its new riders would otherwise have traveled by car. Their findings thus suggest that, in this city, ______",
+    "stem": "Which choice most logically completes the text?",
+    "option_a": "eliminating fares did little to reduce congestion, largely because it attracted people who had not been driving.",
+    "option_b": "eliminating fares caused more people to drive into the city center than before.",
+    "option_c": "bus ridership would have risen even more if fares had been lowered rather than eliminated.",
+    "option_d": "people who walk or cycle are more likely than drivers to support fare-free buses.",
+    "correct": "A",
+    "explanation_en": "The economists' condition for a large reduction in congestion is that many new riders would otherwise have driven. In this city, most new riders had walked or cycled, and car traffic fell by less than 2 percent. The condition was not met, so the policy did little for congestion, as choice A says.\n\nChoice B contradicts the text, since traffic fell slightly rather than rose. Choice C makes a claim about a policy the study never examined. Choice D concerns political support, which the text does not discuss.",
+    "explanation_uz": "Iqtisodchilarning fikricha, tirbandlik sezilarli kamayishi uchun yangi yo‘lovchilarning ko‘pchiligi aks holda mashinada yurgan bo‘lishi kerak. Bu shaharda esa yangi yo‘lovchilarning aksariyati avval piyoda yoki velosipedda yurgan va avtomobil harakati 2 foizdan kam qisqargan. Shart bajarilmagan, demak siyosat tirbandlikni kamaytirishga deyarli yordam bermagan — A.\n\nB matnga zid: harakat oshmagan, aksincha biroz kamaygan. C tadqiqotda umuman o‘rganilmagan siyosat haqida da’vo qiladi. D siyosiy qo‘llab-quvvatlash haqida, matnda esa bu muhokama qilinmaydi.",
+    "estimated_seconds": 100,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "social-science-conditional"
+    ]
+  }
+]

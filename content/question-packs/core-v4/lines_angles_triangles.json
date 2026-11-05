@@ -1,0 +1,294 @@
+[
+  {
+    "skill_code": "lines_angles_triangles",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "Two lines intersect at a point and form four angles. One of the angles is 4 times as large as an angle adjacent to it. What is the measure, in degrees, of the smaller of these two adjacent angles?",
+    "option_a": "$18^\\circ$",
+    "option_b": "$36^\\circ$",
+    "option_c": "$72^\\circ$",
+    "option_d": "$144^\\circ$",
+    "correct": "B",
+    "explanation_en": "Adjacent angles formed by two intersecting lines form a straight line, so they add to $180^\\circ$. If the smaller angle is $x^\\circ$, then $x + 4x = 180$, so $x = 36$. Choice B is correct.\n\nChoice A uses a sum of $90^\\circ$, and choice C uses a sum of $360^\\circ$. Choice D is the larger of the two angles.",
+    "explanation_uz": "Kesishuvchi ikki to‘g‘ri chiziq hosil qilgan qo‘shni burchaklar yoyiq burchak hosil qiladi, ya’ni yig‘indisi $180^\\circ$. Kichik burchak $x^\\circ$ bo‘lsa, $x + 4x = 180$, demak $x = 36$. To‘g‘ri javob B.\n\nA javobda yig‘indi $90^\\circ$, C javobda $360^\\circ$ deb olingan. D — ikki burchakdan kattasi.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "vertical_linear_pair"
+    ]
+  },
+  {
+    "skill_code": "lines_angles_triangles",
+    "difficulty": "easy",
+    "question_type": "spr",
+    "stem": "In a right triangle, the measure of one acute angle is $18^\\circ$ greater than the measure of the other acute angle. What is the measure, in degrees, of the larger acute angle?",
+    "spr_answers": [
+      "54"
+    ],
+    "explanation_en": "The two acute angles of a right triangle add to $180^\\circ - 90^\\circ = 90^\\circ$. If the smaller angle is $x^\\circ$, then $x + (x + 18) = 90$, so $x = 36$, and the larger angle is $36 + 18 = 54$ degrees. If you got 36, you gave the smaller angle.",
+    "explanation_uz": "To‘g‘ri burchakli uchburchakning ikki o‘tkir burchagi yig‘indisi $180^\\circ - 90^\\circ = 90^\\circ$. Kichik burchak $x^\\circ$ bo‘lsa, $x + (x + 18) = 90$, demak $x = 36$, katta burchak esa $36 + 18 = 54$ gradus. Agar 36 chiqqan bo‘lsa, siz kichik burchakni yozgansiz.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "triangle_angle_sum"
+    ]
+  },
+  {
+    "skill_code": "lines_angles_triangles",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "Parallel lines $p$ and $q$ are intersected by transversal $t$. Angle 1 is formed where $t$ meets $p$, and angle 2 is formed where $t$ meets $q$. Both angles lie between lines $p$ and $q$, on the same side of $t$. If the measure of angle 1 is $63^\\circ$, what is the measure of angle 2?",
+    "option_a": "$27^\\circ$",
+    "option_b": "$63^\\circ$",
+    "option_c": "$117^\\circ$",
+    "option_d": "$153^\\circ$",
+    "correct": "C",
+    "explanation_en": "Angles 1 and 2 are same-side interior angles. When the lines are parallel, same-side interior angles are supplementary, so angle 2 measures $180^\\circ - 63^\\circ = 117^\\circ$. Choice C is correct.\n\nChoice A is the complement of $63^\\circ$. Choice B would be correct for alternate interior or corresponding angles, which are congruent, but these angles are on the same side of $t$. Choice D is $90^\\circ + 63^\\circ$.",
+    "explanation_uz": "1- va 2-burchaklar — bir tomonli ichki burchaklar. To‘g‘ri chiziqlar parallel bo‘lsa, bir tomonli ichki burchaklar yig‘indisi $180^\\circ$, demak 2-burchak $180^\\circ - 63^\\circ = 117^\\circ$. To‘g‘ri javob C.\n\nA — $63^\\circ$ ni $90^\\circ$ gacha to‘ldiruvchi burchak. B ichki almashinuvchi yoki mos burchaklar uchun to‘g‘ri bo‘lardi (ular teng), lekin bu burchaklar $t$ ning bir tomonida joylashgan. D — bu $90^\\circ + 63^\\circ$.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "parallel_lines"
+    ]
+  },
+  {
+    "skill_code": "lines_angles_triangles",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "Triangle $ABC$ is similar to triangle $DEF$, where vertices $A$, $B$, and $C$ correspond to vertices $D$, $E$, and $F$, respectively. If $AB = 6$, $DE = 15$, and $BC = 8$, what is the length of $\\overline{EF}$?",
+    "option_a": "3.2",
+    "option_b": "11.25",
+    "option_c": "17",
+    "option_d": "20",
+    "correct": "D",
+    "explanation_en": "Corresponding sides are proportional: $\\frac{EF}{BC} = \\frac{DE}{AB} = \\frac{15}{6} = 2.5$. So $EF = 2.5 \\cdot 8 = 20$. Choice D is correct.\n\nChoice A multiplies by $\\frac{6}{15}$, the scale factor in the wrong direction. Choice B, $\\frac{15 \\cdot 6}{8}$, pairs sides that do not correspond. Choice C adds the difference $15 - 6 = 9$ to 8; similar figures are related by multiplication, not addition.",
+    "explanation_uz": "Mos tomonlar proporsional: $\\frac{EF}{BC} = \\frac{DE}{AB} = \\frac{15}{6} = 2.5$. Demak $EF = 2.5 \\cdot 8 = 20$. To‘g‘ri javob D.\n\nA javobda teskari koeffitsiyent $\\frac{6}{15}$ ga ko‘paytirilgan. B, ya’ni $\\frac{15 \\cdot 6}{8}$, mos kelmaydigan tomonlarni juftlaydi. C javobda 8 ga $15 - 6 = 9$ ayirma qo‘shilgan; o‘xshash shakllar qo‘shish bilan emas, ko‘paytirish bilan bog‘lanadi.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "similar_triangles"
+    ]
+  },
+  {
+    "skill_code": "lines_angles_triangles",
+    "difficulty": "easy",
+    "question_type": "spr",
+    "stem": "In triangle $ABC$, $AB = BC$, and the measure of angle $B$ is twice the measure of angle $A$. What is the measure, in degrees, of angle $B$?",
+    "spr_answers": [
+      "90"
+    ],
+    "explanation_en": "Since $AB = BC$, the angles opposite these sides are equal: angle $C$ (opposite $\\overline{AB}$) equals angle $A$ (opposite $\\overline{BC}$). If angle $A$ is $x^\\circ$, then $x + 2x + x = 180$, so $x = 45$ and angle $B = 2 \\cdot 45 = 90$ degrees. If you got 45, you gave angle $A$.",
+    "explanation_uz": "$AB = BC$ bo‘lgani uchun bu tomonlar qarshisidagi burchaklar teng: $C$ burchak ($\\overline{AB}$ qarshisida) $A$ burchakka ($\\overline{BC}$ qarshisida) teng. $A$ burchak $x^\\circ$ bo‘lsa, $x + 2x + x = 180$, demak $x = 45$ va $B = 2 \\cdot 45 = 90$ gradus. Agar 45 chiqqan bo‘lsa, siz $A$ burchakni yozgansiz.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "isosceles"
+    ]
+  },
+  {
+    "skill_code": "lines_angles_triangles",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "A courtyard is shaped like a pentagon (a polygon with 5 sides). What is the sum of the measures, in degrees, of the interior angles of the pentagon?",
+    "option_a": "$360^\\circ$",
+    "option_b": "$540^\\circ$",
+    "option_c": "$720^\\circ$",
+    "option_d": "$900^\\circ$",
+    "correct": "B",
+    "explanation_en": "A polygon with $n$ sides can be divided into $n - 2$ triangles from one vertex, so its interior angles add to $(n - 2) \\cdot 180^\\circ$. For $n = 5$, the sum is $3 \\cdot 180^\\circ = 540^\\circ$. Choice B is correct.\n\nChoice A is the sum for a quadrilateral (and the sum of the exterior angles of any polygon). Choice C is the sum for a hexagon, and choice D is $5 \\cdot 180^\\circ$, which uses $n$ triangles instead of $n - 2$.",
+    "explanation_uz": "$n$ tomonli ko‘pburchakni bir uchidan $n - 2$ ta uchburchakka bo‘lish mumkin, shuning uchun ichki burchaklari yig‘indisi $(n - 2) \\cdot 180^\\circ$. $n = 5$ uchun yig‘indi $3 \\cdot 180^\\circ = 540^\\circ$. To‘g‘ri javob B.\n\nA — to‘rtburchak uchun yig‘indi (shuningdek, istalgan ko‘pburchak tashqi burchaklari yig‘indisi). C — oltiburchak uchun yig‘indi, D esa $5 \\cdot 180^\\circ$; unda $n - 2$ o‘rniga $n$ ta uchburchak olingan.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "polygon_angles"
+    ]
+  },
+  {
+    "skill_code": "lines_angles_triangles",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "In triangle $ABC$, point $D$ lies on $\\overline{AB}$ and point $E$ lies on $\\overline{AC}$ so that $\\overline{DE}$ is parallel to $\\overline{BC}$. If $AD = 4$, $DB = 6$, and $DE = 5$, what is the length of $\\overline{BC}$?",
+    "option_a": "2",
+    "option_b": "7.5",
+    "option_c": "12.5",
+    "option_d": "15",
+    "correct": "C",
+    "explanation_en": "Because $\\overline{DE} \\parallel \\overline{BC}$, triangle $ADE$ is similar to triangle $ABC$. The ratio is $\\frac{AB}{AD} = \\frac{4 + 6}{4} = \\frac{5}{2}$, so $BC = \\frac{5}{2} \\cdot 5 = 12.5$. Choice C is correct.\n\nChoice A multiplies by $\\frac{4}{10}$ instead of $\\frac{10}{4}$. Choice B uses $\\frac{DB}{AD} = \\frac{6}{4}$; $DB$ is not a side of triangle $ABC$. Choice D adds $AB = 10$ to $DE$.",
+    "explanation_uz": "$\\overline{DE} \\parallel \\overline{BC}$ bo‘lgani uchun $ADE$ uchburchak $ABC$ uchburchakka o‘xshash. Nisbat $\\frac{AB}{AD} = \\frac{4 + 6}{4} = \\frac{5}{2}$, demak $BC = \\frac{5}{2} \\cdot 5 = 12.5$. To‘g‘ri javob C.\n\nA javobda $\\frac{10}{4}$ o‘rniga $\\frac{4}{10}$ ga ko‘paytirilgan. B javobda $\\frac{DB}{AD} = \\frac{6}{4}$ ishlatilgan; $DB$ $ABC$ uchburchakning tomoni emas. D javobda $DE$ ga $AB = 10$ qo‘shilgan.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "parallel_segment_similarity"
+    ]
+  },
+  {
+    "skill_code": "lines_angles_triangles",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "Parallel lines $\\ell$ and $m$ are intersected by transversal $t$. Two angles lie between $\\ell$ and $m$ on the same side of $t$, one at each line, and they measure $(4x + 10)^\\circ$ and $(2x + 20)^\\circ$. What is the measure, in degrees, of the larger of these two angles?",
+    "spr_answers": [
+      "110"
+    ],
+    "explanation_en": "These are same-side interior angles, so they are supplementary: $(4x + 10) + (2x + 20) = 180$. Then $6x = 150$ and $x = 25$. The angles measure $4(25) + 10 = 110$ and $2(25) + 20 = 70$ degrees, so the larger is 110. If you set the angles equal, you get $x = 5$ and two $30^\\circ$ angles, which do not add to $180^\\circ$.",
+    "explanation_uz": "Bular bir tomonli ichki burchaklar, demak yig‘indisi $180^\\circ$: $(4x + 10) + (2x + 20) = 180$. U holda $6x = 150$ va $x = 25$. Burchaklar $4(25) + 10 = 110$ va $2(25) + 20 = 70$ gradus, kattasi 110. Agar burchaklarni tenglasangiz, $x = 5$ va ikkita $30^\\circ$ li burchak chiqadi, ularning yig‘indisi $180^\\circ$ emas.",
+    "estimated_seconds": 100,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "parallel_lines_algebra"
+    ]
+  },
+  {
+    "skill_code": "lines_angles_triangles",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "In triangle $ABC$, the measure of angle $A$ is $40^\\circ$ and the measure of angle $B$ is $75^\\circ$. In triangle $DEF$, the measure of angle $D$ is $40^\\circ$ and the measure of angle $F$ is $65^\\circ$. Which of the following statements is true?",
+    "option_a": "Triangle $ABC$ is similar to triangle $DEF$.",
+    "option_b": "Triangle $ABC$ is similar to triangle $DFE$.",
+    "option_c": "Triangle $ABC$ is similar to triangle $FED$.",
+    "option_d": "The two triangles are not similar.",
+    "correct": "A",
+    "explanation_en": "The third angles are $C = 180^\\circ - 40^\\circ - 75^\\circ = 65^\\circ$ and $E = 180^\\circ - 40^\\circ - 65^\\circ = 75^\\circ$. So $A = D = 40^\\circ$, $B = E = 75^\\circ$, and $C = F = 65^\\circ$, and the triangles are similar by angle-angle with $A \\leftrightarrow D$, $B \\leftrightarrow E$, $C \\leftrightarrow F$. Choice A is correct.\n\nChoice B pairs $B$ ($75^\\circ$) with $F$ ($65^\\circ$). Choice C pairs $A$ ($40^\\circ$) with $F$ ($65^\\circ$). Choice D is wrong because two pairs of equal angles are enough to prove similarity.",
+    "explanation_uz": "Uchinchi burchaklar: $C = 180^\\circ - 40^\\circ - 75^\\circ = 65^\\circ$ va $E = 180^\\circ - 40^\\circ - 65^\\circ = 75^\\circ$. Demak $A = D = 40^\\circ$, $B = E = 75^\\circ$, $C = F = 65^\\circ$, va uchburchaklar ikki burchak bo‘yicha $A \\leftrightarrow D$, $B \\leftrightarrow E$, $C \\leftrightarrow F$ moslikda o‘xshash. To‘g‘ri javob A.\n\nB javob $B$ ($75^\\circ$) ni $F$ ($65^\\circ$) bilan juftlaydi. C javob $A$ ($40^\\circ$) ni $F$ ($65^\\circ$) bilan juftlaydi. D noto‘g‘ri, chunki o‘xshashlikni isbotlash uchun ikki juft teng burchak yetarli.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "similarity_criteria"
+    ]
+  },
+  {
+    "skill_code": "lines_angles_triangles",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "Two parallel lines are intersected by a transversal, forming eight angles. One of these angles measures $(2k + 30)^\\circ$, and another measures $(6k - 10)^\\circ$. These two angles are not congruent. What is the value of $k$?",
+    "option_a": "5",
+    "option_b": "10",
+    "option_c": "20",
+    "option_d": "25",
+    "correct": "C",
+    "explanation_en": "When two parallel lines are cut by a transversal, any two of the eight angles are either congruent or supplementary. Since these two angles are not congruent, they are supplementary: $(2k + 30) + (6k - 10) = 180$, so $8k = 160$ and $k = 20$. The angles are $70^\\circ$ and $110^\\circ$. Choice C is correct.\n\nChoice B comes from setting the angles equal, which gives two $50^\\circ$ angles; that contradicts the statement that they are not congruent. Choices A and D give angle pairs ($40^\\circ$ and $20^\\circ$; $80^\\circ$ and $140^\\circ$) that are neither congruent nor supplementary.",
+    "explanation_uz": "Ikki parallel to‘g‘ri chiziq kesuvchi bilan kesilganda sakkiz burchakdan istalgan ikkitasi yo teng, yo yig‘indisi $180^\\circ$ bo‘ladi. Bu ikki burchak teng emas, demak $(2k + 30) + (6k - 10) = 180$, ya’ni $8k = 160$ va $k = 20$. Burchaklar $70^\\circ$ va $110^\\circ$. To‘g‘ri javob C.\n\nB javob burchaklarni tenglashdan kelib chiqadi va ikkita $50^\\circ$ li burchak beradi; bu ular teng emasligiga zid. A va D javoblar na teng, na yig‘indisi $180^\\circ$ bo‘lgan burchak juftlarini beradi ($40^\\circ$ va $20^\\circ$; $80^\\circ$ va $140^\\circ$).",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "parallel_lines_algebra"
+    ]
+  },
+  {
+    "skill_code": "lines_angles_triangles",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "A triangle has side lengths of 5 centimeters, 12 centimeters, and 13 centimeters. The triangle is dilated by a scale factor greater than 1 to form a new triangle with an area of 270 square centimeters. What is the perimeter, in centimeters, of the new triangle?",
+    "spr_answers": [
+      "90"
+    ],
+    "explanation_en": "Since $5^2 + 12^2 = 13^2$, the original triangle is a right triangle with legs 5 and 12, so its area is $\\frac{1}{2}(5)(12) = 30$. Areas scale by the square of the scale factor $k$: $30k^2 = 270$, so $k^2 = 9$ and $k = 3$. The original perimeter is $5 + 12 + 13 = 30$, so the new perimeter is $3 \\cdot 30 = 90$ centimeters. If you got 270, you multiplied the perimeter by $k^2 = 9$.",
+    "explanation_uz": "$5^2 + 12^2 = 13^2$ bo‘lgani uchun dastlabki uchburchak katetlari 5 va 12 bo‘lgan to‘g‘ri burchakli uchburchak, yuzi $\\frac{1}{2}(5)(12) = 30$. Yuzalar koeffitsiyent $k$ ning kvadratiga proporsional: $30k^2 = 270$, demak $k^2 = 9$ va $k = 3$. Dastlabki perimetr $5 + 12 + 13 = 30$, yangi perimetr $3 \\cdot 30 = 90$ santimetr. Agar 270 chiqqan bo‘lsa, siz perimetrni $k^2 = 9$ ga ko‘paytirgansiz.",
+    "estimated_seconds": 100,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "dilation"
+    ]
+  },
+  {
+    "skill_code": "lines_angles_triangles",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "In triangle $PQR$, side $\\overline{PR}$ is extended beyond $R$ to point $S$. The measure of angle $QRS$ is $(5x)^\\circ$, the measure of angle $P$ is $(2x + 12)^\\circ$, and the measure of angle $Q$ is $(x + 30)^\\circ$. What is the measure, in degrees, of angle $PRQ$?",
+    "option_a": "$21^\\circ$",
+    "option_b": "$54^\\circ$",
+    "option_c": "$75^\\circ$",
+    "option_d": "$105^\\circ$",
+    "correct": "C",
+    "explanation_en": "Angle $QRS$ is an exterior angle of the triangle, so it equals the sum of the two remote interior angles: $5x = (2x + 12) + (x + 30)$, which gives $2x = 42$ and $x = 21$. Then angle $QRS = 105^\\circ$, and angle $PRQ = 180^\\circ - 105^\\circ = 75^\\circ$. Choice C is correct.\n\nChoice A is the value of $x$. Choice B is angle $P$. Choice D is the exterior angle $QRS$, not the interior angle $PRQ$.",
+    "explanation_uz": "$QRS$ — uchburchakning tashqi burchagi, shuning uchun u o‘ziga qo‘shni bo‘lmagan ikki ichki burchak yig‘indisiga teng: $5x = (2x + 12) + (x + 30)$, bundan $2x = 42$ va $x = 21$. U holda $QRS = 105^\\circ$ va $PRQ = 180^\\circ - 105^\\circ = 75^\\circ$. To‘g‘ri javob C.\n\nA — $x$ ning qiymati. B — $P$ burchak. D — ichki $PRQ$ burchak emas, tashqi $QRS$ burchak.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "exterior_angle"
+    ]
+  },
+  {
+    "skill_code": "lines_angles_triangles",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "In triangle $ABC$, $AB = 9$, $AC = 15$, and $BC = 16$. The bisector of angle $A$ intersects $\\overline{BC}$ at point $D$. What is the length of $\\overline{CD}$?",
+    "spr_answers": [
+      "10"
+    ],
+    "explanation_en": "By the angle bisector theorem, the bisector divides the opposite side in the ratio of the adjacent sides: $\\frac{BD}{CD} = \\frac{AB}{AC} = \\frac{9}{15} = \\frac{3}{5}$. So $CD = \\frac{5}{8} \\cdot 16 = 10$ (and $BD = 6$). If you got 6, you found $BD$; if you got 8, you assumed $D$ is the midpoint of $\\overline{BC}$.",
+    "explanation_uz": "Bissektrisa teoremasiga ko‘ra bissektrisa qarama-qarshi tomonni yon tomonlar nisbatida bo‘ladi: $\\frac{BD}{CD} = \\frac{AB}{AC} = \\frac{9}{15} = \\frac{3}{5}$. Demak $CD = \\frac{5}{8} \\cdot 16 = 10$ (va $BD = 6$). Agar 6 chiqqan bo‘lsa, siz $BD$ ni topgansiz; 8 chiqqan bo‘lsa, $D$ ni $\\overline{BC}$ ning o‘rtasi deb olgansiz.",
+    "estimated_seconds": 140,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "angle_bisector"
+    ]
+  },
+  {
+    "skill_code": "lines_angles_triangles",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "In triangle $ABC$, $AB = AC$, and the measure of angle $A$ is $40^\\circ$. Point $D$ lies on $\\overline{AC}$, between $A$ and $C$, so that $BD = BC$. What is the measure of angle $ABD$?",
+    "option_a": "$30^\\circ$",
+    "option_b": "$40^\\circ$",
+    "option_c": "$70^\\circ$",
+    "option_d": "$110^\\circ$",
+    "correct": "A",
+    "explanation_en": "Since $AB = AC$, angles $B$ and $C$ are equal: each is $\\frac{180^\\circ - 40^\\circ}{2} = 70^\\circ$. In triangle $BDC$, $BD = BC$, so angle $BDC$ equals angle $BCD = 70^\\circ$, and angle $DBC = 180^\\circ - 70^\\circ - 70^\\circ = 40^\\circ$. Then angle $ABD = 70^\\circ - 40^\\circ = 30^\\circ$. Choice A is correct.\n\nChoice B is angle $DBC$. Choice C is all of angle $ABC$. Choice D is angle $ADB$, which is $180^\\circ - 70^\\circ$.",
+    "explanation_uz": "$AB = AC$ bo‘lgani uchun $B$ va $C$ burchaklar teng: har biri $\\frac{180^\\circ - 40^\\circ}{2} = 70^\\circ$. $BDC$ uchburchakda $BD = BC$, demak $BDC$ burchak $BCD = 70^\\circ$ ga teng va $DBC = 180^\\circ - 70^\\circ - 70^\\circ = 40^\\circ$. U holda $ABD = 70^\\circ - 40^\\circ = 30^\\circ$. To‘g‘ri javob A.\n\nB — $DBC$ burchak. C — butun $ABC$ burchak. D — $ADB$ burchak, ya’ni $180^\\circ - 70^\\circ$.",
+    "estimated_seconds": 130,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "isosceles_multistep"
+    ]
+  },
+  {
+    "skill_code": "lines_angles_triangles",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "In triangle $ABC$, point $D$ lies on $\\overline{AB}$ and point $E$ lies on $\\overline{AC}$ so that $\\overline{DE}$ is parallel to $\\overline{BC}$. The area of triangle $ADE$ is 18 square units, and the area of quadrilateral $DBCE$ is 32 square units. If $AB = 20$, what is the length of $\\overline{DB}$?",
+    "spr_answers": [
+      "8"
+    ],
+    "explanation_en": "Triangle $ADE$ is similar to triangle $ABC$, whose area is $18 + 32 = 50$. The ratio of the areas is $\\frac{18}{50} = \\frac{9}{25}$, so the ratio of corresponding sides is $\\sqrt{\\frac{9}{25}} = \\frac{3}{5}$. Then $AD = \\frac{3}{5} \\cdot 20 = 12$ and $DB = 20 - 12 = 8$. If you used $\\frac{18}{32}$, you compared the triangle with the quadrilateral instead of with the whole triangle.",
+    "explanation_uz": "$ADE$ uchburchak yuzi $18 + 32 = 50$ bo‘lgan $ABC$ uchburchakka o‘xshash. Yuzalar nisbati $\\frac{18}{50} = \\frac{9}{25}$, demak mos tomonlar nisbati $\\sqrt{\\frac{9}{25}} = \\frac{3}{5}$. U holda $AD = \\frac{3}{5} \\cdot 20 = 12$ va $DB = 20 - 12 = 8$. Agar $\\frac{18}{32}$ ni olgan bo‘lsangiz, uchburchakni butun uchburchak bilan emas, to‘rtburchak bilan solishtirgansiz.",
+    "estimated_seconds": 140,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "similar_area_ratio"
+    ]
+  },
+  {
+    "skill_code": "lines_angles_triangles",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "In triangle $ABC$, the measure of angle $B$ is $20^\\circ$ greater than the measure of angle $A$, and the measure of angle $C$ is greater than $70^\\circ$. Which of the following could be the measure of angle $A$?",
+    "option_a": "$44^\\circ$",
+    "option_b": "$45^\\circ$",
+    "option_c": "$52^\\circ$",
+    "option_d": "$60^\\circ$",
+    "correct": "A",
+    "explanation_en": "If angle $A$ is $a^\\circ$, then angle $B$ is $(a + 20)^\\circ$ and angle $C = 180 - a - (a + 20) = 160 - 2a$ degrees. The condition $160 - 2a > 70$ gives $a < 45$. Only $44^\\circ$ satisfies this (then $B = 64^\\circ$ and $C = 72^\\circ$). Choice A is correct.\n\nChoice B gives $C = 70^\\circ$ exactly, which is not greater than $70^\\circ$. Choices C and D give $C = 56^\\circ$ and $C = 40^\\circ$.",
+    "explanation_uz": "$A$ burchak $a^\\circ$ bo‘lsa, $B$ burchak $(a + 20)^\\circ$ va $C = 180 - a - (a + 20) = 160 - 2a$ gradus. $160 - 2a > 70$ shartdan $a < 45$. Faqat $44^\\circ$ bu shartni qanoatlantiradi (u holda $B = 64^\\circ$, $C = 72^\\circ$). To‘g‘ri javob A.\n\nB javobda $C$ aynan $70^\\circ$ bo‘ladi, bu $70^\\circ$ dan katta emas. C va D javoblarda $C = 56^\\circ$ va $C = 40^\\circ$ chiqadi.",
+    "estimated_seconds": 130,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "angle_inequality"
+    ]
+  }
+]

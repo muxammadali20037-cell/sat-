@@ -1,0 +1,338 @@
+[
+  {
+    "skill_code": "central_ideas_details",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "As the Aral Sea shrank during the twentieth century, it left behind a vast plain of sand and salt that strong winds can lift into choking dust storms. To hold this ground in place, foresters in Uzbekistan have planted large areas of the dry former seabed with saxaul, a hardy shrub that tolerates both drought and salty soil. Saxaul's long roots bind loose sand, and its branches slow the wind near the ground. Foresters hope that as the plantings spread, they will reduce the amount of dust blown from the old seabed onto nearby towns and farms.",
+    "stem": "Which choice best states the main idea of the text?",
+    "option_a": "The Aral Sea has begun to refill because saxaul shrubs keep its water from evaporating.",
+    "option_b": "Foresters are planting a hardy shrub on the former seabed of the Aral Sea to hold the sand in place and reduce blowing dust.",
+    "option_c": "Saxaul is the only plant that can grow anywhere in Central Asia.",
+    "option_d": "Dust storms from the old seabed no longer reach nearby towns and farms.",
+    "correct": "B",
+    "explanation_en": "The text explains that the dry former seabed produces dust storms and that foresters are planting saxaul there because its roots \"bind loose sand\" and its branches \"slow the wind,\" in the hope of reducing dust. Choice B states this main idea.\n\nChoice A is wrong because the text never says the sea is refilling; saxaul holds sand, not water. Choice C is wrong because the text says only that saxaul tolerates drought and salty soil, not that it is the only plant that can grow anywhere. Choice D overstates the text: foresters only \"hope\" the plantings will reduce dust.",
+    "explanation_uz": "Matnda qurigan sobiq dengiz tubidan chang bo‘ronlari ko‘tarilishi va o‘rmonchilar u yerga saksovul ekayotgani aytiladi: saksovulning ildizlari \"bo‘sh qumni bog‘lab turadi\", shoxlari esa \"shamolni sekinlashtiradi\". Ular shu orqali changni kamaytirishga umid qilishadi. B javob aynan shu asosiy g‘oyani ifodalaydi.\n\nA noto‘g‘ri: matnda dengiz yana to‘layotgani haqida gap yo‘q; saksovul suvni emas, qumni ushlab turadi. C noto‘g‘ri: matnda faqat saksovul qurg‘oqchilik va sho‘r tuproqqa chidamli ekani aytilgan, uning har joyda o‘sadigan yagona o‘simlik ekani emas. D matndagi fikrni oshirib yuboradi: o‘rmonchilar changni kamaytirishga faqat \"umid qilishadi\".",
+    "estimated_seconds": 65,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "main_idea"
+    ]
+  },
+  {
+    "skill_code": "central_ideas_details",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Beginning in the eighth century, the city of Samarkand became a celebrated center of papermaking. Craftspeople there soaked linen rags and other plant fibers, beat them into a pulp, spread the pulp in thin sheets on screens, and left the sheets to dry. Over the following centuries, paper gradually replaced parchment, a writing material made from animal skin, across much of the Islamic world. Because paper was far less expensive to produce than parchment, scribes could copy books more cheaply, and libraries throughout the region grew larger as a result.",
+    "stem": "According to the text, why did paper allow libraries to grow larger?",
+    "option_a": "Paper lasted much longer than parchment, so fewer books had to be replaced.",
+    "option_b": "Craftspeople in Samarkand copied books for libraries throughout the region.",
+    "option_c": "Paper was made from animal skins, which were easier to obtain than plant fibers.",
+    "option_d": "Paper cost far less to produce than parchment, so copying books became cheaper.",
+    "correct": "D",
+    "explanation_en": "The last sentence explains the cause: \"Because paper was far less expensive to produce than parchment, scribes could copy books more cheaply, and libraries throughout the region grew larger as a result.\" Choice D paraphrases this.\n\nChoice A is wrong because the text says nothing about how long paper lasted. Choice B is wrong because the craftspeople made paper; the text says scribes copied books, not that Samarkand's papermakers did. Choice C reverses the text: parchment, not paper, was made from animal skin.",
+    "explanation_uz": "Oxirgi gapda sabab aniq ko‘rsatilgan: qog‘oz ishlab chiqarish pergamentga qaraganda ancha arzon bo‘lgani uchun kotiblar kitoblarni arzonroq ko‘chira olgan va natijada kutubxonalar kattalashgan. D javob shuni o‘z so‘zlari bilan ifodalaydi.\n\nA noto‘g‘ri: matnda qog‘ozning qancha vaqt saqlanishi haqida hech narsa aytilmagan. B noto‘g‘ri: Samarqand hunarmandlari qog‘oz yasagan; kitoblarni esa kotiblar ko‘chirgan. C matnga teskari: hayvon terisidan qog‘oz emas, pergament tayyorlangan.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "detail"
+    ]
+  },
+  {
+    "skill_code": "central_ideas_details",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "The following text is adapted from a short story. Nodira is spending the day helping her grandfather bake bread.\n\nNodira had expected baking with her grandfather to be quick work. Instead, he made her wait: wait for the dough to rise under its cloth, wait for the clay oven to grow hot enough, wait while he pressed a pattern into each round loaf with a ring of pins. By the third hour she was drumming her fingers on the table. Then he drew the first loaf from the oven, broke it open, and handed her half. Steam rose from the soft center, and the crust cracked like thin ice. Chewing slowly, she understood that every one of those slow steps was in the bread.",
+    "stem": "Which choice best states the main idea of the text?",
+    "option_a": "Although Nodira grows impatient with her grandfather's slow baking, the finished bread makes her see the value of each step.",
+    "option_b": "Nodira's grandfather teaches her a faster way to bake bread so that she will not become bored.",
+    "option_c": "Nodira's grandfather becomes annoyed when she drums her fingers on the table.",
+    "option_d": "Nodira decides that she would rather buy bread than spend hours making it.",
+    "correct": "A",
+    "explanation_en": "Nodira expects quick work, grows restless (\"drumming her fingers\"), but after tasting the bread she understands \"that every one of those slow steps was in the bread.\" Choice A captures this change.\n\nChoice B is wrong because the grandfather does not speed up; he makes her wait at every stage. Choice C is wrong because the text never describes the grandfather's reaction to her impatience. Choice D contradicts the ending, in which Nodira comes to value the slow process.",
+    "explanation_uz": "Nodira ishni tez tugaydi deb o‘ylaydi, kutishdan zerikib \"barmoqlari bilan stolni chertadi\", lekin nonni tatib ko‘rgach, o‘sha sekin bosqichlarning har biri nonda borligini tushunadi. A javob shu o‘zgarishni ifodalaydi.\n\nB noto‘g‘ri: bobosi ishni tezlashtirmaydi, aksincha, har bosqichda kutishga majbur qiladi. C noto‘g‘ri: matnda bobosining uning sabrsizligiga qanday munosabatda bo‘lgani tasvirlanmagan. D yakunga zid: oxirida Nodira sekin jarayonni qadrlay boshlaydi.",
+    "estimated_seconds": 65,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "main_idea_literary"
+    ]
+  },
+  {
+    "skill_code": "central_ideas_details",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "In a time bank, neighbors trade services using hours instead of money: an hour spent repairing one member's bicycle earns an hour of, say, language tutoring from another member. Organizers often promote time banks as a way for people to save money. But when sociologist Dilfuza Rahimova interviewed members of several time banks, most said that saving money was not their main reason for staying. Instead, they valued getting to know neighbors they would otherwise never have met.",
+    "stem": "Which choice best states the main idea of the text?",
+    "option_a": "Time banks save their members more money than organizers expected.",
+    "option_b": "Most time bank members prefer language tutoring to other services.",
+    "option_c": "Although time banks are promoted as a way to save money, many members value them mainly for the social connections they create.",
+    "option_d": "Sociologists have found that time banks work better in large cities than in small towns.",
+    "correct": "C",
+    "explanation_en": "The text sets up a contrast: organizers promote time banks as a way to save money, \"But\" Rahimova found that members mainly valued \"getting to know neighbors.\" Choice C states this main idea.\n\nChoice A is wrong because the text never compares actual savings with organizers' expectations. Choice B treats an example (language tutoring) as a finding. Choice D is wrong because the text never compares cities and towns.",
+    "explanation_uz": "Matnda qarama-qarshilik bor: tashkilotchilar vaqt banklarini pul tejash usuli sifatida targ‘ib qilishadi, \"lekin\" Rahimova a’zolar asosan \"qo‘shnilar bilan tanishish\"ni qadrlashini aniqlagan. C javob shu asosiy g‘oyani ifodalaydi.\n\nA noto‘g‘ri: matnda haqiqiy tejash tashkilotchilarning kutganlari bilan solishtirilmagan. B noto‘g‘ri: til o‘rgatish faqat misol sifatida keltirilgan, tadqiqot natijasi emas. D noto‘g‘ri: matnda katta shaharlar va kichik shaharchalar taqqoslanmaydi.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "main_idea"
+    ]
+  },
+  {
+    "skill_code": "central_ideas_details",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Glass frogs, which live in the forests of Central and South America, have skin on their undersides so clear that some of their internal organs can be seen through it. Their backs are partly see-through as well, which helps them blend in with the leaves they rest on during the day. In 2022, a team of researchers discovered how the frogs become even more transparent while they sleep: they remove most of their red blood cells from circulation and pack them into the liver, an organ wrapped in a reflective, mirror-like coating. When the frogs wake and become active, the cells return to the bloodstream.",
+    "stem": "According to the text, how do glass frogs become more transparent while they sleep?",
+    "option_a": "They change the color of their skin to match the leaves they rest on.",
+    "option_b": "They move most of their red blood cells out of circulation and store them in the liver.",
+    "option_c": "They stop their hearts until they wake up and become active.",
+    "option_d": "They grow a reflective coating over their internal organs each night.",
+    "correct": "B",
+    "explanation_en": "The text states that while sleeping, glass frogs \"remove most of their red blood cells from circulation and pack them into the liver.\" Choice B paraphrases this detail.\n\nChoice A is wrong because the text says the frogs blend in by being see-through, not by changing color. Choice C is wrong because the text never mentions the heart stopping. Choice D is wrong because the reflective coating already wraps the liver; the text does not say the frogs grow it each night or that it covers all their organs.",
+    "explanation_uz": "Matnda shisha qurbaqalar uxlayotganda \"qizil qon hujayralarining ko‘p qismini qon aylanishidan chiqarib, jigarga joylashtirishi\" aytilgan. B javob shu tafsilotni o‘z so‘zlari bilan beradi.\n\nA noto‘g‘ri: matnga ko‘ra qurbaqalar rangini o‘zgartirib emas, shaffofligi tufayli barglarga qo‘shilib ketadi. C noto‘g‘ri: matnda yurak to‘xtashi haqida gap yo‘q. D noto‘g‘ri: aks ettiruvchi qoplama jigarni doim o‘rab turadi; uning har kecha paydo bo‘lishi yoki barcha a’zolarni qoplashi aytilmagan.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "detail"
+    ]
+  },
+  {
+    "skill_code": "central_ideas_details",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Between 2017 and 2020, folklorist Gulshan Ergasheva recorded more than 200 lullabies sung by grandmothers in mountain villages of southern Uzbekistan. Ergasheva was mainly interested in the melodies, but she soon noticed something else: the lullabies were full of words for tools, plants, and household tasks that younger villagers no longer used in everyday speech. Because lullabies are memorized and repeated nearly word for word, Ergasheva concludes, they have preserved parts of the local vocabulary that ordinary conversation has gradually lost.",
+    "stem": "Which choice best states the main idea of the text?",
+    "option_a": "Ergasheva found that the melodies of the lullabies had changed greatly over time.",
+    "option_b": "Younger villagers in southern Uzbekistan no longer learn lullabies from their grandmothers.",
+    "option_c": "Lullabies from mountain villages describe tools and plants more accurately than scientific books do.",
+    "option_d": "Ergasheva's recordings suggest that because lullabies are repeated word for word, they preserve local words that have dropped out of everyday speech.",
+    "correct": "D",
+    "explanation_en": "The text builds to Ergasheva's conclusion: because lullabies are \"repeated nearly word for word,\" they \"have preserved parts of the local vocabulary that ordinary conversation has gradually lost.\" Choice D states this main idea.\n\nChoice A is wrong because the text does not say the melodies changed. Choice B is wrong because the text says younger villagers no longer use certain words, not that they no longer learn lullabies. Choice C makes a comparison with scientific books that the text never makes.",
+    "explanation_uz": "Matn Ergashevaning xulosasiga olib boradi: allalar \"deyarli so‘zma-so‘z takrorlangani\" uchun ular kundalik nutqda yo‘qolib borayotgan mahalliy so‘zlarni saqlab qolgan. D javob shu asosiy g‘oyani ifodalaydi.\n\nA noto‘g‘ri: matnda kuylar o‘zgargani aytilmagan. B noto‘g‘ri: matnga ko‘ra yoshlar ayrim so‘zlarni ishlatmay qo‘ygan, allalarni o‘rganmay qo‘ygani emas. C noto‘g‘ri: matnda ilmiy kitoblar bilan hech qanday solishtirish yo‘q.",
+    "estimated_seconds": 65,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "main_idea"
+    ]
+  },
+  {
+    "skill_code": "central_ideas_details",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Many desert shrubs produce bitter chemicals in their leaves, and botanists have generally explained these chemicals as a defense against grazing animals such as goats and gazelles. Plant ecologist Ravshan Tojiyev noticed, however, that one such shrub kept producing large amounts of the chemicals even on fenced plots that no grazing animals could reach. In laboratory tests, Tojiyev found that the chemicals also slowed the loss of water through the leaves during hot afternoons. His results suggest that, at least for this shrub, the chemicals may help the plant survive drought as well as discourage grazers.",
+    "stem": "Which choice best states the main idea of the text?",
+    "option_a": "Tojiyev showed that grazing animals do not actually avoid the bitter leaves of desert shrubs.",
+    "option_b": "Desert shrubs produce more bitter chemicals when fences protect them from grazing animals.",
+    "option_c": "Tojiyev's findings suggest that the bitter chemicals in one desert shrub may do more than protect it from grazing animals.",
+    "option_d": "Bitter chemicals are found only in plants that grow in hot, dry places.",
+    "correct": "C",
+    "explanation_en": "The text moves from the usual explanation (the chemicals defend against grazers) to Tojiyev's findings that the chemicals also slow water loss, so they \"may help the plant survive drought as well as discourage grazers.\" Choice C states this main idea.\n\nChoice A is wrong because Tojiyev does not reject the defense explanation; his results add a second function (\"as well as\"). Choice B distorts a detail: the shrub \"kept producing\" the chemicals on fenced plots, which does not mean it produced more. Choice D overgeneralizes; the text discusses desert shrubs but never claims that only desert plants make such chemicals.",
+    "explanation_uz": "Matn odatiy tushuntirishdan (kimyoviy moddalar o‘txo‘r hayvonlardan himoya qiladi) Tojiyevning yangi natijalariga o‘tadi: bu moddalar barglardan suv yo‘qolishini ham sekinlashtiradi, ya’ni o‘simlikka qurg‘oqchilikda omon qolishga \"ham\" yordam berishi mumkin. C javob shu asosiy g‘oyani ifodalaydi.\n\nA noto‘g‘ri: Tojiyev himoya haqidagi tushuntirishni rad etmaydi, balki ikkinchi vazifani qo‘shadi. B tafsilotni buzib ko‘rsatadi: o‘simlik o‘ralgan maydonlarda ham moddalarni \"ishlab chiqarishda davom etgan\", bu esa ko‘proq ishlab chiqargan degani emas. D haddan tashqari umumlashtiradi: matnda bunday moddalar faqat cho‘l o‘simliklarida bo‘ladi deyilmagan.",
+    "estimated_seconds": 80,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "main_idea"
+    ]
+  },
+  {
+    "skill_code": "central_ideas_details",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Caravanserais, walled compounds built along trade routes such as the Silk Road, are usually described as inns where merchants and their animals could rest for the night. But at a caravanserai excavated in southern Uzbekistan, archaeologist Akmal Qodirov and his team uncovered more than sleeping rooms. Near the main gate, they found dozens of bronze weights made to standard sizes, fragments of balance scales, and clay seals of the kind used to close and mark bundles of goods. Qodirov argues that these finds show the caravanserai also served as a place where goods were weighed, sealed, and sold.",
+    "stem": "Based on the text, what evidence does Qodirov use to support his argument about the caravanserai?",
+    "option_a": "Objects used for weighing goods and for sealing bundles were found near the caravanserai's gate.",
+    "option_b": "The caravanserai was larger than other inns along the Silk Road.",
+    "option_c": "Records show that merchants paid to stay in the caravanserai's sleeping rooms.",
+    "option_d": "The caravanserai was built along a major trade route where many merchants traveled.",
+    "correct": "A",
+    "explanation_en": "Qodirov's argument is that the caravanserai was also a place where goods were weighed, sealed, and sold. His evidence is the set of finds near the main gate: standard bronze weights, fragments of scales, and clay seals for bundles of goods. Choice A describes this evidence.\n\nChoice B is wrong because the text never compares the size of the caravanserai with other inns. Choice C is wrong because no payment records are mentioned, and paying for rooms would support the usual \"inn\" view, not Qodirov's argument. Choice D is true of caravanserais in general, but it is background information, not the evidence Qodirov cites for his specific claim.",
+    "explanation_uz": "Qodirovning fikricha, karvonsaroy tovarlar tortiladigan, muhrlanadigan va sotiladigan joy ham bo‘lgan. Uning dalili asosiy darvoza yonidan topilgan buyumlar: standart bronza toshlar (tarozi toshlari), tarozi bo‘laklari va yuk bog‘lamlari uchun loy muhrlar. A javob shu dalilni tasvirlaydi.\n\nB noto‘g‘ri: matnda karvonsaroy hajmi boshqa karvonsaroylar bilan solishtirilmagan. C noto‘g‘ri: to‘lov yozuvlari tilga olinmagan, qolaversa, xonalar uchun to‘lov odatiy \"mehmonxona\" qarashini tasdiqlaydi, Qodirovning fikrini emas. D umuman karvonsaroylar haqida to‘g‘ri ma’lumot, lekin bu fon ma’lumoti, Qodirov keltirgan dalil emas.",
+    "estimated_seconds": 80,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "detail"
+    ]
+  },
+  {
+    "skill_code": "central_ideas_details",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "When a regional water utility redesigned its sign-up form, it made paperless billing the automatic choice: new customers would receive bills by email unless they checked a box requesting paper bills. Economist Lola Abdullayeva compared customers who signed up in the year before the change with those who signed up in the year after it. Before the change, 31 percent of new customers chose paperless billing; afterward, 78 percent kept it. Abdullayeva also found that customers who had paperless billing only because of the new default paid their bills on time just as often as customers who had actively chosen it.",
+    "stem": "According to the text, what did Abdullayeva find about customers who received paperless billing by default?",
+    "option_a": "They were more likely to pay their bills late than customers who received paper bills.",
+    "option_b": "They paid their bills on time about as often as customers who had actively chosen paperless billing.",
+    "option_c": "Most of them eventually switched back to paper bills.",
+    "option_d": "They saved more money than customers who had requested paper bills.",
+    "correct": "B",
+    "explanation_en": "The last sentence states that customers with paperless billing \"only because of the new default paid their bills on time just as often as customers who had actively chosen it.\" Choice B paraphrases this finding.\n\nChoice A is wrong because the text compares default customers with customers who chose paperless billing, not with paper-bill customers, and it reports no difference. Choice C contradicts the text: 78 percent of new customers kept paperless billing. Choice D is wrong because the text says nothing about how much money customers saved.",
+    "explanation_uz": "Oxirgi gapda aytilishicha, elektron hisobni faqat yangi standart tanlov tufayli olgan mijozlar uni o‘zi tanlagan mijozlar kabi hisoblarni o‘z vaqtida to‘lagan. B javob shu natijani o‘z so‘zlari bilan beradi.\n\nA noto‘g‘ri: matnda bu mijozlar qog‘oz hisob oluvchilar bilan emas, elektron hisobni o‘zi tanlaganlar bilan solishtirilgan va farq topilmagan. C matnga zid: yangi mijozlarning 78 foizi elektron hisobni saqlab qolgan. D noto‘g‘ri: matnda mijozlar qancha pul tejagani haqida hech narsa yo‘q.",
+    "estimated_seconds": 75,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "detail"
+    ]
+  },
+  {
+    "skill_code": "central_ideas_details",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "The following text is adapted from a novel. Madame Orlova has taught the violin for forty years.\n\nThe boy's bowing was clumsy, and twice he missed the high note entirely. Madame Orlova, who had once dismissed students for less, found that she had stopped counting his errors halfway through the piece. Something in the way he leaned into the slow passage, as though he were listening for the melody rather than reciting it, had made her forget the pencil in her hand. When he finished, he looked up, already apologizing. She raised a hand to stop him. “Again,” she said, “and this time, do not apologize for the part that matters.”",
+    "stem": "Which choice best states the main idea of the text?",
+    "option_a": "Madame Orlova decides that the boy is not talented enough to remain her student.",
+    "option_b": "The boy is embarrassed because Madame Orlova points out his mistakes as he plays.",
+    "option_c": "Madame Orlova regrets that she once dismissed students for making small errors.",
+    "option_d": "Although the boy makes technical mistakes, Madame Orlova is so moved by the feeling in his playing that she wants him to keep it.",
+    "correct": "D",
+    "explanation_en": "Orlova notices the boy's errors but stops counting them because of the way he \"leaned into the slow passage,\" listening for the melody. Her instruction not to \"apologize for the part that matters\" shows she values his expressiveness. Choice D states this main idea.\n\nChoice A is the opposite of what happens: she asks him to play again. Choice B is wrong because she does not point out mistakes; she even forgets her pencil. Choice C is a trap: the text says she \"had once dismissed students for less,\" but it never says she regrets doing so.",
+    "explanation_uz": "Orlova bolaning xatolarini sezadi, ammo uning sekin qismni \"kuyni tinglayotgandek\" chalishi tufayli xatolarni sanashni to‘xtatadi. \"Muhim qism uchun uzr so‘rama\" degan so‘zlari uning bolaning ifodaliligini qadrlashini ko‘rsatadi. D javob shu asosiy g‘oyani ifodalaydi.\n\nA voqealarga zid: Orlova undan yana chalishni so‘raydi. B noto‘g‘ri: u xatolarni ko‘rsatmaydi, hatto qo‘lidagi qalamni ham unutadi. C tuzoq: matnda u ilgari bundan kichikroq xatolar uchun ham o‘quvchilarni haydagani aytilgan, lekin bundan afsuslangani aytilmagan.",
+    "estimated_seconds": 85,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "main_idea_literary"
+    ]
+  },
+  {
+    "skill_code": "central_ideas_details",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Junipers in the mountains of Central Asia can live for many centuries, and each year they add a growth ring to their trunks. Researchers led by climatologist Sanjar Ismoilov collected wood samples from junipers growing at the very top of the forest, just below the elevation above which trees cannot survive. They chose these trees deliberately: at such heights, the short, cold summer is what mainly limits growth, so a tree's ring for a given year is wide when the summer was warm and narrow when it was cool. The team used the rings to reconstruct summer temperatures over the past eight centuries.",
+    "stem": "According to the text, why did Ismoilov's team collect samples from junipers growing near the upper limit of the forest?",
+    "option_a": "At that elevation, summer temperature is the main factor that controls how much the trees grow each year.",
+    "option_b": "The junipers growing there are older than any other trees in the mountains.",
+    "option_c": "Junipers growing at lower elevations do not add a new growth ring every year.",
+    "option_d": "At that elevation, the trees grow wider rings in years with heavy rainfall.",
+    "correct": "A",
+    "explanation_en": "The text says the researchers \"chose these trees deliberately\" because at such heights \"the short, cold summer is what mainly limits growth,\" so ring width reflects summer temperature. Choice A states this reason.\n\nChoice B is wrong because, although junipers can live for centuries, the text does not say the trees near the tree line are the oldest or give age as the reason. Choice C is wrong because the text says junipers add a ring each year and makes no exception for lower elevations. Choice D names the wrong factor: ring width at that elevation depends on temperature, not rainfall.",
+    "explanation_uz": "Matnda tadqiqotchilar bu daraxtlarni \"ataylab tanlagani\" aytiladi, chunki bunday balandlikda o‘sishni asosan \"qisqa va sovuq yoz\" cheklaydi, ya’ni halqa qalinligi yozgi haroratni aks ettiradi. A javob shu sababni ifodalaydi.\n\nB noto‘g‘ri: archalar asrlar davomida yashashi mumkin bo‘lsa-da, matnda o‘rmon chegarasidagi daraxtlar eng qari ekani ham, sabab yosh ekani ham aytilmagan. C noto‘g‘ri: matnga ko‘ra archalar har yili halqa qo‘shadi, pastroq joylar uchun istisno aytilmagan. D noto‘g‘ri omilni ko‘rsatadi: u balandlikda halqa qalinligi yog‘ingarchilikka emas, haroratga bog‘liq.",
+    "estimated_seconds": 80,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "detail"
+    ]
+  },
+  {
+    "skill_code": "central_ideas_details",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Many economic historians have portrayed the craft guilds of medieval Europe as monopolies that mainly served their own members, limiting competition so that prices stayed high. Historian Ilse Brandt does not dispute that guilds restricted competition. But in the surviving records of a bakers' guild in a small German town, she found that guild officers regularly weighed loaves sold in the market and fined bakers whose bread was underweight or made with spoiled flour. Brandt argues that, at least in this case, the guild also protected buyers by enforcing standards of quality.",
+    "stem": "Which choice best states the main idea of the text?",
+    "option_a": "Brandt's research shows that medieval guilds did not actually limit competition among their members.",
+    "option_b": "Medieval bakers in Germany were often fined for selling bread at high prices.",
+    "option_c": "Brandt's study suggests that a medieval guild, besides limiting competition, may also have protected buyers by enforcing quality standards.",
+    "option_d": "Most economic historians now agree that medieval guilds benefited buyers more than their own members.",
+    "correct": "C",
+    "explanation_en": "The text presents the common view of guilds as self-serving monopolies, notes that Brandt \"does not dispute\" that they restricted competition, and then gives her finding that one guild \"also protected buyers by enforcing standards of quality.\" Choice C states this main idea.\n\nChoice A contradicts the text, since Brandt accepts that guilds restricted competition. Choice B misreads the detail: bakers were fined for underweight bread or spoiled flour, not for high prices. Choice D overstates the text, which reports one historian's argument about one guild, not a new consensus.",
+    "explanation_uz": "Matnda gildiyalar haqidagi keng tarqalgan qarash (ular faqat o‘z a’zolariga xizmat qiluvchi monopoliyalar bo‘lgan) keltiriladi, Brandt ular raqobatni cheklaganini \"inkor etmasligi\" aytiladi, so‘ng uning bitta gildiya sifat me’yorlarini nazorat qilib, xaridorlarni \"ham\" himoya qilgani haqidagi xulosasi beriladi. C javob shu asosiy g‘oyani ifodalaydi.\n\nA matnga zid: Brandt gildiyalar raqobatni cheklaganini tan oladi. B tafsilotni noto‘g‘ri o‘qiydi: novvoylar qimmat narx uchun emas, vazni kam non yoki buzilgan un uchun jarimaga tortilgan. D matndagi fikrni oshirib yuboradi: unda bitta tarixchining bitta gildiya haqidagi fikri keltirilgan, yangi umumiy fikr emas.",
+    "estimated_seconds": 80,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "main_idea"
+    ]
+  },
+  {
+    "skill_code": "central_ideas_details",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "In greenhouse experiments, plants supplied with extra carbon dioxide (CO₂) often grow much faster, since CO₂ is the raw material for photosynthesis. Such results led some scientists to predict that rising levels of CO₂ in the atmosphere would substantially speed the growth of forests worldwide. Ecologist Laylo Hamroyeva suspected that this prediction overlooked an important condition. She grew oak seedlings in open-air plots where extra CO₂ was piped in; some plots had soil rich in nitrogen, a nutrient plants need to build new tissue, and others had nitrogen-poor soil. Extra CO₂ increased growth by nearly a third in the nitrogen-rich soil but produced almost no gain in the nitrogen-poor soil.",
+    "stem": "Which choice best states the main idea of the text?",
+    "option_a": "Hamroyeva found that extra CO₂ slows the growth of oak seedlings planted in nitrogen-poor soil.",
+    "option_b": "Hamroyeva's study shows that greenhouse experiments on CO₂ are unreliable and should no longer be conducted.",
+    "option_c": "Hamroyeva found that nitrogen is more important than CO₂ for the growth of all plants.",
+    "option_d": "Hamroyeva's results suggest that the growth benefit of extra CO₂ depends on how much nitrogen the soil supplies, a condition the prediction about forests did not account for.",
+    "correct": "D",
+    "explanation_en": "The text presents a prediction based on greenhouse results and then Hamroyeva's test of an \"overlooked\" condition: extra CO₂ boosted growth in nitrogen-rich soil but gave \"almost no gain\" in nitrogen-poor soil. Choice D states this main idea.\n\nChoice A overstates the result: \"almost no gain\" means growth did not increase much, not that it slowed. Choice B is too extreme; the text questions a prediction drawn from greenhouse results but never says such experiments should stop. Choice C overgeneralizes from oak seedlings to \"all plants\" and makes a ranking the study did not test.",
+    "explanation_uz": "Matnda issiqxona tajribalariga asoslangan bashorat keltiriladi, so‘ng Hamroyeva \"e’tibordan chetda qolgan\" shartni tekshiradi: qo‘shimcha CO₂ azotga boy tuproqda o‘sishni oshirgan, azoti kam tuproqda esa \"deyarli hech qanday o‘sish bermagan\". D javob shu asosiy g‘oyani ifodalaydi.\n\nA natijani oshirib yuboradi: \"deyarli o‘sish yo‘q\" o‘sish sekinlashdi degani emas. B haddan tashqari keskin: matn issiqxona natijalaridan chiqarilgan bashoratni shubha ostiga oladi, lekin bunday tajribalarni to‘xtatish kerak demaydi. C eman ko‘chatlaridan \"barcha o‘simliklar\"ga umumlashtiradi va tadqiqotda tekshirilmagan taqqoslashni qiladi.",
+    "estimated_seconds": 95,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "main_idea"
+    ]
+  },
+  {
+    "skill_code": "central_ideas_details",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "The following text is adapted from a novel. Shahnoza is translating a collection of poems from Uzbek into English.\n\nFor three days the word sat on her desk like a stone she could not lift. In the poem it meant the particular hush of a courtyard after guests have gone: not silence exactly, but the warmth that silence keeps for a while. English offered her “quiet,” “stillness,” “calm,” each of them honest and each of them wrong. On the fourth morning she wrote “stillness” and drew a line beneath it, not in triumph but in something closer to apology. The poem in English would be a smaller house than the poem in Uzbek, she decided; her task was to make sure that whoever entered it still felt the guests had only just left.",
+    "stem": "Which choice best states the main idea of the text?",
+    "option_a": "Shahnoza finally finds an English word that captures the full meaning of the Uzbek word.",
+    "option_b": "Shahnoza accepts that her English version will lose some of the original's meaning, but she aims to preserve the feeling at its core.",
+    "option_c": "Shahnoza concludes that English is a less expressive language than Uzbek.",
+    "option_d": "Shahnoza regrets agreeing to translate poetry and wishes she were translating prose instead.",
+    "correct": "B",
+    "explanation_en": "Shahnoza judges every English option \"wrong,\" chooses \"stillness\" with \"something closer to apology,\" and decides that although the English poem \"would be a smaller house,\" her task is to keep the feeling that \"the guests had only just left.\" Choice B states this main idea.\n\nChoice A contradicts the text: she settles on a word she knows is imperfect. Choice C overgeneralizes from one word and one poem to the whole language; the \"smaller house\" image refers to this translation, not to English itself. Choice D is wrong because the text never mentions prose or any regret about taking on the work.",
+    "explanation_uz": "Shahnoza inglizcha variantlarning har birini \"noto‘g‘ri\" deb biladi, \"stillness\" so‘zini g‘alaba bilan emas, \"uzr so‘rashga yaqinroq\" his bilan tanlaydi va inglizcha she’r \"kichikroq uy\" bo‘lishini tan olgan holda, o‘quvchi \"mehmonlar endigina ketgan\"dek his qilishini saqlashni o‘z vazifasi deb biladi. B javob shu asosiy g‘oyani ifodalaydi.\n\nA matnga zid: u nomukammal ekanini bilgan so‘zni tanlaydi. C bitta so‘z va bitta she’rdan butun til haqida umumiy xulosa chiqaradi; \"kichikroq uy\" obrazi ingliz tiliga emas, aynan shu tarjimaga tegishli. D noto‘g‘ri: matnda nasr ham, bu ishni olganidan afsuslanish ham tilga olinmagan.",
+    "estimated_seconds": 100,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "main_idea_literary"
+    ]
+  },
+  {
+    "skill_code": "central_ideas_details",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Development economists have often attributed farmers' slow adoption of new, higher-yielding crop varieties to risk aversion: a family that depends on a single harvest may avoid an unfamiliar seed even if it promises larger average yields. Economist Bahrom Nazarov tested this explanation in 40 villages. Before a new drought-tolerant millet was introduced, he measured each farmer's willingness to take financial risks using a series of small betting games. Two years later, risk tolerance barely predicted which farmers had planted the new millet. What predicted adoption strongly was whether a farmer's close neighbors had grown it in the first year, a pattern that held even among the farmers Nazarov had classified as the most risk-averse.",
+    "stem": "Which choice best states the main idea of the text?",
+    "option_a": "Nazarov's findings suggest that seeing neighbors grow the new millet, more than farmers' attitudes toward risk, shaped whether farmers planted it.",
+    "option_b": "Nazarov found that the farmers who were most risk-averse were the most likely to plant the new millet.",
+    "option_c": "Nazarov found that the new millet produced lower yields than expected, so most farmers decided not to plant it.",
+    "option_d": "Nazarov's betting games proved to be accurate predictors of which farmers would plant the new millet.",
+    "correct": "A",
+    "explanation_en": "The text presents the risk-aversion explanation and then Nazarov's test of it: risk tolerance \"barely predicted\" adoption, while neighbors' first-year planting predicted it \"strongly,\" even for the most risk-averse farmers. Choice A states this main idea.\n\nChoice B distorts the last detail: the neighbor pattern held among risk-averse farmers, but the text never says they adopted more than other farmers. Choice C is wrong because the text reports nothing about the millet's actual yields. Choice D contradicts the finding that risk tolerance, measured by the betting games, \"barely predicted\" adoption.",
+    "explanation_uz": "Matnda avval xavfdan qochish haqidagi tushuntirish beriladi, so‘ng Nazarovning uni tekshirgani aytiladi: xavfga moyillik ekishni \"deyarli bashorat qilmagan\", qo‘shnilarning birinchi yili ekkani esa uni \"kuchli\" bashorat qilgan, hatto eng ehtiyotkor fermerlar orasida ham. A javob shu asosiy g‘oyani ifodalaydi.\n\nB oxirgi tafsilotni buzadi: qo‘shnilar bilan bog‘liq qonuniyat ehtiyotkor fermerlarda ham kuzatilgan, lekin ular boshqalardan ko‘proq ekkani aytilmagan. C noto‘g‘ri: matnda tariqning haqiqiy hosildorligi haqida ma’lumot yo‘q. D natijaga zid: tikish o‘yinlari orqali o‘lchangan xavfga moyillik ekishni \"deyarli bashorat qilmagan\".",
+    "estimated_seconds": 100,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "main_idea"
+    ]
+  },
+  {
+    "skill_code": "central_ideas_details",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Modern viewers often treat the large world maps of medieval Europe, which place Jerusalem at the center and fill distant lands with marvelous creatures, as failed attempts at geography. Historian Corinne Mallet argues that this judgment asks the maps to do a job they were never meant to do. Such maps, she notes, were usually displayed in cathedrals or bound into books of history rather than carried by travelers; they gathered biblical events, ancient legends, and the known world into a single picture of human history. Mallet adds that the same era produced practical sailing charts that traced coastlines with impressive accuracy, which shows that precise mapping was possible when precision was the goal.",
+    "stem": "According to the text, why does Mallet believe it is a mistake to judge medieval world maps as failed attempts at geography?",
+    "option_a": "Medieval mapmakers had no reliable information about the shapes of distant lands.",
+    "option_b": "The maps were more accurate than modern viewers realize, especially in their placement of Jerusalem.",
+    "option_c": "The maps were made to present a combined picture of history and belief rather than to guide travelers.",
+    "option_d": "The maps were copied from practical sailing charts, which traced coastlines accurately.",
+    "correct": "C",
+    "explanation_en": "Mallet argues that the maps were never meant to be practical geography: they were displayed in cathedrals or bound into history books, not carried by travelers, and they combined \"biblical events, ancient legends, and the known world into a single picture of human history.\" Choice C states her reason.\n\nChoice A sounds plausible but runs against Mallet's point: she cites accurate sailing charts to show that precise mapping was possible, so the maps' style was a choice, not a lack of information. Choice B is wrong because Mallet does not claim the maps were accurate; she argues accuracy was not their purpose. Choice D distorts the text: the sailing charts are mentioned as a contrast, not as the source of the world maps.",
+    "explanation_uz": "Mallet fikricha, bu xaritalar amaliy geografiya uchun mo‘ljallanmagan: ular sayohatchilar olib yuradigan narsa emas, soborlarda osilgan yoki tarix kitoblariga tikilgan bo‘lib, \"Injil voqealari, qadimiy afsonalar va ma’lum dunyoni\" insoniyat tarixining yagona manzarasiga birlashtirgan. C javob uning sababini ifodalaydi.\n\nA ishonarli tuyuladi, lekin Mallet fikriga zid: u aniq dengiz xaritalarini aniq xaritachilik mumkin bo‘lganini ko‘rsatish uchun keltiradi, demak xaritalar uslubi bilim yetishmasligi emas, tanlov natijasi. B noto‘g‘ri: Mallet xaritalar aniq bo‘lgan demaydi, aniqlik ularning maqsadi bo‘lmagan deydi. D matnni buzadi: dengiz xaritalari dunyo xaritalarining manbai sifatida emas, qarama-qarshi misol sifatida tilga olinadi.",
+    "estimated_seconds": 95,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "detail"
+    ]
+  }
+]

@@ -1,0 +1,297 @@
+[
+  {
+    "skill_code": "ratios_rates_proportions_units",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "A machine fills $240$ bottles of juice every $8$ minutes. At this rate, how many bottles does the machine fill in $1$ hour?",
+    "option_a": "$30$",
+    "option_b": "$1{,}800$",
+    "option_c": "$1{,}920$",
+    "option_d": "$14{,}400$",
+    "correct": "B",
+    "explanation_en": "The machine fills $\\frac{240}{8} = 30$ bottles per minute. One hour is $60$ minutes, so it fills $30 \\times 60 = 1{,}800$ bottles.\n\nChoice A is the number of bottles per minute, not per hour. Choice C multiplies $240$ by $8$ instead of dividing. Choice D multiplies $240$ by $60$, treating $240$ as the number of bottles per minute.",
+    "explanation_uz": "Mashina bir daqiqada $\\frac{240}{8} = 30$ ta shisha to‘ldiradi. Bir soat $60$ daqiqa, demak u $30 \\times 60 = 1{,}800$ ta shisha to‘ldiradi.\n\nA variant — bir daqiqadagi shishalar soni, bir soatdagi emas. C variant $240$ ni $8$ ga bo‘lish o‘rniga ko‘paytirgan. D variant $240$ ni $60$ ga ko‘paytirgan, go‘yo $240$ ta shisha bir daqiqada to‘ldirilgandek.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "rate-time"
+    ]
+  },
+  {
+    "skill_code": "ratios_rates_proportions_units",
+    "difficulty": "easy",
+    "question_type": "spr",
+    "stem": "Two friends share $360{,}000$ soums in the ratio $4 : 5$. How many thousand soums does the friend with the larger share receive?",
+    "spr_answers": [
+      "200"
+    ],
+    "explanation_en": "The ratio $4 : 5$ splits the money into $4 + 5 = 9$ equal parts. One part is $360{,}000 \\div 9 = 40{,}000$ soums, so the larger share is $5 \\times 40{,}000 = 200{,}000$ soums, or $200$ thousand soums. Answering $160$ gives the smaller share; dividing $360$ by $5$ ignores the total number of parts.",
+    "explanation_uz": "$4 : 5$ nisbat pulni $4 + 5 = 9$ ta teng qismga bo‘ladi. Bir qism $360{,}000 \\div 9 = 40{,}000$ so‘m, demak katta ulush $5 \\times 40{,}000 = 200{,}000$ so‘m, ya’ni $200$ ming so‘m. $160$ — bu kichik ulush; $360$ ni $5$ ga bo‘lish esa qismlarning umumiy sonini hisobga olmaydi.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "proportional-sharing"
+    ]
+  },
+  {
+    "skill_code": "ratios_rates_proportions_units",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "A recipe for one batch of pancakes uses $250$ milliliters of milk. How many batches can be made with $2$ liters of milk? ($1$ liter $= 1{,}000$ milliliters)",
+    "option_a": "$0.125$",
+    "option_b": "$0.8$",
+    "option_c": "$8$",
+    "option_d": "$500$",
+    "correct": "C",
+    "explanation_en": "Convert liters to milliliters: $2$ liters $= 2{,}000$ milliliters. Then $2{,}000 \\div 250 = 8$ batches.\n\nChoice A divides in the wrong order ($250 \\div 2{,}000$). Choice B uses $1$ liter $= 100$ milliliters ($200 \\div 250$). Choice D multiplies $250$ by $2$, which is the milk needed for two batches.",
+    "explanation_uz": "Litrni millilitrga aylantiramiz: $2$ litr $= 2{,}000$ millilitr. U holda $2{,}000 \\div 250 = 8$ ta porsiya.\n\nA variant teskari tartibda bo‘lgan ($250 \\div 2{,}000$). B variant $1$ litr $= 100$ millilitr deb olgan ($200 \\div 250$). D variant $250$ ni $2$ ga ko‘paytirgan — bu ikki porsiya uchun kerak bo‘ladigan sut.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "unit-conversion"
+    ]
+  },
+  {
+    "skill_code": "ratios_rates_proportions_units",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "On a map, a distance of $3$ centimeters represents an actual distance of $45$ kilometers. Two towns are $7$ centimeters apart on the map. What is the actual distance, in kilometers, between the two towns?",
+    "option_a": "$15$",
+    "option_b": "$49$",
+    "option_c": "$105$",
+    "option_d": "$315$",
+    "correct": "C",
+    "explanation_en": "Each centimeter on the map represents $45 \\div 3 = 15$ kilometers. So $7$ centimeters represent $7 \\times 15 = 105$ kilometers.\n\nChoice A is the number of kilometers per centimeter. Choice B adds the difference $7 - 3 = 4$ to $45$ instead of scaling. Choice D multiplies $45$ by $7$ without dividing by $3$.",
+    "explanation_uz": "Xaritadagi har bir santimetr $45 \\div 3 = 15$ kilometrga to‘g‘ri keladi. Demak, $7$ santimetr $7 \\times 15 = 105$ kilometrni bildiradi.\n\nA variant — bir santimetrga to‘g‘ri keladigan kilometrlar. B variant masshtablash o‘rniga $45$ ga $7 - 3 = 4$ ni qo‘shgan. D variant $45$ ni $7$ ga ko‘paytirib, $3$ ga bo‘lmagan.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "proportion"
+    ]
+  },
+  {
+    "skill_code": "ratios_rates_proportions_units",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "A shop sells rice in four package sizes. Which package has the lowest price per kilogram?",
+    "option_a": "A $2$-kilogram package for $30{,}000$ soums",
+    "option_b": "A $5$-kilogram package for $70{,}000$ soums",
+    "option_c": "A $3$-kilogram package for $43{,}500$ soums",
+    "option_d": "A $10$-kilogram package for $148{,}000$ soums",
+    "correct": "B",
+    "explanation_en": "Divide each price by the mass. A: $30{,}000 \\div 2 = 15{,}000$ soums per kilogram. B: $70{,}000 \\div 5 = 14{,}000$. C: $43{,}500 \\div 3 = 14{,}500$. D: $148{,}000 \\div 10 = 14{,}800$. The lowest price per kilogram is $14{,}000$ soums, for the $5$-kilogram package.\n\nChoice A has the lowest total price but the highest price per kilogram. Choice D is the largest package, but a bigger package is not automatically cheaper per kilogram. Choice C costs $500$ soums more per kilogram than choice B.",
+    "explanation_uz": "Har bir narxni massaga bo‘lamiz. A: $30{,}000 \\div 2 = 15{,}000$ so‘m/kg. B: $70{,}000 \\div 5 = 14{,}000$. C: $43{,}500 \\div 3 = 14{,}500$. D: $148{,}000 \\div 10 = 14{,}800$. Eng arzon narx — kilogrami $14{,}000$ so‘m, ya’ni $5$ kilogrammlik qadoq.\n\nA variantning umumiy narxi eng kichik, lekin bir kilogrami eng qimmat. D variant eng katta qadoq, ammo katta qadoq har doim ham kilogrami bo‘yicha arzon bo‘lavermaydi. C variant kilogrami B variantdan $500$ so‘m qimmat.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "unit-rate"
+    ]
+  },
+  {
+    "skill_code": "ratios_rates_proportions_units",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "A cyclist rides at a constant speed of $18$ kilometers per hour. How many minutes does it take the cyclist to ride $6$ kilometers?",
+    "option_a": "$3$",
+    "option_b": "$20$",
+    "option_c": "$33$",
+    "option_d": "$108$",
+    "correct": "B",
+    "explanation_en": "Time $=$ distance $\\div$ speed $= \\frac{6}{18} = \\frac{1}{3}$ hour. One hour is $60$ minutes, so the time is $\\frac{1}{3} \\times 60 = 20$ minutes.\n\nChoice A divides the speed by the distance ($18 \\div 6$). Choice C reads $0.33$ hour as $33$ minutes, but hours are not divided into $100$ minutes. Choice D multiplies the speed by the distance.",
+    "explanation_uz": "Vaqt $=$ masofa $\\div$ tezlik $= \\frac{6}{18} = \\frac{1}{3}$ soat. Bir soat $60$ daqiqa, demak vaqt $\\frac{1}{3} \\times 60 = 20$ daqiqa.\n\nA variant tezlikni masofaga bo‘lgan ($18 \\div 6$). C variant $0.33$ soatni $33$ daqiqa deb o‘qigan, lekin soat $100$ daqiqaga bo‘linmaydi. D variant tezlikni masofaga ko‘paytirgan.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "rate-time"
+    ]
+  },
+  {
+    "skill_code": "ratios_rates_proportions_units",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "A chess club has $42$ members, and the ratio of boys to girls in the club is $3 : 4$. How many boys must join the club so that the ratio of boys to girls becomes $1 : 1$? (No girls join or leave.)",
+    "spr_answers": [
+      "6"
+    ],
+    "explanation_en": "The ratio $3 : 4$ splits the $42$ members into $7$ parts of $6$ members each, so there are $3 \\times 6 = 18$ boys and $4 \\times 6 = 24$ girls. For a $1 : 1$ ratio, the number of boys must equal the number of girls, $24$. So $24 - 18 = 6$ boys must join. Answering $1$ (the difference of the ratio numbers, $4 - 3$) ignores the size of each part.",
+    "explanation_uz": "$3 : 4$ nisbat $42$ a’zoni har birida $6$ kishidan iborat $7$ qismga bo‘ladi, demak $3 \\times 6 = 18$ o‘g‘il va $4 \\times 6 = 24$ qiz bor. $1 : 1$ nisbat uchun o‘g‘illar soni qizlar soniga, ya’ni $24$ ga teng bo‘lishi kerak. Demak, $24 - 18 = 6$ o‘g‘il qo‘shilishi kerak. $1$ deb javob berish (nisbat sonlarining ayirmasi $4 - 3$) har bir qism kattaligini hisobga olmaydi.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "ratio-change"
+    ]
+  },
+  {
+    "skill_code": "ratios_rates_proportions_units",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "The floor of a storage room has an area of $12$ square meters. What is the area of the floor in square centimeters? ($1$ meter $= 100$ centimeters)",
+    "option_a": "$1{,}200$",
+    "option_b": "$12{,}000$",
+    "option_c": "$120{,}000$",
+    "option_d": "$1{,}200{,}000$",
+    "correct": "C",
+    "explanation_en": "One square meter is a square $100$ cm by $100$ cm, so $1$ m$^2 = 100 \\times 100 = 10{,}000$ cm$^2$. Then $12$ m$^2 = 12 \\times 10{,}000 = 120{,}000$ cm$^2$.\n\nChoice A converts with a factor of $100$, as if the units were not squared. Choice B uses a factor of $1{,}000$. Choice D uses a factor of $100{,}000$.",
+    "explanation_uz": "Bir kvadrat metr — tomoni $100$ sm bo‘lgan kvadrat, shuning uchun $1$ m$^2 = 100 \\times 100 = 10{,}000$ sm$^2$. U holda $12$ m$^2 = 12 \\times 10{,}000 = 120{,}000$ sm$^2$.\n\nA variant birliklar kvadratda ekanini hisobga olmay, $100$ ga ko‘paytirgan. B variant $1{,}000$ ga ko‘paytirgan. D variant $100{,}000$ ga ko‘paytirgan.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "squared-units"
+    ]
+  },
+  {
+    "skill_code": "ratios_rates_proportions_units",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "A leaking faucet loses water at a constant rate of $0.25$ milliliter per second. At this rate, how many liters of water does the faucet lose in one day? ($1$ liter $= 1{,}000$ milliliters)",
+    "spr_answers": [
+      "21.6",
+      "108/5"
+    ],
+    "explanation_en": "One day has $24 \\times 60 \\times 60 = 86{,}400$ seconds. The faucet loses $0.25 \\times 86{,}400 = 21{,}600$ milliliters, which is $21{,}600 \\div 1{,}000 = 21.6$ liters. Forgetting one of the factors of $60$ gives $0.36$ liter, and forgetting to convert to liters gives $21{,}600$.",
+    "explanation_uz": "Bir sutkada $24 \\times 60 \\times 60 = 86{,}400$ soniya bor. Jo‘mrakdan $0.25 \\times 86{,}400 = 21{,}600$ millilitr suv oqadi, bu $21{,}600 \\div 1{,}000 = 21.6$ litr. $60$ ko‘paytuvchilaridan birini unutsak, $0.36$ litr chiqadi; litrga aylantirishni unutsak, $21{,}600$ chiqadi.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "unit-conversion"
+    ]
+  },
+  {
+    "skill_code": "ratios_rates_proportions_units",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "A type of granite has a density of $2.7$ grams per cubic centimeter. What is the mass, in kilograms, of a granite block with a volume of $350$ cubic centimeters? ($1$ kilogram $= 1{,}000$ grams)",
+    "option_a": "$0.13$",
+    "option_b": "$0.945$",
+    "option_c": "$9.45$",
+    "option_d": "$945$",
+    "correct": "B",
+    "explanation_en": "Mass $=$ density $\\times$ volume $= 2.7 \\times 350 = 945$ grams. In kilograms, $945 \\div 1{,}000 = 0.945$.\n\nChoice A divides the volume by the density ($350 \\div 2.7 \\approx 130$ grams). Choice C divides by $100$ instead of $1{,}000$. Choice D is the mass in grams, not kilograms.",
+    "explanation_uz": "Massa $=$ zichlik $\\times$ hajm $= 2.7 \\times 350 = 945$ gramm. Kilogrammda $945 \\div 1{,}000 = 0.945$.\n\nA variant hajmni zichlikka bo‘lgan ($350 \\div 2.7 \\approx 130$ gramm). C variant $1{,}000$ ga emas, $100$ ga bo‘lgan. D variant — massa grammda, kilogrammda emas.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "density"
+    ]
+  },
+  {
+    "skill_code": "ratios_rates_proportions_units",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "A team of $6$ workers, all working at the same constant rate, can paint a school building in $15$ days. At this rate, how many days would it take a team of $9$ such workers to paint the same building?",
+    "option_a": "$9$",
+    "option_b": "$10$",
+    "option_c": "$12$",
+    "option_d": "$22.5$",
+    "correct": "B",
+    "explanation_en": "The whole job takes $6 \\times 15 = 90$ worker-days. With $9$ workers, it takes $90 \\div 9 = 10$ days. More workers finish faster, so the answer must be less than $15$.\n\nChoice A uses the number of workers as the answer. Choice C subtracts the $3$ extra workers from $15$ days. Choice D treats the relationship as direct: $15 \\times \\frac{9}{6}$, which wrongly says more workers need more days.",
+    "explanation_uz": "Butun ish $6 \\times 15 = 90$ ishchi-kun talab qiladi. $9$ ishchi bilan u $90 \\div 9 = 10$ kunda bajariladi. Ishchilar ko‘paysa, ish tezroq tugaydi, shuning uchun javob $15$ dan kichik bo‘lishi kerak.\n\nA variant ishchilar sonini javob deb olgan. C variant $15$ kundan qo‘shimcha $3$ ishchini ayirgan. D variant bog‘lanishni to‘g‘ri proporsional deb olgan: $15 \\times \\frac{9}{6}$, bu ishchilar ko‘paysa, kunlar ham ko‘payadi degan xato xulosa.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "inverse-proportion"
+    ]
+  },
+  {
+    "skill_code": "ratios_rates_proportions_units",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "Suppose that at a certain bank, $1$ US dollar can be exchanged for $12{,}600$ soums and $1$ euro can be exchanged for $13{,}650$ soums. Based on these rates, $390$ US dollars are worth how many euros?",
+    "option_a": "$30$",
+    "option_b": "$360$",
+    "option_c": "$390$",
+    "option_d": "$422.5$",
+    "correct": "B",
+    "explanation_en": "First convert dollars to soums: $390 \\times 12{,}600 = 4{,}914{,}000$ soums. Then convert soums to euros: $4{,}914{,}000 \\div 13{,}650 = 360$ euros. A euro is worth more soums than a dollar, so the number of euros should be less than $390$.\n\nChoice A converts only the difference between the two rates ($390 \\times 1{,}050 \\div 13{,}650$). Choice C assumes a dollar and a euro are worth the same. Choice D uses the rates the wrong way around ($390 \\times 13{,}650 \\div 12{,}600$).",
+    "explanation_uz": "Avval dollarni so‘mga aylantiramiz: $390 \\times 12{,}600 = 4{,}914{,}000$ so‘m. Keyin so‘mni yevroga aylantiramiz: $4{,}914{,}000 \\div 13{,}650 = 360$ yevro. Yevro dollardan qimmatroq, shuning uchun yevrolar soni $390$ dan kam bo‘lishi kerak.\n\nA variant faqat ikki kurs orasidagi farqni aylantirgan ($390 \\times 1{,}050 \\div 13{,}650$). C variant dollar va yevroni teng qiymatli deb olgan. D variant kurslarni teskari ishlatgan ($390 \\times 13{,}650 \\div 12{,}600$).",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "unit-conversion"
+    ]
+  },
+  {
+    "skill_code": "ratios_rates_proportions_units",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "A car accelerates at a constant rate of $2.5$ meters per second squared ($2.5$ m/s$^2$). What is this acceleration in kilometers per hour squared (km/h$^2$)? ($1$ kilometer $= 1{,}000$ meters and $1$ hour $= 3{,}600$ seconds)",
+    "spr_answers": [
+      "32400"
+    ],
+    "explanation_en": "Convert meters to kilometers: $2.5$ m $= 0.0025$ km. The unit $\\text{s}^2$ is in the denominator, and $1$ h$^2 = 3{,}600^2$ s$^2 = 12{,}960{,}000$ s$^2$, so $1$ s$^2 = \\frac{1}{12{,}960{,}000}$ h$^2$. Then $2.5 \\text{ m/s}^2 = \\frac{0.0025 \\text{ km}}{\\frac{1}{12{,}960{,}000} \\text{ h}^2} = 0.0025 \\times 12{,}960{,}000 = 32{,}400$ km/h$^2$. Multiplying by $3{,}600$ only once (as for a speed) gives $9$, which is wrong.",
+    "explanation_uz": "Metrni kilometrga aylantiramiz: $2.5$ m $= 0.0025$ km. $\\text{s}^2$ maxrajda turibdi va $1$ h$^2 = 3{,}600^2$ s$^2 = 12{,}960{,}000$ s$^2$, demak $1$ s$^2 = \\frac{1}{12{,}960{,}000}$ h$^2$. U holda $2.5 \\text{ m/s}^2 = \\frac{0.0025 \\text{ km}}{\\frac{1}{12{,}960{,}000} \\text{ h}^2} = 0.0025 \\times 12{,}960{,}000 = 32{,}400$ km/h$^2$. $3{,}600$ ga faqat bir marta ko‘paytirish (tezlikdagidek) $9$ ni beradi — bu xato.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "squared-units"
+    ]
+  },
+  {
+    "skill_code": "ratios_rates_proportions_units",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "A water tank in the shape of a rectangular prism is $120$ centimeters long, $0.8$ meter wide, and $500$ millimeters high. Water flows into the empty tank at a constant rate of $2.5$ liters every $30$ seconds. How many minutes does it take to fill the tank completely? ($1$ liter $= 1{,}000$ cubic centimeters)",
+    "option_a": "$9.6$",
+    "option_b": "$48$",
+    "option_c": "$96$",
+    "option_d": "$960$",
+    "correct": "C",
+    "explanation_en": "Convert every dimension to centimeters: $120$ cm, $0.8$ m $= 80$ cm, and $500$ mm $= 50$ cm. The volume is $120 \\times 80 \\times 50 = 480{,}000$ cm$^3 = 480$ liters. The flow rate is $2.5$ liters per $30$ seconds, or $5$ liters per minute. So the time is $480 \\div 5 = 96$ minutes.\n\nChoice A uses $1$ m$^3 = 100$ liters ($48 \\div 5$). Choice B uses a rate of $10$ liters per minute, multiplying by $4$ instead of $2$ when converting the rate. Choice D uses $1$ m$^3 = 10{,}000$ liters; in fact $1$ m$^3 = 1{,}000$ liters.",
+    "explanation_uz": "Barcha o‘lchamlarni santimetrga aylantiramiz: $120$ sm, $0.8$ m $= 80$ sm va $500$ mm $= 50$ sm. Hajm $120 \\times 80 \\times 50 = 480{,}000$ sm$^3 = 480$ litr. Oqim tezligi $30$ soniyada $2.5$ litr, ya’ni daqiqasiga $5$ litr. Demak, vaqt $480 \\div 5 = 96$ daqiqa.\n\nA variant $1$ m$^3 = 100$ litr deb olgan ($48 \\div 5$). B variant tezlikni aylantirishda $2$ ga emas, $4$ ga ko‘paytirib, daqiqasiga $10$ litr deb olgan. D variant $1$ m$^3 = 10{,}000$ litr deb olgan; aslida $1$ m$^3 = 1{,}000$ litr.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "cubed-units"
+    ]
+  },
+  {
+    "skill_code": "ratios_rates_proportions_units",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "A jar contains only red beads and blue beads, and the ratio of red beads to blue beads is $5 : 3$. After $10$ red beads are removed and $6$ blue beads are added, the jar contains equal numbers of red beads and blue beads. How many beads were in the jar originally?",
+    "option_a": "$16$",
+    "option_b": "$40$",
+    "option_c": "$60$",
+    "option_d": "$64$",
+    "correct": "D",
+    "explanation_en": "Let the original numbers be $5k$ red and $3k$ blue. After the changes: $5k - 10 = 3k + 6$, so $2k = 16$ and $k = 8$. Originally there were $5(8) = 40$ red and $3(8) = 24$ blue beads, a total of $64$. Check: $40 - 10 = 30$ and $24 + 6 = 30$.\n\nChoice A is $2k$, not the number of beads. Choice B is the original number of red beads only. Choice C is the total after the changes ($30 + 30$), not the original total.",
+    "explanation_uz": "Dastlabki sonlar $5k$ ta qizil va $3k$ ta ko‘k bo‘lsin. O‘zgarishlardan keyin: $5k - 10 = 3k + 6$, demak $2k = 16$ va $k = 8$. Dastlab $5(8) = 40$ ta qizil va $3(8) = 24$ ta ko‘k munchoq bo‘lgan, jami $64$ ta. Tekshiruv: $40 - 10 = 30$ va $24 + 6 = 30$.\n\nA variant — $2k$, munchoqlar soni emas. B variant — faqat dastlabki qizil munchoqlar soni. C variant — o‘zgarishlardan keyingi jami ($30 + 30$), dastlabki emas.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "ratio-change"
+    ]
+  },
+  {
+    "skill_code": "ratios_rates_proportions_units",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "A rectangular room has a floor that is $4.5$ meters by $3.6$ meters, and its walls are $2.7$ meters high. Malika will paint all four walls with two coats of paint. One liter of paint covers $9.6$ square meters for one coat, and the paint is sold only in $2.5$-liter cans. Ignoring doors and windows, what is the minimum number of cans of paint Malika must buy?",
+    "spr_answers": [
+      "4"
+    ],
+    "explanation_en": "The four walls together form a strip whose length is the perimeter of the floor, $2(4.5 + 3.6) = 16.2$ meters, and whose height is $2.7$ meters, so their area is $16.2 \\times 2.7 = 43.74$ m$^2$. Two coats cover $2 \\times 43.74 = 87.48$ m$^2$, which needs $87.48 \\div 9.6 = 9.1125$ liters. That is $9.1125 \\div 2.5 = 3.645$ cans, and since only whole cans are sold, she must buy $4$ cans. Using one coat gives $2$ cans, and using the floor area instead of the walls gives a much smaller amount.",
+    "explanation_uz": "To‘rtta devor birgalikda uzunligi pol perimetriga, ya’ni $2(4.5 + 3.6) = 16.2$ metrga, balandligi $2.7$ metrga teng bo‘lgan tasmani hosil qiladi, shuning uchun ularning yuzi $16.2 \\times 2.7 = 43.74$ m$^2$. Ikki qatlam $2 \\times 43.74 = 87.48$ m$^2$ ni qoplaydi va buning uchun $87.48 \\div 9.6 = 9.1125$ litr bo‘yoq kerak. Bu $9.1125 \\div 2.5 = 3.645$ quti, faqat butun qutilar sotilgani uchun $4$ quti sotib olish kerak. Bir qatlam deb hisoblasak, $2$ quti chiqadi; devorlar o‘rniga pol yuzini olsak, ancha kam miqdor chiqadi.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "multi-step-rate"
+    ]
+  }
+]

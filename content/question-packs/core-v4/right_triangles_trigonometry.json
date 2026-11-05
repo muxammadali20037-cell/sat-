@@ -1,0 +1,296 @@
+[
+  {
+    "skill_code": "right_triangles_trigonometry",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "In right triangle $ABC$, angle $B$ is the right angle, $AB = 9$, $BC = 40$, and $AC = 41$. What is the value of $\\cos C$?",
+    "option_a": "$\\frac{9}{41}$",
+    "option_b": "$\\frac{40}{41}$",
+    "option_c": "$\\frac{9}{40}$",
+    "option_d": "$\\frac{40}{9}$",
+    "correct": "B",
+    "explanation_en": "The cosine of an acute angle is the adjacent leg divided by the hypotenuse. For angle $C$, the adjacent leg is $BC = 40$ and the hypotenuse is $AC = 41$, so $\\cos C = \\frac{40}{41}$. Choice B is correct.\n\nChoice A is $\\sin C$ (opposite over hypotenuse). Choice C is $\\tan C$, and choice D is $\\tan A$.",
+    "explanation_uz": "O‘tkir burchak kosinusi — yopishgan katetning gipotenuzaga nisbati. $C$ burchak uchun yopishgan katet $BC = 40$, gipotenuza $AC = 41$, demak $\\cos C = \\frac{40}{41}$. To‘g‘ri javob B.\n\nA — bu $\\sin C$ (qarshi katet / gipotenuza). C — bu $\\tan C$, D esa $\\tan A$.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "soh_cah_toa"
+    ]
+  },
+  {
+    "skill_code": "right_triangles_trigonometry",
+    "difficulty": "easy",
+    "question_type": "spr",
+    "stem": "A straight cable runs from the top of a vertical pole that is 12 meters tall to a point on level ground 35 meters from the base of the pole. What is the length, in meters, of the cable?",
+    "spr_answers": [
+      "37"
+    ],
+    "explanation_en": "The pole, the ground, and the cable form a right triangle with legs 12 and 35. By the Pythagorean theorem, the cable's length is $\\sqrt{12^2 + 35^2} = \\sqrt{144 + 1225} = \\sqrt{1369} = 37$ meters. If you got 47, you added the legs instead of using the Pythagorean theorem.",
+    "explanation_uz": "Ustun, yer va kabel katetlari 12 va 35 bo‘lgan to‘g‘ri burchakli uchburchak hosil qiladi. Pifagor teoremasiga ko‘ra kabel uzunligi $\\sqrt{12^2 + 35^2} = \\sqrt{144 + 1225} = \\sqrt{1369} = 37$ metr. Agar 47 chiqqan bo‘lsa, siz Pifagor teoremasi o‘rniga katetlarni qo‘shgansiz.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "pythagorean"
+    ]
+  },
+  {
+    "skill_code": "right_triangles_trigonometry",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "In a right triangle, $A$ and $B$ are the two acute angles, and $\\sin A = 0.28$. What is the value of $\\cos B$?",
+    "option_a": "0.28",
+    "option_b": "0.72",
+    "option_c": "0.96",
+    "option_d": "3.57",
+    "correct": "A",
+    "explanation_en": "Angles $A$ and $B$ are complementary, so the leg opposite $A$ is the leg adjacent to $B$. Therefore $\\cos B = \\sin A = 0.28$. Choice A is correct.\n\nChoice B is $1 - 0.28$; sine and cosine of complementary angles are equal, they do not add to 1. Choice C is $\\cos A = \\sqrt{1 - 0.28^2}$. Choice D is about $\\frac{1}{0.28}$.",
+    "explanation_uz": "$A$ va $B$ burchaklar yig‘indisi $90^\\circ$, shuning uchun $A$ qarshisidagi katet $B$ ga yopishgan katetdir. Demak $\\cos B = \\sin A = 0.28$. To‘g‘ri javob A.\n\nB — bu $1 - 0.28$; yig‘indisi $90^\\circ$ bo‘lgan burchaklarning sinusi va kosinusi teng, ularning yig‘indisi 1 emas. C — bu $\\cos A = \\sqrt{1 - 0.28^2}$. D — taxminan $\\frac{1}{0.28}$.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "complementary_angles"
+    ]
+  },
+  {
+    "skill_code": "right_triangles_trigonometry",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "In right triangle $JKL$, angle $K$ is the right angle, the measure of angle $J$ is $60^\\circ$, and $JK = 5$. What is the length of $\\overline{JL}$?",
+    "option_a": "$5\\sqrt{2}$",
+    "option_b": "$5\\sqrt{3}$",
+    "option_c": "10",
+    "option_d": "$10\\sqrt{3}$",
+    "correct": "C",
+    "explanation_en": "In a $30^\\circ$-$60^\\circ$-$90^\\circ$ triangle, the hypotenuse is twice the leg opposite the $30^\\circ$ angle. Angle $L$ is $30^\\circ$, and the leg opposite it is $JK = 5$, so the hypotenuse $JL = 10$. (Also, $\\cos 60^\\circ = \\frac{JK}{JL} = \\frac{1}{2}$.) Choice C is correct.\n\nChoice A uses the $45^\\circ$-$45^\\circ$-$90^\\circ$ ratio. Choice B is the length of leg $KL$, which is opposite the $60^\\circ$ angle. Choice D multiplies the correct answer by $\\sqrt{3}$.",
+    "explanation_uz": "$30^\\circ$-$60^\\circ$-$90^\\circ$ uchburchakda gipotenuza $30^\\circ$ li burchak qarshisidagi katetdan ikki marta uzun. $L$ burchak $30^\\circ$, uning qarshisidagi katet $JK = 5$, demak gipotenuza $JL = 10$. (Shuningdek, $\\cos 60^\\circ = \\frac{JK}{JL} = \\frac{1}{2}$.) To‘g‘ri javob C.\n\nA javobda $45^\\circ$-$45^\\circ$-$90^\\circ$ nisbati ishlatilgan. B — $60^\\circ$ li burchak qarshisidagi $KL$ katet uzunligi. D javobda to‘g‘ri javob $\\sqrt{3}$ ga ko‘paytirilgan.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "special_right_triangles"
+    ]
+  },
+  {
+    "skill_code": "right_triangles_trigonometry",
+    "difficulty": "easy",
+    "question_type": "spr",
+    "stem": "In the $xy$-plane, what is the distance between the points $(-2, 3)$ and $(6, 9)$?",
+    "spr_answers": [
+      "10"
+    ],
+    "explanation_en": "The horizontal distance is $6 - (-2) = 8$ and the vertical distance is $9 - 3 = 6$. These are the legs of a right triangle, so the distance is $\\sqrt{8^2 + 6^2} = \\sqrt{100} = 10$. If you got 14, you added the legs; if you got $\\sqrt{52}$, you computed $6 - 2 = 4$ instead of $6 - (-2) = 8$.",
+    "explanation_uz": "Gorizontal masofa $6 - (-2) = 8$, vertikal masofa $9 - 3 = 6$. Bular to‘g‘ri burchakli uchburchak katetlari, demak masofa $\\sqrt{8^2 + 6^2} = \\sqrt{100} = 10$. Agar 14 chiqqan bo‘lsa, katetlarni qo‘shgansiz; $\\sqrt{52}$ chiqqan bo‘lsa, $6 - (-2) = 8$ o‘rniga $6 - 2 = 4$ ni hisoblagansiz.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "distance_coordinate"
+    ]
+  },
+  {
+    "skill_code": "right_triangles_trigonometry",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "A wheelchair ramp rises 0.9 meter over a horizontal distance of 4 meters, and its sloped surface is 4.1 meters long. The sloped surface makes an angle $\\theta$ with the level ground. What is the value of $\\tan\\theta$?",
+    "option_a": "$\\frac{9}{41}$",
+    "option_b": "$\\frac{9}{40}$",
+    "option_c": "$\\frac{40}{41}$",
+    "option_d": "$\\frac{40}{9}$",
+    "correct": "B",
+    "explanation_en": "The tangent is the opposite leg divided by the adjacent leg. The rise (0.9) is opposite $\\theta$ and the horizontal distance (4) is adjacent, so $\\tan\\theta = \\frac{0.9}{4} = \\frac{9}{40}$. Choice B is correct.\n\nChoice A is $\\sin\\theta = \\frac{0.9}{4.1}$, and choice C is $\\cos\\theta = \\frac{4}{4.1}$. Choice D is the reciprocal of $\\tan\\theta$.",
+    "explanation_uz": "Tangens — qarshi katetning yopishgan katetga nisbati. Ko‘tarilish (0.9) $\\theta$ qarshisida, gorizontal masofa (4) esa unga yopishgan, demak $\\tan\\theta = \\frac{0.9}{4} = \\frac{9}{40}$. To‘g‘ri javob B.\n\nA — bu $\\sin\\theta = \\frac{0.9}{4.1}$, C — bu $\\cos\\theta = \\frac{4}{4.1}$. D — $\\tan\\theta$ ning teskarisi.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "tangent_context"
+    ]
+  },
+  {
+    "skill_code": "right_triangles_trigonometry",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "In right triangle $ABC$, angle $C$ is the right angle and $\\sin A = \\frac{20}{29}$. What is the value of $\\tan B$?",
+    "option_a": "$\\frac{20}{21}$",
+    "option_b": "$\\frac{21}{20}$",
+    "option_c": "$\\frac{21}{29}$",
+    "option_d": "$\\frac{29}{21}$",
+    "correct": "B",
+    "explanation_en": "Let $BC = 20$ (opposite $A$) and $AB = 29$. Then $AC = \\sqrt{29^2 - 20^2} = \\sqrt{441} = 21$. For angle $B$, the opposite leg is $AC = 21$ and the adjacent leg is $BC = 20$, so $\\tan B = \\frac{21}{20}$. Choice B is correct.\n\nChoice A is $\\tan A$. Choice C is $\\sin B$ (equal to $\\cos A$). Choice D is the reciprocal of $\\sin B$.",
+    "explanation_uz": "$BC = 20$ ($A$ qarshisida) va $AB = 29$ bo‘lsin. U holda $AC = \\sqrt{29^2 - 20^2} = \\sqrt{441} = 21$. $B$ burchak uchun qarshi katet $AC = 21$, yopishgan katet $BC = 20$, demak $\\tan B = \\frac{21}{20}$. To‘g‘ri javob B.\n\nA — bu $\\tan A$. C — bu $\\sin B$ ($\\cos A$ ga teng). D — $\\sin B$ ning teskarisi.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "trig_other_angle"
+    ]
+  },
+  {
+    "skill_code": "right_triangles_trigonometry",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "A child holds a kite string at ground level. The string is pulled straight, is 80 meters long, and makes an angle of $30^\\circ$ with the level ground. How high, in meters, is the kite above the ground?",
+    "spr_answers": [
+      "40"
+    ],
+    "explanation_en": "The string is the hypotenuse of a right triangle, and the height is the leg opposite the $30^\\circ$ angle. So the height is $80 \\sin 30^\\circ = 80 \\cdot \\frac{1}{2} = 40$ meters. If you got about 69.3 ($40\\sqrt{3}$), you used $\\cos 30^\\circ$, which gives the horizontal distance.",
+    "explanation_uz": "Ip to‘g‘ri burchakli uchburchakning gipotenuzasi, balandlik esa $30^\\circ$ li burchak qarshisidagi katet. Demak balandlik $80 \\sin 30^\\circ = 80 \\cdot \\frac{1}{2} = 40$ metr. Agar taxminan 69.3 ($40\\sqrt{3}$) chiqqan bo‘lsa, siz $\\cos 30^\\circ$ ni ishlatgansiz — u gorizontal masofani beradi.",
+    "estimated_seconds": 100,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "angle_elevation"
+    ]
+  },
+  {
+    "skill_code": "right_triangles_trigonometry",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "In triangle $ABC$, $AB = 10$, $AC = 16$, and the measure of angle $A$ is $30^\\circ$. What is the area of triangle $ABC$?",
+    "option_a": "40",
+    "option_b": "$40\\sqrt{3}$",
+    "option_c": "80",
+    "option_d": "$80\\sqrt{3}$",
+    "correct": "A",
+    "explanation_en": "Use $\\overline{AC}$ as the base. The height is the perpendicular distance from $B$ to line $AC$, which is $AB \\sin 30^\\circ = 10 \\cdot \\frac{1}{2} = 5$. The area is $\\frac{1}{2} \\cdot 16 \\cdot 5 = 40$. Choice A is correct.\n\nChoice B uses $\\cos 30^\\circ$ for the height. Choice C forgets the $\\frac{1}{2}$ in the area formula. Choice D makes both errors.",
+    "explanation_uz": "$\\overline{AC}$ ni asos deb olamiz. Balandlik — $B$ dan $AC$ to‘g‘ri chiziqqacha perpendikulyar masofa: $AB \\sin 30^\\circ = 10 \\cdot \\frac{1}{2} = 5$. Yuza $\\frac{1}{2} \\cdot 16 \\cdot 5 = 40$. To‘g‘ri javob A.\n\nB javobda balandlik uchun $\\cos 30^\\circ$ ishlatilgan. C javobda yuza formulasidagi $\\frac{1}{2}$ unutilgan. D javobda ikkala xato ham bor.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "area_trig"
+    ]
+  },
+  {
+    "skill_code": "right_triangles_trigonometry",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "In right triangle $ABC$, angle $C$ is the right angle, and the measure of angle $A$ is less than the measure of angle $B$. Which of the following must be true?",
+    "option_a": "$\\sin A > \\sin B$",
+    "option_b": "$\\sin A < \\cos A$",
+    "option_c": "$\\tan A > 1$",
+    "option_d": "$\\cos B > \\cos A$",
+    "correct": "B",
+    "explanation_en": "The acute angles add to $90^\\circ$, so $A < B$ means $A < 45^\\circ$. Then the leg opposite $A$ ($BC$) is shorter than the leg adjacent to $A$ ($AC$), so $\\frac{BC}{AB} < \\frac{AC}{AB}$, that is, $\\sin A < \\cos A$. Choice B is correct.\n\nChoice A is false: $\\sin B = \\cos A > \\sin A$. Choice C is false: $\\tan A = \\frac{BC}{AC} < 1$. Choice D is false: $\\cos B = \\sin A < \\cos A$.",
+    "explanation_uz": "O‘tkir burchaklar yig‘indisi $90^\\circ$, shuning uchun $A < B$ dan $A < 45^\\circ$ kelib chiqadi. U holda $A$ qarshisidagi katet ($BC$) $A$ ga yopishgan katetdan ($AC$) qisqa, ya’ni $\\frac{BC}{AB} < \\frac{AC}{AB}$, bu $\\sin A < \\cos A$ demakdir. To‘g‘ri javob B.\n\nA noto‘g‘ri: $\\sin B = \\cos A > \\sin A$. C noto‘g‘ri: $\\tan A = \\frac{BC}{AC} < 1$. D noto‘g‘ri: $\\cos B = \\sin A < \\cos A$.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "compare_trig_values"
+    ]
+  },
+  {
+    "skill_code": "right_triangles_trigonometry",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "In a right triangle, $\\theta$ is one of the acute angles and $\\sin\\theta = 0.6$. The hypotenuse of the triangle has length 35. What is the perimeter of the triangle?",
+    "spr_answers": [
+      "84"
+    ],
+    "explanation_en": "The leg opposite $\\theta$ is $0.6 \\cdot 35 = 21$. The other leg is $\\sqrt{35^2 - 21^2} = \\sqrt{1225 - 441} = \\sqrt{784} = 28$. The perimeter is $21 + 28 + 35 = 84$. If you got 49, you added only the two legs.",
+    "explanation_uz": "$\\theta$ qarshisidagi katet $0.6 \\cdot 35 = 21$. Ikkinchi katet $\\sqrt{35^2 - 21^2} = \\sqrt{1225 - 441} = \\sqrt{784} = 28$. Perimetr $21 + 28 + 35 = 84$. Agar 49 chiqqan bo‘lsa, siz faqat ikki katetni qo‘shgansiz.",
+    "estimated_seconds": 100,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "sine_side_lengths"
+    ]
+  },
+  {
+    "skill_code": "right_triangles_trigonometry",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "An isosceles triangle has two sides of length 10, and each of its two base angles measures $30^\\circ$. What is the length of the base of the triangle?",
+    "option_a": "10",
+    "option_b": "$10\\sqrt{2}$",
+    "option_c": "$10\\sqrt{3}$",
+    "option_d": "20",
+    "correct": "C",
+    "explanation_en": "The altitude from the top vertex bisects the base and forms two $30^\\circ$-$60^\\circ$-$90^\\circ$ triangles with hypotenuse 10. Half of the base is the leg adjacent to the $30^\\circ$ angle: $10\\cos 30^\\circ = 10 \\cdot \\frac{\\sqrt{3}}{2} = 5\\sqrt{3}$. The base is $2 \\cdot 5\\sqrt{3} = 10\\sqrt{3}$. Choice C is correct.\n\nChoice A assumes the triangle is equilateral, but its angles are $30^\\circ$, $30^\\circ$, and $120^\\circ$. Choice B uses a $45^\\circ$ ratio. Choice D is the sum of the two equal sides, which would not form a triangle.",
+    "explanation_uz": "Uchidan tushirilgan balandlik asosni teng ikkiga bo‘ladi va gipotenuzasi 10 bo‘lgan ikkita $30^\\circ$-$60^\\circ$-$90^\\circ$ uchburchak hosil qiladi. Asosning yarmi $30^\\circ$ li burchakka yopishgan katet: $10\\cos 30^\\circ = 10 \\cdot \\frac{\\sqrt{3}}{2} = 5\\sqrt{3}$. Asos $2 \\cdot 5\\sqrt{3} = 10\\sqrt{3}$. To‘g‘ri javob C.\n\nA javob uchburchakni teng tomonli deb hisoblaydi, ammo uning burchaklari $30^\\circ$, $30^\\circ$ va $120^\\circ$. B javobda $45^\\circ$ nisbati ishlatilgan. D — ikki teng tomon yig‘indisi; bunday uchburchak mavjud bo‘lmaydi.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "special_right_triangles"
+    ]
+  },
+  {
+    "skill_code": "right_triangles_trigonometry",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "In right triangle $ABC$, angle $C$ is the right angle. Point $D$ lies on $\\overline{AB}$ so that $\\overline{CD}$ is perpendicular to $\\overline{AB}$. If $AC = 15$ and $\\sin B = \\frac{3}{5}$, what is the length of $\\overline{BD}$?",
+    "option_a": "9",
+    "option_b": "12",
+    "option_c": "16",
+    "option_d": "20",
+    "correct": "C",
+    "explanation_en": "In triangle $ABC$, $\\sin B = \\frac{AC}{AB} = \\frac{3}{5}$, so $AB = 25$ and $BC = \\sqrt{25^2 - 15^2} = 20$. Triangle $CBD$ is a right triangle with angle $B$, so $\\cos B = \\frac{BD}{BC}$. Since $\\cos B = \\frac{BC}{AB} = \\frac{4}{5}$, $BD = \\frac{4}{5} \\cdot 20 = 16$. Choice C is correct.\n\nChoice A is $AD = 25 - 16$. Choice B is the altitude $CD$. Choice D is $BC$, the hypotenuse of triangle $CBD$, not the segment $BD$.",
+    "explanation_uz": "$ABC$ uchburchakda $\\sin B = \\frac{AC}{AB} = \\frac{3}{5}$, demak $AB = 25$ va $BC = \\sqrt{25^2 - 15^2} = 20$. $CBD$ — $B$ burchakli to‘g‘ri burchakli uchburchak, shuning uchun $\\cos B = \\frac{BD}{BC}$. $\\cos B = \\frac{BC}{AB} = \\frac{4}{5}$ bo‘lgani uchun $BD = \\frac{4}{5} \\cdot 20 = 16$. To‘g‘ri javob C.\n\nA — bu $AD = 25 - 16$. B — $CD$ balandlik. D — $BC$, ya’ni $CBD$ uchburchakning gipotenuzasi, $BD$ kesma emas.",
+    "estimated_seconds": 130,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "trig_similar_triangles"
+    ]
+  },
+  {
+    "skill_code": "right_triangles_trigonometry",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "In a right triangle, $\\theta$ is one of the acute angles and $\\tan\\theta = 2.4$. What is the value of $\\sin\\theta + \\cos\\theta$?",
+    "spr_answers": [
+      "17/13",
+      "1.307",
+      "1.308"
+    ],
+    "explanation_en": "Write $\\tan\\theta = 2.4 = \\frac{12}{5}$, so the leg opposite $\\theta$ can be 12 and the adjacent leg 5. The hypotenuse is $\\sqrt{12^2 + 5^2} = 13$. Then $\\sin\\theta + \\cos\\theta = \\frac{12}{13} + \\frac{5}{13} = \\frac{17}{13} \\approx 1.3077$. Enter 17/13, 1.307, or 1.308.",
+    "explanation_uz": "$\\tan\\theta = 2.4 = \\frac{12}{5}$ deb yozamiz, demak $\\theta$ qarshisidagi katet 12, yopishgan katet 5 bo‘lishi mumkin. Gipotenuza $\\sqrt{12^2 + 5^2} = 13$. U holda $\\sin\\theta + \\cos\\theta = \\frac{12}{13} + \\frac{5}{13} = \\frac{17}{13} \\approx 1.3077$. Javobni 17/13, 1.307 yoki 1.308 shaklida yozing.",
+    "estimated_seconds": 140,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "tan_to_sin_cos"
+    ]
+  },
+  {
+    "skill_code": "right_triangles_trigonometry",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "In triangle $ABC$, $AB = AC$, $BC = 14$, and the area of the triangle is 168. What is the value of $\\tan B$?",
+    "option_a": "$\\frac{7}{24}$",
+    "option_b": "$\\frac{12}{7}$",
+    "option_c": "$\\frac{24}{25}$",
+    "option_d": "$\\frac{24}{7}$",
+    "correct": "D",
+    "explanation_en": "Let $M$ be the midpoint of $\\overline{BC}$. In an isosceles triangle, $\\overline{AM}$ is the altitude, so $\\frac{1}{2}(14)(AM) = 168$ and $AM = 24$. In right triangle $ABM$, $BM = 7$, so $\\tan B = \\frac{AM}{BM} = \\frac{24}{7}$. Choice D is correct.\n\nChoice A is the reciprocal, $\\frac{BM}{AM}$. Choice B divides the height by the whole base 14. Choice C is $\\sin B$, because $AB = \\sqrt{24^2 + 7^2} = 25$.",
+    "explanation_uz": "$M$ — $\\overline{BC}$ ning o‘rtasi bo‘lsin. Teng yonli uchburchakda $\\overline{AM}$ balandlik, demak $\\frac{1}{2}(14)(AM) = 168$ va $AM = 24$. $ABM$ to‘g‘ri burchakli uchburchakda $BM = 7$, shuning uchun $\\tan B = \\frac{AM}{BM} = \\frac{24}{7}$. To‘g‘ri javob D.\n\nA — teskari nisbat, $\\frac{BM}{AM}$. B javobda balandlik butun asos 14 ga bo‘lingan. C — bu $\\sin B$, chunki $AB = \\sqrt{24^2 + 7^2} = 25$.",
+    "estimated_seconds": 130,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "area_trig_isosceles"
+    ]
+  },
+  {
+    "skill_code": "right_triangles_trigonometry",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "In right triangle $PQR$, angle $Q$ is the right angle and $\\cos P = 0.8$. The length of $\\overline{PR}$ is 9 more than the length of $\\overline{QR}$. What is the length of $\\overline{PQ}$?",
+    "spr_answers": [
+      "18"
+    ],
+    "explanation_en": "Since $\\cos P = \\frac{PQ}{PR} = 0.8 = \\frac{4}{5}$, the sides are in the ratio $PQ : QR : PR = 4 : 3 : 5$. Let $PQ = 4k$, $QR = 3k$, and $PR = 5k$. Then $PR - QR = 2k = 9$, so $k = 4.5$ and $PQ = 4(4.5) = 18$. If you got 22.5, you found $PR$; if you got 13.5, you found $QR$.",
+    "explanation_uz": "$\\cos P = \\frac{PQ}{PR} = 0.8 = \\frac{4}{5}$ bo‘lgani uchun tomonlar nisbati $PQ : QR : PR = 4 : 3 : 5$. $PQ = 4k$, $QR = 3k$, $PR = 5k$ bo‘lsin. U holda $PR - QR = 2k = 9$, demak $k = 4.5$ va $PQ = 4(4.5) = 18$. Agar 22.5 chiqqan bo‘lsa, $PR$ ni; 13.5 chiqqan bo‘lsa, $QR$ ni topgansiz.",
+    "estimated_seconds": 140,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "trig_ratio_algebra"
+    ]
+  }
+]

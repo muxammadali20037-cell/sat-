@@ -1,0 +1,338 @@
+[
+  {
+    "skill_code": "form_structure_sense",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Weaver birds build woven nests of grass that hang from the tips of thin branches, often directly over water. The nests of the village weaver, which ties each strand in place with its beak and feet, ______ very difficult for snakes and other predators to reach.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "option_a": "is",
+    "option_b": "are",
+    "option_c": "was",
+    "option_d": "has been",
+    "correct": "B",
+    "explanation_en": "The subject of the main clause is the plural noun “nests,” not “village weaver” or the singular words inside the “which” clause. A plural subject needs a plural verb, and the passage is written in the present tense, so “are” (choice B) is correct.\n\nChoices A, C, and D are all singular verbs (“is,” “was,” “has been”), which would agree with “weaver” rather than with the true subject, “nests.” Choice C is also in the past tense, which does not fit the present-tense description.",
+    "explanation_uz": "Bosh gapning egasi — ko‘plikdagi “nests,” “village weaver” yoki “which” ergash gapidagi birlikdagi so‘zlar emas. Ko‘plikdagi egaga ko‘plikdagi fe’l kerak, matn esa hozirgi zamonda yozilgan, shuning uchun “are” (B) to‘g‘ri.\n\nA, C va D — birlikdagi fe’llar (“is,” “was,” “has been”); ular haqiqiy ega “nests” bilan emas, “weaver” bilan moslashadi. C bundan tashqari o‘tgan zamonda, bu hozirgi zamondagi tasvirga mos kelmaydi.",
+    "estimated_seconds": 45,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "sva-interrupter"
+    ]
+  },
+  {
+    "skill_code": "form_structure_sense",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "To study how imagination develops, psychologist Hana Okafor asked 120 children between the ages of four and nine to draw an animal that does not exist. Many of the ______ drawings combined parts of familiar animals, such as a fish with bird wings, while the older children more often invented entirely new body shapes.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "option_a": "childrens'",
+    "option_b": "childrens",
+    "option_c": "children",
+    "option_d": "children's",
+    "correct": "D",
+    "explanation_en": "The blank needs the plural possessive of “child”: the drawings belong to the children. “Children” is an irregular plural that does not end in -s, so its possessive is formed by adding 's: “children's” (choice D).\n\nChoice A adds -s and an apostrophe to a word that is already plural; “childrens” is not an English word. Choice B has the same error and is also not possessive. Choice C is plural but not possessive, so it does not show that the drawings belong to the children.",
+    "explanation_uz": "Bo‘sh joyga “child” so‘zining ko‘plikdagi qaratqich shakli kerak: rasmlar bolalarga tegishli. “Children” — -s bilan tugamaydigan noqonuniy ko‘plik shakli, shuning uchun uning qaratqich shakli 's qo‘shib yasaladi: “children's” (D).\n\nA allaqachon ko‘plikdagi so‘zga -s va apostrof qo‘shadi; “childrens” degan so‘z ingliz tilida yo‘q. B da ham xuddi shu xato bor va u qaratqich shaklda ham emas. C ko‘plikda, lekin qaratqich shaklda emas, shuning uchun rasmlar bolalarga tegishli ekanini ko‘rsatmaydi.",
+    "estimated_seconds": 45,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "plural-possessive-irregular"
+    ]
+  },
+  {
+    "skill_code": "form_structure_sense",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Strong winds carry salt and dust from the dried-up bed of the Aral Sea across the surrounding region. To help hold the soil in place, last spring a group of volunteers ______ about 2,000 saxaul seedlings on a stretch of the exposed seabed. By autumn, most of the young shrubs had taken root.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "option_a": "plants",
+    "option_b": "will plant",
+    "option_c": "planted",
+    "option_d": "has been planting",
+    "correct": "C",
+    "explanation_en": "The phrase “last spring” shows that the planting happened at a specific time in the past, and the next sentence (“By autumn, most of the young shrubs had taken root”) confirms that it is finished. The simple past tense, “planted” (choice C), is correct.\n\nChoice A, “plants,” is present tense. Choice B, “will plant,” is future tense. Choice D, “has been planting,” describes an action continuing up to the present, which conflicts with the completed action at a specific past time.",
+    "explanation_uz": "“last spring” birikmasi ekish o‘tmishdagi aniq bir vaqtda bo‘lganini ko‘rsatadi, keyingi gap (“By autumn, most of the young shrubs had taken root”) esa bu ish tugaganini tasdiqlaydi. Oddiy o‘tgan zamon — “planted” (C) to‘g‘ri.\n\nA — “plants” hozirgi zamon. B — “will plant” kelasi zamon. D — “has been planting” hozirgacha davom etayotgan harakatni bildiradi, bu o‘tmishdagi aniq vaqtda tugagan harakatga zid.",
+    "estimated_seconds": 45,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "tense-time-marker"
+    ]
+  },
+  {
+    "skill_code": "form_structure_sense",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "The small energy company Lumora sells solar lanterns to families in villages without electricity. After customers complained that the lanterns' batteries wore out too quickly, the company redesigned ______ lanterns so that the batteries could be replaced without special tools.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "option_a": "it's",
+    "option_b": "their",
+    "option_c": "its",
+    "option_d": "they're",
+    "correct": "C",
+    "explanation_en": "The pronoun refers to “the company,” which is a singular noun, and it must show possession (the company's lanterns). The singular possessive pronoun is “its,” so choice C is correct.\n\nChoice A, “it's,” is a contraction of “it is” or “it has,” not a possessive. Choice B, “their,” is plural and does not agree with the singular “company.” Choice D, “they're,” is a contraction of “they are.”",
+    "explanation_uz": "Olmosh birlikdagi “the company” ga ishora qiladi va egalikni ko‘rsatishi kerak (kompaniyaning chiroqlari). Birlikdagi egalik olmoshi — “its,” shuning uchun to‘g‘ri javob C.\n\nA — “it's” “it is” yoki “it has” ning qisqartmasi, egalik olmoshi emas. B — “their” ko‘plikda, birlikdagi “company” bilan moslashmaydi. D — “they're” esa “they are” ning qisqartmasi.",
+    "estimated_seconds": 45,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "pronoun-its-their"
+    ]
+  },
+  {
+    "skill_code": "form_structure_sense",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "The Gur-e-Amir mausoleum in Samarkand, with its ribbed turquoise dome, was completed in the early fifteenth century. Inside the main chamber, a large block of dark green jade ______ the burial place of the conqueror Timur.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "option_a": "marks",
+    "option_b": "marking",
+    "option_c": "to mark",
+    "option_d": "having marked",
+    "correct": "A",
+    "explanation_en": "The second sentence has a subject, “a large block of dark green jade,” but no main verb. The blank must supply a finite verb that can serve as the sentence's main verb, so “marks” (choice A) is correct.\n\nChoices B (“marking”), C (“to mark”), and D (“having marked”) are nonfinite forms—a participle, an infinitive, and a perfect participle. None of them can act as the main verb of a sentence, so each leaves the sentence as a fragment.",
+    "explanation_uz": "Ikkinchi gapda ega (“a large block of dark green jade”) bor, ammo bosh kesim yo‘q. Bo‘sh joyga gapning bosh kesimi bo‘la oladigan shaxsli (finite) fe’l kerak, shuning uchun “marks” (A) to‘g‘ri.\n\nB (“marking”), C (“to mark”) va D (“having marked”) — shaxssiz (nonfinite) shakllar: sifatdosh, infinitiv va tugallangan sifatdosh. Ularning hech biri gapning bosh kesimi bo‘la olmaydi, shuning uchun gap to‘liq bo‘lmay qoladi.",
+    "estimated_seconds": 45,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "finite-verb-needed"
+    ]
+  },
+  {
+    "skill_code": "form_structure_sense",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "A network of automatic weather stations is spread across the mountain valleys of the national park. The readings from each weather ______ sent by radio to the park's central office twice a day, where forecasters use them to warn hikers about sudden storms.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "option_a": "station are",
+    "option_b": "station is",
+    "option_c": "station was",
+    "option_d": "station has been",
+    "correct": "A",
+    "explanation_en": "The subject of the sentence is the plural noun “readings”; “from each weather station” is only a prepositional phrase describing them. A plural subject needs a plural verb, and the passage describes a regular, present-day routine, so “are” (choice A) is correct.\n\nChoices B, C, and D use singular verbs (“is,” “was,” “has been”) that agree with “station,” the noun closest to the verb, rather than with the true subject, “readings.” Choice C is also in the past tense, which does not fit the present-tense routine.",
+    "explanation_uz": "Gapning egasi — ko‘plikdagi “readings”; “from each weather station” esa uni tasvirlovchi predlogli birikma xolos. Ko‘plikdagi egaga ko‘plikdagi fe’l kerak, matn esa hozirgi muntazam jarayonni tasvirlaydi, shuning uchun “are” (A) to‘g‘ri.\n\nB, C va D birlikdagi fe’llardan (“is,” “was,” “has been”) foydalanadi; ular haqiqiy ega “readings” bilan emas, fe’lga eng yaqin turgan “station” bilan moslashadi. C bundan tashqari o‘tgan zamonda, bu hozirgi muntazam jarayonga mos emas.",
+    "estimated_seconds": 45,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "sva-of-phrase"
+    ]
+  },
+  {
+    "skill_code": "form_structure_sense",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "In 2007, the African Union launched the Great Green Wall initiative, a project ______ to restore degraded land in a broad belt across the Sahel region, from Senegal in the west to Djibouti in the east.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "option_a": "intends",
+    "option_b": "is intended",
+    "option_c": "intended",
+    "option_d": "was intended",
+    "correct": "C",
+    "explanation_en": "The sentence already has a subject and a main verb: “the African Union launched.” The phrase that follows, “a project ___ to restore degraded land …,” describes the initiative, so the blank needs a nonfinite form that can modify “project.” The participle “intended” (choice C) does this: “a project intended to restore degraded land.”\n\nChoices A (“intends”), B (“is intended”), and D (“was intended”) are finite verbs. Adding any of them would create a second main clause attached to the first with only a comma, and the sentence would no longer be grammatical.",
+    "explanation_uz": "Gapda allaqachon ega va bosh kesim bor: “the African Union launched.” Undan keyingi “a project ___ to restore degraded land …” birikmasi tashabbusni tasvirlaydi, shuning uchun bo‘sh joyga “project” ni aniqlay oladigan shaxssiz (nonfinite) shakl kerak. “intended” sifatdoshi (C) aynan shu vazifani bajaradi: “a project intended to restore degraded land.”\n\nA (“intends”), B (“is intended”) va D (“was intended”) — shaxsli fe’llar. Ularning birortasi qo‘yilsa, birinchi gapga faqat vergul bilan ulangan ikkinchi bosh gap hosil bo‘ladi va gap grammatik jihatdan noto‘g‘ri bo‘lib qoladi.",
+    "estimated_seconds": 55,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "nonfinite-modifier"
+    ]
+  },
+  {
+    "skill_code": "form_structure_sense",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Cracks have appeared in the concrete of the city's sixty-year-old dam. The team of engineers, geologists, and hydrologists that the city hired to study the structure ______ that the dam be reinforced before the spring floods arrive.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "option_a": "has recommended",
+    "option_b": "have recommended",
+    "option_c": "are recommending",
+    "option_d": "recommend",
+    "correct": "A",
+    "explanation_en": "The subject of the second sentence is “team,” a singular collective noun. The plural nouns “engineers, geologists, and hydrologists” are part of a prepositional phrase that describes the team, and the “that” clause also describes it. A singular subject needs a singular verb, so “has recommended” (choice A) is correct.\n\nChoices B (“have recommended”), C (“are recommending”), and D (“recommend”) are plural verbs. They agree with the nearby plural nouns in the list rather than with the true subject, “team.”",
+    "explanation_uz": "Ikkinchi gapning egasi — birlikdagi jamlovchi ot “team.” Ko‘plikdagi “engineers, geologists, and hydrologists” jamoani tasvirlovchi predlogli birikmaning bir qismi, “that” ergash gapi ham uni tasvirlaydi. Birlikdagi egaga birlikdagi fe’l kerak, shuning uchun “has recommended” (A) to‘g‘ri.\n\nB (“have recommended”), C (“are recommending”) va D (“recommend”) — ko‘plikdagi fe’llar. Ular haqiqiy ega “team” bilan emas, ro‘yxatdagi yaqin turgan ko‘plikdagi otlar bilan moslashadi.",
+    "estimated_seconds": 55,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "sva-collective-noun"
+    ]
+  },
+  {
+    "skill_code": "form_structure_sense",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Seed banks store seeds at low temperatures so that rare plant varieties are not lost. To find out how long such seeds stay alive, a research team tested samples of wild wheat that had been placed in storage decades earlier. Stored in a cool, dark vault since ______",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "option_a": "1983, the researchers found that the wild wheat seeds still sprouted when planted in 2023.",
+    "option_b": "1983, the wild wheat seeds' ability to sprout surprised the researchers when they planted them in 2023.",
+    "option_c": "1983, sprouting still occurred when the researchers planted the wild wheat seeds in 2023.",
+    "option_d": "1983, the wild wheat seeds still sprouted when the researchers planted them in 2023.",
+    "correct": "D",
+    "explanation_en": "The opening phrase “Stored in a cool, dark vault since 1983” must be followed immediately by the noun that was stored. The seeds were stored, so choice D, which places “the wild wheat seeds” right after the comma, is correct.\n\nChoice A makes it seem that the researchers were stored in the vault. Choice B makes the seeds' “ability to sprout” the thing that was stored. Choice C makes “sprouting” the thing that was stored. In each case, the modifier dangles because the word after the comma is not what was stored.",
+    "explanation_uz": "Kirish birikmasi “Stored in a cool, dark vault since 1983” dan keyin darhol saqlangan narsani bildiruvchi ot kelishi kerak. Saqlangan narsa — urug‘lar, shuning uchun vergul ortidan “the wild wheat seeds” ni qo‘yadigan D to‘g‘ri.\n\nA tadqiqotchilar omborda saqlangandek ko‘rsatadi. B saqlangan narsa urug‘larning “unib chiqish qobiliyati” bo‘lib qoladi. C da saqlangan narsa “sprouting” (unib chiqish) bo‘lib qoladi. Har uchala holatda ham vergul ortidagi so‘z saqlangan narsa emas, shuning uchun aniqlovchi “osilib” qoladi (dangling modifier).",
+    "estimated_seconds": 55,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "dangling-modifier"
+    ]
+  },
+  {
+    "skill_code": "form_structure_sense",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "In 2009, a handful of neighbors began clearing trash from an empty lot and planting vegetables there. Since its founding that year, the volunteer group ______ more than forty abandoned lots across the city into community gardens, and it continues to add new sites every season.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "option_a": "turns",
+    "option_b": "will turn",
+    "option_c": "has turned",
+    "option_d": "had turned",
+    "correct": "C",
+    "explanation_en": "The phrase “Since its founding that year” describes an action that began in the past and continues up to the present, and the sentence goes on to say that the group “continues to add new sites.” The present perfect tense, “has turned” (choice C), expresses exactly this.\n\nChoice A, “turns,” is the simple present, which does not connect the past starting point to the present. Choice B, “will turn,” is future tense. Choice D, “had turned,” is past perfect, which describes an action completed before another past event and conflicts with “continues.”",
+    "explanation_uz": "“Since its founding that year” birikmasi o‘tmishda boshlanib, hozirgacha davom etayotgan harakatni bildiradi, gap davomida esa guruh “continues to add new sites” deyiladi. Aynan shuni hozirgi tugallangan zamon (present perfect) — “has turned” (C) ifodalaydi.\n\nA — “turns” oddiy hozirgi zamon, u o‘tmishdagi boshlanish nuqtasini hozirgi vaqt bilan bog‘lamaydi. B — “will turn” kelasi zamon. D — “had turned” o‘tgan tugallangan zamon (past perfect), u o‘tmishdagi boshqa voqeadan oldin tugagan harakatni bildiradi va “continues” ga zid.",
+    "estimated_seconds": 55,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "tense-present-perfect"
+    ]
+  },
+  {
+    "skill_code": "form_structure_sense",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Unlike orb-weaving spiders, which build webs and wait for insects to fly into them, jumping spiders stalk and pounce on their prey. To judge the distance of a jump accurately, these hunters rely on sight: ______ two large forward-facing eyes give them unusually sharp vision for animals of their size.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "option_a": "its",
+    "option_b": "their",
+    "option_c": "they're",
+    "option_d": "there",
+    "correct": "B",
+    "explanation_en": "The pronoun refers to “these hunters,” that is, the jumping spiders, which is plural. The eyes belong to the spiders, so a plural possessive pronoun is needed: “their” (choice B).\n\nChoice A, “its,” is singular and does not agree with the plural “hunters.” Choice C, “they're,” is a contraction of “they are,” not a possessive. Choice D, “there,” indicates a place or begins a “there is/are” sentence; it does not show possession.",
+    "explanation_uz": "Olmosh “these hunters,” ya’ni ko‘plikdagi sakrovchi o‘rgimchaklarga ishora qiladi. Ko‘zlar o‘rgimchaklarga tegishli, shuning uchun ko‘plikdagi egalik olmoshi kerak: “their” (B).\n\nA — “its” birlikda, ko‘plikdagi “hunters” bilan moslashmaydi. C — “they're” “they are” ning qisqartmasi, egalik olmoshi emas. D — “there” joyni bildiradi yoki “there is/are” gapini boshlaydi; egalikni ko‘rsatmaydi.",
+    "estimated_seconds": 55,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "pronoun-antecedent"
+    ]
+  },
+  {
+    "skill_code": "form_structure_sense",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Historians who study medieval trade routes often visit the city archive. One of the oldest surviving maps of the region, drawn in ink on cotton paper by an unknown fifteenth-century traveler, ______ there in a climate-controlled case.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "option_a": "are kept",
+    "option_b": "were kept",
+    "option_c": "have been kept",
+    "option_d": "is kept",
+    "correct": "D",
+    "explanation_en": "The subject of the second sentence is “One,” which is singular; “of the oldest surviving maps of the region” is a prepositional phrase, and “drawn in ink …” is a descriptive phrase. A singular subject needs a singular verb, and the first sentence describes the present, so “is kept” (choice D) is correct.\n\nChoices A (“are kept”), B (“were kept”), and C (“have been kept”) are plural verbs that agree with “maps” instead of with the true subject, “One.” Choice B is also in the past tense, which conflicts with the present-tense context.",
+    "explanation_uz": "Ikkinchi gapning egasi — birlikdagi “One”; “of the oldest surviving maps of the region” — predlogli birikma, “drawn in ink …” esa tasvirlovchi birikma. Birlikdagi egaga birlikdagi fe’l kerak, birinchi gap esa hozirgi zamonni tasvirlaydi, shuning uchun “is kept” (D) to‘g‘ri.\n\nA (“are kept”), B (“were kept”) va C (“have been kept”) — ko‘plikdagi fe’llar; ular haqiqiy ega “One” bilan emas, “maps” bilan moslashadi. B bundan tashqari o‘tgan zamonda, bu hozirgi zamon kontekstiga zid.",
+    "estimated_seconds": 55,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "sva-one-of"
+    ]
+  },
+  {
+    "skill_code": "form_structure_sense",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "For years, a small portrait of a merchant in a fur-trimmed coat was listed in the museum's catalog as the work of an unknown painter. Having examined the panel under ultraviolet light, ______",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "option_a": "the painting's hidden signature was discovered by the conservators beneath a layer of old varnish.",
+    "option_b": "a hidden signature beneath a layer of old varnish became visible to the conservators.",
+    "option_c": "conservation work revealed a hidden signature beneath a layer of old varnish.",
+    "option_d": "the conservators discovered a hidden signature beneath a layer of old varnish.",
+    "correct": "D",
+    "explanation_en": "The opening phrase “Having examined the panel under ultraviolet light” describes people who did the examining. The noun that follows the comma must name those people, so choice D, which begins with “the conservators,” is correct.\n\nChoice A places “the painting's hidden signature” after the comma, suggesting that the signature examined the panel; the passive voice hides the real actors. Choice B suggests that “a hidden signature” did the examining. Choice C suggests that “conservation work,” an activity rather than a person, examined the panel. In each, the modifier dangles.",
+    "explanation_uz": "Kirish birikmasi “Having examined the panel under ultraviolet light” tekshirishni bajargan shaxslarni tasvirlaydi. Verguldan keyingi ot aynan shu shaxslarni nomlashi kerak, shuning uchun “the conservators” bilan boshlanadigan D to‘g‘ri.\n\nA verguldan keyin “the painting's hidden signature” ni qo‘yadi — go‘yo panelni imzo tekshirgandek; majhul nisbat haqiqiy bajaruvchilarni yashiradi. B da panelni “a hidden signature” tekshirgandek ko‘rinadi. C da tekshiruvchi shaxs emas, faoliyat — “conservation work” bo‘lib qoladi. Har bir holatda aniqlovchi “osilib” qoladi (dangling modifier).",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "dangling-modifier"
+    ]
+  },
+  {
+    "skill_code": "form_structure_sense",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Divers exploring a ship that sank off the coast of Sicily in the 1600s have recovered thousands of objects, most of them ordinary goods rather than treasure. Among the most informative items brought up from the wreck so far ______ a brass navigational instrument, a set of lead weights, and several dozen glazed bowls stacked as cargo.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "option_a": "were",
+    "option_b": "was",
+    "option_c": "is",
+    "option_d": "has been",
+    "correct": "A",
+    "explanation_en": "This sentence is inverted: the verb comes before its subject. The subject is the compound list “a brass navigational instrument, a set of lead weights, and several dozen glazed bowls,” which is plural, and the context describes completed recoveries. The plural verb “were” (choice A) agrees with this subject.\n\nChoices B (“was”), C (“is”), and D (“has been”) are singular. They might seem to agree with “the wreck,” the singular noun closest to the blank, or with the first item in the list, but the subject is all three items together.",
+    "explanation_uz": "Bu gapda tartib teskari: kesim egadan oldin keladi. Ega — ko‘plikdagi uyushiq ro‘yxat “a brass navigational instrument, a set of lead weights, and several dozen glazed bowls,” kontekst esa topib olingan narsalarni tasvirlaydi. Bu egaga ko‘plikdagi “were” (A) mos keladi.\n\nB (“was”), C (“is”) va D (“has been”) — birlikdagi fe’llar. Ular bo‘sh joyga eng yaqin turgan birlikdagi “the wreck” yoki ro‘yxatdagi birinchi narsa bilan moslashgandek tuyulishi mumkin, lekin ega uchala narsaning hammasi birgalikda.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "sva-inverted"
+    ]
+  },
+  {
+    "skill_code": "form_structure_sense",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "When an insect lands on the sensitive plant, its leaflets snap shut in seconds. Plants of the genus *Mimosa*, whose feathery leaves fold inward and droop soon after being touched or shaken, ______ this rapid movement by quickly shifting water out of swollen cells at the base of each leaflet.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "option_a": "producing",
+    "option_b": "produce",
+    "option_c": "which produce",
+    "option_d": "having produced",
+    "correct": "B",
+    "explanation_en": "The second sentence's subject is “Plants of the genus *Mimosa*.” The long “whose” clause that follows contains its own verbs (“fold,” “droop”), but these belong to the clause, not to the main sentence. The main clause still needs a finite verb, so “produce” (choice B) is correct; it is also plural, agreeing with “Plants.”\n\nChoice A (“producing”) and choice D (“having produced”) are participles, which cannot serve as the main verb, leaving the sentence a fragment. Choice C (“which produce”) creates a second relative clause, so the sentence still has no main verb.",
+    "explanation_uz": "Ikkinchi gapning egasi — “Plants of the genus *Mimosa*.” Undan keyingi uzun “whose” ergash gapida o‘z fe’llari (“fold,” “droop”) bor, lekin ular bosh gapga emas, ergash gapga tegishli. Bosh gapga hali ham shaxsli fe’l kerak, shuning uchun “produce” (B) to‘g‘ri; u ko‘plikda ham bo‘lib, “Plants” bilan moslashadi.\n\nA (“producing”) va D (“having produced”) — sifatdoshlar, ular bosh kesim bo‘la olmaydi va gap to‘liq bo‘lmay qoladi. C (“which produce”) yana bir nisbiy ergash gap hosil qiladi, shuning uchun gapda baribir bosh kesim bo‘lmaydi.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "finite-verb-long-subject"
+    ]
+  },
+  {
+    "skill_code": "form_structure_sense",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Ancient teeth and bones hold chemical traces of what people once ate. Reconstructing the diets of people who lived thousands of years ago, using isotopes preserved in their teeth and bones, ______ researchers to combine laboratory methods from chemistry with careful excavation techniques from archaeology.",
+    "stem": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+    "option_a": "require",
+    "option_b": "requires",
+    "option_c": "have required",
+    "option_d": "are requiring",
+    "correct": "B",
+    "explanation_en": "The subject of the second sentence is the gerund phrase “Reconstructing the diets of people who lived thousands of years ago.” A gerund phrase acts as a single thing and takes a singular verb, so “requires” (choice B) is correct. The plural nouns “diets,” “people,” “isotopes,” “teeth,” and “bones” are all inside the subject phrase or the interrupting phrase and do not control the verb.\n\nChoices A (“require”), C (“have required”), and D (“are requiring”) are plural verbs that wrongly agree with one of those nearby plural nouns.",
+    "explanation_uz": "Ikkinchi gapning egasi — gerundli birikma “Reconstructing the diets of people who lived thousands of years ago.” Gerundli birikma bitta harakatni bildiradi va birlikdagi fe’l talab qiladi, shuning uchun “requires” (B) to‘g‘ri. Ko‘plikdagi “diets,” “people,” “isotopes,” “teeth” va “bones” otlari ega birikmasi yoki kiritma birikma ichida joylashgan va fe’lning shaklini belgilamaydi.\n\nA (“require”), C (“have required”) va D (“are requiring”) — ko‘plikdagi fe’llar; ular yaqin turgan ko‘plikdagi otlardan biri bilan noto‘g‘ri moslashadi.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "sva-gerund-subject"
+    ]
+  }
+]

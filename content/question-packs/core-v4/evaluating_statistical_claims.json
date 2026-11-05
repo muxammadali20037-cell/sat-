@@ -1,0 +1,300 @@
+[
+  {
+    "skill_code": "evaluating_statistical_claims",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "A town council wants to estimate how many hours per week the adult residents of the town exercise. A council member surveyed 150 adults as they were leaving the town's largest fitness center one evening. Which of the following is the best reason the results of this survey may not be used to draw a valid conclusion about all adult residents of the town?",
+    "option_a": "The survey was given in the evening instead of in the morning.",
+    "option_b": "A sample of 150 adults is too small to give any information about the town.",
+    "option_c": "Adults leaving a fitness center are likely to exercise more than typical adult residents of the town.",
+    "option_d": "Some of the adults surveyed may not have answered honestly.",
+    "correct": "C",
+    "explanation_en": "The sample was chosen from people at a fitness center, who are not representative of all adults in the town: they are very likely to exercise more than a typical resident, so the survey would overestimate exercise time. This is a biased (convenience) sample. Choice A is a minor detail compared with who was sampled. Choice B is wrong because a properly selected random sample of 150 adults could give useful information. Choice D could be a concern in any survey, but the main flaw here is how the sample was chosen.",
+    "explanation_uz": "Tanlanma fitnes markazidagi odamlardan olingan, ular shaharning barcha kattalarini ifodalamaydi: ular oddiy aholidan ko‘ra ko‘proq shug‘ullanishi ehtimoli juda yuqori, shuning uchun so‘rovnoma mashg‘ulot vaqtini oshirib ko‘rsatadi. Bu — xolis bo‘lmagan (qulaylik bo‘yicha olingan) tanlanma. A javob kim tanlanganiga nisbatan ahamiyatsiz tafsilot. B javob noto‘g‘ri, chunki to‘g‘ri tanlangan 150 kishilik tasodifiy tanlanma foydali ma’lumot berishi mumkin. D javob har qanday so‘rovnomada uchrashi mumkin bo‘lgan muammo, lekin bu yerdagi asosiy kamchilik — tanlanmaning qanday olingani.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "sampling bias"
+    ]
+  },
+  {
+    "skill_code": "evaluating_statistical_claims",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "A researcher selected a random sample of 600 adults in a city and asked each adult how many servings of fruit they eat per day and how many days they were sick during the past year. The adults who ate more fruit tended to report fewer sick days. Which of the following conclusions is best supported by this study?",
+    "option_a": "Eating more fruit causes adults in the city to have fewer sick days.",
+    "option_b": "Among adults in the city, eating more fruit is associated with having fewer sick days.",
+    "option_c": "Having fewer sick days causes adults in the city to eat more fruit.",
+    "option_d": "There is no relationship between eating fruit and sick days for adults in the city.",
+    "correct": "B",
+    "explanation_en": "Because the sample was selected at random from the adults in the city, the association found in the sample can be generalized to all adults in the city. However, this is an observational study: the adults were not randomly assigned to eat different amounts of fruit, so it cannot show cause and effect. Other factors, such as general lifestyle, could explain both. Choices A and C make causal claims that the study cannot support. Choice D contradicts the association that was found.",
+    "explanation_uz": "Tanlanma shahar kattalaridan tasodifiy olingani uchun tanlanmada topilgan bog‘liqlikni shaharning barcha kattalariga umumlashtirish mumkin. Biroq bu kuzatuv tadqiqoti: kattalar turli miqdorda meva yeyishga tasodifiy taqsimlanmagan, shuning uchun u sabab-oqibat bog‘lanishini ko‘rsata olmaydi. Umumiy turmush tarzi kabi boshqa omillar ikkalasini ham tushuntirishi mumkin. A va C javoblar tadqiqot asoslay olmaydigan sababiy da’volarni qiladi. D javob topilgan bog‘liqlikka zid.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "association vs causation"
+    ]
+  },
+  {
+    "skill_code": "evaluating_statistical_claims",
+    "difficulty": "easy",
+    "question_type": "spr",
+    "stem": "In an experiment, 80 tomato plants were randomly assigned to two groups of 40 plants each. One group was given a new fertilizer, and the other group was not. At the end of the season, the plants given the new fertilizer produced a total of 96 kilograms of tomatoes, and the other plants produced a total of 78 kilograms. Based on this experiment, how many more kilograms of tomatoes per plant, on average, did the plants given the new fertilizer produce?",
+    "spr_answers": [
+      "0.45",
+      ".45",
+      "9/20"
+    ],
+    "explanation_en": "The mean for the fertilizer group is $\\frac{96}{40} = 2.4$ kilograms per plant, and the mean for the other group is $\\frac{78}{40} = 1.95$ kilograms per plant. The difference is $2.4 - 1.95 = 0.45$ kilogram per plant. Answering 18 gives the difference in the total amounts, not per plant. Enter 0.45 or 9/20.",
+    "explanation_uz": "O‘g‘it berilgan guruhning o‘rtachasi $\\frac{96}{40} = 2.4$ kilogramm/tup, ikkinchi guruhniki $\\frac{78}{40} = 1.95$ kilogramm/tup. Farq $2.4 - 1.95 = 0.45$ kilogramm/tup. 18 deb javob berish har bir tupga emas, umumiy miqdorlar farqini beradi. Javob: 0.45 yoki 9/20.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "experiment results"
+    ]
+  },
+  {
+    "skill_code": "evaluating_statistical_claims",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "A city library selected a random sample of 400 people from its list of all registered library members and asked how many books they had borrowed in the past month. The mean number of books for the sample was 3.1. To which of the following groups can the results of this survey most appropriately be generalized?",
+    "option_a": "All registered members of the city library",
+    "option_b": "All residents of the city",
+    "option_c": "All people who read books in the city",
+    "option_d": "Only the 400 people in the sample",
+    "correct": "A",
+    "explanation_en": "The sample was selected at random from the list of all registered members of the library, so the results can be generalized to that population. Choices B and C are too broad: residents who are not library members, including people who buy books instead of borrowing them, had no chance of being selected. Choice D is too narrow, because random sampling allows conclusions about the whole population the sample was drawn from.",
+    "explanation_uz": "Tanlanma kutubxonaning barcha ro‘yxatdagi a’zolari orasidan tasodifiy olingan, shuning uchun natijalarni aynan shu to‘plamga umumlashtirish mumkin. B va C javoblar juda keng: kutubxona a’zosi bo‘lmagan aholi, jumladan kitobni olib o‘qish o‘rniga sotib oladiganlar tanlanishga imkoniga ega bo‘lmagan. D javob juda tor, chunki tasodifiy tanlash tanlanma olingan butun to‘plam haqida xulosa chiqarishga imkon beradi.",
+    "estimated_seconds": 50,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "generalization"
+    ]
+  },
+  {
+    "skill_code": "evaluating_statistical_claims",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "A large company with 3,000 employees wants to estimate the percentage of its employees who would use a new on-site day care center. Which of the following methods of choosing a sample is most likely to give an unbiased estimate?",
+    "option_a": "Surveying the first 100 employees who arrive at work on Monday",
+    "option_b": "Surveying 100 employees who are selected at random from a list of all 3,000 employees",
+    "option_c": "Posting the survey online and using the first 100 responses",
+    "option_d": "Surveying 100 employees who already have young children",
+    "correct": "B",
+    "explanation_en": "Selecting employees at random from a list of all employees gives every employee the same chance of being chosen, so the sample is likely to represent the whole company. Choice A depends on arrival time, which may be related to having children to drop off. Choice C uses volunteers, who may care more about the topic than other employees. Choice D chooses only employees who are the most likely to want day care, so it would overestimate the percentage.",
+    "explanation_uz": "Barcha xodimlar ro‘yxatidan tasodifiy tanlash har bir xodimga tanlanish uchun bir xil imkoniyat beradi, shuning uchun tanlanma butun kompaniyani ifodalashi ehtimoli yuqori. A javob ishga kelish vaqtiga bog‘liq, bu esa farzandini bog‘chaga olib borish zarurati bilan bog‘liq bo‘lishi mumkin. C javob ko‘ngillilardan foydalanadi, ular mavzuga boshqa xodimlardan ko‘ra ko‘proq qiziqishi mumkin. D javob faqat bog‘chaga eng ko‘p ehtiyoji bor xodimlarni tanlaydi, shuning uchun foizni oshirib ko‘rsatadi.",
+    "estimated_seconds": 50,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "sampling method"
+    ]
+  },
+  {
+    "skill_code": "evaluating_statistical_claims",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "A city selected a random sample of 500 residents to learn their opinions about a plan to close a street in the city center to cars. Each resident in the sample was asked, \"Don't you agree that closing the street to cars will make the city center cleaner and safer?\" Of the residents surveyed, 82% answered yes. Which of the following is the best reason the result may not accurately reflect the opinions of all residents of the city?",
+    "option_a": "The sample was selected at random.",
+    "option_b": "The wording of the question encourages residents to answer yes.",
+    "option_c": "The sample size of 500 is too large.",
+    "option_d": "Residents of the city center were able to be selected for the sample.",
+    "correct": "B",
+    "explanation_en": "The question describes only benefits of the plan and is phrased to suggest the answer \"yes\" (\"Don't you agree…\"). Such a leading question can make the percentage who answer yes higher than the true level of support. Choice A is a strength of the survey, not a weakness. Choice C is wrong because a larger sample does not cause bias. Choice D is wrong because residents of the city center are part of the population and should have a chance to be selected.",
+    "explanation_uz": "Savol rejaning faqat foydali tomonlarini aytadi va \"ha\" javobiga undaydigan tarzda tuzilgan (\"Qo‘shilmaysizmi…\"). Bunday yo‘naltiruvchi savol \"ha\" deb javob berganlar foizini haqiqiy qo‘llab-quvvatlashdan yuqori qilib ko‘rsatishi mumkin. A javob — so‘rovnomaning kamchiligi emas, kuchli tomoni. C javob noto‘g‘ri, chunki kattaroq tanlanma xatolikka olib kelmaydi. D javob noto‘g‘ri, chunki shahar markazi aholisi to‘plamning bir qismi va ular ham tanlanish imkoniga ega bo‘lishi kerak.",
+    "estimated_seconds": 50,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "question wording"
+    ]
+  },
+  {
+    "skill_code": "evaluating_statistical_claims",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "A researcher recruited 90 adults who responded to an advertisement for a study on memory. The researcher randomly assigned 45 of the adults to sleep at least 8 hours each night for two weeks and the other 45 adults to sleep their usual amount. At the end of the two weeks, the adults who slept at least 8 hours scored significantly higher on a memory test. Which of the following is the most appropriate conclusion?",
+    "option_a": "Sleeping at least 8 hours each night causes better memory test scores for all adults.",
+    "option_b": "Sleeping at least 8 hours each night is likely to cause better memory test scores for adults similar to those in the study.",
+    "option_c": "Sleeping at least 8 hours each night is associated with better memory test scores, but no cause-and-effect conclusion is possible.",
+    "option_d": "No conclusion is possible, because the adults were not selected at random.",
+    "correct": "B",
+    "explanation_en": "Because the adults were **randomly assigned** to the two groups, the difference in scores can be attributed to the amount of sleep: a cause-and-effect conclusion is appropriate. But the adults were volunteers, not a random sample of all adults, so the conclusion applies only to adults similar to those in the study. Choice A generalizes too far. Choice C ignores the random assignment, which is exactly what allows a causal conclusion. Choice D goes too far the other way: a lack of random sampling limits the population the conclusion applies to, but it does not prevent every conclusion.",
+    "explanation_uz": "Kattalar ikki guruhga **tasodifiy taqsimlangani** uchun ballardagi farqni uyqu miqdoriga bog‘lash mumkin: sabab-oqibat xulosasi o‘rinli. Lekin kattalar barcha kattalardan olingan tasodifiy tanlanma emas, ko‘ngillilar edi, shuning uchun xulosa faqat tadqiqotdagilarga o‘xshash kattalarga tegishli. A javob haddan tashqari keng umumlashtirgan. C javob tasodifiy taqsimlashni e’tiborsiz qoldiradi, holbuki aynan u sababiy xulosaga imkon beradi. D javob boshqa tomonga haddan oshgan: tasodifiy tanlanma yo‘qligi xulosa tegishli bo‘lgan to‘plamni cheklaydi, lekin har qanday xulosani taqiqlamaydi.",
+    "estimated_seconds": 80,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "random assignment"
+    ]
+  },
+  {
+    "skill_code": "evaluating_statistical_claims",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "A survey company selected a random sample of 1,000 adults from all adults in a region. Each adult reported whether they use a fitness tracking app and their resting heart rate. The adults who use a fitness tracking app had a lower average resting heart rate than the adults who do not. Which of the following is the most appropriate conclusion?",
+    "option_a": "Using a fitness tracking app causes a lower resting heart rate for adults in the region.",
+    "option_b": "Using a fitness tracking app causes a lower resting heart rate, but only for the 1,000 adults in the sample.",
+    "option_c": "Among adults in the region, using a fitness tracking app is associated with a lower resting heart rate.",
+    "option_d": "The result cannot be generalized to adults in the region, because the adults chose whether to use the app.",
+    "correct": "C",
+    "explanation_en": "The random sample allows the result to be generalized to all adults in the region. However, the adults chose for themselves whether to use the app; they were not randomly assigned. People who use a fitness app may also exercise more, for example, so the study shows only an association, not cause and effect. Choices A and B make causal claims. Choice D confuses random assignment with random sampling: random sampling is what allows generalization, and it was used here.",
+    "explanation_uz": "Tasodifiy tanlanma natijani mintaqadagi barcha kattalarga umumlashtirishga imkon beradi. Biroq kattalar ilovadan foydalanish-foydalanmaslikni o‘zlari tanlagan, ular tasodifiy taqsimlanmagan. Masalan, fitnes ilovasidan foydalanadiganlar ko‘proq sport bilan shug‘ullanishi ham mumkin, shuning uchun tadqiqot sabab-oqibatni emas, faqat bog‘liqlikni ko‘rsatadi. A va B javoblar sababiy da’vo qiladi. D javob tasodifiy taqsimlashni tasodifiy tanlash bilan adashtirgan: umumlashtirishga tasodifiy tanlash imkon beradi va u bu yerda qo‘llangan.",
+    "estimated_seconds": 80,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "association vs causation"
+    ]
+  },
+  {
+    "skill_code": "evaluating_statistical_claims",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "A researcher randomly assigned 150 volunteers who wanted to improve their sleep to two groups of 75. One group used a meditation app every evening for a month, and the other group did not. At the end of the month, 48 people in the app group and 33 people in the other group reported improved sleep. By how many percentage points was the percentage of people who reported improved sleep greater in the app group than in the other group?",
+    "spr_answers": [
+      "20"
+    ],
+    "explanation_en": "In the app group, $\\frac{48}{75} = 0.64$, or 64%, reported improved sleep. In the other group, $\\frac{33}{75} = 0.44$, or 44%, did. The difference is $64 - 44 = 20$ percentage points. Answering 15 gives the difference in the numbers of people, not in the percentages. Enter 20.",
+    "explanation_uz": "Ilova guruhida $\\frac{48}{75} = 0.64$, ya’ni 64% uyqusi yaxshilanganini aytgan. Ikkinchi guruhda $\\frac{33}{75} = 0.44$, ya’ni 44%. Farq $64 - 44 = 20$ foiz punkti. 15 deb javob berish foizlar emas, odamlar soni farqini beradi. Javob: 20.",
+    "estimated_seconds": 80,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "experiment results"
+    ]
+  },
+  {
+    "skill_code": "evaluating_statistical_claims",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "A university wanted to know how satisfied its 8,000 students are with the student dormitories. It e-mailed a satisfaction survey to a random sample of 1,000 students, and 140 of these students returned the survey. Of the students who returned it, 71% said they were dissatisfied. Which of the following is the best reason the university should be cautious about concluding that about 71% of all its students are dissatisfied with the dormitories?",
+    "option_a": "The sample was selected at random from all students.",
+    "option_b": "Only 140 of the 1,000 students selected responded, and students with strong opinions may have been more likely to respond.",
+    "option_c": "A sample of 1,000 students is too large for a university of 8,000 students.",
+    "option_d": "Some students who returned the survey may live in the dormitories.",
+    "correct": "B",
+    "explanation_en": "Although the 1,000 students were chosen at random, only 14% of them responded. The students who chose to respond may differ from those who did not; for example, dissatisfied students may be more motivated to complain. This nonresponse can make the result biased. Choice A is a strength, not a reason for caution. Choice C is wrong: a large sample is not a problem. Choice D is wrong because students who live in the dormitories are exactly the people whose opinions are most relevant.",
+    "explanation_uz": "1,000 nafar talaba tasodifiy tanlangan bo‘lsa ham, ularning faqat 14% i javob bergan. Javob berishni tanlaganlar javob bermaganlardan farq qilishi mumkin; masalan, norozi talabalar shikoyat qilishga ko‘proq intiladi. Bunday javob bermaslik natijani xolis bo‘lmagan qilishi mumkin. A javob — ehtiyot bo‘lish sababi emas, kuchli tomon. C javob noto‘g‘ri: katta tanlanma muammo emas. D javob noto‘g‘ri, chunki yotoqxonada yashaydigan talabalar — fikri eng muhim bo‘lgan odamlar.",
+    "estimated_seconds": 80,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "nonresponse bias"
+    ]
+  },
+  {
+    "skill_code": "evaluating_statistical_claims",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "A town has 35,000 adult residents. Two surveys were conducted to estimate the percentage of adult residents who support building a new swimming pool. Survey 1 selected 400 adult residents at random from a list of all adult residents of the town, and 58% of them supported the pool. Survey 2 used the responses of 1,200 adult residents who chose to answer a poll on the town's sports club website, and 81% of them supported the pool. Using the survey that gives the more reliable estimate, what is the estimated number of adult residents of the town who support building the new pool?",
+    "spr_answers": [
+      "20300"
+    ],
+    "explanation_en": "Survey 1 used a random sample of all adult residents, so its estimate is reliable. Survey 2 is larger, but its respondents chose themselves and visited a sports club's website, so they are likely to support a pool more than typical residents. Using Survey 1: $0.58 \\times 35{,}000 = 20{,}300$ residents. Using Survey 2 would give $0.81 \\times 35{,}000 = 28{,}350$, an overestimate based on a biased sample. Enter 20300.",
+    "explanation_uz": "1-so‘rovnoma barcha katta yoshli aholidan olingan tasodifiy tanlanmadan foydalangan, shuning uchun uning bahosi ishonchli. 2-so‘rovnoma kattaroq, lekin uning ishtirokchilari o‘zlarini o‘zlari tanlagan va sport klubi saytiga kirgan, shuning uchun ular basseynni oddiy aholidan ko‘ra ko‘proq qo‘llab-quvvatlashi ehtimoli bor. 1-so‘rovnomadan: $0.58 \\times 35{,}000 = 20{,}300$ nafar. 2-so‘rovnomadan foydalanish $0.81 \\times 35{,}000 = 28{,}350$ ni beradi — bu xolis bo‘lmagan tanlanmaga asoslangan oshirilgan baho. Javob: 20300.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "choose reliable survey"
+    ]
+  },
+  {
+    "skill_code": "evaluating_statistical_claims",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "A researcher wants to determine whether drinking green tea every day lowers blood pressure for adults who work at a large factory. Which of the following study designs is most appropriate for reaching this conclusion?",
+    "option_a": "Select a random sample of the factory's adult workers, and compare the blood pressure of those who already drink green tea every day with those who do not.",
+    "option_b": "Ask the factory's workers who already drink green tea every day to volunteer, and measure their blood pressure at the start and end of a month.",
+    "option_c": "Select a random sample of the factory's adult workers, randomly assign half of them to drink green tea every day for two months and the other half not to, and then compare the changes in their blood pressure.",
+    "option_d": "Select a random sample of adults from a different city, randomly assign half of them to drink green tea every day, and compare the changes in their blood pressure.",
+    "correct": "C",
+    "explanation_en": "To show cause and effect, the researcher needs random assignment to treatment groups, and to apply the result to the factory's workers, the sample should be selected at random from those workers. Choice C does both. Choice A is an observational study, so it can show only an association. Choice B has no comparison group and uses volunteers. Choice D uses random assignment, but its sample comes from a different population, so the results would not necessarily apply to the factory's workers.",
+    "explanation_uz": "Sabab-oqibatni ko‘rsatish uchun ishtirokchilarni guruhlarga tasodifiy taqsimlash kerak, natijani zavod ishchilariga qo‘llash uchun esa tanlanma aynan shu ishchilardan tasodifiy olinishi kerak. C javob ikkalasini ham bajaradi. A javob kuzatuv tadqiqoti, u faqat bog‘liqlikni ko‘rsata oladi. B javobda taqqoslash guruhi yo‘q va ko‘ngillilardan foydalaniladi. D javobda tasodifiy taqsimlash bor, lekin tanlanma boshqa to‘plamdan olingan, shuning uchun natijalar zavod ishchilariga albatta tegishli bo‘lmaydi.",
+    "estimated_seconds": 80,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "study design"
+    ]
+  },
+  {
+    "skill_code": "evaluating_statistical_claims",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "A grocery delivery company selected a random sample of 2,000 customers from all of its customers in Tashkent. Half of the selected customers were randomly assigned to see a new version of the company's app, and the other half saw the old version. Over the next month, the customers who saw the new version placed significantly more orders, on average, than the customers who saw the old version. Which of the following conclusions is best supported by the study?",
+    "option_a": "The new version of the app causes an increase in the number of orders for customers of any delivery company in Tashkent.",
+    "option_b": "The new version of the app is likely to cause an increase in the number of orders for the company's customers in Tashkent.",
+    "option_c": "The new version of the app is associated with more orders for the company's customers in Tashkent, but it cannot be the cause of the increase.",
+    "option_d": "The new version of the app is likely to cause an increase in the number of orders, but only for the 2,000 customers in the study.",
+    "correct": "B",
+    "explanation_en": "The study used both random sampling from all of the company's customers in Tashkent and random assignment to the two versions. Random assignment supports a cause-and-effect conclusion, and random sampling allows it to be generalized to the population sampled: the company's customers in Tashkent. Choice A extends the conclusion to customers of other companies, who were not in the population. Choice C ignores the random assignment. Choice D ignores the random sampling, which allows a conclusion beyond the 2,000 customers.",
+    "explanation_uz": "Tadqiqotda kompaniyaning Toshkentdagi barcha mijozlaridan tasodifiy tanlash ham, ikki versiyaga tasodifiy taqsimlash ham qo‘llangan. Tasodifiy taqsimlash sabab-oqibat xulosasini asoslaydi, tasodifiy tanlash esa uni tanlanma olingan to‘plamga — kompaniyaning Toshkentdagi mijozlariga umumlashtirishga imkon beradi. A javob xulosani to‘plamga kirmagan boshqa kompaniyalarning mijozlariga kengaytirgan. C javob tasodifiy taqsimlashni e’tiborsiz qoldiradi. D javob 2,000 nafar mijozdan tashqariga xulosa chiqarishga imkon beruvchi tasodifiy tanlashni e’tiborsiz qoldiradi.",
+    "estimated_seconds": 110,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "scope of conclusion"
+    ]
+  },
+  {
+    "skill_code": "evaluating_statistical_claims",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "A high school has 2,400 students. The school selected a random sample of 300 of its students and randomly assigned 150 of them to receive text message reminders about homework deadlines; the other 150 received no reminders. During the term, 120 of the students who received reminders and 96 of the students who did not receive reminders submitted all their homework on time. Based on this study, if all 2,400 students at the school received the reminders instead of none of them, by about how many would the number of students who submit all their homework on time be expected to increase?",
+    "spr_answers": [
+      "384"
+    ],
+    "explanation_en": "With reminders, $\\frac{120}{150} = 80\\%$ of students submitted all homework on time; without reminders, $\\frac{96}{150} = 64\\%$ did. Because the students were randomly assigned, the 16-percentage-point difference can be attributed to the reminders, and because the sample was random, it applies to all students at the school. The expected increase is $0.16 \\times 2{,}400 = 384$ students. Answering 24 gives only the difference within the study ($120 - 96$). Enter 384.",
+    "explanation_uz": "Eslatma olganlarning $\\frac{120}{150} = 80\\%$ i, eslatma olmaganlarning esa $\\frac{96}{150} = 64\\%$ i barcha uy vazifalarini o‘z vaqtida topshirgan. O‘quvchilar tasodifiy taqsimlangani uchun 16 foiz punktlik farqni eslatmalarga bog‘lash mumkin, tanlanma tasodifiy bo‘lgani uchun esa bu maktabning barcha o‘quvchilariga tegishli. Kutilgan o‘sish $0.16 \\times 2{,}400 = 384$ nafar o‘quvchi. 24 deb javob berish faqat tadqiqot ichidagi farqni ($120 - 96$) beradi. Javob: 384.",
+    "estimated_seconds": 130,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "experiment results"
+    ]
+  },
+  {
+    "skill_code": "evaluating_statistical_claims",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "Using data for all 120 districts in a country, an economist found that districts with more cafés per 10,000 residents tend to have a higher average household income. A local official claims that the data show that opening more cafés in a district will raise household incomes there. Which of the following is the best evaluation of the official's claim?",
+    "option_a": "The claim is supported, because the data include every district in the country rather than a sample.",
+    "option_b": "The claim is supported, because the association between cafés and income is positive.",
+    "option_c": "The claim is not supported, because the districts were not randomly assigned to have more or fewer cafés; for example, higher incomes may lead to more cafés.",
+    "option_d": "The claim is not supported, because 120 districts are too few to show an association.",
+    "correct": "C",
+    "explanation_en": "This is an observational study: no one assigned districts to have more or fewer cafés. A positive association does not show which variable affects the other, or whether some third factor, such as the size of the district's businesses, affects both. In fact, it is reasonable that districts where people earn more can support more cafés. Choice A is a trap: even data for the whole population show only an association, not a cause. Choice B treats association as causation. Choice D is wrong because an association was observed among all 120 districts; the problem is the type of study, not its size.",
+    "explanation_uz": "Bu kuzatuv tadqiqoti: hech kim tumanlarni ko‘proq yoki kamroq kafeli bo‘lishga taqsimlamagan. Musbat bog‘liqlik qaysi o‘zgaruvchi qaysi biriga ta’sir qilishini yoki ikkalasiga ham ta’sir qiladigan uchinchi omil (masalan, tumandagi korxonalar ko‘lami) bor-yo‘qligini ko‘rsatmaydi. Aslida, odamlar ko‘proq daromad oladigan tumanlarda ko‘proq kafe faoliyat yuritishi mantiqan to‘g‘ri. A javob — tuzoq: hatto butun to‘plam bo‘yicha ma’lumotlar ham sababni emas, faqat bog‘liqlikni ko‘rsatadi. B javob bog‘liqlikni sabab deb hisoblaydi. D javob noto‘g‘ri, chunki bog‘liqlik barcha 120 ta tumanda kuzatilgan; muammo tadqiqot hajmida emas, uning turida.",
+    "estimated_seconds": 110,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "association vs causation"
+    ]
+  },
+  {
+    "skill_code": "evaluating_statistical_claims",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "Two studies examined whether drinking a glass of warm milk before bed affects how quickly adults fall asleep.\\n\\nStudy 1: A random sample of 800 adults in a city was surveyed. The adults who reported drinking warm milk before bed also reported falling asleep faster, on average, than the adults who did not.\\n\\nStudy 2: 60 adults in the same city volunteered for a study. Half were randomly assigned to drink warm milk before bed for two weeks, and the other half drank nothing before bed. The adults who drank warm milk fell asleep faster, on average.\\n\\nWhich of the following statements is best supported by the two studies?",
+    "option_a": "Study 1 shows that drinking warm milk causes adults in the city to fall asleep faster.",
+    "option_b": "Study 2 shows that drinking warm milk causes all adults in the city to fall asleep faster.",
+    "option_c": "Study 1 shows an association for adults in the city, and Study 2 suggests that warm milk causes faster sleep for adults similar to its volunteers.",
+    "option_d": "Neither study supports any conclusion, because each study has a weakness.",
+    "correct": "C",
+    "explanation_en": "Study 1 used random sampling but no random assignment, so it supports an association that can be generalized to adults in the city, not a causal conclusion. Study 2 used random assignment but volunteers, so it supports a causal conclusion only for adults similar to the volunteers. Choice A claims causation from an observational study. Choice B generalizes Study 2's causal result to all adults in the city, but the volunteers were not a random sample. Choice D is too extreme: each study has a limitation, but each still supports a limited conclusion.",
+    "explanation_uz": "1-tadqiqotda tasodifiy tanlash bor, lekin tasodifiy taqsimlash yo‘q, shuning uchun u sababiy xulosani emas, shahar kattalariga umumlashtirish mumkin bo‘lgan bog‘liqlikni asoslaydi. 2-tadqiqotda tasodifiy taqsimlash bor, lekin ishtirokchilar ko‘ngillilar, shuning uchun u sababiy xulosani faqat ko‘ngillilarga o‘xshash kattalar uchun asoslaydi. A javob kuzatuv tadqiqotidan sababiy xulosa chiqargan. B javob 2-tadqiqotning sababiy natijasini shaharning barcha kattalariga umumlashtirgan, lekin ko‘ngillilar tasodifiy tanlanma emas edi. D javob haddan oshgan: har bir tadqiqotning cheklovi bor, lekin har biri baribir cheklangan xulosani asoslaydi.",
+    "estimated_seconds": 140,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "compare designs"
+    ]
+  }
+]

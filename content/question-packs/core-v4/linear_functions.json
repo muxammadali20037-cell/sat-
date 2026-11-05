@@ -1,0 +1,300 @@
+[
+  {
+    "skill_code": "linear_functions",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "A taxi service in Samarkand charges a fare that depends on the distance traveled. The fare $F$, in soums, for a ride of $d$ kilometers is given by $F(d) = 2{,}500d + 6{,}000$. What is the best interpretation of $6{,}000$ in this context?",
+    "option_a": "The fare increases by $6{,}000$ soums for each kilometer traveled.",
+    "option_b": "The fare includes a fixed charge of $6{,}000$ soums before any distance is added.",
+    "option_c": "The total fare for a $1$-kilometer ride is $6{,}000$ soums.",
+    "option_d": "The maximum distance of a ride is $6{,}000$ kilometers.",
+    "correct": "B",
+    "explanation_en": "The constant term $6{,}000$ is the value of $F$ when $d = 0$, so it is the part of the fare charged regardless of distance, a fixed starting charge. The coefficient $2{,}500$ is the charge per kilometer.\n\nChoice A describes the slope, which is $2{,}500$. Choice C is wrong because $F(1) = 8{,}500$. Choice D misreads a fare in soums as a distance.",
+    "explanation_uz": "Ozod had $6{,}000$ — $d = 0$ bo‘lgandagi $F$ qiymati, ya’ni masofadan qat’i nazar olinadigan qat’iy boshlang‘ich to‘lov. $2{,}500$ koeffitsiyenti esa har kilometr uchun to‘lov.\n\nA variant qiyalikni tasvirlaydi, u $2{,}500$ ga teng. C variant noto‘g‘ri, chunki $F(1) = 8{,}500$. D variant so‘mdagi to‘lovni masofa deb o‘qiydi.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "interpret_intercept"
+    ]
+  },
+  {
+    "skill_code": "linear_functions",
+    "difficulty": "easy",
+    "question_type": "spr",
+    "stem": "The function $f$ is defined by $f(x) = 7x - 9$. If $f(a) = 33$, what is the value of $a$?",
+    "spr_answers": [
+      "6"
+    ],
+    "explanation_en": "Set $7a - 9 = 33$. Adding $9$ gives $7a = 42$, so $a = 6$.\n\nAnswering $222$ computes $f(33)$ instead of solving $f(a) = 33$.",
+    "explanation_uz": "$7a - 9 = 33$ deb olamiz. $9$ ni qo‘shsak, $7a = 42$, demak $a = 6$.\n\n$222$ javobi $f(a) = 33$ ni yechish o‘rniga $f(33)$ ni hisoblaydi.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "solve_for_input"
+    ]
+  },
+  {
+    "skill_code": "linear_functions",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "A line in the $xy$-plane passes through the points $(-2, 5)$ and $(4, -7)$. What is the slope of the line?",
+    "option_a": "$-2$",
+    "option_b": "$2$",
+    "option_c": "$-\\dfrac{1}{2}$",
+    "option_d": "$-6$",
+    "correct": "A",
+    "explanation_en": "Slope $= \\frac{y_2 - y_1}{x_2 - x_1} = \\frac{-7 - 5}{4 - (-2)} = \\frac{-12}{6} = -2$.\n\nChoice B loses the negative sign. Choice C divides the change in $x$ by the change in $y$. Choice D uses $4 - 2 = 2$ for the change in $x$, forgetting that subtracting $-2$ means adding $2$.",
+    "explanation_uz": "Qiyalik $= \\frac{y_2 - y_1}{x_2 - x_1} = \\frac{-7 - 5}{4 - (-2)} = \\frac{-12}{6} = -2$.\n\nB variant manfiy ishorani yo‘qotadi. C variant $x$ o‘zgarishini $y$ o‘zgarishiga bo‘ladi. D variant $x$ o‘zgarishi uchun $4 - 2 = 2$ ni oladi, $-2$ ni ayirish $2$ ni qo‘shish ekanini unutadi.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "slope_two_points"
+    ]
+  },
+  {
+    "skill_code": "linear_functions",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "A bicycle rental shop charges $20{,}000$ soums for the first hour and $12{,}000$ soums for each additional hour. Which function gives the total cost $C$, in soums, of renting a bicycle for $h$ hours, where $h$ is a whole number and $h \\ge 1$?",
+    "option_a": "$C(h) = 20{,}000 + 12{,}000h$",
+    "option_b": "$C(h) = 32{,}000h$",
+    "option_c": "$C(h) = 20{,}000 + 12{,}000(h - 1)$",
+    "option_d": "$C(h) = 12{,}000 + 20{,}000(h - 1)$",
+    "correct": "C",
+    "explanation_en": "The first hour costs $20{,}000$ soums. The remaining $h - 1$ hours cost $12{,}000$ soums each, so $C(h) = 20{,}000 + 12{,}000(h - 1)$. Check: for $1$ hour, $C(1) = 20{,}000$; for $3$ hours, $C(3) = 20{,}000 + 24{,}000 = 44{,}000$.\n\nChoice A charges $12{,}000$ for the first hour as well, so $C(1) = 32{,}000$. Choice B charges $32{,}000$ for every hour. Choice D swaps the two rates.",
+    "explanation_uz": "Birinchi soat $20{,}000$ so‘m turadi. Qolgan $h - 1$ soatning har biri $12{,}000$ so‘mdan, demak $C(h) = 20{,}000 + 12{,}000(h - 1)$. Tekshiruv: $1$ soat uchun $C(1) = 20{,}000$; $3$ soat uchun $C(3) = 20{,}000 + 24{,}000 = 44{,}000$.\n\nA variant birinchi soat uchun ham $12{,}000$ qo‘shadi, natijada $C(1) = 32{,}000$. B variant har soat uchun $32{,}000$ oladi. D variant ikki narxni almashtiradi.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "each_additional_model"
+    ]
+  },
+  {
+    "skill_code": "linear_functions",
+    "difficulty": "easy",
+    "question_type": "spr",
+    "stem": "For the linear function $f$, $f(1) = 7$ and $f(3) = 15$. What is the value of $f(10)$?",
+    "spr_answers": [
+      "43"
+    ],
+    "explanation_en": "The slope is $\\frac{15 - 7}{3 - 1} = 4$. Then $f(1) = 4(1) + b = 7$ gives $b = 3$, so $f(x) = 4x + 3$ and $f(10) = 40 + 3 = 43$.",
+    "explanation_uz": "Qiyalik $\\frac{15 - 7}{3 - 1} = 4$. Keyin $f(1) = 4(1) + b = 7$ dan $b = 3$, demak $f(x) = 4x + 3$ va $f(10) = 40 + 3 = 43$.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "build_from_points"
+    ]
+  },
+  {
+    "skill_code": "linear_functions",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "In the $xy$-plane, the graph of $y = -3x + 8$ is shifted down $5$ units. What is the $y$-intercept of the resulting graph?",
+    "option_a": "$(0, 13)$",
+    "option_b": "$(0, 3)$",
+    "option_c": "$(0, 8)$",
+    "option_d": "$(1, 0)$",
+    "correct": "B",
+    "explanation_en": "Shifting down $5$ units subtracts $5$ from every $y$-value: $y = -3x + 8 - 5 = -3x + 3$. At $x = 0$, $y = 3$, so the $y$-intercept is $(0, 3)$.\n\nChoice A shifts up instead of down. Choice C is the $y$-intercept of the original graph. Choice D is the $x$-intercept of the new graph, not its $y$-intercept.",
+    "explanation_uz": "$5$ birlik pastga surish har bir $y$ qiymatdan $5$ ni ayiradi: $y = -3x + 8 - 5 = -3x + 3$. $x = 0$ da $y = 3$, demak $y$ o‘qi bilan kesishish nuqtasi $(0, 3)$.\n\nA variant pastga emas, yuqoriga suradi. C variant dastlabki grafikning kesishish nuqtasi. D variant yangi grafikning $x$ o‘qi bilan kesishish nuqtasi, $y$ o‘qi bilan emas.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "vertical_shift"
+    ]
+  },
+  {
+    "skill_code": "linear_functions",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "Line $\\ell$ is defined by $3x - 4y = 12$. Line $n$ is perpendicular to line $\\ell$ in the $xy$-plane. What is the slope of line $n$?",
+    "option_a": "$-\\dfrac{4}{3}$",
+    "option_b": "$\\dfrac{3}{4}$",
+    "option_c": "$\\dfrac{4}{3}$",
+    "option_d": "$-\\dfrac{3}{4}$",
+    "correct": "A",
+    "explanation_en": "Solve for $y$: $-4y = -3x + 12$, so $y = \\frac{3}{4}x - 3$. The slope of $\\ell$ is $\\frac{3}{4}$. A perpendicular line has the negative reciprocal slope, $-\\frac{4}{3}$.\n\nChoice B is the slope of $\\ell$ itself (a parallel line). Choice C takes the reciprocal but not the opposite sign. Choice D reads the slope as $-\\frac{A}{B}$ with the sign of $B$ lost, $-\\frac{3}{4}$.",
+    "explanation_uz": "$y$ ni ajratamiz: $-4y = -3x + 12$, ya’ni $y = \\frac{3}{4}x - 3$. $\\ell$ ning qiyaligi $\\frac{3}{4}$. Perpendikulyar chiziqning qiyaligi teskari va qarama-qarshi ishorali son: $-\\frac{4}{3}$.\n\nB variant $\\ell$ ning o‘z qiyaligi (parallel chiziq uchun). C variant teskari sonni oladi, lekin ishorani o‘zgartirmaydi. D variant $B$ ning ishorasini yo‘qotib, qiyalikni $-\\frac{3}{4}$ deb o‘qiydi.",
+    "estimated_seconds": 95,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "perpendicular_slope"
+    ]
+  },
+  {
+    "skill_code": "linear_functions",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "A textile company bought a new sewing machine for $84$ million soums. Three years later, the machine was worth $60$ million soums. Assuming the value of the machine decreases linearly, which function gives its value $V$, in millions of soums, $t$ years after it was bought?",
+    "option_a": "$V(t) = 84 - 24t$",
+    "option_b": "$V(t) = 84 - 8t$",
+    "option_c": "$V(t) = 60 - 8t$",
+    "option_d": "$V(t) = 84 - 3t$",
+    "correct": "B",
+    "explanation_en": "The value drops by $84 - 60 = 24$ million soums over $3$ years, which is $\\frac{24}{3} = 8$ million soums per year. The starting value is $84$, so $V(t) = 84 - 8t$. Check: $V(3) = 84 - 24 = 60$.\n\nChoice A uses the total $3$-year drop as the yearly drop. Choice C starts from the value after $3$ years instead of the purchase price. Choice D uses the number of years as the rate.",
+    "explanation_uz": "Qiymat $3$ yilda $84 - 60 = 24$ million so‘mga kamaygan, ya’ni yiliga $\\frac{24}{3} = 8$ million so‘m. Boshlang‘ich qiymat $84$, demak $V(t) = 84 - 8t$. Tekshiruv: $V(3) = 84 - 24 = 60$.\n\nA variant $3$ yillik umumiy kamayishni yillik deb oladi. C variant xarid narxi o‘rniga $3$ yildan keyingi qiymatdan boshlaydi. D variant yillar sonini sur’at deb oladi.",
+    "estimated_seconds": 95,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "build_from_context"
+    ]
+  },
+  {
+    "skill_code": "linear_functions",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "The function $f$ is defined by $f(x) = ax + 5$, where $a$ is a constant. If $f(4) = -7$, what is the value of $f(-2)$?",
+    "spr_answers": [
+      "11"
+    ],
+    "explanation_en": "From $f(4) = -7$: $4a + 5 = -7$, so $4a = -12$ and $a = -3$. Then $f(x) = -3x + 5$, and $f(-2) = -3(-2) + 5 = 6 + 5 = 11$.\n\nAnswering $-1$ uses $a = -3$ but computes $-3(-2)$ as $-6$.",
+    "explanation_uz": "$f(4) = -7$ dan: $4a + 5 = -7$, ya’ni $4a = -12$ va $a = -3$. U holda $f(x) = -3x + 5$ va $f(-2) = -3(-2) + 5 = 6 + 5 = 11$.\n\n$-1$ javobi $a = -3$ ni to‘g‘ri topadi, lekin $-3(-2)$ ni $-6$ deb hisoblaydi.",
+    "estimated_seconds": 95,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "find_constant_then_evaluate"
+    ]
+  },
+  {
+    "skill_code": "linear_functions",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "A veterinarian uses the equation $W = 0.8n + 3.2$ to estimate the weight $W$, in kilograms, of a puppy of a certain breed that is $n$ weeks old, for $2 \\le n \\le 16$. According to the equation, by how many kilograms does the estimated weight increase over a period of $5$ weeks?",
+    "option_a": "$0.8$",
+    "option_b": "$3.2$",
+    "option_c": "$4$",
+    "option_d": "$7.2$",
+    "correct": "C",
+    "explanation_en": "The slope $0.8$ means the estimated weight increases by $0.8$ kilogram per week. Over $5$ weeks, the increase is $5(0.8) = 4$ kilograms.\n\nChoice A is the increase for $1$ week. Choice B is the constant term, which does not describe a change. Choice D is the estimated weight $W$ at $n = 5$, not the increase over $5$ weeks.",
+    "explanation_uz": "$0.8$ qiyalik taxminiy vazn har hafta $0.8$ kilogrammga oshishini bildiradi. $5$ haftada o‘sish $5(0.8) = 4$ kilogramm.\n\nA variant $1$ haftalik o‘sish. B variant ozod had, u o‘zgarishni tasvirlamaydi. D variant $n = 5$ dagi taxminiy vazn $W$, $5$ hafta davomidagi o‘sish emas.",
+    "estimated_seconds": 95,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "interpret_slope"
+    ]
+  },
+  {
+    "skill_code": "linear_functions",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "In the $xy$-plane, line $p$ is parallel to the line $y = 4x - 1$ and passes through the point $(2, 9)$. What is the $x$-coordinate of the $x$-intercept of line $p$?",
+    "spr_answers": [
+      "-1/4",
+      "-.25",
+      "-0.25"
+    ],
+    "explanation_en": "Parallel lines have equal slopes, so line $p$ has slope $4$: $y = 4x + b$. Using $(2, 9)$: $9 = 8 + b$, so $b = 1$ and $y = 4x + 1$.\n\nAt the $x$-intercept, $y = 0$: $4x + 1 = 0$, so $x = -\\frac{1}{4} = -0.25$.\n\nAnswering $1$ gives the $y$-intercept, and answering $\\frac{1}{4}$ drops the sign.",
+    "explanation_uz": "Parallel chiziqlarning qiyaliklari teng, demak $p$ ning qiyaligi $4$: $y = 4x + b$. $(2, 9)$ nuqtadan: $9 = 8 + b$, ya’ni $b = 1$ va $y = 4x + 1$.\n\n$x$ o‘qi bilan kesishish nuqtasida $y = 0$: $4x + 1 = 0$, demak $x = -\\frac{1}{4} = -0.25$.\n\n$1$ javobi $y$ o‘qi bilan kesishish nuqtasini beradi, $\\frac{1}{4}$ javobi esa ishorani tushirib qoldiradi.",
+    "estimated_seconds": 95,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "parallel_line_intercept"
+    ]
+  },
+  {
+    "skill_code": "linear_functions",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "A water tank is being drained at a constant rate. The volume $V$, in liters, of water in the tank $t$ minutes after draining began is given by $V(t) = 9{,}000 - 360t$. Which of the following is the best interpretation of the $t$-intercept of the graph of $V$ in the $tV$-plane?",
+    "option_a": "The $t$-intercept is $(0, 9{,}000)$; the tank held $9{,}000$ liters when draining began.",
+    "option_b": "The $t$-intercept is $(25, 0)$; water drains at $25$ liters per minute.",
+    "option_c": "The $t$-intercept is $(25, 0)$; the tank is empty $25$ minutes after draining began.",
+    "option_d": "The $t$-intercept is $(360, 0)$; the tank is empty $360$ minutes after draining began.",
+    "correct": "C",
+    "explanation_en": "The $t$-intercept is where $V = 0$: $9{,}000 - 360t = 0$ gives $t = 25$. So the point is $(25, 0)$, meaning that the tank contains $0$ liters (is empty) $25$ minutes after draining began.\n\nChoice A describes the $V$-intercept, not the $t$-intercept. Choice B has the right point but the wrong meaning: the rate is $360$ liters per minute. Choice D uses the rate as the time.",
+    "explanation_uz": "$t$ o‘qi bilan kesishish nuqtasida $V = 0$: $9{,}000 - 360t = 0$ dan $t = 25$. Demak nuqta $(25, 0)$, ya’ni bo‘shatish boshlanganidan $25$ daqiqa o‘tgach bakda $0$ litr suv qoladi (bak bo‘sh).\n\nA variant $t$ o‘qi bilan emas, $V$ o‘qi bilan kesishish nuqtasini tasvirlaydi. B variantda nuqta to‘g‘ri, lekin ma’nosi noto‘g‘ri: sur’at daqiqasiga $360$ litr. D variant sur’atni vaqt deb oladi.",
+    "estimated_seconds": 95,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "interpret_intercept"
+    ]
+  },
+  {
+    "skill_code": "linear_functions",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "The functions $f$ and $g$ are defined by $f(x) = 2x + k$ and $g(x) = 3x - 1$, where $k$ is a constant. If $f(g(2)) = 17$, what is the value of $g(f(1))$?",
+    "option_a": "$11$",
+    "option_b": "$17$",
+    "option_c": "$26$",
+    "option_d": "$33$",
+    "correct": "C",
+    "explanation_en": "First, $g(2) = 3(2) - 1 = 5$, so $f(g(2)) = f(5) = 10 + k = 17$, giving $k = 7$ and $f(x) = 2x + 7$.\n\nThen $f(1) = 9$ and $g(f(1)) = g(9) = 27 - 1 = 26$.\n\nChoice A computes $f(g(1)) = f(2) = 11$, applying the functions in the wrong order. Choice B repeats the given value. Choice D is $g(f(1)) + k$, adding the constant again.",
+    "explanation_uz": "Avval $g(2) = 3(2) - 1 = 5$, demak $f(g(2)) = f(5) = 10 + k = 17$, bundan $k = 7$ va $f(x) = 2x + 7$.\n\nKeyin $f(1) = 9$ va $g(f(1)) = g(9) = 27 - 1 = 26$.\n\nA variant $f(g(1)) = f(2) = 11$ ni hisoblaydi, ya’ni funksiyalarni teskari tartibda qo‘llaydi. B variant berilgan qiymatni takrorlaydi. D variant $g(f(1)) + k$, o‘zgarmasni yana bir marta qo‘shadi.",
+    "estimated_seconds": 140,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "composition"
+    ]
+  },
+  {
+    "skill_code": "linear_functions",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "In the $xy$-plane, the points $(-1, 4)$, $(3, -8)$, and $(k, 19)$ lie on the same line. What is the value of $k$?",
+    "spr_answers": [
+      "-6"
+    ],
+    "explanation_en": "The slope through the first two points is $\\frac{-8 - 4}{3 - (-1)} = \\frac{-12}{4} = -3$. The slope from $(-1, 4)$ to $(k, 19)$ must also be $-3$: $\\frac{19 - 4}{k - (-1)} = -3$, so $15 = -3(k + 1)$, $k + 1 = -5$, and $k = -6$.\n\nCheck: the line is $y = -3x + 1$, and $-3(-6) + 1 = 19$.",
+    "explanation_uz": "Birinchi ikki nuqtadan o‘tuvchi chiziq qiyaligi $\\frac{-8 - 4}{3 - (-1)} = \\frac{-12}{4} = -3$. $(-1, 4)$ dan $(k, 19)$ gacha qiyalik ham $-3$ bo‘lishi kerak: $\\frac{19 - 4}{k - (-1)} = -3$, ya’ni $15 = -3(k + 1)$, $k + 1 = -5$ va $k = -6$.\n\nTekshiruv: chiziq tenglamasi $y = -3x + 1$, va $-3(-6) + 1 = 19$.",
+    "estimated_seconds": 140,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "collinearity"
+    ]
+  },
+  {
+    "skill_code": "linear_functions",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "In the $xy$-plane, the lines with equations $kx + 3y = 7$ and $4x - 6y = 5$ are perpendicular, where $k$ is a constant. What is the value of $k$?",
+    "option_a": "$-2$",
+    "option_b": "$2$",
+    "option_c": "$-\\dfrac{9}{2}$",
+    "option_d": "$\\dfrac{9}{2}$",
+    "correct": "D",
+    "explanation_en": "The slope of $kx + 3y = 7$ is $-\\frac{k}{3}$, and the slope of $4x - 6y = 5$ is $-\\frac{4}{-6} = \\frac{2}{3}$. Perpendicular slopes multiply to $-1$: $-\\frac{k}{3} \\cdot \\frac{2}{3} = -1$, so $\\frac{2k}{9} = 1$ and $k = \\frac{9}{2}$.\n\nCheck: the first slope is $-\\frac{3}{2}$, the negative reciprocal of $\\frac{2}{3}$.\n\nChoice A makes the lines parallel ($-\\frac{k}{3} = \\frac{2}{3}$). Choice B uses the wrong sign for a parallel condition. Choice C makes the product of the slopes $+1$ instead of $-1$.",
+    "explanation_uz": "$kx + 3y = 7$ ning qiyaligi $-\\frac{k}{3}$, $4x - 6y = 5$ ning qiyaligi esa $-\\frac{4}{-6} = \\frac{2}{3}$. Perpendikulyar chiziqlar qiyaliklari ko‘paytmasi $-1$: $-\\frac{k}{3} \\cdot \\frac{2}{3} = -1$, ya’ni $\\frac{2k}{9} = 1$ va $k = \\frac{9}{2}$.\n\nTekshiruv: birinchi qiyalik $-\\frac{3}{2}$, bu $\\frac{2}{3}$ ning teskari va qarama-qarshi ishorali soni.\n\nA variant chiziqlarni parallel qiladi ($-\\frac{k}{3} = \\frac{2}{3}$). B variant parallellik shartida ishorani adashtiradi. C variant qiyaliklar ko‘paytmasini $-1$ emas, $+1$ qiladi.",
+    "estimated_seconds": 140,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "perpendicular_parameter"
+    ]
+  },
+  {
+    "skill_code": "linear_functions",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "For the linear function $f$, $f(2) = 11$ and $f(6) = 23$. The function $g$ is defined by $g(x) = f(2x) - 4$. In the $xy$-plane, what is the $x$-coordinate of the $x$-intercept of the graph of $y = g(x)$?",
+    "spr_answers": [
+      "-1/6",
+      "-.1666",
+      "-.1667",
+      "-0.166",
+      "-0.167"
+    ],
+    "explanation_en": "The slope of $f$ is $\\frac{23 - 11}{6 - 2} = 3$, and $f(2) = 6 + b = 11$ gives $b = 5$, so $f(x) = 3x + 5$.\n\nThen $g(x) = f(2x) - 4 = 3(2x) + 5 - 4 = 6x + 1$. Setting $6x + 1 = 0$ gives $x = -\\frac{1}{6}$.\n\nA common error is writing $f(2x) = 2f(x) = 6x + 10$, which gives $g(x) = 6x + 6$ and $x = -1$.",
+    "explanation_uz": "$f$ ning qiyaligi $\\frac{23 - 11}{6 - 2} = 3$, va $f(2) = 6 + b = 11$ dan $b = 5$, demak $f(x) = 3x + 5$.\n\nU holda $g(x) = f(2x) - 4 = 3(2x) + 5 - 4 = 6x + 1$. $6x + 1 = 0$ dan $x = -\\frac{1}{6}$.\n\nKo‘p uchraydigan xato: $f(2x) = 2f(x) = 6x + 10$ deb yozish, bu $g(x) = 6x + 6$ va $x = -1$ ni beradi.",
+    "estimated_seconds": 140,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "build_then_transform"
+    ]
+  }
+]
