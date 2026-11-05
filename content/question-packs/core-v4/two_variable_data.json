@@ -1,0 +1,301 @@
+[
+  {
+    "skill_code": "two_variable_data",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "On each of 18 summer days, a juice stand in Bukhara recorded the day's high temperature $x$, in degrees Celsius, and the number of cups of juice sold $y$. The line of best fit for the data is $y = 4.5x - 62$. Which of the following is the best interpretation of 4.5 in this context?",
+    "option_a": "For each increase of 1 degree Celsius in the high temperature, the predicted number of cups sold increases by 4.5.",
+    "option_b": "When the high temperature is 0 degrees Celsius, the predicted number of cups sold is 4.5.",
+    "option_c": "For each increase of 4.5 degrees Celsius in the high temperature, the predicted number of cups sold increases by 1.",
+    "option_d": "For each additional cup sold, the predicted high temperature increases by 4.5 degrees Celsius.",
+    "correct": "A",
+    "explanation_en": "In $y = mx + b$, the slope $m$ is the predicted change in $y$ when $x$ increases by 1. Here $x$ is the temperature and $y$ is the number of cups, so 4.5 means 4.5 more predicted cups for each 1°C increase. Choice B describes the $y$-intercept, which is $-62$, not 4.5. Choice C turns the rate upside down. Choice D switches the roles of $x$ and $y$: the model predicts cups from temperature, not temperature from cups.",
+    "explanation_uz": "$y = mx + b$ da $m$ qiyalik — $x$ 1 ga ortganda $y$ ning bashorat qilingan o‘zgarishi. Bu yerda $x$ — harorat, $y$ — stakanlar soni, demak 4.5 harorat har 1°C ga ko‘tarilganda bashorat qilingan stakanlar soni 4.5 taga ortishini bildiradi. B javob $y$-kesishmani tasvirlaydi, u esa 4.5 emas, $-62$. C javob nisbatni teskari qilgan. D javob $x$ va $y$ ning rolini almashtirgan: model haroratdan stakanlar sonini bashorat qiladi, aksincha emas.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "slope interpretation"
+    ]
+  },
+  {
+    "skill_code": "two_variable_data",
+    "difficulty": "easy",
+    "question_type": "spr",
+    "stem": "A typing teacher recorded the number of hours $x$ that each of 25 students practiced per week and each student's typing speed $y$, in words per minute. The line of best fit for the data is $y = 1.8x + 23$. Based on the line of best fit, what is the predicted typing speed, in words per minute, of a student who practices 15 hours per week?",
+    "spr_answers": [
+      "50"
+    ],
+    "explanation_en": "Substitute $x = 15$: $y = 1.8(15) + 23 = 27 + 23 = 50$ words per minute. Answering 27 forgets to add the intercept 23. Enter 50.",
+    "explanation_uz": "$x = 15$ ni qo‘yamiz: $y = 1.8(15) + 23 = 27 + 23 = 50$ so‘z/daqiqa. 27 deb javob berish 23 kesishmani qo‘shishni unutishdir. Javob: 50.",
+    "estimated_seconds": 50,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "prediction"
+    ]
+  },
+  {
+    "skill_code": "two_variable_data",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "passage": "A geography student recorded the elevation and the mean July temperature of 6 weather stations in a mountain region.\n\n| Elevation (meters) | Mean July temperature (°C) |\n| ---: | ---: |\n| 400 | 29.1 |\n| 900 | 26.0 |\n| 1,400 | 23.2 |\n| 1,900 | 20.1 |\n| 2,400 | 17.0 |\n| 2,900 | 13.9 |",
+    "stem": "Which of the following best describes the association between elevation and mean July temperature for the weather stations in the table?",
+    "option_a": "A strong positive linear association",
+    "option_b": "A strong negative linear association",
+    "option_c": "A negative association that is clearly nonlinear",
+    "option_d": "No association",
+    "correct": "B",
+    "explanation_en": "As the elevation increases by 500 meters each time, the temperature decreases by about the same amount each time (about 3°C), so the points would lie close to a line that slopes downward. That is a strong negative linear association. Choice A would require the temperature to rise with elevation. Choice C is wrong because the decreases are nearly constant, which is a linear pattern, not a curved one. Choice D ignores the clear, steady decrease.",
+    "explanation_uz": "Balandlik har safar 500 metrga ortganda harorat har safar taxminan bir xil miqdorga (taxminan 3°C ga) kamayadi, demak nuqtalar pastga qiya to‘g‘ri chiziqqa yaqin joylashadi. Bu kuchli manfiy chiziqli bog‘liqlikdir. A javob uchun harorat balandlik bilan birga oshishi kerak edi. C javob noto‘g‘ri, chunki kamayishlar deyarli o‘zgarmas — bu egri emas, chiziqli qonuniyat. D javob aniq va bir tekis kamayishni e’tiborsiz qoldiradi.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "association"
+    ]
+  },
+  {
+    "skill_code": "two_variable_data",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "For 12 students, a scatterplot shows the number of hours $x$ that each student studied for a quiz and the student's quiz score $y$. The line of best fit for the data is $y = 2.5x + 61$. One of the students studied for 8 hours and scored 85 on the quiz. What is the residual for this student, defined as the actual score minus the score predicted by the line of best fit?",
+    "option_a": "$-4$",
+    "option_b": "$4$",
+    "option_c": "$81$",
+    "option_d": "$85$",
+    "correct": "B",
+    "explanation_en": "The predicted score is $2.5(8) + 61 = 81$. The residual is actual minus predicted: $85 - 81 = 4$. Choice A subtracts in the wrong order (predicted minus actual). Choice C is the predicted score and choice D is the actual score, not the difference between them.",
+    "explanation_uz": "Bashorat qilingan ball $2.5(8) + 61 = 81$. Qoldiq (residual) — haqiqiy qiymat minus bashorat: $85 - 81 = 4$. A javob ayirishni teskari tartibda bajargan (bashorat minus haqiqiy). C javob bashorat qilingan ball, D javob esa haqiqiy ball — ularning ayirmasi emas.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "residual"
+    ]
+  },
+  {
+    "skill_code": "two_variable_data",
+    "difficulty": "easy",
+    "question_type": "spr",
+    "stem": "For 20 cotton fields, an agronomist recorded the amount of irrigation water $x$, in thousands of cubic meters per hectare, and the cotton yield $y$, in centners per hectare. The line of best fit for the data is $y = 3.2x + 14$. According to the line of best fit, what amount of irrigation water, in thousands of cubic meters per hectare, corresponds to a predicted yield of 46 centners per hectare?",
+    "spr_answers": [
+      "10"
+    ],
+    "explanation_en": "Set $y = 46$: $46 = 3.2x + 14$, so $3.2x = 32$ and $x = 10$. Substituting 46 for $x$ instead of $y$ (which gives 161.2) answers a different question. Enter 10.",
+    "explanation_uz": "$y = 46$ deb olamiz: $46 = 3.2x + 14$, demak $3.2x = 32$ va $x = 10$. 46 ni $y$ o‘rniga emas, $x$ o‘rniga qo‘yish (161.2 chiqadi) boshqa savolga javob beradi. Javob: 10.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "prediction"
+    ]
+  },
+  {
+    "skill_code": "two_variable_data",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "A car dealer made a scatterplot of the age $x$, in years, and the price $y$, in millions of soums, of 40 used cars of the same model. The line of best fit for the data is $y = -6.5x + 172$. Which of the following is the best interpretation of 172 in this context?",
+    "option_a": "The predicted price of a car of this model decreases by 172 million soums each year.",
+    "option_b": "The predicted age of a car of this model that costs 0 soums is 172 years.",
+    "option_c": "The predicted price of a car of this model that is 0 years old is 172 million soums.",
+    "option_d": "The mean price of the 40 used cars is 172 million soums.",
+    "correct": "C",
+    "explanation_en": "In $y = mx + b$, the constant $b$ is the predicted value of $y$ when $x = 0$. Here $x = 0$ means a car that is 0 years old, so 172 is the predicted price, in millions of soums, of a new car of this model. Choice A describes a slope, but the slope is $-6.5$. Choice B confuses the intercept with the $x$-value where $y = 0$ (about 26.5 years). Choice D is not given by the model: a line of best fit does not tell the mean of the prices directly.",
+    "explanation_uz": "$y = mx + b$ da $b$ o‘zgarmas — $x = 0$ bo‘lgandagi $y$ ning bashorat qilingan qiymati. Bu yerda $x = 0$ — 0 yoshli mashina, demak 172 — bu modeldagi yangi mashinaning million so‘mdagi bashorat qilingan narxi. A javob qiyalikni tasvirlaydi, lekin qiyalik $-6.5$. B javob kesishmani $y = 0$ bo‘ladigan $x$ qiymati (taxminan 26.5 yil) bilan adashtirgan. D javobni model bermaydi: eng mos chiziq narxlarning o‘rtachasini bevosita ko‘rsatmaydi.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "intercept interpretation"
+    ]
+  },
+  {
+    "skill_code": "two_variable_data",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "passage": "| Age (years) | Height (meters) |\n| ---: | ---: |\n| 1 | 1.9 |\n| 2 | 2.6 |\n| 3 | 4.4 |\n| 4 | 5.1 |\n| 5 | 6.5 |\n| 6 | 7.9 |",
+    "stem": "A forester measured the age $x$, in years, and the height $y$, in meters, of 6 young poplar trees, as shown in the table. The line of best fit for the data is $y = 1.2x + 0.5$. For how many of the 6 trees is the actual height greater than the height predicted by the line of best fit?",
+    "option_a": "2",
+    "option_b": "3",
+    "option_c": "4",
+    "option_d": "6",
+    "correct": "B",
+    "explanation_en": "The predicted heights for ages 1 through 6 are 1.7, 2.9, 4.1, 5.3, 6.5, and 7.7 meters. The actual heights are greater for the trees of ages 1 (1.9), 3 (4.4), and 6 (7.9), so the answer is 3. The trees of ages 2 and 4 are below the line, and the 5-year-old tree (6.5 meters) lies exactly on the line, so it is not above it. Choice C counts that tree as above the line. Choice A misses one of the trees above the line, and choice D assumes that every point is above the line.",
+    "explanation_uz": "1 dan 6 gacha yoshlar uchun bashorat qilingan balandliklar: 1.7, 2.9, 4.1, 5.3, 6.5 va 7.7 metr. Haqiqiy balandlik 1 yoshli (1.9), 3 yoshli (4.4) va 6 yoshli (7.9) daraxtlarda kattaroq, demak javob 3. 2 va 4 yoshli daraxtlar chiziqdan pastda, 5 yoshli daraxt (6.5 metr) esa aynan chiziq ustida yotadi, shuning uchun u chiziqdan yuqorida emas. C javob shu daraxtni ham yuqoridagilarga qo‘shgan. A javob yuqoridagi daraxtlardan birini o‘tkazib yuborgan, D javob esa barcha nuqtalar chiziqdan yuqori deb hisoblagan.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "residual"
+    ]
+  },
+  {
+    "skill_code": "two_variable_data",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "passage": "| $t$ (days) | Area (square centimeters) |\n| ---: | ---: |\n| 0 | 40 |\n| 1 | 61 |\n| 2 | 89 |\n| 3 | 136 |\n| 4 | 201 |",
+    "stem": "A biologist measured the area $y$, in square centimeters, covered by a colony of algae in a tank $t$ days after the start of an experiment, as shown in the table. Which of the following equations best models the data?",
+    "option_a": "$y = 20t + 40$",
+    "option_b": "$y = 40(0.5)^t$",
+    "option_c": "$y = 1.5(40)^t$",
+    "option_d": "$y = 40(1.5)^t$",
+    "correct": "D",
+    "explanation_en": "Each day the area is multiplied by about the same factor: $\\frac{61}{40} \\approx 1.53$, $\\frac{89}{61} \\approx 1.46$, $\\frac{136}{89} \\approx 1.53$, $\\frac{201}{136} \\approx 1.48$. A constant growth factor of about 1.5 with a starting value of 40 gives $y = 40(1.5)^t$, which predicts 40, 60, 90, 135, and 202.5. Choice A is linear: it fits the first two days but predicts only 120 on day 4, because the increases in the data keep getting larger. Choice B has a factor of 0.5, so it models a decrease. Choice C switches the base and the coefficient; it predicts 2,400 on day 2.",
+    "explanation_uz": "Har kuni maydon taxminan bir xil songa ko‘paytiriladi: $\\frac{61}{40} \\approx 1.53$, $\\frac{89}{61} \\approx 1.46$, $\\frac{136}{89} \\approx 1.53$, $\\frac{201}{136} \\approx 1.48$. Boshlang‘ich qiymati 40 va o‘zgarmas o‘sish koeffitsiyenti taxminan 1.5 bo‘lsa, $y = 40(1.5)^t$ hosil bo‘ladi; u 40, 60, 90, 135 va 202.5 ni beradi. A javob chiziqli: birinchi ikki kunga mos keladi, lekin 4-kun uchun atigi 120 ni beradi, chunki ma’lumotlardagi o‘sishlar tobora kattalashib boradi. B javobda koeffitsiyent 0.5, ya’ni u kamayishni ifodalaydi. C javob asos va koeffitsiyentni almashtirgan; u 2-kun uchun 2,400 ni beradi.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "choose model"
+    ]
+  },
+  {
+    "skill_code": "two_variable_data",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "A scatterplot shows the arm span $x$ and the height $y$, both in centimeters, of 30 adults. The line of best fit for the data is $y = 0.95x + 9$. One of the adults has an arm span of 170 centimeters and a height of 168 centimeters. What is the residual, in centimeters, for this adult? (The residual is the actual height minus the height predicted by the line of best fit.)",
+    "spr_answers": [
+      "-2.5",
+      "-5/2"
+    ],
+    "explanation_en": "The predicted height is $0.95(170) + 9 = 161.5 + 9 = 170.5$ centimeters. The residual is $168 - 170.5 = -2.5$. The residual is negative because the actual point lies below the line. Answering 2.5 subtracts in the wrong order. Enter -2.5 or -5/2.",
+    "explanation_uz": "Bashorat qilingan bo‘y $0.95(170) + 9 = 161.5 + 9 = 170.5$ santimetr. Qoldiq $168 - 170.5 = -2.5$. Qoldiq manfiy, chunki haqiqiy nuqta chiziqdan pastda yotadi. 2.5 deb javob berish ayirishni teskari tartibda bajarishdir. Javob: -2.5 yoki -5/2.",
+    "estimated_seconds": 80,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "residual"
+    ]
+  },
+  {
+    "skill_code": "two_variable_data",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "A researcher studied the number of cafés in two towns, Town A and Town B. For each town, the number of cafés $y$ is modeled by a line of best fit, where $x$ is the number of years since 2018.\\n\\nTown A: $y = 1.4x + 20$\\n\\nTown B: $y = 2.1x + 12$\\n\\nWhich of the following statements is true according to the lines of best fit?",
+    "option_a": "In 2018, Town A had a greater predicted number of cafés than Town B did, and the predicted number of cafés increases faster in Town A.",
+    "option_b": "In 2018, Town A had a greater predicted number of cafés than Town B did, and the predicted number of cafés increases faster in Town B.",
+    "option_c": "In 2018, Town B had a greater predicted number of cafés than Town A did, and the predicted number of cafés increases faster in Town B.",
+    "option_d": "In 2018, Town B had a greater predicted number of cafés than Town A did, and the predicted number of cafés increases faster in Town A.",
+    "correct": "B",
+    "explanation_en": "In 2018, $x = 0$, so the predictions are the $y$-intercepts: 20 for Town A and 12 for Town B, so Town A started higher. The slopes are the predicted increases per year: 1.4 cafés for Town A and 2.1 cafés for Town B, so Town B's predicted number increases faster. Choices A and D get the growth rates backward, and choices C and D get the starting values backward.",
+    "explanation_uz": "2018-yilda $x = 0$, demak bashoratlar $y$-kesishmalar: A shahar uchun 20, B shahar uchun 12 — A shahar balandroq boshlagan. Qiyaliklar — yiliga bashorat qilingan o‘sish: A shahar uchun 1.4 ta, B shahar uchun 2.1 ta kafe, demak B shahardagi bashorat tezroq o‘sadi. A va D javoblar o‘sish sur’atlarini, C va D javoblar esa boshlang‘ich qiymatlarni teskari olgan.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "compare lines"
+    ]
+  },
+  {
+    "skill_code": "two_variable_data",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "A scatterplot shows the number of members $y$ of a chess club in Andijan and the number of years $x$ since the club opened. The line of best fit for the data passes through the points $(2, 31)$ and $(10, 55)$. According to the line of best fit, what is the predicted number of members 7 years after the club opened?",
+    "spr_answers": [
+      "46"
+    ],
+    "explanation_en": "The slope of the line is $\\frac{55 - 31}{10 - 2} = \\frac{24}{8} = 3$. Using the point $(2, 31)$: $31 = 3(2) + b$, so $b = 25$ and the line is $y = 3x + 25$. When $x = 7$, $y = 3(7) + 25 = 46$. Enter 46.",
+    "explanation_uz": "Chiziqning qiyaligi $\\frac{55 - 31}{10 - 2} = \\frac{24}{8} = 3$. $(2, 31)$ nuqtadan: $31 = 3(2) + b$, demak $b = 25$ va chiziq $y = 3x + 25$. $x = 7$ bo‘lganda $y = 3(7) + 25 = 46$. Javob: 46.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "prediction"
+    ]
+  },
+  {
+    "skill_code": "two_variable_data",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "A scatterplot shows the value $y$, in thousands of soums, of a certain model of washing machine and the number of years $x$ since it was bought. An exponential model that fits the data is $y = 4{,}800(0.92)^x$. Which of the following is the best interpretation of 0.92 in this context?",
+    "option_a": "Each year, the predicted value of the washing machine decreases by 8% of its value the year before.",
+    "option_b": "Each year, the predicted value of the washing machine decreases by 92% of its value the year before.",
+    "option_c": "Each year, the predicted value of the washing machine decreases by 0.92 thousand soums.",
+    "option_d": "Each year, the predicted value of the washing machine increases by 92%.",
+    "correct": "A",
+    "explanation_en": "In the model $y = a(b)^x$, each increase of 1 in $x$ multiplies the predicted value by $b$. Multiplying by 0.92 keeps 92% of the value, which is a decrease of $100\\% - 92\\% = 8\\%$ each year. Choice B confuses the percent kept with the percent lost; a 92% decrease would leave only 8% of the value. Choice C describes a linear model, which loses the same amount each year. Choice D is wrong because a factor less than 1 means the value decreases.",
+    "explanation_uz": "$y = a(b)^x$ modelda $x$ 1 ga ortganda bashorat qilingan qiymat $b$ ga ko‘paytiriladi. 0.92 ga ko‘paytirish qiymatning 92% ini saqlab qoladi, ya’ni har yili $100\\% - 92\\% = 8\\%$ ga kamayish. B javob saqlanib qolgan foizni yo‘qotilgan foiz bilan adashtirgan; 92% ga kamaysa, qiymatning faqat 8% i qolardi. C javob chiziqli modelni tasvirlaydi, unda har yili bir xil miqdor yo‘qotiladi. D javob noto‘g‘ri, chunki 1 dan kichik koeffitsiyent qiymat kamayishini bildiradi.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "exponential model"
+    ]
+  },
+  {
+    "skill_code": "two_variable_data",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "passage": "| Speed (km/h) | Fuel consumption (liters per 100 km) |\n| ---: | ---: |\n| 30 | 7.9 |\n| 50 | 6.1 |\n| 70 | 5.5 |\n| 90 | 6.1 |\n| 110 | 7.9 |",
+    "stem": "An engineer tested a car at 5 different constant speeds $x$, in kilometers per hour, and recorded the fuel consumption $y$, in liters per 100 kilometers, as shown in the table. A scatterplot of the data suggests a quadratic relationship. Which of the following equations best models the data?",
+    "option_a": "$y = 0.0015x^2 - 0.21x + 12.85$",
+    "option_b": "$y = 0.0015x^2 + 0.21x + 12.85$",
+    "option_c": "$y = -0.0015x^2 + 0.21x - 1.85$",
+    "option_d": "$y = 0.0015x^2 - 0.21x + 5.5$",
+    "correct": "A",
+    "explanation_en": "The data are symmetric about $x = 70$, where the least value, 5.5, occurs, so the model is a parabola that opens upward with vertex $(70, 5.5)$: $y = a(x - 70)^2 + 5.5$. Using $(30, 7.9)$: $7.9 = a(1{,}600) + 5.5$, so $a = 0.0015$. Expanding: $0.0015(x^2 - 140x + 4{,}900) + 5.5 = 0.0015x^2 - 0.21x + 12.85$. Choice B has its vertex at $x = -70$. Choice C has vertex $(70, 5.5)$ but opens downward, so 5.5 would be the greatest value, not the least. Choice D uses 5.5 as the constant term, but the constant term is the value at $x = 0$, not at the vertex; it predicts $-1.85$ at $x = 70$.",
+    "explanation_uz": "Ma’lumotlar $x = 70$ ga nisbatan simmetrik va eng kichik qiymat 5.5 shu yerda, demak model — uchi $(70, 5.5)$ bo‘lgan, shoxlari yuqoriga qaragan parabola: $y = a(x - 70)^2 + 5.5$. $(30, 7.9)$ dan: $7.9 = a(1{,}600) + 5.5$, demak $a = 0.0015$. Qavslarni ochamiz: $0.0015(x^2 - 140x + 4{,}900) + 5.5 = 0.0015x^2 - 0.21x + 12.85$. B javobning uchi $x = -70$ da. C javobning uchi $(70, 5.5)$, lekin shoxlari pastga qaragan, ya’ni 5.5 eng kichik emas, eng katta qiymat bo‘lardi. D javob 5.5 ni ozod had sifatida olgan, lekin ozod had uchidagi emas, $x = 0$ dagi qiymat; u $x = 70$ da $-1.85$ ni beradi.",
+    "estimated_seconds": 130,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "quadratic model"
+    ]
+  },
+  {
+    "skill_code": "two_variable_data",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "The line of best fit for a data set is $y = 2.4x + k$, where $k$ is a constant. The data set includes the point $(15, 40)$, and the residual for this point is $-3$. (The residual is the actual $y$-value minus the $y$-value predicted by the line of best fit.) What is the value of $k$?",
+    "spr_answers": [
+      "7"
+    ],
+    "explanation_en": "A residual of $-3$ means the actual value is 3 less than the predicted value, so the predicted value at $x = 15$ is $40 + 3 = 43$. Then $2.4(15) + k = 43$, so $36 + k = 43$ and $k = 7$. Using the wrong sign for the residual gives a predicted value of 37 and $k = 1$. Enter 7.",
+    "explanation_uz": "Qoldiq $-3$ bo‘lishi haqiqiy qiymat bashoratdan 3 ga kichik ekanini bildiradi, demak $x = 15$ dagi bashorat $40 + 3 = 43$. U holda $2.4(15) + k = 43$, ya’ni $36 + k = 43$ va $k = 7$. Qoldiq ishorasini noto‘g‘ri olsak, bashorat 37 va $k = 1$ chiqadi. Javob: 7.",
+    "estimated_seconds": 110,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "residual parameter"
+    ]
+  },
+  {
+    "skill_code": "two_variable_data",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "Two online shops opened in the same month. For each shop, the number of orders $y$ per month is modeled by a line of best fit, where $x$ is the number of months since the shops opened.\\n\\nShop A: $y = 3.5x + 120$\\n\\nShop B: $y = 5x + 84$\\n\\nAccording to the models, what is the least whole number of months $x$ for which Shop B's predicted number of orders is greater than Shop A's?",
+    "option_a": "23",
+    "option_b": "24",
+    "option_c": "25",
+    "option_d": "34",
+    "correct": "C",
+    "explanation_en": "Shop B's prediction is greater when $5x + 84 > 3.5x + 120$, that is, $1.5x > 36$, or $x > 24$. At $x = 24$ the two predictions are equal (204 orders each), so the least whole number of months for which Shop B's prediction is greater is 25. Choice B is where the predictions are equal, not where B is greater. Choice A is a month when Shop A's prediction is still greater (200.5 versus 199). Choice D is where Shop B's prediction is greater by 15, which is more than the question asks.",
+    "explanation_uz": "B do‘konning bashorati $5x + 84 > 3.5x + 120$ bo‘lganda kattaroq, ya’ni $1.5x > 36$ yoki $x > 24$. $x = 24$ da ikki bashorat teng (har biri 204 ta buyurtma), demak B do‘kon bashorati katta bo‘ladigan eng kichik butun oy soni 25. B javob — bashoratlar teng bo‘ladigan oy, B kattaroq bo‘ladigan oy emas. A javobda A do‘konning bashorati hali ham katta (200.5 ga qarshi 199). D javob — B do‘kon bashorati 15 ga katta bo‘ladigan oy, bu savolda so‘ralganidan ortiq.",
+    "estimated_seconds": 110,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "compare lines"
+    ]
+  },
+  {
+    "skill_code": "two_variable_data",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "For 50 apartments in a city, a scatterplot shows the floor area $x$, in square meters, and the monthly heating cost $y$, in hundreds of thousands of soums, in January. The line of best fit for the data is $y = 0.045x + 1.2$. Which of the following is the best interpretation of the line of best fit in this context?",
+    "option_a": "For each increase of 20 square meters in floor area, the predicted monthly heating cost increases by 90,000 soums.",
+    "option_b": "For each increase of 20 square meters in floor area, the predicted monthly heating cost increases by 900,000 soums.",
+    "option_c": "For each increase of 1 square meter in floor area, the predicted monthly heating cost increases by 45,000 soums.",
+    "option_d": "The predicted monthly heating cost of an apartment with a floor area of 20 square meters is 90,000 soums.",
+    "correct": "A",
+    "explanation_en": "The slope 0.045 means the predicted cost increases by 0.045 hundred thousand soums, or 4,500 soums, per square meter. For 20 square meters, the increase is $20(0.045) = 0.9$ hundred thousand soums, which is 90,000 soums. Choice B treats 0.9 as millions of soums. Choice C treats 0.045 as millions of soums; the actual increase per square meter is 4,500 soums. Choice D ignores the intercept: the predicted cost for 20 square meters is $0.045(20) + 1.2 = 2.1$ hundred thousand, or 210,000 soums.",
+    "explanation_uz": "0.045 qiyalik har bir kvadrat metrga bashorat qilingan xarajat 0.045 yuz ming so‘mga, ya’ni 4,500 so‘mga ortishini bildiradi. 20 kvadrat metr uchun o‘sish $20(0.045) = 0.9$ yuz ming so‘m, ya’ni 90,000 so‘m. B javob 0.9 ni million so‘m deb olgan. C javob 0.045 ni million so‘m deb olgan; aslida har kvadrat metrga o‘sish 4,500 so‘m. D javob kesishmani hisobga olmagan: 20 kvadrat metr uchun bashorat $0.045(20) + 1.2 = 2.1$ yuz ming, ya’ni 210,000 so‘m.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "slope interpretation"
+    ]
+  }
+]

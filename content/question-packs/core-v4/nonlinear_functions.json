@@ -1,0 +1,296 @@
+[
+  {
+    "skill_code": "nonlinear_functions",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "A new online store tracks the number of weekly visitors to its website. The number of visitors $V$ during week $w$ is modeled by the function $V(w) = 1{,}800(1.12)^w$. Which of the following is the best interpretation of $1.12$ in this context?",
+    "option_a": "The number of weekly visitors increases by $1.12\\%$ each week.",
+    "option_b": "The number of weekly visitors increases by $12\\%$ each week.",
+    "option_c": "The number of weekly visitors increases by $112\\%$ each week.",
+    "option_d": "The number of weekly visitors increases by $1.12$ visitors each week.",
+    "correct": "B",
+    "explanation_en": "In an exponential model $V(w) = a(b)^w$, the base $b$ is the growth factor. Here $b = 1.12 = 1 + 0.12$, so each week the number of visitors is multiplied by $1.12$, which is an increase of $12\\%$.\n\nChoice A treats the factor $1.12$ as the percent itself. Choice C confuses the new amount ($112\\%$ of the old amount) with the increase. Choice D describes a linear change of a fixed number of visitors, not a percent change.",
+    "explanation_uz": "$V(w) = a(b)^w$ ko‘rsatkichli modelida $b$ asos — o‘sish ko‘paytuvchisi. Bu yerda $b = 1.12 = 1 + 0.12$, ya’ni har hafta tashrif buyuruvchilar soni $1.12$ ga ko‘paytiriladi, bu $12\\%$ o‘sish demakdir.\n\nA variant $1.12$ ko‘paytuvchini foizning o‘zi deb oladi. C variant yangi miqdorni (eskisining $112\\%$ i) o‘sish bilan adashtiradi. D variant foizli emas, balki har hafta bir xil songa o‘zgaradigan chiziqli o‘sishni tasvirlaydi.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "exponential_interpret_base"
+    ]
+  },
+  {
+    "skill_code": "nonlinear_functions",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "The function $f$ is defined by $f(x) = -3(x - 4)^2 + 19$. What is the maximum value of $f(x)$?",
+    "option_a": "$-3$",
+    "option_b": "$4$",
+    "option_c": "$19$",
+    "option_d": "$-4$",
+    "correct": "C",
+    "explanation_en": "In vertex form $f(x) = a(x - h)^2 + k$ with $a < 0$, the graph opens downward and the maximum value of $f(x)$ is $k$. Here $a = -3$ and $k = 19$, so the maximum value is $19$, reached when $x = 4$.\n\nChoice B is the $x$-value where the maximum occurs, not the maximum value. Choice D has the wrong sign for that $x$-value. Choice A is the leading coefficient $a$.",
+    "explanation_uz": "$f(x) = a(x - h)^2 + k$ uch ko‘rinishida $a < 0$ bo‘lsa, parabola pastga ochiladi va $f(x)$ ning eng katta qiymati $k$ ga teng. Bu yerda $a = -3$, $k = 19$, demak eng katta qiymat $19$, u $x = 4$ da erishiladi.\n\nB variant eng katta qiymat erishiladigan $x$ qiymati, eng katta qiymatning o‘zi emas. D variantda shu $x$ qiymatining ishorasi noto‘g‘ri. A variant esa bosh koeffitsiyent $a$.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "vertex_form_max_min"
+    ]
+  },
+  {
+    "skill_code": "nonlinear_functions",
+    "difficulty": "easy",
+    "question_type": "spr",
+    "stem": "The function $g$ is defined by $g(x) = 5(3)^x - 7$. What is the value of $g(2)$?",
+    "spr_answers": [
+      "38"
+    ],
+    "explanation_en": "Substitute $x = 2$: $g(2) = 5(3)^2 - 7 = 5(9) - 7 = 45 - 7 = 38$.\n\nA common error is computing $(5 \\cdot 3)^2 = 225$ before subtracting, which gives $218$. The exponent applies only to the base $3$.",
+    "explanation_uz": "$x = 2$ ni qo‘yamiz: $g(2) = 5(3)^2 - 7 = 5(9) - 7 = 45 - 7 = 38$.\n\nKo‘p uchraydigan xato — ayirishdan oldin $(5 \\cdot 3)^2 = 225$ ni hisoblash, bu $218$ ni beradi. Daraja faqat $3$ asosiga tegishli.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "evaluate_function"
+    ]
+  },
+  {
+    "skill_code": "nonlinear_functions",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "The function $h$ is defined by $h(x) = (x + 6)(x - 2)(2x - 5)$. In the $xy$-plane, which of the following is an $x$-intercept of the graph of $y = h(x)$?",
+    "option_a": "$(6, 0)$",
+    "option_b": "$(-2, 0)$",
+    "option_c": "$(5, 0)$",
+    "option_d": "$\\left(\\dfrac{5}{2}, 0\\right)$",
+    "correct": "D",
+    "explanation_en": "An $x$-intercept occurs where $h(x) = 0$, which happens when one of the factors is $0$: $x + 6 = 0$, $x - 2 = 0$, or $2x - 5 = 0$. So the zeros are $x = -6$, $x = 2$, and $x = \\frac{5}{2}$, and $\\left(\\frac{5}{2}, 0\\right)$ is an $x$-intercept.\n\nChoices A and B use the numbers in the factors with the wrong sign. Choice C uses the constant $5$ in $2x - 5$ without dividing by the coefficient $2$.",
+    "explanation_uz": "$x$ o‘qi bilan kesishish nuqtasida $h(x) = 0$ bo‘ladi, bu ko‘paytuvchilardan biri $0$ ga teng bo‘lganda yuz beradi: $x + 6 = 0$, $x - 2 = 0$ yoki $2x - 5 = 0$. Demak, nollar $x = -6$, $x = 2$ va $x = \\frac{5}{2}$, va $\\left(\\frac{5}{2}, 0\\right)$ — $x$ o‘qi bilan kesishish nuqtasi.\n\nA va B variantlar ko‘paytuvchilardagi sonlarni teskari ishora bilan oladi. C variant $2x - 5$ dagi $5$ ni $2$ koeffitsiyentga bo‘lmasdan oladi.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "polynomial_zeros_factored"
+    ]
+  },
+  {
+    "skill_code": "nonlinear_functions",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "The function $f$ is defined by $f(x) = 4\\left(\\dfrac{1}{2}\\right)^x + 3$. What is the $y$-intercept of the graph of $y = f(x)$ in the $xy$-plane?",
+    "option_a": "$(0, 3)$",
+    "option_b": "$(0, 4)$",
+    "option_c": "$(0, 5)$",
+    "option_d": "$(0, 7)$",
+    "correct": "D",
+    "explanation_en": "The $y$-intercept is the point where $x = 0$. Since $\\left(\\frac{1}{2}\\right)^0 = 1$, $f(0) = 4(1) + 3 = 7$, so the $y$-intercept is $(0, 7)$.\n\nChoice A ignores the exponential term. Choice B ignores the added $3$. Choice C is $f(1) = 4\\left(\\frac{1}{2}\\right) + 3 = 5$, the value at $x = 1$, not at $x = 0$.",
+    "explanation_uz": "$y$ o‘qi bilan kesishish nuqtasida $x = 0$. $\\left(\\frac{1}{2}\\right)^0 = 1$ bo‘lgani uchun $f(0) = 4(1) + 3 = 7$, demak nuqta $(0, 7)$.\n\nA variant ko‘rsatkichli hadni hisobga olmaydi. B variant qo‘shilgan $3$ ni unutadi. C variant $f(1) = 4\\left(\\frac{1}{2}\\right) + 3 = 5$, ya’ni $x = 1$ dagi qiymat, $x = 0$ dagi emas.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "exponential_initial_value"
+    ]
+  },
+  {
+    "skill_code": "nonlinear_functions",
+    "difficulty": "easy",
+    "question_type": "spr",
+    "stem": "The function $f$ is defined by $f(x) = x^2 - 1$. The function $g$ is defined by $g(x) = f(x - 3) + 2$. What is the value of $g(5)$?",
+    "spr_answers": [
+      "5"
+    ],
+    "explanation_en": "By the definition of $g$, $g(5) = f(5 - 3) + 2 = f(2) + 2$. Since $f(2) = 2^2 - 1 = 3$, $g(5) = 3 + 2 = 5$.\n\nUsing $f(5 + 3) = f(8) = 63$ (shifting the wrong way) gives $65$, and forgetting the $+2$ gives $3$.",
+    "explanation_uz": "$g$ ning ta’rifiga ko‘ra $g(5) = f(5 - 3) + 2 = f(2) + 2$. $f(2) = 2^2 - 1 = 3$ bo‘lgani uchun $g(5) = 3 + 2 = 5$.\n\n$f(5 + 3) = f(8) = 63$ ni ishlatish (noto‘g‘ri tomonga siljitish) $65$ ni, $+2$ ni unutish esa $3$ ni beradi.",
+    "estimated_seconds": 70,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "transformations"
+    ]
+  },
+  {
+    "skill_code": "nonlinear_functions",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "A biologist places $400$ bacteria in a nutrient solution. The number of bacteria doubles every $6$ hours. Which function $B$ gives the number of bacteria $h$ hours after they were placed in the solution?",
+    "option_a": "$B(h) = 400(2)^{6h}$",
+    "option_b": "$B(h) = 400(2)^{\\frac{h}{6}}$",
+    "option_c": "$B(h) = 400(6)^{\\frac{h}{2}}$",
+    "option_d": "$B(h) = 800^{\\frac{h}{6}}$",
+    "correct": "B",
+    "explanation_en": "The amount is multiplied by $2$ once every $6$ hours, so after $h$ hours it has doubled $\\frac{h}{6}$ times: $B(h) = 400(2)^{\\frac{h}{6}}$. Check: $B(0) = 400$, $B(6) = 800$, $B(12) = 1{,}600$.\n\nChoice A doubles $6$ times every hour ($B(1) = 25{,}600$). Choice C swaps the roles of $2$ and $6$. Choice D gives $B(0) = 1$, not $400$.",
+    "explanation_uz": "Miqdor har $6$ soatda bir marta $2$ ga ko‘paytiriladi, demak $h$ soatdan keyin u $\\frac{h}{6}$ marta ikki baravar ortgan: $B(h) = 400(2)^{\\frac{h}{6}}$. Tekshiruv: $B(0) = 400$, $B(6) = 800$, $B(12) = 1{,}600$.\n\nA variant har soatda $6$ marta ikki baravar oshiradi ($B(1) = 25{,}600$). C variant $2$ va $6$ ning rollarini almashtiradi. D variantda $B(0) = 1$, $400$ emas.",
+    "estimated_seconds": 95,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "exponential_doubling_model"
+    ]
+  },
+  {
+    "skill_code": "nonlinear_functions",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "The function $f$ is defined by $f(x) = 3x^2 - 18x + 31$. What is the minimum value of $f(x)$?",
+    "spr_answers": [
+      "4"
+    ],
+    "explanation_en": "The vertex is at $x = -\\frac{b}{2a} = -\\frac{-18}{2(3)} = 3$. The minimum value is $f(3) = 3(9) - 18(3) + 31 = 27 - 54 + 31 = 4$.\n\nEquivalently, completing the square gives $f(x) = 3(x - 3)^2 + 4$. The answer $3$ is the $x$-value where the minimum occurs, not the minimum value.",
+    "explanation_uz": "Parabola uchi $x = -\\frac{b}{2a} = -\\frac{-18}{2(3)} = 3$ da. Eng kichik qiymat $f(3) = 3(9) - 18(3) + 31 = 27 - 54 + 31 = 4$.\n\nTo‘la kvadrat ajratsak ham $f(x) = 3(x - 3)^2 + 4$ chiqadi. $3$ javobi eng kichik qiymat erishiladigan $x$, eng kichik qiymatning o‘zi emas.",
+    "estimated_seconds": 95,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "standard_to_vertex"
+    ]
+  },
+  {
+    "skill_code": "nonlinear_functions",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "The population of a species of fish in a reservoir is modeled by $P(t) = 600(1.21)^{\\frac{t}{2}}$, where $t$ is the number of years since the population was first measured. Which of the following best describes how the population changes, according to the model?",
+    "option_a": "It increases by $21\\%$ every year.",
+    "option_b": "It increases by $10\\%$ every year.",
+    "option_c": "It increases by $10.5\\%$ every year.",
+    "option_d": "It increases by $42\\%$ every year.",
+    "correct": "B",
+    "explanation_en": "Rewrite the model with an exponent of $t$: $(1.21)^{\\frac{t}{2}} = \\left((1.21)^{\\frac{1}{2}}\\right)^t = (1.1)^t$. So $P(t) = 600(1.1)^t$, and the population is multiplied by $1.1$ each year, an increase of $10\\%$ per year.\n\nChoice A is the increase every $2$ years, not every year. Choice C divides $21\\%$ by $2$, but percent growth compounds, so it cannot be split evenly. Choice D doubles $21\\%$ instead of taking a square root.",
+    "explanation_uz": "Modelni daraja $t$ bo‘ladigan qilib yozamiz: $(1.21)^{\\frac{t}{2}} = \\left((1.21)^{\\frac{1}{2}}\\right)^t = (1.1)^t$. Demak $P(t) = 600(1.1)^t$, ya’ni populyatsiya har yili $1.1$ ga ko‘paytiriladi — yiliga $10\\%$ o‘sish.\n\nA variant har $2$ yildagi o‘sish, har yilgi emas. C variant $21\\%$ ni $2$ ga bo‘ladi, lekin foizli o‘sish murakkab foiz kabi yig‘iladi, uni teng bo‘lib bo‘lmaydi. D variant kvadrat ildiz olish o‘rniga $21\\%$ ni ikki baravar oshiradi.",
+    "estimated_seconds": 95,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "exponential_scaled_exponent"
+    ]
+  },
+  {
+    "skill_code": "nonlinear_functions",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "The graph of the function $f$ in the $xy$-plane passes through the point $(2, -5)$. The function $g$ is defined by $g(x) = f(x + 4) - 1$. Which of the following points must lie on the graph of $y = g(x)$?",
+    "option_a": "$(6, -6)$",
+    "option_b": "$(-2, -6)$",
+    "option_c": "$(-2, -4)$",
+    "option_d": "$(6, -4)$",
+    "correct": "B",
+    "explanation_en": "We need an input for $g$ that turns $x + 4$ into $2$: $x + 4 = 2$ gives $x = -2$. Then $g(-2) = f(2) - 1 = -5 - 1 = -6$, so $(-2, -6)$ is on the graph of $g$. The graph of $g$ is the graph of $f$ moved $4$ units left and $1$ unit down.\n\nChoices A and D shift $4$ units to the right instead of left. Choices C and D move the graph up $1$ unit instead of down.",
+    "explanation_uz": "$g$ uchun shunday kirish qiymati kerakki, $x + 4$ ifoda $2$ ga aylansin: $x + 4 = 2$ dan $x = -2$. U holda $g(-2) = f(2) - 1 = -5 - 1 = -6$, demak $(-2, -6)$ nuqta $g$ grafigida yotadi. $g$ grafigi — $f$ grafigini $4$ birlik chapga va $1$ birlik pastga surish natijasi.\n\nA va D variantlar $4$ birlik chapga emas, o‘ngga suradi. C va D variantlar grafikni $1$ birlik pastga emas, yuqoriga suradi.",
+    "estimated_seconds": 95,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "transformations"
+    ]
+  },
+  {
+    "skill_code": "nonlinear_functions",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "The function $f$ is defined by $f(x) = \\dfrac{x^2 + kx - 12}{x + 5}$, where $k$ is a constant. In the $xy$-plane, the graph of $y = f(x)$ has an $x$-intercept at $(2, 0)$. What is the $y$-coordinate of the $y$-intercept of the graph?",
+    "spr_answers": [
+      "-12/5",
+      "-2.4"
+    ],
+    "explanation_en": "Since $f(2) = 0$, the numerator is $0$ at $x = 2$: $4 + 2k - 12 = 0$, so $k = 4$. Then $f(0) = \\frac{0 + 0 - 12}{0 + 5} = -\\frac{12}{5} = -2.4$.\n\nAnswering $-12$ forgets to divide by the denominator, and answering $4$ gives the value of $k$ instead of the $y$-coordinate.",
+    "explanation_uz": "$f(2) = 0$ bo‘lgani uchun $x = 2$ da surat $0$ ga teng: $4 + 2k - 12 = 0$, demak $k = 4$. U holda $f(0) = \\frac{0 + 0 - 12}{0 + 5} = -\\frac{12}{5} = -2.4$.\n\n$-12$ javobi maxrajga bo‘lishni unutadi, $4$ javobi esa $y$ koordinata o‘rniga $k$ ning qiymatini beradi.",
+    "estimated_seconds": 95,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "rational_function_parameter"
+    ]
+  },
+  {
+    "skill_code": "nonlinear_functions",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "For the exponential function $f$, $f(1) = 12$ and $f(3) = 108$. Which equation could define $f$?",
+    "option_a": "$f(x) = 4(3)^x$",
+    "option_b": "$f(x) = 12(3)^x$",
+    "option_c": "$f(x) = 3(4)^x$",
+    "option_d": "$f(x) = 4(9)^x$",
+    "correct": "A",
+    "explanation_en": "Write $f(x) = a(b)^x$. Dividing $f(3)$ by $f(1)$ gives $b^2 = \\frac{108}{12} = 9$, so $b = 3$ (the base of an exponential function is positive). Then $a(3) = 12$, so $a = 4$ and $f(x) = 4(3)^x$. Check: $4(3)^3 = 108$.\n\nChoice B uses $f(1)$ as the initial value, but the initial value is $f(0) = 4$. Choice C swaps $a$ and $b$. Choice D uses the factor for a $2$-unit change, $9$, as the factor for a $1$-unit change.",
+    "explanation_uz": "$f(x) = a(b)^x$ deb yozamiz. $f(3)$ ni $f(1)$ ga bo‘lsak, $b^2 = \\frac{108}{12} = 9$, demak $b = 3$ (ko‘rsatkichli funksiya asosi musbat). Keyin $a(3) = 12$, ya’ni $a = 4$ va $f(x) = 4(3)^x$. Tekshiruv: $4(3)^3 = 108$.\n\nB variant $f(1)$ ni boshlang‘ich qiymat deb oladi, lekin boshlang‘ich qiymat $f(0) = 4$. C variant $a$ va $b$ ni almashtiradi. D variant $2$ birlik o‘zgarishga mos ko‘paytuvchi $9$ ni $1$ birlik o‘zgarish uchun ishlatadi.",
+    "estimated_seconds": 95,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "exponential_from_points"
+    ]
+  },
+  {
+    "skill_code": "nonlinear_functions",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "The function $f$ is a quadratic function. In the $xy$-plane, the graph of $y = f(x)$ has its vertex at $(3, -8)$ and passes through the point $(5, 4)$. What is the $y$-coordinate of the $y$-intercept of the graph of $y = -2f(x + 1)$?",
+    "spr_answers": [
+      "-8"
+    ],
+    "explanation_en": "Write $f(x) = a(x - 3)^2 - 8$. Using $(5, 4)$: $4 = a(2)^2 - 8$, so $4a = 12$ and $a = 3$. Thus $f(x) = 3(x - 3)^2 - 8$.\n\nThe $y$-intercept of $y = -2f(x + 1)$ is at $x = 0$: $-2f(0 + 1) = -2f(1) = -2\\left(3(1 - 3)^2 - 8\\right) = -2(12 - 8) = -8$.\n\nCommon errors: using $f(0) = 19$ (ignoring the shift) gives $-38$; using $f(-1) = 40$ (shifting the wrong way) gives $-80$.",
+    "explanation_uz": "$f(x) = a(x - 3)^2 - 8$ deb yozamiz. $(5, 4)$ nuqtadan: $4 = a(2)^2 - 8$, ya’ni $4a = 12$ va $a = 3$. Demak $f(x) = 3(x - 3)^2 - 8$.\n\n$y = -2f(x + 1)$ grafigining $y$ o‘qi bilan kesishish nuqtasi $x = 0$ da: $-2f(0 + 1) = -2f(1) = -2\\left(3(1 - 3)^2 - 8\\right) = -2(12 - 8) = -8$.\n\nKo‘p uchraydigan xatolar: siljishni hisobga olmay $f(0) = 19$ ni olish $-38$ ni beradi; noto‘g‘ri tomonga siljitib $f(-1) = 40$ ni olish $-80$ ni beradi.",
+    "estimated_seconds": 140,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "vertex_point_transformation"
+    ]
+  },
+  {
+    "skill_code": "nonlinear_functions",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "The function $f$ is defined by $f(x) = a(x - h)^2 + k$, where $a$, $h$, and $k$ are constants. In the $xy$-plane, the graph of $y = f(x)$ has $x$-intercepts at $(-3, 0)$ and $(7, 0)$ and a $y$-intercept at $(0, 42)$. Which of the following is true about $f$?",
+    "option_a": "The minimum value of $f(x)$ is $50$.",
+    "option_b": "The maximum value of $f(x)$ is $2$.",
+    "option_c": "The maximum value of $f(x)$ is $50$.",
+    "option_d": "The maximum value of $f(x)$ is $42$.",
+    "correct": "C",
+    "explanation_en": "From the $x$-intercepts, $f(x) = a(x + 3)(x - 7)$. Then $f(0) = a(3)(-7) = -21a = 42$, so $a = -2$, and the parabola opens downward, so $f$ has a maximum. The vertex is halfway between the $x$-intercepts, at $h = \\frac{-3 + 7}{2} = 2$, and $k = f(2) = -2(5)(-5) = 50$. So the maximum value of $f(x)$ is $50$.\n\nChoice A misses that $a < 0$, so $50$ is a maximum, not a minimum. Choice B gives the $x$-coordinate of the vertex. Choice D gives the $y$-intercept, which is not the highest point because the vertex is at $x = 2$, not $x = 0$.",
+    "explanation_uz": "$x$ o‘qi bilan kesishish nuqtalaridan $f(x) = a(x + 3)(x - 7)$. U holda $f(0) = a(3)(-7) = -21a = 42$, demak $a = -2$ va parabola pastga ochiladi, ya’ni $f$ eng katta qiymatga ega. Uch $x$ o‘qidagi nuqtalarning o‘rtasida: $h = \\frac{-3 + 7}{2} = 2$, va $k = f(2) = -2(5)(-5) = 50$. Demak $f(x)$ ning eng katta qiymati $50$.\n\nA variant $a < 0$ ekanini e’tiborsiz qoldiradi, shuning uchun $50$ eng kichik emas, eng katta qiymat. B variant parabola uchining $x$ koordinatasi. D variant $y$ o‘qi bilan kesishish nuqtasi; u eng yuqori nuqta emas, chunki uch $x = 0$ da emas, $x = 2$ da.",
+    "estimated_seconds": 140,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "intercept_to_vertex"
+    ]
+  },
+  {
+    "skill_code": "nonlinear_functions",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "The function $p$ is defined by $p(x) = (x - 3)(x + k)(2x - 1)$, where $k$ is a constant. In the $xy$-plane, the graph of $y = p(x)$ crosses the $y$-axis at $(0, 30)$. What is the sum of the $x$-coordinates of all the $x$-intercepts of the graph?",
+    "spr_answers": [
+      "-13/2",
+      "-6.5"
+    ],
+    "explanation_en": "At $x = 0$: $p(0) = (-3)(k)(-1) = 3k$. Since $p(0) = 30$, $k = 10$, so $p(x) = (x - 3)(x + 10)(2x - 1)$.\n\nThe $x$-intercepts are at $x = 3$, $x = -10$, and $x = \\frac{1}{2}$. Their sum is $3 - 10 + \\frac{1}{2} = -\\frac{13}{2} = -6.5$.\n\nUsing $x = 10$ instead of $x = -10$ gives $13.5$, and using $x = 1$ instead of $x = \\frac{1}{2}$ gives $-6$.",
+    "explanation_uz": "$x = 0$ da: $p(0) = (-3)(k)(-1) = 3k$. $p(0) = 30$ bo‘lgani uchun $k = 10$, demak $p(x) = (x - 3)(x + 10)(2x - 1)$.\n\n$x$ o‘qi bilan kesishish nuqtalari: $x = 3$, $x = -10$ va $x = \\frac{1}{2}$. Ularning yig‘indisi $3 - 10 + \\frac{1}{2} = -\\frac{13}{2} = -6.5$.\n\n$x = -10$ o‘rniga $x = 10$ ni olish $13.5$ ni, $x = \\frac{1}{2}$ o‘rniga $x = 1$ ni olish esa $-6$ ni beradi.",
+    "estimated_seconds": 140,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "polynomial_parameter"
+    ]
+  },
+  {
+    "skill_code": "nonlinear_functions",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "The function $f$ is defined by $f(x) = a(x - h)^2 + k$, where $a$, $h$, and $k$ are constants with $a < 0$, $h > 0$, and $k < 0$. Which of the following must be true?",
+    "option_a": "The graph of $y = f(x)$ has two $x$-intercepts.",
+    "option_b": "The graph of $y = f(x)$ has no $x$-intercepts.",
+    "option_c": "$f(0) > k$",
+    "option_d": "The maximum value of $f(x)$ is $h$.",
+    "correct": "B",
+    "explanation_en": "Because $a < 0$, the parabola opens downward and its highest point is the vertex $(h, k)$. The maximum value $k$ is negative, so every value of $f(x)$ is at most $k < 0$, and the graph never reaches the $x$-axis: it has no $x$-intercepts.\n\nChoice A would require the maximum value to be positive. Choice C is false: $f(0) = ah^2 + k$, and $ah^2 < 0$, so $f(0) < k$. Choice D confuses the $x$-coordinate of the vertex with the maximum value, which is $k$.",
+    "explanation_uz": "$a < 0$ bo‘lgani uchun parabola pastga ochiladi va eng yuqori nuqtasi — $(h, k)$ uch. Eng katta qiymat $k$ manfiy, demak $f(x)$ ning barcha qiymatlari $k < 0$ dan oshmaydi va grafik $x$ o‘qiga yetmaydi: $x$ o‘qi bilan kesishish nuqtalari yo‘q.\n\nA variant eng katta qiymat musbat bo‘lishini talab qiladi. C variant noto‘g‘ri: $f(0) = ah^2 + k$, va $ah^2 < 0$, demak $f(0) < k$. D variant uchning $x$ koordinatasini eng katta qiymat bilan adashtiradi, eng katta qiymat esa $k$.",
+    "estimated_seconds": 140,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "parameter_must_be_true"
+    ]
+  }
+]

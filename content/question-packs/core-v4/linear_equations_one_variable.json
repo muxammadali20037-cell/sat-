@@ -1,0 +1,297 @@
+[
+  {
+    "skill_code": "linear_equations_one_variable",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "What value of $x$ is the solution to the equation $6(x + 2) - 4 = 2x + 24$?",
+    "option_a": "$2$",
+    "option_b": "$4$",
+    "option_c": "$6.5$",
+    "option_d": "$8$",
+    "correct": "B",
+    "explanation_en": "Distribute the $6$: $6x + 12 - 4 = 2x + 24$, so $6x + 8 = 2x + 24$. Subtract $2x$ and $8$ from both sides: $4x = 16$, so $x = 4$. Check: $6(6) - 4 = 32$ and $2(4) + 24 = 32$.\n\nChoice A comes from adding $2x$ to the left side instead of subtracting it ($8x + 8 = 24$). Choice C comes from multiplying only $x$ by $6$ ($6x + 2 - 4 = 2x + 24$). Choice D comes from adding $8$ to the right side instead of subtracting it ($4x = 32$).",
+    "explanation_uz": "$6$ ni qavsga ko‘paytiramiz: $6x + 12 - 4 = 2x + 24$, ya’ni $6x + 8 = 2x + 24$. Ikkala tomondan $2x$ va $8$ ni ayiramiz: $4x = 16$, demak $x = 4$. Tekshiruv: $6(6) - 4 = 32$ va $2(4) + 24 = 32$.\n\nA variant $2x$ ni ayirish o‘rniga chap tomonga qo‘shishdan chiqadi ($8x + 8 = 24$). C variant faqat $x$ ni $6$ ga ko‘paytirishdan kelib chiqadi ($6x + 2 - 4 = 2x + 24$). D variant $8$ ni o‘ng tomondan ayirish o‘rniga qo‘shishdan chiqadi ($4x = 32$).",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "solve-distribute"
+    ]
+  },
+  {
+    "skill_code": "linear_equations_one_variable",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "If $4x + 6 = 30$, what is the value of $2x + 3$?",
+    "option_a": "$6$",
+    "option_b": "$12$",
+    "option_c": "$15$",
+    "option_d": "$60$",
+    "correct": "C",
+    "explanation_en": "The expression $2x + 3$ is half of $4x + 6$. So $2x + 3 = \\frac{30}{2} = 15$. (Solving also works: $x = 6$ and $2(6) + 3 = 15$.)\n\nChoice A is the value of $x$, not of $2x + 3$. Choice B is the value of $2x$. Choice D doubles $30$ instead of halving it.",
+    "explanation_uz": "$2x + 3$ ifodasi $4x + 6$ ning yarmiga teng. Demak, $2x + 3 = \\frac{30}{2} = 15$. (Tenglamani yechsak ham bo‘ladi: $x = 6$ va $2(6) + 3 = 15$.)\n\nA variant — $x$ ning qiymati, $2x + 3$ niki emas. B variant — $2x$ ning qiymati. D variant $30$ ni ikkiga bo‘lish o‘rniga ikkiga ko‘paytirgan.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "expression-without-solving"
+    ]
+  },
+  {
+    "skill_code": "linear_equations_one_variable",
+    "difficulty": "easy",
+    "question_type": "spr",
+    "stem": "A fitness club charges a one-time registration fee of $50{,}000$ soums plus $120{,}000$ soums for each month of membership. Kamola paid a total of $770{,}000$ soums for registration and $m$ months of membership. If $50{,}000 + 120{,}000m = 770{,}000$, what is the value of $m$?",
+    "spr_answers": [
+      "6"
+    ],
+    "explanation_en": "Subtract the fee: $120{,}000m = 770{,}000 - 50{,}000 = 720{,}000$. Divide by $120{,}000$: $m = 6$. Dividing $770{,}000$ by $120{,}000$ without removing the fee first gives about $6.4$, which is wrong.",
+    "explanation_uz": "Avval ro‘yxatdan o‘tish to‘lovini ayiramiz: $120{,}000m = 770{,}000 - 50{,}000 = 720{,}000$. $120{,}000$ ga bo‘lamiz: $m = 6$. To‘lovni ayirmasdan $770{,}000$ ni $120{,}000$ ga bo‘lsak, taxminan $6.4$ chiqadi — bu xato.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "word-problem"
+    ]
+  },
+  {
+    "skill_code": "linear_equations_one_variable",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "Botir is reading a book that has $420$ pages. He has already read $70$ pages, and he plans to read $35$ pages each day until he finishes. The equation $70 + 35d = 420$ represents this situation. What is the value of $d$?",
+    "option_a": "$2$",
+    "option_b": "$10$",
+    "option_c": "$12$",
+    "option_d": "$14$",
+    "correct": "B",
+    "explanation_en": "Subtract $70$ from both sides: $35d = 350$. Divide by $35$: $d = 10$. So Botir needs $10$ more days.\n\nChoice A is $70 \\div 35$, the number of days for the pages already read. Choice C is $420 \\div 35$, which ignores the $70$ pages already read. Choice D comes from adding $70$ instead of subtracting it: $490 \\div 35 = 14$.",
+    "explanation_uz": "Ikkala tomondan $70$ ni ayiramiz: $35d = 350$. $35$ ga bo‘lamiz: $d = 10$. Demak, Botirga yana $10$ kun kerak.\n\nA variant — $70 \\div 35$, ya’ni allaqachon o‘qilgan sahifalar uchun kunlar soni. C variant — $420 \\div 35$, bunda o‘qilgan $70$ sahifa hisobga olinmagan. D variant $70$ ni ayirish o‘rniga qo‘shishdan chiqadi: $490 \\div 35 = 14$.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "word-problem"
+    ]
+  },
+  {
+    "skill_code": "linear_equations_one_variable",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "What value of $x$ is the solution to the equation $\\dfrac{x - 3}{5} = 4$?",
+    "option_a": "$3.8$",
+    "option_b": "$7$",
+    "option_c": "$17$",
+    "option_d": "$23$",
+    "correct": "D",
+    "explanation_en": "Multiply both sides by $5$: $x - 3 = 20$. Add $3$: $x = 23$. Check: $\\frac{23 - 3}{5} = \\frac{20}{5} = 4$.\n\nChoice A divides $4$ by $5$ instead of multiplying ($\\frac{4}{5} + 3$). Choice B ignores the denominator ($x - 3 = 4$). Choice C subtracts $3$ instead of adding it ($20 - 3$).",
+    "explanation_uz": "Ikkala tomonni $5$ ga ko‘paytiramiz: $x - 3 = 20$. $3$ ni qo‘shamiz: $x = 23$. Tekshiruv: $\\frac{23 - 3}{5} = \\frac{20}{5} = 4$.\n\nA variant $4$ ni $5$ ga ko‘paytirish o‘rniga bo‘lgan ($\\frac{4}{5} + 3$). B variant maxrajni e’tiborsiz qoldirgan ($x - 3 = 4$). C variant $3$ ni qo‘shish o‘rniga ayirgan ($20 - 3$).",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "solve-fraction"
+    ]
+  },
+  {
+    "skill_code": "linear_equations_one_variable",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stem": "How many solutions does the equation $2(x + 3) = 2x + 5$ have?",
+    "option_a": "Zero",
+    "option_b": "Exactly one",
+    "option_c": "Exactly two",
+    "option_d": "Infinitely many",
+    "correct": "A",
+    "explanation_en": "Distribute: $2x + 6 = 2x + 5$. Subtracting $2x$ from both sides gives $6 = 5$, which is never true. So no value of $x$ works, and the equation has zero solutions.\n\nExactly one solution would need different coefficients of $x$ on the two sides, but both sides have $2x$. A linear equation can never have exactly two solutions. Infinitely many solutions would need the constants to match too ($6 = 6$), but here they are $6$ and $5$.",
+    "explanation_uz": "Qavsni ochamiz: $2x + 6 = 2x + 5$. Ikkala tomondan $2x$ ni ayirsak, $6 = 5$ hosil bo‘ladi — bu hech qachon to‘g‘ri emas. Demak, hech bir $x$ mos kelmaydi va tenglamaning yechimi yo‘q.\n\nBitta yechim bo‘lishi uchun ikki tomondagi $x$ koeffitsiyentlari har xil bo‘lishi kerak, lekin ikkalasida ham $2x$. Chiziqli tenglama hech qachon aynan ikkita yechimga ega bo‘lmaydi. Cheksiz ko‘p yechim uchun ozod hadlar ham teng bo‘lishi kerak edi ($6 = 6$), bu yerda esa ular $6$ va $5$.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "number-of-solutions"
+    ]
+  },
+  {
+    "skill_code": "linear_equations_one_variable",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "$$\\frac{3x}{4} - 2 = \\frac{x}{6} + 5$$\n\nWhat is the solution to the given equation?",
+    "spr_answers": [
+      "12"
+    ],
+    "explanation_en": "Multiply every term by $12$, the least common denominator: $9x - 24 = 2x + 60$. Subtract $2x$ and add $24$: $7x = 84$, so $x = 12$. Check: $\\frac{3(12)}{4} - 2 = 7$ and $\\frac{12}{6} + 5 = 7$.",
+    "explanation_uz": "Har bir hadni eng kichik umumiy maxraj $12$ ga ko‘paytiramiz: $9x - 24 = 2x + 60$. $2x$ ni ayirib, $24$ ni qo‘shamiz: $7x = 84$, demak $x = 12$. Tekshiruv: $\\frac{3(12)}{4} - 2 = 7$ va $\\frac{12}{6} + 5 = 7$.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "solve-fraction"
+    ]
+  },
+  {
+    "skill_code": "linear_equations_one_variable",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "If $5(2x + 1) - 3(2x + 1) = 18$, what is the value of $2x + 1$?",
+    "option_a": "$4$",
+    "option_b": "$6$",
+    "option_c": "$9$",
+    "option_d": "$18$",
+    "correct": "C",
+    "explanation_en": "Treat $2x + 1$ as one quantity. Five of it minus three of it is two of it: $2(2x + 1) = 18$, so $2x + 1 = 9$. (Then $x = 4$, but the question asks for $2x + 1$.)\n\nChoice A is the value of $x$, not of $2x + 1$. Choice B divides $18$ by $3$ instead of by $5 - 3 = 2$. Choice D forgets to divide by $2$.",
+    "explanation_uz": "$2x + 1$ ni bitta miqdor deb qaraymiz. Uning beshtasidan uchtasini ayirsak, ikkitasi qoladi: $2(2x + 1) = 18$, demak $2x + 1 = 9$. ($x = 4$ bo‘ladi, lekin savol $2x + 1$ haqida.)\n\nA variant — $x$ ning qiymati, $2x + 1$ niki emas. B variant $18$ ni $5 - 3 = 2$ ga emas, $3$ ga bo‘lgan. D variantda $2$ ga bo‘lish unutilgan.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "expression-without-solving"
+    ]
+  },
+  {
+    "skill_code": "linear_equations_one_variable",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "Two candles are lit at the same time. Candle A is $30$ centimeters tall and burns down at a constant rate of $1.5$ centimeters per hour. Candle B is $22$ centimeters tall and burns down at a constant rate of $0.7$ centimeter per hour. After how many hours will the two candles have the same height?",
+    "option_a": "$\\frac{40}{11}$",
+    "option_b": "$8$",
+    "option_c": "$10$",
+    "option_d": "$20$",
+    "correct": "C",
+    "explanation_en": "After $t$ hours the heights are $30 - 1.5t$ and $22 - 0.7t$. Set them equal: $30 - 1.5t = 22 - 0.7t$, so $8 = 0.8t$ and $t = 10$. Both candles are then $15$ cm tall, and candle A has not burned out yet.\n\nChoice A adds the rates ($8 \\div 2.2$); the gap closes at the difference of the rates, $0.8$ cm per hour. Choice B is the starting difference in height, in centimeters. Choice D is the time for candle A to burn out ($30 \\div 1.5$).",
+    "explanation_uz": "$t$ soatdan keyin balandliklar $30 - 1.5t$ va $22 - 0.7t$ bo‘ladi. Ularni tenglaymiz: $30 - 1.5t = 22 - 0.7t$, demak $8 = 0.8t$ va $t = 10$. Shunda ikkala sham ham $15$ sm bo‘ladi va A sham hali yonib tugamagan.\n\nA variant tezliklarni qo‘shgan ($8 \\div 2.2$); farq esa tezliklar ayirmasi, ya’ni soatiga $0.8$ sm dan qisqaradi. B variant — boshlang‘ich balandliklar farqi (santimetrda). D variant — A shamning to‘liq yonib bo‘lish vaqti ($30 \\div 1.5$).",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "word-problem"
+    ]
+  },
+  {
+    "skill_code": "linear_equations_one_variable",
+    "difficulty": "medium",
+    "question_type": "spr",
+    "stem": "The sum of three consecutive odd integers is $135$. What is the greatest of the three integers?",
+    "spr_answers": [
+      "47"
+    ],
+    "explanation_en": "Let the integers be $n$, $n + 2$, and $n + 4$. Then $3n + 6 = 135$, so $3n = 129$ and $n = 43$. The integers are $43$, $45$, and $47$, so the greatest is $47$. Answering $45$ (the middle one, $135 \\div 3$) or $43$ (the smallest) is a common slip.",
+    "explanation_uz": "Sonlar $n$, $n + 2$ va $n + 4$ bo‘lsin. U holda $3n + 6 = 135$, demak $3n = 129$ va $n = 43$. Sonlar $43$, $45$ va $47$, eng kattasi $47$. O‘rtadagi son $45$ ni ($135 \\div 3$) yoki eng kichigi $43$ ni yozib qo‘yish ko‘p uchraydigan xato.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "consecutive-integers"
+    ]
+  },
+  {
+    "skill_code": "linear_equations_one_variable",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "$$4(3x - k) = 12x - 20$$\n\nIn the given equation, $k$ is a constant. For what value of $k$ does the equation have infinitely many solutions?",
+    "option_a": "$-5$",
+    "option_b": "$5$",
+    "option_c": "$16$",
+    "option_d": "$20$",
+    "correct": "B",
+    "explanation_en": "Distribute: $12x - 4k = 12x - 20$. The $x$-terms already match, so the equation is true for every $x$ exactly when the constants match: $-4k = -20$, so $k = 5$.\n\nChoice A has the wrong sign: with $k = -5$ the left side is $12x + 20$. Choice C comes from subtracting $4$ instead of dividing by $4$. Choice D forgets to distribute the $4$ to $k$.",
+    "explanation_uz": "Qavsni ochamiz: $12x - 4k = 12x - 20$. $x$ li hadlar allaqachon teng, shuning uchun tenglama har qanday $x$ uchun to‘g‘ri bo‘lishi uchun ozod hadlar teng bo‘lishi kerak: $-4k = -20$, demak $k = 5$.\n\nA variantda ishora xato: $k = -5$ bo‘lsa, chap tomon $12x + 20$ bo‘ladi. C variant $4$ ga bo‘lish o‘rniga $4$ ni ayirishdan chiqadi. D variantda $4$ ni $k$ ga ko‘paytirish unutilgan.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "infinitely-many-constant"
+    ]
+  },
+  {
+    "skill_code": "linear_equations_one_variable",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stem": "What is the solution to the equation $0.15x + 0.6 = 0.05(x + 40)$?",
+    "option_a": "$1.4$",
+    "option_b": "$14$",
+    "option_c": "$26$",
+    "option_d": "$140$",
+    "correct": "B",
+    "explanation_en": "Distribute: $0.15x + 0.6 = 0.05x + 2$. Subtract $0.05x$ and $0.6$: $0.1x = 1.4$, so $x = 14$. Check: $0.15(14) + 0.6 = 2.7$ and $0.05(54) = 2.7$.\n\nChoice A stops at $0.1x = 1.4$ without dividing by $0.1$. Choice C adds $0.6$ instead of subtracting it ($0.1x = 2.6$). Choice D misplaces the decimal point when dividing by $0.1$.",
+    "explanation_uz": "Qavsni ochamiz: $0.15x + 0.6 = 0.05x + 2$. $0.05x$ va $0.6$ ni ayiramiz: $0.1x = 1.4$, demak $x = 14$. Tekshiruv: $0.15(14) + 0.6 = 2.7$ va $0.05(54) = 2.7$.\n\nA variant $0.1x = 1.4$ da to‘xtab, $0.1$ ga bo‘lmagan. C variant $0.6$ ni ayirish o‘rniga qo‘shgan ($0.1x = 2.6$). D variantda $0.1$ ga bo‘lishda vergul (o‘nli kasr nuqtasi) noto‘g‘ri qo‘yilgan.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "solve-decimal"
+    ]
+  },
+  {
+    "skill_code": "linear_equations_one_variable",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "$$\\frac{2}{5}(15x - a) + 3 = bx - 7$$\n\nIn the given equation, $a$ and $b$ are constants. If the equation has infinitely many solutions, what is the value of $a + b$?",
+    "spr_answers": [
+      "31"
+    ],
+    "explanation_en": "Distribute: $6x - \\frac{2a}{5} + 3 = bx - 7$. For infinitely many solutions, both sides must be the same expression. Matching the $x$-coefficients gives $b = 6$. Matching the constants gives $-\\frac{2a}{5} + 3 = -7$, so $-\\frac{2a}{5} = -10$ and $a = 25$. Therefore $a + b = 25 + 6 = 31$. A common error is to multiply only $15x$ by $\\frac{2}{5}$ and forget $a$, which gives $a = 10$.",
+    "explanation_uz": "Qavsni ochamiz: $6x - \\frac{2a}{5} + 3 = bx - 7$. Cheksiz ko‘p yechim bo‘lishi uchun ikkala tomon bir xil ifoda bo‘lishi kerak. $x$ koeffitsiyentlarini tenglasak, $b = 6$. Ozod hadlarni tenglasak, $-\\frac{2a}{5} + 3 = -7$, ya’ni $-\\frac{2a}{5} = -10$ va $a = 25$. Demak, $a + b = 25 + 6 = 31$. Ko‘p uchraydigan xato — $\\frac{2}{5}$ ni faqat $15x$ ga ko‘paytirib, $a$ ni unutish; bu $a = 10$ ni beradi.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "infinitely-many-constant"
+    ]
+  },
+  {
+    "skill_code": "linear_equations_one_variable",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "$$\\frac{cx + 4}{3} = \\frac{x - c}{2}$$\n\nIn the given equation, $c$ is a constant. If $x = -2$ is the solution to the equation, what is the value of $c$?",
+    "option_a": "$-14$",
+    "option_b": "$2$",
+    "option_c": "$4$",
+    "option_d": "$14$",
+    "correct": "D",
+    "explanation_en": "Substitute $x = -2$: $\\frac{-2c + 4}{3} = \\frac{-2 - c}{2}$. Cross-multiply: $2(-2c + 4) = 3(-2 - c)$, so $-4c + 8 = -6 - 3c$. Then $14 = c$. Check: $\\frac{-28 + 4}{3} = -8$ and $\\frac{-2 - 14}{2} = -8$.\n\nChoice A has the sign wrong at the last step. Choice B comes from distributing $3(-2 - c)$ as $-6 + 3c$. Choice C comes from cross-multiplying the wrong way, $3(-2c + 4) = 2(-2 - c)$.",
+    "explanation_uz": "$x = -2$ ni qo‘yamiz: $\\frac{-2c + 4}{3} = \\frac{-2 - c}{2}$. Proporsiya qoidasi bo‘yicha ko‘paytiramiz: $2(-2c + 4) = 3(-2 - c)$, ya’ni $-4c + 8 = -6 - 3c$. Bundan $14 = c$. Tekshiruv: $\\frac{-28 + 4}{3} = -8$ va $\\frac{-2 - 14}{2} = -8$.\n\nA variantda oxirgi qadamda ishora xato. B variant $3(-2 - c)$ ni $-6 + 3c$ deb ochishdan chiqadi. C variant noto‘g‘ri tomonlarni ko‘paytirishdan chiqadi: $3(-2c + 4) = 2(-2 - c)$.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "parameter-from-solution"
+    ]
+  },
+  {
+    "skill_code": "linear_equations_one_variable",
+    "difficulty": "hard",
+    "question_type": "spr",
+    "stem": "Tank A contains $1{,}200$ liters of water and is being drained at a constant rate of $45$ liters per minute. At the same moment, tank B contains $300$ liters of water and is being filled at a constant rate of $30$ liters per minute. After how many minutes will tank A contain exactly twice as much water as tank B?",
+    "spr_answers": [
+      "40/7",
+      "5.714"
+    ],
+    "explanation_en": "After $t$ minutes, tank A has $1{,}200 - 45t$ liters and tank B has $300 + 30t$ liters. Set A equal to twice B: $1{,}200 - 45t = 2(300 + 30t) = 600 + 60t$. Then $600 = 105t$, so $t = \\frac{600}{105} = \\frac{40}{7} \\approx 5.714$. Doubling only the $300$ (and not the $30t$) gives $600 = 75t$, or $t = 8$, which is wrong.",
+    "explanation_uz": "$t$ daqiqadan keyin A bakda $1{,}200 - 45t$ litr, B bakda $300 + 30t$ litr suv bo‘ladi. A ni B ning ikki baravariga tenglaymiz: $1{,}200 - 45t = 2(300 + 30t) = 600 + 60t$. Bundan $600 = 105t$, ya’ni $t = \\frac{600}{105} = \\frac{40}{7} \\approx 5.714$. Faqat $300$ ni ikkilantirib ($30t$ ni emas), $600 = 75t$, ya’ni $t = 8$ deb topish xato.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "word-problem"
+    ]
+  },
+  {
+    "skill_code": "linear_equations_one_variable",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stem": "$$ax + 12 = 4(x + 3) + bx$$\n\nIn the given equation, $a$ and $b$ are constants. If the equation has infinitely many solutions, which of the following must be true?",
+    "option_a": "$a - b = 4$",
+    "option_b": "$a + b = 4$",
+    "option_c": "$a = 4$ and $b = 0$",
+    "option_d": "$a - b = 12$",
+    "correct": "A",
+    "explanation_en": "Distribute: $ax + 12 = 4x + 12 + bx = (4 + b)x + 12$. The constants already match ($12 = 12$), so the equation holds for every $x$ exactly when $a = 4 + b$, that is, $a - b = 4$.\n\nChoice B has the wrong sign: $b$ is on the same side as $4$. Choice C is one pair that works, but it is not required; for example, $a = 7$ and $b = 3$ also work. Choice D compares a coefficient with the constant $12$.",
+    "explanation_uz": "Qavsni ochamiz: $ax + 12 = 4x + 12 + bx = (4 + b)x + 12$. Ozod hadlar allaqachon teng ($12 = 12$), shuning uchun tenglama har qanday $x$ uchun aynan $a = 4 + b$, ya’ni $a - b = 4$ bo‘lganda bajariladi.\n\nB variantda ishora xato: $b$ va $4$ bir tomonda turibdi. C variant mos keladigan juftliklardan biri, lekin majburiy emas; masalan, $a = 7$ va $b = 3$ ham mos keladi. D variant koeffitsiyentni ozod had $12$ bilan solishtirgan.",
+    "estimated_seconds": 120,
+    "source": "original",
+    "tags": [
+      "core-v4",
+      "infinitely-many-constant"
+    ]
+  }
+]
