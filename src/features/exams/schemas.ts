@@ -63,6 +63,11 @@ export const AutoFillSchema = z.object({
   mode: z.enum(['append', 'replace']),
 })
 
+export const AutoFillExamSchema = z.object({
+  examId: z.guid(),
+  count: z.coerce.number().int().min(1).max(60).default(10),
+})
+
 export const QuestionSearchSchema = z.object({
   moduleId: z.guid(),
   q: z.string().trim().max(120).default(''),

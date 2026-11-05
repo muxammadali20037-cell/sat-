@@ -14,6 +14,7 @@ import { allocateAutoFill, moduleLabel, requiredModuleSpecs, type PoolQuestion }
 import { examValidationIssues, getExamAdmin } from './admin'
 import {
   AutoFillSchema,
+  AutoFillExamSchema,
   CreateExamSchema,
   ExamSettingsSchema,
   ExamStatusSchema,
@@ -319,98 +320,136 @@ export async function moveQuestionAction(input: unknown): Promise<ActionResult> 
   }
 }
 
+type FillResult = { added: number; shortfall: number; reused: number; full: boolean }
+
+/** Fills one module (see allocateAutoFill). Fresh questions first; reuse from other exams only on shortfall. Audited. */
+async function fillModule(ctx: Awaited<ReturnType<typeof contentContext>>, moduleId: string, count: number, mode: 'append' | 'replace'): Promise<FillResult> {
+  const mod = await loadModule(ctx.db, moduleId)
+  assertDraft(mod.status)
+  const target = mod.isFullLength ? FULL_LENGTH_COUNTS[mod.section] : count
+  const taxonomy = await getTaxonomy(ctx.db)
+  const subject = taxonomy.subjectByCode.get(mod.section)
+  if (!subject) throw new ApiError(400, 'VALIDATION_FAILED', 'Subject not configured.')
+
+  if (mode === 'replace') {
+    const { error } = await ctx.db.from('mock_exam_questions').delete().eq('module_id', mod.id)
+    if (error) throw error
+  }
+  const used = await examQuestionIds(ctx.db, mod.mock_exam_id)
+  const { data: existingRows, error: eErr } = await ctx.db
+    .from('mock_exam_questions')
+    .select('question_id, questions(id, domain_id, skill_id, difficulty)')
+    .eq('module_id', mod.id)
+  if (eErr) throw eErr
+  const existing: PoolQuestion[] = existingRows
+    .filter((r) => r.questions)
+    .map((r) => ({ id: r.question_id, domainId: r.questions!.domain_id, skillId: r.questions!.skill_id, difficulty: r.questions!.difficulty as PoolQuestion['difficulty'] }))
+  if (existing.length >= target) return { added: 0, shortfall: 0, reused: 0, full: true }
+
+  // Paged: the hosted API returns at most 1000 rows per request.
+  const { rows: pool } = await fetchAll(
+    (from, to) => ctx.db.from('questions').select('id, domain_id, skill_id, difficulty').eq('subject_id', subject.id).eq('status', 'published').order('id').range(from, to),
+    { max: 100_000 },
+  )
+  // Questions already used in OTHER mock exams: kept for last, so each exam gets fresh questions
+  // while the bank allows; they are only reused to cover a shortfall.
+  const { rows: otherRows } = await fetchAll(
+    (from, to) =>
+      ctx.db
+        .from('mock_exam_questions')
+        .select('question_id, mock_exam_modules!inner(mock_exam_id)')
+        .neq('mock_exam_modules.mock_exam_id', mod.mock_exam_id)
+        .order('module_id')
+        .order('question_id')
+        .range(from, to),
+    { max: 200_000 },
+  )
+  const inOtherExams = new Set(otherRows.map((r) => r.question_id))
+  const candidates = pool
+    .filter((q) => !used.has(q.id))
+    .map((q) => ({ id: q.id, domainId: q.domain_id, skillId: q.skill_id, difficulty: q.difficulty as PoolQuestion['difficulty'] }))
+  const base = {
+    targetCount: target,
+    section: mod.section,
+    moduleNumber: mod.module_number,
+    variant: mod.variant,
+    domains: taxonomy.domains.filter((d) => d.subjectId === subject.id).map((d) => ({ id: d.id, weightPercent: d.weightPercent, position: d.position })),
+  }
+  const fresh = allocateAutoFill({ ...base, existing, pool: candidates.filter((q) => !inOtherExams.has(q.id)) })
+  const result =
+    fresh.shortfall === 0
+      ? fresh
+      : (() => {
+          const picked = new Set(fresh.selected)
+          const withFresh = [...existing, ...candidates.filter((q) => picked.has(q.id))]
+          const topUp = allocateAutoFill({ ...base, existing: withFresh, pool: candidates.filter((q) => !picked.has(q.id)) })
+          return { ...topUp, selected: [...fresh.selected, ...topUp.selected], allocation: topUp.allocation }
+        })()
+  const reused = result.selected.filter((id) => inOtherExams.has(id)).length
+  if (result.selected.length > 0) {
+    const start = await nextPosition(ctx.db, mod.id)
+    const { error: insErr } = await ctx.db
+      .from('mock_exam_questions')
+      .insert(result.selected.map((questionId, i) => ({ module_id: mod.id, question_id: questionId, position: start + i })))
+    if (insErr) throw insErr
+  }
+  await writeAudit({
+    actorId: ctx.actorId,
+    actorRole: ctx.actorRole,
+    action: 'mock_exam.autofill',
+    entityType: 'mock_exam_modules',
+    entityId: mod.id,
+    summary: `Auto-fill (${mode}) added ${result.selected.length} of ${target - existing.length} needed (${reused} also in other exams); shortfall ${result.shortfall}`,
+    after: { allocation: result.allocation },
+  })
+  return { added: result.selected.length, shortfall: result.shortfall, reused, full: false }
+}
+
+function fillMessage(r: { added: number; shortfall: number; reused: number }): string {
+  return r.shortfall > 0
+    ? `Added ${r.added}; the bank is short by ${r.shortfall}.`
+    : `Added ${r.added} questions${r.reused > 0 ? ` (${r.reused} also appear in another mock exam — the bank had too few unused ones)` : ''}`
+}
+
 export async function autoFillModuleAction(input: unknown): Promise<ActionResult<{ added: number; shortfall: number }>> {
   try {
     const ctx = await contentContext()
     const parsed = AutoFillSchema.safeParse(input)
     if (!parsed.success) return invalid(parsed.error)
+    const r = await fillModule(ctx, parsed.data.moduleId, parsed.data.count, parsed.data.mode)
     const mod = await loadModule(ctx.db, parsed.data.moduleId)
-    assertDraft(mod.status)
-    const target = mod.isFullLength ? FULL_LENGTH_COUNTS[mod.section] : parsed.data.count
-    const taxonomy = await getTaxonomy(ctx.db)
-    const subject = taxonomy.subjectByCode.get(mod.section)
-    if (!subject) return { ok: false, error: 'Subject not configured.' }
-
-    if (parsed.data.mode === 'replace') {
-      const { error } = await ctx.db.from('mock_exam_questions').delete().eq('module_id', mod.id)
-      if (error) throw error
-    }
-    const used = await examQuestionIds(ctx.db, mod.mock_exam_id)
-    const { data: existingRows, error: eErr } = await ctx.db
-      .from('mock_exam_questions')
-      .select('question_id, questions(id, domain_id, skill_id, difficulty)')
-      .eq('module_id', mod.id)
-    if (eErr) throw eErr
-    const existing: PoolQuestion[] = existingRows
-      .filter((r) => r.questions)
-      .map((r) => ({ id: r.question_id, domainId: r.questions!.domain_id, skillId: r.questions!.skill_id, difficulty: r.questions!.difficulty as PoolQuestion['difficulty'] }))
-    if (existing.length >= target) return { ok: true, data: { added: 0, shortfall: 0 }, message: 'The module is already full.' }
-
-    // Paged: the hosted API returns at most 1000 rows per request.
-    const { rows: pool } = await fetchAll(
-      (from, to) => ctx.db.from('questions').select('id, domain_id, skill_id, difficulty').eq('subject_id', subject.id).eq('status', 'published').order('id').range(from, to),
-      { max: 100_000 },
-    )
-    // Questions already used in OTHER mock exams: kept for last, so each exam gets fresh questions
-    // while the bank allows; they are only reused to cover a shortfall.
-    const { rows: otherRows } = await fetchAll(
-      (from, to) =>
-        ctx.db
-          .from('mock_exam_questions')
-          .select('question_id, mock_exam_modules!inner(mock_exam_id)')
-          .neq('mock_exam_modules.mock_exam_id', mod.mock_exam_id)
-          .order('module_id')
-          .order('question_id')
-          .range(from, to),
-      { max: 200_000 },
-    )
-    const inOtherExams = new Set(otherRows.map((r) => r.question_id))
-    const candidates = pool
-      .filter((q) => !used.has(q.id))
-      .map((q) => ({ id: q.id, domainId: q.domain_id, skillId: q.skill_id, difficulty: q.difficulty as PoolQuestion['difficulty'] }))
-    const base = {
-      targetCount: target,
-      section: mod.section,
-      moduleNumber: mod.module_number,
-      variant: mod.variant,
-      domains: taxonomy.domains.filter((d) => d.subjectId === subject.id).map((d) => ({ id: d.id, weightPercent: d.weightPercent, position: d.position })),
-    }
-    const fresh = allocateAutoFill({ ...base, existing, pool: candidates.filter((q) => !inOtherExams.has(q.id)) })
-    const result =
-      fresh.shortfall === 0
-        ? fresh
-        : (() => {
-            const picked = new Set(fresh.selected)
-            const withFresh = [...existing, ...candidates.filter((q) => picked.has(q.id))]
-            const topUp = allocateAutoFill({ ...base, existing: withFresh, pool: candidates.filter((q) => !picked.has(q.id)) })
-            return { ...topUp, selected: [...fresh.selected, ...topUp.selected], allocation: topUp.allocation }
-          })()
-    const reused = result.selected.filter((id) => inOtherExams.has(id)).length
-    if (result.selected.length > 0) {
-      const start = await nextPosition(ctx.db, mod.id)
-      const { error: insErr } = await ctx.db
-        .from('mock_exam_questions')
-        .insert(result.selected.map((questionId, i) => ({ module_id: mod.id, question_id: questionId, position: start + i })))
-      if (insErr) throw insErr
-    }
-    await writeAudit({
-      actorId: ctx.actorId,
-      actorRole: ctx.actorRole,
-      action: 'mock_exam.autofill',
-      entityType: 'mock_exam_modules',
-      entityId: mod.id,
-      summary: `Auto-fill (${parsed.data.mode}) added ${result.selected.length} of ${target - existing.length} needed (${reused} also in other exams); shortfall ${result.shortfall}`,
-      after: { allocation: result.allocation },
-    })
     revalidateExam(mod.mock_exam_id)
-    return {
-      ok: true,
-      data: { added: result.selected.length, shortfall: result.shortfall },
-      message:
-        result.shortfall > 0
-          ? `Added ${result.selected.length}; the bank is short by ${result.shortfall}.`
-          : `Added ${result.selected.length} questions${reused > 0 ? ` (${reused} also appear in another mock exam — the bank had too few unused ones)` : ''}`,
+    if (r.full) return { ok: true, data: { added: 0, shortfall: 0 }, message: 'The module is already full.' }
+    return { ok: true, data: { added: r.added, shortfall: r.shortfall }, message: fillMessage(r) }
+  } catch (err) {
+    return failure(err)
+  }
+}
+
+/** Fills every module of a draft exam in one go (append: questions already placed are kept). */
+export async function autoFillExamAction(input: unknown): Promise<ActionResult<{ added: number; shortfall: number; reused: number }>> {
+  try {
+    const ctx = await contentContext()
+    const parsed = AutoFillExamSchema.safeParse(input)
+    if (!parsed.success) return invalid(parsed.error)
+    const { data: mods, error } = await ctx.db
+      .from('mock_exam_modules')
+      .select('id, section, module_number, variant')
+      .eq('mock_exam_id', parsed.data.examId)
+      .order('section', { ascending: false })
+      .order('module_number')
+      .order('variant')
+    if (error) throw error
+    if (!mods || mods.length === 0) return { ok: false, error: 'Exam not found.' }
+    const total = { added: 0, shortfall: 0, reused: 0 }
+    for (const m of mods) {
+      const r = await fillModule(ctx, m.id, parsed.data.count, 'append')
+      total.added += r.added
+      total.shortfall += r.shortfall
+      total.reused += r.reused
     }
+    revalidateExam(parsed.data.examId)
+    return { ok: true, data: total, message: total.added === 0 && total.shortfall === 0 ? 'Every module is already full.' : fillMessage(total) }
   } catch (err) {
     return failure(err)
   }

@@ -162,6 +162,7 @@ export function allocateAutoFill(input: AutoFillInput): AutoFillResult {
   const random = input.random ?? Math.random
   const domains = [...input.domains].sort((a, b) => a.position - b.position)
   const totalTarget = Math.max(input.targetCount, input.existing.length)
+  const remaining = totalTarget - input.existing.length
   const domainTargets = apportion(totalTarget, domains.map((d) => ({ key: d.id, weight: d.weightPercent })))
   const targets = difficultyTargets(input.moduleNumber, input.variant)
   const used = new Set(input.existing.map((q) => q.id))
@@ -179,7 +180,8 @@ export function allocateAutoFill(input: AutoFillInput): AutoFillResult {
   for (const d of domains) {
     const target = domainTargets.get(d.id) ?? 0
     const have = input.existing.filter((q) => q.domainId === d.id)
-    const need = Math.max(0, target - have.length)
+    // Never more than the module still has room for (existing questions may sit unevenly across domains).
+    const need = Math.max(0, Math.min(target - have.length, remaining - selected.length))
     const haveByDifficulty = new Map<Difficulty, number>()
     for (const q of have) haveByDifficulty.set(q.difficulty, (haveByDifficulty.get(q.difficulty) ?? 0) + 1)
     const diffTargets = apportion(target, targets.map((t) => ({ key: t.difficulty, weight: t.share })))

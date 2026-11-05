@@ -6,7 +6,8 @@ import { Button } from '@/components/ui/button'
 import { ConfirmDialog } from '@/components/ui/dialog'
 import { Input } from '@/components/ui/input'
 import { toast } from '@/components/ui/toast'
-import { setExamStatusAction, setModuleDurationAction } from '@/features/exams/admin-actions'
+import { Wand2 } from 'lucide-react'
+import { autoFillExamAction, setExamStatusAction, setModuleDurationAction } from '@/features/exams/admin-actions'
 
 type Status = 'draft' | 'published' | 'archived'
 
@@ -117,5 +118,28 @@ export function ModuleDurationForm({ moduleId, minutes, editable }: { moduleId: 
         </Button>
       )}
     </form>
+  )
+}
+
+/** "Auto-fill all modules": fills every module of a draft exam in one go (keeps questions already placed). */
+export function AutoFillExamButton({ examId }: { examId: string }) {
+  const router = useRouter()
+  const [pending, startTransition] = React.useTransition()
+  return (
+    <Button
+      variant="secondary"
+      loading={pending}
+      onClick={() =>
+        startTransition(async () => {
+          const res = await autoFillExamAction({ examId })
+          if (!res.ok) toast.error(res.error)
+          else if (res.data && res.data.shortfall > 0) toast.warning(res.message ?? 'Added')
+          else toast.success(res.message ?? 'Added')
+          router.refresh()
+        })
+      }
+    >
+      <Wand2 /> Auto-fill all modules
+    </Button>
   )
 }

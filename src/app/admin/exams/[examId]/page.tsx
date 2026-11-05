@@ -11,7 +11,7 @@ import { Breadcrumb } from '@/components/ui/breadcrumb'
 import { Alert, Badge, Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { ExamForm } from '@/components/admin/exams/exam-form'
-import { ExamStatusActions, ModuleDurationForm } from '@/components/admin/exams/exam-controls'
+import { AutoFillExamButton, ExamStatusActions, ModuleDurationForm } from '@/components/admin/exams/exam-controls'
 import { activeAttemptCount, examValidationIssues, getExamAdmin } from '@/features/exams/admin'
 import { moduleLabel } from '@/features/exams/builder'
 import { FULL_LENGTH_COUNTS } from '@/features/exams/machine'
@@ -67,7 +67,11 @@ export default async function AdminExamPage({ params }: { params: Promise<{ exam
           )}
         </Section>
 
-        <Section title="Modules" description={isDraft ? 'Open a module to choose its questions.' : 'Move the exam to draft to change modules.'}>
+        <Section
+          title="Modules"
+          description={isDraft ? 'Open a module to choose its questions, or fill every module at once (fresh questions first, by domain weight and difficulty).' : 'Move the exam to draft to change modules.'}
+          actions={canEdit && isDraft ? <AutoFillExamButton examId={exam.id} /> : undefined}
+        >
           <div className="overflow-x-auto relative rounded-lg border border-border bg-card">
             <table className="w-full min-w-[560px] text-sm">
               <thead>

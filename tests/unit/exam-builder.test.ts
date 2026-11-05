@@ -101,6 +101,15 @@ describe('allocateAutoFill', () => {
     expect(r.selected.some((id) => existing.some((e) => e.id === id))).toBe(false)
     expect(r.selected.filter((id) => id.startsWith('alg-'))).toHaveLength(0) // algebra quota already met
   })
+  it('never overfills when existing questions sit unevenly across domains', () => {
+    const pool = bank(MATH_DOMAINS, 20)
+    // 15 algebra questions already placed: far above algebra's share of 22.
+    const existing = pool.filter((q) => q.domainId === 'alg').slice(0, 15)
+    const r = allocateAutoFill({ targetCount: 22, domains: MATH_DOMAINS, moduleNumber: 1, variant: 'standard', section: 'math', existing, pool, random: rng(9) })
+    expect(r.selected).toHaveLength(7)
+    expect(r.shortfall).toBe(0)
+    expect(new Set([...r.selected, ...existing.map((e) => e.id)]).size).toBe(22)
+  })
   it('falls back to other difficulties and domains, then reports the shortfall', () => {
     const tiny: PoolQuestion[] = [
       { id: 'a1', domainId: 'alg', skillId: 's', difficulty: 'easy' },
