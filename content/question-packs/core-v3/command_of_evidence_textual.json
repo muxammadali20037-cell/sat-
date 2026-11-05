@@ -1,0 +1,162 @@
+[
+  {
+    "skill_code": "command_of_evidence_textual",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "*Jane Eyre* is an 1847 novel by Charlotte Brontë. In the novel, the narrator, Jane, recalls that as a child she was fascinated by the pictures in a book about birds, even when she could not fully understand them.",
+    "stem": "Which quotation from *Jane Eyre* most effectively illustrates the claim?",
+    "option_a": "“At intervals, while turning over the leaves of my book, I studied the aspect of that winter afternoon.”",
+    "option_b": "“I returned to my book—Bewick’s History of British Birds: the letterpress thereof I cared little for, generally speaking…”",
+    "option_c": "“Each picture told a story; mysterious often to my undeveloped understanding and imperfect feelings, yet ever profoundly interesting…”",
+    "option_d": "“A breakfast-room adjoined the drawing-room, I slipped in there.”",
+    "correct": "C",
+    "explanation_en": "The claim has two parts: Jane was fascinated by the pictures, and she did not always understand them. Choice C matches both: the pictures were “mysterious often to my undeveloped understanding” yet “ever profoundly interesting.”\n\nChoice A is wrong because it describes Jane looking at the winter weather, not at the pictures. Choice B is wrong because it concerns the “letterpress” (the printed words), which Jane says she “cared little for”; it says nothing about the pictures. Choice D is wrong because it only describes where Jane went.",
+    "explanation_uz": "Da’vo ikki qismdan iborat: Jeyn rasmlarga mahliyo bo‘lgan va ularni har doim ham tushunavermagan. C javob ikkalasiga ham mos: rasmlar “mening yetilmagan aqlim uchun ko‘pincha sirli,” ammo “doimo nihoyatda qiziqarli” bo‘lgan.\n\nA noto‘g‘ri: unda Jeyn rasmlarga emas, qishki ob-havoga qaragani tasvirlangan. B noto‘g‘ri: u kitobning bosma matni (“letterpress”) haqida, Jeyn esa unga “unchalik qiziqmaganini” aytadi; rasmlar haqida hech narsa demaydi. D noto‘g‘ri: u faqat Jeyn qayerga borganini tasvirlaydi.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "command_of_evidence_textual",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "*Pride and Prejudice* is an 1813 novel by Jane Austen. In the novel, the narrator suggests that Mrs. Bennet is chiefly concerned with finding husbands for her daughters.",
+    "stem": "Which quotation from *Pride and Prejudice* most effectively illustrates the claim?",
+    "option_a": "“The business of her life was to get her daughters married: its solace was visiting and news.”",
+    "option_b": "“When she was discontented, she fancied herself nervous.”",
+    "option_c": "“Mr. Bingley was good-looking and gentlemanlike: he had a pleasant countenance, and easy, unaffected manners.”",
+    "option_d": "“His sisters were fine women, with an air of decided fashion.”",
+    "correct": "A",
+    "explanation_en": "The claim is that Mrs. Bennet's main concern is getting her daughters married. Choice A states this directly: “The business of her life was to get her daughters married.”\n\nChoice B describes Mrs. Bennet, but it concerns her moods, not her daughters' marriages. Choice C describes Mr. Bingley's appearance and manners. Choice D describes Mr. Bingley's sisters. Neither C nor D mentions Mrs. Bennet's concerns.",
+    "explanation_uz": "Da’voga ko‘ra, Bennet xonimning asosiy tashvishi — qizlarini turmushga chiqarish. A javob buni to‘g‘ridan-to‘g‘ri aytadi: “Uning hayotdagi asosiy ishi qizlarini turmushga chiqarish edi.”\n\nB ham Bennet xonimni tasvirlaydi, lekin uning kayfiyati haqida, qizlarining turmushi haqida emas. C janob Binglining tashqi ko‘rinishi va xulqini tasvirlaydi. D janob Binglining opa-singillarini tasvirlaydi. C ham, D ham Bennet xonimning tashvishlari haqida gapirmaydi.",
+    "estimated_seconds": 55,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "command_of_evidence_textual",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Along the Pacific coast of North America, sea urchins graze on kelp, a large seaweed that forms underwater forests. Marine biologist Feruza Alimova hypothesizes that sea otters help kelp forests survive by eating sea urchins and keeping their numbers low.",
+    "stem": "Which finding, if true, would most directly support Alimova's hypothesis?",
+    "option_a": "Sea otters often use rocks as tools to crack open the shells of their prey.",
+    "option_b": "In coastal areas without sea otters, sea urchins were far more numerous and kelp was much sparser than in nearby areas with otters.",
+    "option_c": "Kelp grows fastest in cold water that is rich in nutrients.",
+    "option_d": "Some species of fish also feed on young sea urchins.",
+    "correct": "B",
+    "explanation_en": "Alimova's hypothesis links three things: otters reduce urchins, and fewer urchins means healthier kelp. Choice B shows exactly this pattern: where otters were absent, urchins were more numerous and kelp was sparser.\n\nChoice A describes how otters eat but not whether they affect urchin numbers or kelp. Choice C concerns conditions for kelp growth and says nothing about otters. Choice D concerns fish, not otters, so it does not test the hypothesis.",
+    "explanation_uz": "Alimova gipotezasi uch narsani bog‘laydi: dengiz qunduzlari dengiz tipratikanlarini kamaytiradi, tipratikanlar kam bo‘lsa, kelp o‘rmonlari sog‘lomroq bo‘ladi. B javob aynan shu holatni ko‘rsatadi: qunduzlar yo‘q joylarda tipratikanlar ko‘p, kelp esa siyrak bo‘lgan.\n\nA qunduzlar qanday ovqatlanishini tasvirlaydi, ammo ularning tipratikanlar soni yoki kelpga ta’sirini emas. C kelp o‘sishi uchun sharoit haqida, qunduzlar haqida hech narsa demaydi. D qunduzlar emas, baliqlar haqida, shuning uchun gipotezani tekshirmaydi.",
+    "estimated_seconds": 55,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "command_of_evidence_textual",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "*Narrative of the Life of Frederick Douglass, an American Slave* is an 1845 autobiography by Frederick Douglass. In the book, Douglass suggests that enslavers deliberately kept enslaved people ignorant of basic facts about their own lives.",
+    "stem": "Which quotation from *Narrative of the Life of Frederick Douglass, an American Slave* most effectively illustrates the claim?",
+    "option_a": "“I was born in Tuckahoe, near Hillsborough, and about twelve miles from Easton, in Talbot county, Maryland.”",
+    "option_b": "“They seldom come nearer to it than planting-time, harvest-time, cherry-time, spring-time, or fall-time.”",
+    "option_c": "“By far the larger part of the slaves know as little of their ages as horses know of theirs, and it is the wish of most masters within my knowledge to keep their slaves thus ignorant.”",
+    "option_d": "“My mother was named Harriet Bailey.”",
+    "correct": "C",
+    "explanation_en": "The claim stresses that the ignorance was deliberate: enslavers intended it. Choice C states that most enslaved people did not know their ages and that “it is the wish of most masters … to keep their slaves thus ignorant,” which shows the ignorance was intentional.\n\nChoice B is tempting because it shows that enslaved people knew their birthdays only by season, but it does not say anyone caused this on purpose. Choice A gives Douglass's birthplace, which he does know. Choice D gives his mother's name; neither A nor D shows enslavers withholding information.",
+    "explanation_uz": "Da’voning asosiy jihati — bu jaholat ataylab qilingan, ya’ni quldorlar shuni xohlagan. C javobda qullarning aksariyati o‘z yoshini bilmasligi va “ko‘pchilik xo‘jayinlar qullarini aynan shunday nodon saqlashni xohlashi” aytiladi — bu jaholat qasddan ekanini ko‘rsatadi.\n\nB jozibali tuyuladi, chunki u qullar tug‘ilgan kunini faqat fasl bo‘yicha bilganini ko‘rsatadi, ammo bunga kimdir ataylab sabab bo‘lgani aytilmaydi. A Duglasning tug‘ilgan joyini keltiradi, buni u biladi. D onasining ismini keltiradi; A ham, D ham quldorlar ma’lumotni yashirganini ko‘rsatmaydi.",
+    "estimated_seconds": 75,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "command_of_evidence_textual",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "*Life on the Mississippi* is an 1883 memoir by Mark Twain. In the memoir, Twain recalls that after one boy from his town found work on a steamboat, many other boys from the town followed his example.",
+    "stem": "Which quotation from *Life on the Mississippi* most effectively illustrates the claim?",
+    "option_a": "“Pilot was the grandest position of all.”",
+    "option_b": "“He wore a leather belt and used no suspenders.”",
+    "option_c": "“We could not get on the river--at least our parents would not let us.”",
+    "option_d": "“Boy after boy managed to get on the river.”",
+    "correct": "D",
+    "explanation_en": "The claim is that many boys followed the first boy onto the river. Choice D, “Boy after boy managed to get on the river,” shows exactly that.\n\nChoice A ranks steamboat jobs but does not show boys following anyone's example. Choice B describes the first boy's clothing. Choice C is tempting because it concerns getting on the river, but it describes boys who failed to do so, which does not illustrate many boys following the example.",
+    "explanation_uz": "Da’voga ko‘ra, ko‘plab bolalar birinchi bolaning ortidan daryoga ishga ketgan. D javob — “Bola ketidan bola daryoga ishga joylashib oldi” — aynan shuni ko‘rsatadi.\n\nA paroxoddagi lavozimlarni baholaydi, lekin bolalar kimningdir o‘rnagiga ergashganini ko‘rsatmaydi. B birinchi bolaning kiyimini tasvirlaydi. C jozibali, chunki u ham daryoda ishlash haqida, ammo unda bunga erisha olmagan bolalar tasvirlangan — bu ko‘p bolalar o‘rnakka ergashganini ko‘rsatmaydi.",
+    "estimated_seconds": 65,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "command_of_evidence_textual",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "On flat, open farmland, strong winds can carry away fertile topsoil. Agricultural scientist Sardor Yo‘ldoshev hypothesizes that planting rows of trees along the edges of fields reduces this loss by slowing the wind before it reaches the soil.",
+    "stem": "Which finding, if true, would most directly support Yo‘ldoshev's hypothesis?",
+    "option_a": "During windstorms, fields bordered by tree rows lost much less topsoil than otherwise similar fields without tree rows.",
+    "option_b": "Fields bordered by tree rows produced higher crop yields than fields without tree rows.",
+    "option_c": "Soil erosion by wind is more common in dry years than in wet years.",
+    "option_d": "Tree rows along fields provide nesting sites for many species of birds.",
+    "correct": "A",
+    "explanation_en": "The hypothesis is that tree rows reduce wind-driven topsoil loss. Choice A compares similar fields with and without tree rows during windstorms and finds much less soil loss where trees were planted, which directly supports the hypothesis.\n\nChoice B is tempting, but higher yields could result from many causes (shade, moisture, fewer pests), so it does not directly show reduced soil loss. Choice C concerns when erosion happens, not whether tree rows reduce it. Choice D describes a different benefit of tree rows that is unrelated to soil.",
+    "explanation_uz": "Gipotezaga ko‘ra, daraxt qatorlari shamol sababli unumdor tuproq yo‘qolishini kamaytiradi. A javob shamolli bo‘ronlar paytida daraxt qatori bor va yo‘q bo‘lgan o‘xshash dalalarni solishtiradi va daraxt ekilgan joyda tuproq ancha kam yo‘qolganini aniqlaydi — bu gipotezani bevosita tasdiqlaydi.\n\nB jozibali, ammo yuqori hosil ko‘p sabablarga (soya, namlik, zararkunandalar kamligi) bog‘liq bo‘lishi mumkin, shuning uchun u tuproq yo‘qolishi kamayganini bevosita ko‘rsatmaydi. C eroziya qachon sodir bo‘lishi haqida, daraxtlar uni kamaytiradimi-yo‘qmi, bu haqda emas. D daraxt qatorlarining tuproqqa aloqasi yo‘q boshqa foydasini tasvirlaydi.",
+    "estimated_seconds": 65,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "command_of_evidence_textual",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "*The Souls of Black Folk* is a 1903 book by W. E. B. Du Bois. In the book, Du Bois argues that Black Americans do not wish to abandon either of the two identities he describes—American and Black—but rather to be able to hold both at once.",
+    "stem": "Which quotation from *The Souls of Black Folk* most effectively illustrates the claim?",
+    "option_a": "“All, nevertheless, flutter round it.”",
+    "option_b": "“He simply wishes to make it possible for a man to be both a Negro and an American, without being cursed and spit upon by his fellows, without having the doors of Opportunity closed roughly in his face.”",
+    "option_c": "“One ever feels his twoness,—an American, a Negro; two souls, two thoughts, two unreconciled strivings; two warring ideals in one dark body, whose dogged strength alone keeps it from being torn asunder.”",
+    "option_d": "“It is a peculiar sensation, this double-consciousness, this sense of always looking at one’s self through the eyes of others, of measuring one’s soul by the tape of a world that looks on in amused contempt and pity.”",
+    "correct": "B",
+    "explanation_en": "The claim concerns a wish: to keep both identities rather than give either up. Choice B states that wish directly: “He simply wishes to make it possible for a man to be both a Negro and an American.”\n\nChoice C is tempting because it names the same two identities, but it describes them as “unreconciled” and “warring”—the painful conflict, not the wish to hold both. Choice D describes the experience of double-consciousness, seeing oneself through others' contemptuous eyes, not what Black Americans want. Choice A refers to people circling an unasked question and says nothing about identity.",
+    "explanation_uz": "Da’vo bir istak haqida: birorta o‘zlikdan voz kechmasdan, ikkalasini ham saqlab qolish. B javob bu istakni to‘g‘ridan-to‘g‘ri ifodalaydi: “U shunchaki insonning ham qora tanli, ham amerikalik bo‘la olishini ta’minlashni xohlaydi.”\n\nC jozibali, chunki unda ham o‘sha ikki o‘zlik tilga olinadi, ammo ular “murosasiz” va “bir-biri bilan kurashuvchi” deb tasvirlanadi — bu ikkalasini saqlash istagi emas, og‘riqli ziddiyat. D ikki tomonlama ong tajribasini — o‘zingga boshqalarning nafratli ko‘zi bilan qarashni tasvirlaydi, qora tanli amerikaliklar nimani xohlashini emas. A odamlarning so‘ralmagan savol atrofida aylanishi haqida va o‘zlik haqida hech narsa demaydi.",
+    "estimated_seconds": 90,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  },
+  {
+    "skill_code": "command_of_evidence_textual",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Around 600 CE, the people of the ancient settlement of Qal’a Sabz abandoned their homes, and the site was never reoccupied. Archaeologist Behruz Nazarov hypothesizes that a prolonged drought dried up the springs that supplied the settlement's water, forcing the residents to leave.",
+    "stem": "Which finding, if true, would most directly weaken Nazarov's hypothesis?",
+    "option_a": "Pollen preserved in nearby lake sediments indicates that the region became drier around 600 CE.",
+    "option_b": "The population of Qal’a Sabz grew steadily during the century before it was abandoned.",
+    "option_c": "Several other settlements in the region were also abandoned between 550 and 650 CE.",
+    "option_d": "Mineral deposits from the settlement's springs show that the springs continued to flow steadily for at least two centuries after the settlement was abandoned.",
+    "correct": "D",
+    "explanation_en": "Nazarov's hypothesis depends on the springs drying up. Choice D shows that the springs kept flowing steadily for centuries after the residents left, so the residents did not leave because their water supply failed. This directly weakens the hypothesis.\n\nChoice A would support, not weaken, the hypothesis by showing that the region became drier at the right time. Choice B does not address the springs or a drought; a growing population is consistent with many explanations for later abandonment. Choice C is consistent with a regional drought and so, if anything, supports the hypothesis.",
+    "explanation_uz": "Nazarov gipotezasi buloqlar qurib qolganiga asoslanadi. D javob esa aholi ketganidan keyin ham buloqlar asrlar davomida barqaror oqqanini ko‘rsatadi, demak aholi suv ta’minoti tugagani uchun ketmagan. Bu gipotezani bevosita zaiflashtiradi.\n\nA gipotezani zaiflashtirmaydi, aksincha, mintaqa aynan o‘sha paytda qurg‘oqlashganini ko‘rsatib, uni qo‘llab-quvvatlaydi. B buloqlar yoki qurg‘oqchilik haqida emas; aholining o‘sishi keyingi tark etilishning ko‘p xil tushuntirishlariga mos keladi. C mintaqaviy qurg‘oqchilikka mos keladi, shuning uchun u ham gipotezani qo‘llab-quvvatlaydi.",
+    "estimated_seconds": 80,
+    "source": "original",
+    "tags": [
+      "core-v3"
+    ]
+  }
+]
