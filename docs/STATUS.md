@@ -414,6 +414,10 @@ Verified locally: unit tests (path stages, invite rules), RLS integration test (
 - **Auto-fill all modules:** one button on a draft mock exam fills all six modules (fresh questions first; reuse reported). The allocator no longer overfills a module whose existing questions sit unevenly across domains (unit test). Browser test 9/9.
 - **Bank size and mocks:** a full-length mock uses 147 distinct questions (81 RW + 66 Math across both module-2 routes). With the bank at 1,200 questions once core-v4 is published (440 RW, 760 Math), Reading and Writing is the limit: about 5 fully distinct mocks (440 / 81). Beyond that, auto-fill reuses questions and says so.
 
+### Question pack core-v5 (352 Reading and Writing questions)
+
+32 per RW skill, blind-checked 351/352 (the one difference reviewed; key correct). Bundled for Admin → Question bank → Import ("Import 352 questions as drafts"). Once published, the RW bank is 792 questions (about 9 fully distinct mocks). Details: [QUESTION_PACKS.md](QUESTION_PACKS.md).
+
 ## Not verified (needs real accounts or credentials)
 
 | Area | Status | What closes it |

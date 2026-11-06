@@ -1,191 +1,23 @@
 [
   {
     "skill_code": "transitions",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "question_type": "mc",
     "stimulus_type": "passage",
-    "passage": "Most frogs lay their eggs in water, where the eggs hatch into tadpoles that swim and breathe through gills. ______ the coquí frog of Puerto Rico lays its eggs on land, and tiny, fully formed frogs hatch directly from them, skipping the tadpole stage entirely.",
+    "passage": "Copper roofs exposed to rain and air slowly develop a green coating called a patina. Although the patina may look like a sign of decay, it actually forms a protective layer that slows further corrosion of the metal underneath. ______ copper roofs often last for a century or more with little maintenance.",
     "stem": "Which choice completes the text with the most logical transition?",
-    "option_a": "However,",
-    "option_b": "For example,",
-    "option_c": "As a result,",
-    "option_d": "Similarly,",
-    "correct": "A",
-    "explanation_en": "The first sentence describes how most frogs reproduce: their eggs hatch into tadpoles in water. The second sentence describes a frog that does something different: its eggs hatch on land as tiny frogs. “However” signals this contrast, so choice A is correct.\n\n“For example” (choice B) would present the coquí as an example of frogs whose eggs hatch into tadpoles, but it skips that stage. “As a result” (choice C) would wrongly suggest that the coquí skips the tadpole stage because other frogs have one. “Similarly” (choice D) would mean the coquí reproduces in the same way as most frogs, which the text contradicts.",
-    "explanation_uz": "Birinchi gapda aksariyat qurbaqalar qanday ko‘payishi tasvirlangan: ularning tuxumlari suvda itbaliqqa aylanadi. Ikkinchi gapda esa boshqacha yo‘l tutadigan qurbaqa haqida gap boradi: uning tuxumlari quruqlikda bo‘ladi va ulardan to‘g‘ridan to‘g‘ri kichik qurbaqalar chiqadi. “However” aynan shu qarama-qarshilikni bildiradi, shuning uchun to‘g‘ri javob A.\n\n“For example” (B) koki qurbaqasini tuxumidan itbaliq chiqadigan qurbaqalarga misol qilib ko‘rsatadi, holbuki u bu bosqichni o‘tkazib yuboradi. “As a result” (C) koki boshqa qurbaqalarda itbaliq bosqichi borligi uchun uni o‘tkazib yuboradi degan noto‘g‘ri sababni bildiradi. “Similarly” (D) koki ham aksariyat qurbaqalar kabi ko‘payadi degan ma’no beradi, bu esa matnga zid.",
-    "estimated_seconds": 45,
-    "source": "original",
-    "tags": [
-      "core-v5",
-      "contrast"
-    ]
-  },
-  {
-    "skill_code": "transitions",
-    "difficulty": "easy",
-    "question_type": "mc",
-    "stimulus_type": "passage",
-    "passage": "The walls and roof of the old greenhouse are made of glass panels that let sunlight in but keep the warmed air from escaping. ______ the air inside the greenhouse stays much warmer than the air outside, even on cold, clear winter days.",
-    "stem": "Which choice completes the text with the most logical transition?",
-    "option_a": "In contrast,",
-    "option_b": "Therefore,",
+    "option_a": "Nevertheless,",
+    "option_b": "As a result,",
     "option_c": "For instance,",
     "option_d": "Similarly,",
     "correct": "B",
-    "explanation_en": "The first sentence explains that the greenhouse lets sunlight in and keeps warm air from escaping. The second sentence describes the effect of this: the air inside stays warmer than the air outside. “Therefore” introduces a result, so choice B is correct.\n\n“In contrast” (choice A) would signal a difference, but the warm air inside follows directly from the glass trapping heat. “For instance” (choice C) would introduce an example of the first sentence's idea, but the second sentence states a consequence, not an example. “Similarly” (choice D) would describe a separate, comparable situation rather than the result of the one just described.",
-    "explanation_uz": "Birinchi gapda issiqxona quyosh nurini o‘tkazishi va iliq havoni chiqarib yubormasligi tushuntirilgan. Ikkinchi gapda buning oqibati tasvirlangan: ichkaridagi havo tashqaridagidan iliqroq bo‘lib qoladi. “Therefore” natijani kiritadi, shuning uchun to‘g‘ri javob B.\n\n“In contrast” (A) farqni bildiradi, lekin ichkaridagi iliq havo shishaning issiqlikni ushlab qolishidan bevosita kelib chiqadi. “For instance” (C) birinchi gapdagi fikrga misol keltiradi, lekin ikkinchi gapda misol emas, oqibat aytilgan. “Similarly” (D) hozirgina tasvirlangan holatning natijasini emas, unga o‘xshash boshqa holatni bildiradi.",
-    "estimated_seconds": 45,
+    "explanation_en": "The second sentence explains that the patina protects the copper from further corrosion. The last sentence describes the effect of that protection: copper roofs last a very long time. “As a result” introduces a consequence, so choice B is correct.\n\n“Nevertheless” (choice A) might seem to fit because the patina “may look like a sign of decay,” but the sentence just before the blank says the patina protects the metal, so a long life is what we would expect, not a surprise. “For instance” (choice C) would present long-lasting roofs as an example of the patina rather than its result. “Similarly” (choice D) would introduce a comparable fact instead of the outcome of the one described.",
+    "explanation_uz": "Ikkinchi gapda patina misni keyingi korroziyadan himoya qilishi tushuntirilgan. Oxirgi gapda shu himoyaning natijasi tasvirlangan: mis tomlar juda uzoq xizmat qiladi. “As a result” oqibatni kiritadi, shuning uchun to‘g‘ri javob B.\n\n“Nevertheless” (A) patina “chirish belgisiga o‘xshab ko‘rinishi” mumkinligi sababli mos tuyulishi mumkin, lekin bo‘sh joydan oldingi gapda patina metallni himoya qilishi aytilgan, shuning uchun uzoq xizmat qilish kutilmagan hol emas, aksincha kutilgan natija. “For instance” (C) uzoq xizmat qiladigan tomlarni patinaning natijasi emas, unga misol qilib ko‘rsatadi. “Similarly” (D) tasvirlangan holatning oqibatini emas, o‘xshash boshqa faktni kiritadi.",
+    "estimated_seconds": 60,
     "source": "original",
     "tags": [
       "core-v5",
       "cause-effect"
-    ]
-  },
-  {
-    "skill_code": "transitions",
-    "difficulty": "easy",
-    "question_type": "mc",
-    "stimulus_type": "passage",
-    "passage": "At one family carpet workshop in Khiva, weavers begin by dyeing wool threads with natural colors made from plants such as madder root and pomegranate peel. ______ they hang the dyed threads in the sun to dry before stretching them onto a wooden loom.",
-    "stem": "Which choice completes the text with the most logical transition?",
-    "option_a": "In contrast,",
-    "option_b": "For example,",
-    "option_c": "Afterward,",
-    "option_d": "Similarly,",
-    "correct": "C",
-    "explanation_en": "The text describes the steps of a process in order. First, the weavers dye the threads; the next step is hanging the threads to dry. “Afterward” signals a step that comes later in time, so choice C is correct.\n\n“In contrast” (choice A) would set the drying step against the dyeing step, but the two steps simply follow each other. “For example” (choice B) would present drying as an example of dyeing, which makes no sense. “Similarly” (choice D) would suggest that drying is just like dyeing rather than the next step.",
-    "explanation_uz": "Matnda jarayon bosqichlari ketma-ket tasvirlangan. Avval to‘quvchilar iplarni bo‘yaydi, keyingi bosqich esa iplarni quritish uchun osib qo‘yish. “Afterward” keyinroq keladigan bosqichni bildiradi, shuning uchun to‘g‘ri javob C.\n\n“In contrast” (A) quritishni bo‘yashga qarama-qarshi qo‘yadi, holbuki bu ikki bosqich shunchaki birin-ketin keladi. “For example” (B) quritishni bo‘yashga misol sifatida ko‘rsatadi, bu mantiqsiz. “Similarly” (D) quritish keyingi bosqich emas, balki bo‘yashga o‘xshash ish degan ma’no beradi.",
-    "estimated_seconds": 45,
-    "source": "original",
-    "tags": [
-      "core-v5",
-      "sequence"
-    ]
-  },
-  {
-    "skill_code": "transitions",
-    "difficulty": "easy",
-    "question_type": "mc",
-    "stimulus_type": "passage",
-    "passage": "Some animals can survive the winter even though much of their bodies freezes solid. ______ the wood frog of North America stops breathing and its heart stops beating while ice forms in its body; when spring comes, it thaws and hops away.",
-    "stem": "Which choice completes the text with the most logical transition?",
-    "option_a": "However,",
-    "option_b": "Instead,",
-    "option_c": "In conclusion,",
-    "option_d": "For example,",
-    "correct": "D",
-    "explanation_en": "The first sentence makes a general claim: some animals survive the winter partly frozen. The second sentence describes one such animal, the wood frog. “For example” introduces a specific case of a general statement, so choice D is correct.\n\n“However” (choice A) would signal that the wood frog contradicts the first sentence, but it supports it. “Instead” (choice B) would suggest that the wood frog replaces something mentioned earlier. “In conclusion” (choice C) would introduce a summary of the whole text, but the second sentence gives a new, specific case rather than summing up.",
-    "explanation_uz": "Birinchi gapda umumiy fikr bildirilgan: ba’zi hayvonlar tanasi qisman muzlab qolsa ham qishdan omon chiqadi. Ikkinchi gapda shunday hayvonlardan biri — o‘rmon qurbaqasi tasvirlangan. “For example” umumiy fikrga aniq misol keltiradi, shuning uchun to‘g‘ri javob D.\n\n“However” (A) o‘rmon qurbaqasi birinchi gapga zid degan ma’no beradi, holbuki u uni tasdiqlaydi. “Instead” (B) o‘rmon qurbaqasi avval aytilgan nimanidir almashtiradi degan ma’no beradi. “In conclusion” (C) butun matnga xulosa kiritadi, lekin ikkinchi gap xulosa emas, yangi aniq misol keltiradi.",
-    "estimated_seconds": 45,
-    "source": "original",
-    "tags": [
-      "core-v5",
-      "example"
-    ]
-  },
-  {
-    "skill_code": "transitions",
-    "difficulty": "easy",
-    "question_type": "mc",
-    "stimulus_type": "passage",
-    "passage": "In a survey of small shops in Bukhara, economist Dildora Saidova found that shops accepting mobile payments attracted more customers under the age of thirty than shops accepting only cash. ______ owners of the shops that accepted mobile payments reported spending less time counting money at the end of each day.",
-    "stem": "Which choice completes the text with the most logical transition?",
-    "option_a": "Instead,",
-    "option_b": "Additionally,",
-    "option_c": "For example,",
-    "option_d": "Nevertheless,",
-    "correct": "B",
-    "explanation_en": "The first sentence gives one benefit that Saidova found for shops accepting mobile payments: more young customers. The second sentence gives another benefit: less time spent counting money. “Additionally” adds a further point of the same kind, so choice B is correct.\n\n“Instead” (choice A) would suggest that the second benefit replaces the first. “For example” (choice C) would present the time saved as an example of attracting young customers, but it is a separate benefit. “Nevertheless” (choice D) would signal a contrast, but the second sentence agrees with the first rather than going against it.",
-    "explanation_uz": "Birinchi gapda Saidova mobil to‘lov qabul qiladigan do‘konlar uchun aniqlagan bir afzallik — yosh xaridorlar ko‘payishi aytilgan. Ikkinchi gapda yana bir afzallik — pul sanashga kamroq vaqt ketishi berilgan. “Additionally” xuddi shu turdagi qo‘shimcha fikrni qo‘shadi, shuning uchun to‘g‘ri javob B.\n\n“Instead” (A) ikkinchi afzallik birinchisining o‘rnini egallaydi degan ma’no beradi. “For example” (C) tejalgan vaqtni yosh xaridorlarni jalb qilishga misol qilib ko‘rsatadi, holbuki bu alohida afzallik. “Nevertheless” (D) qarama-qarshilikni bildiradi, lekin ikkinchi gap birinchisiga zid emas, unga mos keladi.",
-    "estimated_seconds": 45,
-    "source": "original",
-    "tags": [
-      "core-v5",
-      "addition"
-    ]
-  },
-  {
-    "skill_code": "transitions",
-    "difficulty": "easy",
-    "question_type": "mc",
-    "stimulus_type": "passage",
-    "passage": "Singer Javlon Ergashev writes many of his songs while walking through Tashkent, humming new melodies into his phone so that he does not forget them. ______ his bandmate Nilufar records short tunes on her phone during her daily bus ride and later turns the best of them into full songs.",
-    "stem": "Which choice completes the text with the most logical transition?",
-    "option_a": "Similarly,",
-    "option_b": "Instead,",
-    "option_c": "As a result,",
-    "option_d": "In conclusion,",
-    "correct": "A",
-    "explanation_en": "The first sentence describes how Javlon captures song ideas: he records melodies on his phone while walking. The second sentence describes Nilufar doing something much the same: she records tunes on her phone during her bus ride. “Similarly” signals that the second situation resembles the first, so choice A is correct.\n\n“Instead” (choice B) would suggest that Nilufar's habit replaces Javlon's. “As a result” (choice C) would claim that Nilufar records tunes because Javlon hums into his phone, which the text never says. “In conclusion” (choice D) would introduce a summary, but the second sentence adds a new example of the same habit.",
-    "explanation_uz": "Birinchi gapda Javlon qo‘shiq g‘oyalarini qanday saqlab qolishi tasvirlangan: u yurib ketayotib kuylarni telefoniga yozib oladi. Ikkinchi gapda Nilufar ham deyarli xuddi shunday qilishi aytilgan: u avtobusda ketayotib kuylarni telefoniga yozib oladi. “Similarly” ikkinchi holat birinchisiga o‘xshashligini bildiradi, shuning uchun to‘g‘ri javob A.\n\n“Instead” (B) Nilufarning odati Javlonnikini almashtiradi degan ma’no beradi. “As a result” (C) Nilufar Javlon telefoniga kuylagani uchun kuylarni yozib oladi degan, matnda aytilmagan sababni bildiradi. “In conclusion” (D) xulosani kiritadi, lekin ikkinchi gap xuddi shu odatning yangi misolini qo‘shadi.",
-    "estimated_seconds": 45,
-    "source": "original",
-    "tags": [
-      "core-v5",
-      "similarity"
-    ]
-  },
-  {
-    "skill_code": "transitions",
-    "difficulty": "easy",
-    "question_type": "mc",
-    "stimulus_type": "passage",
-    "passage": "In a classroom experiment, one tray of bean seedlings was placed on a sunny windowsill, while a second tray was kept inside a dark cupboard. For two weeks, the seedlings in the cupboard received no light at all. ______ they grew pale and thin, while the seedlings on the windowsill stayed green and sturdy.",
-    "stem": "Which choice completes the text with the most logical transition?",
-    "option_a": "For instance,",
-    "option_b": "Similarly,",
-    "option_c": "Moreover,",
-    "option_d": "Consequently,",
-    "correct": "D",
-    "explanation_en": "The text explains that the seedlings in the cupboard received no light for two weeks, and the last sentence describes what happened to them: they grew pale and thin. “Consequently” introduces a result of what came before, so choice D is correct.\n\n“For instance” (choice A) would introduce an example, but the pale seedlings are an effect of the lack of light, not an example of it. “Similarly” (choice B) would describe something comparable rather than a result. “Moreover” (choice C) would simply add another, unrelated point instead of showing that the seedlings changed because they had no light.",
-    "explanation_uz": "Matnda shkafdagi ko‘chatlar ikki hafta davomida umuman yorug‘lik olmagani aytilgan, oxirgi gap esa ularga nima bo‘lganini tasvirlaydi: ular rangpar va ingichka bo‘lib o‘sgan. “Consequently” avvalgi fikrning natijasini kiritadi, shuning uchun to‘g‘ri javob D.\n\n“For instance” (A) misol keltiradi, lekin rangpar ko‘chatlar yorug‘lik yo‘qligiga misol emas, uning oqibati. “Similarly” (B) natijani emas, o‘xshash holatni bildiradi. “Moreover” (C) ko‘chatlar yorug‘lik bo‘lmagani uchun o‘zgarganini ko‘rsatish o‘rniga shunchaki boshqa fikr qo‘shadi.",
-    "estimated_seconds": 45,
-    "source": "original",
-    "tags": [
-      "core-v5",
-      "cause-effect"
-    ]
-  },
-  {
-    "skill_code": "transitions",
-    "difficulty": "easy",
-    "question_type": "mc",
-    "stimulus_type": "passage",
-    "passage": "Bakers who make traditional Uzbek non first knead the dough and let it rise. Next, they shape the dough into round loaves and press a pattern into the center of each loaf with a stamp called a chekich. ______ they press the loaves onto the hot inner wall of a clay oven called a tandir, where the bread bakes in a few minutes.",
-    "stem": "Which choice completes the text with the most logical transition?",
-    "option_a": "However,",
-    "option_b": "For example,",
-    "option_c": "Finally,",
-    "option_d": "In other words,",
-    "correct": "C",
-    "explanation_en": "The text lists the steps of making non in order: kneading, shaping and stamping, and then baking. The blank introduces the last step. “Finally” signals the last step in a sequence, so choice C is correct.\n\n“However” (choice A) would signal a contrast, but baking simply follows the earlier steps. “For example” (choice B) would present baking as an example of stamping the loaves. “In other words” (choice D) would restate the previous step, but baking is a new step, not a rewording of stamping.",
-    "explanation_uz": "Matnda non tayyorlash bosqichlari tartib bilan sanab o‘tilgan: xamir qorish, shakl berish va chekich bosish, keyin esa yopish. Bo‘sh joy oxirgi bosqichni kiritadi. “Finally” ketma-ketlikdagi oxirgi bosqichni bildiradi, shuning uchun to‘g‘ri javob C.\n\n“However” (A) qarama-qarshilikni bildiradi, lekin non yopish avvalgi bosqichlardan keyin shunchaki navbat bilan keladi. “For example” (B) non yopishni chekich bosishga misol qilib ko‘rsatadi. “In other words” (D) oldingi bosqichni boshqacha so‘zlar bilan qayta aytadi, holbuki non yopish chekich bosishning qayta ifodasi emas, yangi bosqich.",
-    "estimated_seconds": 45,
-    "source": "original",
-    "tags": [
-      "core-v5",
-      "sequence"
-    ]
-  },
-  {
-    "skill_code": "transitions",
-    "difficulty": "easy",
-    "question_type": "mc",
-    "stimulus_type": "passage",
-    "passage": "Members of the town council expected that only a few residents would attend the first public meeting about the plan for a new park. ______ more than three hundred people came, filling every seat in the hall and standing along the walls.",
-    "stem": "Which choice completes the text with the most logical transition?",
-    "option_a": "However,",
-    "option_b": "Therefore,",
-    "option_c": "Similarly,",
-    "option_d": "For instance,",
-    "correct": "A",
-    "explanation_en": "The first sentence states what the council expected: few people would come. The second sentence describes what actually happened: more than three hundred people came. “However” signals this contrast between expectation and reality, so choice A is correct.\n\n“Therefore” (choice B) would suggest that the large crowd came because the council expected a small one, which is illogical. “Similarly” (choice C) would mean the crowd matched the expectation, but it was the opposite. “For instance” (choice D) would present the large crowd as an example of the council's expectation.",
-    "explanation_uz": "Birinchi gapda kengash nimani kutgani aytilgan: yig‘ilishga oz odam keladi. Ikkinchi gapda esa aslida nima bo‘lgani tasvirlangan: uch yuzdan ortiq kishi kelgan. “However” kutilgan va haqiqiy holat o‘rtasidagi shu qarama-qarshilikni bildiradi, shuning uchun to‘g‘ri javob A.\n\n“Therefore” (B) kengash oz odam kutgani uchun ko‘p odam keldi degan mantiqsiz ma’no beradi. “Similarly” (C) olomon kutilganga mos keldi degan ma’no beradi, holbuki aksincha bo‘lgan. “For instance” (D) katta olomonni kengash kutgan narsaga misol qilib ko‘rsatadi.",
-    "estimated_seconds": 45,
-    "source": "original",
-    "tags": [
-      "core-v5",
-      "contrast"
     ]
   },
   {
@@ -211,153 +43,6 @@
   },
   {
     "skill_code": "transitions",
-    "difficulty": "easy",
-    "question_type": "mc",
-    "stimulus_type": "passage",
-    "passage": "The following text is from a short story.\n\nRustam had planned to spend Saturday fixing the chain on his old bicycle. ______ he spent the whole afternoon on his grandmother's roof, helping her turn the apricots that were drying in the sun and carrying the finished ones down in baskets.",
-    "stem": "Which choice completes the text with the most logical transition?",
-    "option_a": "For example,",
-    "option_b": "Similarly,",
-    "option_c": "As a result,",
-    "option_d": "Instead,",
-    "correct": "D",
-    "explanation_en": "The first sentence states what Rustam planned to do: fix his bicycle. The second sentence describes what he did in place of that: he helped his grandmother with the apricots. “Instead” signals that one action replaced another, so choice D is correct.\n\n“For example” (choice A) would present helping with the apricots as an example of fixing the bicycle. “Similarly” (choice B) would suggest that the two activities are alike, but the point is that one replaced the other. “As a result” (choice C) would claim that Rustam helped his grandmother because he had planned to fix his bicycle, which is illogical.",
-    "explanation_uz": "Birinchi gapda Rustam nima qilishni rejalashtirgani aytilgan: velosipedini tuzatish. Ikkinchi gapda esa uning o‘rniga nima qilgani tasvirlangan: buvisiga o‘rik quritishda yordam bergan. “Instead” bir ish boshqasining o‘rnini egallaganini bildiradi, shuning uchun to‘g‘ri javob D.\n\n“For example” (A) o‘rikka yordam berishni velosiped tuzatishga misol qilib ko‘rsatadi. “Similarly” (B) ikki mashg‘ulot o‘xshash degan ma’no beradi, lekin gap biri ikkinchisining o‘rnini egallagani haqida. “As a result” (C) Rustam velosipedini tuzatishni rejalashtirgani uchun buvisiga yordam berdi degan mantiqsiz sababni bildiradi.",
-    "estimated_seconds": 45,
-    "source": "original",
-    "tags": [
-      "core-v5",
-      "alternative-instead"
-    ]
-  },
-  {
-    "skill_code": "transitions",
-    "difficulty": "easy",
-    "question_type": "mc",
-    "stimulus_type": "passage",
-    "passage": "Each winter, heavy snow blocks the only road between the mountain village and the nearest town, sometimes for months at a time. ______ families in the village store grain, dried fruit, and firewood every autumn so that they will have enough supplies to last until spring.",
-    "stem": "Which choice completes the text with the most logical transition?",
-    "option_a": "In contrast,",
-    "option_b": "For this reason,",
-    "option_c": "For example,",
-    "option_d": "Likewise,",
-    "correct": "B",
-    "explanation_en": "The first sentence explains that the village is cut off by snow for long periods each winter. The second sentence describes what families do because of this: they store supplies every autumn. “For this reason” introduces an action that is caused by the situation just described, so choice B is correct.\n\n“In contrast” (choice A) would signal a difference, but storing supplies is a response to the blocked road, not the opposite of it. “For example” (choice C) would present storing supplies as an example of snow blocking the road. “Likewise” (choice D) would describe a similar situation rather than the reason for the families' actions.",
-    "explanation_uz": "Birinchi gapda qishloq har qishda uzoq vaqt qor sababli yo‘ldan uzilib qolishi tushuntirilgan. Ikkinchi gapda oilalar shu sababli nima qilishi aytilgan: ular har kuzda zaxira to‘playdi. “For this reason” hozirgina tasvirlangan holat sabab bo‘lgan harakatni kiritadi, shuning uchun to‘g‘ri javob B.\n\n“In contrast” (A) farqni bildiradi, lekin zaxira to‘plash yopilgan yo‘lga javob, uning aksi emas. “For example” (C) zaxira to‘plashni qor yo‘lni to‘sishiga misol qilib ko‘rsatadi. “Likewise” (D) oilalar harakatining sababini emas, o‘xshash holatni bildiradi.",
-    "estimated_seconds": 45,
-    "source": "original",
-    "tags": [
-      "core-v5",
-      "cause-effect"
-    ]
-  },
-  {
-    "skill_code": "transitions",
-    "difficulty": "medium",
-    "question_type": "mc",
-    "stimulus_type": "passage",
-    "passage": "Engineer Sherzod Toshmatov's prototype solar water heater cost about twice as much to build and install as a standard electric water heater. ______ the families who tested it saved so much on their electricity bills that, within four years, the savings had more than covered the difference in price.",
-    "stem": "Which choice completes the text with the most logical transition?",
-    "option_a": "Similarly,",
-    "option_b": "For example,",
-    "option_c": "Nevertheless,",
-    "option_d": "In other words,",
-    "correct": "C",
-    "explanation_en": "The first sentence points out a drawback of the solar heater: it cost twice as much. The second sentence describes an outcome that goes against what that drawback might lead a reader to expect: families saved enough to cover the extra cost. “Nevertheless” introduces a point that holds true despite what was just said, so choice C is correct.\n\n“Similarly” (choice A) would present the savings as another point like the high cost, but they work against it. “For example” (choice B) would treat the savings as an example of the high cost. “In other words” (choice D) would restate the first sentence, but the second sentence says something different and even opposite in effect.",
-    "explanation_uz": "Birinchi gapda quyosh suv isitgichining kamchiligi ko‘rsatilgan: u ikki baravar qimmatga tushgan. Ikkinchi gapda bu kamchilikdan kutilmagan natija tasvirlangan: oilalar qo‘shimcha xarajatni qoplashga yetadigan darajada pul tejagan. “Nevertheless” avval aytilganga qaramay to‘g‘ri bo‘lgan fikrni kiritadi, shuning uchun to‘g‘ri javob C.\n\n“Similarly” (A) tejamni yuqori narx kabi yana bir fikr sifatida ko‘rsatadi, holbuki u narxga qarshi turadi. “For example” (B) tejamni yuqori narxga misol qilib ko‘rsatadi. “In other words” (D) birinchi gapni qayta ifodalaydi, lekin ikkinchi gap boshqa, hatto teskari ta’sirdagi fikrni aytadi.",
-    "estimated_seconds": 60,
-    "source": "original",
-    "tags": [
-      "core-v5",
-      "concession"
-    ]
-  },
-  {
-    "skill_code": "transitions",
-    "difficulty": "medium",
-    "question_type": "mc",
-    "stimulus_type": "passage",
-    "passage": "Marine biologist Kamila Usmonova studies a species of reef fish that biologists describe as a protogynous hermaphrodite. ______ each fish of this species begins its adult life as a female and may later change into a male.",
-    "stem": "Which choice completes the text with the most logical transition?",
-    "option_a": "In other words,",
-    "option_b": "However,",
-    "option_c": "Similarly,",
-    "option_d": "As a result,",
-    "correct": "A",
-    "explanation_en": "The first sentence uses a technical term, “protogynous hermaphrodite,” and the second sentence explains what that term means in plain language. “In other words” introduces a restatement of an idea in simpler terms, so choice A is correct.\n\n“However” (choice B) would signal a contrast, but the second sentence agrees with the first. “Similarly” (choice C) would introduce a different but comparable fact, not an explanation of the same one. “As a result” (choice D) would suggest that the fish change sex because biologists use this term, which reverses the logic: the term describes the change, it does not cause it.",
-    "explanation_uz": "Birinchi gapda “protogynous hermaphrodite” degan ilmiy atama ishlatilgan, ikkinchi gap esa bu atamaning ma’nosini oddiy so‘zlar bilan tushuntiradi. “In other words” fikrni soddaroq qilib qayta ifodalaydi, shuning uchun to‘g‘ri javob A.\n\n“However” (B) qarama-qarshilikni bildiradi, lekin ikkinchi gap birinchisiga mos keladi. “Similarly” (C) xuddi shu faktning izohini emas, boshqa, o‘xshash faktni kiritadi. “As a result” (D) baliqlar biologlar shu atamani ishlatgani uchun jinsini o‘zgartiradi degan teskari mantiqni beradi: atama o‘zgarishni tasvirlaydi, unga sabab bo‘lmaydi.",
-    "estimated_seconds": 60,
-    "source": "original",
-    "tags": [
-      "core-v5",
-      "restatement"
-    ]
-  },
-  {
-    "skill_code": "transitions",
-    "difficulty": "medium",
-    "question_type": "mc",
-    "stimulus_type": "passage",
-    "passage": "Urban planner Aziz Rahmonov studied a midsize city that replaced several short bus routes with a few long routes running directly from its outer districts to the city center. After the change, residents of the outer districts no longer had to switch buses to reach downtown jobs and markets. ______ the number of bus trips taken by outer-district residents rose by nearly a third over the following five years.",
-    "stem": "Which choice completes the text with the most logical transition?",
-    "option_a": "Nonetheless,",
-    "option_b": "For example,",
-    "option_c": "Alternatively,",
-    "option_d": "Consequently,",
-    "correct": "D",
-    "explanation_en": "The second sentence explains that the new routes made trips easier for outer-district residents, since they no longer had to switch buses. The last sentence describes a result of that change: more bus trips. “Consequently” introduces an effect, so choice D is correct.\n\n“Nonetheless” (choice A) would suggest that ridership rose in spite of the change, but the text presents the change as making bus travel easier. “For example” (choice B) would present the rise in ridership as an example of not having to switch buses. “Alternatively” (choice C) would introduce another option or possibility, but the last sentence reports what actually happened.",
-    "explanation_uz": "Ikkinchi gapda yangi yo‘nalishlar chekka tumanlar aholisi uchun qatnovni osonlashtirgani — endi avtobus almashtirish shart emasligi tushuntirilgan. Oxirgi gapda bu o‘zgarishning natijasi — avtobus qatnovlari ko‘paygani tasvirlangan. “Consequently” oqibatni kiritadi, shuning uchun to‘g‘ri javob D.\n\n“Nonetheless” (A) yo‘lovchilar soni o‘zgarishga qaramay oshgan degan ma’no beradi, holbuki matnda o‘zgarish qatnovni osonlashtirgani aytilgan. “For example” (B) yo‘lovchilar ko‘payishini avtobus almashtirmaslikka misol qilib ko‘rsatadi. “Alternatively” (C) boshqa variant yoki imkoniyatni kiritadi, oxirgi gap esa aslida nima bo‘lganini xabar qiladi.",
-    "estimated_seconds": 60,
-    "source": "original",
-    "tags": [
-      "core-v5",
-      "cause-effect"
-    ]
-  },
-  {
-    "skill_code": "transitions",
-    "difficulty": "medium",
-    "question_type": "mc",
-    "stimulus_type": "passage",
-    "passage": "Archaeologist Farhod Mirzayev first visited the hillside site in 1987, when he collected a few fragments of glazed pottery from the surface of the ground and noted the outline of buried walls. ______ he returned with a team of students and began a full excavation, which eventually uncovered the foundations of a twelfth-century caravanserai.",
-    "stem": "Which choice completes the text with the most logical transition?",
-    "option_a": "In contrast,",
-    "option_b": "Later,",
-    "option_c": "Likewise,",
-    "option_d": "For instance,",
-    "correct": "B",
-    "explanation_en": "The text describes Mirzayev's work at the site in time order: first a brief visit in 1987, then a full excavation. “Later” signals that the excavation happened after the first visit, so choice B is correct.\n\n“In contrast” (choice A) would set the excavation against the first visit as opposites, but the text shows the excavation building on that visit. “Likewise” (choice C) would suggest the second visit was the same as the first, but it was a much larger project. “For instance” (choice D) would present the excavation as an example of collecting surface fragments.",
-    "explanation_uz": "Matnda Mirzayevning yodgorlikdagi ishi vaqt tartibida tasvirlangan: avval 1987-yildagi qisqa tashrif, keyin to‘liq qazishma. “Later” qazishma birinchi tashrifdan keyin bo‘lganini bildiradi, shuning uchun to‘g‘ri javob B.\n\n“In contrast” (A) qazishmani birinchi tashrifga zid qilib qo‘yadi, holbuki matnda qazishma o‘sha tashrifning davomi sifatida ko‘rsatilgan. “Likewise” (C) ikkinchi tashrif birinchisi bilan bir xil bo‘lgan degan ma’no beradi, holbuki u ancha katta loyiha edi. “For instance” (D) qazishmani yer yuzasidan sopol parchalarini yig‘ishga misol qilib ko‘rsatadi.",
-    "estimated_seconds": 60,
-    "source": "original",
-    "tags": [
-      "core-v5",
-      "sequence"
-    ]
-  },
-  {
-    "skill_code": "transitions",
-    "difficulty": "medium",
-    "question_type": "mc",
-    "stimulus_type": "passage",
-    "passage": "Linguist Madina Ortiqova found that speakers in the mountain villages she studied use different words for bread depending on how it was baked. ______ bread baked against the wall of a clay oven is called by one name, while flat bread cooked on an iron pan over an open fire is called by another.",
-    "stem": "Which choice completes the text with the most logical transition?",
-    "option_a": "In contrast,",
-    "option_b": "Nevertheless,",
-    "option_c": "Similarly,",
-    "option_d": "Specifically,",
-    "correct": "D",
-    "explanation_en": "The first sentence states Ortiqova's finding in general terms: the villagers use different words for bread depending on how it was baked. The second sentence gives the precise details of that finding. “Specifically” introduces a more exact explanation of a general statement, so choice D is correct.\n\n“In contrast” (choice A) would signal that the second sentence differs from the first, but it describes the same finding in detail. “Nevertheless” (choice B) would suggest that the details go against the finding. “Similarly” (choice C) would introduce a separate but comparable finding rather than a closer look at the same one.",
-    "explanation_uz": "Birinchi gapda Ortiqovaning xulosasi umumiy tarzda aytilgan: qishloq aholisi non qanday pishirilganiga qarab turli so‘zlarni ishlatadi. Ikkinchi gapda shu xulosaning aniq tafsilotlari berilgan. “Specifically” umumiy fikrni aniqroq tushuntirib beradi, shuning uchun to‘g‘ri javob D.\n\n“In contrast” (A) ikkinchi gap birinchisidan farq qiladi degan ma’no beradi, holbuki u o‘sha xulosaning tafsiloti. “Nevertheless” (B) tafsilotlar xulosaga zid degan ma’no beradi. “Similarly” (C) o‘sha xulosaning batafsil ko‘rinishini emas, alohida, o‘xshash boshqa xulosani kiritadi.",
-    "estimated_seconds": 60,
-    "source": "original",
-    "tags": [
-      "core-v5",
-      "specification"
-    ]
-  },
-  {
-    "skill_code": "transitions",
     "difficulty": "medium",
     "question_type": "mc",
     "stimulus_type": "passage",
@@ -375,237 +60,6 @@
     "tags": [
       "core-v5",
       "contrast-conversely"
-    ]
-  },
-  {
-    "skill_code": "transitions",
-    "difficulty": "medium",
-    "question_type": "mc",
-    "stimulus_type": "passage",
-    "passage": "The following text is from a short story.\n\nInside the bakery, Zarina pulled the last tray of loaves from the oven and set it on the counter to cool, breathing in the warm smell of sesame and crust. ______ outside, a line of customers was already forming in the gray early light, their coats buttoned against the cold.",
-    "stem": "Which choice completes the text with the most logical transition?",
-    "option_a": "Meanwhile,",
-    "option_b": "As a result,",
-    "option_c": "For instance,",
-    "option_d": "In other words,",
-    "correct": "A",
-    "explanation_en": "The text describes two things happening at the same time in different places: Zarina working inside the bakery and customers lining up outside. “Meanwhile” signals that one event happens during another, so choice A is correct.\n\n“As a result” (choice B) would claim that the line formed because Zarina took the loaves out, but the customers were already waiting and could not know what she was doing. “For instance” (choice C) would present the line as an example of Zarina's baking. “In other words” (choice D) would restate the first sentence, but the second sentence describes a different scene.",
-    "explanation_uz": "Matnda bir vaqtning o‘zida turli joylarda yuz berayotgan ikki voqea tasvirlangan: Zarina novvoyxona ichida ishlayapti, tashqarida esa xaridorlar navbatga turmoqda. “Meanwhile” bir voqea boshqasi bilan bir paytda yuz berishini bildiradi, shuning uchun to‘g‘ri javob A.\n\n“As a result” (B) navbat Zarina nonlarni chiqargani uchun hosil bo‘lgan degan ma’no beradi, holbuki xaridorlar allaqachon kutib turgan va u nima qilayotganini bilmagan. “For instance” (C) navbatni Zarinaning non yopishiga misol qilib ko‘rsatadi. “In other words” (D) birinchi gapni qayta ifodalaydi, lekin ikkinchi gap boshqa manzarani tasvirlaydi.",
-    "estimated_seconds": 60,
-    "source": "original",
-    "tags": [
-      "core-v5",
-      "simultaneity"
-    ]
-  },
-  {
-    "skill_code": "transitions",
-    "difficulty": "medium",
-    "question_type": "mc",
-    "stimulus_type": "passage",
-    "passage": "Sociologist Ravshan Yuldoshev found that neighborhood committees that held open monthly meetings resolved disputes between neighbors faster than committees that met only when a problem arose. ______ residents of neighborhoods with monthly meetings reported greater trust in their committees than residents of other neighborhoods did.",
-    "stem": "Which choice completes the text with the most logical transition?",
-    "option_a": "However,",
-    "option_b": "Moreover,",
-    "option_c": "Instead,",
-    "option_d": "For instance,",
-    "correct": "B",
-    "explanation_en": "Both sentences describe advantages that Yuldoshev found for neighborhoods with monthly meetings: faster resolution of disputes and greater trust. “Moreover” adds a further point that supports the same idea, so choice B is correct.\n\n“However” (choice A) would signal that greater trust goes against faster dispute resolution, but both findings point the same way. “Instead” (choice C) would suggest that the second finding replaces the first. “For instance” (choice D) would present greater trust as an example of faster dispute resolution, but it is a separate finding.",
-    "explanation_uz": "Ikkala gapda ham Yuldoshev har oy yig‘ilish o‘tkaziladigan mahallalarda aniqlagan afzalliklar tasvirlangan: nizolar tezroq hal bo‘lishi va ishonch yuqoriroq ekani. “Moreover” xuddi shu fikrni qo‘llab-quvvatlovchi qo‘shimcha dalilni qo‘shadi, shuning uchun to‘g‘ri javob B.\n\n“However” (A) yuqori ishonch nizolar tez hal bo‘lishiga zid degan ma’no beradi, holbuki ikkala xulosa bir yo‘nalishda. “Instead” (C) ikkinchi xulosa birinchisining o‘rnini egallaydi degan ma’no beradi. “For instance” (D) yuqori ishonchni nizolar tez hal bo‘lishiga misol qilib ko‘rsatadi, holbuki bu alohida xulosa.",
-    "estimated_seconds": 60,
-    "source": "original",
-    "tags": [
-      "core-v5",
-      "addition"
-    ]
-  },
-  {
-    "skill_code": "transitions",
-    "difficulty": "medium",
-    "question_type": "mc",
-    "stimulus_type": "passage",
-    "passage": "Copper roofs exposed to rain and air slowly develop a green coating called a patina. Although the patina may look like a sign of decay, it actually forms a protective layer that slows further corrosion of the metal underneath. ______ copper roofs often last for a century or more with little maintenance.",
-    "stem": "Which choice completes the text with the most logical transition?",
-    "option_a": "Nevertheless,",
-    "option_b": "As a result,",
-    "option_c": "For instance,",
-    "option_d": "Similarly,",
-    "correct": "B",
-    "explanation_en": "The second sentence explains that the patina protects the copper from further corrosion. The last sentence describes the effect of that protection: copper roofs last a very long time. “As a result” introduces a consequence, so choice B is correct.\n\n“Nevertheless” (choice A) might seem to fit because the patina “may look like a sign of decay,” but the sentence just before the blank says the patina protects the metal, so a long life is what we would expect, not a surprise. “For instance” (choice C) would present long-lasting roofs as an example of the patina rather than its result. “Similarly” (choice D) would introduce a comparable fact instead of the outcome of the one described.",
-    "explanation_uz": "Ikkinchi gapda patina misni keyingi korroziyadan himoya qilishi tushuntirilgan. Oxirgi gapda shu himoyaning natijasi tasvirlangan: mis tomlar juda uzoq xizmat qiladi. “As a result” oqibatni kiritadi, shuning uchun to‘g‘ri javob B.\n\n“Nevertheless” (A) patina “chirish belgisiga o‘xshab ko‘rinishi” mumkinligi sababli mos tuyulishi mumkin, lekin bo‘sh joydan oldingi gapda patina metallni himoya qilishi aytilgan, shuning uchun uzoq xizmat qilish kutilmagan hol emas, aksincha kutilgan natija. “For instance” (C) uzoq xizmat qiladigan tomlarni patinaning natijasi emas, unga misol qilib ko‘rsatadi. “Similarly” (D) tasvirlangan holatning oqibatini emas, o‘xshash boshqa faktni kiritadi.",
-    "estimated_seconds": 60,
-    "source": "original",
-    "tags": [
-      "core-v5",
-      "cause-effect"
-    ]
-  },
-  {
-    "skill_code": "transitions",
-    "difficulty": "medium",
-    "question_type": "mc",
-    "stimulus_type": "passage",
-    "passage": "In her study of nineteenth-century markets in Kokand, historian Gulchehra Nazarova found that cloth merchants grouped their stalls together by the type of fabric they sold, which allowed buyers to compare prices and quality easily. ______ she found that the city's spice sellers clustered along a single covered street, where buyers could move from one stall to the next.",
-    "stem": "Which choice completes the text with the most logical transition?",
-    "option_a": "In contrast,",
-    "option_b": "As a result,",
-    "option_c": "Instead,",
-    "option_d": "Similarly,",
-    "correct": "D",
-    "explanation_en": "The first sentence describes how cloth merchants grouped their stalls together. The second sentence describes spice sellers doing the same thing: clustering along one street. “Similarly” signals that the second situation resembles the first, so choice D is correct.\n\n“In contrast” (choice A) would suggest that the spice sellers arranged their stalls differently, but they also grouped together. “As a result” (choice B) would claim that the spice sellers clustered because the cloth merchants did, which the text never says. “Instead” (choice C) would suggest that the spice sellers' arrangement replaced the cloth merchants' arrangement.",
-    "explanation_uz": "Birinchi gapda gazlama savdogarlari rastalarini qanday qilib bir joyga to‘plagani tasvirlangan. Ikkinchi gapda ziravor sotuvchilar ham xuddi shunday qilgani — bitta ko‘chada to‘planganini aytadi. “Similarly” ikkinchi holat birinchisiga o‘xshashligini bildiradi, shuning uchun to‘g‘ri javob D.\n\n“In contrast” (A) ziravor sotuvchilar rastalarini boshqacha joylashtirgan degan ma’no beradi, holbuki ular ham bir joyga to‘plangan. “As a result” (B) ziravor sotuvchilar gazlama savdogarlari shunday qilgani uchun to‘plangan degan, matnda aytilmagan sababni bildiradi. “Instead” (C) ziravorchilarning joylashuvi gazlama savdogarlarinikining o‘rnini egallagan degan ma’no beradi.",
-    "estimated_seconds": 60,
-    "source": "original",
-    "tags": [
-      "core-v5",
-      "similarity"
-    ]
-  },
-  {
-    "skill_code": "transitions",
-    "difficulty": "medium",
-    "question_type": "mc",
-    "stimulus_type": "passage",
-    "passage": "The mural in the old caravanserai has lost nearly half of its original paint over the centuries, and several of the figures in it can now be identified only by their faint outlines. ______ visitors can still follow the story it tells, from a merchant's departure at dawn to his return home years later, laden with gifts.",
-    "stem": "Which choice completes the text with the most logical transition?",
-    "option_a": "Even so,",
-    "option_b": "Thus,",
-    "option_c": "For example,",
-    "option_d": "Likewise,",
-    "correct": "A",
-    "explanation_en": "The first sentence describes the mural's heavy damage, which might lead a reader to expect that its story is lost. The second sentence says that visitors can follow the story anyway. “Even so” introduces a point that holds true despite what was just said, so choice A is correct.\n\n“Thus” (choice B) would suggest that visitors can follow the story because the mural is damaged, which reverses the logic. “For example” (choice C) would present the visible story as an example of the damage. “Likewise” (choice D) would present the second sentence as similar to the first, but it goes against the expectation the first sentence creates.",
-    "explanation_uz": "Birinchi gapda devoriy suratning jiddiy shikastlangani tasvirlangan; bu o‘quvchida undagi hikoya yo‘qolgan degan taassurot uyg‘otishi mumkin. Ikkinchi gapda esa tashrif buyuruvchilar baribir hikoyani kuzata olishi aytilgan. “Even so” avval aytilganga qaramay to‘g‘ri bo‘lgan fikrni kiritadi, shuning uchun to‘g‘ri javob A.\n\n“Thus” (B) tashrif buyuruvchilar surat shikastlangani uchun hikoyani kuzata oladi degan teskari mantiqni beradi. “For example” (C) ko‘rinib turgan hikoyani shikastlanishga misol qilib ko‘rsatadi. “Likewise” (D) ikkinchi gapni birinchisiga o‘xshash qilib ko‘rsatadi, holbuki u birinchi gap uyg‘otgan kutilmaga zid keladi.",
-    "estimated_seconds": 60,
-    "source": "original",
-    "tags": [
-      "core-v5",
-      "concession"
-    ]
-  },
-  {
-    "skill_code": "transitions",
-    "difficulty": "medium",
-    "question_type": "mc",
-    "stimulus_type": "passage",
-    "passage": "To keep its collection of wild wheat seeds alive for decades, a seed bank can dry the seeds and store them in freezers at about −20°C. ______ it can dry the seeds and seal them in airtight foil packets kept at room temperature, a method that costs far less but keeps the seeds alive for a much shorter time.",
-    "stem": "Which choice completes the text with the most logical transition?",
-    "option_a": "Consequently,",
-    "option_b": "For instance,",
-    "option_c": "Alternatively,",
-    "option_d": "Similarly,",
-    "correct": "C",
-    "explanation_en": "The text presents two different options for storing seeds: freezing them, or sealing them in foil packets at room temperature. “Alternatively” introduces a second option that could be chosen instead of the first, so choice C is correct.\n\n“Consequently” (choice A) would suggest that the second method results from the first, but they are separate choices. “For instance” (choice B) would present the foil method as an example of freezing, but it is a different method. “Similarly” (choice D) would stress that the two methods are alike, but the text emphasizes how they differ in cost and in how long they keep seeds alive.",
-    "explanation_uz": "Matnda urug‘larni saqlashning ikki xil usuli keltirilgan: muzlatish yoki xona haroratida germetik folga paketlarga joylash. “Alternatively” birinchisi o‘rniga tanlash mumkin bo‘lgan ikkinchi variantni kiritadi, shuning uchun to‘g‘ri javob C.\n\n“Consequently” (A) ikkinchi usul birinchisining natijasi degan ma’no beradi, holbuki ular alohida variantlar. “For instance” (B) folga usulini muzlatishga misol qilib ko‘rsatadi, holbuki bu boshqa usul. “Similarly” (D) ikki usul o‘xshash ekanini ta’kidlaydi, matn esa ularning narxi va urug‘larni qancha saqlashi bo‘yicha farqiga urg‘u beradi.",
-    "estimated_seconds": 60,
-    "source": "original",
-    "tags": [
-      "core-v5",
-      "alternative"
-    ]
-  },
-  {
-    "skill_code": "transitions",
-    "difficulty": "hard",
-    "question_type": "mc",
-    "stimulus_type": "passage",
-    "passage": "Physicist Bekzod Ismoilov's experimental battery stores nearly twice as much energy per kilogram as the lithium-ion batteries now used in most electric cars, a result that has drawn wide attention from engineers. ______ the design depends on a rare metal whose global supply could not support large-scale production, so Ismoilov himself cautions that the battery is unlikely to reach consumers anytime soon.",
-    "stem": "Which choice completes the text with the most logical transition?",
-    "option_a": "Indeed,",
-    "option_b": "In other words,",
-    "option_c": "Fittingly,",
-    "option_d": "That said,",
-    "correct": "D",
-    "explanation_en": "The first sentence presents an impressive strength of Ismoilov's battery. The second sentence introduces a serious limitation that qualifies that strength: the battery depends on a scarce metal. “That said” introduces a reservation that limits a positive claim just made, so choice D is correct.\n\n“Indeed” (choice A) would introduce a point that confirms or strengthens the praise, but the second sentence works against it. “In other words” (choice B) would restate the first sentence, but the limitation is new information, not a rewording. “Fittingly” (choice C) would present the limitation as appropriate or suitable in light of the battery's success, which makes no sense.",
-    "explanation_uz": "Birinchi gapda Ismoilov batareyasining ta’sirli afzalligi keltirilgan. Ikkinchi gapda bu afzallikni cheklaydigan jiddiy kamchilik kiritilgan: batareya kam uchraydigan metallga bog‘liq. “That said” hozirgina aytilgan ijobiy fikrni cheklaydigan izohni kiritadi, shuning uchun to‘g‘ri javob D.\n\n“Indeed” (A) maqtovni tasdiqlaydigan yoki kuchaytiradigan fikrni kiritadi, holbuki ikkinchi gap unga qarshi ishlaydi. “In other words” (B) birinchi gapni qayta ifodalaydi, lekin kamchilik qayta aytilgan fikr emas, yangi ma’lumot. “Fittingly” (C) kamchilikni batareyaning muvaffaqiyatiga munosib, mos narsa sifatida ko‘rsatadi, bu mantiqsiz.",
-    "estimated_seconds": 80,
-    "source": "original",
-    "tags": [
-      "core-v5",
-      "that-said"
-    ]
-  },
-  {
-    "skill_code": "transitions",
-    "difficulty": "hard",
-    "question_type": "mc",
-    "stimulus_type": "passage",
-    "passage": "Economist Shahlo Raximova argues that weekly farmers' markets in rural areas do more than sell food: they also serve as essential gathering places that hold scattered communities together. ______ in her survey of shoppers at thirty such markets, more than half said that seeing friends and neighbors was one of their main reasons for attending.",
-    "stem": "Which choice completes the text with the most logical transition?",
-    "option_a": "Granted,",
-    "option_b": "Indeed,",
-    "option_c": "Instead,",
-    "option_d": "Nonetheless,",
-    "correct": "B",
-    "explanation_en": "The first sentence states Raximova's claim that markets serve as important gathering places. The second sentence provides evidence that strongly supports this claim: most shoppers come partly to see friends and neighbors. “Indeed” introduces a point that confirms and reinforces what was just said, so choice B is correct.\n\n“Granted” (choice A) would concede a point that weakens the claim, but the survey result supports it. “Instead” (choice C) would suggest that the survey result replaces Raximova's claim. “Nonetheless” (choice D) would signal that the survey result holds despite the claim, but the two agree.",
-    "explanation_uz": "Birinchi gapda Raximovaning bozorlar muhim yig‘ilish joyi bo‘lib xizmat qiladi degan fikri keltirilgan. Ikkinchi gapda bu fikrni kuchli qo‘llab-quvvatlovchi dalil berilgan: xaridorlarning yarmidan ko‘pi qisman do‘st va qo‘shnilarini ko‘rish uchun keladi. “Indeed” hozirgina aytilganni tasdiqlab, kuchaytiradigan fikrni kiritadi, shuning uchun to‘g‘ri javob B.\n\n“Granted” (A) fikrni zaiflashtiradigan narsani tan olishni bildiradi, holbuki so‘rovnoma natijasi uni qo‘llab-quvvatlaydi. “Instead” (C) so‘rovnoma natijasi Raximovaning fikri o‘rnini egallaydi degan ma’no beradi. “Nonetheless” (D) natija fikrga qaramay to‘g‘ri degan ma’no beradi, holbuki ular bir-biriga mos.",
-    "estimated_seconds": 80,
-    "source": "original",
-    "tags": [
-      "core-v5",
-      "emphasis-indeed"
-    ]
-  },
-  {
-    "skill_code": "transitions",
-    "difficulty": "hard",
-    "question_type": "mc",
-    "stimulus_type": "passage",
-    "passage": "The cactus house is the hottest and brightest room in the city's botanical garden, and visitors walking through it often remark that the plants must be terribly thirsty. ______ the gardeners water most of the cacti only once every two or three weeks, since too much water causes their roots to rot.",
-    "stem": "Which choice completes the text with the most logical transition?",
-    "option_a": "Actually,",
-    "option_b": "Accordingly,",
-    "option_c": "Similarly,",
-    "option_d": "Fittingly,",
-    "correct": "A",
-    "explanation_en": "The first sentence describes what visitors assume: the cacti must need a lot of water. The second sentence corrects that assumption by stating that the gardeners rarely water the cacti. “Actually” introduces a fact that corrects a mistaken belief, so choice A is correct.\n\n“Accordingly” (choice B) would present the watering schedule as a response that matches the visitors' belief, but watering only every few weeks goes against the idea that the plants are thirsty. “Similarly” (choice C) would present the watering schedule as comparable to the visitors' remark. “Fittingly” (choice D) would suggest that rare watering is especially suitable given that the room is hot and bright, which is the opposite of what the visitors' reasoning implies.",
-    "explanation_uz": "Birinchi gapda tashrif buyuruvchilarning taxmini tasvirlangan: kaktuslar juda ko‘p suvga muhtoj bo‘lsa kerak. Ikkinchi gap bu taxminni tuzatadi: bog‘bonlar kaktuslarni kamdan-kam sug‘oradi. “Actually” noto‘g‘ri tasavvurni tuzatuvchi faktni kiritadi, shuning uchun to‘g‘ri javob A.\n\n“Accordingly” (B) sug‘orish tartibini tashrif buyuruvchilar fikriga mos javob sifatida ko‘rsatadi, holbuki bir necha haftada bir marta sug‘orish o‘simliklar chanqagan degan fikrga zid. “Similarly” (C) sug‘orish tartibini tashrif buyuruvchilarning gapiga o‘xshash narsa sifatida ko‘rsatadi. “Fittingly” (D) xona issiq va yorug‘ bo‘lgani uchun kam sug‘orish ayniqsa munosib degan ma’no beradi, bu esa tashrif buyuruvchilar mulohazasidan kelib chiqadigan narsaning teskarisi.",
-    "estimated_seconds": 80,
-    "source": "original",
-    "tags": [
-      "core-v5",
-      "correction-actually"
-    ]
-  },
-  {
-    "skill_code": "transitions",
-    "difficulty": "hard",
-    "question_type": "mc",
-    "stimulus_type": "passage",
-    "passage": "Literary scholar Nodira Haydarova argues that the novelist's private letters are a better guide to his intentions than the essays he published during his lifetime. ______ the letters were written mainly to close friends and rarely discuss his novels directly, but Haydarova contends that their frankness more than makes up for how little they say about his fiction.",
-    "stem": "Which choice completes the text with the most logical transition?",
-    "option_a": "Therefore,",
-    "option_b": "Indeed,",
-    "option_c": "Granted,",
-    "option_d": "Likewise,",
-    "correct": "C",
-    "explanation_en": "After stating Haydarova's claim, the text admits a weakness in her evidence (the letters rarely discuss the novels) and then explains why she still holds her view (“but Haydarova contends...”). “Granted” concedes a point against an argument before answering it, so choice C is correct.\n\n“Therefore” (choice A) would present the letters' limited discussion of the novels as a consequence of her claim, which is illogical. “Indeed” (choice B) would introduce support for her claim, but the fact that the letters rarely discuss the novels weakens it. “Likewise” (choice D) would present the weakness as similar to her claim rather than as an objection to it.",
-    "explanation_uz": "Matn Haydarovaning fikrini keltirgach, uning dalilidagi zaif tomonni tan oladi (xatlarda romanlar kamdan-kam muhokama qilinadi), so‘ng u nega baribir o‘z fikrida qolishini tushuntiradi (“but Haydarova contends...”). “Granted” javob berishdan oldin dalilga qarshi bir fikrni tan oladi, shuning uchun to‘g‘ri javob C.\n\n“Therefore” (A) xatlarda romanlar kam muhokama qilinishini uning fikri oqibati qilib ko‘rsatadi, bu mantiqsiz. “Indeed” (B) uning fikrini qo‘llab-quvvatlovchi dalilni kiritadi, holbuki xatlarda romanlar kam muhokama qilinishi fikrni zaiflashtiradi. “Likewise” (D) kamchilikni uning fikriga e’tiroz sifatida emas, unga o‘xshash narsa sifatida ko‘rsatadi.",
-    "estimated_seconds": 80,
-    "source": "original",
-    "tags": [
-      "core-v5",
-      "concession-granted"
-    ]
-  },
-  {
-    "skill_code": "transitions",
-    "difficulty": "hard",
-    "question_type": "mc",
-    "stimulus_type": "passage",
-    "passage": "For more than thirty years, ethnomusicologist Zuhra Normatova traveled to the remote village of Oqtosh to record the work songs that its farmers had passed down orally for generations but had never written down. Her recordings are now the only complete collection of these songs. ______ the archive that preserves the recordings is housed in Oqtosh's renovated schoolhouse, where local children now learn to sing the songs their great-grandparents once sang in the fields.",
-    "stem": "Which choice completes the text with the most logical transition?",
-    "option_a": "Specifically,",
-    "option_b": "Nevertheless,",
-    "option_c": "Fittingly,",
-    "option_d": "In other words,",
-    "correct": "C",
-    "explanation_en": "The text explains that Normatova preserved the songs of Oqtosh. The last sentence adds that her recordings are kept in Oqtosh itself, where children learn the songs, a detail that is especially appropriate given her work. “Fittingly” introduces a detail that is suitable in light of what came before, so choice C is correct.\n\n“Specifically” (choice A) would introduce a more precise version of the previous sentence, but the location of the archive is not a detail of the recordings being the only complete collection. “Nevertheless” (choice B) would suggest that keeping the archive in Oqtosh goes against what was said, but it matches it. “In other words” (choice D) would restate the previous sentence, but the last sentence gives new information.",
-    "explanation_uz": "Matnda Normatova Oqtosh qo‘shiqlarini saqlab qolgani tushuntirilgan. Oxirgi gap uning yozuvlari aynan Oqtoshning o‘zida saqlanishi va u yerda bolalar bu qo‘shiqlarni o‘rganishini qo‘shimcha qiladi — bu uning mehnatiga juda mos tafsilot. “Fittingly” avvalgi fikrga munosib tafsilotni kiritadi, shuning uchun to‘g‘ri javob C.\n\n“Specifically” (A) oldingi gapning aniqroq ifodasini kiritadi, lekin arxiv joylashuvi yozuvlarning yagona to‘liq to‘plam ekani haqidagi tafsilot emas. “Nevertheless” (B) arxivni Oqtoshda saqlash aytilganlarga zid degan ma’no beradi, holbuki u ularga mos. “In other words” (D) oldingi gapni qayta ifodalaydi, lekin oxirgi gap yangi ma’lumot beradi.",
-    "estimated_seconds": 80,
-    "source": "original",
-    "tags": [
-      "core-v5",
-      "fittingly"
     ]
   },
   {
@@ -652,6 +106,405 @@
   },
   {
     "skill_code": "transitions",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "In a survey of small shops in Bukhara, economist Dildora Saidova found that shops accepting mobile payments attracted more customers under the age of thirty than shops accepting only cash. ______ owners of the shops that accepted mobile payments reported spending less time counting money at the end of each day.",
+    "stem": "Which choice completes the text with the most logical transition?",
+    "option_a": "Instead,",
+    "option_b": "Additionally,",
+    "option_c": "For example,",
+    "option_d": "Nevertheless,",
+    "correct": "B",
+    "explanation_en": "The first sentence gives one benefit that Saidova found for shops accepting mobile payments: more young customers. The second sentence gives another benefit: less time spent counting money. “Additionally” adds a further point of the same kind, so choice B is correct.\n\n“Instead” (choice A) would suggest that the second benefit replaces the first. “For example” (choice C) would present the time saved as an example of attracting young customers, but it is a separate benefit. “Nevertheless” (choice D) would signal a contrast, but the second sentence agrees with the first rather than going against it.",
+    "explanation_uz": "Birinchi gapda Saidova mobil to‘lov qabul qiladigan do‘konlar uchun aniqlagan bir afzallik — yosh xaridorlar ko‘payishi aytilgan. Ikkinchi gapda yana bir afzallik — pul sanashga kamroq vaqt ketishi berilgan. “Additionally” xuddi shu turdagi qo‘shimcha fikrni qo‘shadi, shuning uchun to‘g‘ri javob B.\n\n“Instead” (A) ikkinchi afzallik birinchisining o‘rnini egallaydi degan ma’no beradi. “For example” (C) tejalgan vaqtni yosh xaridorlarni jalb qilishga misol qilib ko‘rsatadi, holbuki bu alohida afzallik. “Nevertheless” (D) qarama-qarshilikni bildiradi, lekin ikkinchi gap birinchisiga zid emas, unga mos keladi.",
+    "estimated_seconds": 45,
+    "source": "original",
+    "tags": [
+      "core-v5",
+      "addition"
+    ]
+  },
+  {
+    "skill_code": "transitions",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Engineer Sherzod Toshmatov's prototype solar water heater cost about twice as much to build and install as a standard electric water heater. ______ the families who tested it saved so much on their electricity bills that, within four years, the savings had more than covered the difference in price.",
+    "stem": "Which choice completes the text with the most logical transition?",
+    "option_a": "Similarly,",
+    "option_b": "For example,",
+    "option_c": "Nevertheless,",
+    "option_d": "In other words,",
+    "correct": "C",
+    "explanation_en": "The first sentence points out a drawback of the solar heater: it cost twice as much. The second sentence describes an outcome that goes against what that drawback might lead a reader to expect: families saved enough to cover the extra cost. “Nevertheless” introduces a point that holds true despite what was just said, so choice C is correct.\n\n“Similarly” (choice A) would present the savings as another point like the high cost, but they work against it. “For example” (choice B) would treat the savings as an example of the high cost. “In other words” (choice D) would restate the first sentence, but the second sentence says something different and even opposite in effect.",
+    "explanation_uz": "Birinchi gapda quyosh suv isitgichining kamchiligi ko‘rsatilgan: u ikki baravar qimmatga tushgan. Ikkinchi gapda bu kamchilikdan kutilmagan natija tasvirlangan: oilalar qo‘shimcha xarajatni qoplashga yetadigan darajada pul tejagan. “Nevertheless” avval aytilganga qaramay to‘g‘ri bo‘lgan fikrni kiritadi, shuning uchun to‘g‘ri javob C.\n\n“Similarly” (A) tejamni yuqori narx kabi yana bir fikr sifatida ko‘rsatadi, holbuki u narxga qarshi turadi. “For example” (B) tejamni yuqori narxga misol qilib ko‘rsatadi. “In other words” (D) birinchi gapni qayta ifodalaydi, lekin ikkinchi gap boshqa, hatto teskari ta’sirdagi fikrni aytadi.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v5",
+      "concession"
+    ]
+  },
+  {
+    "skill_code": "transitions",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Members of the town council expected that only a few residents would attend the first public meeting about the plan for a new park. ______ more than three hundred people came, filling every seat in the hall and standing along the walls.",
+    "stem": "Which choice completes the text with the most logical transition?",
+    "option_a": "However,",
+    "option_b": "Therefore,",
+    "option_c": "Similarly,",
+    "option_d": "For instance,",
+    "correct": "A",
+    "explanation_en": "The first sentence states what the council expected: few people would come. The second sentence describes what actually happened: more than three hundred people came. “However” signals this contrast between expectation and reality, so choice A is correct.\n\n“Therefore” (choice B) would suggest that the large crowd came because the council expected a small one, which is illogical. “Similarly” (choice C) would mean the crowd matched the expectation, but it was the opposite. “For instance” (choice D) would present the large crowd as an example of the council's expectation.",
+    "explanation_uz": "Birinchi gapda kengash nimani kutgani aytilgan: yig‘ilishga oz odam keladi. Ikkinchi gapda esa aslida nima bo‘lgani tasvirlangan: uch yuzdan ortiq kishi kelgan. “However” kutilgan va haqiqiy holat o‘rtasidagi shu qarama-qarshilikni bildiradi, shuning uchun to‘g‘ri javob A.\n\n“Therefore” (B) kengash oz odam kutgani uchun ko‘p odam keldi degan mantiqsiz ma’no beradi. “Similarly” (C) olomon kutilganga mos keldi degan ma’no beradi, holbuki aksincha bo‘lgan. “For instance” (D) katta olomonni kengash kutgan narsaga misol qilib ko‘rsatadi.",
+    "estimated_seconds": 45,
+    "source": "original",
+    "tags": [
+      "core-v5",
+      "contrast"
+    ]
+  },
+  {
+    "skill_code": "transitions",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "The following text is from a short story.\n\nInside the bakery, Zarina pulled the last tray of loaves from the oven and set it on the counter to cool, breathing in the warm smell of sesame and crust. ______ outside, a line of customers was already forming in the gray early light, their coats buttoned against the cold.",
+    "stem": "Which choice completes the text with the most logical transition?",
+    "option_a": "Meanwhile,",
+    "option_b": "As a result,",
+    "option_c": "For instance,",
+    "option_d": "In other words,",
+    "correct": "A",
+    "explanation_en": "The text describes two things happening at the same time in different places: Zarina working inside the bakery and customers lining up outside. “Meanwhile” signals that one event happens during another, so choice A is correct.\n\n“As a result” (choice B) would claim that the line formed because Zarina took the loaves out, but the customers were already waiting and could not know what she was doing. “For instance” (choice C) would present the line as an example of Zarina's baking. “In other words” (choice D) would restate the first sentence, but the second sentence describes a different scene.",
+    "explanation_uz": "Matnda bir vaqtning o‘zida turli joylarda yuz berayotgan ikki voqea tasvirlangan: Zarina novvoyxona ichida ishlayapti, tashqarida esa xaridorlar navbatga turmoqda. “Meanwhile” bir voqea boshqasi bilan bir paytda yuz berishini bildiradi, shuning uchun to‘g‘ri javob A.\n\n“As a result” (B) navbat Zarina nonlarni chiqargani uchun hosil bo‘lgan degan ma’no beradi, holbuki xaridorlar allaqachon kutib turgan va u nima qilayotganini bilmagan. “For instance” (C) navbatni Zarinaning non yopishiga misol qilib ko‘rsatadi. “In other words” (D) birinchi gapni qayta ifodalaydi, lekin ikkinchi gap boshqa manzarani tasvirlaydi.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v5",
+      "simultaneity"
+    ]
+  },
+  {
+    "skill_code": "transitions",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Some animals can survive the winter even though much of their bodies freezes solid. ______ the wood frog of North America stops breathing and its heart stops beating while ice forms in its body; when spring comes, it thaws and hops away.",
+    "stem": "Which choice completes the text with the most logical transition?",
+    "option_a": "However,",
+    "option_b": "Instead,",
+    "option_c": "In conclusion,",
+    "option_d": "For example,",
+    "correct": "D",
+    "explanation_en": "The first sentence makes a general claim: some animals survive the winter partly frozen. The second sentence describes one such animal, the wood frog. “For example” introduces a specific case of a general statement, so choice D is correct.\n\n“However” (choice A) would signal that the wood frog contradicts the first sentence, but it supports it. “Instead” (choice B) would suggest that the wood frog replaces something mentioned earlier. “In conclusion” (choice C) would introduce a summary of the whole text, but the second sentence gives a new, specific case rather than summing up.",
+    "explanation_uz": "Birinchi gapda umumiy fikr bildirilgan: ba’zi hayvonlar tanasi qisman muzlab qolsa ham qishdan omon chiqadi. Ikkinchi gapda shunday hayvonlardan biri — o‘rmon qurbaqasi tasvirlangan. “For example” umumiy fikrga aniq misol keltiradi, shuning uchun to‘g‘ri javob D.\n\n“However” (A) o‘rmon qurbaqasi birinchi gapga zid degan ma’no beradi, holbuki u uni tasdiqlaydi. “Instead” (B) o‘rmon qurbaqasi avval aytilgan nimanidir almashtiradi degan ma’no beradi. “In conclusion” (C) butun matnga xulosa kiritadi, lekin ikkinchi gap xulosa emas, yangi aniq misol keltiradi.",
+    "estimated_seconds": 45,
+    "source": "original",
+    "tags": [
+      "core-v5",
+      "example"
+    ]
+  },
+  {
+    "skill_code": "transitions",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Each winter, heavy snow blocks the only road between the mountain village and the nearest town, sometimes for months at a time. ______ families in the village store grain, dried fruit, and firewood every autumn so that they will have enough supplies to last until spring.",
+    "stem": "Which choice completes the text with the most logical transition?",
+    "option_a": "In contrast,",
+    "option_b": "For this reason,",
+    "option_c": "For example,",
+    "option_d": "Likewise,",
+    "correct": "B",
+    "explanation_en": "The first sentence explains that the village is cut off by snow for long periods each winter. The second sentence describes what families do because of this: they store supplies every autumn. “For this reason” introduces an action that is caused by the situation just described, so choice B is correct.\n\n“In contrast” (choice A) would signal a difference, but storing supplies is a response to the blocked road, not the opposite of it. “For example” (choice C) would present storing supplies as an example of snow blocking the road. “Likewise” (choice D) would describe a similar situation rather than the reason for the families' actions.",
+    "explanation_uz": "Birinchi gapda qishloq har qishda uzoq vaqt qor sababli yo‘ldan uzilib qolishi tushuntirilgan. Ikkinchi gapda oilalar shu sababli nima qilishi aytilgan: ular har kuzda zaxira to‘playdi. “For this reason” hozirgina tasvirlangan holat sabab bo‘lgan harakatni kiritadi, shuning uchun to‘g‘ri javob B.\n\n“In contrast” (A) farqni bildiradi, lekin zaxira to‘plash yopilgan yo‘lga javob, uning aksi emas. “For example” (C) zaxira to‘plashni qor yo‘lni to‘sishiga misol qilib ko‘rsatadi. “Likewise” (D) oilalar harakatining sababini emas, o‘xshash holatni bildiradi.",
+    "estimated_seconds": 45,
+    "source": "original",
+    "tags": [
+      "core-v5",
+      "cause-effect"
+    ]
+  },
+  {
+    "skill_code": "transitions",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "For more than thirty years, ethnomusicologist Zuhra Normatova traveled to the remote village of Oqtosh to record the work songs that its farmers had passed down orally for generations but had never written down. Her recordings are now the only complete collection of these songs. ______ the archive that preserves the recordings is housed in Oqtosh's renovated schoolhouse, where local children now learn to sing the songs their great-grandparents once sang in the fields.",
+    "stem": "Which choice completes the text with the most logical transition?",
+    "option_a": "Specifically,",
+    "option_b": "Nevertheless,",
+    "option_c": "Fittingly,",
+    "option_d": "In other words,",
+    "correct": "C",
+    "explanation_en": "The text explains that Normatova preserved the songs of Oqtosh. The last sentence adds that her recordings are kept in Oqtosh itself, where children learn the songs, a detail that is especially appropriate given her work. “Fittingly” introduces a detail that is suitable in light of what came before, so choice C is correct.\n\n“Specifically” (choice A) would introduce a more precise version of the previous sentence, but the location of the archive is not a detail of the recordings being the only complete collection. “Nevertheless” (choice B) would suggest that keeping the archive in Oqtosh goes against what was said, but it matches it. “In other words” (choice D) would restate the previous sentence, but the last sentence gives new information.",
+    "explanation_uz": "Matnda Normatova Oqtosh qo‘shiqlarini saqlab qolgani tushuntirilgan. Oxirgi gap uning yozuvlari aynan Oqtoshning o‘zida saqlanishi va u yerda bolalar bu qo‘shiqlarni o‘rganishini qo‘shimcha qiladi — bu uning mehnatiga juda mos tafsilot. “Fittingly” avvalgi fikrga munosib tafsilotni kiritadi, shuning uchun to‘g‘ri javob C.\n\n“Specifically” (A) oldingi gapning aniqroq ifodasini kiritadi, lekin arxiv joylashuvi yozuvlarning yagona to‘liq to‘plam ekani haqidagi tafsilot emas. “Nevertheless” (B) arxivni Oqtoshda saqlash aytilganlarga zid degan ma’no beradi, holbuki u ularga mos. “In other words” (D) oldingi gapni qayta ifodalaydi, lekin oxirgi gap yangi ma’lumot beradi.",
+    "estimated_seconds": 80,
+    "source": "original",
+    "tags": [
+      "core-v5",
+      "fittingly"
+    ]
+  },
+  {
+    "skill_code": "transitions",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Singer Javlon Ergashev writes many of his songs while walking through Tashkent, humming new melodies into his phone so that he does not forget them. ______ his bandmate Nilufar records short tunes on her phone during her daily bus ride and later turns the best of them into full songs.",
+    "stem": "Which choice completes the text with the most logical transition?",
+    "option_a": "Similarly,",
+    "option_b": "Instead,",
+    "option_c": "As a result,",
+    "option_d": "In conclusion,",
+    "correct": "A",
+    "explanation_en": "The first sentence describes how Javlon captures song ideas: he records melodies on his phone while walking. The second sentence describes Nilufar doing something much the same: she records tunes on her phone during her bus ride. “Similarly” signals that the second situation resembles the first, so choice A is correct.\n\n“Instead” (choice B) would suggest that Nilufar's habit replaces Javlon's. “As a result” (choice C) would claim that Nilufar records tunes because Javlon hums into his phone, which the text never says. “In conclusion” (choice D) would introduce a summary, but the second sentence adds a new example of the same habit.",
+    "explanation_uz": "Birinchi gapda Javlon qo‘shiq g‘oyalarini qanday saqlab qolishi tasvirlangan: u yurib ketayotib kuylarni telefoniga yozib oladi. Ikkinchi gapda Nilufar ham deyarli xuddi shunday qilishi aytilgan: u avtobusda ketayotib kuylarni telefoniga yozib oladi. “Similarly” ikkinchi holat birinchisiga o‘xshashligini bildiradi, shuning uchun to‘g‘ri javob A.\n\n“Instead” (B) Nilufarning odati Javlonnikini almashtiradi degan ma’no beradi. “As a result” (C) Nilufar Javlon telefoniga kuylagani uchun kuylarni yozib oladi degan, matnda aytilmagan sababni bildiradi. “In conclusion” (D) xulosani kiritadi, lekin ikkinchi gap xuddi shu odatning yangi misolini qo‘shadi.",
+    "estimated_seconds": 45,
+    "source": "original",
+    "tags": [
+      "core-v5",
+      "similarity"
+    ]
+  },
+  {
+    "skill_code": "transitions",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "The mural in the old caravanserai has lost nearly half of its original paint over the centuries, and several of the figures in it can now be identified only by their faint outlines. ______ visitors can still follow the story it tells, from a merchant's departure at dawn to his return home years later, laden with gifts.",
+    "stem": "Which choice completes the text with the most logical transition?",
+    "option_a": "Even so,",
+    "option_b": "Thus,",
+    "option_c": "For example,",
+    "option_d": "Likewise,",
+    "correct": "A",
+    "explanation_en": "The first sentence describes the mural's heavy damage, which might lead a reader to expect that its story is lost. The second sentence says that visitors can follow the story anyway. “Even so” introduces a point that holds true despite what was just said, so choice A is correct.\n\n“Thus” (choice B) would suggest that visitors can follow the story because the mural is damaged, which reverses the logic. “For example” (choice C) would present the visible story as an example of the damage. “Likewise” (choice D) would present the second sentence as similar to the first, but it goes against the expectation the first sentence creates.",
+    "explanation_uz": "Birinchi gapda devoriy suratning jiddiy shikastlangani tasvirlangan; bu o‘quvchida undagi hikoya yo‘qolgan degan taassurot uyg‘otishi mumkin. Ikkinchi gapda esa tashrif buyuruvchilar baribir hikoyani kuzata olishi aytilgan. “Even so” avval aytilganga qaramay to‘g‘ri bo‘lgan fikrni kiritadi, shuning uchun to‘g‘ri javob A.\n\n“Thus” (B) tashrif buyuruvchilar surat shikastlangani uchun hikoyani kuzata oladi degan teskari mantiqni beradi. “For example” (C) ko‘rinib turgan hikoyani shikastlanishga misol qilib ko‘rsatadi. “Likewise” (D) ikkinchi gapni birinchisiga o‘xshash qilib ko‘rsatadi, holbuki u birinchi gap uyg‘otgan kutilmaga zid keladi.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v5",
+      "concession"
+    ]
+  },
+  {
+    "skill_code": "transitions",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "The following text is from a short story.\n\nRustam had planned to spend Saturday fixing the chain on his old bicycle. ______ he spent the whole afternoon on his grandmother's roof, helping her turn the apricots that were drying in the sun and carrying the finished ones down in baskets.",
+    "stem": "Which choice completes the text with the most logical transition?",
+    "option_a": "For example,",
+    "option_b": "Similarly,",
+    "option_c": "As a result,",
+    "option_d": "Instead,",
+    "correct": "D",
+    "explanation_en": "The first sentence states what Rustam planned to do: fix his bicycle. The second sentence describes what he did in place of that: he helped his grandmother with the apricots. “Instead” signals that one action replaced another, so choice D is correct.\n\n“For example” (choice A) would present helping with the apricots as an example of fixing the bicycle. “Similarly” (choice B) would suggest that the two activities are alike, but the point is that one replaced the other. “As a result” (choice C) would claim that Rustam helped his grandmother because he had planned to fix his bicycle, which is illogical.",
+    "explanation_uz": "Birinchi gapda Rustam nima qilishni rejalashtirgani aytilgan: velosipedini tuzatish. Ikkinchi gapda esa uning o‘rniga nima qilgani tasvirlangan: buvisiga o‘rik quritishda yordam bergan. “Instead” bir ish boshqasining o‘rnini egallaganini bildiradi, shuning uchun to‘g‘ri javob D.\n\n“For example” (A) o‘rikka yordam berishni velosiped tuzatishga misol qilib ko‘rsatadi. “Similarly” (B) ikki mashg‘ulot o‘xshash degan ma’no beradi, lekin gap biri ikkinchisining o‘rnini egallagani haqida. “As a result” (C) Rustam velosipedini tuzatishni rejalashtirgani uchun buvisiga yordam berdi degan mantiqsiz sababni bildiradi.",
+    "estimated_seconds": 45,
+    "source": "original",
+    "tags": [
+      "core-v5",
+      "alternative-instead"
+    ]
+  },
+  {
+    "skill_code": "transitions",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Marine biologist Kamila Usmonova studies a species of reef fish that biologists describe as a protogynous hermaphrodite. ______ each fish of this species begins its adult life as a female and may later change into a male.",
+    "stem": "Which choice completes the text with the most logical transition?",
+    "option_a": "In other words,",
+    "option_b": "However,",
+    "option_c": "Similarly,",
+    "option_d": "As a result,",
+    "correct": "A",
+    "explanation_en": "The first sentence uses a technical term, “protogynous hermaphrodite,” and the second sentence explains what that term means in plain language. “In other words” introduces a restatement of an idea in simpler terms, so choice A is correct.\n\n“However” (choice B) would signal a contrast, but the second sentence agrees with the first. “Similarly” (choice C) would introduce a different but comparable fact, not an explanation of the same one. “As a result” (choice D) would suggest that the fish change sex because biologists use this term, which reverses the logic: the term describes the change, it does not cause it.",
+    "explanation_uz": "Birinchi gapda “protogynous hermaphrodite” degan ilmiy atama ishlatilgan, ikkinchi gap esa bu atamaning ma’nosini oddiy so‘zlar bilan tushuntiradi. “In other words” fikrni soddaroq qilib qayta ifodalaydi, shuning uchun to‘g‘ri javob A.\n\n“However” (B) qarama-qarshilikni bildiradi, lekin ikkinchi gap birinchisiga mos keladi. “Similarly” (C) xuddi shu faktning izohini emas, boshqa, o‘xshash faktni kiritadi. “As a result” (D) baliqlar biologlar shu atamani ishlatgani uchun jinsini o‘zgartiradi degan teskari mantiqni beradi: atama o‘zgarishni tasvirlaydi, unga sabab bo‘lmaydi.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v5",
+      "restatement"
+    ]
+  },
+  {
+    "skill_code": "transitions",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "The cactus house is the hottest and brightest room in the city's botanical garden, and visitors walking through it often remark that the plants must be terribly thirsty. ______ the gardeners water most of the cacti only once every two or three weeks, since too much water causes their roots to rot.",
+    "stem": "Which choice completes the text with the most logical transition?",
+    "option_a": "Actually,",
+    "option_b": "Accordingly,",
+    "option_c": "Similarly,",
+    "option_d": "Fittingly,",
+    "correct": "A",
+    "explanation_en": "The first sentence describes what visitors assume: the cacti must need a lot of water. The second sentence corrects that assumption by stating that the gardeners rarely water the cacti. “Actually” introduces a fact that corrects a mistaken belief, so choice A is correct.\n\n“Accordingly” (choice B) would present the watering schedule as a response that matches the visitors' belief, but watering only every few weeks goes against the idea that the plants are thirsty. “Similarly” (choice C) would present the watering schedule as comparable to the visitors' remark. “Fittingly” (choice D) would suggest that rare watering is especially suitable given that the room is hot and bright, which is the opposite of what the visitors' reasoning implies.",
+    "explanation_uz": "Birinchi gapda tashrif buyuruvchilarning taxmini tasvirlangan: kaktuslar juda ko‘p suvga muhtoj bo‘lsa kerak. Ikkinchi gap bu taxminni tuzatadi: bog‘bonlar kaktuslarni kamdan-kam sug‘oradi. “Actually” noto‘g‘ri tasavvurni tuzatuvchi faktni kiritadi, shuning uchun to‘g‘ri javob A.\n\n“Accordingly” (B) sug‘orish tartibini tashrif buyuruvchilar fikriga mos javob sifatida ko‘rsatadi, holbuki bir necha haftada bir marta sug‘orish o‘simliklar chanqagan degan fikrga zid. “Similarly” (C) sug‘orish tartibini tashrif buyuruvchilarning gapiga o‘xshash narsa sifatida ko‘rsatadi. “Fittingly” (D) xona issiq va yorug‘ bo‘lgani uchun kam sug‘orish ayniqsa munosib degan ma’no beradi, bu esa tashrif buyuruvchilar mulohazasidan kelib chiqadigan narsaning teskarisi.",
+    "estimated_seconds": 80,
+    "source": "original",
+    "tags": [
+      "core-v5",
+      "correction-actually"
+    ]
+  },
+  {
+    "skill_code": "transitions",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Most frogs lay their eggs in water, where the eggs hatch into tadpoles that swim and breathe through gills. ______ the coquí frog of Puerto Rico lays its eggs on land, and tiny, fully formed frogs hatch directly from them, skipping the tadpole stage entirely.",
+    "stem": "Which choice completes the text with the most logical transition?",
+    "option_a": "However,",
+    "option_b": "For example,",
+    "option_c": "As a result,",
+    "option_d": "Similarly,",
+    "correct": "A",
+    "explanation_en": "The first sentence describes how most frogs reproduce: their eggs hatch into tadpoles in water. The second sentence describes a frog that does something different: its eggs hatch on land as tiny frogs. “However” signals this contrast, so choice A is correct.\n\n“For example” (choice B) would present the coquí as an example of frogs whose eggs hatch into tadpoles, but it skips that stage. “As a result” (choice C) would wrongly suggest that the coquí skips the tadpole stage because other frogs have one. “Similarly” (choice D) would mean the coquí reproduces in the same way as most frogs, which the text contradicts.",
+    "explanation_uz": "Birinchi gapda aksariyat qurbaqalar qanday ko‘payishi tasvirlangan: ularning tuxumlari suvda itbaliqqa aylanadi. Ikkinchi gapda esa boshqacha yo‘l tutadigan qurbaqa haqida gap boradi: uning tuxumlari quruqlikda bo‘ladi va ulardan to‘g‘ridan to‘g‘ri kichik qurbaqalar chiqadi. “However” aynan shu qarama-qarshilikni bildiradi, shuning uchun to‘g‘ri javob A.\n\n“For example” (B) koki qurbaqasini tuxumidan itbaliq chiqadigan qurbaqalarga misol qilib ko‘rsatadi, holbuki u bu bosqichni o‘tkazib yuboradi. “As a result” (C) koki boshqa qurbaqalarda itbaliq bosqichi borligi uchun uni o‘tkazib yuboradi degan noto‘g‘ri sababni bildiradi. “Similarly” (D) koki ham aksariyat qurbaqalar kabi ko‘payadi degan ma’no beradi, bu esa matnga zid.",
+    "estimated_seconds": 45,
+    "source": "original",
+    "tags": [
+      "core-v5",
+      "contrast"
+    ]
+  },
+  {
+    "skill_code": "transitions",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Physicist Bekzod Ismoilov's experimental battery stores nearly twice as much energy per kilogram as the lithium-ion batteries now used in most electric cars, a result that has drawn wide attention from engineers. ______ the design depends on a rare metal whose global supply could not support large-scale production, so Ismoilov himself cautions that the battery is unlikely to reach consumers anytime soon.",
+    "stem": "Which choice completes the text with the most logical transition?",
+    "option_a": "Indeed,",
+    "option_b": "In other words,",
+    "option_c": "Fittingly,",
+    "option_d": "That said,",
+    "correct": "D",
+    "explanation_en": "The first sentence presents an impressive strength of Ismoilov's battery. The second sentence introduces a serious limitation that qualifies that strength: the battery depends on a scarce metal. “That said” introduces a reservation that limits a positive claim just made, so choice D is correct.\n\n“Indeed” (choice A) would introduce a point that confirms or strengthens the praise, but the second sentence works against it. “In other words” (choice B) would restate the first sentence, but the limitation is new information, not a rewording. “Fittingly” (choice C) would present the limitation as appropriate or suitable in light of the battery's success, which makes no sense.",
+    "explanation_uz": "Birinchi gapda Ismoilov batareyasining ta’sirli afzalligi keltirilgan. Ikkinchi gapda bu afzallikni cheklaydigan jiddiy kamchilik kiritilgan: batareya kam uchraydigan metallga bog‘liq. “That said” hozirgina aytilgan ijobiy fikrni cheklaydigan izohni kiritadi, shuning uchun to‘g‘ri javob D.\n\n“Indeed” (A) maqtovni tasdiqlaydigan yoki kuchaytiradigan fikrni kiritadi, holbuki ikkinchi gap unga qarshi ishlaydi. “In other words” (B) birinchi gapni qayta ifodalaydi, lekin kamchilik qayta aytilgan fikr emas, yangi ma’lumot. “Fittingly” (C) kamchilikni batareyaning muvaffaqiyatiga munosib, mos narsa sifatida ko‘rsatadi, bu mantiqsiz.",
+    "estimated_seconds": 80,
+    "source": "original",
+    "tags": [
+      "core-v5",
+      "that-said"
+    ]
+  },
+  {
+    "skill_code": "transitions",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "The walls and roof of the old greenhouse are made of glass panels that let sunlight in but keep the warmed air from escaping. ______ the air inside the greenhouse stays much warmer than the air outside, even on cold, clear winter days.",
+    "stem": "Which choice completes the text with the most logical transition?",
+    "option_a": "In contrast,",
+    "option_b": "Therefore,",
+    "option_c": "For instance,",
+    "option_d": "Similarly,",
+    "correct": "B",
+    "explanation_en": "The first sentence explains that the greenhouse lets sunlight in and keeps warm air from escaping. The second sentence describes the effect of this: the air inside stays warmer than the air outside. “Therefore” introduces a result, so choice B is correct.\n\n“In contrast” (choice A) would signal a difference, but the warm air inside follows directly from the glass trapping heat. “For instance” (choice C) would introduce an example of the first sentence's idea, but the second sentence states a consequence, not an example. “Similarly” (choice D) would describe a separate, comparable situation rather than the result of the one just described.",
+    "explanation_uz": "Birinchi gapda issiqxona quyosh nurini o‘tkazishi va iliq havoni chiqarib yubormasligi tushuntirilgan. Ikkinchi gapda buning oqibati tasvirlangan: ichkaridagi havo tashqaridagidan iliqroq bo‘lib qoladi. “Therefore” natijani kiritadi, shuning uchun to‘g‘ri javob B.\n\n“In contrast” (A) farqni bildiradi, lekin ichkaridagi iliq havo shishaning issiqlikni ushlab qolishidan bevosita kelib chiqadi. “For instance” (C) birinchi gapdagi fikrga misol keltiradi, lekin ikkinchi gapda misol emas, oqibat aytilgan. “Similarly” (D) hozirgina tasvirlangan holatning natijasini emas, unga o‘xshash boshqa holatni bildiradi.",
+    "estimated_seconds": 45,
+    "source": "original",
+    "tags": [
+      "core-v5",
+      "cause-effect"
+    ]
+  },
+  {
+    "skill_code": "transitions",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "At one family carpet workshop in Khiva, weavers begin by dyeing wool threads with natural colors made from plants such as madder root and pomegranate peel. ______ they hang the dyed threads in the sun to dry before stretching them onto a wooden loom.",
+    "stem": "Which choice completes the text with the most logical transition?",
+    "option_a": "In contrast,",
+    "option_b": "For example,",
+    "option_c": "Afterward,",
+    "option_d": "Similarly,",
+    "correct": "C",
+    "explanation_en": "The text describes the steps of a process in order. First, the weavers dye the threads; the next step is hanging the threads to dry. “Afterward” signals a step that comes later in time, so choice C is correct.\n\n“In contrast” (choice A) would set the drying step against the dyeing step, but the two steps simply follow each other. “For example” (choice B) would present drying as an example of dyeing, which makes no sense. “Similarly” (choice D) would suggest that drying is just like dyeing rather than the next step.",
+    "explanation_uz": "Matnda jarayon bosqichlari ketma-ket tasvirlangan. Avval to‘quvchilar iplarni bo‘yaydi, keyingi bosqich esa iplarni quritish uchun osib qo‘yish. “Afterward” keyinroq keladigan bosqichni bildiradi, shuning uchun to‘g‘ri javob C.\n\n“In contrast” (A) quritishni bo‘yashga qarama-qarshi qo‘yadi, holbuki bu ikki bosqich shunchaki birin-ketin keladi. “For example” (B) quritishni bo‘yashga misol sifatida ko‘rsatadi, bu mantiqsiz. “Similarly” (D) quritish keyingi bosqich emas, balki bo‘yashga o‘xshash ish degan ma’no beradi.",
+    "estimated_seconds": 45,
+    "source": "original",
+    "tags": [
+      "core-v5",
+      "sequence"
+    ]
+  },
+  {
+    "skill_code": "transitions",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Archaeologist Farhod Mirzayev first visited the hillside site in 1987, when he collected a few fragments of glazed pottery from the surface of the ground and noted the outline of buried walls. ______ he returned with a team of students and began a full excavation, which eventually uncovered the foundations of a twelfth-century caravanserai.",
+    "stem": "Which choice completes the text with the most logical transition?",
+    "option_a": "In contrast,",
+    "option_b": "Later,",
+    "option_c": "Likewise,",
+    "option_d": "For instance,",
+    "correct": "B",
+    "explanation_en": "The text describes Mirzayev's work at the site in time order: first a brief visit in 1987, then a full excavation. “Later” signals that the excavation happened after the first visit, so choice B is correct.\n\n“In contrast” (choice A) would set the excavation against the first visit as opposites, but the text shows the excavation building on that visit. “Likewise” (choice C) would suggest the second visit was the same as the first, but it was a much larger project. “For instance” (choice D) would present the excavation as an example of collecting surface fragments.",
+    "explanation_uz": "Matnda Mirzayevning yodgorlikdagi ishi vaqt tartibida tasvirlangan: avval 1987-yildagi qisqa tashrif, keyin to‘liq qazishma. “Later” qazishma birinchi tashrifdan keyin bo‘lganini bildiradi, shuning uchun to‘g‘ri javob B.\n\n“In contrast” (A) qazishmani birinchi tashrifga zid qilib qo‘yadi, holbuki matnda qazishma o‘sha tashrifning davomi sifatida ko‘rsatilgan. “Likewise” (C) ikkinchi tashrif birinchisi bilan bir xil bo‘lgan degan ma’no beradi, holbuki u ancha katta loyiha edi. “For instance” (D) qazishmani yer yuzasidan sopol parchalarini yig‘ishga misol qilib ko‘rsatadi.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v5",
+      "sequence"
+    ]
+  },
+  {
+    "skill_code": "transitions",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "In a classroom experiment, one tray of bean seedlings was placed on a sunny windowsill, while a second tray was kept inside a dark cupboard. For two weeks, the seedlings in the cupboard received no light at all. ______ they grew pale and thin, while the seedlings on the windowsill stayed green and sturdy.",
+    "stem": "Which choice completes the text with the most logical transition?",
+    "option_a": "For instance,",
+    "option_b": "Similarly,",
+    "option_c": "Moreover,",
+    "option_d": "Consequently,",
+    "correct": "D",
+    "explanation_en": "The text explains that the seedlings in the cupboard received no light for two weeks, and the last sentence describes what happened to them: they grew pale and thin. “Consequently” introduces a result of what came before, so choice D is correct.\n\n“For instance” (choice A) would introduce an example, but the pale seedlings are an effect of the lack of light, not an example of it. “Similarly” (choice B) would describe something comparable rather than a result. “Moreover” (choice C) would simply add another, unrelated point instead of showing that the seedlings changed because they had no light.",
+    "explanation_uz": "Matnda shkafdagi ko‘chatlar ikki hafta davomida umuman yorug‘lik olmagani aytilgan, oxirgi gap esa ularga nima bo‘lganini tasvirlaydi: ular rangpar va ingichka bo‘lib o‘sgan. “Consequently” avvalgi fikrning natijasini kiritadi, shuning uchun to‘g‘ri javob D.\n\n“For instance” (A) misol keltiradi, lekin rangpar ko‘chatlar yorug‘lik yo‘qligiga misol emas, uning oqibati. “Similarly” (B) natijani emas, o‘xshash holatni bildiradi. “Moreover” (C) ko‘chatlar yorug‘lik bo‘lmagani uchun o‘zgarganini ko‘rsatish o‘rniga shunchaki boshqa fikr qo‘shadi.",
+    "estimated_seconds": 45,
+    "source": "original",
+    "tags": [
+      "core-v5",
+      "cause-effect"
+    ]
+  },
+  {
+    "skill_code": "transitions",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Sociologist Ravshan Yuldoshev found that neighborhood committees that held open monthly meetings resolved disputes between neighbors faster than committees that met only when a problem arose. ______ residents of neighborhoods with monthly meetings reported greater trust in their committees than residents of other neighborhoods did.",
+    "stem": "Which choice completes the text with the most logical transition?",
+    "option_a": "However,",
+    "option_b": "Moreover,",
+    "option_c": "Instead,",
+    "option_d": "For instance,",
+    "correct": "B",
+    "explanation_en": "Both sentences describe advantages that Yuldoshev found for neighborhoods with monthly meetings: faster resolution of disputes and greater trust. “Moreover” adds a further point that supports the same idea, so choice B is correct.\n\n“However” (choice A) would signal that greater trust goes against faster dispute resolution, but both findings point the same way. “Instead” (choice C) would suggest that the second finding replaces the first. “For instance” (choice D) would present greater trust as an example of faster dispute resolution, but it is a separate finding.",
+    "explanation_uz": "Ikkala gapda ham Yuldoshev har oy yig‘ilish o‘tkaziladigan mahallalarda aniqlagan afzalliklar tasvirlangan: nizolar tezroq hal bo‘lishi va ishonch yuqoriroq ekani. “Moreover” xuddi shu fikrni qo‘llab-quvvatlovchi qo‘shimcha dalilni qo‘shadi, shuning uchun to‘g‘ri javob B.\n\n“However” (A) yuqori ishonch nizolar tez hal bo‘lishiga zid degan ma’no beradi, holbuki ikkala xulosa bir yo‘nalishda. “Instead” (C) ikkinchi xulosa birinchisining o‘rnini egallaydi degan ma’no beradi. “For instance” (D) yuqori ishonchni nizolar tez hal bo‘lishiga misol qilib ko‘rsatadi, holbuki bu alohida xulosa.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v5",
+      "addition"
+    ]
+  },
+  {
+    "skill_code": "transitions",
     "difficulty": "hard",
     "question_type": "mc",
     "stimulus_type": "passage",
@@ -669,6 +522,153 @@
     "tags": [
       "core-v5",
       "in-turn"
+    ]
+  },
+  {
+    "skill_code": "transitions",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Literary scholar Nodira Haydarova argues that the novelist's private letters are a better guide to his intentions than the essays he published during his lifetime. ______ the letters were written mainly to close friends and rarely discuss his novels directly, but Haydarova contends that their frankness more than makes up for how little they say about his fiction.",
+    "stem": "Which choice completes the text with the most logical transition?",
+    "option_a": "Therefore,",
+    "option_b": "Indeed,",
+    "option_c": "Granted,",
+    "option_d": "Likewise,",
+    "correct": "C",
+    "explanation_en": "After stating Haydarova's claim, the text admits a weakness in her evidence (the letters rarely discuss the novels) and then explains why she still holds her view (“but Haydarova contends...”). “Granted” concedes a point against an argument before answering it, so choice C is correct.\n\n“Therefore” (choice A) would present the letters' limited discussion of the novels as a consequence of her claim, which is illogical. “Indeed” (choice B) would introduce support for her claim, but the fact that the letters rarely discuss the novels weakens it. “Likewise” (choice D) would present the weakness as similar to her claim rather than as an objection to it.",
+    "explanation_uz": "Matn Haydarovaning fikrini keltirgach, uning dalilidagi zaif tomonni tan oladi (xatlarda romanlar kamdan-kam muhokama qilinadi), so‘ng u nega baribir o‘z fikrida qolishini tushuntiradi (“but Haydarova contends...”). “Granted” javob berishdan oldin dalilga qarshi bir fikrni tan oladi, shuning uchun to‘g‘ri javob C.\n\n“Therefore” (A) xatlarda romanlar kam muhokama qilinishini uning fikri oqibati qilib ko‘rsatadi, bu mantiqsiz. “Indeed” (B) uning fikrini qo‘llab-quvvatlovchi dalilni kiritadi, holbuki xatlarda romanlar kam muhokama qilinishi fikrni zaiflashtiradi. “Likewise” (D) kamchilikni uning fikriga e’tiroz sifatida emas, unga o‘xshash narsa sifatida ko‘rsatadi.",
+    "estimated_seconds": 80,
+    "source": "original",
+    "tags": [
+      "core-v5",
+      "concession-granted"
+    ]
+  },
+  {
+    "skill_code": "transitions",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "In her study of nineteenth-century markets in Kokand, historian Gulchehra Nazarova found that cloth merchants grouped their stalls together by the type of fabric they sold, which allowed buyers to compare prices and quality easily. ______ she found that the city's spice sellers clustered along a single covered street, where buyers could move from one stall to the next.",
+    "stem": "Which choice completes the text with the most logical transition?",
+    "option_a": "In contrast,",
+    "option_b": "As a result,",
+    "option_c": "Instead,",
+    "option_d": "Similarly,",
+    "correct": "D",
+    "explanation_en": "The first sentence describes how cloth merchants grouped their stalls together. The second sentence describes spice sellers doing the same thing: clustering along one street. “Similarly” signals that the second situation resembles the first, so choice D is correct.\n\n“In contrast” (choice A) would suggest that the spice sellers arranged their stalls differently, but they also grouped together. “As a result” (choice B) would claim that the spice sellers clustered because the cloth merchants did, which the text never says. “Instead” (choice C) would suggest that the spice sellers' arrangement replaced the cloth merchants' arrangement.",
+    "explanation_uz": "Birinchi gapda gazlama savdogarlari rastalarini qanday qilib bir joyga to‘plagani tasvirlangan. Ikkinchi gapda ziravor sotuvchilar ham xuddi shunday qilgani — bitta ko‘chada to‘planganini aytadi. “Similarly” ikkinchi holat birinchisiga o‘xshashligini bildiradi, shuning uchun to‘g‘ri javob D.\n\n“In contrast” (A) ziravor sotuvchilar rastalarini boshqacha joylashtirgan degan ma’no beradi, holbuki ular ham bir joyga to‘plangan. “As a result” (B) ziravor sotuvchilar gazlama savdogarlari shunday qilgani uchun to‘plangan degan, matnda aytilmagan sababni bildiradi. “Instead” (C) ziravorchilarning joylashuvi gazlama savdogarlarinikining o‘rnini egallagan degan ma’no beradi.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v5",
+      "similarity"
+    ]
+  },
+  {
+    "skill_code": "transitions",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Economist Shahlo Raximova argues that weekly farmers' markets in rural areas do more than sell food: they also serve as essential gathering places that hold scattered communities together. ______ in her survey of shoppers at thirty such markets, more than half said that seeing friends and neighbors was one of their main reasons for attending.",
+    "stem": "Which choice completes the text with the most logical transition?",
+    "option_a": "Granted,",
+    "option_b": "Indeed,",
+    "option_c": "Instead,",
+    "option_d": "Nonetheless,",
+    "correct": "B",
+    "explanation_en": "The first sentence states Raximova's claim that markets serve as important gathering places. The second sentence provides evidence that strongly supports this claim: most shoppers come partly to see friends and neighbors. “Indeed” introduces a point that confirms and reinforces what was just said, so choice B is correct.\n\n“Granted” (choice A) would concede a point that weakens the claim, but the survey result supports it. “Instead” (choice C) would suggest that the survey result replaces Raximova's claim. “Nonetheless” (choice D) would signal that the survey result holds despite the claim, but the two agree.",
+    "explanation_uz": "Birinchi gapda Raximovaning bozorlar muhim yig‘ilish joyi bo‘lib xizmat qiladi degan fikri keltirilgan. Ikkinchi gapda bu fikrni kuchli qo‘llab-quvvatlovchi dalil berilgan: xaridorlarning yarmidan ko‘pi qisman do‘st va qo‘shnilarini ko‘rish uchun keladi. “Indeed” hozirgina aytilganni tasdiqlab, kuchaytiradigan fikrni kiritadi, shuning uchun to‘g‘ri javob B.\n\n“Granted” (A) fikrni zaiflashtiradigan narsani tan olishni bildiradi, holbuki so‘rovnoma natijasi uni qo‘llab-quvvatlaydi. “Instead” (C) so‘rovnoma natijasi Raximovaning fikri o‘rnini egallaydi degan ma’no beradi. “Nonetheless” (D) natija fikrga qaramay to‘g‘ri degan ma’no beradi, holbuki ular bir-biriga mos.",
+    "estimated_seconds": 80,
+    "source": "original",
+    "tags": [
+      "core-v5",
+      "emphasis-indeed"
+    ]
+  },
+  {
+    "skill_code": "transitions",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Linguist Madina Ortiqova found that speakers in the mountain villages she studied use different words for bread depending on how it was baked. ______ bread baked against the wall of a clay oven is called by one name, while flat bread cooked on an iron pan over an open fire is called by another.",
+    "stem": "Which choice completes the text with the most logical transition?",
+    "option_a": "In contrast,",
+    "option_b": "Nevertheless,",
+    "option_c": "Similarly,",
+    "option_d": "Specifically,",
+    "correct": "D",
+    "explanation_en": "The first sentence states Ortiqova's finding in general terms: the villagers use different words for bread depending on how it was baked. The second sentence gives the precise details of that finding. “Specifically” introduces a more exact explanation of a general statement, so choice D is correct.\n\n“In contrast” (choice A) would signal that the second sentence differs from the first, but it describes the same finding in detail. “Nevertheless” (choice B) would suggest that the details go against the finding. “Similarly” (choice C) would introduce a separate but comparable finding rather than a closer look at the same one.",
+    "explanation_uz": "Birinchi gapda Ortiqovaning xulosasi umumiy tarzda aytilgan: qishloq aholisi non qanday pishirilganiga qarab turli so‘zlarni ishlatadi. Ikkinchi gapda shu xulosaning aniq tafsilotlari berilgan. “Specifically” umumiy fikrni aniqroq tushuntirib beradi, shuning uchun to‘g‘ri javob D.\n\n“In contrast” (A) ikkinchi gap birinchisidan farq qiladi degan ma’no beradi, holbuki u o‘sha xulosaning tafsiloti. “Nevertheless” (B) tafsilotlar xulosaga zid degan ma’no beradi. “Similarly” (C) o‘sha xulosaning batafsil ko‘rinishini emas, alohida, o‘xshash boshqa xulosani kiritadi.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v5",
+      "specification"
+    ]
+  },
+  {
+    "skill_code": "transitions",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Bakers who make traditional Uzbek non first knead the dough and let it rise. Next, they shape the dough into round loaves and press a pattern into the center of each loaf with a stamp called a chekich. ______ they press the loaves onto the hot inner wall of a clay oven called a tandir, where the bread bakes in a few minutes.",
+    "stem": "Which choice completes the text with the most logical transition?",
+    "option_a": "However,",
+    "option_b": "For example,",
+    "option_c": "Finally,",
+    "option_d": "In other words,",
+    "correct": "C",
+    "explanation_en": "The text lists the steps of making non in order: kneading, shaping and stamping, and then baking. The blank introduces the last step. “Finally” signals the last step in a sequence, so choice C is correct.\n\n“However” (choice A) would signal a contrast, but baking simply follows the earlier steps. “For example” (choice B) would present baking as an example of stamping the loaves. “In other words” (choice D) would restate the previous step, but baking is a new step, not a rewording of stamping.",
+    "explanation_uz": "Matnda non tayyorlash bosqichlari tartib bilan sanab o‘tilgan: xamir qorish, shakl berish va chekich bosish, keyin esa yopish. Bo‘sh joy oxirgi bosqichni kiritadi. “Finally” ketma-ketlikdagi oxirgi bosqichni bildiradi, shuning uchun to‘g‘ri javob C.\n\n“However” (A) qarama-qarshilikni bildiradi, lekin non yopish avvalgi bosqichlardan keyin shunchaki navbat bilan keladi. “For example” (B) non yopishni chekich bosishga misol qilib ko‘rsatadi. “In other words” (D) oldingi bosqichni boshqacha so‘zlar bilan qayta aytadi, holbuki non yopish chekich bosishning qayta ifodasi emas, yangi bosqich.",
+    "estimated_seconds": 45,
+    "source": "original",
+    "tags": [
+      "core-v5",
+      "sequence"
+    ]
+  },
+  {
+    "skill_code": "transitions",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "Urban planner Aziz Rahmonov studied a midsize city that replaced several short bus routes with a few long routes running directly from its outer districts to the city center. After the change, residents of the outer districts no longer had to switch buses to reach downtown jobs and markets. ______ the number of bus trips taken by outer-district residents rose by nearly a third over the following five years.",
+    "stem": "Which choice completes the text with the most logical transition?",
+    "option_a": "Nonetheless,",
+    "option_b": "For example,",
+    "option_c": "Alternatively,",
+    "option_d": "Consequently,",
+    "correct": "D",
+    "explanation_en": "The second sentence explains that the new routes made trips easier for outer-district residents, since they no longer had to switch buses. The last sentence describes a result of that change: more bus trips. “Consequently” introduces an effect, so choice D is correct.\n\n“Nonetheless” (choice A) would suggest that ridership rose in spite of the change, but the text presents the change as making bus travel easier. “For example” (choice B) would present the rise in ridership as an example of not having to switch buses. “Alternatively” (choice C) would introduce another option or possibility, but the last sentence reports what actually happened.",
+    "explanation_uz": "Ikkinchi gapda yangi yo‘nalishlar chekka tumanlar aholisi uchun qatnovni osonlashtirgani — endi avtobus almashtirish shart emasligi tushuntirilgan. Oxirgi gapda bu o‘zgarishning natijasi — avtobus qatnovlari ko‘paygani tasvirlangan. “Consequently” oqibatni kiritadi, shuning uchun to‘g‘ri javob D.\n\n“Nonetheless” (A) yo‘lovchilar soni o‘zgarishga qaramay oshgan degan ma’no beradi, holbuki matnda o‘zgarish qatnovni osonlashtirgani aytilgan. “For example” (B) yo‘lovchilar ko‘payishini avtobus almashtirmaslikka misol qilib ko‘rsatadi. “Alternatively” (C) boshqa variant yoki imkoniyatni kiritadi, oxirgi gap esa aslida nima bo‘lganini xabar qiladi.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v5",
+      "cause-effect"
+    ]
+  },
+  {
+    "skill_code": "transitions",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "To keep its collection of wild wheat seeds alive for decades, a seed bank can dry the seeds and store them in freezers at about −20°C. ______ it can dry the seeds and seal them in airtight foil packets kept at room temperature, a method that costs far less but keeps the seeds alive for a much shorter time.",
+    "stem": "Which choice completes the text with the most logical transition?",
+    "option_a": "Consequently,",
+    "option_b": "For instance,",
+    "option_c": "Alternatively,",
+    "option_d": "Similarly,",
+    "correct": "C",
+    "explanation_en": "The text presents two different options for storing seeds: freezing them, or sealing them in foil packets at room temperature. “Alternatively” introduces a second option that could be chosen instead of the first, so choice C is correct.\n\n“Consequently” (choice A) would suggest that the second method results from the first, but they are separate choices. “For instance” (choice B) would present the foil method as an example of freezing, but it is a different method. “Similarly” (choice D) would stress that the two methods are alike, but the text emphasizes how they differ in cost and in how long they keep seeds alive.",
+    "explanation_uz": "Matnda urug‘larni saqlashning ikki xil usuli keltirilgan: muzlatish yoki xona haroratida germetik folga paketlarga joylash. “Alternatively” birinchisi o‘rniga tanlash mumkin bo‘lgan ikkinchi variantni kiritadi, shuning uchun to‘g‘ri javob C.\n\n“Consequently” (A) ikkinchi usul birinchisining natijasi degan ma’no beradi, holbuki ular alohida variantlar. “For instance” (B) folga usulini muzlatishga misol qilib ko‘rsatadi, holbuki bu boshqa usul. “Similarly” (D) ikki usul o‘xshash ekanini ta’kidlaydi, matn esa ularning narxi va urug‘larni qancha saqlashi bo‘yicha farqiga urg‘u beradi.",
+    "estimated_seconds": 60,
+    "source": "original",
+    "tags": [
+      "core-v5",
+      "alternative"
     ]
   }
 ]

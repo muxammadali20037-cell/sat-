@@ -1,191 +1,23 @@
 [
   {
     "skill_code": "rhetorical_synthesis",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "question_type": "mc",
     "stimulus_type": "passage",
-    "passage": "While researching a topic, a student has taken the following notes:\n\n- Juniper trees grow on dry, rocky mountain slopes in Central Asia.\n- Botanist Lola Ahmedova studied a single juniper growing on a cliff edge.\n- She took a thin core sample from its trunk and counted its growth rings.\n- The count showed that the tree is about 900 years old.\n- Despite its age, the tree is only about 6 meters tall.",
-    "stem": "The student wants to emphasize the age of the tree that Ahmedova studied. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
-    "option_a": "The juniper studied by Lola Ahmedova grows on a cliff edge and is only about 6 meters tall.",
-    "option_b": "According to a count of its growth rings, the juniper studied by Lola Ahmedova is about 900 years old.",
-    "option_c": "Juniper trees, like the one Lola Ahmedova studied, grow on dry, rocky mountain slopes in Central Asia.",
-    "option_d": "To study a juniper growing on a cliff edge, Lola Ahmedova took a thin core sample from its trunk.",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- Psychologist Aziza Karimova studied how people estimate the time a task will take.\n- She asked 150 university students to predict when they would finish a writing assignment.\n- Only 45 of the students finished by the time they had predicted.\n- Psychologists call the common tendency to underestimate how long a task will take the “planning fallacy.”",
+    "stem": "The student wants to present Karimova's results as an example of the planning fallacy. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "option_a": "Psychologists use the term “planning fallacy” to describe the common tendency to underestimate how long a task will take.",
+    "option_b": "In Karimova's study, only 45 of 150 students finished a writing assignment by the time they had predicted, an example of what psychologists call the planning fallacy.",
+    "option_c": "Karimova asked 150 university students to predict when they would finish a writing assignment.",
+    "option_d": "Of the 150 students in Karimova's study, only 45 finished a writing assignment by the time they had predicted.",
     "correct": "B",
-    "explanation_en": "The goal is to emphasize how old the tree is. Choice B does this by stating that the tree is about 900 years old, based on a count of its growth rings.\n\nChoice A emphasizes the tree's location and height, not its age. Choice C describes where juniper trees grow in general. Choice D describes Ahmedova's method but never says how old the tree is.",
-    "explanation_uz": "Maqsad — daraxtning qanchalik qadimiy ekanini ta’kidlash. B buni bajaradi: yillik halqalar sanog‘iga ko‘ra daraxt taxminan 900 yoshda ekanini aytadi.\n\nA daraxtning yoshini emas, joylashuvi va bo‘yini ta’kidlaydi. C archalar umuman qayerda o‘sishini tasvirlaydi. D Ahmedovaning usulini tasvirlaydi, lekin daraxt necha yoshda ekanini aytmaydi.",
-    "estimated_seconds": 50,
+    "explanation_en": "The goal is to connect Karimova's results to the planning fallacy. Choice B does this by giving the result (only 45 of 150 students finished on time) and identifying it as an example of the planning fallacy.\n\nChoice A defines the planning fallacy but does not mention Karimova's results. Choice C describes her method, not her results. Choice D gives the results but does not present them as an example of the planning fallacy.",
+    "explanation_uz": "Maqsad — Karimovaning natijalarini “planning fallacy” (rejalashtirish xatosi) tushunchasi bilan bog‘lash. B buni bajaradi: natijani beradi (150 talabadan faqat 45 tasi o‘z vaqtida tugatgan) va uni rejalashtirish xatosiga misol deb ataydi.\n\nA rejalashtirish xatosiga ta’rif beradi, lekin Karimova natijalarini eslatmaydi. C natijalarni emas, usulni tasvirlaydi. D natijalarni beradi, ammo ularni rejalashtirish xatosiga misol sifatida ko‘rsatmaydi.",
+    "estimated_seconds": 65,
     "source": "original",
     "tags": [
       "core-v5",
-      "emphasize-age"
-    ]
-  },
-  {
-    "skill_code": "rhetorical_synthesis",
-    "difficulty": "easy",
-    "question_type": "mc",
-    "stimulus_type": "passage",
-    "passage": "While researching a topic, a student has taken the following notes:\n\n- Alligators and crocodiles are both large reptiles that live in or near water.\n- An alligator's snout is wide and rounded, shaped like the letter U.\n- A crocodile's snout is narrower and more pointed, shaped like the letter V.\n- When an alligator closes its mouth, most of its lower teeth are hidden.\n- When a crocodile closes its mouth, many of its lower teeth remain visible.",
-    "stem": "The student wants to contrast the shapes of alligator and crocodile snouts. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
-    "option_a": "Alligators and crocodiles are both large reptiles that live in or near water.",
-    "option_b": "When a crocodile closes its mouth, many of its lower teeth remain visible.",
-    "option_c": "An alligator's snout is wide and rounded, and most of its lower teeth are hidden when its mouth is closed.",
-    "option_d": "While an alligator has a wide, U-shaped snout, a crocodile has a narrower, V-shaped snout.",
-    "correct": "D",
-    "explanation_en": "The goal is to contrast the snout shapes of the two animals. Choice D does this by setting the alligator's wide, U-shaped snout against the crocodile's narrower, V-shaped snout.\n\nChoice A states a similarity between the animals, not a difference in snout shape. Choice B describes only the crocodile's teeth. Choice C describes only the alligator, so it does not contrast the two snouts.",
-    "explanation_uz": "Maqsad — ikki hayvonning tumshuq shaklini qiyoslab, farqini ko‘rsatish. D buni bajaradi: alligatorning keng, U shaklidagi tumshug‘ini timsohning ingichkaroq, V shaklidagi tumshug‘iga qarama-qarshi qo‘yadi.\n\nA hayvonlar o‘rtasidagi farqni emas, o‘xshashlikni aytadi. B faqat timsohning tishlarini tasvirlaydi. C faqat alligatorni tasvirlaydi, shuning uchun ikki tumshuqni qiyoslamaydi.",
-    "estimated_seconds": 50,
-    "source": "original",
-    "tags": [
-      "core-v5",
-      "contrast"
-    ]
-  },
-  {
-    "skill_code": "rhetorical_synthesis",
-    "difficulty": "easy",
-    "question_type": "mc",
-    "stimulus_type": "passage",
-    "passage": "While researching a topic, a student has taken the following notes:\n\n- The Tashkent Television Tower is a broadcasting tower in Tashkent, Uzbekistan.\n- Construction of the tower began in 1978.\n- The tower was completed in 1985.\n- It is 375 meters tall.\n- An observation deck allows visitors to view the city from high above.",
-    "stem": "The student wants to emphasize how long it took to build the Tashkent Television Tower. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
-    "option_a": "Construction of the Tashkent Television Tower took about seven years, from 1978 to 1985.",
-    "option_b": "The Tashkent Television Tower, a broadcasting tower in Uzbekistan, was completed in 1985.",
-    "option_c": "The Tashkent Television Tower is 375 meters tall.",
-    "option_d": "From an observation deck on the Tashkent Television Tower, visitors can view the city from high above.",
-    "correct": "A",
-    "explanation_en": "The goal is to emphasize the length of time the construction took. Choice A does this by stating that construction took about seven years and giving both the start date (1978) and the end date (1985).\n\nChoice B gives only the year the tower was completed, so a reader cannot tell how long building it took. Choice C emphasizes the tower's height. Choice D describes the observation deck.",
-    "explanation_uz": "Maqsad — qurilish qancha vaqt davom etganini ta’kidlash. A buni bajaradi: qurilish taxminan yetti yil davom etganini aytadi va boshlanish (1978) hamda tugash (1985) yillarini keltiradi.\n\nB faqat minora qurib bitkazilgan yilni beradi, shuning uchun o‘quvchi qurilish qancha davom etganini bila olmaydi. C minoraning balandligini ta’kidlaydi. D kuzatuv maydonchasini tasvirlaydi.",
-    "estimated_seconds": 50,
-    "source": "original",
-    "tags": [
-      "core-v5",
-      "emphasize-duration"
-    ]
-  },
-  {
-    "skill_code": "rhetorical_synthesis",
-    "difficulty": "easy",
-    "question_type": "mc",
-    "stimulus_type": "passage",
-    "passage": "While researching a topic, a student has taken the following notes:\n\n- Economist Nargiza Sobirova studied 400 high school students in Fergana.\n- She wanted to find out whether weekly online tutoring sessions would improve students' math exam scores.\n- Half of the students received online tutoring for one semester; the other half did not.\n- On average, the tutored students' scores rose 9 points more than the scores of the students who were not tutored.",
-    "stem": "The student wants to present the aim of Sobirova's study. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
-    "option_a": "On average, the math scores of students who received online tutoring rose 9 points more than those of students who did not.",
-    "option_b": "Sobirova studied 400 high school students in Fergana, half of whom received online tutoring for one semester.",
-    "option_c": "Sobirova's study aimed to find out whether weekly online tutoring sessions would improve high school students' math exam scores.",
-    "option_d": "Sobirova, an economist, studied high school students in Fergana.",
-    "correct": "C",
-    "explanation_en": "The goal is to present what Sobirova was trying to learn. Choice C does this by stating that her study aimed to find out whether weekly online tutoring would improve students' math exam scores.\n\nChoice A presents the study's result, not its aim. Choice B describes who was studied and how the study was set up, but not what Sobirova wanted to find out. Choice D names the researcher and the participants but not the purpose of the study.",
-    "explanation_uz": "Maqsad — Sobirova nimani aniqlamoqchi bo‘lganini ko‘rsatish. C buni bajaradi: tadqiqot haftalik onlayn repetitorlik o‘quvchilarning matematika imtihon ballarini oshiradimi yoki yo‘qligini aniqlashga qaratilganini aytadi.\n\nA tadqiqot maqsadini emas, natijasini keltiradi. B kimlar o‘rganilgani va tadqiqot qanday tuzilganini tasvirlaydi, lekin Sobirova nimani bilmoqchi bo‘lganini aytmaydi. D tadqiqotchi va ishtirokchilarni nomlaydi, ammo tadqiqot maqsadini aytmaydi.",
-    "estimated_seconds": 50,
-    "source": "original",
-    "tags": [
-      "core-v5",
-      "study-aim"
-    ]
-  },
-  {
-    "skill_code": "rhetorical_synthesis",
-    "difficulty": "easy",
-    "question_type": "mc",
-    "stimulus_type": "passage",
-    "passage": "While researching a topic, a student has taken the following notes:\n\n- Biomimicry is the practice of designing products by imitating structures or processes found in nature.\n- In 1941, Swiss engineer George de Mestral noticed burrs sticking to his dog's fur after a walk.\n- Under a microscope, he saw that each burr was covered with tiny hooks.\n- He later invented Velcro, a fastener in which tiny hooks catch on small loops.",
-    "stem": "The student wants to present Velcro as an example of biomimicry. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
-    "option_a": "Velcro, a fastener whose tiny hooks imitate the hooks on burrs, is an example of biomimicry: designing products by imitating nature.",
-    "option_b": "Biomimicry is the practice of designing products by imitating structures or processes found in nature.",
-    "option_c": "In 1941, Swiss engineer George de Mestral noticed burrs sticking to his dog's fur after a walk.",
-    "option_d": "Under a microscope, George de Mestral saw that each burr was covered with tiny hooks.",
-    "correct": "A",
-    "explanation_en": "The goal is to present Velcro as an example of biomimicry. Choice A does this by explaining that Velcro's hooks imitate those on burrs and identifying this as biomimicry.\n\nChoice B defines biomimicry but does not mention Velcro. Choice C describes the event that inspired de Mestral but does not mention Velcro or biomimicry. Choice D describes what de Mestral saw under the microscope without connecting it to Velcro or to biomimicry.",
-    "explanation_uz": "Maqsad — Velcroni biomimikriyaga misol sifatida ko‘rsatish. A buni bajaradi: Velcro ilgaklari tikanakli urug‘lardagi ilgaklarga taqlid qilishini tushuntiradi va buni biomimikriya deb ataydi.\n\nB biomimikriyaga ta’rif beradi, lekin Velcroni tilga olmaydi. C de Mestralni ilhomlantirgan voqeani tasvirlaydi, ammo Velcro yoki biomimikriyani eslatmaydi. D de Mestral mikroskop ostida nimani ko‘rganini tasvirlaydi, lekin buni Velcro yoki biomimikriya bilan bog‘lamaydi.",
-    "estimated_seconds": 50,
-    "source": "original",
-    "tags": [
-      "core-v5",
-      "present-example"
-    ]
-  },
-  {
-    "skill_code": "rhetorical_synthesis",
-    "difficulty": "easy",
-    "question_type": "mc",
-    "stimulus_type": "passage",
-    "passage": "While researching a topic, a student has taken the following notes:\n\n- Entomologist Timur Usmonov studies insects that live in caves.\n- In 2021, he described a species of beetle that had never been recorded before.\n- The beetle has no eyes and pale, almost transparent skin.\n- It was found about 300 meters inside a limestone cave in southern Uzbekistan.\n- Usmonov believes that the beetle feeds on fungi growing on bat droppings.",
-    "stem": "The student wants to indicate where the beetle was found. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
-    "option_a": "In 2021, Timur Usmonov described a species of beetle that has no eyes and pale, almost transparent skin.",
-    "option_b": "Timur Usmonov believes that the beetle he described feeds on fungi growing on bat droppings.",
-    "option_c": "Timur Usmonov, an entomologist, studies insects that live in caves.",
-    "option_d": "The beetle that Timur Usmonov described in 2021 was found about 300 meters inside a limestone cave in southern Uzbekistan.",
-    "correct": "D",
-    "explanation_en": "The goal is to indicate where the beetle was found. Choice D does this by stating that it was found about 300 meters inside a limestone cave in southern Uzbekistan.\n\nChoice A describes the beetle's appearance, not its location. Choice B describes what the beetle may eat. Choice C describes Usmonov's field of study but does not say where this beetle was found.",
-    "explanation_uz": "Maqsad — qo‘ng‘iz qayerda topilganini ko‘rsatish. D buni bajaradi: u O‘zbekiston janubidagi ohaktosh g‘orning taxminan 300 metr ichkarisida topilganini aytadi.\n\nA qo‘ng‘izning joylashuvini emas, tashqi ko‘rinishini tasvirlaydi. B qo‘ng‘iz nima bilan oziqlanishi mumkinligini aytadi. C Usmonovning ilmiy yo‘nalishini tasvirlaydi, lekin bu qo‘ng‘iz qayerda topilganini aytmaydi.",
-    "estimated_seconds": 50,
-    "source": "original",
-    "tags": [
-      "core-v5",
-      "specify-location"
-    ]
-  },
-  {
-    "skill_code": "rhetorical_synthesis",
-    "difficulty": "easy",
-    "question_type": "mc",
-    "stimulus_type": "passage",
-    "passage": "While researching a topic, a student has taken the following notes:\n\n- Rishtan is a town in the Fergana Valley of Uzbekistan.\n- Gijduvan is a town in the Bukhara region of Uzbekistan.\n- Both towns are known for their traditional pottery.\n- Rishtan pottery is famous for its blue and turquoise glazes.\n- Gijduvan pottery is famous for its brown, yellow, and green glazes.",
-    "stem": "The student wants to emphasize a similarity between Rishtan and Gijduvan. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
-    "option_a": "Rishtan pottery is famous for its blue and turquoise glazes, while Gijduvan pottery is famous for its brown, yellow, and green glazes.",
-    "option_b": "Rishtan is in the Fergana Valley, while Gijduvan is in the Bukhara region.",
-    "option_c": "Both Rishtan, in the Fergana Valley, and Gijduvan, in the Bukhara region, are known for their traditional pottery.",
-    "option_d": "Rishtan, a town in the Fergana Valley of Uzbekistan, is known for pottery with blue and turquoise glazes.",
-    "correct": "C",
-    "explanation_en": "The goal is to emphasize a similarity between the two towns. Choice C does this by stating that both towns are known for their traditional pottery.\n\nChoice A emphasizes a difference between the towns' pottery glazes. Choice B emphasizes a difference in where the towns are located. Choice D describes only Rishtan, so it cannot show what the two towns have in common.",
-    "explanation_uz": "Maqsad — ikki shahar o‘rtasidagi o‘xshashlikni ta’kidlash. C buni bajaradi: ikkala shahar ham an’anaviy kulolchiligi bilan mashhur ekanini aytadi.\n\nA ikki shahar sopollari sirlaridagi farqni ta’kidlaydi. B shaharlar joylashuvidagi farqni ta’kidlaydi. D faqat Rishtonni tasvirlaydi, shuning uchun ikki shaharning umumiy jihatini ko‘rsata olmaydi.",
-    "estimated_seconds": 50,
-    "source": "original",
-    "tags": [
-      "core-v5",
-      "similarity"
-    ]
-  },
-  {
-    "skill_code": "rhetorical_synthesis",
-    "difficulty": "easy",
-    "question_type": "mc",
-    "stimulus_type": "passage",
-    "passage": "While researching a topic, a student has taken the following notes:\n\n- Tomato flowers release their pollen most easily when they are shaken by vibrations, such as those made by a buzzing bumblebee.\n- Plant biologist Jasur Hakimov tested how vibration affects pollen release in tomato flowers.\n- He touched a small vibrating device to the flowers in a greenhouse.\n- Some flowers were vibrated at the frequency of a bumblebee's buzz; others were vibrated at a lower frequency.\n- Flowers vibrated at the bumblebee frequency released about three times as much pollen as flowers vibrated at the lower frequency.",
-    "stem": "The student wants to present the results of Hakimov's study. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
-    "option_a": "Hakimov touched a small vibrating device to tomato flowers growing in a greenhouse.",
-    "option_b": "Hakimov found that tomato flowers vibrated at the frequency of a bumblebee's buzz released about three times as much pollen as flowers vibrated at a lower frequency.",
-    "option_c": "Tomato flowers release their pollen most easily when they are shaken by vibrations, such as those made by a buzzing bumblebee.",
-    "option_d": "Hakimov, a plant biologist, tested how vibration affects pollen release in tomato flowers.",
-    "correct": "B",
-    "explanation_en": "The goal is to present what Hakimov found. Choice B does this by reporting the result: flowers vibrated at the bumblebee frequency released about three times as much pollen.\n\nChoice A describes Hakimov's method, not his results. Choice C gives background information known before the study. Choice D states what Hakimov tested but not what he found.",
-    "explanation_uz": "Maqsad — Hakimov nimani aniqlaganini ko‘rsatish. B buni bajaradi: natijani keltiradi — bumblebee (tukli ari) chastotasida tebratilgan gullar taxminan uch baravar ko‘p chang chiqargan.\n\nA natijani emas, Hakimovning usulini tasvirlaydi. C tadqiqotdan oldin ma’lum bo‘lgan umumiy ma’lumotni beradi. D Hakimov nimani sinaganini aytadi, lekin nimani aniqlaganini aytmaydi.",
-    "estimated_seconds": 50,
-    "source": "original",
-    "tags": [
-      "core-v5",
-      "present-finding"
-    ]
-  },
-  {
-    "skill_code": "rhetorical_synthesis",
-    "difficulty": "easy",
-    "question_type": "mc",
-    "stimulus_type": "passage",
-    "passage": "While researching a topic, a student has taken the following notes:\n\n- In drip irrigation, water flows through plastic pipes and drips slowly onto the soil right next to each plant.\n- In flood irrigation, water is released to cover the entire field.\n- Agronomist Bahodir Qosimov compared cotton fields watered by each method for three growing seasons.\n- The fields with drip irrigation used 40 percent less water than the flooded fields.\n- The two kinds of fields produced similar amounts of cotton.",
-    "stem": "The student wants to emphasize an advantage of drip irrigation. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
-    "option_a": "In drip irrigation, water flows through plastic pipes and drips slowly onto the soil right next to each plant.",
-    "option_b": "In flood irrigation, water is released to cover an entire field.",
-    "option_c": "Bahodir Qosimov compared cotton fields watered by drip irrigation and by flood irrigation for three growing seasons.",
-    "option_d": "In Qosimov's study, cotton fields with drip irrigation used 40 percent less water than flooded fields while producing similar amounts of cotton.",
-    "correct": "D",
-    "explanation_en": "The goal is to emphasize an advantage of drip irrigation. Choice D does this by showing that drip-irrigated fields used 40 percent less water without producing less cotton.\n\nChoice A explains how drip irrigation works but does not show that it is better in any way. Choice B describes flood irrigation only. Choice C describes Qosimov's comparison but not its outcome, so no advantage is shown.",
-    "explanation_uz": "Maqsad — tomchilatib sug‘orishning afzalligini ta’kidlash. D buni bajaradi: tomchilatib sug‘orilgan dalalar kam paxta bermagan holda 40 foiz kam suv sarflaganini ko‘rsatadi.\n\nA tomchilatib sug‘orish qanday ishlashini tushuntiradi, lekin uning biror jihatdan yaxshiroq ekanini ko‘rsatmaydi. B faqat bostirib sug‘orishni tasvirlaydi. C Qosimovning taqqoslashini tasvirlaydi, ammo natijasini aytmaydi, shuning uchun hech qanday afzallik ko‘rsatilmaydi.",
-    "estimated_seconds": 50,
-    "source": "original",
-    "tags": [
-      "core-v5",
-      "emphasize-advantage"
+      "connect-to-concept"
     ]
   },
   {
@@ -211,23 +43,107 @@
   },
   {
     "skill_code": "rhetorical_synthesis",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- Hummingbirds can enter torpor, a state in which body temperature and heart rate drop sharply, on cold nights.\n- Some bats enter torpor during the day while they roost.\n- Torpor helps small animals with high metabolic rates conserve energy when food is scarce or temperatures are low.\n- Unlike hibernation, which can last for weeks or months, torpor often lasts only a few hours.",
+    "stem": "The student wants to make a generalization about the purpose of torpor. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "option_a": "Small animals such as hummingbirds and some bats can enter torpor, a state in which body temperature and heart rate drop sharply for a few hours.",
+    "option_b": "Unlike hibernation, which can last for weeks or months, torpor often lasts only a few hours.",
+    "option_c": "On cold nights, hummingbirds can enter torpor, a state in which their body temperature and heart rate drop sharply.",
+    "option_d": "Torpor helps small animals with high metabolic rates, such as hummingbirds and some bats, conserve energy when food is scarce or temperatures are low.",
+    "correct": "D",
+    "explanation_en": "The goal is to make a general statement about why animals enter torpor. Choice D does this by stating the purpose of torpor (conserving energy) and applying it to a general group, small animals with high metabolic rates.\n\nChoice A makes a general statement about which animals enter torpor and what happens to their bodies, but it does not say what torpor is for. Choice B contrasts torpor with hibernation in terms of length, not purpose. Choice C describes only hummingbirds and does not explain the purpose of torpor.",
+    "explanation_uz": "Maqsad — hayvonlar nega torporga kirishi haqida umumlashma qilish. D buni bajaradi: torporning maqsadini (energiyani tejash) aytadi va uni umumiy guruhga — metabolizmi yuqori mayda hayvonlarga taalluqli qiladi.\n\nA qaysi hayvonlar torporga kirishi va ularning tanasida nima sodir bo‘lishi haqida umumiy fikr aytadi, lekin torpor nima uchun kerakligini aytmaydi. B torporni gibernatsiya bilan maqsadi emas, davomiyligi bo‘yicha qiyoslaydi. C faqat kolibrilarni tasvirlaydi va torporning maqsadini tushuntirmaydi.",
+    "estimated_seconds": 80,
+    "source": "original",
+    "tags": [
+      "core-v5",
+      "generalization-purpose"
+    ]
+  },
+  {
+    "skill_code": "rhetorical_synthesis",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- Dilnoza Rahimberdiyeva's novel The Weavers tells the story of a family that runs a carpet workshop in Khiva.\n- The novel is divided into four sections, each narrated by a different member of the family.\n- Each narrator describes the same year, 1978, from his or her own point of view.\n- Critics note that the novel's central theme is that a family's shared history is remembered differently by each of its members.",
+    "stem": "The student wants to explain how the structure of The Weavers reflects its central theme. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "option_a": "The Weavers is divided into four sections, each narrated by a different member of a family that runs a carpet workshop in Khiva.",
+    "option_b": "Critics note that the central theme of The Weavers is that a family's shared history is remembered differently by each of its members.",
+    "option_c": "By having four members of one family each narrate the same year, The Weavers reflects its central theme: that a family's shared history is remembered differently by each of its members.",
+    "option_d": "Rahimberdiyeva's novel The Weavers, which is set in 1978, tells the story of a family that runs a carpet workshop in Khiva.",
+    "correct": "C",
+    "explanation_en": "The goal is to connect the novel's structure to its theme. Choice C does this by describing the structure (four family members narrating the same year) and explaining that it reflects the theme of shared history being remembered differently.\n\nChoice A describes the structure but not the theme. Choice B states the theme but not the structure. Choice D describes the novel's setting and plot, which are neither its structure nor its theme.",
+    "explanation_uz": "Maqsad — romanning tuzilishini uning mavzusi bilan bog‘lash. C buni bajaradi: tuzilishini (oilaning to‘rt a’zosi bir yilni hikoya qiladi) tasvirlaydi va bu umumiy o‘tmish har kim tomonidan turlicha eslanadi degan mavzuni aks ettirishini tushuntiradi.\n\nA tuzilishni tasvirlaydi, lekin mavzuni aytmaydi. B mavzuni aytadi, ammo tuzilishni tasvirlamaydi. D romanning voqealar joyi va syujetini tasvirlaydi — bu na tuzilish, na mavzu.",
+    "estimated_seconds": 80,
+    "source": "original",
+    "tags": [
+      "core-v5",
+      "structure-theme"
+    ]
+  },
+  {
+    "skill_code": "rhetorical_synthesis",
     "difficulty": "easy",
     "question_type": "mc",
     "stimulus_type": "passage",
-    "passage": "While researching a topic, a student has taken the following notes:\n\n- Leaves get their green color from chlorophyll, a pigment that plants use in photosynthesis.\n- Leaves also contain yellow and orange pigments called carotenoids.\n- During the summer, the large amount of chlorophyll in a leaf hides the carotenoids.\n- In autumn, as the days grow shorter, trees stop making new chlorophyll, and the chlorophyll in their leaves breaks down.\n- Some trees also produce red pigments in their leaves in autumn.",
-    "stem": "The student wants to explain why some leaves turn yellow in autumn. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
-    "option_a": "Some trees produce red pigments in their leaves in autumn.",
-    "option_b": "As the chlorophyll in leaves breaks down in autumn, yellow carotenoids that it had hidden all summer become visible.",
-    "option_c": "Leaves get their green color from chlorophyll, a pigment that plants use in photosynthesis.",
-    "option_d": "Leaves contain yellow and orange pigments called carotenoids.",
-    "correct": "B",
-    "explanation_en": "The goal is to explain why leaves turn yellow. Choice B does this by explaining the cause: when chlorophyll breaks down, the yellow carotenoids that were hidden become visible.\n\nChoice A explains red, not yellow, autumn color. Choice C explains why leaves are green. Choice D names the yellow pigments but does not explain why they appear only in autumn.",
-    "explanation_uz": "Maqsad — barglar nega sarg‘ayishini tushuntirish. B buni bajaradi: sababini tushuntiradi — xlorofill parchalanganda, yashirinib turgan sariq karotinoidlar ko‘rinib qoladi.\n\nA sariq emas, qizil kuzgi rangni tushuntiradi. C barglar nega yashil ekanini tushuntiradi. D sariq pigmentlarni nomlaydi, lekin ular nega faqat kuzda ko‘rinishini tushuntirmaydi.",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- Entomologist Timur Usmonov studies insects that live in caves.\n- In 2021, he described a species of beetle that had never been recorded before.\n- The beetle has no eyes and pale, almost transparent skin.\n- It was found about 300 meters inside a limestone cave in southern Uzbekistan.\n- Usmonov believes that the beetle feeds on fungi growing on bat droppings.",
+    "stem": "The student wants to indicate where the beetle was found. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "option_a": "In 2021, Timur Usmonov described a species of beetle that has no eyes and pale, almost transparent skin.",
+    "option_b": "Timur Usmonov believes that the beetle he described feeds on fungi growing on bat droppings.",
+    "option_c": "Timur Usmonov, an entomologist, studies insects that live in caves.",
+    "option_d": "The beetle that Timur Usmonov described in 2021 was found about 300 meters inside a limestone cave in southern Uzbekistan.",
+    "correct": "D",
+    "explanation_en": "The goal is to indicate where the beetle was found. Choice D does this by stating that it was found about 300 meters inside a limestone cave in southern Uzbekistan.\n\nChoice A describes the beetle's appearance, not its location. Choice B describes what the beetle may eat. Choice C describes Usmonov's field of study but does not say where this beetle was found.",
+    "explanation_uz": "Maqsad — qo‘ng‘iz qayerda topilganini ko‘rsatish. D buni bajaradi: u O‘zbekiston janubidagi ohaktosh g‘orning taxminan 300 metr ichkarisida topilganini aytadi.\n\nA qo‘ng‘izning joylashuvini emas, tashqi ko‘rinishini tasvirlaydi. B qo‘ng‘iz nima bilan oziqlanishi mumkinligini aytadi. C Usmonovning ilmiy yo‘nalishini tasvirlaydi, lekin bu qo‘ng‘iz qayerda topilganini aytmaydi.",
     "estimated_seconds": 50,
     "source": "original",
     "tags": [
       "core-v5",
-      "explain-cause"
+      "specify-location"
+    ]
+  },
+  {
+    "skill_code": "rhetorical_synthesis",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- Entomologist Farrux Abdullayev studied two species of darkling beetle that live in a foggy coastal desert.\n- Both species collect drinking water from fog that condenses on their backs.\n- The back of species A is covered with tiny bumps that channel water droplets toward the beetle's mouth.\n- The back of species B is smooth.\n- In a laboratory fog chamber, species A collected 0.6 milliliters of water per hour, while species B collected 0.2 milliliters per hour.",
+    "stem": "The student wants to compare how much water the two species collected and suggest a reason for the difference. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "option_a": "Species A, whose back is covered with tiny bumps that channel water toward its mouth, collected three times as much water from fog per hour as smooth-backed species B.",
+    "option_b": "In Abdullayev's fog chamber, species A collected 0.6 milliliters of water per hour, while species B collected 0.2 milliliters per hour.",
+    "option_c": "The back of species A is covered with tiny bumps that channel water droplets toward the beetle's mouth, while the back of species B is smooth.",
+    "option_d": "Both species of darkling beetle that Abdullayev studied collect drinking water from fog that condenses on their backs.",
+    "correct": "A",
+    "explanation_en": "The goal has two parts: compare the amounts of water and suggest why they differ. Choice A does both: it states that species A collected three times as much water (0.6 is three times 0.2) and connects this to the bumps on its back that channel water.\n\nChoice B compares the amounts but gives no reason for the difference. Choice C describes the difference in the beetles' backs but does not say how much water each collected. Choice D states a similarity between the species rather than a difference.",
+    "explanation_uz": "Maqsad ikki qismdan iborat: suv miqdorini qiyoslash va farqning sababini ko‘rsatish. A ikkalasini ham bajaradi: A turi uch baravar ko‘p suv yig‘ganini aytadi (0,6 soni 0,2 dan uch baravar katta) va buni orqasidagi suvni yo‘naltiruvchi mayda do‘ngchalar bilan bog‘laydi.\n\nB miqdorlarni qiyoslaydi, lekin farqning sababini aytmaydi. C qo‘ng‘izlar orqasidagi farqni tasvirlaydi, ammo har biri qancha suv yig‘ganini aytmaydi. D turlar o‘rtasidagi farqni emas, o‘xshashlikni aytadi.",
+    "estimated_seconds": 80,
+    "source": "original",
+    "tags": [
+      "core-v5",
+      "compare-and-explain"
+    ]
+  },
+  {
+    "skill_code": "rhetorical_synthesis",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- An Archimedes screw is a device for lifting water from a low place to a higher one.\n- It consists of a large, screw-shaped blade inside a tilted tube.\n- The lower end of the tube is placed in water.\n- As the screw is turned, water is trapped between the turns of the blade and carried upward until it spills out the top.\n- The device is named after the ancient Greek mathematician Archimedes, although it may have been invented earlier.",
+    "stem": "The student wants to explain how an Archimedes screw lifts water. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "option_a": "An Archimedes screw, a device for lifting water from a low place to a higher one, is named after the ancient Greek mathematician Archimedes.",
+    "option_b": "An Archimedes screw consists of a large, screw-shaped blade inside a tilted tube whose lower end is placed in water.",
+    "option_c": "Although it is named after Archimedes, the Archimedes screw may have been invented earlier.",
+    "option_d": "When the screw-shaped blade inside the tilted tube of an Archimedes screw is turned, water trapped between the blade's turns is carried upward until it spills out the top.",
+    "correct": "D",
+    "explanation_en": "The goal is to explain how the device works. Choice D does this by describing what happens when the screw is turned: water is trapped between the blade's turns and carried up and out.\n\nChoice A states what the device is for and how it got its name, not how it works. Choice B lists the device's parts but does not explain what happens when it is used. Choice C discusses the device's history.",
+    "explanation_uz": "Maqsad — qurilma qanday ishlashini tushuntirish. D buni bajaradi: vint aylantirilganda nima sodir bo‘lishini tasvirlaydi — suv parraklar oralig‘ida qolib, yuqoriga ko‘tariladi va tepadan to‘kiladi.\n\nA qurilma nima uchun kerakligini va qanday nom olganini aytadi, lekin qanday ishlashini tushuntirmaydi. B qurilma qismlarini sanab o‘tadi, ammo ishlatilganda nima bo‘lishini tushuntirmaydi. C qurilma tarixini muhokama qiladi.",
+    "estimated_seconds": 65,
+    "source": "original",
+    "tags": [
+      "core-v5",
+      "explain-mechanism"
     ]
   },
   {
@@ -274,65 +190,23 @@
   },
   {
     "skill_code": "rhetorical_synthesis",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "question_type": "mc",
     "stimulus_type": "passage",
-    "passage": "While researching a topic, a student has taken the following notes:\n\n- Marine biologist Sevara Islomova studied how noise from ships affects shore crabs.\n- She placed 60 shore crabs in separate tanks.\n- She played recordings of ship noise to half of the crabs and recordings of quiet ocean sounds to the other half.\n- She then measured how long each crab took to find food hidden in its tank.\n- Crabs exposed to ship noise took about twice as long to find the food.",
-    "stem": "The student wants to describe the method Islomova used in her study. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
-    "option_a": "Islomova found that shore crabs exposed to ship noise took about twice as long to find hidden food as crabs that heard quiet ocean sounds.",
-    "option_b": "Islomova wanted to learn how noise from ships affects shore crabs.",
-    "option_c": "Islomova played recordings of ship noise to 30 shore crabs and recordings of quiet ocean sounds to 30 others, then measured how long each crab took to find hidden food.",
-    "option_d": "Islomova placed 60 shore crabs in separate tanks.",
-    "correct": "C",
-    "explanation_en": "The goal is to describe how Islomova carried out her study. Choice C does this by explaining how the crabs were divided into two groups, what each group heard, and what was measured. (Half of 60 crabs is 30.)\n\nChoice A presents the study's result rather than its method. Choice B states the study's aim. Choice D describes only the first step of the method and leaves out the two kinds of recordings and the measurement that made it an experiment.",
-    "explanation_uz": "Maqsad — Islomova tadqiqotni qanday o‘tkazganini tasvirlash. C buni bajaradi: qisqichbaqalar ikki guruhga qanday bo‘linganini, har bir guruh nimani eshitganini va nima o‘lchanganini tushuntiradi. (60 ta qisqichbaqaning yarmi — 30 ta.)\n\nA usulni emas, tadqiqot natijasini keltiradi. B tadqiqot maqsadini aytadi. D usulning faqat birinchi bosqichini tasvirlaydi va ikki xil yozuv hamda o‘lchovni — tajribaning asosiy qismini — tushirib qoldiradi.",
-    "estimated_seconds": 65,
-    "source": "original",
-    "tags": [
-      "core-v5",
-      "methodology"
-    ]
-  },
-  {
-    "skill_code": "rhetorical_synthesis",
-    "difficulty": "medium",
-    "question_type": "mc",
-    "stimulus_type": "passage",
-    "passage": "While researching a topic, a student has taken the following notes:\n\n- Most plant movements, such as a stem bending toward light, happen slowly, over hours or days.\n- When touched, the leaflets of the plant Mimosa pudica fold together within seconds.\n- When an insect touches the trigger hairs inside a Venus flytrap's leaf, the leaf can snap shut in less than a second.\n- Both of these fast movements depend on water moving rapidly within the plant's tissues.",
-    "stem": "The student wants to emphasize that some plants are exceptions to a general pattern. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
-    "option_a": "Most plant movements, such as a stem bending toward light, happen slowly, over hours or days.",
-    "option_b": "The fast movements of Mimosa pudica and the Venus flytrap depend on water moving rapidly within the plant's tissues.",
-    "option_c": "When an insect touches the trigger hairs inside a Venus flytrap's leaf, the leaf can snap shut in less than a second.",
-    "option_d": "Although most plant movements happen slowly, some plants, such as Mimosa pudica and the Venus flytrap, can move within seconds or less when touched.",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- Alisher Navoi (1441–1501) was a poet who lived in Herat.\n- In his time, most poets in the region wrote mainly in Persian.\n- Navoi wrote most of his poetry in Chagatai, a Turkic language, although he also wrote some poetry in Persian.\n- In his 1499 work Muhakamat al-Lughatayn (The Judgment of Two Languages), he argued that Turkic was as suitable as Persian for poetry.",
+    "stem": "The student wants to explain to an audience unfamiliar with Navoi how his choice of language set him apart from many poets of his time. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "option_a": "In his 1499 work Muhakamat al-Lughatayn, Navoi argued that Turkic was as suitable as Persian for poetry.",
+    "option_b": "Alisher Navoi, a fifteenth-century poet who lived in Herat, wrote poetry in both Chagatai and Persian.",
+    "option_c": "In the fifteenth century, most poets in the region around Herat wrote mainly in Persian.",
+    "option_d": "Unlike many poets of his region who wrote mainly in Persian, the fifteenth-century poet Alisher Navoi wrote most of his poetry in Chagatai, a Turkic language.",
     "correct": "D",
-    "explanation_en": "The goal is to present a general pattern and show that some plants break it. Choice D does both: it states the pattern (most plant movements are slow) and names two plants that are exceptions because they move within seconds or less.\n\nChoice A states the general pattern but no exceptions. Choice B explains how the fast movements happen but does not contrast them with the general pattern. Choice C describes one fast plant but does not present it as an exception to anything.",
-    "explanation_uz": "Maqsad — umumiy qonuniyatni keltirib, ba’zi o‘simliklar undan istisno ekanini ko‘rsatish. D ikkalasini ham bajaradi: qonuniyatni aytadi (o‘simliklar harakatining aksariyati sekin) va bir necha soniyada yoki undan ham tezroq harakatlanadigan ikki istisno o‘simlikni nomlaydi.\n\nA umumiy qonuniyatni aytadi, lekin istisnolarni keltirmaydi. B tez harakatlar qanday yuz berishini tushuntiradi, ammo ularni umumiy qonuniyatga qarama-qarshi qo‘ymaydi. C bitta tez harakatlanadigan o‘simlikni tasvirlaydi, lekin uni hech narsaga istisno sifatida ko‘rsatmaydi.",
-    "estimated_seconds": 65,
+    "explanation_en": "The goal has two parts: introduce Navoi to readers who do not know him, and show how his language choice made him different from other poets. Choice D does both: it identifies him as a fifteenth-century poet and contrasts his use of Chagatai with the Persian used by many of his peers.\n\nChoice A assumes the reader already knows who Navoi was and describes his argument rather than his own practice compared with that of other poets. Choice B introduces Navoi but, by saying he wrote in both languages, does not show what set him apart. Choice C describes other poets but does not mention Navoi's choice at all.",
+    "explanation_uz": "Maqsad ikki qismdan iborat: Navoiyni uni tanimaydigan o‘quvchilarga tanishtirish va til tanlovi uni boshqa shoirlardan qanday ajratib turganini ko‘rsatish. D ikkalasini ham bajaradi: uni XV asr shoiri sifatida tanishtiradi va uning chig‘atoy tilida yozganini zamondoshlarining ko‘pchiligi ishlatgan fors tiliga qarama-qarshi qo‘yadi.\n\nA o‘quvchi Navoiyni allaqachon taniydi deb hisoblaydi va uning boshqa shoirlarga nisbatan amaliyotini emas, ilgari surgan fikrini tasvirlaydi. B Navoiyni tanishtiradi, lekin u ikkala tilda yozganini aytib, uni nimasi bilan ajralib turganini ko‘rsatmaydi. C boshqa shoirlarni tasvirlaydi, ammo Navoiyning tanlovini umuman tilga olmaydi.",
+    "estimated_seconds": 80,
     "source": "original",
     "tags": [
       "core-v5",
-      "exception-to-pattern"
-    ]
-  },
-  {
-    "skill_code": "rhetorical_synthesis",
-    "difficulty": "medium",
-    "question_type": "mc",
-    "stimulus_type": "passage",
-    "passage": "While researching a topic, a student has taken the following notes:\n\n- In Uzbekistan, a mahalla is a neighborhood community.\n- Each mahalla has a committee led by an elected chairperson.\n- Mahalla committees help organize community events such as weddings and holiday celebrations.\n- Residents of a mahalla sometimes gather for hashar, a tradition in which neighbors volunteer together to complete a shared task, such as cleaning the streets or helping a family build a house.",
-    "stem": "The student wants to explain what hashar is to an audience unfamiliar with Uzbek traditions. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
-    "option_a": "Residents of a mahalla sometimes gather for hashar to clean the streets or help a family build a house.",
-    "option_b": "In Uzbekistan, residents of a mahalla, or neighborhood community, sometimes gather for hashar, a tradition in which neighbors volunteer together to complete a shared task such as cleaning the streets.",
-    "option_c": "In Uzbekistan, a mahalla is a neighborhood community with a committee led by an elected chairperson.",
-    "option_d": "Mahalla committees in Uzbekistan help organize community events such as weddings and holiday celebrations.",
-    "correct": "B",
-    "explanation_en": "The goal is to explain hashar to readers who know nothing about Uzbek traditions. Choice B does this by defining both unfamiliar terms: it explains that a mahalla is a neighborhood community and that hashar is a tradition of neighbors volunteering together on a shared task.\n\nChoice A mentions hashar but never explains what a mahalla is or that hashar is a volunteer tradition, so an unfamiliar reader would be confused. Choice C explains what a mahalla is but does not mention hashar. Choice D describes mahalla committees, not hashar.",
-    "explanation_uz": "Maqsad — o‘zbek an’analarini bilmaydigan o‘quvchilarga hashar nima ekanini tushuntirish. B buni bajaradi: ikkala notanish atamani izohlaydi — mahalla qo‘shnichilik jamoasi ekanini va hashar qo‘shnilar umumiy ishni birgalikda ixtiyoriy bajaradigan an’ana ekanini tushuntiradi.\n\nA hasharni tilga oladi, lekin mahalla nima ekanini yoki hashar ixtiyoriy yordam an’anasi ekanini tushuntirmaydi, shuning uchun notanish o‘quvchi tushunmay qoladi. C mahalla nima ekanini tushuntiradi, ammo hasharni eslatmaydi. D hasharni emas, mahalla qo‘mitalarini tasvirlaydi.",
-    "estimated_seconds": 65,
-    "source": "original",
-    "tags": [
-      "core-v5",
-      "explain-term"
+      "unfamiliar-audience-contrast"
     ]
   },
   {
@@ -358,6 +232,111 @@
   },
   {
     "skill_code": "rhetorical_synthesis",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- Alligators and crocodiles are both large reptiles that live in or near water.\n- An alligator's snout is wide and rounded, shaped like the letter U.\n- A crocodile's snout is narrower and more pointed, shaped like the letter V.\n- When an alligator closes its mouth, most of its lower teeth are hidden.\n- When a crocodile closes its mouth, many of its lower teeth remain visible.",
+    "stem": "The student wants to contrast the shapes of alligator and crocodile snouts. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "option_a": "Alligators and crocodiles are both large reptiles that live in or near water.",
+    "option_b": "When a crocodile closes its mouth, many of its lower teeth remain visible.",
+    "option_c": "An alligator's snout is wide and rounded, and most of its lower teeth are hidden when its mouth is closed.",
+    "option_d": "While an alligator has a wide, U-shaped snout, a crocodile has a narrower, V-shaped snout.",
+    "correct": "D",
+    "explanation_en": "The goal is to contrast the snout shapes of the two animals. Choice D does this by setting the alligator's wide, U-shaped snout against the crocodile's narrower, V-shaped snout.\n\nChoice A states a similarity between the animals, not a difference in snout shape. Choice B describes only the crocodile's teeth. Choice C describes only the alligator, so it does not contrast the two snouts.",
+    "explanation_uz": "Maqsad — ikki hayvonning tumshuq shaklini qiyoslab, farqini ko‘rsatish. D buni bajaradi: alligatorning keng, U shaklidagi tumshug‘ini timsohning ingichkaroq, V shaklidagi tumshug‘iga qarama-qarshi qo‘yadi.\n\nA hayvonlar o‘rtasidagi farqni emas, o‘xshashlikni aytadi. B faqat timsohning tishlarini tasvirlaydi. C faqat alligatorni tasvirlaydi, shuning uchun ikki tumshuqni qiyoslamaydi.",
+    "estimated_seconds": 50,
+    "source": "original",
+    "tags": [
+      "core-v5",
+      "contrast"
+    ]
+  },
+  {
+    "skill_code": "rhetorical_synthesis",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- Juniper trees grow on dry, rocky mountain slopes in Central Asia.\n- Botanist Lola Ahmedova studied a single juniper growing on a cliff edge.\n- She took a thin core sample from its trunk and counted its growth rings.\n- The count showed that the tree is about 900 years old.\n- Despite its age, the tree is only about 6 meters tall.",
+    "stem": "The student wants to emphasize the age of the tree that Ahmedova studied. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "option_a": "The juniper studied by Lola Ahmedova grows on a cliff edge and is only about 6 meters tall.",
+    "option_b": "According to a count of its growth rings, the juniper studied by Lola Ahmedova is about 900 years old.",
+    "option_c": "Juniper trees, like the one Lola Ahmedova studied, grow on dry, rocky mountain slopes in Central Asia.",
+    "option_d": "To study a juniper growing on a cliff edge, Lola Ahmedova took a thin core sample from its trunk.",
+    "correct": "B",
+    "explanation_en": "The goal is to emphasize how old the tree is. Choice B does this by stating that the tree is about 900 years old, based on a count of its growth rings.\n\nChoice A emphasizes the tree's location and height, not its age. Choice C describes where juniper trees grow in general. Choice D describes Ahmedova's method but never says how old the tree is.",
+    "explanation_uz": "Maqsad — daraxtning qanchalik qadimiy ekanini ta’kidlash. B buni bajaradi: yillik halqalar sanog‘iga ko‘ra daraxt taxminan 900 yoshda ekanini aytadi.\n\nA daraxtning yoshini emas, joylashuvi va bo‘yini ta’kidlaydi. C archalar umuman qayerda o‘sishini tasvirlaydi. D Ahmedovaning usulini tasvirlaydi, lekin daraxt necha yoshda ekanini aytmaydi.",
+    "estimated_seconds": 50,
+    "source": "original",
+    "tags": [
+      "core-v5",
+      "emphasize-age"
+    ]
+  },
+  {
+    "skill_code": "rhetorical_synthesis",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- In Uzbekistan, a mahalla is a neighborhood community.\n- Each mahalla has a committee led by an elected chairperson.\n- Mahalla committees help organize community events such as weddings and holiday celebrations.\n- Residents of a mahalla sometimes gather for hashar, a tradition in which neighbors volunteer together to complete a shared task, such as cleaning the streets or helping a family build a house.",
+    "stem": "The student wants to explain what hashar is to an audience unfamiliar with Uzbek traditions. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "option_a": "Residents of a mahalla sometimes gather for hashar to clean the streets or help a family build a house.",
+    "option_b": "In Uzbekistan, residents of a mahalla, or neighborhood community, sometimes gather for hashar, a tradition in which neighbors volunteer together to complete a shared task such as cleaning the streets.",
+    "option_c": "In Uzbekistan, a mahalla is a neighborhood community with a committee led by an elected chairperson.",
+    "option_d": "Mahalla committees in Uzbekistan help organize community events such as weddings and holiday celebrations.",
+    "correct": "B",
+    "explanation_en": "The goal is to explain hashar to readers who know nothing about Uzbek traditions. Choice B does this by defining both unfamiliar terms: it explains that a mahalla is a neighborhood community and that hashar is a tradition of neighbors volunteering together on a shared task.\n\nChoice A mentions hashar but never explains what a mahalla is or that hashar is a volunteer tradition, so an unfamiliar reader would be confused. Choice C explains what a mahalla is but does not mention hashar. Choice D describes mahalla committees, not hashar.",
+    "explanation_uz": "Maqsad — o‘zbek an’analarini bilmaydigan o‘quvchilarga hashar nima ekanini tushuntirish. B buni bajaradi: ikkala notanish atamani izohlaydi — mahalla qo‘shnichilik jamoasi ekanini va hashar qo‘shnilar umumiy ishni birgalikda ixtiyoriy bajaradigan an’ana ekanini tushuntiradi.\n\nA hasharni tilga oladi, lekin mahalla nima ekanini yoki hashar ixtiyoriy yordam an’anasi ekanini tushuntirmaydi, shuning uchun notanish o‘quvchi tushunmay qoladi. C mahalla nima ekanini tushuntiradi, ammo hasharni eslatmaydi. D hasharni emas, mahalla qo‘mitalarini tasvirlaydi.",
+    "estimated_seconds": 65,
+    "source": "original",
+    "tags": [
+      "core-v5",
+      "explain-term"
+    ]
+  },
+  {
+    "skill_code": "rhetorical_synthesis",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- Rishtan is a town in the Fergana Valley of Uzbekistan.\n- Gijduvan is a town in the Bukhara region of Uzbekistan.\n- Both towns are known for their traditional pottery.\n- Rishtan pottery is famous for its blue and turquoise glazes.\n- Gijduvan pottery is famous for its brown, yellow, and green glazes.",
+    "stem": "The student wants to emphasize a similarity between Rishtan and Gijduvan. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "option_a": "Rishtan pottery is famous for its blue and turquoise glazes, while Gijduvan pottery is famous for its brown, yellow, and green glazes.",
+    "option_b": "Rishtan is in the Fergana Valley, while Gijduvan is in the Bukhara region.",
+    "option_c": "Both Rishtan, in the Fergana Valley, and Gijduvan, in the Bukhara region, are known for their traditional pottery.",
+    "option_d": "Rishtan, a town in the Fergana Valley of Uzbekistan, is known for pottery with blue and turquoise glazes.",
+    "correct": "C",
+    "explanation_en": "The goal is to emphasize a similarity between the two towns. Choice C does this by stating that both towns are known for their traditional pottery.\n\nChoice A emphasizes a difference between the towns' pottery glazes. Choice B emphasizes a difference in where the towns are located. Choice D describes only Rishtan, so it cannot show what the two towns have in common.",
+    "explanation_uz": "Maqsad — ikki shahar o‘rtasidagi o‘xshashlikni ta’kidlash. C buni bajaradi: ikkala shahar ham an’anaviy kulolchiligi bilan mashhur ekanini aytadi.\n\nA ikki shahar sopollari sirlaridagi farqni ta’kidlaydi. B shaharlar joylashuvidagi farqni ta’kidlaydi. D faqat Rishtonni tasvirlaydi, shuning uchun ikki shaharning umumiy jihatini ko‘rsata olmaydi.",
+    "estimated_seconds": 50,
+    "source": "original",
+    "tags": [
+      "core-v5",
+      "similarity"
+    ]
+  },
+  {
+    "skill_code": "rhetorical_synthesis",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- Economist Nargiza Sobirova studied 400 high school students in Fergana.\n- She wanted to find out whether weekly online tutoring sessions would improve students' math exam scores.\n- Half of the students received online tutoring for one semester; the other half did not.\n- On average, the tutored students' scores rose 9 points more than the scores of the students who were not tutored.",
+    "stem": "The student wants to present the aim of Sobirova's study. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "option_a": "On average, the math scores of students who received online tutoring rose 9 points more than those of students who did not.",
+    "option_b": "Sobirova studied 400 high school students in Fergana, half of whom received online tutoring for one semester.",
+    "option_c": "Sobirova's study aimed to find out whether weekly online tutoring sessions would improve high school students' math exam scores.",
+    "option_d": "Sobirova, an economist, studied high school students in Fergana.",
+    "correct": "C",
+    "explanation_en": "The goal is to present what Sobirova was trying to learn. Choice C does this by stating that her study aimed to find out whether weekly online tutoring would improve students' math exam scores.\n\nChoice A presents the study's result, not its aim. Choice B describes who was studied and how the study was set up, but not what Sobirova wanted to find out. Choice D names the researcher and the participants but not the purpose of the study.",
+    "explanation_uz": "Maqsad — Sobirova nimani aniqlamoqchi bo‘lganini ko‘rsatish. C buni bajaradi: tadqiqot haftalik onlayn repetitorlik o‘quvchilarning matematika imtihon ballarini oshiradimi yoki yo‘qligini aniqlashga qaratilganini aytadi.\n\nA tadqiqot maqsadini emas, natijasini keltiradi. B kimlar o‘rganilgani va tadqiqot qanday tuzilganini tasvirlaydi, lekin Sobirova nimani bilmoqchi bo‘lganini aytmaydi. D tadqiqotchi va ishtirokchilarni nomlaydi, ammo tadqiqot maqsadini aytmaydi.",
+    "estimated_seconds": 50,
+    "source": "original",
+    "tags": [
+      "core-v5",
+      "study-aim"
+    ]
+  },
+  {
+    "skill_code": "rhetorical_synthesis",
     "difficulty": "medium",
     "question_type": "mc",
     "stimulus_type": "passage",
@@ -375,6 +354,69 @@
     "tags": [
       "core-v5",
       "hypothesis-evidence"
+    ]
+  },
+  {
+    "skill_code": "rhetorical_synthesis",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- Tomato flowers release their pollen most easily when they are shaken by vibrations, such as those made by a buzzing bumblebee.\n- Plant biologist Jasur Hakimov tested how vibration affects pollen release in tomato flowers.\n- He touched a small vibrating device to the flowers in a greenhouse.\n- Some flowers were vibrated at the frequency of a bumblebee's buzz; others were vibrated at a lower frequency.\n- Flowers vibrated at the bumblebee frequency released about three times as much pollen as flowers vibrated at the lower frequency.",
+    "stem": "The student wants to present the results of Hakimov's study. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "option_a": "Hakimov touched a small vibrating device to tomato flowers growing in a greenhouse.",
+    "option_b": "Hakimov found that tomato flowers vibrated at the frequency of a bumblebee's buzz released about three times as much pollen as flowers vibrated at a lower frequency.",
+    "option_c": "Tomato flowers release their pollen most easily when they are shaken by vibrations, such as those made by a buzzing bumblebee.",
+    "option_d": "Hakimov, a plant biologist, tested how vibration affects pollen release in tomato flowers.",
+    "correct": "B",
+    "explanation_en": "The goal is to present what Hakimov found. Choice B does this by reporting the result: flowers vibrated at the bumblebee frequency released about three times as much pollen.\n\nChoice A describes Hakimov's method, not his results. Choice C gives background information known before the study. Choice D states what Hakimov tested but not what he found.",
+    "explanation_uz": "Maqsad — Hakimov nimani aniqlaganini ko‘rsatish. B buni bajaradi: natijani keltiradi — bumblebee (tukli ari) chastotasida tebratilgan gullar taxminan uch baravar ko‘p chang chiqargan.\n\nA natijani emas, Hakimovning usulini tasvirlaydi. C tadqiqotdan oldin ma’lum bo‘lgan umumiy ma’lumotni beradi. D Hakimov nimani sinaganini aytadi, lekin nimani aniqlaganini aytmaydi.",
+    "estimated_seconds": 50,
+    "source": "original",
+    "tags": [
+      "core-v5",
+      "present-finding"
+    ]
+  },
+  {
+    "skill_code": "rhetorical_synthesis",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- Biomimicry is the practice of designing products by imitating structures or processes found in nature.\n- In 1941, Swiss engineer George de Mestral noticed burrs sticking to his dog's fur after a walk.\n- Under a microscope, he saw that each burr was covered with tiny hooks.\n- He later invented Velcro, a fastener in which tiny hooks catch on small loops.",
+    "stem": "The student wants to present Velcro as an example of biomimicry. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "option_a": "Velcro, a fastener whose tiny hooks imitate the hooks on burrs, is an example of biomimicry: designing products by imitating nature.",
+    "option_b": "Biomimicry is the practice of designing products by imitating structures or processes found in nature.",
+    "option_c": "In 1941, Swiss engineer George de Mestral noticed burrs sticking to his dog's fur after a walk.",
+    "option_d": "Under a microscope, George de Mestral saw that each burr was covered with tiny hooks.",
+    "correct": "A",
+    "explanation_en": "The goal is to present Velcro as an example of biomimicry. Choice A does this by explaining that Velcro's hooks imitate those on burrs and identifying this as biomimicry.\n\nChoice B defines biomimicry but does not mention Velcro. Choice C describes the event that inspired de Mestral but does not mention Velcro or biomimicry. Choice D describes what de Mestral saw under the microscope without connecting it to Velcro or to biomimicry.",
+    "explanation_uz": "Maqsad — Velcroni biomimikriyaga misol sifatida ko‘rsatish. A buni bajaradi: Velcro ilgaklari tikanakli urug‘lardagi ilgaklarga taqlid qilishini tushuntiradi va buni biomimikriya deb ataydi.\n\nB biomimikriyaga ta’rif beradi, lekin Velcroni tilga olmaydi. C de Mestralni ilhomlantirgan voqeani tasvirlaydi, ammo Velcro yoki biomimikriyani eslatmaydi. D de Mestral mikroskop ostida nimani ko‘rganini tasvirlaydi, lekin buni Velcro yoki biomimikriya bilan bog‘lamaydi.",
+    "estimated_seconds": 50,
+    "source": "original",
+    "tags": [
+      "core-v5",
+      "present-example"
+    ]
+  },
+  {
+    "skill_code": "rhetorical_synthesis",
+    "difficulty": "hard",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- Education researcher Botir Xolmatov studied whether school gardens improve students' attitudes toward vegetables.\n- He surveyed students at 8 schools that had gardens and 8 schools that did not.\n- Students at schools with gardens rated vegetables more favorably than students at schools without gardens.\n- All 16 schools were in the same wealthy district, and Xolmatov notes that his results may not apply to schools in other areas.",
+    "stem": "The student wants to present Xolmatov's main finding while acknowledging a limitation of his study. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "option_a": "Xolmatov's study shows that school gardens improve students' attitudes toward vegetables at schools everywhere.",
+    "option_b": "Xolmatov found that students at schools with gardens rated vegetables more favorably, though because all 16 schools he studied were in one wealthy district, his results may not apply elsewhere.",
+    "option_c": "Because all 16 schools in Xolmatov's study were in the same wealthy district, his results may not apply to schools in other areas.",
+    "option_d": "Students at the 8 schools with gardens in Xolmatov's study rated vegetables more favorably than students at the 8 schools without gardens.",
+    "correct": "B",
+    "explanation_en": "The goal has two parts: present the main finding and acknowledge a limitation. Choice B does both: it gives the finding (students at schools with gardens rated vegetables more favorably) and notes that the results may not apply outside one wealthy district.\n\nChoice A overstates the finding by claiming it applies everywhere, which the notes specifically warn against. Choice C gives the limitation but not the finding. Choice D gives the finding but not the limitation.",
+    "explanation_uz": "Maqsad ikki qismdan iborat: asosiy natijani keltirish va tadqiqotning cheklovini tan olish. B ikkalasini ham bajaradi: natijani beradi (bog‘i bor maktab o‘quvchilari sabzavotlarni yuqoriroq baholagan) va natijalar bitta badavlat tumandan tashqarida to‘g‘ri kelmasligi mumkinligini qayd etadi.\n\nA natijani bo‘rttirib, u hamma joyga taalluqli deydi, qaydlar esa aynan bundan ogohlantiradi. C cheklovni aytadi, lekin natijani keltirmaydi. D natijani beradi, ammo cheklovni aytmaydi.",
+    "estimated_seconds": 80,
+    "source": "original",
+    "tags": [
+      "core-v5",
+      "finding-with-limitation"
     ]
   },
   {
@@ -403,104 +445,41 @@
     "difficulty": "medium",
     "question_type": "mc",
     "stimulus_type": "passage",
-    "passage": "While researching a topic, a student has taken the following notes:\n\n- Some city planners argue that adding lanes to busy highways reduces traffic congestion.\n- Transportation researcher Dilfuza Hamidova studied 12 projects in which highways were widened.\n- In 10 of the 12 projects, congestion returned to its previous level within five years.\n- Hamidova attributes this to “induced demand”: when roads are widened, more people choose to drive on them.",
-    "stem": "The student wants to present Hamidova's findings as a challenge to the planners' argument. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
-    "option_a": "Although some planners argue that adding highway lanes reduces congestion, Hamidova found that in 10 of the 12 widening projects she studied, congestion returned to its previous level within five years.",
-    "option_b": "Hamidova attributes the return of traffic congestion to induced demand: when roads are widened, more people choose to drive on them.",
-    "option_c": "Some city planners argue that adding lanes to busy highways reduces traffic congestion.",
-    "option_d": "Hamidova studied 12 projects in which highways were widened to see what happened to congestion.",
-    "correct": "A",
-    "explanation_en": "The goal is to show that Hamidova's findings go against the planners' argument. Choice A does this by stating the planners' claim and then, with “although,” presenting the finding that congestion returned in 10 of 12 projects.\n\nChoice B gives Hamidova's explanation but not the finding itself, and it never mentions the planners' argument. Choice C states only the planners' argument. Choice D describes what Hamidova studied but not what she found, so it cannot challenge anything.",
-    "explanation_uz": "Maqsad — Hamidovaning natijalari rejalashtiruvchilar fikriga zid ekanini ko‘rsatish. A buni bajaradi: avval rejalashtiruvchilar fikrini keltiradi, so‘ng “although” orqali 12 loyihadan 10 tasida tirbandlik qaytganini ko‘rsatadi.\n\nB Hamidovaning izohini beradi, lekin natijaning o‘zini keltirmaydi va rejalashtiruvchilar fikrini tilga olmaydi. C faqat rejalashtiruvchilar fikrini aytadi. D Hamidova nimani o‘rganganini tasvirlaydi, ammo nimani aniqlaganini aytmaydi, shuning uchun hech narsaga e’tiroz bildirmaydi.",
-    "estimated_seconds": 65,
-    "source": "original",
-    "tags": [
-      "core-v5",
-      "challenge-claim"
-    ]
-  },
-  {
-    "skill_code": "rhetorical_synthesis",
-    "difficulty": "medium",
-    "question_type": "mc",
-    "stimulus_type": "passage",
-    "passage": "While researching a topic, a student has taken the following notes:\n\n- Lake Baikal is a lake in Siberia, Russia.\n- At its deepest point, it is about 1,642 meters deep.\n- It holds roughly 20 percent of the world's unfrozen fresh surface water.\n- The Baikal seal, which lives in the lake, is one of the very few seals that live only in fresh water.",
-    "stem": "The student wants to emphasize how much fresh water Lake Baikal holds, while also indicating where the lake is for an audience unfamiliar with it. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
-    "option_a": "Lake Baikal, a lake in Siberia, Russia, holds roughly 20 percent of the world's unfrozen fresh surface water.",
-    "option_b": "Lake Baikal holds roughly 20 percent of the world's unfrozen fresh surface water.",
-    "option_c": "Lake Baikal, a lake in Siberia, Russia, is home to the Baikal seal, one of the very few seals that live only in fresh water.",
-    "option_d": "At its deepest point, Lake Baikal, in Siberia, is about 1,642 meters deep.",
-    "correct": "A",
-    "explanation_en": "The goal has two parts: emphasize the amount of fresh water in the lake and tell an unfamiliar audience where it is. Choice A does both: it locates the lake in Siberia, Russia, and states that it holds about 20 percent of the world's unfrozen fresh surface water.\n\nChoice B emphasizes the amount of water but does not say where the lake is. Choice C locates the lake but focuses on its seal, not its water. Choice D locates the lake but emphasizes its depth rather than how much of the world's fresh water it holds.",
-    "explanation_uz": "Maqsad ikki qismdan iborat: ko‘ldagi chuchuk suv miqdorini ta’kidlash va uni bilmaydigan o‘quvchilarga ko‘l qayerda ekanini aytish. A ikkalasini ham bajaradi: ko‘l Rossiyaning Sibir hududida ekanini aytadi va u dunyodagi muzlamagan yer usti chuchuk suvining taxminan 20 foizini saqlashini bildiradi.\n\nB suv miqdorini ta’kidlaydi, lekin ko‘l qayerda ekanini aytmaydi. C ko‘lning joyini aytadi, ammo suvga emas, undagi tyulenga e’tibor qaratadi. D ko‘lning joyini aytadi, lekin dunyo chuchuk suvining qancha qismini saqlashini emas, chuqurligini ta’kidlaydi.",
-    "estimated_seconds": 65,
-    "source": "original",
-    "tags": [
-      "core-v5",
-      "audience-two-part"
-    ]
-  },
-  {
-    "skill_code": "rhetorical_synthesis",
-    "difficulty": "medium",
-    "question_type": "mc",
-    "stimulus_type": "passage",
-    "passage": "While researching a topic, a student has taken the following notes:\n\n- Zahir-ud-din Muhammad Babur was born in 1483 in Andijan, in the Fergana Valley.\n- He became ruler of Fergana at the age of 11.\n- In 1526, he defeated the Sultan of Delhi at the First Battle of Panipat and founded the Mughal Empire in South Asia.\n- He wrote an autobiography, the Baburnama, in Chagatai, a Turkic language.",
-    "stem": "The student wants to emphasize that Babur was a writer as well as a ruler. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
-    "option_a": "Born in Andijan in 1483, Babur became ruler of Fergana at the age of 11.",
-    "option_b": "In 1526, Babur defeated the Sultan of Delhi at the First Battle of Panipat and founded the Mughal Empire.",
-    "option_c": "Babur, who founded the Mughal Empire in 1526, also wrote an autobiography, the Baburnama, in the Turkic language Chagatai.",
-    "option_d": "Babur wrote the Baburnama, an autobiography, in Chagatai.",
-    "correct": "C",
-    "explanation_en": "The goal is to show both sides of Babur's life: ruler and writer. Choice C does this by mentioning that he founded the Mughal Empire and that he also wrote the Baburnama.\n\nChoices A and B present Babur only as a ruler and never mention his writing. Choice D presents him only as a writer and never mentions that he was a ruler.",
-    "explanation_uz": "Maqsad — Bobur hayotining ikki tomonini: hukmdor va yozuvchi bo‘lganini ko‘rsatish. C buni bajaradi: u Boburiylar imperiyasiga asos solganini va “Boburnoma”ni ham yozganini aytadi.\n\nA va B Boburni faqat hukmdor sifatida ko‘rsatadi va uning ijodini tilga olmaydi. D uni faqat yozuvchi sifatida ko‘rsatadi va hukmdor bo‘lganini aytmaydi.",
-    "estimated_seconds": 65,
-    "source": "original",
-    "tags": [
-      "core-v5",
-      "two-roles"
-    ]
-  },
-  {
-    "skill_code": "rhetorical_synthesis",
-    "difficulty": "medium",
-    "question_type": "mc",
-    "stimulus_type": "passage",
-    "passage": "While researching a topic, a student has taken the following notes:\n\n- Psychologist Aziza Karimova studied how people estimate the time a task will take.\n- She asked 150 university students to predict when they would finish a writing assignment.\n- Only 45 of the students finished by the time they had predicted.\n- Psychologists call the common tendency to underestimate how long a task will take the “planning fallacy.”",
-    "stem": "The student wants to present Karimova's results as an example of the planning fallacy. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
-    "option_a": "Psychologists use the term “planning fallacy” to describe the common tendency to underestimate how long a task will take.",
-    "option_b": "In Karimova's study, only 45 of 150 students finished a writing assignment by the time they had predicted, an example of what psychologists call the planning fallacy.",
-    "option_c": "Karimova asked 150 university students to predict when they would finish a writing assignment.",
-    "option_d": "Of the 150 students in Karimova's study, only 45 finished a writing assignment by the time they had predicted.",
-    "correct": "B",
-    "explanation_en": "The goal is to connect Karimova's results to the planning fallacy. Choice B does this by giving the result (only 45 of 150 students finished on time) and identifying it as an example of the planning fallacy.\n\nChoice A defines the planning fallacy but does not mention Karimova's results. Choice C describes her method, not her results. Choice D gives the results but does not present them as an example of the planning fallacy.",
-    "explanation_uz": "Maqsad — Karimovaning natijalarini “planning fallacy” (rejalashtirish xatosi) tushunchasi bilan bog‘lash. B buni bajaradi: natijani beradi (150 talabadan faqat 45 tasi o‘z vaqtida tugatgan) va uni rejalashtirish xatosiga misol deb ataydi.\n\nA rejalashtirish xatosiga ta’rif beradi, lekin Karimova natijalarini eslatmaydi. C natijalarni emas, usulni tasvirlaydi. D natijalarni beradi, ammo ularni rejalashtirish xatosiga misol sifatida ko‘rsatmaydi.",
-    "estimated_seconds": 65,
-    "source": "original",
-    "tags": [
-      "core-v5",
-      "connect-to-concept"
-    ]
-  },
-  {
-    "skill_code": "rhetorical_synthesis",
-    "difficulty": "medium",
-    "question_type": "mc",
-    "stimulus_type": "passage",
-    "passage": "While researching a topic, a student has taken the following notes:\n\n- An Archimedes screw is a device for lifting water from a low place to a higher one.\n- It consists of a large, screw-shaped blade inside a tilted tube.\n- The lower end of the tube is placed in water.\n- As the screw is turned, water is trapped between the turns of the blade and carried upward until it spills out the top.\n- The device is named after the ancient Greek mathematician Archimedes, although it may have been invented earlier.",
-    "stem": "The student wants to explain how an Archimedes screw lifts water. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
-    "option_a": "An Archimedes screw, a device for lifting water from a low place to a higher one, is named after the ancient Greek mathematician Archimedes.",
-    "option_b": "An Archimedes screw consists of a large, screw-shaped blade inside a tilted tube whose lower end is placed in water.",
-    "option_c": "Although it is named after Archimedes, the Archimedes screw may have been invented earlier.",
-    "option_d": "When the screw-shaped blade inside the tilted tube of an Archimedes screw is turned, water trapped between the blade's turns is carried upward until it spills out the top.",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- Most plant movements, such as a stem bending toward light, happen slowly, over hours or days.\n- When touched, the leaflets of the plant Mimosa pudica fold together within seconds.\n- When an insect touches the trigger hairs inside a Venus flytrap's leaf, the leaf can snap shut in less than a second.\n- Both of these fast movements depend on water moving rapidly within the plant's tissues.",
+    "stem": "The student wants to emphasize that some plants are exceptions to a general pattern. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "option_a": "Most plant movements, such as a stem bending toward light, happen slowly, over hours or days.",
+    "option_b": "The fast movements of Mimosa pudica and the Venus flytrap depend on water moving rapidly within the plant's tissues.",
+    "option_c": "When an insect touches the trigger hairs inside a Venus flytrap's leaf, the leaf can snap shut in less than a second.",
+    "option_d": "Although most plant movements happen slowly, some plants, such as Mimosa pudica and the Venus flytrap, can move within seconds or less when touched.",
     "correct": "D",
-    "explanation_en": "The goal is to explain how the device works. Choice D does this by describing what happens when the screw is turned: water is trapped between the blade's turns and carried up and out.\n\nChoice A states what the device is for and how it got its name, not how it works. Choice B lists the device's parts but does not explain what happens when it is used. Choice C discusses the device's history.",
-    "explanation_uz": "Maqsad — qurilma qanday ishlashini tushuntirish. D buni bajaradi: vint aylantirilganda nima sodir bo‘lishini tasvirlaydi — suv parraklar oralig‘ida qolib, yuqoriga ko‘tariladi va tepadan to‘kiladi.\n\nA qurilma nima uchun kerakligini va qanday nom olganini aytadi, lekin qanday ishlashini tushuntirmaydi. B qurilma qismlarini sanab o‘tadi, ammo ishlatilganda nima bo‘lishini tushuntirmaydi. C qurilma tarixini muhokama qiladi.",
+    "explanation_en": "The goal is to present a general pattern and show that some plants break it. Choice D does both: it states the pattern (most plant movements are slow) and names two plants that are exceptions because they move within seconds or less.\n\nChoice A states the general pattern but no exceptions. Choice B explains how the fast movements happen but does not contrast them with the general pattern. Choice C describes one fast plant but does not present it as an exception to anything.",
+    "explanation_uz": "Maqsad — umumiy qonuniyatni keltirib, ba’zi o‘simliklar undan istisno ekanini ko‘rsatish. D ikkalasini ham bajaradi: qonuniyatni aytadi (o‘simliklar harakatining aksariyati sekin) va bir necha soniyada yoki undan ham tezroq harakatlanadigan ikki istisno o‘simlikni nomlaydi.\n\nA umumiy qonuniyatni aytadi, lekin istisnolarni keltirmaydi. B tez harakatlar qanday yuz berishini tushuntiradi, ammo ularni umumiy qonuniyatga qarama-qarshi qo‘ymaydi. C bitta tez harakatlanadigan o‘simlikni tasvirlaydi, lekin uni hech narsaga istisno sifatida ko‘rsatmaydi.",
     "estimated_seconds": 65,
     "source": "original",
     "tags": [
       "core-v5",
-      "explain-mechanism"
+      "exception-to-pattern"
+    ]
+  },
+  {
+    "skill_code": "rhetorical_synthesis",
+    "difficulty": "easy",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- The Tashkent Television Tower is a broadcasting tower in Tashkent, Uzbekistan.\n- Construction of the tower began in 1978.\n- The tower was completed in 1985.\n- It is 375 meters tall.\n- An observation deck allows visitors to view the city from high above.",
+    "stem": "The student wants to emphasize how long it took to build the Tashkent Television Tower. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "option_a": "Construction of the Tashkent Television Tower took about seven years, from 1978 to 1985.",
+    "option_b": "The Tashkent Television Tower, a broadcasting tower in Uzbekistan, was completed in 1985.",
+    "option_c": "The Tashkent Television Tower is 375 meters tall.",
+    "option_d": "From an observation deck on the Tashkent Television Tower, visitors can view the city from high above.",
+    "correct": "A",
+    "explanation_en": "The goal is to emphasize the length of time the construction took. Choice A does this by stating that construction took about seven years and giving both the start date (1978) and the end date (1985).\n\nChoice B gives only the year the tower was completed, so a reader cannot tell how long building it took. Choice C emphasizes the tower's height. Choice D describes the observation deck.",
+    "explanation_uz": "Maqsad — qurilish qancha vaqt davom etganini ta’kidlash. A buni bajaradi: qurilish taxminan yetti yil davom etganini aytadi va boshlanish (1978) hamda tugash (1985) yillarini keltiradi.\n\nB faqat minora qurib bitkazilgan yilni beradi, shuning uchun o‘quvchi qurilish qancha davom etganini bila olmaydi. C minoraning balandligini ta’kidlaydi. D kuzatuv maydonchasini tasvirlaydi.",
+    "estimated_seconds": 50,
+    "source": "original",
+    "tags": [
+      "core-v5",
+      "emphasize-duration"
     ]
   },
   {
@@ -526,6 +505,27 @@
   },
   {
     "skill_code": "rhetorical_synthesis",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- Zahir-ud-din Muhammad Babur was born in 1483 in Andijan, in the Fergana Valley.\n- He became ruler of Fergana at the age of 11.\n- In 1526, he defeated the Sultan of Delhi at the First Battle of Panipat and founded the Mughal Empire in South Asia.\n- He wrote an autobiography, the Baburnama, in Chagatai, a Turkic language.",
+    "stem": "The student wants to emphasize that Babur was a writer as well as a ruler. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "option_a": "Born in Andijan in 1483, Babur became ruler of Fergana at the age of 11.",
+    "option_b": "In 1526, Babur defeated the Sultan of Delhi at the First Battle of Panipat and founded the Mughal Empire.",
+    "option_c": "Babur, who founded the Mughal Empire in 1526, also wrote an autobiography, the Baburnama, in the Turkic language Chagatai.",
+    "option_d": "Babur wrote the Baburnama, an autobiography, in Chagatai.",
+    "correct": "C",
+    "explanation_en": "The goal is to show both sides of Babur's life: ruler and writer. Choice C does this by mentioning that he founded the Mughal Empire and that he also wrote the Baburnama.\n\nChoices A and B present Babur only as a ruler and never mention his writing. Choice D presents him only as a writer and never mentions that he was a ruler.",
+    "explanation_uz": "Maqsad — Bobur hayotining ikki tomonini: hukmdor va yozuvchi bo‘lganini ko‘rsatish. C buni bajaradi: u Boburiylar imperiyasiga asos solganini va “Boburnoma”ni ham yozganini aytadi.\n\nA va B Boburni faqat hukmdor sifatida ko‘rsatadi va uning ijodini tilga olmaydi. D uni faqat yozuvchi sifatida ko‘rsatadi va hukmdor bo‘lganini aytmaydi.",
+    "estimated_seconds": 65,
+    "source": "original",
+    "tags": [
+      "core-v5",
+      "two-roles"
+    ]
+  },
+  {
+    "skill_code": "rhetorical_synthesis",
     "difficulty": "hard",
     "question_type": "mc",
     "stimulus_type": "passage",
@@ -543,6 +543,27 @@
     "tags": [
       "core-v5",
       "unexpected-result"
+    ]
+  },
+  {
+    "skill_code": "rhetorical_synthesis",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- Lake Baikal is a lake in Siberia, Russia.\n- At its deepest point, it is about 1,642 meters deep.\n- It holds roughly 20 percent of the world's unfrozen fresh surface water.\n- The Baikal seal, which lives in the lake, is one of the very few seals that live only in fresh water.",
+    "stem": "The student wants to emphasize how much fresh water Lake Baikal holds, while also indicating where the lake is for an audience unfamiliar with it. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "option_a": "Lake Baikal, a lake in Siberia, Russia, holds roughly 20 percent of the world's unfrozen fresh surface water.",
+    "option_b": "Lake Baikal holds roughly 20 percent of the world's unfrozen fresh surface water.",
+    "option_c": "Lake Baikal, a lake in Siberia, Russia, is home to the Baikal seal, one of the very few seals that live only in fresh water.",
+    "option_d": "At its deepest point, Lake Baikal, in Siberia, is about 1,642 meters deep.",
+    "correct": "A",
+    "explanation_en": "The goal has two parts: emphasize the amount of fresh water in the lake and tell an unfamiliar audience where it is. Choice A does both: it locates the lake in Siberia, Russia, and states that it holds about 20 percent of the world's unfrozen fresh surface water.\n\nChoice B emphasizes the amount of water but does not say where the lake is. Choice C locates the lake but focuses on its seal, not its water. Choice D locates the lake but emphasizes its depth rather than how much of the world's fresh water it holds.",
+    "explanation_uz": "Maqsad ikki qismdan iborat: ko‘ldagi chuchuk suv miqdorini ta’kidlash va uni bilmaydigan o‘quvchilarga ko‘l qayerda ekanini aytish. A ikkalasini ham bajaradi: ko‘l Rossiyaning Sibir hududida ekanini aytadi va u dunyodagi muzlamagan yer usti chuchuk suvining taxminan 20 foizini saqlashini bildiradi.\n\nB suv miqdorini ta’kidlaydi, lekin ko‘l qayerda ekanini aytmaydi. C ko‘lning joyini aytadi, ammo suvga emas, undagi tyulenga e’tibor qaratadi. D ko‘lning joyini aytadi, lekin dunyo chuchuk suvining qancha qismini saqlashini emas, chuqurligini ta’kidlaydi.",
+    "estimated_seconds": 65,
+    "source": "original",
+    "tags": [
+      "core-v5",
+      "audience-two-part"
     ]
   },
   {
@@ -568,107 +589,86 @@
   },
   {
     "skill_code": "rhetorical_synthesis",
-    "difficulty": "hard",
+    "difficulty": "easy",
     "question_type": "mc",
     "stimulus_type": "passage",
-    "passage": "While researching a topic, a student has taken the following notes:\n\n- Hummingbirds can enter torpor, a state in which body temperature and heart rate drop sharply, on cold nights.\n- Some bats enter torpor during the day while they roost.\n- Torpor helps small animals with high metabolic rates conserve energy when food is scarce or temperatures are low.\n- Unlike hibernation, which can last for weeks or months, torpor often lasts only a few hours.",
-    "stem": "The student wants to make a generalization about the purpose of torpor. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
-    "option_a": "Small animals such as hummingbirds and some bats can enter torpor, a state in which body temperature and heart rate drop sharply for a few hours.",
-    "option_b": "Unlike hibernation, which can last for weeks or months, torpor often lasts only a few hours.",
-    "option_c": "On cold nights, hummingbirds can enter torpor, a state in which their body temperature and heart rate drop sharply.",
-    "option_d": "Torpor helps small animals with high metabolic rates, such as hummingbirds and some bats, conserve energy when food is scarce or temperatures are low.",
-    "correct": "D",
-    "explanation_en": "The goal is to make a general statement about why animals enter torpor. Choice D does this by stating the purpose of torpor (conserving energy) and applying it to a general group, small animals with high metabolic rates.\n\nChoice A makes a general statement about which animals enter torpor and what happens to their bodies, but it does not say what torpor is for. Choice B contrasts torpor with hibernation in terms of length, not purpose. Choice C describes only hummingbirds and does not explain the purpose of torpor.",
-    "explanation_uz": "Maqsad — hayvonlar nega torporga kirishi haqida umumlashma qilish. D buni bajaradi: torporning maqsadini (energiyani tejash) aytadi va uni umumiy guruhga — metabolizmi yuqori mayda hayvonlarga taalluqli qiladi.\n\nA qaysi hayvonlar torporga kirishi va ularning tanasida nima sodir bo‘lishi haqida umumiy fikr aytadi, lekin torpor nima uchun kerakligini aytmaydi. B torporni gibernatsiya bilan maqsadi emas, davomiyligi bo‘yicha qiyoslaydi. C faqat kolibrilarni tasvirlaydi va torporning maqsadini tushuntirmaydi.",
-    "estimated_seconds": 80,
-    "source": "original",
-    "tags": [
-      "core-v5",
-      "generalization-purpose"
-    ]
-  },
-  {
-    "skill_code": "rhetorical_synthesis",
-    "difficulty": "hard",
-    "question_type": "mc",
-    "stimulus_type": "passage",
-    "passage": "While researching a topic, a student has taken the following notes:\n\n- Alisher Navoi (1441–1501) was a poet who lived in Herat.\n- In his time, most poets in the region wrote mainly in Persian.\n- Navoi wrote most of his poetry in Chagatai, a Turkic language, although he also wrote some poetry in Persian.\n- In his 1499 work Muhakamat al-Lughatayn (The Judgment of Two Languages), he argued that Turkic was as suitable as Persian for poetry.",
-    "stem": "The student wants to explain to an audience unfamiliar with Navoi how his choice of language set him apart from many poets of his time. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
-    "option_a": "In his 1499 work Muhakamat al-Lughatayn, Navoi argued that Turkic was as suitable as Persian for poetry.",
-    "option_b": "Alisher Navoi, a fifteenth-century poet who lived in Herat, wrote poetry in both Chagatai and Persian.",
-    "option_c": "In the fifteenth century, most poets in the region around Herat wrote mainly in Persian.",
-    "option_d": "Unlike many poets of his region who wrote mainly in Persian, the fifteenth-century poet Alisher Navoi wrote most of his poetry in Chagatai, a Turkic language.",
-    "correct": "D",
-    "explanation_en": "The goal has two parts: introduce Navoi to readers who do not know him, and show how his language choice made him different from other poets. Choice D does both: it identifies him as a fifteenth-century poet and contrasts his use of Chagatai with the Persian used by many of his peers.\n\nChoice A assumes the reader already knows who Navoi was and describes his argument rather than his own practice compared with that of other poets. Choice B introduces Navoi but, by saying he wrote in both languages, does not show what set him apart. Choice C describes other poets but does not mention Navoi's choice at all.",
-    "explanation_uz": "Maqsad ikki qismdan iborat: Navoiyni uni tanimaydigan o‘quvchilarga tanishtirish va til tanlovi uni boshqa shoirlardan qanday ajratib turganini ko‘rsatish. D ikkalasini ham bajaradi: uni XV asr shoiri sifatida tanishtiradi va uning chig‘atoy tilida yozganini zamondoshlarining ko‘pchiligi ishlatgan fors tiliga qarama-qarshi qo‘yadi.\n\nA o‘quvchi Navoiyni allaqachon taniydi deb hisoblaydi va uning boshqa shoirlarga nisbatan amaliyotini emas, ilgari surgan fikrini tasvirlaydi. B Navoiyni tanishtiradi, lekin u ikkala tilda yozganini aytib, uni nimasi bilan ajralib turganini ko‘rsatmaydi. C boshqa shoirlarni tasvirlaydi, ammo Navoiyning tanlovini umuman tilga olmaydi.",
-    "estimated_seconds": 80,
-    "source": "original",
-    "tags": [
-      "core-v5",
-      "unfamiliar-audience-contrast"
-    ]
-  },
-  {
-    "skill_code": "rhetorical_synthesis",
-    "difficulty": "hard",
-    "question_type": "mc",
-    "stimulus_type": "passage",
-    "passage": "While researching a topic, a student has taken the following notes:\n\n- Education researcher Botir Xolmatov studied whether school gardens improve students' attitudes toward vegetables.\n- He surveyed students at 8 schools that had gardens and 8 schools that did not.\n- Students at schools with gardens rated vegetables more favorably than students at schools without gardens.\n- All 16 schools were in the same wealthy district, and Xolmatov notes that his results may not apply to schools in other areas.",
-    "stem": "The student wants to present Xolmatov's main finding while acknowledging a limitation of his study. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
-    "option_a": "Xolmatov's study shows that school gardens improve students' attitudes toward vegetables at schools everywhere.",
-    "option_b": "Xolmatov found that students at schools with gardens rated vegetables more favorably, though because all 16 schools he studied were in one wealthy district, his results may not apply elsewhere.",
-    "option_c": "Because all 16 schools in Xolmatov's study were in the same wealthy district, his results may not apply to schools in other areas.",
-    "option_d": "Students at the 8 schools with gardens in Xolmatov's study rated vegetables more favorably than students at the 8 schools without gardens.",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- Leaves get their green color from chlorophyll, a pigment that plants use in photosynthesis.\n- Leaves also contain yellow and orange pigments called carotenoids.\n- During the summer, the large amount of chlorophyll in a leaf hides the carotenoids.\n- In autumn, as the days grow shorter, trees stop making new chlorophyll, and the chlorophyll in their leaves breaks down.\n- Some trees also produce red pigments in their leaves in autumn.",
+    "stem": "The student wants to explain why some leaves turn yellow in autumn. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "option_a": "Some trees produce red pigments in their leaves in autumn.",
+    "option_b": "As the chlorophyll in leaves breaks down in autumn, yellow carotenoids that it had hidden all summer become visible.",
+    "option_c": "Leaves get their green color from chlorophyll, a pigment that plants use in photosynthesis.",
+    "option_d": "Leaves contain yellow and orange pigments called carotenoids.",
     "correct": "B",
-    "explanation_en": "The goal has two parts: present the main finding and acknowledge a limitation. Choice B does both: it gives the finding (students at schools with gardens rated vegetables more favorably) and notes that the results may not apply outside one wealthy district.\n\nChoice A overstates the finding by claiming it applies everywhere, which the notes specifically warn against. Choice C gives the limitation but not the finding. Choice D gives the finding but not the limitation.",
-    "explanation_uz": "Maqsad ikki qismdan iborat: asosiy natijani keltirish va tadqiqotning cheklovini tan olish. B ikkalasini ham bajaradi: natijani beradi (bog‘i bor maktab o‘quvchilari sabzavotlarni yuqoriroq baholagan) va natijalar bitta badavlat tumandan tashqarida to‘g‘ri kelmasligi mumkinligini qayd etadi.\n\nA natijani bo‘rttirib, u hamma joyga taalluqli deydi, qaydlar esa aynan bundan ogohlantiradi. C cheklovni aytadi, lekin natijani keltirmaydi. D natijani beradi, ammo cheklovni aytmaydi.",
-    "estimated_seconds": 80,
+    "explanation_en": "The goal is to explain why leaves turn yellow. Choice B does this by explaining the cause: when chlorophyll breaks down, the yellow carotenoids that were hidden become visible.\n\nChoice A explains red, not yellow, autumn color. Choice C explains why leaves are green. Choice D names the yellow pigments but does not explain why they appear only in autumn.",
+    "explanation_uz": "Maqsad — barglar nega sarg‘ayishini tushuntirish. B buni bajaradi: sababini tushuntiradi — xlorofill parchalanganda, yashirinib turgan sariq karotinoidlar ko‘rinib qoladi.\n\nA sariq emas, qizil kuzgi rangni tushuntiradi. C barglar nega yashil ekanini tushuntiradi. D sariq pigmentlarni nomlaydi, lekin ular nega faqat kuzda ko‘rinishini tushuntirmaydi.",
+    "estimated_seconds": 50,
     "source": "original",
     "tags": [
       "core-v5",
-      "finding-with-limitation"
+      "explain-cause"
     ]
   },
   {
     "skill_code": "rhetorical_synthesis",
-    "difficulty": "hard",
+    "difficulty": "easy",
     "question_type": "mc",
     "stimulus_type": "passage",
-    "passage": "While researching a topic, a student has taken the following notes:\n\n- Dilnoza Rahimberdiyeva's novel The Weavers tells the story of a family that runs a carpet workshop in Khiva.\n- The novel is divided into four sections, each narrated by a different member of the family.\n- Each narrator describes the same year, 1978, from his or her own point of view.\n- Critics note that the novel's central theme is that a family's shared history is remembered differently by each of its members.",
-    "stem": "The student wants to explain how the structure of The Weavers reflects its central theme. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
-    "option_a": "The Weavers is divided into four sections, each narrated by a different member of a family that runs a carpet workshop in Khiva.",
-    "option_b": "Critics note that the central theme of The Weavers is that a family's shared history is remembered differently by each of its members.",
-    "option_c": "By having four members of one family each narrate the same year, The Weavers reflects its central theme: that a family's shared history is remembered differently by each of its members.",
-    "option_d": "Rahimberdiyeva's novel The Weavers, which is set in 1978, tells the story of a family that runs a carpet workshop in Khiva.",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- In drip irrigation, water flows through plastic pipes and drips slowly onto the soil right next to each plant.\n- In flood irrigation, water is released to cover the entire field.\n- Agronomist Bahodir Qosimov compared cotton fields watered by each method for three growing seasons.\n- The fields with drip irrigation used 40 percent less water than the flooded fields.\n- The two kinds of fields produced similar amounts of cotton.",
+    "stem": "The student wants to emphasize an advantage of drip irrigation. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "option_a": "In drip irrigation, water flows through plastic pipes and drips slowly onto the soil right next to each plant.",
+    "option_b": "In flood irrigation, water is released to cover an entire field.",
+    "option_c": "Bahodir Qosimov compared cotton fields watered by drip irrigation and by flood irrigation for three growing seasons.",
+    "option_d": "In Qosimov's study, cotton fields with drip irrigation used 40 percent less water than flooded fields while producing similar amounts of cotton.",
+    "correct": "D",
+    "explanation_en": "The goal is to emphasize an advantage of drip irrigation. Choice D does this by showing that drip-irrigated fields used 40 percent less water without producing less cotton.\n\nChoice A explains how drip irrigation works but does not show that it is better in any way. Choice B describes flood irrigation only. Choice C describes Qosimov's comparison but not its outcome, so no advantage is shown.",
+    "explanation_uz": "Maqsad — tomchilatib sug‘orishning afzalligini ta’kidlash. D buni bajaradi: tomchilatib sug‘orilgan dalalar kam paxta bermagan holda 40 foiz kam suv sarflaganini ko‘rsatadi.\n\nA tomchilatib sug‘orish qanday ishlashini tushuntiradi, lekin uning biror jihatdan yaxshiroq ekanini ko‘rsatmaydi. B faqat bostirib sug‘orishni tasvirlaydi. C Qosimovning taqqoslashini tasvirlaydi, ammo natijasini aytmaydi, shuning uchun hech qanday afzallik ko‘rsatilmaydi.",
+    "estimated_seconds": 50,
+    "source": "original",
+    "tags": [
+      "core-v5",
+      "emphasize-advantage"
+    ]
+  },
+  {
+    "skill_code": "rhetorical_synthesis",
+    "difficulty": "medium",
+    "question_type": "mc",
+    "stimulus_type": "passage",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- Marine biologist Sevara Islomova studied how noise from ships affects shore crabs.\n- She placed 60 shore crabs in separate tanks.\n- She played recordings of ship noise to half of the crabs and recordings of quiet ocean sounds to the other half.\n- She then measured how long each crab took to find food hidden in its tank.\n- Crabs exposed to ship noise took about twice as long to find the food.",
+    "stem": "The student wants to describe the method Islomova used in her study. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "option_a": "Islomova found that shore crabs exposed to ship noise took about twice as long to find hidden food as crabs that heard quiet ocean sounds.",
+    "option_b": "Islomova wanted to learn how noise from ships affects shore crabs.",
+    "option_c": "Islomova played recordings of ship noise to 30 shore crabs and recordings of quiet ocean sounds to 30 others, then measured how long each crab took to find hidden food.",
+    "option_d": "Islomova placed 60 shore crabs in separate tanks.",
     "correct": "C",
-    "explanation_en": "The goal is to connect the novel's structure to its theme. Choice C does this by describing the structure (four family members narrating the same year) and explaining that it reflects the theme of shared history being remembered differently.\n\nChoice A describes the structure but not the theme. Choice B states the theme but not the structure. Choice D describes the novel's setting and plot, which are neither its structure nor its theme.",
-    "explanation_uz": "Maqsad — romanning tuzilishini uning mavzusi bilan bog‘lash. C buni bajaradi: tuzilishini (oilaning to‘rt a’zosi bir yilni hikoya qiladi) tasvirlaydi va bu umumiy o‘tmish har kim tomonidan turlicha eslanadi degan mavzuni aks ettirishini tushuntiradi.\n\nA tuzilishni tasvirlaydi, lekin mavzuni aytmaydi. B mavzuni aytadi, ammo tuzilishni tasvirlamaydi. D romanning voqealar joyi va syujetini tasvirlaydi — bu na tuzilish, na mavzu.",
-    "estimated_seconds": 80,
+    "explanation_en": "The goal is to describe how Islomova carried out her study. Choice C does this by explaining how the crabs were divided into two groups, what each group heard, and what was measured. (Half of 60 crabs is 30.)\n\nChoice A presents the study's result rather than its method. Choice B states the study's aim. Choice D describes only the first step of the method and leaves out the two kinds of recordings and the measurement that made it an experiment.",
+    "explanation_uz": "Maqsad — Islomova tadqiqotni qanday o‘tkazganini tasvirlash. C buni bajaradi: qisqichbaqalar ikki guruhga qanday bo‘linganini, har bir guruh nimani eshitganini va nima o‘lchanganini tushuntiradi. (60 ta qisqichbaqaning yarmi — 30 ta.)\n\nA usulni emas, tadqiqot natijasini keltiradi. B tadqiqot maqsadini aytadi. D usulning faqat birinchi bosqichini tasvirlaydi va ikki xil yozuv hamda o‘lchovni — tajribaning asosiy qismini — tushirib qoldiradi.",
+    "estimated_seconds": 65,
     "source": "original",
     "tags": [
       "core-v5",
-      "structure-theme"
+      "methodology"
     ]
   },
   {
     "skill_code": "rhetorical_synthesis",
-    "difficulty": "hard",
+    "difficulty": "medium",
     "question_type": "mc",
     "stimulus_type": "passage",
-    "passage": "While researching a topic, a student has taken the following notes:\n\n- Entomologist Farrux Abdullayev studied two species of darkling beetle that live in a foggy coastal desert.\n- Both species collect drinking water from fog that condenses on their backs.\n- The back of species A is covered with tiny bumps that channel water droplets toward the beetle's mouth.\n- The back of species B is smooth.\n- In a laboratory fog chamber, species A collected 0.6 milliliters of water per hour, while species B collected 0.2 milliliters per hour.",
-    "stem": "The student wants to compare how much water the two species collected and suggest a reason for the difference. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
-    "option_a": "Species A, whose back is covered with tiny bumps that channel water toward its mouth, collected three times as much water from fog per hour as smooth-backed species B.",
-    "option_b": "In Abdullayev's fog chamber, species A collected 0.6 milliliters of water per hour, while species B collected 0.2 milliliters per hour.",
-    "option_c": "The back of species A is covered with tiny bumps that channel water droplets toward the beetle's mouth, while the back of species B is smooth.",
-    "option_d": "Both species of darkling beetle that Abdullayev studied collect drinking water from fog that condenses on their backs.",
+    "passage": "While researching a topic, a student has taken the following notes:\n\n- Some city planners argue that adding lanes to busy highways reduces traffic congestion.\n- Transportation researcher Dilfuza Hamidova studied 12 projects in which highways were widened.\n- In 10 of the 12 projects, congestion returned to its previous level within five years.\n- Hamidova attributes this to “induced demand”: when roads are widened, more people choose to drive on them.",
+    "stem": "The student wants to present Hamidova's findings as a challenge to the planners' argument. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "option_a": "Although some planners argue that adding highway lanes reduces congestion, Hamidova found that in 10 of the 12 widening projects she studied, congestion returned to its previous level within five years.",
+    "option_b": "Hamidova attributes the return of traffic congestion to induced demand: when roads are widened, more people choose to drive on them.",
+    "option_c": "Some city planners argue that adding lanes to busy highways reduces traffic congestion.",
+    "option_d": "Hamidova studied 12 projects in which highways were widened to see what happened to congestion.",
     "correct": "A",
-    "explanation_en": "The goal has two parts: compare the amounts of water and suggest why they differ. Choice A does both: it states that species A collected three times as much water (0.6 is three times 0.2) and connects this to the bumps on its back that channel water.\n\nChoice B compares the amounts but gives no reason for the difference. Choice C describes the difference in the beetles' backs but does not say how much water each collected. Choice D states a similarity between the species rather than a difference.",
-    "explanation_uz": "Maqsad ikki qismdan iborat: suv miqdorini qiyoslash va farqning sababini ko‘rsatish. A ikkalasini ham bajaradi: A turi uch baravar ko‘p suv yig‘ganini aytadi (0,6 soni 0,2 dan uch baravar katta) va buni orqasidagi suvni yo‘naltiruvchi mayda do‘ngchalar bilan bog‘laydi.\n\nB miqdorlarni qiyoslaydi, lekin farqning sababini aytmaydi. C qo‘ng‘izlar orqasidagi farqni tasvirlaydi, ammo har biri qancha suv yig‘ganini aytmaydi. D turlar o‘rtasidagi farqni emas, o‘xshashlikni aytadi.",
-    "estimated_seconds": 80,
+    "explanation_en": "The goal is to show that Hamidova's findings go against the planners' argument. Choice A does this by stating the planners' claim and then, with “although,” presenting the finding that congestion returned in 10 of 12 projects.\n\nChoice B gives Hamidova's explanation but not the finding itself, and it never mentions the planners' argument. Choice C states only the planners' argument. Choice D describes what Hamidova studied but not what she found, so it cannot challenge anything.",
+    "explanation_uz": "Maqsad — Hamidovaning natijalari rejalashtiruvchilar fikriga zid ekanini ko‘rsatish. A buni bajaradi: avval rejalashtiruvchilar fikrini keltiradi, so‘ng “although” orqali 12 loyihadan 10 tasida tirbandlik qaytganini ko‘rsatadi.\n\nB Hamidovaning izohini beradi, lekin natijaning o‘zini keltirmaydi va rejalashtiruvchilar fikrini tilga olmaydi. C faqat rejalashtiruvchilar fikrini aytadi. D Hamidova nimani o‘rganganini tasvirlaydi, ammo nimani aniqlaganini aytmaydi, shuning uchun hech narsaga e’tiroz bildirmaydi.",
+    "estimated_seconds": 65,
     "source": "original",
     "tags": [
       "core-v5",
-      "compare-and-explain"
+      "challenge-claim"
     ]
   }
 ]

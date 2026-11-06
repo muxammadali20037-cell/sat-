@@ -96,3 +96,31 @@ Second look: linear_functions#16 SPR −1/6 forms (checker accepts); nonlinear_e
 Second look: circles#11 (easy for medium), area_volume#14, lines_angles_triangles#10. No real facts.
 ### algebra + ratios/percentages (writer 2)
 Second look: linear_equations_one_variable#15 (40/7), ratios#11, systems#14 (maybe medium). Options re-lettered in 7 items. No real facts.
+
+## core-v5 (7 Nov 2026): 352 Reading and Writing questions, 32 per skill
+
+- **Why RW only:** the number of fully distinct mock exams is limited by RW questions (81 per full mock). With core-v5 the RW bank grows from 440 to 792, so about 9 fully distinct mocks fit.
+- **Mix:** 12 easy / 12 medium / 8 hard per skill; answer letters 8 each per skill.
+- **Writing:** six writers from a counts-only brief (most-tested skills, grammar points, transition relations, subject mix of recalled 2026 tests; no source text). Every table claim was checked in Python.
+- **Blind check:** four separate solvers answered all 352 without keys and gave a reason per item. **351/352 agree.** The one difference (`boundaries#23`) was reviewed: the passage opens the phrase with a comma after "report", so the closing comma (key C) is right and the solver's answer (no punctuation) is wrong. Key kept.
+- **Fixes after the check:** `form_structure_sense#16` now names the door in the passage (the key referred to "the door" without it). Solvers noticed the answer letters ran in an A-B-C-D cycle in file order in several files; the rows were shuffled (content unchanged), so ids like `skill#n` now refer to the shuffled order.
+- **Reviewer notes from the writers** (items worth a second look and real facts to confirm; numbers refer to the order before shuffling):
+
+#### inferences (v5)
+Second look: inferences#17 (literary hesitation), #28 (irony, choice A), #25 (bats catch-rate trap).
+Real facts: water expands on freezing; coral bleaching = loss of algae from warm water; lake sediment layering.
+#### boundaries, form_structure_sense (v5)
+Second look: boundaries#11 (indirect question period), #26 ("however;" with first clause), #32 (dash), form_structure_sense#26.
+Real facts: Central Asian tortoise burrows/active in spring; Nukus capital of Karakalpakstan, Termez near Afghan border, Namangan in Fergana Valley; glass frog transparent underside; leafcutter ants fungus; mastava; snow leopards Kyrgyz–Tajik mountains; windbreak trees; salt-storing shrubs; glass annealing.
+#### words_in_context, text_structure_purpose (v5)
+Second look: words_in_context#16 (counterintuitive vs efficient), #30 (incremental vs sporadic), #32 (superfluous); text_structure_purpose#16 (easy for medium), #28 (irony).
+Real facts: gallium melts ~29.76°C; comet tails; nurse plants; cave fish eye loss; madder red / pomegranate rind yellow dyes; infrared reveals underpainting; night migration of songbirds; salt marsh tides; dark vs pale surfaces absorb/reflect.
+#### transitions, rhetorical_synthesis (v5)
+Second look: transitions#32 ("in turn" vs meanwhile), #27 (Actually); rhetorical_synthesis#22 (Baikal depth distractor), #28 (torpor).
+Real facts: coquí frog direct development; wood frog freezing; nettle hairs; madder/pomegranate dyes; non + chekich + tandir; copper patina; protogynous hermaphrodite; greenhouses; cactus root rot; alligator vs crocodile snouts; Tashkent TV Tower 1978–1985, 375 m; Velcro de Mestral 1941; Rishtan/Gijduvan pottery glazes; buzz pollination of tomatoes; drip/flood irrigation; Al-Biruni (973, Khwarazm, Earth radius, India); autumn leaf pigments; Mimosa/Venus flytrap speed; mahalla, hashar; Aral Sea (68,000 km², 4th largest in 1960, eastern basin dry 2014, Kokaral Dam 2005); natural vs cultured pearls; induced demand; Lake Baikal (1,642 m, ~20% unfrozen surface fresh water, Baikal seal); Babur (1483 Andijan, ruler at 11, Panipat 1526, Baburnama in Chagatai); planning fallacy; Archimedes screw; torpor vs hibernation; Navoi (1441–1501, Herat, Muhakamat al-Lughatayn 1499).
+#### cross_text_connections, central_ideas_details (v5)
+Second look: cross_text_connections#16 (unusual stem), #21 (warblers), #26 (stock phrases); central_ideas_details#20 (poem response), #32 (map, guide distractor).
+Real facts: non-native earthworms in glaciated N. America; camel nasal water recovery; hummingbird torpor; clover nitrogen fixation; glacier basal meltwater; songbird star + magnetic navigation; lake sediment preservation; ice cores; suzani dowry (Bukhara); Tashkent metro; Khanate of Khiva 1840s, Ustyurt plateau.
+#### command_of_evidence_textual, command_of_evidence_quantitative (v5)
+Second look: COE textual#17, #28 (footprints), #30 (squirrels); COE quantitative#29 (households × percent change), #11 (irrelevant-but-true distractor).
+Real facts: pH; pebble rounding; beaver ponds; parchment from skin; freeze–thaw cracking; warm water less oxygen; nitrate runoff; seed-eating ants; lizard hind legs and sprinting.
