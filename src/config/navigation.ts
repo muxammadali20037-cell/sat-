@@ -4,7 +4,7 @@ import type { Role } from './roles'
 export type NavIconKey =
   | 'home' | 'courses' | 'practice' | 'diagnostic' | 'exams' | 'results' | 'analytics' | 'plan' | 'tutor'
   | 'bookmarks' | 'subscription' | 'settings' | 'students' | 'subjects' | 'domains' | 'skills' | 'lessons' | 'mistakes' | 'flashcards' | 'classes' | 'groups' | 'team' | 'teach'
-  | 'questions' | 'import' | 'payments' | 'ai' | 'audit' | 'admin' | 'guides' | 'telegram' | 'resources' | 'library' | 'path' | 'invite'
+  | 'questions' | 'import' | 'payments' | 'ai' | 'audit' | 'admin' | 'guides' | 'telegram' | 'resources' | 'library' | 'path' | 'invite' | 'launch'
 
 export type NavItem = {
   href: string
@@ -66,7 +66,12 @@ const ADMINS: Role[] = ['SUPER_ADMIN', 'ADMIN']
 const VIEWERS: Role[] = ['SUPER_ADMIN', 'ADMIN', 'TEACHER']
 
 export const ADMIN_NAV: NavSection[] = [
-  { items: [{ href: '/admin', labelKey: 'Overview', icon: 'admin', exact: true, roles: STAFF }] },
+  {
+    items: [
+      { href: '/admin', labelKey: 'Overview', icon: 'admin', exact: true, roles: STAFF },
+      { href: '/admin/launch', labelKey: 'Launch checklist', icon: 'launch', roles: ADMINS },
+    ],
+  },
   {
     title: 'People',
     items: [

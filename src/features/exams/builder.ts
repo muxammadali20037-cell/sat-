@@ -227,3 +227,16 @@ export function allocateAutoFill(input: AutoFillInput): AutoFillResult {
 
   return { selected: selected.map((q) => q.id), shortfall: carry, allocation }
 }
+
+/** The smallest free number N for a new "SAT Mock Test N", given the existing exam slugs. */
+export function nextMockNumber(slugs: string[]): number {
+  const used = new Set(
+    slugs
+      .map((s) => /^sat-mock-test-(\d{1,4})$/.exec(s)?.[1])
+      .filter((x): x is string => !!x)
+      .map(Number),
+  )
+  let n = 1
+  while (used.has(n)) n++
+  return n
+}

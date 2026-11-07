@@ -10,7 +10,7 @@ import { fetchAll } from '@/features/admin/server-utils'
 import { CONTENT_ROLES } from '@/config/roles'
 import { getTaxonomy } from '@/features/taxonomy/server'
 import { FULL_LENGTH_COUNTS, type ExamSection, type ModuleVariant } from './machine'
-import { allocateAutoFill, moduleLabel, requiredModuleSpecs, type PoolQuestion } from './builder'
+import { allocateAutoFill, moduleLabel, nextMockNumber, requiredModuleSpecs, type PoolQuestion } from './builder'
 import { examValidationIssues, getExamAdmin } from './admin'
 import {
   AutoFillSchema,
@@ -145,6 +145,43 @@ export async function createExamAction(input: unknown): Promise<ActionResult<{ i
     }
     revalidateExam(exam.id)
     return { ok: true, data: { id: exam.id }, message: 'Exam created' }
+  } catch (err) {
+    return failure(err)
+  }
+}
+
+/**
+ * One click: creates the next full-length adaptive mock ("SAT Mock Test N", the same settings as the
+ * New exam form's defaults) as a DRAFT and auto-fills all six modules (fresh questions first). The
+ * editor still opens it and presses Publish.
+ */
+export async function createFilledMockAction(): Promise<ActionResult<{ id: string; title: string; added: number; shortfall: number; reused: number }>> {
+  try {
+    const ctx = await contentContext()
+    const { data: slugRows, error: sErr } = await ctx.db.from('mock_exams').select('slug').like('slug', 'sat-mock-test-%').limit(5000)
+    if (sErr) throw sErr
+    const n = nextMockNumber((slugRows ?? []).map((r) => r.slug))
+    const title = `SAT Mock Test ${n}`
+    const created = await createExamAction({
+      title,
+      slug: `sat-mock-test-${n}`,
+      description:
+        'To‘liq Digital SAT formatidagi sinov imtihoni: Reading and Writing (2 modul, 64 daqiqa) va Math (2 modul, 70 daqiqa), o‘rtada 10 daqiqa tanaffus. Ikkinchi modul birinchi moduldagi natijangizga qarab osonroq yoki qiyinroq bo‘ladi. Natija taxminiy ball bo‘lib, rasmiy SAT natijasi emas.',
+      isAdaptive: true,
+      isFullLength: true,
+      routingThreshold: 0.6,
+      breakMinutes: 10,
+      rwModuleMinutes: 32,
+      mathModuleMinutes: 35,
+    })
+    if (!created.ok || !created.data) return created.ok ? { ok: false, error: 'The exam was not created.' } : created
+    const filled = await autoFillExamAction({ examId: created.data.id })
+    if (!filled.ok || !filled.data) return { ok: false, error: `${title} was created as a draft, but filling it failed: ${filled.ok ? 'no result' : filled.error}` }
+    return {
+      ok: true,
+      data: { id: created.data.id, title, ...filled.data },
+      message: `${title} created as a draft. ${filled.message ?? ''} Open it and press Publish.`,
+    }
   } catch (err) {
     return failure(err)
   }

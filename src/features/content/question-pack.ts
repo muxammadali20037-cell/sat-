@@ -31,19 +31,24 @@ export async function loadBundledPack(id: string): Promise<BundledPack | null> {
   return (await loadBundledPacks()).find((p) => p.id === id) ?? null
 }
 
-export type PackStatus = { id: string; total: number; skills: number; imported: number }
+export type PackStatus = { id: string; total: number; skills: number; imported: number; published: number }
 
 /** For each bundled pack: how many questions it holds and how many this environment already has (any status). */
 export async function bundledPacksStatus(db: Db): Promise<PackStatus[]> {
   const packs = await loadBundledPacks()
   return Promise.all(
     packs.map(async (pack) => {
-      const have = await importedPackKeys(db, pack.id)
+      const [have, pub] = await Promise.all([
+        importedPackKeys(db, pack.id),
+        db.from('questions').select('id', { count: 'exact', head: true }).contains('tags', [pack.id]).eq('status', 'published'),
+      ])
+      if (pub.error) throw new DbActionError(pub.error, { entity: 'question' })
       return {
         id: pack.id,
         total: pack.rows.length,
         skills: new Set(pack.rows.map((r) => r.skill_code)).size,
         imported: pack.rows.filter((r) => have.has(packKey(r))).length,
+        published: pub.count ?? 0,
       }
     }),
   )

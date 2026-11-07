@@ -165,3 +165,13 @@ describe('module specs and publish validation', () => {
     expect(issues).toMatch(/Math · Module 2 \(harder\) is missing/)
   })
 })
+
+describe('nextMockNumber', () => {
+  it('takes the smallest free number and ignores other slugs', async () => {
+    const { nextMockNumber } = await import('@/features/exams/builder')
+    expect(nextMockNumber([])).toBe(1)
+    expect(nextMockNumber(['sat-mock-test-1', 'sat-mock-test-2', 'sat-mock-test-3'])).toBe(4)
+    expect(nextMockNumber(['sat-mock-test-1', 'sat-mock-test-3'])).toBe(2)
+    expect(nextMockNumber(['sat-mock-test-1x', 'demo', 'sat-mock-test-'])).toBe(1)
+  })
+})

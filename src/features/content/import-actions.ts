@@ -111,3 +111,72 @@ export async function importBundledQuestionPackAction(packId: string): Promise<A
     return { ...res, data: { ...res.data, alreadyImported } }
   })
 }
+
+/**
+ * One click for a bundled pack: imports what is missing (as drafts), then moves the pack's drafts to
+ * reviewed and published through public.question_set_status, the same checked and audited path as
+ * the editor and the bulk actions. Every bundled pack was blind-solved by independent solvers before
+ * it was bundled (docs/QUESTION_PACKS.md); pressing this button is the content editor's sign-off.
+ * Archived questions stay archived; questions that fail a completeness check stay drafts and are
+ * counted. Content editors and admins only.
+ */
+export async function publishBundledQuestionPackAction(packId: string): Promise<ActionResult<{ imported: number; published: number; skipped: number }>> {
+  return adminAction(CONTENT_ROLES, async (ctx) => {
+    const pack = typeof packId === 'string' && /^[a-z0-9-]{1,40}$/.test(packId) ? await loadBundledPack(packId) : null
+    if (!pack) return { ok: false, error: 'This build has no bundled question pack.' }
+
+    const have = await importedPackKeys(ctx.db, pack.id)
+    const todo = pack.rows.filter((r) => !have.has(packKey(r)))
+    let imported = 0
+    if (todo.length > 0) {
+      const res = await runImport(ctx, JSON.stringify(todo), 'json', `bundled pack ${pack.id}`)
+      if (!res.ok) return res
+      imported = res.data?.created.length ?? 0
+    }
+
+    const { data: rows, error } = await ctx.db
+      .from('questions')
+      .select('id, status')
+      .contains('tags', [pack.id])
+      .in('status', ['draft', 'reviewed'])
+      .limit(1000)
+    if (error) throw new DbActionError(error, { entity: 'question' })
+
+    let published = 0
+    let skipped = 0
+    const queue = [...(rows ?? [])]
+    const worker = async () => {
+      for (let row = queue.shift(); row; row = queue.shift()) {
+        if (row.status === 'draft') {
+          const r = await ctx.db.rpc('question_set_status', { p_question_id: row.id, p_status: 'reviewed' })
+          if (r.error) {
+            skipped++
+            continue
+          }
+        }
+        const p = await ctx.db.rpc('question_set_status', { p_question_id: row.id, p_status: 'published' })
+        if (p.error) skipped++
+        else published++
+      }
+    }
+    await Promise.all(Array.from({ length: 6 }, worker))
+
+    await writeAudit({
+      actorId: ctx.profile.id,
+      actorRole: ctx.profile.role,
+      action: 'question_pack.published',
+      entityType: 'questions',
+      entityId: null,
+      summary: `Pack ${pack.id}: imported ${imported}, published ${published}, skipped ${skipped}`,
+      after: { pack: pack.id, imported, published, skipped },
+    })
+    revalidatePath('/admin/question-import')
+    revalidatePath('/admin/questions')
+    revalidatePath('/admin')
+    return {
+      ok: true,
+      data: { imported, published, skipped },
+      message: `Published ${published} question${published === 1 ? '' : 's'}${imported ? ` (${imported} newly imported)` : ''}${skipped ? `; ${skipped} need attention and stay drafts` : ''}.`,
+    }
+  })
+}

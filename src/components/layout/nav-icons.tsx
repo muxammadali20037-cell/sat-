@@ -1,6 +1,6 @@
 import {
   BarChart3, BookMarked, BookOpen, Bot, CircleAlert, Layers3, School, UsersRound, Presentation, LayoutGrid, ClipboardCheck, CreditCard, FileClock, FileQuestion, FileUp, Gauge, GraduationCap,
-  Home, Library, Mountain, UserPlus, Languages, Layers, LayoutDashboard, ListChecks, Network, PenLine, PlayCircle, Receipt, ScrollText, Send, Settings, Sparkles, Target, Timer, Users,
+  Home, Library, Mountain, Rocket, UserPlus, Languages, Layers, LayoutDashboard, ListChecks, Network, PenLine, PlayCircle, Receipt, ScrollText, Send, Settings, Sparkles, Target, Timer, Users,
   type LucideIcon,
 } from 'lucide-react'
 import type { NavIconKey } from '@/config/navigation'
@@ -34,6 +34,7 @@ export const NAV_ICONS: Record<NavIconKey, LucideIcon> = {
   library: BookOpen,
   path: Mountain,
   invite: UserPlus,
+  launch: Rocket,
   telegram: Send,
   mistakes: CircleAlert,
   flashcards: Layers3,

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import { CreateFilledMockButton } from '@/components/admin/exams/exam-controls'
 import { Plus } from 'lucide-react'
 import { requireRole } from '@/lib/auth/session'
 import { createServerSupabase } from '@/lib/supabase/server'
@@ -49,11 +50,14 @@ export default async function AdminExamsPage() {
         description="Build full-length or shortened Digital SAT simulations: modules, adaptive routing and question sets."
         actions={
           canEdit && (
-            <Button asChild>
-              <Link href="/admin/exams/new">
-                <Plus /> New exam
-              </Link>
-            </Button>
+            <div className="flex flex-wrap gap-2">
+              <CreateFilledMockButton />
+              <Button asChild>
+                <Link href="/admin/exams/new">
+                  <Plus /> New exam
+                </Link>
+              </Button>
+            </div>
           )
         }
       />

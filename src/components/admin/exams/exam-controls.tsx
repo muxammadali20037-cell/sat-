@@ -7,7 +7,7 @@ import { ConfirmDialog } from '@/components/ui/dialog'
 import { Input } from '@/components/ui/input'
 import { toast } from '@/components/ui/toast'
 import { Wand2 } from 'lucide-react'
-import { autoFillExamAction, setExamStatusAction, setModuleDurationAction } from '@/features/exams/admin-actions'
+import { autoFillExamAction, createFilledMockAction, setExamStatusAction, setModuleDurationAction } from '@/features/exams/admin-actions'
 
 type Status = 'draft' | 'published' | 'archived'
 
@@ -140,6 +140,33 @@ export function AutoFillExamButton({ examId }: { examId: string }) {
       }
     >
       <Wand2 /> Auto-fill all modules
+    </Button>
+  )
+}
+
+/** "Create and fill a full mock": the next SAT Mock Test N as a draft with all six modules filled. */
+export function CreateFilledMockButton() {
+  const router = useRouter()
+  const [pending, startTransition] = React.useTransition()
+  return (
+    <Button
+      variant="secondary"
+      loading={pending}
+      data-testid="create-filled-mock"
+      onClick={() =>
+        startTransition(async () => {
+          const res = await createFilledMockAction()
+          if (!res.ok) {
+            toast.error(res.error)
+            return
+          }
+          if (res.data && res.data.shortfall > 0) toast.warning(res.message ?? 'Created')
+          else toast.success(res.message ?? 'Created')
+          if (res.data) router.push(`/admin/exams/${res.data.id}`)
+        })
+      }
+    >
+      <Wand2 /> Create and fill a full mock
     </Button>
   )
 }
